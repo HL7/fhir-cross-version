@@ -1,0 +1,52 @@
+/// url = "http://hl7.org/fhir/StructureMap/AdverseEvent5to4"
+/// name = "AdverseEvent5to4"
+/// title = "AdverseEvent Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/AdverseEvent" alias AdverseEventR5 as source
+uses "http://hl7.org/fhir/4.0/AdverseEvent" alias AdverseEventR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group AdverseEvent(source src : AdverseEventR5, target tgt : AdverseEventR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.actuality as v -> tgt.actuality = translate(v, 'http://hl7.org/fhir/ConceptMap/AdverseEvent.actuality-R5toR4', 'code');
+  src.category -> tgt.category;
+  src.code -> tgt.event;
+  src.subject -> tgt.subject;
+  src.encounter -> tgt.encounter;
+  src.occurrence : dateTime -> tgt.date "occurrenceDateTime";
+  src.occurrence : Period as v -> tgt.date = v.start "periodDateTime";
+  src.occurrence : Timing as v -> tgt.date = v.event "timingDateTime";
+  src.detected -> tgt.detected;
+  src.recordedDate -> tgt.recordedDate;
+  src.resultingEffect -> tgt.resultingCondition;
+  src.location -> tgt.location;
+  src.seriousness -> tgt.seriousness;
+  src.outcome -> tgt.outcome;
+  src.recorder -> tgt.recorder;
+  src.participant as s -> tgt.contributor as t then AdverseEventParticipant(s, t);
+  src.study -> tgt.study;
+  src.suspectEntity as s -> tgt.suspectEntity as t then AdverseEventSuspectEntity(s, t);
+  src.contributingFactor as s -> tgt.subjectMedicalHistory as t then AdverseEventContributingFactor(s, t);
+}
+
+group AdverseEventParticipant(source src, target tgt) extends BackboneElement {
+  src.actor as v -> tgt = v "reference";
+}
+
+group AdverseEventSuspectEntity(source src, target tgt) extends BackboneElement {
+  src.instance : Reference -> tgt.instance "instanceReference";
+  src.causality as s -> tgt.causality as t then AdverseEventSuspectEntityCausality(s, t);
+}
+
+group AdverseEventSuspectEntityCausality(source src, target tgt) extends BackboneElement {
+  src.assessmentMethod -> tgt.assessment;
+  src.entityRelatedness -> tgt.productRelatedness;
+  src.author -> tgt.author;
+}
+
+group AdverseEventContributingFactor(source src, target tgt) extends BackboneElement {
+  src.item : Reference as v -> tgt = v "reference";
+}
+

@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "HumanNameB.use-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/HumanNameB.use-R4BtoR5",
+  "name" : "HumanNameB.use-R4BtoR5",
+  "title" : "Mapping for HumanNameB.use from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/HumanNameB#HumanNameB.use",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/HumanName#HumanName.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/name-use",
+    "target" : "http://hl7.org/fhir/5.0/name-use",
+    "element" : [{
+      "code" : "usual",
+      "target" : [{
+        "code" : "usual",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "official",
+      "target" : [{
+        "code" : "official",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "temp",
+      "target" : [{
+        "code" : "temp",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "nickname",
+      "target" : [{
+        "code" : "nickname",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "anonymous",
+      "target" : [{
+        "code" : "anonymous",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "old",
+      "target" : [{
+        "code" : "old",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "maiden",
+      "target" : [{
+        "code" : "maiden",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

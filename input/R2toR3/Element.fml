@@ -1,0 +1,15 @@
+/// url = "http://hl7.org/fhir/StructureMap/Element2to3"
+/// name = "Element2to3"
+/// title = "Period Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/ElementR2" as source
+uses "http://hl7.org/fhir/3.0/Element" as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Element(source src : ElementR2, target tgt : Element) <<type+>> {
+  src.id -> tgt.id "Element-id";
+  src.extension -> tgt.extension "Element-extensions";
+}
+

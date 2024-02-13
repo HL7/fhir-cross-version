@@ -1,0 +1,15 @@
+/// url = "http://hl7.org/fhir/StructureMap/CodeableReference5to4B"
+/// name = "CodeableReference5to4B"
+/// title = "CodeableReference Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/CodeableReference" alias CodeableReferenceR5 as source
+uses "http://hl7.org/fhir/4.0/CodeableReference" alias CodeableReferenceR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group CodeableReference(source src : CodeableReferenceR5, target tgt : CodeableReferenceR4B) extends Element <<type+>> {
+  src.concept -> tgt.concept;
+  src.reference -> tgt.reference;
+}
+

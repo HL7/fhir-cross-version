@@ -1,0 +1,55 @@
+/// url = "http://hl7.org/fhir/StructureMap/Bundle4to5"
+/// name = "Bundle4to5"
+/// title = "Bundle Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Bundle" alias BundleR4 as source
+uses "http://hl7.org/fhir/5.0/Bundle" alias BundleR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group Bundle(source src : BundleR4, target tgt : BundleR5) extends Resource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/Bundle.type-R4toR5', 'code');
+  src.timestamp -> tgt.timestamp;
+  src.total -> tgt.total;
+  src.link as s -> tgt.link as t then BundleLink(s, t);
+  src.entry as s -> tgt.entry as t then BundleEntry(s, t);
+  src.signature -> tgt.signature;
+}
+
+group BundleLink(source src, target tgt) extends BackboneElement {
+  src.relation -> tgt.relation;
+  src.url -> tgt.url;
+}
+
+group BundleEntry(source src, target tgt) extends BackboneElement {
+  src.fullUrl -> tgt.fullUrl;
+  src.resource : Resource -> tgt.resource "resourceResource";
+  src.search as s -> tgt.search as t then BundleEntrySearch(s, t);
+  src.request as s -> tgt.request as t then BundleEntryRequest(s, t);
+  src.response as s -> tgt.response as t then BundleEntryResponse(s, t);
+}
+
+group BundleEntrySearch(source src, target tgt) extends BackboneElement {
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/ConceptMap/Bundle.entry.search.mode-R4toR5', 'code');
+  src.score -> tgt.score;
+}
+
+group BundleEntryRequest(source src, target tgt) extends BackboneElement {
+  src.method as v -> tgt.method = translate(v, 'http://hl7.org/fhir/ConceptMap/Bundle.entry.request.method-R4toR5', 'code');
+  src.url -> tgt.url;
+  src.ifNoneMatch -> tgt.ifNoneMatch;
+  src.ifModifiedSince -> tgt.ifModifiedSince;
+  src.ifMatch -> tgt.ifMatch;
+  src.ifNoneExist -> tgt.ifNoneExist;
+}
+
+group BundleEntryResponse(source src, target tgt) extends BackboneElement {
+  src.status -> tgt.status;
+  src.location -> tgt.location;
+  src.etag -> tgt.etag;
+  src.lastModified -> tgt.lastModified;
+  src.outcome : Resource -> tgt.outcome "outcomeResource";
+}
+

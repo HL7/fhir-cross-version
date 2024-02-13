@@ -1,0 +1,120 @@
+/// url = "http://hl7.org/fhir/StructureMap/MedicationKnowledge5to4"
+/// name = "MedicationKnowledge5to4"
+/// title = "MedicationKnowledge Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/MedicationKnowledge" alias MedicationKnowledgeR5 as source
+uses "http://hl7.org/fhir/4.0/MedicationKnowledge" alias MedicationKnowledgeR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group MedicationKnowledge(source src : MedicationKnowledgeR5, target tgt : MedicationKnowledgeR4) extends DomainResource <<type+>> {
+  src.code -> tgt.code;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/MedicationKnowledge.status-R5toR4', 'code');
+  src.name -> tgt.synonym;
+  src.relatedMedicationKnowledge as s -> tgt.relatedMedicationKnowledge as t then MedicationKnowledgeRelatedMedicationKnowledge(s, t);
+  src.associatedMedication -> tgt.associatedMedication;
+  src.productType -> tgt.productType;
+  src.monograph as s -> tgt.monograph as t then MedicationKnowledgeMonograph(s, t);
+  src.preparationInstruction -> tgt.preparationInstruction;
+  src.cost as s -> tgt.cost as t then MedicationKnowledgeCost(s, t);
+  src.monitoringProgram as s -> tgt.monitoringProgram as t then MedicationKnowledgeMonitoringProgram(s, t);
+  src.indicationGuideline as s -> tgt.administrationGuidelines as t then MedicationKnowledgeIndicationGuideline(s, t);
+  src.medicineClassification as s -> tgt.medicineClassification as t then MedicationKnowledgeMedicineClassification(s, t);
+  src.regulatory as s -> tgt.regulatory as t then MedicationKnowledgeRegulatory(s, t);
+  src.definitional as s -> tgt.drugCharacteristic as t then MedicationKnowledgeDefinitional(s, t);
+}
+
+group MedicationKnowledgeRelatedMedicationKnowledge(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.reference -> tgt.reference;
+}
+
+group MedicationKnowledgeMonograph(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.source -> tgt.source;
+}
+
+group MedicationKnowledgeCost(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.source -> tgt.source;
+  src.cost : Money -> tgt.cost "costMoney";
+}
+
+group MedicationKnowledgeMonitoringProgram(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.name -> tgt.name;
+}
+
+group MedicationKnowledgeIndicationGuideline(source src, target tgt) extends BackboneElement {
+  src.indication -> tgt.indication;
+  src.dosingGuideline as s -> tgt then {
+    s.dosage as v -> tgt.dosage as t then MedicationKnowledgeIndicationGuidelineDosingGuidelineDosage(v, t);
+    s.patientCharacteristic as v -> tgt.patientCharacteristics as t then MedicationKnowledgeDosingGuidelinePatientCharacteristic(v, t);
+  };
+}
+
+// group MedicationKnowledgeIndicationGuidelineDosingGuideline(source src, target tgt) extends BackboneElement {
+// src.treatmentIntent -> tgt.treatmentIntent;
+// src.dosage as s -> tgt.dosage as t then MedicationKnowledgeIndicationGuidelineDosingGuidelineDosage(s,t);
+// src.administrationTreatment -> tgt.administrationTreatment;
+// src.patientCharacteristic as s -> tgt.patientCharacteristic as t then MedicationKnowledgeIndicationGuidelineDosingGuidelinePatientCharacteristic(s,t);
+// }
+group MedicationKnowledgeIndicationGuidelineDosingGuidelineDosage(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.dosage -> tgt.dosage;
+}
+
+group MedicationKnowledgeDosingGuidelinePatientCharacteristic(source src, target tgt) extends BackboneElement {
+  src.type : CodeableConcept -> tgt.value "typeCodeableConcept";
+  src.value : CodeableConcept -> tgt.characteristic "valueCodeableConcept";
+  src.value : Quantity -> tgt.characteristic "valueQuantity";
+}
+
+group MedicationKnowledgeMedicineClassification(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.classification -> tgt.classification;
+}
+
+// group MedicationKnowledgePackaging(source src, target tgt) extends BackboneElement {
+// src.packagedProduct -> tgt.packagedProduct;
+// }
+// group MedicationKnowledgeStorageGuideline(source src, target tgt) extends BackboneElement {
+// src.reference -> tgt.reference;
+// src.note -> tgt.note;
+// src.stabilityDuration -> tgt.stabilityDuration;
+// src.environmentalSetting as s -> tgt.environmentalSetting as t then MedicationKnowledgeStorageGuidelineEnvironmentalSetting(s,t);
+// }
+// group MedicationKnowledgeStorageGuidelineEnvironmentalSetting(source src, target tgt) extends BackboneElement {
+// src.type -> tgt.type;
+// src.value : Quantity -> tgt.value;
+// src.value : Range -> tgt.value;
+// src.value : CodeableConcept -> tgt.value;
+// }
+group MedicationKnowledgeRegulatory(source src, target tgt) extends BackboneElement {
+  src.regulatoryAuthority -> tgt.regulatoryAuthority;
+  src.substitution as s -> tgt.substitution as t then MedicationKnowledgeRegulatorySubstitution(s, t);
+  src.schedule as s ->  tgt.schedule as t,  t.schedule = s;
+  src.maxDispense as s -> tgt.maxDispense as t then MedicationKnowledgeRegulatoryMaxDispense(s, t);
+}
+
+group MedicationKnowledgeRegulatorySubstitution(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.allowed -> tgt.allowed;
+}
+
+group MedicationKnowledgeRegulatoryMaxDispense(source src, target tgt) extends BackboneElement {
+  src.quantity -> tgt.quantity;
+  src.period -> tgt.period;
+}
+
+group MedicationKnowledgeDefinitional(source src, target tgt) extends BackboneElement {
+  src.drugCharacteristic as s -> tgt then {
+    s.type -> tgt.type;
+    s.value : CodeableConcept -> tgt.value "valueCodeableConcept";
+    s.value : string -> tgt.value "valueString";
+    s.value : Quantity -> tgt.value "valueQuantity";
+    s.value : base64Binary -> tgt.value "valueBase64Binary";
+  };
+}
+

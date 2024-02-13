@@ -1,0 +1,68 @@
+/// url = "http://hl7.org/fhir/StructureMap/ImplementationGuide2to3"
+/// name = "ImplementationGuide2to3"
+/// title = "ImplementationGuide Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/ImplementationGuide" alias ImplementationGuideR2 as source
+uses "http://hl7.org/fhir/3.0/ImplementationGuide" alias ImplementationGuide as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/BackboneElement2to3"
+imports "http://hl7.org/fhir/StructureMap/DomainResource2to3"
+imports "http://hl7.org/fhir/StructureMap/ContactPoint2to3"
+imports "http://hl7.org/fhir/StructureMap/CodeableConcept2to3"
+imports "http://hl7.org/fhir/StructureMap/Reference2to3"
+
+group ImplementationGuide(source src : ImplementationGuideR2, target tgt : ImplementationGuide) extends DomainResource <<type+>> {
+  src.url -> tgt.url "ImplementationGuide-url";
+  src.version -> tgt.version "ImplementationGuide-version";
+  src.name -> tgt.name "ImplementationGuide-name";
+  src.status -> tgt.status "ImplementationGuide-status";
+  src.experimental -> tgt.experimental "ImplementationGuide-experimental";
+  src.publisher -> tgt.publisher "ImplementationGuide-publisher";
+  src.contact as vs0 -> tgt.contact as vt0 then {
+    vs0.name -> vt0.name "ContactDetail-name";
+    vs0.telecom -> vt0.telecom "ContactDetail-telecom";
+  } "ImplementationGuide-contact";
+  src.description -> tgt.description "ImplementationGuide-description";
+  src.copyright -> tgt.copyright "ImplementationGuide-copyright";
+  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "ImplementationGuide-jurisdiction";
+  src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "ImplementationGuide-useContext";
+  src.date -> tgt.date "ImplementationGuide-date";
+  src.fhirVersion -> tgt.fhirVersion "ImplementationGuide-fhirVersion";
+  src.dependency as vs0 -> tgt.dependency as vt0 then {
+    vs0.type -> vt0.type "dependency-type";
+    vs0.uri -> vt0.uri "dependency-uri";
+  } "ImplementationGuide-dependency";
+  src.package as vs0 -> tgt.package as vt0 then {
+    vs0.name -> vt0.name "package-name";
+    vs0.description -> vt0.description "package-description";
+    vs0.resource as vs -> vt0.resource as vt then resource(vs, vt) "package-resource";
+  } "ImplementationGuide-package";
+  src.global as vs0 -> tgt.global as vt0 then {
+    vs0.type -> vt0.type "global-type";
+    vs0.profile -> vt0.profile "global-profile";
+  } "ImplementationGuide-global";
+  src.binary -> tgt.binary "ImplementationGuide-binary";
+  src.page as vs0 -> tgt.page as vt0 then page(vs0, vt0) "ImplementationGuide-page";
+}
+
+group resource(source src, target tgt) extends BackboneElement {
+  src where src.purpose = 'example' -> tgt.example = 'true' "resource-purpose";
+  src.name -> tgt.name "resource-name";
+  src.description -> tgt.description "resource-description";
+  src.acronym -> tgt.acronym "resource-acronym";
+  src.source -> tgt.source "resource-source";
+  src.exampleFor -> tgt.exampleFor "resource-exampleFor";
+}
+
+group page(source src, target tgt) extends BackboneElement {
+  src.source -> tgt.source "page-source";
+  src.name -> tgt.title "page-title";
+  src.kind -> tgt.kind "page-kind";
+  src.type -> tgt.type "page-type";
+  src.package -> tgt.package "page-package";
+  src.format -> tgt.format "page-format";
+  src.page as vs0 -> tgt.page as vt0 then page(vs0, vt0) "page-page";
+}
+

@@ -1,0 +1,33 @@
+/// url = "http://hl7.org/fhir/StructureMap/SearchParameter3to2"
+/// name = "SearchParameter3to2"
+/// title = "SearchParameter Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/SearchParameter" alias SearchParameter as source
+uses "http://hl7.org/fhir/1.0/SearchParameter" alias SearchParameterR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/StructureMap/DomainResource3to2"
+imports "http://hl7.org/fhir/StructureMap/ContactPoint3to2"
+
+group SearchParameter(source src : SearchParameter, target tgt : SearchParameterR2) extends DomainResource <<type+>> {
+  src.url -> tgt.url "SearchParameter-url";
+  src.name -> tgt.name "SearchParameter-name";
+  src.status -> tgt.status "SearchParameter-status";
+  src.experimental -> tgt.experimental "SearchParameter-experimental";
+  src.publisher -> tgt.publisher "SearchParameter-publisher";
+  src.contact as vs0 -> tgt.contact as vt0 then {
+    vs0.name -> vt0.name "contact-name";
+    vs0.telecom -> vt0.telecom "contact-telecom";
+  } "SearchParameter-contact";
+  src.date -> tgt.date "SearchParameter-date";
+  src.purpose -> tgt.requirements "SearchParameter-requirements";
+  src.code -> tgt.code "SearchParameter-code";
+  src.base only_one -> tgt.base "SearchParameter-base";
+  src.type -> tgt.type "SearchParameter-type";
+  src.description -> tgt.description "SearchParameter-description";
+  src.xpath -> tgt.xpath "SearchParameter-xpath";
+  src.xpathUsage -> tgt.xpathUsage "SearchParameter-xpathUsage";
+  src.target -> tgt.target "SearchParameter-target";
+}
+

@@ -1,0 +1,16 @@
+/// url = "http://hl7.org/fhir/StructureMap/Reference2to3"
+/// name = "Reference2to3"
+/// title = "Reference Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Reference" alias ReferenceR2 as source
+uses "http://hl7.org/fhir/3.0/Reference" alias Reference as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/Element2to3"
+
+group Reference(source src : ReferenceR2, target tgt : Reference) extends Element <<type+>> {
+  src.reference -> tgt.reference "Reference-reference";
+  src.display -> tgt.display "Reference-display";
+}
+

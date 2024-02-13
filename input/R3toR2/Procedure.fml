@@ -1,0 +1,45 @@
+/// url = "http://hl7.org/fhir/StructureMap/Procedure3to2"
+/// name = "Procedure3to2"
+/// title = "Procedure Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Procedure" alias Procedure as source
+uses "http://hl7.org/fhir/1.0/Procedure" alias ProcedureR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group Procedure(source src : Procedure, target tgt : ProcedureR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Procedure-identifier";
+  src.subject -> tgt.subject "Procedure-subject";
+  src.status -> tgt.status "Procedure-status";
+  src.category -> tgt.category "Procedure-category";
+  src.code -> tgt.code "Procedure-code";
+  src.notDone -> tgt.notPerformed "Procedure-notPerformed";
+  src.notDoneReason -> tgt.reasonNotPerformed "Procedure-reasonNotPerformed";
+  src.bodySite -> tgt.bodySite "Procedure-bodySite";
+  src.reasonCode -> tgt.reason "Procedure-reasonCode";
+  src.reasonReference -> tgt.reason "Procedure-reasonReference";
+  src.performed -> tgt.performed "Procedure-performed";
+  src.performer as vs0 -> tgt.performer as vt0 then prcPerformer(vs0, vt0) "Procedure-performer";
+  src.context -> tgt.encounter "Procedure-encounter";
+  src.location -> tgt.location "Procedure-location";
+  src.outcome -> tgt.outcome "Procedure-outcome";
+  src.report -> tgt.report "Procedure-report";
+  src.complication -> tgt.complication "Procedure-complication";
+  src.followUp -> tgt.followUp "Procedure-followUp";
+  src.basedOn -> tgt.request "Procedure-request";
+  src.note -> tgt.notes "Procedure-notes";
+  src.focalDevice as vs0 -> tgt.focalDevice as vt0 then prcFocalDevice(vs0, vt0) "Procedure-focalDevice";
+  src.usedReference -> tgt.used "Procedure-used";
+}
+
+group prcPerformer(source src : Procedure, target tgt : ProcedureR2) extends BackboneElement {
+  src.actor -> tgt.actor "performer-actor";
+  src.role -> tgt.role "performer-role";
+}
+
+group prcFocalDevice(source src : Procedure, target tgt : ProcedureR2) extends BackboneElement {
+  src.action -> tgt.action "focalDevice-action";
+  src.manipulated -> tgt.manipulated "focalDevice-manipulated";
+}
+

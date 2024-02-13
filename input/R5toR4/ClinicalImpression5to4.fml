@@ -1,0 +1,38 @@
+/// url = "http://hl7.org/fhir/StructureMap/ClinicalImpression5to4"
+/// name = "ClinicalImpression5to4"
+/// title = "ClinicalImpression Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/ClinicalImpression" alias ClinicalImpressionR5 as source
+uses "http://hl7.org/fhir/4.0/ClinicalImpression" alias ClinicalImpressionR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group ClinicalImpression(source src : ClinicalImpressionR5, target tgt : ClinicalImpressionR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ClinicalImpression.status-R5toR4', 'code');
+  src.statusReason -> tgt.statusReason;
+  src.description -> tgt.description;
+  src.subject -> tgt.subject;
+  src.encounter -> tgt.encounter;
+  src.effective : dateTime -> tgt.effective "effectiveDateTime";
+  src.effective : Period -> tgt.effective "effectivePeriod";
+  src.date -> tgt.date;
+  src.performer -> tgt.assessor;
+  src.previous -> tgt.previous;
+  src.problem -> tgt.problem;
+  src.protocol -> tgt.protocol;
+  src.summary -> tgt.summary;
+  src.finding as s -> tgt.finding as t then ClinicalImpressionFinding(s, t);
+  src.prognosisCodeableConcept -> tgt.prognosisCodeableConcept;
+  src.prognosisReference -> tgt.prognosisReference;
+  src.supportingInfo -> tgt.supportingInfo;
+  src.note -> tgt.note;
+}
+
+group ClinicalImpressionFinding(source src, target tgt) extends BackboneElement {
+  src.item -> tgt.itemCodeableConcept;
+  src.item -> tgt.itemReference;
+  src.basis -> tgt.basis;
+}
+

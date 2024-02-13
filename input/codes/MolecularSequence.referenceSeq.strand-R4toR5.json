@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MolecularSequence.referenceSeq.strand-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/MolecularSequence.referenceSeq.strand-R4toR5",
+  "name" : "MolecularSequence.referenceSeq.strand-R4toR5",
+  "title" : "Mapping for MolecularSequence.referenceSeq.strand from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.referenceSeq.strand",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.relative.strand",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/strand-type",
+    "target" : "http://hl7.org/fhir/5.0/strand-type",
+    "element" : [{
+      "code" : "watson",
+      "target" : [{
+        "code" : "watson",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "crick",
+      "target" : [{
+        "code" : "crick",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

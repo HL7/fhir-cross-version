@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "StructureMap.group.input.mode-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/StructureMap.group.input.mode-R5toR4",
+  "name" : "StructureMap.group.input.mode-R5toR4",
+  "title" : "Mapping for StructureMap.group.input.mode from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureMap#StructureMap.group.input.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureMapB#StructureMapB.group.input.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/map-input-mode",
+    "target" : "http://hl7.org/fhir/4.0/map-input-mode",
+    "element" : [{
+      "code" : "source",
+      "target" : [{
+        "code" : "source",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "target",
+      "target" : [{
+        "code" : "target",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

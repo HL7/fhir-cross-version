@@ -1,0 +1,78 @@
+/// url = "http://hl7.org/fhir/StructureMap/Contract3to2"
+/// name = "Contract3to2"
+/// title = "Contrac Transforms: R3 to R2t"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Contract" alias Contract as source
+uses "http://hl7.org/fhir/1.0/Contract" alias ContractR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/StructureMap/DomainResource3to2"
+imports "http://hl7.org/fhir/StructureMap/Attachment3to2"
+imports "http://hl7.org/fhir/StructureMap/Identifier3to2"
+imports "http://hl7.org/fhir/StructureMap/Reference3to2"
+imports "http://hl7.org/fhir/StructureMap/Period3to2"
+imports "http://hl7.org/fhir/StructureMap/CodeableConcept3to2"
+
+group Contract(source src : Contract, target tgt : ContractR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Contract-identifier";
+  src.issued -> tgt.issued "Contract-issued";
+  src.applies -> tgt.applies "Contract-applies";
+  src.subject -> tgt.subject "Contract-subject";
+  src.authority -> tgt.authority "Contract-authority";
+  src.domain -> tgt.domain "Contract-domain";
+  src.type -> tgt.type "Contract-type";
+  src.subType -> tgt.subType "Contract-subType";
+  src.action -> tgt.action "Contract-action";
+  src.actionReason -> tgt.actionReason "Contract-actionReason";
+  src.agent as vs -> tgt.actor as vt then cntActor(vs, vt) "Contract-actor";
+  src.valuedItem as vs -> tgt.valuedItem as vt then cntValuedItem(vs, vt) "Contract-valuedItem";
+  src.signer as vs -> tgt.signer as vt then cntSigner(vs, vt) "Contract-signer";
+  src.term as vs -> tgt.term as vt then cntTerm(vs, vt) "Contract-term";
+  src.binding -> tgt.binding "Contract-binding";
+  src.friendly as vs -> tgt.friendly as vt then cntContent(vs, vt) "Contract-friendly";
+  src.legal as vs -> tgt.legal as vt then cntContent(vs, vt) "Contract-legal";
+  src.rule as vs -> tgt.rule as vt then cntContent(vs, vt) "Contract-rule";
+}
+
+group cntActor(source src, target tgt) extends BackboneElement {
+  src.actor -> tgt.entity "actor-entity";
+  src.role -> tgt.role "actor-role";
+}
+
+group cntValuedItem(source src, target tgt) extends BackboneElement {
+  src.entity -> tgt.entity "valuedItem-entity";
+  src.identifier -> tgt.identifier "valuedItem-identifier";
+  src.effectiveTime -> tgt.effectiveTime "valuedItem-effectiveTime";
+  src.quantity -> tgt.quantity "valuedItem-quantity";
+  src.unitPrice -> tgt.unitPrice "valuedItem-unitPrice";
+  src.factor -> tgt.factor "valuedItem-factor";
+  src.points -> tgt.points "valuedItem-points";
+  src.net -> tgt.net "valuedItem-net";
+}
+
+group cntSigner(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type "signer-type";
+  src.party -> tgt.party "signer-party";
+  src.signature -> tgt.signature "signer-signature";
+}
+
+group cntTerm(source src, target tgt) extends BackboneElement {
+  src.identifier -> tgt.identifier "term-identifier";
+  src.issued -> tgt.issued "term-issued";
+  src.applies -> tgt.applies "term-applies";
+  src.type -> tgt.type "term-type";
+  src.subType -> tgt.subType "term-subType";
+  src.topic -> tgt.subject "term-subject";
+  src.action -> tgt.action "term-action";
+  src.actionReason -> tgt.actionReason "term-actionReason";
+  src.agent as vs -> tgt.actor as vt then cntActor(vs, vt) "term-actor";
+  src.text -> tgt.text "term-text";
+  src.valuedItem as vs -> tgt.valuedItem as vt then cntValuedItem(vs, vt) "term-valuedItem";
+  src.group as vs -> tgt.group as vt then cntTerm(vs, vt) "term-group";
+}
+
+group cntContent(source src, target tgt) extends BackboneElement {
+  src.content -> tgt.content "content-content";
+}
+

@@ -1,0 +1,43 @@
+/// url = "http://hl7.org/fhir/StructureMap/Appointment4to5"
+/// name = "Appointment4to5"
+/// title = "Appointment Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Appointment" alias AppointmentR4 as source
+uses "http://hl7.org/fhir/5.0/Appointment" alias AppointmentR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group Appointment(source src : AppointmentR4, target tgt : AppointmentR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Appointment.status-R4toR5', 'code');
+  src.cancelationReason -> tgt.cancellationReason;
+  src.serviceCategory -> tgt.serviceCategory;
+  src.serviceType -> tgt.serviceType;
+  src.specialty -> tgt.specialty;
+  src.appointmentType -> tgt.appointmentType;
+  src.reasonCode -> tgt.reason;
+  src.description -> tgt.description;
+  src.supportingInformation -> tgt.supportingInformation;
+  src.start -> tgt.start;
+  src.end -> tgt.end;
+  src.minutesDuration -> tgt.minutesDuration;
+  src.requestedPeriod -> tgt.requestedPeriod;
+  src.slot -> tgt.slot;
+  src.created -> tgt.created;
+  src.comment -> tgt.note;
+  src.patientInstruction -> tgt.patientInstruction;
+  src.basedOn -> tgt.basedOn;
+  src.participant as s -> tgt.participant as t then AppointmentParticipant(s, t);
+}
+
+group AppointmentParticipant(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.period -> tgt.period;
+  src.actor -> tgt.actor;
+  src.required as s where required = 'required' ->  tgt.required as t,  t.value = create('boolean') as c,  c.value = 'true';
+  src.required as s where required = 'optional' ->  tgt.required as t,  t.value = create('boolean') as c,  c.value = 'false';
+  src.required as s where required = 'information-only' ->  tgt.required as t,  t.value = create('boolean') as c,  c.value = 'false';
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Appointment.participant.status-R4toR5', 'code');
+}
+

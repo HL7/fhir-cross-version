@@ -1,0 +1,13 @@
+/// url = "http://hl7.org/fhir/StructureMap/Duration3to4"
+/// name = "Duration3to4"
+/// title = "Duration Transforms: R3 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Duration" alias DurationR3 as source
+uses "http://hl7.org/fhir/4.0/Duration" alias Duration as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to4"
+
+group Duration(source src : DurationR3, target tgt : Duration) extends Quantity <<type+>> {
+}
+

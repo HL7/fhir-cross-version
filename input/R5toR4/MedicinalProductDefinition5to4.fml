@@ -1,0 +1,61 @@
+/// url = "http://hl7.org/fhir/StructureMap/MedicinalProductDefinition5to4"
+/// name = "MedicinalProductDefinition5to4"
+/// title = "MedicinalProductDefinition Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/MedicinalProductDefinition" alias MedicinalProductDefinitionR5 as source
+uses "http://hl7.org/fhir/4.0/MedicinalProduct" alias MedicinalProductR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group MedicinalProductDefinition(source src : MedicinalProductDefinitionR5, target tgt : MedicinalProductR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.type -> tgt.type;
+  src.domain -> tgt.domain;
+  src.combinedPharmaceuticalDoseForm -> tgt.combinedPharmaceuticalDoseForm;
+  src.legalStatusOfSupply -> tgt.legalStatusOfSupply;
+  src.additionalMonitoringIndicator -> tgt.additionalMonitoringIndicator;
+  src.specialMeasures -> tgt.specialMeasures;
+  src.pediatricUseIndicator -> tgt.paediatricUseIndicator;
+  src.classification -> tgt.productClassification;
+  src.marketingStatus -> tgt.marketingStatus;
+  src.attachedDocument -> tgt.attachedDocument;
+  src.masterFile -> tgt.masterFile;
+  src.contact as s -> tgt.contact = s.contact;
+  src.clinicalTrial -> tgt.clinicalTrial;
+  src.name as s -> tgt.name as t then MedicinalProductDefinitionName(s, t);
+  src.operation as s -> tgt.manufacturingBusinessOperation as t then MedicinalProductDefinitionOperation(s, t);
+}
+
+// group MedicinalProductDefinitionContact(source src, target tgt) extends BackboneElement {
+// src.type -> tgt.type;
+// src.contact -> tgt.contact;
+// }
+group MedicinalProductDefinitionName(source src, target tgt) extends BackboneElement {
+  src.productName -> tgt.productName;
+  src.part as s -> tgt.namePart as t then MedicinalProductDefinitionNamePart(s, t);
+  src.usage as s -> tgt.countryLanguage as t then MedicinalProductDefinitionNameUsage(s, t);
+}
+
+group MedicinalProductDefinitionNamePart(source src, target tgt) extends BackboneElement {
+  src.part -> tgt.part;
+  src.type -> tgt.type;
+}
+
+group MedicinalProductDefinitionNameUsage(source src, target tgt) extends BackboneElement {
+  src.country -> tgt.country;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.language -> tgt.language;
+}
+
+// group MedicinalProductDefinitionCrossReference(source src, target tgt) extends BackboneElement {
+// src.product -> tgt.product;
+// src.type -> tgt.type;
+// }
+group MedicinalProductDefinitionOperation(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.operationType;
+  src.effectiveDate : Period as s -> tgt.effectiveDate = s.start "effectiveDatePeriod";
+  src.organization -> tgt.manufacturer;
+  src.confidentialityIndicator -> tgt.confidentialityIndicator;
+}
+

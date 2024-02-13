@@ -1,0 +1,50 @@
+/// url = "http://hl7.org/fhir/StructureMap/StructureDefinition3to2"
+/// name = "StructureDefinition3to2"
+/// title = "StructureDefinition Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/StructureDefinition" alias StructureDefinition as source
+uses "http://hl7.org/fhir/1.0/StructureDefinition" alias StructureDefinitionR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group StructureDefinition(source src : StructureDefinition, target tgt : StructureDefinitionR2) extends DomainResource <<type+>> {
+  src.url -> tgt.url "StructureDefinition-url";
+  src.identifier -> tgt.identifier "StructureDefinition-identifier";
+  src.version -> tgt.version "StructureDefinition-version";
+  src.name -> tgt.name "StructureDefinition-name";
+  src.title -> tgt.display "StructureDefinition-display";
+  src.status -> tgt.status "StructureDefinition-status";
+  src.experimental -> tgt.experimental "StructureDefinition-experimental";
+  src.publisher -> tgt.publisher "StructureDefinition-publisher";
+  src.contact as vs0 -> tgt.contact as vt0 then {
+    vs0.name -> vt0.name "contact-name";
+    vs0.telecom -> vt0.telecom "contact-telecom";
+  } "StructureDefinition-contact";
+  src.date -> tgt.date "StructureDefinition-date";
+  src.description -> tgt.description "StructureDefinition-description";
+  src.jurisdiction -> tgt.useContext "StructureDefinition-useContext";
+  src.purpose -> tgt.requirements "StructureDefinition-requirements";
+  src.copyright -> tgt.copyright "StructureDefinition-copyright";
+  src.keyword -> tgt.code "StructureDefinition-code";
+  src.fhirVersion -> tgt.fhirVersion "StructureDefinition-fhirVersion";
+  src.mapping as vs0 -> tgt.mapping as vt0 then {
+    vs0.identity -> vt0.identity "mapping-identity";
+    vs0.uri -> vt0.uri "mapping-uri";
+    vs0.name -> vt0.name "mapping-name";
+    vs0.comment -> vt0.comments "mapping-comments";
+  } "StructureDefinition-mapping";
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/ConceptMap/StructureDefinition.kind-R3toR2', 'code') "StructureDefinition-kind";
+  src.contextType -> tgt.contextType "StructureDefinition-contextType";
+  src.context -> tgt.context "StructureDefinition-context";
+  src.type as vs where src.derivation = 'constraint' -> tgt.constrainedType as vt then code(vs, vt) "StructureDefinition-constrainedType";
+  src.abstract -> tgt.abstract "StructureDefinition-abstract";
+  src.baseDefinition -> tgt.base "StructureDefinition-base";
+  src.snapshot as vs0 -> tgt.snapshot as vt0 then {
+    vs0.element as vs -> vt0.element as vt then ElementDefinition(src, vs, vt) "snapshot-element";
+  } "StructureDefinition-snapshot";
+  src.differential as vs0 -> tgt.differential as vt0 then {
+    vs0.element as vs -> vt0.element as vt then ElementDefinition(src, vs, vt) "differential-element";
+  } "StructureDefinition-differential";
+}
+

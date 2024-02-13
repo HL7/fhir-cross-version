@@ -1,0 +1,33 @@
+/// url = "http://hl7.org/fhir/StructureMap/Device3to2"
+/// name = "Device3to2"
+/// title = "Device Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Device" alias Device as source
+uses "http://hl7.org/fhir/1.0/Device" alias DeviceR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group Device(source src : Device, target tgt : DeviceR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Device-identifier";
+  src.type -> tgt.type "Device-type";
+  src.note -> tgt.note "Device-note";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Device.status-R3toR2', 'code') "Device-status";
+  src.manufacturer -> tgt.manufacturer "Device-manufacturer";
+  src.model -> tgt.model "Device-model";
+  src.version -> tgt.version "Device-version";
+  src.manufactureDate -> tgt.manufactureDate "Device-manufactureDate";
+  src.expirationDate -> tgt.expiry "Device-expirationDate";
+  src.udi as u then udi(u, tgt) "Device-udi";
+  src.lotNumber -> tgt.lotNumber "Device-lotNumber";
+  src.owner -> tgt.owner "Device-owner";
+  src.location -> tgt.location "Device-location";
+  src.patient -> tgt.patient "Device-patient";
+  src.contact -> tgt.contact "Device-contact";
+  src.url -> tgt.url "Device-url";
+}
+
+group udi(source src, target tgt) {
+  src.deviceIdentifier -> tgt.udi "udi";
+}
+

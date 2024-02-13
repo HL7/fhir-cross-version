@@ -1,0 +1,42 @@
+/// url = "http://hl7.org/fhir/StructureMap/Communication5to4"
+/// name = "Communication5to4"
+/// title = "Communication Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Communication" alias CommunicationR5 as source
+uses "http://hl7.org/fhir/4.0/Communication" alias CommunicationR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group Communication(source src : CommunicationR5, target tgt : CommunicationR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.instantiatesCanonical -> tgt.instantiatesCanonical;
+  src.instantiatesUri -> tgt.instantiatesUri;
+  src.basedOn -> tgt.basedOn;
+  src.partOf -> tgt.partOf;
+  src.inResponseTo -> tgt.inResponseTo;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Communication.status-R5toR4', 'code');
+  src.statusReason -> tgt.statusReason;
+  src.category -> tgt.category;
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/Communication.priority-R5toR4', 'code');
+  src.medium -> tgt.medium;
+  src.subject -> tgt.subject;
+  src.topic -> tgt.topic;
+  src.about -> tgt.about;
+  src.encounter -> tgt.encounter;
+  src.sent -> tgt.sent;
+  src.received -> tgt.received;
+  src.recipient -> tgt.recipient;
+  src.sender -> tgt.sender;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
+  src.payload as s -> tgt.payload as t then CommunicationPayload(s, t);
+  src.note -> tgt.note;
+}
+
+group CommunicationPayload(source src, target tgt) extends BackboneElement {
+  src.content : Attachment -> tgt.content "contentAttachment";
+  src.content : Reference -> tgt.content "contentReference";
+  src.content : CodeableConcept -> tgt.content "contentCodeableConcept";
+}
+

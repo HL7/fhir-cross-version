@@ -1,0 +1,31 @@
+/// url = "http://hl7.org/fhir/StructureMap/RiskAssessment2to3"
+/// name = "RiskAssessment2to3"
+/// title = "RiskAssessment Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/RiskAssessment" alias RiskAssessmentR2 as source
+uses "http://hl7.org/fhir/3.0/RiskAssessment" alias RiskAssessment as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group RiskAssessment(source src : RiskAssessmentR2, target tgt : RiskAssessment) extends DomainResource <<type+>> {
+  src.subject -> tgt.subject "RiskAssessment-subject";
+  src.date -> tgt.occurrence "RiskAssessment-date";
+  src.condition -> tgt.condition "RiskAssessment-condition";
+  src.encounter -> tgt.context "RiskAssessment-context";
+  src.performer -> tgt.performer "RiskAssessment-performer";
+  src.identifier -> tgt.identifier "RiskAssessment-identifier";
+  src.method -> tgt.method "RiskAssessment-method";
+  src.basis -> tgt.basis "RiskAssessment-basis";
+  src.prediction as vs0 -> tgt.prediction as vt0 then rskPrediction(vs0, vt0) "RiskAssessment-prediction";
+  src.mitigation -> tgt.mitigation "RiskAssessment-mitigation";
+}
+
+group rskPrediction(source src, target tgt) extends BackboneElement {
+  src.outcome -> tgt.outcome "prediction-outcome";
+  src.probability -> tgt.probability "prediction-probability";
+  src.relativeRisk -> tgt.relativeRisk "prediction-relativeRisk";
+  src.when -> tgt.when "prediction-when";
+  src.rationale -> tgt.rationale "prediction-rationale";
+}
+

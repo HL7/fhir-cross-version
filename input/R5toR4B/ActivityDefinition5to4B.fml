@@ -1,0 +1,78 @@
+/// url = "http://hl7.org/fhir/StructureMap/ActivityDefinition5to4B"
+/// name = "ActivityDefinition5to4B"
+/// title = "ActivityDefinition Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/ActivityDefinition" alias ActivityDefinitionR5 as source
+uses "http://hl7.org/fhir/4.0/ActivityDefinition" alias ActivityDefinitionR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group ActivityDefinition(source src : ActivityDefinitionR5, target tgt : ActivityDefinitionR4B) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.name -> tgt.name;
+  src.title -> tgt.title;
+  src.subtitle -> tgt.subtitle;
+  src.experimental -> tgt.experimental;
+  src.subject as s where code = 'Patient' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
+  src.subject as s where code = 'Practitioner' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
+  src.subject as s where code = 'Organization' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Organization';
+  src.subject as s where code = 'Location' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Location';
+  src.subject as s where code = 'Device' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Device';
+  src.subject : Reference -> tgt.subject "subjectReference";
+  src.subject : canonical -> tgt.subject "subjectCanonical";
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.useContext -> tgt.useContext;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.purpose -> tgt.purpose;
+  src.usage -> tgt.usage;
+  src.copyright -> tgt.copyright;
+  src.approvalDate -> tgt.approvalDate;
+  src.lastReviewDate -> tgt.lastReviewDate;
+  src.effectivePeriod -> tgt.effectivePeriod;
+  src.topic -> tgt.topic;
+  src.author -> tgt.author;
+  src.editor -> tgt.editor;
+  src.reviewer -> tgt.reviewer;
+  src.endorser -> tgt.endorser;
+  src.relatedArtifact -> tgt.relatedArtifact;
+  src.library -> tgt.library;
+  src.kind -> tgt.kind;
+  src.profile -> tgt.profile;
+  src.code -> tgt.code;
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/ActivityDefinition.intent-R5toR4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/ActivityDefinition.priority-R5toR4', 'code');
+  src.doNotPerform -> tgt.doNotPerform;
+  src.timing : Timing -> tgt.timing "timingTiming";
+  src.timing : Age -> tgt.timing "timingAge";
+  src.timing : Range -> tgt.timing "timingRange";
+  src.timing : Duration -> tgt.timing "timingDuration";
+  src.location -> tgt.location;
+  src.participant as s -> tgt.participant as t then ActivityDefinitionParticipant(s, t);
+  src.product : Reference -> tgt.product "productReference";
+  src.product : CodeableConcept -> tgt.product "productCodeableConcept";
+  src.quantity -> tgt.quantity;
+  src.dosage -> tgt.dosage;
+  src.bodySite -> tgt.bodySite;
+  src.specimenRequirement -> tgt.specimenRequirement;
+  src.observationRequirement -> tgt.observationRequirement;
+  src.observationResultRequirement -> tgt.observationResultRequirement;
+  src.transform -> tgt.transform;
+  src.dynamicValue as s -> tgt.dynamicValue as t then ActivityDefinitionDynamicValue(s, t);
+}
+
+group ActivityDefinitionParticipant(source src, target tgt) extends BackboneElement {
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/ActivityDefinition.participant.type-R5toR4', 'code');
+  src.role -> tgt.role;
+}
+
+group ActivityDefinitionDynamicValue(source src, target tgt) extends BackboneElement {
+  src.path -> tgt.path;
+  src.expression -> tgt.expression;
+}
+

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "AllergyIntolerance.criticality-R3toR2",
+  "url" : "http://hl7.org/fhir/ConceptMap/AllergyIntolerance.criticality-R3toR2",
+  "name" : "AllergyIntolerance.criticality-R3toR2",
+  "title" : "Mapping for AllergyIntolerance.criticality from R3 to R2",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.criticality",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.criticality",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/allergy-intolerance-criticality",
+    "target" : "http://hl7.org/fhir/1.0/allergy-intolerance-criticality",
+    "element" : [{
+      "code" : "low",
+      "target" : [{
+        "code" : "CRITL",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "high",
+      "target" : [{
+        "code" : "CRITH",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "unable-to-assess",
+      "target" : [{
+        "code" : "CRITU",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

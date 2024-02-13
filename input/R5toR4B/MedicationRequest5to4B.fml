@@ -1,0 +1,61 @@
+/// url = "http://hl7.org/fhir/StructureMap/MedicationRequest5to4B"
+/// name = "MedicationRequest5to4B"
+/// title = "MedicationRequest Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/MedicationRequest" alias MedicationRequestR5 as source
+uses "http://hl7.org/fhir/4.0/MedicationRequest" alias MedicationRequestR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group MedicationRequest(source src : MedicationRequestR5, target tgt : MedicationRequestR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.basedOn -> tgt.basedOn;
+  src.priorPrescription -> tgt.priorPrescription;
+  src.groupIdentifier -> tgt.groupIdentifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/MedicationRequest.status-R5toR4', 'code');
+  src.statusReason -> tgt.statusReason;
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/MedicationRequest.intent-R5toR4', 'code');
+  src.category -> tgt.category;
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/MedicationRequest.priority-R5toR4', 'code');
+  src.doNotPerform -> tgt.doNotPerform;
+  src.medication -> tgt.medication;
+  src.subject -> tgt.subject;
+  src.encounter -> tgt.encounter;
+  src.supportingInformation -> tgt.supportingInformation;
+  src.authoredOn -> tgt.authoredOn;
+  src.requester -> tgt.requester;
+  src.performerType -> tgt.performerType;
+  src.performer -> tgt.performer;
+  src.recorder -> tgt.recorder;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
+  src.courseOfTherapyType -> tgt.courseOfTherapyType;
+  src.insurance -> tgt.insurance;
+  src.note -> tgt.note;
+  src.dispenseRequest as s -> tgt.dispenseRequest as t then MedicationRequestDispenseRequest(s, t);
+  src.substitution as s -> tgt.substitution as t then MedicationRequestSubstitution(s, t);
+  src.eventHistory -> tgt.eventHistory;
+}
+
+group MedicationRequestDispenseRequest(source src, target tgt) extends BackboneElement {
+  src.initialFill as s -> tgt.initialFill as t then MedicationRequestDispenseRequestInitialFill(s, t);
+  src.dispenseInterval -> tgt.dispenseInterval;
+  src.validityPeriod -> tgt.validityPeriod;
+  src.numberOfRepeatsAllowed -> tgt.numberOfRepeatsAllowed;
+  src.quantity -> tgt.quantity;
+  src.expectedSupplyDuration -> tgt.expectedSupplyDuration;
+  src.dispenser -> tgt.performer;
+}
+
+group MedicationRequestDispenseRequestInitialFill(source src, target tgt) extends BackboneElement {
+  src.quantity -> tgt.quantity;
+  src.duration -> tgt.duration;
+}
+
+group MedicationRequestSubstitution(source src, target tgt) extends BackboneElement {
+  src.allowed : boolean -> tgt.allowed "allowedBoolean";
+  src.allowed : CodeableConcept -> tgt.allowed "allowedCodeableConcept";
+  src.reason -> tgt.reason;
+}
+

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CapabilityStatement.messaging.supportedMessage.mode-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/CapabilityStatement.messaging.supportedMessage.mode-R5toR4",
+  "name" : "CapabilityStatement.messaging.supportedMessage.mode-R5toR4",
+  "title" : "Mapping for CapabilityStatement.messaging.supportedMessage.mode from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.supportedMessage.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatementB#CapabilityStatementB.messaging.supportedMessage.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/event-capability-mode",
+    "target" : "http://hl7.org/fhir/4.0/event-capability-mode",
+    "element" : [{
+      "code" : "sender",
+      "target" : [{
+        "code" : "sender",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "receiver",
+      "target" : [{
+        "code" : "receiver",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

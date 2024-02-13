@@ -1,0 +1,27 @@
+/// url = "http://hl7.org/fhir/StructureMap/DeviceMetric4to5"
+/// name = "DeviceMetric4to5"
+/// title = "DeviceMetric Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/DeviceMetric" alias DeviceMetricR4 as source
+uses "http://hl7.org/fhir/5.0/DeviceMetric" alias DeviceMetricR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group DeviceMetric(source src : DeviceMetricR4, target tgt : DeviceMetricR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.type -> tgt.type;
+  src.unit -> tgt.unit;
+  src.parent -> tgt.device;
+  src.operationalStatus as v -> tgt.operationalStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceMetric.operationalStatus-R4toR5', 'code');
+  src.color as v -> tgt.color = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceMetric.color-R4toR5', 'code');
+  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceMetric.category-R4toR5', 'code');
+  src.calibration as s -> tgt.calibration as t then DeviceMetricCalibration(s, t);
+}
+
+group DeviceMetricCalibration(source src, target tgt) extends BackboneElement {
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceMetric.calibration.type-R4toR5', 'code');
+  src.state as v -> tgt.state = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceMetric.calibration.state-R4toR5', 'code');
+  src.time -> tgt.time;
+}
+

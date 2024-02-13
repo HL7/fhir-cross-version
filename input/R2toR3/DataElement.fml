@@ -1,0 +1,39 @@
+/// url = "http://hl7.org/fhir/StructureMap/DataElement2to3"
+/// name = "DataElement2to3"
+/// title = "DataElement Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/DataElement" alias DataElementR2 as source
+uses "http://hl7.org/fhir/3.0/DataElement" alias DataElement as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group DataElement(source src : DataElementR2, target tgt : DataElement) extends DomainResource <<type+>> {
+  src.url -> tgt.url "DataElement-url";
+  src.identifier -> tgt.identifier "DataElement-identifier";
+  src.version -> tgt.version "DataElement-version";
+  src.status -> tgt.status "DataElement-status";
+  src.experimental -> tgt.experimental "DataElement-experimental";
+  src.publisher -> tgt.publisher "DataElement-publisher";
+  src.date -> tgt.date "DataElement-date";
+  src.name -> tgt.name "DataElement-name";
+  src.contact as vs0 -> tgt.contact as vt0 then decontact(vs0, vt0) "DataElement-contact";
+  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "DataElement-jurisdiction";
+  src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "DataElement-useContext";
+  src.stringency -> tgt.stringency "DataElement-stringency";
+  src.mapping as vs0 -> tgt.mapping as vt0 then deMapping(vs0, vt0) "DataElement-mapping";
+  src.element as vs ->  tgt.element as vt,  create('boolean') as first,  first.value = 'false' then ElementDefinition(vs, vt, first) "DataElement-element";
+}
+
+group decontact(source src, target tgt) extends Element {
+  src.name -> tgt.name "ContactDetail-name";
+  src.telecom -> tgt.telecom "ContactDetail-telecom";
+}
+
+group deMapping(source src, target tgt) extends Element {
+  src.identity -> tgt.identity "mapping-identity";
+  src.uri -> tgt.uri "mapping-uri";
+  src.name -> tgt.name "mapping-name";
+  src.comments -> tgt.comment "mapping-comments";
+}
+

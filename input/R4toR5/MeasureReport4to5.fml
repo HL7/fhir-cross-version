@@ -1,0 +1,60 @@
+/// url = "http://hl7.org/fhir/StructureMap/MeasureReport4to5"
+/// name = "MeasureReport4to5"
+/// title = "MeasureReport Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/MeasureReport" alias MeasureReportR4 as source
+uses "http://hl7.org/fhir/5.0/MeasureReport" alias MeasureReportR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group MeasureReport(source src : MeasureReportR4, target tgt : MeasureReportR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/MeasureReport.status-R4toR5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/MeasureReport.type-R4toR5', 'code');
+  src.measure -> tgt.measure;
+  src.subject -> tgt.subject;
+  src.date -> tgt.date;
+  src.reporter -> tgt.reporter;
+  src.period -> tgt.period;
+  src.improvementNotation -> tgt.improvementNotation;
+  src.group as s -> tgt.group as t then MeasureReportGroup(s, t);
+  src.evaluatedResource -> tgt.evaluatedResource;
+}
+
+group MeasureReportGroup(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code;
+  src.population as s -> tgt.population as t then MeasureReportGroupPopulation(s, t);
+  src.measureScore : Quantity -> tgt.measureScore "measureScoreQuantity";
+  src.stratifier as s -> tgt.stratifier as t then MeasureReportGroupStratifier(s, t);
+}
+
+group MeasureReportGroupPopulation(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code;
+  src.count -> tgt.count;
+  src.subjectResults -> tgt.subjectResults;
+}
+
+group MeasureReportGroupStratifier(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code;
+  src.stratum as s -> tgt.stratum as t then MeasureReportGroupStratifierStratum(s, t);
+}
+
+group MeasureReportGroupStratifierStratum(source src, target tgt) extends BackboneElement {
+  src.value : CodeableConcept -> tgt.value "valueCodeableConcept";
+  src.component as s -> tgt.component as t then MeasureReportGroupStratifierStratumComponent(s, t);
+  src.population as s -> tgt.population as t then MeasureReportGroupStratifierStratumPopulation(s, t);
+  src.measureScore : Quantity -> tgt.measureScore "measureScoreQuantity";
+}
+
+group MeasureReportGroupStratifierStratumComponent(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code;
+  src.value : CodeableConcept -> tgt.value "valueCodeableConcept";
+}
+
+group MeasureReportGroupStratifierStratumPopulation(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code;
+  src.count -> tgt.count;
+  src.subjectResults -> tgt.subjectResults;
+}
+

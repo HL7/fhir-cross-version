@@ -1,0 +1,24 @@
+/// url = "http://hl7.org/fhir/StructureMap/Endpoint4to5"
+/// name = "Endpoint4to5"
+/// title = "Endpoint Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Endpoint" alias EndpointR4 as source
+uses "http://hl7.org/fhir/5.0/Endpoint" alias EndpointR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group Endpoint(source src : EndpointR4, target tgt : EndpointR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Endpoint.status-R4toR5', 'code');
+  src.connectionType -> tgt.connectionType;
+  src.name -> tgt.name;
+  src.managingOrganization -> tgt.managingOrganization;
+  src.contact -> tgt.contact;
+  src.period -> tgt.period;
+  src.payloadType as s ->  tgt.payload as t,  t.type = s;
+  src.payloadMimeType as s ->  tgt.payload as t,  t.mimeType = s;
+  src.address -> tgt.address;
+  src.header -> tgt.header;
+}
+

@@ -1,0 +1,32 @@
+/// url = "http://hl7.org/fhir/StructureMap/Appointment3to2"
+/// name = "Appointment3to2"
+/// title = "Appointment Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Appointment" alias Appointment as source
+uses "http://hl7.org/fhir/1.0/Appointment" alias AppointmentR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group Appointment(source src : Appointment, target tgt : AppointmentR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Appointment-identifier";
+  src.status -> tgt.status "Appointment-status";
+  src.serviceType -> tgt.type "Appointment-type";
+  src.reason -> tgt.reason "Appointment-reason";
+  src.priority -> tgt.priority "Appointment-priority";
+  src.description -> tgt.description "Appointment-description";
+  src.start -> tgt.start "Appointment-start";
+  src.end -> tgt.end "Appointment-end";
+  src.minutesDuration -> tgt.minutesDuration "Appointment-minutesDuration";
+  src.slot -> tgt.slot "Appointment-slot";
+  src.comment -> tgt.comment "Appointment-comment";
+  src.participant as vs0 -> tgt.participant as vt0 then appParticipant(vs0, vt0) "Appointment-participant";
+}
+
+group appParticipant(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type "participant-type";
+  src.actor -> tgt.actor "participant-actor";
+  src.required -> tgt.required "participant-required";
+  src.status -> tgt.status "participant-status";
+}
+

@@ -1,0 +1,74 @@
+/// url = "http://hl7.org/fhir/StructureMap/ConceptMap5to4"
+/// name = "ConceptMap5to4"
+/// title = "ConceptMap Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/ConceptMap" alias ConceptMapR5 as source
+uses "http://hl7.org/fhir/4.0/ConceptMap" alias ConceptMapR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group ConceptMap(source src : ConceptMapR5, target tgt : ConceptMapR4) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.name -> tgt.name;
+  src.title -> tgt.title;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ConceptMap.status-R5toR4', 'code');
+  src.experimental -> tgt.experimental;
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.useContext -> tgt.useContext;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.purpose -> tgt.purpose;
+  src.copyright -> tgt.copyright;
+  src.sourceScope : uri -> tgt.source "sourceScopeUri";
+  src.sourceScope : canonical -> tgt.source "sourceScopeCanonical";
+  src.targetScope : uri -> tgt.target "targetScopeUri";
+  src.targetScope : canonical -> tgt.target "targetScopeCanonical";
+  src.group as s -> tgt.group as t then ConceptMapGroup(s, t, src);
+}
+
+group ConceptMapGroup(source src, target tgt, source srcMap) extends BackboneElement {
+  src.source -> tgt.source;
+  src.target -> tgt.target;
+  src.element as s -> tgt.element as t then ConceptMapGroupElement(s, t, srcMap);
+  src.unmapped as s -> tgt.unmapped as t then ConceptMapGroupUnmapped(s, t);
+}
+
+group ConceptMapGroupElement(source src, target tgt, source srcMap) extends BackboneElement {
+  src.code -> tgt.code;
+  src.display -> tgt.display;
+  src.noMap as s ->  tgt.target as t,  t.equivalence = 'unmatched';
+  src.target as s -> tgt.target as t then ConceptMapGroupElementTarget(s, t, srcMap);
+}
+
+group ConceptMapGroupElementTarget(source src, target tgt, source srcMap) extends BackboneElement {
+  src.code -> tgt.code;
+  src.display -> tgt.display;
+  src.relationship as v -> tgt.equivalence = translate(v, 'http://hl7.org/fhir/ConceptMap/ConceptMap.group.element.target.relationship-R5toR4', 'code');
+  src.comment -> tgt.comment;
+  src.dependsOn as s -> tgt.dependsOn as t then ConceptMapGroupElementTargetDependsOn(s, t, srcMap);
+  src.product as s -> tgt.product as t then ConceptMapGroupElementTargetDependsOn(s, t, srcMap);
+}
+
+group ConceptMapGroupElementTargetDependsOn(source src, target tgt, source srcMap) extends BackboneElement {
+  src.attribute as s -> tgt.property = (%srcMap.additionalAttribute.where(code = %s).uri);
+  src.value : code -> tgt.value "valueCode";
+  src.value : Coding as s -> tgt then {
+    s.system -> tgt.system;
+    s.code -> tgt.value;
+    s.display -> tgt.display;
+  } "valueCoding";
+  src.value : string -> tgt.value "valueString";
+}
+
+group ConceptMapGroupUnmapped(source src, target tgt) extends BackboneElement {
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/ConceptMap/ConceptMap.group.unmapped.mode-R5toR4', 'code');
+  src.code -> tgt.code;
+  src.display -> tgt.display;
+  src.otherMap -> tgt.url;
+}
+

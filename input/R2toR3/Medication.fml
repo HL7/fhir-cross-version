@@ -1,0 +1,44 @@
+/// url = "http://hl7.org/fhir/StructureMap/Medication2to3"
+/// name = "Medication2to3"
+/// title = "Medication Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Medication" alias MedicationR2 as source
+uses "http://hl7.org/fhir/3.0/Medication" alias Medication as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Medication(source src : MedicationR2, target tgt : Medication) extends DomainResource <<type+>> {
+  src.code -> tgt.code "Medication-code";
+  src.isBrand -> tgt.isBrand "Medication-isBrand";
+  src.manufacturer -> tgt.manufacturer "Medication-manufacturer";
+  src.product as vs0 then medProduct(vs0, tgt) "Medication-product";
+  src.package as vs0 -> tgt.package as vt0 then medPackage(vs0, vt0) "Medication-package";
+}
+
+group medProduct(source src, target tgt) extends BackboneElement {
+  src.form -> tgt.form "product-form";
+  src.ingredient as vs0 -> tgt.ingredient as vt0 then medIngredient(vs0, vt0) "product-ingredient";
+  src.batch as vs0 ->  tgt.package as pkg,  pkg.batch as vt0 then medBatch(vs0, vt0) "product-batch";
+}
+
+group medIngredient(source src, target tgt) extends BackboneElement {
+  src.item -> tgt.item "batch-item";
+  src.amount -> tgt.amount "batch-amount";
+}
+
+group medBatch(source src, target tgt) extends BackboneElement {
+  src.lotNumber -> tgt.lotNumber "batch-lotNumber";
+  src.expirationDate -> tgt.expirationDate "batch-expirationDate";
+}
+
+group medPackage(source src, target tgt) extends BackboneElement {
+  src.container -> tgt.container "package-container";
+  src.content as vs0 -> tgt.content as vt0 then medContent(vs0, vt0) "package-content";
+}
+
+group medContent(source src, target tgt) extends BackboneElement {
+  src.item -> tgt.item "content-item";
+  src.amount -> tgt.amount "content-amount";
+}
+

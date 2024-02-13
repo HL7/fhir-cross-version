@@ -1,0 +1,39 @@
+/// url = "http://hl7.org/fhir/StructureMap/MedicationAdministration3to2"
+/// name = "MedicationAdministration3to2"
+/// title = "MedicationAdministration Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/MedicationAdministration" alias MedicationAdministration as source
+uses "http://hl7.org/fhir/1.0/MedicationAdministration" alias MedicationAdministrationR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group MedicationAdministration(source src : MedicationAdministration, target tgt : MedicationAdministrationR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "MedicationAdministration-identifier";
+  src.status -> tgt.status "MedicationAdministration-status";
+  src.subject -> tgt.patient "MedicationAdministration-patient";
+  src.performer as vs0 then mAdPerformer(vs0, tgt) "MedicationAdministration-performer";
+  src.context -> tgt.encounter "MedicationAdministration-encounter";
+  src.prescription -> tgt.prescription "MedicationAdministration-prescription";
+  src.notGiven -> tgt.wasNotGiven "MedicationAdministration-notGiven";
+  src.reasonNotGiven -> tgt.reasonNotGiven "MedicationAdministration-reasonNotGiven";
+  src.effective -> tgt.effectiveTime "MedicationAdministration-effectiveTime";
+  src.medication -> tgt.medication "MedicationAdministration-medication";
+  src.device -> tgt.device "MedicationAdministration-device";
+  src.note only_one -> tgt.note "MedicationAdministration-note";
+  src.dosage as vs0 -> tgt.dosage as vt0 then mAdDosage(vs0, vt0) "MedicationAdministration-dosage";
+}
+
+group mAdPerformer(source src, target tgt) extends BackboneElement {
+  src.actor -> tgt.practitioner "MedicationAdministration-performer-actor";
+}
+
+group mAdDosage(source src : MedicationAdministrationR2, target tgt : MedicationAdministration) extends BackboneElement {
+  src.text -> tgt.text "dosage-text";
+  src.site -> tgt.site "dosage-site";
+  src.route -> tgt.route "dosage-route";
+  src.method -> tgt.method "dosage-method";
+  src.dose -> tgt.quantity "dosage-dose";
+  src.rate where $this is Ratio -> tgt.rate "dosage-rate-Ratio";
+}
+

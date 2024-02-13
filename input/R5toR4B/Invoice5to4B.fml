@@ -1,0 +1,51 @@
+/// url = "http://hl7.org/fhir/StructureMap/Invoice5to4B"
+/// name = "Invoice5to4B"
+/// title = "Invoice Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Invoice" alias InvoiceR5 as source
+uses "http://hl7.org/fhir/4.0/Invoice" alias InvoiceR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group Invoice(source src : InvoiceR5, target tgt : InvoiceR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Invoice.status-R5toR4', 'code');
+  src.cancelledReason -> tgt.cancelledReason;
+  src.type -> tgt.type;
+  src.subject -> tgt.subject;
+  src.recipient -> tgt.recipient;
+  src.date -> tgt.date;
+  src.participant as s -> tgt.participant as t then InvoiceParticipant(s, t);
+  src.issuer -> tgt.issuer;
+  src.account -> tgt.account;
+  src.lineItem as s -> tgt.lineItem as t then InvoiceLineItem(s, t);
+  src.totalPriceComponent as s -> tgt.totalPriceComponent as t then {
+    s.type -> t.type;
+    s.code -> t.code;
+    s.factor -> t.factor;
+    s.amount -> t.amount;
+  };
+  src.totalNet -> tgt.totalNet;
+  src.totalGross -> tgt.totalGross;
+  src.paymentTerms -> tgt.paymentTerms;
+  src.note -> tgt.note;
+}
+
+group InvoiceParticipant(source src, target tgt) extends BackboneElement {
+  src.role -> tgt.role;
+  src.actor -> tgt.actor;
+}
+
+group InvoiceLineItem(source src, target tgt) extends BackboneElement {
+  src.sequence -> tgt.sequence;
+  src.chargeItem : Reference -> tgt.chargeItem "chargeItemReference";
+  src.chargeItem : CodeableConcept -> tgt.chargeItem "chargeItemCodeableConcept";
+  src.priceComponent as s -> tgt.priceComponent as t then {
+    s.type -> t.type;
+    s.code -> t.code;
+    s.factor -> t.factor;
+    s.amount -> t.amount;
+  };
+}
+

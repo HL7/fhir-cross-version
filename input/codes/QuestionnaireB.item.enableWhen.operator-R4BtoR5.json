@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "QuestionnaireB.item.enableWhen.operator-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/QuestionnaireB.item.enableWhen.operator-R4BtoR5",
+  "name" : "QuestionnaireB.item.enableWhen.operator-R4BtoR5",
+  "title" : "Mapping for QuestionnaireB.item.enableWhen.operator from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/QuestionnaireB#QuestionnaireB.item.enableWhen.operator",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Questionnaire#Questionnaire.item.enableWhen.operator",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/questionnaire-enable-operator",
+    "target" : "http://hl7.org/fhir/5.0/questionnaire-enable-operator",
+    "element" : [{
+      "code" : "exists",
+      "target" : [{
+        "code" : "exists",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "=",
+      "target" : [{
+        "code" : "=",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "!=",
+      "target" : [{
+        "code" : "!=",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : ">",
+      "target" : [{
+        "code" : ">",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "<",
+      "target" : [{
+        "code" : "<",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : ">=",
+      "target" : [{
+        "code" : ">=",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "<=",
+      "target" : [{
+        "code" : "<=",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

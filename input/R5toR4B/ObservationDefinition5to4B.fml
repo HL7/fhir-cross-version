@@ -1,0 +1,37 @@
+/// url = "http://hl7.org/fhir/StructureMap/ObservationDefinition5to4B"
+/// name = "ObservationDefinition5to4B"
+/// title = "ObservationDefinition Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/ObservationDefinition" alias ObservationDefinitionR5 as source
+uses "http://hl7.org/fhir/4.0/ObservationDefinition" alias ObservationDefinitionR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group ObservationDefinition(source src : ObservationDefinitionR5, target tgt : ObservationDefinitionR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.category -> tgt.category;
+  src.code -> tgt.code;
+  src.permittedDataType as v -> tgt.permittedDataType = translate(v, 'http://hl7.org/fhir/ConceptMap/ObservationDefinition.permittedDataType-R5toR4', 'code');
+  src.multipleResultsAllowed -> tgt.multipleResultsAllowed;
+  src.method -> tgt.method;
+  src.preferredReportName -> tgt.preferredReportName;
+  src.permittedUnit as s ->  tgt.quantitativeDetails as t,  t.customaryUnit as t1,  t1.coding = s;
+  src.qualifiedValue as s -> tgt.qualifiedInterval as t then ObservationDefinitionQualifiedValue(s, t);
+  src.qualifiedValue as s -> tgt.validCodedValueSet = t.validCodedValueSet;
+  src.qualifiedValue as s -> tgt.normalCodedValueSet = t.normalCodedValueSet;
+  src.qualifiedValue as s -> tgt.abnormalCodedValueSet = t.abnormalCodedValueSet;
+  src.qualifiedValue as s -> tgt.criticalCodedValueSet = t.criticalCodedValueSet;
+}
+
+group ObservationDefinitionQualifiedValue(source src, target tgt) extends BackboneElement {
+  src.context -> tgt.context;
+  src.appliesTo -> tgt.appliesTo;
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/ConceptMap/ObservationDefinition.qualifiedValue.gender-R5toR4', 'code');
+  src.age -> tgt.age;
+  src.gestationalAge -> tgt.gestationalAge;
+  src.condition -> tgt.condition;
+  src.rangeCategory as v -> tgt.category = translate(v, 'http://hl7.org/fhir/ConceptMap/ObservationDefinition.qualifiedValue.rangeCategory-R5toR4', 'code');
+  src.range -> tgt.range;
+}
+

@@ -1,0 +1,78 @@
+/// url = "http://hl7.org/fhir/StructureMap/AuditEvent5to4B"
+/// name = "AuditEvent5to4B"
+/// title = "AuditEvent Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/AuditEvent" alias AuditEventR5 as source
+uses "http://hl7.org/fhir/4.0/AuditEvent" alias AuditEventR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group AuditEvent(source src : AuditEventR5, target tgt : AuditEventR4B) extends DomainResource <<type+>> {
+  src.category -> tgt.type;
+  src.code -> tgt.subtype;
+  src.action as v -> tgt.action = translate(v, 'http://hl7.org/fhir/ConceptMap/AuditEvent.action-R5toR4', 'code');
+  src.recorded -> tgt.recorded;
+  src.outcome as s -> tgt.outcome as t then AuditEventOutcome(s, t);
+  src.outcome as s -> tgt.outcomeDesc as t then AuditEventOutcomeDesc(s, t);
+  src.agent as s -> tgt.agent as t then AuditEventAgent(s, t);
+  src.source as s -> tgt.source as t then AuditEventSource(s, t);
+  src.entity as s -> tgt.entity as t then AuditEventEntity(s, t);
+}
+
+group AuditEventOutcome(source src, target tgt) extends BackboneElement {
+  src.code as s where code = 'success' -> tgt = '0';
+  src.code as s where code = 'information' -> tgt = '0';
+  src.code as s where code = 'warning' -> tgt = '4';
+  src.code as s where code = 'error' -> tgt = '8';
+  src.code as s where code = 'fatal' -> tgt = '12';
+}
+
+group AuditEventOutcomeDesc(source src, target tgt) extends BackboneElement {
+  src.code as s -> tgt = s.display;
+}
+
+group AuditEventAgent(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.role -> tgt.role;
+  src.who -> tgt.who;
+  src.requestor -> tgt.requestor;
+  src.location -> tgt.location;
+  src.policy -> tgt.policy;
+  src.network : Reference as v ->  tgt.network as t,  t.address = v.display "networkReference";
+  src.network : uri as v ->  tgt.network as t,  t.address = v "networkUri";
+  src.network : string as v ->  tgt.network as t,  t.address = v "networkString";
+  src.authorization -> tgt.purposeOfUse;
+}
+
+group AuditEventSource(source src, target tgt) extends BackboneElement {
+  src.site : Reference as s -> tgt then {
+    s.display -> tgt.site;
+  } "siteReference";
+  src.observer -> tgt.observer;
+  src.type -> tgt.type;
+}
+
+group AuditEventEntity(source src, target tgt) extends BackboneElement {
+  src.what -> tgt.what;
+  src.role -> tgt.role;
+  src.securityLabel -> tgt.securityLabel;
+  src.query -> tgt.query;
+  src.detail as s -> tgt.detail as t then AuditEventEntityDetail(s, t);
+}
+
+group AuditEventEntityDetail(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.value : Quantity -> tgt.value "valueQuantity";
+  src.value : CodeableConcept -> tgt.value "valueCodeableConcept";
+  src.value : string -> tgt.value "valueString";
+  src.value : boolean -> tgt.value "valueBoolean";
+  src.value : integer -> tgt.value "valueInteger";
+  src.value : Range -> tgt.value "valueRange";
+  src.value : Ratio -> tgt.value "valueRatio";
+  src.value : time -> tgt.value "valueTime";
+  src.value : dateTime -> tgt.value "valueDateTime";
+  src.value : Period -> tgt.value "valuePeriod";
+  src.value : base64Binary -> tgt.value "valueBase64Binary";
+}
+

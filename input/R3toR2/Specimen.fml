@@ -1,0 +1,47 @@
+/// url = "http://hl7.org/fhir/StructureMap/Specimen3to2"
+/// name = "Specimen3to2"
+/// title = "Specimen Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Specimen" alias Specimen as source
+uses "http://hl7.org/fhir/1.0/Specimen" alias SpecimenR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group Specimen(source src : Specimen, target tgt : SpecimenR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Specimen-identifier";
+  src.accessionIdentifier -> tgt.accessionIdentifier "Specimen-accessionIdentifier";
+  src.status -> tgt.status "Specimen-status";
+  src.type -> tgt.type "Specimen-type";
+  src.subject -> tgt.subject "Specimen-subject";
+  src.receivedTime -> tgt.receivedTime "Specimen-receivedTime";
+  src.parent -> tgt.parent "Specimen-parent";
+  src.collection as vs0 -> tgt.collection as vt0 then spmCollection(vs0, vt0, src) "Specimen-collection";
+  src.processing as vs0 -> tgt.treatment as vt0 then spmTreatment(vs0, vt0) "Specimen-treatment";
+  src.container as vs0 -> tgt.container as vt0 then spmContainer(vs0, vt0) "Specimen-container";
+}
+
+group spmCollection(source src, target tgt, source ssrc) extends BackboneElement {
+  src.collector -> tgt.collector "collection-collector";
+  src.collected -> tgt.collected "collection-collected";
+  src.quantity -> tgt.quantity "collection-quantity";
+  ssrc.note -> tgt.comment "collection-comment";
+  src.method -> tgt.method "collection-method";
+  src.bodySite -> tgt.bodySite "collection-bodySite";
+}
+
+group spmTreatment(source src, target tgt) extends BackboneElement {
+  src.description -> tgt.description "treatment-description";
+  src.procedure -> tgt.procedure "treatment-procedure";
+  src.additive -> tgt.additive "treatment-additive";
+}
+
+group spmContainer(source src, target tgt) extends BackboneElement {
+  src.identifier -> tgt.identifier "container-identifier";
+  src.description -> tgt.description "container-description";
+  src.type -> tgt.type "container-type";
+  src.capacity -> tgt.capacity "container-capacity";
+  src.specimenQuantity -> tgt.specimenQuantity "container-specimenQuantity";
+  src.additive -> tgt.additive "container-additive";
+}
+

@@ -1,0 +1,309 @@
+/// url = "http://hl7.org/fhir/StructureMap/ElementDefinition5to4"
+/// name = "ElementDefinition5to4"
+/// title = "ElementDefinition Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/ElementDefinition" alias ElementDefinitionR5 as source
+uses "http://hl7.org/fhir/4.0/ElementDefinition" alias ElementDefinitionR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group ElementDefinition(source src : ElementDefinitionR5, target tgt : ElementDefinitionR4) extends Element <<type+>> {
+  src.modifierExtension -> tgt.modifierExtension;
+  src.path -> tgt.path;
+  src.representation as v -> tgt.representation = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinition.representation-R5toR4', 'code');
+  src.sliceName -> tgt.sliceName;
+  src.sliceIsConstraining -> tgt.sliceIsConstraining;
+  src.label -> tgt.label;
+  src.code -> tgt.code;
+  src.slicing as s -> tgt.slicing as t then ElementDefinitionSlicing(s, t);
+  src.short -> tgt.short;
+  src.definition -> tgt.definition;
+  src.comment -> tgt.comment;
+  src.requirements -> tgt.requirements;
+  src.alias -> tgt.alias;
+  src.min -> tgt.min;
+  src.max -> tgt.max;
+  src.base as s -> tgt.base as t then ElementDefinitionBase(s, t);
+  src.contentReference -> tgt.contentReference;
+  src.type as s -> tgt.type as t then ElementDefinitionType(s, t);
+  src.defaultValue : base64Binary -> tgt.defaultValue "defaultValueBase64Binary";
+  src.defaultValue : boolean -> tgt.defaultValue "defaultValueBoolean";
+  src.defaultValue : canonical -> tgt.defaultValue "defaultValueCanonical";
+  src.defaultValue : code -> tgt.defaultValue "defaultValueCode";
+  src.defaultValue : date -> tgt.defaultValue "defaultValueDate";
+  src.defaultValue : dateTime -> tgt.defaultValue "defaultValueDateTime";
+  src.defaultValue : decimal -> tgt.defaultValue "defaultValueDecimal";
+  src.defaultValue : id -> tgt.defaultValue "defaultValueId";
+  src.defaultValue : instant -> tgt.defaultValue "defaultValueInstant";
+  src.defaultValue : integer -> tgt.defaultValue "defaultValueInteger";
+  src.defaultValue : markdown -> tgt.defaultValue "defaultValueMarkdown";
+  src.defaultValue : oid -> tgt.defaultValue "defaultValueOid";
+  src.defaultValue : positiveInt -> tgt.defaultValue "defaultValuePositiveInt";
+  src.defaultValue : string -> tgt.defaultValue "defaultValueString";
+  src.defaultValue : time -> tgt.defaultValue "defaultValueTime";
+  src.defaultValue : unsignedInt -> tgt.defaultValue "defaultValueUnsignedInt";
+  src.defaultValue : uri -> tgt.defaultValue "defaultValueUri";
+  src.defaultValue : url -> tgt.defaultValue "defaultValueUrl";
+  src.defaultValue : uuid -> tgt.defaultValue "defaultValueUuid";
+  src.defaultValue : Address -> tgt.defaultValue "defaultValueAddress";
+  src.defaultValue : Age -> tgt.defaultValue "defaultValueAge";
+  src.defaultValue : Annotation -> tgt.defaultValue "defaultValueAnnotation";
+  src.defaultValue : Attachment -> tgt.defaultValue "defaultValueAttachment";
+  src.defaultValue : CodeableConcept -> tgt.defaultValue "defaultValueCodeableConcept";
+  src.defaultValue : Coding -> tgt.defaultValue "defaultValueCoding";
+  src.defaultValue : ContactPoint -> tgt.defaultValue "defaultValueContactPoint";
+  src.defaultValue : Count -> tgt.defaultValue "defaultValueCount";
+  src.defaultValue : Distance -> tgt.defaultValue "defaultValueDistance";
+  src.defaultValue : Duration -> tgt.defaultValue "defaultValueDuration";
+  src.defaultValue : HumanName -> tgt.defaultValue "defaultValueHumanName";
+  src.defaultValue : Identifier -> tgt.defaultValue "defaultValueIdentifier";
+  src.defaultValue : Money -> tgt.defaultValue "defaultValueMoney";
+  src.defaultValue : Period -> tgt.defaultValue "defaultValuePeriod";
+  src.defaultValue : Quantity -> tgt.defaultValue "defaultValueQuantity";
+  src.defaultValue : Range -> tgt.defaultValue "defaultValueRange";
+  src.defaultValue : Ratio -> tgt.defaultValue "defaultValueRatio";
+  src.defaultValue : Reference -> tgt.defaultValue "defaultValueReference";
+  src.defaultValue : SampledData -> tgt.defaultValue "defaultValueSampledData";
+  src.defaultValue : Signature -> tgt.defaultValue "defaultValueSignature";
+  src.defaultValue : Timing -> tgt.defaultValue "defaultValueTiming";
+  src.defaultValue : ContactDetail -> tgt.defaultValue "defaultValueContactDetail";
+  src.defaultValue : DataRequirement -> tgt.defaultValue "defaultValueDataRequirement";
+  src.defaultValue : Expression -> tgt.defaultValue "defaultValueExpression";
+  src.defaultValue : ParameterDefinition -> tgt.defaultValue "defaultValueParameterDefinition";
+  src.defaultValue : RelatedArtifact -> tgt.defaultValue "defaultValueRelatedArtifact";
+  src.defaultValue : TriggerDefinition -> tgt.defaultValue "defaultValueTriggerDefinition";
+  src.defaultValue : UsageContext -> tgt.defaultValue "defaultValueUsageContext";
+  src.defaultValue : Dosage -> tgt.defaultValue "defaultValueDosage";
+  src.defaultValue : Meta -> tgt.defaultValue "defaultValueMeta";
+  src.meaningWhenMissing -> tgt.meaningWhenMissing;
+  src.orderMeaning -> tgt.orderMeaning;
+  src.fixed : base64Binary -> tgt.fixed "fixedBase64Binary";
+  src.fixed : boolean -> tgt.fixed "fixedBoolean";
+  src.fixed : canonical -> tgt.fixed "fixedCanonical";
+  src.fixed : code -> tgt.fixed "fixedCode";
+  src.fixed : date -> tgt.fixed "fixedDate";
+  src.fixed : dateTime -> tgt.fixed "fixedDateTime";
+  src.fixed : decimal -> tgt.fixed "fixedDecimal";
+  src.fixed : id -> tgt.fixed "fixedId";
+  src.fixed : instant -> tgt.fixed "fixedInstant";
+  src.fixed : integer -> tgt.fixed "fixedInteger";
+  src.fixed : markdown -> tgt.fixed "fixedMarkdown";
+  src.fixed : oid -> tgt.fixed "fixedOid";
+  src.fixed : positiveInt -> tgt.fixed "fixedPositiveInt";
+  src.fixed : string -> tgt.fixed "fixedString";
+  src.fixed : time -> tgt.fixed "fixedTime";
+  src.fixed : unsignedInt -> tgt.fixed "fixedUnsignedInt";
+  src.fixed : uri -> tgt.fixed "fixedUri";
+  src.fixed : url -> tgt.fixed "fixedUrl";
+  src.fixed : uuid -> tgt.fixed "fixedUuid";
+  src.fixed : Address -> tgt.fixed "fixedAddress";
+  src.fixed : Age -> tgt.fixed "fixedAge";
+  src.fixed : Annotation -> tgt.fixed "fixedAnnotation";
+  src.fixed : Attachment -> tgt.fixed "fixedAttachment";
+  src.fixed : CodeableConcept -> tgt.fixed "fixedCodeableConcept";
+  src.fixed : Coding -> tgt.fixed "fixedCoding";
+  src.fixed : ContactPoint -> tgt.fixed "fixedContactPoint";
+  src.fixed : Count -> tgt.fixed "fixedCount";
+  src.fixed : Distance -> tgt.fixed "fixedDistance";
+  src.fixed : Duration -> tgt.fixed "fixedDuration";
+  src.fixed : HumanName -> tgt.fixed "fixedHumanName";
+  src.fixed : Identifier -> tgt.fixed "fixedIdentifier";
+  src.fixed : Money -> tgt.fixed "fixedMoney";
+  src.fixed : Period -> tgt.fixed "fixedPeriod";
+  src.fixed : Quantity -> tgt.fixed "fixedQuantity";
+  src.fixed : Range -> tgt.fixed "fixedRange";
+  src.fixed : Ratio -> tgt.fixed "fixedRatio";
+  src.fixed : Reference -> tgt.fixed "fixedReference";
+  src.fixed : SampledData -> tgt.fixed "fixedSampledData";
+  src.fixed : Signature -> tgt.fixed "fixedSignature";
+  src.fixed : Timing -> tgt.fixed "fixedTiming";
+  src.fixed : ContactDetail -> tgt.fixed "fixedContactDetail";
+  src.fixed : DataRequirement -> tgt.fixed "fixedDataRequirement";
+  src.fixed : Expression -> tgt.fixed "fixedExpression";
+  src.fixed : ParameterDefinition -> tgt.fixed "fixedParameterDefinition";
+  src.fixed : RelatedArtifact -> tgt.fixed "fixedRelatedArtifact";
+  src.fixed : TriggerDefinition -> tgt.fixed "fixedTriggerDefinition";
+  src.fixed : UsageContext -> tgt.fixed "fixedUsageContext";
+  src.fixed : Dosage -> tgt.fixed "fixedDosage";
+  src.fixed : Meta -> tgt.fixed "fixedMeta";
+  src.pattern : base64Binary -> tgt.pattern "patternBase64Binary";
+  src.pattern : boolean -> tgt.pattern "patternBoolean";
+  src.pattern : canonical -> tgt.pattern "patternCanonical";
+  src.pattern : code -> tgt.pattern "patternCode";
+  src.pattern : date -> tgt.pattern "patternDate";
+  src.pattern : dateTime -> tgt.pattern "patternDateTime";
+  src.pattern : decimal -> tgt.pattern "patternDecimal";
+  src.pattern : id -> tgt.pattern "patternId";
+  src.pattern : instant -> tgt.pattern "patternInstant";
+  src.pattern : integer -> tgt.pattern "patternInteger";
+  src.pattern : markdown -> tgt.pattern "patternMarkdown";
+  src.pattern : oid -> tgt.pattern "patternOid";
+  src.pattern : positiveInt -> tgt.pattern "patternPositiveInt";
+  src.pattern : string -> tgt.pattern "patternString";
+  src.pattern : time -> tgt.pattern "patternTime";
+  src.pattern : unsignedInt -> tgt.pattern "patternUnsignedInt";
+  src.pattern : uri -> tgt.pattern "patternUri";
+  src.pattern : url -> tgt.pattern "patternUrl";
+  src.pattern : uuid -> tgt.pattern "patternUuid";
+  src.pattern : Address -> tgt.pattern "patternAddress";
+  src.pattern : Age -> tgt.pattern "patternAge";
+  src.pattern : Annotation -> tgt.pattern "patternAnnotation";
+  src.pattern : Attachment -> tgt.pattern "patternAttachment";
+  src.pattern : CodeableConcept -> tgt.pattern "patternCodeableConcept";
+  src.pattern : Coding -> tgt.pattern "patternCoding";
+  src.pattern : ContactPoint -> tgt.pattern "patternContactPoint";
+  src.pattern : Count -> tgt.pattern "patternCount";
+  src.pattern : Distance -> tgt.pattern "patternDistance";
+  src.pattern : Duration -> tgt.pattern "patternDuration";
+  src.pattern : HumanName -> tgt.pattern "patternHumanName";
+  src.pattern : Identifier -> tgt.pattern "patternIdentifier";
+  src.pattern : Money -> tgt.pattern "patternMoney";
+  src.pattern : Period -> tgt.pattern "patternPeriod";
+  src.pattern : Quantity -> tgt.pattern "patternQuantity";
+  src.pattern : Range -> tgt.pattern "patternRange";
+  src.pattern : Ratio -> tgt.pattern "patternRatio";
+  src.pattern : Reference -> tgt.pattern "patternReference";
+  src.pattern : SampledData -> tgt.pattern "patternSampledData";
+  src.pattern : Signature -> tgt.pattern "patternSignature";
+  src.pattern : Timing -> tgt.pattern "patternTiming";
+  src.pattern : ContactDetail -> tgt.pattern "patternContactDetail";
+  src.pattern : DataRequirement -> tgt.pattern "patternDataRequirement";
+  src.pattern : Expression -> tgt.pattern "patternExpression";
+  src.pattern : ParameterDefinition -> tgt.pattern "patternParameterDefinition";
+  src.pattern : RelatedArtifact -> tgt.pattern "patternRelatedArtifact";
+  src.pattern : TriggerDefinition -> tgt.pattern "patternTriggerDefinition";
+  src.pattern : UsageContext -> tgt.pattern "patternUsageContext";
+  src.pattern : Dosage -> tgt.pattern "patternDosage";
+  src.pattern : Meta -> tgt.pattern "patternMeta";
+  src.example as s -> tgt.example as t then ElementDefinitionExample(s, t);
+  src.minValue : date -> tgt.minValue "minValueDate";
+  src.minValue : dateTime -> tgt.minValue "minValueDateTime";
+  src.minValue : instant -> tgt.minValue "minValueInstant";
+  src.minValue : time -> tgt.minValue "minValueTime";
+  src.minValue : decimal -> tgt.minValue "minValueDecimal";
+  src.minValue : integer -> tgt.minValue "minValueInteger";
+  src.minValue : positiveInt -> tgt.minValue "minValuePositiveInt";
+  src.minValue : unsignedInt -> tgt.minValue "minValueUnsignedInt";
+  src.minValue : Quantity -> tgt.minValue "minValueQuantity";
+  src.maxValue : date -> tgt.maxValue "maxValueDate";
+  src.maxValue : dateTime -> tgt.maxValue "maxValueDateTime";
+  src.maxValue : instant -> tgt.maxValue "maxValueInstant";
+  src.maxValue : time -> tgt.maxValue "maxValueTime";
+  src.maxValue : decimal -> tgt.maxValue "maxValueDecimal";
+  src.maxValue : integer -> tgt.maxValue "maxValueInteger";
+  src.maxValue : positiveInt -> tgt.maxValue "maxValuePositiveInt";
+  src.maxValue : unsignedInt -> tgt.maxValue "maxValueUnsignedInt";
+  src.maxValue : Quantity -> tgt.maxValue "maxValueQuantity";
+  src.maxLength -> tgt.maxLength;
+  src.condition -> tgt.condition;
+  src.constraint as s -> tgt.constraint as t then ElementDefinitionConstraint(s, t);
+  src.mustSupport -> tgt.mustSupport;
+  src.isModifier -> tgt.isModifier;
+  src.isModifierReason -> tgt.isModifierReason;
+  src.isSummary -> tgt.isSummary;
+  src.binding as s -> tgt.binding as t then ElementDefinitionBinding(s, t);
+  src.mapping as s -> tgt.mapping as t then ElementDefinitionMapping(s, t);
+}
+
+group ElementDefinitionSlicing(source src, target tgt) extends Element {
+  src.discriminator as s -> tgt.discriminator as t then ElementDefinitionSlicingDiscriminator(s, t);
+  src.description -> tgt.description;
+  src.ordered -> tgt.ordered;
+  src.rules as v -> tgt.rules = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinition.slicing.rules-R5toR4', 'code');
+}
+
+group ElementDefinitionSlicingDiscriminator(source src, target tgt) extends Element {
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinition.slicing.discriminator.type-R5toR4', 'code');
+  src.path -> tgt.path;
+}
+
+group ElementDefinitionBase(source src, target tgt) extends Element {
+  src.path -> tgt.path;
+  src.min -> tgt.min;
+  src.max -> tgt.max;
+}
+
+group ElementDefinitionType(source src, target tgt) extends Element {
+  src.code -> tgt.code;
+  src.profile -> tgt.profile;
+  src.targetProfile -> tgt.targetProfile;
+  src.aggregation as v -> tgt.aggregation = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinition.type.aggregation-R5toR4', 'code');
+  src.versioning as v -> tgt.versioning = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinition.type.versioning-R5toR4', 'code');
+}
+
+group ElementDefinitionExample(source src, target tgt) extends Element {
+  src.label -> tgt.label;
+  src.value : base64Binary -> tgt.value "valueBase64Binary";
+  src.value : boolean -> tgt.value "valueBoolean";
+  src.value : canonical -> tgt.value "valueCanonical";
+  src.value : code -> tgt.value "valueCode";
+  src.value : date -> tgt.value "valueDate";
+  src.value : dateTime -> tgt.value "valueDateTime";
+  src.value : decimal -> tgt.value "valueDecimal";
+  src.value : id -> tgt.value "valueId";
+  src.value : instant -> tgt.value "valueInstant";
+  src.value : integer -> tgt.value "valueInteger";
+  src.value : markdown -> tgt.value "valueMarkdown";
+  src.value : oid -> tgt.value "valueOid";
+  src.value : positiveInt -> tgt.value "valuePositiveInt";
+  src.value : string -> tgt.value "valueString";
+  src.value : time -> tgt.value "valueTime";
+  src.value : unsignedInt -> tgt.value "valueUnsignedInt";
+  src.value : uri -> tgt.value "valueUri";
+  src.value : url -> tgt.value "valueUrl";
+  src.value : uuid -> tgt.value "valueUuid";
+  src.value : Address -> tgt.value "valueAddress";
+  src.value : Age -> tgt.value "valueAge";
+  src.value : Annotation -> tgt.value "valueAnnotation";
+  src.value : Attachment -> tgt.value "valueAttachment";
+  src.value : CodeableConcept -> tgt.value "valueCodeableConcept";
+  src.value : Coding -> tgt.value "valueCoding";
+  src.value : ContactPoint -> tgt.value "valueContactPoint";
+  src.value : Count -> tgt.value "valueCount";
+  src.value : Distance -> tgt.value "valueDistance";
+  src.value : Duration -> tgt.value "valueDuration";
+  src.value : HumanName -> tgt.value "valueHumanName";
+  src.value : Identifier -> tgt.value "valueIdentifier";
+  src.value : Money -> tgt.value "valueMoney";
+  src.value : Period -> tgt.value "valuePeriod";
+  src.value : Quantity -> tgt.value "valueQuantity";
+  src.value : Range -> tgt.value "valueRange";
+  src.value : Ratio -> tgt.value "valueRatio";
+  src.value : Reference -> tgt.value "valueReference";
+  src.value : SampledData -> tgt.value "valueSampledData";
+  src.value : Signature -> tgt.value "valueSignature";
+  src.value : Timing -> tgt.value "valueTiming";
+  src.value : ContactDetail -> tgt.value "valueContactDetail";
+  src.value : DataRequirement -> tgt.value "valueDataRequirement";
+  src.value : Expression -> tgt.value "valueExpression";
+  src.value : ParameterDefinition -> tgt.value "valueParameterDefinition";
+  src.value : RelatedArtifact -> tgt.value "valueRelatedArtifact";
+  src.value : TriggerDefinition -> tgt.value "valueTriggerDefinition";
+  src.value : UsageContext -> tgt.value "valueUsageContext";
+  src.value : Dosage -> tgt.value "valueDosage";
+  src.value : Meta -> tgt.value "valueMeta";
+}
+
+group ElementDefinitionConstraint(source src, target tgt) extends Element {
+  src.key -> tgt.key;
+  src.requirements -> tgt.requirements;
+  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinition.constraint.severity-R5toR4', 'code');
+  src.human -> tgt.human;
+  src.expression -> tgt.expression;
+  src.source -> tgt.source;
+}
+
+group ElementDefinitionBinding(source src, target tgt) extends Element {
+  src.strength as v -> tgt.strength = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinition.binding.strength-R5toR4', 'code');
+  src.description -> tgt.description;
+  src.valueSet -> tgt.valueSet;
+}
+
+group ElementDefinitionMapping(source src, target tgt) extends Element {
+  src.identity -> tgt.identity;
+  src.language -> tgt.language;
+  src.map -> tgt.map;
+  src.comment -> tgt.comment;
+}
+

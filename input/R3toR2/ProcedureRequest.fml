@@ -1,0 +1,30 @@
+/// url = "http://hl7.org/fhir/StructureMap/ProcedureRequest3to2"
+/// name = "ProcedureRequest3to2"
+/// title = "ProcedureRequest Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/ProcedureRequest" alias ProcedureRequest as source
+uses "http://hl7.org/fhir/1.0/ProcedureRequest" alias ProcedureRequestR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group ProcedureRequest(source src : ProcedureRequest, target tgt : ProcedureRequestR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "ProcedureRequest-identifier";
+  src.subject -> tgt.subject "ProcedureRequest-subject";
+  src.code -> tgt.code "ProcedureRequest-code";
+  src.bodySite -> tgt.bodySite "ProcedureRequest-bodySite";
+  src.reasonCode -> tgt.reason "ProcedureRequest-reason1";
+  src.reasonReference -> tgt.reason "ProcedureRequest-reason2";
+  src.occurrence -> tgt.scheduled "ProcedureRequest-scheduled";
+  src.context -> tgt.encounter "ProcedureRequest-encounter";
+  src.performer -> tgt.performer "ProcedureRequest-performer";
+  src.status -> tgt.status "ProcedureRequest-status";
+  src.note -> tgt.notes "ProcedureRequest-notes";
+  src.asNeeded -> tgt.asNeeded "ProcedureRequest-asNeeded";
+  src.authoredOn -> tgt.orderedOn "ProcedureRequest-orderedOn";
+  src.requester as v then {
+    v.agent -> tgt.orderer "ProcedureRequest-orderer-inner";
+  } "ProcedureRequest-orderer";
+  src.priority -> tgt.priority "ProcedureRequest-priority";
+}
+

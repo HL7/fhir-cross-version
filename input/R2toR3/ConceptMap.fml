@@ -1,0 +1,57 @@
+/// url = "http://hl7.org/fhir/StructureMap/ConceptMap2to3"
+/// name = "ConceptMap2to3"
+/// title = "ConceptMap Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/ConceptMap" alias ConceptMapR2 as source
+uses "http://hl7.org/fhir/3.0/ConceptMap" alias ConceptMap as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/DomainResource2to3"
+imports "http://hl7.org/fhir/StructureMap/CodeableConcept2to3"
+imports "http://hl7.org/fhir/StructureMap/ContactPoint2to3"
+imports "http://hl7.org/fhir/StructureMap/Identifier2to3"
+imports "http://hl7.org/fhir/StructureMap/Reference2to3"
+
+group ConceptMap(source src : ConceptMapR2, target tgt : ConceptMap) extends DomainResource <<type+>> {
+  src.url -> tgt.url "ConceptMap-url";
+  src.identifier -> tgt.identifier "ConceptMap-identifier";
+  src.version -> tgt.version "ConceptMap-version";
+  src.name -> tgt.name "ConceptMap-name";
+  src.status -> tgt.status "ConceptMap-status";
+  src.experimental -> tgt.experimental "ConceptMap-experimental";
+  src.publisher -> tgt.publisher "ConceptMap-publisher";
+  src.contact as vs0 -> tgt.contact as vt0 then {
+    vs0.name -> vt0.name "ContactDetail-name";
+    vs0.telecom -> vt0.telecom "ContactDetail-telecom";
+  } "ConceptMap-contact";
+  src.date -> tgt.date "ConceptMap-date";
+  src.description -> tgt.description "ConceptMap-description";
+  src.requirements -> tgt.purpose "ConceptMap-purpose";
+  src.copyright -> tgt.copyright "ConceptMap-copyright";
+  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "ConceptMap-jurisdiction";
+  src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "ConceptMap-useContext";
+  src.source -> tgt.source "ConceptMap-source";
+  src.target -> tgt.target "ConceptMap-target";
+  src.element as srcE then {
+    srcE.target as srcT ->  tgt.group as tgtGrp,  tgtGrp.element as tgtE,  tgtE.target as tgtT then {
+      srcE.codeSystem -> tgtGrp.source "ConceptMap-element-3";
+      srcT.codeSystem -> tgtGrp.target "ConceptMap-element-4";
+      srcE.code -> tgtE.code "ConceptMap-element-code";
+      srcT.code -> tgtT.code "ConceptMap-target-element";
+      srcT.equivalence -> tgtT.equivalence "ConceptMap-target-equivalence";
+      srcT.comments -> tgtT.comment "ConceptMap-target-comments";
+      srcT.dependsOn as vs -> tgtT.dependsOn as vt then {
+        vs.element -> vt.property "ConceptMap-target-dependsOn-element";
+        vs.codeSystem -> vt.system "ConceptMap-target-dependsOn-codeSystem";
+        vs.code -> vt.code "ConceptMap-target-dependsOn-code";
+      } "ConceptMap-target-dependsOn";
+      srcT.product as vs -> tgtT.product as vt then {
+        vs.element -> vt.property "ConceptMap-target-product-element";
+        vs.codeSystem -> vt.system "ConceptMap-target-product-codeSystem";
+        vs.code -> vt.code "ConceptMap-target-product-code";
+      } "ConceptMap-target-product";
+    } "ConceptMap-element-2";
+  } "ConceptMap-element-1";
+}
+

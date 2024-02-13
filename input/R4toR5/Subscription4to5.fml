@@ -1,0 +1,23 @@
+/// url = "http://hl7.org/fhir/StructureMap/Subscription4to5"
+/// name = "Subscription4to5"
+/// title = "Subscription Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Subscription" alias SubscriptionR4 as source
+uses "http://hl7.org/fhir/5.0/Subscription" alias SubscriptionR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group Subscription(source src : SubscriptionR4, target tgt : SubscriptionR5) extends DomainResource <<type+>> {
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Subscription.status-R4toR5', 'code');
+  src.contact -> tgt.contact;
+  src.end -> tgt.end;
+  src.reason -> tgt.reason;
+  src.channel as s -> tgt then {
+    s.type as s1 ->  tgt.channelType = create('Coding') as t,  t.code = s1;
+    s.endpoint -> tgt.endpoint;
+    s.header as s1 ->  tgt.parameter as t,  t.name = (%s1.substring(0, %s1.indexOf(': '))),  t.value = (%s1.substring(%s1.indexOf(': ') + 1));
+    s.payload -> tgt.contentType;
+  };
+}
+

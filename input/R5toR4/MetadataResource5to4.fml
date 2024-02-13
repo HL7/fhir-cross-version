@@ -1,0 +1,13 @@
+/// url = "http://hl7.org/fhir/StructureMap/MetadataResource5to4"
+/// name = "MetadataResource5to4"
+/// title = "MetadataResource Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/MetadataResource" alias MetadataResourceR5 as source
+uses "http://hl7.org/fhir/4.0/MetadataResource" alias MetadataResourceR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group MetadataResource(source src : MetadataResourceR5, target tgt : MetadataResourceR4) extends DomainResource <<type+>> {
+}
+

@@ -1,0 +1,30 @@
+/// url = "http://hl7.org/fhir/StructureMap/Media2to3"
+/// name = "Media2to3"
+/// title = "Media Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Media" alias MediaR2 as source
+uses "http://hl7.org/fhir/3.0/Media" alias Media as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/DomainResource2to3"
+imports "http://hl7.org/fhir/StructureMap/Attachment2to3"
+imports "http://hl7.org/fhir/StructureMap/Identifier2to3"
+imports "http://hl7.org/fhir/StructureMap/Reference2to3"
+imports "http://hl7.org/fhir/StructureMap/CodeableConcept2to3"
+
+group Media(source src : MediaR2, target tgt : Media) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Media-identifier";
+  src.type -> tgt.type "Media-type";
+  src.subtype -> tgt.subtype "Media-subtype";
+  src.view -> tgt.view "Media-view";
+  src.subject -> tgt.subject "Media-subject";
+  src.operator -> tgt.operator "Media-operator";
+  src.deviceName as v ->  tgt.device as d,  d.display = v "Media-deviceName";
+  src.height -> tgt.height "Media-height";
+  src.width -> tgt.width "Media-width";
+  src.frames -> tgt.frames "Media-frames";
+  src.duration -> tgt.duration "Media-duration";
+  src.content -> tgt.content "Media-content";
+}
+

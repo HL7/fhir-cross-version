@@ -1,0 +1,23 @@
+/// url = "http://hl7.org/fhir/StructureMap/RelatedPerson2to3"
+/// name = "RelatedPerson2to3"
+/// title = "RelatedPerson Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/RelatedPerson" alias RelatedPersonR2 as source
+uses "http://hl7.org/fhir/3.0/RelatedPerson" alias RelatedPerson as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group RelatedPerson(source src : RelatedPersonR2, target tgt : RelatedPerson) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "RelatedPerson-identifier";
+  src.patient -> tgt.patient "RelatedPerson-patient";
+  src.relationship -> tgt.relationship "RelatedPerson-relationship";
+  src.name -> tgt.name "RelatedPerson-name";
+  src.telecom -> tgt.telecom "RelatedPerson-telecom";
+  src.gender -> tgt.gender "RelatedPerson-gender";
+  src.birthDate -> tgt.birthDate "RelatedPerson-birthDate";
+  src.address -> tgt.address "RelatedPerson-address";
+  src.photo -> tgt.photo "RelatedPerson-photo";
+  src.period -> tgt.period "RelatedPerson-period";
+}
+

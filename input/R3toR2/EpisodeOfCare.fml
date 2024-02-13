@@ -1,0 +1,43 @@
+/// url = "http://hl7.org/fhir/StructureMap/EpisodeOfCare3to2"
+/// name = "EpisodeOfCare3to2"
+/// title = "EpisodeOfCare Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/EpisodeOfCare" alias EpisodeOfCare as source
+uses "http://hl7.org/fhir/1.0/EpisodeOfCare" alias EpisodeOfCareR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group EpisodeOfCare(source src : EpisodeOfCare, target tgt : EpisodeOfCareR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "EpisodeOfCare-identifier";
+  src.status -> tgt.status "EpisodeOfCare-status";
+  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then epcStatusHistory(vs0, vt0) "EpisodeOfCare-statusHistory";
+  src.type -> tgt.type "EpisodeOfCare-type";
+  src.diagnosis as d then epcDiagnosis(d, tgt) "EpisodeOfCare-condition";
+  src.patient -> tgt.patient "EpisodeOfCare-patient";
+  src.managingOrganization -> tgt.managingOrganization "EpisodeOfCare-managingOrganization";
+  src.period -> tgt.period "EpisodeOfCare-period";
+  src.referralRequest -> tgt.referralRequest "EpisodeOfCare-referralRequest";
+  src.careManager -> tgt.careManager "EpisodeOfCare-careManager";
+  src.team as vs where reference.resolve().exists() -> (src.team.reference.resolve()) as ct then epiCareTeam(ct, tgt) "EpisodeOfCare-careTeam";
+}
+
+group epcDiagnosis(source src, target tgt) extends BackboneElement {
+  src.condition as v where src.role.coding.code.contains('AD').not() and role.coding.code.contains('DD').not() -> tgt.condition = v "indication-condition1";
+}
+
+group epcStatusHistory(source src, target tgt) extends BackboneElement {
+  src.status -> tgt.status "statusHistory-status";
+  src.period -> tgt.period "statusHistory-period";
+}
+
+group epiCareTeam(source src, target tgt) {
+  src.participant as vs -> tgt.careTeam as vt then epiCareTeamMember(vs, vt) "careteam-member";
+}
+
+group epiCareTeamMember(source src, target tgt) extends BackboneElement {
+  src.role -> tgt.role "careteam-role";
+  src.period -> tgt.period "careteam-period";
+  src.member -> tgt.member "careteam-member";
+}
+

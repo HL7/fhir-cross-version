@@ -1,0 +1,56 @@
+/// url = "http://hl7.org/fhir/StructureMap/Patient2to3"
+/// name = "Patient2to3"
+/// title = "Patient Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Patient" alias PatientR2 as source
+uses "http://hl7.org/fhir/3.0/Patient" alias Patient as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Patient(source src : PatientR2, target tgt : Patient) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Patient-identifier";
+  src.active -> tgt.active "Patient-active";
+  src.name -> tgt.name "Patient-name";
+  src.telecom -> tgt.telecom "Patient-telecom";
+  src.gender -> tgt.gender "Patient-gender";
+  src.birthDate -> tgt.birthDate "Patient-birthDate";
+  src.deceased -> tgt.deceased "Patient-deceased";
+  src.address -> tgt.address "Patient-address";
+  src.maritalStatus -> tgt.maritalStatus "Patient-maritalStatus";
+  src.multipleBirth -> tgt.multipleBirth "Patient-multipleBirth";
+  src.photo -> tgt.photo "Patient-photo";
+  src.contact as vs0 -> tgt.contact as vt0 then patContact(vs0, vt0) "Patient-contact";
+  src.animal as vs0 -> tgt.animal as vt0 then patAnimal(vs0, vt0) "Patient-animal";
+  src.communication as vs0 -> tgt.communication as vt0 then patCommunication(vs0, vt0) "Patient-communication";
+  src.careProvider -> tgt.generalPractitioner "Patient-generalPractitioner";
+  src.managingOrganization -> tgt.managingOrganization "Patient-managingOrganization";
+  src.link as vs0 -> tgt.link as vt0 then patLink(vs0, vt0) "Patient-link";
+}
+
+group patContact(source src, target tgt) extends BackboneElement {
+  src.relationship -> tgt.relationship "contact-relationship";
+  src.name -> tgt.name "contact-name";
+  src.telecom -> tgt.telecom "contact-telecom";
+  src.address -> tgt.address "contact-address";
+  src.gender -> tgt.gender "contact-gender";
+  src.organization -> tgt.organization "contact-organization";
+  src.period -> tgt.period "contact-period";
+}
+
+group patCommunication(source src, target tgt) extends BackboneElement {
+  src.language -> tgt.language "communication-language";
+  src.preferred -> tgt.preferred "communication-preferred";
+}
+
+group patAnimal(source src, target tgt) extends BackboneElement {
+  src.species -> tgt.species "communication-species";
+  src.breed -> tgt.breed "communication-breed";
+  src.genderStatus -> tgt.genderStatus "communication-genderStatus";
+}
+
+group patLink(source src, target tgt) extends BackboneElement {
+  src.other -> tgt.other "link-other";
+  src.type -> tgt.type "link-type";
+}
+

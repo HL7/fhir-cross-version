@@ -1,0 +1,75 @@
+/// url = "http://hl7.org/fhir/StructureMap/TestReport5to4"
+/// name = "TestReport5to4"
+/// title = "TestReport Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/TestReport" alias TestReportR5 as source
+uses "http://hl7.org/fhir/4.0/TestReport" alias TestReportR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group TestReport(source src : TestReportR5, target tgt : TestReportR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.name -> tgt.name;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/TestReport.status-R5toR4', 'code');
+  src.testScript -> tgt.testScript;
+  src.result as v -> tgt.result = translate(v, 'http://hl7.org/fhir/ConceptMap/TestReport.result-R5toR4', 'code');
+  src.score -> tgt.score;
+  src.tester -> tgt.tester;
+  src.issued -> tgt.issued;
+  src.participant as s -> tgt.participant as t then TestReportParticipant(s, t);
+  src.setup as s -> tgt.setup as t then TestReportSetup(s, t);
+  src.test as s -> tgt.test as t then TestReportTest(s, t);
+  src.teardown as s -> tgt.teardown as t then TestReportTeardown(s, t);
+}
+
+group TestReportParticipant(source src, target tgt) extends BackboneElement {
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/TestReport.participant.type-R5toR4', 'code');
+  src.uri -> tgt.uri;
+  src.display -> tgt.display;
+}
+
+group TestReportSetup(source src, target tgt) extends BackboneElement {
+  src.action as s -> tgt.action as t then TestReportSetupAction(s, t);
+}
+
+group TestReportSetupAction(source src, target tgt) extends BackboneElement {
+  src.operation as s -> tgt.operation as t then TestReportSetupActionOperation(s, t);
+  src.assert as s -> tgt.assert as t then TestReportSetupActionAssert(s, t);
+}
+
+group TestReportSetupActionOperation(source src, target tgt) extends BackboneElement {
+  src.result as v -> tgt.result = translate(v, 'http://hl7.org/fhir/ConceptMap/TestReport.setup.action.operation.result-R5toR4', 'code');
+  src.message -> tgt.message;
+  src.detail -> tgt.detail;
+}
+
+group TestReportSetupActionAssert(source src, target tgt) extends BackboneElement {
+  src.result as v -> tgt.result = translate(v, 'http://hl7.org/fhir/ConceptMap/TestReport.setup.action.assert.result-R5toR4', 'code');
+  src.message -> tgt.message;
+  src.detail -> tgt.detail;
+}
+
+// group TestReportSetupActionAssertRequirement(source src, target tgt) extends BackboneElement {
+// src.link : uri -> tgt.link;
+// src.link : canonical -> tgt.link;
+// }
+group TestReportTest(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.description -> tgt.description;
+  src.action as s -> tgt.action as t then TestReportTestAction(s, t);
+}
+
+group TestReportTestAction(source src, target tgt) extends BackboneElement {
+  src.operation as s -> tgt.operation as t then TestReportSetupActionOperation(s, t);
+  src.assert as s -> tgt.assert as t then TestReportSetupActionAssert(s, t);
+}
+
+group TestReportTeardown(source src, target tgt) extends BackboneElement {
+  src.action as s -> tgt.action as t then TestReportTeardownAction(s, t);
+}
+
+group TestReportTeardownAction(source src, target tgt) extends BackboneElement {
+  src.operation as s -> tgt.operation as t then TestReportSetupActionOperation(s, t);
+}
+

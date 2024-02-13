@@ -1,0 +1,58 @@
+/// url = "http://hl7.org/fhir/StructureMap/Composition5to4"
+/// name = "Composition5to4"
+/// title = "Composition Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Composition" alias CompositionR5 as source
+uses "http://hl7.org/fhir/4.0/Composition" alias CompositionR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group Composition(source src : CompositionR5, target tgt : CompositionR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Composition.status-R5toR4', 'code');
+  src.type -> tgt.type;
+  src.category -> tgt.category;
+  src.subject -> tgt.subject;
+  src.encounter -> tgt.encounter;
+  src.date -> tgt.date;
+  src.author -> tgt.author;
+  src.title -> tgt.title;
+  src.attester as s -> tgt.attester as t then CompositionAttester(s, t);
+  src.custodian -> tgt.custodian;
+  src.relatesTo as s -> tgt.relatesTo as t then CompositionRelatesTo(s, t);
+  src.event as s -> tgt.event as t then CompositionEvent(s, t);
+  src.section as s -> tgt.section as t then CompositionSection(s, t);
+}
+
+group CompositionAttester(source src, target tgt) extends BackboneElement {
+  src.mode as s -> tgt then {
+    s.coding as sc where s.system = 'http://hl7.org/fhir/composition-attestation-mode' -> tgt then {
+      sc.code -> tgt.mode;
+    };
+  };
+  src.time -> tgt.time;
+  src.party -> tgt.party;
+}
+
+group CompositionEvent(source src, target tgt) extends BackboneElement {
+  src.period -> tgt.period;
+  src.detail -> tgt.detail;
+}
+
+group CompositionRelatesTo(source src, target tgt) extends Element {
+  src.type where src.type in ('replaces' | 'transforms' | 'signs' | 'appends') -> tgt.code;
+  src.resourceReference -> tgt.target;
+}
+
+group CompositionSection(source src, target tgt) extends BackboneElement {
+  src.title -> tgt.title;
+  src.code -> tgt.code;
+  src.author -> tgt.author;
+  src.focus -> tgt.focus;
+  src.text -> tgt.text;
+  src.orderedBy -> tgt.orderedBy;
+  src.entry -> tgt.entry;
+  src.emptyReason -> tgt.emptyReason;
+}
+

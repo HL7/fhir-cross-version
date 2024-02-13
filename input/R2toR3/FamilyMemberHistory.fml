@@ -1,0 +1,32 @@
+/// url = "http://hl7.org/fhir/StructureMap/FamilyMemberHistory2to3"
+/// name = "FamilyMemberHistory2to3"
+/// title = "FamilyMemberHistory Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/FamilyMemberHistory" alias FamilyMemberHistoryR2 as source
+uses "http://hl7.org/fhir/3.0/FamilyMemberHistory" alias FamilyMemberHistory as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group FamilyMemberHistory(source src : FamilyMemberHistoryR2, target tgt : FamilyMemberHistory) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "FamilyMemberHistory-identifier";
+  src.patient -> tgt.patient "FamilyMemberHistory-patient";
+  src.date -> tgt.date "FamilyMemberHistory-date";
+  src.status -> tgt.status "FamilyMemberHistory-status";
+  src.name -> tgt.name "FamilyMemberHistory-name";
+  src.relationship -> tgt.relationship "FamilyMemberHistory-relationship";
+  src.gender -> tgt.gender "FamilyMemberHistory-gender";
+  src.born -> tgt.born "FamilyMemberHistory-born";
+  src.age -> tgt.age "FamilyMemberHistory-age";
+  src.deceased -> tgt.deceased "FamilyMemberHistory-deceased";
+  src.note -> tgt.note "FamilyMemberHistory-note";
+  src.condition as vs0 -> tgt.condition as vt0 then fmhCondition(vs0, vt0) "FamilyMemberHistory-condition";
+}
+
+group fmhCondition(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code "condition-code";
+  src.outcome -> tgt.outcome "condition-outcome";
+  src.onset -> tgt.onset "condition-onset";
+  src.note -> tgt.note "condition-note";
+}
+

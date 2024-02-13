@@ -1,0 +1,51 @@
+/// url = "http://hl7.org/fhir/StructureMap/ServiceRequest5to4B"
+/// name = "ServiceRequest5to4B"
+/// title = "ServiceRequest Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/ServiceRequest" alias ServiceRequestR5 as source
+uses "http://hl7.org/fhir/4.0/ServiceRequest" alias ServiceRequestR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group ServiceRequest(source src : ServiceRequestR5, target tgt : ServiceRequestR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.instantiatesCanonical -> tgt.instantiatesCanonical;
+  src.instantiatesUri -> tgt.instantiatesUri;
+  src.basedOn -> tgt.basedOn;
+  src.replaces -> tgt.replaces;
+  src.requisition -> tgt.requisition;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ServiceRequest.status-R5toR4', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/ServiceRequest.intent-R5toR4', 'code');
+  src.category -> tgt.category;
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/ServiceRequest.priority-R5toR4', 'code');
+  src.doNotPerform -> tgt.doNotPerform;
+  src.code -> tgt.code;
+  src.orderDetail as s -> tgt.orderDetail = s.parameterFocus;
+  src.quantity : Quantity -> tgt.quantity "quantityQuantity";
+  src.quantity : Ratio -> tgt.quantity "quantityRatio";
+  src.quantity : Range -> tgt.quantity "quantityRange";
+  src.subject -> tgt.subject;
+  src.encounter -> tgt.encounter;
+  src.occurrence : dateTime -> tgt.occurrence "occurrenceDateTime";
+  src.occurrence : Period -> tgt.occurrence "occurrencePeriod";
+  src.occurrence : Timing -> tgt.occurrence "occurrenceTiming";
+  src.asNeeded : boolean -> tgt.asNeeded "asNeededBoolean";
+  src.asNeeded : CodeableConcept -> tgt.asNeeded "asNeededCodeableConcept";
+  src.authoredOn -> tgt.authoredOn;
+  src.requester -> tgt.requester;
+  src.performerType -> tgt.performerType;
+  src.performer -> tgt.performer;
+  src.location -> tgt.locationCode;
+  src.location -> tgt.locationReference;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
+  src.insurance -> tgt.insurance;
+  src.supportingInfo -> tgt.supportingInfo;
+  src.specimen -> tgt.specimen;
+  src.bodySite -> tgt.bodySite;
+  src.note -> tgt.note;
+  src.patientInstruction as s -> tgt.patientInstruction = s.instruction "instruction";
+  src.relevantHistory -> tgt.relevantHistory;
+}
+

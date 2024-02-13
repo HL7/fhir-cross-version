@@ -1,0 +1,20 @@
+/// url = "http://hl7.org/fhir/StructureMap/SubstanceMoiety3to4"
+/// name = "SubstanceMoiety3to4"
+/// title = "SubstanceMoiety Transforms: R3 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/SubstanceMoiety" alias SubstanceMoietyR3 as source
+uses "http://hl7.org/fhir/4.0/SubstanceMoiety" alias SubstanceMoiety as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to4"
+
+group SubstanceMoiety(source src : SubstanceMoietyR3, target tgt : SubstanceMoiety) extends BackboneElement <<type+>> {
+  src.role -> tgt.role;
+  src.identifier -> tgt.identifier;
+  src.name -> tgt.name;
+  src.stereochemistry -> tgt.stereochemistry;
+  src.opticalActivity -> tgt.opticalActivity;
+  src.molecularFormula -> tgt.molecularFormula;
+  src.amount -> tgt.amount;
+}
+

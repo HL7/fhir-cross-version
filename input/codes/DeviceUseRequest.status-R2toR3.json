@@ -1,0 +1,84 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DeviceUseRequest.status-R2toR3",
+  "url" : "http://hl7.org/fhir/ConceptMap/DeviceUseRequest.status-R2toR3",
+  "name" : "DeviceUseRequest.status-R2toR3",
+  "title" : "Mapping for DeviceUseRequest.status from R2 to R3",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DeviceUseRequest#DeviceUseRequest.status",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DeviceRequest#DeviceRequest.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/device-use-request-status",
+    "target" : "http://hl7.org/fhir/3.0/request-status",
+    "element" : [{
+      "code" : "proposed",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "planned",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "requested",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "received",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "accepted",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "suspended",
+      "target" : [{
+        "code" : "suspended",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "rejected",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "aborted",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

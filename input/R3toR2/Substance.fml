@@ -1,0 +1,30 @@
+/// url = "http://hl7.org/fhir/StructureMap/Substance3to2"
+/// name = "Substance3to2"
+/// title = "Substance Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Substance" alias Substance as source
+uses "http://hl7.org/fhir/1.0/Substance" alias SubstanceR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group Substance(source src : Substance, target tgt : SubstanceR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Substance-identifier";
+  src.category -> tgt.category "Substance-category";
+  src.code -> tgt.code "Substance-code";
+  src.description -> tgt.description "Substance-description";
+  src.instance as vs0 -> tgt.instance as vt0 then sbsInstance(vs0, vt0) "Substance-instance";
+  src.ingredient as vs0 -> tgt.ingredient as vt0 then sbsIngredient(vs0, vt0) "Substance-ingredient";
+}
+
+group sbsInstance(source src : Substance, target tgt : SubstanceR2) extends BackboneElement {
+  src.identifier -> tgt.identifier "instance-identifier";
+  src.expiry -> tgt.expiry "instance-expiry";
+  src.quantity -> tgt.quantity "instance-quantity";
+}
+
+group sbsIngredient(source src : Substance, target tgt : SubstanceR2) extends BackboneElement {
+  src.quantity -> tgt.quantity "ingredient-quantity";
+  src.substance where $this is 'Reference' -> tgt.substance "ingredient-substance";
+}
+

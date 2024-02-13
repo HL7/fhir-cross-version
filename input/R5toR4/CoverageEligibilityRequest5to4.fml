@@ -1,0 +1,63 @@
+/// url = "http://hl7.org/fhir/StructureMap/CoverageEligibilityRequest5to4"
+/// name = "CoverageEligibilityRequest5to4"
+/// title = "CoverageEligibilityRequest Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/CoverageEligibilityRequest" alias CoverageEligibilityRequestR5 as source
+uses "http://hl7.org/fhir/4.0/CoverageEligibilityRequest" alias CoverageEligibilityRequestR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group CoverageEligibilityRequest(source src : CoverageEligibilityRequestR5, target tgt : CoverageEligibilityRequestR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/CoverageEligibilityRequest.status-R5toR4', 'code');
+  src.priority -> tgt.priority;
+  src.purpose as v -> tgt.purpose = translate(v, 'http://hl7.org/fhir/ConceptMap/CoverageEligibilityRequest.purpose-R5toR4', 'code');
+  src.patient -> tgt.patient;
+  src.serviced : date -> tgt.serviced "servicedDate";
+  src.serviced : Period -> tgt.serviced "servicedPeriod";
+  src.created -> tgt.created;
+  src.enterer -> tgt.enterer;
+  src.provider -> tgt.provider;
+  src.insurer -> tgt.insurer;
+  src.facility -> tgt.facility;
+  src.supportingInfo as s -> tgt.supportingInfo as t then CoverageEligibilityRequestSupportingInfo(s, t);
+  src.insurance as s -> tgt.insurance as t then CoverageEligibilityRequestInsurance(s, t);
+  src.item as s -> tgt.item as t then CoverageEligibilityRequestItem(s, t);
+}
+
+// group CoverageEligibilityRequestEvent(source src, target tgt) extends BackboneElement {
+// src.type -> tgt.type;
+// src.when : dateTime -> tgt.when;
+// src.when : Period -> tgt.when;
+// }
+group CoverageEligibilityRequestSupportingInfo(source src, target tgt) extends BackboneElement {
+  src.sequence -> tgt.sequence;
+  src.information -> tgt.information;
+  src.appliesToAll -> tgt.appliesToAll;
+}
+
+group CoverageEligibilityRequestInsurance(source src, target tgt) extends BackboneElement {
+  src.focal -> tgt.focal;
+  src.coverage -> tgt.coverage;
+  src.businessArrangement -> tgt.businessArrangement;
+}
+
+group CoverageEligibilityRequestItem(source src, target tgt) extends BackboneElement {
+  src.supportingInfoSequence -> tgt.supportingInfoSequence;
+  src.category -> tgt.category;
+  src.productOrService -> tgt.productOrService;
+  src.modifier -> tgt.modifier;
+  src.provider -> tgt.provider;
+  src.quantity -> tgt.quantity;
+  src.unitPrice -> tgt.unitPrice;
+  src.facility -> tgt.facility;
+  src.diagnosis as s -> tgt.diagnosis as t then CoverageEligibilityRequestItemDiagnosis(s, t);
+  src.detail -> tgt.detail;
+}
+
+group CoverageEligibilityRequestItemDiagnosis(source src, target tgt) extends BackboneElement {
+  src.diagnosis : CodeableConcept -> tgt.diagnosis "diagnosisCodeableConcept";
+  src.diagnosis : Reference -> tgt.diagnosis "diagnosisReference";
+}
+

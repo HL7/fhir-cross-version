@@ -1,0 +1,90 @@
+/// url = "http://hl7.org/fhir/StructureMap/ElementDefinition3to2"
+/// name = "ElementDefinition3to2"
+/// title = "ElementDefinition Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/ElementDefinition" alias ElementDefinition as source
+uses "http://hl7.org/fhir/1.0/ElementDefinition" alias ElementDefinitionR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group ElementDefinition(source srcR : Resource, source src : ElementDefinition, target tgt : ElementDefinitionR2) <<type+>> {
+  src.extension -> tgt.extension "ElementDefinition-extensions";
+  src.path -> tgt.path "ElementDefinition-path";
+  src.sliceName -> tgt.name "ElementDefinition-name";
+  src.representation where $this = 'xmlAttr' -> tgt.representation "ElementDefinition-representation";
+  src.label -> tgt.label "ElementDefinition-label";
+  src.code -> tgt.code "ElementDefinition-code";
+  src.slicing as vs0 -> tgt.slicing as vt0 then {
+    vs0.discriminator as vd1 then edDiscriminator(vd1, vt0) "slicing-discriminator";
+    vs0.description -> vt0.description "slicing-description";
+    vs0.ordered -> vt0.ordered "slicing-ordered";
+    vs0.rules -> vt0.rules "slicing-rules";
+  } "ElementDefinition-slicing";
+  src.short -> tgt.short "ElementDefinition-short";
+  src.definition -> tgt.definition "ElementDefinition-definition";
+  src.comment -> tgt.comments "ElementDefinition-comments";
+  src.requirements -> tgt.requirements "ElementDefinition-requirements";
+  src.alias -> tgt.alias "ElementDefinition-alias";
+  src.min -> tgt.min "ElementDefinition-min";
+  src.max -> tgt.max "ElementDefinition-max";
+  src.base as vs0 -> tgt.base as vt0 then {
+    vs0.path -> vt0.path "base-path";
+    vs0.min -> vt0.min "base-min";
+    vs0.max -> vt0.max "base-max";
+  } "ElementDefinition-base";
+  src.type as vs0 -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinition-type";
+  src where path.contains('.').not() and src.type.empty() and src.contentReference.empty() and srcR.is(StructureDefinition) -> tgt.type as vt0 then {
+    srcR.baseDefinition as base -> vt0.code = (base.substring(40)) "type-code";
+  } "ElementDefinition-type-1st";
+  src.contentReference -> tgt.nameReference "ElementDefinition-contentReference";
+  src.defaultValue -> tgt.defaultValue "ElementDefinition-defaultValue";
+  src.meaningWhenMissing -> tgt.meaningWhenMissing "ElementDefinition-meaningWhenMissing";
+  src.example first as exv then {
+    exv.value -> tgt.example "ElementDefinition-example-v";
+  } "ElementDefinition-example";
+  src.fixed -> tgt.fixed "ElementDefinition-fixed";
+  src.pattern -> tgt.pattern "ElementDefinition-pattern";
+  src.minValue -> tgt.minValue "ElementDefinition-minValue";
+  src.maxValue -> tgt.maxValue "ElementDefinition-maxValue";
+  src.maxLength -> tgt.maxLength "ElementDefinition-maxLength";
+  src.condition -> tgt.condition "ElementDefinition-condition";
+  src.constraint as vs0 -> tgt.constraint as vt0 then constraint(vs0, vt0) "ElementDefinition-constraint";
+  src.mustSupport -> tgt.mustSupport "ElementDefinition-mustSupport";
+  src.isModifier -> tgt.isModifier "ElementDefinition-isModifier";
+  src.isSummary -> tgt.isSummary "ElementDefinition-isSummary";
+  src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0) "ElementDefinition-binding";
+  src.mapping as vs0 -> tgt.mapping as vt0 then mapping(vs0, vt0) "ElementDefinition-mapping";
+}
+
+group edDiscriminator(source src, target tgt) extends Element {
+  src.path where type = 'value' -> tgt.discriminator "binding-strength";
+}
+
+group binding(source src, target tgt) extends Element {
+  src.strength -> tgt.strength "binding-strength";
+  src.description -> tgt.description "binding-description";
+  src.valueSet -> tgt.valueSet "binding-valueSet";
+}
+
+group type(source src, target tgt) extends Element {
+  src.code -> tgt.code "type-code";
+  src.profile where src.targetProfile.empty() -> tgt.profile "type-profile1";
+  src.targetProfile -> tgt.profile "type-profile2";
+  src.aggregation -> tgt.aggregation "type-aggregation";
+}
+
+group constraint(source src, target tgt) extends Element {
+  src.key -> tgt.key "constraint-key";
+  src.requirements -> tgt.requirements "constraint-requirements";
+  src.severity -> tgt.severity "constraint-severity";
+  src.human -> tgt.human "constraint-human";
+  src.xpath -> tgt.xpath "constraint-xpath";
+}
+
+group mapping(source src, target tgt) extends Element {
+  src.identity -> tgt.identity "mapping-identity";
+  src.language -> tgt.language "mapping-language";
+  src.map -> tgt.map "mapping-map";
+}
+

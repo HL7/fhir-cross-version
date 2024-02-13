@@ -1,0 +1,31 @@
+/// url = "http://hl7.org/fhir/StructureMap/Location2to3"
+/// name = "Location2to3"
+/// title = "Location Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Location" alias LocationR2 as source
+uses "http://hl7.org/fhir/3.0/Location" alias Location as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Location(source src : LocationR2, target tgt : Location) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Location-identifier";
+  src.status -> tgt.status "Location-status";
+  src.name -> tgt.name "Location-name";
+  src.description -> tgt.description "Location-description";
+  src.mode -> tgt.mode "Location-mode";
+  src.type -> tgt.type "Location-type";
+  src.telecom -> tgt.telecom "Location-telecom";
+  src.address -> tgt.address "Location-address";
+  src.physicalType -> tgt.physicalType "Location-physicalType";
+  src.position as vs0 -> tgt.position as vt0 then locPosition(vs0, vt0) "Location-position";
+  src.managingOrganization -> tgt.managingOrganization "Location-managingOrganization";
+  src.partOf -> tgt.partOf "Location-partOf";
+}
+
+group locPosition(source src : Location, target tgt : LocationR2) extends BackboneElement {
+  src.longitude -> tgt.longitude "position-longitude";
+  src.latitude -> tgt.latitude "position-latitude";
+  src.altitude -> tgt.altitude "position-altitude";
+}
+

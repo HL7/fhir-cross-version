@@ -1,0 +1,70 @@
+/// url = "http://hl7.org/fhir/StructureMap/CarePlan2to3"
+/// name = "CarePlan2to3"
+/// title = "CarePlan Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/CarePlan" alias CarePlanR2 as source
+uses "http://hl7.org/fhir/3.0/CarePlan" alias CarePlan as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group CarePlan(source src : CarePlanR2, target tgt : CarePlan) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "CarePlan-identifier";
+  src.subject -> tgt.subject "CarePlan-subject";
+  src.status -> tgt.status "CarePlan-status";
+  src.context -> tgt.context "CarePlan-context";
+  src.period -> tgt.period "CarePlan-period";
+  src.author -> tgt.author "CarePlan-author";
+  src.modified as v ->  tgt.extension as t,  t.url = 'http://hl7.org/fhir/CarePlan-r2-modified',  t.value = v "CarePlan-modified";
+  src.category -> tgt.category "CarePlan-category";
+  src.description -> tgt.description "CarePlan-description";
+  src.addresses -> tgt.addresses "CarePlan-addresses";
+  src.support -> tgt.supportingInfo "CarePlan-support";
+  src.relatedPlan as vs0 where vs0.code = 'replaces' -> tgt.basedOn = (vs0.plan) "CarePlan-relatedPlan2";
+  src.relatedPlan as vs0 where vs0.code = 'fulfills' -> tgt.replaces = (vs0.plan) "CarePlan-relatedPlan3";
+  src where src.participant.exists() -> create('CareTeam') as vt0 then plnParticipant(src, vt0, tgt) "CarePlan-participant";
+  src.goal -> tgt.goal "CarePlan-goal";
+  src.activity as vs0 -> tgt.activity as vt0 then plnActivity(vs0, vt0) "CarePlan-activity";
+  src.note -> tgt.note "CarePlan-note";
+}
+
+group plnRelated(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code "relatedPlan-code";
+  src.plan -> tgt.plan "relatedPlan-plan";
+}
+
+group plnActivity(source src, target tgt) extends BackboneElement {
+  src.actionResulting -> tgt.outcomeReference "activity-actionResulting";
+  src.progress -> tgt.progress "activity-progress";
+  src.reference -> tgt.reference "activity-reference";
+  src.detail as vs0 -> tgt.detail as vt0 then plnDetail(vs0, vt0) "activity-detail";
+}
+
+group plnDetail(source src, target tgt) extends BackboneElement {
+  src.category -> tgt.category "detail-category";
+  src.code -> tgt.code "detail-code";
+  src.reasonCode -> tgt.reasonCode "detail-reasonCode";
+  src.reasonReference -> tgt.reasonReference "detail-reasonReference";
+  src.goal -> tgt.goal "detail-goal";
+  src.status -> tgt.status "detail-status";
+  src.statusReason -> tgt.statusReason "detail-statusReason";
+  src.prohibited -> tgt.prohibited "detail-prohibited";
+  src.scheduled -> tgt.scheduled "detail-scheduled";
+  src.location -> tgt.location "detail-location";
+  src.performer -> tgt.performer "detail-performer";
+  src.product -> tgt.product "detail-product";
+  src.dailyAmount -> tgt.dailyAmount "detail-dailyAmount";
+  src.quantity -> tgt.quantity "detail-quantity";
+  src.description -> tgt.description "detail-description";
+}
+
+group plnParticipant(source src, target tgt, target tgtE) {
+  src -> tgtE.careTeam = reference(tgt) "participant-link";
+  src.participant as vs -> tgt.participant as vt then plnParticipantMember(vs, vt) "participant-member";
+}
+
+group plnParticipantMember(source src, target tgt) extends BackboneElement {
+  src.role -> tgt.role "participant-role";
+  src.member -> tgt.member "participant-member";
+}
+

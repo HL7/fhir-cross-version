@@ -1,0 +1,232 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "OperationOutcome.issue.code-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/OperationOutcome.issue.code-R5toR4",
+  "name" : "OperationOutcome.issue.code-R5toR4",
+  "title" : "Mapping for OperationOutcome.issue.code from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/OperationOutcome#OperationOutcome.issue.code",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/OperationOutcomeB#OperationOutcomeB.issue.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/issue-type",
+    "target" : "http://hl7.org/fhir/4.0/issue-type",
+    "element" : [{
+      "code" : "invalid",
+      "target" : [{
+        "code" : "invalid",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "structure",
+      "target" : [{
+        "code" : "structure",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "required",
+      "target" : [{
+        "code" : "required",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "value",
+      "target" : [{
+        "code" : "value",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "invariant",
+      "target" : [{
+        "code" : "invariant",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "security",
+      "target" : [{
+        "code" : "security",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "login",
+      "target" : [{
+        "code" : "login",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "expired",
+      "target" : [{
+        "code" : "expired",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "forbidden",
+      "target" : [{
+        "code" : "forbidden",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "suppressed",
+      "target" : [{
+        "code" : "suppressed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "processing",
+      "target" : [{
+        "code" : "processing",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "not-supported",
+      "target" : [{
+        "code" : "not-supported",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "duplicate",
+      "target" : [{
+        "code" : "duplicate",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "multiple-matches",
+      "target" : [{
+        "code" : "multiple-matches",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "not-found",
+      "target" : [{
+        "code" : "not-found",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "deleted",
+      "target" : [{
+        "code" : "deleted",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "too-long",
+      "target" : [{
+        "code" : "too-long",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "code-invalid",
+      "target" : [{
+        "code" : "code-invalid",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "extension",
+      "target" : [{
+        "code" : "extension",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "too-costly",
+      "target" : [{
+        "code" : "too-costly",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "business-rule",
+      "target" : [{
+        "code" : "business-rule",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "conflict",
+      "target" : [{
+        "code" : "conflict",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "transient",
+      "target" : [{
+        "code" : "transient",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "lock-error",
+      "target" : [{
+        "code" : "lock-error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "no-store",
+      "target" : [{
+        "code" : "no-store",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "exception",
+      "target" : [{
+        "code" : "exception",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "timeout",
+      "target" : [{
+        "code" : "timeout",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "incomplete",
+      "target" : [{
+        "code" : "incomplete",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "throttled",
+      "target" : [{
+        "code" : "throttled",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "informational",
+      "target" : [{
+        "code" : "informational",
+        "relationship" : "related-to",
+        "comment" : "s:\"success\" - t:\"success\""
+      }]
+    }]
+  }]
+}

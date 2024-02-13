@@ -1,0 +1,23 @@
+/// url = "http://hl7.org/fhir/StructureMap/EnrollmentResponse2to3"
+/// name = "EnrollmentResponse2to3"
+/// title = "EnrollmentResponse Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/EnrollmentResponse" alias EnrollmentResponseR2 as source
+uses "http://hl7.org/fhir/3.0/EnrollmentResponse" alias EnrollmentResponse as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/DomainResource2to3"
+imports "http://hl7.org/fhir/StructureMap/Identifier2to3"
+imports "http://hl7.org/fhir/StructureMap/Reference2to3"
+
+group EnrollmentResponse(source src : EnrollmentResponseR2, target tgt : EnrollmentResponse) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "EnrollmentResponse-identifier";
+  src.request -> tgt.request "EnrollmentResponse-request";
+  src.disposition -> tgt.disposition "EnrollmentResponse-disposition";
+  src.created -> tgt.created "EnrollmentResponse-created";
+  src.organization -> tgt.organization "EnrollmentResponse-organization";
+  src.requestProvider -> tgt.requestProvider "EnrollmentResponse-requestProvider";
+  src.requestOrganization -> tgt.requestOrganization "EnrollmentResponse-requestOrganization";
+}
+

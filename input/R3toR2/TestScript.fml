@@ -1,0 +1,50 @@
+/// url = "http://hl7.org/fhir/StructureMap/TestScript3to2"
+/// name = "TestScript3to2"
+/// title = "TestScript Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/TestScript" alias TestScript as source
+uses "http://hl7.org/fhir/1.0/TestScript" alias TestScriptR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/StructureMap/DomainResource3to2"
+imports "http://hl7.org/fhir/StructureMap/ContactPoint3to2"
+imports "http://hl7.org/fhir/StructureMap/Identifier3to2"
+imports "http://hl7.org/fhir/StructureMap/Reference3to2"
+imports "http://hl7.org/fhir/StructureMap/CodeableConcept3to2"
+
+group TestScript(source src : TestScript, target tgt : TestScriptR2) extends DomainResource <<type+>> {
+  src.url -> tgt.url "TestScript-url";
+  src.version -> tgt.version "TestScript-version";
+  src.name -> tgt.name "TestScript-name";
+  src.status -> tgt.status "TestScript-status";
+  src.identifier -> tgt.identifier "TestScript-identifier";
+  src.experimental -> tgt.experimental "TestScript-experimental";
+  src.publisher -> tgt.publisher "TestScript-publisher";
+  src.contact as vs0 -> tgt.contact as vt0 then {
+    vs0.name -> vt0.name "contact-name";
+    vs0.telecom -> vt0.telecom "contact-telecom";
+  } "TestScript-contact";
+  src.date -> tgt.date "TestScript-date";
+  src.jurisdiction -> tgt.useContext "TestScript-useContext";
+  src.metadata -> tgt.metadata "TestScript-metadata";
+  src.fixture as vs0 -> tgt.fixture as vt0 then {
+    vs0.autocreate -> vt0.autocreate "fixture-autocreate";
+    vs0.autodelete -> vt0.autodelete "fixture-autodelete";
+    vs0.resource -> vt0.resource "fixture-resource";
+  } "TestScript-fixture";
+  src.profile -> tgt.profile "TestScript-profile";
+  src.variable as vs0 -> tgt.variable as vt0 then {
+    vs0.name -> vt0.name "variable-name";
+    vs0.headerField -> vt0.headerField "variable-headerField";
+    vs0.path -> vt0.path "variable-path";
+    vs0.sourceId -> vt0.sourceId "variable-sourceId";
+  } "TestScript-variable";
+  src.setup -> tgt.setup "TestScript-setup";
+  src.test as vs0 -> tgt.test as vt0 then {
+    vs0.name -> vt0.name "test-name";
+    vs0.description -> vt0.description "test-description";
+  } "TestScript-test";
+  src.teardown -> tgt.teardown "TestScript-teardown";
+}
+

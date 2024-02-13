@@ -1,0 +1,31 @@
+/// url = "http://hl7.org/fhir/StructureMap/CommunicationRequest2to3"
+/// name = "CommunicationRequest2to3"
+/// title = "CommunicationRequest Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/CommunicationRequest" alias CommunicationRequestR2 as source
+uses "http://hl7.org/fhir/3.0/CommunicationRequest" alias CommunicationRequest as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group CommunicationRequest(source src : CommunicationRequestR2, target tgt : CommunicationRequest) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "CommunicationRequest-identifier";
+  src.category -> tgt.category "CommunicationRequest-category";
+  src.sender -> tgt.sender "CommunicationRequest-sender";
+  src.recipient -> tgt.recipient "CommunicationRequest-recipient";
+  src.payload as vs0 -> tgt.payload as vt0 then cmrPayload(vs0, vt0) "CommunicationRequest-payload";
+  src.medium -> tgt.medium "CommunicationRequest-medium";
+  src.requester -> tgt.requester "CommunicationRequest-requester";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/CommunicationRequest.status-R2toR3', 'code') "CommunicationRequest-status";
+  src.encounter -> tgt.context "CommunicationRequest-context";
+  src.scheduled -> tgt.occurrence "CommunicationRequest-scheduled";
+  src.reason -> tgt.reasonCode "CommunicationRequest-reason";
+  src.requestedOn -> tgt.authoredOn "CommunicationRequest-requestedOn";
+  src.subject -> tgt.subject "CommunicationRequest-subject";
+  src.priority -> tgt.priority "CommunicationRequest-priority";
+}
+
+group cmrPayload(source src, target tgt) {
+  src.content -> tgt.content "payload-content";
+}
+

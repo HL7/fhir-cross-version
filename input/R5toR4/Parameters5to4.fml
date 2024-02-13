@@ -1,0 +1,68 @@
+/// url = "http://hl7.org/fhir/StructureMap/Parameters5to4"
+/// name = "Parameters5to4"
+/// title = "Parameters Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Parameters" alias ParametersR5 as source
+uses "http://hl7.org/fhir/4.0/Parameters" alias ParametersR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group Parameters(source src : ParametersR5, target tgt : ParametersR4) extends Resource <<type+>> {
+  src.parameter as s -> tgt.parameter as t then ParametersParameter(s, t);
+}
+
+group ParametersParameter(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.value : base64Binary -> tgt.value "valueBase64Binary";
+  src.value : boolean -> tgt.value "valueBoolean";
+  src.value : canonical -> tgt.value "valueCanonical";
+  src.value : code -> tgt.value "valueCode";
+  src.value : date -> tgt.value "valueDate";
+  src.value : dateTime -> tgt.value "valueDateTime";
+  src.value : decimal -> tgt.value "valueDecimal";
+  src.value : id -> tgt.value "valueId";
+  src.value : instant -> tgt.value "valueInstant";
+  src.value : integer -> tgt.value "valueInteger";
+  src.value : markdown -> tgt.value "valueMarkdown";
+  src.value : oid -> tgt.value "valueOid";
+  src.value : positiveInt -> tgt.value "valuePositiveInt";
+  src.value : string -> tgt.value "valueString";
+  src.value : time -> tgt.value "valueTime";
+  src.value : unsignedInt -> tgt.value "valueUnsignedInt";
+  src.value : uri -> tgt.value "valueUri";
+  src.value : url -> tgt.value "valueUrl";
+  src.value : uuid -> tgt.value "valueUuid";
+  src.value : Address -> tgt.value "valueAddress";
+  src.value : Age -> tgt.value "valueAge";
+  src.value : Annotation -> tgt.value "valueAnnotation";
+  src.value : Attachment -> tgt.value "valueAttachment";
+  src.value : CodeableConcept -> tgt.value "valueCodeableConcept";
+  src.value : Coding -> tgt.value "valueCoding";
+  src.value : ContactPoint -> tgt.value "valueContactPoint";
+  src.value : Count -> tgt.value "valueCount";
+  src.value : Distance -> tgt.value "valueDistance";
+  src.value : Duration -> tgt.value "valueDuration";
+  src.value : HumanName -> tgt.value "valueHumanName";
+  src.value : Identifier -> tgt.value "valueIdentifier";
+  src.value : Money -> tgt.value "valueMoney";
+  src.value : Period -> tgt.value "valuePeriod";
+  src.value : Quantity -> tgt.value "valueQuantity";
+  src.value : Range -> tgt.value "valueRange";
+  src.value : Ratio -> tgt.value "valueRatio";
+  src.value : Reference -> tgt.value "valueReference";
+  src.value : SampledData -> tgt.value "valueSampledData";
+  src.value : Signature -> tgt.value "valueSignature";
+  src.value : Timing -> tgt.value "valueTiming";
+  src.value : ContactDetail -> tgt.value "valueContactDetail";
+  src.value : DataRequirement -> tgt.value "valueDataRequirement";
+  src.value : Expression -> tgt.value "valueExpression";
+  src.value : ParameterDefinition -> tgt.value "valueParameterDefinition";
+  src.value : RelatedArtifact -> tgt.value "valueRelatedArtifact";
+  src.value : TriggerDefinition -> tgt.value "valueTriggerDefinition";
+  src.value : UsageContext -> tgt.value "valueUsageContext";
+  src.value : Dosage -> tgt.value "valueDosage";
+  src.value : Meta -> tgt.value "valueMeta";
+  src.resource : Resource -> tgt.resource "resourceResource";
+}
+

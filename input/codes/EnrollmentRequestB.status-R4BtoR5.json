@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "EnrollmentRequestB.status-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/EnrollmentRequestB.status-R4BtoR5",
+  "name" : "EnrollmentRequestB.status-R4BtoR5",
+  "title" : "Mapping for EnrollmentRequestB.status from R4B to R5",
+  "status" : "draft",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EnrollmentRequestB#EnrollmentRequestB.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EnrollmentRequest#EnrollmentRequest.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/fm-status",
+    "target" : "http://hl7.org/fhir/5.0/fm-status",
+    "element" : [{
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

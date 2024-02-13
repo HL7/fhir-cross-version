@@ -1,0 +1,64 @@
+/// url = "http://hl7.org/fhir/StructureMap/CarePlan3to2"
+/// name = "CarePlan3to2"
+/// title = "CarePlan Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/CarePlan" alias CarePlan as source
+uses "http://hl7.org/fhir/1.0/CarePlan" alias CarePlanR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group CarePlan(source src : CarePlan, target tgt : CarePlanR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "CarePlan-identifier";
+  src.subject -> tgt.subject "CarePlan-subject";
+  src.status -> tgt.status "CarePlan-status";
+  src.context -> tgt.context "CarePlan-context";
+  src.period -> tgt.period "CarePlan-period";
+  src.author -> tgt.author "CarePlan-author";
+  src.extension as e where e.url = 'http://hl7.org/fhir/CarePlan-r2-modified' -> tgt.modified = (e.value) "CarePlan-modified";
+  src.category -> tgt.category "CarePlan-category";
+  src.description -> tgt.description "CarePlan-description";
+  src.addresses -> tgt.addresses "CarePlan-addresses";
+  src.supportingInfo -> tgt.support "CarePlan-support";
+  src.basedOn as vs0 ->  tgt.relatedPlan as rp,  rp.code = 'fulfills',  rp.plan = v "CarePlan-relatedPlan2";
+  src.replaces as vs0 ->  tgt.relatedPlan as rp,  rp.code = 'replaces',  rp.plan = v "CarePlan-relatedPlan3";
+  src.careTeam as vs where reference.resolve().exists() -> (src.careTeam.reference.resolve()) as ct then plnParticipant(ct, tgt) "CarePlan-participant";
+  src.goal -> tgt.goal "CarePlan-goal";
+  src.activity as vs0 -> tgt.activity as vt0 then plnActivity(vs0, vt0) "CarePlan-activity";
+  src.note -> tgt.note "CarePlan-note";
+}
+
+group plnActivity(source src, target tgt) extends BackboneElement {
+  src.outcomeReference -> tgt.actionResulting "activity-actionResulting";
+  src.progress -> tgt.progress "activity-progress";
+  src.reference -> tgt.reference "activity-reference";
+  src.detail as vs0 -> tgt.detail as vt0 then plnDetail(vs0, vt0) "activity-detail";
+}
+
+group plnDetail(source src, target tgt) extends BackboneElement {
+  src.category -> tgt.category "detail-category";
+  src.code -> tgt.code "detail-code";
+  src.reasonCode -> tgt.reasonCode "detail-reasonCode";
+  src.reasonReference -> tgt.reasonReference "detail-reasonReference";
+  src.goal -> tgt.goal "detail-goal";
+  src.status -> tgt.status "detail-status";
+  src.statusReason -> tgt.statusReason "detail-statusReason";
+  src.prohibited -> tgt.prohibited "detail-prohibited";
+  src.scheduled -> tgt.scheduled "detail-scheduled";
+  src.location -> tgt.location "detail-location";
+  src.performer -> tgt.performer "detail-performer";
+  src.product -> tgt.product "detail-product";
+  src.dailyAmount -> tgt.dailyAmount "detail-dailyAmount";
+  src.quantity -> tgt.quantity "detail-quantity";
+  src.description -> tgt.description "detail-description";
+}
+
+group plnParticipant(source src, target tgt) {
+  src.participant as vs -> tgt.participant as vt then plnParticipantMember(vs, vt) "participant-unlink";
+}
+
+group plnParticipantMember(source src, target tgt) extends BackboneElement {
+  src.role -> tgt.role "participant-role";
+  src.member -> tgt.member "participant-member";
+}
+

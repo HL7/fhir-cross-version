@@ -1,0 +1,47 @@
+/// url = "http://hl7.org/fhir/StructureMap/Questionnaire3to2"
+/// name = "Questionnaire3to2"
+/// title = "Questionnaire Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Questionnaire" alias Questionnaire as source
+uses "http://hl7.org/fhir/1.0/Questionnaire" alias QuestionnaireR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group Questionnaire(source src : Questionnaire, target tgt : QuestionnaireR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Questionnaire-identifier";
+  src.version -> tgt.version "Questionnaire-version";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Questionnaire.status-R3toR2', 'code') "Questionnaire-status";
+  src.date -> tgt.date "Questionnaire-date";
+  src.publisher -> tgt.publisher "Questionnaire-publisher";
+  src.contact as v then {
+    v.telecom -> tgt.telecom "Questionnaire-telecom-inner";
+  } "Questionnaire-telecom1";
+  src.subjectType -> tgt.subjectType "Questionnaire-subjectType";
+  src.item as vs0 where type = 'group' -> tgt.group as vt0 then qstGroup(vs0, vt0) "Questionnaire-group";
+}
+
+group qstGroup(source src, target tgt) extends BackboneElement {
+  src.linkId -> tgt.linkId "group-linkId";
+  src.text -> tgt.title "group-title";
+  src.code -> tgt.concept "group-concept";
+  src.required -> tgt.required "group-required";
+  src.repeats -> tgt.repeats "group-repeats";
+  src.item as vs0 where type = 'group' -> tgt.group as vt0 then qstGroup(vs0, vt0) "group-group";
+  src.item as vs0 where type != 'group' -> tgt.question as vt0 then qstQuestion(vs0, vt0) "group-question";
+}
+
+group qstQuestion(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type "question-type";
+  src.linkId -> tgt.linkId "question-linkId";
+  src.code -> tgt.concept "question-concept";
+  src.text -> tgt.text "question-text";
+  src.required -> tgt.required "question-required";
+  src.repeats -> tgt.repeats "question-repeats";
+  src.options -> tgt.options "question-options";
+  src.option as s then {
+    s.value as v where v.is(Coding) -> tgt.option = v "question-option-inner";
+  } "question-option";
+  src.item as vs0 where type = 'group' -> tgt.group as vt0 then qstGroup(vs0, vt0) "question-group";
+}
+

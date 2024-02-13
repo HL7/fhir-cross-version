@@ -1,0 +1,39 @@
+/// url = "http://hl7.org/fhir/StructureMap/NamingSystem2to3"
+/// name = "NamingSystem"
+/// title = "NamingSystem Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/NamingSystem" alias NamingSystemR2 as source
+uses "http://hl7.org/fhir/3.0/NamingSystem" alias NamingSystem as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/DomainResource2to3"
+imports "http://hl7.org/fhir/StructureMap/ContactPoint2to3"
+imports "http://hl7.org/fhir/StructureMap/Reference2to3"
+imports "http://hl7.org/fhir/StructureMap/Period2to3"
+imports "http://hl7.org/fhir/StructureMap/CodeableConcept2to3"
+
+group NamingSystem(source src : NamingSystemR2, target tgt : NamingSystem) extends DomainResource <<type+>> {
+  src.name -> tgt.name "NamingSystem-name";
+  src.status -> tgt.status "NamingSystem-status";
+  src.kind -> tgt.kind "NamingSystem-kind";
+  src.date -> tgt.date "NamingSystem-date";
+  src.publisher -> tgt.publisher "NamingSystem-publisher";
+  src.contact as vs0 -> tgt.contact as vt0 then {
+    vs0.name -> vt0.name "ContactDetail-name";
+    vs0.telecom -> vt0.telecom "ContactDetail-telecom";
+  } "NamingSystem-contact";
+  src.responsible -> tgt.responsible "NamingSystem-responsible";
+  src.type -> tgt.type "NamingSystem-type";
+  src.description -> tgt.description "NamingSystem-description";
+  src.usage -> tgt.usage "NamingSystem-usage";
+  src.uniqueId as vs0 -> tgt.uniqueId as vt0 then {
+    vs0.type -> vt0.type "uniqueId-type";
+    vs0.value -> vt0.value "uniqueId-value";
+    vs0.preferred -> vt0.preferred "uniqueId-preferred";
+    vs0.period -> vt0.period "uniqueId-period";
+  } "NamingSystem-uniqueId";
+  src.replacedBy -> tgt.replacedBy "NamingSystem-replacedBy";
+  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "NamingSystem-jurisdiction";
+}
+

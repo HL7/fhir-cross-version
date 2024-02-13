@@ -1,0 +1,17 @@
+/// url = "http://hl7.org/fhir/StructureMap/DomainResource2to3"
+/// name = "DomainResource2to3"
+/// title = "DomainResource Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/DomainResource" alias DomainResourceR2 as source
+uses "http://hl7.org/fhir/3.0/DomainResource" alias DomainResource as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group DomainResource(source src : DomainResourceR2, target tgt : DomainResource) extends Resource <<type+>> {
+  src.contained -> tgt.contained "DomainResource-contained";
+  src.text -> tgt.text "DomainResource-text";
+  src.extension -> tgt.extension "DomainResource-extension";
+  src.modifierExtension -> tgt.modifierExtension "DomainResource-modifierExtension";
+}
+

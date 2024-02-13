@@ -1,0 +1,28 @@
+/// url = "http://hl7.org/fhir/StructureMap/SupplyDelivery3to2"
+/// name = "SupplyDelivery3to2"
+/// title = "SupplyD3 to R2elivery Transforms: R"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/SupplyDelivery" alias SupplyDelivery as source
+uses "http://hl7.org/fhir/1.0/SupplyDelivery" alias SupplyDeliveryR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group SupplyDelivery(source src : SupplyDelivery, target tgt : SupplyDeliveryR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "SupplyDelivery-identifier";
+  src.status -> tgt.status "SupplyDelivery-status";
+  src.patient -> tgt.patient "SupplyDelivery-patient";
+  src.type -> tgt.type "SupplyDelivery-type";
+  src.suppliedItem as v then sdvItem(v, tgt) "SupplyDelivery-suppliedItem";
+  src.supplier -> tgt.supplier "SupplyDelivery-supplier";
+  src.extension as e where e.url = 'http://hl7.org/fhir/SupplyDelivery-r2-whenPrepared' -> tgt.whenPrepared = (e.value) "SupplyDelivery-whenPrepared";
+  src.occurrence as v where v.is(dateTime) -> tgt.time = v "SupplyDelivery-time";
+  src.destination -> tgt.destination "SupplyDelivery-destination";
+  src.receiver -> tgt.receiver "SupplyDelivery-receiver";
+}
+
+group sdvItem(source src, target tgt) extends BackboneElement {
+  src.quantity -> tgt.quantity "item-quantity";
+  src.item -> tgt.suppliedItem "item-quantity";
+}
+

@@ -1,0 +1,29 @@
+/// url = "http://hl7.org/fhir/StructureMap/MedicationStatement5to4"
+/// name = "MedicationStatement5to4"
+/// title = "MedicationStatement Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/MedicationStatement" alias MedicationStatementR5 as source
+uses "http://hl7.org/fhir/4.0/MedicationStatement" alias MedicationStatementR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group MedicationStatement(source src : MedicationStatementR5, target tgt : MedicationStatementR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.partOf -> tgt.partOf;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/MedicationStatement.status-R5toR4', 'code');
+  src.category -> tgt.category;
+  src.medication -> tgt.medication;
+  src.subject -> tgt.subject;
+  src.encounter -> tgt.context;
+  src.effective : dateTime -> tgt.effective "effectiveDateTime";
+  src.effective : Period -> tgt.effective "effectivePeriod";
+  src.dateAsserted -> tgt.dateAsserted;
+  src.informationSource -> tgt.informationSource;
+  src.derivedFrom -> tgt.derivedFrom;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
+  src.note -> tgt.note;
+  src.dosage -> tgt.dosage;
+}
+

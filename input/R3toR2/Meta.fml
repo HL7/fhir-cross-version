@@ -1,0 +1,20 @@
+/// url = "http://hl7.org/fhir/StructureMap/Meta3to2"
+/// name = "Meta3to2"
+/// title = "Meta Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Meta" alias Meta as source
+uses "http://hl7.org/fhir/1.0/Meta" alias MetaR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/StructureMap/Element3to2"
+imports "http://hl7.org/fhir/StructureMap/Coding3to2"
+
+group Meta(source src : Meta, target tgt : MetaR2) extends Element <<type+>> {
+  src.versionId -> tgt.versionId "Meta-versionId";
+  src.lastUpdated -> tgt.lastUpdated "Meta-lastUpdated";
+  src.profile -> tgt.profile "Meta-profile";
+  src.security -> tgt.security "Meta-security";
+  src.tag -> tgt.tag "Meta-tag";
+}
+

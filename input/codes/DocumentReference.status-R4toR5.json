@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DocumentReference.status-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/DocumentReference.status-R4toR5",
+  "name" : "DocumentReference.status-R4toR5",
+  "title" : "Mapping for DocumentReference.status from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/document-reference-status",
+    "target" : "http://hl7.org/fhir/5.0/document-reference-status",
+    "element" : [{
+      "code" : "current",
+      "target" : [{
+        "code" : "current",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "superseded",
+      "target" : [{
+        "code" : "superseded",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

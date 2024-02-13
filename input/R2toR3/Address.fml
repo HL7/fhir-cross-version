@@ -1,0 +1,25 @@
+/// url = "http://hl7.org/fhir/StructureMap/Address2to3"
+/// name = "Address2to3"
+/// title = "Address Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Address" alias AddressR2 as source
+uses "http://hl7.org/fhir/3.0/Address" alias Address as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/Element2to3"
+imports "http://hl7.org/fhir/StructureMap/Period2to3"
+
+group Address(source src : AddressR2, target tgt : Address) extends Element <<type+>> {
+  src.use -> tgt.use "Address-use";
+  src.type -> tgt.type "Address-type";
+  src.text -> tgt.text "Address-text";
+  src.line -> tgt.line "Address-line";
+  src.city -> tgt.city "Address-city";
+  src.district -> tgt.district "Address-district";
+  src.state -> tgt.state "Address-state";
+  src.postalCode -> tgt.postalCode "Address-postalCode";
+  src.country -> tgt.country "Address-country";
+  src.period -> tgt.period "Address-period";
+}
+

@@ -1,0 +1,55 @@
+/// url = "http://hl7.org/fhir/StructureMap/MedicationOrder3to2"
+/// name = "MedicationOrder3to2"
+/// title = "MedicationOrder Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/MedicationRequest" alias MedicationRequest as source
+uses "http://hl7.org/fhir/1.0/MedicationOrder" alias MedicationOrderR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group MedicationRequest(source src : MedicationRequest, target tgt : MedicationOrderR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "MedicationOrder-identifier";
+  src.authoredOn -> tgt.dateWritten "MedicationOrder-dateWritten";
+  src.status check ($this != 'cancelled') and ($this != 'unknown') -> tgt.status "MedicationOrder-status";
+  src.subject -> tgt.patient "MedicationOrder-patient";
+  src.requester as req -> tgt.prescriber as vt then medRequestor(req, vt) "MedicationOrder-prescriber";
+  src.context -> tgt.encounter "MedicationOrder-encounter";
+  src.reasonCode -> tgt.reason "MedicationOrder-reasonCode";
+  src.reasonReference -> tgt.reason "MedicationOrder-reasonCode";
+  src.note only_one -> tgt.note "MedicationOrder-note";
+  src.medication -> tgt.medication "MedicationOrder-medication";
+  src.dosageInstruction as vs -> tgt.dosageInstruction as vt then medDosageInstruction(vs, vt) "MedicationOrder-dosageInstruction";
+  src.dispenseRequest as vs -> tgt.dispenseRequest as vt then medDispenseRequest(vs, vt) "MedicationOrder-dispenseRequest";
+  src.substitution as vs -> tgt.substitution as vt then medSubstitution(vs, vt) "MedicationOrder-substitution";
+  src.priorPrescription -> tgt.priorPrescription "MedicationOrder-priorPrescription";
+}
+
+group medDosageInstruction(source src, target tgt) extends Element {
+  src.text -> tgt.text "dosage-text";
+  src.additionalInstruction only_one -> tgt.additionalInstructions "dosage-additionalInstructions";
+  src.timing -> tgt.timing "dosage-timing";
+  src.asNeeded -> tgt.asNeeded "dosage-asNeeded";
+  src.site -> tgt.site "dosage-site";
+  src.route -> tgt.route "dosage-route";
+  src.method -> tgt.method "dosage-method";
+  src.dose -> tgt.dose "dosage-dose";
+  src.rate -> tgt.rate "dosage-rate";
+  src.maxDosePerPeriod -> tgt.maxDosePerPeriod "dosage-maxDosePerPeriod";
+}
+
+group medDispenseRequest(source src, target tgt) extends BackboneElement {
+  src.validityPeriod -> tgt.validityPeriod "dispenseRequest-validityPeriod";
+  src.numberOfRepeatsAllowed -> tgt.numberOfRepeatsAllowed "dispenseRequest-numberOfRepeatsAllowed";
+  src.quantity -> tgt.quantity "dispenseRequest-quantity";
+  src.expectedSupplyDuration as v -> tgt.expectedSupplyDuration as d then DurationToQuantity(v, d) "dispenseRequest-expectedSupplyDuration";
+}
+
+group medSubstitution(source src, target tgt) extends BackboneElement {
+  src.reason -> tgt.reason "substitution-reason";
+}
+
+group medRequestor(source src, target tgt) {
+  src.agent as sa then Reference(sa, tgt) "MedicationOrder-prescriber2";
+}
+

@@ -1,0 +1,35 @@
+/// url = "http://hl7.org/fhir/StructureMap/Communication2to3"
+/// name = "Communication2to3"
+/// title = "Communication Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Communication" alias CommunicationR2 as source
+uses "http://hl7.org/fhir/3.0/Communication" alias Communication as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/DomainResource2to3"
+imports "http://hl7.org/fhir/StructureMap/Attachment2to3"
+imports "http://hl7.org/fhir/StructureMap/Identifier2to3"
+imports "http://hl7.org/fhir/StructureMap/Reference2to3"
+imports "http://hl7.org/fhir/StructureMap/CodeableConcept2to3"
+
+group Communication(source src : CommunicationR2, target tgt : Communication) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Communication-identifier";
+  src.category -> tgt.category "Communication-category";
+  src.sender -> tgt.sender "Communication-sender";
+  src.recipient -> tgt.recipient "Communication-recipient";
+  src.payload as vs0 -> tgt.payload as vt0 then cmmPayload(vs0, vt0) "Communication-payload";
+  src.medium -> tgt.medium "Communication-medium";
+  src.status -> tgt.status "Communication-status";
+  src.encounter -> tgt.context "Communication-encounter";
+  src.sent -> tgt.sent "Communication-sent";
+  src.received -> tgt.received "Communication-received";
+  src.reason -> tgt.reasonCode "Communication-reason";
+  src.subject -> tgt.subject "Communication-subject";
+  src.requestDetail -> tgt.basedOn "Communication-requestDetail";
+}
+
+group cmmPayload(source src, target tgt) {
+  src.content -> tgt.content "payload-content";
+}
+

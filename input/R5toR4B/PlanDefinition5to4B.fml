@@ -1,0 +1,142 @@
+/// url = "http://hl7.org/fhir/StructureMap/PlanDefinition5to4B"
+/// name = "PlanDefinition5to4B"
+/// title = "PlanDefinition Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/PlanDefinition" alias PlanDefinitionR5 as source
+uses "http://hl7.org/fhir/4.0/PlanDefinition" alias PlanDefinitionR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group PlanDefinition(source src : PlanDefinitionR5, target tgt : PlanDefinitionR4B) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.name -> tgt.name;
+  src.title -> tgt.title;
+  src.subtitle -> tgt.subtitle;
+  src.type -> tgt.type;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.status-R5toR4', 'code');
+  src.experimental -> tgt.experimental;
+  src.subject as s where code = 'Patient' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
+  src.subject as s where code = 'Practitioner' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
+  src.subject as s where code = 'Organization' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Organization';
+  src.subject as s where code = 'Location' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Location';
+  src.subject as s where code = 'Device' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Device';
+  src.subject : Reference -> tgt.subject "subjectReference";
+  src.subject : canonical -> tgt.subject "subjectCanonical";
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.useContext -> tgt.useContext;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.purpose -> tgt.purpose;
+  src.usage -> tgt.usage;
+  src.copyright -> tgt.copyright;
+  src.approvalDate -> tgt.approvalDate;
+  src.lastReviewDate -> tgt.lastReviewDate;
+  src.effectivePeriod -> tgt.effectivePeriod;
+  src.topic -> tgt.topic;
+  src.author -> tgt.author;
+  src.editor -> tgt.editor;
+  src.reviewer -> tgt.reviewer;
+  src.endorser -> tgt.endorser;
+  src.relatedArtifact -> tgt.relatedArtifact;
+  src.library -> tgt.library;
+  src.goal as s -> tgt.goal as t then PlanDefinitionGoal(s, t);
+  src.action as s -> tgt.action as t then PlanDefinitionAction(s, t);
+}
+
+group PlanDefinitionGoal(source src, target tgt) extends BackboneElement {
+  src.category -> tgt.category;
+  src.description -> tgt.description;
+  src.priority -> tgt.priority;
+  src.start -> tgt.start;
+  src.addresses -> tgt.addresses;
+  src.documentation -> tgt.documentation;
+  src.target as s -> tgt.target as t then PlanDefinitionGoalTarget(s, t);
+}
+
+group PlanDefinitionGoalTarget(source src, target tgt) extends BackboneElement {
+  src.measure -> tgt.measure;
+  src.detail : Quantity -> tgt.detail "detailQuantity";
+  src.detail : Range -> tgt.detail "detailRange";
+  src.detail : CodeableConcept -> tgt.detail "detailCodeableConcept";
+  src.due -> tgt.due;
+}
+
+// group PlanDefinitionActor(source src, target tgt) extends BackboneElement {
+// src.title -> tgt.title;
+// src.description -> tgt.description;
+// src.option as s -> tgt.option as t then PlanDefinitionActorOption(s,t);
+// }
+// group PlanDefinitionActorOption(source src, target tgt) extends BackboneElement {
+// src.type as v -> tgt.type = translate(v, '#ActivityParticipantType', 'code');
+// src.typeCanonical -> tgt.typeCanonical;
+// src.typeReference -> tgt.typeReference;
+// src.role -> tgt.role;
+// }
+group PlanDefinitionAction(source src, target tgt) extends BackboneElement {
+  src.linkId -> tgt.id;
+  src.prefix -> tgt.prefix;
+  src.title -> tgt.title;
+  src.description -> tgt.description;
+  src.textEquivalent -> tgt.textEquivalent;
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.priority-R5toR4', 'code');
+  src.code -> tgt.code;
+  src.reason -> tgt.reason;
+  src.documentation -> tgt.documentation;
+  src.goalId -> tgt.goalId;
+  src.subject as s where code = 'Patient' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
+  src.subject as s where code = 'Practitioner' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
+  src.subject as s where code = 'Organization' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Organization';
+  src.subject as s where code = 'Location' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Location';
+  src.subject as s where code = 'Device' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Device';
+  src.subject : Reference -> tgt.subject "subjectReference";
+  src.subject : canonical -> tgt.subject "subjectCanonical";
+  src.trigger -> tgt.trigger;
+  src.condition as s -> tgt.condition as t then PlanDefinitionActionCondition(s, t);
+  src.input as s -> tgt.input = r.requirement;
+  src.output as s -> tgt.output = r.requirement;
+  src.relatedAction as s -> tgt.relatedAction as t then PlanDefinitionActionRelatedAction(s, t);
+  src.timing : Age -> tgt.timing "timingAge";
+  src.timing : Duration -> tgt.timing "timingDuration";
+  src.timing : Range -> tgt.timing "timingRange";
+  src.timing : Timing -> tgt.timing "timingTiming";
+  src.participant as s -> tgt.participant as t then PlanDefinitionActionParticipant(s, t);
+  src.type -> tgt.type;
+  src.groupingBehavior as v -> tgt.groupingBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.groupingBehavior-R5toR4', 'code');
+  src.selectionBehavior as v -> tgt.selectionBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.selectionBehavior-R5toR4', 'code');
+  src.requiredBehavior as v -> tgt.requiredBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.requiredBehavior-R5toR4', 'code');
+  src.precheckBehavior as v -> tgt.precheckBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.precheckBehavior-R5toR4', 'code');
+  src.cardinalityBehavior as v -> tgt.cardinalityBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.cardinalityBehavior-R5toR4', 'code');
+  src.definition : canonical -> tgt.definition "definitionCanonical";
+  src.definition : uri -> tgt.definition "definitionUri";
+  src.transform -> tgt.transform;
+  src.dynamicValue as s -> tgt.dynamicValue as t then PlanDefinitionActionDynamicValue(s, t);
+}
+
+group PlanDefinitionActionCondition(source src, target tgt) extends BackboneElement {
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.condition.kind-R5toR4', 'code');
+  src.expression -> tgt.expression;
+}
+
+group PlanDefinitionActionRelatedAction(source src, target tgt) extends BackboneElement {
+  src.targetId -> tgt.actionId;
+  src.relationship as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.relatedAction.relationship-R5toR4', 'code');
+  src.endRelationship as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.relatedAction.endRelationship-R5toR4', 'code');
+  src.offset : Duration -> tgt.offset "offsetDuration";
+  src.offset : Range -> tgt.offset "offsetRange";
+}
+
+group PlanDefinitionActionParticipant(source src, target tgt) extends BackboneElement {
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.participant.type-R5toR4', 'code');
+  src.role -> tgt.role;
+}
+
+group PlanDefinitionActionDynamicValue(source src, target tgt) extends BackboneElement {
+  src.path -> tgt.path;
+  src.expression -> tgt.expression;
+}
+

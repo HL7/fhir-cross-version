@@ -1,0 +1,29 @@
+/// url = "http://hl7.org/fhir/StructureMap/DeviceComponent3to2"
+/// name = "DeviceComponent3to2"
+/// title = "DeviceComponent Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/DeviceComponent" alias DeviceComponent as source
+uses "http://hl7.org/fhir/1.0/DeviceComponent" alias DeviceComponentR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group DeviceComponent(source src : DeviceComponent, target tgt : DeviceComponentR2) extends DomainResource <<type+>> {
+  src.type -> tgt.type "DeviceComponent-type";
+  src.identifier -> tgt.identifier "DeviceComponent-identifier";
+  src.lastSystemChange -> tgt.lastSystemChange "DeviceComponent-lastSystemChange";
+  src.source -> tgt.source "DeviceComponent-source";
+  src.parent -> tgt.parent "DeviceComponent-parent";
+  src.operationalStatus -> tgt.operationalStatus "DeviceComponent-operationalStatus";
+  src.parameterGroup -> tgt.parameterGroup "DeviceComponent-parameterGroup";
+  src.measurementPrinciple -> tgt.measurementPrinciple "DeviceComponent-measurementPrinciple";
+  src.productionSpecification as vs0 -> tgt.productionSpecification as vt0 then dvcProductionSpecification(vs0, vt0) "DeviceComponent-productionSpecification";
+  src.languageCode -> tgt.languageCode "DeviceComponent-languageCode";
+}
+
+group dvcProductionSpecification(source src, target tgt) extends BackboneElement {
+  src.specType -> tgt.specType "productionSpecification-specType";
+  src.componentId -> tgt.componentId "productionSpecification-componentId";
+  src.productionSpec -> tgt.productionSpec "productionSpecification-productionSpec";
+}
+

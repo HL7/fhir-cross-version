@@ -1,0 +1,29 @@
+/// url = "http://hl7.org/fhir/StructureMap/ManufacturedItemDefinition5to4B"
+/// name = "ManufacturedItemDefinition5to4B"
+/// title = "ManufacturedItemDefinition Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/ManufacturedItemDefinition" alias ManufacturedItemDefinitionR5 as source
+uses "http://hl7.org/fhir/4.0/ManufacturedItemDefinition" alias ManufacturedItemDefinitionR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group ManufacturedItemDefinition(source src : ManufacturedItemDefinitionR5, target tgt : ManufacturedItemDefinitionR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ManufacturedItemDefinition.status-R5toR4', 'code');
+  src.manufacturedDoseForm -> tgt.manufacturedDoseForm;
+  src.unitOfPresentation -> tgt.unitOfPresentation;
+  src.manufacturer -> tgt.manufacturer;
+  src.ingredient -> tgt.ingredient;
+  src.property as s -> tgt.property as t then ManufacturedItemDefinitionProperty(s, t);
+}
+
+group ManufacturedItemDefinitionProperty(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.value : CodeableConcept -> tgt.value "valueCodeableConcept";
+  src.value : Quantity -> tgt.value "valueQuantity";
+  src.value : date -> tgt.value "valueDate";
+  src.value : boolean -> tgt.value "valueBoolean";
+  src.value : Attachment -> tgt.value "valueAttachment";
+}
+

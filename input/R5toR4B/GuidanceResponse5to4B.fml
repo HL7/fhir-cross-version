@@ -1,0 +1,30 @@
+/// url = "http://hl7.org/fhir/StructureMap/GuidanceResponse5to4B"
+/// name = "GuidanceResponse5to4B"
+/// title = "GuidanceResponse Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/GuidanceResponse" alias GuidanceResponseR5 as source
+uses "http://hl7.org/fhir/4.0/GuidanceResponse" alias GuidanceResponseR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group GuidanceResponse(source src : GuidanceResponseR5, target tgt : GuidanceResponseR4B) extends DomainResource <<type+>> {
+  src.requestIdentifier -> tgt.requestIdentifier;
+  src.identifier -> tgt.identifier;
+  src.module : uri -> tgt.module "moduleUri";
+  src.module : canonical -> tgt.module "moduleCanonical";
+  src.module : CodeableConcept -> tgt.module "moduleCodeableConcept";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/GuidanceResponse.status-R5toR4', 'code');
+  src.subject -> tgt.subject;
+  src.encounter -> tgt.encounter;
+  src.occurrenceDateTime -> tgt.occurrenceDateTime;
+  src.performer -> tgt.performer;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
+  src.note -> tgt.note;
+  src.evaluationMessage -> tgt.evaluationMessage;
+  src.outputParameters -> tgt.outputParameters;
+  src.result -> tgt.result;
+  src.dataRequirement -> tgt.dataRequirement;
+}
+

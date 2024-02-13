@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "StructureDefinition.kind-R3toR2",
+  "url" : "http://hl7.org/fhir/ConceptMap/StructureDefinition.kind-R3toR2",
+  "name" : "StructureDefinition.kind-R3toR2",
+  "title" : "Mapping for StructureDefinition.kind from R3 to R2",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition#StructureDefinition.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition#StructureDefinition.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/structure-definition-kind",
+    "target" : "http://hl7.org/fhir/1.0/structure-definition-kind",
+    "element" : [{
+      "code" : "primitive-type",
+      "target" : [{
+        "code" : "datatype",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "complex-type",
+      "target" : [{
+        "code" : "datatype",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "resource",
+      "target" : [{
+        "code" : "resource",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "logical",
+      "target" : [{
+        "code" : "logical",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

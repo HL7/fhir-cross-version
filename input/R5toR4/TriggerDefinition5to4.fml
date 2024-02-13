@@ -1,0 +1,21 @@
+/// url = "http://hl7.org/fhir/StructureMap/TriggerDefinition5to4"
+/// name = "TriggerDefinition5to4"
+/// title = "TriggerDefinition Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/TriggerDefinition" alias TriggerDefinitionR5 as source
+uses "http://hl7.org/fhir/4.0/TriggerDefinition" alias TriggerDefinitionR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group TriggerDefinition(source src : TriggerDefinitionR5, target tgt : TriggerDefinitionR4) extends Element <<type+>> {
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/TriggerDefinition.type-R5toR4', 'code');
+  src.name -> tgt.name;
+  src.timing : Timing -> tgt.timing "timingTiming";
+  src.timing : Reference -> tgt.timing "timingReference";
+  src.timing : date -> tgt.timing "timingDate";
+  src.timing : dateTime -> tgt.timing "timingDateTime";
+  src.data -> tgt.data;
+  src.condition -> tgt.condition;
+}
+

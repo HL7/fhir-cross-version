@@ -1,0 +1,43 @@
+/// url = "http://hl7.org/fhir/StructureMap/SearchParameter4Bto5"
+/// name = "SearchParameter4Bto5"
+/// title = "SearchParameter Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/SearchParameter" alias SearchParameterR4B as source
+uses "http://hl7.org/fhir/5.0/SearchParameter" alias SearchParameterR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group SearchParameter(source src : SearchParameterR4B, target tgt : SearchParameterR5) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.version -> tgt.version;
+  src.name -> tgt.name;
+  src.derivedFrom -> tgt.derivedFrom;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/SearchParameterB.status-R4BtoR5', 'code');
+  src.experimental -> tgt.experimental;
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.useContext -> tgt.useContext;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.purpose -> tgt.purpose;
+  src.code -> tgt.code;
+  src.base -> tgt.base;
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/SearchParameterB.type-R4BtoR5', 'code');
+  src.expression -> tgt.expression;
+  src.xpathUsage as v -> tgt.processingMode = translate(v, 'http://hl7.org/fhir/ConceptMap/SearchParameterB.xpathUsage-R4BtoR5', 'code');
+  src.target -> tgt.target;
+  src.multipleOr -> tgt.multipleOr;
+  src.multipleAnd -> tgt.multipleAnd;
+  src.comparator as v -> tgt.comparator = translate(v, 'http://hl7.org/fhir/ConceptMap/SearchParameterB.comparator-R4BtoR5', 'code');
+  src.modifier as v -> tgt.modifier = translate(v, 'http://hl7.org/fhir/ConceptMap/SearchParameterB.modifier-R4BtoR5', 'code');
+  src.chain -> tgt.chain;
+  src.component as s -> tgt.component as t then SearchParameterComponent(s, t);
+}
+
+group SearchParameterComponent(source src, target tgt) extends BackboneElement {
+  src.definition -> tgt.definition;
+  src.expression -> tgt.expression;
+}
+

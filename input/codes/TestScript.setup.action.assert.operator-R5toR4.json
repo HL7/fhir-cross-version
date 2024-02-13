@@ -1,0 +1,98 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "TestScript.setup.action.assert.operator-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/TestScript.setup.action.assert.operator-R5toR4",
+  "name" : "TestScript.setup.action.assert.operator-R5toR4",
+  "title" : "Mapping for TestScript.setup.action.assert.operator from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestScript#TestScript.setup.action.assert.operator",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestScriptB#TestScriptB.setup.action.assert.operator",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/assert-operator-codes",
+    "target" : "http://hl7.org/fhir/4.0/assert-operator-codes",
+    "element" : [{
+      "code" : "equals",
+      "target" : [{
+        "code" : "equals",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "notEquals",
+      "target" : [{
+        "code" : "notEquals",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "notIn",
+      "target" : [{
+        "code" : "notIn",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "greaterThan",
+      "target" : [{
+        "code" : "greaterThan",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "lessThan",
+      "target" : [{
+        "code" : "lessThan",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "empty",
+      "target" : [{
+        "code" : "empty",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "notEmpty",
+      "target" : [{
+        "code" : "notEmpty",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "contains",
+      "target" : [{
+        "code" : "contains",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "notContains",
+      "target" : [{
+        "code" : "notContains",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "eval",
+      "target" : [{
+        "code" : "eval",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "manualEval",
+      "target" : [{
+        "code" : "eval",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

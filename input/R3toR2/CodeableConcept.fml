@@ -1,0 +1,31 @@
+/// url = "http://hl7.org/fhir/StructureMap/CodeableConcept3to2"
+/// name = "CodeableConcept3to2"
+/// title = "CodeableConcept Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/CodeableConcept" alias CodeableConcept as source
+uses "http://hl7.org/fhir/1.0/CodeableConcept" alias CodeableConceptR2 as target
+uses "http://hl7.org/fhir/1.0/Coding" alias CodingR2 as target
+uses "http://hl7.org/fhir/1.0/string" alias stringR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/StructureMap/Element3to2"
+imports "http://hl7.org/fhir/StructureMap/Coding3to2"
+
+group CodeableConcept(source src : CodeableConcept, target tgt : CodeableConceptR2) extends Element <<type+>> {
+  src.coding -> tgt.coding "CodeableConcept-coding";
+  src.text -> tgt.text "CodeableConcept-text";
+}
+
+group CodeableConceptToCoding(source src : CodeableConcept, target tgt : CodingR2) extends Element <<types>> {
+  src.coding only_one as vs then Coding(vs, tgt) "CodeableConcept-coding";
+}
+
+group CodingToCodeableConcept(source src : Coding, target tgt : CodeableConceptR2) extends Element <<types>> {
+  src -> tgt.coding as vt then Coding(src, vt) "CodingToCodeableConcept-coding";
+}
+
+group CodeableConceptToString(source src : CodeableConcept, target tgt : stringR2) extends Element <<types>> {
+  src.text as vs then string(vs, tgt) "CodeableConceptToString-text";
+}
+

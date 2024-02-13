@@ -1,0 +1,28 @@
+/// url = "http://hl7.org/fhir/StructureMap/Organization2to3"
+/// name = "Organization2to3"
+/// title = "Organization Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Organization" alias OrganizationR2 as source
+uses "http://hl7.org/fhir/3.0/Organization" alias Organization as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Organization(source src : OrganizationR2, target tgt : Organization) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Organization-identifier";
+  src.active -> tgt.active "Organization-active";
+  src.type -> tgt.type "Organization-type";
+  src.name -> tgt.name "Organization-name";
+  src.telecom -> tgt.telecom "Organization-telecom";
+  src.address -> tgt.address "Organization-address";
+  src.partOf -> tgt.partOf "Organization-partOf";
+  src.contact as vs0 -> tgt.contact as vt0 then orgContact(vs0, vt0) "Organization-contact";
+}
+
+group orgContact(source src, target tgt) extends BackboneElement {
+  src.purpose -> tgt.purpose "contact-purpose";
+  src.name -> tgt.name "contact-name";
+  src.telecom -> tgt.telecom "contact-telecom";
+  src.address -> tgt.address "contact-address";
+}
+

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "PlanDefinition.action.condition.kind-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/PlanDefinition.action.condition.kind-R5toR4",
+  "name" : "PlanDefinition.action.condition.kind-R5toR4",
+  "title" : "Mapping for PlanDefinition.action.condition.kind from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.condition.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinitionB#PlanDefinitionB.action.condition.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/action-condition-kind",
+    "target" : "http://hl7.org/fhir/4.0/action-condition-kind",
+    "element" : [{
+      "code" : "applicability",
+      "target" : [{
+        "code" : "applicability",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "start",
+      "target" : [{
+        "code" : "start",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "stop",
+      "target" : [{
+        "code" : "stop",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ListB.status-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/ListB.status-R4BtoR5",
+  "name" : "ListB.status-R4BtoR5",
+  "title" : "Mapping for ListB.status from R4B to R5",
+  "status" : "draft",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ListB#ListB.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/List#List.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/list-status",
+    "target" : "http://hl7.org/fhir/5.0/list-status",
+    "element" : [{
+      "code" : "current",
+      "target" : [{
+        "code" : "current",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

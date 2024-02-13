@@ -1,0 +1,99 @@
+/// url = "http://hl7.org/fhir/StructureMap/NutritionOrder5to4B"
+/// name = "NutritionOrder5to4B"
+/// title = "NutritionOrder Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/NutritionOrder" alias NutritionOrderR5 as source
+uses "http://hl7.org/fhir/4.0/NutritionOrder" alias NutritionOrderR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group NutritionOrder(source src : NutritionOrderR5, target tgt : NutritionOrderR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.instantiatesCanonical -> tgt.instantiatesCanonical;
+  src.instantiatesUri -> tgt.instantiatesUri;
+  src.instantiates -> tgt.instantiates;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/NutritionOrder.status-R5toR4', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/NutritionOrder.intent-R5toR4', 'code');
+  src.subject -> tgt.patient;
+  src.encounter -> tgt.encounter;
+  src.dateTime -> tgt.dateTime;
+  src.orderer -> tgt.orderer;
+  src.allergyIntolerance -> tgt.allergyIntolerance;
+  src.foodPreferenceModifier -> tgt.foodPreferenceModifier;
+  src.excludeFoodModifier -> tgt.excludeFoodModifier;
+  src.oralDiet as s -> tgt.oralDiet as t then NutritionOrderOralDiet(s, t);
+  src.supplement as s -> tgt.supplement as t then NutritionOrderSupplement(s, t);
+  src.enteralFormula as s -> tgt.enteralFormula as t then NutritionOrderEnteralFormula(s, t);
+  src.note -> tgt.note;
+}
+
+group NutritionOrderOralDiet(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.schedule as s -> tgt then {
+    s.timing -> tgt.schedule;
+  };
+  src.nutrient as s -> tgt.nutrient as t then NutritionOrderOralDietNutrient(s, t);
+  src.texture as s -> tgt.texture as t then NutritionOrderOralDietTexture(s, t);
+  src.fluidConsistencyType -> tgt.fluidConsistencyType;
+  src.instruction -> tgt.instruction;
+}
+
+// group NutritionOrderOralDietSchedule(source src, target tgt) extends BackboneElement {
+// src.timing -> tgt.timing;
+// src.asNeeded -> tgt.asNeeded;
+// src.asNeededFor -> tgt.asNeededFor;
+// }
+group NutritionOrderOralDietNutrient(source src, target tgt) extends BackboneElement {
+  src.modifier -> tgt.modifier;
+  src.amount -> tgt.amount;
+}
+
+group NutritionOrderOralDietTexture(source src, target tgt) extends BackboneElement {
+  src.modifier -> tgt.modifier;
+  src.foodType -> tgt.foodType;
+}
+
+group NutritionOrderSupplement(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.productName -> tgt.productName;
+  src.schedule as s -> tgt then {
+    s.timing -> tgt.schedule;
+  };
+  src.quantity -> tgt.quantity;
+  src.instruction -> tgt.instruction;
+}
+
+// group NutritionOrderSupplementSchedule(source src, target tgt) extends BackboneElement {
+// src.timing -> tgt.timing;
+// src.asNeeded -> tgt.asNeeded;
+// src.asNeededFor -> tgt.asNeededFor;
+// }
+group NutritionOrderEnteralFormula(source src, target tgt) extends BackboneElement {
+  src.baseFormulaType -> tgt.baseFormulaType;
+  src.baseFormulaProductName -> tgt.baseFormulaProductName;
+  src.additive as s -> tgt then {
+    s.type -> tgt.additiveType;
+    s.productName -> tgt.additiveProductName;
+  };
+  src.caloricDensity -> tgt.caloricDensity;
+  src.routeOfAdministration -> tgt.routeofAdministration;
+  src.administration as s -> tgt.administration as t then NutritionOrderEnteralFormulaAdministration(s, t);
+  src.maxVolumeToDeliver -> tgt.maxVolumeToDeliver;
+  src.administrationInstruction -> tgt.administrationInstruction;
+}
+
+// group NutritionOrderEnteralFormulaAdditive(source src, target tgt) extends BackboneElement {
+// src.type -> tgt.type;
+// src.productName -> tgt.productName;
+// src.quantity -> tgt.quantity;
+// }
+group NutritionOrderEnteralFormulaAdministration(source src, target tgt) extends BackboneElement {
+  src.schedule as s -> tgt then {
+    s.timing -> tgt.schedule;
+  };
+  src.quantity -> tgt.quantity;
+  src.rate : Quantity -> tgt.rate "rateQuantity";
+  src.rate : Ratio -> tgt.rate "rateRatio";
+}
+

@@ -1,0 +1,53 @@
+/// url = "http://hl7.org/fhir/StructureMap/ImagingStudy3to2"
+/// name = "ImagingStudy3to2"
+/// title = "ImagingStudy Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/ImagingStudy" alias ImagingStudy as source
+uses "http://hl7.org/fhir/1.0/ImagingStudy" alias ImagingStudyR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group ImagingStudy(source src : ImagingStudy, target tgt : ImagingStudyR2) extends DomainResource <<type+>> {
+  src.started -> tgt.started "ImagingStudy-started";
+  src.patient -> tgt.patient "ImagingStudy-patient";
+  src.uid -> tgt.uid "ImagingStudy-uid";
+  src.accession -> tgt.accession "ImagingStudy-accession";
+  src.identifier -> tgt.identifier "ImagingStudy-identifier";
+  src.modalityList -> tgt.modalityList "ImagingStudy-modalityList";
+  src.referrer -> tgt.referrer "ImagingStudy-referrer";
+  src.availability -> tgt.availability "ImagingStudy-availability";
+  src.extension as e where e.url = 'http://hl7.org/fhir/ImagingStudy-r2-url' -> tgt.modified = (e.value) "ImagingStudy-url";
+  src.numberOfSeries -> tgt.numberOfSeries "ImagingStudy-numberOfSeries";
+  src.numberOfInstances -> tgt.numberOfInstances "ImagingStudy-numberOfInstances";
+  src.procedureReference -> tgt.procedure "ImagingStudy-procedure";
+  src.interpreter -> tgt.interpreter "ImagingStudy-interpreter";
+  src.description -> tgt.description "ImagingStudy-description";
+  src.series as vs0 -> tgt.series as vt0 then imgSeries(vs0, vt0) "ImagingStudy-series";
+}
+
+group imgSeries(source src, target tgt) extends BackboneElement {
+  src.uid -> tgt.uid "series-uid";
+  src.number -> tgt.number "series-number";
+  src.modality -> tgt.modality "series-modality";
+  src.description -> tgt.description "series-description";
+  src.numberOfInstances -> tgt.numberOfInstances "series-numberOfInstances";
+  src.availability -> tgt.availability "series-availability";
+  src.extension as e where e.url = 'http://hl7.org/fhir/ImagingStudy-r2-url' -> tgt.modified = (e.value) "series-url";
+  src.bodySite -> tgt.bodySite "series-bodySite";
+  src.laterality -> tgt.laterality "series-laterality";
+  src.started -> tgt.started "series-started";
+  src.instance as vs0 -> tgt.instance as vt0 then imgInstance(vs0, vt0) "series-instance";
+}
+
+group imgInstance(source src, target tgt) extends BackboneElement {
+  src.number -> tgt.number "instance-number";
+  src.uid -> tgt.uid "instance-uid";
+  src.sopClass -> tgt.sopClass "instance-sopClass";
+  src.title -> tgt.title "instance-title";
+}
+
+group imgSrc(source src, target tgt) {
+  src.url -> tgt.url "imgSrc";
+}
+

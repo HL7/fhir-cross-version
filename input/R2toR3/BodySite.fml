@@ -1,0 +1,24 @@
+/// url = "http://hl7.org/fhir/StructureMap/BodySite2to3"
+/// name = "BodySite2to3"
+/// title = "BodySite Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/BodySite" alias BodySiteR2 as source
+uses "http://hl7.org/fhir/3.0/BodySite" alias BodySite as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/DomainResource2to3"
+imports "http://hl7.org/fhir/StructureMap/Attachment2to3"
+imports "http://hl7.org/fhir/StructureMap/Identifier2to3"
+imports "http://hl7.org/fhir/StructureMap/Reference2to3"
+imports "http://hl7.org/fhir/StructureMap/CodeableConcept2to3"
+
+group BodySite(source src : BodySiteR2, target tgt : BodySite) extends DomainResource <<type+>> {
+  src.patient -> tgt.patient "BodySite-patient";
+  src.identifier -> tgt.identifier "BodySite-identifier";
+  src.code -> tgt.code "BodySite-code";
+  src.modifier -> tgt.qualifier "BodySite-modifier";
+  src.description -> tgt.description "BodySite-description";
+  src.image -> tgt.image "BodySite-image";
+}
+

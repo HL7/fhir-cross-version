@@ -1,0 +1,34 @@
+/// url = "http://hl7.org/fhir/StructureMap/Account5to4"
+/// name = "Account5to4"
+/// title = "Account Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Account" alias AccountR5 as source
+uses "http://hl7.org/fhir/4.0/Account" alias AccountR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group Account(source src : AccountR5, target tgt : AccountR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Account.status-R5toR4', 'code');
+  src.type -> tgt.type;
+  src.name -> tgt.name;
+  src.subject -> tgt.subject;
+  src.servicePeriod -> tgt.servicePeriod;
+  src.coverage as s -> tgt.coverage as t then AccountCoverage(s, t);
+  src.owner -> tgt.owner;
+  src.description -> tgt.description;
+  src.guarantor as s -> tgt.guarantor as t then AccountGuarantor(s, t);
+}
+
+group AccountCoverage(source src, target tgt) extends BackboneElement {
+  src.coverage -> tgt.coverage;
+  src.priority -> tgt.priority;
+}
+
+group AccountGuarantor(source src, target tgt) extends BackboneElement {
+  src.party -> tgt.party;
+  src.onHold -> tgt.onHold;
+  src.period -> tgt.period;
+}
+

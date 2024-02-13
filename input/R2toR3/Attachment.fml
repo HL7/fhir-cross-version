@@ -1,0 +1,22 @@
+/// url = "http://hl7.org/fhir/StructureMap/Attachment2to3"
+/// name = "Attachment2to3"
+/// title = "Attachment Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Attachment" alias AttachmentR2 as source
+uses "http://hl7.org/fhir/3.0/Attachment" alias Attachment as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/Element2to3"
+
+group Attachment(source src : AttachmentR2, target tgt : Attachment) extends Element <<type+>> {
+  src.contentType -> tgt.contentType "Attachment-contentType";
+  src.language -> tgt.language "Attachment-language";
+  src.data -> tgt.data "Attachment-data";
+  src.url -> tgt.url "Attachment-url";
+  src.size -> tgt.size "Attachment-size";
+  src.hash -> tgt.hash "Attachment-hash";
+  src.title -> tgt.title "Attachment-title";
+  src.creation -> tgt.creation "Attachment-creation";
+}
+

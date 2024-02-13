@@ -1,0 +1,34 @@
+/// url = "http://hl7.org/fhir/StructureMap/NamingSystem4Bto5"
+/// name = "NamingSystem4Bto5"
+/// title = "NamingSystem Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/NamingSystem" alias NamingSystemR4B as source
+uses "http://hl7.org/fhir/5.0/NamingSystem" alias NamingSystemR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group NamingSystem(source src : NamingSystemR4B, target tgt : NamingSystemR5) extends DomainResource <<type+>> {
+  src.name -> tgt.name;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/NamingSystemB.status-R4BtoR5', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/ConceptMap/NamingSystemB.kind-R4BtoR5', 'code');
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.responsible -> tgt.responsible;
+  src.type -> tgt.type;
+  src.description -> tgt.description;
+  src.useContext -> tgt.useContext;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.usage -> tgt.usage;
+  src.uniqueId as s -> tgt.uniqueId as t then NamingSystemUniqueId(s, t);
+}
+
+group NamingSystemUniqueId(source src, target tgt) extends BackboneElement {
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/NamingSystemB.uniqueId.type-R4BtoR5', 'code');
+  src.value -> tgt.value;
+  src.preferred -> tgt.preferred;
+  src.comment -> tgt.comment;
+  src.period -> tgt.period;
+}
+

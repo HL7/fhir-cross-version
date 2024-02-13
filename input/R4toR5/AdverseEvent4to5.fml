@@ -1,0 +1,50 @@
+/// url = "http://hl7.org/fhir/StructureMap/AdverseEvent4to5"
+/// name = "AdverseEvent4to5"
+/// title = "AdverseEvent Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/AdverseEvent" alias AdverseEventR4 as source
+uses "http://hl7.org/fhir/5.0/AdverseEvent" alias AdverseEventR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group AdverseEvent(source src : AdverseEventR4, target tgt : AdverseEventR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.actuality as v -> tgt.actuality = translate(v, 'http://hl7.org/fhir/ConceptMap/AdverseEvent.actuality-R4toR5', 'code');
+  src.category -> tgt.category;
+  src.event -> tgt.code;
+  src.subject -> tgt.subject;
+  src.encounter -> tgt.encounter;
+  src.date : dateTime -> tgt.occurrence "dateDateTime";
+  src.detected -> tgt.detected;
+  src.recordedDate -> tgt.recordedDate;
+  src.resultingCondition -> tgt.resultingEffect;
+  src.location -> tgt.location;
+  src.seriousness -> tgt.seriousness;
+  src.outcome -> tgt.outcome;
+  src.recorder -> tgt.recorder;
+  src.contributor as s -> tgt.participant as t then AdverseEventParticipant(s, t);
+  src.study -> tgt.study;
+  src.suspectEntity as s -> tgt.suspectEntity as t then AdverseEventSuspectEntity(s, t);
+  src.subjectMedicalHistory as s -> tgt.contributingFactor as t then AdverseEventContributingFactor(s, t);
+}
+
+group AdverseEventParticipant(source src, target tgt) extends BackboneElement {
+  src as v -> tgt.actor = v "reference";
+}
+
+group AdverseEventSuspectEntity(source src, target tgt) extends BackboneElement {
+  src.instance : Reference -> tgt.instance "instanceReference";
+  src.causality as s -> tgt.causality as t then AdverseEventSuspectEntityCausality(s, t);
+}
+
+group AdverseEventSuspectEntityCausality(source src, target tgt) extends BackboneElement {
+  src.assessment -> tgt.assessmentMethod;
+  src.productRelatedness -> tgt.entityRelatedness;
+  src.author -> tgt.author;
+}
+
+group AdverseEventContributingFactor(source src, target tgt) extends BackboneElement {
+  src as v -> tgt.item = v "reference";
+}
+

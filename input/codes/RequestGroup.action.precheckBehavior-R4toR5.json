@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "RequestGroup.action.precheckBehavior-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/RequestGroup.action.precheckBehavior-R4toR5",
+  "name" : "RequestGroup.action.precheckBehavior-R4toR5",
+  "title" : "Mapping for RequestGroup.action.precheckBehavior from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.precheckBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.precheckBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/action-precheck-behavior",
+    "target" : "http://hl7.org/fhir/5.0/action-precheck-behavior",
+    "element" : [{
+      "code" : "yes",
+      "target" : [{
+        "code" : "yes",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "no",
+      "target" : [{
+        "code" : "no",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

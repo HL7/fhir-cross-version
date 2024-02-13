@@ -1,0 +1,54 @@
+/// url = "http://hl7.org/fhir/StructureMap/Specimen5to4B"
+/// name = "Specimen5to4B"
+/// title = "Specimen Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Specimen" alias SpecimenR5 as source
+uses "http://hl7.org/fhir/4.0/Specimen" alias SpecimenR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group Specimen(source src : SpecimenR5, target tgt : SpecimenR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.accessionIdentifier -> tgt.accessionIdentifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Specimen.status-R5toR4', 'code');
+  src.type -> tgt.type;
+  src.subject -> tgt.subject;
+  src.receivedTime -> tgt.receivedTime;
+  src.parent -> tgt.parent;
+  src.request -> tgt.request;
+  src.collection as s -> tgt.collection as t then SpecimenCollection(s, t);
+  src.processing as s -> tgt.processing as t then SpecimenProcessing(s, t);
+  src.container as s -> tgt.container as t then SpecimenContainer(s, t);
+  src.condition -> tgt.condition;
+  src.note -> tgt.note;
+}
+
+// group SpecimenFeature(source src, target tgt) extends BackboneElement {
+// src.type -> tgt.type;
+// src.description -> tgt.description;
+// }
+group SpecimenCollection(source src, target tgt) extends BackboneElement {
+  src.collector -> tgt.collector;
+  src.collected : dateTime -> tgt.collected "collectedDateTime";
+  src.collected : Period -> tgt.collected "collectedPeriod";
+  src.duration -> tgt.duration;
+  src.quantity -> tgt.quantity;
+  src.method -> tgt.method;
+  src.bodySite -> tgt.bodySite;
+  src.fastingStatus : CodeableConcept -> tgt.fastingStatus "fastingStatusCodeableConcept";
+  src.fastingStatus : Duration -> tgt.fastingStatus "fastingStatusDuration";
+}
+
+group SpecimenProcessing(source src, target tgt) extends BackboneElement {
+  src.description -> tgt.description;
+  src.method -> tgt.procedure;
+  src.additive -> tgt.additive;
+  src.time : dateTime -> tgt.time "timeDateTime";
+  src.time : Period -> tgt.time "timePeriod";
+}
+
+group SpecimenContainer(source src, target tgt) extends BackboneElement {
+  src.specimenQuantity -> tgt.specimenQuantity;
+}
+

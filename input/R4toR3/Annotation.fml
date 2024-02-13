@@ -1,0 +1,22 @@
+/// url = "http://hl7.org/fhir/StructureMap/Annotation4to3"
+/// name = "Annotation4to3"
+/// title = "R4 to R3 Conversion for Annotation"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Annotation" alias Annotation as source
+uses "http://hl7.org/fhir/3.0/Annotation" alias AnnotationR3 as target
+uses "http://hl7.org/fhir/3.0/string" alias StringR3 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to3"
+
+group Annotation(source src : Annotation, target tgt : AnnotationR3) extends Element <<type+>> {
+  src.author : Reference as vs -> tgt.author = create('Reference') as vt then Reference(vs, vt) "authorReference";
+  src.author : string as vs -> tgt.author = create('string') as vt then string(vs, vt) "authorString";
+  src.time -> tgt.time;
+  src.text -> tgt.text;
+}
+
+group Annotation2string(source src : Annotation, target tgt : stringR3) extends Element <<types>> {
+  src.text as vs0 then string(vs0, tgt);
+}
+

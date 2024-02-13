@@ -1,0 +1,63 @@
+/// url = "http://hl7.org/fhir/StructureMap/Encounter2to3"
+/// name = "Encounter2to3"
+/// title = "Encounter Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Encounter" alias EncounterR2 as source
+uses "http://hl7.org/fhir/3.0/Encounter" alias Encounter as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Encounter(source src : EncounterR2, target tgt : Encounter) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Encounter-identifier";
+  src.status -> tgt.status "Encounter-status";
+  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then encStatusHistory(vs0, vt0) "Encounter-statusHistory";
+  src.class as v -> tgt.class = translate(v, 'http://hl7.org/fhir/ConceptMap/Encounter.class-R2toR3', 'Coding') "Encounter-class";
+  src.type -> tgt.type "Encounter-type";
+  src.priority -> tgt.priority "Encounter-priority";
+  src.patient -> tgt.subject "Encounter-patient";
+  src.episodeOfCare -> tgt.episodeOfCare "Encounter-episodeOfCare";
+  src.incomingReferral -> tgt.incomingReferral "Encounter-incomingReferral";
+  src.participant as vs0 -> tgt.participant as vt0 then encParticipant(vs0, vt0) "Encounter-participant";
+  src.appointment -> tgt.appointment "Encounter-appointment";
+  src.period -> tgt.period "Encounter-period";
+  src.length as vs -> tgt.length as vt then QuantityToDuration(vs, vt) "Encounter-length";
+  src.reason -> tgt.reason "Encounter-reason";
+  src.indication as v ->  tgt.diagnosis as d,  d.condition = v "Encounter-indication";
+  src.hospitalization as vs0 -> tgt.hospitalization as vt0 then encHospitaization(vs0, vt0, tgt) "Encounter-hospitalization";
+  src.location as vs0 -> tgt.location as vt0 then encLocation(vs0, vt0) "Encounter-location";
+  src.serviceProvider -> tgt.serviceProvider "Encounter-serviceProvider";
+  src.partOf -> tgt.partOf "Encounter-partOf";
+}
+
+group encStatusHistory(source src, target tgt) extends BackboneElement {
+  src.status -> tgt.status "statusHistory-status";
+  src.period -> tgt.period "statusHistory-period";
+}
+
+group encParticipant(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type "participant-type";
+  src.period -> tgt.period "participant-period";
+  src.individual -> tgt.individual "participant-individual";
+}
+
+group encHospitaization(source src, target tgt, target res) extends BackboneElement {
+  src.preAdmissionIdentifier -> tgt.preAdmissionIdentifier "hospitalization-preAdmissionIdentifier";
+  src.origin -> tgt.origin "hospitalization-origin";
+  src.admitSource -> tgt.admitSource "hospitalization-admitSource";
+  src.admittingDiagnosis as v ->  tgt.diagnosis as d,  d.role = cc('http://hl7.org/fhir/diagnosis-role', 'AD'),  d.condition = v "hospitalization-admittingDiagnosis";
+  src.reAdmission -> tgt.reAdmission "hospitalization-reAdmission";
+  src.dietPreference -> tgt.dietPreference "hospitalization-dietPreference";
+  src.specialCourtesy -> tgt.specialCourtesy "hospitalization-specialCourtesy";
+  src.specialArrangement -> tgt.specialArrangement "hospitalization-specialArrangement";
+  src.destination -> tgt.destination "hospitalization-destination";
+  src.dischargeDisposition -> tgt.dischargeDisposition "hospitalization-dischargeDisposition";
+  src.dischargeDiagnosis as v ->  tgt.diagnosis as d,  d.role = cc('http://hl7.org/fhir/diagnosis-role', 'DD'),  d.condition = v "hospitalization-dischargeDiagnosis";
+}
+
+group encLocation(source src, target tgt) extends BackboneElement {
+  src.location -> tgt.location "location-location";
+  src.status -> tgt.status "location-status";
+  src.period -> tgt.period "location-period";
+}
+

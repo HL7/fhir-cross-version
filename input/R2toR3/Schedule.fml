@@ -1,0 +1,18 @@
+/// url = "http://hl7.org/fhir/StructureMap/Schedule2to3"
+/// name = "Schedule2to3"
+/// title = "Schedule Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Schedule" alias ScheduleR2 as source
+uses "http://hl7.org/fhir/3.0/Schedule" alias Schedule as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Schedule(source src : ScheduleR2, target tgt : Schedule) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Schedule-identifier";
+  src.type -> tgt.serviceType "Schedule-serviceType";
+  src.actor -> tgt.actor "Schedule-actor";
+  src.planningHorizon -> tgt.planningHorizon "Schedule-planningHorizon";
+  src.comment -> tgt.comment "Schedule-comment";
+}
+

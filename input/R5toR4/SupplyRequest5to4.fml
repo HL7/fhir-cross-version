@@ -1,0 +1,38 @@
+/// url = "http://hl7.org/fhir/StructureMap/SupplyRequest5to4"
+/// name = "SupplyRequest5to4"
+/// title = "SupplyRequest Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/SupplyRequest" alias SupplyRequestR5 as source
+uses "http://hl7.org/fhir/4.0/SupplyRequest" alias SupplyRequestR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group SupplyRequest(source src : SupplyRequestR5, target tgt : SupplyRequestR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/SupplyRequest.status-R5toR4', 'code');
+  src.category -> tgt.category;
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/SupplyRequest.priority-R5toR4', 'code');
+  src.item -> tgt.item;
+  src.quantity -> tgt.quantity;
+  src.parameter as s -> tgt.parameter as t then SupplyRequestParameter(s, t);
+  src.occurrence : dateTime -> tgt.occurrence "occurrenceDateTime";
+  src.occurrence : Period -> tgt.occurrence "occurrencePeriod";
+  src.occurrence : Timing -> tgt.occurrence "occurrenceTiming";
+  src.authoredOn -> tgt.authoredOn;
+  src.requester -> tgt.requester;
+  src.supplier -> tgt.supplier;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
+  src.deliverFrom -> tgt.deliverFrom;
+  src.deliverTo -> tgt.deliverTo;
+}
+
+group SupplyRequestParameter(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code;
+  src.value : CodeableConcept -> tgt.value "valueCodeableConcept";
+  src.value : Quantity -> tgt.value "valueQuantity";
+  src.value : Range -> tgt.value "valueRange";
+  src.value : boolean -> tgt.value "valueBoolean";
+}
+

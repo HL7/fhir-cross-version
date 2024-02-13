@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MolecularSequence.referenceSeq.orientation-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/MolecularSequence.referenceSeq.orientation-R4toR5",
+  "name" : "MolecularSequence.referenceSeq.orientation-R4toR5",
+  "title" : "Mapping for MolecularSequence.referenceSeq.orientation from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.referenceSeq.orientation",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.relative.orientation",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/orientation-type",
+    "target" : "http://hl7.org/fhir/5.0/orientation-type",
+    "element" : [{
+      "code" : "sense",
+      "target" : [{
+        "code" : "sense",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "antisense",
+      "target" : [{
+        "code" : "antisense",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

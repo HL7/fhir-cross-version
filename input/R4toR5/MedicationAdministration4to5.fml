@@ -1,0 +1,48 @@
+/// url = "http://hl7.org/fhir/StructureMap/MedicationAdministration4to5"
+/// name = "MedicationAdministration4to5"
+/// title = "MedicationAdministration Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/MedicationAdministration" alias MedicationAdministrationR4 as source
+uses "http://hl7.org/fhir/5.0/MedicationAdministration" alias MedicationAdministrationR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group MedicationAdministration(source src : MedicationAdministrationR4, target tgt : MedicationAdministrationR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.partOf -> tgt.partOf;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/MedicationAdministration.status-R4toR5', 'code');
+  src.statusReason -> tgt.statusReason;
+  src.category -> tgt.category;
+  src.medication : CodeableConcept -> tgt.medication "medicationCodeableConcept";
+  src.medication : Reference -> tgt.medication "medicationReference";
+  src.subject -> tgt.subject;
+  src.context -> tgt.encounter;
+  src.supportingInformation -> tgt.supportingInformation;
+  src.effective : dateTime -> tgt.occurence "effectiveDateTime";
+  src.effective : Period -> tgt.occurence "effectivePeriod";
+  src.performer as s -> tgt.performer as t then MedicationAdministrationPerformer(s, t);
+  src.reasonCode -> tgt.reason;
+  src.reasonReference -> tgt.reason;
+  src.request -> tgt.request;
+  src.device -> tgt.device;
+  src.note -> tgt.note;
+  src.dosage as s -> tgt.dosage as t then MedicationAdministrationDosage(s, t);
+  src.eventHistory -> tgt.eventHistory;
+}
+
+group MedicationAdministrationPerformer(source src, target tgt) extends BackboneElement {
+  src.function -> tgt.function;
+  src.actor -> tgt.actor;
+}
+
+group MedicationAdministrationDosage(source src, target tgt) extends BackboneElement {
+  src.text -> tgt.text;
+  src.site -> tgt.site;
+  src.route -> tgt.route;
+  src.method -> tgt.method;
+  src.dose -> tgt.dose;
+  src.rate : Ratio -> tgt.rate "rateRatio";
+  src.rate : Quantity -> tgt.rate "rateQuantity";
+}
+

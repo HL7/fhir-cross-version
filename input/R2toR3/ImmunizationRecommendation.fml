@@ -1,0 +1,39 @@
+/// url = "http://hl7.org/fhir/StructureMap/ImmunizationRecommendation2to3"
+/// name = "ImmunizationRecommendation2to3"
+/// title = "ImmunizationRecommendation Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/ImmunizationRecommendation" alias ImmunizationRecommendationR2 as source
+uses "http://hl7.org/fhir/3.0/ImmunizationRecommendation" alias ImmunizationRecommendation as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group ImmunizationRecommendation(source src : ImmunizationRecommendationR2, target tgt : ImmunizationRecommendation) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "ImmunizationRecommendation-identifier";
+  src.patient -> tgt.patient "ImmunizationRecommendation-patient";
+  src.recommendation as vs0 -> tgt.recommendation as vt0 then imrRecommendation(vs0, vt0) "ImmunizationRecommendation-recommendation";
+}
+
+group imrRecommendation(source src, target tgt) extends BackboneElement {
+  src.date -> tgt.date "recommendation-date";
+  src.vaccineCode -> tgt.vaccineCode "recommendation-vaccineCode";
+  src.doseNumber -> tgt.doseNumber "recommendation-doseNumber";
+  src.forecastStatus -> tgt.forecastStatus "recommendation-forecastStatus";
+  src.dateCriterion as vs -> tgt.dateCriterion as vt then imrDateCriterion(vs, vt) "recommendation-dateCriterion";
+  src.protocol as vs -> tgt.protocol as vt then imrProtocol(vs, vt) "recommendation-protocol";
+  src.supportingImmunization -> tgt.supportingImmunization "recommendation-supportingImmunization";
+  src.supportingPatientInformation -> tgt.supportingPatientInformation "recommendation-supportingPatientInformation";
+}
+
+group imrDateCriterion(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code "dateCriterion-date";
+  src.value -> tgt.value "dateCriterion-date";
+}
+
+group imrProtocol(source src, target tgt) extends BackboneElement {
+  src.doseSequence -> tgt.doseSequence "protocol-doseSequence";
+  src.description -> tgt.description "protocol-description";
+  src.authority -> tgt.authority "protocol-authority";
+  src.series -> tgt.series "protocol-series";
+}
+

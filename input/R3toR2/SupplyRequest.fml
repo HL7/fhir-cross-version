@@ -1,0 +1,27 @@
+/// url = "http://hl7.org/fhir/StructureMap/SupplyRequest3to2"
+/// name = "SupplyRequest3to2"
+/// title = "SupplyRequest Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/SupplyRequest" alias SupplyRequest as source
+uses "http://hl7.org/fhir/1.0/SupplyRequest" alias SupplyRequestR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group SupplyRequest(source src : SupplyRequest, target tgt : SupplyRequestR2) extends DomainResource <<type+>> {
+  src.extension as e where e.url = 'http://hl7.org/fhir/SupplyRequest-r2-patient' -> tgt.patient = (e.value) "SupplyRequest-patient";
+  src.requester as v then sprRequest(v, tgt) "SupplyRequest-source";
+  src.authoredOn -> tgt.date "SupplyRequest-date";
+  src.identifier -> tgt.identifier "SupplyRequest-identifier";
+  src.status -> tgt.status "SupplyRequest-status";
+  src.category -> tgt.kind "SupplyRequest-kind";
+  src.orderedItem -> tgt.orderedItem "SupplyRequest-orderedItem";
+  src.supplier -> tgt.supplier "SupplyRequest-supplier";
+  src.reason -> tgt.reason "SupplyRequest-reason";
+  src.occurrence as vs0 ->  tgt.when as vt0,  vt0.schedule = vs0 "SupplyRequest-when";
+}
+
+group sprRequest(source src, target tgt) extends BackboneElement {
+  src.avent -> tgt.source "source-agent";
+}
+

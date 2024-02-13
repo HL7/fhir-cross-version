@@ -1,0 +1,15 @@
+/// url = "http://hl7.org/fhir/StructureMap/ContactDetail5to4B"
+/// name = "ContactDetail5to4B"
+/// title = "ContactDetail Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/ContactDetail" alias ContactDetailR5 as source
+uses "http://hl7.org/fhir/4.0/ContactDetail" alias ContactDetailR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group ContactDetail(source src : ContactDetailR5, target tgt : ContactDetailR4B) extends Element <<type+>> {
+  src.name -> tgt.name;
+  src.telecom -> tgt.telecom;
+}
+

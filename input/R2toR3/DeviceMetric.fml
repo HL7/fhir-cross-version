@@ -1,0 +1,29 @@
+/// url = "http://hl7.org/fhir/StructureMap/DeviceMetric2to3"
+/// name = "DeviceMetric2to3"
+/// title = "DeviceMetric Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/DeviceMetric" alias DeviceMetricR2 as source
+uses "http://hl7.org/fhir/3.0/DeviceMetric" alias DeviceMetric as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group DeviceMetric(source src : DeviceMetricR2, target tgt : DeviceMetric) extends DomainResource <<type+>> {
+  src.type -> tgt.type "DeviceMetric-type";
+  src.identifier -> tgt.identifier "DeviceMetric-identifier";
+  src.unit -> tgt.unit "DeviceMetric-unit";
+  src.source -> tgt.source "DeviceMetric-source";
+  src.parent -> tgt.parent "DeviceMetric-parent";
+  src.operationalStatus -> tgt.operationalStatus "DeviceMetric-operationalStatus";
+  src.color -> tgt.color "DeviceMetric-color";
+  src.category -> tgt.category "DeviceMetric-category";
+  src.measurementPeriod -> tgt.measurementPeriod "DeviceMetric-measurementPeriod";
+  src.calibration as vs0 -> tgt.calibration as vt0 then dvmCalibration(vs0, vt0) "DeviceMetric-calibration";
+}
+
+group dvmCalibration(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type "calibration-type";
+  src.state -> tgt.state "calibration-state";
+  src.time -> tgt.time "calibration-time";
+}
+

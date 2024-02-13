@@ -1,0 +1,32 @@
+/// url = "http://hl7.org/fhir/StructureMap/Person4Bto5"
+/// name = "Person4Bto5"
+/// title = "Person Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/Person" alias PersonR4B as source
+uses "http://hl7.org/fhir/5.0/Person" alias PersonR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group Person(source src : PersonR4B, target tgt : PersonR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.active -> tgt.active;
+  src.name -> tgt.name;
+  src.telecom -> tgt.telecom;
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/ConceptMap/PersonB.gender-R4BtoR5', 'code');
+  src.birthDate -> tgt.birthDate;
+  src.address -> tgt.address;
+  src.photo -> tgt.photo;
+  src.managingOrganization -> tgt.managingOrganization;
+  src.link as s -> tgt.link as t then PersonLink(s, t);
+}
+
+// group PersonCommunication(source src, target tgt) extends BackboneElement {
+// src.language -> tgt.language;
+// src.preferred -> tgt.preferred;
+// }
+group PersonLink(source src, target tgt) extends BackboneElement {
+  src.target -> tgt.target;
+  src.assurance as v -> tgt.assurance = translate(v, 'http://hl7.org/fhir/ConceptMap/PersonB.link.assurance-R4BtoR5', 'code');
+}
+

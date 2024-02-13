@@ -1,0 +1,18 @@
+/// url = "http://hl7.org/fhir/StructureMap/Basic2to3"
+/// name = "Basic2to3"
+/// title = "Basic Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Basic" alias BasicR2 as source
+uses "http://hl7.org/fhir/3.0/Basic" alias Basic as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Basic(source src : BasicR2, target tgt : Basic) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Basic-identifier";
+  src.code -> tgt.code "Basic-code";
+  src.subject -> tgt.subject "Basic-subject";
+  src.created -> tgt.created "Basic-created";
+  src.author -> tgt.author "Basic-author";
+}
+

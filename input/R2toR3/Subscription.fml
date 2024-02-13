@@ -1,0 +1,29 @@
+/// url = "http://hl7.org/fhir/StructureMap/Subscription2to3"
+/// name = "Subscription2to3"
+/// title = "Subscription Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Subscription" alias SubscriptionR2 as source
+uses "http://hl7.org/fhir/3.0/Subscription" alias Subscription as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/DomainResource2to3"
+imports "http://hl7.org/fhir/StructureMap/ContactPoint2to3"
+imports "http://hl7.org/fhir/StructureMap/Coding2to3"
+
+group Subscription(source src : SubscriptionR2, target tgt : Subscription) extends DomainResource <<type+>> {
+  src.criteria -> tgt.criteria "Subscription-criteria";
+  src.contact -> tgt.contact "Subscription-contact";
+  src.reason -> tgt.reason "Subscription-reason";
+  src.status -> tgt.status "Subscription-status";
+  src.error -> tgt.error "Subscription-error";
+  src.channel as vs0 -> tgt.channel as vt0 then {
+    vs0.type -> vt0.type "channel-type";
+    vs0.endpoint -> vt0.endpoint "channel-endpoint";
+    vs0.payload -> vt0.payload "channel-payload";
+    vs0.header -> vt0.header "channel-header";
+  } "Subscription-channel";
+  src.end -> tgt.end "Subscription-end";
+  src.tag -> tgt.tag "Subscription-tag";
+}
+

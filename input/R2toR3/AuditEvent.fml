@@ -1,0 +1,68 @@
+/// url = "http://hl7.org/fhir/StructureMap/AuditEvent2to3"
+/// name = "AuditEvent2to3"
+/// title = "AuditEvent Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/AuditEvent" alias AuditEventR2 as source
+uses "http://hl7.org/fhir/3.0/AuditEvent" alias AuditEvent as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group AuditEvent(source src : AuditEventR2, target tgt : AuditEvent) extends DomainResource <<type+>> {
+  src.event as ev then {
+    ev.type -> tgt.type "AuditEvent-type";
+    ev.subtype -> tgt.subtype "AuditEvent-subtype";
+    ev.action -> tgt.action "AuditEvent-action";
+    ev.dateTime -> tgt.recorded "AuditEvent-recorded";
+    ev.outcome -> tgt.outcome "AuditEvent-outcome";
+    ev.outcomeDesc -> tgt.outcomeDesc "AuditEvent-outcomeDesc";
+    ev.purposeOfEvent -> tgt.purposeOfEvent "AuditEvent-purposeOfEvent";
+  } "AuditEvent-event";
+  src.participant as vs0 -> tgt.agent as vt0 then agent(vs0, vt0) "AuditEvent-agent";
+  src.source as vs0 -> tgt.source as vt0 then source(vs0, vt0) "AuditEvent-source";
+  src.object as vs0 -> tgt.entity as vt0 then entity(vs0, vt0) "AuditEvent-entity";
+}
+
+group agent(source src, target tgt) extends BackboneElement {
+  src.role -> tgt.role "agent-role";
+  src.reference -> tgt.reference "agent-reference";
+  src.userId -> tgt.userId "agent-userId";
+  src.altId -> tgt.altId "agent-altId";
+  src.name -> tgt.name "agent-name";
+  src.requestor -> tgt.requestor "agent-requestor";
+  src.location -> tgt.location "agent-location";
+  src.policy -> tgt.policy "agent-policy";
+  src.media -> tgt.media "agent-media";
+  src.network as vs -> tgt.network as vt then network(vs, vt) "agent-network";
+  src.purposeOfUse -> tgt.purposeOfUse "AuditEvent-purposeOfUse";
+}
+
+group network(source src, target tgt) extends BackboneElement {
+  src.address -> tgt.address "network-address";
+  src.type -> tgt.type "network-type";
+}
+
+group source(source src, target tgt) extends BackboneElement {
+  src.site -> tgt.site "source-site";
+  src.identifier -> tgt.identifier "source-identifier";
+  src.type -> tgt.type "source-type";
+}
+
+group entity(source src, target tgt) extends BackboneElement {
+  src.identifier -> tgt.identifier "entity-identifier";
+  src.reference -> tgt.reference "entity-reference";
+  src.type -> tgt.type "entity-type";
+  src.role -> tgt.role "entity-role";
+  src.lifecycle -> tgt.lifecycle "entity-lifecycle";
+  src.securityLabel -> tgt.securityLabel "entity-securityLabel";
+  src.name -> tgt.name "entity-name";
+  src.description -> tgt.description "entity-description";
+  src.query -> tgt.query "entity-query";
+  src.detail as vs -> tgt.detail as vt then detail(vs, vt) "entity-detail";
+}
+
+group detail(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type "detail-type";
+  src.value -> tgt.value "value-type";
+}
+

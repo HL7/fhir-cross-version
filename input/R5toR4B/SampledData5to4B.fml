@@ -1,0 +1,20 @@
+/// url = "http://hl7.org/fhir/StructureMap/SampledData5to4B"
+/// name = "SampledData5to4B"
+/// title = "SampledData Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/SampledData" alias SampledDataR5 as source
+uses "http://hl7.org/fhir/4.0/SampledData" alias SampledDataR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group SampledData(source src : SampledDataR5, target tgt : SampledDataR4B) extends Element <<type+>> {
+  src.origin -> tgt.origin;
+  src.interval where src.intervalUnit = 'ms' -> tgt.period;
+  src.factor -> tgt.factor;
+  src.lowerLimit -> tgt.lowerLimit;
+  src.upperLimit -> tgt.upperLimit;
+  src.dimensions -> tgt.dimensions;
+  src.data -> tgt.data;
+}
+

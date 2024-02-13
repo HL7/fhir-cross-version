@@ -1,0 +1,46 @@
+/// url = "http://hl7.org/fhir/StructureMap/DocumentReference4Bto5"
+/// name = "DocumentReference4Bto5"
+/// title = "DocumentReference Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/DocumentReference" alias DocumentReferenceR4B as source
+uses "http://hl7.org/fhir/5.0/DocumentReference" alias DocumentReferenceR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group DocumentReference(source src : DocumentReferenceR4B, target tgt : DocumentReferenceR5) extends DomainResource <<type+>> {
+  src.masterIdentifier -> tgt.identifier;
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/DocumentReferenceB.status-R4BtoR5', 'code');
+  src.docStatus as v -> tgt.docStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/DocumentReferenceB.docStatus-R4BtoR5', 'code');
+  src.type -> tgt.type;
+  src.category -> tgt.category;
+  src.subject -> tgt.subject;
+  src.context as s -> tgt then {
+    s.encounter : Reference -> tgt.context "encounterReference";
+    s.event : CodeableConcept -> tgt.event "eventCodeableConcept";
+    s.period -> tgt.period;
+    s.facilityType -> tgt.facilityType;
+    s.practiceSetting -> tgt.practiceSetting;
+  };
+  src.date -> tgt.date;
+  src.author -> tgt.author;
+  src.authenticator as s ->  tgt.attester as t,  t.mode = 'professional';
+  src.authenticator : Reference as s ->  tgt.attester as t,  t.party = s "authenticatorReference";
+  src.custodian -> tgt.custodian;
+  src.relatesTo as s -> tgt.relatesTo as t then DocumentReferenceRelatesTo(s, t);
+  src.description -> tgt.description;
+  src.securityLabel -> tgt.securityLabel;
+  src.content as s -> tgt.content as t then DocumentReferenceContent(s, t);
+}
+
+group DocumentReferenceRelatesTo(source src, target tgt) extends BackboneElement {
+  src.code as s ->  tgt.code = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/document-relationship-type',  tcc.code = s;
+  src.target -> tgt.target;
+}
+
+group DocumentReferenceContent(source src, target tgt) extends BackboneElement {
+  src.attachment -> tgt.attachment;
+  src.format : Coding as s ->  tgt.profile as t,  t.value = s "formatCoding";
+}
+

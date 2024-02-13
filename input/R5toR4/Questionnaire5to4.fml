@@ -1,0 +1,96 @@
+/// url = "http://hl7.org/fhir/StructureMap/Questionnaire5to4"
+/// name = "Questionnaire5to4"
+/// title = "Questionnaire Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Questionnaire" alias QuestionnaireR5 as source
+uses "http://hl7.org/fhir/4.0/Questionnaire" alias QuestionnaireR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group Questionnaire(source src : QuestionnaireR5, target tgt : QuestionnaireR4) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.name -> tgt.name;
+  src.title -> tgt.title;
+  src.derivedFrom -> tgt.derivedFrom;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Questionnaire.status-R5toR4', 'code');
+  src.experimental -> tgt.experimental;
+  src.subjectType -> tgt.subjectType;
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.useContext -> tgt.useContext;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.purpose -> tgt.purpose;
+  src.copyright -> tgt.copyright;
+  src.approvalDate -> tgt.approvalDate;
+  src.lastReviewDate -> tgt.lastReviewDate;
+  src.effectivePeriod -> tgt.effectivePeriod;
+  src.code -> tgt.code;
+  src.item as s -> tgt.item as t then QuestionnaireItem(s, t);
+}
+
+group QuestionnaireItem(source src, target tgt) extends BackboneElement {
+  src.linkId -> tgt.linkId;
+  src.definition -> tgt.definition;
+  src.code -> tgt.code;
+  src.prefix -> tgt.prefix;
+  src.text -> tgt.text;
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/Questionnaire.item.type-R5toR4', 'code');
+  src.enableWhen as s -> tgt.enableWhen as t then QuestionnaireItemEnableWhen(s, t);
+  src.enableBehavior as v -> tgt.enableBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/Questionnaire.item.enableBehavior-R5toR4', 'code');
+  src.required -> tgt.required;
+  src.repeats -> tgt.repeats;
+  src.readOnly -> tgt.readOnly;
+  src.maxLength -> tgt.maxLength;
+  src.answerConstraint as v where answerConstraint = 'optionsOnly' ->  tgt.type as t,  t.value = 'choice';
+  src.answerConstraint as v where answerConstraint = 'optionsOrType' ->  tgt.type as t,  t.value = 'open-choice';
+  src.answerConstraint as v where answerConstraint = 'optionsOrString' ->  tgt.type as t,  t.value = 'open-choice';
+  src.answerValueSet -> tgt.answerValueSet;
+  src.answerOption as s -> tgt.answerOption as t then QuestionnaireItemAnswerOption(s, t);
+  src.initial as s -> tgt.initial as t then QuestionnaireItemInitial(s, t);
+}
+
+group QuestionnaireItemEnableWhen(source src, target tgt) extends BackboneElement {
+  src.question -> tgt.question;
+  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/ConceptMap/Questionnaire.item.enableWhen.operator-R5toR4', 'code');
+  src.answer : boolean -> tgt.answer "answerBoolean";
+  src.answer : decimal -> tgt.answer "answerDecimal";
+  src.answer : integer -> tgt.answer "answerInteger";
+  src.answer : date -> tgt.answer "answerDate";
+  src.answer : dateTime -> tgt.answer "answerDateTime";
+  src.answer : time -> tgt.answer "answerTime";
+  src.answer : string -> tgt.answer "answerString";
+  src.answer : Coding -> tgt.answer "answerCoding";
+  src.answer : Quantity -> tgt.answer "answerQuantity";
+  src.answer : Reference -> tgt.answer "answerReference";
+}
+
+group QuestionnaireItemAnswerOption(source src, target tgt) extends BackboneElement {
+  src.value : integer -> tgt.value "valueInteger";
+  src.value : date -> tgt.value "valueDate";
+  src.value : time -> tgt.value "valueTime";
+  src.value : string -> tgt.value "valueString";
+  src.value : Coding -> tgt.value "valueCoding";
+  src.value : Reference -> tgt.value "valueReference";
+  src.initialSelected -> tgt.initialSelected;
+}
+
+group QuestionnaireItemInitial(source src, target tgt) extends BackboneElement {
+  src.value : boolean -> tgt.value "valueBoolean";
+  src.value : decimal -> tgt.value "valueDecimal";
+  src.value : integer -> tgt.value "valueInteger";
+  src.value : date -> tgt.value "valueDate";
+  src.value : dateTime -> tgt.value "valueDateTime";
+  src.value : time -> tgt.value "valueTime";
+  src.value : string -> tgt.value "valueString";
+  src.value : uri -> tgt.value "valueUri";
+  src.value : Attachment -> tgt.value "valueAttachment";
+  src.value : Coding -> tgt.value "valueCoding";
+  src.value : Quantity -> tgt.value "valueQuantity";
+  src.value : Reference -> tgt.value "valueReference";
+}
+

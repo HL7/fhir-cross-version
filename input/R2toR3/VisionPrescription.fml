@@ -1,0 +1,38 @@
+/// url = "http://hl7.org/fhir/StructureMap/VisionPrescription2to3"
+/// name = "VisionPrescription2to3"
+/// title = "VisionPrescription Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/VisionPrescription" alias VisionPrescriptionR2 as source
+uses "http://hl7.org/fhir/3.0/VisionPrescription" alias VisionPrescription as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group VisionPrescription(source src : VisionPrescriptionR2, target tgt : VisionPrescription) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "VisionPrescription-identifier";
+  src.dateWritten -> tgt.dateWritten "VisionPrescription-dateWritten";
+  src.patient -> tgt.patient "VisionPrescription-patient";
+  src.prescriber -> tgt.prescriber "VisionPrescription-prescriber";
+  src.encounter -> tgt.encounter "VisionPrescription-encounter";
+  src.reason -> tgt.reason "VisionPrescription-reason";
+  src.dispense as vs0 -> tgt.dispense as vt0 then vspDispense(vs0, vt0) "VisionPrescription-dispense";
+}
+
+group vspDispense(source src, target tgt) extends BackboneElement {
+  src.product as v ->  tgt.product as d,  d.coding as v "dispense-product";
+  src.eye -> tgt.eye "dispense-eye";
+  src.sphere -> tgt.sphere "dispense-sphere";
+  src.cylinder -> tgt.cylinder "dispense-cylinder";
+  src.axis -> tgt.axis "dispense-axis";
+  src.prism -> tgt.prism "dispense-prism";
+  src.base -> tgt.base "dispense-base";
+  src.add -> tgt.add "dispense-add";
+  src.power -> tgt.power "dispense-power";
+  src.backCurve -> tgt.backCurve "dispense-backCurve";
+  src.diameter -> tgt.diameter "dispense-diameter";
+  src.duration -> tgt.duration "dispense-duration";
+  src.color -> tgt.color "dispense-color";
+  src.brand -> tgt.brand "dispense-brand";
+  src.notes as v ->  tgt.note as n,  n.text = v "dispense-note";
+}
+

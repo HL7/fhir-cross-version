@@ -1,0 +1,27 @@
+/// url = "http://hl7.org/fhir/StructureMap/HumanName3to2"
+/// name = "HumanName3to2"
+/// title = "HumanName Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/HumanName" alias HumanName as source
+uses "http://hl7.org/fhir/1.0/HumanName" alias HumanNameR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group HumanName(source src : HumanName, target tgt : HumanNameR2) <<type+>> {
+  src.id -> tgt.id "HumanName-id";
+  src.extension where url != 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat' -> tgt.extension "HumanName-extensions";
+  src.use -> tgt.use "HumanName-use";
+  src.text -> tgt.text "HumanName-text";
+  src.family first -> tgt.family "HumanName-family";
+  src.extension as ex where url = 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat' -> tgt.family as f then nameRepeat(ex, f) "HumanName-family-rpt-ex";
+  src.given -> tgt.given "HumanName-given";
+  src.prefix -> tgt.prefix "HumanName-prefix";
+  src.suffix -> tgt.suffix "HumanName-suffix";
+  src.period -> tgt.period "HumanName-period";
+}
+
+group nameRepeat(source src, target tgt) {
+  src.value as v then string(v, tgt) "HumanName-family-rpt-2";
+}
+

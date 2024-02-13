@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MessageDefinitionB.responseRequired-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/MessageDefinitionB.responseRequired-R4BtoR5",
+  "name" : "MessageDefinitionB.responseRequired-R4BtoR5",
+  "title" : "Mapping for MessageDefinitionB.responseRequired from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MessageDefinitionB#MessageDefinitionB.responseRequired",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MessageDefinition#MessageDefinition.responseRequired",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/messageheader-response-request",
+    "target" : "http://hl7.org/fhir/5.0/messageheader-response-request",
+    "element" : [{
+      "code" : "always",
+      "target" : [{
+        "code" : "always",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "on-error",
+      "target" : [{
+        "code" : "on-error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "never",
+      "target" : [{
+        "code" : "never",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "on-success",
+      "target" : [{
+        "code" : "on-success",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

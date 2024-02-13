@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DeviceMetric.calibration.type-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/DeviceMetric.calibration.type-R5toR4",
+  "name" : "DeviceMetric.calibration.type-R5toR4",
+  "title" : "Mapping for DeviceMetric.calibration.type from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DeviceMetricB#DeviceMetricB.calibration.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/metric-calibration-type",
+    "target" : "http://hl7.org/fhir/4.0/metric-calibration-type",
+    "element" : [{
+      "code" : "unspecified",
+      "target" : [{
+        "code" : "unspecified",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "offset",
+      "target" : [{
+        "code" : "offset",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "gain",
+      "target" : [{
+        "code" : "gain",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "two-point",
+      "target" : [{
+        "code" : "two-point",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

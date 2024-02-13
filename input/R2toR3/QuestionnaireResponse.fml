@@ -1,0 +1,42 @@
+/// url = "http://hl7.org/fhir/StructureMap/QuestionnaireResponse2to3"
+/// name = "QuestionnaireResponse2to3"
+/// title = "QuestionnaireResponse Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/QuestionnaireResponse" alias QuestionnaireResponseR2 as source
+uses "http://hl7.org/fhir/3.0/QuestionnaireResponse" alias QuestionnaireResponse as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group QuestionnaireResponse(source src : QuestionnaireResponseR2, target tgt : QuestionnaireResponse) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "QuestionnaireResponse-identifier";
+  src.questionnaire -> tgt.questionnaire "QuestionnaireResponse-questionnaire";
+  src.status -> tgt.status "QuestionnaireResponse-status";
+  src.subject -> tgt.subject "QuestionnaireResponse-subject";
+  src.author -> tgt.author "QuestionnaireResponse-author";
+  src.authored -> tgt.authored "QuestionnaireResponse-authored";
+  src.source -> tgt.source "QuestionnaireResponse-source";
+  src.encounter -> tgt.context "QuestionnaireResponse-encounter";
+  src.group as vs0 -> tgt.item as vt0 then qrGroup(vs0, vt0) "QuestionnaireResponse-item";
+}
+
+group qrGroup(source src, target tgt) extends BackboneElement {
+  src.linkId -> tgt.linkId "group-linkId";
+  src.title where src.text.empty() -> tgt.text "group-title";
+  src.text -> tgt.text "group-text";
+  src.subject -> tgt.subject "group-subject";
+  src.group as vs0 -> tgt.item as vt0 then qrGroup(vs0, vt0) "group-group";
+  src.question as vs0 -> tgt.item as vt0 then qrQuestion(vs0, vt0) "group-question";
+}
+
+group qrQuestion(source src, target tgt) extends BackboneElement {
+  src.linkId -> tgt.linkId "question-linkId";
+  src.text -> tgt.text "question-text";
+  src.answer as vs0 -> tgt.answer as vt0 then qrAnswer(vs0, vt0) "question-answer";
+}
+
+group qrAnswer(source src, target tgt) extends BackboneElement {
+  src.value -> tgt.value "answer-value";
+  src.group as vs0 -> tgt.item as vt0 then qrGroup(vs0, vt0) "answer-group";
+}
+

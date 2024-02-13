@@ -1,0 +1,28 @@
+/// url = "http://hl7.org/fhir/StructureMap/QuantityM2to3"
+/// name = "QuantityM2to3"
+/// title = "Quantity Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Quantity" alias QuantityR2 as source
+uses "http://hl7.org/fhir/3.0/Quantity" alias Quantity as target
+uses "http://hl7.org/fhir/3.0/Duration" alias Duration as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/StructureMap/Element2to3"
+
+group Quantity(source src : QuantityR2, target tgt : Quantity) extends Element <<type+>> {
+  src.value -> tgt.value "Quantity-value";
+  src.comparator -> tgt.comparator "Quantity-comparator";
+  src.unit -> tgt.unit "Quantity-unit";
+  src.system -> tgt.system "Quantity-system";
+  src.code -> tgt.code "Quantity-code";
+}
+
+group QuantityToDuration(source src : QuantityR2, target tgt : Duration) extends Element {
+  src.value -> tgt.value "Duration-value";
+  src.comparator -> tgt.comparator "Duration-comparator";
+  src.unit -> tgt.unit "Duration-unit";
+  src.system -> tgt.system "Duration-system";
+  src.code -> tgt.code "Duration-code";
+}
+

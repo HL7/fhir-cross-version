@@ -1,0 +1,18 @@
+/// url = "http://hl7.org/fhir/StructureMap/Meta3to4"
+/// name = "Meta3to4"
+/// title = "Meta Transforms: R3 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Meta" alias MetaR3 as source
+uses "http://hl7.org/fhir/4.0/Meta" alias Meta as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to4"
+
+group Meta(source src : MetaR3, target tgt : Meta) extends Element <<type+>> {
+  src.versionId -> tgt.versionId;
+  src.lastUpdated -> tgt.lastUpdated;
+  src.security -> tgt.security;
+  src.profile -> tgt.profile;
+  src.tag -> tgt.tag;
+}
+

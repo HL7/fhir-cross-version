@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Claim.use-R3toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/Claim.use-R3toR4",
+  "name" : "Claim.use-R3toR4",
+  "title" : "Mapping for Claim.use from R3 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.use",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/claim-use",
+    "target" : "http://hl7.org/fhir/4.0/claim-use",
+    "element" : [{
+      "code" : "complete",
+      "target" : [{
+        "code" : "claim",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "proposed",
+      "target" : [{
+        "code" : "preauthorization",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "exploratory",
+      "target" : [{
+        "code" : "predetermination",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

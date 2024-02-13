@@ -1,0 +1,32 @@
+/// url = "http://hl7.org/fhir/StructureMap/ReferralRequest2to3"
+/// name = "ReferralRequest2to3"
+/// title = "ReferralRequest Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/ReferralRequest" alias ReferralRequestR2 as source
+uses "http://hl7.org/fhir/3.0/ReferralRequest" alias ReferralRequest as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group ReferralRequest(source src : ReferralRequestR2, target tgt : ReferralRequest) extends DomainResource <<type+>> {
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ReferralRequest.status-R2toR3', 'code') "ReferralRequest-status";
+  src.identifier -> tgt.identifier "ReferralRequest-identifier";
+  src.date -> tgt.authoredOn "ReferralRequest-date";
+  src.type -> tgt.type "ReferralRequest-type";
+  src.specialty -> tgt.specialty "ReferralRequest-specialty";
+  src.priority as v then {
+    v.coding as v1 where v1.system = 'http://hl7.org/fhir/diagnostic-order-priority' then {
+      v1.code -> tgt.priority "t2";
+    } "test";
+  } "ReferralRequest-priority";
+  src.patient -> tgt.subject "ReferralRequest-patient";
+  src.requester as v ->  tgt.requester as t,  t.agent = v "ReferralRequest-requester";
+  src.recipient -> tgt.recipient "ReferralRequest-recipient";
+  src.encounter -> tgt.context "ReferralRequest-encounter";
+  src.reason -> tgt.reasonCode "ReferralRequest-reason";
+  src.description -> tgt.description "ReferralRequest-description";
+  src.serviceRequested -> tgt.serviceRequested "ReferralRequest-serviceRequested";
+  src.supportingInformation -> tgt.supportingInfo "ReferralRequest-supportingInformation";
+  src.fulfillmentTime -> tgt.occurrence "ReferralRequest-fulfillmentTime";
+}
+

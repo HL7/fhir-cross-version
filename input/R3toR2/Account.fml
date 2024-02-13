@@ -1,0 +1,22 @@
+/// url = "http://hl7.org/fhir/StructureMap/Account3to2"
+/// name = "Account3to2"
+/// title = "Account Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Account" alias Account as source
+uses "http://hl7.org/fhir/1.0/Account" alias AccountR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group Account(source src : Account, target tgt : AccountR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Account-identifier";
+  src.name -> tgt.name "Account-name";
+  src.type -> tgt.type "Account-type";
+  src.status -> tgt.status "Account-status";
+  src.active -> tgt.activePeriod "Account-activePeriod";
+  src.balance -> tgt.balance "Account-balance";
+  src.subject -> tgt.subject "Account-subject";
+  src.owner -> tgt.owner "Account-owner";
+  src.description -> tgt.description "Account-description";
+}
+

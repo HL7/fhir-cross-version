@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Subscription.status-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/Subscription.status-R5toR4",
+  "name" : "Subscription.status-R5toR4",
+  "title" : "Mapping for Subscription.status from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Subscription#Subscription.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionB#SubscriptionB.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/subscription-status",
+    "target" : "http://hl7.org/fhir/4.0/subscription-status",
+    "element" : [{
+      "code" : "requested",
+      "target" : [{
+        "code" : "requested",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "off",
+      "target" : [{
+        "code" : "off",
+        "relationship" : "related-to",
+        "comment" : "s:\"entered-in-error\" - t:\"entered-in-error\""
+      }]
+    }]
+  }]
+}

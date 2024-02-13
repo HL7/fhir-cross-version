@@ -1,0 +1,47 @@
+/// url = "http://hl7.org/fhir/StructureMap/VisionPrescription3to2"
+/// name = "VisionPrescription3to2"
+/// title = "VisionPrescription Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/VisionPrescription" alias VisionPrescription as source
+uses "http://hl7.org/fhir/1.0/VisionPrescription" alias VisionPrescriptionR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group VisionPrescription(source src : VisionPrescription, target tgt : VisionPrescriptionR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "VisionPrescription-identifier";
+  src.dateWritten -> tgt.dateWritten "VisionPrescription-dateWritten";
+  src.patient -> tgt.patient "VisionPrescription-patient";
+  src.prescriber -> tgt.prescriber "VisionPrescription-prescriber";
+  src.encounter -> tgt.encounter "VisionPrescription-encounter";
+  src.reason -> tgt.reason "VisionPrescription-reason";
+  src.dispense as vs0 -> tgt.dispense as vt0 then vspDispense(vs0, vt0) "VisionPrescription-dispense";
+}
+
+group vspDispense(source src, target tgt) extends BackboneElement {
+  src.product as v then vpsProduct(v, tgt) "dispense-product";
+  src.eye as v where coding.code = 'left' -> tgt.eye = 'left' "dispense-eye1";
+  src.eye as v where coding.code = 'right' -> tgt.eye = 'right' "dispense-eye2";
+  src.sphere -> tgt.sphere "dispense-sphere";
+  src.cylinder -> tgt.cylinder "dispense-cylinder";
+  src.axis -> tgt.axis "dispense-axis";
+  src.prism -> tgt.prism "dispense-prism";
+  src.base -> tgt.base "dispense-base1";
+  src.add -> tgt.add "dispense-add";
+  src.power -> tgt.power "dispense-power";
+  src.backCurve -> tgt.backCurve "dispense-backCurve";
+  src.diameter -> tgt.diameter "dispense-diameter";
+  src.duration -> tgt.duration "dispense-duration";
+  src.color -> tgt.color "dispense-color";
+  src.brand -> tgt.brand "dispense-brand";
+  src.note as n then vspNote(n, tgt) "dispense-note";
+}
+
+group vpsProduct(source src, target tgt) extends Element {
+  src.coding -> tgt.product "product-coding";
+}
+
+group vspNote(source src, target tgt) extends Element {
+  src.text -> tgt.notes "note-text";
+}
+

@@ -1,0 +1,45 @@
+/// url = "http://hl7.org/fhir/StructureMap/PaymentReconciliation4Bto5"
+/// name = "PaymentReconciliation4Bto5"
+/// title = "PaymentReconciliation Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/PaymentReconciliation" alias PaymentReconciliationR4B as source
+uses "http://hl7.org/fhir/5.0/PaymentReconciliation" alias PaymentReconciliationR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group PaymentReconciliation(source src : PaymentReconciliationR4B, target tgt : PaymentReconciliationR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/PaymentReconciliationB.status-R4BtoR5', 'code');
+  src.period -> tgt.period;
+  src.created -> tgt.created;
+  src.paymentIssuer -> tgt.paymentIssuer;
+  src.request -> tgt.request;
+  src.requestor -> tgt.requestor;
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/ConceptMap/PaymentReconciliationB.outcome-R4BtoR5', 'code');
+  src.disposition -> tgt.disposition;
+  src.paymentDate -> tgt.date;
+  src.paymentAmount -> tgt.amount;
+  src.paymentIdentifier -> tgt.paymentIdentifier;
+  src.detail as s -> tgt.allocation as t then PaymentReconciliationAllocation(s, t);
+  src.formCode -> tgt.formCode;
+  src.processNote as s -> tgt.processNote as t then PaymentReconciliationProcessNote(s, t);
+}
+
+group PaymentReconciliationAllocation(source src, target tgt) extends BackboneElement {
+  src.identifier -> tgt.identifier;
+  src.predecessor -> tgt.predecessor;
+  src.type -> tgt.type;
+  src.submitter -> tgt.submitter;
+  src.response -> tgt.response;
+  src.date -> tgt.date;
+  src.responsible -> tgt.responsible;
+  src.payee -> tgt.payee;
+  src.amount -> tgt.amount;
+}
+
+group PaymentReconciliationProcessNote(source src, target tgt) extends BackboneElement {
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/PaymentReconciliationB.processNote.type-R4BtoR5', 'code');
+  src.text -> tgt.text;
+}
+

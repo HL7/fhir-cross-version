@@ -1,0 +1,40 @@
+/// url = "http://hl7.org/fhir/StructureMap/MedicationStatement3to2"
+/// name = "MedicationStatement3to2"
+/// title = "MedicationStatement Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/MedicationStatement" alias MedicationStatement as source
+uses "http://hl7.org/fhir/1.0/MedicationStatement" alias MedicationStatementR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group MedicationStatement(source src : MedicationStatement, target tgt : MedicationStatementR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "MedicationStatement-identifier";
+  src.subject -> tgt.patient "MedicationStatement-subject";
+  src.informationSource -> tgt.informationSource "MedicationStatement-informationSource";
+  src.dateAsserted -> tgt.dateAsserted "MedicationStatement-dateAsserted";
+  src.status check (src.status != 'stopped') and (status != 'on-hold') -> tgt.status "MedicationStatement-status";
+  src.taken as vt where $this = 'n' -> tgt.wasNotTaken = 'true' "MedicationStatement-wasNotTaken";
+  src.taken as vt where $this = 'y' -> tgt.wasNotTaken = 'false' "MedicationStatement-wasNotTaken";
+  src.reasonNotTaken -> tgt.reasonNotTaken "MedicationStatement-reasonNotTaken";
+  src.reasonCode -> tgt.reasonForUse "MedicationStatement-reasonForUse1";
+  src.reasonReference -> tgt.reasonForUse "MedicationStatement-reasonForUse2";
+  src.effective -> tgt.effective "MedicationStatement-effective";
+  src.note -> tgt.note "MedicationStatement-note";
+  src.derivedFrom -> tgt.supportingInformation "MedicationStatement-supportingInformation";
+  src.medication -> tgt.medication "MedicationStatement-medication";
+  src.dosage as vs0 -> tgt.dosage as vt0 then mstDosage(vs0, vt0) "MedicationStatement-dosage";
+}
+
+group mstDosage(source src, target tgt) extends Element {
+  src.text -> tgt.text "DosageInstruction-text";
+  src.timing -> tgt.timing "DosageInstruction-timing";
+  src.asNeeded -> tgt.asNeeded "DosageInstruction-asNeeded";
+  src.site -> tgt.site "DosageInstruction-site";
+  src.route -> tgt.route "DosageInstruction-route";
+  src.method -> tgt.method "DosageInstruction-method";
+  src.dose -> tgt.quantity "DosageInstruction-quantity";
+  src.rate -> tgt.rate "DosageInstruction-rate";
+  src.maxDosePerPeriod -> tgt.maxDosePerPeriod "DosageInstruction-maxDosePerPeriod";
+}
+

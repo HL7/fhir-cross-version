@@ -1,0 +1,39 @@
+/// url = "http://hl7.org/fhir/StructureMap/DiagnosticReport3to2"
+/// name = "DiagnosticReport3to2"
+/// title = "DiagnosticReport Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/DiagnosticReport" alias DiagnosticReport as source
+uses "http://hl7.org/fhir/1.0/DiagnosticReport" alias DiagnosticReportR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group DiagnosticReport(source src : DiagnosticReport, target tgt : DiagnosticReportR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "DiagnosticReport-identifier";
+  src.status -> tgt.status "DiagnosticReport-status";
+  src.category -> tgt.category "DiagnosticReport-category";
+  src.code -> tgt.code "DiagnosticReport-code";
+  src.subject -> tgt.subject "DiagnosticReport-subject";
+  src.context -> tgt.encounter "DiagnosticReport-encounter";
+  src.effective -> tgt.effective "DiagnosticReport-effective";
+  src.issued -> tgt.issued "DiagnosticReport-issued";
+  src.performer as v then drpPerformer(v, tgt) "DiagnosticReport-performer";
+  src.basedOn -> tgt.request "DiagnosticReport-request";
+  src.specimen -> tgt.specimen "DiagnosticReport-specimen";
+  src.result -> tgt.result "DiagnosticReport-result";
+  src.imagingStudy -> tgt.imagingStudy "DiagnosticReport-imagingStudy";
+  src.image as vs0 -> tgt.image as vt0 then drpImage(vs0, vt0) "DiagnosticReport-image";
+  src.conclusion -> tgt.conclusion "DiagnosticReport-conclusion";
+  src.codedDiagnosis -> tgt.codedDiagnosis "DiagnosticReport-codedDiagnosis";
+  src.presentedForm -> tgt.presentedForm "DiagnosticReport-presentedForm";
+}
+
+group drpPerformer(source src, target tgt) extends BackboneElement {
+  src.actor -> tgt.performer "performer-actor";
+}
+
+group drpImage(source src, target tgt) extends BackboneElement {
+  src.comment -> tgt.comment "image-comment";
+  src.link -> tgt.link "image-link";
+}
+

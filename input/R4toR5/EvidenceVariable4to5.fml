@@ -1,0 +1,45 @@
+/// url = "http://hl7.org/fhir/StructureMap/EvidenceVariable4to5"
+/// name = "EvidenceVariable4to5"
+/// title = "EvidenceVariable Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/EvidenceVariable" alias EvidenceVariableR4 as source
+uses "http://hl7.org/fhir/5.0/EvidenceVariable" alias EvidenceVariableR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group EvidenceVariable(source src : EvidenceVariableR4, target tgt : EvidenceVariableR5) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.name -> tgt.name;
+  src.title -> tgt.title;
+  src.shortTitle -> tgt.shortTitle;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceVariable.status-R4toR5', 'code');
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.note -> tgt.note;
+  src.useContext -> tgt.useContext;
+  src.copyright -> tgt.copyright;
+  src.approvalDate -> tgt.approvalDate;
+  src.lastReviewDate -> tgt.lastReviewDate;
+  src.effectivePeriod -> tgt.effectivePeriod;
+  src.author -> tgt.author;
+  src.editor -> tgt.editor;
+  src.reviewer -> tgt.reviewer;
+  src.endorser -> tgt.endorser;
+  src.relatedArtifact -> tgt.relatedArtifact;
+  src.characteristic as s -> tgt.characteristic as t then EvidenceVariableCharacteristic(s, t);
+}
+
+group EvidenceVariableCharacteristic(source src, target tgt) extends BackboneElement {
+  src.description -> tgt.description;
+  src.exclude -> tgt.exclude;
+  src.definition : Reference -> tgt.definitionReference "definitionReference";
+  src.definition : canonical -> tgt.definitionCanonical "definitionCanonical";
+  src.definition : CodeableConcept -> tgt.definitionCodeableConcept "definitionCodeableConcept";
+  src.definition : Expression -> tgt.definitionExpression "definitionExpression";
+}
+

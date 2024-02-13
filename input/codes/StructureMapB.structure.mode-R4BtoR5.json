@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "StructureMapB.structure.mode-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/StructureMapB.structure.mode-R4BtoR5",
+  "name" : "StructureMapB.structure.mode-R4BtoR5",
+  "title" : "Mapping for StructureMapB.structure.mode from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureMapB#StructureMapB.structure.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.structure.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/map-model-mode",
+    "target" : "http://hl7.org/fhir/5.0/map-model-mode",
+    "element" : [{
+      "code" : "source",
+      "target" : [{
+        "code" : "source",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "queried",
+      "target" : [{
+        "code" : "queried",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "target",
+      "target" : [{
+        "code" : "target",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "produced",
+      "target" : [{
+        "code" : "produced",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

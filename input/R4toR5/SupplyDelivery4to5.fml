@@ -1,0 +1,32 @@
+/// url = "http://hl7.org/fhir/StructureMap/SupplyDelivery4to5"
+/// name = "SupplyDelivery4to5"
+/// title = "SupplyDelivery Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/SupplyDelivery" alias SupplyDeliveryR4 as source
+uses "http://hl7.org/fhir/5.0/SupplyDelivery" alias SupplyDeliveryR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group SupplyDelivery(source src : SupplyDeliveryR4, target tgt : SupplyDeliveryR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.basedOn -> tgt.basedOn;
+  src.partOf -> tgt.partOf;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/SupplyDelivery.status-R4toR5', 'code');
+  src.patient -> tgt.patient;
+  src.type : CodeableConcept as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/SupplyDelivery.type-R4toR5', 'code') "typeCodeableConcept";
+  src.suppliedItem as s -> tgt.suppliedItem as t then SupplyDeliverySuppliedItem(s, t);
+  src.occurrence : dateTime -> tgt.occurrence "occurrenceDateTime";
+  src.occurrence : Period -> tgt.occurrence "occurrencePeriod";
+  src.occurrence : Timing -> tgt.occurrence "occurrenceTiming";
+  src.supplier -> tgt.supplier;
+  src.destination -> tgt.destination;
+  src.receiver -> tgt.receiver;
+}
+
+group SupplyDeliverySuppliedItem(source src, target tgt) extends BackboneElement {
+  src.quantity -> tgt.quantity;
+  src.item : CodeableConcept -> tgt.item "itemCodeableConcept";
+  src.item : Reference -> tgt.item "itemReference";
+}
+

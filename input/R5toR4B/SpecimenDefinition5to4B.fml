@@ -1,0 +1,54 @@
+/// url = "http://hl7.org/fhir/StructureMap/SpecimenDefinition5to4B"
+/// name = "SpecimenDefinition5to4B"
+/// title = "SpecimenDefinition Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/SpecimenDefinition" alias SpecimenDefinitionR5 as source
+uses "http://hl7.org/fhir/4.0/SpecimenDefinition" alias SpecimenDefinitionR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group SpecimenDefinition(source src : SpecimenDefinitionR5, target tgt : SpecimenDefinitionR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.typeCollected -> tgt.typeCollected;
+  src.patientPreparation -> tgt.patientPreparation;
+  src.timeAspect -> tgt.timeAspect;
+  src.collection -> tgt.collection;
+  src.typeTested as s -> tgt.typeTested as t then SpecimenDefinitionTypeTested(s, t);
+}
+
+group SpecimenDefinitionTypeTested(source src, target tgt) extends BackboneElement {
+  src.isDerived -> tgt.isDerived;
+  src.type -> tgt.type;
+  src.preference as v -> tgt.preference = translate(v, 'http://hl7.org/fhir/ConceptMap/SpecimenDefinition.typeTested.preference-R5toR4', 'code');
+  src.container as s -> tgt.container as t then SpecimenDefinitionTypeTestedContainer(s, t);
+  src.requirement -> tgt.requirement;
+  src.retentionTime -> tgt.retentionTime;
+  src.rejectionCriterion -> tgt.rejectionCriterion;
+  src.handling as s -> tgt.handling as t then SpecimenDefinitionTypeTestedHandling(s, t);
+}
+
+group SpecimenDefinitionTypeTestedContainer(source src, target tgt) extends BackboneElement {
+  src.material -> tgt.material;
+  src.type -> tgt.type;
+  src.cap -> tgt.cap;
+  src.description -> tgt.description;
+  src.capacity -> tgt.capacity;
+  src.minimumVolume : Quantity -> tgt.minimumVolume "minimumVolumeQuantity";
+  src.minimumVolume : string -> tgt.minimumVolume "minimumVolumeString";
+  src.additive as s -> tgt.additive as t then SpecimenDefinitionTypeTestedContainerAdditive(s, t);
+  src.preparation -> tgt.preparation;
+}
+
+group SpecimenDefinitionTypeTestedContainerAdditive(source src, target tgt) extends BackboneElement {
+  src.additive : CodeableConcept -> tgt.additive "additiveCodeableConcept";
+  src.additive : Reference -> tgt.additive "additiveReference";
+}
+
+group SpecimenDefinitionTypeTestedHandling(source src, target tgt) extends BackboneElement {
+  src.temperatureQualifier -> tgt.temperatureQualifier;
+  src.temperatureRange -> tgt.temperatureRange;
+  src.maxDuration -> tgt.maxDuration;
+  src.instruction -> tgt.instruction;
+}
+

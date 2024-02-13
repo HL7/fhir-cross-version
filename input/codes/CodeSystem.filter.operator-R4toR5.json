@@ -1,0 +1,78 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CodeSystem.filter.operator-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/CodeSystem.filter.operator-R4toR5",
+  "name" : "CodeSystem.filter.operator-R4toR5",
+  "title" : "Mapping for CodeSystem.filter.operator from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.filter.operator",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.filter.operator",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/filter-operator",
+    "target" : "http://hl7.org/fhir/5.0/filter-operator",
+    "element" : [{
+      "code" : "=",
+      "target" : [{
+        "code" : "=",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "is-a",
+      "target" : [{
+        "code" : "is-a",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "descendent-of",
+      "target" : [{
+        "code" : "descendent-of",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "is-not-a",
+      "target" : [{
+        "code" : "is-not-a",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "regex",
+      "target" : [{
+        "code" : "regex",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "not-in",
+      "target" : [{
+        "code" : "not-in",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "generalizes",
+      "target" : [{
+        "code" : "generalizes",
+        "relationship" : "related-to",
+        "comment" : "s:\"child-of\" - t:\"child-of\""
+      }]
+    },
+    {
+      "code" : "exists",
+      "target" : [{
+        "code" : "exists",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

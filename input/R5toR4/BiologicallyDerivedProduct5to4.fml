@@ -1,0 +1,34 @@
+/// url = "http://hl7.org/fhir/StructureMap/BiologicallyDerivedProduct5to4"
+/// name = "BiologicallyDerivedProduct5to4"
+/// title = "BiologicallyDerivedProduct Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/BiologicallyDerivedProduct" alias BiologicallyDerivedProductR5 as source
+uses "http://hl7.org/fhir/4.0/BiologicallyDerivedProduct" alias BiologicallyDerivedProductR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group BiologicallyDerivedProduct(source src : BiologicallyDerivedProductR5, target tgt : BiologicallyDerivedProductR4) extends DomainResource <<type+>> {
+  src.productCategory as s -> tgt.productCategory as t then BiologicallyDerivedProductCategory(s, t);
+  src.productCode -> tgt.productCode;
+  src.parent -> tgt.parent;
+  src.request -> tgt.request;
+  src.identifier -> tgt.identifier;
+  src.collection as s -> tgt.collection as t then BiologicallyDerivedProductCollection(s, t);
+}
+
+group BiologicallyDerivedProductCategory(source src, target tgt) extends BackboneElement {
+  src.code as s where code = 'organ' -> tgt = 'organ';
+  src.code as s where code = 'tissue' -> tgt = 'tissue';
+  src.code as s where code = 'fluid' -> tgt = 'fluid';
+  src.code as s where code = 'cells' -> tgt = 'cells';
+  src.code as s where code = 'biologicalAgent' -> tgt = 'biologicalAgent';
+}
+
+group BiologicallyDerivedProductCollection(source src, target tgt) extends BackboneElement {
+  src.collector -> tgt.collector;
+  src.source -> tgt.source;
+  src.collected : dateTime -> tgt.collected "collectedDateTime";
+  src.collected : Period -> tgt.collected "collectedPeriod";
+}
+

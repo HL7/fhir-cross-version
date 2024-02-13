@@ -1,0 +1,41 @@
+/// url = "http://hl7.org/fhir/StructureMap/Practitioner2to3"
+/// name = "Practitioner2to3"
+/// title = "Practitioner Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Practitioner" alias PractitionerR2 as source
+uses "http://hl7.org/fhir/3.0/Practitioner" alias Practitioner as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Practitioner(source src : PractitionerR2, target tgt : Practitioner) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Practitioner-identifier";
+  src.active -> tgt.active "Practitioner-active";
+  src.name -> tgt.name "Practitioner-name";
+  src.telecom -> tgt.telecom "Practitioner-telecom";
+  src.address -> tgt.address "Practitioner-address";
+  src.gender -> tgt.gender "Practitioner-gender";
+  src.birthDate -> tgt.birthDate "Practitioner-birthDate";
+  src.photo -> tgt.photo "Practitioner-photo";
+  src.practitionerRole as vs0 -> create('PractitionerRole') as vt0 then prcRole(src, tgt, vs0, vt0) "Practitioner-role";
+  src.qualification as vs0 -> tgt.qualification as vt0 then prcQualification(vs0, vt0) "Practitioner-qualification";
+  src.communication -> tgt.communication "Practitioner-communication";
+}
+
+group prcRole(source pr, target prtgt, source src, target tgt) extends BackboneElement {
+  src ->  tgt.practitioner = create('Reference') as p,  p.reference = ('Practitioner/' + pr.id) "role-id";
+  src.managingOrganization -> tgt.organization "role-organization";
+  src.role -> tgt.code "role-code";
+  src.specialty -> tgt.specialty "role-specialty";
+  src.period -> tgt.period "role-period";
+  src.location -> tgt.location "role-location";
+  src.healthcareService -> tgt.healthcareService "role-healthcareService";
+}
+
+group prcQualification(source src, target tgt) extends BackboneElement {
+  src.identifier -> tgt.identifier "qualification-identifier";
+  src.code -> tgt.code "qualification-code";
+  src.period -> tgt.period "qualification-period";
+  src.issuer -> tgt.issuer "qualification-issuer";
+}
+

@@ -1,0 +1,34 @@
+/// url = "http://hl7.org/fhir/StructureMap/Group2to3"
+/// name = "Group2to3"
+/// title = "Group Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Group" alias GroupR2 as source
+uses "http://hl7.org/fhir/3.0/Group" alias Group as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Group(source src : GroupR2, target tgt : Group) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Group-identifier";
+  src.type -> tgt.type "Group-type";
+  src.actual -> tgt.actual "Group-actual";
+  src.code -> tgt.code "Group-code";
+  src.name -> tgt.name "Group-name";
+  src.quantity -> tgt.quantity "Group-quantity";
+  src.characteristic as vs0 -> tgt.characteristic as vt0 then grpCharacteristic(vs0, vt0) "Group-characteristic";
+  src.member as vs0 -> tgt.member as vt0 then grpMember(vs0, vt0) "Group-member";
+}
+
+group grpCharacteristic(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code "characteristic-code";
+  src.value -> tgt.value "characteristic-value";
+  src.exclude -> tgt.exclude "characteristic-exclude";
+  src.period -> tgt.period "characteristic-period";
+}
+
+group grpMember(source src, target tgt) extends BackboneElement {
+  src.entity -> tgt.entity "member-entity";
+  src.period -> tgt.period "member-period";
+  src.inactive -> tgt.inactive "member-inactive";
+}
+

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ElementDefinition.type.versioning-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/ElementDefinition.type.versioning-R4toR5",
+  "name" : "ElementDefinition.type.versioning-R4toR5",
+  "title" : "Mapping for ElementDefinition.type.versioning from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.type.versioning",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.type.versioning",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/reference-version-rules",
+    "target" : "http://hl7.org/fhir/5.0/reference-version-rules",
+    "element" : [{
+      "code" : "either",
+      "target" : [{
+        "code" : "either",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "independent",
+      "target" : [{
+        "code" : "independent",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "specific",
+      "target" : [{
+        "code" : "specific",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

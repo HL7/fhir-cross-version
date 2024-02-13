@@ -1,0 +1,17 @@
+/// url = "http://hl7.org/fhir/StructureMap/UsageContext3to4"
+/// name = "UsageContext3to4"
+/// title = "UsageContext Transforms: R3 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/UsageContext" alias UsageContextR3 as source
+uses "http://hl7.org/fhir/4.0/UsageContext" alias UsageContext as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to4"
+
+group UsageContext(source src : UsageContextR3, target tgt : UsageContext) extends Element <<type+>> {
+  src.code -> tgt.code;
+  src.value : CodeableConcept as vs -> tgt.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "valueCodeableConcept";
+  src.value : Quantity as vs -> tgt.value = create('Quantity') as vt then Quantity(vs, vt) "valueQuantity";
+  src.value : Range as vs -> tgt.value = create('Range') as vt then Range(vs, vt) "valueRange";
+}
+

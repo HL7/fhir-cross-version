@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CarePlan.status-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/CarePlan.status-R5toR4",
+  "name" : "CarePlan.status-R5toR4",
+  "title" : "Mapping for CarePlan.status from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CarePlan#CarePlan.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CarePlanB#CarePlanB.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/request-status",
+    "target" : "http://hl7.org/fhir/4.0/request-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "on-hold",
+      "target" : [{
+        "code" : "on-hold",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "revoked",
+      "target" : [{
+        "code" : "revoked",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

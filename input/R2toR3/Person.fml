@@ -1,0 +1,28 @@
+/// url = "http://hl7.org/fhir/StructureMap/Person2to3"
+/// name = "Person2to3"
+/// title = "Person Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Person" alias PersonR2 as source
+uses "http://hl7.org/fhir/3.0/Person" alias Person as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Person(source src : PersonR2, target tgt : Person) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Person-identifier";
+  src.name -> tgt.name "Person-name";
+  src.telecom -> tgt.telecom "Person-telecom";
+  src.gender -> tgt.gender "Person-gender";
+  src.birthDate -> tgt.birthDate "Person-birthDate";
+  src.address -> tgt.address "Person-address";
+  src.photo -> tgt.photo "Person-photo";
+  src.managingOrganization -> tgt.managingOrganization "Person-managingOrganization";
+  src.active -> tgt.active "Person-active";
+  src.link as vs0 -> tgt.link as vt0 then psnLink(vs0, vt0) "Person-link";
+}
+
+group psnLink(source src, target tgt) extends BackboneElement {
+  src.target -> tgt.target "link-target";
+  src.assurance -> tgt.assurance "link-assurance";
+}
+

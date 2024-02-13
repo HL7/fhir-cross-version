@@ -1,0 +1,48 @@
+/// url = "http://hl7.org/fhir/StructureMap/ChargeItemDefinition4Bto5"
+/// name = "ChargeItemDefinition4Bto5"
+/// title = "ChargeItemDefinition Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/ChargeItemDefinition" alias ChargeItemDefinitionR4B as source
+uses "http://hl7.org/fhir/5.0/ChargeItemDefinition" alias ChargeItemDefinitionR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group ChargeItemDefinition(source src : ChargeItemDefinitionR4B, target tgt : ChargeItemDefinitionR5) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.title -> tgt.title;
+  src.derivedFromUri -> tgt.derivedFromUri;
+  src.partOf -> tgt.partOf;
+  src.replaces -> tgt.replaces;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ChargeItemDefinitionB.status-R4BtoR5', 'code');
+  src.experimental -> tgt.experimental;
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.useContext -> tgt.useContext;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.copyright -> tgt.copyright;
+  src.approvalDate -> tgt.approvalDate;
+  src.lastReviewDate -> tgt.lastReviewDate;
+  src.code -> tgt.code;
+  src.instance -> tgt.instance;
+  src.applicability as s -> tgt.applicability as t then ChargeItemDefinitionApplicability(s, t);
+  src.propertyGroup as s -> tgt.propertyGroup as t then ChargeItemDefinitionPropertyGroup(s, t);
+}
+
+group ChargeItemDefinitionApplicability(source src, target tgt) extends BackboneElement {
+  src.expression as s ->  tgt.condition = create('Expression') as t,  t.expression = s;
+}
+
+group ChargeItemDefinitionPropertyGroup(source src, target tgt) extends BackboneElement {
+  src.priceComponent as s -> tgt.priceComponent as t then {
+    s.type -> t.type;
+    s.code -> t.code;
+    s.factor -> t.factor;
+    s.amount -> t.amount;
+  };
+}
+

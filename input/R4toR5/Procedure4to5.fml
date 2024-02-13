@@ -1,0 +1,54 @@
+/// url = "http://hl7.org/fhir/StructureMap/Procedure4to5"
+/// name = "Procedure4to5"
+/// title = "Procedure Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Procedure" alias ProcedureR4 as source
+uses "http://hl7.org/fhir/5.0/Procedure" alias ProcedureR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group Procedure(source src : ProcedureR4, target tgt : ProcedureR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.instantiatesCanonical -> tgt.instantiatesCanonical;
+  src.instantiatesUri -> tgt.instantiatesUri;
+  src.basedOn -> tgt.basedOn;
+  src.partOf -> tgt.partOf;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Procedure.status-R4toR5', 'code');
+  src.statusReason -> tgt.statusReason;
+  src.category -> tgt.category;
+  src.code -> tgt.code;
+  src.subject -> tgt.subject;
+  src.encounter -> tgt.encounter;
+  src.performed : dateTime -> tgt.occurrence "performedDateTime";
+  src.performed : Period -> tgt.occurrence "performedPeriod";
+  src.performed : string -> tgt.occurrence "performedString";
+  src.performed : Age -> tgt.occurrence "performedAge";
+  src.performed : Range -> tgt.occurrence "performedRange";
+  src.recorder -> tgt.recorder;
+  src.performer as s -> tgt.performer as t then ProcedurePerformer(s, t);
+  src.location -> tgt.location;
+  src.reasonCode -> tgt.reason;
+  src.reasonReference -> tgt.reason;
+  src.bodySite -> tgt.bodySite;
+  src.outcome -> tgt.outcome;
+  src.report -> tgt.report;
+  src.complication -> tgt.complication;
+  src.followUp -> tgt.followUp;
+  src.note -> tgt.note;
+  src.focalDevice as s -> tgt.focalDevice as t then ProcedureFocalDevice(s, t);
+  src.usedCode -> tgt.used;
+  src.usedReference -> tgt.used;
+}
+
+group ProcedurePerformer(source src, target tgt) extends BackboneElement {
+  src.function -> tgt.function;
+  src.actor -> tgt.actor;
+  src.onBehalfOf -> tgt.onBehalfOf;
+}
+
+group ProcedureFocalDevice(source src, target tgt) extends BackboneElement {
+  src.action -> tgt.action;
+  src.manipulated -> tgt.manipulated;
+}
+

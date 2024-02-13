@@ -1,0 +1,36 @@
+/// url = "http://hl7.org/fhir/StructureMap/Provenance3to2"
+/// name = "Provenance3to2"
+/// title = "Provenance Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Provenance" alias Provenance as source
+uses "http://hl7.org/fhir/1.0/Provenance" alias ProvenanceR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group Provenance(source src : Provenance, target tgt : ProvenanceR2) extends DomainResource <<type+>> {
+  src.target -> tgt.target "Provenance-target";
+  src.period -> tgt.period "Provenance-period";
+  src.recorded -> tgt.recorded "Provenance-recorded";
+  src.reason -> tgt.reason "Provenance-activity";
+  src.activity -> tgt.activity "Provenance-activity";
+  src.location -> tgt.location "Provenance-location";
+  src.policy -> tgt.policy "Provenance-policy";
+  src.agent as vs0 -> tgt.agent as vt0 then prAgent(vs0, vt0) "Provenance-agent";
+  src.entity as vs0 -> tgt.entity as vt0 then prEntity(vs0, vt0) "Provenance-entity";
+  src.signature -> tgt.signature "Provenance-signature";
+}
+
+group prAgent(source src, target tgt) extends BackboneElement {
+  src.role -> tgt.role "agent-role";
+  src.who where display.exists() or reference.exists() -> tgt.actor "agent-who";
+  src.who as su where identifier.exists() then {
+    su.identifier -> tgt.userId "agent-userId2";
+  } "agent-userId";
+}
+
+group prEntity(source src, target tgt) extends BackboneElement {
+  src.role -> tgt.role "entity-role";
+  src.agent as vs0 -> tgt.agent as vt0 then prAgent(vs0, vt0) "entity-agent";
+}
+

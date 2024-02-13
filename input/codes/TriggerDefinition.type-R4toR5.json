@@ -1,0 +1,70 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "TriggerDefinition.type-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/TriggerDefinition.type-R4toR5",
+  "name" : "TriggerDefinition.type-R4toR5",
+  "title" : "Mapping for TriggerDefinition.type from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TriggerDefinition#TriggerDefinition.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TriggerDefinition#TriggerDefinition.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/trigger-type",
+    "target" : "http://hl7.org/fhir/5.0/trigger-type",
+    "element" : [{
+      "code" : "named-event",
+      "target" : [{
+        "code" : "named-event",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "periodic",
+      "target" : [{
+        "code" : "periodic",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "data-changed",
+      "target" : [{
+        "code" : "data-changed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "data-added",
+      "target" : [{
+        "code" : "data-added",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "data-modified",
+      "target" : [{
+        "code" : "data-modified",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "data-removed",
+      "target" : [{
+        "code" : "data-removed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "data-accessed",
+      "target" : [{
+        "code" : "data-accessed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "data-access-ended",
+      "target" : [{
+        "code" : "data-access-ended",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,21 @@
+/// url = "http://hl7.org/fhir/StructureMap/Flag4to5"
+/// name = "Flag4to5"
+/// title = "Flag Transforms: R4 to R5"
+/// status = "draft"
+
+uses "http://hl7.org/fhir/4.0/Flag" alias FlagR4 as source
+uses "http://hl7.org/fhir/5.0/Flag" alias FlagR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group Flag(source src : FlagR4, target tgt : FlagR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Flag.status-R4toR5', 'code');
+  src.category -> tgt.category;
+  src.code -> tgt.code;
+  src.subject -> tgt.subject;
+  src.period -> tgt.period;
+  src.encounter -> tgt.encounter;
+  src.author -> tgt.author;
+}
+

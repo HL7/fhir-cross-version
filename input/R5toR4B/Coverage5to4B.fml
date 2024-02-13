@@ -1,0 +1,55 @@
+/// url = "http://hl7.org/fhir/StructureMap/Coverage5to4B"
+/// name = "Coverage5to4B"
+/// title = "Coverage Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Coverage" alias CoverageR5 as source
+uses "http://hl7.org/fhir/4.0/Coverage" alias CoverageR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group Coverage(source src : CoverageR5, target tgt : CoverageR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Coverage.status-R5toR4', 'code');
+  src.type -> tgt.type;
+  src.policyHolder -> tgt.policyHolder;
+  src.subscriber -> tgt.subscriber;
+  src.subscriberId as s -> tgt then {
+    s.value -> tgt.subscriberId;
+  };
+  src.beneficiary -> tgt.beneficiary;
+  src.dependent -> tgt.dependent;
+  src.relationship -> tgt.relationship;
+  src.period -> tgt.period;
+  src.class as s -> tgt.class as t then CoverageClass(s, t);
+  src.order -> tgt.order;
+  src.network -> tgt.network;
+  src.costToBeneficiary as s -> tgt.costToBeneficiary as t then CoverageCostToBeneficiary(s, t);
+  src.subrogation -> tgt.subrogation;
+  src.contract -> tgt.contract;
+}
+
+// group CoveragePaymentBy(source src, target tgt) extends BackboneElement {
+// src.party -> tgt.party;
+// src.responsibility -> tgt.responsibility;
+// }
+group CoverageClass(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.value as s -> tgt then {
+    s.value -> tgt.value;
+  };
+  src.name -> tgt.name;
+}
+
+group CoverageCostToBeneficiary(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.value : Quantity -> tgt.value "valueQuantity";
+  src.value : Money -> tgt.value "valueMoney";
+  src.exception as s -> tgt.exception as t then CoverageCostToBeneficiaryException(s, t);
+}
+
+group CoverageCostToBeneficiaryException(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.period -> tgt.period;
+}
+

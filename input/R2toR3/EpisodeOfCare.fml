@@ -1,0 +1,40 @@
+/// url = "http://hl7.org/fhir/StructureMap/EpisodeOfCare2to3"
+/// name = "EpisodeOfCare2to3"
+/// title = "EpisodeOfCare Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/EpisodeOfCare" alias EpisodeOfCareR2 as source
+uses "http://hl7.org/fhir/3.0/EpisodeOfCare" alias EpisodeOfCare as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group EpisodeOfCare(source src : EpisodeOfCareR2, target tgt : EpisodeOfCare) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "EpisodeOfCare-identifier";
+  src.status -> tgt.status "EpisodeOfCare-status";
+  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then epcStatusHistory(vs0, vt0) "EpisodeOfCare-statusHistory";
+  src.type -> tgt.type "EpisodeOfCare-type";
+  src.condition as v ->  tgt.diagnosis as d,  d.condition = v "EpisodeOfCare-condition";
+  src.patient -> tgt.patient "EpisodeOfCare-patient";
+  src.managingOrganization -> tgt.managingOrganization "EpisodeOfCare-managingOrganization";
+  src.period -> tgt.period "EpisodeOfCare-period";
+  src.referralRequest -> tgt.referralRequest "EpisodeOfCare-referralRequest";
+  src.careManager -> tgt.careManager "EpisodeOfCare-careManager";
+  src where src.careTeam.exists() -> create('CareTeam') as vt0 then epiCareTeam(src, vt0, tgt) "EpisodeOfCare-careteam";
+}
+
+group epcStatusHistory(source src, target tgt) extends BackboneElement {
+  src.status -> tgt.status "statusHistory-status";
+  src.period -> tgt.period "statusHistory-period";
+}
+
+group epiCareTeam(source src, target tgt, target tgtE) {
+  src -> tgtE.team = reference(tgt) "careteam-link";
+  src.careTeam as vs -> tgt.participant as vt then epiCareTeamMember(vs, vt) "careteam-member";
+}
+
+group epiCareTeamMember(source src, target tgt) extends BackboneElement {
+  src.role -> tgt.role "careteam-role";
+  src.period -> tgt.period "careteam-period";
+  src.member -> tgt.member "careteam-member";
+}
+

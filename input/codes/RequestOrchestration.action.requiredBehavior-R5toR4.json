@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "RequestOrchestration.action.requiredBehavior-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/RequestOrchestration.action.requiredBehavior-R5toR4",
+  "name" : "RequestOrchestration.action.requiredBehavior-R5toR4",
+  "title" : "Mapping for RequestOrchestration.action.requiredBehavior from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.requiredBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestGroupB#RequestGroupB.action.requiredBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/action-required-behavior",
+    "target" : "http://hl7.org/fhir/4.0/action-required-behavior",
+    "element" : [{
+      "code" : "must",
+      "target" : [{
+        "code" : "must",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "could",
+      "target" : [{
+        "code" : "could",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "must-unless-documented",
+      "target" : [{
+        "code" : "must-unless-documented",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

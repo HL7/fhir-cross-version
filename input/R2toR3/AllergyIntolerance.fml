@@ -1,0 +1,39 @@
+/// url = "http://hl7.org/fhir/StructureMap/AllergyIntolerance2to3"
+/// name = "AllergyIntolerance2to3"
+/// title = "AllergyIntolerance Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/AllergyIntolerance" alias AllergyIntoleranceR2 as source
+uses "http://hl7.org/fhir/3.0/AllergyIntolerance" alias AllergyIntolerance as target
+
+imports "http://hl7.org/fhir/StructureMap/*to3"
+
+group AllergyIntolerance(source src : AllergyIntoleranceR2, target tgt : AllergyIntolerance) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "AllergyIntolerance-identifier";
+  src.onset -> tgt.onset "AllergyIntolerance-onset";
+  src.recordedDate -> tgt.assertedDate "AllergyIntolerance-recordedDate";
+  src.recorder -> tgt.recorder "AllergyIntolerance-recorder";
+  src.patient -> tgt.patient "AllergyIntolerance-patient";
+  src.reporter -> tgt.asserter "AllergyIntolerance-reporter";
+  src.substance -> tgt.code "AllergyIntolerance-substance";
+  src.status as v where ($this != 'refuted') and ($this != 'entered-in-error') -> tgt.clinicalStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/AllergyIntolerance.status-R2toR3', 'code') "AllergyIntolerance-status-clinical";
+  src.status as v where ($this != 'active') and ($this != 'resolved') -> tgt.verificationStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/AllergyIntolerance.status-R2toR3', 'code') "AllergyIntolerance-Status-verification";
+  src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/ConceptMap/AllergyIntolerance.criticality-R2toR3', 'code') "AllergyIntolerance-criticality";
+  src.type -> tgt.type "AllergyIntolerance-type";
+  src.category -> tgt.category "AllergyIntolerance-category";
+  src.lastOccurence -> tgt.lastOccurrence "AllergyIntolerance-lastOccurrence";
+  src.note -> tgt.note "AllergyIntolerance-note";
+  src.reaction as vs0 -> tgt.reaction as vt0 then algReaction(vs0, vt0) "AllergyIntolerance-reaction";
+}
+
+group algReaction(source src, target tgt) extends BackboneElement {
+  src.substance -> tgt.substance "reaction-substance";
+  src.certainty as v ->  tgt.extension as t,  t.url = 'http://hl7.org/fhir/AllergyIntolerance-r2-certainty',  t.value = v "reaction-certainty";
+  src.manifestation -> tgt.manifestation "reaction-manifestation";
+  src.description -> tgt.description "reaction-description";
+  src.onset -> tgt.onset "reaction-onset";
+  src.severity -> tgt.severity "reaction-severity";
+  src.exposureRoute -> tgt.exposureRoute "reaction-exposureRoute";
+  src.note -> tgt.note "reaction-note";
+}
+

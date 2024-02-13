@@ -1,0 +1,24 @@
+/// url = "http://hl7.org/fhir/StructureMap/Slot5to4B"
+/// name = "Slot5to4B"
+/// title = "Slot Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Slot" alias SlotR5 as source
+uses "http://hl7.org/fhir/4.0/Slot" alias SlotR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group Slot(source src : SlotR5, target tgt : SlotR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.serviceCategory -> tgt.serviceCategory;
+  src.serviceType -> tgt.serviceType;
+  src.specialty -> tgt.specialty;
+  src.appointmentType -> tgt.appointmentType;
+  src.schedule -> tgt.schedule;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Slot.status-R5toR4', 'code');
+  src.start -> tgt.start;
+  src.end -> tgt.end;
+  src.overbooked -> tgt.overbooked;
+  src.comment -> tgt.comment;
+}
+

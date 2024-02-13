@@ -1,0 +1,171 @@
+/// url = "http://hl7.org/fhir/StructureMap/TestScript5to4"
+/// name = "TestScript5to4"
+/// title = "TestScript Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/TestScript" alias TestScriptR5 as source
+uses "http://hl7.org/fhir/4.0/TestScript" alias TestScriptR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group TestScript(source src : TestScriptR5, target tgt : TestScriptR4) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.name -> tgt.name;
+  src.title -> tgt.title;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.status-R5toR4', 'code');
+  src.experimental -> tgt.experimental;
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.useContext -> tgt.useContext;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.purpose -> tgt.purpose;
+  src.copyright -> tgt.copyright;
+  src.origin as s -> tgt.origin as t then TestScriptOrigin(s, t);
+  src.destination as s -> tgt.destination as t then TestScriptDestination(s, t);
+  src.metadata as s -> tgt.metadata as t then TestScriptMetadata(s, t);
+  src.fixture as s -> tgt.fixture as t then TestScriptFixture(s, t);
+  src.profile -> tgt.profile;
+  src.variable as s -> tgt.variable as t then TestScriptVariable(s, t);
+  src.setup as s -> tgt.setup as t then TestScriptSetup(s, t);
+  src.test as s -> tgt.test as t then TestScriptTest(s, t);
+  src.teardown as s -> tgt.teardown as t then TestScriptTeardown(s, t);
+}
+
+group TestScriptOrigin(source src, target tgt) extends BackboneElement {
+  src.index -> tgt.index;
+  src.profile -> tgt.profile;
+}
+
+group TestScriptDestination(source src, target tgt) extends BackboneElement {
+  src.index -> tgt.index;
+  src.profile -> tgt.profile;
+}
+
+group TestScriptMetadata(source src, target tgt) extends BackboneElement {
+  src.link as s -> tgt.link as t then TestScriptMetadataLink(s, t);
+  src.capability as s -> tgt.capability as t then TestScriptMetadataCapability(s, t);
+}
+
+group TestScriptMetadataLink(source src, target tgt) extends BackboneElement {
+  src.url -> tgt.url;
+  src.description -> tgt.description;
+}
+
+group TestScriptMetadataCapability(source src, target tgt) extends BackboneElement {
+  src.required -> tgt.required;
+  src.validated -> tgt.validated;
+  src.description -> tgt.description;
+  src.origin -> tgt.origin;
+  src.destination -> tgt.destination;
+  src.link -> tgt.link;
+  src.capabilities -> tgt.capabilities;
+}
+
+// group TestScriptScope(source src, target tgt) extends BackboneElement {
+// src.artifact -> tgt.artifact;
+// src.conformance -> tgt.conformance;
+// src.phase -> tgt.phase;
+// }
+group TestScriptFixture(source src, target tgt) extends BackboneElement {
+  src.autocreate -> tgt.autocreate;
+  src.autodelete -> tgt.autodelete;
+  src.resource -> tgt.resource;
+}
+
+group TestScriptVariable(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.defaultValue -> tgt.defaultValue;
+  src.description -> tgt.description;
+  src.expression -> tgt.expression;
+  src.headerField -> tgt.headerField;
+  src.hint -> tgt.hint;
+  src.path -> tgt.path;
+  src.sourceId -> tgt.sourceId;
+}
+
+group TestScriptSetup(source src, target tgt) extends BackboneElement {
+  src.action as s -> tgt.action as t then TestScriptSetupAction(s, t);
+}
+
+group TestScriptSetupAction(source src, target tgt) extends BackboneElement {
+  src.operation as s -> tgt.operation as t then TestScriptSetupActionOperation(s, t);
+  src.assert as s -> tgt.assert as t then TestScriptSetupActionAssert(s, t);
+}
+
+group TestScriptSetupActionOperation(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.resource -> tgt.resource;
+  src.label -> tgt.label;
+  src.description -> tgt.description;
+  src.accept -> tgt.accept;
+  src.contentType -> tgt.contentType;
+  src.destination -> tgt.destination;
+  src.encodeRequestUrl -> tgt.encodeRequestUrl;
+  src.method as v -> tgt.method = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.setup.action.operation.method-R5toR4', 'code');
+  src.origin -> tgt.origin;
+  src.params -> tgt.params;
+  src.requestHeader as s -> tgt.requestHeader as t then TestScriptSetupActionOperationRequestHeader(s, t);
+  src.requestId -> tgt.requestId;
+  src.responseId -> tgt.responseId;
+  src.sourceId -> tgt.sourceId;
+  src.targetId -> tgt.targetId;
+  src.url -> tgt.url;
+}
+
+group TestScriptSetupActionOperationRequestHeader(source src, target tgt) extends BackboneElement {
+  src.field -> tgt.field;
+  src.value -> tgt.value;
+}
+
+group TestScriptSetupActionAssert(source src, target tgt) extends BackboneElement {
+  src.label -> tgt.label;
+  src.description -> tgt.description;
+  src.direction as v -> tgt.direction = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.setup.action.assert.direction-R5toR4', 'code');
+  src.compareToSourceId -> tgt.compareToSourceId;
+  src.compareToSourceExpression -> tgt.compareToSourceExpression;
+  src.compareToSourcePath -> tgt.compareToSourcePath;
+  src.contentType -> tgt.contentType;
+  src.expression -> tgt.expression;
+  src.headerField -> tgt.headerField;
+  src.minimumId -> tgt.minimumId;
+  src.navigationLinks -> tgt.navigationLinks;
+  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.setup.action.assert.operator-R5toR4', 'code');
+  src.path -> tgt.path;
+  src.requestMethod as v -> tgt.requestMethod = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.setup.action.assert.requestMethod-R5toR4', 'code');
+  src.requestURL -> tgt.requestURL;
+  src.resource -> tgt.resource;
+  src.response as v -> tgt.response = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.setup.action.assert.response-R5toR4', 'code');
+  src.responseCode -> tgt.responseCode;
+  src.sourceId -> tgt.sourceId;
+  src.validateProfileId -> tgt.validateProfileId;
+  src.value -> tgt.value;
+  src.warningOnly -> tgt.warningOnly;
+}
+
+// group TestScriptSetupActionAssertRequirement(source src, target tgt) extends BackboneElement {
+// src.link : uri -> tgt.link;
+// src.link : canonical -> tgt.link;
+// }
+group TestScriptTest(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.description -> tgt.description;
+  src.action as s -> tgt.action as t then TestScriptTestAction(s, t);
+}
+
+group TestScriptTestAction(source src, target tgt) extends BackboneElement {
+  src.operation as s -> tgt.operation as t then TestScriptSetupActionOperation(s, t);
+  src.assert as s -> tgt.assert as t then TestScriptSetupActionAssert(s, t);
+}
+
+group TestScriptTeardown(source src, target tgt) extends BackboneElement {
+  src.action as s -> tgt.action as t then TestScriptTeardownAction(s, t);
+}
+
+group TestScriptTeardownAction(source src, target tgt) extends BackboneElement {
+  src.operation as s -> tgt.operation as t then TestScriptSetupActionOperation(s, t);
+}
+

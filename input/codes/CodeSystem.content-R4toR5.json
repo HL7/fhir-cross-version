@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CodeSystem.content-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/CodeSystem.content-R4toR5",
+  "name" : "CodeSystem.content-R4toR5",
+  "title" : "Mapping for CodeSystem.content from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.content",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.content",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/codesystem-content-mode",
+    "target" : "http://hl7.org/fhir/5.0/codesystem-content-mode",
+    "element" : [{
+      "code" : "not-present",
+      "target" : [{
+        "code" : "not-present",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "example",
+      "target" : [{
+        "code" : "example",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "fragment",
+      "target" : [{
+        "code" : "fragment",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "complete",
+      "target" : [{
+        "code" : "complete",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "supplement",
+      "target" : [{
+        "code" : "supplement",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

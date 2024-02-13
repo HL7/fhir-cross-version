@@ -1,0 +1,16 @@
+/// url = "http://hl7.org/fhir/StructureMap/RatioRange5to4B"
+/// name = "RatioRange5to4B"
+/// title = "RatioRange Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/RatioRange" alias RatioRangeR5 as source
+uses "http://hl7.org/fhir/4.0/RatioRange" alias RatioRangeR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group RatioRange(source src : RatioRangeR5, target tgt : RatioRangeR4B) extends Element <<type+>> {
+  src.lowNumerator -> tgt.lowNumerator;
+  src.highNumerator -> tgt.highNumerator;
+  src.denominator -> tgt.denominator;
+}
+

@@ -1,0 +1,21 @@
+/// url = "http://hl7.org/fhir/StructureMap/Parameters2to3"
+/// name = "Parameters2to3"
+/// title = "Parameters Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Parameters" alias ParametersR2 as source
+uses "http://hl7.org/fhir/3.0/Parameters" alias Parameters as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Parameters(source src : ParametersR2, target tgt : Parameters) extends Resource <<type+>> {
+  src.parameter as vs0 -> tgt.parameter as vt0 then ParametersP(vs0, vt0) "Parameters-parameter";
+}
+
+group ParametersP(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name "parameter-name";
+  src.value -> tgt.value "parameter-value";
+  src.resource -> tgt.resource "parameter-resource";
+  src.part as vs0 -> tgt.part as vt0 then ParametersP(vs0, vt0) "parameter-part";
+}
+

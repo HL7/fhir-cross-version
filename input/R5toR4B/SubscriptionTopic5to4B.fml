@@ -1,0 +1,62 @@
+/// url = "http://hl7.org/fhir/StructureMap/SubscriptionTopic5to4B"
+/// name = "SubscriptionTopic5to4B"
+/// title = "SubscriptionTopic Transforms: R5 to R4B"
+/// status = "draft"
+
+uses "http://hl7.org/fhir/5.0/SubscriptionTopic" alias SubscriptionTopicR5 as source
+uses "http://hl7.org/fhir/4.0/SubscriptionTopic" alias SubscriptionTopicR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group SubscriptionTopic(source src : SubscriptionTopicR5, target tgt : SubscriptionTopicR4B) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.title -> tgt.title;
+  src.derivedFrom -> tgt.derivedFrom;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/SubscriptionTopic.status-R5toR4', 'code');
+  src.experimental -> tgt.experimental;
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.useContext -> tgt.useContext;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.purpose -> tgt.purpose;
+  src.copyright -> tgt.copyright;
+  src.approvalDate -> tgt.approvalDate;
+  src.lastReviewDate -> tgt.lastReviewDate;
+  src.effectivePeriod -> tgt.effectivePeriod;
+  src.resourceTrigger as s -> tgt.resourceTrigger as t then SubscriptionTopicResourceTrigger(s, t);
+  src.eventTrigger as s -> tgt.eventTrigger as t then SubscriptionTopicEventTrigger(s, t);
+  src.notificationShape as s -> tgt.notificationShape as t then SubscriptionTopicNotificationShape(s, t);
+}
+
+group SubscriptionTopicResourceTrigger(source src, target tgt) extends BackboneElement {
+  src.description -> tgt.description;
+  src.resource -> tgt.resource;
+  src.supportedInteraction -> tgt.supportedInteraction;
+  src.queryCriteria as s -> tgt.queryCriteria as t then SubscriptionTopicResourceTriggerQueryCriteria(s, t);
+  src.fhirPathCriteria -> tgt.fhirPathCriteria;
+}
+
+group SubscriptionTopicResourceTriggerQueryCriteria(source src, target tgt) extends BackboneElement {
+  src.previous -> tgt.previous;
+  src.resultForCreate as v -> tgt.resultForCreate = translate(v, 'http://hl7.org/fhir/ConceptMap/SubscriptionTopic.resourceTrigger.queryCriteria.resultForCreate-R5toR4', 'code');
+  src.current -> tgt.current;
+  src.resultForDelete as v -> tgt.resultForDelete = translate(v, 'http://hl7.org/fhir/ConceptMap/SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete-R5toR4', 'code');
+  src.requireBoth -> tgt.requireBoth;
+}
+
+group SubscriptionTopicEventTrigger(source src, target tgt) extends BackboneElement {
+  src.description -> tgt.description;
+  src.event -> tgt.event;
+  src.resource -> tgt.resource;
+}
+
+group SubscriptionTopicNotificationShape(source src, target tgt) extends BackboneElement {
+  src.resource -> tgt.resource;
+  src.include -> tgt.include;
+  src.revInclude -> tgt.revInclude;
+}
+

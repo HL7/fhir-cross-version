@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ClaimResponse.outcome-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/ClaimResponse.outcome-R4toR5",
+  "name" : "ClaimResponse.outcome-R4toR5",
+  "title" : "Mapping for ClaimResponse.outcome from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ClaimResponse#ClaimResponse.outcome",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ClaimResponse#ClaimResponse.outcome",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/remittance-outcome",
+    "target" : "http://hl7.org/fhir/5.0/claim-outcome",
+    "element" : [{
+      "code" : "queued",
+      "target" : [{
+        "code" : "queued",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "complete",
+      "target" : [{
+        "code" : "complete",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "partial",
+      "target" : [{
+        "code" : "partial",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

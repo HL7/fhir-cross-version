@@ -1,0 +1,28 @@
+/// url = "http://hl7.org/fhir/StructureMap/Money3to2"
+/// name = "Money3to2"
+/// title = "Money Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Quantity" alias Quantity as source
+uses "http://hl7.org/fhir/3.0/Duration" alias Duration as source
+uses "http://hl7.org/fhir/1.0/Quantity" alias QuantityR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/StructureMap/Element3to2"
+
+group Quantity(source src : Quantity, target tgt : QuantityR2) extends Element <<type+>> {
+  src.value -> tgt.value "Quantity-value";
+  src.comparator -> tgt.comparator "Quantity-comparator";
+  src.unit -> tgt.unit "Quantity-unit";
+  src.system -> tgt.system "Quantity-system";
+  src.code -> tgt.code "Quantity-code";
+}
+
+group DurationToQuantity(source src : Duration, target tgt : QuantityR2) extends Element {
+  src.value -> tgt.value "Duration-value";
+  src.comparator -> tgt.comparator "Duration-comparator";
+  src.unit -> tgt.unit "Duration-unit";
+  src.system -> tgt.system "Duration-system";
+  src.code -> tgt.code "Duration-code";
+}
+

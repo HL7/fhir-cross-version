@@ -1,0 +1,53 @@
+/// url = "http://hl7.org/fhir/StructureMap/Observation2to3"
+/// name = "Observation2to3"
+/// title = "Observation Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Observation" alias ObservationR2 as source
+uses "http://hl7.org/fhir/3.0/Observation" alias Observation as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Observation(source src : ObservationR2, target tgt : Observation) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Observation-identifier";
+  src.status -> tgt.status "Observation-status";
+  src.category -> tgt.category "Observation-category";
+  src.code -> tgt.code "Observation-code";
+  src.subject -> tgt.subject "Observation-subject";
+  src.encounter -> tgt.context "Observation-encounter";
+  src.effective -> tgt.effective "Observation-effective";
+  src.issued -> tgt.issued "Observation-issued";
+  src.performer -> tgt.performer "Observation-performer";
+  src.value -> tgt.value "Observation-value";
+  src.dataAbsentReason -> tgt.dataAbsentReason "Observation-dataAbsentReason";
+  src.interpretation -> tgt.interpretation "Observation-interpretation";
+  src.comments -> tgt.comment "Observation-comments";
+  src.bodySite -> tgt.bodySite "Observation-bodySite";
+  src.method -> tgt.method "Observation-method";
+  src.specimen -> tgt.specimen "Observation-specimen";
+  src.device -> tgt.device "Observation-device";
+  src.referenceRange as vs0 -> tgt.referenceRange as vt0 then obsReferenceRange(vs0, vt0) "Observation-referenceRange";
+  src.related as vs0 -> tgt.related as vt0 then obsRelated(vs0, vt0) "Observation-related";
+  src.component as vs0 -> tgt.component as vt0 then obsComponent(vs0, vt0) "Observation-component";
+}
+
+group obsReferenceRange(source src, target tgt) extends BackboneElement {
+  src.low -> tgt.low "referenceRange-low";
+  src.high -> tgt.high "referenceRange-high";
+  src.meaning -> tgt.appliesTo "referenceRange-meaning";
+  src.age -> tgt.age "referenceRange-age";
+  src.text -> tgt.text "referenceRange-text";
+}
+
+group obsRelated(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type "related-type";
+  src.target -> tgt.target "related-target";
+}
+
+group obsComponent(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code "component-code";
+  src.value -> tgt.value "component-value";
+  src.dataAbsentReason -> tgt.dataAbsentReason "component-dataAbsentReason";
+  src.referenceRange as vs0 -> tgt.referenceRange as vt0 then obsReferenceRange(vs0, vt0) "component-referenceRange";
+}
+

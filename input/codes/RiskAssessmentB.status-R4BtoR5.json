@@ -1,0 +1,70 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "RiskAssessmentB.status-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/RiskAssessmentB.status-R4BtoR5",
+  "name" : "RiskAssessmentB.status-R4BtoR5",
+  "title" : "Mapping for RiskAssessmentB.status from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RiskAssessmentB#RiskAssessmentB.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RiskAssessment#RiskAssessment.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/observation-status",
+    "target" : "http://hl7.org/fhir/5.0/observation-status",
+    "element" : [{
+      "code" : "registered",
+      "target" : [{
+        "code" : "registered",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "preliminary",
+      "target" : [{
+        "code" : "preliminary",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "final",
+      "target" : [{
+        "code" : "final",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "amended",
+      "target" : [{
+        "code" : "amended",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "corrected",
+      "target" : [{
+        "code" : "corrected",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

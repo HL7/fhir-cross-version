@@ -1,0 +1,78 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ValueSetB.compose.include.filter.op-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/ValueSetB.compose.include.filter.op-R4BtoR5",
+  "name" : "ValueSetB.compose.include.filter.op-R4BtoR5",
+  "title" : "Mapping for ValueSetB.compose.include.filter.op from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ValueSetB#ValueSetB.compose.include.filter.op",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ValueSet#ValueSet.compose.include.filter.op",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/filter-operator",
+    "target" : "http://hl7.org/fhir/5.0/filter-operator",
+    "element" : [{
+      "code" : "=",
+      "target" : [{
+        "code" : "=",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "is-a",
+      "target" : [{
+        "code" : "is-a",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "descendent-of",
+      "target" : [{
+        "code" : "descendent-of",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "is-not-a",
+      "target" : [{
+        "code" : "is-not-a",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "regex",
+      "target" : [{
+        "code" : "regex",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "not-in",
+      "target" : [{
+        "code" : "not-in",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "generalizes",
+      "target" : [{
+        "code" : "generalizes",
+        "relationship" : "related-to",
+        "comment" : "s:\"child-of\" - t:\"child-of\""
+      }]
+    },
+    {
+      "code" : "exists",
+      "target" : [{
+        "code" : "exists",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

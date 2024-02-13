@@ -1,0 +1,29 @@
+/// url = "http://hl7.org/fhir/StructureMap/DetectedIssue3to2"
+/// name = "DetectedIssue3to2"
+/// title = "DetectedIssue Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/DetectedIssue" alias DetectedIssue as source
+uses "http://hl7.org/fhir/1.0/DetectedIssue" alias DetectedIssueR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group DetectedIssue(source src : DetectedIssue, target tgt : DetectedIssueR2) extends DomainResource <<type+>> {
+  src.patient -> tgt.patient "DetectedIssue-patient";
+  src.category -> tgt.category "DetectedIssue-category";
+  src.severity -> tgt.severity "DetectedIssue-severity";
+  src.implicated -> tgt.implicated "DetectedIssue-implicated";
+  src.detail -> tgt.detail "DetectedIssue-detail";
+  src.date -> tgt.date "DetectedIssue-date";
+  src.author -> tgt.author "DetectedIssue-author";
+  src.identifier -> tgt.identifier "DetectedIssue-identifier";
+  src.reference -> tgt.reference "DetectedIssue-reference";
+  src.mitigation as vs0 -> tgt.mitigation as vt0 then dtiMitigation(vs0, vt0) "DetectedIssue-mitigation";
+}
+
+group dtiMitigation(source src, target tgt) extends BackboneElement {
+  src.action -> tgt.action "mitigation-action";
+  src.date -> tgt.date "mitigation-date";
+  src.author -> tgt.author "mitigation-author";
+}
+

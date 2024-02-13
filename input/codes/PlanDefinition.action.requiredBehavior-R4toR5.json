@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "PlanDefinition.action.requiredBehavior-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/PlanDefinition.action.requiredBehavior-R4toR5",
+  "name" : "PlanDefinition.action.requiredBehavior-R4toR5",
+  "title" : "Mapping for PlanDefinition.action.requiredBehavior from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.requiredBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.requiredBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/action-required-behavior",
+    "target" : "http://hl7.org/fhir/5.0/action-required-behavior",
+    "element" : [{
+      "code" : "must",
+      "target" : [{
+        "code" : "must",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "could",
+      "target" : [{
+        "code" : "could",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "must-unless-documented",
+      "target" : [{
+        "code" : "must-unless-documented",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

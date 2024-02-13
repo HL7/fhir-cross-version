@@ -1,0 +1,35 @@
+/// url = "http://hl7.org/fhir/StructureMap/Location5to4B"
+/// name = "Location5to4B"
+/// title = "Location Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Location" alias LocationR5 as source
+uses "http://hl7.org/fhir/4.0/Location" alias LocationR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group Location(source src : LocationR5, target tgt : LocationR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Location.status-R5toR4', 'code');
+  src.operationalStatus -> tgt.operationalStatus;
+  src.name -> tgt.name;
+  src.alias -> tgt.alias;
+  src.description -> tgt.description;
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/ConceptMap/Location.mode-R5toR4', 'code');
+  src.type -> tgt.type;
+  src.contact as s -> tgt.telecom = s.telecom;
+  src.address -> tgt.address;
+  src.form -> tgt.physicalType;
+  src.position as s -> tgt.position as t then LocationPosition(s, t);
+  src.managingOrganization -> tgt.managingOrganization;
+  src.partOf -> tgt.partOf;
+  src.hoursOfOperation as s ->  tgt.hoursOfOperation = create('BackboneElement') as te,  te.daysOfWeek = s.daysOfWeek,  te.allDay = s.allDay,  te.openingTime = s.availableStartTime,  te.closingTime = s.availableEndTime;
+  src.endpoint -> tgt.endpoint;
+}
+
+group LocationPosition(source src, target tgt) extends BackboneElement {
+  src.longitude -> tgt.longitude;
+  src.latitude -> tgt.latitude;
+  src.altitude -> tgt.altitude;
+}
+

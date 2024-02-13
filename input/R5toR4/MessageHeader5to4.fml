@@ -1,0 +1,49 @@
+/// url = "http://hl7.org/fhir/StructureMap/MessageHeader5to4"
+/// name = "MessageHeader5to4"
+/// title = "MessageHeader Transforms: R5 to R4"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/MessageHeader" alias MessageHeaderR5 as source
+uses "http://hl7.org/fhir/4.0/MessageHeader" alias MessageHeaderR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group MessageHeader(source src : MessageHeaderR5, target tgt : MessageHeaderR4) extends DomainResource <<type+>> {
+  src.event : Coding -> tgt.event "eventCoding";
+  src.event : canonical -> tgt.event "eventCanonical";
+  src.destination as s -> tgt.destination as t then MessageHeaderDestination(s, t);
+  src.sender -> tgt.sender;
+  src.author -> tgt.author;
+  src.source as s -> tgt.source as t then MessageHeaderSource(s, t);
+  src.responsible -> tgt.responsible;
+  src.reason -> tgt.reason;
+  src.response as s -> tgt.response as t then MessageHeaderResponse(s, t);
+  src.focus -> tgt.focus;
+  src.definition -> tgt.definition;
+}
+
+group MessageHeaderDestination(source src, target tgt) extends BackboneElement {
+  src.endpoint : url -> tgt.endpoint "endpointUrl";
+  src.endpoint : Reference -> tgt.endpoint "endpointReference";
+  src.name -> tgt.name;
+  src.target -> tgt.target;
+  src.receiver -> tgt.receiver;
+}
+
+group MessageHeaderSource(source src, target tgt) extends BackboneElement {
+  src.endpoint : url -> tgt.endpoint "endpointUrl";
+  src.endpoint : Reference -> tgt.endpoint "endpointReference";
+  src.name -> tgt.name;
+  src.software -> tgt.software;
+  src.version -> tgt.version;
+  src.contact -> tgt.contact;
+}
+
+group MessageHeaderResponse(source src, target tgt) extends BackboneElement {
+  src.identifier as s -> tgt as t then {
+    s.value -> tgt.identifier;
+  };
+  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/ConceptMap/MessageHeader.response.code-R5toR4', 'code');
+  src.details -> tgt.details;
+}
+

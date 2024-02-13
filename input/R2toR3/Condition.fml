@@ -1,0 +1,39 @@
+/// url = "http://hl7.org/fhir/StructureMap/Condition2to3"
+/// name = "Condition2to3"
+/// title = "Condition Transforms: R2 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/1.0/Condition" alias ConditionR2 as source
+uses "http://hl7.org/fhir/3.0/Condition" alias Condition as target
+
+imports "http://hl7.org/fhir/StructureMap/*2to3"
+
+group Condition(source src : ConditionR2, target tgt : Condition) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Condition-identifier";
+  src.patient -> tgt.subject "Condition-patient";
+  src.encounter -> tgt.context "Condition-encounter";
+  src.asserter -> tgt.asserter "Condition-asserter";
+  src.dateRecorded -> tgt.assertedDate "Condition-dateRecorded";
+  src.code -> tgt.code "Condition-code";
+  src.category -> tgt.category "Condition-category";
+  src.clinicalStatus as v -> tgt.clinicalStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/Condition.clinicalStatus-R2toR3', 'code') "Condition-clinicalStatus";
+  src.verificationStatus -> tgt.verificationStatus "Condition-verificationStatus";
+  src.severity -> tgt.severity "Condition-severity";
+  src.onset -> tgt.onset "Condition-onset";
+  src.abatement -> tgt.abatement "Condition-abatement";
+  src.stage as vs0 -> tgt.stage as vt0 then cndStage(vs0, vt0) "Condition-stage";
+  src.evidence as vs0 -> tgt.evidence as vt0 then cndEvidence(vs0, vt0) "Condition-evidence";
+  src.bodySite -> tgt.bodySite "Condition-bodySite";
+  src.notes as v ->  tgt.note as n,  n.text = v "Condition-notes";
+}
+
+group cndStage(source src : ConditionR2, target tgt : Condition) extends BackboneElement {
+  src.summary -> tgt.summary "stage-summary";
+  src.assessment -> tgt.assessment "stage-assessment";
+}
+
+group cndEvidence(source src : ConditionR2, target tgt : Condition) extends BackboneElement {
+  src.code -> tgt.code "evidence-code";
+  src.detail -> tgt.detail "evidence-detail";
+}
+

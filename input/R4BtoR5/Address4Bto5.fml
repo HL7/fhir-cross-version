@@ -1,0 +1,23 @@
+/// url = "http://hl7.org/fhir/StructureMap/Address4Bto5"
+/// name = "Address4Bto5"
+/// title = "Address Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/Address" alias AddressR4B as source
+uses "http://hl7.org/fhir/5.0/Address" alias AddressR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group Address(source src : AddressR4B, target tgt : AddressR5) extends Element <<type+>> {
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/ConceptMap/AddressB.use-R4BtoR5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/AddressB.type-R4BtoR5', 'code');
+  src.text -> tgt.text;
+  src.line -> tgt.line;
+  src.city -> tgt.city;
+  src.district -> tgt.district;
+  src.state -> tgt.state;
+  src.postalCode -> tgt.postalCode;
+  src.country -> tgt.country;
+  src.period -> tgt.period;
+}
+

@@ -1,0 +1,33 @@
+/// url = "http://hl7.org/fhir/StructureMap/List4to5"
+/// name = "List4to5"
+/// title = "List Transforms: R4 to R5"
+/// status = "draft"
+
+uses "http://hl7.org/fhir/4.0/List" alias ListR4 as source
+uses "http://hl7.org/fhir/5.0/List" alias ListR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group List(source src : ListR4, target tgt : ListR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/List.status-R4toR5', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/ConceptMap/List.mode-R4toR5', 'code');
+  src.title -> tgt.title;
+  src.code -> tgt.code;
+  src.subject -> tgt.subject;
+  src.encounter -> tgt.encounter;
+  src.date -> tgt.date;
+  src.source -> tgt.source;
+  src.orderedBy -> tgt.orderedBy;
+  src.note -> tgt.note;
+  src.entry as s -> tgt.entry as t then ListEntry(s, t);
+  src.emptyReason -> tgt.emptyReason;
+}
+
+group ListEntry(source src, target tgt) extends BackboneElement {
+  src.flag -> tgt.flag;
+  src.deleted -> tgt.deleted;
+  src.date -> tgt.date;
+  src.item -> tgt.item;
+}
+

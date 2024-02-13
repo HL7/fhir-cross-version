@@ -1,0 +1,63 @@
+/// url = "http://hl7.org/fhir/StructureMap/ResearchStudy4Bto5"
+/// name = "ResearchStudy4Bto5"
+/// title = "ResearchStudy Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/ResearchStudy" alias ResearchStudyR4B as source
+uses "http://hl7.org/fhir/5.0/ResearchStudy" alias ResearchStudyR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group ResearchStudy(source src : ResearchStudyR4B, target tgt : ResearchStudyR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.title -> tgt.title;
+  src.protocol -> tgt.protocol;
+  src.partOf -> tgt.partOf;
+  src.relatedArtifact -> tgt.relatedArtifact;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ResearchStudyB.status-R4BtoR5', 'code');
+  src.primaryPurposeType -> tgt.primaryPurposeType;
+  src.phase -> tgt.phase;
+  src.focus -> tgt.focus;
+  src.condition -> tgt.condition;
+  src.keyword -> tgt.keyword;
+  src.description -> tgt.description;
+  src.period -> tgt.period;
+  src.site -> tgt.site;
+  src.note -> tgt.note;
+  src.arm as s -> tgt.comparisonGroup as t then ResearchStudyComparisonGroup(s, t);
+  src.objective as s -> tgt.objective as t then ResearchStudyObjective(s, t);
+}
+
+// group ResearchStudyLabel(source src, target tgt) extends BackboneElement {
+// src.type -> tgt.type;
+// src.value -> tgt.value;
+// }
+// group ResearchStudyAssociatedParty(source src, target tgt) extends BackboneElement {
+// src.name -> tgt.name;
+// src.role -> tgt.role;
+// src.period -> tgt.period;
+// src.classifier -> tgt.classifier;
+// src.party -> tgt.party;
+// }
+// group ResearchStudyProgressStatus(source src, target tgt) extends BackboneElement {
+// src.state -> tgt.state;
+// src.actual -> tgt.actual;
+// src.period -> tgt.period;
+// }
+// group ResearchStudyRecruitment(source src, target tgt) extends BackboneElement {
+// src.targetNumber -> tgt.targetNumber;
+// src.actualNumber -> tgt.actualNumber;
+// src.eligibility -> tgt.eligibility;
+// src.actualGroup -> tgt.actualGroup;
+// }
+group ResearchStudyComparisonGroup(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.type -> tgt.type;
+  src.description -> tgt.description;
+}
+
+group ResearchStudyObjective(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.type -> tgt.type;
+}
+

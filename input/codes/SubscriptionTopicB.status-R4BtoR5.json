@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "SubscriptionTopicB.status-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/SubscriptionTopicB.status-R4BtoR5",
+  "name" : "SubscriptionTopicB.status-R4BtoR5",
+  "title" : "Mapping for SubscriptionTopicB.status from R4B to R5",
+  "status" : "draft",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopicB#SubscriptionTopicB.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic#SubscriptionTopic.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/publication-status",
+    "target" : "http://hl7.org/fhir/5.0/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

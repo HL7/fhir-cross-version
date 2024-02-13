@@ -1,0 +1,60 @@
+/// url = "http://hl7.org/fhir/StructureMap/OperationDefinition3to2"
+/// name = "OperationDefinition3to2"
+/// title = "OperationDefinition Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/OperationDefinition" alias OperationDefinition as source
+uses "http://hl7.org/fhir/1.0/OperationDefinition" alias OperationDefinitionR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group OperationDefinition(source src : OperationDefinition, target tgt : OperationDefinitionR2) extends DomainResource <<type+>> {
+  src.url -> tgt.url "OperationDefinition-url";
+  src.version -> tgt.version "OperationDefinition-version";
+  src.name -> tgt.name "OperationDefinition-name";
+  src.status -> tgt.status "OperationDefinition-status";
+  src.kind -> tgt.kind "OperationDefinition-kind";
+  src.experimental -> tgt.experimental "OperationDefinition-experimental";
+  src.publisher -> tgt.publisher "OperationDefinition-publisher";
+  src.contact as vs0 -> tgt.contact as vt0 then opdContact(vs0, vt0) "OperationDefinition-contact";
+  src.date -> tgt.date "OperationDefinition-date";
+  src.purpose -> tgt.requirements "OperationDefinition-requirements";
+  src.description -> tgt.description "OperationDefinition-description";
+  src.idempotent -> tgt.idempotent "OperationDefinition-idempotent";
+  src.code -> tgt.code "OperationDefinition-code";
+  src.comment -> tgt.notes "OperationDefinition-notes";
+  src.base -> tgt.base "OperationDefinition-base";
+  src.system -> tgt.system "OperationDefinition-system";
+  src.resource -> tgt.type "OperationDefinition-type";
+  src.instance -> tgt.instance "OperationDefinition-instance";
+  src.parameter as vs0 -> tgt.parameter as vt0 then opdParameter(vs0, vt0) "OperationDefinition-parameter";
+}
+
+group opdContact(source src, target tgt) extends Element {
+  src.name -> tgt.name "contact-name";
+  src.telecom -> tgt.telecom "contact-telecom";
+}
+
+group opdParameter(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name "parameter-name";
+  src.use -> tgt.use "parameter-use";
+  src.min -> tgt.min "parameter-min";
+  src.max -> tgt.max "parameter-max";
+  src.documentation -> tgt.documentation "parameter-documentation";
+  src.type where src.searchType.empty() -> tgt.type "parameter-type";
+  src.searchType -> tgt.type "parameter-type";
+  src.profile -> tgt.profile "parameter-profile";
+  src.part as ps0 -> tgt.part as pt0 then opdPart(ps0, pt0) "parameter-part";
+}
+
+group opdPart(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name "parameter-part-name";
+  src.use -> tgt.use "parameter-part-use";
+  src.min -> tgt.min "parameter-part-min";
+  src.max -> tgt.max "parameter-part-max";
+  src.documentation -> tgt.documentation "parameter-part-documentation";
+  src.type -> tgt.type "parameter-part-type";
+  src.profile -> tgt.profile "parameter-part-profile";
+  src.part as psrc -> tgt.part as ptgt then opdPart(psrc, ptgt) "parameter-part-part";
+}
+

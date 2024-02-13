@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CoverageEligibilityRequestB.purpose-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/CoverageEligibilityRequestB.purpose-R4BtoR5",
+  "name" : "CoverageEligibilityRequestB.purpose-R4BtoR5",
+  "title" : "Mapping for CoverageEligibilityRequestB.purpose from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityRequestB#CoverageEligibilityRequestB.purpose",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityRequest#CoverageEligibilityRequest.purpose",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/eligibilityrequest-purpose",
+    "target" : "http://hl7.org/fhir/5.0/eligibilityrequest-purpose",
+    "element" : [{
+      "code" : "auth-requirements",
+      "target" : [{
+        "code" : "auth-requirements",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "benefits",
+      "target" : [{
+        "code" : "benefits",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "discovery",
+      "target" : [{
+        "code" : "discovery",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "validation",
+      "target" : [{
+        "code" : "validation",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

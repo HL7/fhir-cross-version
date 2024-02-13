@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Location.mode-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/Location.mode-R4toR5",
+  "name" : "Location.mode-R4toR5",
+  "title" : "Mapping for Location.mode from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Location#Location.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Location#Location.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/location-mode",
+    "target" : "http://hl7.org/fhir/5.0/location-mode",
+    "element" : [{
+      "code" : "instance",
+      "target" : [{
+        "code" : "instance",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "kind",
+      "target" : [{
+        "code" : "kind",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

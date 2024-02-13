@@ -1,0 +1,50 @@
+/// url = "http://hl7.org/fhir/StructureMap/Composition3to2"
+/// name = "Composition3to2"
+/// title = "Composition Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Composition" alias Composition as source
+uses "http://hl7.org/fhir/1.0/Composition" alias CompositionR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group Composition(source src : Composition, target tgt : CompositionR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "Composition-identifier";
+  src.date -> tgt.date "Composition-date";
+  src.type -> tgt.type "Composition-type";
+  src.class -> tgt.class "Composition-class";
+  src.title -> tgt.title "Composition-title";
+  src.status -> tgt.status "Composition-status";
+  src.confidentiality -> tgt.confidentiality "Composition-confidentiality";
+  src.subject -> tgt.subject "Composition-subject";
+  src.author -> tgt.author "Composition-author";
+  src.attester as vs0 -> tgt.attester as vt0 then cmpAttester(vs0, vt0) "Composition-attester";
+  src.custodian -> tgt.custodian "Composition-custodian";
+  src.event as vs0 -> tgt.event as vt0 then cmpEvent(vs0, vt0) "Composition-event";
+  src.section as vs0 -> tgt.section as vt0 then cmpSection(vs0, vt0) "Composition-section";
+  src.encounter -> tgt.encounter "Composition-encounter";
+}
+
+group cmpAttester(source src, target tgt) extends BackboneElement {
+  src.mode -> tgt.mode "attester-mode";
+  src.time -> tgt.time "attester-time";
+  src.party -> tgt.party "attester-party";
+}
+
+group cmpEvent(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code "event-code";
+  src.period -> tgt.period "event-period";
+  src.detail -> tgt.detail "event-detail";
+}
+
+group cmpSection(source src, target tgt) extends BackboneElement {
+  src.title -> tgt.title "section-title";
+  src.code -> tgt.code "section-code";
+  src.text -> tgt.text "section-text";
+  src.mode -> tgt.mode "section-mode";
+  src.orderedBy -> tgt.orderedBy "section-orderedBy";
+  src.entry -> tgt.entry "section-entry";
+  src.emptyReason -> tgt.emptyReason "section-emptyReason";
+  src.section as vs0 -> tgt.section as vt0 then cmpSection(vs0, vt0) "section-section";
+}
+

@@ -1,0 +1,51 @@
+/// url = "http://hl7.org/fhir/StructureMap/Ingredient4Bto5"
+/// name = "Ingredient4Bto5"
+/// title = "Ingredient Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/Ingredient" alias IngredientR4B as source
+uses "http://hl7.org/fhir/5.0/Ingredient" alias IngredientR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group Ingredient(source src : IngredientR4B, target tgt : IngredientR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/IngredientB.status-R4BtoR5', 'code');
+  src.for -> tgt.for;
+  src.role -> tgt.role;
+  src.function -> tgt.function;
+  src.allergenicIndicator -> tgt.allergenicIndicator;
+  src.manufacturer as s -> tgt.manufacturer as t then IngredientManufacturer(s, t);
+  src.substance as s -> tgt.substance as t then IngredientSubstance(s, t);
+}
+
+group IngredientManufacturer(source src, target tgt) extends BackboneElement {
+  src.role as v -> tgt.role = translate(v, 'http://hl7.org/fhir/ConceptMap/IngredientB.manufacturer.role-R4BtoR5', 'code');
+  src.manufacturer -> tgt.manufacturer;
+}
+
+group IngredientSubstance(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code;
+  src.strength as s -> tgt.strength as t then IngredientSubstanceStrength(s, t);
+}
+
+group IngredientSubstanceStrength(source src, target tgt) extends BackboneElement {
+  src.presentation : Ratio -> tgt.presentation "presentationRatio";
+  src.presentation : RatioRange -> tgt.presentation "presentationRatioRange";
+  src.textPresentation -> tgt.textPresentation;
+  src.concentration : Ratio -> tgt.concentration "concentrationRatio";
+  src.concentration : RatioRange -> tgt.concentration "concentrationRatioRange";
+  src.textConcentration -> tgt.textConcentration;
+  src.measurementPoint -> tgt.measurementPoint;
+  src.country -> tgt.country;
+  src.referenceStrength as s -> tgt.referenceStrength as t then IngredientSubstanceStrengthReferenceStrength(s, t);
+}
+
+group IngredientSubstanceStrengthReferenceStrength(source src, target tgt) extends BackboneElement {
+  src.substance -> tgt.substance;
+  src.strength : Ratio -> tgt.strength "strengthRatio";
+  src.strength : RatioRange -> tgt.strength "strengthRatioRange";
+  src.measurementPoint -> tgt.measurementPoint;
+  src.country -> tgt.country;
+}
+

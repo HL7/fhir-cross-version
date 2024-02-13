@@ -1,0 +1,45 @@
+/// url = "http://hl7.org/fhir/StructureMap/PaymentReconciliation5to4B"
+/// name = "PaymentReconciliation5to4B"
+/// title = "PaymentReconciliation Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/PaymentReconciliation" alias PaymentReconciliationR5 as source
+uses "http://hl7.org/fhir/4.0/PaymentReconciliation" alias PaymentReconciliationR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group PaymentReconciliation(source src : PaymentReconciliationR5, target tgt : PaymentReconciliationR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/PaymentReconciliation.status-R5toR4', 'code');
+  src.period -> tgt.period;
+  src.created -> tgt.created;
+  src.paymentIssuer -> tgt.paymentIssuer;
+  src.request -> tgt.request;
+  src.requestor -> tgt.requestor;
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/ConceptMap/PaymentReconciliation.outcome-R5toR4', 'code');
+  src.disposition -> tgt.disposition;
+  src.date -> tgt.paymentDate;
+  src.amount -> tgt.paymentAmount;
+  src.paymentIdentifier -> tgt.paymentIdentifier;
+  src.allocation as s -> tgt.detail as t then PaymentReconciliationAllocation(s, t);
+  src.formCode -> tgt.formCode;
+  src.processNote as s -> tgt.processNote as t then PaymentReconciliationProcessNote(s, t);
+}
+
+group PaymentReconciliationAllocation(source src, target tgt) extends BackboneElement {
+  src.identifier -> tgt.identifier;
+  src.predecessor -> tgt.predecessor;
+  src.type -> tgt.type;
+  src.submitter -> tgt.submitter;
+  src.response -> tgt.response;
+  src.date -> tgt.date;
+  src.responsible -> tgt.responsible;
+  src.payee -> tgt.payee;
+  src.amount -> tgt.amount;
+}
+
+group PaymentReconciliationProcessNote(source src, target tgt) extends BackboneElement {
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/PaymentReconciliation.processNote.type-R5toR4', 'code');
+  src.text -> tgt.text;
+}
+

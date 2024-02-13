@@ -1,0 +1,53 @@
+/// url = "http://hl7.org/fhir/StructureMap/Bundle3to2"
+/// name = "Bundle3to2"
+/// title = "Bundle Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Bundle" alias Bundle as source
+uses "http://hl7.org/fhir/1.0/Bundle" alias BundleR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group Bundle(source src : Bundle, target tgt : BundleR2) extends Resource <<type+>> {
+  src.type -> tgt.type "Bundle-type";
+  src.total -> tgt.total "Bundle-total";
+  src.link as vs0 -> tgt.link as vt0 then bundleLink(vs0, vt0) "Bundle-link";
+  src.entry as vs0 -> tgt.entry as vt0 then bundleEntry(vs0, vt0) "Bundle-entry";
+  src.signature -> tgt.signature "Bundle-signature";
+}
+
+group bundleLink(source src, target tgt) extends BackboneElement {
+  src.relation -> tgt.relation "link-relation";
+  src.url -> tgt.url "link-url";
+}
+
+group bundleEntry(source src, target tgt) extends BackboneElement {
+  src.fullUrl -> tgt.fullUrl "entry-fullUrl";
+  src.resource -> tgt.resource "entry-resource";
+  src.search as vs -> tgt.search as vt then bundleSearch(vs, vt) "entry-search";
+  src.request as vs -> tgt.request as vt then bundleRequest(vs, vt) "entry-request";
+  src.response as vs -> tgt.response as vt then bundleResponse(vs, vt) "entry-response";
+}
+
+group bundleSearch(source src, target tgt) extends BackboneElement {
+  src.mode -> tgt.mode "search-mode";
+  src.score -> tgt.score "search-score";
+}
+
+group bundleRequest(source src, target tgt) extends BackboneElement {
+  src.method -> tgt.method "request-method";
+  src.url -> tgt.url "request-url";
+  src.ifNoneMatch -> tgt.ifNoneMatch "request-ifNoneMatch";
+  src.ifModifiedSince -> tgt.ifModifiedSince "request-ifModifiedSince";
+  src.ifMatch -> tgt.ifMatch "request-ifMatch";
+  src.ifNoneExist -> tgt.ifNoneExist "request-ifNoneExist";
+}
+
+group bundleResponse(source src, target tgt) extends BackboneElement {
+  src.status -> tgt.status "response-status";
+  src.location -> tgt.location "response-location";
+  src.etag -> tgt.etag "response-etag";
+  src.lastModified -> tgt.lastModified "response-lastModified";
+  src.outcome -> tgt.outcome "response-outcome";
+}
+

@@ -1,0 +1,22 @@
+/// url = "http://hl7.org/fhir/StructureMap/SampledData3to2"
+/// name = "SampledData3to2"
+/// title = "SampledData Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/SampledData" alias SampledData as source
+uses "http://hl7.org/fhir/1.0/SampledData" alias SampledDataR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/StructureMap/Element3to2"
+imports "http://hl7.org/fhir/StructureMap/Quantity3to2"
+
+group SampledData(source src : SampledData, target tgt : SampledDataR2) extends Element <<type+>> {
+  src.origin -> tgt.origin "SampledData-origin";
+  src.period -> tgt.period "SampledData-period";
+  src.factor -> tgt.factor "SampledData-factor";
+  src.lowerLimit -> tgt.lowerLimit "SampledData-lowerLimit";
+  src.upperLimit -> tgt.upperLimit "SampledData-upperLimit";
+  src.dimensions -> tgt.dimensions "SampledData-dimensions";
+  src.data -> tgt.data "SampledData-data";
+}
+

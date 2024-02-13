@@ -1,0 +1,43 @@
+/// url = "http://hl7.org/fhir/StructureMap/VisionPrescription4Bto5"
+/// name = "VisionPrescription4Bto5"
+/// title = "VisionPrescription Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/VisionPrescription" alias VisionPrescriptionR4B as source
+uses "http://hl7.org/fhir/5.0/VisionPrescription" alias VisionPrescriptionR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group VisionPrescription(source src : VisionPrescriptionR4B, target tgt : VisionPrescriptionR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/VisionPrescriptionB.status-R4BtoR5', 'code');
+  src.created -> tgt.created;
+  src.patient -> tgt.patient;
+  src.encounter -> tgt.encounter;
+  src.dateWritten -> tgt.dateWritten;
+  src.prescriber -> tgt.prescriber;
+  src.lensSpecification as s -> tgt.lensSpecification as t then VisionPrescriptionLensSpecification(s, t);
+}
+
+group VisionPrescriptionLensSpecification(source src, target tgt) extends BackboneElement {
+  src.product -> tgt.product;
+  src.eye as v -> tgt.eye = translate(v, 'http://hl7.org/fhir/ConceptMap/VisionPrescriptionB.lensSpecification.eye-R4BtoR5', 'code');
+  src.sphere -> tgt.sphere;
+  src.cylinder -> tgt.cylinder;
+  src.axis -> tgt.axis;
+  src.prism as s -> tgt.prism as t then VisionPrescriptionLensSpecificationPrism(s, t);
+  src.add -> tgt.add;
+  src.power -> tgt.power;
+  src.backCurve -> tgt.backCurve;
+  src.diameter -> tgt.diameter;
+  src.duration -> tgt.duration;
+  src.color -> tgt.color;
+  src.brand -> tgt.brand;
+  src.note -> tgt.note;
+}
+
+group VisionPrescriptionLensSpecificationPrism(source src, target tgt) extends BackboneElement {
+  src.amount -> tgt.amount;
+  src.base as v -> tgt.base = translate(v, 'http://hl7.org/fhir/ConceptMap/VisionPrescriptionB.lensSpecification.prism.base-R4BtoR5', 'code');
+}
+

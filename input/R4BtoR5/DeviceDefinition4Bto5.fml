@@ -1,0 +1,93 @@
+/// url = "http://hl7.org/fhir/StructureMap/DeviceDefinition4Bto5"
+/// name = "DeviceDefinition4Bto5"
+/// title = "DeviceDefinition Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/DeviceDefinition" alias DeviceDefinitionR4B as source
+uses "http://hl7.org/fhir/5.0/DeviceDefinition" alias DeviceDefinitionR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group DeviceDefinition(source src : DeviceDefinitionR4B, target tgt : DeviceDefinitionR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.udiDeviceIdentifier as s -> tgt.udiDeviceIdentifier as t then DeviceDefinitionUdiDeviceIdentifier(s, t);
+  src.manufacturer : Reference -> tgt.manufacturer "manufacturerReference";
+  src.deviceName as s -> tgt.deviceName as t then DeviceDefinitionDeviceName(s, t);
+  src.modelNumber -> tgt.modelNumber;
+  src.version as s ->  tgt.version as t,  t.value = s;
+  src.safety -> tgt.safety;
+  src.shelfLifeStorage -> tgt.shelfLifeStorage;
+  src.languageCode -> tgt.languageCode;
+  src.property as s -> tgt.property as t then DeviceDefinitionProperty(s, t);
+  src.owner -> tgt.owner;
+  src.contact -> tgt.contact;
+  src.note -> tgt.note;
+  src.material as s -> tgt.material as t then DeviceDefinitionMaterial(s, t);
+}
+
+group DeviceDefinitionUdiDeviceIdentifier(source src, target tgt) extends BackboneElement {
+  src.deviceIdentifier -> tgt.deviceIdentifier;
+  src.issuer -> tgt.issuer;
+  src.jurisdiction -> tgt.jurisdiction;
+}
+
+// group DeviceDefinitionUdiDeviceIdentifierMarketDistribution(source src, target tgt) extends BackboneElement {
+// src.marketPeriod -> tgt.marketPeriod;
+// src.subJurisdiction -> tgt.subJurisdiction;
+// }
+// group DeviceDefinitionRegulatoryIdentifier(source src, target tgt) extends BackboneElement {
+// src.type as v -> tgt.type = translate(v, '#DeviceRegulatoryIdentifierType', 'code');
+// src.deviceIdentifier -> tgt.deviceIdentifier;
+// src.issuer -> tgt.issuer;
+// src.jurisdiction -> tgt.jurisdiction;
+// }
+group DeviceDefinitionDeviceName(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceDefinitionB.deviceName.type-R4BtoR5', 'code');
+}
+
+// group DeviceDefinitionClassification(source src, target tgt) extends BackboneElement {
+// src.type -> tgt.type;
+// src.justification -> tgt.justification;
+// }
+// group DeviceDefinitionConformsTo(source src, target tgt) extends BackboneElement {
+// src.category -> tgt.category;
+// src.specification -> tgt.specification;
+// src.version -> tgt.version;
+// src.source -> tgt.source;
+// }
+// group DeviceDefinitionHasPart(source src, target tgt) extends BackboneElement {
+// src.reference -> tgt.reference;
+// src.count -> tgt.count;
+// }
+// group DeviceDefinitionPackaging(source src, target tgt) extends BackboneElement {
+// src.identifier -> tgt.identifier;
+// src.type -> tgt.type;
+// src.count -> tgt.count;
+// src.distributor as s -> tgt.distributor as t then DeviceDefinitionPackagingDistributor(s,t);
+// }
+// group DeviceDefinitionPackagingDistributor(source src, target tgt) extends BackboneElement {
+// src.name -> tgt.name;
+// src.organizationReference -> tgt.organizationReference;
+// }
+// group DeviceDefinitionVersion(source src, target tgt) extends BackboneElement {
+// src.type -> tgt.type;
+// src.component -> tgt.component;
+// src.value -> tgt.value;
+// }
+group DeviceDefinitionProperty(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.valueQuantity : Quantity -> tgt.value "valueQuantityQuantity";
+  src.valueCode : CodeableConcept -> tgt.value "valueCodeCodeableConcept";
+}
+
+// group DeviceDefinitionLink(source src, target tgt) extends BackboneElement {
+// src.relation -> tgt.relation;
+// src.relatedDevice -> tgt.relatedDevice;
+// }
+group DeviceDefinitionMaterial(source src, target tgt) extends BackboneElement {
+  src.substance -> tgt.substance;
+  src.alternate -> tgt.alternate;
+  src.allergenicIndicator -> tgt.allergenicIndicator;
+}
+

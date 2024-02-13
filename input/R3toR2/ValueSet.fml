@@ -1,0 +1,106 @@
+/// url = "http://hl7.org/fhir/StructureMap/ValueSet3to2"
+/// name = "ValueSet3to2"
+/// title = "ValueSet Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/ValueSet" alias ValueSet as source
+uses "http://hl7.org/fhir/1.0/ValueSet" alias ValueSetR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group ValueSet(source src : ValueSet, target tgt : ValueSetR2) extends DomainResource <<type+>> {
+  src.url -> tgt.url "ValueSet-url";
+  src.identifier -> tgt.identifier "ValueSet-identifier";
+  src.version -> tgt.version "ValueSet-version";
+  src.name -> tgt.name "ValueSet-name";
+  src.status -> tgt.status "ValueSet-status";
+  src.experimental -> tgt.experimental "ValueSet-experimental";
+  src.publisher -> tgt.publisher "ValueSet-publisher";
+  src.contact as vs0 -> tgt.contact as vt0 then {
+    vs0.name -> vt0.name "contact-name";
+    vs0.telecom -> vt0.telecom "contact-telecom";
+  } "ValueSet-contact";
+  src.date -> tgt.date "ValueSet-date";
+  src.jurisdiction -> tgt.useContext "ValueSet-useContext";
+  src.description -> tgt.description "ValueSet-description";
+  src.purpose -> tgt.requirements "ValueSet-requirements";
+  src.copyright -> tgt.copyright "ValueSet-copyright";
+  src.immutable -> tgt.immutable "ValueSet-immutable";
+  src.extensible -> tgt.extensible "ValueSet-extensible";
+  src.compose as vs0 -> tgt.compose as vt0 then compose(src, tgt, vs0, vt0) "ValueSet-compose";
+  src.expansion as vs0 -> tgt.expansion as vt0 then expansion(vs0, vt0) "ValueSet-expansion";
+}
+
+group compose(source vs, target vst, source src, target tgt) extends BackboneElement {
+  src.lockedDate -> vst.lockedDate "vs-compose-ld";
+  src.include as vs where (system.exists() and valueSet.empty() and concept.empty() and filter.empty()) and (system.resolve().valueSet = vs.url) ->  vst.codeSystem as vt,  (vs.system.resolve()) as cs then codeSystem(cs, vt) "vs-compose-incl-cs";
+  src.include as vs where ((system.exists() and valueSet.empty() and concept.empty() and filter.empty()) and (system.resolve().valueSet = vs.url)).not() -> tgt.include as vt then include(vs, vt, tgt) "vs-compose-incl";
+  src.exclude as vs check valueSet.empty() -> tgt.exclude as vt then include(vs, vt, tgt) "vs-compose-excl";
+}
+
+group codeSystem(source src, target tgt) extends Element {
+  src.modifierExtension -> tgt.modifierExtension "CodeSystem-modifierExtension";
+  src.url -> tgt.system "CodeSystem-system";
+  src.version -> tgt.version "CodeSystem-version";
+  src.caseSensitive -> tgt.caseSensitive "CodeSystem-caseSensitive";
+  src.concept as vs -> tgt.concept as vt then csconcept(vs, vt) "CodeSystem-concept";
+}
+
+group csconcept(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code "cs-concept-code";
+  src where property.where(code = 'notSelectable') -> tgt.abstract = (src.property.where(code = 'notSelectable').value) "cs-concept-abstract";
+  src.display -> tgt.display "cs-concept-display";
+  src.definition -> tgt.definition "cs-concept-definition";
+  src.designation as vs -> tgt.designation as vt then designation(vs, vt) "cs-concept-designation";
+  src.concept as vs -> tgt.concept as vt then csconcept(vs, vt) "cs-concept-concept";
+}
+
+group include(source src, target tgt, target comp) extends BackboneElement {
+  src.valueSet -> comp.import "vs-incl-valueSet";
+  src.system -> tgt.system "vs-incl-system";
+  src.version -> tgt.version "vs-incl-version";
+  src.concept as vs -> tgt.concept as vt then concept(vs, vt) "vs-incl-concept";
+  src.filter as vs -> tgt.filter as vt then filter(vs, vt) "vs-incl-filter";
+}
+
+group concept(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code "vs-concept-code";
+  src.display -> tgt.display "vs-concept-display";
+  src.designation as vs -> tgt.designation as vt then designation(vs, vt) "vs-concept-designation";
+}
+
+group designation(source src, target tgt) extends BackboneElement {
+  src.language -> tgt.language "vs-designation-language";
+  src.use -> tgt.use "vs-designation-use";
+  src.value -> tgt.value "vs-designation-value";
+}
+
+group filter(source src, target tgt) extends BackboneElement {
+  src.property -> tgt.property "vs-filter-property";
+  src.op -> tgt.op "vs-filter-op";
+  src.value -> tgt.value "vs-filter-value";
+}
+
+group expansion(source src, target tgt) extends BackboneElement {
+  src.identifier -> tgt.identifier "expansion-identifier";
+  src.timestamp -> tgt.timestamp "expansion-timestamp";
+  src.total -> tgt.total "expansion-total";
+  src.offset -> tgt.offset "expansion-offset";
+  src.parameter as vs -> tgt.parameter as vt then parameter(vs, vt) "expansion-parameter";
+  src.contains as vs -> tgt.contains as vt then contains(vs, vt) "expansion-contains";
+}
+
+group parameter(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name "vs-parameter-name";
+  src.value -> tgt.value "vs-parameter-value";
+}
+
+group contains(source src, target tgt) extends BackboneElement {
+  src.system -> tgt.system "contains-system";
+  src.abstract -> tgt.abstract "contains-abstract";
+  src.version -> tgt.version "contains-version";
+  src.code -> tgt.code "contains-code";
+  src.display -> tgt.display "contains-display";
+  src.contains as vs -> tgt.contains as vt then contains(vs, vt) "contains-contains";
+}
+

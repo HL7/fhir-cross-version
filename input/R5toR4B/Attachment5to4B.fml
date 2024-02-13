@@ -1,0 +1,21 @@
+/// url = "http://hl7.org/fhir/StructureMap/Attachment5to4B"
+/// name = "Attachment5to4B"
+/// title = "Attachment Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Attachment" alias AttachmentR5 as source
+uses "http://hl7.org/fhir/4.0/Attachment" alias AttachmentR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group Attachment(source src : AttachmentR5, target tgt : AttachmentR4B) extends Element <<type+>> {
+  src.contentType -> tgt.contentType;
+  src.language -> tgt.language;
+  src.data -> tgt.data;
+  src.url -> tgt.url;
+  src.size -> tgt.size;
+  src.hash -> tgt.hash;
+  src.title -> tgt.title;
+  src.creation -> tgt.creation;
+}
+

@@ -1,0 +1,18 @@
+/// url = "http://hl7.org/fhir/StructureMap/Quantity4to3"
+/// name = "Quantity4to3"
+/// title = "Quantity Transforms: R4 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Quantity" alias Quantity as source
+uses "http://hl7.org/fhir/3.0/Quantity" alias QuantityR3 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to3"
+
+group Quantity(source src : Quantity, target tgt : QuantityR3) extends Element <<type+>> {
+  src.value -> tgt.value;
+  src.comparator -> tgt.comparator;
+  src.unit -> tgt.unit;
+  src.system -> tgt.system;
+  src.code -> tgt.code;
+}
+

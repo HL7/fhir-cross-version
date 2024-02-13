@@ -1,0 +1,18 @@
+/// url = "http://hl7.org/fhir/StructureMap/Resource4to3"
+/// name = "Resource4to3"
+/// title = "Resource Transforms: R4 to R3"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Resource" alias Resource as source
+uses "http://hl7.org/fhir/3.0/Resource" alias ResourceR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives4to3"
+imports "http://hl7.org/fhir/StructureMap/Meta4to3"
+
+group Resource(source src : Resource, target tgt : ResourceR2) <<type+>> {
+  src.id -> tgt.id "Resource-id";
+  src.meta -> tgt.meta "Resource-meta";
+  src.implicitRules -> tgt.implicitRules "Resource-implicitRules";
+  src.language -> tgt.language "Resource-language";
+}
+

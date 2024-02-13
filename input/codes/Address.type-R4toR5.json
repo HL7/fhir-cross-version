@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Address.type-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/Address.type-R4toR5",
+  "name" : "Address.type-R4toR5",
+  "title" : "Mapping for Address.type from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Address#Address.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Address#Address.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/address-type",
+    "target" : "http://hl7.org/fhir/5.0/address-type",
+    "element" : [{
+      "code" : "postal",
+      "target" : [{
+        "code" : "postal",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "physical",
+      "target" : [{
+        "code" : "physical",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "both",
+      "target" : [{
+        "code" : "both",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

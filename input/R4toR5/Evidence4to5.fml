@@ -1,0 +1,33 @@
+/// url = "http://hl7.org/fhir/StructureMap/Evidence4to5"
+/// name = "Evidence4to5"
+/// title = "Evidence Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Evidence" alias EvidenceR4 as source
+uses "http://hl7.org/fhir/5.0/Evidence" alias EvidenceR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group Evidence(source src : EvidenceR4, target tgt : EvidenceR5) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.name -> tgt.name;
+  src.title -> tgt.title;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Evidence.status-R4toR5', 'code');
+  src.date -> tgt.date;
+  src.approvalDate -> tgt.approvalDate;
+  src.lastReviewDate -> tgt.lastReviewDate;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.author -> tgt.author;
+  src.editor -> tgt.editor;
+  src.reviewer -> tgt.reviewer;
+  src.endorser -> tgt.endorser;
+  src.useContext -> tgt.useContext;
+  src.copyright -> tgt.copyright;
+  src.relatedArtifact -> tgt.relatedArtifact;
+  src.description -> tgt.description;
+  src.note -> tgt.note;
+}
+

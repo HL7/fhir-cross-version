@@ -1,0 +1,98 @@
+/// url = "http://hl7.org/fhir/StructureMap/StructureMap4Bto5"
+/// name = "StructureMap4Bto5"
+/// title = "StructureMap Transforms: R4B to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.3/StructureMap" alias StructureMapR4B as source
+uses "http://hl7.org/fhir/5.0/StructureMap" alias StructureMapR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+
+group StructureMap(source src : StructureMapR4B, target tgt : StructureMapR5) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.name -> tgt.name;
+  src.title -> tgt.title;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/StructureMapB.status-R4BtoR5', 'code');
+  src.experimental -> tgt.experimental;
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.useContext -> tgt.useContext;
+  src.jurisdiction -> tgt.jurisdiction;
+  src.purpose -> tgt.purpose;
+  src.copyright -> tgt.copyright;
+  src.structure as s -> tgt.structure as t then StructureMapStructure(s, t);
+  src.import -> tgt.import;
+  src.group as s -> tgt.group as t then StructureMapGroup(s, t);
+}
+
+group StructureMapStructure(source src, target tgt) extends BackboneElement {
+  src.url -> tgt.url;
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/ConceptMap/StructureMapB.structure.mode-R4BtoR5', 'code');
+  src.alias -> tgt.alias;
+  src.documentation -> tgt.documentation;
+}
+
+group StructureMapGroup(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.extends -> tgt.extends;
+  src.typeMode as v -> tgt.typeMode = translate(v, 'http://hl7.org/fhir/ConceptMap/StructureMapB.group.typeMode-R4BtoR5', 'code');
+  src.documentation -> tgt.documentation;
+  src.input as s -> tgt.input as t then StructureMapGroupInput(s, t);
+  src.rule as s -> tgt.rule as t then StructureMapGroupRule(s, t);
+}
+
+group StructureMapGroupInput(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.type -> tgt.type;
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/ConceptMap/StructureMapB.group.input.mode-R4BtoR5', 'code');
+  src.documentation -> tgt.documentation;
+}
+
+group StructureMapGroupRule(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.source as s -> tgt.source as t then StructureMapGroupRuleSource(s, t);
+  src.target as s -> tgt.target as t then StructureMapGroupRuleTarget(s, t);
+  src.dependent as s -> tgt.dependent as t then StructureMapGroupRuleDependent(s, t);
+  src.documentation -> tgt.documentation;
+}
+
+group StructureMapGroupRuleSource(source src, target tgt) extends BackboneElement {
+  src.context -> tgt.context;
+  src.min -> tgt.min;
+  src.max -> tgt.max;
+  src.type -> tgt.type;
+  src.defaultValue : string -> tgt.defaultValue "defaultValueString";
+  src.element -> tgt.element;
+  src.listMode as v -> tgt.listMode = translate(v, 'http://hl7.org/fhir/ConceptMap/StructureMapB.group.rule.source.listMode-R4BtoR5', 'code');
+  src.variable -> tgt.variable;
+  src.condition -> tgt.condition;
+  src.check -> tgt.check;
+  src.logMessage -> tgt.logMessage;
+}
+
+group StructureMapGroupRuleTarget(source src, target tgt) extends BackboneElement {
+  src.context -> tgt.context;
+  src.element -> tgt.element;
+  src.variable -> tgt.variable;
+  src.listMode as v -> tgt.listMode = translate(v, 'http://hl7.org/fhir/ConceptMap/StructureMapB.group.rule.target.listMode-R4BtoR5', 'code');
+  src.listRuleId -> tgt.listRuleId;
+  src.transform as v -> tgt.transform = translate(v, 'http://hl7.org/fhir/ConceptMap/StructureMapB.group.rule.target.transform-R4BtoR5', 'code');
+  src.parameter as s -> tgt.parameter as t then StructureMapGroupRuleTargetParameter(s, t);
+}
+
+group StructureMapGroupRuleTargetParameter(source src, target tgt) extends BackboneElement {
+  src.value : id -> tgt.value "valueId";
+  src.value : string -> tgt.value "valueString";
+  src.value : boolean -> tgt.value "valueBoolean";
+  src.value : integer -> tgt.value "valueInteger";
+  src.value : decimal -> tgt.value "valueDecimal";
+}
+
+group StructureMapGroupRuleDependent(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+}
+

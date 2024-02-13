@@ -1,0 +1,52 @@
+/// url = "http://hl7.org/fhir/StructureMap/MedicationDispense3to2"
+/// name = "MedicationDispense3to2"
+/// title = "MedicationDispense Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/MedicationDispense" alias MedicationDispense as source
+uses "http://hl7.org/fhir/1.0/MedicationDispense" alias MedicationDispenseR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group MedicationDispense(source src : MedicationDispense, target tgt : MedicationDispenseR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "MedicationDispense-identifier";
+  src.status -> tgt.status "MedicationDispense-status";
+  src.subject -> tgt.patient "MedicationDispense-patient";
+  src.performer as vs0 then mddPerformer(vs0, tgt) "MedicationDispense-dispenser";
+  src.authorizingPrescription -> tgt.authorizingPrescription "MedicationDispense-authorizingPrescription";
+  src.type -> tgt.type "MedicationDispense-type";
+  src.quantity -> tgt.quantity "MedicationDispense-quantity";
+  src.daysSupply -> tgt.daysSupply "MedicationDispense-daysSupply";
+  src.medication -> tgt.medication "MedicationDispense-medication";
+  src.whenPrepared -> tgt.whenPrepared "MedicationDispense-whenPrepared";
+  src.whenHandedOver -> tgt.whenHandedOver "MedicationDispense-whenHandedOver";
+  src.destination -> tgt.destination "MedicationDispense-destination";
+  src.receiver -> tgt.receiver "MedicationDispense-receiver";
+  src.note only_one -> tgt.note "MedicationDispense-note";
+  src.dosageInstruction as vs0 -> tgt.dosageInstruction as vt0 then mddDosage(vs0, vt0) "MedicationDispense-dosageInstruction";
+  src.substitution as vs0 -> tgt.substitution as vt0 then mddSubstitution(vs0, vt0) "MedicationDispense-substitution";
+}
+
+group mddPerformer(source src, target tgt) extends BackboneElement {
+  src.actor -> tgt.dispenser "performer-actor";
+}
+
+group mddSubstitution(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type "substitution-type";
+  src.reason -> tgt.reason "substitution-reason";
+  src.responsibleParty -> tgt.responsibleParty "substitution-responsibleParty";
+}
+
+group mddDosage(source src, target tgt) extends Element {
+  src.text -> tgt.text "dosage-text";
+  src.additionalInstruction only_one -> tgt.additionalInstructions "dosage-additionalInstructions";
+  src.timing -> tgt.timing "dosage-timing";
+  src.asNeeded -> tgt.asNeeded "dosage-asNeeded";
+  src.site -> tgt.site "dosage-site";
+  src.route -> tgt.route "dosage-route";
+  src.method -> tgt.method "dosage-method";
+  src.dose -> tgt.dose "dosage-dose";
+  src.rate -> tgt.rate "dosage-rate";
+  src.maxDosePerPeriod -> tgt.maxDosePerPeriod "dosage-maxDosePerPeriod";
+}
+

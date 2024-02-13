@@ -1,0 +1,35 @@
+/// url = "http://hl7.org/fhir/StructureMap/Medication4to5"
+/// name = "Medication4to5"
+/// title = "Medication Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Medication" alias MedicationR4 as source
+uses "http://hl7.org/fhir/5.0/Medication" alias MedicationR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group Medication(source src : MedicationR4, target tgt : MedicationR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.code -> tgt.code;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Medication.status-R4toR5', 'code');
+  src.manufacturer -> tgt.marketingAuthorizationHolder;
+  src.form -> tgt.doseForm;
+  src.amount as s -> tgt then {
+    s.numerator -> tgt.totalVolume;
+  };
+  src.ingredient as s -> tgt.ingredient as t then MedicationIngredient(s, t);
+  src.batch as s -> tgt.batch as t then MedicationBatch(s, t);
+}
+
+group MedicationIngredient(source src, target tgt) extends BackboneElement {
+  src.item : CodeableConcept -> tgt.item "itemCodeableConcept";
+  src.item : Reference -> tgt.item "itemReference";
+  src.isActive -> tgt.isActive;
+  src.strength : Ratio -> tgt.strength "strengthRatio";
+}
+
+group MedicationBatch(source src, target tgt) extends BackboneElement {
+  src.lotNumber -> tgt.lotNumber;
+  src.expirationDate -> tgt.expirationDate;
+}
+

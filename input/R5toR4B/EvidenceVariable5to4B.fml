@@ -1,0 +1,75 @@
+/// url = "http://hl7.org/fhir/StructureMap/EvidenceVariable5to4B"
+/// name = "EvidenceVariable5to4B"
+/// title = "EvidenceVariable Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/EvidenceVariable" alias EvidenceVariableR5 as source
+uses "http://hl7.org/fhir/4.0/EvidenceVariable" alias EvidenceVariableR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group EvidenceVariable(source src : EvidenceVariableR5, target tgt : EvidenceVariableR4B) extends DomainResource <<type+>> {
+  src.url -> tgt.url;
+  src.identifier -> tgt.identifier;
+  src.version -> tgt.version;
+  src.name -> tgt.name;
+  src.title -> tgt.title;
+  src.shortTitle -> tgt.shortTitle;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceVariable.status-R5toR4', 'code');
+  src.date -> tgt.date;
+  src.publisher -> tgt.publisher;
+  src.contact -> tgt.contact;
+  src.description -> tgt.description;
+  src.note -> tgt.note;
+  src.useContext -> tgt.useContext;
+  src.author -> tgt.author;
+  src.editor -> tgt.editor;
+  src.reviewer -> tgt.reviewer;
+  src.endorser -> tgt.endorser;
+  src.relatedArtifact -> tgt.relatedArtifact;
+  src.actual -> tgt.actual;
+  src.characteristic as s -> tgt.characteristic as t then EvidenceVariableCharacteristic(s, t);
+  src.handling as v -> tgt.handling = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceVariable.handling-R5toR4', 'code');
+  src.category as s -> tgt.category as t then EvidenceVariableCategory(s, t);
+}
+
+group EvidenceVariableCharacteristic(source src, target tgt) extends BackboneElement {
+  src.description -> tgt.description;
+  src.exclude -> tgt.exclude;
+  src.definitionReference : Reference -> tgt.definition "definitionReferenceReference";
+  src.definitionCanonical : canonical -> tgt.definition "definitionCanonicalCanonical";
+  src.definitionCodeableConcept : CodeableConcept -> tgt.definition "definitionCodeableConceptCodeableConcept";
+  src.definitionExpression : Expression -> tgt.definition "definitionExpressionExpression";
+  src.timeFromEvent as s -> tgt.timeFromStart as t then EvidenceVariableCharacteristicTimeFromEvent(s, t);
+}
+
+// group EvidenceVariableCharacteristicDefinitionByTypeAndValue(source src, target tgt) extends BackboneElement {
+// src.type -> tgt.type;
+// src.method -> tgt.method;
+// src.device -> tgt.device;
+// src.value : CodeableConcept -> tgt.value;
+// src.value : boolean -> tgt.value;
+// src.value : Quantity -> tgt.value;
+// src.value : Range -> tgt.value;
+// src.value : Reference -> tgt.value;
+// src.value : id -> tgt.value;
+// src.offset -> tgt.offset;
+// }
+// group EvidenceVariableCharacteristicDefinitionByCombination(source src, target tgt) extends BackboneElement {
+// src.code as v -> tgt.code = translate(v, '#CharacteristicCombination', 'code');
+// src.threshold -> tgt.threshold;
+// }
+group EvidenceVariableCharacteristicTimeFromEvent(source src, target tgt) extends BackboneElement {
+  src.description -> tgt.description;
+  src.note -> tgt.note;
+  src.quantity -> tgt.quantity;
+  src.range -> tgt.range;
+}
+
+group EvidenceVariableCategory(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.value : CodeableConcept -> tgt.value "valueCodeableConcept";
+  src.value : Quantity -> tgt.value "valueQuantity";
+  src.value : Range -> tgt.value "valueRange";
+}
+

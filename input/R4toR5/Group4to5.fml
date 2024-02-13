@@ -1,0 +1,39 @@
+/// url = "http://hl7.org/fhir/StructureMap/Group4to5"
+/// name = "Group4to5"
+/// title = "Group Transforms: R4 to R5"
+/// status = "active"
+
+uses "http://hl7.org/fhir/4.0/Group" alias GroupR4 as source
+uses "http://hl7.org/fhir/5.0/Group" alias GroupR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group Group(source src : GroupR4, target tgt : GroupR5) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.active -> tgt.active;
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/Group.type-R4toR5', 'code');
+  src.code -> tgt.code;
+  src.name -> tgt.name;
+  src.quantity -> tgt.quantity;
+  src.managingEntity -> tgt.managingEntity;
+  src.characteristic as s -> tgt.characteristic as t then GroupCharacteristic(s, t);
+  src.member as s -> tgt.member as t then GroupMember(s, t);
+}
+
+group GroupCharacteristic(source src, target tgt) extends BackboneElement {
+  src.code -> tgt.code;
+  src.value : CodeableConcept -> tgt.value "valueCodeableConcept";
+  src.value : boolean -> tgt.value "valueBoolean";
+  src.value : Quantity -> tgt.value "valueQuantity";
+  src.value : Range -> tgt.value "valueRange";
+  src.value : Reference -> tgt.value "valueReference";
+  src.exclude -> tgt.exclude;
+  src.period -> tgt.period;
+}
+
+group GroupMember(source src, target tgt) extends BackboneElement {
+  src.entity -> tgt.entity;
+  src.period -> tgt.period;
+  src.inactive -> tgt.inactive;
+}
+

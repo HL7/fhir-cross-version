@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MolecularSequence.type-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/MolecularSequence.type-R5toR4",
+  "name" : "MolecularSequence.type-R5toR4",
+  "title" : "Mapping for MolecularSequence.type from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MolecularSequence#MolecularSequence.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MolecularSequenceB#MolecularSequenceB.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/sequence-type",
+    "target" : "http://hl7.org/fhir/4.0/sequence-type",
+    "element" : [{
+      "code" : "aa",
+      "target" : [{
+        "code" : "aa",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "dna",
+      "target" : [{
+        "code" : "dna",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "rna",
+      "target" : [{
+        "code" : "rna",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CapabilityStatement.document.mode-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/CapabilityStatement.document.mode-R5toR4",
+  "name" : "CapabilityStatement.document.mode-R5toR4",
+  "title" : "Mapping for CapabilityStatement.document.mode from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.document.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatementB#CapabilityStatementB.document.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/document-mode",
+    "target" : "http://hl7.org/fhir/4.0/document-mode",
+    "element" : [{
+      "code" : "producer",
+      "target" : [{
+        "code" : "producer",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "consumer",
+      "target" : [{
+        "code" : "consumer",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,42 @@
+/// url = "http://hl7.org/fhir/StructureMap/QuestionnaireResponse3to2"
+/// name = "QuestionnaireResponse3to2"
+/// title = "QuestionnaireResponse Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/QuestionnaireResponse" alias QuestionnaireResponse as source
+uses "http://hl7.org/fhir/1.0/QuestionnaireResponse" alias QuestionnaireResponseR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/*3to2"
+
+group QuestionnaireResponse(source src : QuestionnaireResponse, target tgt : QuestionnaireResponseR2) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier "QuestionnaireResponse-identifier";
+  src.questionnaire -> tgt.questionnaire "QuestionnaireResponse-questionnaire";
+  src.status -> tgt.status "QuestionnaireResponse-status";
+  src.subject -> tgt.subject "QuestionnaireResponse-subject";
+  src.author -> tgt.author "QuestionnaireResponse-author";
+  src.authored -> tgt.authored "QuestionnaireResponse-authored";
+  src.source -> tgt.source "QuestionnaireResponse-source";
+  src.context -> tgt.encounter "QuestionnaireResponse-encounter";
+  src.item as vs0 -> tgt.group as vt0 then qrGroup(vs0, vt0) "QuestionnaireResponse-item";
+}
+
+group qrGroup(source src, target tgt) extends BackboneElement {
+  src.linkId -> tgt.linkId "group-linkId";
+  src.text where item.answer.empty() -> tgt.title "group-text";
+  src.text where item.answer.exists() -> tgt.text "group-text";
+  src.subject -> tgt.subject "group-subject";
+  src.item as vs0 where answer.empty() -> tgt.group as vt0 then qrGroup(vs0, vt0) "group-group";
+  src.item as vs0 where answer.exists() -> tgt.question as vt0 then qrQuestion(vs0, vt0) "group-question";
+}
+
+group qrQuestion(source src, target tgt) extends BackboneElement {
+  src.linkId -> tgt.linkId "question-linkId";
+  src.text -> tgt.text "question-text";
+  src.answer as vs0 -> tgt.answer as vt0 then qrAnswer(vs0, vt0) "question-answer";
+}
+
+group qrAnswer(source src, target tgt) extends BackboneElement {
+  src.value -> tgt.value "answer-value";
+  src.item as vs0 check answer.empty() -> tgt.group as vt0 then qrGroup(vs0, vt0) "answer-group";
+}
+

@@ -1,0 +1,33 @@
+/// url = "http://hl7.org/fhir/StructureMap/Timing3to2"
+/// name = "Timing3to2"
+/// title = "Timing Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Timing" alias Timing as source
+uses "http://hl7.org/fhir/1.0/Timing" alias TimingR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/StructureMap/Element3to2"
+imports "http://hl7.org/fhir/StructureMap/Period3to2"
+imports "http://hl7.org/fhir/StructureMap/Range3to2"
+imports "http://hl7.org/fhir/StructureMap/CodeableConcept3to2"
+
+group Timing(source src : Timing, target tgt : TimingR2) extends Element <<type+>> {
+  src.event -> tgt.event "Timing-event";
+  src.repeat as vs0 -> tgt.repeat as vt0 then {
+    vs0.bounds : Range as vs -> vt0.bounds = create('Range') as vt then Range(vs, vt) "repeat-bounds-Range";
+    vs0.bounds : Period as vs -> vt0.bounds = create('Period') as vt then Period(vs, vt) "repeat-bounds-Period";
+    vs0.count -> vt0.count "repeat-count";
+    vs0.duration -> vt0.duration "repeat-duration";
+    vs0.durationMax -> vt0.durationMax "repeat-durationMax";
+    vs0.durationUnit -> vt0.durationUnits "repeat-durationUnits";
+    vs0.frequency -> vt0.frequency "repeat-frequency";
+    vs0.frequencyMax -> vt0.frequencyMax "repeat-frequencyMax";
+    vs0.period -> vt0.period "repeat-period";
+    vs0.periodMax -> vt0.periodMax "repeat-periodMax";
+    vs0.periodUnit -> vt0.periodUnits "repeat-periodUnits";
+    vs0.when as v -> vt0.when = translate(v, '#EventTiming', 'code') "repeat-when";
+  } "Timing-repeat";
+  src.code -> tgt.code "Timing-code";
+}
+

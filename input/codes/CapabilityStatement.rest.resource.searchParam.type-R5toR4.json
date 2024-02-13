@@ -1,0 +1,77 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CapabilityStatement.rest.resource.searchParam.type-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/CapabilityStatement.rest.resource.searchParam.type-R5toR4",
+  "name" : "CapabilityStatement.rest.resource.searchParam.type-R5toR4",
+  "title" : "Mapping for CapabilityStatement.rest.resource.searchParam.type from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.searchParam.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatementB#CapabilityStatementB.rest.resource.searchParam.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/search-param-type",
+    "target" : "http://hl7.org/fhir/4.0/search-param-type",
+    "element" : [{
+      "code" : "number",
+      "target" : [{
+        "code" : "number",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "date",
+      "target" : [{
+        "code" : "date",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "string",
+      "target" : [{
+        "code" : "string",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "token",
+      "target" : [{
+        "code" : "token",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "reference",
+      "target" : [{
+        "code" : "reference",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "composite",
+      "target" : [{
+        "code" : "composite",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "quantity",
+      "target" : [{
+        "code" : "quantity",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "uri",
+      "target" : [{
+        "code" : "uri",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "special",
+      "target" : [{
+        "code" : "special",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

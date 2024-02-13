@@ -1,0 +1,23 @@
+/// url = "http://hl7.org/fhir/StructureMap/Identifier3to2"
+/// name = "Identifier3to2"
+/// title = "Identifier Transforms: R3 to R2"
+/// status = "active"
+
+uses "http://hl7.org/fhir/3.0/Identifier" alias Identifier as source
+uses "http://hl7.org/fhir/1.0/Identifier" alias IdentifierR2 as target
+
+imports "http://hl7.org/fhir/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/StructureMap/Element3to2"
+imports "http://hl7.org/fhir/StructureMap/Reference3to2"
+imports "http://hl7.org/fhir/StructureMap/Period3to2"
+imports "http://hl7.org/fhir/StructureMap/CodeableConcept3to2"
+
+group Identifier(source src : Identifier, target tgt : IdentifierR2) extends Element <<type+>> {
+  src.use -> tgt.use "Identifier-use";
+  src.type -> tgt.type "Identifier-type";
+  src.system -> tgt.system "Identifier-system";
+  src.value -> tgt.value "Identifier-value";
+  src.period -> tgt.period "Identifier-period";
+  src.assigner -> tgt.assigner "Identifier-assigner";
+}
+

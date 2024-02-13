@@ -1,0 +1,65 @@
+/// url = "http://hl7.org/fhir/StructureMap/Encounter5to4B"
+/// name = "Encounter5to4B"
+/// title = "Encounter Transforms: R5 to R4B"
+/// status = "active"
+
+uses "http://hl7.org/fhir/5.0/Encounter" alias EncounterR5 as source
+uses "http://hl7.org/fhir/4.0/Encounter" alias EncounterR4B as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4B"
+
+group Encounter(source src : EncounterR5, target tgt : EncounterR4B) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Encounter.status-R5toR4', 'code');
+  src.class as s -> tgt then {
+    s.coding as sc -> tgt.class as t then Coding(sc, t);
+  };
+  src.priority -> tgt.priority;
+  src.type -> tgt.type;
+  src.serviceType -> tgt.serviceType;
+  src.subject -> tgt.subject;
+  src.episodeOfCare -> tgt.episodeOfCare;
+  src.basedOn -> tgt.basedOn;
+  src.partOf -> tgt.partOf;
+  src.serviceProvider -> tgt.serviceProvider;
+  src.participant as s -> tgt.participant as t then EncounterParticipant(s, t);
+  src.appointment -> tgt.appointment;
+  src.actualPeriod -> tgt.period;
+  src.length -> tgt.length;
+  src.diagnosis as s -> tgt.diagnosis as t then EncounterDiagnosis(s, t);
+  src.account -> tgt.account;
+  src.admission as s -> tgt.hospitalization as t then EncounterAdmission(s, t);
+  src.location as s -> tgt.location as t then EncounterLocation(s, t);
+}
+
+group EncounterParticipant(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.period -> tgt.period;
+  src.actor -> tgt.individual;
+}
+
+// group EncounterReason(source src, target tgt) extends BackboneElement {
+// src.use -> tgt.use;
+// src.value -> tgt.value;
+// }
+group EncounterDiagnosis(source src, target tgt) extends BackboneElement {
+  src.condition -> tgt.condition;
+  src.use -> tgt.use;
+}
+
+group EncounterAdmission(source src, target tgt) extends BackboneElement {
+  src.preAdmissionIdentifier -> tgt.preAdmissionIdentifier;
+  src.origin -> tgt.origin;
+  src.admitSource -> tgt.admitSource;
+  src.reAdmission -> tgt.reAdmission;
+  src.destination -> tgt.destination;
+  src.dischargeDisposition -> tgt.dischargeDisposition;
+}
+
+group EncounterLocation(source src, target tgt) extends BackboneElement {
+  src.location -> tgt.location;
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Encounter.location.status-R5toR4', 'code');
+  src.form -> tgt.physicalType;
+  src.period -> tgt.period;
+}
+
