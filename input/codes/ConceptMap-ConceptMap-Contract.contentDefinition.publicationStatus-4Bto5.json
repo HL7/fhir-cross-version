@@ -1,0 +1,119 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Contract.contentDefinition.publicationStatus-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/Contract.contentDefinition.publicationStatus-R4BtoR5",
+  "name" : "Contract.contentDefinition.publicationStatus-R4BtoR5",
+  "title" : "Mapping for Contract.contentDefinition.publicationStatus from R4B to R5",
+  "status" : "draft",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Contract#Contract.contentDefinition.publicationStatus",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Contract#Contract.contentDefinition.publicationStatus",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/contract-publicationstatus",
+    "target" : "http://hl7.org/fhir/5.0/contract-publicationstatus",
+    "element" : [{
+      "code" : "amended",
+      "target" : [{
+        "code" : "amended",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "appended",
+      "target" : [{
+        "code" : "appended",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "disputed",
+      "target" : [{
+        "code" : "disputed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "executable",
+      "target" : [{
+        "code" : "executable",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "executed",
+      "target" : [{
+        "code" : "executed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "negotiable",
+      "target" : [{
+        "code" : "negotiable",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "offered",
+      "target" : [{
+        "code" : "offered",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "policy",
+      "target" : [{
+        "code" : "policy",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "rejected",
+      "target" : [{
+        "code" : "rejected",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "renewed",
+      "target" : [{
+        "code" : "renewed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "revoked",
+      "target" : [{
+        "code" : "revoked",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "resolved",
+      "target" : [{
+        "code" : "resolved",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "terminated",
+      "target" : [{
+        "code" : "terminated",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

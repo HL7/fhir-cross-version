@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ValueSet.status-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/ValueSet.status-R4toR5",
+  "name" : "ValueSet.status-R4toR5",
+  "title" : "Mapping for ValueSet.status from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ValueSet#ValueSet.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ValueSet#ValueSet.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/publication-status",
+    "target" : "http://hl7.org/fhir/5.0/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ContactPoint.use-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/ContactPoint.use-R5toR4",
+  "name" : "ContactPoint.use-R5toR4",
+  "title" : "Mapping for ContactPoint.use from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ContactPoint#ContactPoint.use",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint#ContactPoint.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/contact-point-use",
+    "target" : "http://hl7.org/fhir/4.0/contact-point-use",
+    "element" : [{
+      "code" : "home",
+      "target" : [{
+        "code" : "home",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "work",
+      "target" : [{
+        "code" : "work",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "temp",
+      "target" : [{
+        "code" : "temp",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "old",
+      "target" : [{
+        "code" : "old",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "mobile",
+      "target" : [{
+        "code" : "mobile",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

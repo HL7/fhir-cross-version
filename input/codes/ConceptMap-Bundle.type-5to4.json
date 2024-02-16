@@ -1,0 +1,78 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Bundle.type-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/Bundle.type-R5toR4",
+  "name" : "Bundle.type-R5toR4",
+  "title" : "Mapping for Bundle.type from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Bundle#Bundle.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Bundle#Bundle.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/bundle-type",
+    "target" : "http://hl7.org/fhir/4.0/bundle-type",
+    "element" : [{
+      "code" : "document",
+      "target" : [{
+        "code" : "document",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "message",
+      "target" : [{
+        "code" : "message",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "transaction",
+      "target" : [{
+        "code" : "transaction",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "transaction-response",
+      "target" : [{
+        "code" : "transaction-response",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "batch",
+      "target" : [{
+        "code" : "batch",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "batch-response",
+      "target" : [{
+        "code" : "batch-response",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "history",
+      "target" : [{
+        "code" : "history",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "searchset",
+      "target" : [{
+        "code" : "searchset",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "collection",
+      "target" : [{
+        "code" : "collection",
+        "relationship" : "related-to",
+        "comment" : "s:\"subscription-notification\" - t:\"subscription-notification\""
+      }]
+    }]
+  }]
+}

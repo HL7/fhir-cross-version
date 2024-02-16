@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "QuestionnaireResponse.status-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/QuestionnaireResponse.status-R5toR4",
+  "name" : "QuestionnaireResponse.status-R5toR4",
+  "title" : "Mapping for QuestionnaireResponse.status from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/questionnaire-answers-status",
+    "target" : "http://hl7.org/fhir/4.0/questionnaire-answers-status",
+    "element" : [{
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "in-progress",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "amended",
+      "target" : [{
+        "code" : "amended",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "stopped",
+      "target" : [{
+        "code" : "stopped",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

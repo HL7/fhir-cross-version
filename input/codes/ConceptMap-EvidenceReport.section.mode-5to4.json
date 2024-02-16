@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "EvidenceReport.section.mode-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/EvidenceReport.section.mode-R5toR4",
+  "name" : "EvidenceReport.section.mode-R5toR4",
+  "title" : "Mapping for EvidenceReport.section.mode from R5 to R4",
+  "status" : "draft",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/EvidenceReport#EvidenceReport.section.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/EvidenceReport#EvidenceReport.section.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/list-mode",
+    "target" : "http://hl7.org/fhir/4.0/list-mode",
+    "element" : [{
+      "code" : "working",
+      "target" : [{
+        "code" : "working",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "snapshot",
+      "target" : [{
+        "code" : "snapshot",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "changes",
+      "target" : [{
+        "code" : "changes",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

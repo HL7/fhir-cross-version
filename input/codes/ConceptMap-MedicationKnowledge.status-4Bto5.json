@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MedicationKnowledge.status-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/MedicationKnowledge.status-R4BtoR5",
+  "name" : "MedicationKnowledge.status-R4BtoR5",
+  "title" : "Mapping for MedicationKnowledge.status from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MedicationKnowledge#MedicationKnowledge.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MedicationKnowledge#MedicationKnowledge.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/medicationknowledge-status",
+    "target" : "http://hl7.org/fhir/5.0/medicationknowledge-status",
+    "element" : [{
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "inactive",
+      "target" : [{
+        "code" : "inactive",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

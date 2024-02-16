@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "StructureDefinition.context.type-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/StructureDefinition.context.type-R4toR5",
+  "name" : "StructureDefinition.context.type-R4toR5",
+  "title" : "Mapping for StructureDefinition.context.type from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.context.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition#StructureDefinition.context.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/extension-context-type",
+    "target" : "http://hl7.org/fhir/5.0/extension-context-type",
+    "element" : [{
+      "code" : "fhirpath",
+      "target" : [{
+        "code" : "fhirpath",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "element",
+      "target" : [{
+        "code" : "element",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "extension",
+      "target" : [{
+        "code" : "extension",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

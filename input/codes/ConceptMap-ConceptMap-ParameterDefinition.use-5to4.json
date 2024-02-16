@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ParameterDefinition.use-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/ParameterDefinition.use-R5toR4",
+  "name" : "ParameterDefinition.use-R5toR4",
+  "title" : "Mapping for ParameterDefinition.use from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ParameterDefinition#ParameterDefinition.use",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ParameterDefinition#ParameterDefinition.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/operation-parameter-use",
+    "target" : "http://hl7.org/fhir/4.0/operation-parameter-use",
+    "element" : [{
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "out",
+      "target" : [{
+        "code" : "out",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

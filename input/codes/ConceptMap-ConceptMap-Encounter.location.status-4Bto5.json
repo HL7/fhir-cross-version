@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Encounter.location.status-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/Encounter.location.status-R4BtoR5",
+  "name" : "Encounter.location.status-R4BtoR5",
+  "title" : "Mapping for Encounter.location.status from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Encounter#Encounter.location.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Encounter#Encounter.location.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/encounter-location-status",
+    "target" : "http://hl7.org/fhir/5.0/encounter-location-status",
+    "element" : [{
+      "code" : "planned",
+      "target" : [{
+        "code" : "planned",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "reserved",
+      "target" : [{
+        "code" : "reserved",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

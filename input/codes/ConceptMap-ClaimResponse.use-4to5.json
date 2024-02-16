@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ClaimResponse.use-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/ClaimResponse.use-R4toR5",
+  "name" : "ClaimResponse.use-R4toR5",
+  "title" : "Mapping for ClaimResponse.use from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ClaimResponse#ClaimResponse.use",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ClaimResponse#ClaimResponse.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/claim-use",
+    "target" : "http://hl7.org/fhir/5.0/claim-use",
+    "element" : [{
+      "code" : "claim",
+      "target" : [{
+        "code" : "claim",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "preauthorization",
+      "target" : [{
+        "code" : "preauthorization",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "predetermination",
+      "target" : [{
+        "code" : "predetermination",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

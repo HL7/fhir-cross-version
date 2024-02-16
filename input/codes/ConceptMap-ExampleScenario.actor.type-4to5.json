@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ExampleScenario.actor.type-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/ExampleScenario.actor.type-R4toR5",
+  "name" : "ExampleScenario.actor.type-R4toR5",
+  "title" : "Mapping for ExampleScenario.actor.type from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExampleScenario#ExampleScenario.actor.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ExampleScenario#ExampleScenario.actor.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/examplescenario-actor-type",
+    "target" : "http://hl7.org/fhir/5.0/examplescenario-actor-type",
+    "element" : [{
+      "code" : "person",
+      "target" : [{
+        "code" : "person",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "entity",
+      "target" : [{
+        "code" : "system",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

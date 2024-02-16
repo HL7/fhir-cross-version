@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete-R4BtoR5",
+  "name" : "SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete-R4BtoR5",
+  "title" : "Mapping for SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete from R4B to R5",
+  "status" : "draft",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic#SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionTopic#SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/subscriptiontopic-cr-behavior",
+    "target" : "http://hl7.org/fhir/5.0/subscriptiontopic-cr-behavior",
+    "element" : [{
+      "code" : "test-passes",
+      "target" : [{
+        "code" : "test-passes",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "test-fails",
+      "target" : [{
+        "code" : "test-fails",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "TerminologyCapabilities.status-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/TerminologyCapabilities.status-R4toR5",
+  "name" : "TerminologyCapabilities.status-R4toR5",
+  "title" : "Mapping for TerminologyCapabilities.status from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/publication-status",
+    "target" : "http://hl7.org/fhir/5.0/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "RequestGroup.action.selectionBehavior-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/RequestGroup.action.selectionBehavior-R4BtoR5",
+  "name" : "RequestGroup.action.selectionBehavior-R4BtoR5",
+  "title" : "Mapping for RequestGroup.action.selectionBehavior from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.selectionBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.selectionBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/action-selection-behavior",
+    "target" : "http://hl7.org/fhir/5.0/action-selection-behavior",
+    "element" : [{
+      "code" : "any",
+      "target" : [{
+        "code" : "any",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "all",
+      "target" : [{
+        "code" : "all",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "all-or-none",
+      "target" : [{
+        "code" : "all-or-none",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "exactly-one",
+      "target" : [{
+        "code" : "exactly-one",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "at-most-one",
+      "target" : [{
+        "code" : "at-most-one",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "one-or-more",
+      "target" : [{
+        "code" : "one-or-more",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

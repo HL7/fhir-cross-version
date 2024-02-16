@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "AllergyIntolerance.reaction.severity-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/AllergyIntolerance.reaction.severity-R5toR4",
+  "name" : "AllergyIntolerance.reaction.severity-R5toR4",
+  "title" : "Mapping for AllergyIntolerance.reaction.severity from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.reaction.severity",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.reaction.severity",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/reaction-event-severity",
+    "target" : "http://hl7.org/fhir/4.0/reaction-event-severity",
+    "element" : [{
+      "code" : "mild",
+      "target" : [{
+        "code" : "mild",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "moderate",
+      "target" : [{
+        "code" : "moderate",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "severe",
+      "target" : [{
+        "code" : "severe",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

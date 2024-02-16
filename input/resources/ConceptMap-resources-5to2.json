@@ -1,0 +1,899 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "resources-5to2",
+  "url" : "http://hl7.org/fhir/interversion/resourcemap5to2",
+  "version" : "0.1",
+  "name" : "resourcemap5to4",
+  "title" : "Resource Map R5 to R4",
+  "status" : "active",
+  "date" : "2024-02-01",
+  "publisher" : "HL7",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/R5/resource-types",
+    "target" : "http://hl7.org/fhir/DSTU2/resource-types",
+    "element" : [{
+      "code" : "Resource",
+      "noMap" : true
+    },
+    {
+      "code" : "Binary",
+      "target" : [{
+        "code" : "Binary",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Bundle",
+      "target" : [{
+        "code" : "Bundle",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DomainResource",
+      "noMap" : true
+    },
+    {
+      "code" : "Account",
+      "target" : [{
+        "code" : "Account",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ActivityDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "ActorDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "AdministrableProductDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "AdverseEvent",
+      "noMap" : true
+    },
+    {
+      "code" : "AllergyIntolerance",
+      "target" : [{
+        "code" : "AllergyIntolerance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Appointment",
+      "target" : [{
+        "code" : "Appointment",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AppointmentResponse",
+      "target" : [{
+        "code" : "AppointmentResponse",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ArtifactAssessment",
+      "noMap" : true
+    },
+    {
+      "code" : "AuditEvent",
+      "target" : [{
+        "code" : "AuditEvent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Basic",
+      "target" : [{
+        "code" : "Basic",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BiologicallyDerivedProduct",
+      "noMap" : true
+    },
+    {
+      "code" : "BiologicallyDerivedProductDispense",
+      "noMap" : true
+    },
+    {
+      "code" : "BodyStructure",
+      "noMap" : true
+    },
+    {
+      "code" : "CapabilityStatement",
+      "target" : [{
+        "code" : "Conformance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CarePlan",
+      "target" : [{
+        "code" : "CarePlan",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CareTeam",
+      "noMap" : true
+    },
+    {
+      "code" : "ChargeItem",
+      "noMap" : true
+    },
+    {
+      "code" : "ChargeItemDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Citation",
+      "noMap" : true
+    },
+    {
+      "code" : "Claim",
+      "target" : [{
+        "code" : "Claim",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ClaimResponse",
+      "target" : [{
+        "code" : "ClaimResponse",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ClinicalImpression",
+      "target" : [{
+        "code" : "ClinicalImpression",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ClinicalUseDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "CodeSystem",
+      "target" : [{
+        "code" : "ValueSet",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "Communication",
+      "target" : [{
+        "code" : "Communication",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CommunicationRequest",
+      "target" : [{
+        "code" : "CommunicationRequest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CompartmentDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Composition",
+      "target" : [{
+        "code" : "Composition",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ConceptMap",
+      "target" : [{
+        "code" : "ConceptMap",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Condition",
+      "target" : [{
+        "code" : "Condition",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ConditionDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Consent",
+      "noMap" : true
+    },
+    {
+      "code" : "Contract",
+      "target" : [{
+        "code" : "Contract",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Coverage",
+      "target" : [{
+        "code" : "Coverage",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CoverageEligibilityRequest",
+      "noMap" : true
+    },
+    {
+      "code" : "CoverageEligibilityResponse",
+      "noMap" : true
+    },
+    {
+      "code" : "DetectedIssue",
+      "target" : [{
+        "code" : "DetectedIssue",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Device",
+      "target" : [{
+        "code" : "Device",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DeviceAssociation",
+      "noMap" : true
+    },
+    {
+      "code" : "DeviceDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "DeviceDispense",
+      "noMap" : true
+    },
+    {
+      "code" : "DeviceMetric",
+      "target" : [{
+        "code" : "DeviceMetric",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DeviceRequest",
+      "target" : [{
+        "code" : "DeviceUseRequest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DeviceUsage",
+      "noMap" : true
+    },
+    {
+      "code" : "DiagnosticReport",
+      "target" : [{
+        "code" : "DiagnosticReport",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DocumentReference",
+      "target" : [{
+        "code" : "DocumentReference",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Encounter",
+      "target" : [{
+        "code" : "Encounter",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EncounterHistory",
+      "noMap" : true
+    },
+    {
+      "code" : "Endpoint",
+      "noMap" : true
+    },
+    {
+      "code" : "EnrollmentRequest",
+      "target" : [{
+        "code" : "EnrollmentRequest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EnrollmentResponse",
+      "target" : [{
+        "code" : "EnrollmentResponse",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EpisodeOfCare",
+      "target" : [{
+        "code" : "EpisodeOfCare",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EventDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Evidence",
+      "noMap" : true
+    },
+    {
+      "code" : "EvidenceReport",
+      "noMap" : true
+    },
+    {
+      "code" : "EvidenceVariable",
+      "noMap" : true
+    },
+    {
+      "code" : "ExampleScenario",
+      "noMap" : true
+    },
+    {
+      "code" : "ExplanationOfBenefit",
+      "target" : [{
+        "code" : "ExplanationOfBenefit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FamilyMemberHistory",
+      "target" : [{
+        "code" : "FamilyMemberHistory",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Flag",
+      "target" : [{
+        "code" : "Flag",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FormularyItem",
+      "noMap" : true
+    },
+    {
+      "code" : "GenomicStudy",
+      "noMap" : true
+    },
+    {
+      "code" : "Goal",
+      "target" : [{
+        "code" : "Goal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GraphDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Group",
+      "target" : [{
+        "code" : "Group",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GuidanceResponse",
+      "noMap" : true
+    },
+    {
+      "code" : "HealthcareService",
+      "target" : [{
+        "code" : "HealthcareService",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ImagingSelection",
+      "noMap" : true
+    },
+    {
+      "code" : "ImagingStudy",
+      "target" : [{
+        "code" : "ImagingStudy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Immunization",
+      "target" : [{
+        "code" : "Immunization",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ImmunizationEvaluation",
+      "noMap" : true
+    },
+    {
+      "code" : "ImmunizationRecommendation",
+      "target" : [{
+        "code" : "ImmunizationRecommendation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ImplementationGuide",
+      "target" : [{
+        "code" : "ImplementationGuide",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Ingredient",
+      "noMap" : true
+    },
+    {
+      "code" : "InsurancePlan",
+      "noMap" : true
+    },
+    {
+      "code" : "InventoryItem",
+      "noMap" : true
+    },
+    {
+      "code" : "InventoryReport",
+      "noMap" : true
+    },
+    {
+      "code" : "Invoice",
+      "noMap" : true
+    },
+    {
+      "code" : "Library",
+      "noMap" : true
+    },
+    {
+      "code" : "Linkage",
+      "noMap" : true
+    },
+    {
+      "code" : "List",
+      "target" : [{
+        "code" : "List",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Location",
+      "target" : [{
+        "code" : "Location",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ManufacturedItemDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Measure",
+      "noMap" : true
+    },
+    {
+      "code" : "MeasureReport",
+      "noMap" : true
+    },
+    {
+      "code" : "Medication",
+      "target" : [{
+        "code" : "Medication",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MedicationAdministration",
+      "target" : [{
+        "code" : "MedicationAdministration",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MedicationDispense",
+      "target" : [{
+        "code" : "MedicationDispense",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MedicationKnowledge",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicationRequest",
+      "target" : [{
+        "code" : "MedicationOrder",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MedicationStatement",
+      "target" : [{
+        "code" : "MedicationStatement",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MedicinalProductDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "MessageDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "MessageHeader",
+      "target" : [{
+        "code" : "MessageHeader",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MolecularSequence",
+      "noMap" : true
+    },
+    {
+      "code" : "NamingSystem",
+      "target" : [{
+        "code" : "NamingSystem",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NutritionIntake",
+      "noMap" : true
+    },
+    {
+      "code" : "NutritionOrder",
+      "target" : [{
+        "code" : "NutritionOrder",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NutritionProduct",
+      "noMap" : true
+    },
+    {
+      "code" : "Observation",
+      "target" : [{
+        "code" : "Observation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OperationDefinition",
+      "target" : [{
+        "code" : "OperationDefinition",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OperationOutcome",
+      "target" : [{
+        "code" : "OperationOutcome",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Organization",
+      "target" : [{
+        "code" : "Organization",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OrganizationAffiliation",
+      "noMap" : true
+    },
+    {
+      "code" : "PackagedProductDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Patient",
+      "target" : [{
+        "code" : "Patient",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PaymentNotice",
+      "target" : [{
+        "code" : "PaymentNotice",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PaymentReconciliation",
+      "target" : [{
+        "code" : "PaymentReconciliation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Permission",
+      "noMap" : true
+    },
+    {
+      "code" : "Person",
+      "target" : [{
+        "code" : "Person",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PlanDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Practitioner",
+      "target" : [{
+        "code" : "Practitioner",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PractitionerRole",
+      "noMap" : true
+    },
+    {
+      "code" : "Procedure",
+      "target" : [{
+        "code" : "Procedure",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Provenance",
+      "target" : [{
+        "code" : "Provenance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Questionnaire",
+      "target" : [{
+        "code" : "Questionnaire",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "QuestionnaireResponse",
+      "target" : [{
+        "code" : "QuestionnaireResponse",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RegulatedAuthorization",
+      "noMap" : true
+    },
+    {
+      "code" : "RelatedPerson",
+      "target" : [{
+        "code" : "RelatedPerson",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RequestOrchestration",
+      "noMap" : true
+    },
+    {
+      "code" : "Requirements",
+      "noMap" : true
+    },
+    {
+      "code" : "ResearchStudy",
+      "noMap" : true
+    },
+    {
+      "code" : "ResearchSubject",
+      "noMap" : true
+    },
+    {
+      "code" : "RiskAssessment",
+      "target" : [{
+        "code" : "RiskAssessment",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Schedule",
+      "target" : [{
+        "code" : "Schedule",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SearchParameter",
+      "target" : [{
+        "code" : "SearchParameter",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ServiceRequest",
+      "noMap" : true
+    },
+    {
+      "code" : "Slot",
+      "target" : [{
+        "code" : "Slot",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Specimen",
+      "target" : [{
+        "code" : "Specimen",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SpecimenDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "StructureDefinition",
+      "target" : [{
+        "code" : "StructureDefinition",
+        "relationship" : "source-is-narrower-than-target"
+      },
+      {
+        "code" : "StructureDefinition",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "StructureMap",
+      "noMap" : true
+    },
+    {
+      "code" : "Subscription",
+      "target" : [{
+        "code" : "Subscription",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SubscriptionStatus",
+      "noMap" : true
+    },
+    {
+      "code" : "SubscriptionTopic",
+      "noMap" : true
+    },
+    {
+      "code" : "Substance",
+      "target" : [{
+        "code" : "Substance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SubstanceDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstanceNucleicAcid",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstancePolymer",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstanceProtein",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstanceReferenceInformation",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstanceSourceMaterial",
+      "noMap" : true
+    },
+    {
+      "code" : "SupplyDelivery",
+      "target" : [{
+        "code" : "SupplyDelivery",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SupplyRequest",
+      "target" : [{
+        "code" : "SupplyRequest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Task",
+      "target" : [{
+        "code" : "Order",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "OrderResponse",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    },
+    {
+      "code" : "TerminologyCapabilities",
+      "noMap" : true
+    },
+    {
+      "code" : "TestPlan",
+      "noMap" : true
+    },
+    {
+      "code" : "TestReport",
+      "noMap" : true
+    },
+    {
+      "code" : "TestScript",
+      "target" : [{
+        "code" : "TestScript",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Transport",
+      "noMap" : true
+    },
+    {
+      "code" : "ValueSet",
+      "target" : [{
+        "code" : "ValueSet",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "VerificationResult",
+      "noMap" : true
+    },
+    {
+      "code" : "VisionPrescription",
+      "target" : [{
+        "code" : "VisionPrescription",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Parameters",
+      "target" : [{
+        "code" : "Parameters",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

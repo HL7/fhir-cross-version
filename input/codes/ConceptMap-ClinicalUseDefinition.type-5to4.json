@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ClinicalUseDefinition.type-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/ClinicalUseDefinition.type-R5toR4",
+  "name" : "ClinicalUseDefinition.type-R5toR4",
+  "title" : "Mapping for ClinicalUseDefinition.type from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ClinicalUseDefinition#ClinicalUseDefinition.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ClinicalUseDefinition#ClinicalUseDefinition.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/clinical-use-definition-type",
+    "target" : "http://hl7.org/fhir/4.0/clinical-use-definition-type",
+    "element" : [{
+      "code" : "indication",
+      "target" : [{
+        "code" : "indication",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "contraindication",
+      "target" : [{
+        "code" : "contraindication",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "interaction",
+      "target" : [{
+        "code" : "interaction",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "undesirable-effect",
+      "target" : [{
+        "code" : "undesirable-effect",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "warning",
+      "target" : [{
+        "code" : "warning",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

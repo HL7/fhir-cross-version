@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MessageHeader.response.code-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/MessageHeader.response.code-R4toR5",
+  "name" : "MessageHeader.response.code-R4toR5",
+  "title" : "Mapping for MessageHeader.response.code from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MessageHeader#MessageHeader.response.code",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MessageHeader#MessageHeader.response.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/response-code",
+    "target" : "http://hl7.org/fhir/5.0/response-code",
+    "element" : [{
+      "code" : "ok",
+      "target" : [{
+        "code" : "ok",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "transient-error",
+      "target" : [{
+        "code" : "transient-error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "fatal-error",
+      "target" : [{
+        "code" : "fatal-error",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,79 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Encounter.status-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/Encounter.status-R4BtoR5",
+  "name" : "Encounter.status-R4BtoR5",
+  "title" : "Mapping for Encounter.status from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Encounter#Encounter.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Encounter#Encounter.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/encounter-status",
+    "target" : "http://hl7.org/fhir/5.0/encounter-status",
+    "element" : [{
+      "code" : "planned",
+      "target" : [{
+        "code" : "planned",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "arrived",
+      "target" : [{
+        "code" : "planned",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "triaged",
+      "target" : [{
+        "code" : "in-progress",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "in-progress",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "onleave",
+      "target" : [{
+        "code" : "on-hold",
+        "relationship" : "related-to",
+        "comment" : "s:\"discharged\" - t:\"discharged\""
+      }]
+    },
+    {
+      "code" : "finished",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "related-to",
+        "comment" : "s:\"discontinued\" - t:\"discontinued\""
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

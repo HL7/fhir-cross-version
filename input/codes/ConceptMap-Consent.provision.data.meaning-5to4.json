@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Consent.provision.data.meaning-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/Consent.provision.data.meaning-R5toR4",
+  "name" : "Consent.provision.data.meaning-R5toR4",
+  "title" : "Mapping for Consent.provision.data.meaning from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Consent#Consent.provision.data.meaning",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.data.meaning",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/consent-data-meaning",
+    "target" : "http://hl7.org/fhir/4.0/consent-data-meaning",
+    "element" : [{
+      "code" : "instance",
+      "target" : [{
+        "code" : "instance",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "related",
+      "target" : [{
+        "code" : "related",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "dependents",
+      "target" : [{
+        "code" : "dependents",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "authoredby",
+      "target" : [{
+        "code" : "authoredby",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

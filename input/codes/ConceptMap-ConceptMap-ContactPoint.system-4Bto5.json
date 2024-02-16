@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ContactPoint.system-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/ContactPoint.system-R4BtoR5",
+  "name" : "ContactPoint.system-R4BtoR5",
+  "title" : "Mapping for ContactPoint.system from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint#ContactPoint.system",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ContactPoint#ContactPoint.system",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/contact-point-system",
+    "target" : "http://hl7.org/fhir/5.0/contact-point-system",
+    "element" : [{
+      "code" : "phone",
+      "target" : [{
+        "code" : "phone",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "fax",
+      "target" : [{
+        "code" : "fax",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "email",
+      "target" : [{
+        "code" : "email",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "pager",
+      "target" : [{
+        "code" : "pager",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "url",
+      "target" : [{
+        "code" : "url",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "sms",
+      "target" : [{
+        "code" : "sms",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

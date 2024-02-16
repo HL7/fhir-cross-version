@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CodeSystem.property.type-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/CodeSystem.property.type-R4toR5",
+  "name" : "CodeSystem.property.type-R4toR5",
+  "title" : "Mapping for CodeSystem.property.type from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.property.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CodeSystem#CodeSystem.property.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/concept-property-type",
+    "target" : "http://hl7.org/fhir/5.0/concept-property-type",
+    "element" : [{
+      "code" : "code",
+      "target" : [{
+        "code" : "code",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "Coding",
+      "target" : [{
+        "code" : "Coding",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "string",
+      "target" : [{
+        "code" : "string",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "integer",
+      "target" : [{
+        "code" : "integer",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "boolean",
+      "target" : [{
+        "code" : "boolean",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "dateTime",
+      "target" : [{
+        "code" : "dateTime",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "decimal",
+      "target" : [{
+        "code" : "decimal",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

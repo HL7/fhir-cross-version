@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Citation.status-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/Citation.status-R5toR4",
+  "name" : "Citation.status-R5toR4",
+  "title" : "Mapping for Citation.status from R5 to R4",
+  "status" : "draft",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Citation#Citation.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/publication-status",
+    "target" : "http://hl7.org/fhir/4.0/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

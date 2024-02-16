@@ -1,0 +1,77 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "OperationDefinition.parameter.searchType-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/OperationDefinition.parameter.searchType-R4toR5",
+  "name" : "OperationDefinition.parameter.searchType-R4toR5",
+  "title" : "Mapping for OperationDefinition.parameter.searchType from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.searchType",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.searchType",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/search-param-type",
+    "target" : "http://hl7.org/fhir/5.0/search-param-type",
+    "element" : [{
+      "code" : "number",
+      "target" : [{
+        "code" : "number",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "date",
+      "target" : [{
+        "code" : "date",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "string",
+      "target" : [{
+        "code" : "string",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "token",
+      "target" : [{
+        "code" : "token",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "reference",
+      "target" : [{
+        "code" : "reference",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "composite",
+      "target" : [{
+        "code" : "composite",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "quantity",
+      "target" : [{
+        "code" : "quantity",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "uri",
+      "target" : [{
+        "code" : "uri",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "special",
+      "target" : [{
+        "code" : "special",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

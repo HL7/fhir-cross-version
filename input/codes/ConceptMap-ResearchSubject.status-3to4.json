@@ -1,0 +1,105 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ResearchSubject.status-R3toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/ResearchSubject.status-R3toR4",
+  "name" : "ResearchSubject.status-R3toR4",
+  "title" : "Mapping for ResearchSubject.status from R3 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/research-study-status",
+    "target" : "http://hl7.org/fhir/4.0/research-study-status",
+    "element" : [{
+      "code" : "candidate",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "eligible",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "follow-up",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "ineligible",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "not-registered",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "off-study",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "on-study",
+      "target" : [{
+        "code" : "enrolled",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "on-study-intervention",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "on-study-observation",
+      "target" : [{
+        "code" : "suspended",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "pending-on-study",
+      "target" : [{
+        "code" : "enrolled",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "potential-candidate",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "screening",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "withdrawn",
+      "target" : [{
+        "code" : "withdrawn",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

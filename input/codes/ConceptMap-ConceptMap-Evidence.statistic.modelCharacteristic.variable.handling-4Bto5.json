@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Evidence.statistic.modelCharacteristic.variable.handling-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/Evidence.statistic.modelCharacteristic.variable.handling-R4BtoR5",
+  "name" : "Evidence.statistic.modelCharacteristic.variable.handling-R4BtoR5",
+  "title" : "Mapping for Evidence.statistic.modelCharacteristic.variable.handling from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.statistic.modelCharacteristic.variable.handling",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.statistic.modelCharacteristic.variable.handling",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/variable-handling",
+    "target" : "http://hl7.org/fhir/5.0/variable-handling",
+    "element" : [{
+      "code" : "continuous",
+      "target" : [{
+        "code" : "continuous",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "dichotomous",
+      "target" : [{
+        "code" : "dichotomous",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "ordinal",
+      "target" : [{
+        "code" : "ordinal",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "polychotomous",
+      "target" : [{
+        "code" : "polychotomous",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ConceptMap.group.unmapped.mode-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/ConceptMap.group.unmapped.mode-R4toR5",
+  "name" : "ConceptMap.group.unmapped.mode-R4toR5",
+  "title" : "Mapping for ConceptMap.group.unmapped.mode from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ConceptMap#ConceptMap.group.unmapped.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ConceptMap#ConceptMap.group.unmapped.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/conceptmap-unmapped-mode",
+    "target" : "http://hl7.org/fhir/5.0/conceptmap-unmapped-mode",
+    "element" : [{
+      "code" : "provided",
+      "target" : [{
+        "code" : "use-source-code",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "fixed",
+      "target" : [{
+        "code" : "fixed",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "other-map",
+      "target" : [{
+        "code" : "other-map",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DataRequirement.sort.direction-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/DataRequirement.sort.direction-R5toR4",
+  "name" : "DataRequirement.sort.direction-R5toR4",
+  "title" : "Mapping for DataRequirement.sort.direction from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DataRequirement#DataRequirement.sort.direction",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DataRequirement#DataRequirement.sort.direction",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/sort-direction",
+    "target" : "http://hl7.org/fhir/4.0/sort-direction",
+    "element" : [{
+      "code" : "ascending",
+      "target" : [{
+        "code" : "ascending",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "descending",
+      "target" : [{
+        "code" : "descending",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

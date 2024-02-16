@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "PaymentReconciliation.status-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/PaymentReconciliation.status-R5toR4",
+  "name" : "PaymentReconciliation.status-R5toR4",
+  "title" : "Mapping for PaymentReconciliation.status from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/fm-status",
+    "target" : "http://hl7.org/fhir/4.0/fm-status",
+    "element" : [{
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

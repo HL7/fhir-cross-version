@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Group.type-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/Group.type-R4toR5",
+  "name" : "Group.type-R4toR5",
+  "title" : "Mapping for Group.type from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Group#Group.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Group#Group.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/group-type",
+    "target" : "http://hl7.org/fhir/5.0/group-type",
+    "element" : [{
+      "code" : "person",
+      "target" : [{
+        "code" : "person",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "animal",
+      "target" : [{
+        "code" : "animal",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "practitioner",
+      "target" : [{
+        "code" : "practitioner",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "device",
+      "target" : [{
+        "code" : "device",
+        "relationship" : "related-to",
+        "comment" : "s:\"careteam\" - t:\"careteam\""
+      }]
+    }]
+  }]
+}

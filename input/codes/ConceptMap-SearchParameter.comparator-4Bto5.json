@@ -1,0 +1,77 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "SearchParameter.comparator-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/SearchParameter.comparator-R4BtoR5",
+  "name" : "SearchParameter.comparator-R4BtoR5",
+  "title" : "Mapping for SearchParameter.comparator from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.comparator",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SearchParameter#SearchParameter.comparator",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/search-comparator",
+    "target" : "http://hl7.org/fhir/5.0/search-comparator",
+    "element" : [{
+      "code" : "eq",
+      "target" : [{
+        "code" : "eq",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "ne",
+      "target" : [{
+        "code" : "ne",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "gt",
+      "target" : [{
+        "code" : "gt",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "lt",
+      "target" : [{
+        "code" : "lt",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "ge",
+      "target" : [{
+        "code" : "ge",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "le",
+      "target" : [{
+        "code" : "le",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "sa",
+      "target" : [{
+        "code" : "sa",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "eb",
+      "target" : [{
+        "code" : "eb",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "ap",
+      "target" : [{
+        "code" : "ap",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "NamingSystem.kind-R4toR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/NamingSystem.kind-R4toR5",
+  "name" : "NamingSystem.kind-R4toR5",
+  "title" : "Mapping for NamingSystem.kind from R4 to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/NamingSystem#NamingSystem.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/NamingSystem#NamingSystem.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/namingsystem-type",
+    "target" : "http://hl7.org/fhir/5.0/namingsystem-type",
+    "element" : [{
+      "code" : "codesystem",
+      "target" : [{
+        "code" : "codesystem",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "identifier",
+      "target" : [{
+        "code" : "identifier",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "root",
+      "target" : [{
+        "code" : "root",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

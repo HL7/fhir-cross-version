@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Task.priority-R5toR4",
+  "url" : "http://hl7.org/fhir/ConceptMap/Task.priority-R5toR4",
+  "name" : "Task.priority-R5toR4",
+  "title" : "Mapping for Task.priority from R5 to R4",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Task#Task.priority",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Task#Task.priority",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/request-priority",
+    "target" : "http://hl7.org/fhir/4.0/request-priority",
+    "element" : [{
+      "code" : "routine",
+      "target" : [{
+        "code" : "routine",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "urgent",
+      "target" : [{
+        "code" : "urgent",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "asap",
+      "target" : [{
+        "code" : "asap",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "stat",
+      "target" : [{
+        "code" : "stat",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}

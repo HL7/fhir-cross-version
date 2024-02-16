@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CapabilityStatement.rest.mode-R4BtoR5",
+  "url" : "http://hl7.org/fhir/ConceptMap/CapabilityStatement.rest.mode-R4BtoR5",
+  "name" : "CapabilityStatement.rest.mode-R4BtoR5",
+  "title" : "Mapping for CapabilityStatement.rest.mode from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/restful-capability-mode",
+    "target" : "http://hl7.org/fhir/5.0/restful-capability-mode",
+    "element" : [{
+      "code" : "client",
+      "target" : [{
+        "code" : "client",
+        "relationship" : "related-to"
+      }]
+    },
+    {
+      "code" : "server",
+      "target" : [{
+        "code" : "server",
+        "relationship" : "related-to"
+      }]
+    }]
+  }]
+}
