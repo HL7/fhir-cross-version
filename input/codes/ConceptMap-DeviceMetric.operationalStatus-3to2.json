@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DeviceMetric.operationalStatus-3to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceMetric.operationalStatus-3to2",
+  "name" : "DeviceMetric.operationalStatus3to2",
+  "title" : "Mapping for DeviceMetric.operationalStatus from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/metric-operational-status",
+    "target" : "http://hl7.org/fhir/1.0/metric-operational-status",
+    "element" : [{
+      "code" : "entered-in-error",
+      "noMap" : true
+    },
+    {
+      "code" : "off",
+      "target" : [{
+        "code" : "off",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on",
+      "target" : [{
+        "code" : "on",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "standby",
+      "target" : [{
+        "code" : "standby",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

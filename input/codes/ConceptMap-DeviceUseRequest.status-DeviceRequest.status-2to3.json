@@ -1,0 +1,84 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DeviceUseRequest.status-DeviceRequest.status-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceUseRequest.status-DeviceRequest.status-2to3",
+  "name" : "DeviceUseRequest.statusDeviceRequest.status2to3",
+  "title" : "Mapping for DeviceUseRequest.status to DeviceRequest.status from 2 to 3",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DeviceUseRequest#DeviceUseRequest.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceRequest#DeviceRequest.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/device-use-request-status",
+    "target" : "http://hl7.org/fhir/3.0/request-status",
+    "element" : [{
+      "code" : "aborted",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "accepted",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "planned",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "proposed",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "received",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rejected",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "requested",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "suspended",
+      "target" : [{
+        "code" : "suspended",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

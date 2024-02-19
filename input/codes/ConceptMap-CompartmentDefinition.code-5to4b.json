@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CompartmentDefinition.code-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CompartmentDefinition.code-5to4b",
+  "name" : "CompartmentDefinition.code5to4b",
+  "title" : "Mapping for CompartmentDefinition.code from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CompartmentDefinition#CompartmentDefinition.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CompartmentDefinition#CompartmentDefinition.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/compartment-type",
+    "target" : "http://hl7.org/fhir/4.3/compartment-type",
+    "element" : [{
+      "code" : "Device",
+      "target" : [{
+        "code" : "Device",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Encounter",
+      "target" : [{
+        "code" : "Encounter",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EpisodeOfCare",
+      "noMap" : true
+    },
+    {
+      "code" : "Patient",
+      "target" : [{
+        "code" : "Patient",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Practitioner",
+      "target" : [{
+        "code" : "Practitioner",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RelatedPerson",
+      "target" : [{
+        "code" : "RelatedPerson",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

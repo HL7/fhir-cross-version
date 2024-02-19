@@ -1,55 +1,110 @@
 {
   "resourceType" : "ConceptMap",
-  "id" : "ResearchSubject.status-R4toR3",
-  "url" : "http://hl7.org/fhir/ConceptMap/ResearchSubject.status-R4toR3",
-  "name" : "ResearchSubject.status-R4toR3",
+  "id" : "ResearchSubject.status-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ResearchSubject.status-4to3",
+  "name" : "ResearchSubject.status-4to3",
   "title" : "Mapping for ResearchSubject.status from R4 to R3",
   "status" : "active",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
   "group" : [{
-    "source" : "http://hl7.org/fhir/4.0/research-study-status",
-    "target" : "http://hl7.org/fhir/3.0/research-study-status",
+    "source" : "http://hl7.org/fhir/4.0/research-subject-status",
+    "target" : "http://hl7.org/fhir/3.0/research-subject-status",
     "element" : [{
       "code" : "candidate",
       "target" : [{
         "code" : "candidate",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "enrolled",
+      "code" : "eligible",
       "target" : [{
-        "code" : "on-study",
-        "relationship" : "related-to"
+        "code" : "candidate",
+        "relationship" : "source-is-narrower-than-target"
       }]
     },
     {
-      "code" : "active",
+      "code" : "follow-up",
       "target" : [{
-        "code" : "on-study-intervention",
-        "relationship" : "related-to"
+        "code" : "completed",
+        "relationship" : "source-is-narrower-than-target"
+      },
+      {
+        "code" : "suspended",
+        "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "suspended",
+      "code" : "ineligible",
+      "noMap" : true
+    },
+    {
+      "code" : "not-registered",
       "target" : [{
-        "code" : "on-study-observation",
-        "relationship" : "related-to"
+        "code" : "withdrawn",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "off-study",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "on-study",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "enrolled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on-study-intervention",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "on-study-observation",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "pending-on-study",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "potential-candidate",
+      "noMap" : true
+    },
+    {
+      "code" : "screening",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "source-is-narrower-than-target"
       }]
     },
     {
       "code" : "withdrawn",
       "target" : [{
+        "code" : "candidate",
+        "relationship" : "equivalent"
+      },
+      {
         "code" : "withdrawn",
-        "relationship" : "related-to"
-      }]
-    },
-    {
-      "code" : "completed",
-      "target" : [{
-        "code" : "off-study",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     }]
   }]

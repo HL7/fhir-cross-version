@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Patient.contact.relationship-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Patient.contact.relationship-2to3",
+  "name" : "Patient.contact.relationship2to3",
+  "title" : "Mapping for Patient.contact.relationship from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.contact.relationship",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.contact.relationship",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/patient-contact-relationship",
+    "target" : "http://hl7.org/fhir/3.0/v2/0131",
+    "element" : [{
+      "code" : "agent",
+      "noMap" : true
+    },
+    {
+      "code" : "caregiver",
+      "noMap" : true
+    },
+    {
+      "code" : "emergency",
+      "target" : [{
+        "code" : "C",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "EP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "family",
+      "target" : [{
+        "code" : "N",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "friend",
+      "noMap" : true
+    },
+    {
+      "code" : "guarantor",
+      "noMap" : true
+    },
+    {
+      "code" : "guardian",
+      "noMap" : true
+    },
+    {
+      "code" : "owner",
+      "noMap" : true
+    },
+    {
+      "code" : "parent",
+      "target" : [{
+        "code" : "N",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "partner",
+      "target" : [{
+        "code" : "N",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "work",
+      "target" : [{
+        "code" : "E",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

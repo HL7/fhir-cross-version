@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "NamingSystem.uniqueId.type-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/NamingSystem.uniqueId.type-5to4b",
+  "name" : "NamingSystem.uniqueId.type5to4b",
+  "title" : "Mapping for NamingSystem.uniqueId.type from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/NamingSystem#NamingSystem.uniqueId.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/NamingSystem#NamingSystem.uniqueId.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/namingsystem-identifier-type",
+    "target" : "http://hl7.org/fhir/4.3/namingsystem-identifier-type",
+    "element" : [{
+      "code" : "iri-stem",
+      "noMap" : true
+    },
+    {
+      "code" : "oid",
+      "target" : [{
+        "code" : "oid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "uri",
+      "target" : [{
+        "code" : "uri",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "uuid",
+      "target" : [{
+        "code" : "uuid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "v2csmnemonic",
+      "noMap" : true
+    }]
+  }]
+}

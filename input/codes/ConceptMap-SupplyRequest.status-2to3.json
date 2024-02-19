@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "SupplyRequest.status-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SupplyRequest.status-2to3",
+  "name" : "SupplyRequest.status2to3",
+  "title" : "Mapping for SupplyRequest.status from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/SupplyRequest#SupplyRequest.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SupplyRequest#SupplyRequest.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/supplyrequest-status",
+    "target" : "http://hl7.org/fhir/3.0/supplyrequest-status",
+    "element" : [{
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "failed",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "requested",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    }]
+  }]
+}

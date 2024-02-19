@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "OperationOutcome.issue.severity-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/OperationOutcome.issue.severity-5to4b",
+  "name" : "OperationOutcome.issue.severity5to4b",
+  "title" : "Mapping for OperationOutcome.issue.severity from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/OperationOutcome#OperationOutcome.issue.severity",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/OperationOutcome#OperationOutcome.issue.severity",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/issue-severity",
+    "target" : "http://hl7.org/fhir/4.3/issue-severity",
+    "element" : [{
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "fatal",
+      "target" : [{
+        "code" : "fatal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "information",
+      "target" : [{
+        "code" : "information",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "success",
+      "noMap" : true
+    },
+    {
+      "code" : "warning",
+      "target" : [{
+        "code" : "warning",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

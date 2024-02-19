@@ -43,7 +43,7 @@ group OperationDefinitionParameter(source src, target tgt) extends BackboneEleme
   src.min -> tgt.min;
   src.max -> tgt.max;
   src.documentation -> tgt.documentation;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4to5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/cross-version/types4to5', 'code');
   src.targetProfile -> tgt.targetProfile;
   src.searchType as v -> tgt.searchType = translate(v, 'http://hl7.org/fhir/ConceptMap/OperationDefinition.parameter.searchType-R4toR5', 'code');
   src.binding as s -> tgt.binding as t then OperationDefinitionParameterBinding(s, t);

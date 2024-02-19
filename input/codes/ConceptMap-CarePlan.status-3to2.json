@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CarePlan.status-3to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CarePlan.status-3to2",
+  "name" : "CarePlan.status3to2",
+  "title" : "Mapping for CarePlan.status from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CarePlan#CarePlan.status",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/CarePlan#CarePlan.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/care-plan-status",
+    "target" : "http://hl7.org/fhir/1.0/care-plan-status",
+    "element" : [{
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "proposed",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "noMap" : true
+    },
+    {
+      "code" : "suspended",
+      "noMap" : true
+    },
+    {
+      "code" : "unknown",
+      "noMap" : true
+    }]
+  }]
+}

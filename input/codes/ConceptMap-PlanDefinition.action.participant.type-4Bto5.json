@@ -1,8 +1,8 @@
 {
   "resourceType" : "ConceptMap",
-  "id" : "PlanDefinition.action.participant.type-R4BtoR5",
-  "url" : "http://hl7.org/fhir/ConceptMap/PlanDefinition.action.participant.type-R4BtoR5",
-  "name" : "PlanDefinition.action.participant.type-R4BtoR5",
+  "id" : "PlanDefinition.action.participant.type-4Bto5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PlanDefinition.action.participant.type-4Bto5",
+  "name" : "PlanDefinition.action.participant.type-4Bto5",
   "title" : "Mapping for PlanDefinition.action.participant.type from R4B to R5",
   "status" : "active",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.participant.type",
@@ -14,30 +14,29 @@
       "code" : "device",
       "target" : [{
         "code" : "device",
-        "relationship" : "related-to",
-        "comment" : "s:\"group\" - t:\"group\""
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "patient",
       "target" : [{
         "code" : "patient",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "practitioner",
       "target" : [{
         "code" : "practitioner",
-        "relationship" : "related-to",
-        "comment" : "s:\"practitionerrole\" - t:\"practitionerrole\""
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "related-person",
+      "noMap" : true,
       "target" : [{
         "code" : "relatedperson",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     }]
   }]

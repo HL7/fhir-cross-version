@@ -65,7 +65,7 @@ group CapabilityStatementRestSecurity(source src, target tgt) extends BackboneEl
 }
 
 group CapabilityStatementRestResource(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types5to4b', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/cross-version/types5to4b', 'code');
   src.profile -> tgt.profile;
   src.supportedProfile -> tgt.supportedProfile;
   src.documentation -> tgt.documentation;

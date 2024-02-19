@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MedicationDispense.status-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MedicationDispense.status-4to3",
+  "name" : "MedicationDispense.status4to3",
+  "title" : "Mapping for MedicationDispense.status from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationDispense#MedicationDispense.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MedicationDispense#MedicationDispense.status",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/medicationdispense-status",
+    "target" : "http://hl7.org/fhir/3.0/medication-dispense-status",
+    "element" : [{
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "stopped",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "declined",
+      "target" : [{
+        "code" : "stopped",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "in-progress",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on-hold",
+      "target" : [{
+        "code" : "on-hold",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preparation",
+      "target" : [{
+        "code" : "preparation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "stopped",
+      "target" : [{
+        "code" : "stopped",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "noMap" : true
+    }]
+  }]
+}

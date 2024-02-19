@@ -1,8 +1,8 @@
 {
   "resourceType" : "ConceptMap",
-  "id" : "StructureMap.group.rule.target.listMode-R4BtoR5",
-  "url" : "http://hl7.org/fhir/ConceptMap/StructureMap.group.rule.target.listMode-R4BtoR5",
-  "name" : "StructureMap.group.rule.target.listMode-R4BtoR5",
+  "id" : "StructureMap.group.rule.target.listMode-4Bto5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureMap.group.rule.target.listMode-4Bto5",
+  "name" : "StructureMap.group.rule.target.listMode-4Bto5",
   "title" : "Mapping for StructureMap.group.rule.target.listMode from R4B to R5",
   "status" : "active",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.group.rule.target.listMode",
@@ -11,31 +11,31 @@
     "source" : "http://hl7.org/fhir/4.3/map-target-list-mode",
     "target" : "http://hl7.org/fhir/5.0/map-target-list-mode",
     "element" : [{
-      "code" : "first",
+      "code" : "collate",
       "target" : [{
-        "code" : "first",
-        "relationship" : "related-to"
+        "code" : "single",
+        "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "share",
+      "code" : "first",
       "target" : [{
-        "code" : "share",
-        "relationship" : "related-to"
+        "code" : "first",
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "last",
       "target" : [{
         "code" : "last",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "collate",
+      "code" : "share",
       "target" : [{
-        "code" : "single",
-        "relationship" : "related-to"
+        "code" : "share",
+        "relationship" : "equivalent"
       }]
     }]
   }]

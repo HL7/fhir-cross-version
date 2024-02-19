@@ -1,0 +1,109 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DiagnosticOrder.status-ProcedureRequest.status-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DiagnosticOrder.status-ProcedureRequest.status-2to3",
+  "name" : "DiagnosticOrder.statusProcedureRequest.status2to3",
+  "title" : "Mapping for DiagnosticOrder.status to ProcedureRequest.status from 2 to 3",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DiagnosticOrder#DiagnosticOrder.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/diagnostic-order-status",
+    "target" : "http://hl7.org/fhir/3.0/request-status",
+    "element" : [{
+      "code" : "accepted",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "failed",
+      "noMap" : true
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "planned",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "proposed",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "received",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "rejected",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "requested",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "review",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "suspended",
+      "target" : [{
+        "code" : "suspended",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

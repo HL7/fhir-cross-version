@@ -1,9 +1,9 @@
 {
   "resourceType" : "ConceptMap",
-  "id" : "resourcemap2to3",
-  "url" : "http://hl7.org/fhir/interversion/resourcemap2to3",
+  "id" : "resources-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/resources-2to3",
   "version" : "0.1",
-  "name" : "resourcemap2to3",
+  "name" : "Resources2to3",
   "title" : "Resource Map R2 to R3",
   "status" : "draft",
   "date" : "2019-07-09",
@@ -105,7 +105,6 @@
     { "code" : "SupplyRequest", "target" : [{ "code" : "SupplyRequest", "relationship" : "equivalent" }] },
     { "code" : "TestScript", "target" : [{ "code" : "TestScript", "relationship" : "equivalent" }] },
     { "code" : "ValueSet", "target" : [{ "code" : "ValueSet", "relationship" : "source-is-broader-than-target" }] },
-    { "code" : "ValueSet", "target" : [{ "code" : "CodeSystem", "relationship" : "source-is-broader-than-target" }] },
     { "code" : "VisionPrescription", "target" : [{ "code" : "VisionPrescription", "relationship" : "equivalent" }] }]
   }]
 }

@@ -1,0 +1,129 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Questionnaire.item.type-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Questionnaire.item.type-5to4b",
+  "name" : "Questionnaire.item.type5to4b",
+  "title" : "Mapping for Questionnaire.item.type from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Questionnaire#Questionnaire.item.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Questionnaire#Questionnaire.item.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/item-type",
+    "target" : "http://hl7.org/fhir/4.3/item-type",
+    "element" : [{
+      "code" : "attachment",
+      "target" : [{
+        "code" : "attachment",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "boolean",
+      "target" : [{
+        "code" : "boolean",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "coding",
+      "target" : [{
+        "code" : "choice",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "open-choice",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    },
+    {
+      "code" : "date",
+      "target" : [{
+        "code" : "date",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dateTime",
+      "target" : [{
+        "code" : "dateTime",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "decimal",
+      "target" : [{
+        "code" : "decimal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "display",
+      "target" : [{
+        "code" : "display",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "group",
+      "target" : [{
+        "code" : "group",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "integer",
+      "target" : [{
+        "code" : "integer",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "quantity",
+      "target" : [{
+        "code" : "quantity",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "question",
+      "target" : [{
+        "code" : "question",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reference",
+      "target" : [{
+        "code" : "reference",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "string",
+      "target" : [{
+        "code" : "string",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "text",
+      "target" : [{
+        "code" : "text",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "time",
+      "target" : [{
+        "code" : "time",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "url",
+      "target" : [{
+        "code" : "url",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

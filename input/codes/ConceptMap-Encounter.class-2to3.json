@@ -1,81 +1,82 @@
 {
   "resourceType" : "ConceptMap",
-  "id" : "Encounter.class-R2toR3",
-  "url" : "http://hl7.org/fhir/ConceptMap/Encounter.class-R2toR3",
-  "name" : "Encounter.class-R2toR3",
+  "id" : "Encounter.class-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Encounter.class-2to3",
+  "name" : "Encounter.class-2to3",
   "title" : "Mapping for Encounter.class from R2 to R3",
   "status" : "active",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Encounter#Encounter.class",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Encounter#Encounter.class",
   "group" : [{
     "source" : "http://hl7.org/fhir/1.0/encounter-class",
-    "target" : "http://hl7.org/fhir/3.0/ActCode",
+    "target" : "http://hl7.org/fhir/3.0/v3/ActCode",
     "element" : [{
       "code" : "inpatient",
+      "noMap" : false,
       "target" : [{
         "code" : "IMP",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "outpatient",
+      "noMap" : false,
       "target" : [{
         "code" : "AMB",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ambulatory",
+      "noMap" : false,
       "target" : [{
         "code" : "AMB",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "emergency",
+      "noMap" : false,
       "target" : [{
         "code" : "EMER",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "home",
+      "noMap" : false,
       "target" : [{
         "code" : "HH",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "field",
+      "noMap" : false,
       "target" : [{
         "code" : "FLD",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "daytime",
+      "noMap" : false,
       "target" : [{
         "code" : "SS",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "virtual",
+      "noMap" : false,
       "target" : [{
         "code" : "VR",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
-    }]
-  },
-  {
-    "source" : "http://hl7.org/fhir/encounter-class",
-    "target" : "http://hl7.org/fhir/encounter-class",
-    "element" : [{
+    },
+    {
       "code" : "other",
-      "target" : [{
-        "code" : "other",
-        "relationship" : "related-to"
-      }]
+      "noMap" : true
     }]
   }]
 }

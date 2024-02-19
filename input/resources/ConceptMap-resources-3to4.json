@@ -1,9 +1,9 @@
 {
   "resourceType" : "ConceptMap",
-  "id" : "resourcemap3to4",
-  "url" : "http://hl7.org/fhir/interversion/resourcemap3to4",
+  "id" : "resources-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/resources-3to4",
   "version" : "0.1",
-  "name" : "resourcemap3to4",
+  "name" : "Resources3to4",
   "title" : "Resource Map R3 to R4",
   "status" : "active",
   "date" : "2024-02-01",

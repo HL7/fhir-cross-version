@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ReferralRequest.status-ServiceRequest.status-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ReferralRequest.status-ServiceRequest.status-3to4",
+  "name" : "ReferralRequest.statusServiceRequest.status3to4",
+  "title" : "Mapping for ReferralRequest.status/ServiceRequest.status from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ReferralRequest#ReferralRequest.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ServiceRequest#ServiceRequest.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/request-status",
+    "target" : "http://hl7.org/fhir/4.0/request-status",
+    "element" : [{
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "revoked",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "suspended",
+      "target" : [{
+        "code" : "on-hold",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

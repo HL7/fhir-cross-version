@@ -14,7 +14,7 @@ group ParameterDefinition(source src : ParameterDefinitionR4B, target tgt : Para
   src.min -> tgt.min;
   src.max -> tgt.max;
   src.documentation -> tgt.documentation;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4Bto5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/cross-version/types4Bto5', 'code');
   src.profile -> tgt.profile;
 }
 

@@ -1,104 +1,87 @@
 {
   "resourceType" : "ConceptMap",
-  "id" : "ResearchSubject.status-R3toR4",
-  "url" : "http://hl7.org/fhir/ConceptMap/ResearchSubject.status-R3toR4",
-  "name" : "ResearchSubject.status-R3toR4",
+  "id" : "ResearchSubject.status-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ResearchSubject.status-3to4",
+  "name" : "ResearchSubject.status-3to4",
   "title" : "Mapping for ResearchSubject.status from R3 to R4",
   "status" : "active",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
   "group" : [{
-    "source" : "http://hl7.org/fhir/3.0/research-study-status",
-    "target" : "http://hl7.org/fhir/4.0/research-study-status",
+    "source" : "http://hl7.org/fhir/3.0/research-subject-status",
+    "target" : "http://hl7.org/fhir/4.0/research-subject-status",
     "element" : [{
+      "code" : "active",
+      "target" : [{
+        "code" : "on-study",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "on-study-intervention",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "on-study-observation",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "pending-on-study",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
       "code" : "candidate",
       "target" : [{
         "code" : "candidate",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "eligible",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "screening",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "withdrawn",
+        "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "eligible",
+      "code" : "completed",
       "target" : [{
-        "code" : "candidate",
-        "relationship" : "related-to"
+        "code" : "follow-up",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "off-study",
+        "relationship" : "source-is-broader-than-target"
       }]
     },
     {
-      "code" : "follow-up",
+      "code" : "enrolled",
       "target" : [{
-        "code" : "completed",
-        "relationship" : "related-to"
+        "code" : "on-study",
+        "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ineligible",
+      "code" : "suspended",
       "target" : [{
-        "code" : "candidate",
-        "relationship" : "related-to"
-      }]
-    },
-    {
-      "code" : "not-registered",
-      "target" : [{
-        "code" : "candidate",
-        "relationship" : "related-to"
-      }]
-    },
-    {
-      "code" : "off-study",
-      "target" : [{
-        "code" : "completed",
-        "relationship" : "related-to"
-      }]
-    },
-    {
-      "code" : "on-study",
-      "target" : [{
-        "code" : "enrolled",
-        "relationship" : "related-to"
-      }]
-    },
-    {
-      "code" : "on-study-intervention",
-      "target" : [{
-        "code" : "active",
-        "relationship" : "related-to"
-      }]
-    },
-    {
-      "code" : "on-study-observation",
-      "target" : [{
-        "code" : "suspended",
-        "relationship" : "related-to"
-      }]
-    },
-    {
-      "code" : "pending-on-study",
-      "target" : [{
-        "code" : "enrolled",
-        "relationship" : "related-to"
-      }]
-    },
-    {
-      "code" : "potential-candidate",
-      "target" : [{
-        "code" : "candidate",
-        "relationship" : "related-to"
-      }]
-    },
-    {
-      "code" : "screening",
-      "target" : [{
-        "code" : "candidate",
-        "relationship" : "related-to"
+        "code" : "follow-up",
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "withdrawn",
       "target" : [{
+        "code" : "not-registered",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
         "code" : "withdrawn",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     }]
   }]

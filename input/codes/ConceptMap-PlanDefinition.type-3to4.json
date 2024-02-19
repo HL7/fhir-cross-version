@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "PlanDefinition.type-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PlanDefinition.type-3to4",
+  "name" : "PlanDefinition.type3to4",
+  "title" : "Mapping for PlanDefinition.type from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/plan-definition-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+    "element" : [{
+      "code" : "eca-rule",
+      "target" : [{
+        "code" : "eca-rule",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "order-set",
+      "target" : [{
+        "code" : "order-set",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "protocol",
+      "target" : [{
+        "code" : "clinical-protocol",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

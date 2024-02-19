@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DocumentReference.relatesTo.code-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DocumentReference.relatesTo.code-5to4b",
+  "name" : "DocumentReference.relatesTo.code5to4b",
+  "title" : "Mapping for DocumentReference.relatesTo.code from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/document-relationship-type",
+    "target" : "http://hl7.org/fhir/4.3/document-relationship-type",
+    "element" : [{
+      "code" : "appends",
+      "target" : [{
+        "code" : "appends",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "incorporates",
+      "noMap" : true
+    },
+    {
+      "code" : "replaces",
+      "target" : [{
+        "code" : "replaces",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "signs",
+      "target" : [{
+        "code" : "signs",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "summarizes",
+      "noMap" : true
+    },
+    {
+      "code" : "transforms",
+      "target" : [{
+        "code" : "transforms",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

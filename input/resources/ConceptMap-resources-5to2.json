@@ -1,10 +1,10 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "resources-5to2",
-  "url" : "http://hl7.org/fhir/interversion/resourcemap5to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/resources-5to2",
   "version" : "0.1",
-  "name" : "resourcemap5to4",
-  "title" : "Resource Map R5 to R4",
+  "name" : "Resources5to2",
+  "title" : "Resource Map R5 to R2",
   "status" : "active",
   "date" : "2024-02-01",
   "publisher" : "HL7",

@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/5.0/DataRequirement" alias DataRequirementR5 as target
 imports "http://hl7.org/fhir/StructureMap/*4Bto5"
 
 group DataRequirement(source src : DataRequirementR4B, target tgt : DataRequirementR5) extends Element <<type+>> {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4Bto5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/cross-version/types4Bto5', 'code');
   src.profile -> tgt.profile;
   src.subject : CodeableConcept -> tgt.subject "subjectCodeableConcept";
   src.subject : Reference -> tgt.subject "subjectReference";

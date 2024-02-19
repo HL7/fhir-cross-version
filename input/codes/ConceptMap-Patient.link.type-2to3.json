@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Patient.link.type-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Patient.link.type-2to3",
+  "name" : "Patient.link.type2to3",
+  "title" : "Mapping for Patient.link.type from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.link.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.link.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/link-type",
+    "target" : "http://hl7.org/fhir/3.0/link-type",
+    "element" : [{
+      "code" : "refer",
+      "target" : [{
+        "code" : "refer",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "replace",
+      "target" : [{
+        "code" : "replaces",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    },
+    {
+      "code" : "seealso",
+      "target" : [{
+        "code" : "seealso",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

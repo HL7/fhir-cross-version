@@ -1,34 +1,34 @@
 {
   "resourceType" : "ConceptMap",
-  "id" : "Questionnaire.status-R2toR3",
-  "url" : "http://hl7.org/fhir/ConceptMap/Questionnaire.status-R2toR3",
-  "name" : "Questionnaire.status-R2toR3",
+  "id" : "Questionnaire.status-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Questionnaire.status-2to3",
+  "name" : "Questionnaire.status-2to3",
   "title" : "Mapping for Questionnaire.status from R2 to R3",
   "status" : "active",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Questionnaire#Questionnaire.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Questionnaire#Questionnaire.status",
   "group" : [{
-    "source" : "http://hl7.org/fhir/1.0/allergy-intolerance-status",
-    "target" : "http://hl7.org/fhir/3.0/allergy-verification-status",
+    "source" : "http://hl7.org/fhir/1.0/questionnaire-status",
+    "target" : "http://hl7.org/fhir/3.0/publication-status",
     "element" : [{
-      "code" : "published",
-      "target" : [{
-        "code" : "active",
-        "relationship" : "related-to"
-      }]
-    },
-    {
       "code" : "draft",
       "target" : [{
         "code" : "draft",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "published",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "retired",
       "target" : [{
         "code" : "retired",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     }]
   }]

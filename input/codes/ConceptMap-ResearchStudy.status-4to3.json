@@ -1,8 +1,8 @@
 {
   "resourceType" : "ConceptMap",
-  "id" : "ResearchStudy.status-R4toR3",
-  "url" : "http://hl7.org/fhir/ConceptMap/ResearchStudy.status-R4toR3",
-  "name" : "ResearchStudy.status-R4toR3",
+  "id" : "ResearchStudy.status-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ResearchStudy.status-4to3",
+  "name" : "ResearchStudy.status-4to3",
   "title" : "Mapping for ResearchStudy.status from R4 to R3",
   "status" : "active",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchStudy#ResearchStudy.status",
@@ -14,77 +14,85 @@
       "code" : "active",
       "target" : [{
         "code" : "in-progress",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "administratively-completed",
       "target" : [{
         "code" : "completed",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "approved",
       "target" : [{
         "code" : "in-progress",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "closed-to-accrual",
       "target" : [{
         "code" : "suspended",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "closed-to-accrual-and-intervention",
       "target" : [{
         "code" : "suspended",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "completed",
       "target" : [{
         "code" : "completed",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "disapproved",
       "target" : [{
         "code" : "stopped",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "suspended",
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "in-review",
       "target" : [{
         "code" : "draft",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "temporarily-closed-to-accrual",
       "target" : [{
         "code" : "suspended",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "temporarily-closed-to-accrual-and-intervention",
       "target" : [{
         "code" : "suspended",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "withdrawn",
       "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      },
+      {
         "code" : "stopped",
-        "relationship" : "related-to"
+        "relationship" : "equivalent"
       }]
     }]
   }]

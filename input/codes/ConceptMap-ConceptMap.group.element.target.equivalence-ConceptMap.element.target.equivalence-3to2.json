@@ -1,0 +1,80 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ConceptMap.group.element.target.equivalence-ConceptMap.element.target.equivalence-3to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ConceptMap.group.element.target.equivalence-ConceptMap.element.target.equivalence-3to2",
+  "name" : "ConceptMap.group.element.target.equivalenceConceptMap.element.target.equivalence3to2",
+  "title" : "Mapping for ConceptMap.group.element.target.equivalence/ConceptMap.element.target.equivalence from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ConceptMap#ConceptMap.group.element.target.equivalence",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ConceptMap#ConceptMap.element.target.equivalence",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/concept-map-equivalence",
+    "target" : "http://hl7.org/fhir/1.0/concept-map-equivalence",
+    "element" : [{
+      "code" : "disjoint",
+      "target" : [{
+        "code" : "disjoint",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "equal",
+      "target" : [{
+        "code" : "equal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "equivalent",
+      "target" : [{
+        "code" : "equivalent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "inexact",
+      "target" : [{
+        "code" : "inexact",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "narrower",
+      "target" : [{
+        "code" : "narrower",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "relatedto",
+      "noMap" : true
+    },
+    {
+      "code" : "specializes",
+      "target" : [{
+        "code" : "specializes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "subsumes",
+      "target" : [{
+        "code" : "subsumes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unmatched",
+      "target" : [{
+        "code" : "unmatched",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wider",
+      "target" : [{
+        "code" : "wider",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}
