@@ -9,8 +9,8 @@
   "date" : "2019-07-11T08:06:31+10:00",
   "publisher" : "HL7",
   "group" : [{
-    "source" : "http://hl7.org/fhir/STU3",
-    "target" : "http://hl7.org/fhir/R4",
+    "source" : "http://hl7.org/fhir/3.0",
+    "target" : "http://hl7.org/fhir/4.0",
     "element" : [{
       "code" : "Account.identifier",
       "target" : [{

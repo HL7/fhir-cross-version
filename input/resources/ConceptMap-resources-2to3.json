@@ -9,8 +9,8 @@
   "date" : "2019-07-09",
   "publisher" : "HL7",
   "group" : [{
-    "source" : "http://hl7.org/fhir/DSTU2/resource-types",
-    "target" : "http://hl7.org/fhir/STU3/resource-types",
+    "source" : "http://hl7.org/fhir/1.0/resource-types",
+    "target" : "http://hl7.org/fhir/3.0/resource-types",
     "element" : [
     { "code" : "Account", "target" : [{ "code" : "Account", "relationship" : "equivalent" }] },
     { "code" : "AllergyIntolerance", "target" : [{ "code" : "AllergyIntolerance", "relationship" : "equivalent" }] },
@@ -75,8 +75,8 @@
     { "code" : "Observation", "target" : [{ "code" : "Observation", "relationship" : "equivalent" }] },
     { "code" : "OperationDefinition", "target" : [{ "code" : "OperationDefinition", "relationship" : "equivalent" }] },
     { "code" : "OperationOutcome", "target" : [{ "code" : "OperationOutcome", "relationship" : "equivalent" }] },
-    { "code" : "Order", "target" : [{ "code" : "Task", "relationship" : "equivalent" }] },
-    { "code" : "OrderResponse", "target" : [{ "code" : "Task", "relationship" : "equivalent" }] },
+    { "code" : "Order", "target" : [{ "code" : "Task", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "OrderResponse", "target" : [{ "code" : "Task", "relationship" : "source-is-narrower-than-target" }] },
     { "code" : "Organization", "target" : [{ "code" : "Organization", "relationship" : "equivalent" }] },
     { "code" : "Parameters", "target" : [{ "code" : "Parameters", "relationship" : "equivalent" }] },
     { "code" : "Patient", "target" : [{ "code" : "Patient", "relationship" : "equivalent" }] },

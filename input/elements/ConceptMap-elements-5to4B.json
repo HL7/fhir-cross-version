@@ -10,8 +10,8 @@
   "publisher": "HL7",
   "group": [
     {
-      "source": "http://hl7.org/fhir/R5/element-names",
-      "target": "http://hl7.org/fhir/R4B/element-names",
+      "source": "http://hl7.org/fhir/5.0/element-names",
+      "target": "http://hl7.org/fhir/4.3/element-names",
       "element": [
     { "code": "Dosage.asNeeded", "target": [{ "code": "Dosage.asNeeded[x]", "relationship": "equivalent" }] },
     { "code": "ProductShelfLife.period[x]", "target": [{ "code": "ProductShelfLife.period", "relationship": "equivalent" }] },

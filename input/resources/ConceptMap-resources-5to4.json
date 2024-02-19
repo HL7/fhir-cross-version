@@ -9,13 +9,11 @@
   "date" : "2024-02-01",
   "publisher" : "HL7",
   "group" : [{
-    "source" : "http://hl7.org/fhir/R5/resource-types",
-    "target" : "http://hl7.org/fhir/R4/resource-types",
+    "source" : "http://hl7.org/fhir/5.0/resource-types",
+    "target" : "http://hl7.org/fhir/4.0/resource-types",
     "element" : [
-    { "code" : "Resource", "target" : [{ "code" : "Resource", "relationship" : "equivalent" }] },
     { "code" : "Binary", "target" : [{ "code" : "Binary", "relationship" : "equivalent" }] },
     { "code" : "Bundle", "target" : [{ "code" : "Bundle", "relationship" : "equivalent" }] },
-    { "code" : "DomainResource", "target" : [{ "code" : "DomainResource", "relationship" : "equivalent" }] },
     { "code" : "Account", "target" : [{ "code" : "Account", "relationship" : "equivalent" }] },
     { "code" : "ActivityDefinition", "target" : [{ "code" : "ActivityDefinition", "relationship" : "equivalent" }] },
     { "code" : "ActorDefinition", "noMap" : true },

@@ -4,7 +4,7 @@
   <h3>Introduction</h3>
 	<p>
     This IG defines the extensions that are globally defined and available in 
-    all FHIR implementation contexts. Prior to <a href="http://hl7.org/fhir/R5">R5</a>
+    all FHIR implementation contexts. Prior to <a href="http://hl7.org/fhir/5.0">R5</a>
     these extensions were defined in the  core specification, but starting from R5
     they have been moved out of the specification into a separate extensions pack
     so that the extensions can be updated more often than the base specification.

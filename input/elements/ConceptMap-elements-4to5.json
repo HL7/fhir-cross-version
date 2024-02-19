@@ -9,8 +9,8 @@
   "date" : "2024-02-01",
   "publisher" : "HL7",
   "group" : [{
-    "source" : "http://hl7.org/fhir/R4/element-names",
-    "target" : "http://hl7.org/fhir/R5/element-names",
+    "source" : "http://hl7.org/fhir/4.0/element-names",
+    "target" : "http://hl7.org/fhir/5.0/element-names",
     "unmapped" : {
       "mode"  : "use-source-code"
     },

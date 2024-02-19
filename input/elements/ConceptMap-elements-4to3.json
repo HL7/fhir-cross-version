@@ -10,7 +10,7 @@
   "publisher": "HL7",
   "group": [
     {
-      "source": "http://hl7.org/fhir/R4/element-names",
+      "source": "http://hl7.org/fhir/4.0/element-names",
       "target": "http://hl7.org/fhir/R3/element-names",
       "element": [
     { "code": "Account.servicePeriod", "target": [{ "code": "Account.period", "relationship": "equivalent" }] },

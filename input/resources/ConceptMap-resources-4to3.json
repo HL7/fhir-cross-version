@@ -9,8 +9,8 @@
   "date" : "2024-02-01",
   "publisher" : "HL7",
   "group" : [{
-    "source" : "http://hl7.org/fhir/R4/resource-types",
-    "target" : "http://hl7.org/fhir/STU3/resource-types",
+    "source" : "http://hl7.org/fhir/4.0/resource-types",
+    "target" : "http://hl7.org/fhir/3.0/resource-types",
     "element" : [
     { "code" : "Account", "target" : [{ "code" : "Account", "relationship" : "equivalent" }] },
     { "code" : "ActivityDefinition", "target" : [{ "code" : "ActivityDefinition", "relationship" : "equivalent" }] },
