@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ObservationDefinition.qualifiedInterval.gender-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ObservationDefinition.qualifiedInterval.gender-4to4b",
+  "name" : "ObservationDefinition.qualifiedInterval.gender4to4b",
+  "title" : "Mapping for ObservationDefinition.qualifiedInterval.gender from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.gender",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.gender",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/administrative-gender",
+    "target" : "http://hl7.org/fhir/4.3/administrative-gender",
+    "element" : [{
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "female",
+      "target" : [{
+        "code" : "female",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "male",
+      "target" : [{
+        "code" : "male",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

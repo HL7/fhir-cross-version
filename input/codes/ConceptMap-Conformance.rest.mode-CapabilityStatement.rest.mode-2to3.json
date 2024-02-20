@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Conformance.rest.mode-CapabilityStatement.rest.mode-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Conformance.rest.mode-CapabilityStatement.rest.mode-2to3",
+  "name" : "Conformance.rest.modeCapabilityStatement.rest.mode2to3",
+  "title" : "Mapping for Conformance.rest.mode/CapabilityStatement.rest.mode from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/restful-conformance-mode",
+    "target" : "http://hl7.org/fhir/3.0/restful-capability-mode",
+    "element" : [{
+      "code" : "server",
+      "target" : [{
+        "code" : "server",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "client",
+      "target" : [{
+        "code" : "client",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

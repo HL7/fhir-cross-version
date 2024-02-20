@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Bundle.type-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Bundle.type-3to4",
+  "name" : "Bundle.type3to4",
+  "title" : "Mapping for Bundle.type from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Bundle#Bundle.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Bundle#Bundle.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/bundle-type",
+    "target" : "http://hl7.org/fhir/4.0/bundle-type",
+    "element" : [{
+      "code" : "batch-response",
+      "target" : [{
+        "code" : "batch-response",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "document",
+      "target" : [{
+        "code" : "document",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "searchset",
+      "target" : [{
+        "code" : "searchset",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "batch",
+      "target" : [{
+        "code" : "batch",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transaction-response",
+      "target" : [{
+        "code" : "transaction-response",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history",
+      "target" : [{
+        "code" : "history",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "collection",
+      "target" : [{
+        "code" : "collection",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "message",
+      "target" : [{
+        "code" : "message",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transaction",
+      "target" : [{
+        "code" : "transaction",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

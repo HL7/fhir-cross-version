@@ -1,0 +1,118 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Citation.citedArtifact.currentState-4bto5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Citation.citedArtifact.currentState-4bto5",
+  "name" : "Citation.citedArtifact.currentState4bto5",
+  "title" : "Mapping for Citation.citedArtifact.currentState from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.currentState",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.currentState",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/cited-artifact-status-type",
+    "target" : "http://hl7.org/fhir/5.0/cited-artifact-status-type",
+    "element" : [{
+      "code" : "published-final-form",
+      "target" : [{
+        "code" : "published-final-form",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rejected",
+      "target" : [{
+        "code" : "rejected",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "created",
+      "target" : [{
+        "code" : "created",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "published-early-form",
+      "target" : [{
+        "code" : "published-early-form",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "withdrawn",
+      "target" : [{
+        "code" : "withdrawn",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "accepted",
+      "target" : [{
+        "code" : "accepted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "archived",
+      "target" : [{
+        "code" : "archived",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retracted",
+      "target" : [{
+        "code" : "retracted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "approved",
+      "target" : [{
+        "code" : "approved",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "submitted",
+      "target" : [{
+        "code" : "submitted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "post-review-pre-published",
+      "target" : [{
+        "code" : "post-review-pre-published",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pre-review",
+      "target" : [{
+        "code" : "pre-review",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "under-review",
+      "target" : [{
+        "code" : "under-review",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

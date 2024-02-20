@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "NamingSystem.uniqueId.type-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/NamingSystem.uniqueId.type-4to5",
+  "name" : "NamingSystem.uniqueId.type4to5",
+  "title" : "Mapping for NamingSystem.uniqueId.type from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/NamingSystem#NamingSystem.uniqueId.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/NamingSystem#NamingSystem.uniqueId.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/namingsystem-identifier-type",
+    "target" : "http://hl7.org/fhir/5.0/namingsystem-identifier-type",
+    "element" : [{
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "oid",
+      "target" : [{
+        "code" : "oid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "uuid",
+      "target" : [{
+        "code" : "uuid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "uri",
+      "target" : [{
+        "code" : "uri",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

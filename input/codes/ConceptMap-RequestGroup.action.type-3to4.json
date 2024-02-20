@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "RequestGroup.action.type-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestGroup.action.type-3to4",
+  "name" : "RequestGroup.action.type3to4",
+  "title" : "Mapping for RequestGroup.action.type from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/RequestGroup#RequestGroup.action.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/action-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/action-type",
+    "element" : [{
+      "code" : "fire-event",
+      "target" : [{
+        "code" : "fire-event",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "create",
+      "target" : [{
+        "code" : "create",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "update",
+      "target" : [{
+        "code" : "update",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "remove",
+      "target" : [{
+        "code" : "remove",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

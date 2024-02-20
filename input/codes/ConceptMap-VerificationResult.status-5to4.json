@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "VerificationResult.status-5to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/VerificationResult.status-5to4",
+  "name" : "VerificationResult.status5to4",
+  "title" : "Mapping for VerificationResult.status from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/VerificationResult#VerificationResult.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/VerificationResult#VerificationResult.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/CodeSystem/verificationresult-status",
+    "target" : "http://hl7.org/fhir/4.0/CodeSystem/status",
+    "element" : [{
+      "code" : "validated",
+      "target" : [{
+        "code" : "validated",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "val-fail",
+      "target" : [{
+        "code" : "val-fail",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "attested",
+      "target" : [{
+        "code" : "attested",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "noMap" : true
+    },
+    {
+      "code" : "req-revalid",
+      "target" : [{
+        "code" : "req-revalid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reval-fail",
+      "target" : [{
+        "code" : "reval-fail",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in-process",
+      "target" : [{
+        "code" : "in-process",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

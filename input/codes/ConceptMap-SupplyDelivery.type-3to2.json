@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "SupplyDelivery.type-3to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SupplyDelivery.type-3to2",
+  "name" : "SupplyDelivery.type3to2",
+  "title" : "Mapping for SupplyDelivery.type from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SupplyDelivery#SupplyDelivery.type",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/SupplyDelivery#SupplyDelivery.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/supply-item-type",
+    "target" : "http://hl7.org/fhir/1.0/supply-item-type",
+    "element" : [{
+      "code" : "medication",
+      "target" : [{
+        "code" : "medication",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "device",
+      "target" : [{
+        "code" : "device",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

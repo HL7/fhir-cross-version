@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "StructureDefinition.derivation-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureDefinition.derivation-4to5",
+  "name" : "StructureDefinition.derivation4to5",
+  "title" : "Mapping for StructureDefinition.derivation from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.derivation",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition#StructureDefinition.derivation",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/type-derivation-rule",
+    "target" : "http://hl7.org/fhir/5.0/type-derivation-rule",
+    "element" : [{
+      "code" : "specialization",
+      "target" : [{
+        "code" : "specialization",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "constraint",
+      "target" : [{
+        "code" : "constraint",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

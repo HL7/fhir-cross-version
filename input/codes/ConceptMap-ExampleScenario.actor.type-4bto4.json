@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ExampleScenario.actor.type-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ExampleScenario.actor.type-4bto4",
+  "name" : "ExampleScenario.actor.type4bto4",
+  "title" : "Mapping for ExampleScenario.actor.type from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ExampleScenario#ExampleScenario.actor.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExampleScenario#ExampleScenario.actor.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/examplescenario-actor-type",
+    "target" : "http://hl7.org/fhir/4.0/examplescenario-actor-type",
+    "element" : [{
+      "code" : "person",
+      "target" : [{
+        "code" : "person",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entity",
+      "target" : [{
+        "code" : "entity",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Questionnaire.item.enableWhen.operator-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Questionnaire.item.enableWhen.operator-4to5",
+  "name" : "Questionnaire.item.enableWhen.operator4to5",
+  "title" : "Mapping for Questionnaire.item.enableWhen.operator from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Questionnaire#Questionnaire.item.enableWhen.operator",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Questionnaire#Questionnaire.item.enableWhen.operator",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/questionnaire-enable-operator",
+    "target" : "http://hl7.org/fhir/5.0/questionnaire-enable-operator",
+    "element" : [{
+      "code" : "<=",
+      "target" : [{
+        "code" : "<=",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "exists",
+      "target" : [{
+        "code" : "exists",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "!=",
+      "target" : [{
+        "code" : "!=",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "<",
+      "target" : [{
+        "code" : "<",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "=",
+      "target" : [{
+        "code" : "=",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : ">",
+      "target" : [{
+        "code" : ">",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : ">=",
+      "target" : [{
+        "code" : ">=",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,90 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DeviceComponent.measurementPrinciple-3to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceComponent.measurementPrinciple-3to2",
+  "name" : "DeviceComponent.measurementPrinciple3to2",
+  "title" : "Mapping for DeviceComponent.measurementPrinciple from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceComponent#DeviceComponent.measurementPrinciple",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DeviceComponent#DeviceComponent.measurementPrinciple",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/measurement-principle",
+    "target" : "http://hl7.org/fhir/1.0/measurement-principle",
+    "element" : [{
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "chemical",
+      "target" : [{
+        "code" : "chemical",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "thermal",
+      "target" : [{
+        "code" : "thermal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "electrical",
+      "target" : [{
+        "code" : "electrical",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "impedance",
+      "target" : [{
+        "code" : "impedance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "biological",
+      "target" : [{
+        "code" : "biological",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mechanical",
+      "target" : [{
+        "code" : "mechanical",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "acoustical",
+      "target" : [{
+        "code" : "acoustical",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "nuclear",
+      "target" : [{
+        "code" : "nuclear",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "manual",
+      "target" : [{
+        "code" : "manual",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "optical",
+      "target" : [{
+        "code" : "optical",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

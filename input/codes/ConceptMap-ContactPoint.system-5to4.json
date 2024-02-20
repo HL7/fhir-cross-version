@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ContactPoint.system-5to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ContactPoint.system-5to4",
+  "name" : "ContactPoint.system5to4",
+  "title" : "Mapping for ContactPoint.system from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ContactPoint#ContactPoint.system",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint#ContactPoint.system",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/contact-point-system",
+    "target" : "http://hl7.org/fhir/4.0/contact-point-system",
+    "element" : [{
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pager",
+      "target" : [{
+        "code" : "pager",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "phone",
+      "target" : [{
+        "code" : "phone",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "sms",
+      "target" : [{
+        "code" : "sms",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "fax",
+      "target" : [{
+        "code" : "fax",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "email",
+      "target" : [{
+        "code" : "email",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "url",
+      "target" : [{
+        "code" : "url",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

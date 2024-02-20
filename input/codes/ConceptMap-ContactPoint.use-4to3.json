@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ContactPoint.use-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ContactPoint.use-4to3",
+  "name" : "ContactPoint.use4to3",
+  "title" : "Mapping for ContactPoint.use from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint#ContactPoint.use",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ContactPoint#ContactPoint.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/contact-point-use",
+    "target" : "http://hl7.org/fhir/3.0/contact-point-use",
+    "element" : [{
+      "code" : "temp",
+      "target" : [{
+        "code" : "temp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "work",
+      "target" : [{
+        "code" : "work",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "old",
+      "target" : [{
+        "code" : "old",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mobile",
+      "target" : [{
+        "code" : "mobile",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "home",
+      "target" : [{
+        "code" : "home",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

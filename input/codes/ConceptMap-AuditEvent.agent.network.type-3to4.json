@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "AuditEvent.agent.network.type-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AuditEvent.agent.network.type-3to4",
+  "name" : "AuditEvent.agent.network.type3to4",
+  "title" : "Mapping for AuditEvent.agent.network.type from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.agent.network.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.agent.network.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/network-type",
+    "target" : "http://hl7.org/fhir/4.0/network-type",
+    "element" : [{
+      "code" : "1",
+      "target" : [{
+        "code" : "1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "2",
+      "target" : [{
+        "code" : "2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "3",
+      "target" : [{
+        "code" : "3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "5",
+      "target" : [{
+        "code" : "5",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

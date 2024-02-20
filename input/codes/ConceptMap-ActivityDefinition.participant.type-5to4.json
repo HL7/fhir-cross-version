@@ -1,0 +1,65 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ActivityDefinition.participant.type-5to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ActivityDefinition.participant.type-5to4",
+  "name" : "ActivityDefinition.participant.type5to4",
+  "title" : "Mapping for ActivityDefinition.participant.type from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ActivityDefinition#ActivityDefinition.participant.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ActivityDefinition#ActivityDefinition.participant.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/action-participant-type",
+    "target" : "http://hl7.org/fhir/4.0/action-participant-type",
+    "element" : [{
+      "code" : "careteam",
+      "noMap" : true
+    },
+    {
+      "code" : "practitioner",
+      "target" : [{
+        "code" : "practitioner",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "practitionerrole",
+      "noMap" : true
+    },
+    {
+      "code" : "patient",
+      "target" : [{
+        "code" : "patient",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "organization",
+      "noMap" : true
+    },
+    {
+      "code" : "location",
+      "noMap" : true
+    },
+    {
+      "code" : "device",
+      "target" : [{
+        "code" : "device",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "healthcareservice",
+      "noMap" : true
+    },
+    {
+      "code" : "group",
+      "noMap" : true
+    },
+    {
+      "code" : "relatedperson",
+      "target" : [{
+        "code" : "related-person",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

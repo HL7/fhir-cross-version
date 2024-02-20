@@ -4191,34 +4191,6 @@
       }]
     },
     {
-      "code" : "Quantity.code",
-      "target" : [{
-        "code" : "Money.code",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "Quantity.comparator",
-      "target" : [{
-        "code" : "Money.comparator",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "Quantity.system",
-      "target" : [{
-        "code" : "Money.system",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "Quantity.unit",
-      "target" : [{
-        "code" : "Money.unit",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "Questionnaire.item.answerOption",
       "target" : [{
         "code" : "Questionnaire.item.option",

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "SearchParameter.xpathUsage-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SearchParameter.xpathUsage-3to4",
+  "name" : "SearchParameter.xpathUsage3to4",
+  "title" : "Mapping for SearchParameter.xpathUsage from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.xpathUsage",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.xpathUsage",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/search-xpath-usage",
+    "target" : "http://hl7.org/fhir/4.0/search-xpath-usage",
+    "element" : [{
+      "code" : "normal",
+      "target" : [{
+        "code" : "normal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "phonetic",
+      "target" : [{
+        "code" : "phonetic",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "distance",
+      "target" : [{
+        "code" : "distance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "nearby",
+      "target" : [{
+        "code" : "nearby",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

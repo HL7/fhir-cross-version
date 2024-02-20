@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Measure.type-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Measure.type-4to3",
+  "name" : "Measure.type4to3",
+  "title" : "Mapping for Measure.type from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Measure#Measure.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/measure-type",
+    "target" : "http://hl7.org/fhir/3.0/measure-type",
+    "element" : [{
+      "code" : "process",
+      "target" : [{
+        "code" : "process",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "patient-reported-outcome",
+      "target" : [{
+        "code" : "patient-reported-outcome",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "composite",
+      "target" : [{
+        "code" : "composite",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "outcome",
+      "target" : [{
+        "code" : "outcome",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "structure",
+      "target" : [{
+        "code" : "structure",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

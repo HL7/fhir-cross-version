@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Subscription.status-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Subscription.status-3to4",
+  "name" : "Subscription.status3to4",
+  "title" : "Mapping for Subscription.status from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Subscription#Subscription.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Subscription#Subscription.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/subscription-status",
+    "target" : "http://hl7.org/fhir/4.0/subscription-status",
+    "element" : [{
+      "code" : "requested",
+      "target" : [{
+        "code" : "requested",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "off",
+      "target" : [{
+        "code" : "off",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

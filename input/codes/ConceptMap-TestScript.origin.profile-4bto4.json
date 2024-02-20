@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "TestScript.origin.profile-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestScript.origin.profile-4bto4",
+  "name" : "TestScript.origin.profile4bto4",
+  "title" : "Mapping for TestScript.origin.profile from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.origin.profile",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.origin.profile",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/testscript-profile-origin-types",
+    "target" : "http://terminology.hl7.org/CodeSystem/testscript-profile-origin-types",
+    "element" : [{
+      "code" : "FHIR-Client",
+      "target" : [{
+        "code" : "FHIR-Client",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FHIR-SDC-FormFiller",
+      "target" : [{
+        "code" : "FHIR-SDC-FormFiller",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

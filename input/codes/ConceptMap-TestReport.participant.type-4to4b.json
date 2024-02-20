@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "TestReport.participant.type-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestReport.participant.type-4to4b",
+  "name" : "TestReport.participant.type4to4b",
+  "title" : "Mapping for TestReport.participant.type from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.participant.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestReport#TestReport.participant.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/report-participant-type",
+    "target" : "http://hl7.org/fhir/4.3/report-participant-type",
+    "element" : [{
+      "code" : "server",
+      "target" : [{
+        "code" : "server",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "client",
+      "target" : [{
+        "code" : "client",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "test-engine",
+      "target" : [{
+        "code" : "test-engine",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

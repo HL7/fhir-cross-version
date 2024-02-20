@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DeviceMetric.calibration.state-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceMetric.calibration.state-3to4",
+  "name" : "DeviceMetric.calibration.state3to4",
+  "title" : "Mapping for DeviceMetric.calibration.state from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.state",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.state",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/metric-calibration-state",
+    "target" : "http://hl7.org/fhir/4.0/metric-calibration-state",
+    "element" : [{
+      "code" : "unspecified",
+      "target" : [{
+        "code" : "unspecified",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-calibrated",
+      "target" : [{
+        "code" : "not-calibrated",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "calibration-required",
+      "target" : [{
+        "code" : "calibration-required",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "calibrated",
+      "target" : [{
+        "code" : "calibrated",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -48,7 +48,6 @@
     },
     {
       "code" : "N",
-      "noMap" : true,
       "target" : [{
         "code" : "family",
         "relationship" : "source-is-broader-than-target"

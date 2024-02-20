@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Appointment.participant.status-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Appointment.participant.status-5to4b",
+  "name" : "Appointment.participant.status5to4b",
+  "title" : "Mapping for Appointment.participant.status from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Appointment#Appointment.participant.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Appointment#Appointment.participant.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/participationstatus",
+    "target" : "http://hl7.org/fhir/4.3/participationstatus",
+    "element" : [{
+      "code" : "declined",
+      "target" : [{
+        "code" : "declined",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "needs-action",
+      "target" : [{
+        "code" : "needs-action",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "accepted",
+      "target" : [{
+        "code" : "accepted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tentative",
+      "target" : [{
+        "code" : "tentative",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

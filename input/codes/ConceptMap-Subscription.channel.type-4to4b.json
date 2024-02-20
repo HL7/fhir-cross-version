@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Subscription.channel.type-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Subscription.channel.type-4to4b",
+  "name" : "Subscription.channel.type4to4b",
+  "title" : "Mapping for Subscription.channel.type from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Subscription#Subscription.channel.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Subscription#Subscription.channel.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/subscription-channel-type",
+    "target" : "http://hl7.org/fhir/4.3/subscription-channel-type",
+    "element" : [{
+      "code" : "rest-hook",
+      "target" : [{
+        "code" : "rest-hook",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "websocket",
+      "target" : [{
+        "code" : "websocket",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "sms",
+      "target" : [{
+        "code" : "sms",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "message",
+      "target" : [{
+        "code" : "message",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "email",
+      "target" : [{
+        "code" : "email",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

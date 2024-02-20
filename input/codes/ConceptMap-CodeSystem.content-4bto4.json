@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CodeSystem.content-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CodeSystem.content-4bto4",
+  "name" : "CodeSystem.content4bto4",
+  "title" : "Mapping for CodeSystem.content from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CodeSystem#CodeSystem.content",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.content",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/codesystem-content-mode",
+    "target" : "http://hl7.org/fhir/4.0/codesystem-content-mode",
+    "element" : [{
+      "code" : "fragment",
+      "target" : [{
+        "code" : "fragment",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "supplement",
+      "target" : [{
+        "code" : "supplement",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-present",
+      "target" : [{
+        "code" : "not-present",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "complete",
+      "target" : [{
+        "code" : "complete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "example",
+      "target" : [{
+        "code" : "example",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

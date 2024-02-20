@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "RelatedPerson.gender-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RelatedPerson.gender-3to4",
+  "name" : "RelatedPerson.gender3to4",
+  "title" : "Mapping for RelatedPerson.gender from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/RelatedPerson#RelatedPerson.gender",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RelatedPerson#RelatedPerson.gender",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/administrative-gender",
+    "target" : "http://hl7.org/fhir/4.0/administrative-gender",
+    "element" : [{
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "female",
+      "target" : [{
+        "code" : "female",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "male",
+      "target" : [{
+        "code" : "male",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

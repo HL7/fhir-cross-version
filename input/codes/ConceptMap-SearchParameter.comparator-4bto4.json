@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "SearchParameter.comparator-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SearchParameter.comparator-4bto4",
+  "name" : "SearchParameter.comparator4bto4",
+  "title" : "Mapping for SearchParameter.comparator from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.comparator",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.comparator",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/search-comparator",
+    "target" : "http://hl7.org/fhir/4.0/search-comparator",
+    "element" : [{
+      "code" : "ne",
+      "target" : [{
+        "code" : "ne",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "lt",
+      "target" : [{
+        "code" : "lt",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "le",
+      "target" : [{
+        "code" : "le",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "eq",
+      "target" : [{
+        "code" : "eq",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "gt",
+      "target" : [{
+        "code" : "gt",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "eb",
+      "target" : [{
+        "code" : "eb",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ge",
+      "target" : [{
+        "code" : "ge",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "sa",
+      "target" : [{
+        "code" : "sa",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ap",
+      "target" : [{
+        "code" : "ap",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

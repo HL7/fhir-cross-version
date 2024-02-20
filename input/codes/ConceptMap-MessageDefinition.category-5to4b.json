@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MessageDefinition.category-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MessageDefinition.category-5to4b",
+  "name" : "MessageDefinition.category5to4b",
+  "title" : "Mapping for MessageDefinition.category from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MessageDefinition#MessageDefinition.category",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MessageDefinition#MessageDefinition.category",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/message-significance-category",
+    "target" : "http://hl7.org/fhir/4.3/message-significance-category",
+    "element" : [{
+      "code" : "notification",
+      "target" : [{
+        "code" : "notification",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "consequence",
+      "target" : [{
+        "code" : "consequence",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "currency",
+      "target" : [{
+        "code" : "currency",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

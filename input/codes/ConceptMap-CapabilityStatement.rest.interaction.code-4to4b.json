@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CapabilityStatement.rest.interaction.code-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.rest.interaction.code-4to4b",
+  "name" : "CapabilityStatement.rest.interaction.code4to4b",
+  "title" : "Mapping for CapabilityStatement.rest.interaction.code from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.interaction.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.interaction.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/restful-interaction",
+    "target" : "http://hl7.org/fhir/4.3/restful-interaction",
+    "element" : [{
+      "code" : "search-system",
+      "target" : [{
+        "code" : "search-system",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "batch",
+      "target" : [{
+        "code" : "batch",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history-system",
+      "target" : [{
+        "code" : "history-system",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transaction",
+      "target" : [{
+        "code" : "transaction",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

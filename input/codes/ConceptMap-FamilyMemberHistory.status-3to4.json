@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "FamilyMemberHistory.status-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/FamilyMemberHistory.status-3to4",
+  "name" : "FamilyMemberHistory.status3to4",
+  "title" : "Mapping for FamilyMemberHistory.status from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/FamilyMemberHistory#FamilyMemberHistory.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/FamilyMemberHistory#FamilyMemberHistory.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/history-status",
+    "target" : "http://hl7.org/fhir/4.0/history-status",
+    "element" : [{
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "health-unknown",
+      "target" : [{
+        "code" : "health-unknown",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "partial",
+      "target" : [{
+        "code" : "partial",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

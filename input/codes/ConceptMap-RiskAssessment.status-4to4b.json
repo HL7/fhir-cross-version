@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "RiskAssessment.status-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RiskAssessment.status-4to4b",
+  "name" : "RiskAssessment.status4to4b",
+  "title" : "Mapping for RiskAssessment.status from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RiskAssessment#RiskAssessment.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RiskAssessment#RiskAssessment.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/observation-status",
+    "target" : "http://hl7.org/fhir/4.3/observation-status",
+    "element" : [{
+      "code" : "amended",
+      "target" : [{
+        "code" : "amended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "final",
+      "target" : [{
+        "code" : "final",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "registered",
+      "target" : [{
+        "code" : "registered",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preliminary",
+      "target" : [{
+        "code" : "preliminary",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "corrected",
+      "target" : [{
+        "code" : "corrected",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

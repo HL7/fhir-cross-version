@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ProcessResponse.notes.type-ProcessResponse.processNote.type-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ProcessResponse.notes.type-ProcessResponse.processNote.type-2to3",
+  "name" : "ProcessResponse.notes.typeProcessResponse.processNote.type2to3",
+  "title" : "Mapping for ProcessResponse.notes.type/ProcessResponse.processNote.type from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ProcessResponse#ProcessResponse.notes.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcessResponse#ProcessResponse.processNote.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/note-type",
+    "target" : "http://hl7.org/fhir/3.0/note-type",
+    "element" : [{
+      "code" : "print",
+      "target" : [{
+        "code" : "print",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "display",
+      "target" : [{
+        "code" : "display",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "printoper",
+      "target" : [{
+        "code" : "printoper",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

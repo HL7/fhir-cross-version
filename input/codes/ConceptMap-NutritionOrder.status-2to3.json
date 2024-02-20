@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "NutritionOrder.status-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/NutritionOrder.status-2to3",
+  "name" : "NutritionOrder.status2to3",
+  "title" : "Mapping for NutritionOrder.status from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/NutritionOrder#NutritionOrder.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/NutritionOrder#NutritionOrder.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/nutrition-order-status",
+    "target" : "http://hl7.org/fhir/3.0/nutrition-request-status",
+    "element" : [{
+      "code" : "requested",
+      "target" : [{
+        "code" : "requested",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "proposed",
+      "target" : [{
+        "code" : "proposed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "planned",
+      "target" : [{
+        "code" : "planned",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on-hold",
+      "target" : [{
+        "code" : "on-hold",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Condition.clinicalStatus-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Condition.clinicalStatus-4to4b",
+  "name" : "Condition.clinicalStatus4to4b",
+  "title" : "Mapping for Condition.clinicalStatus from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Condition#Condition.clinicalStatus",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Condition#Condition.clinicalStatus",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+    "target" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+    "element" : [{
+      "code" : "recurrence",
+      "target" : [{
+        "code" : "recurrence",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "inactive",
+      "target" : [{
+        "code" : "inactive",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "relapse",
+      "target" : [{
+        "code" : "relapse",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "remission",
+      "target" : [{
+        "code" : "remission",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "resolved",
+      "target" : [{
+        "code" : "resolved",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

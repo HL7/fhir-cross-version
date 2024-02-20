@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Expression.language-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Expression.language-4to4b",
+  "name" : "Expression.language4to4b",
+  "title" : "Mapping for Expression.language from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Expression#Expression.language",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Expression#Expression.language",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/expression-language",
+    "target" : "http://hl7.org/fhir/4.3/expression-language",
+    "element" : [{
+      "code" : "text/cql",
+      "target" : [{
+        "code" : "text/cql",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "application/x-fhir-query",
+      "target" : [{
+        "code" : "application/x-fhir-query",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "text/fhirpath",
+      "target" : [{
+        "code" : "text/fhirpath",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Citation.citedArtifact.part.type-4bto5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Citation.citedArtifact.part.type-4bto5",
+  "name" : "Citation.citedArtifact.part.type4bto5",
+  "title" : "Mapping for Citation.citedArtifact.part.type from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.part.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.part.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/cited-artifact-part-type",
+    "target" : "http://hl7.org/fhir/5.0/cited-artifact-part-type",
+    "element" : [{
+      "code" : "tables",
+      "target" : [{
+        "code" : "tables",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "supplement-subpart",
+      "target" : [{
+        "code" : "supplement-subpart",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pages",
+      "target" : [{
+        "code" : "pages",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "figures",
+      "target" : [{
+        "code" : "figures",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "supplement",
+      "target" : [{
+        "code" : "supplement",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "article-set",
+      "target" : [{
+        "code" : "article-set",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "paragraphs",
+      "target" : [{
+        "code" : "paragraphs",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "lines",
+      "target" : [{
+        "code" : "lines",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "sections",
+      "target" : [{
+        "code" : "sections",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

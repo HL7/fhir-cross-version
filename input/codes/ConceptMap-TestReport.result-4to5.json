@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "TestReport.result-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestReport.result-4to5",
+  "name" : "TestReport.result4to5",
+  "title" : "Mapping for TestReport.result from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.result",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestReport#TestReport.result",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/report-result-codes",
+    "target" : "http://hl7.org/fhir/5.0/report-result-codes",
+    "element" : [{
+      "code" : "fail",
+      "target" : [{
+        "code" : "fail",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pass",
+      "target" : [{
+        "code" : "pass",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pending",
+      "target" : [{
+        "code" : "pending",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

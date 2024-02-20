@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "AuditEvent.participant.media-AuditEvent.agent.media-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AuditEvent.participant.media-AuditEvent.agent.media-2to3",
+  "name" : "AuditEvent.participant.mediaAuditEvent.agent.media2to3",
+  "title" : "Mapping for AuditEvent.participant.media/AuditEvent.agent.media from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.participant.media",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.agent.media",
+  "group" : [{
+    "source" : "http://nema.org/dicom/dicm",
+    "target" : "http://dicom.nema.org/resources/ontology/DCM",
+    "element" : [{
+      "code" : "110031",
+      "target" : [{
+        "code" : "110031",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110032",
+      "target" : [{
+        "code" : "110032",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110030",
+      "target" : [{
+        "code" : "110030",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110010",
+      "target" : [{
+        "code" : "110010",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110037",
+      "target" : [{
+        "code" : "110037",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110038",
+      "target" : [{
+        "code" : "110038",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110035",
+      "target" : [{
+        "code" : "110035",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110036",
+      "target" : [{
+        "code" : "110036",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110033",
+      "target" : [{
+        "code" : "110033",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110034",
+      "target" : [{
+        "code" : "110034",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

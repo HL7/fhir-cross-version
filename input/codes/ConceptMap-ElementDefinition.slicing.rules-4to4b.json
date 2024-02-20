@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ElementDefinition.slicing.rules-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ElementDefinition.slicing.rules-4to4b",
+  "name" : "ElementDefinition.slicing.rules4to4b",
+  "title" : "Mapping for ElementDefinition.slicing.rules from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.slicing.rules",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ElementDefinition#ElementDefinition.slicing.rules",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/resource-slicing-rules",
+    "target" : "http://hl7.org/fhir/4.3/resource-slicing-rules",
+    "element" : [{
+      "code" : "closed",
+      "target" : [{
+        "code" : "closed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "openAtEnd",
+      "target" : [{
+        "code" : "openAtEnd",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "open",
+      "target" : [{
+        "code" : "open",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,111 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Citation.summary.style-4bto5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Citation.summary.style-4bto5",
+  "name" : "Citation.summary.style4bto5",
+  "title" : "Mapping for Citation.summary.style from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.summary.style",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.summary.style",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/citation-summary-style",
+    "target" : "http://hl7.org/fhir/5.0/citation-summary-style",
+    "element" : [{
+      "code" : "chicago-a-17",
+      "target" : [{
+        "code" : "chicago-a-17",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "chicago-b-17",
+      "target" : [{
+        "code" : "chicago-b-17",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mla8",
+      "target" : [{
+        "code" : "mla8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "nature",
+      "target" : [{
+        "code" : "nature",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "apa7",
+      "target" : [{
+        "code" : "apa7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "apa6",
+      "target" : [{
+        "code" : "apa6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "comppub",
+      "target" : [{
+        "code" : "comppub",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "asa6",
+      "target" : [{
+        "code" : "asa6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ieee",
+      "target" : [{
+        "code" : "ieee",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "vancouver",
+      "target" : [{
+        "code" : "vancouver",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "acs",
+      "target" : [{
+        "code" : "acs",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cochrane",
+      "target" : [{
+        "code" : "cochrane",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "elsevier-harvard",
+      "target" : [{
+        "code" : "elsevier-harvard",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ama11",
+      "target" : [{
+        "code" : "ama11",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

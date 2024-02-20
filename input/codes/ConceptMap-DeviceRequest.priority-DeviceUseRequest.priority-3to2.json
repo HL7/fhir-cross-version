@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DeviceRequest.priority-DeviceUseRequest.priority-3to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceRequest.priority-DeviceUseRequest.priority-3to2",
+  "name" : "DeviceRequest.priorityDeviceUseRequest.priority3to2",
+  "title" : "Mapping for DeviceRequest.priority/DeviceUseRequest.priority from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceRequest#DeviceRequest.priority",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DeviceUseRequest#DeviceUseRequest.priority",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/request-priority",
+    "target" : "http://hl7.org/fhir/1.0/device-use-request-priority",
+    "element" : [{
+      "code" : "stat",
+      "target" : [{
+        "code" : "stat",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "routine",
+      "target" : [{
+        "code" : "routine",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "urgent",
+      "target" : [{
+        "code" : "urgent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "asap",
+      "target" : [{
+        "code" : "asap",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

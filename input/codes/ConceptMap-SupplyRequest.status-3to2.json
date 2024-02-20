@@ -33,7 +33,6 @@
     },
     {
       "code" : "draft",
-      "noMap" : true,
       "target" : [{
         "code" : "requested",
         "relationship" : "source-is-broader-than-target"

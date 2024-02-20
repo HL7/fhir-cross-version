@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ResearchElementDefinition.characteristic.studyEffectiveGroupMeasure-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ResearchElementDefinition.characteristic.studyEffectiveGroupMeasure-4bto4",
+  "name" : "ResearchElementDefinition.characteristic.studyEffectiveGroupMeasure4bto4",
+  "title" : "Mapping for ResearchElementDefinition.characteristic.studyEffectiveGroupMeasure from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.characteristic.studyEffectiveGroupMeasure",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.characteristic.studyEffectiveGroupMeasure",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/group-measure",
+    "target" : "http://hl7.org/fhir/4.0/group-measure",
+    "element" : [{
+      "code" : "mean-of-median",
+      "target" : [{
+        "code" : "mean-of-median",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "median",
+      "target" : [{
+        "code" : "median",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mean",
+      "target" : [{
+        "code" : "mean",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "median-of-median",
+      "target" : [{
+        "code" : "median-of-median",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "median-of-mean",
+      "target" : [{
+        "code" : "median-of-mean",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mean-of-mean",
+      "target" : [{
+        "code" : "mean-of-mean",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

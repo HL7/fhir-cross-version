@@ -15,7 +15,8 @@
       "element": [
     { "code": "Dosage.asNeeded", "target": [{ "code": "Dosage.asNeeded[x]", "relationship": "equivalent" }] },
     { "code": "ProductShelfLife.period[x]", "target": [{ "code": "ProductShelfLife.period", "relationship": "equivalent" }] },
-    { "code": "Account.relatedAccount.account", "target": [{ "code": "Account.relatedAccount.partOf", "relationship": "equivalent" }] },
+    { "code": "Account.relatedAccount.account", "target": [{ "code" : "Account.partOf", "relationship" : "source-is-broader-than-target" }] },
+    { "code": "Account.relatedAccount.account", "target": [{ "code" : "Account.relatedAccount.partOf", "relationship" : "equivalent" }] },
     { "code": "AdverseEvent.code", "target": [{ "code": "AdverseEvent.event", "relationship": "equivalent" }] },
     { "code": "AdverseEvent.resultingEffect", "target": [{ "code": "AdverseEvent.resultingCondition", "relationship": "equivalent" }] },
     { "code": "AdverseEvent.suspectEntity.instance[x]", "target": [{ "code": "AdverseEvent.suspectEntity.instance", "relationship": "equivalent" }] },

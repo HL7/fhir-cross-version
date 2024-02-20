@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ImplementationGuide.definition.parameter.code-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ImplementationGuide.definition.parameter.code-4bto4",
+  "name" : "ImplementationGuide.definition.parameter.code4bto4",
+  "title" : "Mapping for ImplementationGuide.definition.parameter.code from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ImplementationGuide#ImplementationGuide.definition.parameter.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ImplementationGuide#ImplementationGuide.definition.parameter.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/guide-parameter-code",
+    "target" : "http://hl7.org/fhir/4.0/guide-parameter-code",
+    "element" : [{
+      "code" : "generate-json",
+      "target" : [{
+        "code" : "generate-json",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "expansion-parameter",
+      "target" : [{
+        "code" : "expansion-parameter",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "generate-xml",
+      "target" : [{
+        "code" : "generate-xml",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "generate-turtle",
+      "target" : [{
+        "code" : "generate-turtle",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "apply",
+      "target" : [{
+        "code" : "apply",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rule-broken-links",
+      "target" : [{
+        "code" : "rule-broken-links",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "path-resource",
+      "target" : [{
+        "code" : "path-resource",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "html-template",
+      "target" : [{
+        "code" : "html-template",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "path-pages",
+      "target" : [{
+        "code" : "path-pages",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "path-tx-cache",
+      "target" : [{
+        "code" : "path-tx-cache",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

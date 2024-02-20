@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ProcedureRequest.priority-DiagnosticOrder.priority-3to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ProcedureRequest.priority-DiagnosticOrder.priority-3to2",
+  "name" : "ProcedureRequest.priorityDiagnosticOrder.priority3to2",
+  "title" : "Mapping for ProcedureRequest.priority/DiagnosticOrder.priority from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.priority",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DiagnosticOrder#DiagnosticOrder.priority",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/request-priority",
+    "target" : "http://hl7.org/fhir/1.0/diagnostic-order-priority",
+    "element" : [{
+      "code" : "stat",
+      "target" : [{
+        "code" : "stat",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "routine",
+      "target" : [{
+        "code" : "routine",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "urgent",
+      "target" : [{
+        "code" : "urgent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "asap",
+      "target" : [{
+        "code" : "asap",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

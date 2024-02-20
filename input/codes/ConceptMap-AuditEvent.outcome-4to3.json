@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "AuditEvent.outcome-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AuditEvent.outcome-4to3",
+  "name" : "AuditEvent.outcome4to3",
+  "title" : "Mapping for AuditEvent.outcome from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.outcome",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.outcome",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/audit-event-outcome",
+    "target" : "http://hl7.org/fhir/3.0/audit-event-outcome",
+    "element" : [{
+      "code" : "0",
+      "target" : [{
+        "code" : "0",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "12",
+      "target" : [{
+        "code" : "12",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "8",
+      "target" : [{
+        "code" : "8",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

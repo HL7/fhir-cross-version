@@ -1,0 +1,195 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Consent.policyRule-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Consent.policyRule-4to4b",
+  "name" : "Consent.policyRule4to4b",
+  "title" : "Mapping for Consent.policyRule from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.policyRule",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.policyRule",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+    "target" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+    "element" : [{
+      "code" : "hipaa-restrictions",
+      "target" : [{
+        "code" : "hipaa-restrictions",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "va-10-5345",
+      "target" : [{
+        "code" : "va-10-5345",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "va-10-5345a",
+      "target" : [{
+        "code" : "va-10-5345a",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "at-elga",
+      "target" : [{
+        "code" : "at-elga",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hipaa-npp",
+      "target" : [{
+        "code" : "hipaa-npp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "nl-lsp",
+      "target" : [{
+        "code" : "nl-lsp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hipaa-self-pay",
+      "target" : [{
+        "code" : "hipaa-self-pay",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hipaa-research",
+      "target" : [{
+        "code" : "hipaa-research",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hipaa-auth",
+      "target" : [{
+        "code" : "hipaa-auth",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "nih-527",
+      "target" : [{
+        "code" : "nih-527",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "nci",
+      "target" : [{
+        "code" : "nci",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "va-10-10116",
+      "target" : [{
+        "code" : "va-10-10116",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "illinois-minor-procedure",
+      "target" : [{
+        "code" : "illinois-minor-procedure",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "va-21-4142",
+      "target" : [{
+        "code" : "va-21-4142",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ga4gh",
+      "target" : [{
+        "code" : "ga4gh",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mdhhs-5515",
+      "target" : [{
+        "code" : "mdhhs-5515",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cric",
+      "target" : [{
+        "code" : "cric",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ssa-827",
+      "target" : [{
+        "code" : "ssa-827",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dch-3927",
+      "target" : [{
+        "code" : "dch-3927",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "va-10-0485",
+      "target" : [{
+        "code" : "va-10-0485",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "va-10-0484",
+      "target" : [{
+        "code" : "va-10-0484",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "nih-grdr",
+      "target" : [{
+        "code" : "nih-grdr",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "nyssipp",
+      "target" : [{
+        "code" : "nyssipp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "va-10-5345a-mhv",
+      "target" : [{
+        "code" : "va-10-5345a-mhv",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "squaxin",
+      "target" : [{
+        "code" : "squaxin",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "nih-hipaa",
+      "target" : [{
+        "code" : "nih-hipaa",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

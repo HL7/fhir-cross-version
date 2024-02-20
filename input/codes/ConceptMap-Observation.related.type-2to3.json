@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Observation.related.type-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Observation.related.type-2to3",
+  "name" : "Observation.related.type2to3",
+  "title" : "Mapping for Observation.related.type from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Observation#Observation.related.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.related.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/observation-relationshiptypes",
+    "target" : "http://hl7.org/fhir/3.0/observation-relationshiptypes",
+    "element" : [{
+      "code" : "replaces",
+      "target" : [{
+        "code" : "replaces",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "sequel-to",
+      "target" : [{
+        "code" : "sequel-to",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "interfered-by",
+      "target" : [{
+        "code" : "interfered-by",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "derived-from",
+      "target" : [{
+        "code" : "derived-from",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "has-member",
+      "target" : [{
+        "code" : "has-member",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "qualified-by",
+      "target" : [{
+        "code" : "qualified-by",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

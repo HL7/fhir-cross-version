@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Patient.gender-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Patient.gender-4to5",
+  "name" : "Patient.gender4to5",
+  "title" : "Mapping for Patient.gender from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Patient#Patient.gender",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Patient#Patient.gender",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/administrative-gender",
+    "target" : "http://hl7.org/fhir/5.0/administrative-gender",
+    "element" : [{
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "female",
+      "target" : [{
+        "code" : "female",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "male",
+      "target" : [{
+        "code" : "male",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

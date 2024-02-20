@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Composition.relatesTo.code-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Composition.relatesTo.code-4bto4",
+  "name" : "Composition.relatesTo.code4bto4",
+  "title" : "Mapping for Composition.relatesTo.code from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Composition#Composition.relatesTo.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.relatesTo.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/document-relationship-type",
+    "target" : "http://hl7.org/fhir/4.0/document-relationship-type",
+    "element" : [{
+      "code" : "signs",
+      "target" : [{
+        "code" : "signs",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "replaces",
+      "target" : [{
+        "code" : "replaces",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transforms",
+      "target" : [{
+        "code" : "transforms",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "appends",
+      "target" : [{
+        "code" : "appends",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "PlanDefinition.action.type-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PlanDefinition.action.type-4to3",
+  "name" : "PlanDefinition.action.type4to3",
+  "title" : "Mapping for PlanDefinition.action.type from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.action.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/action-type",
+    "target" : "http://hl7.org/fhir/3.0/action-type",
+    "element" : [{
+      "code" : "fire-event",
+      "target" : [{
+        "code" : "fire-event",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "create",
+      "target" : [{
+        "code" : "create",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "update",
+      "target" : [{
+        "code" : "update",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "remove",
+      "target" : [{
+        "code" : "remove",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

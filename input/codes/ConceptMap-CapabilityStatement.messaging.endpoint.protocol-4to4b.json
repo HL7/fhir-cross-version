@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CapabilityStatement.messaging.endpoint.protocol-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.messaging.endpoint.protocol-4to4b",
+  "name" : "CapabilityStatement.messaging.endpoint.protocol4to4b",
+  "title" : "Mapping for CapabilityStatement.messaging.endpoint.protocol from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.endpoint.protocol",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.endpoint.protocol",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/message-transport",
+    "target" : "http://terminology.hl7.org/CodeSystem/message-transport",
+    "element" : [{
+      "code" : "mllp",
+      "target" : [{
+        "code" : "mllp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ftp",
+      "target" : [{
+        "code" : "ftp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "http",
+      "target" : [{
+        "code" : "http",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

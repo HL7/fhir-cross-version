@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MessageHeader.response.code-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MessageHeader.response.code-4to3",
+  "name" : "MessageHeader.response.code4to3",
+  "title" : "Mapping for MessageHeader.response.code from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MessageHeader#MessageHeader.response.code",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MessageHeader#MessageHeader.response.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/response-code",
+    "target" : "http://hl7.org/fhir/3.0/response-code",
+    "element" : [{
+      "code" : "fatal-error",
+      "target" : [{
+        "code" : "fatal-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ok",
+      "target" : [{
+        "code" : "ok",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transient-error",
+      "target" : [{
+        "code" : "transient-error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

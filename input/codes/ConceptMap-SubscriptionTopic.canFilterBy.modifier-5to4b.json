@@ -1,0 +1,88 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "SubscriptionTopic.canFilterBy.modifier-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SubscriptionTopic.canFilterBy.modifier-5to4b",
+  "name" : "SubscriptionTopic.canFilterBy.modifier5to4b",
+  "title" : "Mapping for SubscriptionTopic.canFilterBy.modifier from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionTopic#SubscriptionTopic.canFilterBy.modifier",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic#SubscriptionTopic.canFilterBy.modifier",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/search-modifier-code",
+    "target" : "http://terminology.hl7.org/CodeSystem/subscription-search-modifier",
+    "element" : [{
+      "code" : "identifier",
+      "noMap" : true
+    },
+    {
+      "code" : "of-type",
+      "target" : [{
+        "code" : "of-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "below",
+      "target" : [{
+        "code" : "below",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "type",
+      "noMap" : true
+    },
+    {
+      "code" : "contains",
+      "noMap" : true
+    },
+    {
+      "code" : "not",
+      "noMap" : true
+    },
+    {
+      "code" : "missing",
+      "noMap" : true
+    },
+    {
+      "code" : "exact",
+      "noMap" : true
+    },
+    {
+      "code" : "above",
+      "target" : [{
+        "code" : "above",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-in",
+      "target" : [{
+        "code" : "not-in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "text",
+      "noMap" : true
+    },
+    {
+      "code" : "text-advanced",
+      "noMap" : true
+    },
+    {
+      "code" : "code-text",
+      "noMap" : true
+    },
+    {
+      "code" : "iterate",
+      "noMap" : true
+    }]
+  }]
+}

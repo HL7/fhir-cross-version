@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "VisionPrescription.lensSpecification.prism.base-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/VisionPrescription.lensSpecification.prism.base-4bto4",
+  "name" : "VisionPrescription.lensSpecification.prism.base4bto4",
+  "title" : "Mapping for VisionPrescription.lensSpecification.prism.base from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.prism.base",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.prism.base",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/vision-base-codes",
+    "target" : "http://hl7.org/fhir/4.0/vision-base-codes",
+    "element" : [{
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "up",
+      "target" : [{
+        "code" : "up",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "down",
+      "target" : [{
+        "code" : "down",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "out",
+      "target" : [{
+        "code" : "out",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

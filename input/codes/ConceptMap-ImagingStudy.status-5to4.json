@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ImagingStudy.status-5to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ImagingStudy.status-5to4",
+  "name" : "ImagingStudy.status5to4",
+  "title" : "Mapping for ImagingStudy.status from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ImagingStudy#ImagingStudy.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ImagingStudy#ImagingStudy.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/imagingstudy-status",
+    "target" : "http://hl7.org/fhir/4.0/imagingstudy-status",
+    "element" : [{
+      "code" : "available",
+      "target" : [{
+        "code" : "available",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "registered",
+      "target" : [{
+        "code" : "registered",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

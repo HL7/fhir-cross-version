@@ -11,7 +11,6 @@
     "target" : "http://hl7.org/fhir/1.0/device-use-request-status",
     "element" : [{
       "code" : "active",
-      "noMap" : true,
       "target" : [{
         "code" : "accepted",
         "relationship" : "equivalent"
@@ -27,7 +26,6 @@
     },
     {
       "code" : "cancelled",
-      "noMap" : true,
       "target" : [{
         "code" : "aborted",
         "relationship" : "equivalent"

@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "UsageContext.code-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/UsageContext.code-4bto4",
+  "name" : "UsageContext.code4bto4",
+  "title" : "Mapping for UsageContext.code from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/UsageContext#UsageContext.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/UsageContext#UsageContext.code",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+    "element" : [{
+      "code" : "venue",
+      "target" : [{
+        "code" : "venue",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "task",
+      "target" : [{
+        "code" : "task",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "gender",
+      "target" : [{
+        "code" : "gender",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "workflow",
+      "target" : [{
+        "code" : "workflow",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "species",
+      "target" : [{
+        "code" : "species",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "focus",
+      "target" : [{
+        "code" : "focus",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "program",
+      "target" : [{
+        "code" : "program",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "user",
+      "target" : [{
+        "code" : "user",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "age",
+      "target" : [{
+        "code" : "age",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

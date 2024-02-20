@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Location.mode-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Location.mode-2to3",
+  "name" : "Location.mode2to3",
+  "title" : "Mapping for Location.mode from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Location#Location.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Location#Location.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/location-mode",
+    "target" : "http://hl7.org/fhir/3.0/location-mode",
+    "element" : [{
+      "code" : "instance",
+      "target" : [{
+        "code" : "instance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "kind",
+      "target" : [{
+        "code" : "kind",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

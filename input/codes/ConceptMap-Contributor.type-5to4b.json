@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Contributor.type-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Contributor.type-5to4b",
+  "name" : "Contributor.type5to4b",
+  "title" : "Mapping for Contributor.type from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Contributor#Contributor.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Contributor#Contributor.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/contributor-type",
+    "target" : "http://hl7.org/fhir/4.3/contributor-type",
+    "element" : [{
+      "code" : "editor",
+      "target" : [{
+        "code" : "editor",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "author",
+      "target" : [{
+        "code" : "author",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "endorser",
+      "target" : [{
+        "code" : "endorser",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reviewer",
+      "target" : [{
+        "code" : "reviewer",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

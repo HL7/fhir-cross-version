@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "AllergyIntolerance.type-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AllergyIntolerance.type-4to4b",
+  "name" : "AllergyIntolerance.type4to4b",
+  "title" : "Mapping for AllergyIntolerance.type from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance#AllergyIntolerance.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/allergy-intolerance-type",
+    "target" : "http://hl7.org/fhir/4.3/allergy-intolerance-type",
+    "element" : [{
+      "code" : "intolerance",
+      "target" : [{
+        "code" : "intolerance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "allergy",
+      "target" : [{
+        "code" : "allergy",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

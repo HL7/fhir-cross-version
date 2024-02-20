@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "AuditEvent.action-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AuditEvent.action-5to4b",
+  "name" : "AuditEvent.action5to4b",
+  "title" : "Mapping for AuditEvent.action from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/AuditEvent#AuditEvent.action",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.action",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/audit-event-action",
+    "target" : "http://hl7.org/fhir/4.3/audit-event-action",
+    "element" : [{
+      "code" : "R",
+      "target" : [{
+        "code" : "R",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C",
+      "target" : [{
+        "code" : "C",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "D",
+      "target" : [{
+        "code" : "D",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "U",
+      "target" : [{
+        "code" : "U",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "E",
+      "target" : [{
+        "code" : "E",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,1847 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "AuditEvent.event.purposeOfEvent-AuditEvent.purposeOfEvent-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AuditEvent.event.purposeOfEvent-AuditEvent.purposeOfEvent-2to3",
+  "name" : "AuditEvent.event.purposeOfEventAuditEvent.purposeOfEvent2to3",
+  "title" : "Mapping for AuditEvent.event.purposeOfEvent/AuditEvent.purposeOfEvent from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.event.purposeOfEvent",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.purposeOfEvent",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/v3/ActReason",
+    "target" : "http://hl7.org/fhir/3.0/v3/ActReason",
+    "element" : [{
+      "code" : "PREG",
+      "target" : [{
+        "code" : "PREG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INRQSTATE",
+      "target" : [{
+        "code" : "INRQSTATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_SubstanceAdminSubstitutionNotAllowedReason",
+      "target" : [{
+        "code" : "_SubstanceAdminSubstitutionNotAllowedReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PNC",
+      "target" : [{
+        "code" : "PNC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OVRPJ",
+      "target" : [{
+        "code" : "OVRPJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SYSADMN",
+      "target" : [{
+        "code" : "SYSADMN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UNABLE",
+      "target" : [{
+        "code" : "UNABLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHGDATA",
+      "target" : [{
+        "code" : "CHGDATA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SDUPTHER",
+      "target" : [{
+        "code" : "SDUPTHER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OVRPS",
+      "target" : [{
+        "code" : "OVRPS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOTCOVER",
+      "target" : [{
+        "code" : "NOTCOVER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "STOPMED",
+      "target" : [{
+        "code" : "STOPMED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCoverageReason",
+      "target" : [{
+        "code" : "_ActCoverageReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PUBHLTH",
+      "target" : [{
+        "code" : "PUBHLTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvalidReason",
+      "target" : [{
+        "code" : "_ActInvalidReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRGRPT",
+      "target" : [{
+        "code" : "PRGRPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HRESCH",
+      "target" : [{
+        "code" : "HRESCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOSPADM",
+      "target" : [{
+        "code" : "HOSPADM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EIE",
+      "target" : [{
+        "code" : "EIE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LABINT",
+      "target" : [{
+        "code" : "LABINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ONHOLD",
+      "target" : [{
+        "code" : "ONHOLD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PHILISOP",
+      "target" : [{
+        "code" : "PHILISOP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_PharmacySupplyRequestRenewalRefusalReasonCode",
+      "target" : [{
+        "code" : "_PharmacySupplyRequestRenewalRefusalReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VALIDATION",
+      "target" : [{
+        "code" : "VALIDATION",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SURG",
+      "target" : [{
+        "code" : "SURG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRIAL",
+      "target" : [{
+        "code" : "TRIAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONTRA",
+      "target" : [{
+        "code" : "CONTRA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISASTER",
+      "target" : [{
+        "code" : "DISASTER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BONUS",
+      "target" : [{
+        "code" : "BONUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RQ",
+      "target" : [{
+        "code" : "RQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RR",
+      "target" : [{
+        "code" : "RR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RESCH",
+      "target" : [{
+        "code" : "RESCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATDEC",
+      "target" : [{
+        "code" : "PATDEC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActBillableClinicalServiceReason",
+      "target" : [{
+        "code" : "_ActBillableClinicalServiceReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActAccommodationReason",
+      "target" : [{
+        "code" : "_ActAccommodationReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROVUNAUTH",
+      "target" : [{
+        "code" : "PROVUNAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRAUD",
+      "target" : [{
+        "code" : "FRAUD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HQUALIMP",
+      "target" : [{
+        "code" : "HQUALIMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_CoverageEligibilityReason",
+      "target" : [{
+        "code" : "_CoverageEligibilityReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COVERAGE",
+      "target" : [{
+        "code" : "COVERAGE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_PatientProfileQueryReasonCode",
+      "target" : [{
+        "code" : "_PatientProfileQueryReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HSYSADMIN",
+      "target" : [{
+        "code" : "HSYSADMIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PurposeOfUse",
+      "target" : [{
+        "code" : "PurposeOfUse",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COVSUS",
+      "target" : [{
+        "code" : "COVSUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ETREAT",
+      "target" : [{
+        "code" : "ETREAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PPT",
+      "target" : [{
+        "code" : "PPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLARIF",
+      "target" : [{
+        "code" : "CLARIF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OPERAT",
+      "target" : [{
+        "code" : "OPERAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADMINERROR",
+      "target" : [{
+        "code" : "ADMINERROR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALTCHOICE",
+      "target" : [{
+        "code" : "ALTCHOICE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "QUALIMP",
+      "target" : [{
+        "code" : "QUALIMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActConsentInformationAccessOverrideReason",
+      "target" : [{
+        "code" : "_ActConsentInformationAccessOverrideReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ControlActNullificationRefusalReasonType",
+      "target" : [{
+        "code" : "_ControlActNullificationRefusalReasonType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DECSD",
+      "target" : [{
+        "code" : "DECSD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DIS",
+      "target" : [{
+        "code" : "DIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GOV",
+      "target" : [{
+        "code" : "GOV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SALG",
+      "target" : [{
+        "code" : "SALG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATCAR",
+      "target" : [{
+        "code" : "PATCAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMMUNE",
+      "target" : [{
+        "code" : "IMMUNE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_CombinedPharmacyOrderSuspendReasonCode",
+      "target" : [{
+        "code" : "_CombinedPharmacyOrderSuspendReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COLDCHNBRK",
+      "target" : [{
+        "code" : "COLDCHNBRK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "QUANTCHG",
+      "target" : [{
+        "code" : "QUANTCHG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CT",
+      "target" : [{
+        "code" : "CT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OFFICE",
+      "target" : [{
+        "code" : "OFFICE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMPROV",
+      "target" : [{
+        "code" : "IMPROV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOVERMTCH",
+      "target" : [{
+        "code" : "NOVERMTCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HLEGAL",
+      "target" : [{
+        "code" : "HLEGAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHD",
+      "target" : [{
+        "code" : "CHD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RET",
+      "target" : [{
+        "code" : "RET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COMPCON",
+      "target" : [{
+        "code" : "COMPCON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAT",
+      "target" : [{
+        "code" : "PAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_PharmacySupplyEventStockReasonCode",
+      "target" : [{
+        "code" : "_PharmacySupplyEventStockReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActBillableServiceReason",
+      "target" : [{
+        "code" : "_ActBillableServiceReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VEHIC",
+      "target" : [{
+        "code" : "VEHIC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FOABORT",
+      "target" : [{
+        "code" : "FOABORT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAREMGT",
+      "target" : [{
+        "code" : "CAREMGT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HEALTH",
+      "target" : [{
+        "code" : "HEALTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADVSTORAGE",
+      "target" : [{
+        "code" : "ADVSTORAGE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REPLACE",
+      "target" : [{
+        "code" : "REPLACE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOLDINAP",
+      "target" : [{
+        "code" : "HOLDINAP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FINAN",
+      "target" : [{
+        "code" : "FINAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REGUL",
+      "target" : [{
+        "code" : "REGUL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAYMT",
+      "target" : [{
+        "code" : "PAYMT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOPRODMTCH",
+      "target" : [{
+        "code" : "NOPRODMTCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMP",
+      "target" : [{
+        "code" : "EMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INVOICE",
+      "target" : [{
+        "code" : "INVOICE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATRQT",
+      "target" : [{
+        "code" : "PATRQT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_SubstanceAdministrationPermissionRefusalReasonCode",
+      "target" : [{
+        "code" : "_SubstanceAdministrationPermissionRefusalReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ER",
+      "target" : [{
+        "code" : "ER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EXPLOT",
+      "target" : [{
+        "code" : "EXPLOT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ControlActReason",
+      "target" : [{
+        "code" : "_ControlActReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SDDI",
+      "target" : [{
+        "code" : "SDDI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INCPROV",
+      "target" : [{
+        "code" : "INCPROV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SINTOL",
+      "target" : [{
+        "code" : "SINTOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FLRCNV",
+      "target" : [{
+        "code" : "FLRCNV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "STATUTORY",
+      "target" : [{
+        "code" : "STATUTORY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ModifyPrescriptionReasonType",
+      "target" : [{
+        "code" : "_ModifyPrescriptionReasonType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ELIGVER",
+      "target" : [{
+        "code" : "ELIGVER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATSFTY",
+      "target" : [{
+        "code" : "PATSFTY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PWATRNY",
+      "target" : [{
+        "code" : "PWATRNY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUPNWK",
+      "target" : [{
+        "code" : "SUPNWK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HDIRECT",
+      "target" : [{
+        "code" : "HDIRECT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ClinicalResearchEventReason",
+      "target" : [{
+        "code" : "_ClinicalResearchEventReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COMPL",
+      "target" : [{
+        "code" : "COMPL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RECALL",
+      "target" : [{
+        "code" : "RECALL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACCRED",
+      "target" : [{
+        "code" : "ACCRED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISCONT",
+      "target" : [{
+        "code" : "DISCONT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FP",
+      "target" : [{
+        "code" : "FP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLINMOD",
+      "target" : [{
+        "code" : "CLINMOD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NPT",
+      "target" : [{
+        "code" : "NPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INCINVOICE",
+      "target" : [{
+        "code" : "INCINVOICE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LEGAL",
+      "target" : [{
+        "code" : "LEGAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RETRO",
+      "target" : [{
+        "code" : "RETRO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UNS",
+      "target" : [{
+        "code" : "UNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_SchedulingActReason",
+      "target" : [{
+        "code" : "_SchedulingActReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AGE",
+      "target" : [{
+        "code" : "AGE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UNKWNTARGET",
+      "target" : [{
+        "code" : "UNKWNTARGET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OUTSIDESCHED",
+      "target" : [{
+        "code" : "OUTSIDESCHED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HMARKT",
+      "target" : [{
+        "code" : "HMARKT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FAMRQT",
+      "target" : [{
+        "code" : "FAMRQT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REMITADV",
+      "target" : [{
+        "code" : "REMITADV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FAM",
+      "target" : [{
+        "code" : "FAM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RECOV",
+      "target" : [{
+        "code" : "RECOV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ELIGDTRM",
+      "target" : [{
+        "code" : "ELIGDTRM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FILLED",
+      "target" : [{
+        "code" : "FILLED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENADMIN",
+      "target" : [{
+        "code" : "ENADMIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOPICK",
+      "target" : [{
+        "code" : "NOPICK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATINELIG",
+      "target" : [{
+        "code" : "PATINELIG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HDECD",
+      "target" : [{
+        "code" : "HDECD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RSRCH",
+      "target" : [{
+        "code" : "RSRCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActIneligibilityReason",
+      "target" : [{
+        "code" : "_ActIneligibilityReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLINTRCH",
+      "target" : [{
+        "code" : "CLINTRCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_StatusRevisionRefusalReasonCode",
+      "target" : [{
+        "code" : "_StatusRevisionRefusalReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CRIME",
+      "target" : [{
+        "code" : "CRIME",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ControlActNullificationReasonCode",
+      "target" : [{
+        "code" : "_ControlActNullificationReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActSupplyFulfillmentRefusalReason",
+      "target" : [{
+        "code" : "_ActSupplyFulfillmentRefusalReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRAN",
+      "target" : [{
+        "code" : "TRAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRNA",
+      "target" : [{
+        "code" : "PRNA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MEDNEC",
+      "target" : [{
+        "code" : "MEDNEC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INCPOLICY",
+      "target" : [{
+        "code" : "INCPOLICY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALREADYRX",
+      "target" : [{
+        "code" : "ALREADYRX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UPT",
+      "target" : [{
+        "code" : "UPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LOCKED",
+      "target" : [{
+        "code" : "LOCKED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATREQ",
+      "target" : [{
+        "code" : "PATREQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PREFUS",
+      "target" : [{
+        "code" : "PREFUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TOOEARLY",
+      "target" : [{
+        "code" : "TOOEARLY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UMDATA",
+      "target" : [{
+        "code" : "UMDATA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDATA",
+      "target" : [{
+        "code" : "MDATA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRAIN",
+      "target" : [{
+        "code" : "TRAIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MEDPREC",
+      "target" : [{
+        "code" : "MEDPREC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOLDDONE",
+      "target" : [{
+        "code" : "HOLDDONE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_PharmacySupplyEventAbortReason",
+      "target" : [{
+        "code" : "_PharmacySupplyEventAbortReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInformationPrivacyReason",
+      "target" : [{
+        "code" : "_ActInformationPrivacyReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_EligibilityActReasonCode",
+      "target" : [{
+        "code" : "_EligibilityActReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WORK",
+      "target" : [{
+        "code" : "WORK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TREAT",
+      "target" : [{
+        "code" : "TREAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BLK",
+      "target" : [{
+        "code" : "BLK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_SupplyOrderAbortReasonCode",
+      "target" : [{
+        "code" : "_SupplyOrderAbortReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRCREV",
+      "target" : [{
+        "code" : "PRCREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FAMPHYS",
+      "target" : [{
+        "code" : "FAMPHYS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOTAVAIL",
+      "target" : [{
+        "code" : "NOTAVAIL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLMATTCH",
+      "target" : [{
+        "code" : "CLMATTCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATOBJ",
+      "target" : [{
+        "code" : "PATOBJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_RefusalReasonCode",
+      "target" : [{
+        "code" : "_RefusalReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HPRGRP",
+      "target" : [{
+        "code" : "HPRGRP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATADMIN",
+      "target" : [{
+        "code" : "PATADMIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RECORDMGT",
+      "target" : [{
+        "code" : "RECORDMGT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOPERAT",
+      "target" : [{
+        "code" : "HOPERAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INCCOVPTY",
+      "target" : [{
+        "code" : "INCCOVPTY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInformationManagementReason",
+      "target" : [{
+        "code" : "_ActInformationManagementReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PHY",
+      "target" : [{
+        "code" : "PHY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FIXDATA",
+      "target" : [{
+        "code" : "FIXDATA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "POPHLTH",
+      "target" : [{
+        "code" : "POPHLTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ESP",
+      "target" : [{
+        "code" : "ESP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MODIFY",
+      "target" : [{
+        "code" : "MODIFY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_TransferActReason",
+      "target" : [{
+        "code" : "_TransferActReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HCOMPL",
+      "target" : [{
+        "code" : "HCOMPL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SRVC",
+      "target" : [{
+        "code" : "SRVC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOTPAT",
+      "target" : [{
+        "code" : "NOTPAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ECH",
+      "target" : [{
+        "code" : "ECH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOREQ",
+      "target" : [{
+        "code" : "NOREQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "THREAT",
+      "target" : [{
+        "code" : "THREAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROA",
+      "target" : [{
+        "code" : "PROA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NORECMTCH",
+      "target" : [{
+        "code" : "NORECMTCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRODRECALL",
+      "target" : [{
+        "code" : "PRODRECALL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NEWTHER",
+      "target" : [{
+        "code" : "NEWTHER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADMREV",
+      "target" : [{
+        "code" : "ADMREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DONAT",
+      "target" : [{
+        "code" : "DONAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MONIT",
+      "target" : [{
+        "code" : "MONIT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOAGNTPERM",
+      "target" : [{
+        "code" : "NOAGNTPERM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActNoImmunizationReason",
+      "target" : [{
+        "code" : "_ActNoImmunizationReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MEMADMIN",
+      "target" : [{
+        "code" : "MEMADMIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FOSUSP",
+      "target" : [{
+        "code" : "FOSUSP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MARKT",
+      "target" : [{
+        "code" : "MARKT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MULTI",
+      "target" : [{
+        "code" : "MULTI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROG",
+      "target" : [{
+        "code" : "PROG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OSTOCK",
+      "target" : [{
+        "code" : "OSTOCK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MTG",
+      "target" : [{
+        "code" : "MTG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HPAYMT",
+      "target" : [{
+        "code" : "HPAYMT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_MedicationOrderAbortReasonCode",
+      "target" : [{
+        "code" : "_MedicationOrderAbortReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRR01",
+      "target" : [{
+        "code" : "FRR01",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPC",
+      "target" : [{
+        "code" : "SPC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRR02",
+      "target" : [{
+        "code" : "FRR02",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRR03",
+      "target" : [{
+        "code" : "FRR03",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REGERR",
+      "target" : [{
+        "code" : "REGERR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRR04",
+      "target" : [{
+        "code" : "FRR04",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REPLACEFIX",
+      "target" : [{
+        "code" : "REPLACEFIX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRR05",
+      "target" : [{
+        "code" : "FRR05",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRR06",
+      "target" : [{
+        "code" : "FRR06",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRM",
+      "target" : [{
+        "code" : "TRM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOUSRPERM",
+      "target" : [{
+        "code" : "NOUSRPERM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceCancelReason",
+      "target" : [{
+        "code" : "_ActInvoiceCancelReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPO",
+      "target" : [{
+        "code" : "SPO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACCREQNA",
+      "target" : [{
+        "code" : "ACCREQNA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OUTCOMS",
+      "target" : [{
+        "code" : "OUTCOMS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EDU",
+      "target" : [{
+        "code" : "EDU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FLRSTCK",
+      "target" : [{
+        "code" : "FLRSTCK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLINTRL",
+      "target" : [{
+        "code" : "CLINTRL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OVRTPS",
+      "target" : [{
+        "code" : "OVRTPS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NEWSTR",
+      "target" : [{
+        "code" : "NEWSTR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ClinicalResearchObservationReason",
+      "target" : [{
+        "code" : "_ClinicalResearchObservationReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOPERM",
+      "target" : [{
+        "code" : "NOPERM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NON-AVAIL",
+      "target" : [{
+        "code" : "NON-AVAIL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MED",
+      "target" : [{
+        "code" : "MED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMPLOY",
+      "target" : [{
+        "code" : "EMPLOY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActHealthInformationManagementReason",
+      "target" : [{
+        "code" : "_ActHealthInformationManagementReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOUSERPERM",
+      "target" : [{
+        "code" : "NOUSERPERM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VACSAF",
+      "target" : [{
+        "code" : "VACSAF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PERFMSR",
+      "target" : [{
+        "code" : "PERFMSR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_PharmacySupplyRequestFulfillerRevisionRefusalReasonCode",
+      "target" : [{
+        "code" : "_PharmacySupplyRequestFulfillerRevisionRefusalReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENROLLM",
+      "target" : [{
+        "code" : "ENROLLM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WRNGVER",
+      "target" : [{
+        "code" : "WRNGVER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OVRER",
+      "target" : [{
+        "code" : "OVRER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VACEFF",
+      "target" : [{
+        "code" : "VACEFF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LTC",
+      "target" : [{
+        "code" : "LTC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IND",
+      "target" : [{
+        "code" : "IND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HACCRED",
+      "target" : [{
+        "code" : "HACCRED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROTUNMET",
+      "target" : [{
+        "code" : "PROTUNMET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALTD",
+      "target" : [{
+        "code" : "ALTD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INTOL",
+      "target" : [{
+        "code" : "INTOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOSERMTCH",
+      "target" : [{
+        "code" : "NOSERMTCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PHARM",
+      "target" : [{
+        "code" : "PHARM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_GenericUpdateReasonCode",
+      "target" : [{
+        "code" : "_GenericUpdateReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOUTCOMS",
+      "target" : [{
+        "code" : "HOUTCOMS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOMATCH",
+      "target" : [{
+        "code" : "NOMATCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_SubstanceAdminSubstitutionReason",
+      "target" : [{
+        "code" : "_SubstanceAdminSubstitutionReason",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INEFFECT",
+      "target" : [{
+        "code" : "INEFFECT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEC",
+      "target" : [{
+        "code" : "DEC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NEWDATA",
+      "target" : [{
+        "code" : "NEWDATA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OS",
+      "target" : [{
+        "code" : "OS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRUGHIGH",
+      "target" : [{
+        "code" : "DRUGHIGH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALGINT",
+      "target" : [{
+        "code" : "ALGINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NEEDAPMT",
+      "target" : [{
+        "code" : "NEEDAPMT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FIN",
+      "target" : [{
+        "code" : "FIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSECHG",
+      "target" : [{
+        "code" : "DOSECHG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEP",
+      "target" : [{
+        "code" : "DEP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RELIG",
+      "target" : [{
+        "code" : "RELIG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WASHOUT",
+      "target" : [{
+        "code" : "WASHOUT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "THERCHAR",
+      "target" : [{
+        "code" : "THERCHAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_MedicationOrderReleaseReasonCode",
+      "target" : [{
+        "code" : "_MedicationOrderReleaseReasonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COVAUTH",
+      "target" : [{
+        "code" : "COVAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SCH",
+      "target" : [{
+        "code" : "SCH",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

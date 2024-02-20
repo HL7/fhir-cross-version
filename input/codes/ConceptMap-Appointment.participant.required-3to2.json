@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Appointment.participant.required-3to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Appointment.participant.required-3to2",
+  "name" : "Appointment.participant.required3to2",
+  "title" : "Mapping for Appointment.participant.required from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Appointment#Appointment.participant.required",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Appointment#Appointment.participant.required",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/participantrequired",
+    "target" : "http://hl7.org/fhir/1.0/participantrequired",
+    "element" : [{
+      "code" : "information-only",
+      "target" : [{
+        "code" : "information-only",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "optional",
+      "target" : [{
+        "code" : "optional",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "required",
+      "target" : [{
+        "code" : "required",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

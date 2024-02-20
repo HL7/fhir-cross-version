@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "VisionPrescription.lensSpecification.eye-VisionPrescription.dispense.eye-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/VisionPrescription.lensSpecification.eye-VisionPrescription.dispense.eye-4to3",
+  "name" : "VisionPrescription.lensSpecification.eyeVisionPrescription.dispense.eye4to3",
+  "title" : "Mapping for VisionPrescription.lensSpecification.eye/VisionPrescription.dispense.eye from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.eye",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/VisionPrescription#VisionPrescription.dispense.eye",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/vision-eye-codes",
+    "target" : "http://hl7.org/fhir/3.0/vision-eye-codes",
+    "element" : [{
+      "code" : "left",
+      "target" : [{
+        "code" : "left",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "right",
+      "target" : [{
+        "code" : "right",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Consent.provision.data.meaning-Consent.except.data.meaning-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Consent.provision.data.meaning-Consent.except.data.meaning-4to3",
+  "name" : "Consent.provision.data.meaningConsent.except.data.meaning4to3",
+  "title" : "Mapping for Consent.provision.data.meaning/Consent.except.data.meaning from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.data.meaning",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.except.data.meaning",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/consent-data-meaning",
+    "target" : "http://hl7.org/fhir/3.0/consent-data-meaning",
+    "element" : [{
+      "code" : "instance",
+      "target" : [{
+        "code" : "instance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "related",
+      "target" : [{
+        "code" : "related",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dependents",
+      "target" : [{
+        "code" : "dependents",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "authoredby",
+      "target" : [{
+        "code" : "authoredby",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

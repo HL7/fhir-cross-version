@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "PlanDefinition.action.requiredBehavior-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PlanDefinition.action.requiredBehavior-3to4",
+  "name" : "PlanDefinition.action.requiredBehavior3to4",
+  "title" : "Mapping for PlanDefinition.action.requiredBehavior from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.action.requiredBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.requiredBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/action-required-behavior",
+    "target" : "http://hl7.org/fhir/4.0/action-required-behavior",
+    "element" : [{
+      "code" : "could",
+      "target" : [{
+        "code" : "could",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "must",
+      "target" : [{
+        "code" : "must",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "must-unless-documented",
+      "target" : [{
+        "code" : "must-unless-documented",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

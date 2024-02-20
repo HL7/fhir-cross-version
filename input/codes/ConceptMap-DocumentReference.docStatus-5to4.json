@@ -1,0 +1,81 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DocumentReference.docStatus-5to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DocumentReference.docStatus-5to4",
+  "name" : "DocumentReference.docStatus5to4",
+  "title" : "Mapping for DocumentReference.docStatus from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DocumentReference#DocumentReference.docStatus",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.docStatus",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/composition-status",
+    "target" : "http://hl7.org/fhir/4.0/composition-status",
+    "element" : [{
+      "code" : "amended",
+      "target" : [{
+        "code" : "amended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "appended",
+      "target" : [{
+        "code" : "amended",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "deprecated",
+      "noMap" : true
+    },
+    {
+      "code" : "final",
+      "target" : [{
+        "code" : "final",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "registered",
+      "target" : [{
+        "code" : "preliminary",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "noMap" : true
+    },
+    {
+      "code" : "preliminary",
+      "target" : [{
+        "code" : "preliminary",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "partial",
+      "target" : [{
+        "code" : "preliminary",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "corrected",
+      "target" : [{
+        "code" : "amended",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "noMap" : true
+    }]
+  }]
+}

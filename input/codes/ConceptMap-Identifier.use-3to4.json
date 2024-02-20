@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Identifier.use-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Identifier.use-3to4",
+  "name" : "Identifier.use3to4",
+  "title" : "Mapping for Identifier.use from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Identifier#Identifier.use",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Identifier#Identifier.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/identifier-use",
+    "target" : "http://hl7.org/fhir/4.0/identifier-use",
+    "element" : [{
+      "code" : "secondary",
+      "target" : [{
+        "code" : "secondary",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "temp",
+      "target" : [{
+        "code" : "temp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "usual",
+      "target" : [{
+        "code" : "usual",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "official",
+      "target" : [{
+        "code" : "official",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

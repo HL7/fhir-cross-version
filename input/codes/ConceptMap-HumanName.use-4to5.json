@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "HumanName.use-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/HumanName.use-4to5",
+  "name" : "HumanName.use4to5",
+  "title" : "Mapping for HumanName.use from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/HumanName#HumanName.use",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/HumanName#HumanName.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/name-use",
+    "target" : "http://hl7.org/fhir/5.0/name-use",
+    "element" : [{
+      "code" : "maiden",
+      "target" : [{
+        "code" : "maiden",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "temp",
+      "target" : [{
+        "code" : "temp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "usual",
+      "target" : [{
+        "code" : "usual",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "old",
+      "target" : [{
+        "code" : "old",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "nickname",
+      "target" : [{
+        "code" : "nickname",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "official",
+      "target" : [{
+        "code" : "official",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "anonymous",
+      "target" : [{
+        "code" : "anonymous",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CoverageEligibilityRequest.purpose-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CoverageEligibilityRequest.purpose-4to4b",
+  "name" : "CoverageEligibilityRequest.purpose4to4b",
+  "title" : "Mapping for CoverageEligibilityRequest.purpose from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CoverageEligibilityRequest#CoverageEligibilityRequest.purpose",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityRequest#CoverageEligibilityRequest.purpose",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/eligibilityrequest-purpose",
+    "target" : "http://hl7.org/fhir/4.3/eligibilityrequest-purpose",
+    "element" : [{
+      "code" : "benefits",
+      "target" : [{
+        "code" : "benefits",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "discovery",
+      "target" : [{
+        "code" : "discovery",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "auth-requirements",
+      "target" : [{
+        "code" : "auth-requirements",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "validation",
+      "target" : [{
+        "code" : "validation",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

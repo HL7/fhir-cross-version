@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Composition.attester.mode-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Composition.attester.mode-4to4b",
+  "name" : "Composition.attester.mode4to4b",
+  "title" : "Mapping for Composition.attester.mode from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.attester.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Composition#Composition.attester.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/composition-attestation-mode",
+    "target" : "http://hl7.org/fhir/4.3/composition-attestation-mode",
+    "element" : [{
+      "code" : "legal",
+      "target" : [{
+        "code" : "legal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "official",
+      "target" : [{
+        "code" : "official",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "personal",
+      "target" : [{
+        "code" : "personal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "professional",
+      "target" : [{
+        "code" : "professional",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

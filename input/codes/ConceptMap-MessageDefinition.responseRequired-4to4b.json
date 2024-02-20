@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MessageDefinition.responseRequired-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MessageDefinition.responseRequired-4to4b",
+  "name" : "MessageDefinition.responseRequired4to4b",
+  "title" : "Mapping for MessageDefinition.responseRequired from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MessageDefinition#MessageDefinition.responseRequired",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MessageDefinition#MessageDefinition.responseRequired",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/messageheader-response-request",
+    "target" : "http://hl7.org/fhir/4.3/messageheader-response-request",
+    "element" : [{
+      "code" : "always",
+      "target" : [{
+        "code" : "always",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "never",
+      "target" : [{
+        "code" : "never",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on-error",
+      "target" : [{
+        "code" : "on-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on-success",
+      "target" : [{
+        "code" : "on-success",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

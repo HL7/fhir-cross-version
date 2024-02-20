@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "StructureMap.group.rule.target.contextType-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureMap.group.rule.target.contextType-3to4",
+  "name" : "StructureMap.group.rule.target.contextType3to4",
+  "title" : "Mapping for StructureMap.group.rule.target.contextType from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.contextType",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.contextType",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/map-context-type",
+    "target" : "http://hl7.org/fhir/4.0/map-context-type",
+    "element" : [{
+      "code" : "variable",
+      "target" : [{
+        "code" : "variable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "type",
+      "target" : [{
+        "code" : "type",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

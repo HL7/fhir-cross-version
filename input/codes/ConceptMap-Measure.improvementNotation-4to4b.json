@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Measure.improvementNotation-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Measure.improvementNotation-4to4b",
+  "name" : "Measure.improvementNotation4to4b",
+  "title" : "Mapping for Measure.improvementNotation from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.improvementNotation",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.improvementNotation",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+    "target" : "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+    "element" : [{
+      "code" : "increase",
+      "target" : [{
+        "code" : "increase",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "decrease",
+      "target" : [{
+        "code" : "decrease",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

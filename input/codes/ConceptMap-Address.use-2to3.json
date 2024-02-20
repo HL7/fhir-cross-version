@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Address.use-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Address.use-2to3",
+  "name" : "Address.use2to3",
+  "title" : "Mapping for Address.use from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Address#Address.use",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Address#Address.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/address-use",
+    "target" : "http://hl7.org/fhir/3.0/address-use",
+    "element" : [{
+      "code" : "temp",
+      "target" : [{
+        "code" : "temp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "work",
+      "target" : [{
+        "code" : "work",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "old",
+      "target" : [{
+        "code" : "old",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "home",
+      "target" : [{
+        "code" : "home",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

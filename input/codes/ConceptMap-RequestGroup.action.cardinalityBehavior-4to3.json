@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "RequestGroup.action.cardinalityBehavior-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestGroup.action.cardinalityBehavior-4to3",
+  "name" : "RequestGroup.action.cardinalityBehavior4to3",
+  "title" : "Mapping for RequestGroup.action.cardinalityBehavior from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.cardinalityBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/RequestGroup#RequestGroup.action.cardinalityBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/action-cardinality-behavior",
+    "target" : "http://hl7.org/fhir/3.0/action-cardinality-behavior",
+    "element" : [{
+      "code" : "single",
+      "target" : [{
+        "code" : "single",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "multiple",
+      "target" : [{
+        "code" : "multiple",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

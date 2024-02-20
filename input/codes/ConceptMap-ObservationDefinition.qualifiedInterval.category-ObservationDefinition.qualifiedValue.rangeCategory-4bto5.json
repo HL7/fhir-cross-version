@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ObservationDefinition.qualifiedInterval.category-ObservationDefinition.qualifiedValue.rangeCategory-4bto5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ObservationDefinition.qualifiedInterval.category-ObservationDefinition.qualifiedValue.rangeCategory-4bto5",
+  "name" : "ObservationDefinition.qualifiedInterval.categoryObservationDefinition.qualifiedValue.rangeCategory4bto5",
+  "title" : "Mapping for ObservationDefinition.qualifiedInterval.category/ObservationDefinition.qualifiedValue.rangeCategory from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.category",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedValue.rangeCategory",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/observation-range-category",
+    "target" : "http://hl7.org/fhir/5.0/observation-range-category",
+    "element" : [{
+      "code" : "reference",
+      "target" : [{
+        "code" : "reference",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "critical",
+      "target" : [{
+        "code" : "critical",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "absolute",
+      "target" : [{
+        "code" : "absolute",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

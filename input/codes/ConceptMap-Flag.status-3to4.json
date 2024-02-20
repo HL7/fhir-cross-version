@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Flag.status-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Flag.status-3to4",
+  "name" : "Flag.status3to4",
+  "title" : "Mapping for Flag.status from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Flag#Flag.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Flag#Flag.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/flag-status",
+    "target" : "http://hl7.org/fhir/4.0/flag-status",
+    "element" : [{
+      "code" : "inactive",
+      "target" : [{
+        "code" : "inactive",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

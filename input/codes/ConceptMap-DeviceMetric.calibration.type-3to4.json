@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DeviceMetric.calibration.type-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceMetric.calibration.type-3to4",
+  "name" : "DeviceMetric.calibration.type3to4",
+  "title" : "Mapping for DeviceMetric.calibration.type from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/metric-calibration-type",
+    "target" : "http://hl7.org/fhir/4.0/metric-calibration-type",
+    "element" : [{
+      "code" : "offset",
+      "target" : [{
+        "code" : "offset",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unspecified",
+      "target" : [{
+        "code" : "unspecified",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "two-point",
+      "target" : [{
+        "code" : "two-point",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "gain",
+      "target" : [{
+        "code" : "gain",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

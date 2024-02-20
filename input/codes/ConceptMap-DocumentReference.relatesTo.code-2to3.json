@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DocumentReference.relatesTo.code-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DocumentReference.relatesTo.code-2to3",
+  "name" : "DocumentReference.relatesTo.code2to3",
+  "title" : "Mapping for DocumentReference.relatesTo.code from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/document-relationship-type",
+    "target" : "http://hl7.org/fhir/3.0/document-relationship-type",
+    "element" : [{
+      "code" : "signs",
+      "target" : [{
+        "code" : "signs",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "replaces",
+      "target" : [{
+        "code" : "replaces",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transforms",
+      "target" : [{
+        "code" : "transforms",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "appends",
+      "target" : [{
+        "code" : "appends",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

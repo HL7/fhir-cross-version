@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Provenance.agent.type-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Provenance.agent.type-4to4b",
+  "name" : "Provenance.agent.type4to4b",
+  "title" : "Mapping for Provenance.agent.type from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Provenance#Provenance.agent.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Provenance#Provenance.agent.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+    "element" : [{
+      "code" : "performer",
+      "target" : [{
+        "code" : "performer",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "custodian",
+      "target" : [{
+        "code" : "custodian",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "author",
+      "target" : [{
+        "code" : "author",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "verifier",
+      "target" : [{
+        "code" : "verifier",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "composer",
+      "target" : [{
+        "code" : "composer",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "legal",
+      "target" : [{
+        "code" : "legal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "enterer",
+      "target" : [{
+        "code" : "enterer",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "assembler",
+      "target" : [{
+        "code" : "assembler",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "attester",
+      "target" : [{
+        "code" : "attester",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "informant",
+      "target" : [{
+        "code" : "informant",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Person.link.assurance-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Person.link.assurance-3to4",
+  "name" : "Person.link.assurance3to4",
+  "title" : "Mapping for Person.link.assurance from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Person#Person.link.assurance",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Person#Person.link.assurance",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/identity-assuranceLevel",
+    "target" : "http://hl7.org/fhir/4.0/identity-assuranceLevel",
+    "element" : [{
+      "code" : "level4",
+      "target" : [{
+        "code" : "level4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "level1",
+      "target" : [{
+        "code" : "level1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "level3",
+      "target" : [{
+        "code" : "level3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "level2",
+      "target" : [{
+        "code" : "level2",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

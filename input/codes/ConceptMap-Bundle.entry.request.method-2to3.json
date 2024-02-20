@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Bundle.entry.request.method-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Bundle.entry.request.method-2to3",
+  "name" : "Bundle.entry.request.method2to3",
+  "title" : "Mapping for Bundle.entry.request.method from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Bundle#Bundle.entry.request.method",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Bundle#Bundle.entry.request.method",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/http-verb",
+    "target" : "http://hl7.org/fhir/3.0/http-verb",
+    "element" : [{
+      "code" : "DELETE",
+      "target" : [{
+        "code" : "DELETE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "POST",
+      "target" : [{
+        "code" : "POST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GET",
+      "target" : [{
+        "code" : "GET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PUT",
+      "target" : [{
+        "code" : "PUT",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

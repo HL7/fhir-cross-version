@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CapabilityStatement.rest.resource.interaction.code-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.rest.resource.interaction.code-4to4b",
+  "name" : "CapabilityStatement.rest.resource.interaction.code4to4b",
+  "title" : "Mapping for CapabilityStatement.rest.resource.interaction.code from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.interaction.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.interaction.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/restful-interaction",
+    "target" : "http://hl7.org/fhir/4.3/restful-interaction",
+    "element" : [{
+      "code" : "read",
+      "target" : [{
+        "code" : "read",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "search-type",
+      "target" : [{
+        "code" : "search-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "update",
+      "target" : [{
+        "code" : "update",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "delete",
+      "target" : [{
+        "code" : "delete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "patch",
+      "target" : [{
+        "code" : "patch",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "vread",
+      "target" : [{
+        "code" : "vread",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "create",
+      "target" : [{
+        "code" : "create",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history-instance",
+      "target" : [{
+        "code" : "history-instance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history-type",
+      "target" : [{
+        "code" : "history-type",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

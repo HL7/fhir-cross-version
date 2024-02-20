@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Citation.citedArtifact.publicationForm.publishedIn.type-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Citation.citedArtifact.publicationForm.publishedIn.type-5to4b",
+  "name" : "Citation.citedArtifact.publicationForm.publishedIn.type5to4b",
+  "title" : "Mapping for Citation.citedArtifact.publicationForm.publishedIn.type from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.publicationForm.publishedIn.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.publicationForm.publishedIn.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/published-in-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/published-in-type",
+    "element" : [{
+      "code" : "D019991",
+      "target" : [{
+        "code" : "D019991",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "D001877",
+      "target" : [{
+        "code" : "D001877",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "D020492",
+      "target" : [{
+        "code" : "D020492",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "D064886",
+      "target" : [{
+        "code" : "D064886",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

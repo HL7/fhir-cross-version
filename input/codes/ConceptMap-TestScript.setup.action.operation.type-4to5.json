@@ -1,0 +1,226 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "TestScript.setup.action.operation.type-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestScript.setup.action.operation.type-4to5",
+  "name" : "TestScript.setup.action.operation.type4to5",
+  "title" : "Mapping for TestScript.setup.action.operation.type from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.operation.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestScript#TestScript.setup.action.operation.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+    "target" : "http://hl7.org/fhir/5.0/restful-interaction",
+    "element" : [{
+      "code" : "implements",
+      "noMap" : true
+    },
+    {
+      "code" : "questionnaire",
+      "noMap" : true
+    },
+    {
+      "code" : "conforms",
+      "noMap" : true
+    },
+    {
+      "code" : "data-requirements",
+      "noMap" : true
+    },
+    {
+      "code" : "document",
+      "noMap" : true
+    },
+    {
+      "code" : "lastn",
+      "noMap" : true
+    },
+    {
+      "code" : "update",
+      "target" : [{
+        "code" : "update",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "evaluate-measure",
+      "noMap" : true
+    },
+    {
+      "code" : "deleteCondMultiple",
+      "noMap" : true
+    },
+    {
+      "code" : "delete",
+      "target" : [{
+        "code" : "delete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "find-matches",
+      "noMap" : true
+    },
+    {
+      "code" : "meta-add",
+      "noMap" : true
+    },
+    {
+      "code" : "translate",
+      "noMap" : true
+    },
+    {
+      "code" : "patch",
+      "target" : [{
+        "code" : "patch",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "search",
+      "target" : [{
+        "code" : "search",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "process-message",
+      "noMap" : true
+    },
+    {
+      "code" : "transform",
+      "noMap" : true
+    },
+    {
+      "code" : "stats",
+      "noMap" : true
+    },
+    {
+      "code" : "find",
+      "noMap" : true
+    },
+    {
+      "code" : "create",
+      "target" : [{
+        "code" : "create",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "everything",
+      "noMap" : true
+    },
+    {
+      "code" : "graphql",
+      "noMap" : true
+    },
+    {
+      "code" : "closure",
+      "noMap" : true
+    },
+    {
+      "code" : "populatelink",
+      "noMap" : true
+    },
+    {
+      "code" : "subsumes",
+      "noMap" : true
+    },
+    {
+      "code" : "validate",
+      "noMap" : true
+    },
+    {
+      "code" : "updateCreate",
+      "noMap" : true
+    },
+    {
+      "code" : "lookup",
+      "noMap" : true
+    },
+    {
+      "code" : "populatehtml",
+      "noMap" : true
+    },
+    {
+      "code" : "read",
+      "target" : [{
+        "code" : "read",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "capabilities",
+      "target" : [{
+        "code" : "capabilities",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "apply",
+      "noMap" : true
+    },
+    {
+      "code" : "batch",
+      "target" : [{
+        "code" : "batch",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "match",
+      "noMap" : true
+    },
+    {
+      "code" : "history",
+      "target" : [{
+        "code" : "history",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "deleteCondSingle",
+      "noMap" : true
+    },
+    {
+      "code" : "expand",
+      "noMap" : true
+    },
+    {
+      "code" : "populate",
+      "noMap" : true
+    },
+    {
+      "code" : "validate-code",
+      "noMap" : true
+    },
+    {
+      "code" : "meta",
+      "noMap" : true
+    },
+    {
+      "code" : "vread",
+      "target" : [{
+        "code" : "vread",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "evaluate",
+      "noMap" : true
+    },
+    {
+      "code" : "transaction",
+      "target" : [{
+        "code" : "transaction",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "subset",
+      "noMap" : true
+    },
+    {
+      "code" : "meta-delete",
+      "noMap" : true
+    }]
+  }]
+}

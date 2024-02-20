@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Evidence.certainty.type-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Evidence.certainty.type-5to4b",
+  "name" : "Evidence.certainty.type5to4b",
+  "title" : "Mapping for Evidence.certainty.type from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.certainty.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.certainty.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/certainty-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/certainty-type",
+    "element" : [{
+      "code" : "LargeEffect",
+      "target" : [{
+        "code" : "LargeEffect",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Overall",
+      "target" : [{
+        "code" : "Overall",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Inconsistency",
+      "target" : [{
+        "code" : "Inconsistency",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Indirectness",
+      "target" : [{
+        "code" : "Indirectness",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RiskOfBias",
+      "target" : [{
+        "code" : "RiskOfBias",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DoseResponseGradient",
+      "target" : [{
+        "code" : "DoseResponseGradient",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PlausibleConfounding",
+      "target" : [{
+        "code" : "PlausibleConfounding",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PublicationBias",
+      "target" : [{
+        "code" : "PublicationBias",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Imprecision",
+      "target" : [{
+        "code" : "Imprecision",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "StructureMap.group.typeMode-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureMap.group.typeMode-4to5",
+  "name" : "StructureMap.group.typeMode4to5",
+  "title" : "Mapping for StructureMap.group.typeMode from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.typeMode",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureMap#StructureMap.group.typeMode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/map-group-type-mode",
+    "target" : "http://hl7.org/fhir/5.0/map-group-type-mode",
+    "element" : [{
+      "code" : "types",
+      "target" : [{
+        "code" : "types",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "none",
+      "noMap" : true
+    },
+    {
+      "code" : "type-and-types",
+      "target" : [{
+        "code" : "type-and-types",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

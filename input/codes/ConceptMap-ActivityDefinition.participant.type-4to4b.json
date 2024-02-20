@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ActivityDefinition.participant.type-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ActivityDefinition.participant.type-4to4b",
+  "name" : "ActivityDefinition.participant.type4to4b",
+  "title" : "Mapping for ActivityDefinition.participant.type from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ActivityDefinition#ActivityDefinition.participant.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ActivityDefinition#ActivityDefinition.participant.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/action-participant-type",
+    "target" : "http://hl7.org/fhir/4.3/action-participant-type",
+    "element" : [{
+      "code" : "related-person",
+      "target" : [{
+        "code" : "related-person",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "practitioner",
+      "target" : [{
+        "code" : "practitioner",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "patient",
+      "target" : [{
+        "code" : "patient",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "device",
+      "target" : [{
+        "code" : "device",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

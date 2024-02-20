@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Media.type-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Media.type-2to3",
+  "name" : "Media.type2to3",
+  "title" : "Mapping for Media.type from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Media#Media.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Media#Media.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/digital-media-type",
+    "target" : "http://hl7.org/fhir/3.0/digital-media-type",
+    "element" : [{
+      "code" : "photo",
+      "target" : [{
+        "code" : "photo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "video",
+      "target" : [{
+        "code" : "video",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "audio",
+      "target" : [{
+        "code" : "audio",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

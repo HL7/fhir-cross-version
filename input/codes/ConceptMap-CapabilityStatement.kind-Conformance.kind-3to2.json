@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CapabilityStatement.kind-Conformance.kind-3to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.kind-Conformance.kind-3to2",
+  "name" : "CapabilityStatement.kindConformance.kind3to2",
+  "title" : "Mapping for CapabilityStatement.kind/Conformance.kind from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/capability-statement-kind",
+    "target" : "http://hl7.org/fhir/1.0/conformance-statement-kind",
+    "element" : [{
+      "code" : "capability",
+      "target" : [{
+        "code" : "capability",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "requirements",
+      "target" : [{
+        "code" : "requirements",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "instance",
+      "target" : [{
+        "code" : "instance",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

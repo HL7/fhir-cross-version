@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ConceptMap.group.unmapped.mode-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ConceptMap.group.unmapped.mode-4to4b",
+  "name" : "ConceptMap.group.unmapped.mode4to4b",
+  "title" : "Mapping for ConceptMap.group.unmapped.mode from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ConceptMap#ConceptMap.group.unmapped.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ConceptMap#ConceptMap.group.unmapped.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/conceptmap-unmapped-mode",
+    "target" : "http://hl7.org/fhir/4.3/conceptmap-unmapped-mode",
+    "element" : [{
+      "code" : "provided",
+      "target" : [{
+        "code" : "provided",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "fixed",
+      "target" : [{
+        "code" : "fixed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "other-map",
+      "target" : [{
+        "code" : "other-map",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

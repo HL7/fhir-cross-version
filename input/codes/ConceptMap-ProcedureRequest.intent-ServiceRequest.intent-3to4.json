@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ProcedureRequest.intent-ServiceRequest.intent-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ProcedureRequest.intent-ServiceRequest.intent-3to4",
+  "name" : "ProcedureRequest.intentServiceRequest.intent3to4",
+  "title" : "Mapping for ProcedureRequest.intent/ServiceRequest.intent from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.intent",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ServiceRequest#ServiceRequest.intent",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/request-intent",
+    "target" : "http://hl7.org/fhir/4.0/request-intent",
+    "element" : [{
+      "code" : "proposal",
+      "target" : [{
+        "code" : "proposal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "instance-order",
+      "target" : [{
+        "code" : "instance-order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "filler-order",
+      "target" : [{
+        "code" : "filler-order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "original-order",
+      "target" : [{
+        "code" : "original-order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reflex-order",
+      "target" : [{
+        "code" : "reflex-order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "plan",
+      "target" : [{
+        "code" : "plan",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "order",
+      "target" : [{
+        "code" : "order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "option",
+      "target" : [{
+        "code" : "option",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

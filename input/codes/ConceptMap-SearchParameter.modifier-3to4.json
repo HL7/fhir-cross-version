@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "SearchParameter.modifier-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SearchParameter.modifier-3to4",
+  "name" : "SearchParameter.modifier3to4",
+  "title" : "Mapping for SearchParameter.modifier from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.modifier",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.modifier",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/search-modifier-code",
+    "target" : "http://hl7.org/fhir/4.0/search-modifier-code",
+    "element" : [{
+      "code" : "contains",
+      "target" : [{
+        "code" : "contains",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not",
+      "target" : [{
+        "code" : "not",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "below",
+      "target" : [{
+        "code" : "below",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "missing",
+      "target" : [{
+        "code" : "missing",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "exact",
+      "target" : [{
+        "code" : "exact",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "above",
+      "target" : [{
+        "code" : "above",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-in",
+      "target" : [{
+        "code" : "not-in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "text",
+      "target" : [{
+        "code" : "text",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "type",
+      "target" : [{
+        "code" : "type",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

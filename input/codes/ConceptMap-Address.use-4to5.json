@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Address.use-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Address.use-4to5",
+  "name" : "Address.use4to5",
+  "title" : "Mapping for Address.use from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Address#Address.use",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Address#Address.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/address-use",
+    "target" : "http://hl7.org/fhir/5.0/address-use",
+    "element" : [{
+      "code" : "temp",
+      "target" : [{
+        "code" : "temp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "work",
+      "target" : [{
+        "code" : "work",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "old",
+      "target" : [{
+        "code" : "old",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "home",
+      "target" : [{
+        "code" : "home",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "billing",
+      "target" : [{
+        "code" : "billing",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Narrative.status-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Narrative.status-3to4",
+  "name" : "Narrative.status3to4",
+  "title" : "Mapping for Narrative.status from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Narrative#Narrative.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Narrative#Narrative.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/narrative-status",
+    "target" : "http://hl7.org/fhir/4.0/narrative-status",
+    "element" : [{
+      "code" : "extensions",
+      "target" : [{
+        "code" : "extensions",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "generated",
+      "target" : [{
+        "code" : "generated",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "additional",
+      "target" : [{
+        "code" : "additional",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "empty",
+      "target" : [{
+        "code" : "empty",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

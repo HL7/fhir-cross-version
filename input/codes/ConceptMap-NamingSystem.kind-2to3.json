@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "NamingSystem.kind-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/NamingSystem.kind-2to3",
+  "name" : "NamingSystem.kind2to3",
+  "title" : "Mapping for NamingSystem.kind from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/NamingSystem#NamingSystem.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/NamingSystem#NamingSystem.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/namingsystem-type",
+    "target" : "http://hl7.org/fhir/3.0/namingsystem-type",
+    "element" : [{
+      "code" : "identifier",
+      "target" : [{
+        "code" : "identifier",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "codesystem",
+      "target" : [{
+        "code" : "codesystem",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "root",
+      "target" : [{
+        "code" : "root",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

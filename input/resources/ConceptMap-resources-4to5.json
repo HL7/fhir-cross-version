@@ -8,6 +8,8 @@
   "status" : "active",
   "date" : "2024-02-01",
   "publisher" : "HL7",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/resource-types",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/resource-types",
   "group" : [{
     "source" : "http://hl7.org/fhir/4.0/resource-types",
     "target" : "http://hl7.org/fhir/5.0/resource-types",

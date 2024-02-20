@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "TerminologyCapabilities.codeSearch-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TerminologyCapabilities.codeSearch-4to5",
+  "name" : "TerminologyCapabilities.codeSearch4to5",
+  "title" : "Mapping for TerminologyCapabilities.codeSearch from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.codeSearch",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.codeSearch",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/code-search-support",
+    "target" : "http://hl7.org/fhir/5.0/code-search-support",
+    "element" : [{
+      "code" : "explicit",
+      "noMap" : true
+    },
+    {
+      "code" : "all",
+      "noMap" : true
+    }]
+  }]
+}

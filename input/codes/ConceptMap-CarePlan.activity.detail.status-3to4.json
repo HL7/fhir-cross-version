@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CarePlan.activity.detail.status-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CarePlan.activity.detail.status-3to4",
+  "name" : "CarePlan.activity.detail.status3to4",
+  "title" : "Mapping for CarePlan.activity.detail.status from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CarePlan#CarePlan.activity.detail.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CarePlan#CarePlan.activity.detail.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/care-plan-activity-status",
+    "target" : "http://hl7.org/fhir/4.0/care-plan-activity-status",
+    "element" : [{
+      "code" : "scheduled",
+      "target" : [{
+        "code" : "scheduled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-started",
+      "target" : [{
+        "code" : "not-started",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "in-progress",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on-hold",
+      "target" : [{
+        "code" : "on-hold",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

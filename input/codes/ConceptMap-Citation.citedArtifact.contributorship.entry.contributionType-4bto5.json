@@ -1,0 +1,111 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Citation.citedArtifact.contributorship.entry.contributionType-4bto5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Citation.citedArtifact.contributorship.entry.contributionType-4bto5",
+  "name" : "Citation.citedArtifact.contributorship.entry.contributionType4bto5",
+  "title" : "Mapping for Citation.citedArtifact.contributorship.entry.contributionType from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.contributorship.entry.contributionType",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.contributorship.entry.contributionType",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/artifact-contribution-type",
+    "target" : "http://hl7.org/fhir/5.0/artifact-contribution-type",
+    "element" : [{
+      "code" : "visualization",
+      "target" : [{
+        "code" : "visualization",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "software",
+      "target" : [{
+        "code" : "software",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "data-curation",
+      "target" : [{
+        "code" : "data-curation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "writing-original-draft",
+      "target" : [{
+        "code" : "writing-original-draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "funding-acquisition",
+      "target" : [{
+        "code" : "funding-acquisition",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "resources",
+      "target" : [{
+        "code" : "resources",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "project-administration",
+      "target" : [{
+        "code" : "project-administration",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "formal-analysis",
+      "target" : [{
+        "code" : "formal-analysis",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "supervision",
+      "target" : [{
+        "code" : "supervision",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "writing-review-editing",
+      "target" : [{
+        "code" : "writing-review-editing",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "investigation",
+      "target" : [{
+        "code" : "investigation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "conceptualization",
+      "target" : [{
+        "code" : "conceptualization",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "methodology",
+      "target" : [{
+        "code" : "methodology",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "validation",
+      "target" : [{
+        "code" : "validation",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

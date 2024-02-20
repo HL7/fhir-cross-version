@@ -1,0 +1,111 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "AdverseEvent.category-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AdverseEvent.category-4to4b",
+  "name" : "AdverseEvent.category4to4b",
+  "title" : "Mapping for AdverseEvent.category from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AdverseEvent#AdverseEvent.category",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AdverseEvent#AdverseEvent.category",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+    "target" : "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+    "element" : [{
+      "code" : "wrong-duration",
+      "target" : [{
+        "code" : "wrong-duration",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wrong-route-of-administration",
+      "target" : [{
+        "code" : "wrong-route-of-administration",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wrong-dose",
+      "target" : [{
+        "code" : "wrong-dose",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "product-problem",
+      "target" : [{
+        "code" : "product-problem",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unsafe-physical-environment",
+      "target" : [{
+        "code" : "unsafe-physical-environment",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "product-quality",
+      "target" : [{
+        "code" : "product-quality",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "medical-device-use-error",
+      "target" : [{
+        "code" : "medical-device-use-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wrong-time",
+      "target" : [{
+        "code" : "wrong-time",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "expired-drug",
+      "target" : [{
+        "code" : "expired-drug",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "incorrect-prescribing-information",
+      "target" : [{
+        "code" : "incorrect-prescribing-information",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "product-use-error",
+      "target" : [{
+        "code" : "product-use-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wrong-technique",
+      "target" : [{
+        "code" : "wrong-technique",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "problem-different-manufacturer",
+      "target" : [{
+        "code" : "problem-different-manufacturer",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wrong-rate",
+      "target" : [{
+        "code" : "wrong-rate",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

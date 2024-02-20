@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Citation.classification.type-4bto5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Citation.classification.type-4bto5",
+  "name" : "Citation.classification.type4bto5",
+  "title" : "Mapping for Citation.classification.type from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.classification.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.classification.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/citation-classification-type",
+    "target" : "http://hl7.org/fhir/5.0/citation-classification-type",
+    "element" : [{
+      "code" : "medline-owner",
+      "target" : [{
+        "code" : "medline-owner",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "fevir-platform-use",
+      "target" : [{
+        "code" : "fevir-platform-use",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "citation-source",
+      "target" : [{
+        "code" : "citation-source",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Consent.provision.type-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Consent.provision.type-4bto4",
+  "name" : "Consent.provision.type4bto4",
+  "title" : "Mapping for Consent.provision.type from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.provision.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/consent-provision-type",
+    "target" : "http://hl7.org/fhir/4.0/consent-provision-type",
+    "element" : [{
+      "code" : "deny",
+      "target" : [{
+        "code" : "deny",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "permit",
+      "target" : [{
+        "code" : "permit",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

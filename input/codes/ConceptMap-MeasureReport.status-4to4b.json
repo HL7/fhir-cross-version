@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MeasureReport.status-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MeasureReport.status-4to4b",
+  "name" : "MeasureReport.status4to4b",
+  "title" : "Mapping for MeasureReport.status from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MeasureReport#MeasureReport.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MeasureReport#MeasureReport.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/measure-report-status",
+    "target" : "http://hl7.org/fhir/4.3/measure-report-status",
+    "element" : [{
+      "code" : "pending",
+      "target" : [{
+        "code" : "pending",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "complete",
+      "target" : [{
+        "code" : "complete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

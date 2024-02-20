@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "PlanDefinition.action.participant.type-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PlanDefinition.action.participant.type-3to4",
+  "name" : "PlanDefinition.action.participant.type3to4",
+  "title" : "Mapping for PlanDefinition.action.participant.type from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.action.participant.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.participant.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/action-participant-type",
+    "target" : "http://hl7.org/fhir/4.0/action-participant-type",
+    "element" : [{
+      "code" : "related-person",
+      "target" : [{
+        "code" : "related-person",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "practitioner",
+      "target" : [{
+        "code" : "practitioner",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "patient",
+      "target" : [{
+        "code" : "patient",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

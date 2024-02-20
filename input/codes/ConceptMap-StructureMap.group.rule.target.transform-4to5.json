@@ -1,0 +1,132 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "StructureMap.group.rule.target.transform-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureMap.group.rule.target.transform-4to5",
+  "name" : "StructureMap.group.rule.target.transform4to5",
+  "title" : "Mapping for StructureMap.group.rule.target.transform from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.transform",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.transform",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/map-transform",
+    "target" : "http://hl7.org/fhir/5.0/map-transform",
+    "element" : [{
+      "code" : "cc",
+      "target" : [{
+        "code" : "cc",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pointer",
+      "target" : [{
+        "code" : "pointer",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "c",
+      "target" : [{
+        "code" : "c",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "uuid",
+      "target" : [{
+        "code" : "uuid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cp",
+      "target" : [{
+        "code" : "cp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "translate",
+      "target" : [{
+        "code" : "translate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reference",
+      "target" : [{
+        "code" : "reference",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cast",
+      "target" : [{
+        "code" : "cast",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "truncate",
+      "target" : [{
+        "code" : "truncate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "qty",
+      "target" : [{
+        "code" : "qty",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "create",
+      "target" : [{
+        "code" : "create",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "copy",
+      "target" : [{
+        "code" : "copy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "id",
+      "target" : [{
+        "code" : "id",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "escape",
+      "target" : [{
+        "code" : "escape",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "evaluate",
+      "target" : [{
+        "code" : "evaluate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "append",
+      "target" : [{
+        "code" : "append",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dateOp",
+      "target" : [{
+        "code" : "dateOp",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

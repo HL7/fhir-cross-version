@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ChargeItemDefinition.propertyGroup.priceComponent.type-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ChargeItemDefinition.propertyGroup.priceComponent.type-4to4b",
+  "name" : "ChargeItemDefinition.propertyGroup.priceComponent.type4to4b",
+  "title" : "Mapping for ChargeItemDefinition.propertyGroup.priceComponent.type from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.propertyGroup.priceComponent.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.propertyGroup.priceComponent.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/invoice-priceComponentType",
+    "target" : "http://hl7.org/fhir/4.3/invoice-priceComponentType",
+    "element" : [{
+      "code" : "surcharge",
+      "target" : [{
+        "code" : "surcharge",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "deduction",
+      "target" : [{
+        "code" : "deduction",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "discount",
+      "target" : [{
+        "code" : "discount",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tax",
+      "target" : [{
+        "code" : "tax",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "informational",
+      "target" : [{
+        "code" : "informational",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "base",
+      "target" : [{
+        "code" : "base",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

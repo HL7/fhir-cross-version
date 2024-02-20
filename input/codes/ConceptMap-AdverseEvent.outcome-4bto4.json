@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "AdverseEvent.outcome-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AdverseEvent.outcome-4bto4",
+  "name" : "AdverseEvent.outcome4bto4",
+  "title" : "Mapping for AdverseEvent.outcome from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AdverseEvent#AdverseEvent.outcome",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AdverseEvent#AdverseEvent.outcome",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+    "target" : "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+    "element" : [{
+      "code" : "recovering",
+      "target" : [{
+        "code" : "recovering",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ongoing",
+      "target" : [{
+        "code" : "ongoing",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "resolvedWithSequelae",
+      "target" : [{
+        "code" : "resolvedWithSequelae",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "resolved",
+      "target" : [{
+        "code" : "resolved",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "fatal",
+      "target" : [{
+        "code" : "fatal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

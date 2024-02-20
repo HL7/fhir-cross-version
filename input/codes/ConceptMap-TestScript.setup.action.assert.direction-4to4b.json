@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "TestScript.setup.action.assert.direction-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestScript.setup.action.assert.direction-4to4b",
+  "name" : "TestScript.setup.action.assert.direction4to4b",
+  "title" : "Mapping for TestScript.setup.action.assert.direction from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.direction",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.assert.direction",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/assert-direction-codes",
+    "target" : "http://hl7.org/fhir/4.3/assert-direction-codes",
+    "element" : [{
+      "code" : "request",
+      "target" : [{
+        "code" : "request",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "response",
+      "target" : [{
+        "code" : "response",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

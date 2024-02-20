@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "StructureMap.group.rule.target.listMode-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureMap.group.rule.target.listMode-4to3",
+  "name" : "StructureMap.group.rule.target.listMode4to3",
+  "title" : "Mapping for StructureMap.group.rule.target.listMode from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.listMode",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.listMode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/map-target-list-mode",
+    "target" : "http://hl7.org/fhir/3.0/map-target-list-mode",
+    "element" : [{
+      "code" : "collate",
+      "target" : [{
+        "code" : "collate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "last",
+      "target" : [{
+        "code" : "last",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "share",
+      "target" : [{
+        "code" : "share",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "first",
+      "target" : [{
+        "code" : "first",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

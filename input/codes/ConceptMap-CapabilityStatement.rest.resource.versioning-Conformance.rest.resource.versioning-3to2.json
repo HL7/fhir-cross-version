@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CapabilityStatement.rest.resource.versioning-Conformance.rest.resource.versioning-3to2",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.rest.resource.versioning-Conformance.rest.resource.versioning-3to2",
+  "name" : "CapabilityStatement.rest.resource.versioningConformance.rest.resource.versioning3to2",
+  "title" : "Mapping for CapabilityStatement.rest.resource.versioning/Conformance.rest.resource.versioning from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.versioning",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.resource.versioning",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/versioning-policy",
+    "target" : "http://hl7.org/fhir/1.0/versioning-policy",
+    "element" : [{
+      "code" : "versioned-update",
+      "target" : [{
+        "code" : "versioned-update",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "versioned",
+      "target" : [{
+        "code" : "versioned",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "no-version",
+      "target" : [{
+        "code" : "no-version",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

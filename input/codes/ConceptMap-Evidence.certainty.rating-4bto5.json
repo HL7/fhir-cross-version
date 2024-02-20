@@ -1,0 +1,125 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Evidence.certainty.rating-4bto5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Evidence.certainty.rating-4bto5",
+  "name" : "Evidence.certainty.rating4bto5",
+  "title" : "Mapping for Evidence.certainty.rating from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.certainty.rating",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.certainty.rating",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/certainty-rating",
+    "target" : "http://hl7.org/fhir/5.0/certainty-rating",
+    "element" : [{
+      "code" : "extremely-serious-concern",
+      "target" : [{
+        "code" : "extremely-serious-concern",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "no-change",
+      "target" : [{
+        "code" : "no-change",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "no-concern",
+      "target" : [{
+        "code" : "no-concern",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "high",
+      "target" : [{
+        "code" : "high",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "serious-concern",
+      "target" : [{
+        "code" : "serious-concern",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "upcode2",
+      "target" : [{
+        "code" : "upcode2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "low",
+      "target" : [{
+        "code" : "low",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "upcode1",
+      "target" : [{
+        "code" : "upcode1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "very-serious-concern",
+      "target" : [{
+        "code" : "very-serious-concern",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "absent",
+      "target" : [{
+        "code" : "absent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "very-low",
+      "target" : [{
+        "code" : "very-low",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "downcode3",
+      "target" : [{
+        "code" : "downcode3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "present",
+      "target" : [{
+        "code" : "present",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "downcode2",
+      "target" : [{
+        "code" : "downcode2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "downcode1",
+      "target" : [{
+        "code" : "downcode1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "moderate",
+      "target" : [{
+        "code" : "moderate",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

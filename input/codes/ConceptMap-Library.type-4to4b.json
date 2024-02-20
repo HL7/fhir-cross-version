@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Library.type-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Library.type-4to4b",
+  "name" : "Library.type4to4b",
+  "title" : "Mapping for Library.type from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Library#Library.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Library#Library.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/library-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/library-type",
+    "element" : [{
+      "code" : "model-definition",
+      "target" : [{
+        "code" : "model-definition",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "logic-library",
+      "target" : [{
+        "code" : "logic-library",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "module-definition",
+      "target" : [{
+        "code" : "module-definition",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "asset-collection",
+      "target" : [{
+        "code" : "asset-collection",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

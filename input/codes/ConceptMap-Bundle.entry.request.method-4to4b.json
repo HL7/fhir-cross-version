@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Bundle.entry.request.method-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Bundle.entry.request.method-4to4b",
+  "name" : "Bundle.entry.request.method4to4b",
+  "title" : "Mapping for Bundle.entry.request.method from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Bundle#Bundle.entry.request.method",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Bundle#Bundle.entry.request.method",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/http-verb",
+    "target" : "http://hl7.org/fhir/4.3/http-verb",
+    "element" : [{
+      "code" : "HEAD",
+      "target" : [{
+        "code" : "HEAD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DELETE",
+      "target" : [{
+        "code" : "DELETE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "POST",
+      "target" : [{
+        "code" : "POST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GET",
+      "target" : [{
+        "code" : "GET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PUT",
+      "target" : [{
+        "code" : "PUT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATCH",
+      "target" : [{
+        "code" : "PATCH",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

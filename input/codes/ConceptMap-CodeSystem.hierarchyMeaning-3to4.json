@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CodeSystem.hierarchyMeaning-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CodeSystem.hierarchyMeaning-3to4",
+  "name" : "CodeSystem.hierarchyMeaning3to4",
+  "title" : "Mapping for CodeSystem.hierarchyMeaning from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.hierarchyMeaning",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.hierarchyMeaning",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/codesystem-hierarchy-meaning",
+    "target" : "http://hl7.org/fhir/4.0/codesystem-hierarchy-meaning",
+    "element" : [{
+      "code" : "classified-with",
+      "target" : [{
+        "code" : "classified-with",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "part-of",
+      "target" : [{
+        "code" : "part-of",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "grouped-by",
+      "target" : [{
+        "code" : "grouped-by",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "is-a",
+      "target" : [{
+        "code" : "is-a",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

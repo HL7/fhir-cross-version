@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ImplementationGuide.page.kind-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ImplementationGuide.page.kind-2to3",
+  "name" : "ImplementationGuide.page.kind2to3",
+  "title" : "Mapping for ImplementationGuide.page.kind from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ImplementationGuide#ImplementationGuide.page.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ImplementationGuide#ImplementationGuide.page.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/guide-page-kind",
+    "target" : "http://hl7.org/fhir/3.0/guide-page-kind",
+    "element" : [{
+      "code" : "include",
+      "target" : [{
+        "code" : "include",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dictionary",
+      "target" : [{
+        "code" : "dictionary",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "resource",
+      "target" : [{
+        "code" : "resource",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "toc",
+      "target" : [{
+        "code" : "toc",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "page",
+      "target" : [{
+        "code" : "page",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "list",
+      "target" : [{
+        "code" : "list",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "directory",
+      "target" : [{
+        "code" : "directory",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "example",
+      "target" : [{
+        "code" : "example",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

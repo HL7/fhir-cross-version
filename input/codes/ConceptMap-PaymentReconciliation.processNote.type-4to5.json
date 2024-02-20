@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "PaymentReconciliation.processNote.type-4to5",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PaymentReconciliation.processNote.type-4to5",
+  "name" : "PaymentReconciliation.processNote.type4to5",
+  "title" : "Mapping for PaymentReconciliation.processNote.type from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.processNote.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.processNote.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/note-type",
+    "target" : "http://hl7.org/fhir/5.0/note-type",
+    "element" : [{
+      "code" : "print",
+      "target" : [{
+        "code" : "print",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "display",
+      "target" : [{
+        "code" : "display",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "printoper",
+      "target" : [{
+        "code" : "printoper",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

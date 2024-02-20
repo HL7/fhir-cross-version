@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "TestScript.setup.action.operation.method-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestScript.setup.action.operation.method-5to4b",
+  "name" : "TestScript.setup.action.operation.method5to4b",
+  "title" : "Mapping for TestScript.setup.action.operation.method from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestScript#TestScript.setup.action.operation.method",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.operation.method",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/http-operations",
+    "target" : "http://hl7.org/fhir/4.3/http-operations",
+    "element" : [{
+      "code" : "patch",
+      "target" : [{
+        "code" : "patch",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "head",
+      "target" : [{
+        "code" : "head",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "post",
+      "target" : [{
+        "code" : "post",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "get",
+      "target" : [{
+        "code" : "get",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "options",
+      "target" : [{
+        "code" : "options",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "delete",
+      "target" : [{
+        "code" : "delete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "put",
+      "target" : [{
+        "code" : "put",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "SubscriptionStatus.type-5to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SubscriptionStatus.type-5to4b",
+  "name" : "SubscriptionStatus.type5to4b",
+  "title" : "Mapping for SubscriptionStatus.type from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionStatus#SubscriptionStatus.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionStatus#SubscriptionStatus.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/subscription-notification-type",
+    "target" : "http://hl7.org/fhir/4.3/subscription-notification-type",
+    "element" : [{
+      "code" : "query-status",
+      "target" : [{
+        "code" : "query-status",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "handshake",
+      "target" : [{
+        "code" : "handshake",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "heartbeat",
+      "target" : [{
+        "code" : "heartbeat",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "event-notification",
+      "target" : [{
+        "code" : "event-notification",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "query-event",
+      "target" : [{
+        "code" : "query-event",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

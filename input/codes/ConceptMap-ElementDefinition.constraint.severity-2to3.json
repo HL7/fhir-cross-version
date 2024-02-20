@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ElementDefinition.constraint.severity-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ElementDefinition.constraint.severity-2to3",
+  "name" : "ElementDefinition.constraint.severity2to3",
+  "title" : "Mapping for ElementDefinition.constraint.severity from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ElementDefinition#ElementDefinition.constraint.severity",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.constraint.severity",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/constraint-severity",
+    "target" : "http://hl7.org/fhir/3.0/constraint-severity",
+    "element" : [{
+      "code" : "warning",
+      "target" : [{
+        "code" : "warning",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -11,7 +11,6 @@
     "target" : "http://hl7.org/fhir/4.3/measure-report-type",
     "element" : [{
       "code" : "data-exchange",
-      "noMap" : true,
       "target" : [{
         "code" : "data-collection",
         "relationship" : "equivalent"

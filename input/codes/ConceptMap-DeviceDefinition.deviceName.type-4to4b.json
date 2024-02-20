@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DeviceDefinition.deviceName.type-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceDefinition.deviceName.type-4to4b",
+  "name" : "DeviceDefinition.deviceName.type4to4b",
+  "title" : "Mapping for DeviceDefinition.deviceName.type from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DeviceDefinition#DeviceDefinition.deviceName.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DeviceDefinition#DeviceDefinition.deviceName.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/device-nametype",
+    "target" : "http://hl7.org/fhir/4.3/device-nametype",
+    "element" : [{
+      "code" : "udi-label-name",
+      "target" : [{
+        "code" : "udi-label-name",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "manufacturer-name",
+      "target" : [{
+        "code" : "manufacturer-name",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "model-name",
+      "target" : [{
+        "code" : "model-name",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "user-friendly-name",
+      "target" : [{
+        "code" : "user-friendly-name",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "patient-reported-name",
+      "target" : [{
+        "code" : "patient-reported-name",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ParameterDefinition.use-4to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ParameterDefinition.use-4to3",
+  "name" : "ParameterDefinition.use4to3",
+  "title" : "Mapping for ParameterDefinition.use from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ParameterDefinition#ParameterDefinition.use",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ParameterDefinition#ParameterDefinition.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/operation-parameter-use",
+    "target" : "http://hl7.org/fhir/3.0/operation-parameter-use",
+    "element" : [{
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "out",
+      "target" : [{
+        "code" : "out",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DocumentReference.docStatus-4bto4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DocumentReference.docStatus-4bto4",
+  "name" : "DocumentReference.docStatus4bto4",
+  "title" : "Mapping for DocumentReference.docStatus from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DocumentReference#DocumentReference.docStatus",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.docStatus",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/composition-status",
+    "target" : "http://hl7.org/fhir/4.0/composition-status",
+    "element" : [{
+      "code" : "amended",
+      "target" : [{
+        "code" : "amended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "final",
+      "target" : [{
+        "code" : "final",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preliminary",
+      "target" : [{
+        "code" : "preliminary",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

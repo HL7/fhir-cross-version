@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "RequestGroup.action.precheckBehavior-3to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestGroup.action.precheckBehavior-3to4",
+  "name" : "RequestGroup.action.precheckBehavior3to4",
+  "title" : "Mapping for RequestGroup.action.precheckBehavior from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/RequestGroup#RequestGroup.action.precheckBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.precheckBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/action-precheck-behavior",
+    "target" : "http://hl7.org/fhir/4.0/action-precheck-behavior",
+    "element" : [{
+      "code" : "no",
+      "target" : [{
+        "code" : "no",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "yes",
+      "target" : [{
+        "code" : "yes",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

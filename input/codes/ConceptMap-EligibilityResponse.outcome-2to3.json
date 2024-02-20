@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "EligibilityResponse.outcome-2to3",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/EligibilityResponse.outcome-2to3",
+  "name" : "EligibilityResponse.outcome2to3",
+  "title" : "Mapping for EligibilityResponse.outcome from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/EligibilityResponse#EligibilityResponse.outcome",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/EligibilityResponse#EligibilityResponse.outcome",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/remittance-outcome",
+    "target" : "http://hl7.org/fhir/3.0/remittance-outcome",
+    "element" : [{
+      "code" : "complete",
+      "target" : [{
+        "code" : "complete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

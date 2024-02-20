@@ -1,0 +1,90 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ResearchStudy.status-4to4b",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ResearchStudy.status-4to4b",
+  "name" : "ResearchStudy.status4to4b",
+  "title" : "Mapping for ResearchStudy.status from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchStudy#ResearchStudy.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ResearchStudy#ResearchStudy.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/research-study-status",
+    "target" : "http://hl7.org/fhir/4.3/research-study-status",
+    "element" : [{
+      "code" : "closed-to-accrual-and-intervention",
+      "target" : [{
+        "code" : "closed-to-accrual-and-intervention",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "approved",
+      "target" : [{
+        "code" : "approved",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "administratively-completed",
+      "target" : [{
+        "code" : "administratively-completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "withdrawn",
+      "target" : [{
+        "code" : "withdrawn",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in-review",
+      "target" : [{
+        "code" : "in-review",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "temporarily-closed-to-accrual",
+      "target" : [{
+        "code" : "temporarily-closed-to-accrual",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "closed-to-accrual",
+      "target" : [{
+        "code" : "closed-to-accrual",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "disapproved",
+      "target" : [{
+        "code" : "disapproved",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "temporarily-closed-to-accrual-and-intervention",
+      "target" : [{
+        "code" : "temporarily-closed-to-accrual-and-intervention",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

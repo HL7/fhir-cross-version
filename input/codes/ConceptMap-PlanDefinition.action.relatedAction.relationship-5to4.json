@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "PlanDefinition.action.relatedAction.relationship-5to4",
+  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PlanDefinition.action.relatedAction.relationship-5to4",
+  "name" : "PlanDefinition.action.relatedAction.relationship5to4",
+  "title" : "Mapping for PlanDefinition.action.relatedAction.relationship from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/action-relationship-type",
+    "target" : "http://hl7.org/fhir/4.0/action-relationship-type",
+    "element" : [{
+      "code" : "after-end",
+      "target" : [{
+        "code" : "after-end",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "before",
+      "target" : [{
+        "code" : "before",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "concurrent",
+      "target" : [{
+        "code" : "concurrent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "concurrent-with-start",
+      "target" : [{
+        "code" : "concurrent-with-start",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "before-end",
+      "target" : [{
+        "code" : "before-end",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "after",
+      "target" : [{
+        "code" : "after",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "concurrent-with-end",
+      "target" : [{
+        "code" : "concurrent-with-end",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "after-start",
+      "target" : [{
+        "code" : "after-start",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "before-start",
+      "target" : [{
+        "code" : "before-start",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}
