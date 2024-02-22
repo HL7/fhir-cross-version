@@ -11,34 +11,11 @@
   "group" : [{
     "source" : "http://hl7.org/fhir/5.0/element-names",
     "target" : "http://hl7.org/fhir/R2/element-names",
-    "element" : [{
-      "code" : "Account.relatedAccount",
-      "target" : [{
-        "code" : "Account",
-        "relationship" : "source-is-narrower-than-target"
-      }]
-    },
-    {
-      "code" : "Account.relatedAccount.account",
-      "target" : [{
-        "code" : "Account.partOf",
-        "relationship" : "source-is-broader-than-target"
-      }]
-    },
-    {
-      "code" : "Account.relatedAccount.account",
-      "target" : [{
-        "code" : "Account.relatedAccount.partOf",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "AdverseEvent.code",
-      "target" : [{
-        "code" : "AdverseEvent.event",
-        "relationship" : "equivalent"
-      }]
-    },
+    "element" : [
+    { "code" : "Account.relatedAccount", "target" : [{ "code" : "Account", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "Account.relatedAccount.account", "target" : [{ "code" : "Account.partOf", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "Account.relatedAccount.account", "target" : [{ "code" : "Account.relatedAccount.partOf", "relationship" : "equivalent" }]},
+    { "code" : "AdverseEvent.code", "target" : [{ "code" : "AdverseEvent.event", "relationship" : "equivalent" }]},
     {
       "code" : "AdverseEvent.occurrence[x]",
       "target" : [{
