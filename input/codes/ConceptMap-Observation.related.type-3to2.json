@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Observation.related.type-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Observation.related.type-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Observation.related.type-3to2",
   "name" : "Observation.related.type3to2",
   "title" : "Mapping for Observation.related.type from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.related.type",

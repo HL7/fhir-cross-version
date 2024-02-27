@@ -1,19 +1,19 @@
-/// url = "http://hl7.org/fhir/StructureMap/TestReport5to4B"
-/// name = "TestReport5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/TestReport5to4b"
+/// name = "TestReport5to4b"
 /// title = "TestReport Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/TestReport" alias TestReportR5 as source
-uses "http://hl7.org/fhir/4.0/TestReport" alias TestReportR4B as target
+uses "http://hl7.org/fhir/4.3/TestReport" alias TestReportR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group TestReport(source src : TestReportR5, target tgt : TestReportR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.name -> tgt.name;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/TestReport.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestReport.status-5to4b', 'code');
   src.testScript -> tgt.testScript;
-  src.result as v -> tgt.result = translate(v, 'http://hl7.org/fhir/ConceptMap/TestReport.result-R5toR4', 'code');
+  src.result as v -> tgt.result = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestReport.result-5to4b', 'code');
   src.score -> tgt.score;
   src.tester -> tgt.tester;
   src.issued -> tgt.issued;
@@ -24,7 +24,7 @@ group TestReport(source src : TestReportR5, target tgt : TestReportR4B) extends 
 }
 
 group TestReportParticipant(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/TestReport.participant.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestReport.participant.type-5to4b', 'code');
   src.uri -> tgt.uri;
   src.display -> tgt.display;
 }
@@ -39,13 +39,13 @@ group TestReportSetupAction(source src, target tgt) extends BackboneElement {
 }
 
 group TestReportSetupActionOperation(source src, target tgt) extends BackboneElement {
-  src.result as v -> tgt.result = translate(v, 'http://hl7.org/fhir/ConceptMap/TestReport.setup.action.operation.result-R5toR4', 'code');
+  src.result as v -> tgt.result = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestReport.setup.action.operation.result-5to4b', 'code');
   src.message -> tgt.message;
   src.detail -> tgt.detail;
 }
 
 group TestReportSetupActionAssert(source src, target tgt) extends BackboneElement {
-  src.result as v -> tgt.result = translate(v, 'http://hl7.org/fhir/ConceptMap/TestReport.setup.action.assert.result-R5toR4', 'code');
+  src.result as v -> tgt.result = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestReport.setup.action.assert.result-5to4b', 'code');
   src.message -> tgt.message;
   src.detail -> tgt.detail;
 }

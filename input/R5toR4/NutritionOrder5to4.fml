@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/NutritionOrder5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/NutritionOrder5to4"
 /// name = "NutritionOrder5to4"
 /// title = "NutritionOrder Transforms: R5 to R4"
 /// status = "active"
@@ -6,15 +6,15 @@
 uses "http://hl7.org/fhir/5.0/NutritionOrder" alias NutritionOrderR5 as source
 uses "http://hl7.org/fhir/4.0/NutritionOrder" alias NutritionOrderR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group NutritionOrder(source src : NutritionOrderR5, target tgt : NutritionOrderR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.instantiatesCanonical -> tgt.instantiatesCanonical;
   src.instantiatesUri -> tgt.instantiatesUri;
   src.instantiates -> tgt.instantiates;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/NutritionOrder.status-R5toR4', 'code');
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/NutritionOrder.intent-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/NutritionOrder.status-5to4', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/NutritionOrder.intent-5to4', 'code');
   src.subject -> tgt.patient;
   src.encounter -> tgt.encounter;
   src.dateTime -> tgt.dateTime;

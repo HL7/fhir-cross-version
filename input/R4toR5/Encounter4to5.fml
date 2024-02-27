@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Encounter4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Encounter4to5"
 /// name = "Encounter4to5"
 /// title = "Encounter Transforms: R4 to R5"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.0/Encounter" alias EncounterR4 as source
 uses "http://hl7.org/fhir/5.0/Encounter" alias EncounterR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Encounter(source src : EncounterR4, target tgt : EncounterR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Encounter.status-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Encounter.status-4to5', 'code');
   src.class as s ->  tgt.class = create('CodeableConcept') as t,  t.coding as tc then Coding(s, tc);
   src.priority -> tgt.priority;
   src.type -> tgt.type;
@@ -56,7 +56,7 @@ group EncounterAdmission(source src, target tgt) extends BackboneElement {
 
 group EncounterLocation(source src, target tgt) extends BackboneElement {
   src.location -> tgt.location;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Encounter.location.status-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Encounter.location.status-4to5', 'code');
   src.physicalType -> tgt.form;
   src.period -> tgt.period;
 }

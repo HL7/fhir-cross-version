@@ -1,19 +1,18 @@
-/// url = "http://hl7.org/fhir/StructureMap/ExplanationOfBenefit4to3"
-/// name = "Benefit4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ExplanationOfBenefit4to3"
+/// name = "ExplanationOfBenefit4to3"
 /// title = "ExplanationOfBenefit Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/ExplanationOfBenefit" alias ExplanationOfBenefit as source
 uses "http://hl7.org/fhir/3.0/ExplanationOfBenefit" alias ExplanationOfBenefitR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group ExplanationOfBenefit(source src : ExplanationOfBenefitR3, target tgt : ExplanationOfBenefit) extends DomainResource <<type+>> {
+group ExplanationOfBenefit(source src : ExplanationOfBenefit, target tgt : ExplanationOfBenefitR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
   src.type -> tgt.type;
   src.subType -> tgt.subType;
-  src.use -> tgt.use;
   src.patient -> tgt.patient;
   src.billablePeriod -> tgt.billablePeriod;
   src.created -> tgt.created;

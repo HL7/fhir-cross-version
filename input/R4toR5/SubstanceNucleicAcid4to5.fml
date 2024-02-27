@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/SubstanceNucleicAcid4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SubstanceNucleicAcid4to5"
 /// name = "SubstanceNucleicAcid4to5"
 /// title = "SubstanceNucleicAcid Transforms: R4 to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/SubstanceNucleicAcid" alias SubstanceNucleicAcidR4 as source
 uses "http://hl7.org/fhir/5.0/SubstanceNucleicAcid" alias SubstanceNucleicAcidR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group SubstanceNucleicAcid(source src : SubstanceNucleicAcidR4, target tgt : SubstanceNucleicAcidR5) extends DomainResource <<type+>> {
   src.sequenceType -> tgt.sequenceType;

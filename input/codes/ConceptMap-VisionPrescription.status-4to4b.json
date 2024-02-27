@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "VisionPrescription.status-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/VisionPrescription.status-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/VisionPrescription.status-4to4b",
   "name" : "VisionPrescription.status4to4b",
   "title" : "Mapping for VisionPrescription.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/VisionPrescription#VisionPrescription.status",

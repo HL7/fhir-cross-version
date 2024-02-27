@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/TerminologyCapabilities4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/TerminologyCapabilities4to5"
 /// name = "TerminologyCapabilities4to5"
 /// title = "TerminologyCapabilities Transforms: R4 to R5"
 /// status = "active"
@@ -6,14 +6,14 @@
 uses "http://hl7.org/fhir/4.0/TerminologyCapabilities" alias TerminologyCapabilitiesR4 as source
 uses "http://hl7.org/fhir/5.0/TerminologyCapabilities" alias TerminologyCapabilitiesR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group TerminologyCapabilities(source src : TerminologyCapabilitiesR4, target tgt : TerminologyCapabilitiesR5) extends DomainResource <<type+>> {
   src.url -> tgt.url;
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/TerminologyCapabilities.status-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TerminologyCapabilities.status-4to5', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -23,13 +23,13 @@ group TerminologyCapabilities(source src : TerminologyCapabilitiesR4, target tgt
   src.jurisdiction -> tgt.jurisdiction;
   src.purpose -> tgt.purpose;
   src.copyright -> tgt.copyright;
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/ConceptMap/TerminologyCapabilities.kind-R4toR5', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TerminologyCapabilities.kind-4to5', 'code');
   src.software as s -> tgt.software as t then TerminologyCapabilitiesSoftware(s, t);
   src.implementation as s -> tgt.implementation as t then TerminologyCapabilitiesImplementation(s, t);
   src.lockedDate -> tgt.lockedDate;
   src.codeSystem as s -> tgt.codeSystem as t then TerminologyCapabilitiesCodeSystem(s, t);
   src.expansion as s -> tgt.expansion as t then TerminologyCapabilitiesExpansion(s, t);
-  src.codeSearch as v -> tgt.codeSearch = translate(v, 'http://hl7.org/fhir/ConceptMap/TerminologyCapabilities.codeSearch-R4toR5', 'code');
+  src.codeSearch as v -> tgt.codeSearch = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TerminologyCapabilities.codeSearch-4to5', 'code');
   src.validateCode as s -> tgt.validateCode as t then TerminologyCapabilitiesValidateCode(s, t);
   src.translation as s -> tgt.translation as t then TerminologyCapabilitiesTranslation(s, t);
   src.closure as s -> tgt.closure as t then TerminologyCapabilitiesClosure(s, t);

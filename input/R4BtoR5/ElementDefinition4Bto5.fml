@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ElementDefinition4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ElementDefinition4Bto5"
 /// name = "ElementDefinition4Bto5"
 /// title = "ElementDefinition Transforms: R4B to R5"
 /// status = "active"
@@ -6,12 +6,12 @@
 uses "http://hl7.org/fhir/4.3/ElementDefinition" alias ElementDefinitionR4B as source
 uses "http://hl7.org/fhir/5.0/ElementDefinition" alias ElementDefinitionR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group ElementDefinition(source src : ElementDefinitionR4B, target tgt : ElementDefinitionR5) extends Element <<type+>> {
   src.modifierExtension -> tgt.modifierExtension;
   src.path -> tgt.path;
-  src.representation as v -> tgt.representation = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinitionB.representation-R4BtoR5', 'code');
+  src.representation as v -> tgt.representation = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.representation-4bto5', 'code');
   src.sliceName -> tgt.sliceName;
   src.sliceIsConstraining -> tgt.sliceIsConstraining;
   src.label -> tgt.label;
@@ -213,11 +213,11 @@ group ElementDefinitionSlicing(source src, target tgt) extends Element {
   src.discriminator as s -> tgt.discriminator as t then ElementDefinitionSlicingDiscriminator(s, t);
   src.description -> tgt.description;
   src.ordered -> tgt.ordered;
-  src.rules as v -> tgt.rules = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinitionB.slicing.rules-R4BtoR5', 'code');
+  src.rules as v -> tgt.rules = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.slicing.rules-4bto5', 'code');
 }
 
 group ElementDefinitionSlicingDiscriminator(source src, target tgt) extends Element {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinitionB.slicing.discriminator.type-R4BtoR5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.slicing.discriminator.type-4bto5', 'code');
   src.path -> tgt.path;
 }
 
@@ -231,8 +231,8 @@ group ElementDefinitionType(source src, target tgt) extends Element {
   src.code -> tgt.code;
   src.profile -> tgt.profile;
   src.targetProfile -> tgt.targetProfile;
-  src.aggregation as v -> tgt.aggregation = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinitionB.type.aggregation-R4BtoR5', 'code');
-  src.versioning as v -> tgt.versioning = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinitionB.type.versioning-R4BtoR5', 'code');
+  src.aggregation as v -> tgt.aggregation = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.type.aggregation-4bto5', 'code');
+  src.versioning as v -> tgt.versioning = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.type.versioning-4bto5', 'code');
 }
 
 group ElementDefinitionExample(source src, target tgt) extends Element {
@@ -292,14 +292,14 @@ group ElementDefinitionExample(source src, target tgt) extends Element {
 group ElementDefinitionConstraint(source src, target tgt) extends Element {
   src.key -> tgt.key;
   src.requirements -> tgt.requirements;
-  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinitionB.constraint.severity-R4BtoR5', 'code');
+  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.constraint.severity-4bto5', 'code');
   src.human -> tgt.human;
   src.expression -> tgt.expression;
   src.source -> tgt.source;
 }
 
 group ElementDefinitionBinding(source src, target tgt) extends Element {
-  src.strength as v -> tgt.strength = translate(v, 'http://hl7.org/fhir/ConceptMap/ElementDefinitionB.binding.strength-R4BtoR5', 'code');
+  src.strength as v -> tgt.strength = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.binding.strength-4bto5', 'code');
   src.description -> tgt.description;
   src.valueSet -> tgt.valueSet;
 }

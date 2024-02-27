@@ -1,19 +1,19 @@
-/// url = "http://hl7.org/fhir/StructureMap/CodeableConcept5to4B"
-/// name = "CodeableConcept5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CodeableConcept5to4b"
+/// name = "CodeableConcept5to4b"
 /// title = "CodeableConcept Transforms: R5 to R4B"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/CodeableConcept" alias CodeableConceptR4B as target
-uses "http://hl7.org/fhir/4.0/CodeableReference" alias CodeableReferenceR4B as target
-uses "http://hl7.org/fhir/4.0/Coding" alias CodingR4B as target
-uses "http://hl7.org/fhir/4.0/code" alias codeR4B as target
-uses "http://hl7.org/fhir/4.0/string" alias stringR4B as target
+uses "http://hl7.org/fhir/4.3/CodeableConcept" alias CodeableConceptR4B as target
+uses "http://hl7.org/fhir/4.3/CodeableReference" alias CodeableReferenceR4B as target
+uses "http://hl7.org/fhir/4.3/Coding" alias CodingR4B as target
+uses "http://hl7.org/fhir/4.3/code" alias codeR4B as target
+uses "http://hl7.org/fhir/4.3/string" alias stringR4B as target
 uses "http://hl7.org/fhir/5.0/CodeableConcept" alias CodeableConceptR5 as source
 uses "http://hl7.org/fhir/5.0/CodeableReference" alias CodeableReferenceR5 as source
 uses "http://hl7.org/fhir/5.0/Coding" alias CodingR5 as source
 uses "http://hl7.org/fhir/5.0/code" alias codeR5 as source
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group CodeableConcept(source src : CodeableConceptR5, target tgt : CodeableConceptR4B) extends Element <<type+>> {
   src.coding -> tgt.coding;

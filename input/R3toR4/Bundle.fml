@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Bundle3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Bundle3to4"
 /// name = "Bundle3to4"
 /// title = "Bundle Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Bundle" alias BundleR3 as source
 uses "http://hl7.org/fhir/4.0/Bundle" alias Bundle as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group Bundle(source src : BundleR3, target tgt : Bundle) extends Resource <<type+>> {
   src.identifier -> tgt.identifier;

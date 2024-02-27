@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Dosage3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Dosage3to4"
 /// name = "Dosage3to4"
 /// title = "Dosage Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Dosage" alias DosageR3 as source
 uses "http://hl7.org/fhir/4.0/Dosage" alias Dosage as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group Dosage(source src : DosageR3, target tgt : Dosage) extends BackboneElement <<type+>> {
   src.sequence -> tgt.sequence;

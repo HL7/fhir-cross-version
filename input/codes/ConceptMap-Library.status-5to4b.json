@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Library.status-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Library.status-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Library.status-5to4b",
   "name" : "Library.status5to4b",
   "title" : "Mapping for Library.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Library#Library.status",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "VisionPrescription.lensSpecification.prism.base-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/VisionPrescription.lensSpecification.prism.base-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/VisionPrescription.lensSpecification.prism.base-5to4",
   "name" : "VisionPrescription.lensSpecification.prism.base5to4",
   "title" : "Mapping for VisionPrescription.lensSpecification.prism.base from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.prism.base",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "PlanDefinition.action.requiredBehavior-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PlanDefinition.action.requiredBehavior-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.requiredBehavior-4bto5",
   "name" : "PlanDefinition.action.requiredBehavior4bto5",
   "title" : "Mapping for PlanDefinition.action.requiredBehavior from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.requiredBehavior",

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Provenance2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Provenance2to3"
 /// name = "Provenance2to3"
 /// title = "Provenance Transforms: R2 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/1.0/Provenance" alias ProvenanceR2 as source
 uses "http://hl7.org/fhir/3.0/Provenance" alias Provenance as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group Provenance(source src : ProvenanceR2, target tgt : Provenance) extends DomainResource <<type+>> {
   src.target -> tgt.target "Provenance-target";
@@ -24,7 +24,7 @@ group Provenance(source src : ProvenanceR2, target tgt : Provenance) extends Dom
 group prAgent(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role "agent-role";
   src.actor -> tgt.who "agent-who";
-  src.userId as su -> tgt.who as tu then {
+  src.userId as su -> tgt.who = create('Reference') as tu then {
     su -> tu.identifier as tu then Identifier(su, tu) "agent-userId2";
   } "agent-userId";
 }

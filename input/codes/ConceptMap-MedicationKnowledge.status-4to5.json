@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "MedicationKnowledge.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MedicationKnowledge.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/MedicationKnowledge.status-4to5",
   "name" : "MedicationKnowledge.status4to5",
   "title" : "Mapping for MedicationKnowledge.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationKnowledge#MedicationKnowledge.status",

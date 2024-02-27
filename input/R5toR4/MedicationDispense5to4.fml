@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/MedicationDispense5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/MedicationDispense5to4"
 /// name = "MedicationDispense5to4"
 /// title = "MedicationDispense Transforms: R5 to R4"
 /// status = "active"
@@ -6,12 +6,12 @@
 uses "http://hl7.org/fhir/5.0/MedicationDispense" alias MedicationDispenseR5 as source
 uses "http://hl7.org/fhir/4.0/MedicationDispense" alias MedicationDispenseR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group MedicationDispense(source src : MedicationDispenseR5, target tgt : MedicationDispenseR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.partOf -> tgt.partOf;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/MedicationDispense.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MedicationDispense.status-5to4', 'code');
   src.notPerformedReason -> tgt.statusReason;
   src.category -> tgt.category;
   src.medication -> tgt.medication;

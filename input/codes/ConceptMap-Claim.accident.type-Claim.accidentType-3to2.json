@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Claim.accident.type-Claim.accidentType-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Claim.accident.type-Claim.accidentType-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Claim.accident.type-Claim.accidentType-3to2",
   "name" : "Claim.accident.typeClaim.accidentType3to2",
   "title" : "Mapping for Claim.accident.type/Claim.accidentType from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.accident.type",

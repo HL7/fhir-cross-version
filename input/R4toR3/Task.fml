@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Task4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Task4to3"
 /// name = "Task4to3"
 /// title = "Task Transforms: R4 to R3"
 /// status = "active"
@@ -6,9 +6,9 @@
 uses "http://hl7.org/fhir/4.0/Task" alias Task as source
 uses "http://hl7.org/fhir/3.0/Task" alias TaskR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group Task(source src : TaskR3, target tgt : Task) extends DomainResource <<type+>> {
+group Task(source src : Task, target tgt : TaskR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.instantiatesUri -> tgt.definition;
   src.instantiatesCanonical -> tgt.definition;
@@ -31,7 +31,6 @@ group Task(source src : TaskR3, target tgt : Task) extends DomainResource <<type
   src.requester as vs ->  tgt.requester as vt,  vt.agent = vs;
   src.performerType -> tgt.performerType;
   src.owner -> tgt.owner;
-  src.location -> tgt.location;
   src.reasonCode -> tgt.reason;
   src.note -> tgt.note;
   src.relevantHistory -> tgt.relevantHistory;
@@ -47,7 +46,7 @@ group TaskRestriction(source src, target tgt) extends BackboneElement {
 }
 
 group TaskInput(source src, target tgt) extends BackboneElement {
-  src.type -> tgt.typeendgroup;
+  src.type -> tgt.type;
   src.value -> tgt.value;
 }
 

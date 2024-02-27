@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/RequestGroup3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/RequestGroup3to4"
 /// name = "RequestGroup3to4"
 /// title = "RequestGroup Transforms: R3 to R4"
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/RequestGroup" alias RequestGroupR3 as source
-uses "http://hl7.org/fhir/4.0/RequestGroup" alias Requestgroup as target
+uses "http://hl7.org/fhir/4.0/RequestGroup" alias RequestGroup as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group RequestGroup(source src : RequestGroupR3, target tgt : RequestGroup) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

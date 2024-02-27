@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Conformance.rest.resource.searchParam.type-CapabilityStatement.rest.resource.searchParam.type-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Conformance.rest.resource.searchParam.type-CapabilityStatement.rest.resource.searchParam.type-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Conformance.rest.resource.searchParam.type-CapabilityStatement.rest.resource.searchParam.type-2to3",
   "name" : "Conformance.rest.resource.searchParam.typeCapabilityStatement.rest.resource.searchParam.type2to3",
   "title" : "Mapping for Conformance.rest.resource.searchParam.type/CapabilityStatement.rest.resource.searchParam.type from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.resource.searchParam.type",

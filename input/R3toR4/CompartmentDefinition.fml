@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CompartmentDefinition3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CompartmentDefinition3to4"
 /// name = "CompartmentDefinition3to4"
 /// title = "CompartmentDefinition Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/CompartmentDefinition" alias CompartmentDefinitionR3 as source
 uses "http://hl7.org/fhir/4.0/CompartmentDefinition" alias CompartmentDefinition as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group CompartmentDefinition(source src : CompartmentDefinitionR3, target tgt : CompartmentDefinition) extends DomainResource <<type+>> {
   src.url -> tgt.url;

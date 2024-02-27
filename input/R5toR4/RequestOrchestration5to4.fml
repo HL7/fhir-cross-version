@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/RequestOrchestration5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/RequestOrchestration5to4"
 /// name = "RequestOrchestration5to4"
 /// title = "RequestOrchestration Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/RequestOrchestration" alias RequestOrchestrationR5 as source
 uses "http://hl7.org/fhir/4.0/RequestGroup" alias RequestGroupR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group RequestOrchestration(source src : RequestOrchestrationR5, target tgt : RequestGroupR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -15,9 +15,9 @@ group RequestOrchestration(source src : RequestOrchestrationR5, target tgt : Req
   src.basedOn -> tgt.basedOn;
   src.replaces -> tgt.replaces;
   src.groupIdentifier -> tgt.groupIdentifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.status-R5toR4', 'code');
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.intent-R5toR4', 'code');
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.priority-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.status-RequestGroup.status-5to4', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.intent-RequestGroup.intent-5to4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.priority-RequestGroup.priority-5to4', 'code');
   src.code -> tgt.code;
   src.subject -> tgt.subject;
   src.encounter -> tgt.encounter;
@@ -34,7 +34,7 @@ group RequestOrchestrationAction(source src, target tgt) extends BackboneElement
   src.title -> tgt.title;
   src.description -> tgt.description;
   src.textEquivalent -> tgt.textEquivalent;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.action.priority-R5toR4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.priority-RequestGroup.action.priority-5to4', 'code');
   src.code -> tgt.code;
   src.documentation -> tgt.documentation;
   src.condition as s -> tgt.condition as t then RequestOrchestrationActionCondition(s, t);
@@ -47,16 +47,16 @@ group RequestOrchestrationAction(source src, target tgt) extends BackboneElement
   src.timing : Timing -> tgt.timing "timingTiming";
   src.participant as s -> tgt.participant = s.actor;
   src.type -> tgt.type;
-  src.groupingBehavior as v -> tgt.groupingBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.action.groupingBehavior-R5toR4', 'code');
-  src.selectionBehavior as v -> tgt.selectionBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.action.selectionBehavior-R5toR4', 'code');
-  src.requiredBehavior as v -> tgt.requiredBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.action.requiredBehavior-R5toR4', 'code');
-  src.precheckBehavior as v -> tgt.precheckBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.action.precheckBehavior-R5toR4', 'code');
-  src.cardinalityBehavior as v -> tgt.cardinalityBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.action.cardinalityBehavior-R5toR4', 'code');
+  src.groupingBehavior as v -> tgt.groupingBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.groupingBehavior-RequestGroup.action.groupingBehavior-5to4', 'code');
+  src.selectionBehavior as v -> tgt.selectionBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.selectionBehavior-RequestGroup.action.selectionBehavior-5to4', 'code');
+  src.requiredBehavior as v -> tgt.requiredBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.requiredBehavior-RequestGroup.action.requiredBehavior-5to4', 'code');
+  src.precheckBehavior as v -> tgt.precheckBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.precheckBehavior-RequestGroup.action.precheckBehavior-5to4', 'code');
+  src.cardinalityBehavior as v -> tgt.cardinalityBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.cardinalityBehavior-RequestGroup.action.cardinalityBehavior-5to4', 'code');
   src.resource -> tgt.resource;
 }
 
 group RequestOrchestrationActionCondition(source src, target tgt) extends BackboneElement {
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.action.condition.kind-R5toR4', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.condition.kind-RequestGroup.action.condition.kind-5to4', 'code');
   src.expression -> tgt.expression;
 }
 
@@ -72,7 +72,7 @@ group RequestOrchestrationActionCondition(source src, target tgt) extends Backbo
 // }
 group RequestOrchestrationActionRelatedAction(source src, target tgt) extends BackboneElement {
   src.targetId -> tgt.actionId;
-  src.relationship as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/ConceptMap/RequestOrchestration.action.relatedAction.relationship-R5toR4', 'code');
+  src.relationship as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.relatedAction.relationship-RequestGroup.action.relatedAction.relationship-5to4', 'code');
   src.offset : Duration -> tgt.offset "offsetDuration";
   src.offset : Range -> tgt.offset "offsetRange";
 }

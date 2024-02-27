@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/EnrollmentResponse5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/EnrollmentResponse5to4"
 /// name = "EnrollmentResponse5to4"
 /// title = "EnrollmentResponse Transforms: R5 to R4"
 /// status = "active"
@@ -6,13 +6,13 @@
 uses "http://hl7.org/fhir/5.0/EnrollmentResponse" alias EnrollmentResponseR5 as source
 uses "http://hl7.org/fhir/4.0/EnrollmentResponse" alias EnrollmentResponseR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group EnrollmentResponse(source src : EnrollmentResponseR5, target tgt : EnrollmentResponseR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/EnrollmentResponse.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EnrollmentResponse.status-5to4', 'code');
   src.request -> tgt.request;
-  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/ConceptMap/EnrollmentResponse.outcome-R5toR4', 'code');
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EnrollmentResponse.outcome-5to4', 'code');
   src.disposition -> tgt.disposition;
   src.created -> tgt.created;
   src.organization -> tgt.organization;

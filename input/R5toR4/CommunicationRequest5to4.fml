@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CommunicationRequest5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CommunicationRequest5to4"
 /// name = "CommunicationRequest5to4"
 /// title = "CommunicationRequest Transforms: R5 to R4"
 /// status = "active"
@@ -6,17 +6,17 @@
 uses "http://hl7.org/fhir/5.0/CommunicationRequest" alias CommunicationRequestR5 as source
 uses "http://hl7.org/fhir/4.0/CommunicationRequest" alias CommunicationRequestR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group CommunicationRequest(source src : CommunicationRequestR5, target tgt : CommunicationRequestR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.basedOn -> tgt.basedOn;
   src.replaces -> tgt.replaces;
   src.groupIdentifier -> tgt.groupIdentifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/CommunicationRequest.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CommunicationRequest.status-5to4', 'code');
   src.statusReason -> tgt.statusReason;
   src.category -> tgt.category;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/CommunicationRequest.priority-R5toR4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CommunicationRequest.priority-5to4', 'code');
   src.doNotPerform -> tgt.doNotPerform;
   src.medium -> tgt.medium;
   src.subject -> tgt.subject;

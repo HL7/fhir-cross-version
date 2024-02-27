@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "AdverseEvent.outcome-4bto4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AdverseEvent.outcome-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/AdverseEvent.outcome-4bto4",
   "name" : "AdverseEvent.outcome4bto4",
   "title" : "Mapping for AdverseEvent.outcome from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AdverseEvent#AdverseEvent.outcome",

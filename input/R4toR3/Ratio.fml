@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Ratio4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Ratio4to3"
 /// name = "Ratio4to3"
 /// title = "Ratio Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Ratio" alias Ratio as source
 uses "http://hl7.org/fhir/3.0/Ratio" alias RatioR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Ratio(source src : Ratio, target tgt : RatioR3) extends Element <<type+>> {
   src.numerator -> tgt.numerator;

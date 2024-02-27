@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ObservationDefinition5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ObservationDefinition5to4"
 /// name = "ObservationDefinition5to4"
 /// title = "ObservationDefinition Transforms: R5 to R4"
 /// status = "active"
@@ -6,13 +6,13 @@
 uses "http://hl7.org/fhir/5.0/ObservationDefinition" alias ObservationDefinitionR5 as source
 uses "http://hl7.org/fhir/4.0/ObservationDefinition" alias ObservationDefinitionR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group ObservationDefinition(source src : ObservationDefinitionR5, target tgt : ObservationDefinitionR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.category -> tgt.category;
   src.code -> tgt.code;
-  src.permittedDataType as v -> tgt.permittedDataType = translate(v, 'http://hl7.org/fhir/ConceptMap/ObservationDefinition.permittedDataType-R5toR4', 'code');
+  src.permittedDataType as v -> tgt.permittedDataType = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ObservationDefinition.permittedDataType-5to4', 'code');
   src.multipleResultsAllowed -> tgt.multipleResultsAllowed;
   src.method -> tgt.method;
   src.preferredReportName -> tgt.preferredReportName;
@@ -27,11 +27,11 @@ group ObservationDefinition(source src : ObservationDefinitionR5, target tgt : O
 group ObservationDefinitionQualifiedValue(source src, target tgt) extends BackboneElement {
   src.context -> tgt.context;
   src.appliesTo -> tgt.appliesTo;
-  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/ConceptMap/ObservationDefinition.qualifiedValue.gender-R5toR4', 'code');
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ObservationDefinition.qualifiedValue.gender-ObservationDefinition.qualifiedInterval.gender-5to4', 'code');
   src.age -> tgt.age;
   src.gestationalAge -> tgt.gestationalAge;
   src.condition -> tgt.condition;
-  src.rangeCategory as v -> tgt.category = translate(v, 'http://hl7.org/fhir/ConceptMap/ObservationDefinition.qualifiedValue.rangeCategory-R5toR4', 'code');
+  src.rangeCategory as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ObservationDefinition.qualifiedValue.rangeCategory-ObservationDefinition.qualifiedInterval.category-5to4', 'code');
   src.range -> tgt.range;
 }
 

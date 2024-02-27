@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "NamingSystem.uniqueId.type-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/NamingSystem.uniqueId.type-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/NamingSystem.uniqueId.type-3to4",
   "name" : "NamingSystem.uniqueId.type3to4",
   "title" : "Mapping for NamingSystem.uniqueId.type from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/NamingSystem#NamingSystem.uniqueId.type",

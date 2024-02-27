@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Flag4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Flag4to3"
 /// name = "Flag4to3"
 /// title = "R4 to R3 Conversion for Flag"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Flag" alias Flag as source
 uses "http://hl7.org/fhir/3.0/Flag" alias FlagR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Flag(source src : Flag, target tgt : FlagR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

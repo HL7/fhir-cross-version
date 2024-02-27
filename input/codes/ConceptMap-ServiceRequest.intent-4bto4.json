@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ServiceRequest.intent-4bto4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ServiceRequest.intent-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ServiceRequest.intent-4bto4",
   "name" : "ServiceRequest.intent4bto4",
   "title" : "Mapping for ServiceRequest.intent from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ServiceRequest#ServiceRequest.intent",

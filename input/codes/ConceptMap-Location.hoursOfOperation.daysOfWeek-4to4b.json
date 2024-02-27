@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Location.hoursOfOperation.daysOfWeek-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Location.hoursOfOperation.daysOfWeek-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Location.hoursOfOperation.daysOfWeek-4to4b",
   "name" : "Location.hoursOfOperation.daysOfWeek4to4b",
   "title" : "Mapping for Location.hoursOfOperation.daysOfWeek from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Location#Location.hoursOfOperation.daysOfWeek",

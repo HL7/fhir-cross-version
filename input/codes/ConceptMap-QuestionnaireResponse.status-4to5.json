@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "QuestionnaireResponse.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/QuestionnaireResponse.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/QuestionnaireResponse.status-4to5",
   "name" : "QuestionnaireResponse.status4to5",
   "title" : "Mapping for QuestionnaireResponse.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status",

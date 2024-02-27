@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CapabilityStatement.acceptUnknown-Conformance.acceptUnknown-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.acceptUnknown-Conformance.acceptUnknown-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.acceptUnknown-Conformance.acceptUnknown-3to2",
   "name" : "CapabilityStatement.acceptUnknownConformance.acceptUnknown3to2",
   "title" : "Mapping for CapabilityStatement.acceptUnknown/Conformance.acceptUnknown from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.acceptUnknown",

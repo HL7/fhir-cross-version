@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RelatedArtifact.type-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RelatedArtifact.type-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RelatedArtifact.type-4to5",
   "name" : "RelatedArtifact.type4to5",
   "title" : "Mapping for RelatedArtifact.type from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RelatedArtifact#RelatedArtifact.type",

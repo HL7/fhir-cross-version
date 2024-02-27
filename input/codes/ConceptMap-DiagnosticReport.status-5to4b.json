@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DiagnosticReport.status-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DiagnosticReport.status-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DiagnosticReport.status-5to4b",
   "name" : "DiagnosticReport.status5to4b",
   "title" : "Mapping for DiagnosticReport.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DiagnosticReport#DiagnosticReport.status",

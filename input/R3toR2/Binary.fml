@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Binary3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Binary3to2"
 /// name = "Binary3to2"
 /// title = "Binary Transforms: R3 to R2"
 /// status = "active"
@@ -6,8 +6,8 @@
 uses "http://hl7.org/fhir/3.0/Binary" alias Binary as source
 uses "http://hl7.org/fhir/1.0/Binary" alias BinaryR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/primitives3to2"
-imports "http://hl7.org/fhir/StructureMap/Resource3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Resource3to2"
 
 group Binary(source src : Binary, target tgt : BinaryR2) extends Resource <<type+>> {
   src.contentType -> tgt.contentType "Binary-contentType";

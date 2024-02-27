@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DetectedIssue.severity-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DetectedIssue.severity-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DetectedIssue.severity-4to4b",
   "name" : "DetectedIssue.severity4to4b",
   "title" : "Mapping for DetectedIssue.severity from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DetectedIssue#DetectedIssue.severity",

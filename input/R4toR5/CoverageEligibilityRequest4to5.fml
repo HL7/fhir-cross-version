@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CoverageEligibilityRequest4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CoverageEligibilityRequest4to5"
 /// name = "CoverageEligibilityRequest4to5"
 /// title = "CoverageEligibilityRequest Transforms: R4 to R5"
 /// status = "active"
@@ -6,13 +6,13 @@
 uses "http://hl7.org/fhir/4.0/CoverageEligibilityRequest" alias CoverageEligibilityRequestR4 as source
 uses "http://hl7.org/fhir/5.0/CoverageEligibilityRequest" alias CoverageEligibilityRequestR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group CoverageEligibilityRequest(source src : CoverageEligibilityRequestR4, target tgt : CoverageEligibilityRequestR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/CoverageEligibilityRequest.status-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CoverageEligibilityRequest.status-4to5', 'code');
   src.priority -> tgt.priority;
-  src.purpose as v -> tgt.purpose = translate(v, 'http://hl7.org/fhir/ConceptMap/CoverageEligibilityRequest.purpose-R4toR5', 'code');
+  src.purpose as v -> tgt.purpose = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CoverageEligibilityRequest.purpose-4to5', 'code');
   src.patient -> tgt.patient;
   src.serviced : date -> tgt.serviced "servicedDate";
   src.serviced : Period -> tgt.serviced "servicedPeriod";

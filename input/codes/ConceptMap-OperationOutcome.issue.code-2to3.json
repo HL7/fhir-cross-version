@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "OperationOutcome.issue.code-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/OperationOutcome.issue.code-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/OperationOutcome.issue.code-2to3",
   "name" : "OperationOutcome.issue.code2to3",
   "title" : "Mapping for OperationOutcome.issue.code from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/OperationOutcome#OperationOutcome.issue.code",

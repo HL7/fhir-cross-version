@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DeviceMetric.operationalStatus-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceMetric.operationalStatus-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.operationalStatus-5to4",
   "name" : "DeviceMetric.operationalStatus5to4",
   "title" : "Mapping for DeviceMetric.operationalStatus from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus",

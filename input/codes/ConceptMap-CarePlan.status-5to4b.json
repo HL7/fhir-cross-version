@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CarePlan.status-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CarePlan.status-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CarePlan.status-5to4b",
   "name" : "CarePlan.status5to4b",
   "title" : "Mapping for CarePlan.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CarePlan#CarePlan.status",

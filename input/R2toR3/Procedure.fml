@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Procedure2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Procedure2to3"
 /// name = "Procedure2to3"
 /// title = "Procedure Transforms: R2 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/1.0/Procedure" alias ProcedureR2 as source
 uses "http://hl7.org/fhir/3.0/Procedure" alias Procedure as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group Procedure(source src : ProcedureR2, target tgt : Procedure) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Procedure-identifier";

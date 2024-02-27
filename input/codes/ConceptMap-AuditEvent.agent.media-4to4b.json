@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "AuditEvent.agent.media-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AuditEvent.agent.media-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/AuditEvent.agent.media-4to4b",
   "name" : "AuditEvent.agent.media4to4b",
   "title" : "Mapping for AuditEvent.agent.media from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.agent.media",

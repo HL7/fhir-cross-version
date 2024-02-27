@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Narrative2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Narrative2to3"
 /// name = "Narrative2to3"
 /// title = "Narrative Transforms: R2 to R3"
 /// status = "active"
@@ -6,8 +6,8 @@
 uses "http://hl7.org/fhir/1.0/Narrative" alias NarrativeR2 as source
 uses "http://hl7.org/fhir/3.0/Narrative" alias Narrative as target
 
-imports "http://hl7.org/fhir/StructureMap/primitives2to3"
-imports "http://hl7.org/fhir/StructureMap/Element2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"
 
 group Narrative(source src : NarrativeR2, target tgt : Narrative) extends Element <<type+>> {
   src.status -> tgt.status "Narrative-status";

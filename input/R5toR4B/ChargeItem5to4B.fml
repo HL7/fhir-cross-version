@@ -1,18 +1,18 @@
-/// url = "http://hl7.org/fhir/StructureMap/ChargeItem5to4B"
-/// name = "ChargeItem5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ChargeItem5to4b"
+/// name = "ChargeItem5to4b"
 /// title = "ChargeItem Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/ChargeItem" alias ChargeItemR5 as source
-uses "http://hl7.org/fhir/4.0/ChargeItem" alias ChargeItemR4B as target
+uses "http://hl7.org/fhir/4.3/ChargeItem" alias ChargeItemR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group ChargeItem(source src : ChargeItemR5, target tgt : ChargeItemR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.definitionUri -> tgt.definitionUri;
   src.definitionCanonical -> tgt.definitionCanonical;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ChargeItem.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ChargeItem.status-5to4b', 'code');
   src.partOf -> tgt.partOf;
   src.code -> tgt.code;
   src.subject -> tgt.subject;

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ParameterDefinition4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ParameterDefinition4to5"
 /// name = "ParameterDefinition4to5"
 /// title = "ParameterDefinition Transforms: R4 to R5"
 /// status = "active"
@@ -6,15 +6,15 @@
 uses "http://hl7.org/fhir/4.0/ParameterDefinition" alias ParameterDefinitionR4 as source
 uses "http://hl7.org/fhir/5.0/ParameterDefinition" alias ParameterDefinitionR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group ParameterDefinition(source src : ParameterDefinitionR4, target tgt : ParameterDefinitionR5) extends Element <<type+>> {
   src.name -> tgt.name;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/ConceptMap/ParameterDefinition.use-R4toR5', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ParameterDefinition.use-4to5', 'code');
   src.min -> tgt.min;
   src.max -> tgt.max;
   src.documentation -> tgt.documentation;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/cross-version/types4to5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/types-4to5', 'code');
   src.profile -> tgt.profile;
 }
 

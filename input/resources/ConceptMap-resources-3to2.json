@@ -1,15 +1,15 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "resources-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/resources-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/resources-3to2",
   "version" : "0.1",
   "name" : "Resources3to2",
   "title" : "Resource Map R3 to R2",
   "status" : "draft",
   "date" : "2019-07-09",
   "publisher" : "HL7",
-  "sourceScopeUri" : "http://hl7.org/fhir/3.0/resource-types",
-  "targetScopeUri" : "http://hl7.org/fhir/1.0/resource-types",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/ValueSet/resource-types",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/ValueSet/resource-types",
   "group" : [{
     "source" : "http://hl7.org/fhir/3.0/resource-types",
     "target" : "http://hl7.org/fhir/1.0/resource-types",

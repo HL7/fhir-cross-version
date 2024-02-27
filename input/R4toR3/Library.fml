@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Library4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Library4to3"
 /// name = "Library4to3"
 /// title = "Library Transforms: R4 to R3"
 /// status = "active"
@@ -6,9 +6,9 @@
 uses "http://hl7.org/fhir/4.0/Library" alias Library as source
 uses "http://hl7.org/fhir/3.0/Library" alias LibraryR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group Library(source src : LibraryR3, target tgt : Library) extends DomainResource <<type+>> {
+group Library(source src : Library, target tgt : LibraryR3) extends DomainResource <<type+>> {
   src.url -> tgt.url;
   src.identifier -> tgt.identifier;
   src.version -> tgt.version;

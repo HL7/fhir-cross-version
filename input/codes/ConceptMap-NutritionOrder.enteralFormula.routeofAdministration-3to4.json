@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "NutritionOrder.enteralFormula.routeofAdministration-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/NutritionOrder.enteralFormula.routeofAdministration-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/NutritionOrder.enteralFormula.routeofAdministration-3to4",
   "name" : "NutritionOrder.enteralFormula.routeofAdministration3to4",
   "title" : "Mapping for NutritionOrder.enteralFormula.routeofAdministration from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/NutritionOrder#NutritionOrder.enteralFormula.routeofAdministration",

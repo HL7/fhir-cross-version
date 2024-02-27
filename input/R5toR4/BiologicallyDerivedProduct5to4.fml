@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/BiologicallyDerivedProduct5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/BiologicallyDerivedProduct5to4"
 /// name = "BiologicallyDerivedProduct5to4"
 /// title = "BiologicallyDerivedProduct Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/BiologicallyDerivedProduct" alias BiologicallyDerivedProductR5 as source
 uses "http://hl7.org/fhir/4.0/BiologicallyDerivedProduct" alias BiologicallyDerivedProductR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group BiologicallyDerivedProduct(source src : BiologicallyDerivedProductR5, target tgt : BiologicallyDerivedProductR4) extends DomainResource <<type+>> {
   src.productCategory as s -> tgt.productCategory as t then BiologicallyDerivedProductCategory(s, t);

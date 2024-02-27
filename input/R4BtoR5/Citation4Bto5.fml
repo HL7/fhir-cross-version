@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Citation4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Citation4Bto5"
 /// name = "Citation4Bto5"
 /// title = "Citation Transforms: R4B to R5"
 /// status = "draft"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.3/Citation" alias CitationR4B as source
 uses "http://hl7.org/fhir/5.0/Citation" alias CitationR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group Citation(source src : CitationR4B, target tgt : CitationR5) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -14,7 +14,7 @@ group Citation(source src : CitationR4B, target tgt : CitationR5) extends Domain
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/CitationB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Citation.status-4bto5', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;

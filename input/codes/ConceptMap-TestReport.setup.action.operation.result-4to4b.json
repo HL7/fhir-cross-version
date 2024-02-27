@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "TestReport.setup.action.operation.result-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestReport.setup.action.operation.result-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/TestReport.setup.action.operation.result-4to4b",
   "name" : "TestReport.setup.action.operation.result4to4b",
   "title" : "Mapping for TestReport.setup.action.operation.result from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.setup.action.operation.result",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "TriggerDefinition.type-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TriggerDefinition.type-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/TriggerDefinition.type-4to3",
   "name" : "TriggerDefinition.type4to3",
   "title" : "Mapping for TriggerDefinition.type from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TriggerDefinition#TriggerDefinition.type",

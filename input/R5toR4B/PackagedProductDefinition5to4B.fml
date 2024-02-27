@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/PackagedProductDefinition5to4B"
-/// name = "PackagedProductDefinition5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/PackagedProductDefinition5to4b"
+/// name = "PackagedProductDefinition5to4b"
 /// title = "PackagedProductDefinition Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/PackagedProductDefinition" alias PackagedProductDefinitionR5 as source
-uses "http://hl7.org/fhir/4.0/PackagedProductDefinition" alias PackagedProductDefinitionR4B as target
+uses "http://hl7.org/fhir/4.3/PackagedProductDefinition" alias PackagedProductDefinitionR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group PackagedProductDefinition(source src : PackagedProductDefinitionR5, target tgt : PackagedProductDefinitionR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

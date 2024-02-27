@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CoverageEligibilityResponse.purpose-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CoverageEligibilityResponse.purpose-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CoverageEligibilityResponse.purpose-4bto5",
   "name" : "CoverageEligibilityResponse.purpose4bto5",
   "title" : "Mapping for CoverageEligibilityResponse.purpose from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityResponse#CoverageEligibilityResponse.purpose",

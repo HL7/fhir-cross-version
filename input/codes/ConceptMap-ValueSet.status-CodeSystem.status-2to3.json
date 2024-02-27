@@ -1,13 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ValueSet.status-CodeSystem.status-2to3",
-  "meta" : {
-    "tag" : [{
-      "system" : "http://something",
-      "code" : "review-needed"
-    }]
-  },
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ValueSet.status-CodeSystem.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ValueSet.status-CodeSystem.status-2to3",
   "name" : "ValueSet.statusCodeSystem.status2to3",
   "title" : "Mapping for ValueSet.status/CodeSystem.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ValueSet#ValueSet.status",
@@ -33,13 +27,6 @@
       "code" : "retired",
       "target" : [{
         "code" : "retired",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CHECK!",
-      "target" : [{
-        "code" : "unknown",
         "relationship" : "equivalent"
       }]
     }]

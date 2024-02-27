@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CapabilityStatement.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.status-4to5",
   "name" : "CapabilityStatement.status4to5",
   "title" : "Mapping for CapabilityStatement.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.status",

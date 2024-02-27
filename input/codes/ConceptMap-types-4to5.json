@@ -1,0 +1,609 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "types-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/types-4to5",
+  "version" : "0.1",
+  "name" : "Types4to5",
+  "title" : "Type Map R4 to R5",
+  "status" : "active",
+  "date" : "2024-02-01",
+  "publisher" : "HL7",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/resource-types",
+    "target" : "http://hl7.org/fhir/5.0/fhir-types",
+    "element" : [{
+      "code" : "Appointment",
+      "noMap" : true
+    },
+    {
+      "code" : "Account",
+      "noMap" : true
+    },
+    {
+      "code" : "DomainResource",
+      "noMap" : true
+    },
+    {
+      "code" : "Invoice",
+      "noMap" : true
+    },
+    {
+      "code" : "CatalogEntry",
+      "noMap" : true
+    },
+    {
+      "code" : "EventDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "DocumentManifest",
+      "noMap" : true
+    },
+    {
+      "code" : "MessageDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Goal",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicinalProductPackaged",
+      "noMap" : true
+    },
+    {
+      "code" : "Endpoint",
+      "noMap" : true
+    },
+    {
+      "code" : "EnrollmentRequest",
+      "noMap" : true
+    },
+    {
+      "code" : "Consent",
+      "noMap" : true
+    },
+    {
+      "code" : "CapabilityStatement",
+      "noMap" : true
+    },
+    {
+      "code" : "Measure",
+      "noMap" : true
+    },
+    {
+      "code" : "Medication",
+      "noMap" : true
+    },
+    {
+      "code" : "ResearchSubject",
+      "noMap" : true
+    },
+    {
+      "code" : "Subscription",
+      "noMap" : true
+    },
+    {
+      "code" : "DocumentReference",
+      "noMap" : true
+    },
+    {
+      "code" : "GraphDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Parameters",
+      "noMap" : true
+    },
+    {
+      "code" : "CoverageEligibilityResponse",
+      "noMap" : true
+    },
+    {
+      "code" : "MeasureReport",
+      "noMap" : true
+    },
+    {
+      "code" : "PractitionerRole",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstanceReferenceInformation",
+      "noMap" : true
+    },
+    {
+      "code" : "RelatedPerson",
+      "noMap" : true
+    },
+    {
+      "code" : "ServiceRequest",
+      "noMap" : true
+    },
+    {
+      "code" : "SupplyRequest",
+      "noMap" : true
+    },
+    {
+      "code" : "Practitioner",
+      "noMap" : true
+    },
+    {
+      "code" : "VerificationResult",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstanceProtein",
+      "noMap" : true
+    },
+    {
+      "code" : "BodyStructure",
+      "noMap" : true
+    },
+    {
+      "code" : "Slot",
+      "noMap" : true
+    },
+    {
+      "code" : "Contract",
+      "noMap" : true
+    },
+    {
+      "code" : "Person",
+      "noMap" : true
+    },
+    {
+      "code" : "RiskAssessment",
+      "noMap" : true
+    },
+    {
+      "code" : "Group",
+      "noMap" : true
+    },
+    {
+      "code" : "PaymentNotice",
+      "noMap" : true
+    },
+    {
+      "code" : "ResearchDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicinalProductManufactured",
+      "noMap" : true
+    },
+    {
+      "code" : "Organization",
+      "noMap" : true
+    },
+    {
+      "code" : "CareTeam",
+      "noMap" : true
+    },
+    {
+      "code" : "ImplementationGuide",
+      "noMap" : true
+    },
+    {
+      "code" : "ImagingStudy",
+      "noMap" : true
+    },
+    {
+      "code" : "FamilyMemberHistory",
+      "noMap" : true
+    },
+    {
+      "code" : "ChargeItem",
+      "noMap" : true
+    },
+    {
+      "code" : "ResearchElementDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "ObservationDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Encounter",
+      "noMap" : true
+    },
+    {
+      "code" : "Substance",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstanceSpecification",
+      "noMap" : true
+    },
+    {
+      "code" : "SearchParameter",
+      "noMap" : true
+    },
+    {
+      "code" : "ActivityDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Communication",
+      "noMap" : true
+    },
+    {
+      "code" : "InsurancePlan",
+      "noMap" : true
+    },
+    {
+      "code" : "Linkage",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstanceSourceMaterial",
+      "noMap" : true
+    },
+    {
+      "code" : "ImmunizationEvaluation",
+      "noMap" : true
+    },
+    {
+      "code" : "DeviceUseStatement",
+      "noMap" : true
+    },
+    {
+      "code" : "RequestGroup",
+      "noMap" : true
+    },
+    {
+      "code" : "DeviceRequest",
+      "noMap" : true
+    },
+    {
+      "code" : "MessageHeader",
+      "noMap" : true
+    },
+    {
+      "code" : "ImmunizationRecommendation",
+      "noMap" : true
+    },
+    {
+      "code" : "Provenance",
+      "noMap" : true
+    },
+    {
+      "code" : "Task",
+      "noMap" : true
+    },
+    {
+      "code" : "Questionnaire",
+      "noMap" : true
+    },
+    {
+      "code" : "ExplanationOfBenefit",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicinalProductPharmaceutical",
+      "noMap" : true
+    },
+    {
+      "code" : "ResearchStudy",
+      "noMap" : true
+    },
+    {
+      "code" : "Specimen",
+      "noMap" : true
+    },
+    {
+      "code" : "AllergyIntolerance",
+      "noMap" : true
+    },
+    {
+      "code" : "CarePlan",
+      "noMap" : true
+    },
+    {
+      "code" : "StructureDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "ChargeItemDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "EpisodeOfCare",
+      "noMap" : true
+    },
+    {
+      "code" : "OperationOutcome",
+      "noMap" : true
+    },
+    {
+      "code" : "Procedure",
+      "noMap" : true
+    },
+    {
+      "code" : "List",
+      "noMap" : true
+    },
+    {
+      "code" : "ConceptMap",
+      "noMap" : true
+    },
+    {
+      "code" : "OperationDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "ValueSet",
+      "noMap" : true
+    },
+    {
+      "code" : "Immunization",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicationRequest",
+      "noMap" : true
+    },
+    {
+      "code" : "EffectEvidenceSynthesis",
+      "noMap" : true
+    },
+    {
+      "code" : "BiologicallyDerivedProduct",
+      "noMap" : true
+    },
+    {
+      "code" : "Device",
+      "noMap" : true
+    },
+    {
+      "code" : "VisionPrescription",
+      "noMap" : true
+    },
+    {
+      "code" : "Media",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicinalProductContraindication",
+      "noMap" : true
+    },
+    {
+      "code" : "Resource",
+      "noMap" : true
+    },
+    {
+      "code" : "EvidenceVariable",
+      "noMap" : true
+    },
+    {
+      "code" : "MolecularSequence",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicinalProduct",
+      "noMap" : true
+    },
+    {
+      "code" : "DeviceMetric",
+      "noMap" : true
+    },
+    {
+      "code" : "CodeSystem",
+      "noMap" : true
+    },
+    {
+      "code" : "Flag",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstanceNucleicAcid",
+      "noMap" : true
+    },
+    {
+      "code" : "RiskEvidenceSynthesis",
+      "noMap" : true
+    },
+    {
+      "code" : "AppointmentResponse",
+      "noMap" : true
+    },
+    {
+      "code" : "StructureMap",
+      "noMap" : true
+    },
+    {
+      "code" : "AdverseEvent",
+      "noMap" : true
+    },
+    {
+      "code" : "GuidanceResponse",
+      "noMap" : true
+    },
+    {
+      "code" : "Observation",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicationAdministration",
+      "noMap" : true
+    },
+    {
+      "code" : "EnrollmentResponse",
+      "noMap" : true
+    },
+    {
+      "code" : "Binary",
+      "noMap" : true
+    },
+    {
+      "code" : "Library",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicinalProductInteraction",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicationStatement",
+      "noMap" : true
+    },
+    {
+      "code" : "CommunicationRequest",
+      "noMap" : true
+    },
+    {
+      "code" : "TestScript",
+      "noMap" : true
+    },
+    {
+      "code" : "Basic",
+      "noMap" : true
+    },
+    {
+      "code" : "SubstancePolymer",
+      "noMap" : true
+    },
+    {
+      "code" : "TestReport",
+      "noMap" : true
+    },
+    {
+      "code" : "ClaimResponse",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicationDispense",
+      "noMap" : true
+    },
+    {
+      "code" : "DiagnosticReport",
+      "noMap" : true
+    },
+    {
+      "code" : "OrganizationAffiliation",
+      "noMap" : true
+    },
+    {
+      "code" : "HealthcareService",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicinalProductIndication",
+      "noMap" : true
+    },
+    {
+      "code" : "NutritionOrder",
+      "noMap" : true
+    },
+    {
+      "code" : "TerminologyCapabilities",
+      "noMap" : true
+    },
+    {
+      "code" : "Evidence",
+      "noMap" : true
+    },
+    {
+      "code" : "AuditEvent",
+      "noMap" : true
+    },
+    {
+      "code" : "PaymentReconciliation",
+      "noMap" : true
+    },
+    {
+      "code" : "Condition",
+      "noMap" : true
+    },
+    {
+      "code" : "SpecimenDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "Composition",
+      "noMap" : true
+    },
+    {
+      "code" : "DetectedIssue",
+      "noMap" : true
+    },
+    {
+      "code" : "Bundle",
+      "noMap" : true
+    },
+    {
+      "code" : "CompartmentDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicationKnowledge",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicinalProductIngredient",
+      "noMap" : true
+    },
+    {
+      "code" : "Patient",
+      "noMap" : true
+    },
+    {
+      "code" : "Coverage",
+      "noMap" : true
+    },
+    {
+      "code" : "QuestionnaireResponse",
+      "noMap" : true
+    },
+    {
+      "code" : "CoverageEligibilityRequest",
+      "noMap" : true
+    },
+    {
+      "code" : "NamingSystem",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicinalProductUndesirableEffect",
+      "noMap" : true
+    },
+    {
+      "code" : "ExampleScenario",
+      "noMap" : true
+    },
+    {
+      "code" : "Schedule",
+      "noMap" : true
+    },
+    {
+      "code" : "SupplyDelivery",
+      "noMap" : true
+    },
+    {
+      "code" : "ClinicalImpression",
+      "noMap" : true
+    },
+    {
+      "code" : "DeviceDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "PlanDefinition",
+      "noMap" : true
+    },
+    {
+      "code" : "MedicinalProductAuthorization",
+      "noMap" : true
+    },
+    {
+      "code" : "Claim",
+      "noMap" : true
+    },
+    {
+      "code" : "Location",
+      "noMap" : true
+    }]
+  }]
+}

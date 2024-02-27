@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Questionnaire4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Questionnaire4to3"
 /// name = "Questionnaire4to3"
 /// title = "R4 to R3 Conversion for Questionnaire"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Questionnaire" alias Questionnaire as source
 uses "http://hl7.org/fhir/3.0/Questionnaire" alias QuestionnaireR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Questionnaire(source src : Questionnaire, target tgt : QuestionnaireR3) extends DomainResource <<type+>> {
   src.url -> tgt.url;

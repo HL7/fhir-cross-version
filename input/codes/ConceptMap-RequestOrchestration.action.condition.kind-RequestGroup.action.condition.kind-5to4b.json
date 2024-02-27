@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RequestOrchestration.action.condition.kind-RequestGroup.action.condition.kind-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestOrchestration.action.condition.kind-RequestGroup.action.condition.kind-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.condition.kind-RequestGroup.action.condition.kind-5to4b",
   "name" : "RequestOrchestration.action.condition.kindRequestGroup.action.condition.kind5to4b",
   "title" : "Mapping for RequestOrchestration.action.condition.kind/RequestGroup.action.condition.kind from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.condition.kind",

@@ -1,16 +1,16 @@
-/// url = "http://hl7.org/fhir/StructureMap/Appointment5to4B"
-/// name = "Appointment5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Appointment5to4b"
+/// name = "Appointment5to4b"
 /// title = "Appointment Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Appointment" alias AppointmentR5 as source
-uses "http://hl7.org/fhir/4.0/Appointment" alias AppointmentR4B as target
+uses "http://hl7.org/fhir/4.3/Appointment" alias AppointmentR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Appointment(source src : AppointmentR5, target tgt : AppointmentR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Appointment.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Appointment.status-5to4b', 'code');
   src.cancellationReason -> tgt.cancelationReason;
   src.serviceCategory -> tgt.serviceCategory;
   src.serviceType -> tgt.serviceType;
@@ -37,6 +37,6 @@ group AppointmentParticipant(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.actor;
   src.required as s where required = 'true' ->  tgt.required as t,  t.value = 'required';
   src.required as s where required = 'false' ->  tgt.required as t,  t.value = 'optional';
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Appointment.participant.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Appointment.participant.status-5to4b', 'code');
 }
 

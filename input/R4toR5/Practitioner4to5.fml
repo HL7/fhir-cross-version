@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Practitioner4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Practitioner4to5"
 /// name = "Practitioner4to5"
 /// title = "Practitioner Transforms: R4 to R5"
 /// status = "active"
@@ -6,14 +6,14 @@
 uses "http://hl7.org/fhir/4.0/Practitioner" alias PractitionerR4 as source
 uses "http://hl7.org/fhir/5.0/Practitioner" alias PractitionerR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Practitioner(source src : PractitionerR4, target tgt : PractitionerR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.active -> tgt.active;
   src.name -> tgt.name;
   src.telecom -> tgt.telecom;
-  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/ConceptMap/Practitioner.gender-R4toR5', 'code');
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Practitioner.gender-4to5', 'code');
   src.birthDate -> tgt.birthDate;
   src.address -> tgt.address;
   src.photo -> tgt.photo;

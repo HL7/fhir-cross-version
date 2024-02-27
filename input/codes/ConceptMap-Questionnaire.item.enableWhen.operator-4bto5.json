@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Questionnaire.item.enableWhen.operator-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Questionnaire.item.enableWhen.operator-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Questionnaire.item.enableWhen.operator-4bto5",
   "name" : "Questionnaire.item.enableWhen.operator4bto5",
   "title" : "Mapping for Questionnaire.item.enableWhen.operator from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Questionnaire#Questionnaire.item.enableWhen.operator",

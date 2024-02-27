@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/HealthcareService4to3"
-/// name = "Service4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/HealthcareService4to3"
+/// name = "HealthcareService4to3"
 /// title = "HealthcareService Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/HealthcareService" alias HealthcareService as source
 uses "http://hl7.org/fhir/3.0/HealthcareService" alias HealthcareServiceR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group HealthcareService(source src : HealthcareService, target tgt : HealthcareServiceR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

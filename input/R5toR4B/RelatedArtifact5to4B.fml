@@ -1,15 +1,15 @@
-/// url = "http://hl7.org/fhir/StructureMap/RelatedArtifact5to4B"
-/// name = "RelatedArtifact5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/RelatedArtifact5to4b"
+/// name = "RelatedArtifact5to4b"
 /// title = "RelatedArtifact Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/RelatedArtifact" alias RelatedArtifactR5 as source
-uses "http://hl7.org/fhir/4.0/RelatedArtifact" alias RelatedArtifactR4B as target
+uses "http://hl7.org/fhir/4.3/RelatedArtifact" alias RelatedArtifactR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group RelatedArtifact(source src : RelatedArtifactR5, target tgt : RelatedArtifactR4B) extends Element <<type+>> {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/RelatedArtifact.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RelatedArtifact.type-5to4b', 'code');
   src.label -> tgt.label;
   src.display -> tgt.display;
   src.citation -> tgt.citation;

@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/DeviceDefinition5to4B"
-/// name = "DeviceDefinition5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DeviceDefinition5to4b"
+/// name = "DeviceDefinition5to4b"
 /// title = "DeviceDefinition Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/DeviceDefinition" alias DeviceDefinitionR5 as source
-uses "http://hl7.org/fhir/4.0/DeviceDefinition" alias DeviceDefinitionR4B as target
+uses "http://hl7.org/fhir/4.3/DeviceDefinition" alias DeviceDefinitionR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group DeviceDefinition(source src : DeviceDefinitionR5, target tgt : DeviceDefinitionR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -45,7 +45,7 @@ group DeviceDefinitionUdiDeviceIdentifier(source src, target tgt) extends Backbo
 // }
 group DeviceDefinitionDeviceName(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceDefinition.deviceName.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceDefinition.deviceName.type-5to4b', 'code');
 }
 
 // group DeviceDefinitionClassification(source src, target tgt) extends BackboneElement {

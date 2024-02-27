@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Condition4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Condition4to3"
 /// name = "Condition4to3"
 /// title = "Condition Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Condition" alias Condition as source
 uses "http://hl7.org/fhir/3.0/Condition" alias ConditionR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Condition(source src : Condition, target tgt : ConditionR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -37,7 +37,6 @@ group Condition(source src : Condition, target tgt : ConditionR3) extends Domain
   src.abatement : Range as vs -> tgt.abatement = create('Range') as vt then Range(vs, vt) "abatementRange";
   src.abatement : string as vs -> tgt.abatement = create('string') as vt then string(vs, vt) "abatementString";
   src.recordedDate -> tgt.assertedDate;
-  src.recorder -> tgt.recorder;
   src.asserter -> tgt.asserter;
   src.stage as s -> tgt.stage as t then stage(s, t);
   src.evidence as s -> tgt.evidence as t then evidence(s, t);

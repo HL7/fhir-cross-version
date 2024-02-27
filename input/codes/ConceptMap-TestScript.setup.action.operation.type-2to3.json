@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "TestScript.setup.action.operation.type-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestScript.setup.action.operation.type-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.operation.type-2to3",
   "name" : "TestScript.setup.action.operation.type2to3",
   "title" : "Mapping for TestScript.setup.action.operation.type from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/TestScript#TestScript.setup.action.operation.type",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CapabilityStatement.rest.interaction.code-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.rest.interaction.code-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.interaction.code-3to4",
   "name" : "CapabilityStatement.rest.interaction.code3to4",
   "title" : "Mapping for CapabilityStatement.rest.interaction.code from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.interaction.code",

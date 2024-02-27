@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "SpecimenDefinition.typeTested.preference-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SpecimenDefinition.typeTested.preference-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/SpecimenDefinition.typeTested.preference-4to4b",
   "name" : "SpecimenDefinition.typeTested.preference4to4b",
   "title" : "Mapping for SpecimenDefinition.typeTested.preference from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SpecimenDefinition#SpecimenDefinition.typeTested.preference",

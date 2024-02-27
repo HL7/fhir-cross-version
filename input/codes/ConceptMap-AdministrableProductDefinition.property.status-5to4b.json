@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "AdministrableProductDefinition.property.status-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AdministrableProductDefinition.property.status-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/AdministrableProductDefinition.property.status-5to4b",
   "name" : "AdministrableProductDefinition.property.status5to4b",
   "title" : "Mapping for AdministrableProductDefinition.property.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/AdministrableProductDefinition#AdministrableProductDefinition.property.status",

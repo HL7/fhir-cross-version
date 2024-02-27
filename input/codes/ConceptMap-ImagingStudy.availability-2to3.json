@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ImagingStudy.availability-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ImagingStudy.availability-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ImagingStudy.availability-2to3",
   "name" : "ImagingStudy.availability2to3",
   "title" : "Mapping for ImagingStudy.availability from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ImagingStudy#ImagingStudy.availability",

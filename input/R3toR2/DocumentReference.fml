@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/DocumentReference3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DocumentReference3to2"
 /// name = "DocumentReference3to2"
 /// title = "DocumentReference Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/DocumentReference" alias DocumentReference as source
 uses "http://hl7.org/fhir/1.0/DocumentReference" alias DocumentReferenceR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group DocumentReference(source src : DocumentReference, target tgt : DocumentReferenceR2) extends DomainResource <<type+>> {
   src.masterIdentifier -> tgt.masterIdentifier "DocumentReference-masterIdentifier";

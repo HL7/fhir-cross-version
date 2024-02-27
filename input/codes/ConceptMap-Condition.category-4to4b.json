@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Condition.category-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Condition.category-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Condition.category-4to4b",
   "name" : "Condition.category4to4b",
   "title" : "Mapping for Condition.category from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Condition#Condition.category",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Substance.status-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Substance.status-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Substance.status-5to4",
   "name" : "Substance.status5to4",
   "title" : "Mapping for Substance.status from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Substance#Substance.status",

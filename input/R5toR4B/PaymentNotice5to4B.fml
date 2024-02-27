@@ -1,16 +1,16 @@
-/// url = "http://hl7.org/fhir/StructureMap/PaymentNotice5to4B"
-/// name = "PaymentNotice5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/PaymentNotice5to4b"
+/// name = "PaymentNotice5to4b"
 /// title = "PaymentNotice Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/PaymentNotice" alias PaymentNoticeR5 as source
-uses "http://hl7.org/fhir/4.0/PaymentNotice" alias PaymentNoticeR4B as target
+uses "http://hl7.org/fhir/4.3/PaymentNotice" alias PaymentNoticeR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group PaymentNotice(source src : PaymentNoticeR5, target tgt : PaymentNoticeR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/PaymentNotice.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PaymentNotice.status-5to4b', 'code');
   src.request -> tgt.request;
   src.response -> tgt.response;
   src.created -> tgt.created;

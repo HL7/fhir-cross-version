@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "PlanDefinition.status-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PlanDefinition.status-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.status-3to4",
   "name" : "PlanDefinition.status3to4",
   "title" : "Mapping for PlanDefinition.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.status",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CapabilityStatement.messaging.event.category-Conformance.messaging.event.category-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.messaging.event.category-Conformance.messaging.event.category-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.messaging.event.category-Conformance.messaging.event.category-3to2",
   "name" : "CapabilityStatement.messaging.event.categoryConformance.messaging.event.category3to2",
   "title" : "Mapping for CapabilityStatement.messaging.event.category/Conformance.messaging.event.category from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.event.category",

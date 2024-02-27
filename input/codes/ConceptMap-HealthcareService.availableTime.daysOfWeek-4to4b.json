@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "HealthcareService.availableTime.daysOfWeek-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/HealthcareService.availableTime.daysOfWeek-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/HealthcareService.availableTime.daysOfWeek-4to4b",
   "name" : "HealthcareService.availableTime.daysOfWeek4to4b",
   "title" : "Mapping for HealthcareService.availableTime.daysOfWeek from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/HealthcareService#HealthcareService.availableTime.daysOfWeek",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Questionnaire.group.question.type-Questionnaire.item.type-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Questionnaire.group.question.type-Questionnaire.item.type-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Questionnaire.group.question.type-Questionnaire.item.type-2to3",
   "name" : "Questionnaire.group.question.typeQuestionnaire.item.type2to3",
   "title" : "Mapping for Questionnaire.group.question.type/Questionnaire.item.type from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Questionnaire#Questionnaire.group.question.type",

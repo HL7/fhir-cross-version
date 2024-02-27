@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Questionnaire5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Questionnaire5to4"
 /// name = "Questionnaire5to4"
 /// title = "Questionnaire Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/Questionnaire" alias QuestionnaireR5 as source
 uses "http://hl7.org/fhir/4.0/Questionnaire" alias QuestionnaireR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Questionnaire(source src : QuestionnaireR5, target tgt : QuestionnaireR4) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -15,7 +15,7 @@ group Questionnaire(source src : QuestionnaireR5, target tgt : QuestionnaireR4) 
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.derivedFrom -> tgt.derivedFrom;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Questionnaire.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Questionnaire.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.subjectType -> tgt.subjectType;
   src.date -> tgt.date;
@@ -39,9 +39,9 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.prefix -> tgt.prefix;
   src.text -> tgt.text;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/Questionnaire.item.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Questionnaire.item.type-5to4', 'code');
   src.enableWhen as s -> tgt.enableWhen as t then QuestionnaireItemEnableWhen(s, t);
-  src.enableBehavior as v -> tgt.enableBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/Questionnaire.item.enableBehavior-R5toR4', 'code');
+  src.enableBehavior as v -> tgt.enableBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Questionnaire.item.enableBehavior-5to4', 'code');
   src.required -> tgt.required;
   src.repeats -> tgt.repeats;
   src.readOnly -> tgt.readOnly;
@@ -56,7 +56,7 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
 
 group QuestionnaireItemEnableWhen(source src, target tgt) extends BackboneElement {
   src.question -> tgt.question;
-  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/ConceptMap/Questionnaire.item.enableWhen.operator-R5toR4', 'code');
+  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Questionnaire.item.enableWhen.operator-5to4', 'code');
   src.answer : boolean -> tgt.answer "answerBoolean";
   src.answer : decimal -> tgt.answer "answerDecimal";
   src.answer : integer -> tgt.answer "answerInteger";

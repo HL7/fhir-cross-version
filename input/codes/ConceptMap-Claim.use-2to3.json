@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Claim.use-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Claim.use-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Claim.use-2to3",
   "name" : "Claim.use2to3",
   "title" : "Mapping for Claim.use from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Claim#Claim.use",

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ImagingStudy4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ImagingStudy4to3"
 /// name = "ImagingStudy4to3"
 /// title = "ImagingStudy Transforms: R4 to R3"
 /// status = "active"
@@ -6,9 +6,9 @@
 uses "http://hl7.org/fhir/4.0/ImagingStudy" alias ImagingStudy as source
 uses "http://hl7.org/fhir/3.0/ImagingStudy" alias ImagingStudyR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group ImagingStudy(source src : ImagingStudyR3, target tgt : ImagingStudy) extends DomainResource <<type+>> {
+group ImagingStudy(source src : ImagingStudy, target tgt : ImagingStudyR3) extends DomainResource <<type+>> {
   src.identifier as vs where system != 'urn:dicom:uid' -> tgt.identifier as vt then Identifier(vs, vt);
   src.identifier as vs where system = 'urn:dicom:uid' then {
     vs.value -> tgt.uid;

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/OperationOutcome5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/OperationOutcome5to4"
 /// name = "OperationOutcome5to4"
 /// title = "OperationOutcome Transforms: R5 to R4"
 /// status = "active"
@@ -6,15 +6,15 @@
 uses "http://hl7.org/fhir/5.0/OperationOutcome" alias OperationOutcomeR5 as source
 uses "http://hl7.org/fhir/4.0/OperationOutcome" alias OperationOutcomeR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group OperationOutcome(source src : OperationOutcomeR5, target tgt : OperationOutcomeR4) extends DomainResource <<type+>> {
   src.issue as s -> tgt.issue as t then OperationOutcomeIssue(s, t);
 }
 
 group OperationOutcomeIssue(source src, target tgt) extends BackboneElement {
-  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/ConceptMap/OperationOutcome.issue.severity-R5toR4', 'code');
-  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/ConceptMap/OperationOutcome.issue.code-R5toR4', 'code');
+  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationOutcome.issue.severity-5to4', 'code');
+  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationOutcome.issue.code-5to4', 'code');
   src.details -> tgt.details;
   src.diagnostics -> tgt.diagnostics;
   src.location -> tgt.location;

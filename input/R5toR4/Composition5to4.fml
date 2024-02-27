@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Composition5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Composition5to4"
 /// name = "Composition5to4"
 /// title = "Composition Transforms: R5 to R4"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/5.0/Composition" alias CompositionR5 as source
 uses "http://hl7.org/fhir/4.0/Composition" alias CompositionR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Composition(source src : CompositionR5, target tgt : CompositionR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Composition.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Composition.status-5to4', 'code');
   src.type -> tgt.type;
   src.category -> tgt.category;
   src.subject -> tgt.subject;

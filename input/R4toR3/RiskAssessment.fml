@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/RiskAssessment4to3"
-/// name = "Assessment4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/RiskAssessment4to3"
+/// name = "RiskAssessment4to3"
 /// title = "RiskAssessment Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/RiskAssessment" alias RiskAssessment as source
 uses "http://hl7.org/fhir/3.0/RiskAssessment" alias RiskAssessmentR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group RiskAssessment(source src : RiskAssessment, target tgt : RiskAssessmentR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

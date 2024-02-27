@@ -1,18 +1,18 @@
-/// url = "http://hl7.org/fhir/StructureMap/Contract5to4B"
-/// name = "Contract5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Contract5to4b"
+/// name = "Contract5to4b"
 /// title = "Contract Transforms: R5 to R4B"
 /// status = "draft"
 
 uses "http://hl7.org/fhir/5.0/Contract" alias ContractR5 as source
-uses "http://hl7.org/fhir/4.0/Contract" alias ContractR4B as target
+uses "http://hl7.org/fhir/4.3/Contract" alias ContractR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Contract(source src : ContractR5, target tgt : ContractR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.url -> tgt.url;
   src.version -> tgt.version;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Contract.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Contract.status-5to4b', 'code');
   src.legalState -> tgt.legalState;
   src.instantiatesCanonical -> tgt.instantiatesCanonical;
   src.instantiatesUri -> tgt.instantiatesUri;
@@ -51,7 +51,7 @@ group ContractContentDefinition(source src, target tgt) extends BackboneElement 
   src.subType -> tgt.subType;
   src.publisher -> tgt.publisher;
   src.publicationDate -> tgt.publicationDate;
-  src.publicationStatus as v -> tgt.publicationStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/Contract.contentDefinition.publicationStatus-R5toR4', 'code');
+  src.publicationStatus as v -> tgt.publicationStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Contract.contentDefinition.publicationStatus-5to4b', 'code');
   src.copyright -> tgt.copyright;
 }
 

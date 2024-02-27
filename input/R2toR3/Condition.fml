@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Condition2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Condition2to3"
 /// name = "Condition2to3"
 /// title = "Condition Transforms: R2 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/1.0/Condition" alias ConditionR2 as source
 uses "http://hl7.org/fhir/3.0/Condition" alias Condition as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group Condition(source src : ConditionR2, target tgt : Condition) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Condition-identifier";
@@ -16,7 +16,7 @@ group Condition(source src : ConditionR2, target tgt : Condition) extends Domain
   src.dateRecorded -> tgt.assertedDate "Condition-dateRecorded";
   src.code -> tgt.code "Condition-code";
   src.category -> tgt.category "Condition-category";
-  src.clinicalStatus as v -> tgt.clinicalStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/Condition.clinicalStatus-R2toR3', 'code') "Condition-clinicalStatus";
+  src.clinicalStatus as v -> tgt.clinicalStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Condition.clinicalStatus-2to3', 'code') "Condition-clinicalStatus";
   src.verificationStatus -> tgt.verificationStatus "Condition-verificationStatus";
   src.severity -> tgt.severity "Condition-severity";
   src.onset -> tgt.onset "Condition-onset";

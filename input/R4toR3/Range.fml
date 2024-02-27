@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Range4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Range4to3"
 /// name = "Range4to3"
 /// title = "Range Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Range" alias Range as source
 uses "http://hl7.org/fhir/3.0/Range" alias RangeR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Range(source src : Range, target tgt : RangeR3) extends Element <<type+>> {
   src.low -> tgt.low;

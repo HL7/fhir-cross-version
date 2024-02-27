@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/TriggerDefinition4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/TriggerDefinition4to3"
 /// name = "TriggerDefinition4to3"
 /// title = "TriggerDefinition Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/TriggerDefinition" alias TriggerDefinition as source
 uses "http://hl7.org/fhir/3.0/TriggerDefinition" alias TriggerDefinitionR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group TriggerDefinition(source src : TriggerDefinition, target tgt : TriggerDefinitionR3) extends Element <<type+>> {
   src.type -> tgt.type;

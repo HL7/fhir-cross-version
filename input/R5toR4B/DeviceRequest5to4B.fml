@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/DeviceRequest5to4B"
-/// name = "DeviceRequest5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DeviceRequest5to4b"
+/// name = "DeviceRequest5to4b"
 /// title = "DeviceRequest Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/DeviceRequest" alias DeviceRequestR5 as source
-uses "http://hl7.org/fhir/4.0/DeviceRequest" alias DeviceRequestR4B as target
+uses "http://hl7.org/fhir/4.3/DeviceRequest" alias DeviceRequestR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group DeviceRequest(source src : DeviceRequestR5, target tgt : DeviceRequestR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -14,9 +14,9 @@ group DeviceRequest(source src : DeviceRequestR5, target tgt : DeviceRequestR4B)
   src.instantiatesUri -> tgt.instantiatesUri;
   src.basedOn -> tgt.basedOn;
   src.groupIdentifier -> tgt.groupIdentifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceRequest.status-R5toR4', 'code');
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceRequest.intent-R5toR4', 'code');
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceRequest.priority-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceRequest.status-5to4b', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceRequest.intent-5to4b', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceRequest.priority-5to4b', 'code');
   src.code -> tgt.code;
   src.parameter as s -> tgt.parameter as t then DeviceRequestParameter(s, t);
   src.subject -> tgt.subject;

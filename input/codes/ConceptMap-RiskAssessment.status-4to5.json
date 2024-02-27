@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RiskAssessment.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RiskAssessment.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RiskAssessment.status-4to5",
   "name" : "RiskAssessment.status4to5",
   "title" : "Mapping for RiskAssessment.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RiskAssessment#RiskAssessment.status",

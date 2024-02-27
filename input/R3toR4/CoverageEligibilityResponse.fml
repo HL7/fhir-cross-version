@@ -1,18 +1,16 @@
-/// url = "http://hl7.org/fhir/StructureMap/EligibilityResponse3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/EligibilityResponse3to4"
 /// name = "EligibilityResponse3to4"
 /// title = "EligibilityResponse Transforms: R3 to R4"
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/EligibilityResponse" alias EligibilityResponseR3 as source
-uses "http://hl7.org/fhir/4.0/CoverageEligibilityResponse" alias EligibilityResponse as target
+uses "http://hl7.org/fhir/4.0/CoverageEligibilityResponse" alias CoverageEligibilityResponse as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group EligibilityResponse(source src : EligibilityResponseR3, target tgt : CoverageEligibilityResponse) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
-  src.patient -> tgt.patient;
-  src.serviced -> tgt.serviced;
   src.created -> tgt.created;
   src.requestProvider -> tgt.requestor;
   src.request -> tgt.request;
@@ -24,7 +22,6 @@ group EligibilityResponse(source src : EligibilityResponseR3, target tgt : Cover
   src.disposition -> tgt.disposition;
   src.insurer -> tgt.insurer;
   src.insurance as s -> tgt.insurance as t then EligibilityResponseInsurance(s, t);
-  src.preAuthRef -> tgt.preAuthRef;
   src.form -> tgt.form;
   src.error as s -> tgt.error as t then EligibilityResponseError(s, t);
 }

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Dosage4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Dosage4to5"
 /// name = "Dosage4to5"
 /// title = "Dosage Transforms: R4 to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Dosage" alias DosageR4 as source
 uses "http://hl7.org/fhir/5.0/Dosage" alias DosageR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Dosage(source src : DosageR4, target tgt : DosageR5) extends Element <<type+>> {
   src.modifierExtension -> tgt.modifierExtension;

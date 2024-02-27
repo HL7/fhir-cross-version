@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/SpecimenDefinition5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SpecimenDefinition5to4"
 /// name = "SpecimenDefinition5to4"
 /// title = "SpecimenDefinition Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/SpecimenDefinition" alias SpecimenDefinitionR5 as source
 uses "http://hl7.org/fhir/4.0/SpecimenDefinition" alias SpecimenDefinitionR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group SpecimenDefinition(source src : SpecimenDefinitionR5, target tgt : SpecimenDefinitionR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -20,7 +20,7 @@ group SpecimenDefinition(source src : SpecimenDefinitionR5, target tgt : Specime
 group SpecimenDefinitionTypeTested(source src, target tgt) extends BackboneElement {
   src.isDerived -> tgt.isDerived;
   src.type -> tgt.type;
-  src.preference as v -> tgt.preference = translate(v, 'http://hl7.org/fhir/ConceptMap/SpecimenDefinition.typeTested.preference-R5toR4', 'code');
+  src.preference as v -> tgt.preference = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SpecimenDefinition.typeTested.preference-5to4', 'code');
   src.container as s -> tgt.container as t then SpecimenDefinitionTypeTestedContainer(s, t);
   src.requirement -> tgt.requirement;
   src.retentionTime -> tgt.retentionTime;

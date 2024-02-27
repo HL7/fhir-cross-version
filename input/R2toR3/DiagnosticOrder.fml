@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/DiagnosticOrder2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DiagnosticOrder2to3"
 /// name = "DiagnosticOrder2to3"
 /// title = "DiagnosticOrder Transforms: R2 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/DiagnosticOrder" alias DiagnosticOrderR2 as source
-uses "http://hl7.org/fhir/3.0/ProcedureRequest" alias DiagnosticRequest as target
+uses "http://hl7.org/fhir/3.0/ProcedureRequest" alias ProcedureRequest as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 // in R3, DiagnosticOrder is folded into ProcedureRequest, and there's no easy
 // way to tell them apart. it requires special knowledge to decide to convert
@@ -21,8 +21,8 @@ group DiagnosticOrder(source src : DiagnosticOrderR2, target tgt : ProcedureRequ
   src.reason -> tgt.reasonCode "DiagnosticOrder-reason";
   src.supportingInformation -> tgt.supportingInfo "DiagnosticOrder-supportingInformation";
   src.specimen -> tgt.specimen "DiagnosticOrder-reason";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/DiagnosticOrder.status-R2toR3', 'code') "DiagnosticOrder-status";
-  src.status as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/DiagnosticOrder.status-R2toR3', 'code') "DiagnosticOrder-intent";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DiagnosticOrder.status-ProcedureRequest.status-2to3', 'code') "DiagnosticOrder-status";
+  src.status as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DiagnosticOrder.status-ProcedureRequest.intent-2to3', 'code') "DiagnosticOrder-intent";
   src.priority -> tgt.priority "DiagnosticOrder-priority";
   src.event as vs where status = 'requested' then doEvent(vs, tgt) "DiagnosticOrder-event";
   src.item only_one as vs then doItem(vs, tgt) "DiagnosticOrder-item";

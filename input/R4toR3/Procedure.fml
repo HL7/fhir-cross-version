@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Procedure4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Procedure4to3"
 /// name = "Procedure4to3"
 /// title = "Procedure Transforms: R4 to R3"
 /// status = "active"
@@ -6,24 +6,20 @@
 uses "http://hl7.org/fhir/4.0/Procedure" alias Procedure as source
 uses "http://hl7.org/fhir/3.0/Procedure" alias ProcedureR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group Procedure(source src : ProcedureR3, target tgt : Procedure) extends DomainResource <<type+>> {
+group Procedure(source src : Procedure, target tgt : ProcedureR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.instantiatesCanonical -> tgt.instantiatesCanonical;
-  src.instantiatesUri -> tgt.instantiatesUri;
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
   src.status where value = 'not-done' ->  tgt.status = create('code') as vt,  vt.value = 'suspended',  tgt.notDone = 'true';
-  src.status as vs where (value = 'not-done').not() -> tgt.status = translate(vs, 'http://hl7.org/fhir/ConceptMap/Procedure.status-R4toR3', 'code');
+  src.status as vs where (value = 'not-done').not() -> tgt.status = translate(vs, 'http://hl7.org/fhir/uv/xver/ConceptMap/Procedure.status-4to3', 'code');
   src.statusReason as vs where src.status = 'not-done' -> tgt.notDoneReason = create('CodeableConcept') as vt then CodeableConcept(vs, vt);
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.subject -> tgt.subject;
   src.encounter : Reference as vs -> tgt.context = create('Reference') as vt then Reference(vs, vt) "encounterReference";
   src.performed -> tgt.performed;
-  src.recorder -> tgt.recorder;
-  src.asserter -> tgt.asserter;
   src.performer as s -> tgt.performer as t then ProcedurePerformer(s, t);
   src.location -> tgt.location;
   src.reasonCode -> tgt.reasonCode;

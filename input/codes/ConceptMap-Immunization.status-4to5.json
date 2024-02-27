@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Immunization.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Immunization.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Immunization.status-4to5",
   "name" : "Immunization.status4to5",
   "title" : "Mapping for Immunization.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Immunization#Immunization.status",

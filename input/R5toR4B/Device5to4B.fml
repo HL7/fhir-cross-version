@@ -1,18 +1,18 @@
-/// url = "http://hl7.org/fhir/StructureMap/Device5to4B"
-/// name = "Device5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Device5to4b"
+/// name = "Device5to4b"
 /// title = "Device Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Device" alias DeviceR5 as source
-uses "http://hl7.org/fhir/4.0/Device" alias DeviceR4B as target
+uses "http://hl7.org/fhir/4.3/Device" alias DeviceR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Device(source src : DeviceR5, target tgt : DeviceR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.definition -> tgt.definition;
   src.udiCarrier as s -> tgt.udiCarrier as t then DeviceUdiCarrier(s, t);
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Device.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Device.status-5to4b', 'code');
   src.manufacturer -> tgt.manufacturer;
   src.manufactureDate -> tgt.manufactureDate;
   src.expirationDate -> tgt.expirationDate;
@@ -39,12 +39,12 @@ group DeviceUdiCarrier(source src, target tgt) extends BackboneElement {
   src.jurisdiction -> tgt.jurisdiction;
   src.carrierAIDC -> tgt.carrierAIDC;
   src.carrierHRF -> tgt.carrierHRF;
-  src.entryType as v -> tgt.entryType = translate(v, 'http://hl7.org/fhir/ConceptMap/Device.udiCarrier.entryType-R5toR4', 'code');
+  src.entryType as v -> tgt.entryType = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Device.udiCarrier.entryType-5to4b', 'code');
 }
 
 group DeviceName(source src, target tgt) extends BackboneElement {
   src.value -> tgt.name;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/Device.name.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Device.name.type-Device.deviceName.type-5to4b', 'code');
 }
 
 group DeviceVersion(source src, target tgt) extends BackboneElement {

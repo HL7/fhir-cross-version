@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "VerificationResult.status-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/VerificationResult.status-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/VerificationResult.status-4bto5",
   "name" : "VerificationResult.status4bto5",
   "title" : "Mapping for VerificationResult.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/VerificationResult#VerificationResult.status",

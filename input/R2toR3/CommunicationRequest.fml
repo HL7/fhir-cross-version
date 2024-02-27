@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CommunicationRequest2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CommunicationRequest2to3"
 /// name = "CommunicationRequest2to3"
 /// title = "CommunicationRequest Transforms: R2 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/1.0/CommunicationRequest" alias CommunicationRequestR2 as source
 uses "http://hl7.org/fhir/3.0/CommunicationRequest" alias CommunicationRequest as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group CommunicationRequest(source src : CommunicationRequestR2, target tgt : CommunicationRequest) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "CommunicationRequest-identifier";
@@ -16,7 +16,7 @@ group CommunicationRequest(source src : CommunicationRequestR2, target tgt : Com
   src.payload as vs0 -> tgt.payload as vt0 then cmrPayload(vs0, vt0) "CommunicationRequest-payload";
   src.medium -> tgt.medium "CommunicationRequest-medium";
   src.requester -> tgt.requester "CommunicationRequest-requester";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/CommunicationRequest.status-R2toR3', 'code') "CommunicationRequest-status";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CommunicationRequest.status-2to3', 'code') "CommunicationRequest-status";
   src.encounter -> tgt.context "CommunicationRequest-context";
   src.scheduled -> tgt.occurrence "CommunicationRequest-scheduled";
   src.reason -> tgt.reasonCode "CommunicationRequest-reason";

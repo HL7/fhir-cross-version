@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ResearchStudy5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ResearchStudy5to4"
 /// name = "ResearchStudy5to4"
 /// title = "ResearchStudy Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/ResearchStudy" alias ResearchStudyR5 as source
 uses "http://hl7.org/fhir/4.0/ResearchStudy" alias ResearchStudyR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group ResearchStudy(source src : ResearchStudyR5, target tgt : ResearchStudyR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -14,7 +14,7 @@ group ResearchStudy(source src : ResearchStudyR5, target tgt : ResearchStudyR4) 
   src.protocol -> tgt.protocol;
   src.partOf -> tgt.partOf;
   src.relatedArtifact -> tgt.relatedArtifact;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ResearchStudy.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ResearchStudy.status-5to4', 'code');
   src.primaryPurposeType -> tgt.primaryPurposeType;
   src.phase -> tgt.phase;
   src.focus -> tgt.focus;

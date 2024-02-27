@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ChargeItem4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ChargeItem4to3"
 /// name = "ChargeItem4to3"
 /// title = "ChargeItem Transforms: R4 to R3"
 /// status = "active"
@@ -6,9 +6,9 @@
 uses "http://hl7.org/fhir/4.0/ChargeItem" alias ChargeItem as source
 uses "http://hl7.org/fhir/3.0/ChargeItem" alias ChargeItemR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group ChargeItem(source src : ChargeItemR3, target tgt : ChargeItem) extends DomainResource <<type+>> {
+group ChargeItem(source src : ChargeItem, target tgt : ChargeItemR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.definitionUri -> tgt.definition;
   src.status -> tgt.status;
@@ -20,7 +20,6 @@ group ChargeItem(source src : ChargeItemR3, target tgt : ChargeItem) extends Dom
   src.performer as s -> tgt.participant as t then ChargeItemPerformer(s, t);
   src.performingOrganization -> tgt.performingOrganization;
   src.requestingOrganization -> tgt.requestingOrganization;
-  src.costCenter -> tgt.costCenter;
   src.quantity -> tgt.quantity;
   src.bodysite -> tgt.bodysite;
   src.factorOverride -> tgt.factorOverride;
@@ -30,7 +29,6 @@ group ChargeItem(source src : ChargeItemR3, target tgt : ChargeItem) extends Dom
   src.enteredDate -> tgt.enteredDate;
   src.reason -> tgt.reason;
   src.service -> tgt.service;
-  src.product -> tgt.product;
   src.account -> tgt.account;
   src.note -> tgt.note;
   src.supportingInformation -> tgt.supportingInformation;

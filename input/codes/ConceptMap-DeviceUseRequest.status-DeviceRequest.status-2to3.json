@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DeviceUseRequest.status-DeviceRequest.status-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceUseRequest.status-DeviceRequest.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DeviceUseRequest.status-DeviceRequest.status-2to3",
   "name" : "DeviceUseRequest.statusDeviceRequest.status2to3",
   "title" : "Mapping for DeviceUseRequest.status to DeviceRequest.status from 2 to 3",
   "status" : "active",

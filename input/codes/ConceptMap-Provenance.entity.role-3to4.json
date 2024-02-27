@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Provenance.entity.role-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Provenance.entity.role-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Provenance.entity.role-3to4",
   "name" : "Provenance.entity.role3to4",
   "title" : "Mapping for Provenance.entity.role from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Provenance#Provenance.entity.role",

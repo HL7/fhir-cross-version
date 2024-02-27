@@ -1,4 +1,4 @@
-/// url = "hDocumentReference4to3 Transforms: R4 to R3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DocumentReference4to3"
 /// name = "DocumentReference4to3"
 /// title = "R4 to R3 Conversion for DocumentReference"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/DocumentReference" alias DocumentReference as source
 uses "http://hl7.org/fhir/3.0/DocumentReference" alias DocumentReferenceR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group DocumentReference(source src : DocumentReference, target tgt : DocumentReferenceR3) extends DomainResource <<type+>> {
   src.masterIdentifier -> tgt.masterIdentifier;
@@ -20,7 +20,7 @@ group DocumentReference(source src : DocumentReference, target tgt : DocumentRef
   src.extension as ext where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.created' then {
     ext.value as vs0 -> tgt.created = vs0 "created2";
   } "created";
-  src.agent as s where type.coding.where((system = 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType') and (code = 'AUT')).exists() -> tgt.author as t then agent(s, t);
+  src.author -> tgt.author;
   src.authenticator -> tgt.authenticator;
   src.custodian -> tgt.custodian;
   src.relatesTo as vs0 -> tgt.relatesTo as vt0 then relatesTo(vs0, vt0);

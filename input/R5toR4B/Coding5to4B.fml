@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/Coding5to4B"
-/// name = "Coding5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Coding5to4b"
+/// name = "Coding5to4b"
 /// title = "Coding Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Coding" alias CodingR5 as source
-uses "http://hl7.org/fhir/4.0/Coding" alias CodingR4B as target
+uses "http://hl7.org/fhir/4.3/Coding" alias CodingR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Coding(source src : CodingR5, target tgt : CodingR4B) extends Element <<type+>> {
   src.system -> tgt.system;

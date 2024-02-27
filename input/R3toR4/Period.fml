@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Period3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Period3to4"
 /// name = "Period3to4"
 /// title = "Period Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Period" alias PeriodR3 as source
 uses "http://hl7.org/fhir/4.0/Period" alias Period as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group Period(source src : PeriodR3, target tgt : Period) extends Element <<type+>> {
   src.start -> tgt.start;

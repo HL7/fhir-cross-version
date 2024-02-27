@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CapabilityStatement.rest.security.service-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.rest.security.service-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.security.service-4to3",
   "name" : "CapabilityStatement.rest.security.service4to3",
   "title" : "Mapping for CapabilityStatement.rest.security.service from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.security.service",

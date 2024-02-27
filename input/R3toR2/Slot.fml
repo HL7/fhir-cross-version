@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Slot3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Slot3to2"
 /// name = "Slot3to2"
 /// title = "Slot Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Slot" alias Slot as source
 uses "http://hl7.org/fhir/1.0/Slot" alias SlotR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group Slot(source src : Slot, target tgt : SlotR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Slot-identifier";

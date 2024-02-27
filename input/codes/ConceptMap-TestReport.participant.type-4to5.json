@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "TestReport.participant.type-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestReport.participant.type-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/TestReport.participant.type-4to5",
   "name" : "TestReport.participant.type4to5",
   "title" : "Mapping for TestReport.participant.type from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.participant.type",

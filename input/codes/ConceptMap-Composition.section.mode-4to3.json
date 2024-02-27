@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Composition.section.mode-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Composition.section.mode-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Composition.section.mode-4to3",
   "name" : "Composition.section.mode4to3",
   "title" : "Mapping for Composition.section.mode from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.section.mode",

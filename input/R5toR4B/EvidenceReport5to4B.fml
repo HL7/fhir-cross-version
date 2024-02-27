@@ -1,16 +1,16 @@
-/// url = "http://hl7.org/fhir/StructureMap/EvidenceReport5to4B"
-/// name = "EvidenceReport5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/EvidenceReport5to4b"
+/// name = "EvidenceReport5to4b"
 /// title = "EvidenceReport Transforms: R5 to R4B"
 /// status = "draft"
 
 uses "http://hl7.org/fhir/5.0/EvidenceReport" alias EvidenceReportR5 as source
-uses "http://hl7.org/fhir/4.0/EvidenceReport" alias EvidenceReportR4B as target
+uses "http://hl7.org/fhir/4.3/EvidenceReport" alias EvidenceReportR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group EvidenceReport(source src : EvidenceReportR5, target tgt : EvidenceReportR4B) extends DomainResource <<type+>> {
   src.url -> tgt.url;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceReport.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceReport.status-5to4b', 'code');
   src.useContext -> tgt.useContext;
   src.identifier -> tgt.identifier;
   src.relatedIdentifier -> tgt.relatedIdentifier;
@@ -47,7 +47,7 @@ group EvidenceReportSubjectCharacteristic(source src, target tgt) extends Backbo
 }
 
 group EvidenceReportRelatesTo(source src, target tgt) extends BackboneElement {
-  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceReport.relatesTo.code-R5toR4', 'code');
+  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceReport.relatesTo.code-5to4b', 'code');
   src.target as s -> tgt.target = s.identifier "identifier";
   src.target as s -> tgt.target = s.resource "resource";
 }
@@ -64,7 +64,7 @@ group EvidenceReportSection(source src, target tgt) extends BackboneElement {
   src.focusReference -> tgt.focusReference;
   src.author -> tgt.author;
   src.text -> tgt.text;
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceReport.section.mode-R5toR4', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceReport.section.mode-5to4b', 'code');
   src.orderedBy -> tgt.orderedBy;
   src.entryClassifier -> tgt.entryClassifier;
   src.entryReference -> tgt.entryReference;

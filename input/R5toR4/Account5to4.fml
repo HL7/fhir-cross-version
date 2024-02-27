@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Account5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Account5to4"
 /// name = "Account5to4"
 /// title = "Account Transforms: R5 to R4"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/5.0/Account" alias AccountR5 as source
 uses "http://hl7.org/fhir/4.0/Account" alias AccountR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Account(source src : AccountR5, target tgt : AccountR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Account.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Account.status-5to4', 'code');
   src.type -> tgt.type;
   src.name -> tgt.name;
   src.subject -> tgt.subject;

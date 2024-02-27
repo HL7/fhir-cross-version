@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/EvidenceReport4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/EvidenceReport4Bto5"
 /// name = "EvidenceReport4Bto5"
 /// title = "EvidenceReport Transforms: R4B to R5"
 /// status = "draft"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.3/EvidenceReport" alias EvidenceReportR4B as source
 uses "http://hl7.org/fhir/5.0/EvidenceReport" alias EvidenceReportR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group EvidenceReport(source src : EvidenceReportR4B, target tgt : EvidenceReportR5) extends DomainResource <<type+>> {
   src.url -> tgt.url;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceReportB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceReport.status-4bto5', 'code');
   src.useContext -> tgt.useContext;
   src.identifier -> tgt.identifier;
   src.relatedIdentifier -> tgt.relatedIdentifier;
@@ -47,7 +47,7 @@ group EvidenceReportSubjectCharacteristic(source src, target tgt) extends Backbo
 }
 
 group EvidenceReportRelatesTo(source src, target tgt) extends BackboneElement {
-  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceReportB.relatesTo.code-R4BtoR5', 'code');
+  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceReport.relatesTo.code-4bto5', 'code');
   src.target : Identifier as v ->  tgt.target as t,  t.identifier = v "identifier";
   src.target : Reference as v ->  tgt.target as t,  t.resource = v "reference";
 }
@@ -64,7 +64,7 @@ group EvidenceReportSection(source src, target tgt) extends BackboneElement {
   src.focusReference -> tgt.focusReference;
   src.author -> tgt.author;
   src.text -> tgt.text;
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceReportB.section.mode-R4BtoR5', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceReport.section.mode-4bto5', 'code');
   src.orderedBy -> tgt.orderedBy;
   src.entryClassifier -> tgt.entryClassifier;
   src.entryReference -> tgt.entryReference;

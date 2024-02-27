@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Account.status-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Account.status-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Account.status-4to4b",
   "name" : "Account.status4to4b",
   "title" : "Mapping for Account.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Account#Account.status",

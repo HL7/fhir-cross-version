@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "OperationOutcome.issue.severity-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/OperationOutcome.issue.severity-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/OperationOutcome.issue.severity-4to5",
   "name" : "OperationOutcome.issue.severity4to5",
   "title" : "Mapping for OperationOutcome.issue.severity from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/OperationOutcome#OperationOutcome.issue.severity",

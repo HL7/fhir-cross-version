@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/RegulatedAuthorization5to4B"
-/// name = "RegulatedAuthorization5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/RegulatedAuthorization5to4b"
+/// name = "RegulatedAuthorization5to4b"
 /// title = "RegulatedAuthorization Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/RegulatedAuthorization" alias RegulatedAuthorizationR5 as source
-uses "http://hl7.org/fhir/4.0/RegulatedAuthorization" alias RegulatedAuthorizationR4B as target
+uses "http://hl7.org/fhir/4.3/RegulatedAuthorization" alias RegulatedAuthorizationR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group RegulatedAuthorization(source src : RegulatedAuthorizationR5, target tgt : RegulatedAuthorizationR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

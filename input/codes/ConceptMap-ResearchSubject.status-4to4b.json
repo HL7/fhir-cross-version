@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ResearchSubject.status-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ResearchSubject.status-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ResearchSubject.status-4to4b",
   "name" : "ResearchSubject.status4to4b",
   "title" : "Mapping for ResearchSubject.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status",

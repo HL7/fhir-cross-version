@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/MessageDefinition4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/MessageDefinition4Bto5"
 /// name = "MessageDefinition4Bto5"
 /// title = "MessageDefinition Transforms: R4B to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.3/MessageDefinition" alias MessageDefinitionR4B as source
 uses "http://hl7.org/fhir/5.0/MessageDefinition" alias MessageDefinitionR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group MessageDefinition(source src : MessageDefinitionR4B, target tgt : MessageDefinitionR5) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -15,7 +15,7 @@ group MessageDefinition(source src : MessageDefinitionR4B, target tgt : MessageD
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.replaces -> tgt.replaces;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/MessageDefinitionB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MessageDefinition.status-4bto5', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -29,9 +29,9 @@ group MessageDefinition(source src : MessageDefinitionR4B, target tgt : MessageD
   src.parent -> tgt.parent;
   src.event : Coding -> tgt.event "eventCoding";
   src.event : uri -> tgt.event "eventUri";
-  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/ConceptMap/MessageDefinitionB.category-R4BtoR5', 'code');
+  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MessageDefinition.category-4bto5', 'code');
   src.focus as s -> tgt.focus as t then MessageDefinitionFocus(s, t);
-  src.responseRequired as v -> tgt.responseRequired = translate(v, 'http://hl7.org/fhir/ConceptMap/MessageDefinitionB.responseRequired-R4BtoR5', 'code');
+  src.responseRequired as v -> tgt.responseRequired = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MessageDefinition.responseRequired-4bto5', 'code');
   src.allowedResponse as s -> tgt.allowedResponse as t then MessageDefinitionAllowedResponse(s, t);
   src.graph -> tgt.graph;
 }

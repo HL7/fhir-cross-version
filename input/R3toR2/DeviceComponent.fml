@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/DeviceComponent3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DeviceComponent3to2"
 /// name = "DeviceComponent3to2"
 /// title = "DeviceComponent Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/DeviceComponent" alias DeviceComponent as source
 uses "http://hl7.org/fhir/1.0/DeviceComponent" alias DeviceComponentR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group DeviceComponent(source src : DeviceComponent, target tgt : DeviceComponentR2) extends DomainResource <<type+>> {
   src.type -> tgt.type "DeviceComponent-type";

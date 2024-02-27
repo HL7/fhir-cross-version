@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/AllergyIntolerance2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/AllergyIntolerance2to3"
 /// name = "AllergyIntolerance2to3"
 /// title = "AllergyIntolerance Transforms: R2 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/1.0/AllergyIntolerance" alias AllergyIntoleranceR2 as source
 uses "http://hl7.org/fhir/3.0/AllergyIntolerance" alias AllergyIntolerance as target
 
-imports "http://hl7.org/fhir/StructureMap/*to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*to3"
 
 group AllergyIntolerance(source src : AllergyIntoleranceR2, target tgt : AllergyIntolerance) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "AllergyIntolerance-identifier";
@@ -16,9 +16,9 @@ group AllergyIntolerance(source src : AllergyIntoleranceR2, target tgt : Allergy
   src.patient -> tgt.patient "AllergyIntolerance-patient";
   src.reporter -> tgt.asserter "AllergyIntolerance-reporter";
   src.substance -> tgt.code "AllergyIntolerance-substance";
-  src.status as v where ($this != 'refuted') and ($this != 'entered-in-error') -> tgt.clinicalStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/AllergyIntolerance.status-R2toR3', 'code') "AllergyIntolerance-status-clinical";
-  src.status as v where ($this != 'active') and ($this != 'resolved') -> tgt.verificationStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/AllergyIntolerance.status-R2toR3', 'code') "AllergyIntolerance-Status-verification";
-  src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/ConceptMap/AllergyIntolerance.criticality-R2toR3', 'code') "AllergyIntolerance-criticality";
+  src.status as v where ($this != 'refuted') and ($this != 'entered-in-error') -> tgt.clinicalStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AllergyIntolerance.status-AllergyIntolerance.clinicalStatus-2to3', 'code') "AllergyIntolerance-status-clinical";
+  src.status as v where ($this != 'active') and ($this != 'resolved') -> tgt.verificationStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AllergyIntolerance.status-AllergyIntolerance.verificationStatus-2to3', 'code') "AllergyIntolerance-Status-verification";
+  src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AllergyIntolerance.criticality-2to3', 'code') "AllergyIntolerance-criticality";
   src.type -> tgt.type "AllergyIntolerance-type";
   src.category -> tgt.category "AllergyIntolerance-category";
   src.lastOccurence -> tgt.lastOccurrence "AllergyIntolerance-lastOccurrence";

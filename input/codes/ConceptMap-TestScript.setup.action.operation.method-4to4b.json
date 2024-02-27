@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "TestScript.setup.action.operation.method-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestScript.setup.action.operation.method-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.operation.method-4to4b",
   "name" : "TestScript.setup.action.operation.method4to4b",
   "title" : "Mapping for TestScript.setup.action.operation.method from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.operation.method",

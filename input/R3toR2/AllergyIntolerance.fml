@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/AllergyIntolerance3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/AllergyIntolerance3to2"
 /// name = "AllergyIntolerance3to2"
 /// title = "AllergyIntolerance Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/AllergyIntolerance" alias AllergyIntolerance as source
 uses "http://hl7.org/fhir/1.0/AllergyIntolerance" alias AllergyIntoleranceR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group AllergyIntolerance(source src : AllergyIntolerance, target tgt : AllergyIntoleranceR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "AllergyIntolerance-identifier";
@@ -23,7 +23,7 @@ group AllergyIntolerance(source src : AllergyIntolerance, target tgt : AllergyIn
   src where src.clinicalStatus = 'resolved' -> tgt.status = 'resolved' "AllergyIntolerance-status-resolved";
   src where src.verificationStatus = 'refuted' -> tgt.status = 'refuted' "AllergyIntolerance-status-refuted";
   src where src.verificationStatus = 'entered-in-error' -> tgt.status = 'entered-in-error' "AllergyIntolerance-status-entered-in-error";
-  src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/ConceptMap/AllergyIntolerance.criticality-R3toR2', 'code') "AllergyIntolerance-criticality";
+  src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AllergyIntolerance.criticality-3to2', 'code') "AllergyIntolerance-criticality";
   src.type -> tgt.type "AllergyIntolerance-type";
   src.category -> tgt.category "AllergyIntolerance-category";
   src.lastOccurrence -> tgt.lastOccurence "AllergyIntolerance-lastOccurrence";

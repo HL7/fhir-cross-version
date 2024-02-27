@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CodeSystem4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CodeSystem4to3"
 /// name = "CodeSystem4to3"
 /// title = "CodeSystem Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/CodeSystem" alias CodeSystem as source
 uses "http://hl7.org/fhir/3.0/CodeSystem" alias CodeSystemR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group CodeSystem(source src : CodeSystem, target tgt : CodeSystemR3) extends DomainResource <<type+>> {
   src.url -> tgt.url;

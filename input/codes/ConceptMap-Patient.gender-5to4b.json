@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Patient.gender-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Patient.gender-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Patient.gender-5to4b",
   "name" : "Patient.gender5to4b",
   "title" : "Mapping for Patient.gender from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Patient#Patient.gender",

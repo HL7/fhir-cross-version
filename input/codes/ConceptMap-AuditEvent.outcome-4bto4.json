@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "AuditEvent.outcome-4bto4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AuditEvent.outcome-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/AuditEvent.outcome-4bto4",
   "name" : "AuditEvent.outcome4bto4",
   "title" : "Mapping for AuditEvent.outcome from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.outcome",

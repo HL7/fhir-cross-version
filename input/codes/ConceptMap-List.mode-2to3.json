@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "List.mode-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/List.mode-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/List.mode-2to3",
   "name" : "List.mode2to3",
   "title" : "Mapping for List.mode from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/List#List.mode",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Address.use-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Address.use-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Address.use-5to4b",
   "name" : "Address.use5to4b",
   "title" : "Mapping for Address.use from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Address#Address.use",

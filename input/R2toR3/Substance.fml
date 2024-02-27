@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Substance2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Substance2to3"
 /// name = "Substance2to3"
 /// title = "Substance Transforms: R2 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/1.0/Substance" alias SubstanceR2 as source
 uses "http://hl7.org/fhir/3.0/Substance" alias Substance as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group Substance(source src : SubstanceR2, target tgt : Substance) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Substance-identifier";

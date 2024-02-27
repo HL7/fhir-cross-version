@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Patient.contact.gender-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Patient.contact.gender-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Patient.contact.gender-3to2",
   "name" : "Patient.contact.gender3to2",
   "title" : "Mapping for Patient.contact.gender from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.contact.gender",

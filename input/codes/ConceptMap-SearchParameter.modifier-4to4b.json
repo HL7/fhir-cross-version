@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "SearchParameter.modifier-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SearchParameter.modifier-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/SearchParameter.modifier-4to4b",
   "name" : "SearchParameter.modifier4to4b",
   "title" : "Mapping for SearchParameter.modifier from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.modifier",

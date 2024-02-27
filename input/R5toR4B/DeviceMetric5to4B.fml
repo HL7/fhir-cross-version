@@ -1,27 +1,27 @@
-/// url = "http://hl7.org/fhir/StructureMap/DeviceMetric5to4B"
-/// name = "DeviceMetric5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DeviceMetric5to4b"
+/// name = "DeviceMetric5to4b"
 /// title = "DeviceMetric Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/DeviceMetric" alias DeviceMetricR5 as source
-uses "http://hl7.org/fhir/4.0/DeviceMetric" alias DeviceMetricR4B as target
+uses "http://hl7.org/fhir/4.3/DeviceMetric" alias DeviceMetricR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group DeviceMetric(source src : DeviceMetricR5, target tgt : DeviceMetricR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.type -> tgt.type;
   src.unit -> tgt.unit;
   src.device -> tgt.parent;
-  src.operationalStatus as v -> tgt.operationalStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceMetric.operationalStatus-R5toR4', 'code');
-  src.color as v -> tgt.color = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceMetric.color-R5toR4', 'code');
-  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceMetric.category-R5toR4', 'code');
+  src.operationalStatus as v -> tgt.operationalStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.operationalStatus-5to4b', 'code');
+  src.color as v -> tgt.color = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.color-5to4b', 'code');
+  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.category-5to4b', 'code');
   src.calibration as s -> tgt.calibration as t then DeviceMetricCalibration(s, t);
 }
 
 group DeviceMetricCalibration(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceMetric.calibration.type-R5toR4', 'code');
-  src.state as v -> tgt.state = translate(v, 'http://hl7.org/fhir/ConceptMap/DeviceMetric.calibration.state-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.calibration.type-5to4b', 'code');
+  src.state as v -> tgt.state = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.calibration.state-5to4b', 'code');
   src.time -> tgt.time;
 }
 

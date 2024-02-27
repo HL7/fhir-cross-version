@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/DataElement3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DataElement3to2"
 /// name = "DataElement3to2"
 /// title = "DataElement Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/DataElement" alias DataElement as source
 uses "http://hl7.org/fhir/1.0/DataElement" alias DataElementR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group DataElement(source src : DataElement, target tgt : DataElementR2) extends DomainResource <<type+>> {
   src.url -> tgt.url "DataElement-url";

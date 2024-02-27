@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Extension4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Extension4to3"
 /// name = "Extension4to3"
 /// title = "Extension Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Extension" alias Extension as source
 uses "http://hl7.org/fhir/3.0/Extension" alias ExtensionR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Extension(source src : Extension, target tgt : ExtensionR3) extends Element <<type+>> {
   src.url -> tgt.url;

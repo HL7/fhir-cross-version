@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Resource5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Resource5to4"
 /// name = "Resource5to4"
 /// title = "Resource Transforms: R5 to R4"
 /// status = "active"
@@ -7,7 +7,7 @@ uses "http://hl7.org/fhir/5.0/Resource" alias ResourceR5 as source
 uses "http://hl7.org/fhir/4.0/Resource" alias ResourceR4 as target
 uses "http://hl7.org/fhir/5.0/Base" alias BaseR5 as source
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Resource(source src : ResourceR5, target tgt : ResourceR4) extends Base <<type+>> {
   src.id -> tgt.id;

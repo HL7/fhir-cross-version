@@ -1,7 +1,13 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ProcedureRequest.status-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ProcedureRequest.status-3to2",
+  "meta" : {
+    "tag" : [{
+      "system" : "http://something",
+      "code" : "review-needed"
+    }]
+  },
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ProcedureRequest.status-3to2",
   "name" : "ProcedureRequest.status-3to2",
   "title" : "Mapping for ProcedureRequest.status from R3 to R2",
   "status" : "active",
@@ -28,12 +34,13 @@
     {
       "code" : "cancelled",
       "target" : [{
-        "code" : "aborted",
+        "code" : "rejected",
         "relationship" : "source-is-broader-than-target"
       },
       {
-        "code" : "rejected",
-        "relationship" : "source-is-broader-than-target"
+        "code" : "aborted",
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "The code aborted is not in the target code system - FIX"
       }]
     },
     {

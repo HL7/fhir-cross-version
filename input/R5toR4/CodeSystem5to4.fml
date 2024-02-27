@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CodeSystem5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CodeSystem5to4"
 /// name = "CodeSystem5to4"
 /// title = "CodeSystem Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/CodeSystem" alias CodeSystemR5 as source
 uses "http://hl7.org/fhir/4.0/CodeSystem" alias CodeSystemR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group CodeSystem(source src : CodeSystemR5, target tgt : CodeSystemR4) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -14,7 +14,7 @@ group CodeSystem(source src : CodeSystemR5, target tgt : CodeSystemR4) extends D
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/CodeSystem.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CodeSystem.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -26,10 +26,10 @@ group CodeSystem(source src : CodeSystemR5, target tgt : CodeSystemR4) extends D
   src.copyright -> tgt.copyright;
   src.caseSensitive -> tgt.caseSensitive;
   src.valueSet -> tgt.valueSet;
-  src.hierarchyMeaning as v -> tgt.hierarchyMeaning = translate(v, 'http://hl7.org/fhir/ConceptMap/CodeSystem.hierarchyMeaning-R5toR4', 'code');
+  src.hierarchyMeaning as v -> tgt.hierarchyMeaning = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CodeSystem.hierarchyMeaning-5to4', 'code');
   src.compositional -> tgt.compositional;
   src.versionNeeded -> tgt.versionNeeded;
-  src.content as v -> tgt.content = translate(v, 'http://hl7.org/fhir/ConceptMap/CodeSystem.content-R5toR4', 'code');
+  src.content as v -> tgt.content = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CodeSystem.content-5to4', 'code');
   src.supplements -> tgt.supplements;
   src.count -> tgt.count;
   src.filter as s -> tgt.filter as t then CodeSystemFilter(s, t);
@@ -40,7 +40,7 @@ group CodeSystem(source src : CodeSystemR5, target tgt : CodeSystemR4) extends D
 group CodeSystemFilter(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.description -> tgt.description;
-  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/ConceptMap/CodeSystem.filter.operator-R5toR4', 'code');
+  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CodeSystem.filter.operator-5to4', 'code');
   src.value -> tgt.value;
 }
 
@@ -48,7 +48,7 @@ group CodeSystemProperty(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.uri -> tgt.uri;
   src.description -> tgt.description;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/CodeSystem.property.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CodeSystem.property.type-5to4', 'code');
 }
 
 group CodeSystemConcept(source src, target tgt) extends BackboneElement {

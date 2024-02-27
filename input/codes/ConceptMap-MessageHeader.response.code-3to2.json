@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "MessageHeader.response.code-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MessageHeader.response.code-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/MessageHeader.response.code-3to2",
   "name" : "MessageHeader.response.code3to2",
   "title" : "Mapping for MessageHeader.response.code from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MessageHeader#MessageHeader.response.code",

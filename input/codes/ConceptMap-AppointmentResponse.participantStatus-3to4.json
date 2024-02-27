@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "AppointmentResponse.participantStatus-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AppointmentResponse.participantStatus-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/AppointmentResponse.participantStatus-3to4",
   "name" : "AppointmentResponse.participantStatus3to4",
   "title" : "Mapping for AppointmentResponse.participantStatus from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus",

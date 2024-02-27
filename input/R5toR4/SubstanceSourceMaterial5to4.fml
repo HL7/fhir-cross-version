@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/SubstanceSourceMaterial5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SubstanceSourceMaterial5to4"
 /// name = "SubstanceSourceMaterial5to4"
 /// title = "SubstanceSourceMaterial Transforms: R5 to R4"
 /// status = "draft"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/SubstanceSourceMaterial" alias SubstanceSourceMaterialR5 as source
 uses "http://hl7.org/fhir/4.0/SubstanceSourceMaterial" alias SubstanceSourceMaterialR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group SubstanceSourceMaterial(source src : SubstanceSourceMaterialR5, target tgt : SubstanceSourceMaterialR4) extends DomainResource <<type+>> {
   src.sourceMaterialClass -> tgt.sourceMaterialClass;

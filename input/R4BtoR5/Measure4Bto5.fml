@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Measure4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Measure4Bto5"
 /// name = "Measure4Bto5"
 /// title = "Measure Transforms: R4B to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.3/Measure" alias MeasureR4B as source
 uses "http://hl7.org/fhir/5.0/Measure" alias MeasureR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group Measure(source src : MeasureR4B, target tgt : MeasureR5) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -15,7 +15,7 @@ group Measure(source src : MeasureR4B, target tgt : MeasureR5) extends DomainRes
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.subtitle -> tgt.subtitle;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/MeasureB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Measure.status-4bto5', 'code');
   src.experimental -> tgt.experimental;
   src.subject : CodeableConcept -> tgt.subject "subjectCodeableConcept";
   src.subject : Reference -> tgt.subject "subjectReference";

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ActivityDefinition.participant.type-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ActivityDefinition.participant.type-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.participant.type-3to4",
   "name" : "ActivityDefinition.participant.type3to4",
   "title" : "Mapping for ActivityDefinition.participant.type from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ActivityDefinition#ActivityDefinition.participant.type",

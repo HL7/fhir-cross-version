@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Bundle.type-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Bundle.type-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Bundle.type-5to4b",
   "name" : "Bundle.type5to4b",
   "title" : "Mapping for Bundle.type from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Bundle#Bundle.type",

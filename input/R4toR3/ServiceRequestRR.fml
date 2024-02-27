@@ -1,14 +1,14 @@
-/// url = "http://hl7.org/fhir/StructureMap/ServiceRequestRR4to3"
-/// name = "ServiceRequestRR4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ServiceRequestR4to3"
+/// name = "ServiceRequestR4to3"
 /// title = "ServiceRequest Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/ServiceRequest" alias ServiceRequest as source
 uses "http://hl7.org/fhir/3.0/ReferralRequest" alias ReferralRequestR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group ServiceRequest(source src : ReferralRequestR3, target tgt : ServiceRequest) extends DomainResource <<type+>> {
+group ServiceRequest(source src : ServiceRequest, target tgt : ReferralRequestR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.instantiatesCanonical -> tgt.definition;
   src.basedOn -> tgt.basedOn;

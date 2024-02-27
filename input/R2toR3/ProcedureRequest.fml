@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ProcedureRequest2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ProcedureRequest2to3"
 /// name = "ProcedureRequest2to3"
 /// title = "ProcedureRequest Transforms: R2 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/1.0/ProcedureRequest" alias ProcedureRequestR2 as source
 uses "http://hl7.org/fhir/3.0/ProcedureRequest" alias ProcedureRequest as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group ProcedureRequest(source src : ProcedureRequestR2, target tgt : ProcedureRequest) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "ProcedureRequest-identifier";

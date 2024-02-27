@@ -1,13 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CarePlan.intent-5to4b",
-  "meta" : {
-    "tag" : [{
-      "system" : "http://something",
-      "code" : "review-needed"
-    }]
-  },
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CarePlan.intent-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CarePlan.intent-5to4b",
   "name" : "CarePlan.intent5to4b",
   "title" : "Mapping for CarePlan.intent from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CarePlan#CarePlan.intent",
@@ -31,11 +25,7 @@
     },
     {
       "code" : "directive",
-      "target" : [{
-        "code" : "directive",
-        "relationship" : "equivalent",
-        "comment" : "The code directive is not in the target value set, but is the correct translation - CHECK"
-      }]
+      "noMap" : true
     },
     {
       "code" : "order",

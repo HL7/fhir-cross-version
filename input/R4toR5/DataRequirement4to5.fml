@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/DataRequirement4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DataRequirement4to5"
 /// name = "DataRequirement4to5"
 /// title = "DataRequirement Transforms: R4 to R5"
 /// status = "active"
@@ -6,10 +6,10 @@
 uses "http://hl7.org/fhir/4.0/DataRequirement" alias DataRequirementR4 as source
 uses "http://hl7.org/fhir/5.0/DataRequirement" alias DataRequirementR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group DataRequirement(source src : DataRequirementR4, target tgt : DataRequirementR5) extends Element <<type+>> {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/cross-version/types4to5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/types-4to5', 'code');
   src.profile -> tgt.profile;
   src.subject : CodeableConcept -> tgt.subject "subjectCodeableConcept";
   src.subject : Reference -> tgt.subject "subjectReference";
@@ -46,6 +46,6 @@ group DataRequirementDateFilter(source src, target tgt) extends Element {
 // }
 group DataRequirementSort(source src, target tgt) extends Element {
   src.path -> tgt.path;
-  src.direction as v -> tgt.direction = translate(v, 'http://hl7.org/fhir/ConceptMap/DataRequirement.sort.direction-R4toR5', 'code');
+  src.direction as v -> tgt.direction = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DataRequirement.sort.direction-4to5', 'code');
 }
 

@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/PlanDefinition5to4B"
-/// name = "PlanDefinition5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/PlanDefinition5to4b"
+/// name = "PlanDefinition5to4b"
 /// title = "PlanDefinition Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/PlanDefinition" alias PlanDefinitionR5 as source
-uses "http://hl7.org/fhir/4.0/PlanDefinition" alias PlanDefinitionR4B as target
+uses "http://hl7.org/fhir/4.3/PlanDefinition" alias PlanDefinitionR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group PlanDefinition(source src : PlanDefinitionR5, target tgt : PlanDefinitionR4B) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -16,7 +16,7 @@ group PlanDefinition(source src : PlanDefinitionR5, target tgt : PlanDefinitionR
   src.title -> tgt.title;
   src.subtitle -> tgt.subtitle;
   src.type -> tgt.type;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.status-5to4b', 'code');
   src.experimental -> tgt.experimental;
   src.subject as s where code = 'Patient' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
   src.subject as s where code = 'Practitioner' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/resource-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
@@ -83,7 +83,7 @@ group PlanDefinitionAction(source src, target tgt) extends BackboneElement {
   src.title -> tgt.title;
   src.description -> tgt.description;
   src.textEquivalent -> tgt.textEquivalent;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.priority-R5toR4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.priority-5to4b', 'code');
   src.code -> tgt.code;
   src.reason -> tgt.reason;
   src.documentation -> tgt.documentation;
@@ -106,11 +106,11 @@ group PlanDefinitionAction(source src, target tgt) extends BackboneElement {
   src.timing : Timing -> tgt.timing "timingTiming";
   src.participant as s -> tgt.participant as t then PlanDefinitionActionParticipant(s, t);
   src.type -> tgt.type;
-  src.groupingBehavior as v -> tgt.groupingBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.groupingBehavior-R5toR4', 'code');
-  src.selectionBehavior as v -> tgt.selectionBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.selectionBehavior-R5toR4', 'code');
-  src.requiredBehavior as v -> tgt.requiredBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.requiredBehavior-R5toR4', 'code');
-  src.precheckBehavior as v -> tgt.precheckBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.precheckBehavior-R5toR4', 'code');
-  src.cardinalityBehavior as v -> tgt.cardinalityBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.cardinalityBehavior-R5toR4', 'code');
+  src.groupingBehavior as v -> tgt.groupingBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.groupingBehavior-5to4b', 'code');
+  src.selectionBehavior as v -> tgt.selectionBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.selectionBehavior-5to4b', 'code');
+  src.requiredBehavior as v -> tgt.requiredBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.requiredBehavior-5to4b', 'code');
+  src.precheckBehavior as v -> tgt.precheckBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.precheckBehavior-5to4b', 'code');
+  src.cardinalityBehavior as v -> tgt.cardinalityBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.cardinalityBehavior-5to4b', 'code');
   src.definition : canonical -> tgt.definition "definitionCanonical";
   src.definition : uri -> tgt.definition "definitionUri";
   src.transform -> tgt.transform;
@@ -118,20 +118,20 @@ group PlanDefinitionAction(source src, target tgt) extends BackboneElement {
 }
 
 group PlanDefinitionActionCondition(source src, target tgt) extends BackboneElement {
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.condition.kind-R5toR4', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.condition.kind-5to4b', 'code');
   src.expression -> tgt.expression;
 }
 
 group PlanDefinitionActionRelatedAction(source src, target tgt) extends BackboneElement {
   src.targetId -> tgt.actionId;
-  src.relationship as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.relatedAction.relationship-R5toR4', 'code');
-  src.endRelationship as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.relatedAction.endRelationship-R5toR4', 'code');
+  src.relationship as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.relatedAction.relationship-5to4b', 'code');
+  src.endRelationship as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.relatedAction.endRelationship-PlanDefinition.action.relatedAction.relationship-5to4b', 'code');
   src.offset : Duration -> tgt.offset "offsetDuration";
   src.offset : Range -> tgt.offset "offsetRange";
 }
 
 group PlanDefinitionActionParticipant(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/PlanDefinition.action.participant.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.participant.type-5to4b', 'code');
   src.role -> tgt.role;
 }
 

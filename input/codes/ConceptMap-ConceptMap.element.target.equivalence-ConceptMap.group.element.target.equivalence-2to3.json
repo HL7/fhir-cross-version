@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ConceptMap.element.target.equivalence-ConceptMap.group.element.target.equivalence-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ConceptMap.element.target.equivalence-ConceptMap.group.element.target.equivalence-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ConceptMap.element.target.equivalence-ConceptMap.group.element.target.equivalence-2to3",
   "name" : "ConceptMap.element.target.equivalenceConceptMap.group.element.target.equivalence2to3",
   "title" : "Mapping for ConceptMap.element.target.equivalence/ConceptMap.group.element.target.equivalence from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ConceptMap#ConceptMap.element.target.equivalence",

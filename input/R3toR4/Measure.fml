@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Measure3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Measure3to4"
 /// name = "Measure3to4"
 /// title = "Measure Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Measure" alias MeasureR3 as source
 uses "http://hl7.org/fhir/4.0/Measure" alias Measure as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group Measure(source src : MeasureR3, target tgt : Measure) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -76,7 +76,6 @@ group stratifier(source src, target tgt) extends BackboneElement {
 group supplementalData(source src, target tgt) extends BackboneElement {
   src.identifier as vs -> tgt.code as vt then Identifier2Codeable(vs, vt);
   src.usage -> tgt.usage;
-  src.description -> tgt.description;
   src.criteria as s ->  tgt.criteria as t,  t.expression = s;
   src.path as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.supplementalData.path',  vt.value = v;
 }

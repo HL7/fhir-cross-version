@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CapabilityStatement.rest.resource.interaction.code-Conformance.rest.resource.interaction.code-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.rest.resource.interaction.code-Conformance.rest.resource.interaction.code-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.resource.interaction.code-Conformance.rest.resource.interaction.code-3to2",
   "name" : "CapabilityStatement.rest.resource.interaction.codeConformance.rest.resource.interaction.code3to2",
   "title" : "Mapping for CapabilityStatement.rest.resource.interaction.code/Conformance.rest.resource.interaction.code from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.interaction.code",

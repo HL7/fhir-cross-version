@@ -1,19 +1,19 @@
-/// url = "http://hl7.org/fhir/StructureMap/ExplanationOfBenefit5to4B"
-/// name = "ExplanationOfBenefit5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ExplanationOfBenefit5to4b"
+/// name = "ExplanationOfBenefit5to4b"
 /// title = "ExplanationOfBenefit Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/ExplanationOfBenefit" alias ExplanationOfBenefitR5 as source
-uses "http://hl7.org/fhir/4.0/ExplanationOfBenefit" alias ExplanationOfBenefitR4B as target
+uses "http://hl7.org/fhir/4.3/ExplanationOfBenefit" alias ExplanationOfBenefitR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group ExplanationOfBenefit(source src : ExplanationOfBenefitR5, target tgt : ExplanationOfBenefitR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ExplanationOfBenefit.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.status-5to4b', 'code');
   src.type -> tgt.type;
   src.subType -> tgt.subType;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/ConceptMap/ExplanationOfBenefit.use-R5toR4', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.use-5to4b', 'code');
   src.patient -> tgt.patient;
   src.billablePeriod -> tgt.billablePeriod;
   src.created -> tgt.created;
@@ -31,7 +31,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefitR5, target tgt : Exp
   src.facility -> tgt.facility;
   src.claim -> tgt.claim;
   src.claimResponse -> tgt.claimResponse;
-  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/ConceptMap/ExplanationOfBenefit.outcome-R5toR4', 'code');
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.outcome-5to4b', 'code');
   src.disposition -> tgt.disposition;
   src.preAuthRef -> tgt.preAuthRef;
   src.preAuthRefPeriod -> tgt.preAuthRefPeriod;

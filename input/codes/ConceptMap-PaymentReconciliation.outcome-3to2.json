@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "PaymentReconciliation.outcome-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PaymentReconciliation.outcome-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/PaymentReconciliation.outcome-3to2",
   "name" : "PaymentReconciliation.outcome3to2",
   "title" : "Mapping for PaymentReconciliation.outcome from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.outcome",

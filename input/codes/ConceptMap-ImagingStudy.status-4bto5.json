@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ImagingStudy.status-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ImagingStudy.status-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ImagingStudy.status-4bto5",
   "name" : "ImagingStudy.status4bto5",
   "title" : "Mapping for ImagingStudy.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ImagingStudy#ImagingStudy.status",

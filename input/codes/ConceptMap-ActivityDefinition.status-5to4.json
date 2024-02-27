@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ActivityDefinition.status-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ActivityDefinition.status-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.status-5to4",
   "name" : "ActivityDefinition.status5to4",
   "title" : "Mapping for ActivityDefinition.status from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ActivityDefinition#ActivityDefinition.status",

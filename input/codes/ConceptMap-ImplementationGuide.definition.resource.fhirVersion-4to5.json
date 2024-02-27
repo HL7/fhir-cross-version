@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ImplementationGuide.definition.resource.fhirVersion-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ImplementationGuide.definition.resource.fhirVersion-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ImplementationGuide.definition.resource.fhirVersion-4to5",
   "name" : "ImplementationGuide.definition.resource.fhirVersion4to5",
   "title" : "Mapping for ImplementationGuide.definition.resource.fhirVersion from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ImplementationGuide#ImplementationGuide.definition.resource.fhirVersion",

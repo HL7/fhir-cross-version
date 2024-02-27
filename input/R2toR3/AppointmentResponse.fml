@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/AppointmentResponse2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/AppointmentResponse2to3"
 /// name = "AppointmentResponse2to3"
 /// title = "AppointmentResponse Transforms: R2 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/1.0/AppointmentResponse" alias AppointmentResponseR2 as source
 uses "http://hl7.org/fhir/3.0/AppointmentResponse" alias AppointmentResponse as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group AppointmentResponse(source src : AppointmentResponseR2, target tgt : AppointmentResponse) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "AppointmentResponse-identifier";

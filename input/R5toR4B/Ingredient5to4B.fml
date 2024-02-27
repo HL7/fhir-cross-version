@@ -1,16 +1,16 @@
-/// url = "http://hl7.org/fhir/StructureMap/Ingredient5to4B"
-/// name = "Ingredient5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Ingredient5to4b"
+/// name = "Ingredient5to4b"
 /// title = "Ingredient Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Ingredient" alias IngredientR5 as source
-uses "http://hl7.org/fhir/4.0/Ingredient" alias IngredientR4B as target
+uses "http://hl7.org/fhir/4.3/Ingredient" alias IngredientR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Ingredient(source src : IngredientR5, target tgt : IngredientR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Ingredient.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Ingredient.status-5to4b', 'code');
   src.for -> tgt.for;
   src.role -> tgt.role;
   src.function -> tgt.function;
@@ -20,7 +20,7 @@ group Ingredient(source src : IngredientR5, target tgt : IngredientR4B) extends 
 }
 
 group IngredientManufacturer(source src, target tgt) extends BackboneElement {
-  src.role as v -> tgt.role = translate(v, 'http://hl7.org/fhir/ConceptMap/Ingredient.manufacturer.role-R5toR4', 'code');
+  src.role as v -> tgt.role = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Ingredient.manufacturer.role-5to4b', 'code');
   src.manufacturer -> tgt.manufacturer;
 }
 

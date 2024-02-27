@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/SubstanceDefinition5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SubstanceDefinition5to4"
 /// name = "SubstanceDefinition5to4"
 /// title = "SubstanceDefinition Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/SubstanceDefinition" alias SubstanceDefinitionR5 as source
 uses "http://hl7.org/fhir/4.0/SubstanceSpecification" alias SubstanceSpecificationR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group SubstanceDefinition(source src : SubstanceDefinitionR5, target tgt : SubstanceSpecificationR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

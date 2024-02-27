@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ResearchSubject3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ResearchSubject3to4"
 /// name = "ResearchSubject3to4"
 /// title = "ResearchSubject Transforms: R3 to R4"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/3.0/ResearchSubject" alias ResearchSubjectR3 as source
 uses "http://hl7.org/fhir/4.0/ResearchSubject" alias ResearchSubject as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group ResearchSubject(source src : ResearchSubjectR3, target tgt : ResearchSubject) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ResearchSubject.status-R3toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ResearchSubject.status-3to4', 'code');
   src.status -> tgt.status;
   src.period -> tgt.period;
   src.study -> tgt.study;

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ElementDefinition.constraint.severity-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ElementDefinition.constraint.severity-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.constraint.severity-3to2",
   "name" : "ElementDefinition.constraint.severity3to2",
   "title" : "Mapping for ElementDefinition.constraint.severity from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.constraint.severity",

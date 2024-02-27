@@ -1,15 +1,15 @@
-/// url = "http://hl7.org/fhir/StructureMap/HumanName5to4B"
-/// name = "HumanName5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/HumanName5to4b"
+/// name = "HumanName5to4b"
 /// title = "HumanName Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/HumanName" alias HumanNameR5 as source
-uses "http://hl7.org/fhir/4.0/HumanName" alias HumanNameR4B as target
+uses "http://hl7.org/fhir/4.3/HumanName" alias HumanNameR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group HumanName(source src : HumanNameR5, target tgt : HumanNameR4B) extends Element <<type+>> {
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/ConceptMap/HumanName.use-R5toR4', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/HumanName.use-5to4b', 'code');
   src.text -> tgt.text;
   src.family -> tgt.family;
   src.given -> tgt.given;

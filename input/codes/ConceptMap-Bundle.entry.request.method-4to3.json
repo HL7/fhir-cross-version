@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Bundle.entry.request.method-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Bundle.entry.request.method-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Bundle.entry.request.method-4to3",
   "name" : "Bundle.entry.request.method4to3",
   "title" : "Mapping for Bundle.entry.request.method from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Bundle#Bundle.entry.request.method",

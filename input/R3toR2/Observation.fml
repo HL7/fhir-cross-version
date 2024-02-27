@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Observation3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Observation3to2"
 /// name = "Observation3to2"
 /// title = "Observation Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Observation" alias Observation as source
 uses "http://hl7.org/fhir/1.0/Observation" alias ObservationR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group Observation(source src : Observation, target tgt : ObservationR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Observation-identifier";

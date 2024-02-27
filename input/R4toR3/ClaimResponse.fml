@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ClaimResponse4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ClaimResponse4to3"
 /// name = "ClaimResponse4to3"
 /// title = "ClaimResponse Transforms: R4 to R3"
 /// status = "active"
@@ -6,14 +6,11 @@
 uses "http://hl7.org/fhir/4.0/ClaimResponse" alias ClaimResponse as source
 uses "http://hl7.org/fhir/3.0/ClaimResponse" alias ClaimResponseR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group ClaimResponse(source src : ClaimResponseR3, target tgt : ClaimResponse) extends DomainResource <<type+>> {
+group ClaimResponse(source src : ClaimResponse, target tgt : ClaimResponseR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
-  src.type -> tgt.type;
-  src.subType -> tgt.subType;
-  src.use -> tgt.use;
   src.patient -> tgt.patient;
   src.created -> tgt.created;
   src.insurer -> tgt.insurer;
@@ -68,26 +65,23 @@ group ClaimResponseItemAdjudication(source src, target tgt) extends BackboneElem
 }
 
 group ClaimResponseItemDetail(source src, target tgt) extends BackboneElement {
-  src.detailSequence -> tgt.detailSequence;
+  src.detailSequence -> tgt.sequenceLinkId;
   src.noteNumber -> tgt.noteNumber;
   src.adjudication -> tgt.adjudication;
   src.subDetail as s -> tgt.subDetail as t then ClaimResponseItemDetailSubDetail(s, t);
 }
 
 group ClaimResponseItemDetailSubDetail(source src, target tgt) extends BackboneElement {
-  src.subDetailSequence -> tgt.subDetailSequence;
+  src.subDetailSequence -> tgt.sequenceLinkId;
   src.noteNumber -> tgt.noteNumber;
   src.adjudication -> tgt.adjudication;
 }
 
 group ClaimResponseAddItem(source src, target tgt) extends BackboneElement {
-  src.itemSequence -> tgt.itemSequence;
-  src.detailSequence -> tgt.detailSequence;
-  src.subdetailSequence -> tgt.subdetailSequence;
-  src.service -> tgt.service;
+  src.itemSequence -> tgt.sequenceLinkId;
+  src.productOrService -> tgt.service;
   src.modifier -> tgt.modifier;
   src.programCode -> tgt.programCode;
-  src.serviced -> tgt.serviced;
   src.location -> tgt.location;
   src.quantity -> tgt.quantity;
   src.unitPrice -> tgt.unitPrice;
@@ -101,19 +95,6 @@ group ClaimResponseAddItem(source src, target tgt) extends BackboneElement {
 }
 
 group ClaimResponseAddItemDetail(source src, target tgt) extends BackboneElement {
-  src.service -> tgt.service;
-  src.modifier -> tgt.modifier;
-  src.programCode -> tgt.programCode;
-  src.quantity -> tgt.quantity;
-  src.unitPrice -> tgt.unitPrice;
-  src.factor -> tgt.factor;
-  src.net -> tgt.net;
-  src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
-  src.subDetail as s -> tgt.subDetail as t then ClaimResponseAddItemDetailSubDetail(s, t);
-}
-
-group ClaimResponseAddItemDetailSubDetail(source src, target tgt) extends BackboneElement {
   src.service -> tgt.service;
   src.modifier -> tgt.modifier;
   src.programCode -> tgt.programCode;

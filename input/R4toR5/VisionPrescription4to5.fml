@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/VisionPrescription4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/VisionPrescription4to5"
 /// name = "VisionPrescription4to5"
 /// title = "VisionPrescription Transforms: R4 to R5"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.0/VisionPrescription" alias VisionPrescriptionR4 as source
 uses "http://hl7.org/fhir/5.0/VisionPrescription" alias VisionPrescriptionR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group VisionPrescription(source src : VisionPrescriptionR4, target tgt : VisionPrescriptionR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/VisionPrescription.status-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/VisionPrescription.status-4to5', 'code');
   src.created -> tgt.created;
   src.patient -> tgt.patient;
   src.encounter -> tgt.encounter;
@@ -21,7 +21,7 @@ group VisionPrescription(source src : VisionPrescriptionR4, target tgt : VisionP
 
 group VisionPrescriptionLensSpecification(source src, target tgt) extends BackboneElement {
   src.product -> tgt.product;
-  src.eye as v -> tgt.eye = translate(v, 'http://hl7.org/fhir/ConceptMap/VisionPrescription.lensSpecification.eye-R4toR5', 'code');
+  src.eye as v -> tgt.eye = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/VisionPrescription.lensSpecification.eye-4to5', 'code');
   src.sphere -> tgt.sphere;
   src.cylinder -> tgt.cylinder;
   src.axis -> tgt.axis;
@@ -38,6 +38,6 @@ group VisionPrescriptionLensSpecification(source src, target tgt) extends Backbo
 
 group VisionPrescriptionLensSpecificationPrism(source src, target tgt) extends BackboneElement {
   src.amount -> tgt.amount;
-  src.base as v -> tgt.base = translate(v, 'http://hl7.org/fhir/ConceptMap/VisionPrescription.lensSpecification.prism.base-R4toR5', 'code');
+  src.base as v -> tgt.base = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/VisionPrescription.lensSpecification.prism.base-4to5', 'code');
 }
 

@@ -1,18 +1,18 @@
-/// url = "http://hl7.org/fhir/StructureMap/CompartmentDefinition5to4B"
-/// name = "CompartmentDefinition5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CompartmentDefinition5to4b"
+/// name = "CompartmentDefinition5to4b"
 /// title = "CompartmentDefinition Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/CompartmentDefinition" alias CompartmentDefinitionR5 as source
-uses "http://hl7.org/fhir/4.0/CompartmentDefinition" alias CompartmentDefinitionR4B as target
+uses "http://hl7.org/fhir/4.3/CompartmentDefinition" alias CompartmentDefinitionR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group CompartmentDefinition(source src : CompartmentDefinitionR5, target tgt : CompartmentDefinitionR4B) extends DomainResource <<type+>> {
   src.url -> tgt.url;
   src.version -> tgt.version;
   src.name -> tgt.name;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/CompartmentDefinition.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CompartmentDefinition.status-5to4b', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -20,7 +20,7 @@ group CompartmentDefinition(source src : CompartmentDefinitionR5, target tgt : C
   src.description -> tgt.description;
   src.useContext -> tgt.useContext;
   src.purpose -> tgt.purpose;
-  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/ConceptMap/CompartmentDefinition.code-R5toR4', 'code');
+  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CompartmentDefinition.code-5to4b', 'code');
   src.search -> tgt.search;
   src.resource as s -> tgt.resource as t then CompartmentDefinitionResource(s, t);
 }

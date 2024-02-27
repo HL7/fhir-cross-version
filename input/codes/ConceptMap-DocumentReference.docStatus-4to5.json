@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DocumentReference.docStatus-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DocumentReference.docStatus-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DocumentReference.docStatus-4to5",
   "name" : "DocumentReference.docStatus4to5",
   "title" : "Mapping for DocumentReference.docStatus from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.docStatus",

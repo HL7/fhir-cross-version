@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Address.type-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Address.type-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Address.type-3to4",
   "name" : "Address.type3to4",
   "title" : "Mapping for Address.type from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Address#Address.type",

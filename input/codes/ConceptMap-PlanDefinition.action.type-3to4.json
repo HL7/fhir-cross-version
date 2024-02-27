@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "PlanDefinition.action.type-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PlanDefinition.action.type-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.type-3to4",
   "name" : "PlanDefinition.action.type3to4",
   "title" : "Mapping for PlanDefinition.action.type from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.action.type",

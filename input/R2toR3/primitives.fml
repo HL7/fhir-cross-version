@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/primitives2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 /// name = "primitives2to3"
 /// title = "Primitive Transforms: R2 to R3"
 /// status = "active"
@@ -40,7 +40,7 @@ uses "http://hl7.org/fhir/3.0/uuid" as target
 uses "http://hl7.org/fhir/1.0/xhtml" alias xhtmlR2 as source
 uses "http://hl7.org/fhir/3.0/xhtml" as target
 
-imports "http://hl7.org/fhir/StructureMap/Element2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"
 
 group base64Binary(source src : base64BinaryR2, target tgt : base64Binary) extends Element <<type+>> {
   src.value as v -> tgt.value = v "base64Binary-value";

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Provenance4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Provenance4to5"
 /// name = "Provenance4to5"
 /// title = "Provenance Transforms: R4 to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Provenance" alias ProvenanceR4 as source
 uses "http://hl7.org/fhir/5.0/Provenance" alias ProvenanceR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Provenance(source src : ProvenanceR4, target tgt : ProvenanceR5) extends DomainResource <<type+>> {
   src.target -> tgt.target;
@@ -29,7 +29,7 @@ group ProvenanceAgent(source src, target tgt) extends BackboneElement {
 }
 
 group ProvenanceEntity(source src, target tgt) extends BackboneElement {
-  src.role as v -> tgt.role = translate(v, 'http://hl7.org/fhir/ConceptMap/Provenance.entity.role-R4toR5', 'code');
+  src.role as v -> tgt.role = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Provenance.entity.role-4to5', 'code');
   src.what -> tgt.what;
 }
 

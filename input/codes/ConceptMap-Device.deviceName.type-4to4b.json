@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Device.deviceName.type-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Device.deviceName.type-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Device.deviceName.type-4to4b",
   "name" : "Device.deviceName.type4to4b",
   "title" : "Mapping for Device.deviceName.type from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Device#Device.deviceName.type",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RequestGroup.intent-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestGroup.intent-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RequestGroup.intent-4to3",
   "name" : "RequestGroup.intent4to3",
   "title" : "Mapping for RequestGroup.intent from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.intent",

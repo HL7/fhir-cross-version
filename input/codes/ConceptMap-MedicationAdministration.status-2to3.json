@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "MedicationAdministration.status-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MedicationAdministration.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/MedicationAdministration.status-2to3",
   "name" : "MedicationAdministration.status2to3",
   "title" : "Mapping for MedicationAdministration.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/MedicationAdministration#MedicationAdministration.status",

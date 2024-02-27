@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "EpisodeOfCare.statusHistory.status-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/EpisodeOfCare.statusHistory.status-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/EpisodeOfCare.statusHistory.status-4to4b",
   "name" : "EpisodeOfCare.statusHistory.status4to4b",
   "title" : "Mapping for EpisodeOfCare.statusHistory.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/EpisodeOfCare#EpisodeOfCare.statusHistory.status",

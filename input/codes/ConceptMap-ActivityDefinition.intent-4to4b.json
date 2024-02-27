@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ActivityDefinition.intent-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ActivityDefinition.intent-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.intent-4to4b",
   "name" : "ActivityDefinition.intent4to4b",
   "title" : "Mapping for ActivityDefinition.intent from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ActivityDefinition#ActivityDefinition.intent",

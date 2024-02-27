@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/Procedure5to4B"
-/// name = "Procedure5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Procedure5to4b"
+/// name = "Procedure5to4b"
 /// title = "Procedure Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Procedure" alias ProcedureR5 as source
-uses "http://hl7.org/fhir/4.0/Procedure" alias ProcedureR4B as target
+uses "http://hl7.org/fhir/4.3/Procedure" alias ProcedureR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Procedure(source src : ProcedureR5, target tgt : ProcedureR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -14,7 +14,7 @@ group Procedure(source src : ProcedureR5, target tgt : ProcedureR4B) extends Dom
   src.instantiatesUri -> tgt.instantiatesUri;
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Procedure.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Procedure.status-5to4b', 'code');
   src.statusReason -> tgt.statusReason;
   src.category -> tgt.category;
   src.code -> tgt.code;

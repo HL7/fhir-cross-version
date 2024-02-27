@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "HumanName.use-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/HumanName.use-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/HumanName.use-3to2",
   "name" : "HumanName.use3to2",
   "title" : "Mapping for HumanName.use from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/HumanName#HumanName.use",

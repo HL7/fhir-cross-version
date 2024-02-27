@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Communication3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Communication3to4"
 /// name = "Communication3to4"
 /// title = "Communication Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Communication" alias CommunicationR3 as source
 uses "http://hl7.org/fhir/4.0/Communication" alias Communication as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group Communication(source src : CommunicationR3, target tgt : Communication) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

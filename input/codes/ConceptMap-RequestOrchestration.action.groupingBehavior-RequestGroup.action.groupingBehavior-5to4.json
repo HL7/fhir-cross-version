@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RequestOrchestration.action.groupingBehavior-RequestGroup.action.groupingBehavior-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestOrchestration.action.groupingBehavior-RequestGroup.action.groupingBehavior-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.groupingBehavior-RequestGroup.action.groupingBehavior-5to4",
   "name" : "RequestOrchestration.action.groupingBehaviorRequestGroup.action.groupingBehavior5to4",
   "title" : "Mapping for RequestOrchestration.action.groupingBehavior/RequestGroup.action.groupingBehavior from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.groupingBehavior",

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ReferralRequest2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ReferralRequest2to3"
 /// name = "ReferralRequest2to3"
 /// title = "ReferralRequest Transforms: R2 to R3"
 /// status = "active"
@@ -6,10 +6,10 @@
 uses "http://hl7.org/fhir/1.0/ReferralRequest" alias ReferralRequestR2 as source
 uses "http://hl7.org/fhir/3.0/ReferralRequest" alias ReferralRequest as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group ReferralRequest(source src : ReferralRequestR2, target tgt : ReferralRequest) extends DomainResource <<type+>> {
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ReferralRequest.status-R2toR3', 'code') "ReferralRequest-status";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ReferralRequest.status-2to3', 'code') "ReferralRequest-status";
   src.identifier -> tgt.identifier "ReferralRequest-identifier";
   src.date -> tgt.authoredOn "ReferralRequest-date";
   src.type -> tgt.type "ReferralRequest-type";

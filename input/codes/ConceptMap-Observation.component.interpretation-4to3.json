@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Observation.component.interpretation-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Observation.component.interpretation-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Observation.component.interpretation-4to3",
   "name" : "Observation.component.interpretation4to3",
   "title" : "Mapping for Observation.component.interpretation from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Observation#Observation.component.interpretation",

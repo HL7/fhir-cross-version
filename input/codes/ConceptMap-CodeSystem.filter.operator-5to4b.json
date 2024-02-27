@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CodeSystem.filter.operator-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CodeSystem.filter.operator-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CodeSystem.filter.operator-5to4b",
   "name" : "CodeSystem.filter.operator5to4b",
   "title" : "Mapping for CodeSystem.filter.operator from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CodeSystem#CodeSystem.filter.operator",

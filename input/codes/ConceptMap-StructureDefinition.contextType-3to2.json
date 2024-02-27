@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "StructureDefinition.contextType-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureDefinition.contextType-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/StructureDefinition.contextType-3to2",
   "name" : "StructureDefinition.contextType3to2",
   "title" : "Mapping for StructureDefinition.contextType from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition#StructureDefinition.contextType",

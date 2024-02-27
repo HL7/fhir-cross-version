@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ServiceRequest.intent-ReferralRequest.intent-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ServiceRequest.intent-ReferralRequest.intent-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ServiceRequest.intent-ReferralRequest.intent-4to3",
   "name" : "ServiceRequest.intentReferralRequest.intent4to3",
   "title" : "Mapping for ServiceRequest.intent/ReferralRequest.intent from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ServiceRequest#ServiceRequest.intent",

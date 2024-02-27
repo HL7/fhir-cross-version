@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/AllergyIntolerance3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/AllergyIntolerance3to4"
 /// name = "AllergyIntolerance3to4"
 /// title = "AllergyIntolerance Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/AllergyIntolerance" alias AllergyIntoleranceR3 as source
 uses "http://hl7.org/fhir/4.0/AllergyIntolerance" alias AllergyIntolerance as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group AllergyIntolerance(source src : AllergyIntoleranceR3, target tgt : AllergyIntolerance) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

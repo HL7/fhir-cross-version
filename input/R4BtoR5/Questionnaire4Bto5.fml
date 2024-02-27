@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Questionnaire4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Questionnaire4Bto5"
 /// name = "Questionnaire4Bto5"
 /// title = "Questionnaire Transforms: R4B to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.3/Questionnaire" alias QuestionnaireR4B as source
 uses "http://hl7.org/fhir/5.0/Questionnaire" alias QuestionnaireR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group Questionnaire(source src : QuestionnaireR4B, target tgt : QuestionnaireR5) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -15,7 +15,7 @@ group Questionnaire(source src : QuestionnaireR4B, target tgt : QuestionnaireR5)
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.derivedFrom -> tgt.derivedFrom;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/QuestionnaireB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Questionnaire.status-4bto5', 'code');
   src.experimental -> tgt.experimental;
   src.subjectType -> tgt.subjectType;
   src.date -> tgt.date;
@@ -39,11 +39,11 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.prefix -> tgt.prefix;
   src.text -> tgt.text;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/QuestionnaireB.item.type-R4BtoR5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Questionnaire.item.type-4bto5', 'code');
   src.type as s where type = 'choice' ->  tgt.answerConstraint as t,  t.value = 'optionsOnly';
   src.type as s where type = 'open-choice' ->  tgt.answerConstraint as t,  t.value = 'optionsOrString';
   src.enableWhen as s -> tgt.enableWhen as t then QuestionnaireItemEnableWhen(s, t);
-  src.enableBehavior as v -> tgt.enableBehavior = translate(v, 'http://hl7.org/fhir/ConceptMap/QuestionnaireB.item.enableBehavior-R4BtoR5', 'code');
+  src.enableBehavior as v -> tgt.enableBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Questionnaire.item.enableBehavior-4bto5', 'code');
   src.required -> tgt.required;
   src.repeats -> tgt.repeats;
   src.readOnly -> tgt.readOnly;
@@ -55,7 +55,7 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
 
 group QuestionnaireItemEnableWhen(source src, target tgt) extends BackboneElement {
   src.question -> tgt.question;
-  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/ConceptMap/QuestionnaireB.item.enableWhen.operator-R4BtoR5', 'code');
+  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Questionnaire.item.enableWhen.operator-4bto5', 'code');
   src.answer : boolean -> tgt.answer "answerBoolean";
   src.answer : decimal -> tgt.answer "answerDecimal";
   src.answer : integer -> tgt.answer "answerInteger";

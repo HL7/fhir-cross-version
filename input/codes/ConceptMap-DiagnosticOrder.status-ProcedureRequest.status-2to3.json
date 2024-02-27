@@ -1,7 +1,13 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DiagnosticOrder.status-ProcedureRequest.status-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DiagnosticOrder.status-ProcedureRequest.status-2to3",
+  "meta" : {
+    "tag" : [{
+      "system" : "http://something",
+      "code" : "review-needed"
+    }]
+  },
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DiagnosticOrder.status-ProcedureRequest.status-2to3",
   "name" : "DiagnosticOrder.statusProcedureRequest.status2to3",
   "title" : "Mapping for DiagnosticOrder.status to ProcedureRequest.status from 2 to 3",
   "status" : "active",
@@ -15,13 +21,6 @@
       "target" : [{
         "code" : "active",
         "relationship" : "source-is-narrower-than-target"
-      }]
-    },
-    {
-      "code" : "cancelled",
-      "target" : [{
-        "code" : "cancelled",
-        "relationship" : "equivalent"
       }]
     },
     {

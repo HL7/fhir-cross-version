@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/MedicationAdministration3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/MedicationAdministration3to4"
 /// name = "MedicationAdministration3to4"
 /// title = "MedicationAdministration Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/MedicationAdministration" alias MedicationAdministrationR3 as source
 uses "http://hl7.org/fhir/4.0/MedicationAdministration" alias MedicationAdministration as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group MedicationAdministration(source src : MedicationAdministrationR3, target tgt : MedicationAdministration) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -25,7 +25,6 @@ group MedicationAdministration(source src : MedicationAdministrationR3, target t
   src.effective : dateTime as vs -> tgt.effective = create('dateTime') as vt then dateTime(vs, vt) "effectiveDateTime";
   src.effective : Period as vs -> tgt.effective = create('Period') as vt then Period(vs, vt) "effectivePeriod";
   src.performer as vs0 -> tgt.performer as vt0 then actor(vs0, vt0);
-  src.statusReason -> tgt.statusReason;
   src.reasonNotGiven -> tgt.reasonCode;
   src.reasonCode -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;

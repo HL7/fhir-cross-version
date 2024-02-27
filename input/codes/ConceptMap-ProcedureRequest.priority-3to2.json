@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ProcedureRequest.priority-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ProcedureRequest.priority-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ProcedureRequest.priority-3to2",
   "name" : "ProcedureRequest.priority3to2",
   "title" : "Mapping for ProcedureRequest.priority from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.priority",

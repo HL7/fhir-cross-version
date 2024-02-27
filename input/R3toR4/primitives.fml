@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/primitives3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to4"
 /// name = "primitives3to4"
 /// title = "Primitive Transforms: R3 to R4"
 /// status = "active"
@@ -7,7 +7,6 @@ uses "http://hl7.org/fhir/3.0/base64Binary" alias base64BinaryR3 as source
 uses "http://hl7.org/fhir/4.0/base64Binary" as target
 uses "http://hl7.org/fhir/3.0/boolean" alias booleanR3 as source
 uses "http://hl7.org/fhir/4.0/boolean" as target
-uses "http://hl7.org/fhir/3.0/canonical" alias canonicalR3 as source
 uses "http://hl7.org/fhir/4.0/canonical" as target
 uses "http://hl7.org/fhir/3.0/code" alias codeR3 as source
 uses "http://hl7.org/fhir/4.0/code" as target
@@ -37,14 +36,13 @@ uses "http://hl7.org/fhir/3.0/unsignedInt" alias unsignedIntR3 as source
 uses "http://hl7.org/fhir/4.0/unsignedInt" as target
 uses "http://hl7.org/fhir/3.0/uri" alias uriR3 as source
 uses "http://hl7.org/fhir/4.0/uri" as target
-uses "http://hl7.org/fhir/3.0/url" alias urlR3 as source
 uses "http://hl7.org/fhir/4.0/url" as target
 uses "http://hl7.org/fhir/3.0/uuid" alias uuidR3 as source
 uses "http://hl7.org/fhir/4.0/uuid" as target
 uses "http://hl7.org/fhir/3.0/xhtml" alias xhtmlR3 as source
 uses "http://hl7.org/fhir/4.0/xhtml" as target
 
-imports "http://hl7.org/fhir/StructureMap/Element3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Element3to4"
 
 group base64Binary(source src : base64BinaryR3, target tgt : base64Binary) extends Element <<type+>> {
   src.value as v -> tgt.value = v "base64Binary-value";
@@ -52,10 +50,6 @@ group base64Binary(source src : base64BinaryR3, target tgt : base64Binary) exten
 
 group boolean(source src : booleanR3, target tgt : boolean) extends Element <<type+>> {
   src.value as v -> tgt.value = v "boolean-value";
-}
-
-group canonical(source src : canonicalR3, target tgt : canonical) extends Element <<type+>> {
-  src.value as v -> tgt.value = v "canonical-value";
 }
 
 group code(source src : codeR3, target tgt : code) extends Element <<type+>> {
@@ -114,11 +108,15 @@ group uri(source src : uriR3, target tgt : uri) extends Element <<type+>> {
   src.value as v -> tgt.value = v "uri-value";
 }
 
+group canonical(source src : uriR3, target tgt : canonical) extends Element <<type+>> {
+  src.value as v -> tgt.value = v "canonical-value";
+}
+
 group uri2Canonical(source src : uriR3, target tgt : canonical) extends Element <<types>> {
   src.value as v -> tgt.value = v "uri-value";
 }
 
-group url(source src : urlR3, target tgt : url) extends Element <<type+>> {
+group url(source src : uriR3, target tgt : url) extends Element <<type+>> {
   src.value as v -> tgt.value = v "url-value";
 }
 

@@ -1,16 +1,16 @@
-/// url = "http://hl7.org/fhir/StructureMap/Consent5to4B"
-/// name = "Consent5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Consent5to4b"
+/// name = "Consent5to4b"
 /// title = "Consent Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Consent" alias ConsentR5 as source
-uses "http://hl7.org/fhir/4.0/Consent" alias ConsentR4B as target
+uses "http://hl7.org/fhir/4.3/Consent" alias ConsentR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Consent(source src : ConsentR5, target tgt : ConsentR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Consent.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Consent.status-5to4b', 'code');
   src.category -> tgt.category;
   src.subject -> tgt.patient;
   src.date -> tgt.dateTime;
@@ -51,7 +51,7 @@ group ConsentProvisionActor(source src, target tgt) extends BackboneElement {
 }
 
 group ConsentProvisionData(source src, target tgt) extends BackboneElement {
-  src.meaning as v -> tgt.meaning = translate(v, 'http://hl7.org/fhir/ConceptMap/Consent.provision.data.meaning-R5toR4', 'code');
+  src.meaning as v -> tgt.meaning = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Consent.provision.data.meaning-5to4b', 'code');
   src.reference -> tgt.reference;
 }
 

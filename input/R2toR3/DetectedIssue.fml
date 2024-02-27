@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/DetectedIssue2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DetectedIssue2to3"
 /// name = "DetectedIssue2to3"
 /// title = "DetectedIssue Transforms: R2 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/1.0/DetectedIssue" alias DetectedIssueR2 as source
 uses "http://hl7.org/fhir/3.0/DetectedIssue" alias DetectedIssue as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group DetectedIssue(source src : DetectedIssueR2, target tgt : DetectedIssue) extends DomainResource <<type+>> {
   src.patient -> tgt.patient "DetectedIssue-patient";

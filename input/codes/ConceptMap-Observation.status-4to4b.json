@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Observation.status-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Observation.status-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Observation.status-4to4b",
   "name" : "Observation.status4to4b",
   "title" : "Mapping for Observation.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Observation#Observation.status",

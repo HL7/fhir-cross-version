@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "VisionPrescription.lensSpecification.eye-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/VisionPrescription.lensSpecification.eye-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/VisionPrescription.lensSpecification.eye-4bto5",
   "name" : "VisionPrescription.lensSpecification.eye4bto5",
   "title" : "Mapping for VisionPrescription.lensSpecification.eye from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.eye",

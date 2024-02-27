@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/Schedule5to4B"
-/// name = "Schedule5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Schedule5to4b"
+/// name = "Schedule5to4b"
 /// title = "Schedule Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Schedule" alias ScheduleR5 as source
-uses "http://hl7.org/fhir/4.0/Schedule" alias ScheduleR4B as target
+uses "http://hl7.org/fhir/4.3/Schedule" alias ScheduleR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Schedule(source src : ScheduleR5, target tgt : ScheduleR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

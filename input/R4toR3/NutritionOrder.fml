@@ -1,14 +1,14 @@
-/// url = "http://hl7.org/fhir/StructureMap/NutritionOrder4to3"
-/// name = "Order4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/NutritionOrder4to3"
+/// name = "NutritionOrder4to3"
 /// title = "NutritionOrder Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/NutritionOrder" alias NutritionOrder as source
 uses "http://hl7.org/fhir/3.0/NutritionOrder" alias NutritionOrderR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group NutritionOrder(source src : NutritionOrderR3, target tgt : NutritionOrder) extends DomainResource <<type+>> {
+group NutritionOrder(source src : NutritionOrder, target tgt : NutritionOrderR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
   src.patient -> tgt.patient;

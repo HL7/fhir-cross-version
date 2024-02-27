@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Linkage4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Linkage4to3"
 /// name = "Linkage4to3"
 /// title = "Linkage Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Linkage" alias Linkage as source
 uses "http://hl7.org/fhir/3.0/Linkage" alias LinkageR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Linkage(source src : Linkage, target tgt : LinkageR3) extends DomainResource <<type+>> {
   src.active -> tgt.active;

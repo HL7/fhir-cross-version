@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Parameters4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Parameters4to3"
 /// name = "Parameters4to3"
 /// title = "Parameters Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Parameters" alias Parameters as source
 uses "http://hl7.org/fhir/3.0/Parameters" alias ParametersR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Parameters(source src : Parameters, target tgt : ParametersR3) extends Resource <<type+>> {
   src.parameter as vs0 -> tgt.parameter as vt0 then {

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "MedicationRequest.priority-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MedicationRequest.priority-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/MedicationRequest.priority-4to3",
   "name" : "MedicationRequest.priority4to3",
   "title" : "Mapping for MedicationRequest.priority from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationRequest#MedicationRequest.priority",

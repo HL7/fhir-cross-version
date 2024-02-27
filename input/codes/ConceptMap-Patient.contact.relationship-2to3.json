@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Patient.contact.relationship-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Patient.contact.relationship-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Patient.contact.relationship-2to3",
   "name" : "Patient.contact.relationship2to3",
   "title" : "Mapping for Patient.contact.relationship from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.contact.relationship",

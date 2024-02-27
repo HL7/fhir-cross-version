@@ -1,8 +1,8 @@
 {
   "resourceType" : "ConceptMap",
-  "id" : "ResearchStudy.status-4Bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ResearchStudy.status-4Bto5",
-  "name" : "ResearchStudy.status-4Bto5",
+  "id" : "ResearchStudy.status-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ResearchStudy.status-4bto5",
+  "name" : "ResearchStudy.status-4bto5",
   "title" : "Mapping for ResearchStudy.status from R4B to R5",
   "status" : "active",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ResearchStudy#ResearchStudy.status",

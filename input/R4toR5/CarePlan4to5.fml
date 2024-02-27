@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CarePlan4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CarePlan4to5"
 /// name = "CarePlan4to5"
 /// title = "CarePlan Transforms: R4 to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/CarePlan" alias CarePlanR4 as source
 uses "http://hl7.org/fhir/5.0/CarePlan" alias CarePlanR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group CarePlan(source src : CarePlanR4, target tgt : CarePlanR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -15,7 +15,7 @@ group CarePlan(source src : CarePlanR4, target tgt : CarePlanR5) extends DomainR
   src.basedOn -> tgt.basedOn;
   src.replaces -> tgt.replaces;
   src.partOf -> tgt.partOf;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/CarePlan.status-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CarePlan.status-4to5', 'code');
   src.intent -> tgt.intent;
   src.category -> tgt.category;
   src.title -> tgt.title;

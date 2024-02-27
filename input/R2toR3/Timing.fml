@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Timing2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Timing2to3"
 /// name = "Timing2to3"
 /// title = "Timing Transforms: R2 to R3"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/1.0/Timing" alias TimingR2 as source
 uses "http://hl7.org/fhir/3.0/Timing" alias Timing as target
 
-imports "http://hl7.org/fhir/StructureMap/primitives2to3"
-imports "http://hl7.org/fhir/StructureMap/Element2to3"
-imports "http://hl7.org/fhir/StructureMap/Period2to3"
-imports "http://hl7.org/fhir/StructureMap/Range2to3"
-imports "http://hl7.org/fhir/StructureMap/CodeableConcept2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Period2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Range2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/CodeableConcept2to3"
 
 group Timing(source src : TimingR2, target tgt : Timing) extends Element <<type+>> {
   src.event -> tgt.event "Timing-event";
@@ -26,7 +26,7 @@ group Timing(source src : TimingR2, target tgt : Timing) extends Element <<type+
     vs0.period -> vt0.period "repeat-period";
     vs0.periodMax -> vt0.periodMax "repeat-periodMax";
     vs0.periodUnits -> vt0.periodUnit "repeat-periodUnit";
-    vs0.when as v -> vt0.when = translate(v, '#EventTiming', 'code') "repeat-when";
+    vs0.when as v -> vt0.when = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Timing.repeat.when-2to3', 'code') "repeat-when";
   } "Timing-repeat";
   src.code -> tgt.code "Timing-code";
 }

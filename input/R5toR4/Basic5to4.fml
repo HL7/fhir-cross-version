@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Basic5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Basic5to4"
 /// name = "Basic5to4"
 /// title = "Basic Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/Basic" alias BasicR5 as source
 uses "http://hl7.org/fhir/4.0/Basic" alias BasicR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Basic(source src : BasicR5, target tgt : BasicR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

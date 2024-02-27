@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/MarketingStatus5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/MarketingStatus5to4"
 /// name = "MarketingStatus5to4"
 /// title = "MarketingStatus Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/MarketingStatus" alias MarketingStatusR5 as source
 uses "http://hl7.org/fhir/4.0/MarketingStatus" alias MarketingStatusR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group MarketingStatus(source src : MarketingStatusR5, target tgt : MarketingStatusR4) extends Element <<type+>> {
   src.modifierExtension -> tgt.modifierExtension;

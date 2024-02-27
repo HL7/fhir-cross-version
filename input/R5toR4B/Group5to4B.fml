@@ -1,17 +1,17 @@
-/// url = "http://hl7.org/fhir/StructureMap/Group5to4B"
-/// name = "Group5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Group5to4b"
+/// name = "Group5to4b"
 /// title = "Group Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Group" alias GroupR5 as source
-uses "http://hl7.org/fhir/4.0/Group" alias GroupR4B as target
+uses "http://hl7.org/fhir/4.3/Group" alias GroupR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Group(source src : GroupR5, target tgt : GroupR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.active -> tgt.active;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/Group.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Group.type-5to4b', 'code');
   src.code -> tgt.code;
   src.name -> tgt.name;
   src.quantity -> tgt.quantity;

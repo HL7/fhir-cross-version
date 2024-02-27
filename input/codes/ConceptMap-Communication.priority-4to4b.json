@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Communication.priority-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Communication.priority-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Communication.priority-4to4b",
   "name" : "Communication.priority4to4b",
   "title" : "Mapping for Communication.priority from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Communication#Communication.priority",

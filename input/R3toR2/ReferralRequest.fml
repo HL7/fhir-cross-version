@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ReferralRequest3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ReferralRequest3to2"
 /// name = "ReferralRequest3to2"
 /// title = "ReferralRequest Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/ReferralRequest" alias ReferralRequest as source
 uses "http://hl7.org/fhir/1.0/ReferralRequest" alias ReferralRequestR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group ReferralRequest(source src : ReferralRequest, target tgt : ReferralRequestR2) extends DomainResource <<type+>> {
   src.status check $this != 'entered-in-error' -> tgt.status "ReferralRequest-status";

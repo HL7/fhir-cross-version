@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Slot.freeBusyType-Slot.status-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Slot.freeBusyType-Slot.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Slot.freeBusyType-Slot.status-2to3",
   "name" : "Slot.freeBusyTypeSlot.status2to3",
   "title" : "Mapping for Slot.freeBusyType/Slot.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Slot#Slot.freeBusyType",

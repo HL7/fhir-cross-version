@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Timing4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Timing4to3"
 /// name = "Timing4to3"
 /// title = "Timing Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Timing" alias Timing as source
 uses "http://hl7.org/fhir/3.0/Timing" alias TimingR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Timing(source src : Timing, target tgt : TimingR3) extends BackboneElement <<type+>> {
   src.event -> tgt.event;

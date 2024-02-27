@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Consent.except.purpose-Consent.provision.purpose-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Consent.except.purpose-Consent.provision.purpose-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Consent.except.purpose-Consent.provision.purpose-3to4",
   "name" : "Consent.except.purposeConsent.provision.purpose3to4",
   "title" : "Mapping for Consent.except.purpose/Consent.provision.purpose from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.except.purpose",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "AllergyIntolerance.category-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AllergyIntolerance.category-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/AllergyIntolerance.category-3to4",
   "name" : "AllergyIntolerance.category3to4",
   "title" : "Mapping for AllergyIntolerance.category from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.category",

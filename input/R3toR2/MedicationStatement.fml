@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/MedicationStatement3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/MedicationStatement3to2"
 /// name = "MedicationStatement3to2"
 /// title = "MedicationStatement Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/MedicationStatement" alias MedicationStatement as source
 uses "http://hl7.org/fhir/1.0/MedicationStatement" alias MedicationStatementR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group MedicationStatement(source src : MedicationStatement, target tgt : MedicationStatementR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "MedicationStatement-identifier";

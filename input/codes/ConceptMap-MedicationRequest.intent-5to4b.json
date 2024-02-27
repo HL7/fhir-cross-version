@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "MedicationRequest.intent-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MedicationRequest.intent-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/MedicationRequest.intent-5to4b",
   "name" : "MedicationRequest.intent5to4b",
   "title" : "Mapping for MedicationRequest.intent from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MedicationRequest#MedicationRequest.intent",

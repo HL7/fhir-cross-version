@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/EvidenceVariable5to4B"
-/// name = "EvidenceVariable5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/EvidenceVariable5to4b"
+/// name = "EvidenceVariable5to4b"
 /// title = "EvidenceVariable Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/EvidenceVariable" alias EvidenceVariableR5 as source
-uses "http://hl7.org/fhir/4.0/EvidenceVariable" alias EvidenceVariableR4B as target
+uses "http://hl7.org/fhir/4.3/EvidenceVariable" alias EvidenceVariableR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group EvidenceVariable(source src : EvidenceVariableR5, target tgt : EvidenceVariableR4B) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -15,7 +15,7 @@ group EvidenceVariable(source src : EvidenceVariableR5, target tgt : EvidenceVar
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.shortTitle -> tgt.shortTitle;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceVariable.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceVariable.status-5to4b', 'code');
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
   src.contact -> tgt.contact;
@@ -29,7 +29,7 @@ group EvidenceVariable(source src : EvidenceVariableR5, target tgt : EvidenceVar
   src.relatedArtifact -> tgt.relatedArtifact;
   src.actual -> tgt.actual;
   src.characteristic as s -> tgt.characteristic as t then EvidenceVariableCharacteristic(s, t);
-  src.handling as v -> tgt.handling = translate(v, 'http://hl7.org/fhir/ConceptMap/EvidenceVariable.handling-R5toR4', 'code');
+  src.handling as v -> tgt.handling = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceVariable.handling-5to4b', 'code');
   src.category as s -> tgt.category as t then EvidenceVariableCategory(s, t);
 }
 

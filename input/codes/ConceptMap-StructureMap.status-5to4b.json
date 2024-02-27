@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "StructureMap.status-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureMap.status-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/StructureMap.status-5to4b",
   "name" : "StructureMap.status5to4b",
   "title" : "Mapping for StructureMap.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureMap#StructureMap.status",

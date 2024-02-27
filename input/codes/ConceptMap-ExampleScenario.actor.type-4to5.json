@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ExampleScenario.actor.type-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ExampleScenario.actor.type-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ExampleScenario.actor.type-4to5",
   "name" : "ExampleScenario.actor.type4to5",
   "title" : "Mapping for ExampleScenario.actor.type from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExampleScenario#ExampleScenario.actor.type",

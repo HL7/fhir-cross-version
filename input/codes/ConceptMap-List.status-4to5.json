@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "List.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/List.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/List.status-4to5",
   "name" : "List.status4to5",
   "title" : "Mapping for List.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/List#List.status",

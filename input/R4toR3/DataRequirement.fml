@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/DataRequirement4to3"
-/// name = "Requirement4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DataRequirement4to3"
+/// name = "DataRequirement4to3"
 /// title = "R4 to R3 Conversion for DataRequirement"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/DataRequirement" alias DataRequirement as source
 uses "http://hl7.org/fhir/3.0/DataRequirement" alias DataRequirementR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group DataRequirement(source src : DataRequirement, target tgt : DataRequirementR3) extends Element <<type+>> {
   src.type -> tgt.type;

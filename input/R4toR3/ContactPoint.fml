@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ContactPoint4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ContactPoint4to3"
 /// name = "ContactPoint4to3"
 /// title = "R4 to R3 Conversion for ContactPoint"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/ContactPoint" alias ContactPoint as source
 uses "http://hl7.org/fhir/3.0/ContactPoint" alias ContactPointR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group ContactPoint(source src : ContactPoint, target tgt : ContactPointR3) extends Element <<type+>> {
   src.system -> tgt.system;

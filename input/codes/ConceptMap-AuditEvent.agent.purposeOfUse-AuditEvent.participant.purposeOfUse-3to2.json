@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "AuditEvent.agent.purposeOfUse-AuditEvent.participant.purposeOfUse-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AuditEvent.agent.purposeOfUse-AuditEvent.participant.purposeOfUse-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/AuditEvent.agent.purposeOfUse-AuditEvent.participant.purposeOfUse-3to2",
   "name" : "AuditEvent.agent.purposeOfUseAuditEvent.participant.purposeOfUse3to2",
   "title" : "Mapping for AuditEvent.agent.purposeOfUse/AuditEvent.participant.purposeOfUse from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.agent.purposeOfUse",

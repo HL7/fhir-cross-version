@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "SearchParameter.xpathUsage-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SearchParameter.xpathUsage-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/SearchParameter.xpathUsage-3to2",
   "name" : "SearchParameter.xpathUsage3to2",
   "title" : "Mapping for SearchParameter.xpathUsage from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.xpathUsage",

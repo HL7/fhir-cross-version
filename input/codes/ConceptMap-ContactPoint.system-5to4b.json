@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ContactPoint.system-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ContactPoint.system-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ContactPoint.system-5to4b",
   "name" : "ContactPoint.system5to4b",
   "title" : "Mapping for ContactPoint.system from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ContactPoint#ContactPoint.system",

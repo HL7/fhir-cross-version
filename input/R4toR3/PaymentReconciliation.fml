@@ -1,14 +1,14 @@
-/// url = "http://hl7.org/fhir/StructureMap/PaymentReconciliation4to3"
-/// name = "Reconciliation4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/PaymentReconciliation4to3"
+/// name = "PaymentReconciliation4to3"
 /// title = "PaymentReconciliation Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/PaymentReconciliation" alias PaymentReconciliation as source
 uses "http://hl7.org/fhir/3.0/PaymentReconciliation" alias PaymentReconciliationR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group PaymentReconciliation(source src : PaymentReconciliationR3, target tgt : PaymentReconciliation) extends DomainResource <<type+>> {
+group PaymentReconciliation(source src : PaymentReconciliation, target tgt : PaymentReconciliationR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
   src.period -> tgt.period;

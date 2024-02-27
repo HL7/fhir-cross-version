@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "EvidenceReport.section.mode-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/EvidenceReport.section.mode-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceReport.section.mode-5to4b",
   "name" : "EvidenceReport.section.mode5to4b",
   "title" : "Mapping for EvidenceReport.section.mode from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/EvidenceReport#EvidenceReport.section.mode",

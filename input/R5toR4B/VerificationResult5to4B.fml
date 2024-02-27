@@ -1,18 +1,18 @@
-/// url = "http://hl7.org/fhir/StructureMap/VerificationResult5to4B"
-/// name = "VerificationResult5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/VerificationResult5to4b"
+/// name = "VerificationResult5to4b"
 /// title = "VerificationResult Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/VerificationResult" alias VerificationResultR5 as source
-uses "http://hl7.org/fhir/4.0/VerificationResult" alias VerificationResultR4B as target
+uses "http://hl7.org/fhir/4.3/VerificationResult" alias VerificationResultR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group VerificationResult(source src : VerificationResultR5, target tgt : VerificationResultR4B) extends DomainResource <<type+>> {
   src.target -> tgt.target;
   src.targetLocation -> tgt.targetLocation;
   src.need -> tgt.need;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/VerificationResult.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/VerificationResult.status-5to4b', 'code');
   src.statusDate -> tgt.statusDate;
   src.validationType -> tgt.validationType;
   src.validationProcess -> tgt.validationProcess;

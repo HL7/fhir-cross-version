@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "AllergyIntolerance.criticality-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AllergyIntolerance.criticality-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/AllergyIntolerance.criticality-4bto5",
   "name" : "AllergyIntolerance.criticality4bto5",
   "title" : "Mapping for AllergyIntolerance.criticality from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance#AllergyIntolerance.criticality",

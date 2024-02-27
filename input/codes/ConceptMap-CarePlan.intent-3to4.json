@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CarePlan.intent-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CarePlan.intent-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CarePlan.intent-3to4",
   "name" : "CarePlan.intent3to4",
   "title" : "Mapping for CarePlan.intent from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CarePlan#CarePlan.intent",

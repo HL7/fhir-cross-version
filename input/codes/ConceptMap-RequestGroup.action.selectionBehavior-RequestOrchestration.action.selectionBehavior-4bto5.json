@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RequestGroup.action.selectionBehavior-RequestOrchestration.action.selectionBehavior-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestGroup.action.selectionBehavior-RequestOrchestration.action.selectionBehavior-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RequestGroup.action.selectionBehavior-RequestOrchestration.action.selectionBehavior-4bto5",
   "name" : "RequestGroup.action.selectionBehaviorRequestOrchestration.action.selectionBehavior4bto5",
   "title" : "Mapping for RequestGroup.action.selectionBehavior/RequestOrchestration.action.selectionBehavior from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.selectionBehavior",

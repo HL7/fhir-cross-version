@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Appointment.status-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Appointment.status-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Appointment.status-4to4b",
   "name" : "Appointment.status4to4b",
   "title" : "Mapping for Appointment.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Appointment#Appointment.status",

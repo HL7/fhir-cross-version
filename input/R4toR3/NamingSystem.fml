@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/NamingSystem4to3"
-/// name = "System4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/NamingSystem4to3"
+/// name = "NamingSystem4to3"
 /// title = "NamingSystem Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/NamingSystem" alias NamingSystem as source
 uses "http://hl7.org/fhir/3.0/NamingSystem" alias NamingSystemR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group NamingSystem(source src : NamingSystem, target tgt : NamingSystemR3) extends DomainResource <<type+>> {
   src.name -> tgt.name;

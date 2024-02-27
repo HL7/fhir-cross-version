@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Linkage5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Linkage5to4"
 /// name = "Linkage5to4"
 /// title = "Linkage Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/Linkage" alias LinkageR5 as source
 uses "http://hl7.org/fhir/4.0/Linkage" alias LinkageR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Linkage(source src : LinkageR5, target tgt : LinkageR4) extends DomainResource <<type+>> {
   src.active -> tgt.active;
@@ -15,7 +15,7 @@ group Linkage(source src : LinkageR5, target tgt : LinkageR4) extends DomainReso
 }
 
 group LinkageItem(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/Linkage.item.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Linkage.item.type-5to4', 'code');
   src.resource -> tgt.resource;
 }
 

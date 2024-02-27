@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CapabilityStatement.document.mode-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.document.mode-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.document.mode-5to4b",
   "name" : "CapabilityStatement.document.mode5to4b",
   "title" : "Mapping for CapabilityStatement.document.mode from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.document.mode",

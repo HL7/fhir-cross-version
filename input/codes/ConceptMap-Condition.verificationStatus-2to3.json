@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Condition.verificationStatus-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Condition.verificationStatus-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Condition.verificationStatus-2to3",
   "name" : "Condition.verificationStatus2to3",
   "title" : "Mapping for Condition.verificationStatus from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Condition#Condition.verificationStatus",

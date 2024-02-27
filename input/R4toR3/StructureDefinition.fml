@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/StructureDefinition4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/StructureDefinition4to3"
 /// name = "StructureDefinition4to3"
 /// title = "StructureDefinition Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/StructureDefinition" alias StructureDefinition as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition" alias StructureDefinitionR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group StructureDefinition(source src : StructureDefinition, target tgt : StructureDefinitionR3) extends DomainResource <<type+>> {
   src.url -> tgt.url;

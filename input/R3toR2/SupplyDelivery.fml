@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/SupplyDelivery3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SupplyDelivery3to2"
 /// name = "SupplyDelivery3to2"
 /// title = "SupplyD3 to R2elivery Transforms: R"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/SupplyDelivery" alias SupplyDelivery as source
 uses "http://hl7.org/fhir/1.0/SupplyDelivery" alias SupplyDeliveryR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group SupplyDelivery(source src : SupplyDelivery, target tgt : SupplyDeliveryR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "SupplyDelivery-identifier";

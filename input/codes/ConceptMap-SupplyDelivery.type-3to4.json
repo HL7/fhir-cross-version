@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "SupplyDelivery.type-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SupplyDelivery.type-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/SupplyDelivery.type-3to4",
   "name" : "SupplyDelivery.type3to4",
   "title" : "Mapping for SupplyDelivery.type from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SupplyDelivery#SupplyDelivery.type",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RequestGroup.action.cardinalityBehavior-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestGroup.action.cardinalityBehavior-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RequestGroup.action.cardinalityBehavior-4to4b",
   "name" : "RequestGroup.action.cardinalityBehavior4to4b",
   "title" : "Mapping for RequestGroup.action.cardinalityBehavior from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.cardinalityBehavior",

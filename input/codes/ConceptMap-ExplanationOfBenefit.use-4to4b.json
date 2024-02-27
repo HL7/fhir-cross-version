@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ExplanationOfBenefit.use-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ExplanationOfBenefit.use-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.use-4to4b",
   "name" : "ExplanationOfBenefit.use4to4b",
   "title" : "Mapping for ExplanationOfBenefit.use from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.use",

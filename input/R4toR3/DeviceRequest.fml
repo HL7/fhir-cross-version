@@ -1,14 +1,14 @@
-/// url = "http://hl7.org/fhir/StructureMap/DeviceRequest4to3"
-/// name = "Request4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DeviceRequest4to3"
+/// name = "DeviceRequest4to3"
 /// title = "DeviceRequest Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/DeviceRequest" alias DeviceRequest as source
 uses "http://hl7.org/fhir/3.0/DeviceRequest" alias DeviceRequestR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group DeviceRequest(source src : DeviceRequestR3, target tgt : DeviceRequest) extends DomainResource <<type+>> {
+group DeviceRequest(source src : DeviceRequest, target tgt : DeviceRequestR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.basedOn -> tgt.basedOn;
   src.priorRequest -> tgt.priorRequest;
@@ -18,7 +18,6 @@ group DeviceRequest(source src : DeviceRequestR3, target tgt : DeviceRequest) ex
   src.priority -> tgt.priority;
   src.code : CodeableConcept as vs -> tgt.code = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "codeCodeableConcept";
   src.code : Reference as vs -> tgt.code = create('Reference') as vt then Reference(vs, vt) "codeReference";
-  src.parameter as s -> tgt.parameter as t then DeviceRequestParameter(s, t);
   src.subject -> tgt.subject;
   src.encounter -> tgt.context;
   src.occurrence -> tgt.occurrence;
@@ -28,14 +27,9 @@ group DeviceRequest(source src : DeviceRequestR3, target tgt : DeviceRequest) ex
   src.performer -> tgt.performer;
   src.reasonCode -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;
-  src.insurance -> tgt.insurance;
   src.supportingInfo -> tgt.supportingInfo;
   src.note -> tgt.note;
   src.relevantHistory -> tgt.relevantHistory;
 }
 
-group DeviceRequestParameter(source src, target tgt) extends BackboneElement {
-  src.code -> tgt.code;
-  src.value -> tgt.value;
-}
 

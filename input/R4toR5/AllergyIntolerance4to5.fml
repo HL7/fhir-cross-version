@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/AllergyIntolerance4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/AllergyIntolerance4to5"
 /// name = "AllergyIntolerance4to5"
 /// title = "AllergyIntolerance Transforms: R4 to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/AllergyIntolerance" alias AllergyIntoleranceR4 as source
 uses "http://hl7.org/fhir/5.0/AllergyIntolerance" alias AllergyIntoleranceR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group AllergyIntolerance(source src : AllergyIntoleranceR4, target tgt : AllergyIntoleranceR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -14,8 +14,8 @@ group AllergyIntolerance(source src : AllergyIntoleranceR4, target tgt : Allergy
   src.verificationStatus -> tgt.verificationStatus;
   src.type as s where type = 'allergy' ->  tgt.type = create('CodeableConcept') as t,  t.coding = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/allergy-intolerance-type',  tc.code = 'allergy',  tc.display = 'Allergy';
   src.type as s where type = 'intolerance' ->  tgt.type = create('CodeableConcept') as t,  t.coding = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/allergy-intolerance-type',  tc.code = 'intolerance',  tc.display = 'Intolerance';
-  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/ConceptMap/AllergyIntolerance.category-R4toR5', 'code');
-  src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/ConceptMap/AllergyIntolerance.criticality-R4toR5', 'code');
+  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AllergyIntolerance.category-4to5', 'code');
+  src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AllergyIntolerance.criticality-4to5', 'code');
   src.code -> tgt.code;
   src.patient -> tgt.patient;
   src.encounter -> tgt.encounter;
@@ -51,7 +51,7 @@ group AllergyIntoleranceReaction(source src, target tgt) extends BackboneElement
   src.manifestation -> tgt.manifestation;
   src.description -> tgt.description;
   src.onset -> tgt.onset;
-  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/ConceptMap/AllergyIntolerance.reaction.severity-R4toR5', 'code');
+  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AllergyIntolerance.reaction.severity-4to5', 'code');
   src.exposureRoute -> tgt.exposureRoute;
   src.note -> tgt.note;
 }

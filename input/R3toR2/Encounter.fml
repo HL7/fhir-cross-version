@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Encounter3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Encounter3to2"
 /// name = "Encounter3to2"
 /// title = "Encounter Transforms: R3 to R2"
 /// status = "active"
@@ -6,13 +6,13 @@
 uses "http://hl7.org/fhir/3.0/Encounter" alias Encounter as source
 uses "http://hl7.org/fhir/1.0/Encounter" alias EncounterR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group Encounter(source src : Encounter, target tgt : EncounterR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Encounter-identifier";
   src.status check status != 'entered-in-error' -> tgt.status "Encounter-status";
   src.statusHistory as vs0 -> tgt.statusHistory as vt0 then encStatusHistory(vs0, vt0) "Encounter-statusHistory";
-  src.class as v -> tgt.class = translate(v, 'http://hl7.org/fhir/ConceptMap/Encounter.class-R3toR2', 'code') "Encounter-class";
+  src.class as v -> tgt.class = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Encounter.class-3to2', 'code') "Encounter-class";
   src.type -> tgt.type "Encounter-type";
   src.priority -> tgt.priority "Encounter-priority";
   src.subject -> tgt.patient "Encounter-patient";

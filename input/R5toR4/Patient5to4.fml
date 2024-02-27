@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Patient5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Patient5to4"
 /// name = "Patient5to4"
 /// title = "Patient Transforms: R5 to R4"
 /// status = "active"
@@ -6,14 +6,14 @@
 uses "http://hl7.org/fhir/5.0/Patient" alias PatientR5 as source
 uses "http://hl7.org/fhir/4.0/Patient" alias PatientR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Patient(source src : PatientR5, target tgt : PatientR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.active -> tgt.active;
   src.name -> tgt.name;
   src.telecom -> tgt.telecom;
-  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/ConceptMap/Patient.gender-R5toR4', 'code');
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Patient.gender-5to4', 'code');
   src.birthDate -> tgt.birthDate;
   src.deceased : boolean -> tgt.deceased "deceasedBoolean";
   src.deceased : dateTime -> tgt.deceased "deceasedDateTime";
@@ -34,7 +34,7 @@ group PatientContact(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.telecom -> tgt.telecom;
   src.address -> tgt.address;
-  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/ConceptMap/Patient.contact.gender-R5toR4', 'code');
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Patient.contact.gender-5to4', 'code');
   src.organization -> tgt.organization;
   src.period -> tgt.period;
 }
@@ -46,6 +46,6 @@ group PatientCommunication(source src, target tgt) extends BackboneElement {
 
 group PatientLink(source src, target tgt) extends BackboneElement {
   src.other -> tgt.other;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/Patient.link.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Patient.link.type-5to4', 'code');
 }
 

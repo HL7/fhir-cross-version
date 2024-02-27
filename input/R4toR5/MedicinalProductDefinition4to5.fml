@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/MedicinalProductDefinition4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/MedicinalProductDefinition4to5"
 /// name = "MedicinalProductDefinition4to5"
 /// title = "MedicinalProductDefinition Transforms: R4 to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/MedicinalProduct" alias MedicinalProductR4 as source
 uses "http://hl7.org/fhir/5.0/MedicinalProductDefinition" alias MedicinalProductDefinitionR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group MedicinalProductDefinition(source src : MedicinalProductR4, target tgt : MedicinalProductDefinitionR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

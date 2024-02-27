@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CodeableConcept4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CodeableConcept4to3"
 /// name = "CodeableConcept4to3"
 /// title = "R4 to R3 Conversion for CodeableConcept"
 /// status = "active"
@@ -7,7 +7,7 @@ uses "http://hl7.org/fhir/4.0/CodeableConcept" alias CodeableConcept as source
 uses "http://hl7.org/fhir/3.0/CodeableConcept" alias CodeableConceptR3 as target
 uses "http://hl7.org/fhir/3.0/Coding" alias CodingR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group CodeableConcept(source src : CodeableConcept, target tgt : CodeableConceptR3) extends Element <<type+>> {
   src.coding -> tgt.coding;

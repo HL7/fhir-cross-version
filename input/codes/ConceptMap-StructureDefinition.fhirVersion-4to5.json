@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "StructureDefinition.fhirVersion-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureDefinition.fhirVersion-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/StructureDefinition.fhirVersion-4to5",
   "name" : "StructureDefinition.fhirVersion4to5",
   "title" : "Mapping for StructureDefinition.fhirVersion from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.fhirVersion",

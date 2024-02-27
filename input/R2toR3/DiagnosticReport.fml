@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/DiagnosticReport2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DiagnosticReport2to3"
 /// name = "DiagnosticReport2to3"
 /// title = "DiagnosticReport Transforms: R2 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/1.0/DiagnosticReport" alias DiagnosticReportR2 as source
 uses "http://hl7.org/fhir/3.0/DiagnosticReport" alias DiagnosticReport as target
 
-imports "http://hl7.org/fhir/StructureMap/*2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group DiagnosticReport(source src : DiagnosticReportR2, target tgt : DiagnosticReport) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "DiagnosticReport-identifier";

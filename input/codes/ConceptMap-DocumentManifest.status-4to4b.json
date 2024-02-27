@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DocumentManifest.status-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DocumentManifest.status-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DocumentManifest.status-4to4b",
   "name" : "DocumentManifest.status4to4b",
   "title" : "Mapping for DocumentManifest.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentManifest#DocumentManifest.status",

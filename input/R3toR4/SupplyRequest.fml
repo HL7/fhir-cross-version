@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/SupplyRequest3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SupplyRequest3to4"
 /// name = "SupplyRequest3to4"
 /// title = "SupplyRequest Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/SupplyRequest" alias SupplyRequestR3 as source
 uses "http://hl7.org/fhir/4.0/SupplyRequest" alias SupplyRequest as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group SupplyRequest(source src : SupplyRequestR3, target tgt : SupplyRequest) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

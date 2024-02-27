@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ElementDefinition.binding.strength-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ElementDefinition.binding.strength-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.binding.strength-3to4",
   "name" : "ElementDefinition.binding.strength3to4",
   "title" : "Mapping for ElementDefinition.binding.strength from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.binding.strength",

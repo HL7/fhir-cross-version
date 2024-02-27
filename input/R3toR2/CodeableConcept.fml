@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CodeableConcept3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CodeableConcept3to2"
 /// name = "CodeableConcept3to2"
 /// title = "CodeableConcept Transforms: R3 to R2"
 /// status = "active"
@@ -8,9 +8,9 @@ uses "http://hl7.org/fhir/1.0/CodeableConcept" alias CodeableConceptR2 as target
 uses "http://hl7.org/fhir/1.0/Coding" alias CodingR2 as target
 uses "http://hl7.org/fhir/1.0/string" alias stringR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/primitives3to2"
-imports "http://hl7.org/fhir/StructureMap/Element3to2"
-imports "http://hl7.org/fhir/StructureMap/Coding3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Element3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Coding3to2"
 
 group CodeableConcept(source src : CodeableConcept, target tgt : CodeableConceptR2) extends Element <<type+>> {
   src.coding -> tgt.coding "CodeableConcept-coding";

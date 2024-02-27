@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "VisionPrescription.dispense.eye-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/VisionPrescription.dispense.eye-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/VisionPrescription.dispense.eye-3to2",
   "name" : "VisionPrescription.dispense.eye3to2",
   "title" : "Mapping for VisionPrescription.dispense.eye from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/VisionPrescription#VisionPrescription.dispense.eye",

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Quantity5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Quantity5to4"
 /// name = "Quantity5to4"
 /// title = "Quantity Transforms: R5 to R4"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/5.0/Quantity" alias QuantityR5 as source
 uses "http://hl7.org/fhir/4.0/Quantity" alias QuantityR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Quantity(source src : QuantityR5, target tgt : QuantityR4) extends Element <<type+>> {
   src.value -> tgt.value;
-  src.comparator as v -> tgt.comparator = translate(v, 'http://hl7.org/fhir/ConceptMap/Quantity.comparator-R5toR4', 'code');
+  src.comparator as v -> tgt.comparator = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Quantity.comparator-5to4', 'code');
   src.unit -> tgt.unit;
   src.system -> tgt.system;
   src.code -> tgt.code;

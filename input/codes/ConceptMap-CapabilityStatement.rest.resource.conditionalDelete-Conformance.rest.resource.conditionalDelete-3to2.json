@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CapabilityStatement.rest.resource.conditionalDelete-Conformance.rest.resource.conditionalDelete-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.rest.resource.conditionalDelete-Conformance.rest.resource.conditionalDelete-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.resource.conditionalDelete-Conformance.rest.resource.conditionalDelete-3to2",
   "name" : "CapabilityStatement.rest.resource.conditionalDeleteConformance.rest.resource.conditionalDelete3to2",
   "title" : "Mapping for CapabilityStatement.rest.resource.conditionalDelete/Conformance.rest.resource.conditionalDelete from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalDelete",

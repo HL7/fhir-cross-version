@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/EpisodeOfCare4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/EpisodeOfCare4Bto5"
 /// name = "EpisodeOfCare4Bto5"
 /// title = "EpisodeOfCare Transforms: R4B to R5"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.3/EpisodeOfCare" alias EpisodeOfCareR4B as source
 uses "http://hl7.org/fhir/5.0/EpisodeOfCare" alias EpisodeOfCareR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group EpisodeOfCare(source src : EpisodeOfCareR4B, target tgt : EpisodeOfCareR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/EpisodeOfCareB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EpisodeOfCare.status-4bto5', 'code');
   src.statusHistory as s -> tgt.statusHistory as t then EpisodeOfCareStatusHistory(s, t);
   src.type -> tgt.type;
   src.diagnosis as s -> tgt.diagnosis as t then EpisodeOfCareDiagnosis(s, t);
@@ -24,7 +24,7 @@ group EpisodeOfCare(source src : EpisodeOfCareR4B, target tgt : EpisodeOfCareR5)
 }
 
 group EpisodeOfCareStatusHistory(source src, target tgt) extends BackboneElement {
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/EpisodeOfCareB.statusHistory.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EpisodeOfCare.statusHistory.status-4bto5', 'code');
   src.period -> tgt.period;
 }
 

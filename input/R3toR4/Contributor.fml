@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Contributor3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Contributor3to4"
 /// name = "Contributor3to4"
 /// title = "Contributor Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Contributor" alias ContributorR3 as source
 uses "http://hl7.org/fhir/4.0/ContactPoint" alias ContactPoint as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group Contributor(source src : ContributorR3, target tgt : ConactPoint) {
   src.contact as vs then ContactDetail(vs, tgt);

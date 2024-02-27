@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Location.mode-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Location.mode-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Location.mode-3to2",
   "name" : "Location.mode3to2",
   "title" : "Mapping for Location.mode from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Location#Location.mode",

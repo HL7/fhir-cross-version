@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CarePlan3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CarePlan3to4"
 /// name = "CarePlan3to4"
 /// title = "CarePlan Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/CarePlan" alias CarePlanR3 as source
 uses "http://hl7.org/fhir/4.0/CarePlan" alias CarePlan as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group CarePlan(source src : CarePlanR3, target tgt : CarePlan) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -23,7 +23,6 @@ group CarePlan(source src : CarePlanR3, target tgt : CarePlan) extends DomainRes
   src.context -> tgt.encounter;
   src.period -> tgt.period;
   src.author -> tgt.author;
-  src.contributor -> tgt.contributor;
   src.careTeam -> tgt.careTeam;
   src.addresses -> tgt.addresses;
   src.supportingInfo -> tgt.supportingInfo;

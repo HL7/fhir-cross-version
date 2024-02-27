@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Contract4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Contract4to3"
 /// name = "Contract4to3"
 /// title = "Contract Transforms: R4 to R3"
 /// status = "active"
@@ -6,9 +6,9 @@
 uses "http://hl7.org/fhir/4.0/Contract" alias Contract as source
 uses "http://hl7.org/fhir/3.0/Contract" alias ContractR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group Contract(source src : ContractR3, target tgt : Contract) extends DomainResource <<type+>> {
+group Contract(source src : Contract, target tgt : ContractR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
   src.contentDerivative -> tgt.contentDerivative;
@@ -24,7 +24,6 @@ group Contract(source src : ContractR3, target tgt : Contract) extends DomainRes
   src.friendly as s -> tgt.friendly as t then ContractFriendly(s, t);
   src.legal as s -> tgt.legal as t then ContractLegal(s, t);
   src.rule as s -> tgt.rule as t then ContractRule(s, t);
-  src.legallyBinding -> tgt.legallyBinding;
 }
 
 group ContractTerm(source src, target tgt) extends BackboneElement {

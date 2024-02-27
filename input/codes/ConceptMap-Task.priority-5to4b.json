@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Task.priority-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Task.priority-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Task.priority-5to4b",
   "name" : "Task.priority5to4b",
   "title" : "Mapping for Task.priority from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Task#Task.priority",

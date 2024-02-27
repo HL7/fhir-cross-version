@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Flag.status-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Flag.status-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Flag.status-3to2",
   "name" : "Flag.status3to2",
   "title" : "Mapping for Flag.status from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Flag#Flag.status",

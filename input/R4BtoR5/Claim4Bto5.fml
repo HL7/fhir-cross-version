@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Claim4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Claim4Bto5"
 /// name = "Claim4Bto5"
 /// title = "Claim Transforms: R4B to R5"
 /// status = "active"
@@ -6,14 +6,14 @@
 uses "http://hl7.org/fhir/4.3/Claim" alias ClaimR4B as source
 uses "http://hl7.org/fhir/5.0/Claim" alias ClaimR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group Claim(source src : ClaimR4B, target tgt : ClaimR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ClaimB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Claim.status-4bto5', 'code');
   src.type -> tgt.type;
   src.subType -> tgt.subType;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/ConceptMap/ClaimB.use-R4BtoR5', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Claim.use-4bto5', 'code');
   src.patient -> tgt.patient;
   src.billablePeriod -> tgt.billablePeriod;
   src.created -> tgt.created;

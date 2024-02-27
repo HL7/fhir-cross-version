@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Claim.type-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Claim.type-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Claim.type-3to4",
   "name" : "Claim.type3to4",
   "title" : "Mapping for Claim.type from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.type",

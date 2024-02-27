@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "MedicationDispense.status-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MedicationDispense.status-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/MedicationDispense.status-3to2",
   "name" : "MedicationDispense.status3to2",
   "title" : "Mapping for MedicationDispense.status from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MedicationDispense#MedicationDispense.status",

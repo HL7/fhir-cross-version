@@ -1,17 +1,17 @@
-/// url = "http://hl7.org/fhir/StructureMap/NamingSystem2to3"
-/// name = "NamingSystem"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/NamingSystem2to3"
+/// name = "NamingSystem2to3"
 /// title = "NamingSystem Transforms: R2 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/NamingSystem" alias NamingSystemR2 as source
 uses "http://hl7.org/fhir/3.0/NamingSystem" alias NamingSystem as target
 
-imports "http://hl7.org/fhir/StructureMap/primitives2to3"
-imports "http://hl7.org/fhir/StructureMap/DomainResource2to3"
-imports "http://hl7.org/fhir/StructureMap/ContactPoint2to3"
-imports "http://hl7.org/fhir/StructureMap/Reference2to3"
-imports "http://hl7.org/fhir/StructureMap/Period2to3"
-imports "http://hl7.org/fhir/StructureMap/CodeableConcept2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/DomainResource2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/ContactPoint2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Reference2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Period2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/CodeableConcept2to3"
 
 group NamingSystem(source src : NamingSystemR2, target tgt : NamingSystem) extends DomainResource <<type+>> {
   src.name -> tgt.name "NamingSystem-name";

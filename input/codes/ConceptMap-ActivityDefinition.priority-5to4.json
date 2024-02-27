@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ActivityDefinition.priority-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ActivityDefinition.priority-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.priority-5to4",
   "name" : "ActivityDefinition.priority5to4",
   "title" : "Mapping for ActivityDefinition.priority from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ActivityDefinition#ActivityDefinition.priority",

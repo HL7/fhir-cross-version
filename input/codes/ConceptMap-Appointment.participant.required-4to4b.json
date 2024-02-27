@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Appointment.participant.required-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Appointment.participant.required-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Appointment.participant.required-4to4b",
   "name" : "Appointment.participant.required4to4b",
   "title" : "Mapping for Appointment.participant.required from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Appointment#Appointment.participant.required",

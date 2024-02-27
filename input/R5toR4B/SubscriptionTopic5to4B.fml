@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/SubscriptionTopic5to4B"
-/// name = "SubscriptionTopic5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SubscriptionTopic5to4b"
+/// name = "SubscriptionTopic5to4b"
 /// title = "SubscriptionTopic Transforms: R5 to R4B"
 /// status = "draft"
 
 uses "http://hl7.org/fhir/5.0/SubscriptionTopic" alias SubscriptionTopicR5 as source
-uses "http://hl7.org/fhir/4.0/SubscriptionTopic" alias SubscriptionTopicR4B as target
+uses "http://hl7.org/fhir/4.3/SubscriptionTopic" alias SubscriptionTopicR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group SubscriptionTopic(source src : SubscriptionTopicR5, target tgt : SubscriptionTopicR4B) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -14,7 +14,7 @@ group SubscriptionTopic(source src : SubscriptionTopicR5, target tgt : Subscript
   src.version -> tgt.version;
   src.title -> tgt.title;
   src.derivedFrom -> tgt.derivedFrom;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/SubscriptionTopic.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionTopic.status-5to4b', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -42,9 +42,9 @@ group SubscriptionTopicResourceTrigger(source src, target tgt) extends BackboneE
 
 group SubscriptionTopicResourceTriggerQueryCriteria(source src, target tgt) extends BackboneElement {
   src.previous -> tgt.previous;
-  src.resultForCreate as v -> tgt.resultForCreate = translate(v, 'http://hl7.org/fhir/ConceptMap/SubscriptionTopic.resourceTrigger.queryCriteria.resultForCreate-R5toR4', 'code');
+  src.resultForCreate as v -> tgt.resultForCreate = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionTopic.resourceTrigger.queryCriteria.resultForCreate-5to4b', 'code');
   src.current -> tgt.current;
-  src.resultForDelete as v -> tgt.resultForDelete = translate(v, 'http://hl7.org/fhir/ConceptMap/SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete-R5toR4', 'code');
+  src.resultForDelete as v -> tgt.resultForDelete = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete-5to4b', 'code');
   src.requireBoth -> tgt.requireBoth;
 }
 

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Timing4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Timing4to5"
 /// name = "Timing4to5"
 /// title = "Timing Transforms: R4 to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Timing" alias TimingR4 as source
 uses "http://hl7.org/fhir/5.0/Timing" alias TimingR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Timing(source src : TimingR4, target tgt : TimingR5) extends Element <<type+>> {
   src.modifierExtension -> tgt.modifierExtension;
@@ -29,7 +29,7 @@ group TimingRepeat(source src, target tgt) extends Element {
   src.period -> tgt.period;
   src.periodMax -> tgt.periodMax;
   src.periodUnit -> tgt.periodUnit;
-  src.dayOfWeek as v -> tgt.dayOfWeek = translate(v, 'http://hl7.org/fhir/ConceptMap/Timing.repeat.dayOfWeek-R4toR5', 'code');
+  src.dayOfWeek as v -> tgt.dayOfWeek = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Timing.repeat.dayOfWeek-4to5', 'code');
   src.timeOfDay -> tgt.timeOfDay;
   src.when -> tgt.when;
   src.offset -> tgt.offset;

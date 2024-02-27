@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ExplanationOfBenefit4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ExplanationOfBenefit4to5"
 /// name = "ExplanationOfBenefit4to5"
 /// title = "ExplanationOfBenefit Transforms: R4 to R5"
 /// status = "active"
@@ -6,14 +6,14 @@
 uses "http://hl7.org/fhir/4.0/ExplanationOfBenefit" alias ExplanationOfBenefitR4 as source
 uses "http://hl7.org/fhir/5.0/ExplanationOfBenefit" alias ExplanationOfBenefitR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group ExplanationOfBenefit(source src : ExplanationOfBenefitR4, target tgt : ExplanationOfBenefitR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ExplanationOfBenefit.status-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.status-4to5', 'code');
   src.type -> tgt.type;
   src.subType -> tgt.subType;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/ConceptMap/ExplanationOfBenefit.use-R4toR5', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.use-4to5', 'code');
   src.patient -> tgt.patient;
   src.billablePeriod -> tgt.billablePeriod;
   src.created -> tgt.created;
@@ -31,7 +31,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefitR4, target tgt : Exp
   src.facility -> tgt.facility;
   src.claim -> tgt.claim;
   src.claimResponse -> tgt.claimResponse;
-  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/ConceptMap/ExplanationOfBenefit.outcome-R4toR5', 'code');
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.outcome-4to5', 'code');
   src.disposition -> tgt.disposition;
   src.preAuthRef -> tgt.preAuthRef;
   src.preAuthRefPeriod -> tgt.preAuthRefPeriod;

@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/PaymentNotice4to3"
-/// name = "Notice4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/PaymentNotice4to3"
+/// name = "PaymentNotice4to3"
 /// title = "PaymentNotice Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/PaymentNotice" alias PaymentNotice as source
 uses "http://hl7.org/fhir/3.0/PaymentNotice" alias PaymentNoticeR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group PaymentNotice(source src : PaymentNotice, target tgt : PaymentNoticeR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

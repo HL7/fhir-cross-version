@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ValueSet3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ValueSet3to2"
 /// name = "ValueSet3to2"
 /// title = "ValueSet Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/ValueSet" alias ValueSet as source
 uses "http://hl7.org/fhir/1.0/ValueSet" alias ValueSetR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group ValueSet(source src : ValueSet, target tgt : ValueSetR2) extends DomainResource <<type+>> {
   src.url -> tgt.url "ValueSet-url";

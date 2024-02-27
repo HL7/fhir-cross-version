@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CapabilityStatement3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CapabilityStatement3to2"
 /// name = "CapabilityStatement3to2"
 /// title = "CapabilityStatement Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/CapabilityStatement" alias CapabilityStatement as source
 uses "http://hl7.org/fhir/1.0/Conformance" alias ConformanceR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group CapabilityStatement(source src : CapabilityStatement, target tgt : ConformanceR2) extends DomainResource <<type+>> {
   src.url -> tgt.url "conf-url";
@@ -79,13 +79,11 @@ group resource(source src, target tgt) extends BackboneElement {
   src.type where $this != 'CapabilityStatement' -> tgt.type "conf-type2";
   src.type where $this = 'CapabilityStatement' -> tgt.type = 'Conformance' "conf-type3";
   src.profile -> tgt.profile "conf-profile";
-  src.documentation -> tgt.documentation "conf-documentation";
   src.interaction as vs -> tgt.interaction as vt then interaction(vs, vt) "conf-interaction";
   src.versioning -> tgt.versioning "conf-versioning";
   src.readHistory -> tgt.readHistory "conf-readHistory";
   src.updateCreate -> tgt.updateCreate "conf-updateCreate";
   src.conditionalCreate -> tgt.conditionalCreate "conf-conditionalCreate";
-  src.conditionalRead -> tgt.conditionalRead "conf-conditionalRead";
   src.conditionalUpdate -> tgt.conditionalUpdate "conf-conditionalUpdate";
   src.conditionalDelete -> tgt.conditionalDelete "conf-conditionalDelete";
   src.searchInclude -> tgt.searchInclude "conf-searchInclude";

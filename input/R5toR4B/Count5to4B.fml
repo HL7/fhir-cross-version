@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/Count5to4B"
-/// name = "Count5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Count5to4b"
+/// name = "Count5to4b"
 /// title = "Count Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Count" alias CountR5 as source
-uses "http://hl7.org/fhir/4.0/Count" alias CountR4B as target
+uses "http://hl7.org/fhir/4.3/Count" alias CountR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Count(source src : CountR5, target tgt : CountR4B) extends Quantity <<type+>> {
 }

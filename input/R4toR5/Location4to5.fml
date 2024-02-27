@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Location4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Location4to5"
 /// name = "Location4to5"
 /// title = "Location Transforms: R4 to R5"
 /// status = "active"
@@ -6,16 +6,16 @@
 uses "http://hl7.org/fhir/4.0/Location" alias LocationR4 as source
 uses "http://hl7.org/fhir/5.0/Location" alias LocationR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Location(source src : LocationR4, target tgt : LocationR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Location.status-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Location.status-4to5', 'code');
   src.operationalStatus -> tgt.operationalStatus;
   src.name -> tgt.name;
   src.alias -> tgt.alias;
   src.description -> tgt.description;
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/ConceptMap/Location.mode-R4toR5', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Location.mode-4to5', 'code');
   src.type -> tgt.type;
   src.telecom : ContactPoint as s ->  tgt.contact = create('ExtendedContactDetail') as t,  t.telecom = s "telecomContactPoint";
   src.address -> tgt.address;

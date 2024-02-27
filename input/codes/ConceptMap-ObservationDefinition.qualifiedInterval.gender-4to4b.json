@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ObservationDefinition.qualifiedInterval.gender-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ObservationDefinition.qualifiedInterval.gender-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ObservationDefinition.qualifiedInterval.gender-4to4b",
   "name" : "ObservationDefinition.qualifiedInterval.gender4to4b",
   "title" : "Mapping for ObservationDefinition.qualifiedInterval.gender from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.gender",

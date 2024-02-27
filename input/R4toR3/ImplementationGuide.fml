@@ -1,14 +1,14 @@
-/// url = "http://hl7.org/fhir/StructureMap/ImplementationGuide4to3"
-/// name = "uide4to3 Transforms: R4 to R3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ImplementationGuide4to3"
+/// name = "ImplementationGuide4to3"
 /// title = "R4 to R3 Conversion for ImplementationGuide"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/ImplementationGuide" alias ImplementationGuide as source
 uses "http://hl7.org/fhir/3.0/ImplementationGuide" alias ImplementationGuideR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group ImplementationGuide(source src : ImplementationGuideR3, target tgt : ImplementationGuide) extends DomainResource <<type+>> {
+group ImplementationGuide(source src : ImplementationGuide, target tgt : ImplementationGuideR3) extends DomainResource <<type+>> {
   src.url -> tgt.url;
   src.version -> tgt.version;
   src.name -> tgt.name;

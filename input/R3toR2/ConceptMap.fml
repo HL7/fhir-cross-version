@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ConceptMap3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ConceptMap3to2"
 /// name = "ConceptMap3to2"
 /// title = "ConceptMap Transforms: R3 to R2"
 /// status = "active"
@@ -6,12 +6,12 @@
 uses "http://hl7.org/fhir/3.0/ConceptMap" alias ConceptMap as source
 uses "http://hl7.org/fhir/1.0/ConceptMap" alias ConceptMapR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/primitives3to2"
-imports "http://hl7.org/fhir/StructureMap/DomainResource3to2"
-imports "http://hl7.org/fhir/StructureMap/ContactPoint3to2"
-imports "http://hl7.org/fhir/StructureMap/Identifier3to2"
-imports "http://hl7.org/fhir/StructureMap/Reference3to2"
-imports "http://hl7.org/fhir/StructureMap/CodeableConcept3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/DomainResource3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/ContactPoint3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Identifier3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Reference3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/CodeableConcept3to2"
 
 group ConceptMap(source src : ConceptMap, target tgt : ConceptMapR2) extends DomainResource <<type+>> {
   src.url -> tgt.url "ConceptMap-url";

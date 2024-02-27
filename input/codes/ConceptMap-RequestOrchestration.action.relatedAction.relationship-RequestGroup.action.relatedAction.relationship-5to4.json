@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RequestOrchestration.action.relatedAction.relationship-RequestGroup.action.relatedAction.relationship-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestOrchestration.action.relatedAction.relationship-RequestGroup.action.relatedAction.relationship-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.relatedAction.relationship-RequestGroup.action.relatedAction.relationship-5to4",
   "name" : "RequestOrchestration.action.relatedAction.relationshipRequestGroup.action.relatedAction.relationship5to4",
   "title" : "Mapping for RequestOrchestration.action.relatedAction.relationship/RequestGroup.action.relatedAction.relationship from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.relatedAction.relationship",

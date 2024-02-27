@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "SupplyRequest.priority-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SupplyRequest.priority-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/SupplyRequest.priority-5to4b",
   "name" : "SupplyRequest.priority5to4b",
   "title" : "Mapping for SupplyRequest.priority from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SupplyRequest#SupplyRequest.priority",

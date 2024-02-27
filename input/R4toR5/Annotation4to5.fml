@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Annotation4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Annotation4to5"
 /// name = "Annotation4to5"
 /// title = "Annotation Transforms: R4 to R5"
 /// status = "active"
@@ -7,7 +7,7 @@ uses "http://hl7.org/fhir/4.0/string" alias stringR4 as source
 uses "http://hl7.org/fhir/4.0/Annotation" alias AnnotationR4 as source
 uses "http://hl7.org/fhir/5.0/Annotation" alias AnnotationR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Annotation(source src : AnnotationR4, target tgt : AnnotationR5) extends Element <<type+>> {
   src.author : Reference -> tgt.author "authorReference";

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Subscription5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Subscription5to4"
 /// name = "Subscription5to4"
 /// title = "Subscription Transforms: R5 to R4"
 /// status = "active"
@@ -6,10 +6,10 @@
 uses "http://hl7.org/fhir/5.0/Subscription" alias SubscriptionR5 as source
 uses "http://hl7.org/fhir/4.0/Subscription" alias SubscriptionR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Subscription(source src : SubscriptionR5, target tgt : SubscriptionR4) extends DomainResource <<type+>> {
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Subscription.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Subscription.status-5to4', 'code');
   src.contact -> tgt.contact;
   src.end -> tgt.end;
   src.reason -> tgt.reason;

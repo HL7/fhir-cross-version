@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ProductShelfLife4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ProductShelfLife4to5"
 /// name = "ProductShelfLife4to5"
 /// title = "ProductShelfLife Transforms: R4 to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/ProductShelfLife" alias ProductShelfLifeR4 as source
 uses "http://hl7.org/fhir/5.0/ProductShelfLife" alias ProductShelfLifeR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group ProductShelfLife(source src : ProductShelfLifeR4, target tgt : ProductShelfLifeR5) extends Element <<type+>> {
   src.modifierExtension -> tgt.modifierExtension;

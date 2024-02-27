@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DeviceComponent.measurementPrinciple-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceComponent.measurementPrinciple-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DeviceComponent.measurementPrinciple-2to3",
   "name" : "DeviceComponent.measurementPrinciple2to3",
   "title" : "Mapping for DeviceComponent.measurementPrinciple from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DeviceComponent#DeviceComponent.measurementPrinciple",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "MolecularSequence.referenceSeq.strand-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/MolecularSequence.referenceSeq.strand-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/MolecularSequence.referenceSeq.strand-4to4b",
   "name" : "MolecularSequence.referenceSeq.strand4to4b",
   "title" : "Mapping for MolecularSequence.referenceSeq.strand from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.referenceSeq.strand",

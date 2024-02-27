@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ValueSet4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ValueSet4to5"
 /// name = "ValueSet4to5"
 /// title = "ValueSet Transforms: R4 to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/ValueSet" alias ValueSetR4 as source
 uses "http://hl7.org/fhir/5.0/ValueSet" alias ValueSetR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group ValueSet(source src : ValueSetR4, target tgt : ValueSetR5) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -14,7 +14,7 @@ group ValueSet(source src : ValueSetR4, target tgt : ValueSetR5) extends DomainR
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ValueSet.status-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ValueSet.status-4to5', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -57,7 +57,7 @@ group ValueSetComposeIncludeConceptDesignation(source src, target tgt) extends B
 
 group ValueSetComposeIncludeFilter(source src, target tgt) extends BackboneElement {
   src.property -> tgt.property;
-  src.op as v -> tgt.op = translate(v, 'http://hl7.org/fhir/ConceptMap/ValueSet.compose.include.filter.op-R4toR5', 'code');
+  src.op as v -> tgt.op = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ValueSet.compose.include.filter.op-4to5', 'code');
   src.value -> tgt.value;
 }
 

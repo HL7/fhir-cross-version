@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ResearchStudy4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ResearchStudy4to3"
 /// name = "ResearchStudy4to3"
 /// title = "ResearchStudy Transforms: R4 to R3"
 /// status = "active"
@@ -6,20 +6,19 @@
 uses "http://hl7.org/fhir/4.0/ResearchStudy" alias ResearchStudy as source
 uses "http://hl7.org/fhir/3.0/ResearchStudy" alias ResearchStudyR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group ResearchStudy(source src : ResearchStudyR3, target tgt : ResearchStudy) extends DomainResource <<type+>> {
+group ResearchStudy(source src : ResearchStudy, target tgt : ResearchStudyR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.title -> tgt.title;
   src.protocol -> tgt.protocol;
   src.partOf -> tgt.partOf;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ResearchStudy.status-R4toR3', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ResearchStudy.status-4to3', 'code');
   src.category -> tgt.category;
   src.focus -> tgt.focus;
   src.contact -> tgt.contact;
   src.relatedArtifact -> tgt.relatedArtifact;
   src.keyword -> tgt.keyword;
-  src.location -> tgt.location;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ResearchStudy.jurisdiction' then {
     e.value -> tgt.jurisdiction;
   };

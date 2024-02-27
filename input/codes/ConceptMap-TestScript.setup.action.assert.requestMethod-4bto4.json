@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "TestScript.setup.action.assert.requestMethod-4bto4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestScript.setup.action.assert.requestMethod-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.assert.requestMethod-4bto4",
   "name" : "TestScript.setup.action.assert.requestMethod4bto4",
   "title" : "Mapping for TestScript.setup.action.assert.requestMethod from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.assert.requestMethod",

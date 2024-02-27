@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/MedicationKnowledge4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/MedicationKnowledge4Bto5"
 /// name = "MedicationKnowledge4Bto5"
 /// title = "MedicationKnowledge Transforms: R4B to R5"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.3/MedicationKnowledge" alias MedicationKnowledgeR4B as source
 uses "http://hl7.org/fhir/5.0/MedicationKnowledge" alias MedicationKnowledgeR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group MedicationKnowledge(source src : MedicationKnowledgeR4B, target tgt : MedicationKnowledgeR5) extends DomainResource <<type+>> {
   src.code -> tgt.code;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/MedicationKnowledgeB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MedicationKnowledge.status-4bto5', 'code');
   src.synonym -> tgt.name;
   src.relatedMedicationKnowledge as s -> tgt.relatedMedicationKnowledge as t then MedicationKnowledgeRelatedMedicationKnowledge(s, t);
   src.associatedMedication -> tgt.associatedMedication;

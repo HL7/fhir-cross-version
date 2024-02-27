@@ -1,20 +1,20 @@
-/// url = "http://hl7.org/fhir/StructureMap/OperationDefinition5to4B"
-/// name = "OperationDefinition5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/OperationDefinition5to4b"
+/// name = "OperationDefinition5to4b"
 /// title = "OperationDefinition Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/OperationDefinition" alias OperationDefinitionR5 as source
-uses "http://hl7.org/fhir/4.0/OperationDefinition" alias OperationDefinitionR4B as target
+uses "http://hl7.org/fhir/4.3/OperationDefinition" alias OperationDefinitionR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group OperationDefinition(source src : OperationDefinitionR5, target tgt : OperationDefinitionR4B) extends DomainResource <<type+>> {
   src.url -> tgt.url;
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/OperationDefinition.status-R5toR4', 'code');
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/ConceptMap/OperationDefinition.kind-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.status-5to4b', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.kind-5to4b', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -39,19 +39,19 @@ group OperationDefinition(source src : OperationDefinitionR5, target tgt : Opera
 
 group OperationDefinitionParameter(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/ConceptMap/OperationDefinition.parameter.use-R5toR4', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.parameter.use-5to4b', 'code');
   src.min -> tgt.min;
   src.max -> tgt.max;
   src.documentation -> tgt.documentation;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/cross-version/types5to4B', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/types-5to4b', 'code');
   src.targetProfile -> tgt.targetProfile;
-  src.searchType as v -> tgt.searchType = translate(v, 'http://hl7.org/fhir/ConceptMap/OperationDefinition.parameter.searchType-R5toR4', 'code');
+  src.searchType as v -> tgt.searchType = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.parameter.searchType-5to4b', 'code');
   src.binding as s -> tgt.binding as t then OperationDefinitionParameterBinding(s, t);
   src.referencedFrom as s -> tgt.referencedFrom as t then OperationDefinitionParameterReferencedFrom(s, t);
 }
 
 group OperationDefinitionParameterBinding(source src, target tgt) extends BackboneElement {
-  src.strength as v -> tgt.strength = translate(v, 'http://hl7.org/fhir/ConceptMap/OperationDefinition.parameter.binding.strength-R5toR4', 'code');
+  src.strength as v -> tgt.strength = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.parameter.binding.strength-5to4b', 'code');
   src.valueSet -> tgt.valueSet;
 }
 

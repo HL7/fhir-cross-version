@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Reference4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Reference4to5"
 /// name = "Reference4to5"
 /// title = "Reference Transforms: R4 to R5"
 /// status = "active"
@@ -10,7 +10,7 @@ uses "http://hl7.org/fhir/5.0/canonical" alias canonicalR5 as target
 uses "http://hl7.org/fhir/4.0/url" alias urlR4 as source
 uses "http://hl7.org/fhir/5.0/url" alias urlR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Reference(source src : ReferenceR4, target tgt : ReferenceR5) extends Element <<type+>> {
   src.reference -> tgt.reference;

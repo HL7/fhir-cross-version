@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CodeSystem.filter.operator-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CodeSystem.filter.operator-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CodeSystem.filter.operator-3to4",
   "name" : "CodeSystem.filter.operator3to4",
   "title" : "Mapping for CodeSystem.filter.operator from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.filter.operator",

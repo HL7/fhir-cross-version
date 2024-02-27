@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "SupplyDelivery.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SupplyDelivery.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/SupplyDelivery.status-4to5",
   "name" : "SupplyDelivery.status4to5",
   "title" : "Mapping for SupplyDelivery.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SupplyDelivery#SupplyDelivery.status",

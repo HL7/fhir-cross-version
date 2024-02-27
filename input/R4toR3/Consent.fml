@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Consent4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Consent4to3"
 /// name = "Consent4to3"
 /// title = "Consent Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Consent" alias Consent as source
 uses "http://hl7.org/fhir/3.0/Consent" alias ConsentR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Consent(source src : Consent, target tgt : ConsentR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

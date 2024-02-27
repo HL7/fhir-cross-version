@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "GraphDefinition.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/GraphDefinition.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/GraphDefinition.status-4to5",
   "name" : "GraphDefinition.status4to5",
   "title" : "Mapping for GraphDefinition.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.status",

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/AuditEvent4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/AuditEvent4to3"
 /// name = "AuditEvent4to3"
 /// title = "AuditEvent Transforms: R4 to R3"
 /// status = "active"
@@ -6,9 +6,9 @@
 uses "http://hl7.org/fhir/4.0/AuditEvent" alias AuditEvent as source
 uses "http://hl7.org/fhir/3.0/AuditEvent" alias AuditEventR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group AuditEvent(source src : AuditEventR3, target tgt : AuditEvent) extends DomainResource <<type+>> {
+group AuditEvent(source src : AuditEvent, target tgt : AuditEventR3) extends DomainResource <<type+>> {
   src.type -> tgt.type;
   src.subtype -> tgt.subtype;
   src.action -> tgt.action;

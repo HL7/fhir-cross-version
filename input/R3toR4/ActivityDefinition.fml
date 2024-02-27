@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ActivityDefinition3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ActivityDefinition3to4"
 /// name = "ActivityDefinition3to4"
 /// title = "ActivityDefinition Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/ActivityDefinition" alias ActivityDefinitionR3 as source
 uses "http://hl7.org/fhir/4.0/ActivityDefinition" alias ActivityDefinition as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group ActivityDefinition(source src : ActivityDefinitionR3, target tgt : ActivityDefinition) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -14,10 +14,8 @@ group ActivityDefinition(source src : ActivityDefinitionR3, target tgt : Activit
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.subtitle -> tgt.subtitle;
   src.status -> tgt.status;
   src.experimental -> tgt.experimental;
-  src.subject -> tgt.subject;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
   src.contact -> tgt.contact;
@@ -37,9 +35,8 @@ group ActivityDefinition(source src : ActivityDefinitionR3, target tgt : Activit
   src.contributor as vs where type = 'endorser' -> tgt.endorser as vt then Contributor(vs, vt);
   src.relatedArtifact -> tgt.relatedArtifact;
   src.library -> tgt.library;
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/StructureMap/ConceptMaps3to4#ResourceTypeMap', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/resources-3to4', 'code');
   src.code -> tgt.code;
-  src.doNotPerform -> tgt.doNotPerform;
   src.timing -> tgt.timing;
   src.location -> tgt.location;
   src.participant as s -> tgt.participant as t then ActivityDefinitionParticipant(s, t);
@@ -47,7 +44,6 @@ group ActivityDefinition(source src : ActivityDefinitionR3, target tgt : Activit
   src.quantity -> tgt.quantity;
   src.dosage -> tgt.dosage;
   src.bodySite -> tgt.bodySite;
-  src.specimenRequirement -> tgt.specimenRequirement;
   src.transform -> tgt.transform;
   src.dynamicValue as s -> tgt.dynamicValue as t then ActivityDefinitionDynamicValue(s, t);
 }

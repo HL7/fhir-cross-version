@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ServiceRequestPR4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ServiceRequestPR4to3"
 /// name = "ServiceRequestPR4to3"
 /// title = "ServiceRequest Transforms: R4 to R3"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/ServiceRequest" alias ServiceRequest as source
 uses "http://hl7.org/fhir/3.0/ProcedureRequest" alias ProcedureRequestR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group ServiceRequest(source src : ServiceRequest, target tgt : ProcedureRequestR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -20,7 +20,6 @@ group ServiceRequest(source src : ServiceRequest, target tgt : ProcedureRequestR
   src.priority -> tgt.priority;
   src.doNotPerform -> tgt.doNotPerform;
   src.code -> tgt.code;
-  src.orderDetail -> tgt.orderDetail;
   src.subject -> tgt.subject;
   src.encounter -> tgt.context;
   src.occurrence : dateTime as vs -> tgt.occurrence = create('dateTime') as vt then dateTime(vs, vt) "occurrenceDateTime";
@@ -38,7 +37,6 @@ group ServiceRequest(source src : ServiceRequest, target tgt : ProcedureRequestR
   src.specimen -> tgt.specimen;
   src.bodySite -> tgt.bodySite;
   src.note -> tgt.note;
-  src.patientInstruction -> tgt.patientInstruction;
   src.relevantHistory -> tgt.relevantHistory;
 }
 

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Bundle.entry.search.mode-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Bundle.entry.search.mode-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Bundle.entry.search.mode-3to2",
   "name" : "Bundle.entry.search.mode3to2",
   "title" : "Mapping for Bundle.entry.search.mode from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Bundle#Bundle.entry.search.mode",

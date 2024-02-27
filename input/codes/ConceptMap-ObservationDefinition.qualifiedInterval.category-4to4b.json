@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ObservationDefinition.qualifiedInterval.category-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ObservationDefinition.qualifiedInterval.category-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ObservationDefinition.qualifiedInterval.category-4to4b",
   "name" : "ObservationDefinition.qualifiedInterval.category4to4b",
   "title" : "Mapping for ObservationDefinition.qualifiedInterval.category from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.category",

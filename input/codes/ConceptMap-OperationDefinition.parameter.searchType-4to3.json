@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "OperationDefinition.parameter.searchType-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/OperationDefinition.parameter.searchType-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.parameter.searchType-4to3",
   "name" : "OperationDefinition.parameter.searchType4to3",
   "title" : "Mapping for OperationDefinition.parameter.searchType from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.searchType",

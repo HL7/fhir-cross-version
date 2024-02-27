@@ -1,16 +1,16 @@
-/// url = "http://hl7.org/fhir/StructureMap/Substance5to4B"
-/// name = "Substance5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Substance5to4b"
+/// name = "Substance5to4b"
 /// title = "Substance Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Substance" alias SubstanceR5 as source
-uses "http://hl7.org/fhir/4.0/Substance" alias SubstanceR4B as target
+uses "http://hl7.org/fhir/4.3/Substance" alias SubstanceR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Substance(source src : SubstanceR5, target tgt : SubstanceR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Substance.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Substance.status-5to4b', 'code');
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.description -> tgt.description;

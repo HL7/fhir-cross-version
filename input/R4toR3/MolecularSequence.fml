@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/Sequence4to3 Transforms: R4 to R3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Sequence4to3"
 /// name = "Sequence4to3"
 /// title = "R4 to R3 Conversion for Sequence"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/MolecularSequence" alias Sequence as source
+uses "http://hl7.org/fhir/4.0/MolecularSequence" alias MolecularSequence as source
 uses "http://hl7.org/fhir/3.0/Sequence" alias SequenceR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Sequence(source src : MolecularSequence, target tgt : SequenceR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

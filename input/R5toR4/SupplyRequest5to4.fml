@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/SupplyRequest5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SupplyRequest5to4"
 /// name = "SupplyRequest5to4"
 /// title = "SupplyRequest Transforms: R5 to R4"
 /// status = "active"
@@ -6,13 +6,13 @@
 uses "http://hl7.org/fhir/5.0/SupplyRequest" alias SupplyRequestR5 as source
 uses "http://hl7.org/fhir/4.0/SupplyRequest" alias SupplyRequestR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group SupplyRequest(source src : SupplyRequestR5, target tgt : SupplyRequestR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/SupplyRequest.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SupplyRequest.status-5to4', 'code');
   src.category -> tgt.category;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/SupplyRequest.priority-R5toR4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SupplyRequest.priority-5to4', 'code');
   src.item -> tgt.item;
   src.quantity -> tgt.quantity;
   src.parameter as s -> tgt.parameter as t then SupplyRequestParameter(s, t);

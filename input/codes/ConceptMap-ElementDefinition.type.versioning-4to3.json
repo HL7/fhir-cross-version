@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ElementDefinition.type.versioning-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ElementDefinition.type.versioning-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.type.versioning-4to3",
   "name" : "ElementDefinition.type.versioning4to3",
   "title" : "Mapping for ElementDefinition.type.versioning from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.type.versioning",

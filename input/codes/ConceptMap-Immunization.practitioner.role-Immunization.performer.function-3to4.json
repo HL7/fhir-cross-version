@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Immunization.practitioner.role-Immunization.performer.function-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Immunization.practitioner.role-Immunization.performer.function-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Immunization.practitioner.role-Immunization.performer.function-3to4",
   "name" : "Immunization.practitioner.roleImmunization.performer.function3to4",
   "title" : "Mapping for Immunization.practitioner.role/Immunization.performer.function from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Immunization#Immunization.practitioner.role",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Encounter.status-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Encounter.status-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Encounter.status-5to4",
   "name" : "Encounter.status5to4",
   "title" : "Mapping for Encounter.status from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Encounter#Encounter.status",

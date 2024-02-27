@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ClinicalUseDefinition.type-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ClinicalUseDefinition.type-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ClinicalUseDefinition.type-4bto5",
   "name" : "ClinicalUseDefinition.type4bto5",
   "title" : "Mapping for ClinicalUseDefinition.type from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ClinicalUseDefinition#ClinicalUseDefinition.type",

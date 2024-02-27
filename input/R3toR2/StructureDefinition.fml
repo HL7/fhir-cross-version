@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/StructureDefinition3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/StructureDefinition3to2"
 /// name = "StructureDefinition3to2"
 /// title = "StructureDefinition Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/StructureDefinition" alias StructureDefinition as source
 uses "http://hl7.org/fhir/1.0/StructureDefinition" alias StructureDefinitionR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group StructureDefinition(source src : StructureDefinition, target tgt : StructureDefinitionR2) extends DomainResource <<type+>> {
   src.url -> tgt.url "StructureDefinition-url";
@@ -34,7 +34,7 @@ group StructureDefinition(source src : StructureDefinition, target tgt : Structu
     vs0.name -> vt0.name "mapping-name";
     vs0.comment -> vt0.comments "mapping-comments";
   } "StructureDefinition-mapping";
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/ConceptMap/StructureDefinition.kind-R3toR2', 'code') "StructureDefinition-kind";
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureDefinition.kind-3to2', 'code') "StructureDefinition-kind";
   src.contextType -> tgt.contextType "StructureDefinition-contextType";
   src.context -> tgt.context "StructureDefinition-context";
   src.type as vs where src.derivation = 'constraint' -> tgt.constrainedType as vt then code(vs, vt) "StructureDefinition-constrainedType";

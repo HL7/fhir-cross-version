@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CapabilityStatement.rest.mode-Conformance.rest.mode-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.rest.mode-Conformance.rest.mode-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.mode-Conformance.rest.mode-3to2",
   "name" : "CapabilityStatement.rest.modeConformance.rest.mode3to2",
   "title" : "Mapping for CapabilityStatement.rest.mode/Conformance.rest.mode from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.mode",

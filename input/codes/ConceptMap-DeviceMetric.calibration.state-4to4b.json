@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DeviceMetric.calibration.state-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceMetric.calibration.state-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.calibration.state-4to4b",
   "name" : "DeviceMetric.calibration.state4to4b",
   "title" : "Mapping for DeviceMetric.calibration.state from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.state",

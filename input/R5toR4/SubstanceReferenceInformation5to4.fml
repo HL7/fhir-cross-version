@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/SubstanceReferenceInformation5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SubstanceReferenceInformation5to4"
 /// name = "SubstanceReferenceInformation5to4"
 /// title = "SubstanceReferenceInformation Transforms: R5 to R4"
 /// status = "draft"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/SubstanceReferenceInformation" alias SubstanceReferenceInformationR5 as source
 uses "http://hl7.org/fhir/4.0/SubstanceReferenceInformation" alias SubstanceReferenceInformationR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group SubstanceReferenceInformation(source src : SubstanceReferenceInformationR5, target tgt : SubstanceReferenceInformationR4) extends DomainResource <<type+>> {
   src.comment -> tgt.comment;

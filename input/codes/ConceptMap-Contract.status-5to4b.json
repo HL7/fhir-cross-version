@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Contract.status-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Contract.status-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Contract.status-5to4b",
   "name" : "Contract.status5to4b",
   "title" : "Mapping for Contract.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Contract#Contract.status",

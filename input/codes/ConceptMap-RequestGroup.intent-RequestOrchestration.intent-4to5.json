@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RequestGroup.intent-RequestOrchestration.intent-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestGroup.intent-RequestOrchestration.intent-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RequestGroup.intent-RequestOrchestration.intent-4to5",
   "name" : "RequestGroup.intentRequestOrchestration.intent4to5",
   "title" : "Mapping for RequestGroup.intent/RequestOrchestration.intent from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.intent",

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Goal3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Goal3to2"
 /// name = "Goal3to2"
 /// title = "Goal Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Goal" alias Goal as source
 uses "http://hl7.org/fhir/1.0/Goal" alias GoalR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group Goal(source src : Goal, target tgt : GoalR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Goal-identifier";

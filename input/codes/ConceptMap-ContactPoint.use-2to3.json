@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ContactPoint.use-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ContactPoint.use-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ContactPoint.use-2to3",
   "name" : "ContactPoint.use2to3",
   "title" : "Mapping for ContactPoint.use from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ContactPoint#ContactPoint.use",

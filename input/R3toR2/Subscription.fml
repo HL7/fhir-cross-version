@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Subscription3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Subscription3to2"
 /// name = "Subscription3to2"
 /// title = "Subscription Transforms: R3 to R2"
 /// status = "active"
@@ -6,10 +6,10 @@
 uses "http://hl7.org/fhir/3.0/Subscription" alias Subscription as source
 uses "http://hl7.org/fhir/1.0/Subscription" alias SubscriptionR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/primitives3to2"
-imports "http://hl7.org/fhir/StructureMap/DomainResource3to2"
-imports "http://hl7.org/fhir/StructureMap/ContactPoint3to2"
-imports "http://hl7.org/fhir/StructureMap/Coding3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/DomainResource3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/ContactPoint3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Coding3to2"
 
 group Subscription(source src : Subscription, target tgt : SubscriptionR2) extends DomainResource <<type+>> {
   src.criteria -> tgt.criteria "Subscription-criteria";

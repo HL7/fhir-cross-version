@@ -1,0 +1,86 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "DiagnosticOrder.status-ProcedureRequest.intent-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DiagnosticOrder.status-ProcedureRequest.intent-2to3",
+  "name" : "DiagnosticOrder.statusProcedureRequest.intent2to3",
+  "title" : "Mapping for DiagnosticOrder.status/ProcedureRequest.intent from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DiagnosticOrder#DiagnosticOrder.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.intent",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/diagnostic-order-status",
+    "target" : "http://hl7.org/fhir/3.0/request-intent",
+    "element" : [{
+      "code" : "rejected",
+      "noMap" : true
+    },
+    {
+      "code" : "accepted",
+      "target" : [{
+        "code" : "instance-order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "received",
+      "target" : [{
+        "code" : "proposal",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "planned",
+      "target" : [{
+        "code" : "proposal",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "instance-order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "failed",
+      "noMap" : true
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "instance-order",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "suspended",
+      "noMap" : true
+    },
+    {
+      "code" : "requested",
+      "target" : [{
+        "code" : "proposal",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "proposed",
+      "target" : [{
+        "code" : "proposal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "review",
+      "noMap" : true
+    },
+    {
+      "code" : "draft",
+      "noMap" : true
+    },
+    {
+      "code" : "cancelled",
+      "noMap" : true
+    }]
+  }]
+}

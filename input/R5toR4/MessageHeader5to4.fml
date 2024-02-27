@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/MessageHeader5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/MessageHeader5to4"
 /// name = "MessageHeader5to4"
 /// title = "MessageHeader Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/MessageHeader" alias MessageHeaderR5 as source
 uses "http://hl7.org/fhir/4.0/MessageHeader" alias MessageHeaderR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group MessageHeader(source src : MessageHeaderR5, target tgt : MessageHeaderR4) extends DomainResource <<type+>> {
   src.event : Coding -> tgt.event "eventCoding";
@@ -43,7 +43,7 @@ group MessageHeaderResponse(source src, target tgt) extends BackboneElement {
   src.identifier as s -> tgt as t then {
     s.value -> tgt.identifier;
   };
-  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/ConceptMap/MessageHeader.response.code-R5toR4', 'code');
+  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MessageHeader.response.code-5to4', 'code');
   src.details -> tgt.details;
 }
 

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "GuidanceResponse.status-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/GuidanceResponse.status-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/GuidanceResponse.status-4to4b",
   "name" : "GuidanceResponse.status4to4b",
   "title" : "Mapping for GuidanceResponse.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/GuidanceResponse#GuidanceResponse.status",

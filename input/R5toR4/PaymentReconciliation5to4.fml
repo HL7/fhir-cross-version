@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/PaymentReconciliation5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/PaymentReconciliation5to4"
 /// name = "PaymentReconciliation5to4"
 /// title = "PaymentReconciliation Transforms: R5 to R4"
 /// status = "active"
@@ -6,17 +6,17 @@
 uses "http://hl7.org/fhir/5.0/PaymentReconciliation" alias PaymentReconciliationR5 as source
 uses "http://hl7.org/fhir/4.0/PaymentReconciliation" alias PaymentReconciliationR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group PaymentReconciliation(source src : PaymentReconciliationR5, target tgt : PaymentReconciliationR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/PaymentReconciliation.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PaymentReconciliation.status-5to4', 'code');
   src.period -> tgt.period;
   src.created -> tgt.created;
   src.paymentIssuer -> tgt.paymentIssuer;
   src.request -> tgt.request;
   src.requestor -> tgt.requestor;
-  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/ConceptMap/PaymentReconciliation.outcome-R5toR4', 'code');
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PaymentReconciliation.outcome-5to4', 'code');
   src.disposition -> tgt.disposition;
   src.date -> tgt.paymentDate;
   src.amount -> tgt.paymentAmount;
@@ -39,7 +39,7 @@ group PaymentReconciliationAllocation(source src, target tgt) extends BackboneEl
 }
 
 group PaymentReconciliationProcessNote(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/PaymentReconciliation.processNote.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PaymentReconciliation.processNote.type-5to4', 'code');
   src.text -> tgt.text;
 }
 

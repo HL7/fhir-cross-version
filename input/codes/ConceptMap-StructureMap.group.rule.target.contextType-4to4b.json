@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "StructureMap.group.rule.target.contextType-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureMap.group.rule.target.contextType-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/StructureMap.group.rule.target.contextType-4to4b",
   "name" : "StructureMap.group.rule.target.contextType4to4b",
   "title" : "Mapping for StructureMap.group.rule.target.contextType from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.contextType",

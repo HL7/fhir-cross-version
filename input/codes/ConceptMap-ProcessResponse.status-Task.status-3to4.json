@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ProcessResponse.status-Task.status-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ProcessResponse.status-Task.status-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ProcessResponse.status-Task.status-3to4",
   "name" : "ProcessResponse.statusTask.status3to4",
   "title" : "Mapping for ProcessResponse.status/Task.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcessResponse#ProcessResponse.status",

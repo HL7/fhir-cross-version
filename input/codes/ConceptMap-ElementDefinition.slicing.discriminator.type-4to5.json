@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ElementDefinition.slicing.discriminator.type-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ElementDefinition.slicing.discriminator.type-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.slicing.discriminator.type-4to5",
   "name" : "ElementDefinition.slicing.discriminator.type4to5",
   "title" : "Mapping for ElementDefinition.slicing.discriminator.type from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.slicing.discriminator.type",

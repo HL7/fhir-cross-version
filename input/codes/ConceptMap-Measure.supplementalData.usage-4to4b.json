@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Measure.supplementalData.usage-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Measure.supplementalData.usage-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Measure.supplementalData.usage-4to4b",
   "name" : "Measure.supplementalData.usage4to4b",
   "title" : "Mapping for Measure.supplementalData.usage from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.supplementalData.usage",

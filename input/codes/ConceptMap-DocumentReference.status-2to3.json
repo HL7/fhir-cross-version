@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DocumentReference.status-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DocumentReference.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DocumentReference.status-2to3",
   "name" : "DocumentReference.status2to3",
   "title" : "Mapping for DocumentReference.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DocumentReference#DocumentReference.status",

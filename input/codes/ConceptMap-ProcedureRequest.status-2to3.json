@@ -1,7 +1,13 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ProcedureRequest.status-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ProcedureRequest.status-2to3",
+  "meta" : {
+    "tag" : [{
+      "system" : "http://something",
+      "code" : "review-needed"
+    }]
+  },
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ProcedureRequest.status-2to3",
   "name" : "ProcedureRequest.status2to3",
   "title" : "Mapping for ProcedureRequest.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",

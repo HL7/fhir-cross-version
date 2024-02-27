@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "UsageContext.code-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/UsageContext.code-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/UsageContext.code-4to3",
   "name" : "UsageContext.code4to3",
   "title" : "Mapping for UsageContext.code from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/UsageContext#UsageContext.code",

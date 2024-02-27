@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ExampleScenario5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ExampleScenario5to4"
 /// name = "ExampleScenario5to4"
 /// title = "ExampleScenario Transforms: R5 to R4"
 /// status = "active"
@@ -6,14 +6,14 @@
 uses "http://hl7.org/fhir/5.0/ExampleScenario" alias ExampleScenarioR5 as source
 uses "http://hl7.org/fhir/4.0/ExampleScenario" alias ExampleScenarioR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group ExampleScenario(source src : ExampleScenarioR5, target tgt : ExampleScenarioR4) extends DomainResource <<type+>> {
   src.url -> tgt.url;
   src.identifier -> tgt.identifier;
   src.version -> tgt.version;
   src.name -> tgt.name;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ExampleScenario.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExampleScenario.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -29,7 +29,7 @@ group ExampleScenario(source src : ExampleScenarioR5, target tgt : ExampleScenar
 
 group ExampleScenarioActor(source src, target tgt) extends BackboneElement {
   src.key -> tgt.actorId;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/ExampleScenario.actor.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExampleScenario.actor.type-5to4', 'code');
   src.title -> tgt.name;
   src.description -> tgt.description;
 }

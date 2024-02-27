@@ -1,18 +1,18 @@
-/// url = "http://hl7.org/fhir/StructureMap/DetectedIssue5to4B"
-/// name = "DetectedIssue5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DetectedIssue5to4b"
+/// name = "DetectedIssue5to4b"
 /// title = "DetectedIssue Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/DetectedIssue" alias DetectedIssueR5 as source
-uses "http://hl7.org/fhir/4.0/DetectedIssue" alias DetectedIssueR4B as target
+uses "http://hl7.org/fhir/4.3/DetectedIssue" alias DetectedIssueR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group DetectedIssue(source src : DetectedIssueR5, target tgt : DetectedIssueR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
   src.code -> tgt.code;
-  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/ConceptMap/DetectedIssue.severity-R5toR4', 'code');
+  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DetectedIssue.severity-5to4b', 'code');
   src.subject -> tgt.patient;
   src.identified : dateTime -> tgt.identified "identifiedDateTime";
   src.identified : Period -> tgt.identified "identifiedPeriod";

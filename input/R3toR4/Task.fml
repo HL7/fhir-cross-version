@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Task3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Task3to4"
 /// name = "Task3to4"
 /// title = "Task Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Task" alias TaskR3 as source
 uses "http://hl7.org/fhir/4.0/Task" alias Task as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group Task(source src : TaskR3, target tgt : Task) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -33,7 +33,6 @@ group Task(source src : TaskR3, target tgt : Task) extends DomainResource <<type
   };
   src.performerType -> tgt.performerType;
   src.owner -> tgt.owner;
-  src.location -> tgt.location;
   src.reason -> tgt.reasonCode;
   src.note -> tgt.note;
   src.relevantHistory -> tgt.relevantHistory;

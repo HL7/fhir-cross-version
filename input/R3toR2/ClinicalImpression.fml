@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ClinicalImpression3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ClinicalImpression3to2"
 /// name = "ClinicalImpression3to2"
 /// title = "ClinicalImpression Transforms: R3 to R2"
 /// status = "active"
@@ -6,12 +6,12 @@
 uses "http://hl7.org/fhir/3.0/ClinicalImpression" alias ClinicalImpression as source
 uses "http://hl7.org/fhir/1.0/ClinicalImpression" alias ClinicalImpressionR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group ClinicalImpression(source src : ClinicalImpression, target tgt : ClinicalImpressionR2) extends DomainResource <<type+>> {
   src.subject -> tgt.patient "ClinicalImpression-subject";
   src.assessor -> tgt.assessor "ClinicalImpression-assessor";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ClinicalImpression.status-R3toR2', 'code') "ClinicalImpression-status";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ClinicalImpression.status-3to2', 'code') "ClinicalImpression-status";
   src.date -> tgt.date "ClinicalImpression-date";
   src.description -> tgt.description "ClinicalImpression-description";
   src.previous -> tgt.previous "ClinicalImpression-previous";

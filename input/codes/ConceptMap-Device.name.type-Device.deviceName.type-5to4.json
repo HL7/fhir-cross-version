@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Device.name.type-Device.deviceName.type-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Device.name.type-Device.deviceName.type-5to4",
+  "name" : "Device.name.typeDevice.deviceName.type5to4",
+  "title" : "Mapping for Device.name.type/Device.deviceName.type from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Device#Device.name.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Device#Device.deviceName.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/device-nametype",
+    "target" : "http://hl7.org/fhir/4.0/device-nametype",
+    "element" : [{
+      "code" : "registered-name",
+      "target" : [{
+        "code" : "manufacturer-name",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "user-friendly-name",
+      "target" : [{
+        "code" : "user-friendly-name",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "patient-reported-name",
+      "target" : [{
+        "code" : "patient-reported-name",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

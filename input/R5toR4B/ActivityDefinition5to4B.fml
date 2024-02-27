@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/ActivityDefinition5to4B"
-/// name = "ActivityDefinition5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ActivityDefinition5to4b"
+/// name = "ActivityDefinition5to4b"
 /// title = "ActivityDefinition Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/ActivityDefinition" alias ActivityDefinitionR5 as source
-uses "http://hl7.org/fhir/4.0/ActivityDefinition" alias ActivityDefinitionR4B as target
+uses "http://hl7.org/fhir/4.3/ActivityDefinition" alias ActivityDefinitionR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group ActivityDefinition(source src : ActivityDefinitionR5, target tgt : ActivityDefinitionR4B) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -45,8 +45,8 @@ group ActivityDefinition(source src : ActivityDefinitionR5, target tgt : Activit
   src.kind -> tgt.kind;
   src.profile -> tgt.profile;
   src.code -> tgt.code;
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/ActivityDefinition.intent-R5toR4', 'code');
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/ActivityDefinition.priority-R5toR4', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.intent-5to4b', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.priority-5to4b', 'code');
   src.doNotPerform -> tgt.doNotPerform;
   src.timing : Timing -> tgt.timing "timingTiming";
   src.timing : Age -> tgt.timing "timingAge";
@@ -67,7 +67,7 @@ group ActivityDefinition(source src : ActivityDefinitionR5, target tgt : Activit
 }
 
 group ActivityDefinitionParticipant(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/ActivityDefinition.participant.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.participant.type-5to4b', 'code');
   src.role -> tgt.role;
 }
 

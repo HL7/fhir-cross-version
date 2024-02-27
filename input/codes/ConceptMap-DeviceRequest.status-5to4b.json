@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "DeviceRequest.status-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/DeviceRequest.status-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/DeviceRequest.status-5to4b",
   "name" : "DeviceRequest.status5to4b",
   "title" : "Mapping for DeviceRequest.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DeviceRequest#DeviceRequest.status",

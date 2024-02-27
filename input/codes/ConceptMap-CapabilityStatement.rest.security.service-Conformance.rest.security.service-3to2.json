@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CapabilityStatement.rest.security.service-Conformance.rest.security.service-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CapabilityStatement.rest.security.service-Conformance.rest.security.service-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.security.service-Conformance.rest.security.service-3to2",
   "name" : "CapabilityStatement.rest.security.serviceConformance.rest.security.service3to2",
   "title" : "Mapping for CapabilityStatement.rest.security.service/Conformance.rest.security.service from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.security.service",

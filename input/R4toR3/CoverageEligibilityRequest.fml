@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CoverageEligibilityRequest4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CoverageEligibilityRequest4to3"
 /// name = "CoverageEligibilityRequest4to3"
 /// title = "EligibilityRequest Transforms: R4 to R3"
 /// status = "active"
@@ -6,9 +6,9 @@
 uses "http://hl7.org/fhir/4.0/CoverageEligibilityRequest" alias CoverageEligibilityRequest as source
 uses "http://hl7.org/fhir/3.0/EligibilityRequest" alias EligibilityRequestR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group CoverageEligibilityRequest(source src : CoverageEligibilityRequestR3, target tgt : EligibilityRequest) extends DomainResource <<type+>> {
+group CoverageEligibilityRequest(source src : CoverageEligibilityRequest, target tgt : EligibilityRequestR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
   src.priority -> tgt.priority;

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Communication5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Communication5to4"
 /// name = "Communication5to4"
 /// title = "Communication Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/Communication" alias CommunicationR5 as source
 uses "http://hl7.org/fhir/4.0/Communication" alias CommunicationR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Communication(source src : CommunicationR5, target tgt : CommunicationR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -15,10 +15,10 @@ group Communication(source src : CommunicationR5, target tgt : CommunicationR4) 
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
   src.inResponseTo -> tgt.inResponseTo;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Communication.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Communication.status-5to4', 'code');
   src.statusReason -> tgt.statusReason;
   src.category -> tgt.category;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/Communication.priority-R5toR4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Communication.priority-5to4', 'code');
   src.medium -> tgt.medium;
   src.subject -> tgt.subject;
   src.topic -> tgt.topic;

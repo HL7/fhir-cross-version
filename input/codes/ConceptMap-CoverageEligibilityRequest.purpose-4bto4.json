@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CoverageEligibilityRequest.purpose-4bto4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CoverageEligibilityRequest.purpose-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CoverageEligibilityRequest.purpose-4bto4",
   "name" : "CoverageEligibilityRequest.purpose4bto4",
   "title" : "Mapping for CoverageEligibilityRequest.purpose from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityRequest#CoverageEligibilityRequest.purpose",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ElementDefinition.type.aggregation-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ElementDefinition.type.aggregation-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ElementDefinition.type.aggregation-4to4b",
   "name" : "ElementDefinition.type.aggregation4to4b",
   "title" : "Mapping for ElementDefinition.type.aggregation from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.type.aggregation",

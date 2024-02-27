@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Signature2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Signature2to3"
 /// name = "Signature2to3"
 /// title = "Signature Transforms: R2 to R3"
 /// status = "active"
@@ -6,10 +6,10 @@
 uses "http://hl7.org/fhir/1.0/Signature" alias SignatureR2 as source
 uses "http://hl7.org/fhir/3.0/Signature" alias Signature as target
 
-imports "http://hl7.org/fhir/StructureMap/primitives2to3"
-imports "http://hl7.org/fhir/StructureMap/Element2to3"
-imports "http://hl7.org/fhir/StructureMap/Coding2to3"
-imports "http://hl7.org/fhir/StructureMap/Reference2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Coding2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Reference2to3"
 
 group Signature(source src : SignatureR2, target tgt : Signature) extends Element <<type+>> {
   src.type -> tgt.type "Signature-type";

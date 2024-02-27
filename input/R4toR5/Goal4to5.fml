@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Goal4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Goal4to5"
 /// name = "Goal4to5"
 /// title = "Goal Transforms: R4 to R5"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.0/Goal" alias GoalR4 as source
 uses "http://hl7.org/fhir/5.0/Goal" alias GoalR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Goal(source src : GoalR4, target tgt : GoalR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.lifecycleStatus as v -> tgt.lifecycleStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/Goal.lifecycleStatus-R4toR5', 'code');
+  src.lifecycleStatus as v -> tgt.lifecycleStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Goal.lifecycleStatus-4to5', 'code');
   src.achievementStatus -> tgt.achievementStatus;
   src.category -> tgt.category;
   src.priority -> tgt.priority;

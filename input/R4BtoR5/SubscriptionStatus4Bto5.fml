@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/SubscriptionStatus4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SubscriptionStatus4Bto5"
 /// name = "SubscriptionStatus4Bto5"
 /// title = "SubscriptionStatus Transforms: R4B to R5"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.3/SubscriptionStatus" alias SubscriptionStatusR4B as source
 uses "http://hl7.org/fhir/5.0/SubscriptionStatus" alias SubscriptionStatusR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group SubscriptionStatus(source src : SubscriptionStatusR4B, target tgt : SubscriptionStatusR5) extends DomainResource <<type+>> {
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/SubscriptionStatusB.status-R4BtoR5', 'code');
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/SubscriptionStatusB.type-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionStatus.status-4bto5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionStatus.type-4bto5', 'code');
   src.eventsSinceSubscriptionStart : string as s -> tgt.eventsSinceSubscriptionStart "eventsSinceSubscriptionStartString";
   src.notificationEvent as s -> tgt.notificationEvent as t then SubscriptionStatusNotificationEvent(s, t);
   src.subscription -> tgt.subscription;

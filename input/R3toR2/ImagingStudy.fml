@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ImagingStudy3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ImagingStudy3to2"
 /// name = "ImagingStudy3to2"
 /// title = "ImagingStudy Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/ImagingStudy" alias ImagingStudy as source
 uses "http://hl7.org/fhir/1.0/ImagingStudy" alias ImagingStudyR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group ImagingStudy(source src : ImagingStudy, target tgt : ImagingStudyR2) extends DomainResource <<type+>> {
   src.started -> tgt.started "ImagingStudy-started";
@@ -17,7 +17,7 @@ group ImagingStudy(source src : ImagingStudy, target tgt : ImagingStudyR2) exten
   src.modalityList -> tgt.modalityList "ImagingStudy-modalityList";
   src.referrer -> tgt.referrer "ImagingStudy-referrer";
   src.availability -> tgt.availability "ImagingStudy-availability";
-  src.extension as e where e.url = 'http://hl7.org/fhir/ImagingStudy-r2-url' -> tgt.modified = (e.value) "ImagingStudy-url";
+  src.extension as e where e.url = 'http://hl7.org/fhir/ImagingStudy-r2-url' -> tgt.url = (e.value) "ImagingStudy-url";
   src.numberOfSeries -> tgt.numberOfSeries "ImagingStudy-numberOfSeries";
   src.numberOfInstances -> tgt.numberOfInstances "ImagingStudy-numberOfInstances";
   src.procedureReference -> tgt.procedure "ImagingStudy-procedure";
@@ -33,7 +33,7 @@ group imgSeries(source src, target tgt) extends BackboneElement {
   src.description -> tgt.description "series-description";
   src.numberOfInstances -> tgt.numberOfInstances "series-numberOfInstances";
   src.availability -> tgt.availability "series-availability";
-  src.extension as e where e.url = 'http://hl7.org/fhir/ImagingStudy-r2-url' -> tgt.modified = (e.value) "series-url";
+  src.extension as e where e.url = 'http://hl7.org/fhir/ImagingStudy-r2-url' -> tgt.url = (e.value) "series-url";
   src.bodySite -> tgt.bodySite "series-bodySite";
   src.laterality -> tgt.laterality "series-laterality";
   src.started -> tgt.started "series-started";

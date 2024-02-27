@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ChargeItem.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ChargeItem.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ChargeItem.status-4to5",
   "name" : "ChargeItem.status4to5",
   "title" : "Mapping for ChargeItem.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ChargeItem#ChargeItem.status",

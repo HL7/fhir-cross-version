@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Communication4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Communication4to3"
 /// name = "Communication4to3"
 /// title = "R4 to R3 Conversion for Communication"
 /// status = "active"
@@ -6,9 +6,9 @@
 uses "http://hl7.org/fhir/4.0/Communication" alias Communication as source
 uses "http://hl7.org/fhir/3.0/Communication" alias CommunicationR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group Communication(source src : CommunicationR3, target tgt : Communication) extends DomainResource <<type+>> {
+group Communication(source src : Communication, target tgt : CommunicationR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.instantiatesCanonical -> tgt.definition;
   src.basedOn -> tgt.basedOn;

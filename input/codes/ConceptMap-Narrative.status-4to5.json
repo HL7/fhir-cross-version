@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Narrative.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Narrative.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Narrative.status-4to5",
   "name" : "Narrative.status4to5",
   "title" : "Mapping for Narrative.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Narrative#Narrative.status",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "SearchParameter.status-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SearchParameter.status-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/SearchParameter.status-4bto5",
   "name" : "SearchParameter.status4bto5",
   "title" : "Mapping for SearchParameter.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.status",

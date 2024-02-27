@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/MolecularSequence4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/MolecularSequence4to5"
 /// name = "MolecularSequence4to5"
 /// title = "MolecularSequence Transforms: R4 to R5"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.0/MolecularSequence" alias MolecularSequenceR4 as source
 uses "http://hl7.org/fhir/5.0/MolecularSequence" alias MolecularSequenceR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group MolecularSequence(source src : MolecularSequenceR4, target tgt : MolecularSequenceR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/MolecularSequence.type-R4toR5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MolecularSequence.type-4to5', 'code');
   src.patient -> tgt.subject;
   src.specimen -> tgt.specimen;
   src.device -> tgt.device;
@@ -49,8 +49,8 @@ group MolecularSequenceReferenceSeq(source src, target tgt) extends BackboneElem
   src.referenceSeqString : string as s ->  tgt.startingSequence as t,  t.sequence = s "referenceSeqStringString";
   src.windowStart : integer as s ->  tgt.startingSequence as t,  t.windowStart = s "windowStartInteger";
   src.windowEnd : integer as s ->  tgt.startingSequence as t,  t.windowEnd = s "windowEndInteger";
-  src.orientation as v ->  tgt.startingSequence as t,  t.orientation = translate(v, 'http://hl7.org/fhir/ConceptMap/MolecularSequence.referenceSeq.orientation-R4toR5', 'code');
-  src.strand as v ->  tgt.startingSequence as t,  t.strand = translate(v, 'http://hl7.org/fhir/ConceptMap/MolecularSequence.referenceSeq.strand-R4toR5', 'code');
+  src.orientation as v ->  tgt.startingSequence as t,  t.orientation = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MolecularSequence.referenceSeq.orientation-MolecularSequence.relative.startingSequence.orientation-4to5', 'code');
+  src.strand as v ->  tgt.startingSequence as t,  t.strand = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MolecularSequence.referenceSeq.strand-MolecularSequence.relative.startingSequence.strand-4to5', 'code');
 }
 
 group MolecularSequenceVariant(source src, target tgt) extends BackboneElement {

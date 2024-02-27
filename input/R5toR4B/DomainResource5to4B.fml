@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/DomainResource5to4B"
-/// name = "DomainResource5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DomainResource5to4b"
+/// name = "DomainResource5to4b"
 /// title = "DomainResource Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/DomainResource" alias DomainResourceR5 as source
-uses "http://hl7.org/fhir/4.0/DomainResource" alias DomainResourceR4B as target
+uses "http://hl7.org/fhir/4.3/DomainResource" alias DomainResourceR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group DomainResource(source src : DomainResourceR5, target tgt : DomainResourceR4B) extends Resource <<type+>> {
   src.text -> tgt.text;

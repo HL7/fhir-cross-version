@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "SubscriptionTopic.canFilterBy.modifier-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/SubscriptionTopic.canFilterBy.modifier-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionTopic.canFilterBy.modifier-5to4b",
   "name" : "SubscriptionTopic.canFilterBy.modifier5to4b",
   "title" : "Mapping for SubscriptionTopic.canFilterBy.modifier from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionTopic#SubscriptionTopic.canFilterBy.modifier",

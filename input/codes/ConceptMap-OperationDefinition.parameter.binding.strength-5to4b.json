@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "OperationDefinition.parameter.binding.strength-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/OperationDefinition.parameter.binding.strength-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.parameter.binding.strength-5to4b",
   "name" : "OperationDefinition.parameter.binding.strength5to4b",
   "title" : "Mapping for OperationDefinition.parameter.binding.strength from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.binding.strength",

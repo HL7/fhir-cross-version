@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ManufacturedItemDefinition.status-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ManufacturedItemDefinition.status-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ManufacturedItemDefinition.status-5to4b",
   "name" : "ManufacturedItemDefinition.status5to4b",
   "title" : "Mapping for ManufacturedItemDefinition.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ManufacturedItemDefinition#ManufacturedItemDefinition.status",

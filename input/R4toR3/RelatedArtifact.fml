@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/RelatedArtifact4to3"
-/// name = "Artifact4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/RelatedArtifact4to3"
+/// name = "RelatedArtifact4to3"
 /// title = "RelatedArtifact Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/RelatedArtifact" alias RelatedArtifact as source
 uses "http://hl7.org/fhir/3.0/RelatedArtifact" alias RelatedArtifactR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group RelatedArtifact(source src : RelatedArtifact, target tgt : RelatedArtifactR3) extends Element <<type+>> {
   src.type -> tgt.type;

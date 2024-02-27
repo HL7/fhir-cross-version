@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ServiceRequest5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ServiceRequest5to4"
 /// name = "ServiceRequest5to4"
 /// title = "ServiceRequest Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/ServiceRequest" alias ServiceRequestR5 as source
 uses "http://hl7.org/fhir/4.0/ServiceRequest" alias ServiceRequestR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group ServiceRequest(source src : ServiceRequestR5, target tgt : ServiceRequestR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -15,10 +15,10 @@ group ServiceRequest(source src : ServiceRequestR5, target tgt : ServiceRequestR
   src.basedOn -> tgt.basedOn;
   src.replaces -> tgt.replaces;
   src.requisition -> tgt.requisition;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ServiceRequest.status-R5toR4', 'code');
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/ServiceRequest.intent-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ServiceRequest.status-5to4', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ServiceRequest.intent-5to4', 'code');
   src.category -> tgt.category;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/ServiceRequest.priority-R5toR4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ServiceRequest.priority-5to4', 'code');
   src.doNotPerform -> tgt.doNotPerform;
   src.code -> tgt.code;
   src.orderDetail as s -> tgt.orderDetail = s.parameterFocus;

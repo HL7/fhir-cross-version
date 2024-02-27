@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Task4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Task4Bto5"
 /// name = "Task4Bto5"
 /// title = "Task Transforms: R4B to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.3/Task" alias TaskR4B as source
 uses "http://hl7.org/fhir/5.0/Task" alias TaskR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group Task(source src : TaskR4B, target tgt : TaskR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -15,11 +15,11 @@ group Task(source src : TaskR4B, target tgt : TaskR5) extends DomainResource <<t
   src.basedOn -> tgt.basedOn;
   src.groupIdentifier -> tgt.groupIdentifier;
   src.partOf -> tgt.partOf;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/TaskB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Task.status-4bto5', 'code');
   src.statusReason -> tgt.statusReason;
   src.businessStatus -> tgt.businessStatus;
   src.intent -> tgt.intent;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/TaskB.priority-R4BtoR5', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Task.priority-4bto5', 'code');
   src.code -> tgt.code;
   src.description -> tgt.description;
   src.focus -> tgt.focus;

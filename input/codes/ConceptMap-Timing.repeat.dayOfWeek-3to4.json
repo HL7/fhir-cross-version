@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Timing.repeat.dayOfWeek-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Timing.repeat.dayOfWeek-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Timing.repeat.dayOfWeek-3to4",
   "name" : "Timing.repeat.dayOfWeek3to4",
   "title" : "Mapping for Timing.repeat.dayOfWeek from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.dayOfWeek",

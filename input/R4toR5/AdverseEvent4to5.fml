@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/AdverseEvent4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/AdverseEvent4to5"
 /// name = "AdverseEvent4to5"
 /// title = "AdverseEvent Transforms: R4 to R5"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.0/AdverseEvent" alias AdverseEventR4 as source
 uses "http://hl7.org/fhir/5.0/AdverseEvent" alias AdverseEventR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group AdverseEvent(source src : AdverseEventR4, target tgt : AdverseEventR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.actuality as v -> tgt.actuality = translate(v, 'http://hl7.org/fhir/ConceptMap/AdverseEvent.actuality-R4toR5', 'code');
+  src.actuality as v -> tgt.actuality = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AdverseEvent.actuality-4to5', 'code');
   src.category -> tgt.category;
   src.event -> tgt.code;
   src.subject -> tgt.subject;

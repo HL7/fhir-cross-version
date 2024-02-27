@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/AuditEvent4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/AuditEvent4Bto5"
 /// name = "AuditEvent4Bto5"
 /// title = "AuditEvent Transforms: R4B to R5"
 /// status = "active"
@@ -6,12 +6,12 @@
 uses "http://hl7.org/fhir/4.3/AuditEvent" alias AuditEventR4B as source
 uses "http://hl7.org/fhir/5.0/AuditEvent" alias AuditEventR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group AuditEvent(source src : AuditEventR4B, target tgt : AuditEventR5) extends DomainResource <<type+>> {
   src.type -> tgt.category;
   src.subtype -> tgt.code;
-  src.action as v -> tgt.action = translate(v, 'http://hl7.org/fhir/ConceptMap/AuditEventB.action-R4BtoR5', 'code');
+  src.action as v -> tgt.action = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AuditEvent.action-4bto5', 'code');
   src.recorded -> tgt.recorded;
   src.outcome as s where outcome = '0' ->  tgt.outcome as t,  t.code = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/issue-severity',  tc.code = 'success',  tc.display = 'Success';
   src.outcome as s where outcome = '4' ->  tgt.outcome as t,  t.code = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/issue-severity',  tc.code = 'warning',  tc.display = 'Warning';

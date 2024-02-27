@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Library5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Library5to4"
 /// name = "Library5to4"
 /// title = "Library Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/Library" alias LibraryR5 as source
 uses "http://hl7.org/fhir/4.0/Library" alias LibraryR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Library(source src : LibraryR5, target tgt : LibraryR4) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -15,7 +15,7 @@ group Library(source src : LibraryR5, target tgt : LibraryR4) extends DomainReso
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.subtitle -> tgt.subtitle;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Library.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Library.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.type -> tgt.type;
   src.subject : CodeableConcept -> tgt.subject "subjectCodeableConcept";

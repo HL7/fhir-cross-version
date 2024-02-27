@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "NutritionOrder.status-4bto4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/NutritionOrder.status-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/NutritionOrder.status-4bto4",
   "name" : "NutritionOrder.status4bto4",
   "title" : "Mapping for NutritionOrder.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/NutritionOrder#NutritionOrder.status",

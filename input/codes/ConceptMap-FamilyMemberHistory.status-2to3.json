@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "FamilyMemberHistory.status-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/FamilyMemberHistory.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/FamilyMemberHistory.status-2to3",
   "name" : "FamilyMemberHistory.status2to3",
   "title" : "Mapping for FamilyMemberHistory.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/FamilyMemberHistory#FamilyMemberHistory.status",

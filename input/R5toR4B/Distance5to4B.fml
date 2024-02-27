@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/Distance5to4B"
-/// name = "Distance5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Distance5to4b"
+/// name = "Distance5to4b"
 /// title = "Distance Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Distance" alias DistanceR5 as source
-uses "http://hl7.org/fhir/4.0/Distance" alias DistanceR4B as target
+uses "http://hl7.org/fhir/4.3/Distance" alias DistanceR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Distance(source src : DistanceR5, target tgt : DistanceR4B) extends Quantity <<type+>> {
 }

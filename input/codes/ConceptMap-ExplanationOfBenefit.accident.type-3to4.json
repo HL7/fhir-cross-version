@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "ExplanationOfBenefit.accident.type-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/ExplanationOfBenefit.accident.type-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.accident.type-3to4",
   "name" : "ExplanationOfBenefit.accident.type3to4",
   "title" : "Mapping for ExplanationOfBenefit.accident.type from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.accident.type",

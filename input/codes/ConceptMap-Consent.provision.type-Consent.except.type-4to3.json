@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Consent.provision.type-Consent.except.type-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Consent.provision.type-Consent.except.type-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Consent.provision.type-Consent.except.type-4to3",
   "name" : "Consent.provision.typeConsent.except.type4to3",
   "title" : "Mapping for Consent.provision.type/Consent.except.type from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.type",

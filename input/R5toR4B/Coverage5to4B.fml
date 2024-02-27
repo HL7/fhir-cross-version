@@ -1,16 +1,16 @@
-/// url = "http://hl7.org/fhir/StructureMap/Coverage5to4B"
-/// name = "Coverage5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Coverage5to4b"
+/// name = "Coverage5to4b"
 /// title = "Coverage Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Coverage" alias CoverageR5 as source
-uses "http://hl7.org/fhir/4.0/Coverage" alias CoverageR4B as target
+uses "http://hl7.org/fhir/4.3/Coverage" alias CoverageR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Coverage(source src : CoverageR5, target tgt : CoverageR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Coverage.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Coverage.status-5to4b', 'code');
   src.type -> tgt.type;
   src.policyHolder -> tgt.policyHolder;
   src.subscriber -> tgt.subscriber;

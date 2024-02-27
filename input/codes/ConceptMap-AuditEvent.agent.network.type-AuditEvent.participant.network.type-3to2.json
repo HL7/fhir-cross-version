@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "AuditEvent.agent.network.type-AuditEvent.participant.network.type-3to2",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AuditEvent.agent.network.type-AuditEvent.participant.network.type-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/AuditEvent.agent.network.type-AuditEvent.participant.network.type-3to2",
   "name" : "AuditEvent.agent.network.typeAuditEvent.participant.network.type3to2",
   "title" : "Mapping for AuditEvent.agent.network.type/AuditEvent.participant.network.type from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.agent.network.type",

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/VisionPrescription3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/VisionPrescription3to2"
 /// name = "VisionPrescription3to2"
 /// title = "VisionPrescription Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/VisionPrescription" alias VisionPrescription as source
 uses "http://hl7.org/fhir/1.0/VisionPrescription" alias VisionPrescriptionR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group VisionPrescription(source src : VisionPrescription, target tgt : VisionPrescriptionR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "VisionPrescription-identifier";

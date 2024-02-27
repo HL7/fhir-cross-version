@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/BodyStructure5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/BodyStructure5to4"
 /// name = "BodyStructure5to4"
 /// title = "BodyStructure Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/BodyStructure" alias BodyStructureR5 as source
 uses "http://hl7.org/fhir/4.0/BodyStructure" alias BodyStructureR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group BodyStructure(source src : BodyStructureR5, target tgt : BodyStructureR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;

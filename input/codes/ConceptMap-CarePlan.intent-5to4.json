@@ -7,7 +7,7 @@
       "code" : "review-needed"
     }]
   },
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CarePlan.intent-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CarePlan.intent-5to4",
   "name" : "CarePlan.intent5to4",
   "title" : "Mapping for CarePlan.intent from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CarePlan#CarePlan.intent",
@@ -33,8 +33,7 @@
       "code" : "directive",
       "target" : [{
         "code" : "directive",
-        "relationship" : "equivalent",
-        "comment" : "The code directive is not in the target value set, but is the correct translation - CHECK"
+        "relationship" : "equivalent"
       }]
     },
     {

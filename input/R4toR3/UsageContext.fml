@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/UsageContext4to3"
-/// name = "Context4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/UsageContext4to3"
+/// name = "UsageContext4to3"
 /// title = "UsageContext Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/UsageContext" alias UsageContext as source
 uses "http://hl7.org/fhir/3.0/UsageContext" alias UsageContextR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group UsageContext(source src : UsageContext, target tgt : UsageContextR3) extends Element <<type+>> {
   src.code -> tgt.code;

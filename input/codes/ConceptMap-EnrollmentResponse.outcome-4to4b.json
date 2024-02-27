@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "EnrollmentResponse.outcome-4to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/EnrollmentResponse.outcome-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/EnrollmentResponse.outcome-4to4b",
   "name" : "EnrollmentResponse.outcome4to4b",
   "title" : "Mapping for EnrollmentResponse.outcome from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/EnrollmentResponse#EnrollmentResponse.outcome",

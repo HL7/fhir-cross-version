@@ -1,14 +1,14 @@
-/// url = "http://hl7.org/fhir/StructureMap/MedicationAdministration4to3"
-/// name = "Administration4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/MedicationAdministration4to3"
+/// name = "MedicationAdministration4to3"
 /// title = "MedicationAdministration Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/MedicationAdministration" alias MedicationAdministration as source
 uses "http://hl7.org/fhir/3.0/MedicationAdministration" alias MedicationAdministrationR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group MedicationAdministration(source src : MedicationAdministrationR3, target tgt : MedicationAdministration) extends DomainResource <<type+>> {
+group MedicationAdministration(source src : MedicationAdministration, target tgt : MedicationAdministrationR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.instantiates -> tgt.definition;
   src.partOf -> tgt.partOf;
@@ -23,7 +23,6 @@ group MedicationAdministration(source src : MedicationAdministrationR3, target t
   src.effective : dateTime as vs -> tgt.effective = create('dateTime') as vt then dateTime(vs, vt) "effectiveDateTime";
   src.effective : Period as vs -> tgt.effective = create('Period') as vt then Period(vs, vt) "effectivePeriod";
   src.performer as vs0 -> tgt.performer as vt0 then actor(vs0, vt0);
-  src.statusReason -> tgt.statusReason;
   src.reasonCode where value = 'not-done' -> tgt.reasonNotGiven;
   src.reasonCode where value != 'not-done' -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;

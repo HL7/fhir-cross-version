@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/CoverageEligibilityResponse4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/CoverageEligibilityResponse4to5"
 /// name = "CoverageEligibilityResponse4to5"
 /// title = "CoverageEligibilityResponse Transforms: R4 to R5"
 /// status = "active"
@@ -6,19 +6,19 @@
 uses "http://hl7.org/fhir/4.0/CoverageEligibilityResponse" alias CoverageEligibilityResponseR4 as source
 uses "http://hl7.org/fhir/5.0/CoverageEligibilityResponse" alias CoverageEligibilityResponseR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group CoverageEligibilityResponse(source src : CoverageEligibilityResponseR4, target tgt : CoverageEligibilityResponseR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/CoverageEligibilityResponse.status-R4toR5', 'code');
-  src.purpose as v -> tgt.purpose = translate(v, 'http://hl7.org/fhir/ConceptMap/CoverageEligibilityResponse.purpose-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CoverageEligibilityResponse.status-4to5', 'code');
+  src.purpose as v -> tgt.purpose = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CoverageEligibilityResponse.purpose-4to5', 'code');
   src.patient -> tgt.patient;
   src.serviced : date -> tgt.serviced "servicedDate";
   src.serviced : Period -> tgt.serviced "servicedPeriod";
   src.created -> tgt.created;
   src.requestor -> tgt.requestor;
   src.request -> tgt.request;
-  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/ConceptMap/CoverageEligibilityResponse.outcome-R4toR5', 'code');
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CoverageEligibilityResponse.outcome-4to5', 'code');
   src.disposition -> tgt.disposition;
   src.insurer -> tgt.insurer;
   src.insurance as s -> tgt.insurance as t then CoverageEligibilityResponseInsurance(s, t);

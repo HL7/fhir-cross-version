@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Observation.dataAbsentReason-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Observation.dataAbsentReason-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Observation.dataAbsentReason-2to3",
   "name" : "Observation.dataAbsentReason2to3",
   "title" : "Mapping for Observation.dataAbsentReason from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Observation#Observation.dataAbsentReason",

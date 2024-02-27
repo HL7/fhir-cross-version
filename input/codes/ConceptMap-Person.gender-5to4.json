@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Person.gender-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Person.gender-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Person.gender-5to4",
   "name" : "Person.gender5to4",
   "title" : "Mapping for Person.gender from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Person#Person.gender",

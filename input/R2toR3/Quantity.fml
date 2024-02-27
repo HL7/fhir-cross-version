@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Quantity2to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Quantity2to3"
 /// name = "Quantity2to3"
 /// title = "Quantity Transforms: R2 to R3"
 /// status = "active"
@@ -7,8 +7,8 @@ uses "http://hl7.org/fhir/1.0/Quantity" alias QuantityR2 as source
 uses "http://hl7.org/fhir/3.0/Quantity" alias Quantity as target
 uses "http://hl7.org/fhir/3.0/Duration" alias Duration as target
 
-imports "http://hl7.org/fhir/StructureMap/primitives2to3"
-imports "http://hl7.org/fhir/StructureMap/Element2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"
 
 group Quantity(source src : QuantityR2, target tgt : Quantity) extends Element <<type+>> {
   src.value -> tgt.value "Quantity-value";

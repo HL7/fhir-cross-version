@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Specimen.status-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Specimen.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Specimen.status-2to3",
   "name" : "Specimen.status2to3",
   "title" : "Mapping for Specimen.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Specimen#Specimen.status",

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/SampledData5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SampledData5to4"
 /// name = "SampledData5to4"
 /// title = "SampledData Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/SampledData" alias SampledDataR5 as source
 uses "http://hl7.org/fhir/4.0/SampledData" alias SampledDataR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group SampledData(source src : SampledDataR5, target tgt : SampledDataR4) extends Element <<type+>> {
   src.origin -> tgt.origin;

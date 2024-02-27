@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "CommunicationRequest.status-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/CommunicationRequest.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/CommunicationRequest.status-2to3",
   "name" : "CommunicationRequest.status-2to3",
   "title" : "Mapping for CommunicationRequest.status from R2 to R3",
   "status" : "active",

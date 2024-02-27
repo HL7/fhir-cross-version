@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "AuditEvent.object.role-AuditEvent.entity.role-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/AuditEvent.object.role-AuditEvent.entity.role-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/AuditEvent.object.role-AuditEvent.entity.role-2to3",
   "name" : "AuditEvent.object.roleAuditEvent.entity.role2to3",
   "title" : "Mapping for AuditEvent.object.role/AuditEvent.entity.role from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.object.role",

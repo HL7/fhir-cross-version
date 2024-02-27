@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "TestReport.setup.action.assert.result-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/TestReport.setup.action.assert.result-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/TestReport.setup.action.assert.result-4to3",
   "name" : "TestReport.setup.action.assert.result4to3",
   "title" : "Mapping for TestReport.setup.action.assert.result from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.setup.action.assert.result",

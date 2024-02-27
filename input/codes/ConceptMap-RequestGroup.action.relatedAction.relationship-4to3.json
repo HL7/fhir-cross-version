@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RequestGroup.action.relatedAction.relationship-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RequestGroup.action.relatedAction.relationship-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RequestGroup.action.relatedAction.relationship-4to3",
   "name" : "RequestGroup.action.relatedAction.relationship4to3",
   "title" : "Mapping for RequestGroup.action.relatedAction.relationship from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.relatedAction.relationship",

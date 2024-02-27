@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/Evidence5to4B"
-/// name = "Evidence5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Evidence5to4b"
+/// name = "Evidence5to4b"
 /// title = "Evidence Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Evidence" alias EvidenceR5 as source
-uses "http://hl7.org/fhir/4.0/Evidence" alias EvidenceR4B as target
+uses "http://hl7.org/fhir/4.3/Evidence" alias EvidenceR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Evidence(source src : EvidenceR5, target tgt : EvidenceR4B) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -15,7 +15,7 @@ group Evidence(source src : EvidenceR5, target tgt : EvidenceR4B) extends Domain
   src.title -> tgt.title;
   src.citeAs : Reference -> tgt.citeAs "citeAsReference";
   src.citeAs : markdown -> tgt.citeAs "citeAsMarkdown";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Evidence.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Evidence.status-5to4b', 'code');
   src.date -> tgt.date;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;
@@ -83,7 +83,7 @@ group EvidenceStatisticModelCharacteristic(source src, target tgt) extends Backb
 
 group EvidenceStatisticModelCharacteristicVariable(source src, target tgt) extends BackboneElement {
   src.variableDefinition -> tgt.variableDefinition;
-  src.handling as v -> tgt.handling = translate(v, 'http://hl7.org/fhir/ConceptMap/Evidence.statistic.modelCharacteristic.variable.handling-R5toR4', 'code');
+  src.handling as v -> tgt.handling = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Evidence.statistic.modelCharacteristic.variable.handling-5to4b', 'code');
   src.valueCategory -> tgt.valueCategory;
   src.valueQuantity -> tgt.valueQuantity;
   src.valueRange -> tgt.valueRange;
@@ -97,3 +97,4 @@ group EvidenceCertainty(source src, target tgt) extends BackboneElement {
   src.rater -> tgt.rater;
 }
 
+ 

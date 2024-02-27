@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/EventDefinition5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/EventDefinition5to4"
 /// name = "EventDefinition5to4"
 /// title = "EventDefinition Transforms: R5 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/5.0/EventDefinition" alias EventDefinitionR5 as source
 uses "http://hl7.org/fhir/4.0/EventDefinition" alias EventDefinitionR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group EventDefinition(source src : EventDefinitionR5, target tgt : EventDefinitionR4) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -15,7 +15,7 @@ group EventDefinition(source src : EventDefinitionR5, target tgt : EventDefiniti
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.subtitle -> tgt.subtitle;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/EventDefinition.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EventDefinition.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.subject : CodeableConcept -> tgt.subject "subjectCodeableConcept";
   src.subject : Reference -> tgt.subject "subjectReference";

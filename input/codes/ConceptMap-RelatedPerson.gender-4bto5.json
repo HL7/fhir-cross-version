@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "RelatedPerson.gender-4bto5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/RelatedPerson.gender-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/RelatedPerson.gender-4bto5",
   "name" : "RelatedPerson.gender4bto5",
   "title" : "Mapping for RelatedPerson.gender from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RelatedPerson#RelatedPerson.gender",

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Goal.lifecycleStatus-Goal.status-4to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Goal.lifecycleStatus-Goal.status-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Goal.lifecycleStatus-Goal.status-4to3",
   "name" : "Goal.lifecycleStatusGoal.status4to3",
   "title" : "Mapping for Goal.lifecycleStatus/Goal.status from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Goal#Goal.lifecycleStatus",

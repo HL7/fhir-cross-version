@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Practitioner3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Practitioner3to2"
 /// name = "Practitioner3to2"
 /// title = "Practitioner Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Practitioner" alias Practitioner as source
 uses "http://hl7.org/fhir/1.0/Practitioner" alias PractitionerR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group Practitioner(source src : Practitioner, target tgt : PractitionerR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Practitioner-identifier";
@@ -17,7 +17,7 @@ group Practitioner(source src : Practitioner, target tgt : PractitionerR2) exten
   src.gender -> tgt.gender "Practitioner-gender";
   src.birthDate -> tgt.birthDate "Practitioner-birthDate";
   src.photo -> tgt.photo "Practitioner-photo";
-  for search('/PractitionerRole?practitioner='+src.id) : PractitionerRole as vs0 make tgt.practitionerRole as vt0 then prcRole(vs0, vt0) "Practitioner-role";
+  // todo for search('/PractitionerRole?practitioner='+src.id) : PractitionerRole as vs0 make tgt.practitionerRole as vt0 then prcRole(vs0, vt0) "Practitioner-role";
   src.qualification as vs0 -> tgt.qualification as vt0 then prcQualification(vs0, vt0) "Practitioner-qualification";
   src.communication -> tgt.communication "Practitioner-communication";
 }

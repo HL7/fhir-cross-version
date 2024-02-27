@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/AdministrableProductDefinition4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/AdministrableProductDefinition4Bto5"
 /// name = "AdministrableProductDefinition4Bto5"
 /// title = "AdministrableProductDefinition Transforms: R4B to R5"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.3/AdministrableProductDefinition" alias AdministrableProductDefinitionR4B as source
 uses "http://hl7.org/fhir/5.0/AdministrableProductDefinition" alias AdministrableProductDefinitionR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group AdministrableProductDefinition(source src : AdministrableProductDefinitionR4B, target tgt : AdministrableProductDefinitionR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/AdministrableProductDefinitionB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AdministrableProductDefinition.status-4bto5', 'code');
   src.formOf -> tgt.formOf;
   src.administrableDoseForm -> tgt.administrableDoseForm;
   src.unitOfPresentation -> tgt.unitOfPresentation;
@@ -28,7 +28,7 @@ group AdministrableProductDefinitionProperty(source src, target tgt) extends Bac
   src.value : date -> tgt.value "valueDate";
   src.value : boolean -> tgt.value "valueBoolean";
   src.value : Attachment -> tgt.value "valueAttachment";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/AdministrableProductDefinitionB.property.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AdministrableProductDefinition.property.status-4bto5', 'code');
 }
 
 group AdministrableProductDefinitionRouteOfAdministration(source src, target tgt) extends BackboneElement {

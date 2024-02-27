@@ -1,15 +1,15 @@
-/// url = "http://hl7.org/fhir/StructureMap/Narrative5to4B"
-/// name = "Narrative5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Narrative5to4b"
+/// name = "Narrative5to4b"
 /// title = "Narrative Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/Narrative" alias NarrativeR5 as source
-uses "http://hl7.org/fhir/4.0/Narrative" alias NarrativeR4B as target
+uses "http://hl7.org/fhir/4.3/Narrative" alias NarrativeR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Narrative(source src : NarrativeR5, target tgt : NarrativeR4B) extends Element <<type+>> {
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Narrative.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Narrative.status-5to4b', 'code');
   src.div -> tgt.div;
 }
 

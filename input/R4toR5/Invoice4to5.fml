@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Invoice4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Invoice4to5"
 /// name = "Invoice4to5"
 /// title = "Invoice Transforms: R4 to R5"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/4.0/Invoice" alias InvoiceR4 as source
 uses "http://hl7.org/fhir/5.0/Invoice" alias InvoiceR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Invoice(source src : InvoiceR4, target tgt : InvoiceR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/Invoice.status-R4toR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Invoice.status-4to5', 'code');
   src.cancelledReason -> tgt.cancelledReason;
   src.type -> tgt.type;
   src.subject -> tgt.subject;

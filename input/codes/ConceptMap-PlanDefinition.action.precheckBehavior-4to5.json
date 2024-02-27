@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "PlanDefinition.action.precheckBehavior-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/PlanDefinition.action.precheckBehavior-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/PlanDefinition.action.precheckBehavior-4to5",
   "name" : "PlanDefinition.action.precheckBehavior4to5",
   "title" : "Mapping for PlanDefinition.action.precheckBehavior from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.precheckBehavior",

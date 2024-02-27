@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Location3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Location3to2"
 /// name = "Location3to2"
 /// title = "Location Transforms: R3 to R2"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Location" alias Location as source
 uses "http://hl7.org/fhir/1.0/Location" alias LocationR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group Location(source src : Location, target tgt : LocationR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Location-identifier";

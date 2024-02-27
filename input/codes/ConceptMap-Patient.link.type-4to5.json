@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Patient.link.type-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Patient.link.type-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Patient.link.type-4to5",
   "name" : "Patient.link.type4to5",
   "title" : "Mapping for Patient.link.type from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Patient#Patient.link.type",

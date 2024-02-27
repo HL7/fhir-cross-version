@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/SearchParameter4to3"
-/// name = "Parameter4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/SearchParameter4to3"
+/// name = "SearchParameter4to3"
 /// title = "SearchParameter Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/SearchParameter" alias SearchParameter as source
 uses "http://hl7.org/fhir/3.0/SearchParameter" alias SearchParameterR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group SearchParameter(source src : SearchParameter, target tgt : SearchParameterR3) extends DomainResource <<type+>> {
   src.url -> tgt.url;

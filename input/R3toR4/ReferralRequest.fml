@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ReferralRequest3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ReferralRequest3to4"
 /// name = "ReferralRequest3to4"
 /// title = "ServiceRequest Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/ReferralRequest" alias ReferralRequestR3 as source
 uses "http://hl7.org/fhir/4.0/ServiceRequest" alias ServiceRequest as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group ServiceRequest(source src : ReferralRequestR3, target tgt : ServiceRequest) extends DomainResource <<type+>> {
   src as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/BaseType',  vt.value = 'ReferralRequest' "ReferralRequest";

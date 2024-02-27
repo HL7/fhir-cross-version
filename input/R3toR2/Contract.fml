@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Contract3to2"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Contract3to2"
 /// name = "Contract3to2"
 /// title = "Contrac Transforms: R3 to R2t"
 /// status = "active"
@@ -6,13 +6,13 @@
 uses "http://hl7.org/fhir/3.0/Contract" alias Contract as source
 uses "http://hl7.org/fhir/1.0/Contract" alias ContractR2 as target
 
-imports "http://hl7.org/fhir/StructureMap/primitives3to2"
-imports "http://hl7.org/fhir/StructureMap/DomainResource3to2"
-imports "http://hl7.org/fhir/StructureMap/Attachment3to2"
-imports "http://hl7.org/fhir/StructureMap/Identifier3to2"
-imports "http://hl7.org/fhir/StructureMap/Reference3to2"
-imports "http://hl7.org/fhir/StructureMap/Period3to2"
-imports "http://hl7.org/fhir/StructureMap/CodeableConcept3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/DomainResource3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Attachment3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Identifier3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Reference3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/Period3to2"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/CodeableConcept3to2"
 
 group Contract(source src : Contract, target tgt : ContractR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Contract-identifier";

@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Measure.compositeScoring-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Measure.compositeScoring-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Measure.compositeScoring-3to4",
   "name" : "Measure.compositeScoring3to4",
   "title" : "Mapping for Measure.compositeScoring from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Measure#Measure.compositeScoring",

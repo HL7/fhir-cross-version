@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Endpoint.status-5to4b",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Endpoint.status-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Endpoint.status-5to4b",
   "name" : "Endpoint.status5to4b",
   "title" : "Mapping for Endpoint.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Endpoint#Endpoint.status",

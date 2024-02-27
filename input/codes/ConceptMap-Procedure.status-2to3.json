@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Procedure.status-2to3",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Procedure.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Procedure.status-2to3",
   "name" : "Procedure.status2to3",
   "title" : "Mapping for Procedure.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Procedure#Procedure.status",

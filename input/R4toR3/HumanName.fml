@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/HumanName4to3"
-/// name = "Name4to3"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/HumanName4to3"
+/// name = "HumanName4to3"
 /// title = "HumanName Transforms: R4 to R3"
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/HumanName" alias HumanName as source
 uses "http://hl7.org/fhir/3.0/HumanName" alias HumanNameR3 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to3"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group HumanName(source src : HumanName, target tgt : HumanNameR3) extends Element <<type+>> {
   src.use -> tgt.use;

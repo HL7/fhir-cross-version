@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Slot.status-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Slot.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Slot.status-4to5",
   "name" : "Slot.status4to5",
   "title" : "Mapping for Slot.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Slot#Slot.status",

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/DocumentReference5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/DocumentReference5to4"
 /// name = "DocumentReference5to4"
 /// title = "DocumentReference Transforms: R5 to R4"
 /// status = "active"
@@ -6,12 +6,12 @@
 uses "http://hl7.org/fhir/5.0/DocumentReference" alias DocumentReferenceR5 as source
 uses "http://hl7.org/fhir/4.0/DocumentReference" alias DocumentReferenceR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group DocumentReference(source src : DocumentReferenceR5, target tgt : DocumentReferenceR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/DocumentReference.status-R5toR4', 'code');
-  src.docStatus as v -> tgt.docStatus = translate(v, 'http://hl7.org/fhir/ConceptMap/DocumentReference.docStatus-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DocumentReference.status-5to4', 'code');
+  src.docStatus as v -> tgt.docStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DocumentReference.docStatus-5to4', 'code');
   src.type -> tgt.type;
   src.category -> tgt.category;
   src.subject -> tgt.subject;

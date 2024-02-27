@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Composition.confidentiality-3to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Composition.confidentiality-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Composition.confidentiality-3to4",
   "name" : "Composition.confidentiality3to4",
   "title" : "Mapping for Composition.confidentiality from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.confidentiality",

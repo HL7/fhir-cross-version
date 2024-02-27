@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Expression4to5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Expression4to5"
 /// name = "Expression4to5"
 /// title = "Expression Transforms: R4 to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.0/Expression" alias ExpressionR4 as source
 uses "http://hl7.org/fhir/5.0/Expression" alias ExpressionR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4to5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Expression(source src : ExpressionR4, target tgt : ExpressionR5) extends Element <<type+>> {
   src.description -> tgt.description;

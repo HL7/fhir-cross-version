@@ -1,12 +1,12 @@
-/// url = "http://hl7.org/fhir/StructureMap/TestScript5to4B"
-/// name = "TestScript5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/TestScript5to4b"
+/// name = "TestScript5to4b"
 /// title = "TestScript Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/TestScript" alias TestScriptR5 as source
-uses "http://hl7.org/fhir/4.0/TestScript" alias TestScriptR4B as target
+uses "http://hl7.org/fhir/4.3/TestScript" alias TestScriptR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group TestScript(source src : TestScriptR5, target tgt : TestScriptR4B) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -14,7 +14,7 @@ group TestScript(source src : TestScriptR5, target tgt : TestScriptR4B) extends 
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.status-5to4b', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -105,7 +105,7 @@ group TestScriptSetupActionOperation(source src, target tgt) extends BackboneEle
   src.contentType -> tgt.contentType;
   src.destination -> tgt.destination;
   src.encodeRequestUrl -> tgt.encodeRequestUrl;
-  src.method as v -> tgt.method = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.setup.action.operation.method-R5toR4', 'code');
+  src.method as v -> tgt.method = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.operation.method-5to4b', 'code');
   src.origin -> tgt.origin;
   src.params -> tgt.params;
   src.requestHeader as s -> tgt.requestHeader as t then TestScriptSetupActionOperationRequestHeader(s, t);
@@ -124,7 +124,7 @@ group TestScriptSetupActionOperationRequestHeader(source src, target tgt) extend
 group TestScriptSetupActionAssert(source src, target tgt) extends BackboneElement {
   src.label -> tgt.label;
   src.description -> tgt.description;
-  src.direction as v -> tgt.direction = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.setup.action.assert.direction-R5toR4', 'code');
+  src.direction as v -> tgt.direction = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.assert.direction-5to4b', 'code');
   src.compareToSourceId -> tgt.compareToSourceId;
   src.compareToSourceExpression -> tgt.compareToSourceExpression;
   src.compareToSourcePath -> tgt.compareToSourcePath;
@@ -133,12 +133,12 @@ group TestScriptSetupActionAssert(source src, target tgt) extends BackboneElemen
   src.headerField -> tgt.headerField;
   src.minimumId -> tgt.minimumId;
   src.navigationLinks -> tgt.navigationLinks;
-  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.setup.action.assert.operator-R5toR4', 'code');
+  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.assert.operator-5to4b', 'code');
   src.path -> tgt.path;
-  src.requestMethod as v -> tgt.requestMethod = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.setup.action.assert.requestMethod-R5toR4', 'code');
+  src.requestMethod as v -> tgt.requestMethod = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.assert.requestMethod-5to4b', 'code');
   src.requestURL -> tgt.requestURL;
   src.resource -> tgt.resource;
-  src.response as v -> tgt.response = translate(v, 'http://hl7.org/fhir/ConceptMap/TestScript.setup.action.assert.response-R5toR4', 'code');
+  src.response as v -> tgt.response = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.assert.response-5to4b', 'code');
   src.responseCode -> tgt.responseCode;
   src.sourceId -> tgt.sourceId;
   src.validateProfileId -> tgt.validateProfileId;

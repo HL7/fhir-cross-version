@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Bundle5to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Bundle5to4"
 /// name = "Bundle5to4"
 /// title = "Bundle Transforms: R5 to R4"
 /// status = "active"
@@ -6,11 +6,11 @@
 uses "http://hl7.org/fhir/5.0/Bundle" alias BundleR5 as source
 uses "http://hl7.org/fhir/4.0/Bundle" alias BundleR4 as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Bundle(source src : BundleR5, target tgt : BundleR4) extends Resource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/Bundle.type-R5toR4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Bundle.type-5to4', 'code');
   src.timestamp -> tgt.timestamp;
   src.total -> tgt.total;
   src.link as s -> tgt.link as t then BundleLink(s, t);
@@ -32,12 +32,12 @@ group BundleEntry(source src, target tgt) extends BackboneElement {
 }
 
 group BundleEntrySearch(source src, target tgt) extends BackboneElement {
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/ConceptMap/Bundle.entry.search.mode-R5toR4', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Bundle.entry.search.mode-5to4', 'code');
   src.score -> tgt.score;
 }
 
 group BundleEntryRequest(source src, target tgt) extends BackboneElement {
-  src.method as v -> tgt.method = translate(v, 'http://hl7.org/fhir/ConceptMap/Bundle.entry.request.method-R5toR4', 'code');
+  src.method as v -> tgt.method = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Bundle.entry.request.method-5to4', 'code');
   src.url -> tgt.url;
   src.ifNoneMatch -> tgt.ifNoneMatch;
   src.ifModifiedSince -> tgt.ifModifiedSince;

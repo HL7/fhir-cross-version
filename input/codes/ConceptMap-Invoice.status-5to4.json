@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Invoice.status-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Invoice.status-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Invoice.status-5to4",
   "name" : "Invoice.status5to4",
   "title" : "Mapping for Invoice.status from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Invoice#Invoice.status",

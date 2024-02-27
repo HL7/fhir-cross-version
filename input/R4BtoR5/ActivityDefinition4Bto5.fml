@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/ActivityDefinition4Bto5"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/ActivityDefinition4Bto5"
 /// name = "ActivityDefinition4Bto5"
 /// title = "ActivityDefinition Transforms: R4B to R5"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/4.3/ActivityDefinition" alias ActivityDefinitionR4B as source
 uses "http://hl7.org/fhir/5.0/ActivityDefinition" alias ActivityDefinitionR5 as target
 
-imports "http://hl7.org/fhir/StructureMap/*4Bto5"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group ActivityDefinition(source src : ActivityDefinitionR4B, target tgt : ActivityDefinitionR5) extends DomainResource <<type+>> {
   src.url -> tgt.url;
@@ -15,7 +15,7 @@ group ActivityDefinition(source src : ActivityDefinitionR4B, target tgt : Activi
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.subtitle -> tgt.subtitle;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/ActivityDefinitionB.status-R4BtoR5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.status-4bto5', 'code');
   src.experimental -> tgt.experimental;
   src.subject as s where code = 'Patient' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
   src.subject as s where code = 'Practitioner' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
@@ -46,8 +46,8 @@ group ActivityDefinition(source src : ActivityDefinitionR4B, target tgt : Activi
   src.kind -> tgt.kind;
   src.profile -> tgt.profile;
   src.code -> tgt.code;
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/ConceptMap/ActivityDefinitionB.intent-R4BtoR5', 'code');
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/ConceptMap/ActivityDefinitionB.priority-R4BtoR5', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.intent-4bto5', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.priority-4bto5', 'code');
   src.doNotPerform -> tgt.doNotPerform;
   src.timing : Timing -> tgt.timing "timingTiming";
   src.timing : Age -> tgt.timing "timingAge";
@@ -68,7 +68,7 @@ group ActivityDefinition(source src : ActivityDefinitionR4B, target tgt : Activi
 }
 
 group ActivityDefinitionParticipant(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/ConceptMap/ActivityDefinitionB.participant.type-R4BtoR5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.participant.type-4bto5', 'code');
   src.role -> tgt.role;
 }
 

@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MolecularSequence.quality.type-Sequence.quality.type-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/MolecularSequence.quality.type-Sequence.quality.type-4to3",
+  "name" : "MolecularSequence.quality.typeSequence.quality.type4to3",
+  "title" : "Mapping for MolecularSequence.quality.type/Sequence.quality.type from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.quality.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Sequence#Sequence.quality.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/quality-type",
+    "target" : "http://hl7.org/fhir/3.0/quality-type",
+    "element" : [{
+      "code" : "snp",
+      "target" : [{
+        "code" : "snp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "indel",
+      "target" : [{
+        "code" : "indel",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,4 +1,4 @@
-/// url = "http://hl7.org/fhir/StructureMap/Account3to4"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/Account3to4"
 /// name = "Account3to4"
 /// title = "Account Transforms: R3 to R4"
 /// status = "active"
@@ -6,7 +6,7 @@
 uses "http://hl7.org/fhir/3.0/Account" alias AccountR3 as source
 uses "http://hl7.org/fhir/4.0/Account" alias Account as target
 
-imports "http://hl7.org/fhir/StructureMap/*3to4"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group Account(source src : AccountR3, target tgt : Account) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
@@ -19,7 +19,6 @@ group Account(source src : AccountR3, target tgt : Account) extends DomainResour
   src.owner -> tgt.owner;
   src.description -> tgt.description;
   src.guarantor as s -> tgt.guarantor as t then AccountGuarantor(s, t);
-  src.partOf -> tgt.partOf;
 }
 
 group AccountCoverage(source src, target tgt) extends BackboneElement {

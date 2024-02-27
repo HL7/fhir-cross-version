@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "Contract.contentDefinition.publicationStatus-4to5",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/Contract.contentDefinition.publicationStatus-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Contract.contentDefinition.publicationStatus-4to5",
   "name" : "Contract.contentDefinition.publicationStatus4to5",
   "title" : "Mapping for Contract.contentDefinition.publicationStatus from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Contract#Contract.contentDefinition.publicationStatus",

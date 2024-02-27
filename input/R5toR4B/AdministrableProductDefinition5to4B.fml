@@ -1,16 +1,16 @@
-/// url = "http://hl7.org/fhir/StructureMap/AdministrableProductDefinition5to4B"
-/// name = "AdministrableProductDefinition5to4B"
+/// url = "http://hl7.org/fhir/uv/xver/StructureMap/AdministrableProductDefinition5to4b"
+/// name = "AdministrableProductDefinition5to4b"
 /// title = "AdministrableProductDefinition Transforms: R5 to R4B"
 /// status = "active"
 
 uses "http://hl7.org/fhir/5.0/AdministrableProductDefinition" alias AdministrableProductDefinitionR5 as source
-uses "http://hl7.org/fhir/4.0/AdministrableProductDefinition" alias AdministrableProductDefinitionR4B as target
+uses "http://hl7.org/fhir/4.3/AdministrableProductDefinition" alias AdministrableProductDefinitionR4B as target
 
-imports "http://hl7.org/fhir/StructureMap/*5to4B"
+imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group AdministrableProductDefinition(source src : AdministrableProductDefinitionR5, target tgt : AdministrableProductDefinitionR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/AdministrableProductDefinition.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AdministrableProductDefinition.status-5to4b', 'code');
   src.formOf -> tgt.formOf;
   src.administrableDoseForm -> tgt.administrableDoseForm;
   src.unitOfPresentation -> tgt.unitOfPresentation;
@@ -28,7 +28,7 @@ group AdministrableProductDefinitionProperty(source src, target tgt) extends Bac
   src.value : date -> tgt.value "valueDate";
   src.value : boolean -> tgt.value "valueBoolean";
   src.value : Attachment -> tgt.value "valueAttachment";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/ConceptMap/AdministrableProductDefinition.property.status-R5toR4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AdministrableProductDefinition.property.status-5to4b', 'code');
 }
 
 group AdministrableProductDefinitionRouteOfAdministration(source src, target tgt) extends BackboneElement {

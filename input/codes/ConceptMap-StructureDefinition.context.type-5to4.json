@@ -1,7 +1,7 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "StructureDefinition.context.type-5to4",
-  "url" : "http://hl7.org/fhir/cross-version/ConceptMap/StructureDefinition.context.type-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/StructureDefinition.context.type-5to4",
   "name" : "StructureDefinition.context.type5to4",
   "title" : "Mapping for StructureDefinition.context.type from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition#StructureDefinition.context.type",
