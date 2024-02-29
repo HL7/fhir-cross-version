@@ -13,15 +13,15 @@ group DeviceMetric(source src : DeviceMetricR5, target tgt : DeviceMetricR4B) ex
   src.type -> tgt.type;
   src.unit -> tgt.unit;
   src.device -> tgt.parent;
-  src.operationalStatus as v -> tgt.operationalStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.operationalStatus-5to4b', 'code');
+  src.operationalStatus as v -> tgt.operationalStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dvm.operationalStatus-5to4b', 'code');
   src.color as v -> tgt.color = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.color-5to4b', 'code');
-  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.category-5to4b', 'code');
+  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dvm.category-5to4b', 'code');
   src.calibration as s -> tgt.calibration as t then DeviceMetricCalibration(s, t);
 }
 
 group DeviceMetricCalibration(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.calibration.type-5to4b', 'code');
-  src.state as v -> tgt.state = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.calibration.state-5to4b', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dvm.ca.type-5to4b', 'code');
+  src.state as v -> tgt.state = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dvm.ca.state-5to4b', 'code');
   src.time -> tgt.time;
 }
 

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ig.de.pa.generation-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ig.de.pa.generation-4bto5",
+  "name" : "ImplementationGuide.definition.page.generation4bto5",
+  "title" : "Mapping for ImplementationGuide.definition.page.generation from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ImplementationGuide#ImplementationGuide.definition.page.generation",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ImplementationGuide#ImplementationGuide.definition.page.generation",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/guide-page-generation",
+    "target" : "http://hl7.org/fhir/5.0/guide-page-generation",
+    "element" : [{
+      "code" : "generated",
+      "target" : [{
+        "code" : "generated",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "xml",
+      "target" : [{
+        "code" : "xml",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "markdown",
+      "target" : [{
+        "code" : "markdown",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "html",
+      "target" : [{
+        "code" : "html",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

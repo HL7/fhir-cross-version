@@ -1,0 +1,53 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ait.status-ait.clinicalStatus-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ait.status-ait.clinicalStatus-2to3",
+  "name" : "AllergyIntolerance.statusAllergyIntolerance.clinicalStatus2to3",
+  "title" : "Mapping for AllergyIntolerance.status/AllergyIntolerance.clinicalStatus from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.clinicalStatus",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/allergy-intolerance-status",
+    "target" : "http://hl7.org/fhir/3.0/allergy-clinical-status",
+    "element" : [{
+      "code" : "unconfirmed",
+      "noMap" : true
+    },
+    {
+      "code" : "inactive",
+      "target" : [{
+        "code" : "inactive",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "refuted",
+      "noMap" : true
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "noMap" : true
+    },
+    {
+      "code" : "confirmed",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "resolved",
+      "target" : [{
+        "code" : "resolved",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

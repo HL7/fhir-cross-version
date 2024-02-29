@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group ManufacturedItemDefinition(source src : ManufacturedItemDefinitionR4B, target tgt : ManufacturedItemDefinitionR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ManufacturedItemDefinition.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/mid.status-4bto5', 'code');
   src.manufacturedDoseForm -> tgt.manufacturedDoseForm;
   src.unitOfPresentation -> tgt.unitOfPresentation;
   src.manufacturer -> tgt.manufacturer;

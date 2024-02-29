@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.re.re.conditionalRead-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.conditionalRead-4bto5",
+  "name" : "CapabilityStatement.rest.resource.conditionalRead4bto5",
+  "title" : "Mapping for CapabilityStatement.rest.resource.conditionalRead from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalRead",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalRead",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/conditional-read-status",
+    "target" : "http://hl7.org/fhir/5.0/conditional-read-status",
+    "element" : [{
+      "code" : "not-supported",
+      "target" : [{
+        "code" : "not-supported",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "modified-since",
+      "target" : [{
+        "code" : "modified-since",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "full-support",
+      "target" : [{
+        "code" : "full-support",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-match",
+      "target" : [{
+        "code" : "not-match",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

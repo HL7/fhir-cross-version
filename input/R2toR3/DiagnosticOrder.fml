@@ -21,8 +21,8 @@ group DiagnosticOrder(source src : DiagnosticOrderR2, target tgt : ProcedureRequ
   src.reason -> tgt.reasonCode "DiagnosticOrder-reason";
   src.supportingInformation -> tgt.supportingInfo "DiagnosticOrder-supportingInformation";
   src.specimen -> tgt.specimen "DiagnosticOrder-reason";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DiagnosticOrder.status-ProcedureRequest.status-2to3', 'code') "DiagnosticOrder-status";
-  src.status as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DiagnosticOrder.status-ProcedureRequest.intent-2to3', 'code') "DiagnosticOrder-intent";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dgo.status-pcrq.status-2to3', 'code') "DiagnosticOrder-status";
+  src.status as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dgo.status-pcrq.intent-2to3', 'code') "DiagnosticOrder-intent";
   src.priority -> tgt.priority "DiagnosticOrder-priority";
   src.event as vs where status = 'requested' then doEvent(vs, tgt) "DiagnosticOrder-event";
   src.item only_one as vs then doItem(vs, tgt) "DiagnosticOrder-item";

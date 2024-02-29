@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Ingredient(source src : IngredientR5, target tgt : IngredientR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Ingredient.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ing.status-5to4b', 'code');
   src.for -> tgt.for;
   src.role -> tgt.role;
   src.function -> tgt.function;
@@ -20,7 +20,7 @@ group Ingredient(source src : IngredientR5, target tgt : IngredientR4B) extends 
 }
 
 group IngredientManufacturer(source src, target tgt) extends BackboneElement {
-  src.role as v -> tgt.role = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Ingredient.manufacturer.role-5to4b', 'code');
+  src.role as v -> tgt.role = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ing.ma.role-5to4b', 'code');
   src.manufacturer -> tgt.manufacturer;
 }
 

@@ -14,9 +14,9 @@ group DeviceRequest(source src : DeviceRequestR5, target tgt : DeviceRequestR4) 
   src.instantiatesUri -> tgt.instantiatesUri;
   src.basedOn -> tgt.basedOn;
   src.groupIdentifier -> tgt.groupIdentifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceRequest.status-5to4', 'code');
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceRequest.intent-5to4', 'code');
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceRequest.priority-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dur.status-5to4', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dur.intent-5to4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dur.priority-5to4', 'code');
   src.code -> tgt.code;
   src.parameter as s -> tgt.parameter as t then DeviceRequestParameter(s, t);
   src.subject -> tgt.subject;

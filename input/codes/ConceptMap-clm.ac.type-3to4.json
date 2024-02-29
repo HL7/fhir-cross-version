@@ -1,0 +1,7668 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "clm.ac.type-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clm.ac.type-3to4",
+  "name" : "Claim.accident.type3to4",
+  "title" : "Mapping for Claim.accident.type from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.accident.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Claim#Claim.accident.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/v3/ActCode",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "element" : [{
+      "code" : "1",
+      "target" : [{
+        "code" : "1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "10",
+      "target" : [{
+        "code" : "10",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "11",
+      "target" : [{
+        "code" : "11",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "12",
+      "target" : [{
+        "code" : "12",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "13",
+      "target" : [{
+        "code" : "13",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "14",
+      "target" : [{
+        "code" : "14",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "15",
+      "target" : [{
+        "code" : "15",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "16",
+      "target" : [{
+        "code" : "16",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "17",
+      "target" : [{
+        "code" : "17",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "18",
+      "target" : [{
+        "code" : "18",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "19",
+      "target" : [{
+        "code" : "19",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "2",
+      "target" : [{
+        "code" : "2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "20",
+      "target" : [{
+        "code" : "20",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "21",
+      "target" : [{
+        "code" : "21",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "21611-9",
+      "target" : [{
+        "code" : "21611-9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "21612-7",
+      "target" : [{
+        "code" : "21612-7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "22",
+      "target" : [{
+        "code" : "22",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "23",
+      "target" : [{
+        "code" : "23",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "29553-5",
+      "target" : [{
+        "code" : "29553-5",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "3",
+      "target" : [{
+        "code" : "3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "30525-0",
+      "target" : [{
+        "code" : "30525-0",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "30972-4",
+      "target" : [{
+        "code" : "30972-4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "42CFRPart2",
+      "target" : [{
+        "code" : "42CFRPart2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "5",
+      "target" : [{
+        "code" : "5",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "6",
+      "target" : [{
+        "code" : "6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "7",
+      "target" : [{
+        "code" : "7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "8",
+      "target" : [{
+        "code" : "8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "9",
+      "target" : [{
+        "code" : "9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AA",
+      "target" : [{
+        "code" : "AA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AALC",
+      "target" : [{
+        "code" : "AALC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AAMC",
+      "target" : [{
+        "code" : "AAMC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ABHC",
+      "target" : [{
+        "code" : "ABHC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ABUSE",
+      "target" : [{
+        "code" : "ABUSE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACAC",
+      "target" : [{
+        "code" : "ACAC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACADR",
+      "target" : [{
+        "code" : "ACADR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACALL",
+      "target" : [{
+        "code" : "ACALL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACALLG",
+      "target" : [{
+        "code" : "ACALLG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACCONS",
+      "target" : [{
+        "code" : "ACCONS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACCTRECEIVABLE",
+      "target" : [{
+        "code" : "ACCTRECEIVABLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACDEMO",
+      "target" : [{
+        "code" : "ACDEMO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACDI",
+      "target" : [{
+        "code" : "ACDI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACH",
+      "target" : [{
+        "code" : "ACH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACHC",
+      "target" : [{
+        "code" : "ACHC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACID",
+      "target" : [{
+        "code" : "ACID",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACIMMUN",
+      "target" : [{
+        "code" : "ACIMMUN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACLAB",
+      "target" : [{
+        "code" : "ACLAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACMED",
+      "target" : [{
+        "code" : "ACMED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACMEDC",
+      "target" : [{
+        "code" : "ACMEDC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACMEN",
+      "target" : [{
+        "code" : "ACMEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACOBS",
+      "target" : [{
+        "code" : "ACOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACPOLPRG",
+      "target" : [{
+        "code" : "ACPOLPRG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACPROV",
+      "target" : [{
+        "code" : "ACPROV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACPSERV",
+      "target" : [{
+        "code" : "ACPSERV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACSUBSTAB",
+      "target" : [{
+        "code" : "ACSUBSTAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACU",
+      "target" : [{
+        "code" : "ACU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACUTE",
+      "target" : [{
+        "code" : "ACUTE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADALRT",
+      "target" : [{
+        "code" : "ADALRT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADMDX",
+      "target" : [{
+        "code" : "ADMDX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNFPPELAT",
+      "target" : [{
+        "code" : "ADNFPPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNFPPELCT",
+      "target" : [{
+        "code" : "ADNFPPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNFPPMNAT",
+      "target" : [{
+        "code" : "ADNFPPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNFPPMNCT",
+      "target" : [{
+        "code" : "ADNFPPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNFSPELAT",
+      "target" : [{
+        "code" : "ADNFSPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNFSPELCT",
+      "target" : [{
+        "code" : "ADNFSPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNFSPMNAT",
+      "target" : [{
+        "code" : "ADNFSPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNFSPMNCT",
+      "target" : [{
+        "code" : "ADNFSPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNPPPELAT",
+      "target" : [{
+        "code" : "ADNPPPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNPPPELCT",
+      "target" : [{
+        "code" : "ADNPPPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNPPPMNAT",
+      "target" : [{
+        "code" : "ADNPPPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNPPPMNCT",
+      "target" : [{
+        "code" : "ADNPPPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNPSPELAT",
+      "target" : [{
+        "code" : "ADNPSPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNPSPELCT",
+      "target" : [{
+        "code" : "ADNPSPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNPSPMNAT",
+      "target" : [{
+        "code" : "ADNPSPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADNPSPMNCT",
+      "target" : [{
+        "code" : "ADNPSPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADOL",
+      "target" : [{
+        "code" : "ADOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADPPPPELAT",
+      "target" : [{
+        "code" : "ADPPPPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADPPPPELCT",
+      "target" : [{
+        "code" : "ADPPPPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADPPPPMNAT",
+      "target" : [{
+        "code" : "ADPPPPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADPPPPMNCT",
+      "target" : [{
+        "code" : "ADPPPPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADPPSPELAT",
+      "target" : [{
+        "code" : "ADPPSPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADPPSPELCT",
+      "target" : [{
+        "code" : "ADPPSPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADPPSPMNAT",
+      "target" : [{
+        "code" : "ADPPSPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADPPSPMNCT",
+      "target" : [{
+        "code" : "ADPPSPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADRFPPELAT",
+      "target" : [{
+        "code" : "ADRFPPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADRFPPELCT",
+      "target" : [{
+        "code" : "ADRFPPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADRFPPMNAT",
+      "target" : [{
+        "code" : "ADRFPPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADRFPPMNCT",
+      "target" : [{
+        "code" : "ADRFPPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADRFSPELAT",
+      "target" : [{
+        "code" : "ADRFSPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADRFSPELCT",
+      "target" : [{
+        "code" : "ADRFSPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADRFSPMNAT",
+      "target" : [{
+        "code" : "ADRFSPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADRFSPMNCT",
+      "target" : [{
+        "code" : "ADRFSPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADVERSE_REACTION",
+      "target" : [{
+        "code" : "ADVERSE_REACTION",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AE",
+      "target" : [{
+        "code" : "AE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AFOOT",
+      "target" : [{
+        "code" : "AFOOT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AFTHRS",
+      "target" : [{
+        "code" : "AFTHRS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AGE",
+      "target" : [{
+        "code" : "AGE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AGGREGATE",
+      "target" : [{
+        "code" : "AGGREGATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AHOC",
+      "target" : [{
+        "code" : "AHOC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AIRTRNS",
+      "target" : [{
+        "code" : "AIRTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALC",
+      "target" : [{
+        "code" : "ALC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALEC",
+      "target" : [{
+        "code" : "ALEC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALG",
+      "target" : [{
+        "code" : "ALG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALGY",
+      "target" : [{
+        "code" : "ALGY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALK",
+      "target" : [{
+        "code" : "ALK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALLCAT",
+      "target" : [{
+        "code" : "ALLCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALLDONE",
+      "target" : [{
+        "code" : "ALLDONE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALLERLE",
+      "target" : [{
+        "code" : "ALLERLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALLERLREV",
+      "target" : [{
+        "code" : "ALLERLREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALLGCAT",
+      "target" : [{
+        "code" : "ALLGCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALRTENDLATE",
+      "target" : [{
+        "code" : "ALRTENDLATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALRTSTRTLATE",
+      "target" : [{
+        "code" : "ALRTSTRTLATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALTC",
+      "target" : [{
+        "code" : "ALTC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AMB",
+      "target" : [{
+        "code" : "AMB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AMBAIR",
+      "target" : [{
+        "code" : "AMBAIR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AMBGRND",
+      "target" : [{
+        "code" : "AMBGRND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AMBHELO",
+      "target" : [{
+        "code" : "AMBHELO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AMBT",
+      "target" : [{
+        "code" : "AMBT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANANTRNS",
+      "target" : [{
+        "code" : "ANANTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANF",
+      "target" : [{
+        "code" : "ANF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANHUMTRNS",
+      "target" : [{
+        "code" : "ANHUMTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANNDI",
+      "target" : [{
+        "code" : "ANNDI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANNGEN",
+      "target" : [{
+        "code" : "ANNGEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANNIMM",
+      "target" : [{
+        "code" : "ANNIMM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANNLAB",
+      "target" : [{
+        "code" : "ANNLAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANNMED",
+      "target" : [{
+        "code" : "ANNMED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANNU",
+      "target" : [{
+        "code" : "ANNU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANONY",
+      "target" : [{
+        "code" : "ANONY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AOD",
+      "target" : [{
+        "code" : "AOD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AOSC",
+      "target" : [{
+        "code" : "AOSC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR",
+      "target" : [{
+        "code" : "AR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ARCAT",
+      "target" : [{
+        "code" : "ARCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ARTBLD",
+      "target" : [{
+        "code" : "ARTBLD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AS",
+      "target" : [{
+        "code" : "AS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ASSERTION",
+      "target" : [{
+        "code" : "ASSERTION",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUDIT",
+      "target" : [{
+        "code" : "AUDIT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUDTR",
+      "target" : [{
+        "code" : "AUDTR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUTH",
+      "target" : [{
+        "code" : "AUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUTO",
+      "target" : [{
+        "code" : "AUTO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUTO-HIGH",
+      "target" : [{
+        "code" : "AUTO-HIGH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUTO-LOW",
+      "target" : [{
+        "code" : "AUTO-LOW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUTOATTCH",
+      "target" : [{
+        "code" : "AUTOATTCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUTOPOL",
+      "target" : [{
+        "code" : "AUTOPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AVAILABLE",
+      "target" : [{
+        "code" : "AVAILABLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ActTrustPolicyType",
+      "target" : [{
+        "code" : "ActTrustPolicyType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "B",
+      "target" : [{
+        "code" : "B",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BDYFLDTRNS",
+      "target" : [{
+        "code" : "BDYFLDTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BLDTRNS",
+      "target" : [{
+        "code" : "BLDTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BLK",
+      "target" : [{
+        "code" : "BLK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BONUS",
+      "target" : [{
+        "code" : "BONUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BOOSTER",
+      "target" : [{
+        "code" : "BOOSTER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BR",
+      "target" : [{
+        "code" : "BR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BUS",
+      "target" : [{
+        "code" : "BUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C",
+      "target" : [{
+        "code" : "C",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CACC",
+      "target" : [{
+        "code" : "CACC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CACS",
+      "target" : [{
+        "code" : "CACS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAIC",
+      "target" : [{
+        "code" : "CAIC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAMC",
+      "target" : [{
+        "code" : "CAMC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAMI",
+      "target" : [{
+        "code" : "CAMI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CANC",
+      "target" : [{
+        "code" : "CANC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CANCAPT",
+      "target" : [{
+        "code" : "CANCAPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CANPRG",
+      "target" : [{
+        "code" : "CANPRG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAP",
+      "target" : [{
+        "code" : "CAP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAPC",
+      "target" : [{
+        "code" : "CAPC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CARD",
+      "target" : [{
+        "code" : "CARD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CARELIST",
+      "target" : [{
+        "code" : "CARELIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CASESER",
+      "target" : [{
+        "code" : "CASESER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CASH",
+      "target" : [{
+        "code" : "CASH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAST",
+      "target" : [{
+        "code" : "CAST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CBAR",
+      "target" : [{
+        "code" : "CBAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CBGC",
+      "target" : [{
+        "code" : "CBGC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CC",
+      "target" : [{
+        "code" : "CC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CCAD",
+      "target" : [{
+        "code" : "CCAD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CCAR",
+      "target" : [{
+        "code" : "CCAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CCCC",
+      "target" : [{
+        "code" : "CCCC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CCGC",
+      "target" : [{
+        "code" : "CCGC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CCPC",
+      "target" : [{
+        "code" : "CCPC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CCSC",
+      "target" : [{
+        "code" : "CCSC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CDEC",
+      "target" : [{
+        "code" : "CDEC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CDEP",
+      "target" : [{
+        "code" : "CDEP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CDGD",
+      "target" : [{
+        "code" : "CDGD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CDIA",
+      "target" : [{
+        "code" : "CDIA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CDIO",
+      "target" : [{
+        "code" : "CDIO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CDRC",
+      "target" : [{
+        "code" : "CDRC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CDSREV",
+      "target" : [{
+        "code" : "CDSREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CEL",
+      "target" : [{
+        "code" : "CEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CEMC",
+      "target" : [{
+        "code" : "CEMC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CEPI",
+      "target" : [{
+        "code" : "CEPI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CFEL",
+      "target" : [{
+        "code" : "CFEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CFPC",
+      "target" : [{
+        "code" : "CFPC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CFWD",
+      "target" : [{
+        "code" : "CFWD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHAR",
+      "target" : [{
+        "code" : "CHAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHFC",
+      "target" : [{
+        "code" : "CHFC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHK",
+      "target" : [{
+        "code" : "CHK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHLDCARE",
+      "target" : [{
+        "code" : "CHLDCARE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHR",
+      "target" : [{
+        "code" : "CHR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHRG",
+      "target" : [{
+        "code" : "CHRG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHRO",
+      "target" : [{
+        "code" : "CHRO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHRON",
+      "target" : [{
+        "code" : "CHRON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHYP",
+      "target" : [{
+        "code" : "CHYP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CIMC",
+      "target" : [{
+        "code" : "CIMC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CIRCLE",
+      "target" : [{
+        "code" : "CIRCLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLINNOTEE",
+      "target" : [{
+        "code" : "CLINNOTEE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLINNOTEREV",
+      "target" : [{
+        "code" : "CLINNOTEREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLSSRM",
+      "target" : [{
+        "code" : "CLSSRM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CMGC",
+      "target" : [{
+        "code" : "CMGC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CMIH",
+      "target" : [{
+        "code" : "CMIH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CMPMSRMTH",
+      "target" : [{
+        "code" : "CMPMSRMTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CMPMSRSCRWGHT",
+      "target" : [{
+        "code" : "CMPMSRSCRWGHT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CMSC",
+      "target" : [{
+        "code" : "CMSC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CNEC",
+      "target" : [{
+        "code" : "CNEC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CNMC",
+      "target" : [{
+        "code" : "CNMC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CNQC",
+      "target" : [{
+        "code" : "CNQC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CNSC",
+      "target" : [{
+        "code" : "CNSC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COBSCAT",
+      "target" : [{
+        "code" : "COBSCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CODE_DEPREC",
+      "target" : [{
+        "code" : "CODE_DEPREC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CODE_INVAL",
+      "target" : [{
+        "code" : "CODE_INVAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COGC",
+      "target" : [{
+        "code" : "COGC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COIN",
+      "target" : [{
+        "code" : "COIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COINS",
+      "target" : [{
+        "code" : "COINS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COJR",
+      "target" : [{
+        "code" : "COJR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COL",
+      "target" : [{
+        "code" : "COL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COMC",
+      "target" : [{
+        "code" : "COMC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COMPLY",
+      "target" : [{
+        "code" : "COMPLY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COMPT",
+      "target" : [{
+        "code" : "COMPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONC",
+      "target" : [{
+        "code" : "CONC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COND",
+      "target" : [{
+        "code" : "COND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONDLIST",
+      "target" : [{
+        "code" : "CONDLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONSUMPTION",
+      "target" : [{
+        "code" : "CONSUMPTION",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONT",
+      "target" : [{
+        "code" : "CONT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONTF",
+      "target" : [{
+        "code" : "CONTF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONVEYNC",
+      "target" : [{
+        "code" : "CONVEYNC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COPAY",
+      "target" : [{
+        "code" : "COPAY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COPAYMENT",
+      "target" : [{
+        "code" : "COPAYMENT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COPC",
+      "target" : [{
+        "code" : "COPC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COPD",
+      "target" : [{
+        "code" : "COPD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COPY",
+      "target" : [{
+        "code" : "COPY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CORT",
+      "target" : [{
+        "code" : "CORT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COSC",
+      "target" : [{
+        "code" : "COSC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COTC",
+      "target" : [{
+        "code" : "COTC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COVGE",
+      "target" : [{
+        "code" : "COVGE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COVMX",
+      "target" : [{
+        "code" : "COVMX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COVPOL",
+      "target" : [{
+        "code" : "COVPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COVPRD",
+      "target" : [{
+        "code" : "COVPRD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPAD",
+      "target" : [{
+        "code" : "CPAD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPEC",
+      "target" : [{
+        "code" : "CPEC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPGC",
+      "target" : [{
+        "code" : "CPGC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPHC",
+      "target" : [{
+        "code" : "CPHC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPINV",
+      "target" : [{
+        "code" : "CPINV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYCC",
+      "target" : [{
+        "code" : "CPLYCC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYCD",
+      "target" : [{
+        "code" : "CPLYCD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYJPP",
+      "target" : [{
+        "code" : "CPLYJPP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYOPP",
+      "target" : [{
+        "code" : "CPLYOPP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYOSP",
+      "target" : [{
+        "code" : "CPLYOSP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYPOL",
+      "target" : [{
+        "code" : "CPLYPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPND",
+      "target" : [{
+        "code" : "CPND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPNDDRGING",
+      "target" : [{
+        "code" : "CPNDDRGING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPNDINDING",
+      "target" : [{
+        "code" : "CPNDINDING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPNDSUPING",
+      "target" : [{
+        "code" : "CPNDSUPING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPRC",
+      "target" : [{
+        "code" : "CPRC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPSC",
+      "target" : [{
+        "code" : "CPSC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPST",
+      "target" : [{
+        "code" : "CPST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPTM",
+      "target" : [{
+        "code" : "CPTM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPYC",
+      "target" : [{
+        "code" : "CPYC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CREACT",
+      "target" : [{
+        "code" : "CREACT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CRIME",
+      "target" : [{
+        "code" : "CRIME",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CRIT",
+      "target" : [{
+        "code" : "CRIT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CROC",
+      "target" : [{
+        "code" : "CROC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CRPC",
+      "target" : [{
+        "code" : "CRPC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CRS",
+      "target" : [{
+        "code" : "CRS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CSDM",
+      "target" : [{
+        "code" : "CSDM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CSIC",
+      "target" : [{
+        "code" : "CSIC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CSINV",
+      "target" : [{
+        "code" : "CSINV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CSLD",
+      "target" : [{
+        "code" : "CSLD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CSPINV",
+      "target" : [{
+        "code" : "CSPINV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CSPT",
+      "target" : [{
+        "code" : "CSPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CSUC",
+      "target" : [{
+        "code" : "CSUC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CTBU",
+      "target" : [{
+        "code" : "CTBU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CTLSUB",
+      "target" : [{
+        "code" : "CTLSUB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CTMO",
+      "target" : [{
+        "code" : "CTMO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CTSC",
+      "target" : [{
+        "code" : "CTSC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CURC",
+      "target" : [{
+        "code" : "CURC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CURMEDLIST",
+      "target" : [{
+        "code" : "CURMEDLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CURRENT",
+      "target" : [{
+        "code" : "CURRENT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CVDC",
+      "target" : [{
+        "code" : "CVDC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CVSC",
+      "target" : [{
+        "code" : "CVSC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CWMA",
+      "target" : [{
+        "code" : "CWMA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CWOH",
+      "target" : [{
+        "code" : "CWOH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CommonRule",
+      "target" : [{
+        "code" : "CommonRule",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DACT",
+      "target" : [{
+        "code" : "DACT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DALG",
+      "target" : [{
+        "code" : "DALG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DAY",
+      "target" : [{
+        "code" : "DAY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DDP",
+      "target" : [{
+        "code" : "DDP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DECLASSIFYLABEL",
+      "target" : [{
+        "code" : "DECLASSIFYLABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEDUCT",
+      "target" : [{
+        "code" : "DEDUCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEDUCTIBLE",
+      "target" : [{
+        "code" : "DEDUCTIBLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEF",
+      "target" : [{
+        "code" : "DEF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEFB",
+      "target" : [{
+        "code" : "DEFB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEID",
+      "target" : [{
+        "code" : "DEID",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DELAU",
+      "target" : [{
+        "code" : "DELAU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEMO",
+      "target" : [{
+        "code" : "DEMO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEMOCAT",
+      "target" : [{
+        "code" : "DEMOCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DENEX",
+      "target" : [{
+        "code" : "DENEX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DENEXCEP",
+      "target" : [{
+        "code" : "DENEXCEP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DENOM",
+      "target" : [{
+        "code" : "DENOM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DENTAL",
+      "target" : [{
+        "code" : "DENTAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DENTPRG",
+      "target" : [{
+        "code" : "DENTPRG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DERMTRNS",
+      "target" : [{
+        "code" : "DERMTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DF",
+      "target" : [{
+        "code" : "DF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DIA",
+      "target" : [{
+        "code" : "DIA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DIAGLISTE",
+      "target" : [{
+        "code" : "DIAGLISTE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DIAGLISTREV",
+      "target" : [{
+        "code" : "DIAGLISTREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DICAT",
+      "target" : [{
+        "code" : "DICAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DIET",
+      "target" : [{
+        "code" : "DIET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DILUTION",
+      "target" : [{
+        "code" : "DILUTION",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DINT",
+      "target" : [{
+        "code" : "DINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DIS",
+      "target" : [{
+        "code" : "DIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISC",
+      "target" : [{
+        "code" : "DISC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISCHINSTE",
+      "target" : [{
+        "code" : "DISCHINSTE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISCHSUME",
+      "target" : [{
+        "code" : "DISCHSUME",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISCHSUMREV",
+      "target" : [{
+        "code" : "DISCHSUMREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISCMEDLIST",
+      "target" : [{
+        "code" : "DISCMEDLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISDX",
+      "target" : [{
+        "code" : "DISDX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISEASE",
+      "target" : [{
+        "code" : "DISEASE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISEASEPRG",
+      "target" : [{
+        "code" : "DISEASEPRG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISPLAY",
+      "target" : [{
+        "code" : "DISPLAY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DM",
+      "target" : [{
+        "code" : "DM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DN",
+      "target" : [{
+        "code" : "DN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DNAINT",
+      "target" : [{
+        "code" : "DNAINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DNTL",
+      "target" : [{
+        "code" : "DNTL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOB",
+      "target" : [{
+        "code" : "DOB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOCUMENT",
+      "target" : [{
+        "code" : "DOCUMENT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSE",
+      "target" : [{
+        "code" : "DOSE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSECOND",
+      "target" : [{
+        "code" : "DOSECOND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEDUR",
+      "target" : [{
+        "code" : "DOSEDUR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEDURH",
+      "target" : [{
+        "code" : "DOSEDURH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEDURHIND",
+      "target" : [{
+        "code" : "DOSEDURHIND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEDURL",
+      "target" : [{
+        "code" : "DOSEDURL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEDURLIND",
+      "target" : [{
+        "code" : "DOSEDURLIND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEH",
+      "target" : [{
+        "code" : "DOSEH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEHIND",
+      "target" : [{
+        "code" : "DOSEHIND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEHINDA",
+      "target" : [{
+        "code" : "DOSEHINDA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEHINDSA",
+      "target" : [{
+        "code" : "DOSEHINDSA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEHINDW",
+      "target" : [{
+        "code" : "DOSEHINDW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEIND",
+      "target" : [{
+        "code" : "DOSEIND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEIVL",
+      "target" : [{
+        "code" : "DOSEIVL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEIVLIND",
+      "target" : [{
+        "code" : "DOSEIVLIND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSEL",
+      "target" : [{
+        "code" : "DOSEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSELIND",
+      "target" : [{
+        "code" : "DOSELIND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSELINDA",
+      "target" : [{
+        "code" : "DOSELINDA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSELINDSA",
+      "target" : [{
+        "code" : "DOSELINDSA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOSELINDW",
+      "target" : [{
+        "code" : "DOSELINDW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOWNGRDLABEL",
+      "target" : [{
+        "code" : "DOWNGRDLABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRG",
+      "target" : [{
+        "code" : "DRG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRGIS",
+      "target" : [{
+        "code" : "DRGIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRGRHB",
+      "target" : [{
+        "code" : "DRGRHB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRIVLABEL",
+      "target" : [{
+        "code" : "DRIVLABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRUG",
+      "target" : [{
+        "code" : "DRUG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRUGING",
+      "target" : [{
+        "code" : "DRUGING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRUGPOL",
+      "target" : [{
+        "code" : "DRUGPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRUGPRG",
+      "target" : [{
+        "code" : "DRUGPRG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DSC",
+      "target" : [{
+        "code" : "DSC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DUPTHPCLS",
+      "target" : [{
+        "code" : "DUPTHPCLS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DUPTHPGEN",
+      "target" : [{
+        "code" : "DUPTHPGEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DUPTHPY",
+      "target" : [{
+        "code" : "DUPTHPY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DV",
+      "target" : [{
+        "code" : "DV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DX",
+      "target" : [{
+        "code" : "DX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EALG",
+      "target" : [{
+        "code" : "EALG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EAP",
+      "target" : [{
+        "code" : "EAP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EDU",
+      "target" : [{
+        "code" : "EDU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EFORM",
+      "target" : [{
+        "code" : "EFORM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EHCPOL",
+      "target" : [{
+        "code" : "EHCPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EINT",
+      "target" : [{
+        "code" : "EINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ELG",
+      "target" : [{
+        "code" : "ELG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ELLIPSE",
+      "target" : [{
+        "code" : "ELLIPSE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EM",
+      "target" : [{
+        "code" : "EM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMAUTH",
+      "target" : [{
+        "code" : "EMAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMER",
+      "target" : [{
+        "code" : "EMER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMP",
+      "target" : [{
+        "code" : "EMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMPL",
+      "target" : [{
+        "code" : "EMPL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMRGONLY",
+      "target" : [{
+        "code" : "EMRGONLY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENAINT",
+      "target" : [{
+        "code" : "ENAINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENCRYPT",
+      "target" : [{
+        "code" : "ENCRYPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENCRYPTR",
+      "target" : [{
+        "code" : "ENCRYPTR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENCRYPTT",
+      "target" : [{
+        "code" : "ENCRYPTT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENCRYPTU",
+      "target" : [{
+        "code" : "ENCRYPTU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENDC",
+      "target" : [{
+        "code" : "ENDC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENDLATE",
+      "target" : [{
+        "code" : "ENDLATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENDRENAL",
+      "target" : [{
+        "code" : "ENDRENAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENVTRNS",
+      "target" : [{
+        "code" : "ENVTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EPYMT",
+      "target" : [{
+        "code" : "EPYMT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ESA",
+      "target" : [{
+        "code" : "ESA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ETH",
+      "target" : [{
+        "code" : "ETH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EVNFCTS",
+      "target" : [{
+        "code" : "EVNFCTS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EWB",
+      "target" : [{
+        "code" : "EWB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "F",
+      "target" : [{
+        "code" : "F",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FALG",
+      "target" : [{
+        "code" : "FALG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FALLRISK",
+      "target" : [{
+        "code" : "FALLRISK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FAST",
+      "target" : [{
+        "code" : "FAST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FAX",
+      "target" : [{
+        "code" : "FAX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FD",
+      "target" : [{
+        "code" : "FD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FDACOATING",
+      "target" : [{
+        "code" : "FDACOATING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FDACOLOR",
+      "target" : [{
+        "code" : "FDACOLOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FDAIMPRINTCD",
+      "target" : [{
+        "code" : "FDAIMPRINTCD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FDALOGO",
+      "target" : [{
+        "code" : "FDALOGO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FDASCORING",
+      "target" : [{
+        "code" : "FDASCORING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FDASHAPE",
+      "target" : [{
+        "code" : "FDASHAPE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FDASIZE",
+      "target" : [{
+        "code" : "FDASIZE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FECTRNS",
+      "target" : [{
+        "code" : "FECTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FF",
+      "target" : [{
+        "code" : "FF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FFC",
+      "target" : [{
+        "code" : "FFC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FFCS",
+      "target" : [{
+        "code" : "FFCS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FFP",
+      "target" : [{
+        "code" : "FFP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FFPS",
+      "target" : [{
+        "code" : "FFPS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FFS",
+      "target" : [{
+        "code" : "FFS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FFSS",
+      "target" : [{
+        "code" : "FFSS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FFSTOP",
+      "target" : [{
+        "code" : "FFSTOP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FIBRIN",
+      "target" : [{
+        "code" : "FIBRIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FILT",
+      "target" : [{
+        "code" : "FILT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FINALDT",
+      "target" : [{
+        "code" : "FINALDT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FINBILL",
+      "target" : [{
+        "code" : "FINBILL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FININV",
+      "target" : [{
+        "code" : "FININV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FINT",
+      "target" : [{
+        "code" : "FINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FLD",
+      "target" : [{
+        "code" : "FLD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FLEXP",
+      "target" : [{
+        "code" : "FLEXP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FNAINT",
+      "target" : [{
+        "code" : "FNAINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FNLFEE",
+      "target" : [{
+        "code" : "FNLFEE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FOMTRNS",
+      "target" : [{
+        "code" : "FOMTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FOOD",
+      "target" : [{
+        "code" : "FOOD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FOODTRNS",
+      "target" : [{
+        "code" : "FOODTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FORM",
+      "target" : [{
+        "code" : "FORM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FORMAT",
+      "target" : [{
+        "code" : "FORMAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FORMULA",
+      "target" : [{
+        "code" : "FORMULA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRAMEING",
+      "target" : [{
+        "code" : "FRAMEING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRAUD",
+      "target" : [{
+        "code" : "FRAUD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRSTFEE",
+      "target" : [{
+        "code" : "FRSTFEE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FS",
+      "target" : [{
+        "code" : "FS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FST",
+      "target" : [{
+        "code" : "FST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FULFIL",
+      "target" : [{
+        "code" : "FULFIL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GARN",
+      "target" : [{
+        "code" : "GARN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GDIS",
+      "target" : [{
+        "code" : "GDIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GEALRT",
+      "target" : [{
+        "code" : "GEALRT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GEN",
+      "target" : [{
+        "code" : "GEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GEND",
+      "target" : [{
+        "code" : "GEND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GENDER",
+      "target" : [{
+        "code" : "GENDER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GENE",
+      "target" : [{
+        "code" : "GENE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GENRL",
+      "target" : [{
+        "code" : "GENRL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GF",
+      "target" : [{
+        "code" : "GF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GFTH",
+      "target" : [{
+        "code" : "GFTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GISTIER",
+      "target" : [{
+        "code" : "GISTIER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GOALLIST",
+      "target" : [{
+        "code" : "GOALLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GOVEMP",
+      "target" : [{
+        "code" : "GOVEMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GRADE",
+      "target" : [{
+        "code" : "GRADE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GRANTORCHOICE",
+      "target" : [{
+        "code" : "GRANTORCHOICE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GTIN",
+      "target" : [{
+        "code" : "GTIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GUIDE",
+      "target" : [{
+        "code" : "GUIDE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HCPCSA",
+      "target" : [{
+        "code" : "HCPCSA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HEALTHREC",
+      "target" : [{
+        "code" : "HEALTHREC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HELD",
+      "target" : [{
+        "code" : "HELD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HEMOLYSIS",
+      "target" : [{
+        "code" : "HEMOLYSIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HGHT",
+      "target" : [{
+        "code" : "HGHT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HH",
+      "target" : [{
+        "code" : "HH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HHOBS",
+      "target" : [{
+        "code" : "HHOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIP",
+      "target" : [{
+        "code" : "HIP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIPAANOPP",
+      "target" : [{
+        "code" : "HIPAANOPP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIPAAPsyNotes",
+      "target" : [{
+        "code" : "HIPAAPsyNotes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIPAASelfPay",
+      "target" : [{
+        "code" : "HIPAASelfPay",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIRISK",
+      "target" : [{
+        "code" : "HIRISK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HISTMEDLIST",
+      "target" : [{
+        "code" : "HISTMEDLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HISTORIC",
+      "target" : [{
+        "code" : "HISTORIC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV",
+      "target" : [{
+        "code" : "HIV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIVAIDS",
+      "target" : [{
+        "code" : "HIVAIDS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HLTHCARE",
+      "target" : [{
+        "code" : "HLTHCARE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HMO",
+      "target" : [{
+        "code" : "HMO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOMECARE",
+      "target" : [{
+        "code" : "HOMECARE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOSPPTNT",
+      "target" : [{
+        "code" : "HOSPPTNT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOSPVSTR",
+      "target" : [{
+        "code" : "HOSPVSTR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOUSEHLD",
+      "target" : [{
+        "code" : "HOUSEHLD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HRCOMPT",
+      "target" : [{
+        "code" : "HRCOMPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HSAPOL",
+      "target" : [{
+        "code" : "HSAPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HST",
+      "target" : [{
+        "code" : "HST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HUAPRV",
+      "target" : [{
+        "code" : "HUAPRV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HUMHUMTRNS",
+      "target" : [{
+        "code" : "HUMHUMTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "I",
+      "target" : [{
+        "code" : "I",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ICOL",
+      "target" : [{
+        "code" : "ICOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ICTERUS",
+      "target" : [{
+        "code" : "ICTERUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ID",
+      "target" : [{
+        "code" : "ID",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IDSCL",
+      "target" : [{
+        "code" : "IDSCL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IDUR",
+      "target" : [{
+        "code" : "IDUR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ILLEGAL",
+      "target" : [{
+        "code" : "ILLEGAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMG",
+      "target" : [{
+        "code" : "IMG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMMLE",
+      "target" : [{
+        "code" : "IMMLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMMLREV",
+      "target" : [{
+        "code" : "IMMLREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMMUCAT",
+      "target" : [{
+        "code" : "IMMUCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMMUNIZ",
+      "target" : [{
+        "code" : "IMMUNIZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMP",
+      "target" : [{
+        "code" : "IMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMPLIED",
+      "target" : [{
+        "code" : "IMPLIED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMPLIEDD",
+      "target" : [{
+        "code" : "IMPLIEDD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IND",
+      "target" : [{
+        "code" : "IND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IND01",
+      "target" : [{
+        "code" : "IND01",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IND02",
+      "target" : [{
+        "code" : "IND02",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IND03",
+      "target" : [{
+        "code" : "IND03",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IND04",
+      "target" : [{
+        "code" : "IND04",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IND05",
+      "target" : [{
+        "code" : "IND05",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INDTRNS",
+      "target" : [{
+        "code" : "INDTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INFA",
+      "target" : [{
+        "code" : "INFA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INFAO",
+      "target" : [{
+        "code" : "INFAO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INFASO",
+      "target" : [{
+        "code" : "INFASO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INFAUT",
+      "target" : [{
+        "code" : "INFAUT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INFCON",
+      "target" : [{
+        "code" : "INFCON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INFCRT",
+      "target" : [{
+        "code" : "INFCRT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INFDNG",
+      "target" : [{
+        "code" : "INFDNG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INFEMER",
+      "target" : [{
+        "code" : "INFEMER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INFPWR",
+      "target" : [{
+        "code" : "INFPWR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INFREG",
+      "target" : [{
+        "code" : "INFREG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INITIAL",
+      "target" : [{
+        "code" : "INITIAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INITIMMUNIZ",
+      "target" : [{
+        "code" : "INITIMMUNIZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INMATE",
+      "target" : [{
+        "code" : "INMATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INT",
+      "target" : [{
+        "code" : "INT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INTDX",
+      "target" : [{
+        "code" : "INTDX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INTERVAL",
+      "target" : [{
+        "code" : "INTERVAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INTFR",
+      "target" : [{
+        "code" : "INTFR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INTIMATE",
+      "target" : [{
+        "code" : "INTIMATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INTOLIST",
+      "target" : [{
+        "code" : "INTOLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INV",
+      "target" : [{
+        "code" : "INV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INVOICE",
+      "target" : [{
+        "code" : "INVOICE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INVTYPE",
+      "target" : [{
+        "code" : "INVTYPE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IP",
+      "target" : [{
+        "code" : "IP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IPOP",
+      "target" : [{
+        "code" : "IPOP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IPPOP",
+      "target" : [{
+        "code" : "IPPOP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IRDSCL",
+      "target" : [{
+        "code" : "IRDSCL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ISOL",
+      "target" : [{
+        "code" : "ISOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ISSUE",
+      "target" : [{
+        "code" : "ISSUE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ITMCNT",
+      "target" : [{
+        "code" : "ITMCNT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KEY",
+      "target" : [{
+        "code" : "KEY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KEY204",
+      "target" : [{
+        "code" : "KEY204",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KEY205",
+      "target" : [{
+        "code" : "KEY205",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KEY206",
+      "target" : [{
+        "code" : "KEY206",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KSUBJ",
+      "target" : [{
+        "code" : "KSUBJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KSUBT",
+      "target" : [{
+        "code" : "KSUBT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "L",
+      "target" : [{
+        "code" : "L",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LAB",
+      "target" : [{
+        "code" : "LAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LABCAT",
+      "target" : [{
+        "code" : "LABCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LABEL",
+      "target" : [{
+        "code" : "LABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LABOE",
+      "target" : [{
+        "code" : "LABOE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LABRESULTS",
+      "target" : [{
+        "code" : "LABRESULTS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LABRREV",
+      "target" : [{
+        "code" : "LABRREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LACT",
+      "target" : [{
+        "code" : "LACT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LACTTRNS",
+      "target" : [{
+        "code" : "LACTTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LATE",
+      "target" : [{
+        "code" : "LATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LAWENF",
+      "target" : [{
+        "code" : "LAWENF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LDLP",
+      "target" : [{
+        "code" : "LDLP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LENSING",
+      "target" : [{
+        "code" : "LENSING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LEN_LONG",
+      "target" : [{
+        "code" : "LEN_LONG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LEN_RANGE",
+      "target" : [{
+        "code" : "LEN_RANGE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LEN_SHORT",
+      "target" : [{
+        "code" : "LEN_SHORT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LF",
+      "target" : [{
+        "code" : "LF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LFEMX",
+      "target" : [{
+        "code" : "LFEMX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LGPC",
+      "target" : [{
+        "code" : "LGPC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LIFE",
+      "target" : [{
+        "code" : "LIFE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LIPEMIA",
+      "target" : [{
+        "code" : "LIPEMIA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LIVARG",
+      "target" : [{
+        "code" : "LIVARG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LOAN",
+      "target" : [{
+        "code" : "LOAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LOC",
+      "target" : [{
+        "code" : "LOC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LOCIS",
+      "target" : [{
+        "code" : "LOCIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LP",
+      "target" : [{
+        "code" : "LP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LQ",
+      "target" : [{
+        "code" : "LQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LS",
+      "target" : [{
+        "code" : "LS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LTC",
+      "target" : [{
+        "code" : "LTC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LTRMCARE",
+      "target" : [{
+        "code" : "LTRMCARE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LU",
+      "target" : [{
+        "code" : "LU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "M",
+      "target" : [{
+        "code" : "M",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MANDPOL",
+      "target" : [{
+        "code" : "MANDPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MANUAL",
+      "target" : [{
+        "code" : "MANUAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MARKUP",
+      "target" : [{
+        "code" : "MARKUP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MARST",
+      "target" : [{
+        "code" : "MARST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MARWLREV",
+      "target" : [{
+        "code" : "MARWLREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MASK",
+      "target" : [{
+        "code" : "MASK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MAXOCCURS",
+      "target" : [{
+        "code" : "MAXOCCURS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MC",
+      "target" : [{
+        "code" : "MC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MCPOL",
+      "target" : [{
+        "code" : "MCPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDOSE",
+      "target" : [{
+        "code" : "MDOSE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MED",
+      "target" : [{
+        "code" : "MED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MEDCCAT",
+      "target" : [{
+        "code" : "MEDCCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MEDLIST",
+      "target" : [{
+        "code" : "MEDLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MEDOE",
+      "target" : [{
+        "code" : "MEDOE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MEDT",
+      "target" : [{
+        "code" : "MEDT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MENCAT",
+      "target" : [{
+        "code" : "MENCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MENTPOL",
+      "target" : [{
+        "code" : "MENTPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MENTPRG",
+      "target" : [{
+        "code" : "MENTPRG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MICROORGRREV",
+      "target" : [{
+        "code" : "MICROORGRREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MICRORREV",
+      "target" : [{
+        "code" : "MICRORREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MICROSENSRREV",
+      "target" : [{
+        "code" : "MICROSENSRREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MILITARY",
+      "target" : [{
+        "code" : "MILITARY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MINEC",
+      "target" : [{
+        "code" : "MINEC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MINFREQ",
+      "target" : [{
+        "code" : "MINFREQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MINOCCURS",
+      "target" : [{
+        "code" : "MINOCCURS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MISSAPT",
+      "target" : [{
+        "code" : "MISSAPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MISSCOND",
+      "target" : [{
+        "code" : "MISSCOND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MISSMAND",
+      "target" : [{
+        "code" : "MISSMAND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MLREV",
+      "target" : [{
+        "code" : "MLREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MODEL",
+      "target" : [{
+        "code" : "MODEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MONTH",
+      "target" : [{
+        "code" : "MONTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MS",
+      "target" : [{
+        "code" : "MS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSD",
+      "target" : [{
+        "code" : "MSD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRADJ",
+      "target" : [{
+        "code" : "MSRADJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRAGG",
+      "target" : [{
+        "code" : "MSRAGG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRIMPROV",
+      "target" : [{
+        "code" : "MSRIMPROV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRJUR",
+      "target" : [{
+        "code" : "MSRJUR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRPOPL",
+      "target" : [{
+        "code" : "MSRPOPL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRPOPLEX",
+      "target" : [{
+        "code" : "MSRPOPLEX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRRPTR",
+      "target" : [{
+        "code" : "MSRRPTR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRRPTTIME",
+      "target" : [{
+        "code" : "MSRRPTTIME",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRSCORE",
+      "target" : [{
+        "code" : "MSRSCORE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRSET",
+      "target" : [{
+        "code" : "MSRSET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRTOPIC",
+      "target" : [{
+        "code" : "MSRTOPIC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRTP",
+      "target" : [{
+        "code" : "MSRTP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSRTYPE",
+      "target" : [{
+        "code" : "MSRTYPE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MVA",
+      "target" : [{
+        "code" : "MVA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "N",
+      "target" : [{
+        "code" : "N",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NAINT",
+      "target" : [{
+        "code" : "NAINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NAT",
+      "target" : [{
+        "code" : "NAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NAUTH",
+      "target" : [{
+        "code" : "NAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NELG",
+      "target" : [{
+        "code" : "NELG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NETAMT",
+      "target" : [{
+        "code" : "NETAMT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NEUT",
+      "target" : [{
+        "code" : "NEUT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NF",
+      "target" : [{
+        "code" : "NF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NHP",
+      "target" : [{
+        "code" : "NHP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOAUTH",
+      "target" : [{
+        "code" : "NOAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOCOLLECT",
+      "target" : [{
+        "code" : "NOCOLLECT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOCONSENT",
+      "target" : [{
+        "code" : "NOCONSENT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NODSCLCD",
+      "target" : [{
+        "code" : "NODSCLCD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NODSCLCDS",
+      "target" : [{
+        "code" : "NODSCLCDS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NODUPS",
+      "target" : [{
+        "code" : "NODUPS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOI",
+      "target" : [{
+        "code" : "NOI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOINTEGRATE",
+      "target" : [{
+        "code" : "NOINTEGRATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOLIST",
+      "target" : [{
+        "code" : "NOLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOMOU",
+      "target" : [{
+        "code" : "NOMOU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NON",
+      "target" : [{
+        "code" : "NON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NONAC",
+      "target" : [{
+        "code" : "NONAC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NONRX",
+      "target" : [{
+        "code" : "NONRX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOORGPOL",
+      "target" : [{
+        "code" : "NOORGPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOPAT",
+      "target" : [{
+        "code" : "NOPAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOPERSIST",
+      "target" : [{
+        "code" : "NOPERSIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOPERSISTP",
+      "target" : [{
+        "code" : "NOPERSISTP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOPP",
+      "target" : [{
+        "code" : "NOPP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NORDSCLCD",
+      "target" : [{
+        "code" : "NORDSCLCD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NORDSCLCDS",
+      "target" : [{
+        "code" : "NORDSCLCDS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NORDSCLW",
+      "target" : [{
+        "code" : "NORDSCLW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NORELINK",
+      "target" : [{
+        "code" : "NORELINK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOREUSE",
+      "target" : [{
+        "code" : "NOREUSE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOSTRNS",
+      "target" : [{
+        "code" : "NOSTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOTACTN",
+      "target" : [{
+        "code" : "NOTACTN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOTEQUIV",
+      "target" : [{
+        "code" : "NOTEQUIV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOTEQUIVGEN",
+      "target" : [{
+        "code" : "NOTEQUIVGEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOTEQUIVTHER",
+      "target" : [{
+        "code" : "NOTEQUIVTHER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOVIP",
+      "target" : [{
+        "code" : "NOVIP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NUMER",
+      "target" : [{
+        "code" : "NUMER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NUMEX",
+      "target" : [{
+        "code" : "NUMEX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "O",
+      "target" : [{
+        "code" : "O",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OBS",
+      "target" : [{
+        "code" : "OBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OBSA",
+      "target" : [{
+        "code" : "OBSA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OBSANTC",
+      "target" : [{
+        "code" : "OBSANTC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OBSANTV",
+      "target" : [{
+        "code" : "OBSANTV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OBSOLETE",
+      "target" : [{
+        "code" : "OBSOLETE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OE",
+      "target" : [{
+        "code" : "OE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OHSINV",
+      "target" : [{
+        "code" : "OHSINV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OINT",
+      "target" : [{
+        "code" : "OINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ONC",
+      "target" : [{
+        "code" : "ONC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ONET",
+      "target" : [{
+        "code" : "ONET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OOJ",
+      "target" : [{
+        "code" : "OOJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OOO",
+      "target" : [{
+        "code" : "OOO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OPTIN",
+      "target" : [{
+        "code" : "OPTIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OPTINR",
+      "target" : [{
+        "code" : "OPTINR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OPTOUT",
+      "target" : [{
+        "code" : "OPTOUT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OPTOUTE",
+      "target" : [{
+        "code" : "OPTOUTE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ORCON",
+      "target" : [{
+        "code" : "ORCON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OREV",
+      "target" : [{
+        "code" : "OREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ORTHO",
+      "target" : [{
+        "code" : "ORTHO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OTC",
+      "target" : [{
+        "code" : "OTC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ObligationPolicy",
+      "target" : [{
+        "code" : "ObligationPolicy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "P",
+      "target" : [{
+        "code" : "P",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAF",
+      "target" : [{
+        "code" : "PAF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAINV",
+      "target" : [{
+        "code" : "PAINV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PALL",
+      "target" : [{
+        "code" : "PALL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAPER",
+      "target" : [{
+        "code" : "PAPER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAR",
+      "target" : [{
+        "code" : "PAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PARTRNS",
+      "target" : [{
+        "code" : "PARTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATDOC",
+      "target" : [{
+        "code" : "PATDOC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATEDUE",
+      "target" : [{
+        "code" : "PATEDUE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATINFO",
+      "target" : [{
+        "code" : "PATINFO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATPREF",
+      "target" : [{
+        "code" : "PATPREF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATPREFALT",
+      "target" : [{
+        "code" : "PATPREFALT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATREPE",
+      "target" : [{
+        "code" : "PATREPE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATREPREV",
+      "target" : [{
+        "code" : "PATREPREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAT_ADV_EVNT",
+      "target" : [{
+        "code" : "PAT_ADV_EVNT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAY",
+      "target" : [{
+        "code" : "PAY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAYEE",
+      "target" : [{
+        "code" : "PAYEE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAYOR",
+      "target" : [{
+        "code" : "PAYOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PBILLACCT",
+      "target" : [{
+        "code" : "PBILLACCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNFPPELAT",
+      "target" : [{
+        "code" : "PDNFPPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNFPPELCT",
+      "target" : [{
+        "code" : "PDNFPPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNFPPMNAT",
+      "target" : [{
+        "code" : "PDNFPPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNFPPMNCT",
+      "target" : [{
+        "code" : "PDNFPPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNFSPELAT",
+      "target" : [{
+        "code" : "PDNFSPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNFSPELCT",
+      "target" : [{
+        "code" : "PDNFSPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNFSPMNAT",
+      "target" : [{
+        "code" : "PDNFSPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNFSPMNCT",
+      "target" : [{
+        "code" : "PDNFSPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNPPPELAT",
+      "target" : [{
+        "code" : "PDNPPPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNPPPELCT",
+      "target" : [{
+        "code" : "PDNPPPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNPPPMNAT",
+      "target" : [{
+        "code" : "PDNPPPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNPPPMNCT",
+      "target" : [{
+        "code" : "PDNPPPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNPSPELAT",
+      "target" : [{
+        "code" : "PDNPSPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNPSPELCT",
+      "target" : [{
+        "code" : "PDNPSPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNPSPMNAT",
+      "target" : [{
+        "code" : "PDNPSPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDNPSPMNCT",
+      "target" : [{
+        "code" : "PDNPSPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDPPPPELAT",
+      "target" : [{
+        "code" : "PDPPPPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDPPPPELCT",
+      "target" : [{
+        "code" : "PDPPPPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDPPPPMNAT",
+      "target" : [{
+        "code" : "PDPPPPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDPPPPMNCT",
+      "target" : [{
+        "code" : "PDPPPPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDPPSPELAT",
+      "target" : [{
+        "code" : "PDPPSPELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDPPSPELCT",
+      "target" : [{
+        "code" : "PDPPSPELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDPPSPMNAT",
+      "target" : [{
+        "code" : "PDPPSPMNAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDPPSPMNCT",
+      "target" : [{
+        "code" : "PDPPSPMNCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDS",
+      "target" : [{
+        "code" : "PDS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PEALRT",
+      "target" : [{
+        "code" : "PEALRT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PED",
+      "target" : [{
+        "code" : "PED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PERFEE",
+      "target" : [{
+        "code" : "PERFEE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PERIOD",
+      "target" : [{
+        "code" : "PERIOD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PERMBNS",
+      "target" : [{
+        "code" : "PERMBNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PERSISTLABEL",
+      "target" : [{
+        "code" : "PERSISTLABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PHAR",
+      "target" : [{
+        "code" : "PHAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PHYRHB",
+      "target" : [{
+        "code" : "PHYRHB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PIE",
+      "target" : [{
+        "code" : "PIE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PINV",
+      "target" : [{
+        "code" : "PINV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PLACE",
+      "target" : [{
+        "code" : "PLACE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PLACTRNS",
+      "target" : [{
+        "code" : "PLACTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PLYDOC",
+      "target" : [{
+        "code" : "PLYDOC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PLYPHRM",
+      "target" : [{
+        "code" : "PLYPHRM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PNC",
+      "target" : [{
+        "code" : "PNC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "POINT",
+      "target" : [{
+        "code" : "POINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "POLY",
+      "target" : [{
+        "code" : "POLY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "POS",
+      "target" : [{
+        "code" : "POS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PPO",
+      "target" : [{
+        "code" : "PPO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PPRD",
+      "target" : [{
+        "code" : "PPRD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRA",
+      "target" : [{
+        "code" : "PRA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRDING",
+      "target" : [{
+        "code" : "PRDING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRDMX",
+      "target" : [{
+        "code" : "PRDMX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRE",
+      "target" : [{
+        "code" : "PRE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PREFSTRENGTH",
+      "target" : [{
+        "code" : "PREFSTRENGTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PREG",
+      "target" : [{
+        "code" : "PREG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRENC",
+      "target" : [{
+        "code" : "PRENC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PREVINEF",
+      "target" : [{
+        "code" : "PREVINEF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRIVMARK",
+      "target" : [{
+        "code" : "PRIVMARK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRLMN",
+      "target" : [{
+        "code" : "PRLMN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRN",
+      "target" : [{
+        "code" : "PRN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROA",
+      "target" : [{
+        "code" : "PROA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROBLIST",
+      "target" : [{
+        "code" : "PROBLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROBLISTE",
+      "target" : [{
+        "code" : "PROBLISTE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROBLISTREV",
+      "target" : [{
+        "code" : "PROBLISTREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROV",
+      "target" : [{
+        "code" : "PROV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRS",
+      "target" : [{
+        "code" : "PRS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRVTRN",
+      "target" : [{
+        "code" : "PRVTRN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PSEUD",
+      "target" : [{
+        "code" : "PSEUD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PST",
+      "target" : [{
+        "code" : "PST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PSVCCAT",
+      "target" : [{
+        "code" : "PSVCCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PSY",
+      "target" : [{
+        "code" : "PSY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PSYCH",
+      "target" : [{
+        "code" : "PSYCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PTNTCARE",
+      "target" : [{
+        "code" : "PTNTCARE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PUBLICPOL",
+      "target" : [{
+        "code" : "PUBLICPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PUBTRN",
+      "target" : [{
+        "code" : "PUBTRN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PYRDELAY",
+      "target" : [{
+        "code" : "PYRDELAY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "R",
+      "target" : [{
+        "code" : "R",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RACE",
+      "target" : [{
+        "code" : "RACE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RADREPE",
+      "target" : [{
+        "code" : "RADREPE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RADREPREV",
+      "target" : [{
+        "code" : "RADREPREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RALG",
+      "target" : [{
+        "code" : "RALG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RAR",
+      "target" : [{
+        "code" : "RAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RAT",
+      "target" : [{
+        "code" : "RAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RD",
+      "target" : [{
+        "code" : "RD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REACT",
+      "target" : [{
+        "code" : "REACT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RECA",
+      "target" : [{
+        "code" : "RECA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RECOV",
+      "target" : [{
+        "code" : "RECOV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REDACT",
+      "target" : [{
+        "code" : "REDACT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REF",
+      "target" : [{
+        "code" : "REF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REFLEX",
+      "target" : [{
+        "code" : "REFLEX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REFNR",
+      "target" : [{
+        "code" : "REFNR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REI",
+      "target" : [{
+        "code" : "REI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REL",
+      "target" : [{
+        "code" : "REL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REMLE",
+      "target" : [{
+        "code" : "REMLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REMLREV",
+      "target" : [{
+        "code" : "REMLREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RENT",
+      "target" : [{
+        "code" : "RENT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REPRESENTATIVE_BEAT",
+      "target" : [{
+        "code" : "REPRESENTATIVE_BEAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REPSERV",
+      "target" : [{
+        "code" : "REPSERV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REP_HALF_LIFE",
+      "target" : [{
+        "code" : "REP_HALF_LIFE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REP_RANGE",
+      "target" : [{
+        "code" : "REP_RANGE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RERUN",
+      "target" : [{
+        "code" : "RERUN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RESCOMPT",
+      "target" : [{
+        "code" : "RESCOMPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RESEARCH",
+      "target" : [{
+        "code" : "RESEARCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RESTOCK",
+      "target" : [{
+        "code" : "RESTOCK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RETIRE",
+      "target" : [{
+        "code" : "RETIRE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RETRO",
+      "target" : [{
+        "code" : "RETRO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REV",
+      "target" : [{
+        "code" : "REV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RF",
+      "target" : [{
+        "code" : "RF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RFC",
+      "target" : [{
+        "code" : "RFC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RFCS",
+      "target" : [{
+        "code" : "RFCS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RFF",
+      "target" : [{
+        "code" : "RFF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RFFS",
+      "target" : [{
+        "code" : "RFFS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RFP",
+      "target" : [{
+        "code" : "RFP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RFPS",
+      "target" : [{
+        "code" : "RFPS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RFS",
+      "target" : [{
+        "code" : "RFS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RHYTHM",
+      "target" : [{
+        "code" : "RHYTHM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RINT",
+      "target" : [{
+        "code" : "RINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RISKASSESS",
+      "target" : [{
+        "code" : "RISKASSESS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RISKLIST",
+      "target" : [{
+        "code" : "RISKLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RMGTCOMPT",
+      "target" : [{
+        "code" : "RMGTCOMPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ROIFS",
+      "target" : [{
+        "code" : "ROIFS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ROIPS",
+      "target" : [{
+        "code" : "ROIPS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ROST",
+      "target" : [{
+        "code" : "ROST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RREACT",
+      "target" : [{
+        "code" : "RREACT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RSDID",
+      "target" : [{
+        "code" : "RSDID",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RSREID",
+      "target" : [{
+        "code" : "RSREID",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RX",
+      "target" : [{
+        "code" : "RX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RXCAT",
+      "target" : [{
+        "code" : "RXCAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RXCINV",
+      "target" : [{
+        "code" : "RXCINV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RXDINV",
+      "target" : [{
+        "code" : "RXDINV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RefrainPolicy",
+      "target" : [{
+        "code" : "RefrainPolicy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "S",
+      "target" : [{
+        "code" : "S",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SA",
+      "target" : [{
+        "code" : "SA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SAC",
+      "target" : [{
+        "code" : "SAC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SAFNET",
+      "target" : [{
+        "code" : "SAFNET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SALE",
+      "target" : [{
+        "code" : "SALE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SBBLELAT",
+      "target" : [{
+        "code" : "SBBLELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SBBLELCT",
+      "target" : [{
+        "code" : "SBBLELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SBFINV",
+      "target" : [{
+        "code" : "SBFINV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SBNFELAT",
+      "target" : [{
+        "code" : "SBNFELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SBNFELCT",
+      "target" : [{
+        "code" : "SBNFELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SBPDELAT",
+      "target" : [{
+        "code" : "SBPDELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SBPDELCT",
+      "target" : [{
+        "code" : "SBPDELCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SCA",
+      "target" : [{
+        "code" : "SCA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SCH",
+      "target" : [{
+        "code" : "SCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SCHL",
+      "target" : [{
+        "code" : "SCHL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SCHLDIV",
+      "target" : [{
+        "code" : "SCHLDIV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SCHOOL",
+      "target" : [{
+        "code" : "SCHOOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SCHOOL2",
+      "target" : [{
+        "code" : "SCHOOL2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SDE",
+      "target" : [{
+        "code" : "SDE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SDV",
+      "target" : [{
+        "code" : "SDV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECALTINTOBS",
+      "target" : [{
+        "code" : "SECALTINTOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECCATOBS",
+      "target" : [{
+        "code" : "SECCATOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECCLASSOBS",
+      "target" : [{
+        "code" : "SECCLASSOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECCONOBS",
+      "target" : [{
+        "code" : "SECCONOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECDATINTOBS",
+      "target" : [{
+        "code" : "SECDATINTOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECINTCONOBS",
+      "target" : [{
+        "code" : "SECINTCONOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECINTOBS",
+      "target" : [{
+        "code" : "SECINTOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECINTPRVABOBS",
+      "target" : [{
+        "code" : "SECINTPRVABOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECINTPRVOBS",
+      "target" : [{
+        "code" : "SECINTPRVOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECINTPRVRBOBS",
+      "target" : [{
+        "code" : "SECINTPRVRBOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECINTSTOBS",
+      "target" : [{
+        "code" : "SECINTSTOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECOBS",
+      "target" : [{
+        "code" : "SECOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SECTRSTOBS",
+      "target" : [{
+        "code" : "SECTRSTOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SENDAPP",
+      "target" : [{
+        "code" : "SENDAPP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SESS",
+      "target" : [{
+        "code" : "SESS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SEV",
+      "target" : [{
+        "code" : "SEV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SEX",
+      "target" : [{
+        "code" : "SEX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SEXTRNS",
+      "target" : [{
+        "code" : "SEXTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SICKLE",
+      "target" : [{
+        "code" : "SICKLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SO",
+      "target" : [{
+        "code" : "SO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SOC",
+      "noMap" : true
+    },
+    {
+      "code" : "SOCIAL",
+      "target" : [{
+        "code" : "SOCIAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SOCIAL2",
+      "target" : [{
+        "code" : "SOCIAL2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SP",
+      "target" : [{
+        "code" : "SP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPEND",
+      "target" : [{
+        "code" : "SPEND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPLCOATING",
+      "target" : [{
+        "code" : "SPLCOATING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPLCOLOR",
+      "target" : [{
+        "code" : "SPLCOLOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPLIMAGE",
+      "target" : [{
+        "code" : "SPLIMAGE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPLIMPRINT",
+      "target" : [{
+        "code" : "SPLIMPRINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPLSCORING",
+      "target" : [{
+        "code" : "SPLSCORING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPLSHAPE",
+      "target" : [{
+        "code" : "SPLSHAPE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPLSIZE",
+      "target" : [{
+        "code" : "SPLSIZE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPLSYMBOL",
+      "target" : [{
+        "code" : "SPLSYMBOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPT",
+      "target" : [{
+        "code" : "SPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SREC",
+      "target" : [{
+        "code" : "SREC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SS",
+      "target" : [{
+        "code" : "SS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SSP",
+      "target" : [{
+        "code" : "SSP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SSTOR",
+      "target" : [{
+        "code" : "SSTOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "STD",
+      "target" : [{
+        "code" : "STD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "STORE",
+      "target" : [{
+        "code" : "STORE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "STRAN",
+      "target" : [{
+        "code" : "STRAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "STRAT",
+      "target" : [{
+        "code" : "STRAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "STRTLATE",
+      "target" : [{
+        "code" : "STRTLATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUBPOL",
+      "target" : [{
+        "code" : "SUBPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUBPRG",
+      "target" : [{
+        "code" : "SUBPRG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUBSIDFFS",
+      "target" : [{
+        "code" : "SUBSIDFFS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUBSIDIZ",
+      "target" : [{
+        "code" : "SUBSIDIZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUBSIDMC",
+      "target" : [{
+        "code" : "SUBSIDMC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUBSTNCE",
+      "target" : [{
+        "code" : "SUBSTNCE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUBSUPP",
+      "target" : [{
+        "code" : "SUBSUPP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUPPLEMENT",
+      "target" : [{
+        "code" : "SUPPLEMENT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUPPRESSED",
+      "target" : [{
+        "code" : "SUPPRESSED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SURG",
+      "target" : [{
+        "code" : "SURG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SURPL",
+      "target" : [{
+        "code" : "SURPL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SecurityPolicy",
+      "target" : [{
+        "code" : "SecurityPolicy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "T",
+      "target" : [{
+        "code" : "T",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TB",
+      "target" : [{
+        "code" : "TB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TBOO",
+      "target" : [{
+        "code" : "TBOO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TBS",
+      "target" : [{
+        "code" : "TBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TEACHER",
+      "target" : [{
+        "code" : "TEACHER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TF",
+      "target" : [{
+        "code" : "TF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TFS",
+      "target" : [{
+        "code" : "TFS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TIME",
+      "target" : [{
+        "code" : "TIME",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TIME_ABSOLUTE",
+      "target" : [{
+        "code" : "TIME_ABSOLUTE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TIME_RELATIVE",
+      "target" : [{
+        "code" : "TIME_RELATIVE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TIMING",
+      "target" : [{
+        "code" : "TIMING",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TLIFE",
+      "target" : [{
+        "code" : "TLIFE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TOOLATE",
+      "target" : [{
+        "code" : "TOOLATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TOOSOON",
+      "target" : [{
+        "code" : "TOOSOON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TPROD",
+      "target" : [{
+        "code" : "TPROD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRAN",
+      "target" : [{
+        "code" : "TRAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRANF",
+      "target" : [{
+        "code" : "TRANF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRANSFER",
+      "target" : [{
+        "code" : "TRANSFER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRAVEL",
+      "target" : [{
+        "code" : "TRAVEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRAVINT",
+      "target" : [{
+        "code" : "TRAVINT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRNSFTRNS",
+      "target" : [{
+        "code" : "TRNSFTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTACCRD",
+      "target" : [{
+        "code" : "TRSTACCRD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTACCRDOBS",
+      "target" : [{
+        "code" : "TRSTACCRDOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTAGRE",
+      "target" : [{
+        "code" : "TRSTAGRE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTAGREOBS",
+      "target" : [{
+        "code" : "TRSTAGREOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTASSUR",
+      "target" : [{
+        "code" : "TRSTASSUR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTCERT",
+      "target" : [{
+        "code" : "TRSTCERT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTCERTOBS",
+      "target" : [{
+        "code" : "TRSTCERTOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTFWK",
+      "target" : [{
+        "code" : "TRSTFWK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTFWKOBS",
+      "target" : [{
+        "code" : "TRSTFWKOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTLOAOBS",
+      "target" : [{
+        "code" : "TRSTLOAOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTMEC",
+      "target" : [{
+        "code" : "TRSTMEC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRSTMECOBS",
+      "target" : [{
+        "code" : "TRSTMECOBS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Title38Section7332",
+      "target" : [{
+        "code" : "Title38Section7332",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UD",
+      "target" : [{
+        "code" : "UD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UDE",
+      "target" : [{
+        "code" : "UDE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UFIL",
+      "target" : [{
+        "code" : "UFIL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ULIFE",
+      "target" : [{
+        "code" : "ULIFE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UMBRL",
+      "target" : [{
+        "code" : "UMBRL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UNINSMOT",
+      "target" : [{
+        "code" : "UNINSMOT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UNITPRICE",
+      "target" : [{
+        "code" : "UNITPRICE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UNITQTY",
+      "target" : [{
+        "code" : "UNITQTY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UNRELAT",
+      "target" : [{
+        "code" : "UNRELAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UNSPSC",
+      "target" : [{
+        "code" : "UNSPSC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UPC",
+      "target" : [{
+        "code" : "UPC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UPGRDLABEL",
+      "target" : [{
+        "code" : "UPGRDLABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "URGENT",
+      "target" : [{
+        "code" : "URGENT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "USE",
+      "target" : [{
+        "code" : "USE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "V",
+      "target" : [{
+        "code" : "V",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VAC_PROBLEM",
+      "target" : [{
+        "code" : "VAC_PROBLEM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VALIDAT",
+      "target" : [{
+        "code" : "VALIDAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VECTRNS",
+      "target" : [{
+        "code" : "VECTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VERBAUTH",
+      "target" : [{
+        "code" : "VERBAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VET",
+      "target" : [{
+        "code" : "VET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VFPAPER",
+      "target" : [{
+        "code" : "VFPAPER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VISPOL",
+      "target" : [{
+        "code" : "VISPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VLI",
+      "target" : [{
+        "code" : "VLI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VOLUME",
+      "target" : [{
+        "code" : "VOLUME",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VR",
+      "target" : [{
+        "code" : "VR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VRXINV",
+      "target" : [{
+        "code" : "VRXINV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "W",
+      "target" : [{
+        "code" : "W",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WATTRNS",
+      "target" : [{
+        "code" : "WATTRNS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WCBPOL",
+      "target" : [{
+        "code" : "WCBPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WEEK",
+      "target" : [{
+        "code" : "WEEK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WELLREMLE",
+      "target" : [{
+        "code" : "WELLREMLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WELLREMLREV",
+      "target" : [{
+        "code" : "WELLREMLREV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WGHT",
+      "target" : [{
+        "code" : "WGHT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WIATTCH",
+      "target" : [{
+        "code" : "WIATTCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WORK2",
+      "target" : [{
+        "code" : "WORK2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WPA",
+      "target" : [{
+        "code" : "WPA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WRKCOMP",
+      "target" : [{
+        "code" : "WRKCOMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "X",
+      "target" : [{
+        "code" : "X",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XRAY",
+      "target" : [{
+        "code" : "XRAY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "YEAR",
+      "target" : [{
+        "code" : "YEAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActAccountCode",
+      "target" : [{
+        "code" : "_ActAccountCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActAdjudicationCode",
+      "target" : [{
+        "code" : "_ActAdjudicationCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActAdjudicationGroupCode",
+      "target" : [{
+        "code" : "_ActAdjudicationGroupCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActAdjudicationResultActionCode",
+      "target" : [{
+        "code" : "_ActAdjudicationResultActionCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActAdministrativeAuthorizationDetectedIssueCode",
+      "target" : [{
+        "code" : "_ActAdministrativeAuthorizationDetectedIssueCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActAdministrativeDetectedIssueCode",
+      "target" : [{
+        "code" : "_ActAdministrativeDetectedIssueCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActAdministrativeDetectedIssueManagementCode",
+      "target" : [{
+        "code" : "_ActAdministrativeDetectedIssueManagementCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActAdministrativeRuleDetectedIssueCode",
+      "target" : [{
+        "code" : "_ActAdministrativeRuleDetectedIssueCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActBillableModifierCode",
+      "target" : [{
+        "code" : "_ActBillableModifierCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActBillableServiceCode",
+      "target" : [{
+        "code" : "_ActBillableServiceCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActBillingArrangementCode",
+      "target" : [{
+        "code" : "_ActBillingArrangementCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActBoundedROICode",
+      "target" : [{
+        "code" : "_ActBoundedROICode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCareProvisionCode",
+      "target" : [{
+        "code" : "_ActCareProvisionCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActClaimAttachmentCategoryCode",
+      "target" : [{
+        "code" : "_ActClaimAttachmentCategoryCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActConsentDirective",
+      "target" : [{
+        "code" : "_ActConsentDirective",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActConsentType",
+      "target" : [{
+        "code" : "_ActConsentType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActContainerRegistrationCode",
+      "target" : [{
+        "code" : "_ActContainerRegistrationCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActControlVariable",
+      "target" : [{
+        "code" : "_ActControlVariable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCoverageAuthorizationConfirmationCode",
+      "target" : [{
+        "code" : "_ActCoverageAuthorizationConfirmationCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCoverageConfirmationCode",
+      "target" : [{
+        "code" : "_ActCoverageConfirmationCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCoverageEligibilityConfirmationCode",
+      "target" : [{
+        "code" : "_ActCoverageEligibilityConfirmationCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCoverageLimitCode",
+      "target" : [{
+        "code" : "_ActCoverageLimitCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCoverageQuantityLimitCode",
+      "target" : [{
+        "code" : "_ActCoverageQuantityLimitCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCoverageTypeCode",
+      "target" : [{
+        "code" : "_ActCoverageTypeCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCoveredPartyLimitCode",
+      "target" : [{
+        "code" : "_ActCoveredPartyLimitCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCredentialedCareCode",
+      "target" : [{
+        "code" : "_ActCredentialedCareCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCredentialedCareProvisionPersonCode",
+      "target" : [{
+        "code" : "_ActCredentialedCareProvisionPersonCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActCredentialedCareProvisionProgramCode",
+      "target" : [{
+        "code" : "_ActCredentialedCareProvisionProgramCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActDetectedIssueManagementCode",
+      "target" : [{
+        "code" : "_ActDetectedIssueManagementCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActEncounterAccommodationCode",
+      "target" : [{
+        "code" : "_ActEncounterAccommodationCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActEncounterCode",
+      "target" : [{
+        "code" : "_ActEncounterCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActExposureCode",
+      "target" : [{
+        "code" : "_ActExposureCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActFinancialTransactionCode",
+      "target" : [{
+        "code" : "_ActFinancialTransactionCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActHealthInsuranceTypeCode",
+      "target" : [{
+        "code" : "_ActHealthInsuranceTypeCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActIncidentCode",
+      "target" : [{
+        "code" : "_ActIncidentCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInformationAccessCode",
+      "target" : [{
+        "code" : "_ActInformationAccessCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInformationAccessContextCode",
+      "target" : [{
+        "code" : "_ActInformationAccessContextCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInformationCategoryCode",
+      "target" : [{
+        "code" : "_ActInformationCategoryCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInformationSensitivityPolicy",
+      "target" : [{
+        "code" : "_ActInformationSensitivityPolicy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInsurancePolicyCode",
+      "target" : [{
+        "code" : "_ActInsurancePolicyCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInsuranceTypeCode",
+      "target" : [{
+        "code" : "_ActInsuranceTypeCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceAdjudicationPaymentCode",
+      "target" : [{
+        "code" : "_ActInvoiceAdjudicationPaymentCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceAdjudicationPaymentGroupCode",
+      "target" : [{
+        "code" : "_ActInvoiceAdjudicationPaymentGroupCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceAdjudicationPaymentSummaryCode",
+      "target" : [{
+        "code" : "_ActInvoiceAdjudicationPaymentSummaryCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceDetailClinicalProductCode",
+      "target" : [{
+        "code" : "_ActInvoiceDetailClinicalProductCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceDetailClinicalServiceCode",
+      "target" : [{
+        "code" : "_ActInvoiceDetailClinicalServiceCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceDetailCode",
+      "target" : [{
+        "code" : "_ActInvoiceDetailCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceDetailDrugProductCode",
+      "target" : [{
+        "code" : "_ActInvoiceDetailDrugProductCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceDetailGenericAdjudicatorCode",
+      "target" : [{
+        "code" : "_ActInvoiceDetailGenericAdjudicatorCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceDetailGenericCode",
+      "target" : [{
+        "code" : "_ActInvoiceDetailGenericCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceDetailGenericModifierCode",
+      "target" : [{
+        "code" : "_ActInvoiceDetailGenericModifierCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceDetailGenericProviderCode",
+      "target" : [{
+        "code" : "_ActInvoiceDetailGenericProviderCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceDetailPreferredAccommodationCode",
+      "target" : [{
+        "code" : "_ActInvoiceDetailPreferredAccommodationCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceDetailTaxCode",
+      "target" : [{
+        "code" : "_ActInvoiceDetailTaxCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceElementCode",
+      "target" : [{
+        "code" : "_ActInvoiceElementCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceElementSummaryCode",
+      "target" : [{
+        "code" : "_ActInvoiceElementSummaryCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceGroupCode",
+      "target" : [{
+        "code" : "_ActInvoiceGroupCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceInterGroupCode",
+      "target" : [{
+        "code" : "_ActInvoiceInterGroupCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceOverrideCode",
+      "target" : [{
+        "code" : "_ActInvoiceOverrideCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActInvoiceRootGroupCode",
+      "target" : [{
+        "code" : "_ActInvoiceRootGroupCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActListCode",
+      "target" : [{
+        "code" : "_ActListCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActMedicalServiceCode",
+      "target" : [{
+        "code" : "_ActMedicalServiceCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActMedicationTherapyDurationWorkingListCode",
+      "target" : [{
+        "code" : "_ActMedicationTherapyDurationWorkingListCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActMonitoringProtocolCode",
+      "target" : [{
+        "code" : "_ActMonitoringProtocolCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActNonObservationIndicationCode",
+      "target" : [{
+        "code" : "_ActNonObservationIndicationCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActObservationList",
+      "target" : [{
+        "code" : "_ActObservationList",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActObservationVerificationType",
+      "target" : [{
+        "code" : "_ActObservationVerificationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActPatientAnnotationType",
+      "target" : [{
+        "code" : "_ActPatientAnnotationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActPatientTransportationModeCode",
+      "target" : [{
+        "code" : "_ActPatientTransportationModeCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActPaymentCode",
+      "target" : [{
+        "code" : "_ActPaymentCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActPharmacySupplyType",
+      "target" : [{
+        "code" : "_ActPharmacySupplyType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActPolicyType",
+      "target" : [{
+        "code" : "_ActPolicyType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActPrivacyLaw",
+      "target" : [{
+        "code" : "_ActPrivacyLaw",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActPrivacyPolicy",
+      "target" : [{
+        "code" : "_ActPrivacyPolicy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActProcedureCode",
+      "target" : [{
+        "code" : "_ActProcedureCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActProductAcquisitionCode",
+      "target" : [{
+        "code" : "_ActProductAcquisitionCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActProgramTypeCode",
+      "target" : [{
+        "code" : "_ActProgramTypeCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActSpecObsCode",
+      "target" : [{
+        "code" : "_ActSpecObsCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActSpecimenTransportCode",
+      "target" : [{
+        "code" : "_ActSpecimenTransportCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActSpecimenTreatmentCode",
+      "target" : [{
+        "code" : "_ActSpecimenTreatmentCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActSubstanceAdministrationCode",
+      "target" : [{
+        "code" : "_ActSubstanceAdministrationCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActSuppliedItemDetectedIssueCode",
+      "target" : [{
+        "code" : "_ActSuppliedItemDetectedIssueCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActTaskCode",
+      "target" : [{
+        "code" : "_ActTaskCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActTherapyDurationWorkingListCode",
+      "target" : [{
+        "code" : "_ActTherapyDurationWorkingListCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActTransportationModeCode",
+      "target" : [{
+        "code" : "_ActTransportationModeCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ActUSPrivacyLaw",
+      "target" : [{
+        "code" : "_ActUSPrivacyLaw",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_AdministrationDetectedIssueCode",
+      "target" : [{
+        "code" : "_AdministrationDetectedIssueCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_AnnotationType",
+      "target" : [{
+        "code" : "_AnnotationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_AppropriatenessDetectedIssueCode",
+      "target" : [{
+        "code" : "_AppropriatenessDetectedIssueCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_AuthorizationIssueManagementCode",
+      "target" : [{
+        "code" : "_AuthorizationIssueManagementCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_CaseTransmissionMode",
+      "target" : [{
+        "code" : "_CaseTransmissionMode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ECGObservationSeriesType",
+      "target" : [{
+        "code" : "_ECGObservationSeriesType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_EntitySensitivityPolicyType",
+      "target" : [{
+        "code" : "_EntitySensitivityPolicyType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_FDALabelData",
+      "target" : [{
+        "code" : "_FDALabelData",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_GeneticObservationType",
+      "target" : [{
+        "code" : "_GeneticObservationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_HL7AccommodationCode",
+      "target" : [{
+        "code" : "_HL7AccommodationCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_HL7DefinedActCodes",
+      "target" : [{
+        "code" : "_HL7DefinedActCodes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ImmunizationObservationType",
+      "target" : [{
+        "code" : "_ImmunizationObservationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_IndividualCaseSafetyReportType",
+      "target" : [{
+        "code" : "_IndividualCaseSafetyReportType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_InformationSensitivityPolicy",
+      "target" : [{
+        "code" : "_InformationSensitivityPolicy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_InteractionDetectedIssueCode",
+      "target" : [{
+        "code" : "_InteractionDetectedIssueCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_InvoiceElementAdjudicated",
+      "target" : [{
+        "code" : "_InvoiceElementAdjudicated",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_InvoiceElementPaid",
+      "target" : [{
+        "code" : "_InvoiceElementPaid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_InvoiceElementSubmitted",
+      "target" : [{
+        "code" : "_InvoiceElementSubmitted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_LOINCObservationActContextAgeType",
+      "target" : [{
+        "code" : "_LOINCObservationActContextAgeType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_MedicationObservationType",
+      "target" : [{
+        "code" : "_MedicationObservationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ObservationIssueTriggerCodedObservationType",
+      "target" : [{
+        "code" : "_ObservationIssueTriggerCodedObservationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ObservationQualityMeasureAttribute",
+      "target" : [{
+        "code" : "_ObservationQualityMeasureAttribute",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ObservationSequenceType",
+      "target" : [{
+        "code" : "_ObservationSequenceType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ObservationSeriesType",
+      "target" : [{
+        "code" : "_ObservationSeriesType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ObservationType",
+      "target" : [{
+        "code" : "_ObservationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_PatientImmunizationRelatedObservationType",
+      "target" : [{
+        "code" : "_PatientImmunizationRelatedObservationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_PopulationInclusionObservationType",
+      "target" : [{
+        "code" : "_PopulationInclusionObservationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_PreferenceObservationType",
+      "target" : [{
+        "code" : "_PreferenceObservationType",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ROIOverlayShape",
+      "target" : [{
+        "code" : "_ROIOverlayShape",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_RoleInformationSensitivityPolicy",
+      "target" : [{
+        "code" : "_RoleInformationSensitivityPolicy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_SupplyDetectedIssueCode",
+      "target" : [{
+        "code" : "_SupplyDetectedIssueCode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_TimingDetectedIssueCode",
+      "target" : [{
+        "code" : "_TimingDetectedIssueCode",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

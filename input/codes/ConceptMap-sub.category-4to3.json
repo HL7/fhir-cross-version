@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sub.category-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sub.category-4to3",
+  "name" : "Substance.category4to3",
+  "title" : "Mapping for Substance.category from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Substance#Substance.category",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Substance#Substance.category",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/substance-category",
+    "target" : "http://hl7.org/fhir/3.0/substance-category",
+    "element" : [{
+      "code" : "allergen",
+      "target" : [{
+        "code" : "allergen",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "material",
+      "target" : [{
+        "code" : "material",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "chemical",
+      "target" : [{
+        "code" : "chemical",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "biological",
+      "target" : [{
+        "code" : "biological",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "body",
+      "target" : [{
+        "code" : "body",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "food",
+      "target" : [{
+        "code" : "food",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "drug",
+      "target" : [{
+        "code" : "drug",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

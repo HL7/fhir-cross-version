@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "spd.processingMode-spd.xpathUsage-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.processingMode-spd.xpathUsage-5to4",
+  "name" : "SearchParameter.processingModeSearchParameter.xpathUsage5to4",
+  "title" : "Mapping for SearchParameter.processingMode/SearchParameter.xpathUsage from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SearchParameter#SearchParameter.processingMode",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.xpathUsage",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/search-processingmode",
+    "target" : "http://hl7.org/fhir/4.0/search-xpath-usage",
+    "element" : [{
+      "code" : "normal",
+      "target" : [{
+        "code" : "normal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "phonetic",
+      "target" : [{
+        "code" : "phonetic",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

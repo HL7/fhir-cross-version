@@ -14,7 +14,7 @@ group SubscriptionTopic(source src : SubscriptionTopicR5, target tgt : Subscript
   src.version -> tgt.version;
   src.title -> tgt.title;
   src.derivedFrom -> tgt.derivedFrom;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionTopic.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/scrt.status-5to4b', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -42,9 +42,9 @@ group SubscriptionTopicResourceTrigger(source src, target tgt) extends BackboneE
 
 group SubscriptionTopicResourceTriggerQueryCriteria(source src, target tgt) extends BackboneElement {
   src.previous -> tgt.previous;
-  src.resultForCreate as v -> tgt.resultForCreate = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionTopic.resourceTrigger.queryCriteria.resultForCreate-5to4b', 'code');
+  src.resultForCreate as v -> tgt.resultForCreate = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/scrt.re.qu.resultForCreate-5to4b', 'code');
   src.current -> tgt.current;
-  src.resultForDelete as v -> tgt.resultForDelete = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete-5to4b', 'code');
+  src.resultForDelete as v -> tgt.resultForDelete = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/scrt.re.qu.resultForDelete-5to4b', 'code');
   src.requireBoth -> tgt.requireBoth;
 }
 

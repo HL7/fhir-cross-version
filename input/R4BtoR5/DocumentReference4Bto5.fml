@@ -11,8 +11,8 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 group DocumentReference(source src : DocumentReferenceR4B, target tgt : DocumentReferenceR5) extends DomainResource <<type+>> {
   src.masterIdentifier -> tgt.identifier;
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DocumentReference.status-4bto5', 'code');
-  src.docStatus as v -> tgt.docStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DocumentReference.docStatus-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dcr.status-4bto5', 'code');
+  src.docStatus as v -> tgt.docStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dcr.docStatus-4bto5', 'code');
   src.type -> tgt.type;
   src.category -> tgt.category;
   src.subject -> tgt.subject;

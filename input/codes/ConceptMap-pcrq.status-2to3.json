@@ -1,0 +1,93 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "pcrq.status-2to3",
+  "meta" : {
+    "tag" : [{
+      "system" : "http://something",
+      "code" : "review-needed"
+    }]
+  },
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pcrq.status-2to3",
+  "name" : "ProcedureRequest.status2to3",
+  "title" : "Mapping for ProcedureRequest.status from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/procedure-request-status",
+    "target" : "http://hl7.org/fhir/3.0/request-status",
+    "element" : [{
+      "code" : "aborted",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "accepted",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "proposed",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "received",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "rejected",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "requested",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "draft",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "suspended",
+      "target" : [{
+        "code" : "suspended",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "rgp.ac.co.kind-rqo.ac.co.kind-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.co.kind-rqo.ac.co.kind-4to5",
+  "name" : "RequestGroup.action.condition.kindRequestOrchestration.action.condition.kind4to5",
+  "title" : "Mapping for RequestGroup.action.condition.kind/RequestOrchestration.action.condition.kind from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.condition.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.condition.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/action-condition-kind",
+    "target" : "http://hl7.org/fhir/5.0/action-condition-kind",
+    "element" : [{
+      "code" : "stop",
+      "target" : [{
+        "code" : "stop",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "start",
+      "target" : [{
+        "code" : "start",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "applicability",
+      "target" : [{
+        "code" : "applicability",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

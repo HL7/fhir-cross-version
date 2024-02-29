@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Account(source src : AccountR5, target tgt : AccountR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Account.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/act.status-5to4', 'code');
   src.type -> tgt.type;
   src.name -> tgt.name;
   src.subject -> tgt.subject;

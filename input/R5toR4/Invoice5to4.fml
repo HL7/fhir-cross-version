@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Invoice(source src : InvoiceR5, target tgt : InvoiceR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Invoice.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/inv.status-5to4', 'code');
   src.cancelledReason -> tgt.cancelledReason;
   src.type -> tgt.type;
   src.subject -> tgt.subject;

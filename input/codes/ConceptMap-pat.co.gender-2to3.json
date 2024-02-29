@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "pat.co.gender-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pat.co.gender-2to3",
+  "name" : "Patient.contact.gender2to3",
+  "title" : "Mapping for Patient.contact.gender from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.contact.gender",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.contact.gender",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/administrative-gender",
+    "target" : "http://hl7.org/fhir/3.0/administrative-gender",
+    "element" : [{
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "female",
+      "target" : [{
+        "code" : "female",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "male",
+      "target" : [{
+        "code" : "male",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

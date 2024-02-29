@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cud.type-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cud.type-4bto5",
+  "name" : "ClinicalUseDefinition.type4bto5",
+  "title" : "Mapping for ClinicalUseDefinition.type from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ClinicalUseDefinition#ClinicalUseDefinition.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ClinicalUseDefinition#ClinicalUseDefinition.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/clinical-use-definition-type",
+    "target" : "http://hl7.org/fhir/5.0/clinical-use-definition-type",
+    "element" : [{
+      "code" : "interaction",
+      "target" : [{
+        "code" : "interaction",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "warning",
+      "target" : [{
+        "code" : "warning",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "indication",
+      "target" : [{
+        "code" : "indication",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "undesirable-effect",
+      "target" : [{
+        "code" : "undesirable-effect",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "contraindication",
+      "target" : [{
+        "code" : "contraindication",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

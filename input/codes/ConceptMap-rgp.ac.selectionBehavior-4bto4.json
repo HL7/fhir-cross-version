@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "rgp.ac.selectionBehavior-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.selectionBehavior-4bto4",
+  "name" : "RequestGroup.action.selectionBehavior4bto4",
+  "title" : "Mapping for RequestGroup.action.selectionBehavior from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.selectionBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.selectionBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/action-selection-behavior",
+    "target" : "http://hl7.org/fhir/4.0/action-selection-behavior",
+    "element" : [{
+      "code" : "all",
+      "target" : [{
+        "code" : "all",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "exactly-one",
+      "target" : [{
+        "code" : "exactly-one",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "at-most-one",
+      "target" : [{
+        "code" : "at-most-one",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "all-or-none",
+      "target" : [{
+        "code" : "all-or-none",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "any",
+      "target" : [{
+        "code" : "any",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "one-or-more",
+      "target" : [{
+        "code" : "one-or-more",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

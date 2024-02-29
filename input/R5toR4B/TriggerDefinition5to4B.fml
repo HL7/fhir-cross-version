@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/4.3/TriggerDefinition" alias TriggerDefinitionR4B as t
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group TriggerDefinition(source src : TriggerDefinitionR5, target tgt : TriggerDefinitionR4B) extends Element <<type+>> {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TriggerDefinition.type-5to4b', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/trd.type-5to4b', 'code');
   src.name -> tgt.name;
   src.timing : Timing -> tgt.timing "timingTiming";
   src.timing : Reference -> tgt.timing "timingReference";

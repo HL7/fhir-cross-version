@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group ClinicalUseDefinition(source src : ClinicalUseDefinitionR4B, target tgt : ClinicalUseDefinitionR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ClinicalUseDefinition.type-4bto5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cud.type-4bto5', 'code');
   src.category -> tgt.category;
   src.subject -> tgt.subject;
   src.status -> tgt.status;

@@ -15,10 +15,10 @@ group ServiceRequest(source src : ServiceRequestR5, target tgt : ServiceRequestR
   src.basedOn -> tgt.basedOn;
   src.replaces -> tgt.replaces;
   src.requisition -> tgt.requisition;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ServiceRequest.status-5to4b', 'code');
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ServiceRequest.intent-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/srq.status-5to4b', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/srq.intent-5to4b', 'code');
   src.category -> tgt.category;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ServiceRequest.priority-5to4b', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/srq.priority-5to4b', 'code');
   src.doNotPerform -> tgt.doNotPerform;
   src.code -> tgt.code;
   src.orderDetail as s -> tgt.orderDetail = s.parameterFocus;

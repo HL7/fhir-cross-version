@@ -1,0 +1,111 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "enp.connectionType-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enp.connectionType-4to3",
+  "name" : "Endpoint.connectionType4to3",
+  "title" : "Mapping for Endpoint.connectionType from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Endpoint#Endpoint.connectionType",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Endpoint#Endpoint.connectionType",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+    "target" : "http://hl7.org/fhir/3.0/endpoint-connection-type",
+    "element" : [{
+      "code" : "hl7-fhir-rest",
+      "target" : [{
+        "code" : "hl7-fhir-rest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ihe-xca",
+      "target" : [{
+        "code" : "ihe-xca",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dicom-wado-rs",
+      "target" : [{
+        "code" : "dicom-wado-rs",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hl7-fhir-msg",
+      "target" : [{
+        "code" : "hl7-fhir-msg",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ihe-xcpd",
+      "target" : [{
+        "code" : "ihe-xcpd",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dicom-stow-rs",
+      "target" : [{
+        "code" : "dicom-stow-rs",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ihe-xds",
+      "target" : [{
+        "code" : "ihe-xds",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dicom-wado-uri",
+      "target" : [{
+        "code" : "dicom-wado-uri",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "direct-project",
+      "target" : [{
+        "code" : "direct-project",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ihe-xdr",
+      "target" : [{
+        "code" : "ihe-xdr",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dicom-qido-rs",
+      "target" : [{
+        "code" : "dicom-qido-rs",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hl7v2-mllp",
+      "target" : [{
+        "code" : "hl7v2-mllp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ihe-iid",
+      "target" : [{
+        "code" : "ihe-iid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "secure-email",
+      "target" : [{
+        "code" : "secure-email",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

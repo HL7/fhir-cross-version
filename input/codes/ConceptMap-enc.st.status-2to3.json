@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "enc.st.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enc.st.status-2to3",
+  "name" : "Encounter.statusHistory.status2to3",
+  "title" : "Mapping for Encounter.statusHistory.status from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Encounter#Encounter.statusHistory.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Encounter#Encounter.statusHistory.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/encounter-state",
+    "target" : "http://hl7.org/fhir/3.0/encounter-status",
+    "element" : [{
+      "code" : "arrived",
+      "target" : [{
+        "code" : "arrived",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "onleave",
+      "target" : [{
+        "code" : "onleave",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "finished",
+      "target" : [{
+        "code" : "finished",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "planned",
+      "target" : [{
+        "code" : "planned",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "in-progress",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

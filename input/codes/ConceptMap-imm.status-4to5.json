@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "imm.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/imm.status-4to5",
+  "name" : "Immunization.status4to5",
+  "title" : "Mapping for Immunization.status from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Immunization#Immunization.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Immunization#Immunization.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/event-status",
+    "target" : "http://hl7.org/fhir/5.0/event-status",
+    "element" : [{
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-done",
+      "target" : [{
+        "code" : "not-done",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

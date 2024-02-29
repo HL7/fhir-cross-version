@@ -11,7 +11,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 group DeviceUsage(source src : DeviceUseStatementR4, target tgt : DeviceUsageR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.basedOn -> tgt.basedOn;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceUseStatement.status-DeviceUsage.status-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dus.status-dus.status-4to5', 'code');
   src.subject -> tgt.patient;
   src.derivedFrom -> tgt.derivedFrom;
   src.timing : Timing -> tgt.timing "timingTiming";

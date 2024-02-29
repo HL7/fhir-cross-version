@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cmp.se.mode-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.se.mode-3to4",
+  "name" : "Composition.section.mode3to4",
+  "title" : "Mapping for Composition.section.mode from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.section.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.section.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/list-mode",
+    "target" : "http://hl7.org/fhir/4.0/list-mode",
+    "element" : [{
+      "code" : "changes",
+      "target" : [{
+        "code" : "changes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "working",
+      "target" : [{
+        "code" : "working",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "snapshot",
+      "target" : [{
+        "code" : "snapshot",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

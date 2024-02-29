@@ -1,0 +1,111 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "rsb.status-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-4to3",
+  "name" : "rsb.status-4to3",
+  "title" : "Mapping for ResearchSubject.status from R4 to R3",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/research-subject-status",
+    "target" : "http://hl7.org/fhir/3.0/research-subject-status",
+    "element" : [{
+      "code" : "candidate",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "eligible",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "follow-up",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "source-is-narrower-than-target"
+      },
+      {
+        "code" : "suspended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ineligible",
+      "noMap" : true
+    },
+    {
+      "code" : "not-registered",
+      "target" : [{
+        "code" : "withdrawn",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "off-study",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "on-study",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "enrolled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on-study-intervention",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "on-study-observation",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "pending-on-study",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "potential-candidate",
+      "noMap" : true
+    },
+    {
+      "code" : "screening",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "withdrawn",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "withdrawn",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

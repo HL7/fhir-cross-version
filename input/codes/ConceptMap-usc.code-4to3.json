@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "usc.code-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/usc.code-4to3",
+  "name" : "UsageContext.code4to3",
+  "title" : "Mapping for UsageContext.code from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/UsageContext#UsageContext.code",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/UsageContext#UsageContext.code",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+    "target" : "http://hl7.org/fhir/3.0/usage-context-type",
+    "element" : [{
+      "code" : "age",
+      "target" : [{
+        "code" : "age",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "focus",
+      "target" : [{
+        "code" : "focus",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "gender",
+      "target" : [{
+        "code" : "gender",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "program",
+      "noMap" : true
+    },
+    {
+      "code" : "species",
+      "target" : [{
+        "code" : "species",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "task",
+      "target" : [{
+        "code" : "task",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "user",
+      "target" : [{
+        "code" : "user",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "venue",
+      "target" : [{
+        "code" : "venue",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "workflow",
+      "target" : [{
+        "code" : "workflow",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

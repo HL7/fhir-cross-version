@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "idr.use-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/idr.use-4to3",
+  "name" : "Identifier.use4to3",
+  "title" : "Mapping for Identifier.use from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Identifier#Identifier.use",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Identifier#Identifier.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/identifier-use",
+    "target" : "http://hl7.org/fhir/3.0/identifier-use",
+    "element" : [{
+      "code" : "official",
+      "target" : [{
+        "code" : "official",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "old",
+      "noMap" : true
+    },
+    {
+      "code" : "secondary",
+      "target" : [{
+        "code" : "secondary",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "temp",
+      "target" : [{
+        "code" : "temp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "usual",
+      "target" : [{
+        "code" : "usual",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

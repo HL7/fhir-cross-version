@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cmd.el.ta.equivalence-cmd.gr.el.ta.equivalence-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.el.ta.equivalence-cmd.gr.el.ta.equivalence-2to3",
+  "name" : "ConceptMap.element.target.equivalenceConceptMap.group.element.target.equivalence2to3",
+  "title" : "Mapping for ConceptMap.element.target.equivalence/ConceptMap.group.element.target.equivalence from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ConceptMap#ConceptMap.element.target.equivalence",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ConceptMap#ConceptMap.group.element.target.equivalence",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/concept-map-equivalence",
+    "target" : "http://hl7.org/fhir/3.0/concept-map-equivalence",
+    "element" : [{
+      "code" : "equal",
+      "target" : [{
+        "code" : "equal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "inexact",
+      "target" : [{
+        "code" : "inexact",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "equivalent",
+      "target" : [{
+        "code" : "equivalent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wider",
+      "target" : [{
+        "code" : "wider",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "specializes",
+      "target" : [{
+        "code" : "specializes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "disjoint",
+      "target" : [{
+        "code" : "disjoint",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "narrower",
+      "target" : [{
+        "code" : "narrower",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unmatched",
+      "target" : [{
+        "code" : "unmatched",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "subsumes",
+      "target" : [{
+        "code" : "subsumes",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

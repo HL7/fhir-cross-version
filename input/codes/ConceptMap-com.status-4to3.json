@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "com.status-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/com.status-4to3",
+  "name" : "Communication.status4to3",
+  "title" : "Mapping for Communication.status from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Communication#Communication.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Communication#Communication.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/event-status",
+    "target" : "http://hl7.org/fhir/3.0/event-status",
+    "element" : [{
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "in-progress",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-done",
+      "target" : [{
+        "code" : "aborted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on-hold",
+      "target" : [{
+        "code" : "suspended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preparation",
+      "target" : [{
+        "code" : "preparation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "stopped",
+      "target" : [{
+        "code" : "aborted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

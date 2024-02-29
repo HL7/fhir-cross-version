@@ -1,0 +1,87 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "rsb.status-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-3to4",
+  "name" : "ResearchSubject.status3to4",
+  "title" : "Mapping for ResearchSubject.status from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/research-subject-status",
+    "target" : "http://hl7.org/fhir/4.0/research-subject-status",
+    "element" : [{
+      "code" : "candidate",
+      "target" : [{
+        "code" : "candidate",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "eligible",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "screening",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "withdrawn",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "withdrawn",
+      "target" : [{
+        "code" : "withdrawn",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "not-registered",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "on-study",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "on-study-intervention",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "on-study-observation",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "pending-on-study",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "follow-up",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "off-study",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    },
+    {
+      "code" : "enrolled",
+      "target" : [{
+        "code" : "on-study",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "suspended",
+      "target" : [{
+        "code" : "follow-up",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

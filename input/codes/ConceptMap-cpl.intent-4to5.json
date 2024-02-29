@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpl.intent-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.intent-4to5",
+  "name" : "CarePlan.intent4to5",
+  "title" : "Mapping for CarePlan.intent from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CarePlan#CarePlan.intent",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CarePlan#CarePlan.intent",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/request-intent",
+    "target" : "http://hl7.org/fhir/5.0/request-intent",
+    "element" : [{
+      "code" : "proposal",
+      "target" : [{
+        "code" : "proposal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "plan",
+      "target" : [{
+        "code" : "plan",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "order",
+      "target" : [{
+        "code" : "order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "option",
+      "target" : [{
+        "code" : "option",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "directive",
+      "target" : [{
+        "code" : "directive",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

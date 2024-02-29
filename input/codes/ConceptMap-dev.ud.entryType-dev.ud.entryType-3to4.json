@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "dev.ud.entryType-dev.ud.entryType-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dev.ud.entryType-dev.ud.entryType-3to4",
+  "name" : "Device.udi.entryTypeDevice.udiCarrier.entryType3to4",
+  "title" : "Mapping for Device.udi.entryType/Device.udiCarrier.entryType from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Device#Device.udi.entryType",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Device#Device.udiCarrier.entryType",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/udi-entry-type",
+    "target" : "http://hl7.org/fhir/4.0/udi-entry-type",
+    "element" : [{
+      "code" : "self-reported",
+      "target" : [{
+        "code" : "self-reported",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rfid",
+      "target" : [{
+        "code" : "rfid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "manual",
+      "target" : [{
+        "code" : "manual",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "barcode",
+      "target" : [{
+        "code" : "barcode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "card",
+      "target" : [{
+        "code" : "card",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

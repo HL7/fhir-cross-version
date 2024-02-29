@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "prv.en.role-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prv.en.role-4to3",
+  "name" : "Provenance.entity.role4to3",
+  "title" : "Mapping for Provenance.entity.role from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Provenance#Provenance.entity.role",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Provenance#Provenance.entity.role",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/provenance-entity-role",
+    "target" : "http://hl7.org/fhir/3.0/provenance-entity-role",
+    "element" : [{
+      "code" : "removal",
+      "target" : [{
+        "code" : "removal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "derivation",
+      "target" : [{
+        "code" : "derivation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "source",
+      "target" : [{
+        "code" : "source",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "quotation",
+      "target" : [{
+        "code" : "quotation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "revision",
+      "target" : [{
+        "code" : "revision",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

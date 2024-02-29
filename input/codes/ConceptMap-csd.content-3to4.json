@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "csd.content-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.content-3to4",
+  "name" : "CodeSystem.content3to4",
+  "title" : "Mapping for CodeSystem.content from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.content",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.content",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/codesystem-content-mode",
+    "target" : "http://hl7.org/fhir/4.0/codesystem-content-mode",
+    "element" : [{
+      "code" : "fragment",
+      "target" : [{
+        "code" : "fragment",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-present",
+      "target" : [{
+        "code" : "not-present",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "complete",
+      "target" : [{
+        "code" : "complete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "example",
+      "target" : [{
+        "code" : "example",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

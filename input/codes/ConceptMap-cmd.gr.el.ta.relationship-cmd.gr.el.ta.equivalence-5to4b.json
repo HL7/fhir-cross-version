@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cmd.gr.el.ta.relationship-cmd.gr.el.ta.equivalence-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.gr.el.ta.relationship-cmd.gr.el.ta.equivalence-5to4b",
+  "name" : "ConceptMap.group.element.target.relationshipConceptMap.group.element.target.equivalence5to4b",
+  "title" : "Mapping for ConceptMap.group.element.target.relationship/ConceptMap.group.element.target.equivalence from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ConceptMap#ConceptMap.group.element.target.relationship",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ConceptMap#ConceptMap.group.element.target.equivalence",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/concept-map-relationship",
+    "target" : "http://hl7.org/fhir/4.3/concept-map-equivalence",
+    "element" : [{
+      "code" : "equivalent",
+      "target" : [{
+        "code" : "equivalent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "related-to",
+      "target" : [{
+        "code" : "inexact",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-related-to",
+      "target" : [{
+        "code" : "disjoint",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "source-is-narrower-than-target",
+      "target" : [{
+        "code" : "wider",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "source-is-broader-than-target",
+      "target" : [{
+        "code" : "narrower",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

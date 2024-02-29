@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mrp.status-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.status-5to4",
+  "name" : "MeasureReport.status5to4",
+  "title" : "Mapping for MeasureReport.status from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MeasureReport#MeasureReport.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MeasureReport#MeasureReport.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/measure-report-status",
+    "target" : "http://hl7.org/fhir/4.0/measure-report-status",
+    "element" : [{
+      "code" : "pending",
+      "target" : [{
+        "code" : "pending",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "complete",
+      "target" : [{
+        "code" : "complete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

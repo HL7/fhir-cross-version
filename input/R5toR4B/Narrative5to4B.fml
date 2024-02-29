@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/4.3/Narrative" alias NarrativeR4B as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Narrative(source src : NarrativeR5, target tgt : NarrativeR4B) extends Element <<type+>> {
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Narrative.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/txt.status-5to4b', 'code');
   src.div -> tgt.div;
 }
 

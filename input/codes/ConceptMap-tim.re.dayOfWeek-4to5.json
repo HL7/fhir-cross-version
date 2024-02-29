@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tim.re.dayOfWeek-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.dayOfWeek-4to5",
+  "name" : "Timing.repeat.dayOfWeek4to5",
+  "title" : "Mapping for Timing.repeat.dayOfWeek from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Timing#Timing.repeat.dayOfWeek",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Timing#Timing.repeat.dayOfWeek",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/days-of-week",
+    "target" : "http://hl7.org/fhir/5.0/days-of-week",
+    "element" : [{
+      "code" : "thu",
+      "target" : [{
+        "code" : "thu",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tue",
+      "target" : [{
+        "code" : "tue",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wed",
+      "target" : [{
+        "code" : "wed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "sat",
+      "target" : [{
+        "code" : "sat",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "fri",
+      "target" : [{
+        "code" : "fri",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mon",
+      "target" : [{
+        "code" : "mon",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "sun",
+      "target" : [{
+        "code" : "sun",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,90 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cov.cl.type-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cov.cl.type-4bto4",
+  "name" : "Coverage.class.type4bto4",
+  "title" : "Mapping for Coverage.class.type from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Coverage#Coverage.class.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Coverage#Coverage.class.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/coverage-class",
+    "target" : "http://terminology.hl7.org/CodeSystem/coverage-class",
+    "element" : [{
+      "code" : "sequence",
+      "target" : [{
+        "code" : "sequence",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "subgroup",
+      "target" : [{
+        "code" : "subgroup",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "subplan",
+      "target" : [{
+        "code" : "subplan",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rxid",
+      "target" : [{
+        "code" : "rxid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rxgroup",
+      "target" : [{
+        "code" : "rxgroup",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "subclass",
+      "target" : [{
+        "code" : "subclass",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rxpcn",
+      "target" : [{
+        "code" : "rxpcn",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "plan",
+      "target" : [{
+        "code" : "plan",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "class",
+      "target" : [{
+        "code" : "class",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "group",
+      "target" : [{
+        "code" : "group",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rxbin",
+      "target" : [{
+        "code" : "rxbin",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

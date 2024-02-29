@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "gdf.li.ta.co.rule-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/gdf.li.ta.co.rule-3to4",
+  "name" : "GraphDefinition.link.target.compartment.rule3to4",
+  "title" : "Mapping for GraphDefinition.link.target.compartment.rule from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.rule",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.rule",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/graph-compartment-rule",
+    "target" : "http://hl7.org/fhir/4.0/graph-compartment-rule",
+    "element" : [{
+      "code" : "identical",
+      "target" : [{
+        "code" : "identical",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "custom",
+      "target" : [{
+        "code" : "custom",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "different",
+      "target" : [{
+        "code" : "different",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "matching",
+      "target" : [{
+        "code" : "matching",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

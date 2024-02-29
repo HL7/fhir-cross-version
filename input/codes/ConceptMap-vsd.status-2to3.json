@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "vsd.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/vsd.status-2to3",
+  "name" : "ValueSet.status2to3",
+  "title" : "Mapping for ValueSet.status from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ValueSet#ValueSet.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ValueSet#ValueSet.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/conformance-resource-status",
+    "target" : "http://hl7.org/fhir/3.0/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

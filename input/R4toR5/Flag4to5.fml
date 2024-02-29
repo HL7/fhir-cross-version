@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Flag(source src : FlagR4, target tgt : FlagR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Flag.status-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/alt.status-4to5', 'code');
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.subject -> tgt.subject;

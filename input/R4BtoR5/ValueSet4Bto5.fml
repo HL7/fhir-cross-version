@@ -14,7 +14,7 @@ group ValueSet(source src : ValueSetR4B, target tgt : ValueSetR5) extends Domain
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ValueSet.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/vsd.status-4bto5', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -57,7 +57,7 @@ group ValueSetComposeIncludeConceptDesignation(source src, target tgt) extends B
 
 group ValueSetComposeIncludeFilter(source src, target tgt) extends BackboneElement {
   src.property -> tgt.property;
-  src.op as v -> tgt.op = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ValueSet.compose.include.filter.op-4bto5', 'code');
+  src.op as v -> tgt.op = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/vsd.co.in.fi.op-4bto5', 'code');
   src.value -> tgt.value;
 }
 

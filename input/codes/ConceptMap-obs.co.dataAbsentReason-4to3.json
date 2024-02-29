@@ -1,0 +1,112 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "obs.co.dataAbsentReason-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obs.co.dataAbsentReason-4to3",
+  "name" : "Observation.component.dataAbsentReason4to3",
+  "title" : "Mapping for Observation.component.dataAbsentReason from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Observation#Observation.component.dataAbsentReason",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.component.dataAbsentReason",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+    "target" : "http://hl7.org/fhir/3.0/data-absent-reason",
+    "element" : [{
+      "code" : "as-text",
+      "target" : [{
+        "code" : "astext",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "masked",
+      "target" : [{
+        "code" : "masked",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "asked-unknown",
+      "target" : [{
+        "code" : "asked",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-asked",
+      "target" : [{
+        "code" : "not-asked",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-performed",
+      "target" : [{
+        "code" : "not-performed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "positive-infinity",
+      "target" : [{
+        "code" : "NaN",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unsupported",
+      "target" : [{
+        "code" : "unsupported",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "negative-infinity",
+      "target" : [{
+        "code" : "NaN",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "asked-declined",
+      "target" : [{
+        "code" : "asked",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-permitted",
+      "noMap" : true
+    },
+    {
+      "code" : "temp-unknown",
+      "target" : [{
+        "code" : "temp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-applicable",
+      "noMap" : true
+    },
+    {
+      "code" : "not-a-number",
+      "target" : [{
+        "code" : "NaN",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

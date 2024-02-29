@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group MedicationKnowledge(source src : MedicationKnowledgeR4, target tgt : MedicationKnowledgeR5) extends DomainResource <<type+>> {
   src.code -> tgt.code;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MedicationKnowledge.status-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/mkn.status-4to5', 'code');
   src.synonym -> tgt.name;
   src.relatedMedicationKnowledge as s -> tgt.relatedMedicationKnowledge as t then MedicationKnowledgeRelatedMedicationKnowledge(s, t);
   src.associatedMedication -> tgt.associatedMedication;

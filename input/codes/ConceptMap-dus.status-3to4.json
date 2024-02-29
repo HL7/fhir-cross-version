@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "dus.status-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dus.status-3to4",
+  "name" : "DeviceUseStatement.status3to4",
+  "title" : "Mapping for DeviceUseStatement.status from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceUseStatement#DeviceUseStatement.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DeviceUseStatement#DeviceUseStatement.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/device-statement-status",
+    "target" : "http://hl7.org/fhir/4.0/device-statement-status",
+    "element" : [{
+      "code" : "stopped",
+      "target" : [{
+        "code" : "stopped",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "intended",
+      "target" : [{
+        "code" : "intended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on-hold",
+      "target" : [{
+        "code" : "on-hold",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

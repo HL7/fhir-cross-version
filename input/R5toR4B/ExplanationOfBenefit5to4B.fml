@@ -10,10 +10,10 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group ExplanationOfBenefit(source src : ExplanationOfBenefitR5, target tgt : ExplanationOfBenefitR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/eob.status-5to4b', 'code');
   src.type -> tgt.type;
   src.subType -> tgt.subType;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.use-5to4b', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/eob.use-5to4b', 'code');
   src.patient -> tgt.patient;
   src.billablePeriod -> tgt.billablePeriod;
   src.created -> tgt.created;
@@ -31,7 +31,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefitR5, target tgt : Exp
   src.facility -> tgt.facility;
   src.claim -> tgt.claim;
   src.claimResponse -> tgt.claimResponse;
-  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ExplanationOfBenefit.outcome-5to4b', 'code');
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/eob.outcome-5to4b', 'code');
   src.disposition -> tgt.disposition;
   src.preAuthRef -> tgt.preAuthRef;
   src.preAuthRefPeriod -> tgt.preAuthRefPeriod;

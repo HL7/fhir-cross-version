@@ -13,8 +13,8 @@ group OperationOutcome(source src : OperationOutcomeR4B, target tgt : OperationO
 }
 
 group OperationOutcomeIssue(source src, target tgt) extends BackboneElement {
-  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationOutcome.issue.severity-4bto5', 'code');
-  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationOutcome.issue.code-4bto5', 'code');
+  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/opo.is.severity-4bto5', 'code');
+  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/opo.is.code-4bto5', 'code');
   src.details -> tgt.details;
   src.diagnostics -> tgt.diagnostics;
   src.location -> tgt.location;

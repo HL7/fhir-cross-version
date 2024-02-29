@@ -11,7 +11,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 group Specimen(source src : SpecimenR5, target tgt : SpecimenR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.accessionIdentifier -> tgt.accessionIdentifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Specimen.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/spm.status-5to4', 'code');
   src.type -> tgt.type;
   src.subject -> tgt.subject;
   src.receivedTime -> tgt.receivedTime;

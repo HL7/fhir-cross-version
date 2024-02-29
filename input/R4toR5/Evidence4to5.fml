@@ -14,7 +14,7 @@ group Evidence(source src : EvidenceR4, target tgt : EvidenceR5) extends DomainR
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Evidence.status-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/evi.status-4to5', 'code');
   src.date -> tgt.date;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;

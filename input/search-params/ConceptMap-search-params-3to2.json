@@ -8,9 +8,11 @@
   "experimental" : false,
   "date" : "2019-07-11T08:06:31+10:00",
   "publisher" : "HL7",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/SearchParameter",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/SearchParameter",
   "group" : [{
-    "source" : "http://hl7.org/fhir/3.0",
-    "target" : "http://hl7.org/fhir/1.0",
+    "source" : "http://hl7.org/fhir/3.0/SearchParameter-codes",
+    "target" : "http://hl7.org/fhir/1.0/SearchParameter-codes",
     "element" : [{
       "code" : "Account.balance",
       "target" : [{

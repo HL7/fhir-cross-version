@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "opd.kind-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opd.kind-4to3",
+  "name" : "OperationDefinition.kind4to3",
+  "title" : "Mapping for OperationDefinition.kind from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/OperationDefinition#OperationDefinition.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/OperationDefinition#OperationDefinition.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/operation-kind",
+    "target" : "http://hl7.org/fhir/3.0/operation-kind",
+    "element" : [{
+      "code" : "query",
+      "target" : [{
+        "code" : "query",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "operation",
+      "target" : [{
+        "code" : "operation",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

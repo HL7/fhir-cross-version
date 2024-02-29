@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.me.ev.mode-cpb.me.ev.mode-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.me.ev.mode-cpb.me.ev.mode-3to2",
+  "name" : "CapabilityStatement.messaging.event.modeConformance.messaging.event.mode3to2",
+  "title" : "Mapping for CapabilityStatement.messaging.event.mode/Conformance.messaging.event.mode from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.event.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.messaging.event.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/event-capability-mode",
+    "target" : "http://hl7.org/fhir/1.0/message-conformance-event-mode",
+    "element" : [{
+      "code" : "receiver",
+      "target" : [{
+        "code" : "receiver",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "sender",
+      "target" : [{
+        "code" : "sender",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

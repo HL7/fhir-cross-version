@@ -16,7 +16,7 @@ group CommunicationRequest(source src : CommunicationRequestR2, target tgt : Com
   src.payload as vs0 -> tgt.payload as vt0 then cmrPayload(vs0, vt0) "CommunicationRequest-payload";
   src.medium -> tgt.medium "CommunicationRequest-medium";
   src.requester -> tgt.requester "CommunicationRequest-requester";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CommunicationRequest.status-2to3', 'code') "CommunicationRequest-status";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cmr.status-2to3', 'code') "CommunicationRequest-status";
   src.encounter -> tgt.context "CommunicationRequest-context";
   src.scheduled -> tgt.occurrence "CommunicationRequest-scheduled";
   src.reason -> tgt.reasonCode "CommunicationRequest-reason";

@@ -13,7 +13,7 @@ group ResearchStudy(source src : ResearchStudy, target tgt : ResearchStudyR3) ex
   src.title -> tgt.title;
   src.protocol -> tgt.protocol;
   src.partOf -> tgt.partOf;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ResearchStudy.status-4to3', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rst.status-4to3', 'code');
   src.category -> tgt.category;
   src.focus -> tgt.focus;
   src.contact -> tgt.contact;

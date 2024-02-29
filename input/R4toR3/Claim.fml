@@ -13,7 +13,7 @@ group Claim(source src : Claim, target tgt : ClaimR3) extends DomainResource <<t
   src.status -> tgt.status;
   src.type -> tgt.type;
   src.subType -> tgt.subType;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Claim.use-4to3', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/clm.use-4to3', 'code');
   src.patient -> tgt.patient;
   src.billablePeriod -> tgt.billablePeriod;
   src.created -> tgt.created;

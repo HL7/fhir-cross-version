@@ -14,7 +14,7 @@ group GuidanceResponse(source src : GuidanceResponseR5, target tgt : GuidanceRes
   src.module : uri -> tgt.module "moduleUri";
   src.module : canonical -> tgt.module "moduleCanonical";
   src.module : CodeableConcept -> tgt.module "moduleCodeableConcept";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/GuidanceResponse.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/grs.status-5to4', 'code');
   src.subject -> tgt.subject;
   src.encounter -> tgt.encounter;
   src.occurrenceDateTime -> tgt.occurrenceDateTime;

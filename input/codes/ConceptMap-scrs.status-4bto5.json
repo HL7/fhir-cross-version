@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "scrs.status-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/scrs.status-4bto5",
+  "name" : "SubscriptionStatus.status4bto5",
+  "title" : "Mapping for SubscriptionStatus.status from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionStatus#SubscriptionStatus.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionStatus#SubscriptionStatus.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/subscription-status",
+    "target" : "http://hl7.org/fhir/5.0/subscription-status",
+    "element" : [{
+      "code" : "requested",
+      "target" : [{
+        "code" : "requested",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "off",
+      "target" : [{
+        "code" : "off",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

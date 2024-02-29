@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tcp.codeSearch-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tcp.codeSearch-5to4b",
+  "name" : "TerminologyCapabilities.codeSearch5to4b",
+  "title" : "Mapping for TerminologyCapabilities.codeSearch from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.codeSearch",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.codeSearch",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/code-search-support",
+    "target" : "http://hl7.org/fhir/4.3/code-search-support",
+    "element" : [{
+      "code" : "in-compose",
+      "target" : [{
+        "code" : "explicit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in-expansion",
+      "noMap" : true
+    },
+    {
+      "code" : "in-compose-or-expansion",
+      "target" : [{
+        "code" : "all",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

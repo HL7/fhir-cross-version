@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "pdf.ac.selectionBehavior-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.selectionBehavior-3to4",
+  "name" : "PlanDefinition.action.selectionBehavior3to4",
+  "title" : "Mapping for PlanDefinition.action.selectionBehavior from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.action.selectionBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.selectionBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/action-selection-behavior",
+    "target" : "http://hl7.org/fhir/4.0/action-selection-behavior",
+    "element" : [{
+      "code" : "all",
+      "target" : [{
+        "code" : "all",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "exactly-one",
+      "target" : [{
+        "code" : "exactly-one",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "at-most-one",
+      "target" : [{
+        "code" : "at-most-one",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "all-or-none",
+      "target" : [{
+        "code" : "all-or-none",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "any",
+      "target" : [{
+        "code" : "any",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "one-or-more",
+      "target" : [{
+        "code" : "one-or-more",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

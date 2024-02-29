@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.re.re.conditionalDelete-cpb.re.re.conditionalDelete-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.conditionalDelete-cpb.re.re.conditionalDelete-3to2",
+  "name" : "CapabilityStatement.rest.resource.conditionalDeleteConformance.rest.resource.conditionalDelete3to2",
+  "title" : "Mapping for CapabilityStatement.rest.resource.conditionalDelete/Conformance.rest.resource.conditionalDelete from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalDelete",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.resource.conditionalDelete",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/conditional-delete-status",
+    "target" : "http://hl7.org/fhir/1.0/conditional-delete-status",
+    "element" : [{
+      "code" : "single",
+      "target" : [{
+        "code" : "single",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "multiple",
+      "target" : [{
+        "code" : "multiple",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-supported",
+      "target" : [{
+        "code" : "not-supported",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

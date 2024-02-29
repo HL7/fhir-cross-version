@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.re.re.conditionalDelete-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.conditionalDelete-5to4b",
+  "name" : "CapabilityStatement.rest.resource.conditionalDelete5to4b",
+  "title" : "Mapping for CapabilityStatement.rest.resource.conditionalDelete from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalDelete",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalDelete",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/conditional-delete-status",
+    "target" : "http://hl7.org/fhir/4.3/conditional-delete-status",
+    "element" : [{
+      "code" : "single",
+      "target" : [{
+        "code" : "single",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "multiple",
+      "target" : [{
+        "code" : "multiple",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-supported",
+      "target" : [{
+        "code" : "not-supported",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

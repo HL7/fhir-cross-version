@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "qty.comparator-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/qty.comparator-3to4",
+  "name" : "Quantity.comparator3to4",
+  "title" : "Mapping for Quantity.comparator from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Quantity#Quantity.comparator",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Quantity#Quantity.comparator",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/quantity-comparator",
+    "target" : "http://hl7.org/fhir/4.0/quantity-comparator",
+    "element" : [{
+      "code" : "<=",
+      "target" : [{
+        "code" : "<=",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "<",
+      "target" : [{
+        "code" : "<",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : ">",
+      "target" : [{
+        "code" : ">",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : ">=",
+      "target" : [{
+        "code" : ">=",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

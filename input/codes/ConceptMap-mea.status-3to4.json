@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mea.status-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.status-3to4",
+  "name" : "Measure.status3to4",
+  "title" : "Mapping for Measure.status from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Measure#Measure.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/publication-status",
+    "target" : "http://hl7.org/fhir/4.0/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

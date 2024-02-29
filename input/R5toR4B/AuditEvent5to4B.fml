@@ -11,7 +11,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 group AuditEvent(source src : AuditEventR5, target tgt : AuditEventR4B) extends DomainResource <<type+>> {
   src.category -> tgt.type;
   src.code -> tgt.subtype;
-  src.action as v -> tgt.action = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AuditEvent.action-5to4b', 'code');
+  src.action as v -> tgt.action = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sev.action-5to4b', 'code');
   src.recorded -> tgt.recorded;
   src.outcome as s -> tgt.outcome as t then AuditEventOutcome(s, t);
   src.outcome as s -> tgt.outcomeDesc as t then AuditEventOutcomeDesc(s, t);

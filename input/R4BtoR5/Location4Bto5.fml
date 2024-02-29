@@ -10,12 +10,12 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group Location(source src : LocationR4B, target tgt : LocationR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Location.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/loc.status-4bto5', 'code');
   src.operationalStatus -> tgt.operationalStatus;
   src.name -> tgt.name;
   src.alias -> tgt.alias;
   src.description -> tgt.description;
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Location.mode-4bto5', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/loc.mode-4bto5', 'code');
   src.type -> tgt.type;
   src.telecom : ContactPoint as s ->  tgt.contact = create('ExtendedContactDetail') as t,  t.telecom = s "telecomContactPoint";
   src.address -> tgt.address;

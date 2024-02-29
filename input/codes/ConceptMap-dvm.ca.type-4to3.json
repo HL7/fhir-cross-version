@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "dvm.ca.type-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.ca.type-4to3",
+  "name" : "DeviceMetric.calibration.type4to3",
+  "title" : "Mapping for DeviceMetric.calibration.type from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/metric-calibration-type",
+    "target" : "http://hl7.org/fhir/3.0/metric-calibration-type",
+    "element" : [{
+      "code" : "offset",
+      "target" : [{
+        "code" : "offset",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unspecified",
+      "target" : [{
+        "code" : "unspecified",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "two-point",
+      "target" : [{
+        "code" : "two-point",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "gain",
+      "target" : [{
+        "code" : "gain",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

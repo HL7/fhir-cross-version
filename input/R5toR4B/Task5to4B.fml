@@ -15,11 +15,11 @@ group Task(source src : TaskR5, target tgt : TaskR4B) extends DomainResource <<t
   src.basedOn -> tgt.basedOn;
   src.groupIdentifier -> tgt.groupIdentifier;
   src.partOf -> tgt.partOf;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Task.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/tsk.status-5to4b', 'code');
   src.statusReason -> tgt.statusReason;
   src.businessStatus -> tgt.businessStatus;
   src.intent -> tgt.intent;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Task.priority-5to4b', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/tsk.priority-5to4b', 'code');
   src.code -> tgt.code;
   src.description -> tgt.description;
   src.focus -> tgt.focus;

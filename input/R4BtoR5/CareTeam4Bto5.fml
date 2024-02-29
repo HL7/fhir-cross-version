@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group CareTeam(source src : CareTeamR4B, target tgt : CareTeamR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CareTeam.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ctm.status-4bto5', 'code');
   src.category -> tgt.category;
   src.name -> tgt.name;
   src.subject -> tgt.subject;

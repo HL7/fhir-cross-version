@@ -12,7 +12,7 @@ group CompartmentDefinition(source src : CompartmentDefinitionR5, target tgt : C
   src.url -> tgt.url;
   src.version -> tgt.version;
   src.name -> tgt.name;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CompartmentDefinition.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpd.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -20,7 +20,7 @@ group CompartmentDefinition(source src : CompartmentDefinitionR5, target tgt : C
   src.description -> tgt.description;
   src.useContext -> tgt.useContext;
   src.purpose -> tgt.purpose;
-  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CompartmentDefinition.code-5to4', 'code');
+  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpd.code-5to4', 'code');
   src.search -> tgt.search;
   src.resource as s -> tgt.resource as t then CompartmentDefinitionResource(s, t);
 }

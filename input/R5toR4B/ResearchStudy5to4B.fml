@@ -14,7 +14,7 @@ group ResearchStudy(source src : ResearchStudyR5, target tgt : ResearchStudyR4B)
   src.protocol -> tgt.protocol;
   src.partOf -> tgt.partOf;
   src.relatedArtifact -> tgt.relatedArtifact;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ResearchStudy.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rst.status-5to4b', 'code');
   src.primaryPurposeType -> tgt.primaryPurposeType;
   src.phase -> tgt.phase;
   src.focus -> tgt.focus;

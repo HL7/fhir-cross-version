@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sdf.kind-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.kind-4to5",
+  "name" : "StructureDefinition.kind4to5",
+  "title" : "Mapping for StructureDefinition.kind from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition#StructureDefinition.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/structure-definition-kind",
+    "target" : "http://hl7.org/fhir/5.0/structure-definition-kind",
+    "element" : [{
+      "code" : "primitive-type",
+      "target" : [{
+        "code" : "primitive-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "resource",
+      "target" : [{
+        "code" : "resource",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "complex-type",
+      "target" : [{
+        "code" : "complex-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "logical",
+      "target" : [{
+        "code" : "logical",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.acceptUnknown-cpb.acceptUnknown-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.acceptUnknown-cpb.acceptUnknown-3to2",
+  "name" : "CapabilityStatement.acceptUnknownConformance.acceptUnknown3to2",
+  "title" : "Mapping for CapabilityStatement.acceptUnknown/Conformance.acceptUnknown from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.acceptUnknown",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.acceptUnknown",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/unknown-content-code",
+    "target" : "http://hl7.org/fhir/1.0/unknown-content-code",
+    "element" : [{
+      "code" : "no",
+      "target" : [{
+        "code" : "no",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "extensions",
+      "target" : [{
+        "code" : "extensions",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "elements",
+      "target" : [{
+        "code" : "elements",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "both",
+      "target" : [{
+        "code" : "both",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

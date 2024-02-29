@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eob.pr.type-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eob.pr.type-3to4",
+  "name" : "ExplanationOfBenefit.processNote.type3to4",
+  "title" : "Mapping for ExplanationOfBenefit.processNote.type from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.processNote.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.processNote.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/note-type",
+    "target" : "http://hl7.org/fhir/4.0/note-type",
+    "element" : [{
+      "code" : "print",
+      "target" : [{
+        "code" : "print",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "display",
+      "target" : [{
+        "code" : "display",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "printoper",
+      "target" : [{
+        "code" : "printoper",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

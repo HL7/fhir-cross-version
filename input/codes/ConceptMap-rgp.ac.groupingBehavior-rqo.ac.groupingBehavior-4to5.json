@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "rgp.ac.groupingBehavior-rqo.ac.groupingBehavior-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.groupingBehavior-rqo.ac.groupingBehavior-4to5",
+  "name" : "RequestGroup.action.groupingBehaviorRequestOrchestration.action.groupingBehavior4to5",
+  "title" : "Mapping for RequestGroup.action.groupingBehavior/RequestOrchestration.action.groupingBehavior from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.groupingBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.groupingBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/action-grouping-behavior",
+    "target" : "http://hl7.org/fhir/5.0/action-grouping-behavior",
+    "element" : [{
+      "code" : "visual-group",
+      "target" : [{
+        "code" : "visual-group",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "sentence-group",
+      "target" : [{
+        "code" : "sentence-group",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "logical-group",
+      "target" : [{
+        "code" : "logical-group",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

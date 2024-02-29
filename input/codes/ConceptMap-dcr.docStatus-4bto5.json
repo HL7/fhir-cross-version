@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "dcr.docStatus-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.docStatus-4bto5",
+  "name" : "DocumentReference.docStatus4bto5",
+  "title" : "Mapping for DocumentReference.docStatus from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DocumentReference#DocumentReference.docStatus",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DocumentReference#DocumentReference.docStatus",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/composition-status",
+    "target" : "http://hl7.org/fhir/5.0/composition-status",
+    "element" : [{
+      "code" : "amended",
+      "target" : [{
+        "code" : "amended",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "appended",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "corrected",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "deprecated",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    },
+    {
+      "code" : "final",
+      "target" : [{
+        "code" : "final",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preliminary",
+      "target" : [{
+        "code" : "preliminary",
+        "relationship" : "equivalent"
+      },
+      {
+        "code" : "partial",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "registered",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

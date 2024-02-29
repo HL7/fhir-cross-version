@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group AdverseEvent(source src : AdverseEventR5, target tgt : AdverseEventR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.actuality as v -> tgt.actuality = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AdverseEvent.actuality-5to4', 'code');
+  src.actuality as v -> tgt.actuality = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/aev.actuality-5to4', 'code');
   src.category -> tgt.category;
   src.code -> tgt.event;
   src.subject -> tgt.subject;

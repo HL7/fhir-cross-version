@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mea.scoring-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.scoring-4to4b",
+  "name" : "Measure.scoring4to4b",
+  "title" : "Mapping for Measure.scoring from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.scoring",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.scoring",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+    "target" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+    "element" : [{
+      "code" : "proportion",
+      "target" : [{
+        "code" : "proportion",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "continuous-variable",
+      "target" : [{
+        "code" : "continuous-variable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cohort",
+      "target" : [{
+        "code" : "cohort",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ratio",
+      "target" : [{
+        "code" : "ratio",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.re.se.service-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.se.service-5to4b",
+  "name" : "CapabilityStatement.rest.security.service5to4b",
+  "title" : "Mapping for CapabilityStatement.rest.security.service from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.security.service",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.security.service",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/restful-security-service",
+    "target" : "http://terminology.hl7.org/CodeSystem/restful-security-service",
+    "element" : [{
+      "code" : "Basic",
+      "target" : [{
+        "code" : "Basic",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Kerberos",
+      "target" : [{
+        "code" : "Kerberos",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NTLM",
+      "target" : [{
+        "code" : "NTLM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Certificates",
+      "target" : [{
+        "code" : "Certificates",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SMART-on-FHIR",
+      "target" : [{
+        "code" : "SMART-on-FHIR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OAuth",
+      "target" : [{
+        "code" : "OAuth",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

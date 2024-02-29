@@ -15,7 +15,7 @@ group Evidence(source src : EvidenceR5, target tgt : EvidenceR4B) extends Domain
   src.title -> tgt.title;
   src.citeAs : Reference -> tgt.citeAs "citeAsReference";
   src.citeAs : markdown -> tgt.citeAs "citeAsMarkdown";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Evidence.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/evi.status-5to4b', 'code');
   src.date -> tgt.date;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;
@@ -83,7 +83,7 @@ group EvidenceStatisticModelCharacteristic(source src, target tgt) extends Backb
 
 group EvidenceStatisticModelCharacteristicVariable(source src, target tgt) extends BackboneElement {
   src.variableDefinition -> tgt.variableDefinition;
-  src.handling as v -> tgt.handling = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Evidence.statistic.modelCharacteristic.variable.handling-5to4b', 'code');
+  src.handling as v -> tgt.handling = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/evi.st.mo.va.handling-5to4b', 'code');
   src.valueCategory -> tgt.valueCategory;
   src.valueQuantity -> tgt.valueQuantity;
   src.valueRange -> tgt.valueRange;

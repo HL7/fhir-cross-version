@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group EvidenceReport(source src : EvidenceReportR5, target tgt : EvidenceReportR4B) extends DomainResource <<type+>> {
   src.url -> tgt.url;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceReport.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/evr.status-5to4b', 'code');
   src.useContext -> tgt.useContext;
   src.identifier -> tgt.identifier;
   src.relatedIdentifier -> tgt.relatedIdentifier;
@@ -47,7 +47,7 @@ group EvidenceReportSubjectCharacteristic(source src, target tgt) extends Backbo
 }
 
 group EvidenceReportRelatesTo(source src, target tgt) extends BackboneElement {
-  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceReport.relatesTo.code-5to4b', 'code');
+  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/evr.re.code-5to4b', 'code');
   src.target as s -> tgt.target = s.identifier "identifier";
   src.target as s -> tgt.target = s.resource "resource";
 }
@@ -64,7 +64,7 @@ group EvidenceReportSection(source src, target tgt) extends BackboneElement {
   src.focusReference -> tgt.focusReference;
   src.author -> tgt.author;
   src.text -> tgt.text;
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceReport.section.mode-5to4b', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/evr.se.mode-5to4b', 'code');
   src.orderedBy -> tgt.orderedBy;
   src.entryClassifier -> tgt.entryClassifier;
   src.entryReference -> tgt.entryReference;

@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "csd.fi.operator-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.fi.operator-4to3",
+  "name" : "CodeSystem.filter.operator4to3",
+  "title" : "Mapping for CodeSystem.filter.operator from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.filter.operator",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.filter.operator",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/filter-operator",
+    "target" : "http://hl7.org/fhir/3.0/filter-operator",
+    "element" : [{
+      "code" : "is-not-a",
+      "target" : [{
+        "code" : "is-not-a",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "regex",
+      "target" : [{
+        "code" : "regex",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "descendent-of",
+      "target" : [{
+        "code" : "descendent-of",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-in",
+      "target" : [{
+        "code" : "not-in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "exists",
+      "target" : [{
+        "code" : "exists",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "generalizes",
+      "target" : [{
+        "code" : "generalizes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "=",
+      "target" : [{
+        "code" : "=",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "is-a",
+      "target" : [{
+        "code" : "is-a",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

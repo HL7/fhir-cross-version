@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ait.category-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ait.category-4to4b",
+  "name" : "AllergyIntolerance.category4to4b",
+  "title" : "Mapping for AllergyIntolerance.category from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.category",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance#AllergyIntolerance.category",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/allergy-intolerance-category",
+    "target" : "http://hl7.org/fhir/4.3/allergy-intolerance-category",
+    "element" : [{
+      "code" : "environment",
+      "target" : [{
+        "code" : "environment",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "biologic",
+      "target" : [{
+        "code" : "biologic",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "medication",
+      "target" : [{
+        "code" : "medication",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "food",
+      "target" : [{
+        "code" : "food",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

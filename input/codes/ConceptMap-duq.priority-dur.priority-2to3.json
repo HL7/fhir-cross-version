@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "duq.priority-dur.priority-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/duq.priority-dur.priority-2to3",
+  "name" : "DeviceUseRequest.priorityDeviceRequest.priority2to3",
+  "title" : "Mapping for DeviceUseRequest.priority/DeviceRequest.priority from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DeviceUseRequest#DeviceUseRequest.priority",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceRequest#DeviceRequest.priority",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/device-use-request-priority",
+    "target" : "http://hl7.org/fhir/3.0/request-priority",
+    "element" : [{
+      "code" : "stat",
+      "target" : [{
+        "code" : "stat",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "routine",
+      "target" : [{
+        "code" : "routine",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "urgent",
+      "target" : [{
+        "code" : "urgent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "asap",
+      "target" : [{
+        "code" : "asap",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

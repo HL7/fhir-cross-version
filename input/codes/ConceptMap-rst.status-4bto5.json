@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "rst.status-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rst.status-4bto5",
+  "name" : "rst.status-4bto5",
+  "title" : "Mapping for ResearchStudy.status from R4B to R5",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ResearchStudy#ResearchStudy.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ResearchStudy#ResearchStudy.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/research-study-status",
+    "target" : "http://hl7.org/fhir/5.0/publication-status",
+    "element" : [{
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "administratively-completed",
+      "noMap" : true
+    },
+    {
+      "code" : "approved",
+      "noMap" : true
+    },
+    {
+      "code" : "closed-to-accrual",
+      "noMap" : true
+    },
+    {
+      "code" : "closed-to-accrual-and-intervention",
+      "noMap" : true
+    },
+    {
+      "code" : "completed",
+      "noMap" : true
+    },
+    {
+      "code" : "disapproved",
+      "noMap" : true
+    },
+    {
+      "code" : "in-review",
+      "noMap" : true
+    },
+    {
+      "code" : "temporarily-closed-to-accrual",
+      "noMap" : true
+    },
+    {
+      "code" : "temporarily-closed-to-accrual-and-intervention",
+      "noMap" : true
+    },
+    {
+      "code" : "withdrawn",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    }]
+  }]
+}

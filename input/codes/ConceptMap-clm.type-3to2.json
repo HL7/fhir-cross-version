@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "clm.type-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clm.type-3to2",
+  "name" : "Claim.type3to2",
+  "title" : "Mapping for Claim.type from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.type",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Claim#Claim.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/ex-claimtype",
+    "target" : "http://hl7.org/fhir/1.0/claim-type-link",
+    "element" : [{
+      "code" : "vision",
+      "target" : [{
+        "code" : "vision",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "institutional",
+      "target" : [{
+        "code" : "institutional",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pharmacy",
+      "target" : [{
+        "code" : "pharmacy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "oral",
+      "target" : [{
+        "code" : "oral",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "professional",
+      "target" : [{
+        "code" : "professional",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

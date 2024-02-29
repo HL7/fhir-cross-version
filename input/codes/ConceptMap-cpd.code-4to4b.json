@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpd.code-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpd.code-4to4b",
+  "name" : "CompartmentDefinition.code4to4b",
+  "title" : "Mapping for CompartmentDefinition.code from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CompartmentDefinition#CompartmentDefinition.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CompartmentDefinition#CompartmentDefinition.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/compartment-type",
+    "target" : "http://hl7.org/fhir/4.3/compartment-type",
+    "element" : [{
+      "code" : "Practitioner",
+      "target" : [{
+        "code" : "Practitioner",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Device",
+      "target" : [{
+        "code" : "Device",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Patient",
+      "target" : [{
+        "code" : "Patient",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Encounter",
+      "target" : [{
+        "code" : "Encounter",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RelatedPerson",
+      "target" : [{
+        "code" : "RelatedPerson",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

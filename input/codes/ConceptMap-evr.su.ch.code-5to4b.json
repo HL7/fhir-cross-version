@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "evr.su.ch.code-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evr.su.ch.code-5to4b",
+  "name" : "EvidenceReport.subject.characteristic.code5to4b",
+  "title" : "Mapping for EvidenceReport.subject.characteristic.code from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/EvidenceReport#EvidenceReport.subject.characteristic.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EvidenceReport#EvidenceReport.subject.characteristic.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/focus-characteristic-code",
+    "target" : "http://terminology.hl7.org/CodeSystem/focus-characteristic-code",
+    "element" : [{
+      "code" : "comparator",
+      "target" : [{
+        "code" : "comparator",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "exposure",
+      "target" : [{
+        "code" : "exposure",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "citation",
+      "target" : [{
+        "code" : "citation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "medication-exposures",
+      "target" : [{
+        "code" : "medication-exposures",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "study-type",
+      "target" : [{
+        "code" : "study-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "clinical-outcomes-observed",
+      "target" : [{
+        "code" : "clinical-outcomes-observed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "outcome",
+      "target" : [{
+        "code" : "outcome",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "population",
+      "target" : [{
+        "code" : "population",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

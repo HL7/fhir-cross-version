@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "drq.so.direction-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/drq.so.direction-4to4b",
+  "name" : "DataRequirement.sort.direction4to4b",
+  "title" : "Mapping for DataRequirement.sort.direction from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DataRequirement#DataRequirement.sort.direction",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DataRequirement#DataRequirement.sort.direction",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/sort-direction",
+    "target" : "http://hl7.org/fhir/4.3/sort-direction",
+    "element" : [{
+      "code" : "ascending",
+      "target" : [{
+        "code" : "ascending",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "descending",
+      "target" : [{
+        "code" : "descending",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

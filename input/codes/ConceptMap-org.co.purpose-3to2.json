@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "org.co.purpose-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/org.co.purpose-3to2",
+  "name" : "Organization.contact.purpose3to2",
+  "title" : "Mapping for Organization.contact.purpose from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Organization#Organization.contact.purpose",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Organization#Organization.contact.purpose",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/contactentity-type",
+    "target" : "http://hl7.org/fhir/1.0/contactentity-type",
+    "element" : [{
+      "code" : "PATINF",
+      "target" : [{
+        "code" : "PATINF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BILL",
+      "target" : [{
+        "code" : "BILL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HR",
+      "target" : [{
+        "code" : "HR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADMIN",
+      "target" : [{
+        "code" : "ADMIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAYOR",
+      "target" : [{
+        "code" : "PAYOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRESS",
+      "target" : [{
+        "code" : "PRESS",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

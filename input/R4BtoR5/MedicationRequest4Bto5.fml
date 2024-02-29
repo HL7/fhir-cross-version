@@ -13,11 +13,11 @@ group MedicationRequest(source src : MedicationRequestR4B, target tgt : Medicati
   src.basedOn -> tgt.basedOn;
   src.priorPrescription -> tgt.priorPrescription;
   src.groupIdentifier -> tgt.groupIdentifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MedicationRequest.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/mps.status-4bto5', 'code');
   src.statusReason -> tgt.statusReason;
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MedicationRequest.intent-4bto5', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/mps.intent-4bto5', 'code');
   src.category -> tgt.category;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MedicationRequest.priority-4bto5', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/mps.priority-4bto5', 'code');
   src.doNotPerform -> tgt.doNotPerform;
   src.medication : CodeableConcept -> tgt.medication "medicationCodeableConcept";
   src.medication : Reference -> tgt.medication "medicationReference";

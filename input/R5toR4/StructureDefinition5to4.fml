@@ -14,7 +14,7 @@ group StructureDefinition(source src : StructureDefinitionR5, target tgt : Struc
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureDefinition.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sdf.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -27,13 +27,13 @@ group StructureDefinition(source src : StructureDefinitionR5, target tgt : Struc
   src.keyword -> tgt.keyword;
   src.fhirVersion -> tgt.fhirVersion;
   src.mapping as s -> tgt.mapping as t then StructureDefinitionMapping(s, t);
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureDefinition.kind-5to4', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sdf.kind-5to4', 'code');
   src.abstract -> tgt.abstract;
   src.context as s -> tgt.context as t then StructureDefinitionContext(s, t);
   src.contextInvariant -> tgt.contextInvariant;
   src.type -> tgt.type;
   src.baseDefinition -> tgt.baseDefinition;
-  src.derivation as v -> tgt.derivation = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureDefinition.derivation-5to4', 'code');
+  src.derivation as v -> tgt.derivation = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sdf.derivation-5to4', 'code');
   src.snapshot as s -> tgt.snapshot as t then StructureDefinitionSnapshot(s, t);
   src.differential as s -> tgt.differential as t then StructureDefinitionDifferential(s, t);
 }
@@ -46,7 +46,7 @@ group StructureDefinitionMapping(source src, target tgt) extends BackboneElement
 }
 
 group StructureDefinitionContext(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureDefinition.context.type-5to4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sdf.co.type-5to4', 'code');
   src.expression -> tgt.expression;
 }
 

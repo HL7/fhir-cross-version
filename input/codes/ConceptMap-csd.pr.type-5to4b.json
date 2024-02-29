@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "csd.pr.type-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.pr.type-5to4b",
+  "name" : "CodeSystem.property.type5to4b",
+  "title" : "Mapping for CodeSystem.property.type from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CodeSystem#CodeSystem.property.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CodeSystem#CodeSystem.property.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/concept-property-type",
+    "target" : "http://hl7.org/fhir/4.3/concept-property-type",
+    "element" : [{
+      "code" : "dateTime",
+      "target" : [{
+        "code" : "dateTime",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "code",
+      "target" : [{
+        "code" : "code",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "boolean",
+      "target" : [{
+        "code" : "boolean",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "string",
+      "target" : [{
+        "code" : "string",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Coding",
+      "target" : [{
+        "code" : "Coding",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "integer",
+      "target" : [{
+        "code" : "integer",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "decimal",
+      "target" : [{
+        "code" : "decimal",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

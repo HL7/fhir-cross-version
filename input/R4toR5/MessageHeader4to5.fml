@@ -39,7 +39,7 @@ group MessageHeaderSource(source src, target tgt) extends BackboneElement {
 
 group MessageHeaderResponse(source src, target tgt) extends BackboneElement {
   src.identifier as s ->  tgt.identifier = create('Identifier') as t,  t.value = s;
-  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MessageHeader.response.code-4to5', 'code');
+  src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/msh.re.code-4to5', 'code');
   src.details -> tgt.details;
 }
 

@@ -14,7 +14,7 @@ group Procedure(source src : ProcedureR4B, target tgt : ProcedureR5) extends Dom
   src.instantiatesUri -> tgt.instantiatesUri;
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Procedure.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pro.status-4bto5', 'code');
   src.statusReason -> tgt.statusReason;
   src.category -> tgt.category;
   src.code -> tgt.code;

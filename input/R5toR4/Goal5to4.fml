@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Goal(source src : GoalR5, target tgt : GoalR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.lifecycleStatus as v -> tgt.lifecycleStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Goal.lifecycleStatus-5to4', 'code');
+  src.lifecycleStatus as v -> tgt.lifecycleStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/gol.lifecycleStatus-5to4', 'code');
   src.achievementStatus -> tgt.achievementStatus;
   src.category -> tgt.category;
   src.priority -> tgt.priority;

@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Appointment(source src : AppointmentR5, target tgt : AppointmentR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Appointment.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/app.status-5to4', 'code');
   src.cancellationReason -> tgt.cancelationReason;
   src.serviceCategory -> tgt.serviceCategory;
   src.serviceType -> tgt.serviceType;
@@ -37,6 +37,6 @@ group AppointmentParticipant(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.actor;
   src.required as s where required = 'true' ->  tgt.required as t,  t.value = 'required';
   src.required as s where required = 'false' ->  tgt.required as t,  t.value = 'optional';
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Appointment.participant.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/app.pa.status-5to4', 'code');
 }
 

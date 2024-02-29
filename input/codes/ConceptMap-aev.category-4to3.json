@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "aev.category-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/aev.category-4to3",
+  "name" : "AdverseEvent.category4to3",
+  "title" : "Mapping for AdverseEvent.category from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AdverseEvent#AdverseEvent.category",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AdverseEvent#AdverseEvent.category",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+    "target" : "http://hl7.org/fhir/3.0/adverse-event-category",
+    "element" : [{
+      "code" : "expired-drug",
+      "noMap" : true
+    },
+    {
+      "code" : "incorrect-prescribing-information",
+      "noMap" : true
+    },
+    {
+      "code" : "medical-device-use-error",
+      "noMap" : true
+    },
+    {
+      "code" : "problem-different-manufacturer",
+      "noMap" : true
+    },
+    {
+      "code" : "product-problem",
+      "noMap" : true
+    },
+    {
+      "code" : "product-quality",
+      "noMap" : true
+    },
+    {
+      "code" : "product-use-error",
+      "noMap" : true
+    },
+    {
+      "code" : "unsafe-physical-environment",
+      "noMap" : true
+    },
+    {
+      "code" : "wrong-dose",
+      "noMap" : true
+    },
+    {
+      "code" : "wrong-duration",
+      "noMap" : true
+    },
+    {
+      "code" : "wrong-rate",
+      "noMap" : true
+    },
+    {
+      "code" : "wrong-route-of-administration",
+      "noMap" : true
+    },
+    {
+      "code" : "wrong-technique",
+      "noMap" : true
+    },
+    {
+      "code" : "wrong-time",
+      "noMap" : true
+    }]
+  }]
+}

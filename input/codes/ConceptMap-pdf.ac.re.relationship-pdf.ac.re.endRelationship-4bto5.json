@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "pdf.ac.re.relationship-pdf.ac.re.endRelationship-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.re.relationship-pdf.ac.re.endRelationship-4bto5",
+  "name" : "PlanDefinition.action.relatedAction.relationshipPlanDefinition.action.relatedAction.endRelationship4bto5",
+  "title" : "Mapping for PlanDefinition.action.relatedAction.relationship/PlanDefinition.action.relatedAction.endRelationship from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.endRelationship",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/action-relationship-type",
+    "target" : "http://hl7.org/fhir/5.0/action-relationship-type",
+    "element" : [{
+      "code" : "after-end",
+      "target" : [{
+        "code" : "after-end",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "before",
+      "target" : [{
+        "code" : "before",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "concurrent-with-start",
+      "target" : [{
+        "code" : "concurrent-with-start",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "concurrent",
+      "target" : [{
+        "code" : "concurrent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "before-end",
+      "target" : [{
+        "code" : "before-end",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "after",
+      "target" : [{
+        "code" : "after",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "concurrent-with-end",
+      "target" : [{
+        "code" : "concurrent-with-end",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "after-start",
+      "target" : [{
+        "code" : "after-start",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "before-start",
+      "target" : [{
+        "code" : "before-start",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

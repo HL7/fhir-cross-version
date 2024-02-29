@@ -14,7 +14,7 @@ group ConceptMap(source src : ConceptMapR4B, target tgt : ConceptMapR5) extends 
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ConceptMap.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cmd.status-4bto5', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -48,7 +48,7 @@ group ConceptMapGroupElement(source src, target tgt) extends BackboneElement {
 group ConceptMapGroupElementTarget(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.display -> tgt.display;
-  src.equivalence as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ConceptMap.group.element.target.equivalence-ConceptMap.group.element.target.relationship-4bto5', 'code');
+  src.equivalence as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cmd.gr.el.ta.equivalence-cmd.gr.el.ta.relationship-4bto5', 'code');
   src.comment -> tgt.comment;
   src.dependsOn as s -> tgt.dependsOn as t then ConceptMapGroupElementTargetDependsOn(s, t);
   src.product as s -> tgt.product as t then ConceptMapGroupElementTargetDependsOn(s, t);
@@ -65,7 +65,7 @@ group ConceptMapGroupElementTargetDependsOn(source src, target tgt) extends Back
 }
 
 group ConceptMapGroupUnmapped(source src, target tgt) extends BackboneElement {
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ConceptMap.group.unmapped.mode-4bto5', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cmd.gr.un.mode-4bto5', 'code');
   src.code -> tgt.code;
   src.display -> tgt.display;
   src.url -> tgt.otherMap;

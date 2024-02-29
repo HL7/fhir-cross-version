@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group MolecularSequence(source src : MolecularSequenceR5, target tgt : MolecularSequenceR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MolecularSequence.type-5to4b', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/msq.type-5to4b', 'code');
   src.subject -> tgt.patient;
   src.specimen -> tgt.specimen;
   src.device -> tgt.device;
@@ -50,8 +50,8 @@ group MolecularSequenceReferenceSeq(source src, target tgt) extends BackboneElem
     s.sequence : string -> tgt.referenceSeqString "sequenceString";
     s.windowStart -> tgt.windowStart;
     s.windowEnd -> tgt.windowEnd;
-    s.orientation as v -> tgt.orientation = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MolecularSequence.relative.startingSequence.orientation-MolecularSequence.referenceSeq.orientation-5to4b', 'code');
-    s.strand as v -> tgt.strand = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MolecularSequence.relative.startingSequence.strand-MolecularSequence.referenceSeq.strand-5to4b', 'code');
+    s.orientation as v -> tgt.orientation = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/msq.re.st.orientation-msq.re.orientation-5to4b', 'code');
+    s.strand as v -> tgt.strand = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/msq.re.st.strand-msq.re.strand-5to4b', 'code');
   };
 }
 

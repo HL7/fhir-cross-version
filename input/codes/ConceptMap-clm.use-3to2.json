@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "clm.use-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clm.use-3to2",
+  "name" : "Claim.use3to2",
+  "title" : "Mapping for Claim.use from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.use",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Claim#Claim.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/claim-use",
+    "target" : "http://hl7.org/fhir/1.0/claim-use-link",
+    "element" : [{
+      "code" : "exploratory",
+      "target" : [{
+        "code" : "exploratory",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "proposed",
+      "target" : [{
+        "code" : "proposed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "complete",
+      "target" : [{
+        "code" : "complete",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

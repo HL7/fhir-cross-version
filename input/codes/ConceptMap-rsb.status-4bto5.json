@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "rsb.status-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-4bto5",
+  "name" : "ResearchSubject.status4bto5",
+  "title" : "Mapping for ResearchSubject.status from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ResearchSubject#ResearchSubject.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/research-subject-status",
+    "target" : "http://hl7.org/fhir/5.0/publication-status",
+    "element" : [{
+      "code" : "screening",
+      "noMap" : true
+    },
+    {
+      "code" : "not-registered",
+      "noMap" : true
+    },
+    {
+      "code" : "pending-on-study",
+      "noMap" : true
+    },
+    {
+      "code" : "withdrawn",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "potential-candidate",
+      "noMap" : true
+    },
+    {
+      "code" : "on-study-intervention",
+      "noMap" : true
+    },
+    {
+      "code" : "follow-up",
+      "noMap" : true
+    },
+    {
+      "code" : "on-study-observation",
+      "noMap" : true
+    },
+    {
+      "code" : "candidate",
+      "noMap" : true
+    },
+    {
+      "code" : "ineligible",
+      "noMap" : true
+    },
+    {
+      "code" : "eligible",
+      "noMap" : true
+    },
+    {
+      "code" : "on-study",
+      "noMap" : true
+    },
+    {
+      "code" : "off-study",
+      "noMap" : true
+    }]
+  }]
+}

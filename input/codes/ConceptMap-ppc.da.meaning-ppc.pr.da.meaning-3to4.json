@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ppc.da.meaning-ppc.pr.da.meaning-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.da.meaning-ppc.pr.da.meaning-3to4",
+  "name" : "Consent.data.meaningConsent.provision.data.meaning3to4",
+  "title" : "Mapping for Consent.data.meaning/Consent.provision.data.meaning from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.data.meaning",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.data.meaning",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/consent-data-meaning",
+    "target" : "http://hl7.org/fhir/4.0/consent-data-meaning",
+    "element" : [{
+      "code" : "instance",
+      "target" : [{
+        "code" : "instance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "related",
+      "target" : [{
+        "code" : "related",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dependents",
+      "target" : [{
+        "code" : "dependents",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "authoredby",
+      "target" : [{
+        "code" : "authoredby",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

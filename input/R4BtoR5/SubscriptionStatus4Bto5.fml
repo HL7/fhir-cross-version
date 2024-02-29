@@ -9,8 +9,8 @@ uses "http://hl7.org/fhir/5.0/SubscriptionStatus" alias SubscriptionStatusR5 as 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group SubscriptionStatus(source src : SubscriptionStatusR4B, target tgt : SubscriptionStatusR5) extends DomainResource <<type+>> {
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionStatus.status-4bto5', 'code');
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SubscriptionStatus.type-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/scrs.status-4bto5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/scrs.type-4bto5', 'code');
   src.eventsSinceSubscriptionStart : string as s -> tgt.eventsSinceSubscriptionStart "eventsSinceSubscriptionStartString";
   src.notificationEvent as s -> tgt.notificationEvent as t then SubscriptionStatusNotificationEvent(s, t);
   src.subscription -> tgt.subscription;

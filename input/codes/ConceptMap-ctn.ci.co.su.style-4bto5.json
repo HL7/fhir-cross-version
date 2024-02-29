@@ -1,0 +1,125 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ctn.ci.co.su.style-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.co.su.style-4bto5",
+  "name" : "Citation.citedArtifact.contributorship.summary.style4bto5",
+  "title" : "Mapping for Citation.citedArtifact.contributorship.summary.style from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.contributorship.summary.style",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.contributorship.summary.style",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/contributor-summary-style",
+    "target" : "http://hl7.org/fhir/5.0/contributor-summary-style",
+    "element" : [{
+      "code" : "aallinitwithand",
+      "target" : [{
+        "code" : "aallinitwithand",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "a3init",
+      "target" : [{
+        "code" : "a3init",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "a3full",
+      "target" : [{
+        "code" : "a3full",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "aallfullwithampersand",
+      "target" : [{
+        "code" : "aallfullwithampersand",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "a1init",
+      "target" : [{
+        "code" : "a1init",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "a6full",
+      "target" : [{
+        "code" : "a6full",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "contr-init-by-contr",
+      "target" : [{
+        "code" : "contr-init-by-contr",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "aallinit",
+      "target" : [{
+        "code" : "aallinit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "contr-full-by-person",
+      "target" : [{
+        "code" : "contr-full-by-person",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "aallfull",
+      "target" : [{
+        "code" : "aallfull",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "a6init",
+      "target" : [{
+        "code" : "a6init",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "a1full",
+      "target" : [{
+        "code" : "a1full",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "contr-init-by-person",
+      "target" : [{
+        "code" : "contr-init-by-person",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "aallfullwithand",
+      "target" : [{
+        "code" : "aallfullwithand",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "aallinitwithampersand",
+      "target" : [{
+        "code" : "aallinitwithampersand",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "contr-full-by-contr",
+      "target" : [{
+        "code" : "contr-full-by-contr",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

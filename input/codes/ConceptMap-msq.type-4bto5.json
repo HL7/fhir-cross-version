@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "msq.type-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/msq.type-4bto5",
+  "name" : "MolecularSequence.type4bto5",
+  "title" : "Mapping for MolecularSequence.type from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MolecularSequence#MolecularSequence.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MolecularSequence#MolecularSequence.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/sequence-type",
+    "target" : "http://hl7.org/fhir/5.0/sequence-type",
+    "element" : [{
+      "code" : "aa",
+      "target" : [{
+        "code" : "aa",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rna",
+      "target" : [{
+        "code" : "rna",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dna",
+      "target" : [{
+        "code" : "dna",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

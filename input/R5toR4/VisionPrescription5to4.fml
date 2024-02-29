@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group VisionPrescription(source src : VisionPrescriptionR5, target tgt : VisionPrescriptionR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/VisionPrescription.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/vps.status-5to4', 'code');
   src.created -> tgt.created;
   src.patient -> tgt.patient;
   src.encounter -> tgt.encounter;
@@ -21,7 +21,7 @@ group VisionPrescription(source src : VisionPrescriptionR5, target tgt : VisionP
 
 group VisionPrescriptionLensSpecification(source src, target tgt) extends BackboneElement {
   src.product -> tgt.product;
-  src.eye as v -> tgt.eye = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/VisionPrescription.lensSpecification.eye-5to4', 'code');
+  src.eye as v -> tgt.eye = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/vps.le.eye-5to4', 'code');
   src.sphere -> tgt.sphere;
   src.cylinder -> tgt.cylinder;
   src.axis -> tgt.axis;
@@ -38,6 +38,6 @@ group VisionPrescriptionLensSpecification(source src, target tgt) extends Backbo
 
 group VisionPrescriptionLensSpecificationPrism(source src, target tgt) extends BackboneElement {
   src.amount -> tgt.amount;
-  src.base as v -> tgt.base = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/VisionPrescription.lensSpecification.prism.base-5to4', 'code');
+  src.base as v -> tgt.base = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/vps.le.pr.base-5to4', 'code');
 }
 

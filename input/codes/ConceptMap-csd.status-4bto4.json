@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "csd.status-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.status-4bto4",
+  "name" : "CodeSystem.status4bto4",
+  "title" : "Mapping for CodeSystem.status from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CodeSystem#CodeSystem.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/publication-status",
+    "target" : "http://hl7.org/fhir/4.0/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

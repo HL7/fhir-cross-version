@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eld.co.severity-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eld.co.severity-4to5",
+  "name" : "ElementDefinition.constraint.severity4to5",
+  "title" : "Mapping for ElementDefinition.constraint.severity from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.constraint.severity",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ElementDefinition#ElementDefinition.constraint.severity",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/constraint-severity",
+    "target" : "http://hl7.org/fhir/5.0/constraint-severity",
+    "element" : [{
+      "code" : "warning",
+      "target" : [{
+        "code" : "warning",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "dcr.re.code-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.re.code-5to4",
+  "name" : "DocumentReference.relatesTo.code5to4",
+  "title" : "Mapping for DocumentReference.relatesTo.code from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/document-relationship-type",
+    "target" : "http://hl7.org/fhir/4.0/document-relationship-type",
+    "element" : [{
+      "code" : "incorporates",
+      "noMap" : true
+    },
+    {
+      "code" : "signs",
+      "target" : [{
+        "code" : "signs",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "replaces",
+      "target" : [{
+        "code" : "replaces",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transforms",
+      "target" : [{
+        "code" : "transforms",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "summarizes",
+      "noMap" : true
+    },
+    {
+      "code" : "appends",
+      "target" : [{
+        "code" : "appends",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -15,7 +15,7 @@ group CarePlan(source src : CarePlanR5, target tgt : CarePlanR4B) extends Domain
   src.basedOn -> tgt.basedOn;
   src.replaces -> tgt.replaces;
   src.partOf -> tgt.partOf;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CarePlan.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpl.status-5to4b', 'code');
   src.intent -> tgt.intent;
   src.category -> tgt.category;
   src.title -> tgt.title;

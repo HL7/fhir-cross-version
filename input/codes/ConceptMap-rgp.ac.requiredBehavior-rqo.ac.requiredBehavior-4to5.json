@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "rgp.ac.requiredBehavior-rqo.ac.requiredBehavior-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.requiredBehavior-rqo.ac.requiredBehavior-4to5",
+  "name" : "RequestGroup.action.requiredBehaviorRequestOrchestration.action.requiredBehavior4to5",
+  "title" : "Mapping for RequestGroup.action.requiredBehavior/RequestOrchestration.action.requiredBehavior from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.requiredBehavior",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.requiredBehavior",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/action-required-behavior",
+    "target" : "http://hl7.org/fhir/5.0/action-required-behavior",
+    "element" : [{
+      "code" : "could",
+      "target" : [{
+        "code" : "could",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "must",
+      "target" : [{
+        "code" : "must",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "must-unless-documented",
+      "target" : [{
+        "code" : "must-unless-documented",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

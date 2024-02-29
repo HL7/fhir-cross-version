@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.re.re.in.code-cpb.re.re.in.code-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.in.code-cpb.re.re.in.code-3to2",
+  "name" : "CapabilityStatement.rest.resource.interaction.codeConformance.rest.resource.interaction.code3to2",
+  "title" : "Mapping for CapabilityStatement.rest.resource.interaction.code/Conformance.rest.resource.interaction.code from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.interaction.code",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.resource.interaction.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/restful-interaction",
+    "target" : "http://hl7.org/fhir/1.0/restful-interaction",
+    "element" : [{
+      "code" : "create",
+      "target" : [{
+        "code" : "create",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "delete",
+      "target" : [{
+        "code" : "delete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history-instance",
+      "target" : [{
+        "code" : "history-instance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history-type",
+      "target" : [{
+        "code" : "history-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "patch",
+      "noMap" : true
+    },
+    {
+      "code" : "read",
+      "target" : [{
+        "code" : "read",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "search-type",
+      "target" : [{
+        "code" : "search-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "update",
+      "target" : [{
+        "code" : "update",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "vread",
+      "target" : [{
+        "code" : "vread",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

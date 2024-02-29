@@ -14,7 +14,7 @@ group TestScript(source src : TestScriptR5, target tgt : TestScriptR4) extends D
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/tst.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -105,7 +105,7 @@ group TestScriptSetupActionOperation(source src, target tgt) extends BackboneEle
   src.contentType -> tgt.contentType;
   src.destination -> tgt.destination;
   src.encodeRequestUrl -> tgt.encodeRequestUrl;
-  src.method as v -> tgt.method = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.operation.method-5to4', 'code');
+  src.method as v -> tgt.method = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.op.method-5to4', 'code');
   src.origin -> tgt.origin;
   src.params -> tgt.params;
   src.requestHeader as s -> tgt.requestHeader as t then TestScriptSetupActionOperationRequestHeader(s, t);
@@ -124,7 +124,7 @@ group TestScriptSetupActionOperationRequestHeader(source src, target tgt) extend
 group TestScriptSetupActionAssert(source src, target tgt) extends BackboneElement {
   src.label -> tgt.label;
   src.description -> tgt.description;
-  src.direction as v -> tgt.direction = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.assert.direction-5to4', 'code');
+  src.direction as v -> tgt.direction = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.direction-5to4', 'code');
   src.compareToSourceId -> tgt.compareToSourceId;
   src.compareToSourceExpression -> tgt.compareToSourceExpression;
   src.compareToSourcePath -> tgt.compareToSourcePath;
@@ -133,12 +133,12 @@ group TestScriptSetupActionAssert(source src, target tgt) extends BackboneElemen
   src.headerField -> tgt.headerField;
   src.minimumId -> tgt.minimumId;
   src.navigationLinks -> tgt.navigationLinks;
-  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.assert.operator-5to4', 'code');
+  src.operator as v -> tgt.operator = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.operator-5to4', 'code');
   src.path -> tgt.path;
-  src.requestMethod as v -> tgt.requestMethod = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.assert.requestMethod-5to4', 'code');
+  src.requestMethod as v -> tgt.requestMethod = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.requestMethod-5to4', 'code');
   src.requestURL -> tgt.requestURL;
   src.resource -> tgt.resource;
-  src.response as v -> tgt.response = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/TestScript.setup.action.assert.response-5to4', 'code');
+  src.response as v -> tgt.response = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.response-5to4', 'code');
   src.responseCode -> tgt.responseCode;
   src.sourceId -> tgt.sourceId;
   src.validateProfileId -> tgt.validateProfileId;

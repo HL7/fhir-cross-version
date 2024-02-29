@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "que.status-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/que.status-3to2",
+  "name" : "que.status-3to2",
+  "title" : "Mapping for Questionnaire.status from R3 to R2",
+  "status" : "active",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Questionnaire#Questionnaire.status",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Questionnaire#Questionnaire.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/publication-status",
+    "target" : "http://hl7.org/fhir/1.0/questionnaire-status",
+    "element" : [{
+      "code" : "active",
+      "target" : [{
+        "code" : "published",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "noMap" : true
+    }]
+  }]
+}

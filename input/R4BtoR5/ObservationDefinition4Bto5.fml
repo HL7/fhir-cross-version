@@ -12,7 +12,7 @@ group ObservationDefinition(source src : ObservationDefinitionR4B, target tgt : 
   src.identifier -> tgt.identifier;
   src.category -> tgt.category;
   src.code -> tgt.code;
-  src.permittedDataType as v -> tgt.permittedDataType = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ObservationDefinition.permittedDataType-4bto5', 'code');
+  src.permittedDataType as v -> tgt.permittedDataType = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/obdf.permittedDataType-4bto5', 'code');
   src.multipleResultsAllowed -> tgt.multipleResultsAllowed;
   src.method -> tgt.method;
   src.preferredReportName -> tgt.preferredReportName;
@@ -36,11 +36,11 @@ group ObservationDefinitionQuantitativeDetails(source src, target tgt) extends B
 group ObservationDefinitionQualifiedValue(source src, target tgt) extends BackboneElement {
   src.context -> tgt.context;
   src.appliesTo -> tgt.appliesTo;
-  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ObservationDefinition.qualifiedInterval.gender-ObservationDefinition.qualifiedValue.gender-4bto5', 'code');
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/obdf.qu.gender-obdf.qu.gender-4bto5', 'code');
   src.age -> tgt.age;
   src.gestationalAge -> tgt.gestationalAge;
   src.condition -> tgt.condition;
-  src.category as v -> tgt.rangeCategory = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ObservationDefinition.qualifiedInterval.category-ObservationDefinition.qualifiedValue.rangeCategory-4bto5', 'code');
+  src.category as v -> tgt.rangeCategory = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/obdf.qu.category-obdf.qu.rangeCategory-4bto5', 'code');
   src.range -> tgt.range;
 }
 

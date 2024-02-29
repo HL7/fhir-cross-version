@@ -15,7 +15,7 @@ group Slot(source src : SlotR5, target tgt : SlotR4B) extends DomainResource <<t
   src.specialty -> tgt.specialty;
   src.appointmentType -> tgt.appointmentType;
   src.schedule -> tgt.schedule;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Slot.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/slt.status-5to4b', 'code');
   src.start -> tgt.start;
   src.end -> tgt.end;
   src.overbooked -> tgt.overbooked;

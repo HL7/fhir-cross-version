@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "trd.type-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/trd.type-4to4b",
+  "name" : "TriggerDefinition.type4to4b",
+  "title" : "Mapping for TriggerDefinition.type from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TriggerDefinition#TriggerDefinition.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TriggerDefinition#TriggerDefinition.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/trigger-type",
+    "target" : "http://hl7.org/fhir/4.3/trigger-type",
+    "element" : [{
+      "code" : "data-changed",
+      "target" : [{
+        "code" : "data-changed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "data-access-ended",
+      "target" : [{
+        "code" : "data-access-ended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "named-event",
+      "target" : [{
+        "code" : "named-event",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "periodic",
+      "target" : [{
+        "code" : "periodic",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "data-modified",
+      "target" : [{
+        "code" : "data-modified",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "data-removed",
+      "target" : [{
+        "code" : "data-removed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "data-accessed",
+      "target" : [{
+        "code" : "data-accessed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "data-added",
+      "target" : [{
+        "code" : "data-added",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

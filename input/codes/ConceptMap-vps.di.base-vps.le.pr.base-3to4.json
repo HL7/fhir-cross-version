@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "vps.di.base-vps.le.pr.base-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/vps.di.base-vps.le.pr.base-3to4",
+  "name" : "VisionPrescription.dispense.baseVisionPrescription.lensSpecification.prism.base3to4",
+  "title" : "Mapping for VisionPrescription.dispense.base/VisionPrescription.lensSpecification.prism.base from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/VisionPrescription#VisionPrescription.dispense.base",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.prism.base",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/vision-base-codes",
+    "target" : "http://hl7.org/fhir/4.0/vision-base-codes",
+    "element" : [{
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "up",
+      "target" : [{
+        "code" : "up",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "down",
+      "target" : [{
+        "code" : "down",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "out",
+      "target" : [{
+        "code" : "out",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

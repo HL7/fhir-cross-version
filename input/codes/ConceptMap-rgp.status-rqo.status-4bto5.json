@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "rgp.status-rqo.status-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.status-rqo.status-4bto5",
+  "name" : "RequestGroup.statusRequestOrchestration.status4bto5",
+  "title" : "Mapping for RequestGroup.status/RequestOrchestration.status from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/request-status",
+    "target" : "http://hl7.org/fhir/5.0/request-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "revoked",
+      "target" : [{
+        "code" : "revoked",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "on-hold",
+      "target" : [{
+        "code" : "on-hold",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

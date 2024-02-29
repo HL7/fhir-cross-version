@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tcp.status-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tcp.status-5to4",
+  "name" : "TerminologyCapabilities.status5to4",
+  "title" : "Mapping for TerminologyCapabilities.status from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/publication-status",
+    "target" : "http://hl7.org/fhir/4.0/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

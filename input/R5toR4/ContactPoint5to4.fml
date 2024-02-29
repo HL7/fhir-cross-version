@@ -9,9 +9,9 @@ uses "http://hl7.org/fhir/4.0/ContactPoint" alias ContactPointR4 as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group ContactPoint(source src : ContactPointR5, target tgt : ContactPointR4) extends Element <<type+>> {
-  src.system as v -> tgt.system = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ContactPoint.system-5to4', 'code');
+  src.system as v -> tgt.system = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpt.system-5to4', 'code');
   src.value -> tgt.value;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ContactPoint.use-5to4', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpt.use-5to4', 'code');
   src.rank -> tgt.rank;
   src.period -> tgt.period;
 }

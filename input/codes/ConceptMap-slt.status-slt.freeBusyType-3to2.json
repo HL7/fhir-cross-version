@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "slt.status-slt.freeBusyType-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/slt.status-slt.freeBusyType-3to2",
+  "name" : "Slot.statusSlot.freeBusyType3to2",
+  "title" : "Mapping for Slot.status/Slot.freeBusyType from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Slot#Slot.status",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Slot#Slot.freeBusyType",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/slotstatus",
+    "target" : "http://hl7.org/fhir/1.0/slotstatus",
+    "element" : [{
+      "code" : "busy",
+      "target" : [{
+        "code" : "busy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "busy-tentative",
+      "target" : [{
+        "code" : "busy-tentative",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "busy-unavailable",
+      "target" : [{
+        "code" : "busy-unavailable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "noMap" : true
+    },
+    {
+      "code" : "free",
+      "target" : [{
+        "code" : "free",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

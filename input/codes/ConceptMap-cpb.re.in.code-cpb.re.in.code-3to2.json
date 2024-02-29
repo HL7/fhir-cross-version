@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.re.in.code-cpb.re.in.code-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.in.code-cpb.re.in.code-3to2",
+  "name" : "CapabilityStatement.rest.interaction.codeConformance.rest.interaction.code3to2",
+  "title" : "Mapping for CapabilityStatement.rest.interaction.code/Conformance.rest.interaction.code from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.interaction.code",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.interaction.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/restful-interaction",
+    "target" : "http://hl7.org/fhir/1.0/restful-interaction",
+    "element" : [{
+      "code" : "batch",
+      "noMap" : true
+    },
+    {
+      "code" : "history-system",
+      "target" : [{
+        "code" : "history-system",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "search-system",
+      "target" : [{
+        "code" : "search-system",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transaction",
+      "target" : [{
+        "code" : "transaction",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group ResearchSubject(source src : ResearchSubjectR3, target tgt : ResearchSubject) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ResearchSubject.status-3to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-3to4', 'code');
   src.status -> tgt.status;
   src.period -> tgt.period;
   src.study -> tgt.study;

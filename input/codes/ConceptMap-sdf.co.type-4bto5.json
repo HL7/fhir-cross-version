@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sdf.co.type-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.co.type-4bto5",
+  "name" : "StructureDefinition.context.type4bto5",
+  "title" : "Mapping for StructureDefinition.context.type from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition#StructureDefinition.context.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition#StructureDefinition.context.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/extension-context-type",
+    "target" : "http://hl7.org/fhir/5.0/extension-context-type",
+    "element" : [{
+      "code" : "extension",
+      "target" : [{
+        "code" : "extension",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "fhirpath",
+      "target" : [{
+        "code" : "fhirpath",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "element",
+      "target" : [{
+        "code" : "element",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

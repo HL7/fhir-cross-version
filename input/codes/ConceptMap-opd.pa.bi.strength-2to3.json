@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "opd.pa.bi.strength-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.bi.strength-2to3",
+  "name" : "OperationDefinition.parameter.binding.strength2to3",
+  "title" : "Mapping for OperationDefinition.parameter.binding.strength from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.binding.strength",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.binding.strength",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/binding-strength",
+    "target" : "http://hl7.org/fhir/3.0/binding-strength",
+    "element" : [{
+      "code" : "extensible",
+      "target" : [{
+        "code" : "extensible",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "required",
+      "target" : [{
+        "code" : "required",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preferred",
+      "target" : [{
+        "code" : "preferred",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "example",
+      "target" : [{
+        "code" : "example",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

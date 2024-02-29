@@ -13,8 +13,8 @@ group NutritionOrder(source src : NutritionOrderR4B, target tgt : NutritionOrder
   src.instantiatesCanonical -> tgt.instantiatesCanonical;
   src.instantiatesUri -> tgt.instantiatesUri;
   src.instantiates -> tgt.instantiates;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/NutritionOrder.status-4bto5', 'code');
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/NutritionOrder.intent-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/nor.status-4bto5', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/nor.intent-4bto5', 'code');
   src.patient -> tgt.subject;
   src.encounter -> tgt.encounter;
   src.dateTime -> tgt.dateTime;

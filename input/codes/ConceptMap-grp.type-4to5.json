@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "grp.type-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/grp.type-4to5",
+  "name" : "Group.type4to5",
+  "title" : "Mapping for Group.type from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Group#Group.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Group#Group.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/group-type",
+    "target" : "http://hl7.org/fhir/5.0/group-type",
+    "element" : [{
+      "code" : "practitioner",
+      "target" : [{
+        "code" : "practitioner",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "person",
+      "target" : [{
+        "code" : "person",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "substance",
+      "noMap" : true
+    },
+    {
+      "code" : "animal",
+      "target" : [{
+        "code" : "animal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "medication",
+      "noMap" : true
+    },
+    {
+      "code" : "device",
+      "target" : [{
+        "code" : "device",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

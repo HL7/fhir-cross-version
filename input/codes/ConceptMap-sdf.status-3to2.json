@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sdf.status-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.status-3to2",
+  "name" : "StructureDefinition.status3to2",
+  "title" : "Mapping for StructureDefinition.status from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition#StructureDefinition.status",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/StructureDefinition#StructureDefinition.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/publication-status",
+    "target" : "http://hl7.org/fhir/1.0/conformance-resource-status",
+    "element" : [{
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "noMap" : true
+    }]
+  }]
+}

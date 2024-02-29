@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/4.3/Contributor" alias ContributorR4B as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group Contributor(source src : ContributorR5, target tgt : ContributorR4B) extends Element <<type+>> {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Contributor.type-5to4b', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ctb.type-5to4b', 'code');
   src.name -> tgt.name;
   src.contact -> tgt.contact;
 }

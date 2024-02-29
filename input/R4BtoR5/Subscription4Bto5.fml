@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/5.0/Subscription" alias SubscriptionR5 as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group Subscription(source src : SubscriptionR4B, target tgt : SubscriptionR5) extends DomainResource <<type+>> {
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Subscription.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/scr.status-4bto5', 'code');
   src.contact -> tgt.contact;
   src.end -> tgt.end;
   src.reason -> tgt.reason;

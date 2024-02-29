@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "prq.action-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prq.action-3to2",
+  "name" : "ProcessRequest.action3to2",
+  "title" : "Mapping for ProcessRequest.action from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcessRequest#ProcessRequest.action",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ProcessRequest#ProcessRequest.action",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/actionlist",
+    "target" : "http://hl7.org/fhir/1.0/actionlist",
+    "element" : [{
+      "code" : "cancel",
+      "target" : [{
+        "code" : "cancel",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reprocess",
+      "target" : [{
+        "code" : "reprocess",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "poll",
+      "target" : [{
+        "code" : "poll",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "status",
+      "target" : [{
+        "code" : "status",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

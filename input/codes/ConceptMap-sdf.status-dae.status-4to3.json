@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sdf.status-dae.status-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.status-dae.status-4to3",
+  "name" : "StructureDefinition.statusDataElement.status4to3",
+  "title" : "Mapping for StructureDefinition.status/DataElement.status from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DataElement#DataElement.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/publication-status",
+    "target" : "http://hl7.org/fhir/3.0/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

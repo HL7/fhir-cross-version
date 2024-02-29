@@ -1,0 +1,104 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "obdf.qu.context-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obdf.qu.context-4to4b",
+  "name" : "ObservationDefinition.qualifiedInterval.context4to4b",
+  "title" : "Mapping for ObservationDefinition.qualifiedInterval.context from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.context",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.context",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+    "target" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+    "element" : [{
+      "code" : "midcycle",
+      "target" : [{
+        "code" : "midcycle",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "normal",
+      "target" : [{
+        "code" : "normal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "treatment",
+      "target" : [{
+        "code" : "treatment",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pre",
+      "target" : [{
+        "code" : "pre",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pre-puberty",
+      "target" : [{
+        "code" : "pre-puberty",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "type",
+      "target" : [{
+        "code" : "type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "follicular",
+      "target" : [{
+        "code" : "follicular",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "recommended",
+      "target" : [{
+        "code" : "recommended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "therapeutic",
+      "target" : [{
+        "code" : "therapeutic",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "post",
+      "target" : [{
+        "code" : "post",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "luteal",
+      "target" : [{
+        "code" : "luteal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "endocrine",
+      "target" : [{
+        "code" : "endocrine",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "postmenopausal",
+      "target" : [{
+        "code" : "postmenopausal",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

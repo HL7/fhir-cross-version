@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group ParameterDefinition(source src : ParameterDefinitionR4B, target tgt : ParameterDefinitionR5) extends Element <<type+>> {
   src.name -> tgt.name;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ParameterDefinition.use-4bto5', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/prd.use-4bto5', 'code');
   src.min -> tgt.min;
   src.max -> tgt.max;
   src.documentation -> tgt.documentation;

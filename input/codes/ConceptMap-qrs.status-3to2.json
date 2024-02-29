@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "qrs.status-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/qrs.status-3to2",
+  "name" : "QuestionnaireResponse.status3to2",
+  "title" : "Mapping for QuestionnaireResponse.status from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/questionnaire-answers-status",
+    "target" : "http://hl7.org/fhir/1.0/questionnaire-answers-status",
+    "element" : [{
+      "code" : "amended",
+      "target" : [{
+        "code" : "amended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "noMap" : true
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "in-progress",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "stopped",
+      "noMap" : true
+    }]
+  }]
+}

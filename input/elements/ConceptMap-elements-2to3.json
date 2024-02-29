@@ -8,9 +8,11 @@
   "status" : "active",
   "date" : "2024-02-01",
   "publisher" : "HL7",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/elements",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/elements",
   "group" : [{
-    "source" : "http://hl7.org/fhir/R2/element-names",
-    "target" : "http://hl7.org/fhir/R3/element-names",
+    "source" : "http://hl7.org/fhir/1.0/element-names",
+    "target" : "http://hl7.org/fhir/3.0/element-names",
     "element" : [
     { "code" : "Account.activePeriod", "target" : [{ "code" : "Account.period", "relationship" : "equivalent" }]},
     { "code" : "Account.coveragePeriod", "noMap" : true },

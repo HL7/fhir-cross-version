@@ -15,7 +15,7 @@ group EvidenceVariable(source src : EvidenceVariableR5, target tgt : EvidenceVar
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.shortTitle -> tgt.shortTitle;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceVariable.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/evv.status-5to4', 'code');
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
   src.contact -> tgt.contact;

@@ -1,0 +1,101 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "dgo.status-pcrq.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dgo.status-pcrq.status-2to3",
+  "name" : "DiagnosticOrder.statusProcedureRequest.status2to3",
+  "title" : "Mapping for DiagnosticOrder.status/ProcedureRequest.status from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DiagnosticOrder#DiagnosticOrder.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/diagnostic-order-status",
+    "target" : "http://hl7.org/fhir/3.0/request-status",
+    "element" : [{
+      "code" : "rejected",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "accepted",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "received",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "planned",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "failed",
+      "noMap" : true
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "suspended",
+      "target" : [{
+        "code" : "suspended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "requested",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "proposed",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "review",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "source-is-narrower-than-target"
+      }]
+    },
+    {
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

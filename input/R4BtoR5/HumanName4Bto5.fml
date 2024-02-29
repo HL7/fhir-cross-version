@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/5.0/HumanName" alias HumanNameR5 as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group HumanName(source src : HumanNameR4B, target tgt : HumanNameR5) extends Element <<type+>> {
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/HumanName.use-4bto5', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/nam.use-4bto5', 'code');
   src.text -> tgt.text;
   src.family -> tgt.family;
   src.given -> tgt.given;

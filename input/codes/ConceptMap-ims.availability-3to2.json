@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ims.availability-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ims.availability-3to2",
+  "name" : "ImagingStudy.availability3to2",
+  "title" : "Mapping for ImagingStudy.availability from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ImagingStudy#ImagingStudy.availability",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ImagingStudy#ImagingStudy.availability",
+  "group" : [{
+    "source" : "http://dicom.nema.org/resources/ontology/DCM",
+    "target" : "http://nema.org/dicom/dicm",
+    "element" : [{
+      "code" : "NEARLINE",
+      "target" : [{
+        "code" : "NEARLINE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OFFLINE",
+      "target" : [{
+        "code" : "OFFLINE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ONLINE",
+      "target" : [{
+        "code" : "ONLINE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UNAVAILABLE",
+      "target" : [{
+        "code" : "UNAVAILABLE",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

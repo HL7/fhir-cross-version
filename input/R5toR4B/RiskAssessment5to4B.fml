@@ -12,7 +12,7 @@ group RiskAssessment(source src : RiskAssessmentR5, target tgt : RiskAssessmentR
   src.identifier -> tgt.identifier;
   src.basedOn -> tgt.basedOn;
   src.parent -> tgt.parent;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RiskAssessment.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ras.status-5to4b', 'code');
   src.method -> tgt.method;
   src.code -> tgt.code;
   src.subject -> tgt.subject;

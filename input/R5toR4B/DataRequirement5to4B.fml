@@ -46,6 +46,6 @@ group DataRequirementDateFilter(source src, target tgt) extends Element {
 // }
 group DataRequirementSort(source src, target tgt) extends Element {
   src.path -> tgt.path;
-  src.direction as v -> tgt.direction = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DataRequirement.sort.direction-5to4b', 'code');
+  src.direction as v -> tgt.direction = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/drq.so.direction-5to4b', 'code');
 }
 

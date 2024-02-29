@@ -10,8 +10,8 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group NamingSystem(source src : NamingSystemR5, target tgt : NamingSystemR4) extends DomainResource <<type+>> {
   src.name -> tgt.name;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/NamingSystem.status-5to4', 'code');
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/NamingSystem.kind-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/nsd.status-5to4', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/nsd.kind-5to4', 'code');
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
   src.contact -> tgt.contact;
@@ -25,7 +25,7 @@ group NamingSystem(source src : NamingSystemR5, target tgt : NamingSystemR4) ext
 }
 
 group NamingSystemUniqueId(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/NamingSystem.uniqueId.type-5to4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/nsd.un.type-5to4', 'code');
   src.value -> tgt.value;
   src.preferred -> tgt.preferred;
   src.comment -> tgt.comment;

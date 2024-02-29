@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "dti.severity-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dti.severity-4bto5",
+  "name" : "DetectedIssue.severity4bto5",
+  "title" : "Mapping for DetectedIssue.severity from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DetectedIssue#DetectedIssue.severity",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DetectedIssue#DetectedIssue.severity",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/detectedissue-severity",
+    "target" : "http://hl7.org/fhir/5.0/detectedissue-severity",
+    "element" : [{
+      "code" : "high",
+      "target" : [{
+        "code" : "high",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "low",
+      "target" : [{
+        "code" : "low",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "moderate",
+      "target" : [{
+        "code" : "moderate",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

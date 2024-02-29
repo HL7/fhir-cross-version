@@ -29,7 +29,7 @@ group TimingRepeat(source src, target tgt) extends Element {
   src.period -> tgt.period;
   src.periodMax -> tgt.periodMax;
   src.periodUnit -> tgt.periodUnit;
-  src.dayOfWeek as v -> tgt.dayOfWeek = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Timing.repeat.dayOfWeek-5to4', 'code');
+  src.dayOfWeek as v -> tgt.dayOfWeek = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.dayOfWeek-5to4', 'code');
   src.timeOfDay -> tgt.timeOfDay;
   src.when -> tgt.when;
   src.offset -> tgt.offset;

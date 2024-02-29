@@ -11,7 +11,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 group Medication(source src : MedicationR5, target tgt : MedicationR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.code -> tgt.code;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Medication.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/med.status-5to4b', 'code');
   src.marketingAuthorizationHolder -> tgt.manufacturer;
   src.doseForm -> tgt.form;
   src.totalVolume as s ->  tgt.amount as t,  t.numerator = s;

@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "bdl.en.se.mode-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/bdl.en.se.mode-5to4",
+  "name" : "Bundle.entry.search.mode5to4",
+  "title" : "Mapping for Bundle.entry.search.mode from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Bundle#Bundle.entry.search.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Bundle#Bundle.entry.search.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/search-entry-mode",
+    "target" : "http://hl7.org/fhir/4.0/search-entry-mode",
+    "element" : [{
+      "code" : "include",
+      "target" : [{
+        "code" : "include",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "match",
+      "target" : [{
+        "code" : "match",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "outcome",
+      "target" : [{
+        "code" : "outcome",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

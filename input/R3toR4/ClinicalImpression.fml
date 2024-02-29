@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
 group ClinicalImpression(source src : ClinicalImpressionR3, target tgt : ClinicalImpression) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ClinicalImpression.status-3to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cli.status-3to4', 'code');
   src.code -> tgt.code;
   src.description -> tgt.description;
   src.subject -> tgt.subject;

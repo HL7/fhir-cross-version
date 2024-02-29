@@ -1,0 +1,209 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "evr.se.focus-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evr.se.focus-4bto5",
+  "name" : "EvidenceReport.section.focus4bto5",
+  "title" : "Mapping for EvidenceReport.section.focus from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EvidenceReport#EvidenceReport.section.focus",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/EvidenceReport#EvidenceReport.section.focus",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/evidence-report-section",
+    "target" : "http://hl7.org/fhir/5.0/evidence-report-section",
+    "element" : [{
+      "code" : "Text-Summary",
+      "target" : [{
+        "code" : "Text-Summary",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Row-Headers",
+      "target" : [{
+        "code" : "Row-Headers",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Intervention-vs-Control-Evidence",
+      "target" : [{
+        "code" : "Intervention-vs-Control-Evidence",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EvidenceVariable-observed",
+      "target" : [{
+        "code" : "EvidenceVariable-observed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Evidence",
+      "target" : [{
+        "code" : "Evidence",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Intervention-group-alone-Evidence",
+      "target" : [{
+        "code" : "Intervention-group-alone-Evidence",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Tables",
+      "target" : [{
+        "code" : "Tables",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Efficacy-outcomes",
+      "target" : [{
+        "code" : "Efficacy-outcomes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Table",
+      "target" : [{
+        "code" : "Table",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EvidenceVariable-outcome",
+      "target" : [{
+        "code" : "EvidenceVariable-outcome",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Assertion",
+      "target" : [{
+        "code" : "Assertion",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Control-group-alone-Evidence",
+      "target" : [{
+        "code" : "Control-group-alone-Evidence",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EvidenceVariable",
+      "target" : [{
+        "code" : "EvidenceVariable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Reasons",
+      "target" : [{
+        "code" : "Reasons",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SummaryOfBodyOfEvidenceFindings",
+      "target" : [{
+        "code" : "SummaryOfBodyOfEvidenceFindings",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EvidenceVariable-intended",
+      "target" : [{
+        "code" : "EvidenceVariable-intended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Column-Header",
+      "target" : [{
+        "code" : "Column-Header",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SampleSize",
+      "target" : [{
+        "code" : "SampleSize",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Harms-outcomes",
+      "target" : [{
+        "code" : "Harms-outcomes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EvidenceVariable-population",
+      "target" : [{
+        "code" : "EvidenceVariable-population",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Header",
+      "target" : [{
+        "code" : "Header",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "References",
+      "target" : [{
+        "code" : "References",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Certainty-of-Evidence",
+      "target" : [{
+        "code" : "Certainty-of-Evidence",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Evidence-Classifier",
+      "target" : [{
+        "code" : "Evidence-Classifier",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Column-Headers",
+      "target" : [{
+        "code" : "Column-Headers",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Warnings",
+      "target" : [{
+        "code" : "Warnings",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EvidenceVariable-exposure",
+      "target" : [{
+        "code" : "EvidenceVariable-exposure",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SummaryOfIndividualStudyFindings",
+      "target" : [{
+        "code" : "SummaryOfIndividualStudyFindings",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

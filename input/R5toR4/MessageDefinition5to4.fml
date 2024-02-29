@@ -15,7 +15,7 @@ group MessageDefinition(source src : MessageDefinitionR5, target tgt : MessageDe
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.replaces -> tgt.replaces;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MessageDefinition.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/msd.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -29,9 +29,9 @@ group MessageDefinition(source src : MessageDefinitionR5, target tgt : MessageDe
   src.parent -> tgt.parent;
   src.event : Coding -> tgt.event "eventCoding";
   src.event : uri -> tgt.event "eventUri";
-  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MessageDefinition.category-5to4', 'code');
+  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/msd.category-5to4', 'code');
   src.focus as s -> tgt.focus as t then MessageDefinitionFocus(s, t);
-  src.responseRequired as v -> tgt.responseRequired = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MessageDefinition.responseRequired-5to4', 'code');
+  src.responseRequired as v -> tgt.responseRequired = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/msd.responseRequired-5to4', 'code');
   src.allowedResponse as s -> tgt.allowedResponse as t then MessageDefinitionAllowedResponse(s, t);
   src.graph -> tgt.graph;
 }

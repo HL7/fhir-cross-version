@@ -13,7 +13,7 @@ group Practitioner(source src : PractitionerR5, target tgt : PractitionerR4) ext
   src.active -> tgt.active;
   src.name -> tgt.name;
   src.telecom -> tgt.telecom;
-  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Practitioner.gender-5to4', 'code');
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/prc.gender-5to4', 'code');
   src.birthDate -> tgt.birthDate;
   src.address -> tgt.address;
   src.photo -> tgt.photo;

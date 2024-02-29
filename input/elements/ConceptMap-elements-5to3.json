@@ -8,9 +8,11 @@
   "status" : "active",
   "date" : "2024-02-01",
   "publisher" : "HL7",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/elements",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/elements",
   "group" : [{
     "source" : "http://hl7.org/fhir/5.0/element-names",
-    "target" : "http://hl7.org/fhir/R3/element-names",
+    "target" : "http://hl7.org/fhir/3.0/element-names",
     "element" : [
     { "code" : "Account.relatedAccount", "target" : [{ "code" : "Account", "relationship" : "source-is-narrower-than-target" }]},
     { "code" : "Account.relatedAccount.account", "target" : [{ "code" : "Account.partOf", "relationship" : "source-is-broader-than-target" }]},

@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.re.re.in.code-cpb.re.re.in.code-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.in.code-cpb.re.re.in.code-2to3",
+  "name" : "Conformance.rest.resource.interaction.codeCapabilityStatement.rest.resource.interaction.code2to3",
+  "title" : "Mapping for Conformance.rest.resource.interaction.code/CapabilityStatement.rest.resource.interaction.code from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.resource.interaction.code",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.interaction.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/restful-interaction",
+    "target" : "http://hl7.org/fhir/3.0/restful-interaction",
+    "element" : [{
+      "code" : "create",
+      "target" : [{
+        "code" : "create",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "delete",
+      "target" : [{
+        "code" : "delete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history-instance",
+      "target" : [{
+        "code" : "history-instance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history-type",
+      "target" : [{
+        "code" : "history-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "read",
+      "target" : [{
+        "code" : "read",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "search-type",
+      "target" : [{
+        "code" : "search-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "update",
+      "target" : [{
+        "code" : "update",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "validate",
+      "noMap" : true
+    },
+    {
+      "code" : "vread",
+      "target" : [{
+        "code" : "vread",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

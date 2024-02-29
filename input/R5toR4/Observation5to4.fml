@@ -12,7 +12,7 @@ group Observation(source src : ObservationR5, target tgt : ObservationR4) extend
   src.identifier -> tgt.identifier;
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Observation.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/obs.status-5to4', 'code');
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.subject -> tgt.subject;

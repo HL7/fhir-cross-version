@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "rsb.status-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-5to4b",
+  "name" : "ResearchSubject.status5to4b",
+  "title" : "Mapping for ResearchSubject.status from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ResearchSubject#ResearchSubject.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/publication-status",
+    "target" : "http://hl7.org/fhir/4.3/research-subject-status",
+    "element" : [{
+      "code" : "active",
+      "noMap" : true
+    },
+    {
+      "code" : "draft",
+      "noMap" : true
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "withdrawn",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "noMap" : true
+    }]
+  }]
+}

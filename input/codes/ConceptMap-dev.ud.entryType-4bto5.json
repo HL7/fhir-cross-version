@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "dev.ud.entryType-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dev.ud.entryType-4bto5",
+  "name" : "Device.udiCarrier.entryType4bto5",
+  "title" : "Mapping for Device.udiCarrier.entryType from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Device#Device.udiCarrier.entryType",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Device#Device.udiCarrier.entryType",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/udi-entry-type",
+    "target" : "http://hl7.org/fhir/5.0/udi-entry-type",
+    "element" : [{
+      "code" : "self-reported",
+      "target" : [{
+        "code" : "self-reported",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rfid",
+      "target" : [{
+        "code" : "rfid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "manual",
+      "target" : [{
+        "code" : "manual",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "barcode",
+      "target" : [{
+        "code" : "barcode",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "card",
+      "target" : [{
+        "code" : "card",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

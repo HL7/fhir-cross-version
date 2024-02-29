@@ -1,0 +1,81 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "pat.co.relationship-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pat.co.relationship-3to2",
+  "name" : "Patient.contact.relationship3to2",
+  "title" : "Mapping for Patient.contact.relationship from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.contact.relationship",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.contact.relationship",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/v2/0131",
+    "target" : "http://hl7.org/fhir/1.0/patient-contact-relationship",
+    "element" : [{
+      "code" : "BP",
+      "noMap" : true
+    },
+    {
+      "code" : "C",
+      "target" : [{
+        "code" : "emergency",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CP",
+      "noMap" : true
+    },
+    {
+      "code" : "E",
+      "target" : [{
+        "code" : "work",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EP",
+      "target" : [{
+        "code" : "emergency",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "F",
+      "noMap" : true
+    },
+    {
+      "code" : "I",
+      "noMap" : true
+    },
+    {
+      "code" : "N",
+      "target" : [{
+        "code" : "family",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "parent",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "partner",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    },
+    {
+      "code" : "O",
+      "noMap" : true
+    },
+    {
+      "code" : "PR",
+      "noMap" : true
+    },
+    {
+      "code" : "S",
+      "noMap" : true
+    },
+    {
+      "code" : "U",
+      "noMap" : true
+    }]
+  }]
+}

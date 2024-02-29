@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "msq.re.type-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/msq.re.type-4bto4",
+  "name" : "MolecularSequence.repository.type4bto4",
+  "title" : "Mapping for MolecularSequence.repository.type from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MolecularSequence#MolecularSequence.repository.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.repository.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/repository-type",
+    "target" : "http://hl7.org/fhir/4.0/repository-type",
+    "element" : [{
+      "code" : "directlink",
+      "target" : [{
+        "code" : "directlink",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "openapi",
+      "target" : [{
+        "code" : "openapi",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "login",
+      "target" : [{
+        "code" : "login",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "oauth",
+      "target" : [{
+        "code" : "oauth",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

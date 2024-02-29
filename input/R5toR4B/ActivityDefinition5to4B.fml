@@ -45,8 +45,8 @@ group ActivityDefinition(source src : ActivityDefinitionR5, target tgt : Activit
   src.kind -> tgt.kind;
   src.profile -> tgt.profile;
   src.code -> tgt.code;
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.intent-5to4b', 'code');
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.priority-5to4b', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/adf.intent-5to4b', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/adf.priority-5to4b', 'code');
   src.doNotPerform -> tgt.doNotPerform;
   src.timing : Timing -> tgt.timing "timingTiming";
   src.timing : Age -> tgt.timing "timingAge";
@@ -67,7 +67,7 @@ group ActivityDefinition(source src : ActivityDefinitionR5, target tgt : Activit
 }
 
 group ActivityDefinitionParticipant(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ActivityDefinition.participant.type-5to4b', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/adf.pa.type-5to4b', 'code');
   src.role -> tgt.role;
 }
 

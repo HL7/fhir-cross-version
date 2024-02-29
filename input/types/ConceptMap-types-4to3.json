@@ -32,7 +32,8 @@
     { "code" : "unsignedInt", "target" : [{ "code" : "unsignedInt", "relationship" : "equivalent" }]},
     { "code" : "uri", "target" : [{ "code" : "uri", "relationship" : "equivalent" }]},
     { "code" : "url", "target" : [{ "code" : "uri", "relationship" : "source-is-narrower-than-target" }]},
-    { "code" : "uuid", "target" : [{ "code" : "uri", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "uuid", "target" : [{ "code" : "uuid", "relationship" : "equivalent" }]},
+    { "code" : "xhtml", "target" : [{ "code" : "xhtml", "relationship" : "equivalent" }]},
     { "code" : "Address", "target" : [{ "code" : "Address", "relationship" : "equivalent" }]},
     { "code" : "Age", "target" : [{ "code" : "Age", "relationship" : "equivalent" }]},
     { "code" : "Annotation", "target" : [{ "code" : "Annotation", "relationship" : "equivalent" }]},
@@ -47,11 +48,14 @@
     { "code" : "Distance", "target" : [{ "code" : "Distance", "relationship" : "equivalent" }]},
     { "code" : "Dosage", "target" : [{ "code" : "Dosage", "relationship" : "equivalent" }]},
     { "code" : "Duration", "target" : [{ "code" : "Duration", "relationship" : "equivalent" }]},
+    { "code" : "ElementDefinition", "target" : [{ "code" : "ElementDefinition", "relationship" : "equivalent" }]},
     { "code" : "Expression", "target" : [{ "code" : "Expression", "relationship" : "equivalent" }]},
+    { "code" : "Extension", "target" : [{ "code" : "Extension", "relationship" : "equivalent" }]},
     { "code" : "HumanName", "target" : [{ "code" : "HumanName", "relationship" : "equivalent" }]},
     { "code" : "Identifier", "target" : [{ "code" : "Identifier", "relationship" : "equivalent" }]},
     { "code" : "Meta", "target" : [{ "code" : "Meta", "relationship" : "equivalent" }]},
     { "code" : "Money", "target" : [{ "code" : "Money", "relationship" : "equivalent" }]},
+    { "code" : "Narrative", "target" : [{ "code" : "Narrative", "relationship" : "equivalent" }]},
     { "code" : "ParameterDefinition", "target" : [{ "code" : "ParameterDefinition", "relationship" : "equivalent" }]},
     { "code" : "Period", "target" : [{ "code" : "Period", "relationship" : "equivalent" }]},
     { "code" : "Quantity", "target" : [{ "code" : "Quantity", "relationship" : "equivalent" }]},
@@ -63,6 +67,7 @@
     { "code" : "Signature", "target" : [{ "code" : "Signature", "relationship" : "equivalent" }]},
     { "code" : "Timing", "target" : [{ "code" : "Timing", "relationship" : "equivalent" }]},
     { "code" : "TriggerDefinition", "target" : [{ "code" : "TriggerDefinition", "relationship" : "equivalent" }]},
-    { "code" : "UsageContext", "target" : [{ "code" : "UsageContext", "relationship" : "equivalent" }]}]
+    { "code" : "UsageContext", "target" : [{ "code" : "UsageContext", "relationship" : "equivalent" }]}
+    ]
   }]
 }

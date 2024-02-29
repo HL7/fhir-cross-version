@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cmd.status-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.status-4to5",
+  "name" : "ConceptMap.status4to5",
+  "title" : "Mapping for ConceptMap.status from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ConceptMap#ConceptMap.status",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ConceptMap#ConceptMap.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/publication-status",
+    "target" : "http://hl7.org/fhir/5.0/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.kind-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.kind-4to5",
+  "name" : "CapabilityStatement.kind4to5",
+  "title" : "Mapping for CapabilityStatement.kind from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/capability-statement-kind",
+    "target" : "http://hl7.org/fhir/5.0/capability-statement-kind",
+    "element" : [{
+      "code" : "capability",
+      "target" : [{
+        "code" : "capability",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "requirements",
+      "target" : [{
+        "code" : "requirements",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "instance",
+      "target" : [{
+        "code" : "instance",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cpb.re.mode-cpb.re.mode-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.mode-cpb.re.mode-3to2",
+  "name" : "CapabilityStatement.rest.modeConformance.rest.mode3to2",
+  "title" : "Mapping for CapabilityStatement.rest.mode/Conformance.rest.mode from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/restful-capability-mode",
+    "target" : "http://hl7.org/fhir/1.0/restful-conformance-mode",
+    "element" : [{
+      "code" : "server",
+      "target" : [{
+        "code" : "server",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "client",
+      "target" : [{
+        "code" : "client",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

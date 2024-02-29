@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eob.outcome-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eob.outcome-4to5",
+  "name" : "ExplanationOfBenefit.outcome4to5",
+  "title" : "Mapping for ExplanationOfBenefit.outcome from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.outcome",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.outcome",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/remittance-outcome",
+    "target" : "http://hl7.org/fhir/5.0/claim-outcome",
+    "element" : [{
+      "code" : "queued",
+      "target" : [{
+        "code" : "queued",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "complete",
+      "target" : [{
+        "code" : "complete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "partial",
+      "target" : [{
+        "code" : "partial",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

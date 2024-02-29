@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "obdf.qu.category-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obdf.qu.category-4to4b",
+  "name" : "ObservationDefinition.qualifiedInterval.category4to4b",
+  "title" : "Mapping for ObservationDefinition.qualifiedInterval.category from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.category",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.category",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/observation-range-category",
+    "target" : "http://hl7.org/fhir/4.3/observation-range-category",
+    "element" : [{
+      "code" : "reference",
+      "target" : [{
+        "code" : "reference",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "critical",
+      "target" : [{
+        "code" : "critical",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "absolute",
+      "target" : [{
+        "code" : "absolute",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -13,7 +13,7 @@ group SearchParameter(source src : SearchParameterR4, target tgt : SearchParamet
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.derivedFrom -> tgt.derivedFrom;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SearchParameter.status-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/spd.status-4to5', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -24,14 +24,14 @@ group SearchParameter(source src : SearchParameterR4, target tgt : SearchParamet
   src.purpose -> tgt.purpose;
   src.code -> tgt.code;
   src.base -> tgt.base;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SearchParameter.type-4to5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/spd.type-4to5', 'code');
   src.expression -> tgt.expression;
-  src.xpathUsage as v -> tgt.processingMode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SearchParameter.xpathUsage-SearchParameter.processingMode-4to5', 'code');
+  src.xpathUsage as v -> tgt.processingMode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/spd.xpathUsage-spd.processingMode-4to5', 'code');
   src.target -> tgt.target;
   src.multipleOr -> tgt.multipleOr;
   src.multipleAnd -> tgt.multipleAnd;
-  src.comparator as v -> tgt.comparator = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SearchParameter.comparator-4to5', 'code');
-  src.modifier as v -> tgt.modifier = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SearchParameter.modifier-4to5', 'code');
+  src.comparator as v -> tgt.comparator = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/spd.comparator-4to5', 'code');
+  src.modifier as v -> tgt.modifier = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/spd.modifier-4to5', 'code');
   src.chain -> tgt.chain;
   src.component as s -> tgt.component as t then SearchParameterComponent(s, t);
 }

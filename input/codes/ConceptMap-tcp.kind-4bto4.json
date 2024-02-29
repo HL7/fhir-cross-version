@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tcp.kind-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tcp.kind-4bto4",
+  "name" : "TerminologyCapabilities.kind4bto4",
+  "title" : "Mapping for TerminologyCapabilities.kind from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.kind",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.kind",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/capability-statement-kind",
+    "target" : "http://hl7.org/fhir/4.0/capability-statement-kind",
+    "element" : [{
+      "code" : "capability",
+      "target" : [{
+        "code" : "capability",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "requirements",
+      "target" : [{
+        "code" : "requirements",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "instance",
+      "target" : [{
+        "code" : "instance",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

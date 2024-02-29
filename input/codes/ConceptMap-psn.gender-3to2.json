@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "psn.gender-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/psn.gender-3to2",
+  "name" : "Person.gender3to2",
+  "title" : "Mapping for Person.gender from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Person#Person.gender",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Person#Person.gender",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/administrative-gender",
+    "target" : "http://hl7.org/fhir/1.0/administrative-gender",
+    "element" : [{
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "female",
+      "target" : [{
+        "code" : "female",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "male",
+      "target" : [{
+        "code" : "male",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

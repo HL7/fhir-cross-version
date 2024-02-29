@@ -34,7 +34,7 @@ group StructureDefinition(source src : StructureDefinition, target tgt : Structu
     vs0.name -> vt0.name "mapping-name";
     vs0.comment -> vt0.comments "mapping-comments";
   } "StructureDefinition-mapping";
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureDefinition.kind-3to2', 'code') "StructureDefinition-kind";
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sdf.kind-3to2', 'code') "StructureDefinition-kind";
   src.contextType -> tgt.contextType "StructureDefinition-contextType";
   src.context -> tgt.context "StructureDefinition-context";
   src.type as vs where src.derivation = 'constraint' -> tgt.constrainedType as vt then code(vs, vt) "StructureDefinition-constrainedType";

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cid.status-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cid.status-4to4b",
+  "name" : "ChargeItemDefinition.status4to4b",
+  "title" : "Mapping for ChargeItemDefinition.status from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/publication-status",
+    "target" : "http://hl7.org/fhir/4.3/publication-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

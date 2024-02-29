@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ctn.ci.co.en.role-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.co.en.role-4bto5",
+  "name" : "Citation.citedArtifact.contributorship.entry.role4bto5",
+  "title" : "Mapping for Citation.citedArtifact.contributorship.entry.role from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.contributorship.entry.role",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.contributorship.entry.role",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/contributor-role",
+    "target" : "http://hl7.org/fhir/5.0/contributor-role",
+    "element" : [{
+      "code" : "funder",
+      "target" : [{
+        "code" : "funder",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "editor",
+      "target" : [{
+        "code" : "editor",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "author",
+      "target" : [{
+        "code" : "author",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "endorser",
+      "target" : [{
+        "code" : "endorser",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "publisher",
+      "target" : [{
+        "code" : "publisher",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reviewer",
+      "target" : [{
+        "code" : "reviewer",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "informant",
+      "target" : [{
+        "code" : "informant",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

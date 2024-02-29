@@ -43,7 +43,7 @@ group DeviceDefinitionUdiDeviceIdentifier(source src, target tgt) extends Backbo
 // }
 group DeviceDefinitionDeviceName(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceDefinition.deviceName.type-4bto5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dvd.de.type-4bto5', 'code');
 }
 
 // group DeviceDefinitionClassification(source src, target tgt) extends BackboneElement {

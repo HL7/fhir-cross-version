@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "enc.lo.status-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enc.lo.status-4to3",
+  "name" : "Encounter.location.status4to3",
+  "title" : "Mapping for Encounter.location.status from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Encounter#Encounter.location.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Encounter#Encounter.location.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/encounter-location-status",
+    "target" : "http://hl7.org/fhir/3.0/encounter-location-status",
+    "element" : [{
+      "code" : "reserved",
+      "target" : [{
+        "code" : "reserved",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "planned",
+      "target" : [{
+        "code" : "planned",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

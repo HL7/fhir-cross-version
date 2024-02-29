@@ -1,0 +1,566 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "evi.st.mo.code-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evi.st.mo.code-4bto5",
+  "name" : "Evidence.statistic.modelCharacteristic.code4bto5",
+  "title" : "Mapping for Evidence.statistic.modelCharacteristic.code from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.statistic.modelCharacteristic.code",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.statistic.modelCharacteristic.code",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/statistic-model-code",
+    "target" : "http://hl7.org/fhir/5.0/statistic-model-code",
+    "element" : [{
+      "code" : "chiSquareTestTrend",
+      "target" : [{
+        "code" : "chiSquareTestTrend",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "anovaThreeWay",
+      "target" : [{
+        "code" : "anovaThreeWay",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmmIdentity",
+      "target" : [{
+        "code" : "glmmIdentity",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "spearmanCorrelation",
+      "target" : [{
+        "code" : "spearmanCorrelation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmProbit",
+      "target" : [{
+        "code" : "glmProbit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "anova",
+      "target" : [{
+        "code" : "anova",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tauPauleMandel",
+      "target" : [{
+        "code" : "tauPauleMandel",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "poolInverseVariance",
+      "target" : [{
+        "code" : "poolInverseVariance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mcnemarsTest",
+      "target" : [{
+        "code" : "mcnemarsTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "effectsRandom",
+      "target" : [{
+        "code" : "effectsRandom",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "petoMethod",
+      "target" : [{
+        "code" : "petoMethod",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "zeroCellContinuityCorrection",
+      "target" : [{
+        "code" : "zeroCellContinuityCorrection",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hunterSchmidt",
+      "target" : [{
+        "code" : "hunterSchmidt",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmLog",
+      "target" : [{
+        "code" : "glmLog",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "anovaTwoWayReplication",
+      "target" : [{
+        "code" : "anovaTwoWayReplication",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "chiSquareTest",
+      "target" : [{
+        "code" : "chiSquareTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tauHedges",
+      "target" : [{
+        "code" : "tauHedges",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmmLog",
+      "target" : [{
+        "code" : "glmmLog",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tauRestrictedMaximumLikelihood",
+      "target" : [{
+        "code" : "tauRestrictedMaximumLikelihood",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "oneSampleTTest",
+      "target" : [{
+        "code" : "oneSampleTTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "chiSquareTestHomogeneity",
+      "target" : [{
+        "code" : "chiSquareTestHomogeneity",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "adjusted",
+      "target" : [{
+        "code" : "adjusted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glm",
+      "target" : [{
+        "code" : "glm",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "multinomialDistributionRegression",
+      "target" : [{
+        "code" : "multinomialDistributionRegression",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tauHunterSchmidt",
+      "target" : [{
+        "code" : "tauHunterSchmidt",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dersimonianLairdMethod",
+      "target" : [{
+        "code" : "dersimonianLairdMethod",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "twoTailedTest",
+      "target" : [{
+        "code" : "twoTailedTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "empiricalBayes",
+      "target" : [{
+        "code" : "empiricalBayes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tauEmpiricalBayes",
+      "target" : [{
+        "code" : "tauEmpiricalBayes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmmProbit",
+      "target" : [{
+        "code" : "glmmProbit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "poolPeto",
+      "target" : [{
+        "code" : "poolPeto",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "poolGeneralizedLinearMixedModel",
+      "target" : [{
+        "code" : "poolGeneralizedLinearMixedModel",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmLogit",
+      "target" : [{
+        "code" : "glmLogit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "inverseVariance",
+      "target" : [{
+        "code" : "inverseVariance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "effectsFixed",
+      "target" : [{
+        "code" : "effectsFixed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "goodmanKruskasGamma",
+      "target" : [{
+        "code" : "goodmanKruskasGamma",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "oneTailedTest",
+      "target" : [{
+        "code" : "oneTailedTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tauSidikJonkman",
+      "target" : [{
+        "code" : "tauSidikJonkman",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tauMaximumLikelihood",
+      "target" : [{
+        "code" : "tauMaximumLikelihood",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wilcoxonRankSumTest",
+      "target" : [{
+        "code" : "wilcoxonRankSumTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "manova",
+      "target" : [{
+        "code" : "manova",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "poissonRegression",
+      "target" : [{
+        "code" : "poissonRegression",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "manteHaenszelMethod",
+      "target" : [{
+        "code" : "manteHaenszelMethod",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pauleMandelMethod",
+      "target" : [{
+        "code" : "pauleMandelMethod",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pearsonCorrelation",
+      "target" : [{
+        "code" : "pearsonCorrelation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "restrictedLikelihood",
+      "target" : [{
+        "code" : "restrictedLikelihood",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmmGeneralizedLogit",
+      "target" : [{
+        "code" : "glmmGeneralizedLogit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "zeroCellConstant",
+      "target" : [{
+        "code" : "zeroCellConstant",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pairedTTest",
+      "target" : [{
+        "code" : "pairedTTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmmLogit",
+      "target" : [{
+        "code" : "glmmLogit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "fishersExactTest",
+      "target" : [{
+        "code" : "fishersExactTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "metaAnalysis",
+      "target" : [{
+        "code" : "metaAnalysis",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "negativeBinomialRegression",
+      "target" : [{
+        "code" : "negativeBinomialRegression",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "twoSampleTTest",
+      "target" : [{
+        "code" : "twoSampleTTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "signTest",
+      "target" : [{
+        "code" : "signTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "polynomialRegression",
+      "target" : [{
+        "code" : "polynomialRegression",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "anovaOneWay",
+      "target" : [{
+        "code" : "anovaOneWay",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmIdentity",
+      "target" : [{
+        "code" : "glmIdentity",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hedgesMethod",
+      "target" : [{
+        "code" : "hedgesMethod",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wilcoxonSignedRankTest",
+      "target" : [{
+        "code" : "wilcoxonSignedRankTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "friedmanTest",
+      "target" : [{
+        "code" : "friedmanTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "interactionTerm",
+      "target" : [{
+        "code" : "interactionTerm",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "maximumLikelihood",
+      "target" : [{
+        "code" : "maximumLikelihood",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "kruskalWallisTest",
+      "target" : [{
+        "code" : "kruskalWallisTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "tauDersimonianLaird",
+      "target" : [{
+        "code" : "tauDersimonianLaird",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "anovaTwoWay",
+      "target" : [{
+        "code" : "anovaTwoWay",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "linearRegression",
+      "target" : [{
+        "code" : "linearRegression",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "zTest",
+      "target" : [{
+        "code" : "zTest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "kendallCorrelation",
+      "target" : [{
+        "code" : "kendallCorrelation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmGeneralizedLogit",
+      "target" : [{
+        "code" : "glmGeneralizedLogit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hartungKnapp",
+      "target" : [{
+        "code" : "hartungKnapp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "modifiedHartungKnapp",
+      "target" : [{
+        "code" : "modifiedHartungKnapp",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "glmm",
+      "target" : [{
+        "code" : "glmm",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "coxProportionalHazards",
+      "target" : [{
+        "code" : "coxProportionalHazards",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "logisticRegression",
+      "target" : [{
+        "code" : "logisticRegression",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "sidikJonkman",
+      "target" : [{
+        "code" : "sidikJonkman",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "binomialDistributionRegression",
+      "target" : [{
+        "code" : "binomialDistributionRegression",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "poolMantelHaenzsel",
+      "target" : [{
+        "code" : "poolMantelHaenzsel",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mannWhitneyUTest",
+      "target" : [{
+        "code" : "mannWhitneyUTest",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,258 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ims.se.modality-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ims.se.modality-2to3",
+  "name" : "ImagingStudy.series.modality2to3",
+  "title" : "Mapping for ImagingStudy.series.modality from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ImagingStudy#ImagingStudy.series.modality",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ImagingStudy#ImagingStudy.series.modality",
+  "group" : [{
+    "source" : "http://nema.org/dicom/dicm",
+    "target" : "http://dicom.nema.org/resources/ontology/DCM",
+    "element" : [{
+      "code" : "BMD",
+      "target" : [{
+        "code" : "BMD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SRF",
+      "target" : [{
+        "code" : "SRF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KER",
+      "target" : [{
+        "code" : "KER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LEN",
+      "target" : [{
+        "code" : "LEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR",
+      "target" : [{
+        "code" : "AR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CR",
+      "target" : [{
+        "code" : "CR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CT",
+      "target" : [{
+        "code" : "CT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DX",
+      "target" : [{
+        "code" : "DX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ES",
+      "target" : [{
+        "code" : "ES",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GM",
+      "target" : [{
+        "code" : "GM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HD",
+      "target" : [{
+        "code" : "HD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IO",
+      "target" : [{
+        "code" : "IO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MG",
+      "target" : [{
+        "code" : "MG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MR",
+      "target" : [{
+        "code" : "MR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NM",
+      "target" : [{
+        "code" : "NM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OP",
+      "target" : [{
+        "code" : "OP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PT",
+      "target" : [{
+        "code" : "PT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PX",
+      "target" : [{
+        "code" : "PX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RF",
+      "target" : [{
+        "code" : "RF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RG",
+      "target" : [{
+        "code" : "RG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SM",
+      "target" : [{
+        "code" : "SM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BDUS",
+      "target" : [{
+        "code" : "BDUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "US",
+      "target" : [{
+        "code" : "US",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VA",
+      "target" : [{
+        "code" : "VA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XA",
+      "target" : [{
+        "code" : "XA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XC",
+      "target" : [{
+        "code" : "XC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ECG",
+      "target" : [{
+        "code" : "ECG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EPS",
+      "target" : [{
+        "code" : "EPS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OAM",
+      "target" : [{
+        "code" : "OAM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OCT",
+      "target" : [{
+        "code" : "OCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OPM",
+      "target" : [{
+        "code" : "OPM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OPR",
+      "target" : [{
+        "code" : "OPR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OPT",
+      "target" : [{
+        "code" : "OPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OPV",
+      "target" : [{
+        "code" : "OPV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IVUS",
+      "target" : [{
+        "code" : "IVUS",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

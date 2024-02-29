@@ -10,16 +10,16 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group ClaimResponse(source src : ClaimResponseR5, target tgt : ClaimResponseR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ClaimResponse.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/clr.status-5to4b', 'code');
   src.type -> tgt.type;
   src.subType -> tgt.subType;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ClaimResponse.use-5to4b', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/clr.use-5to4b', 'code');
   src.patient -> tgt.patient;
   src.created -> tgt.created;
   src.insurer -> tgt.insurer;
   src.requestor -> tgt.requestor;
   src.request -> tgt.request;
-  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ClaimResponse.outcome-5to4b', 'code');
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/clr.outcome-5to4b', 'code');
   src.disposition -> tgt.disposition;
   src.preAuthRef -> tgt.preAuthRef;
   src.preAuthPeriod -> tgt.preAuthPeriod;

@@ -12,7 +12,7 @@ group DetectedIssue(source src : DetectedIssueR4B, target tgt : DetectedIssueR5)
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
   src.code -> tgt.code;
-  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DetectedIssue.severity-4bto5', 'code');
+  src.severity as v -> tgt.severity = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dti.severity-4bto5', 'code');
   src.patient -> tgt.subject;
   src.identified : dateTime -> tgt.identified "identifiedDateTime";
   src.identified : Period -> tgt.identified "identifiedPeriod";

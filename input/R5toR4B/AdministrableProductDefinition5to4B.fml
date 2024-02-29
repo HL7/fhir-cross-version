@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group AdministrableProductDefinition(source src : AdministrableProductDefinitionR5, target tgt : AdministrableProductDefinitionR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AdministrableProductDefinition.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/apd.status-5to4b', 'code');
   src.formOf -> tgt.formOf;
   src.administrableDoseForm -> tgt.administrableDoseForm;
   src.unitOfPresentation -> tgt.unitOfPresentation;
@@ -28,7 +28,7 @@ group AdministrableProductDefinitionProperty(source src, target tgt) extends Bac
   src.value : date -> tgt.value "valueDate";
   src.value : boolean -> tgt.value "valueBoolean";
   src.value : Attachment -> tgt.value "valueAttachment";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AdministrableProductDefinition.property.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/apd.pr.status-5to4b', 'code');
 }
 
 group AdministrableProductDefinitionRouteOfAdministration(source src, target tgt) extends BackboneElement {

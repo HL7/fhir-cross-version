@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mst.status-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mst.status-4to3",
+  "name" : "MedicationStatement.status4to3",
+  "title" : "Mapping for MedicationStatement.status from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationStatement#MedicationStatement.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MedicationStatement#MedicationStatement.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/CodeSystem/medication-statement-status",
+    "target" : "http://hl7.org/fhir/3.0/medication-statement-status",
+    "element" : [{
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "intended",
+      "target" : [{
+        "code" : "intended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-taken",
+      "noMap" : true
+    },
+    {
+      "code" : "on-hold",
+      "target" : [{
+        "code" : "on-hold",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "stopped",
+      "target" : [{
+        "code" : "stopped",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "noMap" : true
+    }]
+  }]
+}

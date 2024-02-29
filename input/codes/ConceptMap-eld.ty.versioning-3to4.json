@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eld.ty.versioning-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eld.ty.versioning-3to4",
+  "name" : "ElementDefinition.type.versioning3to4",
+  "title" : "Mapping for ElementDefinition.type.versioning from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.type.versioning",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.type.versioning",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/reference-version-rules",
+    "target" : "http://hl7.org/fhir/4.0/reference-version-rules",
+    "element" : [{
+      "code" : "either",
+      "target" : [{
+        "code" : "either",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "independent",
+      "target" : [{
+        "code" : "independent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "specific",
+      "target" : [{
+        "code" : "specific",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

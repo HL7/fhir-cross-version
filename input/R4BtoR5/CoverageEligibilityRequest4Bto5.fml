@@ -10,9 +10,9 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group CoverageEligibilityRequest(source src : CoverageEligibilityRequestR4B, target tgt : CoverageEligibilityRequestR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CoverageEligibilityRequest.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cer.status-4bto5', 'code');
   src.priority -> tgt.priority;
-  src.purpose as v -> tgt.purpose = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CoverageEligibilityRequest.purpose-4bto5', 'code');
+  src.purpose as v -> tgt.purpose = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cer.purpose-4bto5', 'code');
   src.patient -> tgt.patient;
   src.serviced : date -> tgt.serviced "servicedDate";
   src.serviced : Period -> tgt.serviced "servicedPeriod";

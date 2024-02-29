@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "lnk.it.type-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/lnk.it.type-4to3",
+  "name" : "Linkage.item.type4to3",
+  "title" : "Mapping for Linkage.item.type from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Linkage#Linkage.item.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Linkage#Linkage.item.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/linkage-type",
+    "target" : "http://hl7.org/fhir/3.0/linkage-type",
+    "element" : [{
+      "code" : "alternate",
+      "target" : [{
+        "code" : "alternate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "historical",
+      "target" : [{
+        "code" : "historical",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "source",
+      "target" : [{
+        "code" : "source",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

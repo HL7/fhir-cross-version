@@ -12,7 +12,7 @@ group Encounter(source src : EncounterR2, target tgt : Encounter) extends Domain
   src.identifier -> tgt.identifier "Encounter-identifier";
   src.status -> tgt.status "Encounter-status";
   src.statusHistory as vs0 -> tgt.statusHistory as vt0 then encStatusHistory(vs0, vt0) "Encounter-statusHistory";
-  src.class as v -> tgt.class = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Encounter.class-2to3', 'Coding') "Encounter-class";
+  src.class as v -> tgt.class = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/enc.class-2to3', 'Coding') "Encounter-class";
   src.type -> tgt.type "Encounter-type";
   src.priority -> tgt.priority "Encounter-priority";
   src.patient -> tgt.subject "Encounter-patient";

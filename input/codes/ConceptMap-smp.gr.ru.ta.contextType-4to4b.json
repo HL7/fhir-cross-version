@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "smp.gr.ru.ta.contextType-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.ru.ta.contextType-4to4b",
+  "name" : "StructureMap.group.rule.target.contextType4to4b",
+  "title" : "Mapping for StructureMap.group.rule.target.contextType from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.contextType",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.group.rule.target.contextType",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/map-context-type",
+    "target" : "http://hl7.org/fhir/4.3/map-context-type",
+    "element" : [{
+      "code" : "variable",
+      "target" : [{
+        "code" : "variable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "type",
+      "target" : [{
+        "code" : "type",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

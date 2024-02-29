@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "gdf.li.ta.co.use-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/gdf.li.ta.co.use-4to4b",
+  "name" : "GraphDefinition.link.target.compartment.use4to4b",
+  "title" : "Mapping for GraphDefinition.link.target.compartment.use from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.use",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/graph-compartment-use",
+    "target" : "http://hl7.org/fhir/4.3/graph-compartment-use",
+    "element" : [{
+      "code" : "condition",
+      "target" : [{
+        "code" : "condition",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "requirement",
+      "target" : [{
+        "code" : "requirement",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

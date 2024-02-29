@@ -12,7 +12,7 @@ group FamilyMemberHistory(source src : FamilyMemberHistoryR4, target tgt : Famil
   src.identifier -> tgt.identifier;
   src.instantiatesCanonical -> tgt.instantiatesCanonical;
   src.instantiatesUri -> tgt.instantiatesUri;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/FamilyMemberHistory.status-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/fhs.status-4to5', 'code');
   src.dataAbsentReason -> tgt.dataAbsentReason;
   src.patient -> tgt.patient;
   src.date -> tgt.date;

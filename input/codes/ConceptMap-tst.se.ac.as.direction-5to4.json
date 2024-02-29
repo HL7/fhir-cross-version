@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tst.se.ac.as.direction-5to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.direction-5to4",
+  "name" : "TestScript.setup.action.assert.direction5to4",
+  "title" : "Mapping for TestScript.setup.action.assert.direction from 5.0.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestScript#TestScript.setup.action.assert.direction",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.direction",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/assert-direction-codes",
+    "target" : "http://hl7.org/fhir/4.0/assert-direction-codes",
+    "element" : [{
+      "code" : "request",
+      "target" : [{
+        "code" : "request",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "response",
+      "target" : [{
+        "code" : "response",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

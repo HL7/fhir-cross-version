@@ -29,7 +29,7 @@ group ProvenanceAgent(source src, target tgt) extends BackboneElement {
 }
 
 group ProvenanceEntity(source src, target tgt) extends BackboneElement {
-  src.role as v -> tgt.role = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Provenance.entity.role-4to5', 'code');
+  src.role as v -> tgt.role = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/prv.en.role-4to5', 'code');
   src.what -> tgt.what;
 }
 

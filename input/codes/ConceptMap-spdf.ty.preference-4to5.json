@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "spdf.ty.preference-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spdf.ty.preference-4to5",
+  "name" : "SpecimenDefinition.typeTested.preference4to5",
+  "title" : "Mapping for SpecimenDefinition.typeTested.preference from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SpecimenDefinition#SpecimenDefinition.typeTested.preference",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SpecimenDefinition#SpecimenDefinition.typeTested.preference",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/specimen-contained-preference",
+    "target" : "http://hl7.org/fhir/5.0/specimen-contained-preference",
+    "element" : [{
+      "code" : "alternate",
+      "target" : [{
+        "code" : "alternate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preferred",
+      "target" : [{
+        "code" : "preferred",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/5.0/RelatedArtifact" alias RelatedArtifactR5 as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group RelatedArtifact(source src : RelatedArtifactR4B, target tgt : RelatedArtifactR5) extends Element <<type+>> {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RelatedArtifact.type-4bto5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rla.type-4bto5', 'code');
   src.label -> tgt.label;
   src.display -> tgt.display;
   src.citation -> tgt.citation;

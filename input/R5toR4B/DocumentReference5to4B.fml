@@ -10,8 +10,8 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group DocumentReference(source src : DocumentReferenceR5, target tgt : DocumentReferenceR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DocumentReference.status-5to4b', 'code');
-  src.docStatus as v -> tgt.docStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DocumentReference.docStatus-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dcr.status-5to4b', 'code');
+  src.docStatus as v -> tgt.docStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dcr.docStatus-5to4b', 'code');
   src.type -> tgt.type;
   src.category -> tgt.category;
   src.subject -> tgt.subject;

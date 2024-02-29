@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "csd.status-vsd.status-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.status-vsd.status-3to2",
+  "name" : "CodeSystem.statusValueSet.status3to2",
+  "title" : "Mapping for CodeSystem.status/ValueSet.status from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.status",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ValueSet#ValueSet.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/publication-status",
+    "target" : "http://hl7.org/fhir/1.0/conformance-resource-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "retired",
+      "target" : [{
+        "code" : "retired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "noMap" : true
+    }]
+  }]
+}

@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group ImagingStudy(source src : ImagingStudyR5, target tgt : ImagingStudyR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ImagingStudy.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ims.status-5to4', 'code');
   src.modality -> tgt.modality;
   src.subject -> tgt.subject;
   src.encounter -> tgt.encounter;

@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sud.type-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sud.type-4to5",
+  "name" : "SupplyDelivery.type4to5",
+  "title" : "Mapping for SupplyDelivery.type from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SupplyDelivery#SupplyDelivery.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SupplyDelivery#SupplyDelivery.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/supply-item-type",
+    "target" : "http://hl7.org/fhir/5.0/supplydelivery-supplyitemtype",
+    "element" : [{
+      "code" : "medication",
+      "target" : [{
+        "code" : "medication",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "device",
+      "target" : [{
+        "code" : "device",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

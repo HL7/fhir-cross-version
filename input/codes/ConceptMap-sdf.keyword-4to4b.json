@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sdf.keyword-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.keyword-4to4b",
+  "name" : "StructureDefinition.keyword4to4b",
+  "title" : "Mapping for StructureDefinition.keyword from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.keyword",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition#StructureDefinition.keyword",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/definition-use",
+    "target" : "http://terminology.hl7.org/CodeSystem/definition-use",
+    "element" : [{
+      "code" : "template",
+      "target" : [{
+        "code" : "template",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dam",
+      "target" : [{
+        "code" : "dam",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "fhir-structure",
+      "target" : [{
+        "code" : "fhir-structure",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "archetype",
+      "target" : [{
+        "code" : "archetype",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wire-format",
+      "target" : [{
+        "code" : "wire-format",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "custom-resource",
+      "target" : [{
+        "code" : "custom-resource",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

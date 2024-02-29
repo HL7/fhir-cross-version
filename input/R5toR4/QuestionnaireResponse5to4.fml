@@ -13,7 +13,7 @@ group QuestionnaireResponse(source src : QuestionnaireResponseR5, target tgt : Q
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
   src.questionnaire -> tgt.questionnaire;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/QuestionnaireResponse.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/qrs.status-5to4', 'code');
   src.subject -> tgt.subject;
   src.encounter -> tgt.encounter;
   src.authored -> tgt.authored;

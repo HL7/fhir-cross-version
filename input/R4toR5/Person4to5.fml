@@ -13,7 +13,7 @@ group Person(source src : PersonR4, target tgt : PersonR5) extends DomainResourc
   src.active -> tgt.active;
   src.name -> tgt.name;
   src.telecom -> tgt.telecom;
-  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Person.gender-4to5', 'code');
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/psn.gender-4to5', 'code');
   src.birthDate -> tgt.birthDate;
   src.address -> tgt.address;
   src.photo -> tgt.photo;
@@ -27,6 +27,6 @@ group Person(source src : PersonR4, target tgt : PersonR5) extends DomainResourc
 // }
 group PersonLink(source src, target tgt) extends BackboneElement {
   src.target -> tgt.target;
-  src.assurance as v -> tgt.assurance = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Person.link.assurance-4to5', 'code');
+  src.assurance as v -> tgt.assurance = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/psn.li.assurance-4to5', 'code');
 }
 

@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
 group PaymentNotice(source src : PaymentNoticeR5, target tgt : PaymentNoticeR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PaymentNotice.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pmn.status-5to4b', 'code');
   src.request -> tgt.request;
   src.response -> tgt.response;
   src.created -> tgt.created;

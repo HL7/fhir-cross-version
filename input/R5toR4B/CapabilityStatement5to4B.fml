@@ -13,7 +13,7 @@ group CapabilityStatement(source src : CapabilityStatementR5, target tgt : Capab
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.status-5to4b', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.status-5to4b', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -23,7 +23,7 @@ group CapabilityStatement(source src : CapabilityStatementR5, target tgt : Capab
   src.jurisdiction -> tgt.jurisdiction;
   src.purpose -> tgt.purpose;
   src.copyright -> tgt.copyright;
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.kind-5to4b', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.kind-5to4b', 'code');
   src.instantiates -> tgt.instantiates;
   src.imports -> tgt.imports;
   src.software as s -> tgt.software as t then CapabilityStatementSoftware(s, t);
@@ -50,7 +50,7 @@ group CapabilityStatementImplementation(source src, target tgt) extends Backbone
 }
 
 group CapabilityStatementRest(source src, target tgt) extends BackboneElement {
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.mode-5to4b', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.mode-5to4b', 'code');
   src.documentation -> tgt.documentation;
   src.security as s -> tgt.security as t then CapabilityStatementRestSecurity(s, t);
   src.resource as s -> tgt.resource as t then CapabilityStatementRestResource(s, t);
@@ -70,14 +70,14 @@ group CapabilityStatementRestResource(source src, target tgt) extends BackboneEl
   src.supportedProfile -> tgt.supportedProfile;
   src.documentation -> tgt.documentation;
   src.interaction as s -> tgt.interaction as t then CapabilityStatementRestResourceInteraction(s, t);
-  src.versioning as v -> tgt.versioning = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.resource.versioning-5to4b', 'code');
+  src.versioning as v -> tgt.versioning = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.versioning-5to4b', 'code');
   src.readHistory -> tgt.readHistory;
   src.updateCreate -> tgt.updateCreate;
   src.conditionalCreate -> tgt.conditionalCreate;
-  src.conditionalRead as v -> tgt.conditionalRead = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.resource.conditionalRead-5to4b', 'code');
+  src.conditionalRead as v -> tgt.conditionalRead = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.conditionalRead-5to4b', 'code');
   src.conditionalUpdate -> tgt.conditionalUpdate;
-  src.conditionalDelete as v -> tgt.conditionalDelete = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.resource.conditionalDelete-5to4b', 'code');
-  src.referencePolicy as v -> tgt.referencePolicy = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.resource.referencePolicy-5to4b', 'code');
+  src.conditionalDelete as v -> tgt.conditionalDelete = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.conditionalDelete-5to4b', 'code');
+  src.referencePolicy as v -> tgt.referencePolicy = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.referencePolicy-5to4b', 'code');
   src.searchInclude -> tgt.searchInclude;
   src.searchRevInclude -> tgt.searchRevInclude;
   src.searchParam as s -> tgt.searchParam as t then CapabilityStatementRestResourceSearchParam(s, t);
@@ -92,7 +92,7 @@ group CapabilityStatementRestResourceInteraction(source src, target tgt) extends
 group CapabilityStatementRestResourceSearchParam(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.definition -> tgt.definition;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.rest.resource.searchParam.type-5to4b', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.se.type-5to4b', 'code');
   src.documentation -> tgt.documentation;
 }
 
@@ -120,12 +120,12 @@ group CapabilityStatementMessagingEndpoint(source src, target tgt) extends Backb
 }
 
 group CapabilityStatementMessagingSupportedMessage(source src, target tgt) extends BackboneElement {
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.messaging.supportedMessage.mode-5to4b', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.me.su.mode-5to4b', 'code');
   src.definition -> tgt.definition;
 }
 
 group CapabilityStatementDocument(source src, target tgt) extends BackboneElement {
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CapabilityStatement.document.mode-5to4b', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.do.mode-5to4b', 'code');
   src.documentation -> tgt.documentation;
   src.profile -> tgt.profile;
 }

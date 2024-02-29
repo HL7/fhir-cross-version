@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tsr.se.ac.op.result-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tsr.se.ac.op.result-5to4b",
+  "name" : "TestReport.setup.action.operation.result5to4b",
+  "title" : "Mapping for TestReport.setup.action.operation.result from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestReport#TestReport.setup.action.operation.result",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestReport#TestReport.setup.action.operation.result",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/report-action-result-codes",
+    "target" : "http://hl7.org/fhir/4.3/report-action-result-codes",
+    "element" : [{
+      "code" : "fail",
+      "target" : [{
+        "code" : "fail",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pass",
+      "target" : [{
+        "code" : "pass",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "warning",
+      "target" : [{
+        "code" : "warning",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "skip",
+      "target" : [{
+        "code" : "skip",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

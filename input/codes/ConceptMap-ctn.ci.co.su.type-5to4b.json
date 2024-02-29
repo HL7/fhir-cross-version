@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ctn.ci.co.su.type-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.co.su.type-5to4b",
+  "name" : "Citation.citedArtifact.contributorship.summary.type5to4b",
+  "title" : "Mapping for Citation.citedArtifact.contributorship.summary.type from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.contributorship.summary.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.contributorship.summary.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/5.0/contributor-summary-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/contributor-summary-type",
+    "element" : [{
+      "code" : "competing-interests-statement",
+      "target" : [{
+        "code" : "competing-interests-statement",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "contributorship-statement",
+      "target" : [{
+        "code" : "contributorship-statement",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "acknowledgement-list",
+      "target" : [{
+        "code" : "acknowledgement-list",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "acknowledgment-statement",
+      "target" : [{
+        "code" : "acknowledgment-statement",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "funding-statement",
+      "target" : [{
+        "code" : "funding-statement",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "contributorship-list",
+      "target" : [{
+        "code" : "contributorship-list",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "author-string",
+      "target" : [{
+        "code" : "author-string",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

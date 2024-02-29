@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "vps.di.base-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/vps.di.base-3to2",
+  "name" : "VisionPrescription.dispense.base3to2",
+  "title" : "Mapping for VisionPrescription.dispense.base from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/VisionPrescription#VisionPrescription.dispense.base",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/VisionPrescription#VisionPrescription.dispense.base",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/vision-base-codes",
+    "target" : "http://hl7.org/fhir/1.0/vision-base-codes",
+    "element" : [{
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "up",
+      "target" : [{
+        "code" : "up",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "down",
+      "target" : [{
+        "code" : "down",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "out",
+      "target" : [{
+        "code" : "out",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

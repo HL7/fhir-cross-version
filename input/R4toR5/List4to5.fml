@@ -10,8 +10,8 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group List(source src : ListR4, target tgt : ListR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/List.status-4to5', 'code');
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/List.mode-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/lst.status-4to5', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/lst.mode-4to5', 'code');
   src.title -> tgt.title;
   src.code -> tgt.code;
   src.subject -> tgt.subject;

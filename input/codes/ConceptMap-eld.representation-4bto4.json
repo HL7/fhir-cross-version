@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eld.representation-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eld.representation-4bto4",
+  "name" : "ElementDefinition.representation4bto4",
+  "title" : "Mapping for ElementDefinition.representation from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ElementDefinition#ElementDefinition.representation",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.representation",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/property-representation",
+    "target" : "http://hl7.org/fhir/4.0/property-representation",
+    "element" : [{
+      "code" : "xmlText",
+      "target" : [{
+        "code" : "xmlText",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cdaText",
+      "target" : [{
+        "code" : "cdaText",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "xmlAttr",
+      "target" : [{
+        "code" : "xmlAttr",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "typeAttr",
+      "target" : [{
+        "code" : "typeAttr",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "xhtml",
+      "target" : [{
+        "code" : "xhtml",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

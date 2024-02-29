@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eob.status-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eob.status-4bto4",
+  "name" : "ExplanationOfBenefit.status4bto4",
+  "title" : "Mapping for ExplanationOfBenefit.status from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/explanationofbenefit-status",
+    "target" : "http://hl7.org/fhir/4.0/explanationofbenefit-status",
+    "element" : [{
+      "code" : "draft",
+      "target" : [{
+        "code" : "draft",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

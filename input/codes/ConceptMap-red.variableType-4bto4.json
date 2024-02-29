@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "red.variableType-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/red.variableType-4bto4",
+  "name" : "ResearchElementDefinition.variableType4bto4",
+  "title" : "Mapping for ResearchElementDefinition.variableType from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.variableType",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.variableType",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/variable-type",
+    "target" : "http://hl7.org/fhir/4.0/variable-type",
+    "element" : [{
+      "code" : "continuous",
+      "target" : [{
+        "code" : "continuous",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "descriptive",
+      "target" : [{
+        "code" : "descriptive",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dichotomous",
+      "target" : [{
+        "code" : "dichotomous",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

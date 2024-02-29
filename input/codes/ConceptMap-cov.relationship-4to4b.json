@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cov.relationship-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cov.relationship-4to4b",
+  "name" : "Coverage.relationship4to4b",
+  "title" : "Mapping for Coverage.relationship from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Coverage#Coverage.relationship",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Coverage#Coverage.relationship",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+    "target" : "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+    "element" : [{
+      "code" : "parent",
+      "target" : [{
+        "code" : "parent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "injured",
+      "target" : [{
+        "code" : "injured",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "common",
+      "target" : [{
+        "code" : "common",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "self",
+      "target" : [{
+        "code" : "self",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "spouse",
+      "target" : [{
+        "code" : "spouse",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "child",
+      "target" : [{
+        "code" : "child",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

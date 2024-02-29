@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tst.se.ac.as.requestMethod-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.requestMethod-3to4",
+  "name" : "TestScript.setup.action.assert.requestMethod3to4",
+  "title" : "Mapping for TestScript.setup.action.assert.requestMethod from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.setup.action.assert.requestMethod",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.requestMethod",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/http-operations",
+    "target" : "http://hl7.org/fhir/4.0/http-operations",
+    "element" : [{
+      "code" : "patch",
+      "target" : [{
+        "code" : "patch",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "post",
+      "target" : [{
+        "code" : "post",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "get",
+      "target" : [{
+        "code" : "get",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "options",
+      "target" : [{
+        "code" : "options",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "delete",
+      "target" : [{
+        "code" : "delete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "put",
+      "target" : [{
+        "code" : "put",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

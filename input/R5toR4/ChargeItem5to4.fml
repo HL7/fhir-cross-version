@@ -12,7 +12,7 @@ group ChargeItem(source src : ChargeItemR5, target tgt : ChargeItemR4) extends D
   src.identifier -> tgt.identifier;
   src.definitionUri -> tgt.definitionUri;
   src.definitionCanonical -> tgt.definitionCanonical;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ChargeItem.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cit.status-5to4', 'code');
   src.partOf -> tgt.partOf;
   src.code -> tgt.code;
   src.subject -> tgt.subject;

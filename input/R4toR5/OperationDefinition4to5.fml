@@ -13,8 +13,8 @@ group OperationDefinition(source src : OperationDefinitionR4, target tgt : Opera
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.status-4to5', 'code');
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.kind-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/opd.status-4to5', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/opd.kind-4to5', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -39,19 +39,19 @@ group OperationDefinition(source src : OperationDefinitionR4, target tgt : Opera
 
 group OperationDefinitionParameter(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.parameter.use-4to5', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.use-4to5', 'code');
   src.min -> tgt.min;
   src.max -> tgt.max;
   src.documentation -> tgt.documentation;
   src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/types-4to5', 'code');
   src.targetProfile -> tgt.targetProfile;
-  src.searchType as v -> tgt.searchType = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.parameter.searchType-4to5', 'code');
+  src.searchType as v -> tgt.searchType = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.searchType-4to5', 'code');
   src.binding as s -> tgt.binding as t then OperationDefinitionParameterBinding(s, t);
   src.referencedFrom as s -> tgt.referencedFrom as t then OperationDefinitionParameterReferencedFrom(s, t);
 }
 
 group OperationDefinitionParameterBinding(source src, target tgt) extends BackboneElement {
-  src.strength as v -> tgt.strength = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/OperationDefinition.parameter.binding.strength-4to5', 'code');
+  src.strength as v -> tgt.strength = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.bi.strength-4to5', 'code');
   src.valueSet -> tgt.valueSet;
 }
 

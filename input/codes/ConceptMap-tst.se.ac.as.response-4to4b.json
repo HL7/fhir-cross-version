@@ -1,0 +1,97 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tst.se.ac.as.response-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.response-4to4b",
+  "name" : "TestScript.setup.action.assert.response4to4b",
+  "title" : "Mapping for TestScript.setup.action.assert.response from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.response",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.assert.response",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/assert-response-code-types",
+    "target" : "http://hl7.org/fhir/4.3/assert-response-code-types",
+    "element" : [{
+      "code" : "okay",
+      "target" : [{
+        "code" : "okay",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "noContent",
+      "target" : [{
+        "code" : "noContent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "bad",
+      "target" : [{
+        "code" : "bad",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "notModified",
+      "target" : [{
+        "code" : "notModified",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "created",
+      "target" : [{
+        "code" : "created",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "forbidden",
+      "target" : [{
+        "code" : "forbidden",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "methodNotAllowed",
+      "target" : [{
+        "code" : "methodNotAllowed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "notFound",
+      "target" : [{
+        "code" : "notFound",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preconditionFailed",
+      "target" : [{
+        "code" : "preconditionFailed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unprocessable",
+      "target" : [{
+        "code" : "unprocessable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "conflict",
+      "target" : [{
+        "code" : "conflict",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "gone",
+      "target" : [{
+        "code" : "gone",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -15,7 +15,7 @@ group Library(source src : LibraryR5, target tgt : LibraryR4) extends DomainReso
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.subtitle -> tgt.subtitle;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Library.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/lib.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.type -> tgt.type;
   src.subject : CodeableConcept -> tgt.subject "subjectCodeableConcept";

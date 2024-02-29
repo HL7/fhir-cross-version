@@ -23,7 +23,7 @@ group AllergyIntolerance(source src : AllergyIntolerance, target tgt : AllergyIn
   src where src.clinicalStatus = 'resolved' -> tgt.status = 'resolved' "AllergyIntolerance-status-resolved";
   src where src.verificationStatus = 'refuted' -> tgt.status = 'refuted' "AllergyIntolerance-status-refuted";
   src where src.verificationStatus = 'entered-in-error' -> tgt.status = 'entered-in-error' "AllergyIntolerance-status-entered-in-error";
-  src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/AllergyIntolerance.criticality-3to2', 'code') "AllergyIntolerance-criticality";
+  src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ait.criticality-3to2', 'code') "AllergyIntolerance-criticality";
   src.type -> tgt.type "AllergyIntolerance-type";
   src.category -> tgt.category "AllergyIntolerance-category";
   src.lastOccurrence -> tgt.lastOccurence "AllergyIntolerance-lastOccurrence";

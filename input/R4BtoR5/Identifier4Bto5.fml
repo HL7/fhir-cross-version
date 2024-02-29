@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/5.0/Identifier" alias IdentifierR5 as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group Identifier(source src : IdentifierR4B, target tgt : IdentifierR5) extends Element <<type+>> {
-  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Identifier.use-4bto5', 'code');
+  src.use as v -> tgt.use = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/idr.use-4bto5', 'code');
   src.type -> tgt.type;
   src.system -> tgt.system;
   src.value -> tgt.value;

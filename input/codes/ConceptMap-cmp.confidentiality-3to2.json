@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cmp.confidentiality-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.confidentiality-3to2",
+  "name" : "Composition.confidentiality3to2",
+  "title" : "Mapping for Composition.confidentiality from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.confidentiality",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Composition#Composition.confidentiality",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/v3/Confidentiality",
+    "target" : "http://hl7.org/fhir/1.0/v3/Confidentiality",
+    "element" : [{
+      "code" : "L",
+      "target" : [{
+        "code" : "L",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "M",
+      "target" : [{
+        "code" : "M",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "N",
+      "target" : [{
+        "code" : "N",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "R",
+      "target" : [{
+        "code" : "R",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "U",
+      "target" : [{
+        "code" : "U",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "V",
+      "target" : [{
+        "code" : "V",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

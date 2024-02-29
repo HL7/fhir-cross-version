@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "com.status-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/com.status-3to2",
+  "name" : "Communication.status3to2",
+  "title" : "Mapping for Communication.status from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Communication#Communication.status",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Communication#Communication.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/event-status",
+    "target" : "http://hl7.org/fhir/1.0/communication-status",
+    "element" : [{
+      "code" : "aborted",
+      "target" : [{
+        "code" : "failed",
+        "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "rejected",
+        "relationship" : "source-is-broader-than-target"
+      }]
+    },
+    {
+      "code" : "completed",
+      "target" : [{
+        "code" : "completed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "noMap" : true
+    },
+    {
+      "code" : "in-progress",
+      "target" : [{
+        "code" : "in-progress",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preparation",
+      "noMap" : true
+    },
+    {
+      "code" : "suspended",
+      "target" : [{
+        "code" : "suspended",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "noMap" : true
+    }]
+  }]
+}

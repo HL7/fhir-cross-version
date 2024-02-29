@@ -14,7 +14,7 @@ group StructureMap(source src : StructureMapR5, target tgt : StructureMapR4) ext
   src.version -> tgt.version;
   src.name -> tgt.name;
   src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureMap.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/smp.status-5to4', 'code');
   src.experimental -> tgt.experimental;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -31,7 +31,7 @@ group StructureMap(source src : StructureMapR5, target tgt : StructureMapR4) ext
 
 group StructureMapStructure(source src, target tgt) extends BackboneElement {
   src.url -> tgt.url;
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureMap.structure.mode-5to4', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/smp.st.mode-5to4', 'code');
   src.alias -> tgt.alias;
   src.documentation -> tgt.documentation;
 }
@@ -39,7 +39,7 @@ group StructureMapStructure(source src, target tgt) extends BackboneElement {
 group StructureMapGroup(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.extends -> tgt.extends;
-  src.typeMode as v -> tgt.typeMode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureMap.group.typeMode-5to4', 'code');
+  src.typeMode as v -> tgt.typeMode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.typeMode-5to4', 'code');
   src.documentation -> tgt.documentation;
   src.input as s -> tgt.input as t then StructureMapGroupInput(s, t);
   src.rule as s -> tgt.rule as t then StructureMapGroupRule(s, t);
@@ -48,7 +48,7 @@ group StructureMapGroup(source src, target tgt) extends BackboneElement {
 group StructureMapGroupInput(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.type -> tgt.type;
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureMap.group.input.mode-5to4', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.in.mode-5to4', 'code');
   src.documentation -> tgt.documentation;
 }
 
@@ -67,7 +67,7 @@ group StructureMapGroupRuleSource(source src, target tgt) extends BackboneElemen
   src.type -> tgt.type;
   src.defaultValue -> tgt.defaultValue;
   src.element -> tgt.element;
-  src.listMode as v -> tgt.listMode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureMap.group.rule.source.listMode-5to4', 'code');
+  src.listMode as v -> tgt.listMode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.ru.so.listMode-5to4', 'code');
   src.variable -> tgt.variable;
   src.condition -> tgt.condition;
   src.check -> tgt.check;
@@ -78,9 +78,9 @@ group StructureMapGroupRuleTarget(source src, target tgt) extends BackboneElemen
   src.context -> tgt.context;
   src.element -> tgt.element;
   src.variable -> tgt.variable;
-  src.listMode as v -> tgt.listMode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureMap.group.rule.target.listMode-5to4', 'code');
+  src.listMode as v -> tgt.listMode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.ru.ta.listMode-5to4', 'code');
   src.listRuleId -> tgt.listRuleId;
-  src.transform as v -> tgt.transform = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/StructureMap.group.rule.target.transform-5to4', 'code');
+  src.transform as v -> tgt.transform = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.ru.ta.transform-5to4', 'code');
   src.parameter as s -> tgt.parameter as t then StructureMapGroupRuleTargetParameter(s, t);
 }
 

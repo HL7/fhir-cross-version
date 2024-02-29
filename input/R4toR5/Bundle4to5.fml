@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Bundle(source src : BundleR4, target tgt : BundleR5) extends Resource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Bundle.type-4to5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/bdl.type-4to5', 'code');
   src.timestamp -> tgt.timestamp;
   src.total -> tgt.total;
   src.link as s -> tgt.link as t then BundleLink(s, t);
@@ -32,12 +32,12 @@ group BundleEntry(source src, target tgt) extends BackboneElement {
 }
 
 group BundleEntrySearch(source src, target tgt) extends BackboneElement {
-  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Bundle.entry.search.mode-4to5', 'code');
+  src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/bdl.en.se.mode-4to5', 'code');
   src.score -> tgt.score;
 }
 
 group BundleEntryRequest(source src, target tgt) extends BackboneElement {
-  src.method as v -> tgt.method = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Bundle.entry.request.method-4to5', 'code');
+  src.method as v -> tgt.method = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/bdl.en.re.method-4to5', 'code');
   src.url -> tgt.url;
   src.ifNoneMatch -> tgt.ifNoneMatch;
   src.ifModifiedSince -> tgt.ifModifiedSince;

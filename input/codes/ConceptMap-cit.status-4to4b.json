@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cit.status-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cit.status-4to4b",
+  "name" : "ChargeItem.status4to4b",
+  "title" : "Mapping for ChargeItem.status from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ChargeItem#ChargeItem.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ChargeItem#ChargeItem.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/chargeitem-status",
+    "target" : "http://hl7.org/fhir/4.3/chargeitem-status",
+    "element" : [{
+      "code" : "not-billable",
+      "target" : [{
+        "code" : "not-billable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "billed",
+      "target" : [{
+        "code" : "billed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "aborted",
+      "target" : [{
+        "code" : "aborted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "planned",
+      "target" : [{
+        "code" : "planned",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "billable",
+      "target" : [{
+        "code" : "billable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

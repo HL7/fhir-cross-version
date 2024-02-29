@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "bdp.status-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/bdp.status-4bto4",
+  "name" : "BiologicallyDerivedProduct.status4bto4",
+  "title" : "Mapping for BiologicallyDerivedProduct.status from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/BiologicallyDerivedProduct#BiologicallyDerivedProduct.status",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/BiologicallyDerivedProduct#BiologicallyDerivedProduct.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/product-status",
+    "target" : "http://hl7.org/fhir/4.0/product-status",
+    "element" : [{
+      "code" : "unavailable",
+      "target" : [{
+        "code" : "unavailable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "available",
+      "target" : [{
+        "code" : "available",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

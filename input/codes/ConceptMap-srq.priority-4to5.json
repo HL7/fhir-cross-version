@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "srq.priority-4to5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/srq.priority-4to5",
+  "name" : "ServiceRequest.priority4to5",
+  "title" : "Mapping for ServiceRequest.priority from 4.0.1 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ServiceRequest#ServiceRequest.priority",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ServiceRequest#ServiceRequest.priority",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/request-priority",
+    "target" : "http://hl7.org/fhir/5.0/request-priority",
+    "element" : [{
+      "code" : "stat",
+      "target" : [{
+        "code" : "stat",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "routine",
+      "target" : [{
+        "code" : "routine",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "urgent",
+      "target" : [{
+        "code" : "urgent",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "asap",
+      "target" : [{
+        "code" : "asap",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

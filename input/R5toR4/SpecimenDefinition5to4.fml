@@ -20,7 +20,7 @@ group SpecimenDefinition(source src : SpecimenDefinitionR5, target tgt : Specime
 group SpecimenDefinitionTypeTested(source src, target tgt) extends BackboneElement {
   src.isDerived -> tgt.isDerived;
   src.type -> tgt.type;
-  src.preference as v -> tgt.preference = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SpecimenDefinition.typeTested.preference-5to4', 'code');
+  src.preference as v -> tgt.preference = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/spdf.ty.preference-5to4', 'code');
   src.container as s -> tgt.container as t then SpecimenDefinitionTypeTestedContainer(s, t);
   src.requirement -> tgt.requirement;
   src.retentionTime -> tgt.retentionTime;

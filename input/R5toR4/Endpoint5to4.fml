@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group Endpoint(source src : EndpointR5, target tgt : EndpointR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Endpoint.status-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/enp.status-5to4', 'code');
   src.connectionType -> tgt.connectionType;
   src.name -> tgt.name;
   src.managingOrganization -> tgt.managingOrganization;

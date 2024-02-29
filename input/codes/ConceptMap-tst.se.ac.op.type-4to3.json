@@ -1,0 +1,316 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tst.se.ac.op.type-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.op.type-4to3",
+  "name" : "TestScript.setup.action.operation.type4to3",
+  "title" : "Mapping for TestScript.setup.action.operation.type from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.operation.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.setup.action.operation.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/testscript-operation-codes",
+    "target" : "http://hl7.org/fhir/3.0/testscript-operation-codes",
+    "element" : [{
+      "code" : "apply",
+      "target" : [{
+        "code" : "apply",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "batch",
+      "target" : [{
+        "code" : "batch",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "capabilities",
+      "target" : [{
+        "code" : "capabilities",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "closure",
+      "target" : [{
+        "code" : "closure",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "conforms",
+      "target" : [{
+        "code" : "conforms",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "create",
+      "target" : [{
+        "code" : "create",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "data-requirements",
+      "target" : [{
+        "code" : "data-requirements",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "delete",
+      "target" : [{
+        "code" : "delete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "deleteCondMultiple",
+      "target" : [{
+        "code" : "deleteCondMultiple",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "deleteCondSingle",
+      "target" : [{
+        "code" : "deleteCondSingle",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "document",
+      "target" : [{
+        "code" : "document",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "evaluate",
+      "target" : [{
+        "code" : "evaluate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "evaluate-measure",
+      "target" : [{
+        "code" : "evaluate-measure",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "everything",
+      "target" : [{
+        "code" : "everything",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "expand",
+      "target" : [{
+        "code" : "expand",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "find",
+      "target" : [{
+        "code" : "find",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "find-matches",
+      "noMap" : true
+    },
+    {
+      "code" : "graphql",
+      "noMap" : true
+    },
+    {
+      "code" : "history",
+      "target" : [{
+        "code" : "history",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "implements",
+      "target" : [{
+        "code" : "implements",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "lastn",
+      "noMap" : true
+    },
+    {
+      "code" : "lookup",
+      "target" : [{
+        "code" : "lookup",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "match",
+      "target" : [{
+        "code" : "match",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "meta",
+      "target" : [{
+        "code" : "meta",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "meta-add",
+      "target" : [{
+        "code" : "meta-add",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "meta-delete",
+      "target" : [{
+        "code" : "meta-delete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "patch",
+      "noMap" : true
+    },
+    {
+      "code" : "populate",
+      "target" : [{
+        "code" : "populate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "populatehtml",
+      "target" : [{
+        "code" : "populatehtml",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "populatelink",
+      "target" : [{
+        "code" : "populatelink",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "process-message",
+      "target" : [{
+        "code" : "process-message",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "questionnaire",
+      "target" : [{
+        "code" : "questionnaire",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "read",
+      "target" : [{
+        "code" : "read",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "search",
+      "target" : [{
+        "code" : "search",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "stats",
+      "target" : [{
+        "code" : "stats",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "subset",
+      "target" : [{
+        "code" : "subset",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "subsumes",
+      "target" : [{
+        "code" : "subsumes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transaction",
+      "target" : [{
+        "code" : "transaction",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transform",
+      "target" : [{
+        "code" : "transform",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "translate",
+      "target" : [{
+        "code" : "translate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "update",
+      "target" : [{
+        "code" : "update",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "updateCreate",
+      "target" : [{
+        "code" : "updateCreate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "validate",
+      "target" : [{
+        "code" : "validate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "validate-code",
+      "target" : [{
+        "code" : "validate-code",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "vread",
+      "target" : [{
+        "code" : "vread",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

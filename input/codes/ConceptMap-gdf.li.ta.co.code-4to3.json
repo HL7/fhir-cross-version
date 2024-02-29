@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "gdf.li.ta.co.code-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/gdf.li.ta.co.code-4to3",
+  "name" : "GraphDefinition.link.target.compartment.code4to3",
+  "title" : "Mapping for GraphDefinition.link.target.compartment.code from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.code",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/compartment-type",
+    "target" : "http://hl7.org/fhir/3.0/compartment-type",
+    "element" : [{
+      "code" : "Practitioner",
+      "target" : [{
+        "code" : "Practitioner",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Device",
+      "target" : [{
+        "code" : "Device",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Patient",
+      "target" : [{
+        "code" : "Patient",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Encounter",
+      "target" : [{
+        "code" : "Encounter",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RelatedPerson",
+      "target" : [{
+        "code" : "RelatedPerson",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

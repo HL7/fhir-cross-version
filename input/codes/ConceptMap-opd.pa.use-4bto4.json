@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "opd.pa.use-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.use-4bto4",
+  "name" : "OperationDefinition.parameter.use4bto4",
+  "title" : "Mapping for OperationDefinition.parameter.use from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/OperationDefinition#OperationDefinition.parameter.use",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/operation-parameter-use",
+    "target" : "http://hl7.org/fhir/4.0/operation-parameter-use",
+    "element" : [{
+      "code" : "in",
+      "target" : [{
+        "code" : "in",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "out",
+      "target" : [{
+        "code" : "out",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

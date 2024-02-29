@@ -11,7 +11,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 group MeasureReport(source src : MeasureReportR3, target tgt : MeasureReport) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MeasureReport.type-3to4', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/mrp.type-3to4', 'code');
   src.measure -> tgt.measure;
   src.patient -> tgt.subject;
   src.date -> tgt.date;

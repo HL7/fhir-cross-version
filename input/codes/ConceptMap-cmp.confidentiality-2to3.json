@@ -1,0 +1,95 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cmp.confidentiality-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.confidentiality-2to3",
+  "name" : "Composition.confidentiality2to3",
+  "title" : "Mapping for Composition.confidentiality from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Composition#Composition.confidentiality",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.confidentiality",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/v3/Confidentiality",
+    "target" : "http://hl7.org/fhir/3.0/v3/Confidentiality",
+    "element" : [{
+      "code" : "B",
+      "noMap" : true
+    },
+    {
+      "code" : "C",
+      "noMap" : true
+    },
+    {
+      "code" : "D",
+      "noMap" : true
+    },
+    {
+      "code" : "SDV",
+      "noMap" : true
+    },
+    {
+      "code" : "I",
+      "noMap" : true
+    },
+    {
+      "code" : "L",
+      "target" : [{
+        "code" : "L",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "M",
+      "target" : [{
+        "code" : "M",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "N",
+      "target" : [{
+        "code" : "N",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "R",
+      "target" : [{
+        "code" : "R",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "S",
+      "noMap" : true
+    },
+    {
+      "code" : "HIV",
+      "noMap" : true
+    },
+    {
+      "code" : "T",
+      "noMap" : true
+    },
+    {
+      "code" : "U",
+      "target" : [{
+        "code" : "U",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "V",
+      "target" : [{
+        "code" : "V",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PSY",
+      "noMap" : true
+    },
+    {
+      "code" : "ETH",
+      "noMap" : true
+    }]
+  }]
+}

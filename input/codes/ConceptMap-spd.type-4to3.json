@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "spd.type-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.type-4to3",
+  "name" : "SearchParameter.type4to3",
+  "title" : "Mapping for SearchParameter.type from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/search-param-type",
+    "target" : "http://hl7.org/fhir/3.0/search-param-type",
+    "element" : [{
+      "code" : "composite",
+      "target" : [{
+        "code" : "composite",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "date",
+      "target" : [{
+        "code" : "date",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "number",
+      "target" : [{
+        "code" : "number",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "quantity",
+      "target" : [{
+        "code" : "quantity",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reference",
+      "target" : [{
+        "code" : "reference",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "special",
+      "noMap" : true
+    },
+    {
+      "code" : "string",
+      "target" : [{
+        "code" : "string",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "token",
+      "target" : [{
+        "code" : "token",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "uri",
+      "target" : [{
+        "code" : "uri",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

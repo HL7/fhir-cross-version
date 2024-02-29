@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "clr.use-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clr.use-4to4b",
+  "name" : "ClaimResponse.use4to4b",
+  "title" : "Mapping for ClaimResponse.use from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ClaimResponse#ClaimResponse.use",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ClaimResponse#ClaimResponse.use",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/claim-use",
+    "target" : "http://hl7.org/fhir/4.3/claim-use",
+    "element" : [{
+      "code" : "predetermination",
+      "target" : [{
+        "code" : "predetermination",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preauthorization",
+      "target" : [{
+        "code" : "preauthorization",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "claim",
+      "target" : [{
+        "code" : "claim",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

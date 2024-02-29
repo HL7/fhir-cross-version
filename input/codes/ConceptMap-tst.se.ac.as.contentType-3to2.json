@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tst.se.ac.as.contentType-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.contentType-3to2",
+  "name" : "TestScript.setup.action.assert.contentType3to2",
+  "title" : "Mapping for TestScript.setup.action.assert.contentType from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.setup.action.assert.contentType",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/TestScript#TestScript.setup.action.assert.contentType",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/content-type",
+    "target" : "http://hl7.org/fhir/1.0/content-type",
+    "element" : [{
+      "code" : "json",
+      "target" : [{
+        "code" : "json",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "none",
+      "noMap" : true
+    },
+    {
+      "code" : "ttl",
+      "noMap" : true
+    },
+    {
+      "code" : "xml",
+      "target" : [{
+        "code" : "xml",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

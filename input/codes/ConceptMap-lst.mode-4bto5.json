@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "lst.mode-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/lst.mode-4bto5",
+  "name" : "List.mode4bto5",
+  "title" : "Mapping for List.mode from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/List#List.mode",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/List#List.mode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/list-mode",
+    "target" : "http://hl7.org/fhir/5.0/list-mode",
+    "element" : [{
+      "code" : "changes",
+      "target" : [{
+        "code" : "changes",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "working",
+      "target" : [{
+        "code" : "working",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "snapshot",
+      "target" : [{
+        "code" : "snapshot",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

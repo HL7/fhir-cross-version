@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ctn.ci.pu.pu.type-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.pu.pu.type-4bto5",
+  "name" : "Citation.citedArtifact.publicationForm.publishedIn.type4bto5",
+  "title" : "Mapping for Citation.citedArtifact.publicationForm.publishedIn.type from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.publicationForm.publishedIn.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.publicationForm.publishedIn.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/published-in-type",
+    "target" : "http://hl7.org/fhir/5.0/published-in-type",
+    "element" : [{
+      "code" : "D019991",
+      "target" : [{
+        "code" : "D019991",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "D001877",
+      "target" : [{
+        "code" : "D001877",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "D020492",
+      "target" : [{
+        "code" : "D020492",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "D064886",
+      "target" : [{
+        "code" : "D064886",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

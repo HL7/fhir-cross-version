@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group EpisodeOfCare(source src : EpisodeOfCareR4, target tgt : EpisodeOfCareR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EpisodeOfCare.status-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/eoc.status-4to5', 'code');
   src.statusHistory as s -> tgt.statusHistory as t then EpisodeOfCareStatusHistory(s, t);
   src.type -> tgt.type;
   src.diagnosis as s -> tgt.diagnosis as t then EpisodeOfCareDiagnosis(s, t);
@@ -24,7 +24,7 @@ group EpisodeOfCare(source src : EpisodeOfCareR4, target tgt : EpisodeOfCareR5) 
 }
 
 group EpisodeOfCareStatusHistory(source src, target tgt) extends BackboneElement {
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EpisodeOfCare.statusHistory.status-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/eoc.st.status-4to5', 'code');
   src.period -> tgt.period;
 }
 

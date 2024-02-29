@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eoc.st.status-2to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eoc.st.status-2to3",
+  "name" : "EpisodeOfCare.statusHistory.status2to3",
+  "title" : "Mapping for EpisodeOfCare.statusHistory.status from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/EpisodeOfCare#EpisodeOfCare.statusHistory.status",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/EpisodeOfCare#EpisodeOfCare.statusHistory.status",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/episode-of-care-status",
+    "target" : "http://hl7.org/fhir/3.0/episode-of-care-status",
+    "element" : [{
+      "code" : "onhold",
+      "target" : [{
+        "code" : "onhold",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "waitlist",
+      "target" : [{
+        "code" : "waitlist",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "active",
+      "target" : [{
+        "code" : "active",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "target" : [{
+        "code" : "cancelled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "finished",
+      "target" : [{
+        "code" : "finished",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "planned",
+      "target" : [{
+        "code" : "planned",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

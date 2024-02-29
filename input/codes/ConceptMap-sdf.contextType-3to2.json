@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sdf.contextType-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.contextType-3to2",
+  "name" : "StructureDefinition.contextType3to2",
+  "title" : "Mapping for StructureDefinition.contextType from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition#StructureDefinition.contextType",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/StructureDefinition#StructureDefinition.contextType",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/extension-context",
+    "target" : "http://hl7.org/fhir/1.0/extension-context",
+    "element" : [{
+      "code" : "extension",
+      "target" : [{
+        "code" : "extension",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "resource",
+      "target" : [{
+        "code" : "resource",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "datatype",
+      "target" : [{
+        "code" : "datatype",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

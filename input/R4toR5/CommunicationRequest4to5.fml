@@ -13,10 +13,10 @@ group CommunicationRequest(source src : CommunicationRequestR4, target tgt : Com
   src.basedOn -> tgt.basedOn;
   src.replaces -> tgt.replaces;
   src.groupIdentifier -> tgt.groupIdentifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CommunicationRequest.status-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cmr.status-4to5', 'code');
   src.statusReason -> tgt.statusReason;
   src.category -> tgt.category;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/CommunicationRequest.priority-4to5', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cmr.priority-4to5', 'code');
   src.doNotPerform -> tgt.doNotPerform;
   src.medium -> tgt.medium;
   src.subject -> tgt.subject;

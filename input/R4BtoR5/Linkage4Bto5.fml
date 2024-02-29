@@ -15,7 +15,7 @@ group Linkage(source src : LinkageR4B, target tgt : LinkageR5) extends DomainRes
 }
 
 group LinkageItem(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Linkage.item.type-4bto5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/lnk.it.type-4bto5', 'code');
   src.resource -> tgt.resource;
 }
 

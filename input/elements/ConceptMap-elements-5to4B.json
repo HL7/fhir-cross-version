@@ -8,6 +8,8 @@
   "status": "active",
   "date": "2024-02-01",
   "publisher": "HL7",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/elements",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/elements",
   "group": [
     {
       "source": "http://hl7.org/fhir/5.0/element-names",

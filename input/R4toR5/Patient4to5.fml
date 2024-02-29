@@ -13,7 +13,7 @@ group Patient(source src : PatientR4, target tgt : PatientR5) extends DomainReso
   src.active -> tgt.active;
   src.name -> tgt.name;
   src.telecom -> tgt.telecom;
-  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Patient.gender-4to5', 'code');
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pat.gender-4to5', 'code');
   src.birthDate -> tgt.birthDate;
   src.deceased : boolean -> tgt.deceased "deceasedBoolean";
   src.deceased : dateTime -> tgt.deceased "deceasedDateTime";
@@ -34,7 +34,7 @@ group PatientContact(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.telecom -> tgt.telecom;
   src.address -> tgt.address;
-  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Patient.contact.gender-4to5', 'code');
+  src.gender as v -> tgt.gender = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pat.co.gender-4to5', 'code');
   src.organization -> tgt.organization;
   src.period -> tgt.period;
 }
@@ -46,6 +46,6 @@ group PatientCommunication(source src, target tgt) extends BackboneElement {
 
 group PatientLink(source src, target tgt) extends BackboneElement {
   src.other -> tgt.other;
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Patient.link.type-4to5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pat.li.type-4to5', 'code');
 }
 

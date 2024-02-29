@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "enr.outcome-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enr.outcome-4bto5",
+  "name" : "EnrollmentResponse.outcome4bto5",
+  "title" : "Mapping for EnrollmentResponse.outcome from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EnrollmentResponse#EnrollmentResponse.outcome",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/EnrollmentResponse#EnrollmentResponse.outcome",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/remittance-outcome",
+    "target" : "http://hl7.org/fhir/5.0/enrollment-outcome",
+    "element" : [{
+      "code" : "queued",
+      "target" : [{
+        "code" : "queued",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "complete",
+      "target" : [{
+        "code" : "complete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "partial",
+      "target" : [{
+        "code" : "partial",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

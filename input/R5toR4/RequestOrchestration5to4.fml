@@ -15,9 +15,9 @@ group RequestOrchestration(source src : RequestOrchestrationR5, target tgt : Req
   src.basedOn -> tgt.basedOn;
   src.replaces -> tgt.replaces;
   src.groupIdentifier -> tgt.groupIdentifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.status-RequestGroup.status-5to4', 'code');
-  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.intent-RequestGroup.intent-5to4', 'code');
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.priority-RequestGroup.priority-5to4', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.status-rgp.status-5to4', 'code');
+  src.intent as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.intent-rgp.intent-5to4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.priority-rgp.priority-5to4', 'code');
   src.code -> tgt.code;
   src.subject -> tgt.subject;
   src.encounter -> tgt.encounter;
@@ -34,7 +34,7 @@ group RequestOrchestrationAction(source src, target tgt) extends BackboneElement
   src.title -> tgt.title;
   src.description -> tgt.description;
   src.textEquivalent -> tgt.textEquivalent;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.priority-RequestGroup.action.priority-5to4', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.priority-rgp.ac.priority-5to4', 'code');
   src.code -> tgt.code;
   src.documentation -> tgt.documentation;
   src.condition as s -> tgt.condition as t then RequestOrchestrationActionCondition(s, t);
@@ -47,16 +47,16 @@ group RequestOrchestrationAction(source src, target tgt) extends BackboneElement
   src.timing : Timing -> tgt.timing "timingTiming";
   src.participant as s -> tgt.participant = s.actor;
   src.type -> tgt.type;
-  src.groupingBehavior as v -> tgt.groupingBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.groupingBehavior-RequestGroup.action.groupingBehavior-5to4', 'code');
-  src.selectionBehavior as v -> tgt.selectionBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.selectionBehavior-RequestGroup.action.selectionBehavior-5to4', 'code');
-  src.requiredBehavior as v -> tgt.requiredBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.requiredBehavior-RequestGroup.action.requiredBehavior-5to4', 'code');
-  src.precheckBehavior as v -> tgt.precheckBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.precheckBehavior-RequestGroup.action.precheckBehavior-5to4', 'code');
-  src.cardinalityBehavior as v -> tgt.cardinalityBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.cardinalityBehavior-RequestGroup.action.cardinalityBehavior-5to4', 'code');
+  src.groupingBehavior as v -> tgt.groupingBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.groupingBehavior-rgp.ac.groupingBehavior-5to4', 'code');
+  src.selectionBehavior as v -> tgt.selectionBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.selectionBehavior-rgp.ac.selectionBehavior-5to4', 'code');
+  src.requiredBehavior as v -> tgt.requiredBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.requiredBehavior-rgp.ac.requiredBehavior-5to4', 'code');
+  src.precheckBehavior as v -> tgt.precheckBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.precheckBehavior-rgp.ac.precheckBehavior-5to4', 'code');
+  src.cardinalityBehavior as v -> tgt.cardinalityBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.cardinalityBehavior-rgp.ac.cardinalityBehavior-5to4', 'code');
   src.resource -> tgt.resource;
 }
 
 group RequestOrchestrationActionCondition(source src, target tgt) extends BackboneElement {
-  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.condition.kind-RequestGroup.action.condition.kind-5to4', 'code');
+  src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.co.kind-rgp.ac.co.kind-5to4', 'code');
   src.expression -> tgt.expression;
 }
 
@@ -72,7 +72,7 @@ group RequestOrchestrationActionCondition(source src, target tgt) extends Backbo
 // }
 group RequestOrchestrationActionRelatedAction(source src, target tgt) extends BackboneElement {
   src.targetId -> tgt.actionId;
-  src.relationship as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/RequestOrchestration.action.relatedAction.relationship-RequestGroup.action.relatedAction.relationship-5to4', 'code');
+  src.relationship as v -> tgt.relationship = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.re.relationship-rgp.ac.re.relationship-5to4', 'code');
   src.offset : Duration -> tgt.offset "offsetDuration";
   src.offset : Range -> tgt.offset "offsetRange";
 }

@@ -10,9 +10,9 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group EnrollmentResponse(source src : EnrollmentResponseR4B, target tgt : EnrollmentResponseR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EnrollmentResponse.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/enr.status-4bto5', 'code');
   src.request -> tgt.request;
-  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EnrollmentResponse.outcome-4bto5', 'code');
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/enr.outcome-4bto5', 'code');
   src.disposition -> tgt.disposition;
   src.created -> tgt.created;
   src.organization -> tgt.organization;

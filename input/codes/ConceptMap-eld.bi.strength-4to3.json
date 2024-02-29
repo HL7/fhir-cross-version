@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eld.bi.strength-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eld.bi.strength-4to3",
+  "name" : "ElementDefinition.binding.strength4to3",
+  "title" : "Mapping for ElementDefinition.binding.strength from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.binding.strength",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.binding.strength",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/binding-strength",
+    "target" : "http://hl7.org/fhir/3.0/binding-strength",
+    "element" : [{
+      "code" : "extensible",
+      "target" : [{
+        "code" : "extensible",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "required",
+      "target" : [{
+        "code" : "required",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "preferred",
+      "target" : [{
+        "code" : "preferred",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "example",
+      "target" : [{
+        "code" : "example",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

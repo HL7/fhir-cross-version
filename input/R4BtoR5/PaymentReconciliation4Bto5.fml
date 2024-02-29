@@ -10,13 +10,13 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group PaymentReconciliation(source src : PaymentReconciliationR4B, target tgt : PaymentReconciliationR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PaymentReconciliation.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pmr.status-4bto5', 'code');
   src.period -> tgt.period;
   src.created -> tgt.created;
   src.paymentIssuer -> tgt.paymentIssuer;
   src.request -> tgt.request;
   src.requestor -> tgt.requestor;
-  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PaymentReconciliation.outcome-4bto5', 'code');
+  src.outcome as v -> tgt.outcome = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pmr.outcome-4bto5', 'code');
   src.disposition -> tgt.disposition;
   src.paymentDate -> tgt.date;
   src.paymentAmount -> tgt.amount;
@@ -39,7 +39,7 @@ group PaymentReconciliationAllocation(source src, target tgt) extends BackboneEl
 }
 
 group PaymentReconciliationProcessNote(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/PaymentReconciliation.processNote.type-4bto5', 'code');
+  src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pmr.pr.type-4bto5', 'code');
   src.text -> tgt.text;
 }
 

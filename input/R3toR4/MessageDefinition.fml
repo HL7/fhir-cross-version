@@ -28,7 +28,7 @@ group MessageDefinition(source src : MessageDefinitionR3, target tgt : MessageDe
   src.parent -> tgt.parent;
   src.replaces -> tgt.replaces;
   src.event as vs0 -> tgt.event = create('Coding') as vt0 then Coding(vs0, vt0);
-  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/MessageDefinition.category-3to4', 'code');
+  src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/msd.category-3to4', 'code');
   src.focus as vs0 -> tgt.focus as vt0 then focus(vs0, vt0);
   src.responseRequired where value = true -> tgt.responseRequired = 'always';
   src.responseRequired where value = false -> tgt.responseRequired = 'never';

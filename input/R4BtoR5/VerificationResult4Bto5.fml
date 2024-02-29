@@ -12,7 +12,7 @@ group VerificationResult(source src : VerificationResultR4B, target tgt : Verifi
   src.target -> tgt.target;
   src.targetLocation -> tgt.targetLocation;
   src.need -> tgt.need;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/VerificationResult.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/vrs.status-4bto5', 'code');
   src.statusDate -> tgt.statusDate;
   src.validationType -> tgt.validationType;
   src.validationProcess -> tgt.validationProcess;

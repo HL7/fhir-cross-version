@@ -1,0 +1,90 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ctn.ci.ab.type-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.ab.type-4bto5",
+  "name" : "Citation.citedArtifact.abstract.type4bto5",
+  "title" : "Mapping for Citation.citedArtifact.abstract.type from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.abstract.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.abstract.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/cited-artifact-abstract-type",
+    "target" : "http://hl7.org/fhir/5.0/cited-artifact-abstract-type",
+    "element" : [{
+      "code" : "primary-machine-use",
+      "target" : [{
+        "code" : "primary-machine-use",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "short-abstract",
+      "target" : [{
+        "code" : "short-abstract",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "duplicate-pmid",
+      "target" : [{
+        "code" : "duplicate-pmid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "primary-human-use",
+      "target" : [{
+        "code" : "primary-human-use",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "long-abstract",
+      "target" : [{
+        "code" : "long-abstract",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "different-publisher",
+      "target" : [{
+        "code" : "different-publisher",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "autotranslated",
+      "target" : [{
+        "code" : "autotranslated",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "earlier-abstract",
+      "target" : [{
+        "code" : "earlier-abstract",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "truncated",
+      "target" : [{
+        "code" : "truncated",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "language",
+      "target" : [{
+        "code" : "language",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "plain-language",
+      "target" : [{
+        "code" : "plain-language",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

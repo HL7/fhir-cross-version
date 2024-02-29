@@ -144,7 +144,7 @@
     { "code" : "SubscriptionStatus", "noMap" : true },
     { "code" : "SubscriptionTopic", "noMap" : true },
     { "code" : "Substance", "target" : [{ "code" : "Substance", "relationship" : "equivalent" }] },
-    { "code" : "SubstanceDefinition", "noMap" : true },
+    { "code" : "SubstanceDefinition", "target" : [{ "code" : "SubstanceSpecification", "relationship" : "equivalent" }] },
     { "code" : "SupplyDelivery", "target" : [{ "code" : "SupplyDelivery", "relationship" : "equivalent" }] },
     { "code" : "SupplyRequest", "target" : [{ "code" : "SupplyRequest", "relationship" : "equivalent" }] },
     { "code" : "Task", "target" : [{ "code" : "Task", "relationship" : "equivalent" }] },

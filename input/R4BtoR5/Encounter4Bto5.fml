@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group Encounter(source src : EncounterR4B, target tgt : EncounterR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Encounter.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/enc.status-4bto5', 'code');
   src.class as s ->  tgt.class = create('CodeableConcept') as t,  t.coding as tc then Coding(s, tc);
   src.priority -> tgt.priority;
   src.type -> tgt.type;
@@ -56,7 +56,7 @@ group EncounterAdmission(source src, target tgt) extends BackboneElement {
 
 group EncounterLocation(source src, target tgt) extends BackboneElement {
   src.location -> tgt.location;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Encounter.location.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/enc.lo.status-4bto5', 'code');
   src.physicalType -> tgt.form;
   src.period -> tgt.period;
 }

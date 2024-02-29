@@ -15,7 +15,7 @@ group EvidenceVariable(source src : EvidenceVariableR4B, target tgt : EvidenceVa
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.shortTitle -> tgt.shortTitle;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceVariable.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/evv.status-4bto5', 'code');
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
   src.contact -> tgt.contact;
@@ -29,7 +29,7 @@ group EvidenceVariable(source src : EvidenceVariableR4B, target tgt : EvidenceVa
   src.relatedArtifact -> tgt.relatedArtifact;
   src.actual -> tgt.actual;
   src.characteristic as s -> tgt.characteristic as t then EvidenceVariableCharacteristic(s, t);
-  src.handling as v -> tgt.handling = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/EvidenceVariable.handling-4bto5', 'code');
+  src.handling as v -> tgt.handling = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/evv.handling-4bto5', 'code');
   src.category as s -> tgt.category as t then EvidenceVariableCategory(s, t);
 }
 

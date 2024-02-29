@@ -10,9 +10,9 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group SupplyRequest(source src : SupplyRequestR4, target tgt : SupplyRequestR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SupplyRequest.status-4to5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sur.status-4to5', 'code');
   src.category -> tgt.category;
-  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/SupplyRequest.priority-4to5', 'code');
+  src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sur.priority-4to5', 'code');
   src.item : CodeableConcept -> tgt.item "itemCodeableConcept";
   src.item : Reference -> tgt.item "itemReference";
   src.quantity -> tgt.quantity;

@@ -1,0 +1,224 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "opo.is.code-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opo.is.code-4to3",
+  "name" : "OperationOutcome.issue.code4to3",
+  "title" : "Mapping for OperationOutcome.issue.code from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/OperationOutcome#OperationOutcome.issue.code",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/OperationOutcome#OperationOutcome.issue.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/issue-type",
+    "target" : "http://hl7.org/fhir/3.0/issue-type",
+    "element" : [{
+      "code" : "business-rule",
+      "target" : [{
+        "code" : "business-rule",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "code-invalid",
+      "target" : [{
+        "code" : "code-invalid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "conflict",
+      "target" : [{
+        "code" : "conflict",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "deleted",
+      "noMap" : true
+    },
+    {
+      "code" : "duplicate",
+      "target" : [{
+        "code" : "duplicate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "exception",
+      "target" : [{
+        "code" : "exception",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "expired",
+      "target" : [{
+        "code" : "expired",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "extension",
+      "target" : [{
+        "code" : "extension",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "forbidden",
+      "target" : [{
+        "code" : "forbidden",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "incomplete",
+      "target" : [{
+        "code" : "incomplete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "informational",
+      "target" : [{
+        "code" : "informational",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "invalid",
+      "target" : [{
+        "code" : "invalid",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "invariant",
+      "target" : [{
+        "code" : "invariant",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "lock-error",
+      "target" : [{
+        "code" : "lock-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "login",
+      "target" : [{
+        "code" : "login",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "multiple-matches",
+      "noMap" : true
+    },
+    {
+      "code" : "no-store",
+      "target" : [{
+        "code" : "no-store",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-found",
+      "target" : [{
+        "code" : "not-found",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-supported",
+      "target" : [{
+        "code" : "not-supported",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "processing",
+      "target" : [{
+        "code" : "processing",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "required",
+      "target" : [{
+        "code" : "required",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "security",
+      "target" : [{
+        "code" : "security",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "structure",
+      "target" : [{
+        "code" : "structure",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "suppressed",
+      "target" : [{
+        "code" : "suppressed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "throttled",
+      "target" : [{
+        "code" : "throttled",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "timeout",
+      "target" : [{
+        "code" : "timeout",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "too-costly",
+      "target" : [{
+        "code" : "too-costly",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "too-long",
+      "target" : [{
+        "code" : "too-long",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transient",
+      "target" : [{
+        "code" : "transient",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "value",
+      "target" : [{
+        "code" : "value",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

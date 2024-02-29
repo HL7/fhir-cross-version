@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group InsurancePlan(source src : InsurancePlanR4B, target tgt : InsurancePlanR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/InsurancePlan.status-4bto5', 'code');
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ipn.status-4bto5', 'code');
   src.type -> tgt.type;
   src.name -> tgt.name;
   src.alias -> tgt.alias;

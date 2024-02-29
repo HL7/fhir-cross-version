@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cmp.re.code-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.re.code-3to4",
+  "name" : "Composition.relatesTo.code3to4",
+  "title" : "Mapping for Composition.relatesTo.code from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.relatesTo.code",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.relatesTo.code",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/document-relationship-type",
+    "target" : "http://hl7.org/fhir/4.0/document-relationship-type",
+    "element" : [{
+      "code" : "signs",
+      "target" : [{
+        "code" : "signs",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "replaces",
+      "target" : [{
+        "code" : "replaces",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transforms",
+      "target" : [{
+        "code" : "transforms",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "appends",
+      "target" : [{
+        "code" : "appends",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

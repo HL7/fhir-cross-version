@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "pmr.pr.type-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pmr.pr.type-4to3",
+  "name" : "PaymentReconciliation.processNote.type4to3",
+  "title" : "Mapping for PaymentReconciliation.processNote.type from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.processNote.type",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.processNote.type",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.0/note-type",
+    "target" : "http://hl7.org/fhir/3.0/note-type",
+    "element" : [{
+      "code" : "print",
+      "target" : [{
+        "code" : "print",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "display",
+      "target" : [{
+        "code" : "display",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "printoper",
+      "target" : [{
+        "code" : "printoper",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}
