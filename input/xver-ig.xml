@@ -198,13 +198,6 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="generate-version"/>
       </code>
-      <value value="r4b"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="generate-version"/>
-      </code>
       <value value="r5"/>
     </parameter>    
 
@@ -229,13 +222,6 @@
       </code>
       <value value="R4B"/>
     </parameter>      
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="version-comparison-master"/>
-      </code>
-      <value value="1.0.0"/>
-    </parameter>
   
     <parameter>
       <code>
