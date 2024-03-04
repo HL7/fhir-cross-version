@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Age-r4btor5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Age-r4btor5",
+  "name" : "Ager4btor5",
+  "title" : "Mapping for Age from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Age#Age",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Age#Age",
+  "group" : [{
+    "source" : "http://unitsofmeasure.org",
+    "target" : "http://unitsofmeasure.org",
+    "element" : [{
+      "code" : "a",
+      "target" : [{
+        "code" : "a",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "d",
+      "target" : [{
+        "code" : "d",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "h",
+      "target" : [{
+        "code" : "h",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "min",
+      "target" : [{
+        "code" : "min",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mo",
+      "target" : [{
+        "code" : "mo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wk",
+      "target" : [{
+        "code" : "wk",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}
