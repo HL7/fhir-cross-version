@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "vsd.co.in.co.de.use-r4tor4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/vsd.co.in.co.de.use-r4tor4b",
+  "name" : "ValueSet.compose.include.concept.designation.user4tor4b",
+  "title" : "Mapping for ValueSet.compose.include.concept.designation.use from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ValueSet#ValueSet.compose.include.concept.designation.use",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ValueSet#ValueSet.compose.include.concept.designation.use",
+  "group" : [{
+    "source" : "http://snomed.info/sct",
+    "target" : "http://snomed.info/sct",
+    "element" : [{
+      "code" : "900000000000003001",
+      "target" : [{
+        "code" : "900000000000003001",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "900000000000013009",
+      "target" : [{
+        "code" : "900000000000013009",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

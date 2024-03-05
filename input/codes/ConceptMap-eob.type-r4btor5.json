@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "eob.type-r4btor5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eob.type-r4btor5",
+  "name" : "ExplanationOfBenefit.typer4btor5",
+  "title" : "Mapping for ExplanationOfBenefit.type from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/claim-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/claim-type",
+    "element" : [{
+      "code" : "institutional",
+      "target" : [{
+        "code" : "institutional",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "oral",
+      "target" : [{
+        "code" : "oral",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pharmacy",
+      "target" : [{
+        "code" : "pharmacy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "professional",
+      "target" : [{
+        "code" : "professional",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "vision",
+      "target" : [{
+        "code" : "vision",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

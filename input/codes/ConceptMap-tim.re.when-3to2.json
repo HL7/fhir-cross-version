@@ -1,0 +1,135 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tim.re.when-3to2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.when-3to2",
+  "name" : "Timing.repeat.when3to2",
+  "title" : "Mapping for Timing.repeat.when from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.when",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Timing#Timing.repeat.when",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/event-timing",
+    "target" : "http://hl7.org/fhir/1.0/event-timing",
+    "element" : [{
+      "code" : "AFT",
+      "noMap" : true
+    },
+    {
+      "code" : "EVE",
+      "noMap" : true
+    },
+    {
+      "code" : "MORN",
+      "noMap" : true
+    },
+    {
+      "code" : "NIGHT",
+      "noMap" : true
+    },
+    {
+      "code" : "PHS",
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/TimingEvent",
+    "target" : "http://hl7.org/fhir/1.0/v3/TimingEvent",
+    "element" : [{
+      "code" : "AC",
+      "target" : [{
+        "code" : "AC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACD",
+      "target" : [{
+        "code" : "ACD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACM",
+      "target" : [{
+        "code" : "ACM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACV",
+      "target" : [{
+        "code" : "ACV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C",
+      "target" : [{
+        "code" : "C",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CD",
+      "target" : [{
+        "code" : "CD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CM",
+      "target" : [{
+        "code" : "CM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CV",
+      "target" : [{
+        "code" : "CV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HS",
+      "target" : [{
+        "code" : "HS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PC",
+      "target" : [{
+        "code" : "PC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PCD",
+      "target" : [{
+        "code" : "PCD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PCM",
+      "target" : [{
+        "code" : "PCM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PCV",
+      "target" : [{
+        "code" : "PCV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WAKE",
+      "target" : [{
+        "code" : "WAKE",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

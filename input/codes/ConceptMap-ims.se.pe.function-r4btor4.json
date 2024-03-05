@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ims.se.pe.function-r4btor4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ims.se.pe.function-r4btor4",
+  "name" : "ImagingStudy.series.performer.functionr4btor4",
+  "title" : "Mapping for ImagingStudy.series.performer.function from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ImagingStudy#ImagingStudy.series.performer.function",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ImagingStudy#ImagingStudy.series.performer.function",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "element" : [{
+      "code" : "CON",
+      "target" : [{
+        "code" : "CON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRF",
+      "target" : [{
+        "code" : "PRF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REF",
+      "target" : [{
+        "code" : "REF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPRF",
+      "target" : [{
+        "code" : "SPRF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VRF",
+      "target" : [{
+        "code" : "VRF",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

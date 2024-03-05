@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ait.verificationStatus-r4btor5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ait.verificationStatus-r4btor5",
+  "name" : "AllergyIntolerance.verificationStatusr4btor5",
+  "title" : "Mapping for AllergyIntolerance.verificationStatus from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance#AllergyIntolerance.verificationStatus",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.verificationStatus",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+    "target" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+    "element" : [{
+      "code" : "confirmed",
+      "target" : [{
+        "code" : "confirmed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "target" : [{
+        "code" : "entered-in-error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "refuted",
+      "target" : [{
+        "code" : "refuted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unconfirmed",
+      "target" : [{
+        "code" : "unconfirmed",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

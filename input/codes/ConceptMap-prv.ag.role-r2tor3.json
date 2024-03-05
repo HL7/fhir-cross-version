@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "prv.ag.role-r2tor3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prv.ag.role-r2tor3",
+  "name" : "Provenance.agent.roler2tor3",
+  "title" : "Mapping for Provenance.agent.role from 1.0.2 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Provenance#Provenance.agent.role",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Provenance#Provenance.agent.role",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/1.0/provenance-participant-role",
+    "target" : "http://hl7.org/fhir/3.0/provenance-participant-role",
+    "element" : [{
+      "code" : "assembler",
+
+      "noMap" : true
+    },
+    {
+      "code" : "attester",
+
+      "noMap" : true
+    },
+    {
+      "code" : "author",
+
+      "noMap" : true
+    },
+    {
+      "code" : "composer",
+
+      "noMap" : true
+    },
+    {
+      "code" : "custodian",
+
+      "noMap" : true
+    },
+    {
+      "code" : "enterer",
+
+      "noMap" : true
+    },
+    {
+      "code" : "informant",
+
+      "noMap" : true
+    },
+    {
+      "code" : "legal",
+
+      "noMap" : true
+    },
+    {
+      "code" : "performer",
+
+      "noMap" : true
+    },
+    {
+      "code" : "verifier",
+
+      "noMap" : true
+    }]
+  }]
+}

@@ -1,0 +1,167 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "evi.st.statisticType-r4btor5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evi.st.statisticType-r4btor5",
+  "name" : "Evidence.statistic.statisticTyper4btor5",
+  "title" : "Mapping for Evidence.statistic.statisticType from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.statistic.statisticType",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.statistic.statisticType",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/statistic-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/statistic-type",
+    "element" : [{
+      "code" : "0000100",
+      "target" : [{
+        "code" : "0000100",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "0000301",
+      "target" : [{
+        "code" : "0000301",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "0000424",
+      "target" : [{
+        "code" : "0000424",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "0000457",
+      "target" : [{
+        "code" : "0000457",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "0000565",
+      "target" : [{
+        "code" : "0000565",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C16726",
+      "target" : [{
+        "code" : "C16726",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C16932",
+      "target" : [{
+        "code" : "C16932",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C17010",
+      "target" : [{
+        "code" : "C17010",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C25463",
+      "target" : [{
+        "code" : "C25463",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C25564",
+      "target" : [{
+        "code" : "C25564",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C25570",
+      "target" : [{
+        "code" : "C25570",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C28007",
+      "target" : [{
+        "code" : "C28007",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C44256",
+      "target" : [{
+        "code" : "C44256",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C53319",
+      "target" : [{
+        "code" : "C53319",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C65171",
+      "target" : [{
+        "code" : "C65171",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C65172",
+      "target" : [{
+        "code" : "C65172",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C93150",
+      "target" : [{
+        "code" : "C93150",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C93152",
+      "target" : [{
+        "code" : "C93152",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "absolute-MedianDiff",
+      "target" : [{
+        "code" : "absolute-MedianDiff",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "descriptive",
+      "target" : [{
+        "code" : "descriptive",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "predictedRisk",
+      "target" : [{
+        "code" : "predictedRisk",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "rate-ratio",
+      "target" : [{
+        "code" : "rate-ratio",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

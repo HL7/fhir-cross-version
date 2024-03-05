@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "imm.pe.function-r5tor4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/imm.pe.function-r5tor4b",
+  "name" : "Immunization.performer.functionr5tor4b",
+  "title" : "Mapping for Immunization.performer.function from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Immunization#Immunization.performer.function",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Immunization#Immunization.performer.function",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/v2-0443",
+    "target" : "http://terminology.hl7.org/CodeSystem/v2-0443",
+    "element" : [{
+      "code" : "AP",
+      "target" : [{
+        "code" : "AP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OP",
+      "target" : [{
+        "code" : "OP",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

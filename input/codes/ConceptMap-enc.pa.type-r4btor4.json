@@ -1,0 +1,101 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "enc.pa.type-r4btor4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enc.pa.type-r4btor4",
+  "name" : "Encounter.participant.typer4btor4",
+  "title" : "Mapping for Encounter.participant.type from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Encounter#Encounter.participant.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Encounter#Encounter.participant.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/participant-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/participant-type",
+    "element" : [{
+      "code" : "emergency",
+      "target" : [{
+        "code" : "emergency",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "translator",
+      "target" : [{
+        "code" : "translator",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "element" : [{
+      "code" : "ADM",
+      "target" : [{
+        "code" : "ADM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ATND",
+      "target" : [{
+        "code" : "ATND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CALLBCK",
+      "target" : [{
+        "code" : "CALLBCK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CON",
+      "target" : [{
+        "code" : "CON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DIS",
+      "target" : [{
+        "code" : "DIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ESC",
+      "target" : [{
+        "code" : "ESC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PART",
+      "target" : [{
+        "code" : "PART",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PPRF",
+      "target" : [{
+        "code" : "PPRF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REF",
+      "target" : [{
+        "code" : "REF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPRF",
+      "target" : [{
+        "code" : "SPRF",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,91 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "pat.maritalStatus-r3tor2",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pat.maritalStatus-r3tor2",
+  "name" : "Patient.maritalStatusr3tor2",
+  "title" : "Mapping for Patient.maritalStatus from 3.0.2 to 1.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.maritalStatus",
+  "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.maritalStatus",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/v3/NullFlavor",
+    "target" : "http://hl7.org/fhir/1.0/v3/NullFlavor",
+    "element" : [{
+      "code" : "UNK",
+      "target" : [{
+        "code" : "UNK",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/MaritalStatus",
+    "target" : "http://hl7.org/fhir/1.0/v3/MaritalStatus",
+    "element" : [{
+      "code" : "A",
+      "target" : [{
+        "code" : "A",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "D",
+      "target" : [{
+        "code" : "D",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "I",
+      "target" : [{
+        "code" : "I",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "L",
+      "target" : [{
+        "code" : "L",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "M",
+      "target" : [{
+        "code" : "M",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "P",
+      "target" : [{
+        "code" : "P",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "S",
+      "target" : [{
+        "code" : "S",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "T",
+      "target" : [{
+        "code" : "T",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "U",
+      "noMap" : true
+    },
+    {
+      "code" : "W",
+      "target" : [{
+        "code" : "W",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

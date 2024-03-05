@@ -1,0 +1,94 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "pat.co.relationship-r4btor4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pat.co.relationship-r4btor4",
+  "name" : "Patient.contact.relationshipr4btor4",
+  "title" : "Mapping for Patient.contact.relationship from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Patient#Patient.contact.relationship",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Patient#Patient.contact.relationship",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+    "target" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+    "element" : [{
+      "code" : "BP",
+      "target" : [{
+        "code" : "BP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "C",
+      "target" : [{
+        "code" : "C",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CP",
+      "target" : [{
+        "code" : "CP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "E",
+      "target" : [{
+        "code" : "E",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EP",
+      "target" : [{
+        "code" : "EP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "F",
+      "target" : [{
+        "code" : "F",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "I",
+      "target" : [{
+        "code" : "I",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "N",
+      "target" : [{
+        "code" : "N",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "O",
+      "noMap" : true
+    },
+    {
+      "code" : "PR",
+      "target" : [{
+        "code" : "PR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "S",
+      "target" : [{
+        "code" : "S",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "U",
+      "target" : [{
+        "code" : "U",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

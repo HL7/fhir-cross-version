@@ -1,0 +1,412 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "obs.co.interpretation-r4tor4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obs.co.interpretation-r4tor4b",
+  "name" : "Observation.component.interpretationr4tor4b",
+  "title" : "Mapping for Observation.component.interpretation from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Observation#Observation.component.interpretation",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Observation#Observation.component.interpretation",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "element" : [{
+      "code" : "<",
+      "target" : [{
+        "code" : "<",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : ">",
+      "target" : [{
+        "code" : ">",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "A",
+      "target" : [{
+        "code" : "A",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AA",
+      "target" : [{
+        "code" : "AA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AC",
+      "target" : [{
+        "code" : "AC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "B",
+      "target" : [{
+        "code" : "B",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAR",
+      "target" : [{
+        "code" : "CAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Carrier",
+      "target" : [{
+        "code" : "Carrier",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "D",
+      "target" : [{
+        "code" : "D",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DET",
+      "target" : [{
+        "code" : "DET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "E",
+      "target" : [{
+        "code" : "E",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EX",
+      "target" : [{
+        "code" : "EX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EXP",
+      "target" : [{
+        "code" : "EXP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "H",
+      "target" : [{
+        "code" : "H",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "H>",
+      "target" : [{
+        "code" : "H>",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HH",
+      "target" : [{
+        "code" : "HH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HM",
+      "target" : [{
+        "code" : "HM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HU",
+      "target" : [{
+        "code" : "HU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HX",
+      "target" : [{
+        "code" : "HX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "I",
+      "target" : [{
+        "code" : "I",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IE",
+      "target" : [{
+        "code" : "IE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IND",
+      "target" : [{
+        "code" : "IND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "L",
+      "target" : [{
+        "code" : "L",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "L<",
+      "target" : [{
+        "code" : "L<",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LL",
+      "target" : [{
+        "code" : "LL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LU",
+      "target" : [{
+        "code" : "LU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LX",
+      "target" : [{
+        "code" : "LX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MS",
+      "target" : [{
+        "code" : "MS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "N",
+      "target" : [{
+        "code" : "N",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NCL",
+      "target" : [{
+        "code" : "NCL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ND",
+      "target" : [{
+        "code" : "ND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NEG",
+      "target" : [{
+        "code" : "NEG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NR",
+      "target" : [{
+        "code" : "NR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NS",
+      "target" : [{
+        "code" : "NS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OBX",
+      "target" : [{
+        "code" : "OBX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ObservationInterpretationDetection",
+      "target" : [{
+        "code" : "ObservationInterpretationDetection",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ObservationInterpretationExpectation",
+      "target" : [{
+        "code" : "ObservationInterpretationExpectation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "POS",
+      "target" : [{
+        "code" : "POS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "QCF",
+      "target" : [{
+        "code" : "QCF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "R",
+      "target" : [{
+        "code" : "R",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RR",
+      "target" : [{
+        "code" : "RR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ReactivityObservationInterpretation",
+      "target" : [{
+        "code" : "ReactivityObservationInterpretation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "S",
+      "target" : [{
+        "code" : "S",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SDD",
+      "target" : [{
+        "code" : "SDD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SYN-R",
+      "target" : [{
+        "code" : "SYN-R",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SYN-S",
+      "target" : [{
+        "code" : "SYN-S",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TOX",
+      "target" : [{
+        "code" : "TOX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "U",
+      "target" : [{
+        "code" : "U",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UNE",
+      "target" : [{
+        "code" : "UNE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VS",
+      "target" : [{
+        "code" : "VS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "W",
+      "target" : [{
+        "code" : "W",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WR",
+      "target" : [{
+        "code" : "WR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_GeneticObservationInterpretation",
+      "target" : [{
+        "code" : "_GeneticObservationInterpretation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ObservationInterpretationChange",
+      "target" : [{
+        "code" : "_ObservationInterpretationChange",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ObservationInterpretationExceptions",
+      "target" : [{
+        "code" : "_ObservationInterpretationExceptions",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ObservationInterpretationNormality",
+      "target" : [{
+        "code" : "_ObservationInterpretationNormality",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_ObservationInterpretationSusceptibility",
+      "target" : [{
+        "code" : "_ObservationInterpretationSusceptibility",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

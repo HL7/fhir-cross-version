@@ -1,0 +1,482 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "prv.activity-r3tor4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prv.activity-r3tor4",
+  "name" : "Provenance.activityr3tor4",
+  "title" : "Mapping for Provenance.activity from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Provenance#Provenance.activity",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Provenance#Provenance.activity",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/3.0/v3/ActCode",
+    "target" : "http://hl7.org/fhir/4.0/v3/ActCode",
+    "element" : [{
+      "code" : "AOD",
+
+      "noMap" : true
+    },
+    {
+      "code" : "AUDIT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "AUDTR",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYCC",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYCD",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYJPP",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYOPP",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYOSP",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYPOL",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DECLASSIFYLABEL",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DELAU",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DOWNGRDLABEL",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DRIVLABEL",
+
+      "noMap" : true
+    },
+    {
+      "code" : "ENCRYPT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "ENCRYPTR",
+
+      "noMap" : true
+    },
+    {
+      "code" : "ENCRYPTT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "ENCRYPTU",
+
+      "noMap" : true
+    },
+    {
+      "code" : "HUAPRV",
+
+      "noMap" : true
+    },
+    {
+      "code" : "MINEC",
+
+      "noMap" : true
+    },
+    {
+      "code" : "ObligationPolicy",
+
+      "noMap" : true
+    },
+    {
+      "code" : "PERSISTLABEL",
+
+      "noMap" : true
+    },
+    {
+      "code" : "PRIVMARK",
+
+      "noMap" : true
+    },
+    {
+      "code" : "REDACT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "UPGRDLABEL",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/ActCode",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "element" : [{
+      "code" : "LABEL",
+      "target" : [{
+        "code" : "LABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANONY",
+      "target" : [{
+        "code" : "ANONY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MASK",
+      "target" : [{
+        "code" : "MASK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PSEUD",
+      "target" : [{
+        "code" : "PSEUD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEID",
+      "target" : [{
+        "code" : "DEID",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/DataOperation",
+    "target" : "http://hl7.org/fhir/4.0/v3/DataOperation",
+    "element" : [{
+      "code" : "ABORT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "ACTIVATE",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CANCEL",
+
+      "noMap" : true
+    },
+    {
+      "code" : "COMPLETE",
+
+      "noMap" : true
+    },
+    {
+      "code" : "EXECUTE",
+
+      "noMap" : true
+    },
+    {
+      "code" : "HOLD",
+
+      "noMap" : true
+    },
+    {
+      "code" : "JUMP",
+
+      "noMap" : true
+    },
+    {
+      "code" : "MODIFYSTATUS",
+
+      "noMap" : true
+    },
+    {
+      "code" : "OBSOLETE",
+
+      "noMap" : true
+    },
+    {
+      "code" : "OPERATE",
+
+      "noMap" : true
+    },
+    {
+      "code" : "REACTIVATE",
+
+      "noMap" : true
+    },
+    {
+      "code" : "READ",
+
+      "noMap" : true
+    },
+    {
+      "code" : "RELEASE",
+
+      "noMap" : true
+    },
+    {
+      "code" : "RESUME",
+
+      "noMap" : true
+    },
+    {
+      "code" : "SUSPEND",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/DataOperation",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+    "element" : [{
+      "code" : "UPDATE",
+      "target" : [{
+        "code" : "UPDATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "APPEND",
+      "target" : [{
+        "code" : "APPEND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DELETE",
+      "target" : [{
+        "code" : "DELETE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NULLIFY",
+      "target" : [{
+        "code" : "NULLIFY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CREATE",
+      "target" : [{
+        "code" : "CREATE",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/extra-activity-type",
+    "target" : "http://hl7.org/fhir/4.0/extra-activity-type",
+    "element" : [{
+      "code" : "aggregate",
+
+      "noMap" : true
+    },
+    {
+      "code" : "compose",
+
+      "noMap" : true
+    },
+    {
+      "code" : "label",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/ActStatus",
+    "target" : "http://hl7.org/fhir/4.0/v3/ActStatus",
+    "element" : [{
+      "code" : "aborted",
+
+      "noMap" : true
+    },
+    {
+      "code" : "active",
+
+      "noMap" : true
+    },
+    {
+      "code" : "cancelled",
+
+      "noMap" : true
+    },
+    {
+      "code" : "completed",
+
+      "noMap" : true
+    },
+    {
+      "code" : "held",
+
+      "noMap" : true
+    },
+    {
+      "code" : "new",
+
+      "noMap" : true
+    },
+    {
+      "code" : "normal",
+
+      "noMap" : true
+    },
+    {
+      "code" : "nullified",
+
+      "noMap" : true
+    },
+    {
+      "code" : "obsolete",
+
+      "noMap" : true
+    },
+    {
+      "code" : "suspended",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/w3c-provenance-activity-type",
+    "target" : "http://hl7.org/fhir/4.0/w3c-provenance-activity-type",
+    "element" : [{
+      "code" : "Attribution",
+
+      "noMap" : true
+    },
+    {
+      "code" : "Collection",
+
+      "noMap" : true
+    },
+    {
+      "code" : "Communication",
+
+      "noMap" : true
+    },
+    {
+      "code" : "Derivation",
+
+      "noMap" : true
+    },
+    {
+      "code" : "End",
+
+      "noMap" : true
+    },
+    {
+      "code" : "Generation",
+
+      "noMap" : true
+    },
+    {
+      "code" : "Invalidation",
+
+      "noMap" : true
+    },
+    {
+      "code" : "Primary-Source",
+
+      "noMap" : true
+    },
+    {
+      "code" : "Quotation",
+
+      "noMap" : true
+    },
+    {
+      "code" : "Revision",
+
+      "noMap" : true
+    },
+    {
+      "code" : "Start",
+
+      "noMap" : true
+    },
+    {
+      "code" : "Usage",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/DocumentCompletion",
+    "target" : "http://hl7.org/fhir/4.0/v3/DocumentCompletion",
+    "element" : [{
+      "code" : "AU",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DI",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DO",
+
+      "noMap" : true
+    },
+    {
+      "code" : "IN",
+
+      "noMap" : true
+    },
+    {
+      "code" : "IP",
+
+      "noMap" : true
+    },
+    {
+      "code" : "NU",
+
+      "noMap" : true
+    },
+    {
+      "code" : "PA",
+
+      "noMap" : true
+    },
+    {
+      "code" : "UC",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/DocumentCompletion",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "element" : [{
+      "code" : "LA",
+      "target" : [{
+        "code" : "LA",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}
