@@ -26,7 +26,7 @@ group Timing(source src : Timing, target tgt : TimingR2) extends Element <<type+
     vs0.period -> vt0.period "repeat-period";
     vs0.periodMax -> vt0.periodMax "repeat-periodMax";
     vs0.periodUnit -> vt0.periodUnits "repeat-periodUnits";
-    vs0.when as v -> vt0.when = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Timing.repeat.when-3to2', 'code') "repeat-when";
+    vs0.when as v -> vt0.when = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.when-3to2', 'code') "repeat-when";
   } "Timing-repeat";
   src.code -> tgt.code "Timing-code";
 }
