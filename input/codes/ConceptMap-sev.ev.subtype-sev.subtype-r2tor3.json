@@ -176,7 +176,10 @@
     "target" : "http://hl7.org/fhir/3.0/restful-interaction",
     "element" : [{
       "code" : "conformance",
-      "noMap" : true
+      "target" : [{
+        "code" : "capabilities",
+        "relationship" : "equivalent"
+      }]
     },
     {
       "code" : "create",

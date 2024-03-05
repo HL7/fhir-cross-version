@@ -125,5 +125,16 @@
         "relationship" : "equivalent"
       }]
     }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/4.0/audit-event-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
+    "element" : [{
+      "code" : "rest",
+      "target" : [{
+        "code" : "rest",
+        "relationship" : "equivalent"
+      }]
+    }]
   }]
 }

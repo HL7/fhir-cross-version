@@ -35,6 +35,10 @@
       "target" : [{
         "code" : "proposed",
         "relationship" : "source-is-broader-than-target"
+      },
+      {
+        "code" : "draft",
+        "relationship" : "equivalent"
       }]
     },
     {

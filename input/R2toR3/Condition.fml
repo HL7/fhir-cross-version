@@ -16,7 +16,7 @@ group Condition(source src : ConditionR2, target tgt : Condition) extends Domain
   src.dateRecorded -> tgt.assertedDate "Condition-dateRecorded";
   src.code -> tgt.code "Condition-code";
   src.category -> tgt.category "Condition-category";
-  src.clinicalStatus as v -> tgt.clinicalStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/Condition.clinicalStatus-2to3', 'code') "Condition-clinicalStatus";
+  src.clinicalStatus -> tgt.clinicalStatus;
   src.verificationStatus -> tgt.verificationStatus "Condition-verificationStatus";
   src.severity -> tgt.severity "Condition-severity";
   src.onset -> tgt.onset "Condition-onset";

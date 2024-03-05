@@ -14,7 +14,7 @@ group DeviceMetric(source src : DeviceMetricR5, target tgt : DeviceMetricR4) ext
   src.unit -> tgt.unit;
   src.device -> tgt.parent;
   src.operationalStatus as v -> tgt.operationalStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dvm.operationalStatus-5to4', 'code');
-  src.color as v -> tgt.color = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/DeviceMetric.color-5to4', 'code');
+  src.color -> tgt.color;
   src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dvm.category-5to4', 'code');
   src.calibration as s -> tgt.calibration as t then DeviceMetricCalibration(s, t);
 }

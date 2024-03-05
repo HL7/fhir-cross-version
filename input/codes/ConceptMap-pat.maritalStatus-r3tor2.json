@@ -87,5 +87,16 @@
         "relationship" : "equivalent"
       }]
     }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/1.0/v3/MaritalStatus",
+    "target" : "http://hl7.org/fhir/1.0/marital-status",
+    "element" : [{
+      "code" : "U",
+      "target" : [{
+        "code" : "U",
+        "relationship" : "equivalent"
+      }]
+    }]
   }]
 }

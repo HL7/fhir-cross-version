@@ -20,6 +20,10 @@
       "target" : [{
         "code" : "outpatient",
         "relationship" : "equivalent"
+      },
+      {
+        "code" : "ambulatory",
+        "relationship" : "equivalent"
       }]
     },
     {
