@@ -534,5 +534,40 @@
         "relationship" : "equivalent"
       }]
     }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "target" : "http://hl7.org/fhir/4.0/extra-security-role-type",
+    "element" : [{
+      "code" : "CHECK!"
+    },
+    {
+      "code" : "datacollector",
+      "target" : [{
+        "code" : "datacollector",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "datasubject",
+      "target" : [{
+        "code" : "datasubject",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dataprocessor",
+      "target" : [{
+        "code" : "dataprocessor",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "authserver",
+      "target" : [{
+        "code" : "authserver",
+        "relationship" : "equivalent"
+      }]
+    }]
   }]
 }

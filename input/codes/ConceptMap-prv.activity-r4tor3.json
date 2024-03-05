@@ -330,5 +330,19 @@
       "code" : "WIT",
       "noMap" : true
     }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "target" : "http://hl7.org/fhir/4.0/v3/DocumentCompletion",
+    "element" : [{
+      "code" : "CHECK!"
+    },
+    {
+      "code" : "LA",
+      "target" : [{
+        "code" : "LA",
+        "relationship" : "equivalent"
+      }]
+    }]
   }]
 }

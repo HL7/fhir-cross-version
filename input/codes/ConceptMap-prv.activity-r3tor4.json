@@ -317,5 +317,103 @@
       "code" : "UC",
       "noMap" : true
     }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/ActCode",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "element" : [{
+      "code" : "CHECK!"
+    },
+    {
+      "code" : "ANONY",
+      "target" : [{
+        "code" : "ANONY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LABEL",
+      "target" : [{
+        "code" : "LABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PSEUD",
+      "target" : [{
+        "code" : "PSEUD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEID",
+      "target" : [{
+        "code" : "DEID",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MASK",
+      "target" : [{
+        "code" : "MASK",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/DataOperation",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+    "element" : [{
+      "code" : "CHECK!"
+    },
+    {
+      "code" : "NULLIFY",
+      "target" : [{
+        "code" : "NULLIFY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UPDATE",
+      "target" : [{
+        "code" : "UPDATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DELETE",
+      "target" : [{
+        "code" : "DELETE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CREATE",
+      "target" : [{
+        "code" : "CREATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "APPEND",
+      "target" : [{
+        "code" : "APPEND",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/v3/DocumentCompletion",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion",
+    "element" : [{
+      "code" : "CHECK!"
+    },
+    {
+      "code" : "LA",
+      "target" : [{
+        "code" : "LA",
+        "relationship" : "equivalent"
+      }]
+    }]
   }]
 }

@@ -112,6 +112,20 @@
         "code" : "10",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "11",
+      "target" : [{
+        "code" : "11",
+        "relationship" : "equivalent"
+      }]
     }]
   },
   {
@@ -214,6 +228,20 @@
       "code" : "3",
       "target" : [{
         "code" : "3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "12",
+      "target" : [{
+        "code" : "12",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "13",
+      "target" : [{
+        "code" : "13",
         "relationship" : "equivalent"
       }]
     }]
