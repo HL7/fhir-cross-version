@@ -88,10 +88,7 @@
     },
     {
       "code" : "O",
-      "target" : [{
-        "code" : "O",
-        "relationship" : "equivalent"
-      }]
+      "noMap" : true
     }]
   }]
 }

@@ -25,10 +25,7 @@
     },
     {
       "code" : "directive",
-      "target" : [{
-        "code" : "directive",
-        "relationship" : "equivalent"
-      }]
+      "noMap" : true
     },
     {
       "code" : "order",
