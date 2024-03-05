@@ -105,6 +105,13 @@
         "code" : "2",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "10",
+      "target" : [{
+        "code" : "10",
+        "relationship" : "equivalent"
+      }]
     }]
   },
   {
@@ -193,6 +200,20 @@
       "code" : "9",
       "target" : [{
         "code" : "9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "6",
+      "target" : [{
+        "code" : "6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "3",
+      "target" : [{
+        "code" : "3",
         "relationship" : "equivalent"
       }]
     }]
