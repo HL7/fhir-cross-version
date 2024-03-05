@@ -17,27 +17,6 @@
       }]
     },
     {
-      "code" : "GUADLTM",
-      "target" : [{
-        "code" : "GUADLTM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ADOPTP",
-      "target" : [{
-        "code" : "ADOPTP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "phlebotomist",
-      "target" : [{
-        "code" : "phlebotomist",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "BMTU",
       "target" : [{
         "code" : "BMTU",
@@ -45,44 +24,9 @@
       }]
     },
     {
-      "code" : "BILL",
-      "target" : [{
-        "code" : "BILL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "OUTPHARM",
       "target" : [{
         "code" : "OUTPHARM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DAUADOPT",
-      "target" : [{
-        "code" : "DAUADOPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ADOPT",
-      "target" : [{
-        "code" : "ADOPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PUNCLE",
-      "target" : [{
-        "code" : "PUNCLE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FTWIN",
-      "target" : [{
-        "code" : "FTWIN",
         "relationship" : "equivalent"
       }]
     },
@@ -101,100 +45,9 @@
       }]
     },
     {
-      "code" : "SEE",
-      "target" : [{
-        "code" : "SEE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "OPTC",
       "target" : [{
         "code" : "OPTC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "AMENDER",
-      "target" : [{
-        "code" : "AMENDER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HUSB",
-      "target" : [{
-        "code" : "HUSB",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "B",
-      "target" : [{
-        "code" : "B",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "C",
-      "target" : [{
-        "code" : "C",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "BF",
-      "target" : [{
-        "code" : "BF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "E",
-      "target" : [{
-        "code" : "E",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "F",
-      "target" : [{
-        "code" : "F",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CHLDADOPT",
-      "target" : [{
-        "code" : "CHLDADOPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "G",
-      "target" : [{
-        "code" : "G",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "BL",
-      "target" : [{
-        "code" : "BL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "POWATT",
-      "target" : [{
-        "code" : "POWATT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DOMPART",
-      "target" : [{
-        "code" : "DOMPART",
         "relationship" : "equivalent"
       }]
     },
@@ -206,72 +59,9 @@
       }]
     },
     {
-      "code" : "L",
-      "target" : [{
-        "code" : "L",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "HAND",
       "target" : [{
         "code" : "HAND",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "O",
-      "target" : [{
-        "code" : "O",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "BR",
-      "target" : [{
-        "code" : "BR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "P",
-      "target" : [{
-        "code" : "P",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_AssignedRoleType",
-      "target" : [{
-        "code" : "_AssignedRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "Q",
-      "target" : [{
-        "code" : "Q",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "R",
-      "target" : [{
-        "code" : "R",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "V",
-      "target" : [{
-        "code" : "V",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NMTH",
-      "target" : [{
-        "code" : "NMTH",
         "relationship" : "equivalent"
       }]
     },
@@ -290,20 +80,6 @@
       }]
     },
     {
-      "code" : "GRANTOR",
-      "target" : [{
-        "code" : "GRANTOR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GRFTH",
-      "target" : [{
-        "code" : "GRFTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "ACC",
       "target" : [{
         "code" : "ACC",
@@ -311,86 +87,9 @@
       }]
     },
     {
-      "code" : "_SpecimenRoleType",
-      "target" : [{
-        "code" : "_SpecimenRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GESTM",
-      "target" : [{
-        "code" : "GESTM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "RESPRSN",
-      "target" : [{
-        "code" : "RESPRSN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CN",
-      "target" : [{
-        "code" : "CN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CO",
-      "target" : [{
-        "code" : "CO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NIENEPH",
-      "target" : [{
-        "code" : "NIENEPH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ADOPTM",
-      "target" : [{
-        "code" : "ADOPTM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "INPHARM",
       "target" : [{
         "code" : "INPHARM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ADOPTF",
-      "target" : [{
-        "code" : "ADOPTF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STPPRN",
-      "target" : [{
-        "code" : "STPPRN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DA",
-      "target" : [{
-        "code" : "DA",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DC",
-      "target" : [{
-        "code" : "DC",
         "relationship" : "equivalent"
       }]
     },
@@ -409,51 +108,9 @@
       }]
     },
     {
-      "code" : "DAUFOST",
-      "target" : [{
-        "code" : "DAUFOST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SONADOPT",
-      "target" : [{
-        "code" : "SONADOPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "COPART",
-      "target" : [{
-        "code" : "COPART",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "CHR",
       "target" : [{
         "code" : "CHR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DEBR",
-      "target" : [{
-        "code" : "DEBR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DR",
-      "target" : [{
-        "code" : "DR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DU",
-      "target" : [{
-        "code" : "DU",
         "relationship" : "equivalent"
       }]
     },
@@ -465,65 +122,9 @@
       }]
     },
     {
-      "code" : "HBRO",
-      "target" : [{
-        "code" : "HBRO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FAMDEP",
-      "target" : [{
-        "code" : "FAMDEP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STUD",
-      "target" : [{
-        "code" : "STUD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "RHPIMS",
       "target" : [{
         "code" : "RHPIMS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DELEGATEE",
-      "target" : [{
-        "code" : "DELEGATEE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DPOWATT",
-      "target" : [{
-        "code" : "DPOWATT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_MemberRoleType",
-      "target" : [{
-        "code" : "_MemberRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SIB",
-      "target" : [{
-        "code" : "SIB",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FTWINBRO",
-      "target" : [{
-        "code" : "FTWINBRO",
         "relationship" : "equivalent"
       }]
     },
@@ -535,41 +136,6 @@
       }]
     },
     {
-      "code" : "UMO",
-      "target" : [{
-        "code" : "UMO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_IdentifiedEntityType",
-      "target" : [{
-        "code" : "_IdentifiedEntityType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SONFOST",
-      "target" : [{
-        "code" : "SONFOST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SIS",
-      "target" : [{
-        "code" : "SIS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "VALIDATOR",
-      "target" : [{
-        "code" : "VALIDATOR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "NCCS",
       "target" : [{
         "code" : "NCCS",
@@ -577,23 +143,9 @@
       }]
     },
     {
-      "code" : "FI",
-      "target" : [{
-        "code" : "FI",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "HTN",
       "target" : [{
         "code" : "HTN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FM",
-      "target" : [{
-        "code" : "FM",
         "relationship" : "equivalent"
       }]
     },
@@ -619,23 +171,9 @@
       }]
     },
     {
-      "code" : "SPON",
-      "target" : [{
-        "code" : "SPON",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "OUTLAB",
       "target" : [{
         "code" : "OUTLAB",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GD",
-      "target" : [{
-        "code" : "GD",
         "relationship" : "equivalent"
       }]
     },
@@ -668,62 +206,6 @@
       }]
     },
     {
-      "code" : "AUNT",
-      "target" : [{
-        "code" : "AUNT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ClaimantCoveredPartyRoleType",
-      "target" : [{
-        "code" : "_ClaimantCoveredPartyRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PAYOR",
-      "target" : [{
-        "code" : "PAYOR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GGRPRN",
-      "target" : [{
-        "code" : "GGRPRN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GT",
-      "target" : [{
-        "code" : "GT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PGRMTH",
-      "target" : [{
-        "code" : "PGRMTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SPOWATT",
-      "target" : [{
-        "code" : "SPOWATT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "pathologist",
-      "target" : [{
-        "code" : "pathologist",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "AMPUT",
       "target" : [{
         "code" : "AMPUT",
@@ -745,27 +227,6 @@
       }]
     },
     {
-      "code" : "ROOM",
-      "target" : [{
-        "code" : "ROOM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "TWINSIS",
-      "target" : [{
-        "code" : "TWINSIS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NAT",
-      "target" : [{
-        "code" : "NAT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PEDRHEUM",
       "target" : [{
         "code" : "PEDRHEUM",
@@ -773,23 +234,9 @@
       }]
     },
     {
-      "code" : "INDIV",
-      "target" : [{
-        "code" : "INDIV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "UPC",
       "target" : [{
         "code" : "UPC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_AssignedNonPersonLivingSubjectRoleType",
-      "target" : [{
-        "code" : "_AssignedNonPersonLivingSubjectRoleType",
         "relationship" : "equivalent"
       }]
     },
@@ -808,20 +255,6 @@
       }]
     },
     {
-      "code" : "INTPRTER",
-      "target" : [{
-        "code" : "INTPRTER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "REVIEWER",
-      "target" : [{
-        "code" : "REVIEWER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PEDC",
       "target" : [{
         "code" : "PEDC",
@@ -832,27 +265,6 @@
       "code" : "PEDE",
       "target" : [{
         "code" : "PEDE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_AgentRoleType",
-      "target" : [{
-        "code" : "_AgentRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DRIVCLASSIFIER",
-      "target" : [{
-        "code" : "DRIVCLASSIFIER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GRANTEE",
-      "target" : [{
-        "code" : "GRANTEE",
         "relationship" : "equivalent"
       }]
     },
@@ -871,69 +283,6 @@
       }]
     },
     {
-      "code" : "INDIG",
-      "target" : [{
-        "code" : "INDIG",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SONC",
-      "target" : [{
-        "code" : "SONC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CHLDFOST",
-      "target" : [{
-        "code" : "CHLDFOST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ContactRoleType",
-      "target" : [{
-        "code" : "_ContactRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PRNFOST",
-      "target" : [{
-        "code" : "PRNFOST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FTH",
-      "target" : [{
-        "code" : "FTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ERL",
-      "target" : [{
-        "code" : "ERL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ENROLBKR",
-      "target" : [{
-        "code" : "ENROLBKR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "TPA",
-      "target" : [{
-        "code" : "TPA",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "MOBL",
       "target" : [{
         "code" : "MOBL",
@@ -941,23 +290,9 @@
       }]
     },
     {
-      "code" : "SPSE",
-      "target" : [{
-        "code" : "SPSE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "SNF",
       "target" : [{
         "code" : "SNF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NIENE",
-      "target" : [{
-        "code" : "NIENE",
         "relationship" : "equivalent"
       }]
     },
@@ -997,72 +332,9 @@
       }]
     },
     {
-      "code" : "FAMMEMB",
-      "target" : [{
-        "code" : "FAMMEMB",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SIBINLAW",
-      "target" : [{
-        "code" : "SIBINLAW",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MGGRFTH",
-      "target" : [{
-        "code" : "MGGRFTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PEDU",
       "target" : [{
         "code" : "PEDU",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_PersonalRelationshipRoleType",
-      "target" : [{
-        "code" : "_PersonalRelationshipRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STPDAU",
-      "target" : [{
-        "code" : "STPDAU",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CONSWIT",
-      "target" : [{
-        "code" : "CONSWIT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SON",
-      "target" : [{
-        "code" : "SON",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STPMTH",
-      "target" : [{
-        "code" : "STPMTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "COCBEN",
-      "target" : [{
-        "code" : "COCBEN",
         "relationship" : "equivalent"
       }]
     },
@@ -1081,20 +353,6 @@
       }]
     },
     {
-      "code" : "TRB",
-      "target" : [{
-        "code" : "TRB",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NCHILD",
-      "target" : [{
-        "code" : "NCHILD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "HOSP",
       "target" : [{
         "code" : "HOSP",
@@ -1109,30 +367,9 @@
       }]
     },
     {
-      "code" : "subject",
-      "target" : [{
-        "code" : "subject",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "ETU",
       "target" : [{
         "code" : "ETU",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NSIS",
-      "target" : [{
-        "code" : "NSIS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "LY",
-      "target" : [{
-        "code" : "LY",
         "relationship" : "equivalent"
       }]
     },
@@ -1144,44 +381,9 @@
       }]
     },
     {
-      "code" : "PSTUD",
-      "target" : [{
-        "code" : "PSTUD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_LivingSubjectProductionClass",
-      "target" : [{
-        "code" : "_LivingSubjectProductionClass",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CPCA",
-      "target" : [{
-        "code" : "CPCA",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DECLASSIFIER",
-      "target" : [{
-        "code" : "DECLASSIFIER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "AMB",
       "target" : [{
         "code" : "AMB",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SPS",
-      "target" : [{
-        "code" : "SPS",
         "relationship" : "equivalent"
       }]
     },
@@ -1193,13 +395,6 @@
       }]
     },
     {
-      "code" : "PSYCHCF",
-      "target" : [{
-        "code" : "PSYCHCF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "RHPIVS",
       "target" : [{
         "code" : "RHPIVS",
@@ -1207,65 +402,9 @@
       }]
     },
     {
-      "code" : "MT",
-      "target" : [{
-        "code" : "MT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MU",
-      "target" : [{
-        "code" : "MU",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STPCHLD",
-      "target" : [{
-        "code" : "STPCHLD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SELFINS",
-      "target" : [{
-        "code" : "SELFINS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NSIB",
-      "target" : [{
-        "code" : "NSIB",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GGRFTH",
-      "target" : [{
-        "code" : "GGRFTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "_DedicatedNonClinicalLocationRoleType",
       "target" : [{
         "code" : "_DedicatedNonClinicalLocationRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CRP",
-      "target" : [{
-        "code" : "CRP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GRNDSON",
-      "target" : [{
-        "code" : "GRNDSON",
         "relationship" : "equivalent"
       }]
     },
@@ -1284,20 +423,6 @@
       }]
     },
     {
-      "code" : "ASSIST",
-      "target" : [{
-        "code" : "ASSIST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "homeHealth",
-      "target" : [{
-        "code" : "homeHealth",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "NEPH",
       "target" : [{
         "code" : "NEPH",
@@ -1305,23 +430,9 @@
       }]
     },
     {
-      "code" : "PAUNT",
-      "target" : [{
-        "code" : "PAUNT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PHARM",
       "target" : [{
         "code" : "PHARM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GRPRN",
-      "target" : [{
-        "code" : "GRPRN",
         "relationship" : "equivalent"
       }]
     },
@@ -1354,27 +465,6 @@
       }]
     },
     {
-      "code" : "_CoverageRoleType",
-      "target" : [{
-        "code" : "_CoverageRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MGDSF",
-      "target" : [{
-        "code" : "MGDSF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_CoverageSponsorRoleType",
-      "target" : [{
-        "code" : "_CoverageSponsorRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "DADDR",
       "target" : [{
         "code" : "DADDR",
@@ -1382,37 +472,9 @@
       }]
     },
     {
-      "code" : "RETMIL",
-      "target" : [{
-        "code" : "RETMIL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_CitizenRoleType",
-      "target" : [{
-        "code" : "_CitizenRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GCHILD",
-      "target" : [{
-        "code" : "GCHILD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "RHII",
       "target" : [{
         "code" : "RHII",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PGGRFTH",
-      "target" : [{
-        "code" : "PGGRFTH",
         "relationship" : "equivalent"
       }]
     },
@@ -1427,48 +489,6 @@
       "code" : "PC",
       "target" : [{
         "code" : "PC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FSTUD",
-      "target" : [{
-        "code" : "FSTUD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PH",
-      "target" : [{
-        "code" : "PH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PL",
-      "target" : [{
-        "code" : "PL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MGRMTH",
-      "target" : [{
-        "code" : "MGRMTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "BRO",
-      "target" : [{
-        "code" : "BRO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "EXT",
-      "target" : [{
-        "code" : "EXT",
         "relationship" : "equivalent"
       }]
     },
@@ -1494,13 +514,6 @@
       }]
     },
     {
-      "code" : "CLASSIFIER",
-      "target" : [{
-        "code" : "CLASSIFIER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "SLEEP",
       "target" : [{
         "code" : "SLEEP",
@@ -1508,51 +521,9 @@
       }]
     },
     {
-      "code" : "PT",
-      "target" : [{
-        "code" : "PT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "ECHO",
       "target" : [{
         "code" : "ECHO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NFTH",
-      "target" : [{
-        "code" : "NFTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CHLDINLAW",
-      "target" : [{
-        "code" : "CHLDINLAW",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MTHINLAW",
-      "target" : [{
-        "code" : "MTHINLAW",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MGGRPRN",
-      "target" : [{
-        "code" : "MGGRPRN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "INLAW",
-      "target" : [{
-        "code" : "INLAW",
         "relationship" : "equivalent"
       }]
     },
@@ -1571,51 +542,9 @@
       }]
     },
     {
-      "code" : "STPSIS",
-      "target" : [{
-        "code" : "STPSIS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "communityLaboratory",
-      "target" : [{
-        "code" : "communityLaboratory",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_IndividualInsuredPartyRoleType",
-      "target" : [{
-        "code" : "_IndividualInsuredPartyRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "RC",
-      "target" : [{
-        "code" : "RC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MIL",
-      "target" : [{
-        "code" : "MIL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "OMS",
       "target" : [{
         "code" : "OMS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PGGRMTH",
-      "target" : [{
-        "code" : "PGGRMTH",
         "relationship" : "equivalent"
       }]
     },
@@ -1627,100 +556,9 @@
       }]
     },
     {
-      "code" : "CONSENTER",
-      "target" : [{
-        "code" : "CONSENTER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SNIFF",
-      "target" : [{
-        "code" : "SNIFF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "TWINBRO",
-      "target" : [{
-        "code" : "TWINBRO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "RTF",
       "target" : [{
         "code" : "RTF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_AdministrativeContactRoleType",
-      "target" : [{
-        "code" : "_AdministrativeContactRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CNRPM",
-      "target" : [{
-        "code" : "CNRPM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "COUSN",
-      "target" : [{
-        "code" : "COUSN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PRNINLAW",
-      "target" : [{
-        "code" : "PRNINLAW",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "WARD",
-      "target" : [{
-        "code" : "WARD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SH",
-      "target" : [{
-        "code" : "SH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HPOWATT",
-      "target" : [{
-        "code" : "HPOWATT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SONINLAW",
-      "target" : [{
-        "code" : "SONINLAW",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STPSIB",
-      "target" : [{
-        "code" : "STPSIB",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NMTHF",
-      "target" : [{
-        "code" : "NMTHF",
         "relationship" : "equivalent"
       }]
     },
@@ -1739,30 +577,9 @@
       }]
     },
     {
-      "code" : "_DependentCoveredPartyRoleType",
-      "target" : [{
-        "code" : "_DependentCoveredPartyRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "DERM",
       "target" : [{
         "code" : "DERM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MCOUSN",
-      "target" : [{
-        "code" : "MCOUSN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FTWINSIS",
-      "target" : [{
-        "code" : "FTWINSIS",
         "relationship" : "equivalent"
       }]
     },
@@ -1788,13 +605,6 @@
       }]
     },
     {
-      "code" : "PARNT",
-      "target" : [{
-        "code" : "PARNT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "OPH",
       "target" : [{
         "code" : "OPH",
@@ -1805,13 +615,6 @@
       "code" : "RHPI",
       "target" : [{
         "code" : "RHPI",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ONESELF",
-      "target" : [{
-        "code" : "ONESELF",
         "relationship" : "equivalent"
       }]
     },
@@ -1830,44 +633,9 @@
       }]
     },
     {
-      "code" : "FULLINS",
-      "target" : [{
-        "code" : "FULLINS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PGRFTH",
-      "target" : [{
-        "code" : "PGRFTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PRN",
-      "target" : [{
-        "code" : "PRN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GUARD",
-      "target" : [{
-        "code" : "GUARD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PEDGI",
       "target" : [{
         "code" : "PEDGI",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "BIOTH",
-      "target" : [{
-        "code" : "BIOTH",
         "relationship" : "equivalent"
       }]
     },
@@ -1879,51 +647,9 @@
       }]
     },
     {
-      "code" : "_ProgramEligiblePartyRoleType",
-      "target" : [{
-        "code" : "_ProgramEligiblePartyRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MAUNT",
-      "target" : [{
-        "code" : "MAUNT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ITWIN",
-      "target" : [{
-        "code" : "ITWIN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FMRSPS",
-      "target" : [{
-        "code" : "FMRSPS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "GACH",
       "target" : [{
         "code" : "GACH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SIGOTHR",
-      "target" : [{
-        "code" : "SIGOTHR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_AffiliationRoleType",
-      "target" : [{
-        "code" : "_AffiliationRoleType",
         "relationship" : "equivalent"
       }]
     },
@@ -1935,37 +661,9 @@
       }]
     },
     {
-      "code" : "GRNDCHILD",
-      "target" : [{
-        "code" : "GRNDCHILD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PSI",
       "target" : [{
         "code" : "PSI",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOK",
-      "target" : [{
-        "code" : "NOK",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_PayorRoleType",
-      "target" : [{
-        "code" : "_PayorRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STPFTH",
-      "target" : [{
-        "code" : "STPFTH",
         "relationship" : "equivalent"
       }]
     },
@@ -1991,86 +689,9 @@
       }]
     },
     {
-      "code" : "CRPM",
-      "target" : [{
-        "code" : "CRPM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NBOR",
-      "target" : [{
-        "code" : "NBOR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "laboratory",
-      "target" : [{
-        "code" : "laboratory",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "VL",
-      "target" : [{
-        "code" : "VL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PSY",
       "target" : [{
         "code" : "PSY",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GRMTH",
-      "target" : [{
-        "code" : "GRMTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ACTMIL",
-      "target" : [{
-        "code" : "ACTMIL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DAUINLAW",
-      "target" : [{
-        "code" : "DAUINLAW",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_CertifiedEntityType",
-      "target" : [{
-        "code" : "_CertifiedEntityType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ORG",
-      "target" : [{
-        "code" : "ORG",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_MedicationGeneralizationRoleType",
-      "target" : [{
-        "code" : "_MedicationGeneralizationRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_CoveredPartyRoleType",
-      "target" : [{
-        "code" : "_CoveredPartyRoleType",
         "relationship" : "equivalent"
       }]
     },
@@ -2089,30 +710,9 @@
       }]
     },
     {
-      "code" : "ITWINBRO",
-      "target" : [{
-        "code" : "ITWINBRO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "CAPC",
       "target" : [{
         "code" : "CAPC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "TWIN",
-      "target" : [{
-        "code" : "TWIN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SISINLAW",
-      "target" : [{
-        "code" : "SISINLAW",
         "relationship" : "equivalent"
       }]
     },
@@ -2124,58 +724,9 @@
       }]
     },
     {
-      "code" : "WL",
-      "target" : [{
-        "code" : "WL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NBRO",
-      "target" : [{
-        "code" : "NBRO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "WO",
-      "target" : [{
-        "code" : "WO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "RADO",
       "target" : [{
         "code" : "RADO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ECON",
-      "target" : [{
-        "code" : "ECON",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MGRPRN",
-      "target" : [{
-        "code" : "MGRPRN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "INJWKR",
-      "target" : [{
-        "code" : "INJWKR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STEP",
-      "target" : [{
-        "code" : "STEP",
         "relationship" : "equivalent"
       }]
     },
@@ -2194,48 +745,6 @@
       }]
     },
     {
-      "code" : "ANTIBIOT",
-      "target" : [{
-        "code" : "ANTIBIOT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PGGRPRN",
-      "target" : [{
-        "code" : "PGGRPRN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DEPEN",
-      "target" : [{
-        "code" : "DEPEN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ACHFID",
-      "target" : [{
-        "code" : "ACHFID",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GDF",
-      "target" : [{
-        "code" : "GDF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ITWINSIS",
-      "target" : [{
-        "code" : "ITWINSIS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "CARD",
       "target" : [{
         "code" : "CARD",
@@ -2243,51 +752,9 @@
       }]
     },
     {
-      "code" : "UNCLE",
-      "target" : [{
-        "code" : "UNCLE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SubscriberCoveredPartyRoleType",
-      "target" : [{
-        "code" : "_SubscriberCoveredPartyRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "COMM",
       "target" : [{
         "code" : "COMM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GDS",
-      "target" : [{
-        "code" : "GDS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CASM",
-      "target" : [{
-        "code" : "CASM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MGGRMTH",
-      "target" : [{
-        "code" : "MGGRMTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CHILD",
-      "target" : [{
-        "code" : "CHILD",
         "relationship" : "equivalent"
       }]
     },
@@ -2306,37 +773,9 @@
       }]
     },
     {
-      "code" : "MGRFTH",
-      "target" : [{
-        "code" : "MGRFTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "WIFE",
-      "target" : [{
-        "code" : "WIFE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "WORK",
       "target" : [{
         "code" : "WORK",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "LOCHFID",
-      "target" : [{
-        "code" : "LOCHFID",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CRIMEVIC",
-      "target" : [{
-        "code" : "CRIMEVIC",
         "relationship" : "equivalent"
       }]
     },
@@ -2348,58 +787,9 @@
       }]
     },
     {
-      "code" : "MTHFOST",
-      "target" : [{
-        "code" : "MTHFOST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HSIB",
-      "target" : [{
-        "code" : "HSIB",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FTHFOST",
-      "target" : [{
-        "code" : "FTHFOST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "CATH",
       "target" : [{
         "code" : "CATH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HSIS",
-      "target" : [{
-        "code" : "HSIS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "BROINLAW",
-      "target" : [{
-        "code" : "BROINLAW",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NPRN",
-      "target" : [{
-        "code" : "NPRN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HANDIC",
-      "target" : [{
-        "code" : "HANDIC",
         "relationship" : "equivalent"
       }]
     },
@@ -2411,93 +801,9 @@
       }]
     },
     {
-      "code" : "DELEGATOR",
-      "target" : [{
-        "code" : "DELEGATOR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FTHINLAW",
-      "target" : [{
-        "code" : "FTHINLAW",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STPSON",
-      "target" : [{
-        "code" : "STPSON",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SELF",
-      "target" : [{
-        "code" : "SELF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PCOUSN",
-      "target" : [{
-        "code" : "PCOUSN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NAMED",
-      "target" : [{
-        "code" : "NAMED",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PTRES",
       "target" : [{
         "code" : "PTRES",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ServiceDeliveryLocationRoleType",
-      "target" : [{
-        "code" : "_ServiceDeliveryLocationRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DAU",
-      "target" : [{
-        "code" : "DAU",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PROG",
-      "target" : [{
-        "code" : "PROG",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MTH",
-      "target" : [{
-        "code" : "MTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_LocationIdentifiedEntityRoleCode",
-      "target" : [{
-        "code" : "_LocationIdentifiedEntityRoleCode",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "VET",
-      "target" : [{
-        "code" : "VET",
         "relationship" : "equivalent"
       }]
     },
@@ -2509,34 +815,6 @@
       }]
     },
     {
-      "code" : "SUBSCR",
-      "target" : [{
-        "code" : "SUBSCR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GPARNT",
-      "target" : [{
-        "code" : "GPARNT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "thirdParty",
-      "target" : [{
-        "code" : "thirdParty",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DIFFABL",
-      "target" : [{
-        "code" : "DIFFABL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "RHMAD",
       "target" : [{
         "code" : "RHMAD",
@@ -2544,79 +822,9 @@
       }]
     },
     {
-      "code" : "NIECE",
-      "target" : [{
-        "code" : "NIECE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MUNCLE",
-      "target" : [{
-        "code" : "MUNCLE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FRND",
-      "target" : [{
-        "code" : "FRND",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "GIM",
       "target" : [{
         "code" : "GIM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_PolicyOrProgramCoverageRoleType",
-      "target" : [{
-        "code" : "_PolicyOrProgramCoverageRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CAS",
-      "target" : [{
-        "code" : "CAS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "RETIREE",
-      "target" : [{
-        "code" : "RETIREE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ResearchSubjectRoleBasis",
-      "target" : [{
-        "code" : "_ResearchSubjectRoleBasis",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "EXCEST",
-      "target" : [{
-        "code" : "EXCEST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "INJ",
-      "target" : [{
-        "code" : "INJ",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GRNDDAU",
-      "target" : [{
-        "code" : "GRNDDAU",
         "relationship" : "equivalent"
       }]
     },
@@ -2635,23 +843,9 @@
       }]
     },
     {
-      "code" : "CLAIM",
-      "target" : [{
-        "code" : "CLAIM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "INV",
       "target" : [{
         "code" : "INV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GDSF",
-      "target" : [{
-        "code" : "GDSF",
         "relationship" : "equivalent"
       }]
     },
@@ -2663,30 +857,9 @@
       }]
     },
     {
-      "code" : "DAUC",
-      "target" : [{
-        "code" : "DAUC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DOWNGRDER",
-      "target" : [{
-        "code" : "DOWNGRDER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "RHPIH",
       "target" : [{
         "code" : "RHPIH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PGRPRN",
-      "target" : [{
-        "code" : "PGRPRN",
         "relationship" : "equivalent"
       }]
     },
@@ -2712,13 +885,6 @@
       }]
     },
     {
-      "code" : "NEPHEW",
-      "target" : [{
-        "code" : "NEPHEW",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "RADDX",
       "target" : [{
         "code" : "RADDX",
@@ -2726,65 +892,9 @@
       }]
     },
     {
-      "code" : "CCO",
-      "target" : [{
-        "code" : "CCO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DEP",
-      "target" : [{
-        "code" : "DEP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "CCU",
       "target" : [{
         "code" : "CCU",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CNRP",
-      "target" : [{
-        "code" : "CNRP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NFTHF",
-      "target" : [{
-        "code" : "NFTHF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STPBRO",
-      "target" : [{
-        "code" : "STPBRO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "JURID",
-      "target" : [{
-        "code" : "JURID",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GGRMTH",
-      "target" : [{
-        "code" : "GGRMTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SCN",
-      "target" : [{
-        "code" : "SCN",
         "relationship" : "equivalent"
       }]
     }]

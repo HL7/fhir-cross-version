@@ -10,23 +10,9 @@
     "source" : "http://hl7.org/fhir/4.0/restful-interaction",
     "target" : "http://hl7.org/fhir/4.3/restful-interaction",
     "element" : [{
-      "code" : "search-system",
-      "target" : [{
-        "code" : "search-system",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "read",
       "target" : [{
         "code" : "read",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "capabilities",
-      "target" : [{
-        "code" : "capabilities",
         "relationship" : "equivalent"
       }]
     },
@@ -38,23 +24,9 @@
       }]
     },
     {
-      "code" : "batch",
-      "target" : [{
-        "code" : "batch",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "update",
       "target" : [{
         "code" : "update",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "history",
-      "target" : [{
-        "code" : "history",
         "relationship" : "equivalent"
       }]
     },
@@ -69,20 +41,6 @@
       "code" : "patch",
       "target" : [{
         "code" : "patch",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "history-system",
-      "target" : [{
-        "code" : "history-system",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "search",
-      "target" : [{
-        "code" : "search",
         "relationship" : "equivalent"
       }]
     },
@@ -104,20 +62,6 @@
       "code" : "history-instance",
       "target" : [{
         "code" : "history-instance",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "operation",
-      "target" : [{
-        "code" : "operation",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "transaction",
-      "target" : [{
-        "code" : "transaction",
         "relationship" : "equivalent"
       }]
     },

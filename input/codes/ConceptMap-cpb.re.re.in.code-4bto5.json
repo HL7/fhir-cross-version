@@ -71,62 +71,6 @@
         "code" : "history-type",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "search-system",
-      "target" : [{
-        "code" : "search-system",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "capabilities",
-      "target" : [{
-        "code" : "capabilities",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "batch",
-      "target" : [{
-        "code" : "batch",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "history",
-      "target" : [{
-        "code" : "history",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "history-system",
-      "target" : [{
-        "code" : "history-system",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "search",
-      "target" : [{
-        "code" : "search",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "operation",
-      "target" : [{
-        "code" : "operation",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "transaction",
-      "target" : [{
-        "code" : "transaction",
-        "relationship" : "equivalent"
-      }]
     }]
   }]
 }

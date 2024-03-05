@@ -43,23 +43,9 @@
       }]
     },
     {
-      "code" : "on-hold",
-      "target" : [{
-        "code" : "suspended",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "preparation",
       "target" : [{
         "code" : "preparation",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "stopped",
-      "target" : [{
-        "code" : "aborted",
         "relationship" : "equivalent"
       }]
     },

@@ -40,34 +40,6 @@
         "code" : "option",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "instance-order",
-      "target" : [{
-        "code" : "instance-order",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "filler-order",
-      "target" : [{
-        "code" : "filler-order",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "original-order",
-      "target" : [{
-        "code" : "original-order",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "reflex-order",
-      "target" : [{
-        "code" : "reflex-order",
-        "relationship" : "equivalent"
-      }]
     }]
   }]
 }

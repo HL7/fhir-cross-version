@@ -1683,44 +1683,5 @@
         "relationship" : "equivalent"
       }]
     }]
-  },
-  {
-    "source" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
-    "target" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-    "element" : [{
-      "code" : "B",
-      "target" : [{
-        "code" : "B",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ETH",
-      "target" : [{
-        "code" : "ETH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SDV",
-      "target" : [{
-        "code" : "SDV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HIV",
-      "target" : [{
-        "code" : "HIV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PSY",
-      "target" : [{
-        "code" : "PSY",
-        "relationship" : "equivalent"
-      }]
-    }]
   }]
 }

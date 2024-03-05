@@ -10,48 +10,6 @@
     "source" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
     "target" : "http://hl7.org/fhir/3.0/v3/Confidentiality",
     "element" : [{
-      "code" : "B",
-      "target" : [{
-        "code" : "B",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ConfidentialityModifiers",
-      "target" : [{
-        "code" : "_ConfidentialityModifiers",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "C",
-      "target" : [{
-        "code" : "C",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "D",
-      "target" : [{
-        "code" : "D",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SDV",
-      "target" : [{
-        "code" : "SDV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "I",
-      "target" : [{
-        "code" : "I",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "L",
       "target" : [{
         "code" : "L",
@@ -73,44 +31,9 @@
       }]
     },
     {
-      "code" : "_ConfidentialityByAccessKind",
-      "target" : [{
-        "code" : "_ConfidentialityByAccessKind",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_Confidentiality",
-      "target" : [{
-        "code" : "_Confidentiality",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "R",
       "target" : [{
         "code" : "R",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "S",
-      "target" : [{
-        "code" : "S",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HIV",
-      "target" : [{
-        "code" : "HIV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "T",
-      "target" : [{
-        "code" : "T",
         "relationship" : "equivalent"
       }]
     },
@@ -125,27 +48,6 @@
       "code" : "V",
       "target" : [{
         "code" : "V",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PSY",
-      "target" : [{
-        "code" : "PSY",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ConfidentialityByInfoType",
-      "target" : [{
-        "code" : "_ConfidentialityByInfoType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ETH",
-      "target" : [{
-        "code" : "ETH",
         "relationship" : "equivalent"
       }]
     }]

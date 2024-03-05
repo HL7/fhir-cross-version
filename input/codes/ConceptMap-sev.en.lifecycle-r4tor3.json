@@ -57,6 +57,20 @@
         "code" : "10",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "9",
+      "target" : [{
+        "code" : "9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "4",
+        "relationship" : "equivalent"
+      }]
     }]
   },
   {
@@ -115,6 +129,34 @@
       "code" : "1",
       "target" : [{
         "code" : "1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "2",
+      "target" : [{
+        "code" : "2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "11",
+      "target" : [{
+        "code" : "11",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "10",
+      "target" : [{
+        "code" : "10",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "6",
+      "target" : [{
+        "code" : "6",
         "relationship" : "equivalent"
       }]
     }]

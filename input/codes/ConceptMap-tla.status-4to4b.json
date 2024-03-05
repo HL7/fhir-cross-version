@@ -22,41 +22,6 @@
         "code" : "entered-in-error",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "stopped",
-      "target" : [{
-        "code" : "stopped",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "not-done",
-      "target" : [{
-        "code" : "not-done",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "in-progress",
-      "target" : [{
-        "code" : "in-progress",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "on-hold",
-      "target" : [{
-        "code" : "on-hold",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "unknown",
-      "target" : [{
-        "code" : "unknown",
-        "relationship" : "equivalent"
-      }]
     }]
   }]
 }

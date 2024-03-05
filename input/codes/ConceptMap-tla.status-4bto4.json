@@ -10,13 +10,6 @@
     "source" : "http://terminology.hl7.org/CodeSystem/medication-admin-status",
     "target" : "http://terminology.hl7.org/CodeSystem/medication-admin-status",
     "element" : [{
-      "code" : "stopped",
-      "target" : [{
-        "code" : "stopped",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "completed",
       "target" : [{
         "code" : "completed",
@@ -24,37 +17,9 @@
       }]
     },
     {
-      "code" : "not-done",
-      "target" : [{
-        "code" : "not-done",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "entered-in-error",
       "target" : [{
         "code" : "entered-in-error",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "in-progress",
-      "target" : [{
-        "code" : "in-progress",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "on-hold",
-      "target" : [{
-        "code" : "on-hold",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "unknown",
-      "target" : [{
-        "code" : "unknown",
         "relationship" : "equivalent"
       }]
     }]

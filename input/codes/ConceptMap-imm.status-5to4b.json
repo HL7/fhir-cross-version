@@ -10,13 +10,6 @@
     "source" : "http://hl7.org/fhir/5.0/event-status",
     "target" : "http://hl7.org/fhir/4.3/event-status",
     "element" : [{
-      "code" : "stopped",
-      "target" : [{
-        "code" : "stopped",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "completed",
       "target" : [{
         "code" : "completed",
@@ -34,34 +27,6 @@
       "code" : "entered-in-error",
       "target" : [{
         "code" : "entered-in-error",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "in-progress",
-      "target" : [{
-        "code" : "in-progress",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "on-hold",
-      "target" : [{
-        "code" : "on-hold",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "preparation",
-      "target" : [{
-        "code" : "preparation",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "unknown",
-      "target" : [{
-        "code" : "unknown",
         "relationship" : "equivalent"
       }]
     }]
