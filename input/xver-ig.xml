@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
   </extension>
-  <url value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.xver"/>
+  <url value="http://hl7.org/fhir/hl7.fhir.uv.xver/ImplementationGuide/hl7.fhir.uv.xver"/>
   <version value="0.1.0"/>
   <name value="FHIRXVersionMappingPack"/>
   <title value="FHIR Cross-Version Mapping Pack"/>
