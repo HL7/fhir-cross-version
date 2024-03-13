@@ -1,0 +1,118 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "obs.dataAbsentReason-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obs.dataAbsentReason-5to4b",
+  "name" : "Observation.dataAbsentReasonr5to4b",
+  "title" : "Mapping for Observation.dataAbsentReason from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Observation#Observation.dataAbsentReason",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Observation#Observation.dataAbsentReason",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+    "target" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+    "element" : [{
+      "code" : "as-text",
+      "target" : [{
+        "code" : "as-text",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "asked-declined",
+      "target" : [{
+        "code" : "asked-declined",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "asked-unknown",
+      "target" : [{
+        "code" : "asked-unknown",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "error",
+      "target" : [{
+        "code" : "error",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "masked",
+      "target" : [{
+        "code" : "masked",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "negative-infinity",
+      "target" : [{
+        "code" : "negative-infinity",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-a-number",
+      "target" : [{
+        "code" : "not-a-number",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-applicable",
+      "target" : [{
+        "code" : "not-applicable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-asked",
+      "target" : [{
+        "code" : "not-asked",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-performed",
+      "target" : [{
+        "code" : "not-performed",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "not-permitted",
+      "target" : [{
+        "code" : "not-permitted",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "positive-infinity",
+      "target" : [{
+        "code" : "positive-infinity",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "temp-unknown",
+      "target" : [{
+        "code" : "temp-unknown",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unsupported",
+      "target" : [{
+        "code" : "unsupported",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

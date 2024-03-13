@@ -1,0 +1,569 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sev.ag.type-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ag.type-4bto4",
+  "name" : "AuditEvent.agent.typer4bto4",
+  "title" : "Mapping for AuditEvent.agent.type from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.agent.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.agent.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "element" : [{
+      "code" : "authserver",
+      "target" : [{
+        "code" : "authserver",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "datacollector",
+      "target" : [{
+        "code" : "datacollector",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dataprocessor",
+      "target" : [{
+        "code" : "dataprocessor",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "datasubject",
+      "target" : [{
+        "code" : "datasubject",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "humanuser",
+      "target" : [{
+        "code" : "humanuser",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+    "element" : [{
+      "code" : "CAS",
+      "target" : [{
+        "code" : "CAS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CASM",
+      "target" : [{
+        "code" : "CASM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLASSIFIER",
+      "target" : [{
+        "code" : "CLASSIFIER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CN",
+      "target" : [{
+        "code" : "CN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CNRP",
+      "target" : [{
+        "code" : "CNRP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CNRPM",
+      "target" : [{
+        "code" : "CNRPM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONSENTER",
+      "target" : [{
+        "code" : "CONSENTER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONSWIT",
+      "target" : [{
+        "code" : "CONSWIT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COPART",
+      "target" : [{
+        "code" : "COPART",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPCA",
+      "target" : [{
+        "code" : "CPCA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CRP",
+      "target" : [{
+        "code" : "CRP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CRPM",
+      "target" : [{
+        "code" : "CRPM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DECLASSIFIER",
+      "target" : [{
+        "code" : "DECLASSIFIER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DELEGATEE",
+      "target" : [{
+        "code" : "DELEGATEE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DELEGATOR",
+      "target" : [{
+        "code" : "DELEGATOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOWNGRDER",
+      "target" : [{
+        "code" : "DOWNGRDER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DPOWATT",
+      "target" : [{
+        "code" : "DPOWATT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EXCEST",
+      "target" : [{
+        "code" : "EXCEST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GRANTEE",
+      "target" : [{
+        "code" : "GRANTEE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GRANTOR",
+      "target" : [{
+        "code" : "GRANTOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GT",
+      "target" : [{
+        "code" : "GT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GUADLTM",
+      "target" : [{
+        "code" : "GUADLTM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HPOWATT",
+      "target" : [{
+        "code" : "HPOWATT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INTPRTER",
+      "target" : [{
+        "code" : "INTPRTER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "POWATT",
+      "target" : [{
+        "code" : "POWATT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RESPRSN",
+      "target" : [{
+        "code" : "RESPRSN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPOWATT",
+      "target" : [{
+        "code" : "SPOWATT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "_CitizenRoleType",
+      "target" : [{
+        "code" : "_CitizenRoleType",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+    "element" : [{
+      "code" : "AFFL",
+      "target" : [{
+        "code" : "AFFL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AGNT",
+      "target" : [{
+        "code" : "AGNT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ASSIGNED",
+      "target" : [{
+        "code" : "ASSIGNED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLAIM",
+      "target" : [{
+        "code" : "CLAIM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COVPTY",
+      "target" : [{
+        "code" : "COVPTY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEPEN",
+      "target" : [{
+        "code" : "DEPEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ECON",
+      "target" : [{
+        "code" : "ECON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMP",
+      "target" : [{
+        "code" : "EMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GUARD",
+      "target" : [{
+        "code" : "GUARD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INVSBJ",
+      "target" : [{
+        "code" : "INVSBJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NAMED",
+      "target" : [{
+        "code" : "NAMED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOK",
+      "target" : [{
+        "code" : "NOK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOT",
+      "target" : [{
+        "code" : "NOT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAT",
+      "target" : [{
+        "code" : "PAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROV",
+      "target" : [{
+        "code" : "PROV",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+    "element" : [{
+      "code" : "AUCG",
+      "target" : [{
+        "code" : "AUCG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AULR",
+      "target" : [{
+        "code" : "AULR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUTM",
+      "target" : [{
+        "code" : "AUTM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUWA",
+      "target" : [{
+        "code" : "AUWA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PROMSK",
+      "target" : [{
+        "code" : "PROMSK",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+    "target" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+    "element" : [{
+      "code" : "AMENDER",
+      "target" : [{
+        "code" : "AMENDER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COAUTH",
+      "target" : [{
+        "code" : "COAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONT",
+      "target" : [{
+        "code" : "CONT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EVTWIT",
+      "target" : [{
+        "code" : "EVTWIT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRIMAUTH",
+      "target" : [{
+        "code" : "PRIMAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REVIEWER",
+      "target" : [{
+        "code" : "REVIEWER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SOURCE",
+      "target" : [{
+        "code" : "SOURCE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRANS",
+      "target" : [{
+        "code" : "TRANS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VALID",
+      "target" : [{
+        "code" : "VALID",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VERF",
+      "target" : [{
+        "code" : "VERF",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://dicom.nema.org/resources/ontology/DCM",
+    "target" : "http://dicom.nema.org/resources/ontology/DCM",
+    "element" : [{
+      "code" : "110150",
+      "target" : [{
+        "code" : "110150",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110151",
+      "target" : [{
+        "code" : "110151",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110152",
+      "target" : [{
+        "code" : "110152",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110153",
+      "target" : [{
+        "code" : "110153",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110154",
+      "target" : [{
+        "code" : "110154",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110155",
+      "target" : [{
+        "code" : "110155",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "element" : [{
+      "code" : "AUT",
+      "target" : [{
+        "code" : "AUT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CST",
+      "target" : [{
+        "code" : "CST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INF",
+      "target" : [{
+        "code" : "INF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IRCP",
+      "target" : [{
+        "code" : "IRCP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA",
+      "target" : [{
+        "code" : "LA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRC",
+      "target" : [{
+        "code" : "TRC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WIT",
+      "target" : [{
+        "code" : "WIT",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

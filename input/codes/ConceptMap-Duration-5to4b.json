@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Duration-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Duration-5to4b",
+  "name" : "Durationr5to4b",
+  "title" : "Mapping for Duration from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Duration#Duration",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Duration#Duration",
+  "group" : [{
+    "source" : "http://unitsofmeasure.org",
+    "target" : "http://unitsofmeasure.org",
+    "element" : [{
+      "code" : "a",
+      "target" : [{
+        "code" : "a",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "d",
+      "target" : [{
+        "code" : "d",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "h",
+      "target" : [{
+        "code" : "h",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "min",
+      "target" : [{
+        "code" : "min",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mo",
+      "target" : [{
+        "code" : "mo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ms",
+      "target" : [{
+        "code" : "ms",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "s",
+      "target" : [{
+        "code" : "s",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wk",
+      "target" : [{
+        "code" : "wk",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

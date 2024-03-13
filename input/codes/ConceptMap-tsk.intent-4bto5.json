@@ -1,0 +1,80 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tsk.intent-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tsk.intent-4bto5",
+  "name" : "Task.intentr4bto5",
+  "title" : "Mapping for Task.intent from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Task#Task.intent",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Task#Task.intent",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/4.3/request-intent",
+    "target" : "http://hl7.org/fhir/5.0/request-intent",
+    "element" : [{
+      "code" : "filler-order",
+      "target" : [{
+        "code" : "filler-order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "instance-order",
+      "target" : [{
+        "code" : "instance-order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "option",
+      "target" : [{
+        "code" : "option",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "order",
+      "target" : [{
+        "code" : "order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "original-order",
+      "target" : [{
+        "code" : "original-order",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "plan",
+      "target" : [{
+        "code" : "plan",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "proposal",
+      "target" : [{
+        "code" : "proposal",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reflex-order",
+      "target" : [{
+        "code" : "reflex-order",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/4.3/task-intent",
+    "target" : "http://hl7.org/fhir/5.0/task-intent",
+    "element" : [{
+      "code" : "unknown",
+      "target" : [{
+        "code" : "unknown",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

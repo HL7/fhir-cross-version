@@ -1,0 +1,311 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sev.en.lifecycle-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.en.lifecycle-4to4b",
+  "name" : "AuditEvent.entity.lifecycler4to4b",
+  "title" : "Mapping for AuditEvent.entity.lifecycle from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.entity.lifecycle",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.entity.lifecycle",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle",
+    "target" : "http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle",
+    "element" : [{
+      "code" : "1",
+      "target" : [{
+        "code" : "1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "10",
+      "target" : [{
+        "code" : "10",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "11",
+      "target" : [{
+        "code" : "11",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "12",
+      "target" : [{
+        "code" : "12",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "13",
+      "target" : [{
+        "code" : "13",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "14",
+      "target" : [{
+        "code" : "14",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "15",
+      "target" : [{
+        "code" : "15",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "2",
+      "target" : [{
+        "code" : "2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "3",
+      "target" : [{
+        "code" : "3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "5",
+      "target" : [{
+        "code" : "5",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "6",
+      "target" : [{
+        "code" : "6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "7",
+      "target" : [{
+        "code" : "7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "8",
+      "target" : [{
+        "code" : "8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "9",
+      "target" : [{
+        "code" : "9",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+    "target" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+    "element" : [{
+      "code" : "access",
+      "target" : [{
+        "code" : "access",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "amend",
+      "target" : [{
+        "code" : "amend",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "archive",
+      "target" : [{
+        "code" : "archive",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "attest",
+      "target" : [{
+        "code" : "attest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "decrypt",
+      "target" : [{
+        "code" : "decrypt",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "deidentify",
+      "target" : [{
+        "code" : "deidentify",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "deprecate",
+      "target" : [{
+        "code" : "deprecate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "destroy",
+      "target" : [{
+        "code" : "destroy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "disclose",
+      "target" : [{
+        "code" : "disclose",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "encrypt",
+      "target" : [{
+        "code" : "encrypt",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "extract",
+      "target" : [{
+        "code" : "extract",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hold",
+      "target" : [{
+        "code" : "hold",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "link",
+      "target" : [{
+        "code" : "link",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "merge",
+      "target" : [{
+        "code" : "merge",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "originate",
+      "target" : [{
+        "code" : "originate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pseudonymize",
+      "target" : [{
+        "code" : "pseudonymize",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reactivate",
+      "target" : [{
+        "code" : "reactivate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "receive",
+      "target" : [{
+        "code" : "receive",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reidentify",
+      "target" : [{
+        "code" : "reidentify",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "report",
+      "target" : [{
+        "code" : "report",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "restore",
+      "target" : [{
+        "code" : "restore",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transform",
+      "target" : [{
+        "code" : "transform",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transmit",
+      "target" : [{
+        "code" : "transmit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unhold",
+      "target" : [{
+        "code" : "unhold",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unlink",
+      "target" : [{
+        "code" : "unlink",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unmerge",
+      "target" : [{
+        "code" : "unmerge",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "verify",
+      "target" : [{
+        "code" : "verify",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

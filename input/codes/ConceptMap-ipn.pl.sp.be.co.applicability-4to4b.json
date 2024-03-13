@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ipn.pl.sp.be.co.applicability-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ipn.pl.sp.be.co.applicability-4to4b",
+  "name" : "InsurancePlan.plan.specificCost.benefit.cost.applicabilityr4to4b",
+  "title" : "Mapping for InsurancePlan.plan.specificCost.benefit.cost.applicability from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/InsurancePlan#InsurancePlan.plan.specificCost.benefit.cost.applicability",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/InsurancePlan#InsurancePlan.plan.specificCost.benefit.cost.applicability",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/applicability",
+    "target" : "http://terminology.hl7.org/CodeSystem/applicability",
+    "element" : [{
+      "code" : "in-network",
+      "target" : [{
+        "code" : "in-network",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "other",
+      "target" : [{
+        "code" : "other",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "out-of-network",
+      "target" : [{
+        "code" : "out-of-network",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,94 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "pat.maritalStatus-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pat.maritalStatus-4to4b",
+  "name" : "Patient.maritalStatusr4to4b",
+  "title" : "Mapping for Patient.maritalStatus from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Patient#Patient.maritalStatus",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Patient#Patient.maritalStatus",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+    "element" : [{
+      "code" : "A",
+      "target" : [{
+        "code" : "A",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "D",
+      "target" : [{
+        "code" : "D",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "I",
+      "target" : [{
+        "code" : "I",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "L",
+      "target" : [{
+        "code" : "L",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "M",
+      "target" : [{
+        "code" : "M",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "P",
+      "target" : [{
+        "code" : "P",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "S",
+      "target" : [{
+        "code" : "S",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "T",
+      "target" : [{
+        "code" : "T",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "U",
+      "target" : [{
+        "code" : "U",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "W",
+      "target" : [{
+        "code" : "W",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "element" : [{
+      "code" : "UNK",
+      "target" : [{
+        "code" : "UNK",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

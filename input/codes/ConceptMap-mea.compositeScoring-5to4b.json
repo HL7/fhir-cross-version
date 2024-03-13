@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mea.compositeScoring-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.compositeScoring-5to4b",
+  "name" : "Measure.compositeScoringr5to4b",
+  "title" : "Mapping for Measure.compositeScoring from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Measure#Measure.compositeScoring",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.compositeScoring",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/composite-measure-scoring",
+    "target" : "http://terminology.hl7.org/CodeSystem/composite-measure-scoring",
+    "element" : [{
+      "code" : "all-or-nothing",
+      "target" : [{
+        "code" : "all-or-nothing",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "linear",
+      "target" : [{
+        "code" : "linear",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "opportunity",
+      "target" : [{
+        "code" : "opportunity",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "weighted",
+      "target" : [{
+        "code" : "weighted",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

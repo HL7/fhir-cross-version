@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tim.re.durationUnit-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.durationUnit-3to4",
+  "name" : "Timing.repeat.durationUnitr3to4",
+  "title" : "Mapping for Timing.repeat.durationUnit from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.durationUnit",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Timing#Timing.repeat.durationUnit",
+  "group" : [{
+    "source" : "http://unitsofmeasure.org",
+    "target" : "http://unitsofmeasure.org",
+    "element" : [{
+      "code" : "a",
+      "target" : [{
+        "code" : "a",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "d",
+      "target" : [{
+        "code" : "d",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "h",
+      "target" : [{
+        "code" : "h",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "min",
+      "target" : [{
+        "code" : "min",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "mo",
+      "target" : [{
+        "code" : "mo",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "s",
+      "target" : [{
+        "code" : "s",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "wk",
+      "target" : [{
+        "code" : "wk",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

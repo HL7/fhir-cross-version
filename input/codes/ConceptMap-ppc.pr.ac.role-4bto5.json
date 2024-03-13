@@ -1,0 +1,427 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ppc.pr.ac.role-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.ac.role-4bto5",
+  "name" : "Consent.provision.actor.roler4bto5",
+  "title" : "Mapping for Consent.provision.actor.role from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.provision.actor.role",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Consent#Consent.provision.actor.role",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "element" : [{
+      "code" : "authserver",
+      "target" : [{
+        "code" : "authserver",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "datacollector",
+      "target" : [{
+        "code" : "datacollector",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dataprocessor",
+      "target" : [{
+        "code" : "dataprocessor",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "datasubject",
+      "target" : [{
+        "code" : "datasubject",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "humanuser",
+      "target" : [{
+        "code" : "humanuser",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+    "element" : [{
+      "code" : "CAS",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CASM",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CLASSIFIER",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CN",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CNRP",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CNRPM",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CONSENTER",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CONSWIT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "COPART",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CPCA",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CRP",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CRPM",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DECLASSIFIER",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DELEGATEE",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DELEGATOR",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DOWNGRDER",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DPOWATT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "EXCEST",
+
+      "noMap" : true
+    },
+    {
+      "code" : "GRANTEE",
+
+      "noMap" : true
+    },
+    {
+      "code" : "GRANTOR",
+
+      "noMap" : true
+    },
+    {
+      "code" : "GT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "GUADLTM",
+
+      "noMap" : true
+    },
+    {
+      "code" : "HPOWATT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "INTPRTER",
+
+      "noMap" : true
+    },
+    {
+      "code" : "POWATT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "RESPRSN",
+
+      "noMap" : true
+    },
+    {
+      "code" : "SPOWATT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "_CitizenRoleType",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+    "element" : [{
+      "code" : "AFFL",
+
+      "noMap" : true
+    },
+    {
+      "code" : "AGNT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "ASSIGNED",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CLAIM",
+
+      "noMap" : true
+    },
+    {
+      "code" : "COVPTY",
+
+      "noMap" : true
+    },
+    {
+      "code" : "DEPEN",
+
+      "noMap" : true
+    },
+    {
+      "code" : "ECON",
+
+      "noMap" : true
+    },
+    {
+      "code" : "EMP",
+
+      "noMap" : true
+    },
+    {
+      "code" : "GUARD",
+
+      "noMap" : true
+    },
+    {
+      "code" : "INVSBJ",
+
+      "noMap" : true
+    },
+    {
+      "code" : "NAMED",
+
+      "noMap" : true
+    },
+    {
+      "code" : "NOK",
+
+      "noMap" : true
+    },
+    {
+      "code" : "NOT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "PAT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "PROV",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+    "element" : [{
+      "code" : "AUCG",
+
+      "noMap" : true
+    },
+    {
+      "code" : "AULR",
+
+      "noMap" : true
+    },
+    {
+      "code" : "AUTM",
+
+      "noMap" : true
+    },
+    {
+      "code" : "AUWA",
+
+      "noMap" : true
+    },
+    {
+      "code" : "PROMSK",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+    "target" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+    "element" : [{
+      "code" : "AMENDER",
+
+      "noMap" : true
+    },
+    {
+      "code" : "COAUTH",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CONT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "EVTWIT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "PRIMAUTH",
+
+      "noMap" : true
+    },
+    {
+      "code" : "REVIEWER",
+
+      "noMap" : true
+    },
+    {
+      "code" : "SOURCE",
+
+      "noMap" : true
+    },
+    {
+      "code" : "TRANS",
+
+      "noMap" : true
+    },
+    {
+      "code" : "VALID",
+
+      "noMap" : true
+    },
+    {
+      "code" : "VERF",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "element" : [{
+      "code" : "AUT",
+
+      "noMap" : true
+    },
+    {
+      "code" : "CST",
+
+      "noMap" : true
+    },
+    {
+      "code" : "INF",
+
+      "noMap" : true
+    },
+    {
+      "code" : "IRCP",
+
+      "noMap" : true
+    },
+    {
+      "code" : "LA",
+
+      "noMap" : true
+    },
+    {
+      "code" : "TRC",
+
+      "noMap" : true
+    },
+    {
+      "code" : "WIT",
+
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://dicom.nema.org/resources/ontology/DCM",
+    "target" : "http://dicom.nema.org/resources/ontology/DCM",
+    "element" : [{
+      "code" : "110150",
+
+      "noMap" : true
+    },
+    {
+      "code" : "110151",
+
+      "noMap" : true
+    },
+    {
+      "code" : "110152",
+
+      "noMap" : true
+    },
+    {
+      "code" : "110153",
+
+      "noMap" : true
+    },
+    {
+      "code" : "110154",
+
+      "noMap" : true
+    },
+    {
+      "code" : "110155",
+
+      "noMap" : true
+    }]
+  }]
+}

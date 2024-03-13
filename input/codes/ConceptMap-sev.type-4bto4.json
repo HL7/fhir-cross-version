@@ -1,0 +1,322 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sev.type-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.type-4bto4",
+  "name" : "AuditEvent.typer4bto4",
+  "title" : "Mapping for AuditEvent.type from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
+    "element" : [{
+      "code" : "rest",
+      "target" : [{
+        "code" : "rest",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+    "target" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+    "element" : [{
+      "code" : "access",
+      "target" : [{
+        "code" : "access",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "amend",
+      "target" : [{
+        "code" : "amend",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "archive",
+      "target" : [{
+        "code" : "archive",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "attest",
+      "target" : [{
+        "code" : "attest",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "decrypt",
+      "target" : [{
+        "code" : "decrypt",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "deidentify",
+      "target" : [{
+        "code" : "deidentify",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "deprecate",
+      "target" : [{
+        "code" : "deprecate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "destroy",
+      "target" : [{
+        "code" : "destroy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "disclose",
+      "target" : [{
+        "code" : "disclose",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "encrypt",
+      "target" : [{
+        "code" : "encrypt",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "extract",
+      "target" : [{
+        "code" : "extract",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "hold",
+      "target" : [{
+        "code" : "hold",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "link",
+      "target" : [{
+        "code" : "link",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "merge",
+      "target" : [{
+        "code" : "merge",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "originate",
+      "target" : [{
+        "code" : "originate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pseudonymize",
+      "target" : [{
+        "code" : "pseudonymize",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reactivate",
+      "target" : [{
+        "code" : "reactivate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "receive",
+      "target" : [{
+        "code" : "receive",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "reidentify",
+      "target" : [{
+        "code" : "reidentify",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "report",
+      "target" : [{
+        "code" : "report",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "restore",
+      "target" : [{
+        "code" : "restore",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transform",
+      "target" : [{
+        "code" : "transform",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transmit",
+      "target" : [{
+        "code" : "transmit",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unhold",
+      "target" : [{
+        "code" : "unhold",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unlink",
+      "target" : [{
+        "code" : "unlink",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "unmerge",
+      "target" : [{
+        "code" : "unmerge",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "verify",
+      "target" : [{
+        "code" : "verify",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://dicom.nema.org/resources/ontology/DCM",
+    "target" : "http://dicom.nema.org/resources/ontology/DCM",
+    "element" : [{
+      "code" : "110100",
+      "target" : [{
+        "code" : "110100",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110101",
+      "target" : [{
+        "code" : "110101",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110102",
+      "target" : [{
+        "code" : "110102",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110103",
+      "target" : [{
+        "code" : "110103",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110104",
+      "target" : [{
+        "code" : "110104",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110105",
+      "target" : [{
+        "code" : "110105",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110106",
+      "target" : [{
+        "code" : "110106",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110107",
+      "target" : [{
+        "code" : "110107",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110108",
+      "target" : [{
+        "code" : "110108",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110109",
+      "target" : [{
+        "code" : "110109",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110110",
+      "target" : [{
+        "code" : "110110",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110111",
+      "target" : [{
+        "code" : "110111",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110112",
+      "target" : [{
+        "code" : "110112",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110113",
+      "target" : [{
+        "code" : "110113",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110114",
+      "target" : [{
+        "code" : "110114",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

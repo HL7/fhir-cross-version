@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "nor.en.routeofAdministration-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/nor.en.routeofAdministration-4bto4",
+  "name" : "NutritionOrder.enteralFormula.routeofAdministrationr4bto4",
+  "title" : "Mapping for NutritionOrder.enteralFormula.routeofAdministration from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/NutritionOrder#NutritionOrder.enteralFormula.routeofAdministration",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/NutritionOrder#NutritionOrder.enteralFormula.routeofAdministration",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
+    "element" : [{
+      "code" : "EFT",
+      "target" : [{
+        "code" : "EFT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENTINSTL",
+      "target" : [{
+        "code" : "ENTINSTL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GJT",
+      "target" : [{
+        "code" : "GJT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GT",
+      "target" : [{
+        "code" : "GT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JJTINSTL",
+      "target" : [{
+        "code" : "JJTINSTL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NGT",
+      "target" : [{
+        "code" : "NGT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OGT",
+      "target" : [{
+        "code" : "OGT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OJJ",
+      "target" : [{
+        "code" : "OJJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PO",
+      "target" : [{
+        "code" : "PO",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

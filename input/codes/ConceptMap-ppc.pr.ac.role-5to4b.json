@@ -1,0 +1,102 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ppc.pr.ac.role-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.ac.role-5to4b",
+  "name" : "Consent.provision.actor.roler5to4b",
+  "title" : "Mapping for Consent.provision.actor.role from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Consent#Consent.provision.actor.role",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.provision.actor.role",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "element" : [{
+      "code" : "authserver",
+      "target" : [{
+        "code" : "authserver",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "datacollector",
+      "target" : [{
+        "code" : "datacollector",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "dataprocessor",
+      "target" : [{
+        "code" : "dataprocessor",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "datasubject",
+      "target" : [{
+        "code" : "datasubject",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "humanuser",
+      "target" : [{
+        "code" : "humanuser",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+    "element" : [{
+      "code" : "assembler",
+
+      "noMap" : true
+    },
+    {
+      "code" : "attester",
+
+      "noMap" : true
+    },
+    {
+      "code" : "author",
+
+      "noMap" : true
+    },
+    {
+      "code" : "composer",
+
+      "noMap" : true
+    },
+    {
+      "code" : "custodian",
+
+      "noMap" : true
+    },
+    {
+      "code" : "enterer",
+
+      "noMap" : true
+    },
+    {
+      "code" : "informant",
+
+      "noMap" : true
+    },
+    {
+      "code" : "legal",
+
+      "noMap" : true
+    },
+    {
+      "code" : "performer",
+
+      "noMap" : true
+    },
+    {
+      "code" : "verifier",
+
+      "noMap" : true
+    }]
+  }]
+}

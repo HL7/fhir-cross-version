@@ -1,0 +1,1287 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mny.currency-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mny.currency-4to4b",
+  "name" : "Money.currencyr4to4b",
+  "title" : "Mapping for Money.currency from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Money#Money.currency",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Money#Money.currency",
+  "group" : [{
+    "source" : "urn:iso:std:iso:4217",
+    "target" : "urn:iso:std:iso:4217",
+    "element" : [{
+      "code" : "AED",
+      "target" : [{
+        "code" : "AED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AFN",
+      "target" : [{
+        "code" : "AFN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALL",
+      "target" : [{
+        "code" : "ALL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AMD",
+      "target" : [{
+        "code" : "AMD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANG",
+      "target" : [{
+        "code" : "ANG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AOA",
+      "target" : [{
+        "code" : "AOA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ARS",
+      "target" : [{
+        "code" : "ARS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUD",
+      "target" : [{
+        "code" : "AUD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AWG",
+      "target" : [{
+        "code" : "AWG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZN",
+      "target" : [{
+        "code" : "AZN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BAM",
+      "target" : [{
+        "code" : "BAM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BBD",
+      "target" : [{
+        "code" : "BBD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BDT",
+      "target" : [{
+        "code" : "BDT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BGN",
+      "target" : [{
+        "code" : "BGN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BHD",
+      "target" : [{
+        "code" : "BHD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BIF",
+      "target" : [{
+        "code" : "BIF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BMD",
+      "target" : [{
+        "code" : "BMD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BND",
+      "target" : [{
+        "code" : "BND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BOB",
+      "target" : [{
+        "code" : "BOB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BOV",
+      "target" : [{
+        "code" : "BOV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BRL",
+      "target" : [{
+        "code" : "BRL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BSD",
+      "target" : [{
+        "code" : "BSD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BTN",
+      "target" : [{
+        "code" : "BTN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BWP",
+      "target" : [{
+        "code" : "BWP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BYN",
+      "target" : [{
+        "code" : "BYN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BZD",
+      "target" : [{
+        "code" : "BZD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAD",
+      "target" : [{
+        "code" : "CAD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CDF",
+      "target" : [{
+        "code" : "CDF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHE",
+      "target" : [{
+        "code" : "CHE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHF",
+      "target" : [{
+        "code" : "CHF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHW",
+      "target" : [{
+        "code" : "CHW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLF",
+      "target" : [{
+        "code" : "CLF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLP",
+      "target" : [{
+        "code" : "CLP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CNY",
+      "target" : [{
+        "code" : "CNY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COP",
+      "target" : [{
+        "code" : "COP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COU",
+      "target" : [{
+        "code" : "COU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CRC",
+      "target" : [{
+        "code" : "CRC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CUC",
+      "target" : [{
+        "code" : "CUC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CUP",
+      "target" : [{
+        "code" : "CUP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CVE",
+      "target" : [{
+        "code" : "CVE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CZK",
+      "target" : [{
+        "code" : "CZK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DJF",
+      "target" : [{
+        "code" : "DJF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DKK",
+      "target" : [{
+        "code" : "DKK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOP",
+      "target" : [{
+        "code" : "DOP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZD",
+      "target" : [{
+        "code" : "DZD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EGP",
+      "target" : [{
+        "code" : "EGP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ERN",
+      "target" : [{
+        "code" : "ERN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ETB",
+      "target" : [{
+        "code" : "ETB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EUR",
+      "target" : [{
+        "code" : "EUR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FJD",
+      "target" : [{
+        "code" : "FJD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FKP",
+      "target" : [{
+        "code" : "FKP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GBP",
+      "target" : [{
+        "code" : "GBP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GEL",
+      "target" : [{
+        "code" : "GEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GGP",
+      "target" : [{
+        "code" : "GGP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GHS",
+      "target" : [{
+        "code" : "GHS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GIP",
+      "target" : [{
+        "code" : "GIP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GMD",
+      "target" : [{
+        "code" : "GMD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GNF",
+      "target" : [{
+        "code" : "GNF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GTQ",
+      "target" : [{
+        "code" : "GTQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GYD",
+      "target" : [{
+        "code" : "GYD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HKD",
+      "target" : [{
+        "code" : "HKD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HNL",
+      "target" : [{
+        "code" : "HNL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HRK",
+      "target" : [{
+        "code" : "HRK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HTG",
+      "target" : [{
+        "code" : "HTG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HUF",
+      "target" : [{
+        "code" : "HUF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IDR",
+      "target" : [{
+        "code" : "IDR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ILS",
+      "target" : [{
+        "code" : "ILS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMP",
+      "target" : [{
+        "code" : "IMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "INR",
+      "target" : [{
+        "code" : "INR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IQD",
+      "target" : [{
+        "code" : "IQD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IRR",
+      "target" : [{
+        "code" : "IRR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ISK",
+      "target" : [{
+        "code" : "ISK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JEP",
+      "target" : [{
+        "code" : "JEP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JMD",
+      "target" : [{
+        "code" : "JMD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JOD",
+      "target" : [{
+        "code" : "JOD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JPY",
+      "target" : [{
+        "code" : "JPY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KES",
+      "target" : [{
+        "code" : "KES",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KGS",
+      "target" : [{
+        "code" : "KGS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KHR",
+      "target" : [{
+        "code" : "KHR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KMF",
+      "target" : [{
+        "code" : "KMF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KPW",
+      "target" : [{
+        "code" : "KPW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KRW",
+      "target" : [{
+        "code" : "KRW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KWD",
+      "target" : [{
+        "code" : "KWD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KYD",
+      "target" : [{
+        "code" : "KYD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KZT",
+      "target" : [{
+        "code" : "KZT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LAK",
+      "target" : [{
+        "code" : "LAK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LBP",
+      "target" : [{
+        "code" : "LBP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LKR",
+      "target" : [{
+        "code" : "LKR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LRD",
+      "target" : [{
+        "code" : "LRD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LSL",
+      "target" : [{
+        "code" : "LSL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LYD",
+      "target" : [{
+        "code" : "LYD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MAD",
+      "target" : [{
+        "code" : "MAD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDL",
+      "target" : [{
+        "code" : "MDL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MGA",
+      "target" : [{
+        "code" : "MGA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MKD",
+      "target" : [{
+        "code" : "MKD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MMK",
+      "target" : [{
+        "code" : "MMK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MNT",
+      "target" : [{
+        "code" : "MNT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MOP",
+      "target" : [{
+        "code" : "MOP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MRU",
+      "target" : [{
+        "code" : "MRU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MUR",
+      "target" : [{
+        "code" : "MUR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MVR",
+      "target" : [{
+        "code" : "MVR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MWK",
+      "target" : [{
+        "code" : "MWK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MXN",
+      "target" : [{
+        "code" : "MXN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MXV",
+      "target" : [{
+        "code" : "MXV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MYR",
+      "target" : [{
+        "code" : "MYR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MZN",
+      "target" : [{
+        "code" : "MZN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NAD",
+      "target" : [{
+        "code" : "NAD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NGN",
+      "target" : [{
+        "code" : "NGN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NIO",
+      "target" : [{
+        "code" : "NIO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOK",
+      "target" : [{
+        "code" : "NOK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NPR",
+      "target" : [{
+        "code" : "NPR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NZD",
+      "target" : [{
+        "code" : "NZD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OMR",
+      "target" : [{
+        "code" : "OMR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAB",
+      "target" : [{
+        "code" : "PAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PEN",
+      "target" : [{
+        "code" : "PEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PGK",
+      "target" : [{
+        "code" : "PGK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PHP",
+      "target" : [{
+        "code" : "PHP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PKR",
+      "target" : [{
+        "code" : "PKR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PLN",
+      "target" : [{
+        "code" : "PLN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PYG",
+      "target" : [{
+        "code" : "PYG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "QAR",
+      "target" : [{
+        "code" : "QAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RON",
+      "target" : [{
+        "code" : "RON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RSD",
+      "target" : [{
+        "code" : "RSD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RUB",
+      "target" : [{
+        "code" : "RUB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RWF",
+      "target" : [{
+        "code" : "RWF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SAR",
+      "target" : [{
+        "code" : "SAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SBD",
+      "target" : [{
+        "code" : "SBD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SCR",
+      "target" : [{
+        "code" : "SCR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SDG",
+      "target" : [{
+        "code" : "SDG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SEK",
+      "target" : [{
+        "code" : "SEK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SGD",
+      "target" : [{
+        "code" : "SGD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SHP",
+      "target" : [{
+        "code" : "SHP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SLL",
+      "target" : [{
+        "code" : "SLL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SOS",
+      "target" : [{
+        "code" : "SOS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SRD",
+      "target" : [{
+        "code" : "SRD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SSP",
+      "target" : [{
+        "code" : "SSP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "STN",
+      "target" : [{
+        "code" : "STN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SVC",
+      "target" : [{
+        "code" : "SVC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SYP",
+      "target" : [{
+        "code" : "SYP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SZL",
+      "target" : [{
+        "code" : "SZL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "THB",
+      "target" : [{
+        "code" : "THB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TJS",
+      "target" : [{
+        "code" : "TJS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TMT",
+      "target" : [{
+        "code" : "TMT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TND",
+      "target" : [{
+        "code" : "TND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TOP",
+      "target" : [{
+        "code" : "TOP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRY",
+      "target" : [{
+        "code" : "TRY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TTD",
+      "target" : [{
+        "code" : "TTD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TVD",
+      "target" : [{
+        "code" : "TVD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TWD",
+      "target" : [{
+        "code" : "TWD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TZS",
+      "target" : [{
+        "code" : "TZS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UAH",
+      "target" : [{
+        "code" : "UAH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UGX",
+      "target" : [{
+        "code" : "UGX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "USD",
+      "target" : [{
+        "code" : "USD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "USN",
+      "target" : [{
+        "code" : "USN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UYI",
+      "target" : [{
+        "code" : "UYI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UYU",
+      "target" : [{
+        "code" : "UYU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UZS",
+      "target" : [{
+        "code" : "UZS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VEF",
+      "target" : [{
+        "code" : "VEF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VND",
+      "target" : [{
+        "code" : "VND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VUV",
+      "target" : [{
+        "code" : "VUV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WST",
+      "target" : [{
+        "code" : "WST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XAF",
+      "target" : [{
+        "code" : "XAF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XAG",
+      "target" : [{
+        "code" : "XAG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XAU",
+      "target" : [{
+        "code" : "XAU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XBA",
+      "target" : [{
+        "code" : "XBA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XBB",
+      "target" : [{
+        "code" : "XBB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XBC",
+      "target" : [{
+        "code" : "XBC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XBD",
+      "target" : [{
+        "code" : "XBD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XCD",
+      "target" : [{
+        "code" : "XCD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XDR",
+      "target" : [{
+        "code" : "XDR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XOF",
+      "target" : [{
+        "code" : "XOF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XPD",
+      "target" : [{
+        "code" : "XPD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XPF",
+      "target" : [{
+        "code" : "XPF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XPT",
+      "target" : [{
+        "code" : "XPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XSU",
+      "target" : [{
+        "code" : "XSU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XTS",
+      "target" : [{
+        "code" : "XTS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XUA",
+      "target" : [{
+        "code" : "XUA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "XXX",
+      "target" : [{
+        "code" : "XXX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "YER",
+      "target" : [{
+        "code" : "YER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ZAR",
+      "target" : [{
+        "code" : "ZAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ZMW",
+      "target" : [{
+        "code" : "ZMW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ZWL",
+      "target" : [{
+        "code" : "ZWL",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

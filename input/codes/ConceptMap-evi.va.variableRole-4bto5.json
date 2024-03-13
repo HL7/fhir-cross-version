@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "evi.va.variableRole-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evi.va.variableRole-4bto5",
+  "name" : "Evidence.variableDefinition.variableRoler4bto5",
+  "title" : "Mapping for Evidence.variableDefinition.variableRole from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.variableDefinition.variableRole",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.variableDefinition.variableRole",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/variable-role",
+    "target" : "http://terminology.hl7.org/CodeSystem/variable-role",
+    "element" : [{
+      "code" : "confounder",
+      "target" : [{
+        "code" : "confounder",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "exposure",
+      "target" : [{
+        "code" : "exposure",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "measuredVariable",
+      "target" : [{
+        "code" : "measuredVariable",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "population",
+      "target" : [{
+        "code" : "population",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "referenceExposure",
+      "target" : [{
+        "code" : "referenceExposure",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "subpopulation",
+      "target" : [{
+        "code" : "subpopulation",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

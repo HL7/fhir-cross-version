@@ -1,0 +1,139 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "nsd.type-4to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.type-4to4b",
+  "name" : "NamingSystem.typer4to4b",
+  "title" : "Mapping for NamingSystem.type from 4.0.1 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/NamingSystem#NamingSystem.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/NamingSystem#NamingSystem.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "target" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "element" : [{
+      "code" : "ACSN",
+      "target" : [{
+        "code" : "ACSN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BRN",
+      "target" : [{
+        "code" : "BRN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DL",
+      "target" : [{
+        "code" : "DL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DR",
+      "target" : [{
+        "code" : "DR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EN",
+      "target" : [{
+        "code" : "EN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FILL",
+      "target" : [{
+        "code" : "FILL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JHN",
+      "target" : [{
+        "code" : "JHN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MCN",
+      "target" : [{
+        "code" : "MCN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MD",
+      "target" : [{
+        "code" : "MD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MR",
+      "target" : [{
+        "code" : "MR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NIIP",
+      "target" : [{
+        "code" : "NIIP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PLAC",
+      "target" : [{
+        "code" : "PLAC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PPN",
+      "target" : [{
+        "code" : "PPN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRN",
+      "target" : [{
+        "code" : "PRN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SB",
+      "target" : [{
+        "code" : "SB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SNO",
+      "target" : [{
+        "code" : "SNO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAX",
+      "target" : [{
+        "code" : "TAX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UDI",
+      "target" : [{
+        "code" : "UDI",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

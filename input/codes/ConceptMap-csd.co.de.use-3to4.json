@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "csd.co.de.use-3to4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.co.de.use-3to4",
+  "name" : "CodeSystem.concept.designation.user3to4",
+  "title" : "Mapping for CodeSystem.concept.designation.use from 3.0.2 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.concept.designation.use",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.concept.designation.use",
+  "group" : [{
+    "source" : "http://snomed.info/sct",
+    "target" : "http://snomed.info/sct",
+    "element" : [{
+      "code" : "900000000000003001",
+      "target" : [{
+        "code" : "900000000000003001",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "900000000000013009",
+      "target" : [{
+        "code" : "900000000000013009",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "900000000000446008",
+      "noMap" : true
+    },
+    {
+      "code" : "900000000000550004",
+      "noMap" : true
+    }]
+  }]
+}

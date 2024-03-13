@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "tst.de.profile-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.de.profile-5to4b",
+  "name" : "TestScript.destination.profiler5to4b",
+  "title" : "Mapping for TestScript.destination.profile from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestScript#TestScript.destination.profile",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.destination.profile",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/testscript-profile-destination-types",
+    "target" : "http://terminology.hl7.org/CodeSystem/testscript-profile-destination-types",
+    "element" : [{
+      "code" : "FHIR-SDC-FormManager",
+      "target" : [{
+        "code" : "FHIR-SDC-FormManager",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FHIR-SDC-FormProcessor",
+      "target" : [{
+        "code" : "FHIR-SDC-FormProcessor",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FHIR-SDC-FormReceiver",
+      "target" : [{
+        "code" : "FHIR-SDC-FormReceiver",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FHIR-Server",
+      "target" : [{
+        "code" : "FHIR-Server",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

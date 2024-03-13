@@ -1,0 +1,7017 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "exs.jurisdiction-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/exs.jurisdiction-4bto4",
+  "name" : "ExampleScenario.jurisdictionr4bto4",
+  "title" : "Mapping for ExampleScenario.jurisdiction from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ExampleScenario#ExampleScenario.jurisdiction",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExampleScenario#ExampleScenario.jurisdiction",
+  "group" : [{
+    "source" : "urn:iso:std:iso:3166",
+    "target" : "urn:iso:std:iso:3166",
+    "element" : [{
+      "code" : "004",
+      "target" : [{
+        "code" : "004",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "008",
+      "target" : [{
+        "code" : "008",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "010",
+      "target" : [{
+        "code" : "010",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "012",
+      "target" : [{
+        "code" : "012",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "016",
+      "target" : [{
+        "code" : "016",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "020",
+      "target" : [{
+        "code" : "020",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "024",
+      "target" : [{
+        "code" : "024",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "028",
+      "target" : [{
+        "code" : "028",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "031",
+      "target" : [{
+        "code" : "031",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "032",
+      "target" : [{
+        "code" : "032",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "036",
+      "target" : [{
+        "code" : "036",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "040",
+      "target" : [{
+        "code" : "040",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "044",
+      "target" : [{
+        "code" : "044",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "048",
+      "target" : [{
+        "code" : "048",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "050",
+      "target" : [{
+        "code" : "050",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "051",
+      "target" : [{
+        "code" : "051",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "052",
+      "target" : [{
+        "code" : "052",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "056",
+      "target" : [{
+        "code" : "056",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "060",
+      "target" : [{
+        "code" : "060",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "064",
+      "target" : [{
+        "code" : "064",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "068",
+      "target" : [{
+        "code" : "068",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "070",
+      "target" : [{
+        "code" : "070",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "072",
+      "target" : [{
+        "code" : "072",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "074",
+      "target" : [{
+        "code" : "074",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "076",
+      "target" : [{
+        "code" : "076",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "084",
+      "target" : [{
+        "code" : "084",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "086",
+      "target" : [{
+        "code" : "086",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "090",
+      "target" : [{
+        "code" : "090",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "092",
+      "target" : [{
+        "code" : "092",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "096",
+      "target" : [{
+        "code" : "096",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "100",
+      "target" : [{
+        "code" : "100",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "104",
+      "target" : [{
+        "code" : "104",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "108",
+      "target" : [{
+        "code" : "108",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "112",
+      "target" : [{
+        "code" : "112",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "116",
+      "target" : [{
+        "code" : "116",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "120",
+      "target" : [{
+        "code" : "120",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "124",
+      "target" : [{
+        "code" : "124",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "132",
+      "target" : [{
+        "code" : "132",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "136",
+      "target" : [{
+        "code" : "136",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "140",
+      "target" : [{
+        "code" : "140",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "144",
+      "target" : [{
+        "code" : "144",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "148",
+      "target" : [{
+        "code" : "148",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "152",
+      "target" : [{
+        "code" : "152",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "156",
+      "target" : [{
+        "code" : "156",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "158",
+      "target" : [{
+        "code" : "158",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "162",
+      "target" : [{
+        "code" : "162",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "166",
+      "target" : [{
+        "code" : "166",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "170",
+      "target" : [{
+        "code" : "170",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "174",
+      "target" : [{
+        "code" : "174",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "175",
+      "target" : [{
+        "code" : "175",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "178",
+      "target" : [{
+        "code" : "178",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "180",
+      "target" : [{
+        "code" : "180",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "184",
+      "target" : [{
+        "code" : "184",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "188",
+      "target" : [{
+        "code" : "188",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "191",
+      "target" : [{
+        "code" : "191",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "192",
+      "target" : [{
+        "code" : "192",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "196",
+      "target" : [{
+        "code" : "196",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "203",
+      "target" : [{
+        "code" : "203",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "204",
+      "target" : [{
+        "code" : "204",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "208",
+      "target" : [{
+        "code" : "208",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "212",
+      "target" : [{
+        "code" : "212",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "214",
+      "target" : [{
+        "code" : "214",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "218",
+      "target" : [{
+        "code" : "218",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "222",
+      "target" : [{
+        "code" : "222",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "226",
+      "target" : [{
+        "code" : "226",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "231",
+      "target" : [{
+        "code" : "231",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "232",
+      "target" : [{
+        "code" : "232",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "233",
+      "target" : [{
+        "code" : "233",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "234",
+      "target" : [{
+        "code" : "234",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "238",
+      "target" : [{
+        "code" : "238",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "239",
+      "target" : [{
+        "code" : "239",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "242",
+      "target" : [{
+        "code" : "242",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "246",
+      "target" : [{
+        "code" : "246",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "248",
+      "target" : [{
+        "code" : "248",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "250",
+      "target" : [{
+        "code" : "250",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "254",
+      "target" : [{
+        "code" : "254",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "258",
+      "target" : [{
+        "code" : "258",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "260",
+      "target" : [{
+        "code" : "260",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "262",
+      "target" : [{
+        "code" : "262",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "266",
+      "target" : [{
+        "code" : "266",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "268",
+      "target" : [{
+        "code" : "268",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "270",
+      "target" : [{
+        "code" : "270",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "275",
+      "target" : [{
+        "code" : "275",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "276",
+      "target" : [{
+        "code" : "276",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "288",
+      "target" : [{
+        "code" : "288",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "292",
+      "target" : [{
+        "code" : "292",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "296",
+      "target" : [{
+        "code" : "296",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "300",
+      "target" : [{
+        "code" : "300",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "304",
+      "target" : [{
+        "code" : "304",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "308",
+      "target" : [{
+        "code" : "308",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "312",
+      "target" : [{
+        "code" : "312",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "316",
+      "target" : [{
+        "code" : "316",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "320",
+      "target" : [{
+        "code" : "320",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "324",
+      "target" : [{
+        "code" : "324",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "328",
+      "target" : [{
+        "code" : "328",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "332",
+      "target" : [{
+        "code" : "332",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "334",
+      "target" : [{
+        "code" : "334",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "336",
+      "target" : [{
+        "code" : "336",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "340",
+      "target" : [{
+        "code" : "340",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "344",
+      "target" : [{
+        "code" : "344",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "348",
+      "target" : [{
+        "code" : "348",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "352",
+      "target" : [{
+        "code" : "352",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "356",
+      "target" : [{
+        "code" : "356",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "360",
+      "target" : [{
+        "code" : "360",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "364",
+      "target" : [{
+        "code" : "364",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "368",
+      "target" : [{
+        "code" : "368",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "372",
+      "target" : [{
+        "code" : "372",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "376",
+      "target" : [{
+        "code" : "376",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "380",
+      "target" : [{
+        "code" : "380",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "384",
+      "target" : [{
+        "code" : "384",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "388",
+      "target" : [{
+        "code" : "388",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "392",
+      "target" : [{
+        "code" : "392",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "398",
+      "target" : [{
+        "code" : "398",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "400",
+      "target" : [{
+        "code" : "400",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "404",
+      "target" : [{
+        "code" : "404",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "408",
+      "target" : [{
+        "code" : "408",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "410",
+      "target" : [{
+        "code" : "410",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "414",
+      "target" : [{
+        "code" : "414",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "417",
+      "target" : [{
+        "code" : "417",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "418",
+      "target" : [{
+        "code" : "418",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "422",
+      "target" : [{
+        "code" : "422",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "426",
+      "target" : [{
+        "code" : "426",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "428",
+      "target" : [{
+        "code" : "428",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "430",
+      "target" : [{
+        "code" : "430",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "434",
+      "target" : [{
+        "code" : "434",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "438",
+      "target" : [{
+        "code" : "438",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "440",
+      "target" : [{
+        "code" : "440",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "442",
+      "target" : [{
+        "code" : "442",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "446",
+      "target" : [{
+        "code" : "446",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "450",
+      "target" : [{
+        "code" : "450",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "454",
+      "target" : [{
+        "code" : "454",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "458",
+      "target" : [{
+        "code" : "458",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "462",
+      "target" : [{
+        "code" : "462",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "466",
+      "target" : [{
+        "code" : "466",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "470",
+      "target" : [{
+        "code" : "470",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "474",
+      "target" : [{
+        "code" : "474",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "478",
+      "target" : [{
+        "code" : "478",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "480",
+      "target" : [{
+        "code" : "480",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "484",
+      "target" : [{
+        "code" : "484",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "492",
+      "target" : [{
+        "code" : "492",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "496",
+      "target" : [{
+        "code" : "496",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "498",
+      "target" : [{
+        "code" : "498",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "499",
+      "target" : [{
+        "code" : "499",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "500",
+      "target" : [{
+        "code" : "500",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "504",
+      "target" : [{
+        "code" : "504",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "508",
+      "target" : [{
+        "code" : "508",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "512",
+      "target" : [{
+        "code" : "512",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "516",
+      "target" : [{
+        "code" : "516",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "520",
+      "target" : [{
+        "code" : "520",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "524",
+      "target" : [{
+        "code" : "524",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "528",
+      "target" : [{
+        "code" : "528",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "531",
+      "target" : [{
+        "code" : "531",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "533",
+      "target" : [{
+        "code" : "533",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "534",
+      "target" : [{
+        "code" : "534",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "535",
+      "target" : [{
+        "code" : "535",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "540",
+      "target" : [{
+        "code" : "540",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "548",
+      "target" : [{
+        "code" : "548",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "554",
+      "target" : [{
+        "code" : "554",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "558",
+      "target" : [{
+        "code" : "558",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "562",
+      "target" : [{
+        "code" : "562",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "566",
+      "target" : [{
+        "code" : "566",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "570",
+      "target" : [{
+        "code" : "570",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "574",
+      "target" : [{
+        "code" : "574",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "578",
+      "target" : [{
+        "code" : "578",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "580",
+      "target" : [{
+        "code" : "580",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "581",
+      "target" : [{
+        "code" : "581",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "583",
+      "target" : [{
+        "code" : "583",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "584",
+      "target" : [{
+        "code" : "584",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "585",
+      "target" : [{
+        "code" : "585",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "586",
+      "target" : [{
+        "code" : "586",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "591",
+      "target" : [{
+        "code" : "591",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "598",
+      "target" : [{
+        "code" : "598",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "600",
+      "target" : [{
+        "code" : "600",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "604",
+      "target" : [{
+        "code" : "604",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "608",
+      "target" : [{
+        "code" : "608",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "612",
+      "target" : [{
+        "code" : "612",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "616",
+      "target" : [{
+        "code" : "616",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "620",
+      "target" : [{
+        "code" : "620",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "624",
+      "target" : [{
+        "code" : "624",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "626",
+      "target" : [{
+        "code" : "626",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "630",
+      "target" : [{
+        "code" : "630",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "634",
+      "target" : [{
+        "code" : "634",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "638",
+      "target" : [{
+        "code" : "638",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "642",
+      "target" : [{
+        "code" : "642",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "643",
+      "target" : [{
+        "code" : "643",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "646",
+      "target" : [{
+        "code" : "646",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "652",
+      "target" : [{
+        "code" : "652",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "654",
+      "target" : [{
+        "code" : "654",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "659",
+      "target" : [{
+        "code" : "659",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "660",
+      "target" : [{
+        "code" : "660",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "662",
+      "target" : [{
+        "code" : "662",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "663",
+      "target" : [{
+        "code" : "663",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "666",
+      "target" : [{
+        "code" : "666",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "670",
+      "target" : [{
+        "code" : "670",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "674",
+      "target" : [{
+        "code" : "674",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "678",
+      "target" : [{
+        "code" : "678",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "682",
+      "target" : [{
+        "code" : "682",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "686",
+      "target" : [{
+        "code" : "686",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "688",
+      "target" : [{
+        "code" : "688",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "690",
+      "target" : [{
+        "code" : "690",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "694",
+      "target" : [{
+        "code" : "694",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "702",
+      "target" : [{
+        "code" : "702",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "703",
+      "target" : [{
+        "code" : "703",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "704",
+      "target" : [{
+        "code" : "704",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "705",
+      "target" : [{
+        "code" : "705",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "706",
+      "target" : [{
+        "code" : "706",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "710",
+      "target" : [{
+        "code" : "710",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "716",
+      "target" : [{
+        "code" : "716",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "724",
+      "target" : [{
+        "code" : "724",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "728",
+      "target" : [{
+        "code" : "728",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "729",
+      "target" : [{
+        "code" : "729",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "732",
+      "target" : [{
+        "code" : "732",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "740",
+      "target" : [{
+        "code" : "740",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "744",
+      "target" : [{
+        "code" : "744",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "748",
+      "target" : [{
+        "code" : "748",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "752",
+      "target" : [{
+        "code" : "752",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "756",
+      "target" : [{
+        "code" : "756",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "760",
+      "target" : [{
+        "code" : "760",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "762",
+      "target" : [{
+        "code" : "762",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "764",
+      "target" : [{
+        "code" : "764",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "768",
+      "target" : [{
+        "code" : "768",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "772",
+      "target" : [{
+        "code" : "772",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "776",
+      "target" : [{
+        "code" : "776",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "780",
+      "target" : [{
+        "code" : "780",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "784",
+      "target" : [{
+        "code" : "784",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "788",
+      "target" : [{
+        "code" : "788",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "792",
+      "target" : [{
+        "code" : "792",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "795",
+      "target" : [{
+        "code" : "795",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "796",
+      "target" : [{
+        "code" : "796",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "798",
+      "target" : [{
+        "code" : "798",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "800",
+      "target" : [{
+        "code" : "800",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "804",
+      "target" : [{
+        "code" : "804",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "807",
+      "target" : [{
+        "code" : "807",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "818",
+      "target" : [{
+        "code" : "818",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "826",
+      "target" : [{
+        "code" : "826",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "831",
+      "target" : [{
+        "code" : "831",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "832",
+      "target" : [{
+        "code" : "832",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "833",
+      "target" : [{
+        "code" : "833",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "834",
+      "target" : [{
+        "code" : "834",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "840",
+      "target" : [{
+        "code" : "840",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "850",
+      "target" : [{
+        "code" : "850",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "854",
+      "target" : [{
+        "code" : "854",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "858",
+      "target" : [{
+        "code" : "858",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "860",
+      "target" : [{
+        "code" : "860",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "862",
+      "target" : [{
+        "code" : "862",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "876",
+      "target" : [{
+        "code" : "876",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "882",
+      "target" : [{
+        "code" : "882",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "887",
+      "target" : [{
+        "code" : "887",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "894",
+      "target" : [{
+        "code" : "894",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ABW",
+      "target" : [{
+        "code" : "ABW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AD",
+      "target" : [{
+        "code" : "AD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AE",
+      "target" : [{
+        "code" : "AE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF",
+      "target" : [{
+        "code" : "AF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AFG",
+      "target" : [{
+        "code" : "AFG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AG",
+      "target" : [{
+        "code" : "AG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AGO",
+      "target" : [{
+        "code" : "AGO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AI",
+      "target" : [{
+        "code" : "AI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AIA",
+      "target" : [{
+        "code" : "AIA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL",
+      "target" : [{
+        "code" : "AL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALA",
+      "target" : [{
+        "code" : "ALA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ALB",
+      "target" : [{
+        "code" : "ALB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM",
+      "target" : [{
+        "code" : "AM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AND",
+      "target" : [{
+        "code" : "AND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO",
+      "target" : [{
+        "code" : "AO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AQ",
+      "target" : [{
+        "code" : "AQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR",
+      "target" : [{
+        "code" : "AR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ARE",
+      "target" : [{
+        "code" : "ARE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ARG",
+      "target" : [{
+        "code" : "ARG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ARM",
+      "target" : [{
+        "code" : "ARM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AS",
+      "target" : [{
+        "code" : "AS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ASM",
+      "target" : [{
+        "code" : "ASM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AT",
+      "target" : [{
+        "code" : "AT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ATA",
+      "target" : [{
+        "code" : "ATA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ATF",
+      "target" : [{
+        "code" : "ATF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ATG",
+      "target" : [{
+        "code" : "ATG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AU",
+      "target" : [{
+        "code" : "AU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUS",
+      "target" : [{
+        "code" : "AUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUT",
+      "target" : [{
+        "code" : "AUT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AW",
+      "target" : [{
+        "code" : "AW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AX",
+      "target" : [{
+        "code" : "AX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ",
+      "target" : [{
+        "code" : "AZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZE",
+      "target" : [{
+        "code" : "AZE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BA",
+      "target" : [{
+        "code" : "BA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BB",
+      "target" : [{
+        "code" : "BB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BD",
+      "target" : [{
+        "code" : "BD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BDI",
+      "target" : [{
+        "code" : "BDI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BE",
+      "target" : [{
+        "code" : "BE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BEL",
+      "target" : [{
+        "code" : "BEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BEN",
+      "target" : [{
+        "code" : "BEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BES",
+      "target" : [{
+        "code" : "BES",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BF",
+      "target" : [{
+        "code" : "BF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BFA",
+      "target" : [{
+        "code" : "BFA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BG",
+      "target" : [{
+        "code" : "BG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BGD",
+      "target" : [{
+        "code" : "BGD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BGR",
+      "target" : [{
+        "code" : "BGR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BH",
+      "target" : [{
+        "code" : "BH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BHR",
+      "target" : [{
+        "code" : "BHR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BHS",
+      "target" : [{
+        "code" : "BHS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BI",
+      "target" : [{
+        "code" : "BI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BIH",
+      "target" : [{
+        "code" : "BIH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BJ",
+      "target" : [{
+        "code" : "BJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BL",
+      "target" : [{
+        "code" : "BL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BLM",
+      "target" : [{
+        "code" : "BLM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BLR",
+      "target" : [{
+        "code" : "BLR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BLZ",
+      "target" : [{
+        "code" : "BLZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BM",
+      "target" : [{
+        "code" : "BM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BMU",
+      "target" : [{
+        "code" : "BMU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BN",
+      "target" : [{
+        "code" : "BN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BO",
+      "target" : [{
+        "code" : "BO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BOL",
+      "target" : [{
+        "code" : "BOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BQ",
+      "target" : [{
+        "code" : "BQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BR",
+      "target" : [{
+        "code" : "BR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BRA",
+      "target" : [{
+        "code" : "BRA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BRB",
+      "target" : [{
+        "code" : "BRB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BRN",
+      "target" : [{
+        "code" : "BRN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BS",
+      "target" : [{
+        "code" : "BS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BT",
+      "target" : [{
+        "code" : "BT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BTN",
+      "target" : [{
+        "code" : "BTN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BV",
+      "target" : [{
+        "code" : "BV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BVT",
+      "target" : [{
+        "code" : "BVT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BW",
+      "target" : [{
+        "code" : "BW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BWA",
+      "target" : [{
+        "code" : "BWA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BY",
+      "target" : [{
+        "code" : "BY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BZ",
+      "target" : [{
+        "code" : "BZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CA",
+      "target" : [{
+        "code" : "CA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAF",
+      "target" : [{
+        "code" : "CAF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAN",
+      "target" : [{
+        "code" : "CAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CC",
+      "target" : [{
+        "code" : "CC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CCK",
+      "target" : [{
+        "code" : "CCK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CD",
+      "target" : [{
+        "code" : "CD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CF",
+      "target" : [{
+        "code" : "CF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CG",
+      "target" : [{
+        "code" : "CG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CH",
+      "target" : [{
+        "code" : "CH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHE",
+      "target" : [{
+        "code" : "CHE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHL",
+      "target" : [{
+        "code" : "CHL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CHN",
+      "target" : [{
+        "code" : "CHN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CI",
+      "target" : [{
+        "code" : "CI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CIV",
+      "target" : [{
+        "code" : "CIV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CK",
+      "target" : [{
+        "code" : "CK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CL",
+      "target" : [{
+        "code" : "CL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CM",
+      "target" : [{
+        "code" : "CM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CMR",
+      "target" : [{
+        "code" : "CMR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CN",
+      "target" : [{
+        "code" : "CN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CO",
+      "target" : [{
+        "code" : "CO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COD",
+      "target" : [{
+        "code" : "COD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COG",
+      "target" : [{
+        "code" : "COG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COK",
+      "target" : [{
+        "code" : "COK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COL",
+      "target" : [{
+        "code" : "COL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COM",
+      "target" : [{
+        "code" : "COM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPV",
+      "target" : [{
+        "code" : "CPV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CR",
+      "target" : [{
+        "code" : "CR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CRI",
+      "target" : [{
+        "code" : "CRI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CU",
+      "target" : [{
+        "code" : "CU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CUB",
+      "target" : [{
+        "code" : "CUB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CUW",
+      "target" : [{
+        "code" : "CUW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CV",
+      "target" : [{
+        "code" : "CV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CW",
+      "target" : [{
+        "code" : "CW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CX",
+      "target" : [{
+        "code" : "CX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CXR",
+      "target" : [{
+        "code" : "CXR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CY",
+      "target" : [{
+        "code" : "CY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CYM",
+      "target" : [{
+        "code" : "CYM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CYP",
+      "target" : [{
+        "code" : "CYP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CZ",
+      "target" : [{
+        "code" : "CZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CZE",
+      "target" : [{
+        "code" : "CZE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DE",
+      "target" : [{
+        "code" : "DE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEU",
+      "target" : [{
+        "code" : "DEU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DJ",
+      "target" : [{
+        "code" : "DJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DJI",
+      "target" : [{
+        "code" : "DJI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DK",
+      "target" : [{
+        "code" : "DK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DM",
+      "target" : [{
+        "code" : "DM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DMA",
+      "target" : [{
+        "code" : "DMA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DNK",
+      "target" : [{
+        "code" : "DNK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DO",
+      "target" : [{
+        "code" : "DO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOM",
+      "target" : [{
+        "code" : "DOM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ",
+      "target" : [{
+        "code" : "DZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZA",
+      "target" : [{
+        "code" : "DZA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EC",
+      "target" : [{
+        "code" : "EC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ECU",
+      "target" : [{
+        "code" : "ECU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EE",
+      "target" : [{
+        "code" : "EE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EG",
+      "target" : [{
+        "code" : "EG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EGY",
+      "target" : [{
+        "code" : "EGY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EH",
+      "target" : [{
+        "code" : "EH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ER",
+      "target" : [{
+        "code" : "ER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ERI",
+      "target" : [{
+        "code" : "ERI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ES",
+      "target" : [{
+        "code" : "ES",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ESH",
+      "target" : [{
+        "code" : "ESH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ESP",
+      "target" : [{
+        "code" : "ESP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EST",
+      "target" : [{
+        "code" : "EST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ET",
+      "target" : [{
+        "code" : "ET",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ETH",
+      "target" : [{
+        "code" : "ETH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FI",
+      "target" : [{
+        "code" : "FI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FIN",
+      "target" : [{
+        "code" : "FIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FJ",
+      "target" : [{
+        "code" : "FJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FJI",
+      "target" : [{
+        "code" : "FJI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FK",
+      "target" : [{
+        "code" : "FK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FLK",
+      "target" : [{
+        "code" : "FLK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FM",
+      "target" : [{
+        "code" : "FM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FO",
+      "target" : [{
+        "code" : "FO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FR",
+      "target" : [{
+        "code" : "FR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRA",
+      "target" : [{
+        "code" : "FRA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRO",
+      "target" : [{
+        "code" : "FRO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FSM",
+      "target" : [{
+        "code" : "FSM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GA",
+      "target" : [{
+        "code" : "GA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GAB",
+      "target" : [{
+        "code" : "GAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GB",
+      "target" : [{
+        "code" : "GB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GBR",
+      "target" : [{
+        "code" : "GBR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GD",
+      "target" : [{
+        "code" : "GD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GE",
+      "target" : [{
+        "code" : "GE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GEO",
+      "target" : [{
+        "code" : "GEO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GF",
+      "target" : [{
+        "code" : "GF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GG",
+      "target" : [{
+        "code" : "GG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GGY",
+      "target" : [{
+        "code" : "GGY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GH",
+      "target" : [{
+        "code" : "GH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GHA",
+      "target" : [{
+        "code" : "GHA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GI",
+      "target" : [{
+        "code" : "GI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GIB",
+      "target" : [{
+        "code" : "GIB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GIN",
+      "target" : [{
+        "code" : "GIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GL",
+      "target" : [{
+        "code" : "GL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GLP",
+      "target" : [{
+        "code" : "GLP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GM",
+      "target" : [{
+        "code" : "GM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GMB",
+      "target" : [{
+        "code" : "GMB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GN",
+      "target" : [{
+        "code" : "GN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GNB",
+      "target" : [{
+        "code" : "GNB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GNQ",
+      "target" : [{
+        "code" : "GNQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GP",
+      "target" : [{
+        "code" : "GP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GQ",
+      "target" : [{
+        "code" : "GQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GR",
+      "target" : [{
+        "code" : "GR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GRC",
+      "target" : [{
+        "code" : "GRC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GRD",
+      "target" : [{
+        "code" : "GRD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GRL",
+      "target" : [{
+        "code" : "GRL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GS",
+      "target" : [{
+        "code" : "GS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GT",
+      "target" : [{
+        "code" : "GT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GTM",
+      "target" : [{
+        "code" : "GTM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GU",
+      "target" : [{
+        "code" : "GU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GUF",
+      "target" : [{
+        "code" : "GUF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GUM",
+      "target" : [{
+        "code" : "GUM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GUY",
+      "target" : [{
+        "code" : "GUY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GW",
+      "target" : [{
+        "code" : "GW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GY",
+      "target" : [{
+        "code" : "GY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HK",
+      "target" : [{
+        "code" : "HK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HKG",
+      "target" : [{
+        "code" : "HKG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HM",
+      "target" : [{
+        "code" : "HM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HMD",
+      "target" : [{
+        "code" : "HMD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HN",
+      "target" : [{
+        "code" : "HN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HND",
+      "target" : [{
+        "code" : "HND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HR",
+      "target" : [{
+        "code" : "HR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HRV",
+      "target" : [{
+        "code" : "HRV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HT",
+      "target" : [{
+        "code" : "HT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HTI",
+      "target" : [{
+        "code" : "HTI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HU",
+      "target" : [{
+        "code" : "HU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HUN",
+      "target" : [{
+        "code" : "HUN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ID",
+      "target" : [{
+        "code" : "ID",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IDN",
+      "target" : [{
+        "code" : "IDN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IE",
+      "target" : [{
+        "code" : "IE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IL",
+      "target" : [{
+        "code" : "IL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IM",
+      "target" : [{
+        "code" : "IM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IMN",
+      "target" : [{
+        "code" : "IMN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IN",
+      "target" : [{
+        "code" : "IN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IND",
+      "target" : [{
+        "code" : "IND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IO",
+      "target" : [{
+        "code" : "IO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IOT",
+      "target" : [{
+        "code" : "IOT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IQ",
+      "target" : [{
+        "code" : "IQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IR",
+      "target" : [{
+        "code" : "IR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IRL",
+      "target" : [{
+        "code" : "IRL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IRN",
+      "target" : [{
+        "code" : "IRN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IRQ",
+      "target" : [{
+        "code" : "IRQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IS",
+      "target" : [{
+        "code" : "IS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ISL",
+      "target" : [{
+        "code" : "ISL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ISR",
+      "target" : [{
+        "code" : "ISR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "IT",
+      "target" : [{
+        "code" : "IT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ITA",
+      "target" : [{
+        "code" : "ITA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JAM",
+      "target" : [{
+        "code" : "JAM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JE",
+      "target" : [{
+        "code" : "JE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JEY",
+      "target" : [{
+        "code" : "JEY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JM",
+      "target" : [{
+        "code" : "JM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JO",
+      "target" : [{
+        "code" : "JO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JOR",
+      "target" : [{
+        "code" : "JOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JP",
+      "target" : [{
+        "code" : "JP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JPN",
+      "target" : [{
+        "code" : "JPN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KAZ",
+      "target" : [{
+        "code" : "KAZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KE",
+      "target" : [{
+        "code" : "KE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KEN",
+      "target" : [{
+        "code" : "KEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KG",
+      "target" : [{
+        "code" : "KG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KGZ",
+      "target" : [{
+        "code" : "KGZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KH",
+      "target" : [{
+        "code" : "KH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KHM",
+      "target" : [{
+        "code" : "KHM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KI",
+      "target" : [{
+        "code" : "KI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KIR",
+      "target" : [{
+        "code" : "KIR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KM",
+      "target" : [{
+        "code" : "KM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KN",
+      "target" : [{
+        "code" : "KN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KNA",
+      "target" : [{
+        "code" : "KNA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KOR",
+      "target" : [{
+        "code" : "KOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KP",
+      "target" : [{
+        "code" : "KP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KR",
+      "target" : [{
+        "code" : "KR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KW",
+      "target" : [{
+        "code" : "KW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KWT",
+      "target" : [{
+        "code" : "KWT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KY",
+      "target" : [{
+        "code" : "KY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "KZ",
+      "target" : [{
+        "code" : "KZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA",
+      "target" : [{
+        "code" : "LA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LAO",
+      "target" : [{
+        "code" : "LAO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LB",
+      "target" : [{
+        "code" : "LB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LBN",
+      "target" : [{
+        "code" : "LBN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LBR",
+      "target" : [{
+        "code" : "LBR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LBY",
+      "target" : [{
+        "code" : "LBY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LC",
+      "target" : [{
+        "code" : "LC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LCA",
+      "target" : [{
+        "code" : "LCA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LI",
+      "target" : [{
+        "code" : "LI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LIE",
+      "target" : [{
+        "code" : "LIE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LK",
+      "target" : [{
+        "code" : "LK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LKA",
+      "target" : [{
+        "code" : "LKA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LR",
+      "target" : [{
+        "code" : "LR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LS",
+      "target" : [{
+        "code" : "LS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LSO",
+      "target" : [{
+        "code" : "LSO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LT",
+      "target" : [{
+        "code" : "LT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LTU",
+      "target" : [{
+        "code" : "LTU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LU",
+      "target" : [{
+        "code" : "LU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LUX",
+      "target" : [{
+        "code" : "LUX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LV",
+      "target" : [{
+        "code" : "LV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LVA",
+      "target" : [{
+        "code" : "LVA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LY",
+      "target" : [{
+        "code" : "LY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MA",
+      "target" : [{
+        "code" : "MA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MAC",
+      "target" : [{
+        "code" : "MAC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MAF",
+      "target" : [{
+        "code" : "MAF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MAR",
+      "target" : [{
+        "code" : "MAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MC",
+      "target" : [{
+        "code" : "MC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MCO",
+      "target" : [{
+        "code" : "MCO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MD",
+      "target" : [{
+        "code" : "MD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDA",
+      "target" : [{
+        "code" : "MDA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDG",
+      "target" : [{
+        "code" : "MDG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MDV",
+      "target" : [{
+        "code" : "MDV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ME",
+      "target" : [{
+        "code" : "ME",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MEX",
+      "target" : [{
+        "code" : "MEX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MF",
+      "target" : [{
+        "code" : "MF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MG",
+      "target" : [{
+        "code" : "MG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MH",
+      "target" : [{
+        "code" : "MH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MHL",
+      "target" : [{
+        "code" : "MHL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MK",
+      "target" : [{
+        "code" : "MK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MKD",
+      "target" : [{
+        "code" : "MKD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ML",
+      "target" : [{
+        "code" : "ML",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MLI",
+      "target" : [{
+        "code" : "MLI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MLT",
+      "target" : [{
+        "code" : "MLT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MM",
+      "target" : [{
+        "code" : "MM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MMR",
+      "target" : [{
+        "code" : "MMR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MN",
+      "target" : [{
+        "code" : "MN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MNE",
+      "target" : [{
+        "code" : "MNE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MNG",
+      "target" : [{
+        "code" : "MNG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MNP",
+      "target" : [{
+        "code" : "MNP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MO",
+      "target" : [{
+        "code" : "MO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MOZ",
+      "target" : [{
+        "code" : "MOZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MP",
+      "target" : [{
+        "code" : "MP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MQ",
+      "target" : [{
+        "code" : "MQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MR",
+      "target" : [{
+        "code" : "MR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MRT",
+      "target" : [{
+        "code" : "MRT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MS",
+      "target" : [{
+        "code" : "MS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MSR",
+      "target" : [{
+        "code" : "MSR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MT",
+      "target" : [{
+        "code" : "MT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MTQ",
+      "target" : [{
+        "code" : "MTQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MU",
+      "target" : [{
+        "code" : "MU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MUS",
+      "target" : [{
+        "code" : "MUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MV",
+      "target" : [{
+        "code" : "MV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MW",
+      "target" : [{
+        "code" : "MW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MWI",
+      "target" : [{
+        "code" : "MWI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MX",
+      "target" : [{
+        "code" : "MX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MY",
+      "target" : [{
+        "code" : "MY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MYS",
+      "target" : [{
+        "code" : "MYS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MYT",
+      "target" : [{
+        "code" : "MYT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MZ",
+      "target" : [{
+        "code" : "MZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NA",
+      "target" : [{
+        "code" : "NA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NAM",
+      "target" : [{
+        "code" : "NAM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NC",
+      "target" : [{
+        "code" : "NC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NCL",
+      "target" : [{
+        "code" : "NCL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NE",
+      "target" : [{
+        "code" : "NE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NER",
+      "target" : [{
+        "code" : "NER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NF",
+      "target" : [{
+        "code" : "NF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NFK",
+      "target" : [{
+        "code" : "NFK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NG",
+      "target" : [{
+        "code" : "NG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NGA",
+      "target" : [{
+        "code" : "NGA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NI",
+      "target" : [{
+        "code" : "NI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NIC",
+      "target" : [{
+        "code" : "NIC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NIU",
+      "target" : [{
+        "code" : "NIU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NL",
+      "target" : [{
+        "code" : "NL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NLD",
+      "target" : [{
+        "code" : "NLD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NO",
+      "target" : [{
+        "code" : "NO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOR",
+      "target" : [{
+        "code" : "NOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NP",
+      "target" : [{
+        "code" : "NP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NPL",
+      "target" : [{
+        "code" : "NPL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NR",
+      "target" : [{
+        "code" : "NR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NRU",
+      "target" : [{
+        "code" : "NRU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NU",
+      "target" : [{
+        "code" : "NU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NZ",
+      "target" : [{
+        "code" : "NZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NZL",
+      "target" : [{
+        "code" : "NZL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OM",
+      "target" : [{
+        "code" : "OM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "OMN",
+      "target" : [{
+        "code" : "OMN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PA",
+      "target" : [{
+        "code" : "PA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAK",
+      "target" : [{
+        "code" : "PAK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PAN",
+      "target" : [{
+        "code" : "PAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PCN",
+      "target" : [{
+        "code" : "PCN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PE",
+      "target" : [{
+        "code" : "PE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PER",
+      "target" : [{
+        "code" : "PER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PF",
+      "target" : [{
+        "code" : "PF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PG",
+      "target" : [{
+        "code" : "PG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PH",
+      "target" : [{
+        "code" : "PH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PHL",
+      "target" : [{
+        "code" : "PHL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PK",
+      "target" : [{
+        "code" : "PK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PL",
+      "target" : [{
+        "code" : "PL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PLW",
+      "target" : [{
+        "code" : "PLW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PM",
+      "target" : [{
+        "code" : "PM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PN",
+      "target" : [{
+        "code" : "PN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PNG",
+      "target" : [{
+        "code" : "PNG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "POL",
+      "target" : [{
+        "code" : "POL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PR",
+      "target" : [{
+        "code" : "PR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRI",
+      "target" : [{
+        "code" : "PRI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRK",
+      "target" : [{
+        "code" : "PRK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRT",
+      "target" : [{
+        "code" : "PRT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRY",
+      "target" : [{
+        "code" : "PRY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PS",
+      "target" : [{
+        "code" : "PS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PSE",
+      "target" : [{
+        "code" : "PSE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PT",
+      "target" : [{
+        "code" : "PT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PW",
+      "target" : [{
+        "code" : "PW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PY",
+      "target" : [{
+        "code" : "PY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PYF",
+      "target" : [{
+        "code" : "PYF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "QA",
+      "target" : [{
+        "code" : "QA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "QAT",
+      "target" : [{
+        "code" : "QAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RE",
+      "target" : [{
+        "code" : "RE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REU",
+      "target" : [{
+        "code" : "REU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RO",
+      "target" : [{
+        "code" : "RO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ROU",
+      "target" : [{
+        "code" : "ROU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RS",
+      "target" : [{
+        "code" : "RS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RU",
+      "target" : [{
+        "code" : "RU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RUS",
+      "target" : [{
+        "code" : "RUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RW",
+      "target" : [{
+        "code" : "RW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RWA",
+      "target" : [{
+        "code" : "RWA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SA",
+      "target" : [{
+        "code" : "SA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SAU",
+      "target" : [{
+        "code" : "SAU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SB",
+      "target" : [{
+        "code" : "SB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SC",
+      "target" : [{
+        "code" : "SC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SD",
+      "target" : [{
+        "code" : "SD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SDN",
+      "target" : [{
+        "code" : "SDN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SE",
+      "target" : [{
+        "code" : "SE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SEN",
+      "target" : [{
+        "code" : "SEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SG",
+      "target" : [{
+        "code" : "SG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SGP",
+      "target" : [{
+        "code" : "SGP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SGS",
+      "target" : [{
+        "code" : "SGS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SH",
+      "target" : [{
+        "code" : "SH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SHN",
+      "target" : [{
+        "code" : "SHN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SI",
+      "target" : [{
+        "code" : "SI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SJ",
+      "target" : [{
+        "code" : "SJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SJM",
+      "target" : [{
+        "code" : "SJM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SK",
+      "target" : [{
+        "code" : "SK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SL",
+      "target" : [{
+        "code" : "SL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SLB",
+      "target" : [{
+        "code" : "SLB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SLE",
+      "target" : [{
+        "code" : "SLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SLV",
+      "target" : [{
+        "code" : "SLV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SM",
+      "target" : [{
+        "code" : "SM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SMR",
+      "target" : [{
+        "code" : "SMR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SN",
+      "target" : [{
+        "code" : "SN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SO",
+      "target" : [{
+        "code" : "SO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SOM",
+      "target" : [{
+        "code" : "SOM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPM",
+      "target" : [{
+        "code" : "SPM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SR",
+      "target" : [{
+        "code" : "SR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SRB",
+      "target" : [{
+        "code" : "SRB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SS",
+      "target" : [{
+        "code" : "SS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SSD",
+      "target" : [{
+        "code" : "SSD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ST",
+      "target" : [{
+        "code" : "ST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "STP",
+      "target" : [{
+        "code" : "STP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUR",
+      "target" : [{
+        "code" : "SUR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SV",
+      "target" : [{
+        "code" : "SV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SVK",
+      "target" : [{
+        "code" : "SVK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SVN",
+      "target" : [{
+        "code" : "SVN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SWE",
+      "target" : [{
+        "code" : "SWE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SWZ",
+      "target" : [{
+        "code" : "SWZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SX",
+      "target" : [{
+        "code" : "SX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SXM",
+      "target" : [{
+        "code" : "SXM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SY",
+      "target" : [{
+        "code" : "SY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SYC",
+      "target" : [{
+        "code" : "SYC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SYR",
+      "target" : [{
+        "code" : "SYR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SZ",
+      "target" : [{
+        "code" : "SZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TC",
+      "target" : [{
+        "code" : "TC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TCA",
+      "target" : [{
+        "code" : "TCA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TCD",
+      "target" : [{
+        "code" : "TCD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TD",
+      "target" : [{
+        "code" : "TD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TF",
+      "target" : [{
+        "code" : "TF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TG",
+      "target" : [{
+        "code" : "TG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TGO",
+      "target" : [{
+        "code" : "TGO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TH",
+      "target" : [{
+        "code" : "TH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "THA",
+      "target" : [{
+        "code" : "THA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TJ",
+      "target" : [{
+        "code" : "TJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TJK",
+      "target" : [{
+        "code" : "TJK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TK",
+      "target" : [{
+        "code" : "TK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TKL",
+      "target" : [{
+        "code" : "TKL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TKM",
+      "target" : [{
+        "code" : "TKM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TL",
+      "target" : [{
+        "code" : "TL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TLS",
+      "target" : [{
+        "code" : "TLS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TM",
+      "target" : [{
+        "code" : "TM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TN",
+      "target" : [{
+        "code" : "TN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TO",
+      "target" : [{
+        "code" : "TO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TON",
+      "target" : [{
+        "code" : "TON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TR",
+      "target" : [{
+        "code" : "TR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TT",
+      "target" : [{
+        "code" : "TT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TTO",
+      "target" : [{
+        "code" : "TTO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TUN",
+      "target" : [{
+        "code" : "TUN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TUR",
+      "target" : [{
+        "code" : "TUR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TUV",
+      "target" : [{
+        "code" : "TUV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TV",
+      "target" : [{
+        "code" : "TV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TW",
+      "target" : [{
+        "code" : "TW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TWN",
+      "target" : [{
+        "code" : "TWN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TZ",
+      "target" : [{
+        "code" : "TZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TZA",
+      "target" : [{
+        "code" : "TZA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UA",
+      "target" : [{
+        "code" : "UA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UG",
+      "target" : [{
+        "code" : "UG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UGA",
+      "target" : [{
+        "code" : "UGA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UKR",
+      "target" : [{
+        "code" : "UKR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UM",
+      "target" : [{
+        "code" : "UM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UMI",
+      "target" : [{
+        "code" : "UMI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "URY",
+      "target" : [{
+        "code" : "URY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "US",
+      "target" : [{
+        "code" : "US",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "USA",
+      "target" : [{
+        "code" : "USA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UY",
+      "target" : [{
+        "code" : "UY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UZ",
+      "target" : [{
+        "code" : "UZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UZB",
+      "target" : [{
+        "code" : "UZB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VA",
+      "target" : [{
+        "code" : "VA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VAT",
+      "target" : [{
+        "code" : "VAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VC",
+      "target" : [{
+        "code" : "VC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VCT",
+      "target" : [{
+        "code" : "VCT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VE",
+      "target" : [{
+        "code" : "VE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VEN",
+      "target" : [{
+        "code" : "VEN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VG",
+      "target" : [{
+        "code" : "VG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VGB",
+      "target" : [{
+        "code" : "VGB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VI",
+      "target" : [{
+        "code" : "VI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VIR",
+      "target" : [{
+        "code" : "VIR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VN",
+      "target" : [{
+        "code" : "VN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VNM",
+      "target" : [{
+        "code" : "VNM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VU",
+      "target" : [{
+        "code" : "VU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VUT",
+      "target" : [{
+        "code" : "VUT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WF",
+      "target" : [{
+        "code" : "WF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WLF",
+      "target" : [{
+        "code" : "WLF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WS",
+      "target" : [{
+        "code" : "WS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "WSM",
+      "target" : [{
+        "code" : "WSM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "YE",
+      "target" : [{
+        "code" : "YE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "YEM",
+      "target" : [{
+        "code" : "YEM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "YT",
+      "target" : [{
+        "code" : "YT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ZA",
+      "target" : [{
+        "code" : "ZA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ZAF",
+      "target" : [{
+        "code" : "ZAF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ZM",
+      "target" : [{
+        "code" : "ZM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ZMB",
+      "target" : [{
+        "code" : "ZMB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ZW",
+      "target" : [{
+        "code" : "ZW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ZWE",
+      "target" : [{
+        "code" : "ZWE",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "urn:iso:std:iso:3166:-2",
+    "target" : "urn:iso:std:iso:3166:-2",
+    "element" : [{
+      "code" : "AD-02",
+      "target" : [{
+        "code" : "AD-02",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AD-03",
+      "target" : [{
+        "code" : "AD-03",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AD-04",
+      "target" : [{
+        "code" : "AD-04",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AD-05",
+      "target" : [{
+        "code" : "AD-05",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AD-06",
+      "target" : [{
+        "code" : "AD-06",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AD-07",
+      "target" : [{
+        "code" : "AD-07",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AD-08",
+      "target" : [{
+        "code" : "AD-08",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-BAL",
+      "target" : [{
+        "code" : "AF-BAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-BAM",
+      "target" : [{
+        "code" : "AF-BAM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-BDG",
+      "target" : [{
+        "code" : "AF-BDG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-BDS",
+      "target" : [{
+        "code" : "AF-BDS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-BGL",
+      "target" : [{
+        "code" : "AF-BGL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-DAY",
+      "target" : [{
+        "code" : "AF-DAY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-FRA",
+      "target" : [{
+        "code" : "AF-FRA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-FYB",
+      "target" : [{
+        "code" : "AF-FYB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-GHA",
+      "target" : [{
+        "code" : "AF-GHA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-GHO",
+      "target" : [{
+        "code" : "AF-GHO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-HEL",
+      "target" : [{
+        "code" : "AF-HEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-HER",
+      "target" : [{
+        "code" : "AF-HER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-JOW",
+      "target" : [{
+        "code" : "AF-JOW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-KAB",
+      "target" : [{
+        "code" : "AF-KAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-KAN",
+      "target" : [{
+        "code" : "AF-KAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-KAP",
+      "target" : [{
+        "code" : "AF-KAP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-KDZ",
+      "target" : [{
+        "code" : "AF-KDZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-KHO",
+      "target" : [{
+        "code" : "AF-KHO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-KNR",
+      "target" : [{
+        "code" : "AF-KNR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-LAG",
+      "target" : [{
+        "code" : "AF-LAG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-LOG",
+      "target" : [{
+        "code" : "AF-LOG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-NAN",
+      "target" : [{
+        "code" : "AF-NAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-NIM",
+      "target" : [{
+        "code" : "AF-NIM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-NUR",
+      "target" : [{
+        "code" : "AF-NUR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-PAN",
+      "target" : [{
+        "code" : "AF-PAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-PAR",
+      "target" : [{
+        "code" : "AF-PAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-PIA",
+      "target" : [{
+        "code" : "AF-PIA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-PKA",
+      "target" : [{
+        "code" : "AF-PKA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-SAM",
+      "target" : [{
+        "code" : "AF-SAM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-SAR",
+      "target" : [{
+        "code" : "AF-SAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-TAK",
+      "target" : [{
+        "code" : "AF-TAK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-URU",
+      "target" : [{
+        "code" : "AF-URU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-WAR",
+      "target" : [{
+        "code" : "AF-WAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AF-ZAB",
+      "target" : [{
+        "code" : "AF-ZAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AG-03",
+      "target" : [{
+        "code" : "AG-03",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AG-04",
+      "target" : [{
+        "code" : "AG-04",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AG-05",
+      "target" : [{
+        "code" : "AG-05",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AG-06",
+      "target" : [{
+        "code" : "AG-06",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AG-07",
+      "target" : [{
+        "code" : "AG-07",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AG-08",
+      "target" : [{
+        "code" : "AG-08",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AG-10",
+      "target" : [{
+        "code" : "AG-10",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AG-11",
+      "target" : [{
+        "code" : "AG-11",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AI-AI",
+      "target" : [{
+        "code" : "AI-AI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-01",
+      "target" : [{
+        "code" : "AL-01",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-02",
+      "target" : [{
+        "code" : "AL-02",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-03",
+      "target" : [{
+        "code" : "AL-03",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-04",
+      "target" : [{
+        "code" : "AL-04",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-05",
+      "target" : [{
+        "code" : "AL-05",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-06",
+      "target" : [{
+        "code" : "AL-06",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-07",
+      "target" : [{
+        "code" : "AL-07",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-08",
+      "target" : [{
+        "code" : "AL-08",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-09",
+      "target" : [{
+        "code" : "AL-09",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-10",
+      "target" : [{
+        "code" : "AL-10",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-11",
+      "target" : [{
+        "code" : "AL-11",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-12",
+      "target" : [{
+        "code" : "AL-12",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-BR",
+      "target" : [{
+        "code" : "AL-BR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-BU",
+      "target" : [{
+        "code" : "AL-BU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-DI",
+      "target" : [{
+        "code" : "AL-DI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-DL",
+      "target" : [{
+        "code" : "AL-DL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-DR",
+      "target" : [{
+        "code" : "AL-DR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-DV",
+      "target" : [{
+        "code" : "AL-DV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-EL",
+      "target" : [{
+        "code" : "AL-EL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-ER",
+      "target" : [{
+        "code" : "AL-ER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-FR",
+      "target" : [{
+        "code" : "AL-FR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-GJ",
+      "target" : [{
+        "code" : "AL-GJ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-GR",
+      "target" : [{
+        "code" : "AL-GR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-HA",
+      "target" : [{
+        "code" : "AL-HA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-KA",
+      "target" : [{
+        "code" : "AL-KA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-KB",
+      "target" : [{
+        "code" : "AL-KB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-KC",
+      "target" : [{
+        "code" : "AL-KC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-KO",
+      "target" : [{
+        "code" : "AL-KO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-KR",
+      "target" : [{
+        "code" : "AL-KR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-KU",
+      "target" : [{
+        "code" : "AL-KU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-LB",
+      "target" : [{
+        "code" : "AL-LB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-LE",
+      "target" : [{
+        "code" : "AL-LE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-LU",
+      "target" : [{
+        "code" : "AL-LU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-MK",
+      "target" : [{
+        "code" : "AL-MK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-MM",
+      "target" : [{
+        "code" : "AL-MM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-MR",
+      "target" : [{
+        "code" : "AL-MR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-MT",
+      "target" : [{
+        "code" : "AL-MT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-PG",
+      "target" : [{
+        "code" : "AL-PG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-PQ",
+      "target" : [{
+        "code" : "AL-PQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-PR",
+      "target" : [{
+        "code" : "AL-PR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-PU",
+      "target" : [{
+        "code" : "AL-PU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-SH",
+      "target" : [{
+        "code" : "AL-SH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-SK",
+      "target" : [{
+        "code" : "AL-SK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-SR",
+      "target" : [{
+        "code" : "AL-SR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-TE",
+      "target" : [{
+        "code" : "AL-TE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-TP",
+      "target" : [{
+        "code" : "AL-TP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-TR",
+      "target" : [{
+        "code" : "AL-TR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AL-VL",
+      "target" : [{
+        "code" : "AL-VL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-AG",
+      "target" : [{
+        "code" : "AM-AG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-AR",
+      "target" : [{
+        "code" : "AM-AR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-AV",
+      "target" : [{
+        "code" : "AM-AV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-ER",
+      "target" : [{
+        "code" : "AM-ER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-GR",
+      "target" : [{
+        "code" : "AM-GR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-KT",
+      "target" : [{
+        "code" : "AM-KT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-LO",
+      "target" : [{
+        "code" : "AM-LO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-SH",
+      "target" : [{
+        "code" : "AM-SH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-SU",
+      "target" : [{
+        "code" : "AM-SU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-TV",
+      "target" : [{
+        "code" : "AM-TV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AM-VD",
+      "target" : [{
+        "code" : "AM-VD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-BGO",
+      "target" : [{
+        "code" : "AO-BGO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-BGU",
+      "target" : [{
+        "code" : "AO-BGU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-BIE",
+      "target" : [{
+        "code" : "AO-BIE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-CAB",
+      "target" : [{
+        "code" : "AO-CAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-CCU",
+      "target" : [{
+        "code" : "AO-CCU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-CNN",
+      "target" : [{
+        "code" : "AO-CNN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-CNO",
+      "target" : [{
+        "code" : "AO-CNO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-CUS",
+      "target" : [{
+        "code" : "AO-CUS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-HUA",
+      "target" : [{
+        "code" : "AO-HUA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-HUI",
+      "target" : [{
+        "code" : "AO-HUI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-LNO",
+      "target" : [{
+        "code" : "AO-LNO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-LSU",
+      "target" : [{
+        "code" : "AO-LSU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-LUA",
+      "target" : [{
+        "code" : "AO-LUA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-MAL",
+      "target" : [{
+        "code" : "AO-MAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-MOX",
+      "target" : [{
+        "code" : "AO-MOX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-NAM",
+      "target" : [{
+        "code" : "AO-NAM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-UIG",
+      "target" : [{
+        "code" : "AO-UIG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AO-ZAI",
+      "target" : [{
+        "code" : "AO-ZAI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AQ-AQ",
+      "target" : [{
+        "code" : "AQ-AQ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-A",
+      "target" : [{
+        "code" : "AR-A",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-B",
+      "target" : [{
+        "code" : "AR-B",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-C",
+      "target" : [{
+        "code" : "AR-C",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-D",
+      "target" : [{
+        "code" : "AR-D",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-E",
+      "target" : [{
+        "code" : "AR-E",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-F",
+      "target" : [{
+        "code" : "AR-F",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-G",
+      "target" : [{
+        "code" : "AR-G",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-H",
+      "target" : [{
+        "code" : "AR-H",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-J",
+      "target" : [{
+        "code" : "AR-J",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-K",
+      "target" : [{
+        "code" : "AR-K",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-L",
+      "target" : [{
+        "code" : "AR-L",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-M",
+      "target" : [{
+        "code" : "AR-M",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-N",
+      "target" : [{
+        "code" : "AR-N",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-P",
+      "target" : [{
+        "code" : "AR-P",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-Q",
+      "target" : [{
+        "code" : "AR-Q",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-R",
+      "target" : [{
+        "code" : "AR-R",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-S",
+      "target" : [{
+        "code" : "AR-S",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-T",
+      "target" : [{
+        "code" : "AR-T",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-U",
+      "target" : [{
+        "code" : "AR-U",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-V",
+      "target" : [{
+        "code" : "AR-V",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-W",
+      "target" : [{
+        "code" : "AR-W",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-X",
+      "target" : [{
+        "code" : "AR-X",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-Y",
+      "target" : [{
+        "code" : "AR-Y",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AR-Z",
+      "target" : [{
+        "code" : "AR-Z",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AS-AS",
+      "target" : [{
+        "code" : "AS-AS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AT-1",
+      "target" : [{
+        "code" : "AT-1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AT-2",
+      "target" : [{
+        "code" : "AT-2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AT-3",
+      "target" : [{
+        "code" : "AT-3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AT-4",
+      "target" : [{
+        "code" : "AT-4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AT-5",
+      "target" : [{
+        "code" : "AT-5",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AT-6",
+      "target" : [{
+        "code" : "AT-6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AT-7",
+      "target" : [{
+        "code" : "AT-7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AT-8",
+      "target" : [{
+        "code" : "AT-8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AT-9",
+      "target" : [{
+        "code" : "AT-9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AU-ACT",
+      "target" : [{
+        "code" : "AU-ACT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AU-NSW",
+      "target" : [{
+        "code" : "AU-NSW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AU-NT",
+      "target" : [{
+        "code" : "AU-NT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AU-QLD",
+      "target" : [{
+        "code" : "AU-QLD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AU-SA",
+      "target" : [{
+        "code" : "AU-SA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AU-TAS",
+      "target" : [{
+        "code" : "AU-TAS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AU-VIC",
+      "target" : [{
+        "code" : "AU-VIC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AU-WA",
+      "target" : [{
+        "code" : "AU-WA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AW-AW",
+      "target" : [{
+        "code" : "AW-AW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AX-AX",
+      "target" : [{
+        "code" : "AX-AX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-ABS",
+      "target" : [{
+        "code" : "AZ-ABS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-AGA",
+      "target" : [{
+        "code" : "AZ-AGA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-AGC",
+      "target" : [{
+        "code" : "AZ-AGC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-AGM",
+      "target" : [{
+        "code" : "AZ-AGM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-AGS",
+      "target" : [{
+        "code" : "AZ-AGS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-AGU",
+      "target" : [{
+        "code" : "AZ-AGU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-AST",
+      "target" : [{
+        "code" : "AZ-AST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-BA",
+      "target" : [{
+        "code" : "AZ-BA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-BAB",
+      "target" : [{
+        "code" : "AZ-BAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-BAL",
+      "target" : [{
+        "code" : "AZ-BAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-BAR",
+      "target" : [{
+        "code" : "AZ-BAR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-BEY",
+      "target" : [{
+        "code" : "AZ-BEY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-BIL",
+      "target" : [{
+        "code" : "AZ-BIL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-CAB",
+      "target" : [{
+        "code" : "AZ-CAB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-CAL",
+      "target" : [{
+        "code" : "AZ-CAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-CUL",
+      "target" : [{
+        "code" : "AZ-CUL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-DAS",
+      "target" : [{
+        "code" : "AZ-DAS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-FUZ",
+      "target" : [{
+        "code" : "AZ-FUZ",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-GA",
+      "target" : [{
+        "code" : "AZ-GA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-GAD",
+      "target" : [{
+        "code" : "AZ-GAD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-GOR",
+      "target" : [{
+        "code" : "AZ-GOR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-GOY",
+      "target" : [{
+        "code" : "AZ-GOY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-GYG",
+      "target" : [{
+        "code" : "AZ-GYG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-HAC",
+      "target" : [{
+        "code" : "AZ-HAC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-IMI",
+      "target" : [{
+        "code" : "AZ-IMI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-ISM",
+      "target" : [{
+        "code" : "AZ-ISM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-KAL",
+      "target" : [{
+        "code" : "AZ-KAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-KAN",
+      "target" : [{
+        "code" : "AZ-KAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-KUR",
+      "target" : [{
+        "code" : "AZ-KUR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-LA",
+      "target" : [{
+        "code" : "AZ-LA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-LAC",
+      "target" : [{
+        "code" : "AZ-LAC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-LAN",
+      "target" : [{
+        "code" : "AZ-LAN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AZ-LER",
+      "target" : [{
+        "code" : "AZ-LER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-01",
+      "target" : [{
+        "code" : "DZ-01",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-02",
+      "target" : [{
+        "code" : "DZ-02",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-03",
+      "target" : [{
+        "code" : "DZ-03",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-04",
+      "target" : [{
+        "code" : "DZ-04",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-05",
+      "target" : [{
+        "code" : "DZ-05",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-06",
+      "target" : [{
+        "code" : "DZ-06",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-07",
+      "target" : [{
+        "code" : "DZ-07",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-08",
+      "target" : [{
+        "code" : "DZ-08",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-09",
+      "target" : [{
+        "code" : "DZ-09",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-10",
+      "target" : [{
+        "code" : "DZ-10",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-11",
+      "target" : [{
+        "code" : "DZ-11",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-12",
+      "target" : [{
+        "code" : "DZ-12",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-13",
+      "target" : [{
+        "code" : "DZ-13",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-14",
+      "target" : [{
+        "code" : "DZ-14",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-15",
+      "target" : [{
+        "code" : "DZ-15",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-16",
+      "target" : [{
+        "code" : "DZ-16",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-17",
+      "target" : [{
+        "code" : "DZ-17",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-18",
+      "target" : [{
+        "code" : "DZ-18",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-19",
+      "target" : [{
+        "code" : "DZ-19",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-20",
+      "target" : [{
+        "code" : "DZ-20",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-21",
+      "target" : [{
+        "code" : "DZ-21",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-22",
+      "target" : [{
+        "code" : "DZ-22",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-23",
+      "target" : [{
+        "code" : "DZ-23",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-24",
+      "target" : [{
+        "code" : "DZ-24",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-25",
+      "target" : [{
+        "code" : "DZ-25",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-26",
+      "target" : [{
+        "code" : "DZ-26",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-27",
+      "target" : [{
+        "code" : "DZ-27",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-28",
+      "target" : [{
+        "code" : "DZ-28",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-29",
+      "target" : [{
+        "code" : "DZ-29",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-30",
+      "target" : [{
+        "code" : "DZ-30",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-31",
+      "target" : [{
+        "code" : "DZ-31",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-32",
+      "target" : [{
+        "code" : "DZ-32",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-33",
+      "target" : [{
+        "code" : "DZ-33",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-34",
+      "target" : [{
+        "code" : "DZ-34",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-35",
+      "target" : [{
+        "code" : "DZ-35",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-36",
+      "target" : [{
+        "code" : "DZ-36",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-37",
+      "target" : [{
+        "code" : "DZ-37",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-38",
+      "target" : [{
+        "code" : "DZ-38",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-39",
+      "target" : [{
+        "code" : "DZ-39",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-40",
+      "target" : [{
+        "code" : "DZ-40",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-41",
+      "target" : [{
+        "code" : "DZ-41",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-42",
+      "target" : [{
+        "code" : "DZ-42",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-43",
+      "target" : [{
+        "code" : "DZ-43",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-44",
+      "target" : [{
+        "code" : "DZ-44",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-45",
+      "target" : [{
+        "code" : "DZ-45",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-46",
+      "target" : [{
+        "code" : "DZ-46",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-47",
+      "target" : [{
+        "code" : "DZ-47",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DZ-48",
+      "target" : [{
+        "code" : "DZ-48",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

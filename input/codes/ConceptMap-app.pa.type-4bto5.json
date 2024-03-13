@@ -1,0 +1,92 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "app.pa.type-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/app.pa.type-4bto5",
+  "name" : "Appointment.participant.typer4bto5",
+  "title" : "Mapping for Appointment.participant.type from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Appointment#Appointment.participant.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Appointment#Appointment.participant.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/participant-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/participant-type",
+    "element" : [{
+      "code" : "emergency",
+      "target" : [{
+        "code" : "emergency",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "translator",
+      "target" : [{
+        "code" : "translator",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "element" : [{
+      "code" : "ADM",
+      "target" : [{
+        "code" : "ADM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ATND",
+      "target" : [{
+        "code" : "ATND",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CALLBCK",
+      "target" : [{
+        "code" : "CALLBCK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CON",
+      "target" : [{
+        "code" : "CON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DIS",
+      "target" : [{
+        "code" : "DIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ESC",
+      "target" : [{
+        "code" : "ESC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PART",
+      "noMap" : true
+    },
+    {
+      "code" : "PPRF",
+      "noMap" : true
+    },
+    {
+      "code" : "REF",
+      "target" : [{
+        "code" : "REF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SPRF",
+      "noMap" : true
+    }]
+  }]
+}

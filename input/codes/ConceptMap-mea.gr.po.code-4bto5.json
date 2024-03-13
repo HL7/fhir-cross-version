@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "mea.gr.po.code-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.gr.po.code-4bto5",
+  "name" : "Measure.group.population.coder4bto5",
+  "title" : "Mapping for Measure.group.population.code from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.group.population.code",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Measure#Measure.group.population.code",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/measure-population",
+    "target" : "http://terminology.hl7.org/CodeSystem/measure-population",
+    "element" : [{
+      "code" : "denominator",
+      "target" : [{
+        "code" : "denominator",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "denominator-exception",
+      "target" : [{
+        "code" : "denominator-exception",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "denominator-exclusion",
+      "target" : [{
+        "code" : "denominator-exclusion",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "initial-population",
+      "target" : [{
+        "code" : "initial-population",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "measure-observation",
+      "target" : [{
+        "code" : "measure-observation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "measure-population",
+      "target" : [{
+        "code" : "measure-population",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "measure-population-exclusion",
+      "target" : [{
+        "code" : "measure-population-exclusion",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "numerator",
+      "target" : [{
+        "code" : "numerator",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "numerator-exclusion",
+      "target" : [{
+        "code" : "numerator-exclusion",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

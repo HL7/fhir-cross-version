@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "clr.type-5to4b",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clr.type-5to4b",
+  "name" : "ClaimResponse.typer5to4b",
+  "title" : "Mapping for ClaimResponse.type from 5.0.0 to 4.3.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ClaimResponse#ClaimResponse.type",
+  "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ClaimResponse#ClaimResponse.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/claim-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/claim-type",
+    "element" : [{
+      "code" : "institutional",
+      "target" : [{
+        "code" : "institutional",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "oral",
+      "target" : [{
+        "code" : "oral",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "pharmacy",
+      "target" : [{
+        "code" : "pharmacy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "professional",
+      "target" : [{
+        "code" : "professional",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "vision",
+      "target" : [{
+        "code" : "vision",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

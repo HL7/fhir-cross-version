@@ -1,0 +1,297 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sev.subtype-4bto4",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.subtype-4bto4",
+  "name" : "AuditEvent.subtyper4bto4",
+  "title" : "Mapping for AuditEvent.subtype from 4.3.0 to 4.0.1",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.subtype",
+  "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.subtype",
+  "group" : [{
+    "source" : "http://dicom.nema.org/resources/ontology/DCM",
+    "target" : "http://dicom.nema.org/resources/ontology/DCM",
+    "element" : [{
+      "code" : "110120",
+      "target" : [{
+        "code" : "110120",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110121",
+      "target" : [{
+        "code" : "110121",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110122",
+      "target" : [{
+        "code" : "110122",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110123",
+      "target" : [{
+        "code" : "110123",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110124",
+      "target" : [{
+        "code" : "110124",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110125",
+      "target" : [{
+        "code" : "110125",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110126",
+      "target" : [{
+        "code" : "110126",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110127",
+      "target" : [{
+        "code" : "110127",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110128",
+      "target" : [{
+        "code" : "110128",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110129",
+      "target" : [{
+        "code" : "110129",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110130",
+      "target" : [{
+        "code" : "110130",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110131",
+      "target" : [{
+        "code" : "110131",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110132",
+      "target" : [{
+        "code" : "110132",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110133",
+      "target" : [{
+        "code" : "110133",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110134",
+      "target" : [{
+        "code" : "110134",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110135",
+      "target" : [{
+        "code" : "110135",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110136",
+      "target" : [{
+        "code" : "110136",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110137",
+      "target" : [{
+        "code" : "110137",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110138",
+      "target" : [{
+        "code" : "110138",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110139",
+      "target" : [{
+        "code" : "110139",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110140",
+      "target" : [{
+        "code" : "110140",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110141",
+      "target" : [{
+        "code" : "110141",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "110142",
+      "target" : [{
+        "code" : "110142",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/4.3/restful-interaction",
+    "target" : "http://hl7.org/fhir/4.0/restful-interaction",
+    "element" : [{
+      "code" : "batch",
+      "target" : [{
+        "code" : "batch",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "capabilities",
+      "target" : [{
+        "code" : "capabilities",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "create",
+      "target" : [{
+        "code" : "create",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "delete",
+      "target" : [{
+        "code" : "delete",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history",
+      "target" : [{
+        "code" : "history",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history-instance",
+      "target" : [{
+        "code" : "history-instance",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history-system",
+      "target" : [{
+        "code" : "history-system",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "history-type",
+      "target" : [{
+        "code" : "history-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "operation",
+      "target" : [{
+        "code" : "operation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "patch",
+      "target" : [{
+        "code" : "patch",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "read",
+      "target" : [{
+        "code" : "read",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "search",
+      "target" : [{
+        "code" : "search",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "search-system",
+      "target" : [{
+        "code" : "search-system",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "search-type",
+      "target" : [{
+        "code" : "search-type",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transaction",
+      "target" : [{
+        "code" : "transaction",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "update",
+      "target" : [{
+        "code" : "update",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "vread",
+      "target" : [{
+        "code" : "vread",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "pdf.ac.type-4bto5",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.type-4bto5",
+  "name" : "PlanDefinition.action.typer4bto5",
+  "title" : "Mapping for PlanDefinition.action.type from 4.3.0 to 5.0.0",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.type",
+  "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.type",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/action-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/action-type",
+    "element" : [{
+      "code" : "create",
+      "target" : [{
+        "code" : "create",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "fire-event",
+      "target" : [{
+        "code" : "fire-event",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "remove",
+      "target" : [{
+        "code" : "remove",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "update",
+      "target" : [{
+        "code" : "update",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

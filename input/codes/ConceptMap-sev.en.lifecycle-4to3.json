@@ -1,0 +1,441 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sev.en.lifecycle-4to3",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.en.lifecycle-4to3",
+  "name" : "AuditEvent.entity.lifecycler4to3",
+  "title" : "Mapping for AuditEvent.entity.lifecycle from 4.0.1 to 3.0.2",
+  "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.entity.lifecycle",
+  "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.entity.lifecycle",
+  "group" : [{
+    "source" : "http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle",
+    "target" : "http://hl7.org/fhir/3.0/iso-21089-lifecycle",
+    "element" : [{
+      "code" : "12",
+      "target" : [{
+        "code" : "12",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "6",
+      "target" : [{
+        "code" : "6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "2",
+      "target" : [{
+        "code" : "2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "11",
+      "target" : [{
+        "code" : "11",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "8",
+      "target" : [{
+        "code" : "8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "13",
+      "target" : [{
+        "code" : "13",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "10",
+      "target" : [{
+        "code" : "10",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "9",
+      "target" : [{
+        "code" : "9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "3",
+      "target" : [{
+        "code" : "3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "1",
+      "target" : [{
+        "code" : "1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "14",
+      "target" : [{
+        "code" : "14",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "15",
+      "target" : [{
+        "code" : "15",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "7",
+      "target" : [{
+        "code" : "7",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle",
+    "target" : "http://hl7.org/fhir/3.0/dicom-audit-lifecycle",
+    "element" : [{
+      "code" : "5",
+      "target" : [{
+        "code" : "5",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "7",
+      "target" : [{
+        "code" : "7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "3",
+      "target" : [{
+        "code" : "3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "15",
+      "target" : [{
+        "code" : "15",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "14",
+      "target" : [{
+        "code" : "14",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "9",
+      "target" : [{
+        "code" : "9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "1",
+      "target" : [{
+        "code" : "1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "2",
+      "target" : [{
+        "code" : "2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "11",
+      "target" : [{
+        "code" : "11",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "10",
+      "target" : [{
+        "code" : "10",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "6",
+      "target" : [{
+        "code" : "6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "8",
+      "target" : [{
+        "code" : "8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "13",
+      "target" : [{
+        "code" : "13",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "12",
+      "target" : [{
+        "code" : "12",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+    "target" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+    "element" : [{
+      "code" : "access",
+      "noMap" : true
+    },
+    {
+      "code" : "amend",
+      "noMap" : true
+    },
+    {
+      "code" : "archive",
+      "noMap" : true
+    },
+    {
+      "code" : "attest",
+      "noMap" : true
+    },
+    {
+      "code" : "decrypt",
+      "noMap" : true
+    },
+    {
+      "code" : "deidentify",
+      "noMap" : true
+    },
+    {
+      "code" : "deprecate",
+      "noMap" : true
+    },
+    {
+      "code" : "destroy",
+      "noMap" : true
+    },
+    {
+      "code" : "disclose",
+      "noMap" : true
+    },
+    {
+      "code" : "encrypt",
+      "noMap" : true
+    },
+    {
+      "code" : "extract",
+      "noMap" : true
+    },
+    {
+      "code" : "hold",
+      "noMap" : true
+    },
+    {
+      "code" : "link",
+      "noMap" : true
+    },
+    {
+      "code" : "merge",
+      "noMap" : true
+    },
+    {
+      "code" : "originate",
+      "noMap" : true
+    },
+    {
+      "code" : "pseudonymize",
+      "noMap" : true
+    },
+    {
+      "code" : "reactivate",
+      "noMap" : true
+    },
+    {
+      "code" : "receive",
+      "noMap" : true
+    },
+    {
+      "code" : "reidentify",
+      "noMap" : true
+    },
+    {
+      "code" : "report",
+      "noMap" : true
+    },
+    {
+      "code" : "restore",
+      "noMap" : true
+    },
+    {
+      "code" : "transform",
+      "noMap" : true
+    },
+    {
+      "code" : "transmit",
+      "noMap" : true
+    },
+    {
+      "code" : "unhold",
+      "noMap" : true
+    },
+    {
+      "code" : "unlink",
+      "noMap" : true
+    },
+    {
+      "code" : "unmerge",
+      "noMap" : true
+    },
+    {
+      "code" : "verify",
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle",
+    "target" : "http://hl7.org/fhir/3.0/dicom-audit-lifecycle",
+    "element" : [{
+      "code" : "8",
+      "target" : [{
+        "code" : "8",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "9",
+      "target" : [{
+        "code" : "9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "3",
+      "target" : [{
+        "code" : "3",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "4",
+      "target" : [{
+        "code" : "4",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "13",
+      "target" : [{
+        "code" : "13",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "10",
+      "target" : [{
+        "code" : "10",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "5",
+      "target" : [{
+        "code" : "5",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "14",
+      "target" : [{
+        "code" : "14",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "11",
+      "target" : [{
+        "code" : "11",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "7",
+      "target" : [{
+        "code" : "7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "2",
+      "target" : [{
+        "code" : "2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "15",
+      "target" : [{
+        "code" : "15",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "12",
+      "target" : [{
+        "code" : "12",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "6",
+      "target" : [{
+        "code" : "6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "1",
+      "target" : [{
+        "code" : "1",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}
