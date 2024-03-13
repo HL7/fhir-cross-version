@@ -84,13 +84,6 @@
       }]
     },
     {
-      "code" : "question",
-      "target" : [{
-        "code" : "question",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "reference",
       "target" : [{
         "code" : "reference",

@@ -31,13 +31,6 @@
       }]
     },
     {
-      "code" : "_SECINTPRVOBV",
-      "target" : [{
-        "code" : "_SECINTPRVOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "HRELIABLE",
       "target" : [{
         "code" : "HRELIABLE",
@@ -62,13 +55,6 @@
       "code" : "VERSIONED",
       "target" : [{
         "code" : "VERSIONED",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECDATINTOBV",
-      "target" : [{
-        "code" : "_SECDATINTOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -115,13 +101,6 @@
       }]
     },
     {
-      "code" : "_SECINTPRVRBOBV",
-      "target" : [{
-        "code" : "_SECINTPRVRBOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PATRPT",
       "target" : [{
         "code" : "PATRPT",
@@ -146,13 +125,6 @@
       "code" : "REDACTED",
       "target" : [{
         "code" : "REDACTED",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECALTINTOBV",
-      "target" : [{
-        "code" : "_SECALTINTOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -287,13 +259,6 @@
       }]
     },
     {
-      "code" : "_ActUSPrivacyLaw",
-      "target" : [{
-        "code" : "_ActUSPrivacyLaw",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "HIPAAPsyNotes",
       "target" : [{
         "code" : "HIPAAPsyNotes",
@@ -320,14 +285,6 @@
         "code" : "CommonRule",
         "relationship" : "equivalent"
       }]
-    }]
-  },
-  {
-    "source" : "http://hl7.org/fhir/3.0/v3/ActCode",
-    "target" : "http://hl7.org/fhir/4.0/v3/ActCode",
-    "element" : [{
-      "code" : "SOC",
-      "noMap" : true
     }]
   },
   {
@@ -1243,6 +1200,10 @@
         "code" : "DRIVLABEL",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "SOC",
+      "noMap" : true
     }]
   },
   {
@@ -1266,13 +1227,6 @@
       "code" : "HIPAANOPP",
       "target" : [{
         "code" : "HIPAANOPP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ActUSPrivacyLaw",
-      "target" : [{
-        "code" : "_ActUSPrivacyLaw",
         "relationship" : "equivalent"
       }]
     },
@@ -1305,13 +1259,6 @@
       "code" : "RELIABLE",
       "target" : [{
         "code" : "RELIABLE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVABOBV",
-      "target" : [{
-        "code" : "_SECINTPRVABOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -1351,13 +1298,6 @@
       }]
     },
     {
-      "code" : "_SECDATINTOBV",
-      "target" : [{
-        "code" : "_SECDATINTOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PATAST",
       "target" : [{
         "code" : "PATAST",
@@ -1389,13 +1329,6 @@
       "code" : "PSEUDED",
       "target" : [{
         "code" : "PSEUDED",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTCONOBV",
-      "target" : [{
-        "code" : "_SECINTCONOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -1491,23 +1424,9 @@
       }]
     },
     {
-      "code" : "_SECINTPRVRBOBV",
-      "target" : [{
-        "code" : "_SECINTPRVRBOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "MAPPED",
       "target" : [{
         "code" : "MAPPED",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECALTINTOBV",
-      "target" : [{
-        "code" : "_SECALTINTOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -1522,13 +1441,6 @@
       "code" : "ANONYED",
       "target" : [{
         "code" : "ANONYED",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVOBV",
-      "target" : [{
-        "code" : "_SECINTPRVOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -2488,6 +2400,10 @@
         "code" : "LABEL",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "SOC",
+      "noMap" : true
     }]
   }]
 }

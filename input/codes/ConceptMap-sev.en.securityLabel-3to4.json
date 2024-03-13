@@ -334,14 +334,6 @@
     }]
   },
   {
-    "source" : "http://hl7.org/fhir/3.0/v3/ActCode",
-    "target" : "http://hl7.org/fhir/4.0/v3/ActCode",
-    "element" : [{
-      "code" : "SOC",
-      "noMap" : true
-    }]
-  },
-  {
     "source" : "http://hl7.org/fhir/3.0/v3/ActReason",
     "target" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
     "element" : [{
@@ -1208,6 +1200,10 @@
         "code" : "ENCRYPTT",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "SOC",
+      "noMap" : true
     }]
   },
   {
@@ -2404,6 +2400,10 @@
         "code" : "REL",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "SOC",
+      "noMap" : true
     }]
   }]
 }

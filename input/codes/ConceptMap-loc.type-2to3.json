@@ -150,13 +150,6 @@
       }]
     },
     {
-      "code" : "_DedicatedServiceDeliveryLocationRoleType",
-      "target" : [{
-        "code" : "_DedicatedServiceDeliveryLocationRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "ACC",
       "target" : [{
         "code" : "ACC",
@@ -633,13 +626,6 @@
       }]
     },
     {
-      "code" : "_IncidentalServiceDeliveryLocationRoleType",
-      "target" : [{
-        "code" : "_IncidentalServiceDeliveryLocationRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PEDU",
       "target" : [{
         "code" : "PEDU",
@@ -664,13 +650,6 @@
       "code" : "ALL",
       "target" : [{
         "code" : "ALL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_DedicatedClinicalLocationRoleType",
-      "target" : [{
-        "code" : "_DedicatedClinicalLocationRoleType",
         "relationship" : "equivalent"
       }]
     },
@@ -734,13 +713,6 @@
       "code" : "GIM",
       "target" : [{
         "code" : "GIM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_DedicatedNonClinicalLocationRoleType",
-      "target" : [{
-        "code" : "_DedicatedNonClinicalLocationRoleType",
         "relationship" : "equivalent"
       }]
     },

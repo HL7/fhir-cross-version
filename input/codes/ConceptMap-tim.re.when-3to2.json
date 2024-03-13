@@ -7,30 +7,6 @@
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.when",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Timing#Timing.repeat.when",
   "group" : [{
-    "source" : "http://hl7.org/fhir/3.0/event-timing",
-    "target" : "http://hl7.org/fhir/1.0/event-timing",
-    "element" : [{
-      "code" : "AFT",
-      "noMap" : true
-    },
-    {
-      "code" : "EVE",
-      "noMap" : true
-    },
-    {
-      "code" : "MORN",
-      "noMap" : true
-    },
-    {
-      "code" : "NIGHT",
-      "noMap" : true
-    },
-    {
-      "code" : "PHS",
-      "noMap" : true
-    }]
-  },
-  {
     "source" : "http://hl7.org/fhir/3.0/v3/TimingEvent",
     "target" : "http://hl7.org/fhir/1.0/v3/TimingEvent",
     "element" : [{
@@ -130,6 +106,30 @@
         "code" : "WAKE",
         "relationship" : "equivalent"
       }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/3.0/event-timing",
+    "target" : "http://hl7.org/fhir/1.0/v3/TimingEvent",
+    "element" : [{
+      "code" : "AFT",
+      "noMap" : true
+    },
+    {
+      "code" : "NIGHT",
+      "noMap" : true
+    },
+    {
+      "code" : "PHS",
+      "noMap" : true
+    },
+    {
+      "code" : "EVE",
+      "noMap" : true
+    },
+    {
+      "code" : "MORN",
+      "noMap" : true
     }]
   }]
 }

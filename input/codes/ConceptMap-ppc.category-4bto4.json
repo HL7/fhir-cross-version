@@ -71,13 +71,6 @@
         "code" : "RSREID",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "_ActConsentType",
-      "target" : [{
-        "code" : "_ActConsentType",
-        "relationship" : "equivalent"
-      }]
     }]
   },
   {

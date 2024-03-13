@@ -47,55 +47,45 @@
   },
   {
     "source" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
-    "target" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+    "target" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
     "element" : [{
-      "code" : "assembler",
-
-      "noMap" : true
-    },
-    {
       "code" : "attester",
-
-      "noMap" : true
-    },
-    {
-      "code" : "author",
-
       "noMap" : true
     },
     {
       "code" : "composer",
-
-      "noMap" : true
-    },
-    {
-      "code" : "custodian",
-
       "noMap" : true
     },
     {
       "code" : "enterer",
-
       "noMap" : true
     },
     {
-      "code" : "informant",
-
+      "code" : "assembler",
       "noMap" : true
     },
     {
-      "code" : "legal",
-
+      "code" : "custodian",
+      "noMap" : true
+    },
+    {
+      "code" : "author",
       "noMap" : true
     },
     {
       "code" : "performer",
-
       "noMap" : true
     },
     {
       "code" : "verifier",
-
+      "noMap" : true
+    },
+    {
+      "code" : "informant",
+      "noMap" : true
+    },
+    {
+      "code" : "legal",
       "noMap" : true
     }]
   }]

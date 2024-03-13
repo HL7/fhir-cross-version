@@ -7,14 +7,6 @@
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus",
   "group" : [{
-    "source" : "http://hl7.org/fhir/5.0/appointmentstatus",
-    "target" : "http://hl7.org/fhir/4.3/appointmentstatus",
-    "element" : [{
-      "code" : "entered-in-error",
-      "noMap" : true
-    }]
-  },
-  {
     "source" : "http://hl7.org/fhir/5.0/participationstatus",
     "target" : "http://hl7.org/fhir/4.3/participationstatus",
     "element" : [{
@@ -44,6 +36,14 @@
         "code" : "tentative",
         "relationship" : "equivalent"
       }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/5.0/appointmentstatus",
+    "target" : "http://hl7.org/fhir/4.3/participationstatus",
+    "element" : [{
+      "code" : "entered-in-error",
+      "noMap" : true
     }]
   }]
 }

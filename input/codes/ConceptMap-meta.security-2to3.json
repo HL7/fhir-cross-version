@@ -239,48 +239,6 @@
         "code" : "VERSIONED",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "_SECALTINTOBV",
-      "target" : [{
-        "code" : "_SECALTINTOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECDATINTOBV",
-      "target" : [{
-        "code" : "_SECDATINTOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTCONOBV",
-      "target" : [{
-        "code" : "_SECINTCONOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVABOBV",
-      "target" : [{
-        "code" : "_SECINTPRVABOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVOBV",
-      "target" : [{
-        "code" : "_SECINTPRVOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVRBOBV",
-      "target" : [{
-        "code" : "_SECINTPRVRBOBV",
-        "relationship" : "equivalent"
-      }]
     }]
   },
   {
@@ -325,13 +283,6 @@
       "code" : "Title38Section7332",
       "target" : [{
         "code" : "Title38Section7332",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ActUSPrivacyLaw",
-      "target" : [{
-        "code" : "_ActUSPrivacyLaw",
         "relationship" : "equivalent"
       }]
     }]

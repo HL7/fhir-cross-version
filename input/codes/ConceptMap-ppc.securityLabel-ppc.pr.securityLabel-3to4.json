@@ -24,20 +24,6 @@
       }]
     },
     {
-      "code" : "_SECALTINTOBV",
-      "target" : [{
-        "code" : "_SECALTINTOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTCONOBV",
-      "target" : [{
-        "code" : "_SECINTCONOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PRORPT",
       "target" : [{
         "code" : "PRORPT",
@@ -164,13 +150,6 @@
       }]
     },
     {
-      "code" : "_SECINTPRVRBOBV",
-      "target" : [{
-        "code" : "_SECINTPRVRBOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "SDMAST",
       "target" : [{
         "code" : "SDMAST",
@@ -206,23 +185,9 @@
       }]
     },
     {
-      "code" : "_SECINTPRVOBV",
-      "target" : [{
-        "code" : "_SECINTPRVOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PROAST",
       "target" : [{
         "code" : "PROAST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVABOBV",
-      "target" : [{
-        "code" : "_SECINTPRVABOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -265,13 +230,6 @@
       "code" : "SDMRPT",
       "target" : [{
         "code" : "SDMRPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECDATINTOBV",
-      "target" : [{
-        "code" : "_SECDATINTOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -322,26 +280,11 @@
       }]
     },
     {
-      "code" : "_ActUSPrivacyLaw",
-      "target" : [{
-        "code" : "_ActUSPrivacyLaw",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "42CFRPart2",
       "target" : [{
         "code" : "42CFRPart2",
         "relationship" : "equivalent"
       }]
-    }]
-  },
-  {
-    "source" : "http://hl7.org/fhir/3.0/v3/ActCode",
-    "target" : "http://hl7.org/fhir/4.0/v3/ActCode",
-    "element" : [{
-      "code" : "SOC",
-      "noMap" : true
     }]
   },
   {
@@ -1257,6 +1200,10 @@
         "code" : "HIV",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "SOC",
+      "noMap" : true
     }]
   },
   {
@@ -1303,13 +1250,6 @@
         "code" : "HIPAAPsyNotes",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "_ActUSPrivacyLaw",
-      "target" : [{
-        "code" : "_ActUSPrivacyLaw",
-        "relationship" : "equivalent"
-      }]
     }]
   },
   {
@@ -1319,13 +1259,6 @@
       "code" : "HRELIABLE",
       "target" : [{
         "code" : "HRELIABLE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVABOBV",
-      "target" : [{
-        "code" : "_SECINTPRVABOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -1344,23 +1277,9 @@
       }]
     },
     {
-      "code" : "_SECINTPRVRBOBV",
-      "target" : [{
-        "code" : "_SECINTPRVRBOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "SDMRPT",
       "target" : [{
         "code" : "SDMRPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVOBV",
-      "target" : [{
-        "code" : "_SECINTPRVOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -1421,13 +1340,6 @@
       }]
     },
     {
-      "code" : "_SECALTINTOBV",
-      "target" : [{
-        "code" : "_SECALTINTOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "SDMAST",
       "target" : [{
         "code" : "SDMAST",
@@ -1459,13 +1371,6 @@
       "code" : "RELIABLE",
       "target" : [{
         "code" : "RELIABLE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTCONOBV",
-      "target" : [{
-        "code" : "_SECINTCONOBV",
         "relationship" : "equivalent"
       }]
     },
@@ -2495,6 +2400,10 @@
         "code" : "PSY",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "SOC",
+      "noMap" : true
     }]
   }]
 }

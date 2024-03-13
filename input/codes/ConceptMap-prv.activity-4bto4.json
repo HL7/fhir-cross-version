@@ -345,7 +345,6 @@
     },
     {
       "code" : "NOTARY",
-
       "noMap" : true
     },
     {
@@ -513,20 +512,6 @@
       "code" : "WIT",
       "target" : [{
         "code" : "WIT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ParticipationAncillary",
-      "target" : [{
-        "code" : "_ParticipationAncillary",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ParticipationInformationGenerator",
-      "target" : [{
-        "code" : "_ParticipationInformationGenerator",
         "relationship" : "equivalent"
       }]
     }]

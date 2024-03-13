@@ -7,14 +7,6 @@
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.actor.role",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.except.actor.role",
   "group" : [{
-    "source" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
-    "target" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
-    "element" : [{
-      "code" : "humanuser",
-      "noMap" : true
-    }]
-  },
-  {
     "source" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
     "target" : "http://hl7.org/fhir/3.0/v3/RoleCode",
     "element" : [{
@@ -205,13 +197,6 @@
         "code" : "CRP",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "_CitizenRoleType",
-      "target" : [{
-        "code" : "_CitizenRoleType",
-        "relationship" : "equivalent"
-      }]
     }]
   },
   {
@@ -358,80 +343,6 @@
       "code" : "PROMSK",
       "target" : [{
         "code" : "PROMSK",
-        "relationship" : "equivalent"
-      }]
-    }]
-  },
-  {
-    "source" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
-    "target" : "http://www.hl7.org/fhir/contractsignertypecodes",
-    "element" : [{
-      "code" : "EVTWIT",
-      "target" : [{
-        "code" : "EVTWIT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PRIMAUTH",
-      "target" : [{
-        "code" : "PRIMAUTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "VERF",
-      "target" : [{
-        "code" : "VERF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "TRANS",
-      "target" : [{
-        "code" : "TRANS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "AMENDER",
-      "target" : [{
-        "code" : "AMENDER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "COAUTH",
-      "target" : [{
-        "code" : "COAUTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "VALID",
-      "target" : [{
-        "code" : "VALID",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SOURCE",
-      "target" : [{
-        "code" : "SOURCE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CONT",
-      "target" : [{
-        "code" : "CONT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "REVIEWER",
-      "target" : [{
-        "code" : "REVIEWER",
         "relationship" : "equivalent"
       }]
     }]
@@ -565,6 +476,10 @@
         "code" : "datacollector",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "humanuser",
+      "noMap" : true
     }]
   },
   {
@@ -706,6 +621,10 @@
         "code" : "datasubject",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "humanuser",
+      "noMap" : true
     }]
   },
   {
@@ -810,13 +729,6 @@
       "code" : "CASM",
       "target" : [{
         "code" : "CASM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_CitizenRoleType",
-      "target" : [{
-        "code" : "_CitizenRoleType",
         "relationship" : "equivalent"
       }]
     },
@@ -996,6 +908,80 @@
       "code" : "AULR",
       "target" : [{
         "code" : "AULR",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+    "target" : "http://www.hl7.org/fhir/3.0/contractsignertypecodes",
+    "element" : [{
+      "code" : "COAUTH",
+      "target" : [{
+        "code" : "COAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SOURCE",
+      "target" : [{
+        "code" : "SOURCE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AMENDER",
+      "target" : [{
+        "code" : "AMENDER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EVTWIT",
+      "target" : [{
+        "code" : "EVTWIT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REVIEWER",
+      "target" : [{
+        "code" : "REVIEWER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRANS",
+      "target" : [{
+        "code" : "TRANS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VERF",
+      "target" : [{
+        "code" : "VERF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CONT",
+      "target" : [{
+        "code" : "CONT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRIMAUTH",
+      "target" : [{
+        "code" : "PRIMAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VALID",
+      "target" : [{
+        "code" : "VALID",
         "relationship" : "equivalent"
       }]
     }]

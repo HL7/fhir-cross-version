@@ -97,81 +97,16 @@
   },
   {
     "source" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-    "target" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "target" : "http://hl7.org/fhir/3.0/v3/DocumentCompletion",
     "element" : [{
-      "code" : "ADM",
-      "noMap" : true
-    },
-    {
-      "code" : "ALY",
-      "noMap" : true
+      "code" : "LA",
+      "target" : [{
+        "code" : "LA",
+        "relationship" : "equivalent"
+      }]
     },
     {
       "code" : "ATND",
-      "noMap" : true
-    },
-    {
-      "code" : "AUT",
-      "noMap" : true
-    },
-    {
-      "code" : "AUTHEN",
-      "noMap" : true
-    },
-    {
-      "code" : "BBY",
-      "noMap" : true
-    },
-    {
-      "code" : "BEN",
-      "noMap" : true
-    },
-    {
-      "code" : "CAGNT",
-      "noMap" : true
-    },
-    {
-      "code" : "CALLBCK",
-      "noMap" : true
-    },
-    {
-      "code" : "CAT",
-      "noMap" : true
-    },
-    {
-      "code" : "CON",
-      "noMap" : true
-    },
-    {
-      "code" : "COV",
-      "noMap" : true
-    },
-    {
-      "code" : "CSM",
-      "noMap" : true
-    },
-    {
-      "code" : "CST",
-      "noMap" : true
-    },
-    {
-      "code" : "DEV",
-      "noMap" : true
-    },
-    {
-      "code" : "DIR",
-      "noMap" : true
-    },
-    {
-      "code" : "DIS",
-      "noMap" : true
-    },
-    {
-      "code" : "DIST",
-      "noMap" : true
-    },
-    {
-      "code" : "DON",
       "noMap" : true
     },
     {
@@ -179,35 +114,7 @@
       "noMap" : true
     },
     {
-      "code" : "ELOC",
-      "noMap" : true
-    },
-    {
-      "code" : "ENT",
-      "noMap" : true
-    },
-    {
-      "code" : "ESC",
-      "noMap" : true
-    },
-    {
-      "code" : "EXPAGNT",
-      "noMap" : true
-    },
-    {
-      "code" : "EXPART",
-      "noMap" : true
-    },
-    {
-      "code" : "EXPTRGT",
-      "noMap" : true
-    },
-    {
-      "code" : "EXSRC",
-      "noMap" : true
-    },
-    {
-      "code" : "GUAR",
+      "code" : "LOC",
       "noMap" : true
     },
     {
@@ -215,7 +122,39 @@
       "noMap" : true
     },
     {
-      "code" : "IND",
+      "code" : "ADM",
+      "noMap" : true
+    },
+    {
+      "code" : "RDV",
+      "noMap" : true
+    },
+    {
+      "code" : "SPRF",
+      "noMap" : true
+    },
+    {
+      "code" : "DIR",
+      "noMap" : true
+    },
+    {
+      "code" : "CAT",
+      "noMap" : true
+    },
+    {
+      "code" : "AUTHEN",
+      "noMap" : true
+    },
+    {
+      "code" : "ESC",
+      "noMap" : true
+    },
+    {
+      "code" : "VIA",
+      "noMap" : true
+    },
+    {
+      "code" : "EXSRC",
       "noMap" : true
     },
     {
@@ -223,19 +162,31 @@
       "noMap" : true
     },
     {
-      "code" : "IRCP",
-      "noMap" : true
-    },
-    {
-      "code" : "LOC",
-      "noMap" : true
-    },
-    {
       "code" : "NOT",
       "noMap" : true
     },
     {
-      "code" : "NRD",
+      "code" : "WIT",
+      "noMap" : true
+    },
+    {
+      "code" : "REFB",
+      "noMap" : true
+    },
+    {
+      "code" : "RCV",
+      "noMap" : true
+    },
+    {
+      "code" : "RESP",
+      "noMap" : true
+    },
+    {
+      "code" : "TRC",
+      "noMap" : true
+    },
+    {
+      "code" : "VRF",
       "noMap" : true
     },
     {
@@ -243,7 +194,15 @@
       "noMap" : true
     },
     {
-      "code" : "PART",
+      "code" : "TRANS",
+      "noMap" : true
+    },
+    {
+      "code" : "NRD",
+      "noMap" : true
+    },
+    {
+      "code" : "RML",
       "noMap" : true
     },
     {
@@ -255,23 +214,23 @@
       "noMap" : true
     },
     {
-      "code" : "PRD",
+      "code" : "DEV",
       "noMap" : true
     },
     {
-      "code" : "PRF",
+      "code" : "ELOC",
       "noMap" : true
     },
     {
-      "code" : "RCT",
+      "code" : "ENT",
       "noMap" : true
     },
     {
-      "code" : "RCV",
+      "code" : "CALLBCK",
       "noMap" : true
     },
     {
-      "code" : "RDV",
+      "code" : "ALY",
       "noMap" : true
     },
     {
@@ -279,19 +238,15 @@
       "noMap" : true
     },
     {
-      "code" : "REFB",
+      "code" : "IND",
       "noMap" : true
     },
     {
-      "code" : "REFT",
+      "code" : "CON",
       "noMap" : true
     },
     {
-      "code" : "RESP",
-      "noMap" : true
-    },
-    {
-      "code" : "RML",
+      "code" : "PRD",
       "noMap" : true
     },
     {
@@ -299,11 +254,11 @@
       "noMap" : true
     },
     {
-      "code" : "SPC",
+      "code" : "BEN",
       "noMap" : true
     },
     {
-      "code" : "SPRF",
+      "code" : "PART",
       "noMap" : true
     },
     {
@@ -311,35 +266,76 @@
       "noMap" : true
     },
     {
-      "code" : "TRANS",
+      "code" : "CAGNT",
       "noMap" : true
     },
     {
-      "code" : "TRC",
+      "code" : "REFT",
       "noMap" : true
     },
     {
-      "code" : "VIA",
+      "code" : "DIS",
       "noMap" : true
     },
     {
-      "code" : "VRF",
+      "code" : "AUT",
       "noMap" : true
     },
     {
-      "code" : "WIT",
+      "code" : "DIST",
       "noMap" : true
-    }]
-  },
-  {
-    "source" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-    "target" : "http://hl7.org/fhir/3.0/v3/DocumentCompletion",
-    "element" : [{
-      "code" : "LA",
-      "target" : [{
-        "code" : "LA",
-        "relationship" : "equivalent"
-      }]
+    },
+    {
+      "code" : "EXPAGNT",
+      "noMap" : true
+    },
+    {
+      "code" : "SPC",
+      "noMap" : true
+    },
+    {
+      "code" : "EXPTRGT",
+      "noMap" : true
+    },
+    {
+      "code" : "PRF",
+      "noMap" : true
+    },
+    {
+      "code" : "GUAR",
+      "noMap" : true
+    },
+    {
+      "code" : "DON",
+      "noMap" : true
+    },
+    {
+      "code" : "CST",
+      "noMap" : true
+    },
+    {
+      "code" : "BBY",
+      "noMap" : true
+    },
+    {
+      "code" : "CSM",
+      "noMap" : true
+    },
+    {
+      "code" : "EXPART",
+      "noMap" : true
+    },
+    {
+      "code" : "COV",
+      "noMap" : true
+    },
+    {
+      "code" : "RCT",
+      "noMap" : true
+    },
+    {
+      "code" : "IRCP",
+      "noMap" : true
     }]
   },
   {

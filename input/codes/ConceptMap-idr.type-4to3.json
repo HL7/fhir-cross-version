@@ -8,9 +8,184 @@
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Identifier#Identifier.type",
   "group" : [{
     "source" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-    "target" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "target" : "http://hl7.org/fhir/3.0/v2/0203",
     "element" : [{
+      "code" : "NIIP",
+      "target" : [{
+        "code" : "NIIP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MR",
+      "target" : [{
+        "code" : "MR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DR",
+      "target" : [{
+        "code" : "DR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DL",
+      "target" : [{
+        "code" : "DL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MCN",
+      "target" : [{
+        "code" : "MCN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ACSN",
+      "target" : [{
+        "code" : "ACSN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRN",
+      "target" : [{
+        "code" : "PRN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAX",
+      "target" : [{
+        "code" : "TAX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MD",
+      "target" : [{
+        "code" : "MD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EN",
+      "target" : [{
+        "code" : "EN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PPN",
+      "target" : [{
+        "code" : "PPN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BRN",
+      "target" : [{
+        "code" : "BRN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
       "code" : "JHN",
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "target" : "http://hl7.org/fhir/3.0/identifier-type",
+    "element" : [{
+      "code" : "UDI",
+      "target" : [{
+        "code" : "UDI",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FILL",
+      "target" : [{
+        "code" : "FILL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PLAC",
+      "target" : [{
+        "code" : "PLAC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SNO",
+      "target" : [{
+        "code" : "SNO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SB",
+      "target" : [{
+        "code" : "SB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "BRN",
+      "noMap" : true
+    },
+    {
+      "code" : "EN",
+      "noMap" : true
+    },
+    {
+      "code" : "MR",
+      "noMap" : true
+    },
+    {
+      "code" : "DR",
+      "noMap" : true
+    },
+    {
+      "code" : "MD",
+      "noMap" : true
+    },
+    {
+      "code" : "TAX",
+      "noMap" : true
+    },
+    {
+      "code" : "JHN",
+      "noMap" : true
+    },
+    {
+      "code" : "DL",
+      "noMap" : true
+    },
+    {
+      "code" : "PPN",
+      "noMap" : true
+    },
+    {
+      "code" : "PRN",
+      "noMap" : true
+    },
+    {
+      "code" : "MCN",
+      "noMap" : true
+    },
+    {
+      "code" : "NIIP",
+      "noMap" : true
+    },
+    {
+      "code" : "ACSN",
       "noMap" : true
     }]
   },
@@ -18,133 +193,6 @@
     "source" : "http://terminology.hl7.org/CodeSystem/v2-0203",
     "target" : "http://hl7.org/fhir/3.0/v2/0203",
     "element" : [{
-      "code" : "NIIP",
-      "target" : [{
-        "code" : "NIIP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MR",
-      "target" : [{
-        "code" : "MR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DR",
-      "target" : [{
-        "code" : "DR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DL",
-      "target" : [{
-        "code" : "DL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MCN",
-      "target" : [{
-        "code" : "MCN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ACSN",
-      "target" : [{
-        "code" : "ACSN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PRN",
-      "target" : [{
-        "code" : "PRN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "TAX",
-      "target" : [{
-        "code" : "TAX",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MD",
-      "target" : [{
-        "code" : "MD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "EN",
-      "target" : [{
-        "code" : "EN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PPN",
-      "target" : [{
-        "code" : "PPN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "BRN",
-      "target" : [{
-        "code" : "BRN",
-        "relationship" : "equivalent"
-      }]
-    }]
-  },
-  {
-    "source" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-    "target" : "http://hl7.org/fhir/3.0/identifier-type",
-    "element" : [{
-      "code" : "UDI",
-      "target" : [{
-        "code" : "UDI",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FILL",
-      "target" : [{
-        "code" : "FILL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PLAC",
-      "target" : [{
-        "code" : "PLAC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SNO",
-      "target" : [{
-        "code" : "SNO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SB",
-      "target" : [{
-        "code" : "SB",
-        "relationship" : "equivalent"
-      }]
-    }]
-  },
-  {
-    "source" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-    "target" : "http://hl7.org/fhir/3.0/v2/0203",
-    "element" : [{
       "code" : "MCN",
       "target" : [{
         "code" : "MCN",
@@ -227,6 +275,30 @@
         "code" : "DL",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "FILL",
+      "noMap" : true
+    },
+    {
+      "code" : "UDI",
+      "noMap" : true
+    },
+    {
+      "code" : "SB",
+      "noMap" : true
+    },
+    {
+      "code" : "SNO",
+      "noMap" : true
+    },
+    {
+      "code" : "PLAC",
+      "noMap" : true
+    },
+    {
+      "code" : "JHN",
+      "noMap" : true
     }]
   },
   {
@@ -266,6 +338,58 @@
         "code" : "SNO",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "BRN",
+      "noMap" : true
+    },
+    {
+      "code" : "EN",
+      "noMap" : true
+    },
+    {
+      "code" : "MR",
+      "noMap" : true
+    },
+    {
+      "code" : "DR",
+      "noMap" : true
+    },
+    {
+      "code" : "MD",
+      "noMap" : true
+    },
+    {
+      "code" : "TAX",
+      "noMap" : true
+    },
+    {
+      "code" : "JHN",
+      "noMap" : true
+    },
+    {
+      "code" : "DL",
+      "noMap" : true
+    },
+    {
+      "code" : "PPN",
+      "noMap" : true
+    },
+    {
+      "code" : "PRN",
+      "noMap" : true
+    },
+    {
+      "code" : "MCN",
+      "noMap" : true
+    },
+    {
+      "code" : "NIIP",
+      "noMap" : true
+    },
+    {
+      "code" : "ACSN",
+      "noMap" : true
     }]
   }]
 }

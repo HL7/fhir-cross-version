@@ -106,6 +106,10 @@
         "code" : "7",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "5",
+      "noMap" : true
     }]
   },
   {
@@ -219,7 +223,7 @@
   },
   {
     "source" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
-    "target" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+    "target" : "http://hl7.org/fhir/3.0/dicom-audit-lifecycle",
     "element" : [{
       "code" : "access",
       "noMap" : true

@@ -474,13 +474,6 @@
         "code" : "Title38Section7332",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "_ActUSPrivacyLaw",
-      "target" : [{
-        "code" : "_ActUSPrivacyLaw",
-        "relationship" : "equivalent"
-      }]
     }]
   },
   {
@@ -716,48 +709,6 @@
         "code" : "VERSIONED",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "_SECALTINTOBV",
-      "target" : [{
-        "code" : "_SECALTINTOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECDATINTOBV",
-      "target" : [{
-        "code" : "_SECDATINTOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTCONOBV",
-      "target" : [{
-        "code" : "_SECINTCONOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVABOBV",
-      "target" : [{
-        "code" : "_SECINTPRVABOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVOBV",
-      "target" : [{
-        "code" : "_SECINTPRVOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVRBOBV",
-      "target" : [{
-        "code" : "_SECINTPRVRBOBV",
-        "relationship" : "equivalent"
-      }]
     }]
   },
   {
@@ -860,12 +811,10 @@
     },
     {
       "code" : "CONTROLLED",
-
       "noMap" : true
     },
     {
       "code" : "COPYMark",
-
       "noMap" : true
     },
     {
@@ -884,7 +833,6 @@
     },
     {
       "code" : "CPLYCUI",
-
       "noMap" : true
     },
     {
@@ -896,7 +844,6 @@
     },
     {
       "code" : "CPLYJSP",
-
       "noMap" : true
     },
     {
@@ -929,67 +876,50 @@
     },
     {
       "code" : "CUI",
-
       "noMap" : true
     },
     {
       "code" : "CUIHLTH",
-
       "noMap" : true
     },
     {
       "code" : "CUIHLTHP",
-
       "noMap" : true
     },
     {
       "code" : "CUIMark",
-
       "noMap" : true
     },
     {
       "code" : "CUIP",
-
       "noMap" : true
     },
     {
       "code" : "CUIPRVCY",
-
       "noMap" : true
     },
     {
       "code" : "CUIPRVCYP",
-
       "noMap" : true
     },
     {
       "code" : "CUISP-HLTH",
-
       "noMap" : true
     },
     {
       "code" : "CUISP-HLTHP",
-
       "noMap" : true
     },
     {
       "code" : "CUISP-PRVCY",
-
       "noMap" : true
     },
     {
       "code" : "CUISP-PRVCYP",
-
       "noMap" : true
     },
     {
       "code" : "ConfidentialMark",
-
-      "noMap" : true
-    },
-    {
-      "code" : "ControlledUnclassifiedInformation",
-
       "noMap" : true
     },
     {
@@ -1050,7 +980,6 @@
     },
     {
       "code" : "DRAFTMark",
-
       "noMap" : true
     },
     {
@@ -1076,7 +1005,6 @@
     },
     {
       "code" : "DeliverToAddresseeOnlyMark",
-
       "noMap" : true
     },
     {
@@ -1186,7 +1114,6 @@
     },
     {
       "code" : "IDS",
-
       "noMap" : true
     },
     {
@@ -1345,7 +1272,6 @@
     },
     {
       "code" : "NORDSLCD",
-
       "noMap" : true
     },
     {
@@ -1399,7 +1325,6 @@
     },
     {
       "code" : "PATLOC",
-
       "noMap" : true
     },
     {
@@ -1425,7 +1350,6 @@
     },
     {
       "code" : "PREGNANT",
-
       "noMap" : true
     },
     {
@@ -1437,7 +1361,6 @@
     },
     {
       "code" : "PROCESSINLINELABEL",
-
       "noMap" : true
     },
     {
@@ -1467,11 +1390,6 @@
         "code" : "PSYTHPN",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "PrivacyMark",
-
-      "noMap" : true
     },
     {
       "code" : "RACE",
@@ -1510,7 +1428,6 @@
     },
     {
       "code" : "RedisclosureProhibitionMark",
-
       "noMap" : true
     },
     {
@@ -1522,7 +1439,6 @@
     },
     {
       "code" : "RestrictedConfidentialityMark",
-
       "noMap" : true
     },
     {
@@ -1582,11 +1498,6 @@
       }]
     },
     {
-      "code" : "SecurityLabelMark",
-
-      "noMap" : true
-    },
-    {
       "code" : "SecurityPolicy",
       "target" : [{
         "code" : "SecurityPolicy",
@@ -1609,7 +1520,6 @@
     },
     {
       "code" : "UUI",
-
       "noMap" : true
     },
     {
@@ -1621,36 +1531,7 @@
     },
     {
       "code" : "VIP",
-
       "noMap" : true
-    },
-    {
-      "code" : "_ActInformationSensitivityPolicy",
-      "target" : [{
-        "code" : "_ActInformationSensitivityPolicy",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_EntitySensitivityPolicyType",
-      "target" : [{
-        "code" : "_EntitySensitivityPolicyType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_InformationSensitivityPolicy",
-      "target" : [{
-        "code" : "_InformationSensitivityPolicy",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_RoleInformationSensitivityPolicy",
-      "target" : [{
-        "code" : "_RoleInformationSensitivityPolicy",
-        "relationship" : "equivalent"
-      }]
     }]
   },
   {

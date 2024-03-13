@@ -255,20 +255,6 @@
       }]
     },
     {
-      "code" : "ObservationInterpretationDetection",
-      "target" : [{
-        "code" : "ObservationInterpretationDetection",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ObservationInterpretationExpectation",
-      "target" : [{
-        "code" : "ObservationInterpretationExpectation",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "POS",
       "target" : [{
         "code" : "POS",
@@ -293,13 +279,6 @@
       "code" : "RR",
       "target" : [{
         "code" : "RR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ReactivityObservationInterpretation",
-      "target" : [{
-        "code" : "ReactivityObservationInterpretation",
         "relationship" : "equivalent"
       }]
     },
@@ -370,41 +349,6 @@
       "code" : "WR",
       "target" : [{
         "code" : "WR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_GeneticObservationInterpretation",
-      "target" : [{
-        "code" : "_GeneticObservationInterpretation",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ObservationInterpretationChange",
-      "target" : [{
-        "code" : "_ObservationInterpretationChange",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ObservationInterpretationExceptions",
-      "target" : [{
-        "code" : "_ObservationInterpretationExceptions",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ObservationInterpretationNormality",
-      "target" : [{
-        "code" : "_ObservationInterpretationNormality",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ObservationInterpretationSusceptibility",
-      "target" : [{
-        "code" : "_ObservationInterpretationSusceptibility",
         "relationship" : "equivalent"
       }]
     }]

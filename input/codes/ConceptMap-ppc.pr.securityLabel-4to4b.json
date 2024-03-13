@@ -474,13 +474,6 @@
         "code" : "Title38Section7332",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "_ActUSPrivacyLaw",
-      "target" : [{
-        "code" : "_ActUSPrivacyLaw",
-        "relationship" : "equivalent"
-      }]
     }]
   },
   {
@@ -714,48 +707,6 @@
       "code" : "VERSIONED",
       "target" : [{
         "code" : "VERSIONED",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECALTINTOBV",
-      "target" : [{
-        "code" : "_SECALTINTOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECDATINTOBV",
-      "target" : [{
-        "code" : "_SECDATINTOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTCONOBV",
-      "target" : [{
-        "code" : "_SECINTCONOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVABOBV",
-      "target" : [{
-        "code" : "_SECINTPRVABOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVOBV",
-      "target" : [{
-        "code" : "_SECINTPRVOBV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_SECINTPRVRBOBV",
-      "target" : [{
-        "code" : "_SECINTPRVRBOBV",
         "relationship" : "equivalent"
       }]
     }]
@@ -1467,34 +1418,6 @@
       "code" : "VIO",
       "target" : [{
         "code" : "VIO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_ActInformationSensitivityPolicy",
-      "target" : [{
-        "code" : "_ActInformationSensitivityPolicy",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_EntitySensitivityPolicyType",
-      "target" : [{
-        "code" : "_EntitySensitivityPolicyType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_InformationSensitivityPolicy",
-      "target" : [{
-        "code" : "_InformationSensitivityPolicy",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_RoleInformationSensitivityPolicy",
-      "target" : [{
-        "code" : "_RoleInformationSensitivityPolicy",
         "relationship" : "equivalent"
       }]
     }]

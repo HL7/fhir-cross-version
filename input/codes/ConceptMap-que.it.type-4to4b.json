@@ -31,13 +31,6 @@
       }]
     },
     {
-      "code" : "question",
-      "target" : [{
-        "code" : "question",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "string",
       "target" : [{
         "code" : "string",

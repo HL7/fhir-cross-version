@@ -7,14 +7,6 @@
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DetectedIssue#DetectedIssue.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DetectedIssue#DetectedIssue.status",
   "group" : [{
-    "source" : "http://hl7.org/fhir/5.0/detectedissue-status",
-    "target" : "http://hl7.org/fhir/4.3/detectedissue-status",
-    "element" : [{
-      "code" : "mitigated",
-      "noMap" : true
-    }]
-  },
-  {
     "source" : "http://hl7.org/fhir/5.0/observation-status",
     "target" : "http://hl7.org/fhir/4.3/observation-status",
     "element" : [{
@@ -37,6 +29,14 @@
         "code" : "preliminary",
         "relationship" : "equivalent"
       }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/5.0/detectedissue-status",
+    "target" : "http://hl7.org/fhir/4.3/observation-status",
+    "element" : [{
+      "code" : "mitigated",
+      "noMap" : true
     }]
   }]
 }

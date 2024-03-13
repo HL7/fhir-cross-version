@@ -6415,29 +6415,5 @@
         "relationship" : "equivalent"
       }]
     }]
-  },
-  {
-    "source" : "http://hl7.org/fhir/1.0/practitioner-specialty",
-    "target" : "http://hl7.org/fhir/3.0/practitioner-specialty",
-    "element" : [{
-      "code" : "cardio",
-      "noMap" : true
-    },
-    {
-      "code" : "dent",
-      "noMap" : true
-    },
-    {
-      "code" : "dietary",
-      "noMap" : true
-    },
-    {
-      "code" : "midw",
-      "noMap" : true
-    },
-    {
-      "code" : "sysarch",
-      "noMap" : true
-    }]
   }]
 }

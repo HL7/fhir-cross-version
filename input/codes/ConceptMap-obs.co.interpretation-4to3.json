@@ -225,14 +225,6 @@
       }]
     },
     {
-      "code" : "ObservationInterpretationDetection",
-      "noMap" : true
-    },
-    {
-      "code" : "ObservationInterpretationExpectation",
-      "noMap" : true
-    },
-    {
       "code" : "POS",
       "target" : [{
         "code" : "POS",
@@ -259,10 +251,6 @@
         "code" : "RR",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "ReactivityObservationInterpretation",
-      "noMap" : true
     },
     {
       "code" : "S",
@@ -330,26 +318,6 @@
         "code" : "WR",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "_GeneticObservationInterpretation",
-      "noMap" : true
-    },
-    {
-      "code" : "_ObservationInterpretationChange",
-      "noMap" : true
-    },
-    {
-      "code" : "_ObservationInterpretationExceptions",
-      "noMap" : true
-    },
-    {
-      "code" : "_ObservationInterpretationNormality",
-      "noMap" : true
-    },
-    {
-      "code" : "_ObservationInterpretationSusceptibility",
-      "noMap" : true
     }]
   }]
 }

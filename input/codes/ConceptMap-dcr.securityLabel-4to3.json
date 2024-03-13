@@ -53,78 +53,6 @@
     }]
   },
   {
-    "source" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-    "target" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-    "element" : [{
-      "code" : "BIORCH",
-      "noMap" : true
-    },
-    {
-      "code" : "BTG",
-      "noMap" : true
-    },
-    {
-      "code" : "CLINTRCHNPC",
-      "noMap" : true
-    },
-    {
-      "code" : "CLINTRCHPC",
-      "noMap" : true
-    },
-    {
-      "code" : "COC",
-      "noMap" : true
-    },
-    {
-      "code" : "DSRCH",
-      "noMap" : true
-    },
-    {
-      "code" : "ERTREAT",
-      "noMap" : true
-    },
-    {
-      "code" : "HDM",
-      "noMap" : true
-    },
-    {
-      "code" : "HTEST",
-      "noMap" : true
-    },
-    {
-      "code" : "LABELING",
-      "noMap" : true
-    },
-    {
-      "code" : "METAMGT",
-      "noMap" : true
-    },
-    {
-      "code" : "MILCDM",
-      "noMap" : true
-    },
-    {
-      "code" : "MILDCRG",
-      "noMap" : true
-    },
-    {
-      "code" : "POARCH",
-      "noMap" : true
-    },
-    {
-      "code" : "PRECLINTRCH",
-      "noMap" : true
-    },
-    {
-      "code" : "SYSDEV",
-      "noMap" : true
-    },
-    {
-      "code" : "TRANSRCH",
-      "noMap" : true
-    }]
-  },
-  {
     "source" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
     "target" : "http://hl7.org/fhir/3.0/v3/ObservationValue",
     "element" : [{
@@ -357,94 +285,6 @@
         "code" : "PATRPT",
         "relationship" : "equivalent"
       }]
-    }]
-  },
-  {
-    "source" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-    "target" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-    "element" : [{
-      "code" : "ACCESSCONSCHEME",
-      "noMap" : true
-    },
-    {
-      "code" : "ACOCOMPT",
-      "noMap" : true
-    },
-    {
-      "code" : "AUTHPOL",
-      "noMap" : true
-    },
-    {
-      "code" : "BH",
-      "noMap" : true
-    },
-    {
-      "code" : "COGN",
-      "noMap" : true
-    },
-    {
-      "code" : "CTCOMPT",
-      "noMap" : true
-    },
-    {
-      "code" : "DELEPOL",
-      "noMap" : true
-    },
-    {
-      "code" : "DVD",
-      "noMap" : true
-    },
-    {
-      "code" : "EMOTDIS",
-      "noMap" : true
-    },
-    {
-      "code" : "ETHUD",
-      "noMap" : true
-    },
-    {
-      "code" : "FMCOMPT",
-      "noMap" : true
-    },
-    {
-      "code" : "LRCOMPT",
-      "noMap" : true
-    },
-    {
-      "code" : "MH",
-      "noMap" : true
-    },
-    {
-      "code" : "MST",
-      "noMap" : true
-    },
-    {
-      "code" : "OPIOIDUD",
-      "noMap" : true
-    },
-    {
-      "code" : "PACOMPT",
-      "noMap" : true
-    },
-    {
-      "code" : "PHY",
-      "noMap" : true
-    },
-    {
-      "code" : "PSYTHPN",
-      "noMap" : true
-    },
-    {
-      "code" : "SPI",
-      "noMap" : true
-    },
-    {
-      "code" : "SUD",
-      "noMap" : true
-    },
-    {
-      "code" : "VIO",
-      "noMap" : true
     }]
   },
   {
@@ -796,6 +636,74 @@
         "code" : "THREAT",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "ERTREAT",
+      "noMap" : true
+    },
+    {
+      "code" : "PRECLINTRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "BIORCH",
+      "noMap" : true
+    },
+    {
+      "code" : "MILDCRG",
+      "noMap" : true
+    },
+    {
+      "code" : "SYSDEV",
+      "noMap" : true
+    },
+    {
+      "code" : "DSRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "TRANSRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "CLINTRCHNPC",
+      "noMap" : true
+    },
+    {
+      "code" : "COC",
+      "noMap" : true
+    },
+    {
+      "code" : "POARCH",
+      "noMap" : true
+    },
+    {
+      "code" : "METAMGT",
+      "noMap" : true
+    },
+    {
+      "code" : "MILCDM",
+      "noMap" : true
+    },
+    {
+      "code" : "LABELING",
+      "noMap" : true
+    },
+    {
+      "code" : "CLINTRCHPC",
+      "noMap" : true
+    },
+    {
+      "code" : "HDM",
+      "noMap" : true
+    },
+    {
+      "code" : "HTEST",
+      "noMap" : true
+    },
+    {
+      "code" : "BTG",
+      "noMap" : true
     }]
   },
   {
@@ -1360,6 +1268,90 @@
         "code" : "PDS",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "LRCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "AUTHPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "DVD",
+      "noMap" : true
+    },
+    {
+      "code" : "MST",
+      "noMap" : true
+    },
+    {
+      "code" : "OPIOIDUD",
+      "noMap" : true
+    },
+    {
+      "code" : "MH",
+      "noMap" : true
+    },
+    {
+      "code" : "VIO",
+      "noMap" : true
+    },
+    {
+      "code" : "CTCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "BH",
+      "noMap" : true
+    },
+    {
+      "code" : "PSYTHPN",
+      "noMap" : true
+    },
+    {
+      "code" : "ACOCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "PHY",
+      "noMap" : true
+    },
+    {
+      "code" : "EMOTDIS",
+      "noMap" : true
+    },
+    {
+      "code" : "ACCESSCONSCHEME",
+      "noMap" : true
+    },
+    {
+      "code" : "FMCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "SPI",
+      "noMap" : true
+    },
+    {
+      "code" : "ETHUD",
+      "noMap" : true
+    },
+    {
+      "code" : "PACOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "COGN",
+      "noMap" : true
+    },
+    {
+      "code" : "DELEPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "SUD",
+      "noMap" : true
     }]
   },
   {
@@ -1992,6 +1984,74 @@
         "code" : "ETREAT",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "ERTREAT",
+      "noMap" : true
+    },
+    {
+      "code" : "PRECLINTRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "BIORCH",
+      "noMap" : true
+    },
+    {
+      "code" : "MILDCRG",
+      "noMap" : true
+    },
+    {
+      "code" : "SYSDEV",
+      "noMap" : true
+    },
+    {
+      "code" : "DSRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "TRANSRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "CLINTRCHNPC",
+      "noMap" : true
+    },
+    {
+      "code" : "COC",
+      "noMap" : true
+    },
+    {
+      "code" : "POARCH",
+      "noMap" : true
+    },
+    {
+      "code" : "METAMGT",
+      "noMap" : true
+    },
+    {
+      "code" : "MILCDM",
+      "noMap" : true
+    },
+    {
+      "code" : "LABELING",
+      "noMap" : true
+    },
+    {
+      "code" : "CLINTRCHPC",
+      "noMap" : true
+    },
+    {
+      "code" : "HDM",
+      "noMap" : true
+    },
+    {
+      "code" : "HTEST",
+      "noMap" : true
+    },
+    {
+      "code" : "BTG",
+      "noMap" : true
     }]
   },
   {
@@ -2556,6 +2616,90 @@
         "code" : "EMPL",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "LRCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "AUTHPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "DVD",
+      "noMap" : true
+    },
+    {
+      "code" : "MST",
+      "noMap" : true
+    },
+    {
+      "code" : "OPIOIDUD",
+      "noMap" : true
+    },
+    {
+      "code" : "MH",
+      "noMap" : true
+    },
+    {
+      "code" : "VIO",
+      "noMap" : true
+    },
+    {
+      "code" : "CTCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "BH",
+      "noMap" : true
+    },
+    {
+      "code" : "PSYTHPN",
+      "noMap" : true
+    },
+    {
+      "code" : "ACOCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "PHY",
+      "noMap" : true
+    },
+    {
+      "code" : "EMOTDIS",
+      "noMap" : true
+    },
+    {
+      "code" : "ACCESSCONSCHEME",
+      "noMap" : true
+    },
+    {
+      "code" : "FMCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "SPI",
+      "noMap" : true
+    },
+    {
+      "code" : "ETHUD",
+      "noMap" : true
+    },
+    {
+      "code" : "PACOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "COGN",
+      "noMap" : true
+    },
+    {
+      "code" : "DELEPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "SUD",
+      "noMap" : true
     }]
   }]
 }

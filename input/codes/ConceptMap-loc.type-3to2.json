@@ -869,34 +869,6 @@
         "code" : "WORK",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "_DedicatedClinicalLocationRoleType",
-      "target" : [{
-        "code" : "_DedicatedClinicalLocationRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_DedicatedNonClinicalLocationRoleType",
-      "target" : [{
-        "code" : "_DedicatedNonClinicalLocationRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_DedicatedServiceDeliveryLocationRoleType",
-      "target" : [{
-        "code" : "_DedicatedServiceDeliveryLocationRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_IncidentalServiceDeliveryLocationRoleType",
-      "target" : [{
-        "code" : "_IncidentalServiceDeliveryLocationRoleType",
-        "relationship" : "equivalent"
-      }]
     }]
   }]
 }

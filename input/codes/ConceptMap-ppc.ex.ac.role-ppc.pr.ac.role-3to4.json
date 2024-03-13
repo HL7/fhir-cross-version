@@ -7,80 +7,6 @@
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.except.actor.role",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.actor.role",
   "group" : [{
-    "source" : "http://www.hl7.org/fhir/contractsignertypecodes",
-    "target" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
-    "element" : [{
-      "code" : "VERF",
-      "target" : [{
-        "code" : "VERF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "AMENDER",
-      "target" : [{
-        "code" : "AMENDER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CONT",
-      "target" : [{
-        "code" : "CONT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "REVIEWER",
-      "target" : [{
-        "code" : "REVIEWER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "EVTWIT",
-      "target" : [{
-        "code" : "EVTWIT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PRIMAUTH",
-      "target" : [{
-        "code" : "PRIMAUTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SOURCE",
-      "target" : [{
-        "code" : "SOURCE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "COAUTH",
-      "target" : [{
-        "code" : "COAUTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "VALID",
-      "target" : [{
-        "code" : "VALID",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "TRANS",
-      "target" : [{
-        "code" : "TRANS",
-        "relationship" : "equivalent"
-      }]
-    }]
-  },
-  {
     "source" : "http://hl7.org/fhir/3.0/v3/RoleClass",
     "target" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
     "element" : [{
@@ -323,13 +249,6 @@
       "code" : "CASM",
       "target" : [{
         "code" : "CASM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_CitizenRoleType",
-      "target" : [{
-        "code" : "_CitizenRoleType",
         "relationship" : "equivalent"
       }]
     },
@@ -750,13 +669,6 @@
         "code" : "CRP",
         "relationship" : "equivalent"
       }]
-    },
-    {
-      "code" : "_CitizenRoleType",
-      "target" : [{
-        "code" : "_CitizenRoleType",
-        "relationship" : "equivalent"
-      }]
     }]
   },
   {
@@ -988,6 +900,80 @@
       "code" : "datacollector",
       "target" : [{
         "code" : "datacollector",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://www.hl7.org/fhir/3.0/contractsignertypecodes",
+    "target" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+    "element" : [{
+      "code" : "CONT",
+      "target" : [{
+        "code" : "CONT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EVTWIT",
+      "target" : [{
+        "code" : "EVTWIT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SOURCE",
+      "target" : [{
+        "code" : "SOURCE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRIMAUTH",
+      "target" : [{
+        "code" : "PRIMAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VALID",
+      "target" : [{
+        "code" : "VALID",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COAUTH",
+      "target" : [{
+        "code" : "COAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AMENDER",
+      "target" : [{
+        "code" : "AMENDER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "VERF",
+      "target" : [{
+        "code" : "VERF",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRANS",
+      "target" : [{
+        "code" : "TRANS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REVIEWER",
+      "target" : [{
+        "code" : "REVIEWER",
         "relationship" : "equivalent"
       }]
     }]

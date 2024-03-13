@@ -325,13 +325,6 @@
       }]
     },
     {
-      "code" : "_IncidentalServiceDeliveryLocationRoleType",
-      "target" : [{
-        "code" : "_IncidentalServiceDeliveryLocationRoleType",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PEDU",
       "target" : [{
         "code" : "PEDU",
@@ -398,13 +391,6 @@
       "code" : "RHPIVS",
       "target" : [{
         "code" : "RHPIVS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_DedicatedNonClinicalLocationRoleType",
-      "target" : [{
-        "code" : "_DedicatedNonClinicalLocationRoleType",
         "relationship" : "equivalent"
       }]
     },
@@ -559,13 +545,6 @@
       "code" : "RTF",
       "target" : [{
         "code" : "RTF",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_DedicatedServiceDeliveryLocationRoleType",
-      "target" : [{
-        "code" : "_DedicatedServiceDeliveryLocationRoleType",
         "relationship" : "equivalent"
       }]
     },
@@ -804,13 +783,6 @@
       "code" : "PTRES",
       "target" : [{
         "code" : "PTRES",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "_DedicatedClinicalLocationRoleType",
-      "target" : [{
-        "code" : "_DedicatedClinicalLocationRoleType",
         "relationship" : "equivalent"
       }]
     },

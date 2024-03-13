@@ -68,7 +68,7 @@
   },
   {
     "source" : "http://hl7.org/fhir/4.0/task-intent",
-    "target" : "http://hl7.org/fhir/3.0/task-intent",
+    "target" : "http://hl7.org/fhir/3.0/request-intent",
     "element" : [{
       "code" : "unknown",
       "noMap" : true

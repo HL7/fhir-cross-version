@@ -7,78 +7,6 @@
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.entity.securityLabel",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.entity.securityLabel",
   "group" : [{
-    "source" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-    "target" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-    "element" : [{
-      "code" : "BIORCH",
-      "noMap" : true
-    },
-    {
-      "code" : "BTG",
-      "noMap" : true
-    },
-    {
-      "code" : "CLINTRCHNPC",
-      "noMap" : true
-    },
-    {
-      "code" : "CLINTRCHPC",
-      "noMap" : true
-    },
-    {
-      "code" : "COC",
-      "noMap" : true
-    },
-    {
-      "code" : "DSRCH",
-      "noMap" : true
-    },
-    {
-      "code" : "ERTREAT",
-      "noMap" : true
-    },
-    {
-      "code" : "HDM",
-      "noMap" : true
-    },
-    {
-      "code" : "HTEST",
-      "noMap" : true
-    },
-    {
-      "code" : "LABELING",
-      "noMap" : true
-    },
-    {
-      "code" : "METAMGT",
-      "noMap" : true
-    },
-    {
-      "code" : "MILCDM",
-      "noMap" : true
-    },
-    {
-      "code" : "MILDCRG",
-      "noMap" : true
-    },
-    {
-      "code" : "POARCH",
-      "noMap" : true
-    },
-    {
-      "code" : "PRECLINTRCH",
-      "noMap" : true
-    },
-    {
-      "code" : "SYSDEV",
-      "noMap" : true
-    },
-    {
-      "code" : "TRANSRCH",
-      "noMap" : true
-    }]
-  },
-  {
     "source" : "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
     "target" : "http://hl7.org/fhir/3.0/v3/ActUSPrivacyLaw",
     "element" : [{
@@ -360,10 +288,1057 @@
     }]
   },
   {
-    "source" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-    "target" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+    "target" : "http://hl7.org/fhir/3.0/v3/Confidentiality",
     "element" : [{
+      "code" : "U",
+      "target" : [{
+        "code" : "U",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "R",
+      "target" : [{
+        "code" : "R",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "L",
+      "target" : [{
+        "code" : "L",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "M",
+      "target" : [{
+        "code" : "M",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "V",
+      "target" : [{
+        "code" : "V",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "N",
+      "target" : [{
+        "code" : "N",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+    "target" : "http://hl7.org/fhir/3.0/v3/ActReason",
+    "element" : [{
+      "code" : "PWATRNY",
+      "target" : [{
+        "code" : "PWATRNY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "THREAT",
+      "target" : [{
+        "code" : "THREAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLINTRCH",
+      "target" : [{
+        "code" : "CLINTRCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATADMIN",
+      "target" : [{
+        "code" : "PATADMIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REMITADV",
+      "target" : [{
+        "code" : "REMITADV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HQUALIMP",
+      "target" : [{
+        "code" : "HQUALIMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLINTRL",
+      "target" : [{
+        "code" : "CLINTRL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOUTCOMS",
+      "target" : [{
+        "code" : "HOUTCOMS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HDECD",
+      "target" : [{
+        "code" : "HDECD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SUPNWK",
+      "target" : [{
+        "code" : "SUPNWK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RECORDMGT",
+      "target" : [{
+        "code" : "RECORDMGT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ETREAT",
+      "target" : [{
+        "code" : "ETREAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PurposeOfUse",
+      "target" : [{
+        "code" : "PurposeOfUse",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ELIGDTRM",
+      "target" : [{
+        "code" : "ELIGDTRM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HACCRED",
+      "target" : [{
+        "code" : "HACCRED",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ELIGVER",
+      "target" : [{
+        "code" : "ELIGVER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PERFMSR",
+      "target" : [{
+        "code" : "PERFMSR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COVERAGE",
+      "target" : [{
+        "code" : "COVERAGE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HCOMPL",
+      "target" : [{
+        "code" : "HCOMPL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HPRGRP",
+      "target" : [{
+        "code" : "HPRGRP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CLMATTCH",
+      "target" : [{
+        "code" : "CLMATTCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TREAT",
+      "target" : [{
+        "code" : "TREAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TRAIN",
+      "target" : [{
+        "code" : "TRAIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FAMRQT",
+      "target" : [{
+        "code" : "FAMRQT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MEMADMIN",
+      "target" : [{
+        "code" : "MEMADMIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HPAYMT",
+      "target" : [{
+        "code" : "HPAYMT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DISASTER",
+      "target" : [{
+        "code" : "DISASTER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GOV",
+      "target" : [{
+        "code" : "GOV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENROLLM",
+      "target" : [{
+        "code" : "ENROLLM",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HRESCH",
+      "target" : [{
+        "code" : "HRESCH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATRQT",
+      "target" : [{
+        "code" : "PATRQT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CAREMGT",
+      "target" : [{
+        "code" : "CAREMGT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HDIRECT",
+      "target" : [{
+        "code" : "HDIRECT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HLEGAL",
+      "target" : [{
+        "code" : "HLEGAL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HOPERAT",
+      "target" : [{
+        "code" : "HOPERAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HMARKT",
+      "target" : [{
+        "code" : "HMARKT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HSYSADMIN",
+      "target" : [{
+        "code" : "HSYSADMIN",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "FRAUD",
+      "target" : [{
+        "code" : "FRAUD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PUBHLTH",
+      "target" : [{
+        "code" : "PUBHLTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COVAUTH",
+      "target" : [{
+        "code" : "COVAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "POPHLTH",
+      "target" : [{
+        "code" : "POPHLTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PATSFTY",
+      "target" : [{
+        "code" : "PATSFTY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DONAT",
+      "target" : [{
+        "code" : "DONAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "METAMGT",
+      "noMap" : true
+    },
+    {
+      "code" : "SYSDEV",
+      "noMap" : true
+    },
+    {
+      "code" : "HDM",
+      "noMap" : true
+    },
+    {
+      "code" : "CLINTRCHPC",
+      "noMap" : true
+    },
+    {
+      "code" : "TRANSRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "HTEST",
+      "noMap" : true
+    },
+    {
+      "code" : "CLINTRCHNPC",
+      "noMap" : true
+    },
+    {
+      "code" : "ERTREAT",
+      "noMap" : true
+    },
+    {
+      "code" : "LABELING",
+      "noMap" : true
+    },
+    {
+      "code" : "COC",
+      "noMap" : true
+    },
+    {
+      "code" : "POARCH",
+      "noMap" : true
+    },
+    {
+      "code" : "BIORCH",
+      "noMap" : true
+    },
+    {
+      "code" : "PRECLINTRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "MILDCRG",
+      "noMap" : true
+    },
+    {
+      "code" : "MILCDM",
+      "noMap" : true
+    },
+    {
+      "code" : "DSRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "BTG",
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "target" : "http://hl7.org/fhir/3.0/v3/ActCode",
+    "element" : [{
+      "code" : "PERSISTLABEL",
+      "target" : [{
+        "code" : "PERSISTLABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DIA",
+      "target" : [{
+        "code" : "DIA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENCRYPTR",
+      "target" : [{
+        "code" : "ENCRYPTR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DECLASSIFYLABEL",
+      "target" : [{
+        "code" : "DECLASSIFYLABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUDTR",
+      "target" : [{
+        "code" : "AUDTR",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENCRYPTT",
+      "target" : [{
+        "code" : "ENCRYPTT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AUDIT",
+      "target" : [{
+        "code" : "AUDIT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RMGTCOMPT",
+      "target" : [{
+        "code" : "RMGTCOMPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV",
+      "target" : [{
+        "code" : "HIV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ETH",
+      "target" : [{
+        "code" : "ETH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRIVLABEL",
+      "target" : [{
+        "code" : "DRIVLABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYPOL",
+      "target" : [{
+        "code" : "CPLYPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TBOO",
+      "target" : [{
+        "code" : "TBOO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MARST",
+      "target" : [{
+        "code" : "MARST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DRGIS",
+      "target" : [{
+        "code" : "DRGIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PDS",
+      "target" : [{
+        "code" : "PDS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENCRYPT",
+      "target" : [{
+        "code" : "ENCRYPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOLIST",
+      "target" : [{
+        "code" : "NOLIST",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SecurityPolicy",
+      "target" : [{
+        "code" : "SecurityPolicy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "COMPT",
+      "target" : [{
+        "code" : "COMPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMP",
+      "target" : [{
+        "code" : "EMP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SSP",
+      "target" : [{
+        "code" : "SSP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYCD",
+      "target" : [{
+        "code" : "CPLYCD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ENCRYPTU",
+      "target" : [{
+        "code" : "ENCRYPTU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LOCIS",
+      "target" : [{
+        "code" : "LOCIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NODSCLCDS",
+      "target" : [{
+        "code" : "NODSCLCDS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NORDSCLCDS",
+      "target" : [{
+        "code" : "NORDSCLCDS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NORDSCLW",
+      "target" : [{
+        "code" : "NORDSCLW",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "AOD",
+      "target" : [{
+        "code" : "AOD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "B",
+      "target" : [{
+        "code" : "B",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RefrainPolicy",
+      "target" : [{
+        "code" : "RefrainPolicy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SCA",
+      "target" : [{
+        "code" : "SCA",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HRCOMPT",
+      "target" : [{
+        "code" : "HRCOMPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SDV",
+      "target" : [{
+        "code" : "SDV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOORGPOL",
+      "target" : [{
+        "code" : "NOORGPOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEMO",
+      "target" : [{
+        "code" : "DEMO",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOREUSE",
+      "target" : [{
+        "code" : "NOREUSE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SICKLE",
+      "target" : [{
+        "code" : "SICKLE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMPL",
+      "target" : [{
+        "code" : "EMPL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOWNGRDLABEL",
+      "target" : [{
+        "code" : "DOWNGRDLABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LIVARG",
+      "target" : [{
+        "code" : "LIVARG",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NORDSCLCD",
+      "target" : [{
+        "code" : "NORDSCLCD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CEL",
+      "target" : [{
+        "code" : "CEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NORELINK",
+      "target" : [{
+        "code" : "NORELINK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYJPP",
+      "target" : [{
+        "code" : "CPLYJPP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HUAPRV",
+      "target" : [{
+        "code" : "HUAPRV",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOCOLLECT",
+      "target" : [{
+        "code" : "NOCOLLECT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOINTEGRATE",
+      "target" : [{
+        "code" : "NOINTEGRATE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ANONY",
+      "target" : [{
+        "code" : "ANONY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DELAU",
+      "target" : [{
+        "code" : "DELAU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PSEUD",
+      "target" : [{
+        "code" : "PSEUD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRS",
+      "target" : [{
+        "code" : "PRS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RACE",
+      "target" : [{
+        "code" : "RACE",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOPERSISTP",
+      "target" : [{
+        "code" : "NOPERSISTP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYCC",
+      "target" : [{
+        "code" : "CPLYCC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ObligationPolicy",
+      "target" : [{
+        "code" : "ObligationPolicy",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SEX",
+      "target" : [{
+        "code" : "SEX",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOPAT",
+      "target" : [{
+        "code" : "NOPAT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MINEC",
+      "target" : [{
+        "code" : "MINEC",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REDACT",
+      "target" : [{
+        "code" : "REDACT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "RESCOMPT",
+      "target" : [{
+        "code" : "RESCOMPT",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYOPP",
+      "target" : [{
+        "code" : "CPLYOPP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "STD",
+      "target" : [{
+        "code" : "STD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PSY",
+      "target" : [{
+        "code" : "PSY",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MASK",
+      "target" : [{
+        "code" : "MASK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOMOU",
+      "target" : [{
+        "code" : "NOMOU",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LABEL",
+      "target" : [{
+        "code" : "LABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOVIP",
+      "target" : [{
+        "code" : "NOVIP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NOAUTH",
+      "target" : [{
+        "code" : "NOAUTH",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DEID",
+      "target" : [{
+        "code" : "DEID",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ORCON",
+      "target" : [{
+        "code" : "ORCON",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GDIS",
+      "target" : [{
+        "code" : "GDIS",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PRIVMARK",
+      "target" : [{
+        "code" : "PRIVMARK",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYOSP",
+      "target" : [{
+        "code" : "CPLYOSP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ADOL",
+      "target" : [{
+        "code" : "ADOL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DOB",
+      "target" : [{
+        "code" : "DOB",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NODSCLCD",
+      "target" : [{
+        "code" : "NODSCLCD",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "GENDER",
+      "target" : [{
+        "code" : "GENDER",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "UPGRDLABEL",
+      "target" : [{
+        "code" : "UPGRDLABEL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "REL",
+      "target" : [{
+        "code" : "REL",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "EMOTDIS",
+      "noMap" : true
+    },
+    {
       "code" : "ACCESSCONSCHEME",
+      "noMap" : true
+    },
+    {
+      "code" : "SUD",
+      "noMap" : true
+    },
+    {
+      "code" : "BH",
+      "noMap" : true
+    },
+    {
+      "code" : "CTCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "FMCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "PACOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "OPIOIDUD",
+      "noMap" : true
+    },
+    {
+      "code" : "SPI",
+      "noMap" : true
+    },
+    {
+      "code" : "ETHUD",
+      "noMap" : true
+    },
+    {
+      "code" : "COGN",
+      "noMap" : true
+    },
+    {
+      "code" : "MST",
+      "noMap" : true
+    },
+    {
+      "code" : "DELEPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "PHY",
+      "noMap" : true
+    },
+    {
+      "code" : "MH",
+      "noMap" : true
+    },
+    {
+      "code" : "PSYTHPN",
+      "noMap" : true
+    },
+    {
+      "code" : "LRCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "VIO",
       "noMap" : true
     },
     {
@@ -375,991 +1350,8 @@
       "noMap" : true
     },
     {
-      "code" : "BH",
-      "noMap" : true
-    },
-    {
-      "code" : "COGN",
-      "noMap" : true
-    },
-    {
-      "code" : "CTCOMPT",
-      "noMap" : true
-    },
-    {
-      "code" : "DELEPOL",
-      "noMap" : true
-    },
-    {
       "code" : "DVD",
       "noMap" : true
-    },
-    {
-      "code" : "EMOTDIS",
-      "noMap" : true
-    },
-    {
-      "code" : "ETHUD",
-      "noMap" : true
-    },
-    {
-      "code" : "FMCOMPT",
-      "noMap" : true
-    },
-    {
-      "code" : "LRCOMPT",
-      "noMap" : true
-    },
-    {
-      "code" : "MH",
-      "noMap" : true
-    },
-    {
-      "code" : "MST",
-      "noMap" : true
-    },
-    {
-      "code" : "OPIOIDUD",
-      "noMap" : true
-    },
-    {
-      "code" : "PACOMPT",
-      "noMap" : true
-    },
-    {
-      "code" : "PHY",
-      "noMap" : true
-    },
-    {
-      "code" : "PSYTHPN",
-      "noMap" : true
-    },
-    {
-      "code" : "SPI",
-      "noMap" : true
-    },
-    {
-      "code" : "SUD",
-      "noMap" : true
-    },
-    {
-      "code" : "VIO",
-      "noMap" : true
-    }]
-  },
-  {
-    "source" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
-    "target" : "http://hl7.org/fhir/3.0/v3/Confidentiality",
-    "element" : [{
-      "code" : "U",
-      "target" : [{
-        "code" : "U",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "R",
-      "target" : [{
-        "code" : "R",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "L",
-      "target" : [{
-        "code" : "L",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "M",
-      "target" : [{
-        "code" : "M",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "V",
-      "target" : [{
-        "code" : "V",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "N",
-      "target" : [{
-        "code" : "N",
-        "relationship" : "equivalent"
-      }]
-    }]
-  },
-  {
-    "source" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-    "target" : "http://hl7.org/fhir/3.0/v3/ActReason",
-    "element" : [{
-      "code" : "PWATRNY",
-      "target" : [{
-        "code" : "PWATRNY",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "THREAT",
-      "target" : [{
-        "code" : "THREAT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CLINTRCH",
-      "target" : [{
-        "code" : "CLINTRCH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PATADMIN",
-      "target" : [{
-        "code" : "PATADMIN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "REMITADV",
-      "target" : [{
-        "code" : "REMITADV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HQUALIMP",
-      "target" : [{
-        "code" : "HQUALIMP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CLINTRL",
-      "target" : [{
-        "code" : "CLINTRL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HOUTCOMS",
-      "target" : [{
-        "code" : "HOUTCOMS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HDECD",
-      "target" : [{
-        "code" : "HDECD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SUPNWK",
-      "target" : [{
-        "code" : "SUPNWK",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "RECORDMGT",
-      "target" : [{
-        "code" : "RECORDMGT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ETREAT",
-      "target" : [{
-        "code" : "ETREAT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PurposeOfUse",
-      "target" : [{
-        "code" : "PurposeOfUse",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ELIGDTRM",
-      "target" : [{
-        "code" : "ELIGDTRM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HACCRED",
-      "target" : [{
-        "code" : "HACCRED",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ELIGVER",
-      "target" : [{
-        "code" : "ELIGVER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PERFMSR",
-      "target" : [{
-        "code" : "PERFMSR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "COVERAGE",
-      "target" : [{
-        "code" : "COVERAGE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HCOMPL",
-      "target" : [{
-        "code" : "HCOMPL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HPRGRP",
-      "target" : [{
-        "code" : "HPRGRP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CLMATTCH",
-      "target" : [{
-        "code" : "CLMATTCH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "TREAT",
-      "target" : [{
-        "code" : "TREAT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "TRAIN",
-      "target" : [{
-        "code" : "TRAIN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FAMRQT",
-      "target" : [{
-        "code" : "FAMRQT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MEMADMIN",
-      "target" : [{
-        "code" : "MEMADMIN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HPAYMT",
-      "target" : [{
-        "code" : "HPAYMT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DISASTER",
-      "target" : [{
-        "code" : "DISASTER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GOV",
-      "target" : [{
-        "code" : "GOV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ENROLLM",
-      "target" : [{
-        "code" : "ENROLLM",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HRESCH",
-      "target" : [{
-        "code" : "HRESCH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PATRQT",
-      "target" : [{
-        "code" : "PATRQT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CAREMGT",
-      "target" : [{
-        "code" : "CAREMGT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HDIRECT",
-      "target" : [{
-        "code" : "HDIRECT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HLEGAL",
-      "target" : [{
-        "code" : "HLEGAL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HOPERAT",
-      "target" : [{
-        "code" : "HOPERAT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HMARKT",
-      "target" : [{
-        "code" : "HMARKT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HSYSADMIN",
-      "target" : [{
-        "code" : "HSYSADMIN",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "FRAUD",
-      "target" : [{
-        "code" : "FRAUD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PUBHLTH",
-      "target" : [{
-        "code" : "PUBHLTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "COVAUTH",
-      "target" : [{
-        "code" : "COVAUTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "POPHLTH",
-      "target" : [{
-        "code" : "POPHLTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PATSFTY",
-      "target" : [{
-        "code" : "PATSFTY",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DONAT",
-      "target" : [{
-        "code" : "DONAT",
-        "relationship" : "equivalent"
-      }]
-    }]
-  },
-  {
-    "source" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-    "target" : "http://hl7.org/fhir/3.0/v3/ActCode",
-    "element" : [{
-      "code" : "PERSISTLABEL",
-      "target" : [{
-        "code" : "PERSISTLABEL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DIA",
-      "target" : [{
-        "code" : "DIA",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ENCRYPTR",
-      "target" : [{
-        "code" : "ENCRYPTR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DECLASSIFYLABEL",
-      "target" : [{
-        "code" : "DECLASSIFYLABEL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "AUDTR",
-      "target" : [{
-        "code" : "AUDTR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ENCRYPTT",
-      "target" : [{
-        "code" : "ENCRYPTT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "AUDIT",
-      "target" : [{
-        "code" : "AUDIT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "RMGTCOMPT",
-      "target" : [{
-        "code" : "RMGTCOMPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HIV",
-      "target" : [{
-        "code" : "HIV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ETH",
-      "target" : [{
-        "code" : "ETH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DRIVLABEL",
-      "target" : [{
-        "code" : "DRIVLABEL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CPLYPOL",
-      "target" : [{
-        "code" : "CPLYPOL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "TBOO",
-      "target" : [{
-        "code" : "TBOO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MARST",
-      "target" : [{
-        "code" : "MARST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DRGIS",
-      "target" : [{
-        "code" : "DRGIS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PDS",
-      "target" : [{
-        "code" : "PDS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ENCRYPT",
-      "target" : [{
-        "code" : "ENCRYPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOLIST",
-      "target" : [{
-        "code" : "NOLIST",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SecurityPolicy",
-      "target" : [{
-        "code" : "SecurityPolicy",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "COMPT",
-      "target" : [{
-        "code" : "COMPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "EMP",
-      "target" : [{
-        "code" : "EMP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SSP",
-      "target" : [{
-        "code" : "SSP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CPLYCD",
-      "target" : [{
-        "code" : "CPLYCD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ENCRYPTU",
-      "target" : [{
-        "code" : "ENCRYPTU",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "LOCIS",
-      "target" : [{
-        "code" : "LOCIS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NODSCLCDS",
-      "target" : [{
-        "code" : "NODSCLCDS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NORDSCLCDS",
-      "target" : [{
-        "code" : "NORDSCLCDS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NORDSCLW",
-      "target" : [{
-        "code" : "NORDSCLW",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "AOD",
-      "target" : [{
-        "code" : "AOD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "B",
-      "target" : [{
-        "code" : "B",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "RefrainPolicy",
-      "target" : [{
-        "code" : "RefrainPolicy",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SCA",
-      "target" : [{
-        "code" : "SCA",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HRCOMPT",
-      "target" : [{
-        "code" : "HRCOMPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SDV",
-      "target" : [{
-        "code" : "SDV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOORGPOL",
-      "target" : [{
-        "code" : "NOORGPOL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DEMO",
-      "target" : [{
-        "code" : "DEMO",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOREUSE",
-      "target" : [{
-        "code" : "NOREUSE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SICKLE",
-      "target" : [{
-        "code" : "SICKLE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "EMPL",
-      "target" : [{
-        "code" : "EMPL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DOWNGRDLABEL",
-      "target" : [{
-        "code" : "DOWNGRDLABEL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "LIVARG",
-      "target" : [{
-        "code" : "LIVARG",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NORDSCLCD",
-      "target" : [{
-        "code" : "NORDSCLCD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CEL",
-      "target" : [{
-        "code" : "CEL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NORELINK",
-      "target" : [{
-        "code" : "NORELINK",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CPLYJPP",
-      "target" : [{
-        "code" : "CPLYJPP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HUAPRV",
-      "target" : [{
-        "code" : "HUAPRV",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOCOLLECT",
-      "target" : [{
-        "code" : "NOCOLLECT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOINTEGRATE",
-      "target" : [{
-        "code" : "NOINTEGRATE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ANONY",
-      "target" : [{
-        "code" : "ANONY",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DELAU",
-      "target" : [{
-        "code" : "DELAU",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PSEUD",
-      "target" : [{
-        "code" : "PSEUD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PRS",
-      "target" : [{
-        "code" : "PRS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "RACE",
-      "target" : [{
-        "code" : "RACE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOPERSISTP",
-      "target" : [{
-        "code" : "NOPERSISTP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CPLYCC",
-      "target" : [{
-        "code" : "CPLYCC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ObligationPolicy",
-      "target" : [{
-        "code" : "ObligationPolicy",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "SEX",
-      "target" : [{
-        "code" : "SEX",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOPAT",
-      "target" : [{
-        "code" : "NOPAT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MINEC",
-      "target" : [{
-        "code" : "MINEC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "REDACT",
-      "target" : [{
-        "code" : "REDACT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "RESCOMPT",
-      "target" : [{
-        "code" : "RESCOMPT",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CPLYOPP",
-      "target" : [{
-        "code" : "CPLYOPP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "STD",
-      "target" : [{
-        "code" : "STD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PSY",
-      "target" : [{
-        "code" : "PSY",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MASK",
-      "target" : [{
-        "code" : "MASK",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOMOU",
-      "target" : [{
-        "code" : "NOMOU",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "LABEL",
-      "target" : [{
-        "code" : "LABEL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOVIP",
-      "target" : [{
-        "code" : "NOVIP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NOAUTH",
-      "target" : [{
-        "code" : "NOAUTH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DEID",
-      "target" : [{
-        "code" : "DEID",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ORCON",
-      "target" : [{
-        "code" : "ORCON",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GDIS",
-      "target" : [{
-        "code" : "GDIS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "PRIVMARK",
-      "target" : [{
-        "code" : "PRIVMARK",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "CPLYOSP",
-      "target" : [{
-        "code" : "CPLYOSP",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "ADOL",
-      "target" : [{
-        "code" : "ADOL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "DOB",
-      "target" : [{
-        "code" : "DOB",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "NODSCLCD",
-      "target" : [{
-        "code" : "NODSCLCD",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "GENDER",
-      "target" : [{
-        "code" : "GENDER",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "UPGRDLABEL",
-      "target" : [{
-        "code" : "UPGRDLABEL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "REL",
-      "target" : [{
-        "code" : "REL",
-        "relationship" : "equivalent"
-      }]
     }]
   },
   {
@@ -1992,6 +1984,74 @@
         "code" : "MEMADMIN",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "METAMGT",
+      "noMap" : true
+    },
+    {
+      "code" : "SYSDEV",
+      "noMap" : true
+    },
+    {
+      "code" : "HDM",
+      "noMap" : true
+    },
+    {
+      "code" : "CLINTRCHPC",
+      "noMap" : true
+    },
+    {
+      "code" : "TRANSRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "HTEST",
+      "noMap" : true
+    },
+    {
+      "code" : "CLINTRCHNPC",
+      "noMap" : true
+    },
+    {
+      "code" : "ERTREAT",
+      "noMap" : true
+    },
+    {
+      "code" : "LABELING",
+      "noMap" : true
+    },
+    {
+      "code" : "COC",
+      "noMap" : true
+    },
+    {
+      "code" : "POARCH",
+      "noMap" : true
+    },
+    {
+      "code" : "BIORCH",
+      "noMap" : true
+    },
+    {
+      "code" : "PRECLINTRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "MILDCRG",
+      "noMap" : true
+    },
+    {
+      "code" : "MILCDM",
+      "noMap" : true
+    },
+    {
+      "code" : "DSRCH",
+      "noMap" : true
+    },
+    {
+      "code" : "BTG",
+      "noMap" : true
     }]
   },
   {
@@ -2556,6 +2616,90 @@
         "code" : "ENCRYPTT",
         "relationship" : "equivalent"
       }]
+    },
+    {
+      "code" : "EMOTDIS",
+      "noMap" : true
+    },
+    {
+      "code" : "ACCESSCONSCHEME",
+      "noMap" : true
+    },
+    {
+      "code" : "SUD",
+      "noMap" : true
+    },
+    {
+      "code" : "BH",
+      "noMap" : true
+    },
+    {
+      "code" : "CTCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "FMCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "PACOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "OPIOIDUD",
+      "noMap" : true
+    },
+    {
+      "code" : "SPI",
+      "noMap" : true
+    },
+    {
+      "code" : "ETHUD",
+      "noMap" : true
+    },
+    {
+      "code" : "COGN",
+      "noMap" : true
+    },
+    {
+      "code" : "MST",
+      "noMap" : true
+    },
+    {
+      "code" : "DELEPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "PHY",
+      "noMap" : true
+    },
+    {
+      "code" : "MH",
+      "noMap" : true
+    },
+    {
+      "code" : "PSYTHPN",
+      "noMap" : true
+    },
+    {
+      "code" : "LRCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "VIO",
+      "noMap" : true
+    },
+    {
+      "code" : "ACOCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "AUTHPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "DVD",
+      "noMap" : true
     }]
   }]
 }
