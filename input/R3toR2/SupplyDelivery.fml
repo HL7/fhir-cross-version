@@ -1,6 +1,6 @@
 /// url = "http://hl7.org/fhir/uv/xver/StructureMap/SupplyDelivery3to2"
 /// name = "SupplyDelivery3to2"
-/// title = "SupplyD3 to R2elivery Transforms: R"
+/// title = "SupplyDelivery Transforms: R3 to R2"
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/SupplyDelivery" alias SupplyDelivery as source
