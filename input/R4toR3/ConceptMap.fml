@@ -49,8 +49,6 @@ group element(source src, target tgt) extends BackboneElement {
 group targetX(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.display -> tgt.display;
-  src.code -> tgt.code;
-  src.display -> tgt.display;
   src.equivalence -> tgt.equivalence;
   src.comment -> tgt.comment;
   src.dependsOn as vs0 -> tgt.dependsOn as vt0 then qualifier(vs0, vt0);

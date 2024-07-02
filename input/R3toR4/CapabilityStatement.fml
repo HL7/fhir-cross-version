@@ -80,7 +80,6 @@ group resource(source src, target tgt) extends BackboneElement {
   src.referencePolicy -> tgt.referencePolicy;
   src.searchInclude -> tgt.searchInclude;
   src.searchRevInclude -> tgt.searchRevInclude;
-  src.documentation -> tgt.documentation;
   src.searchParam as vs0 -> tgt.searchParam as vt0 then searchParam(vs0, vt0);
 }
 
