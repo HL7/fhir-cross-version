@@ -22,7 +22,7 @@ group DataElement(source src : DataElementR2, target tgt : DataElement) extends 
   src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "DataElement-useContext";
   src.stringency -> tgt.stringency "DataElement-stringency";
   src.mapping as vs0 -> tgt.mapping as vt0 then deMapping(vs0, vt0) "DataElement-mapping";
-  src.element as vs ->  tgt.element as vt,  create('boolean') as first,  first.value = 'false' then ElementDefinition(vs, vt, first) "DataElement-element";
+  src.element as vs ->  tgt.element as vt,  create('boolean') as firstElement,  firstElement.value = 'false' then ElementDefinition(vs, vt, firstElement) "DataElement-element";
 }
 
 group decontact(source src, target tgt) extends Element {

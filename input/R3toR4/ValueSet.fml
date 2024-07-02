@@ -69,7 +69,7 @@ group expansion(source src, target tgt) extends BackboneElement {
   src.total -> tgt.total;
   src.offset -> tgt.offset;
   src.parameter as vs0 -> tgt.parameter as vt0 then parameter(vs0, vt0);
-  src.contains as vs0 -> tgt.contains as vt0 then contains(vs0, vt0);
+  src.contains as vs0 -> tgt.contains as vt0 then containsX(vs0, vt0);
 }
 
 group parameter(source src, target tgt) extends BackboneElement {
@@ -83,7 +83,7 @@ group parameter(source src, target tgt) extends BackboneElement {
   src.value : dateTime as vs0 -> tgt.value = create('dateTime') as vt0 then dateTime(vs0, vt0) "valueDateTime";
 }
 
-group contains(source src, target tgt) extends BackboneElement {
+group containsX(source src, target tgt) extends BackboneElement {
   src.system -> tgt.system;
   src.abstract -> tgt.abstract;
   src.inactive -> tgt.inactive;
@@ -91,6 +91,6 @@ group contains(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.display -> tgt.display;
   src.designation as vs0 -> tgt.designation as vt0 then designation(vs0, vt0);
-  src.contains as vs0 -> tgt.contains as vt0 then contains(vs0, vt0);
+  src.contains as vs0 -> tgt.contains as vt0 then containsX(vs0, vt0);
 }
 

@@ -8,7 +8,7 @@ uses "http://hl7.org/fhir/3.0/ElementDefinition" alias ElementDefinition as targ
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
-group ElementDefinition(source src : ElementDefinitionR2, target tgt : ElementDefinition, target first : boolean) <<type+>> {
+group ElementDefinition(source src : ElementDefinitionR2, target tgt : ElementDefinition, target firstElement : boolean) <<type+>> {
   src.extension -> tgt.extension "ElementDefinition-extensions";
   src.path -> tgt.id "ElementDefinition-id";
   src.path -> tgt.path "ElementDefinition-path";
@@ -35,7 +35,7 @@ group ElementDefinition(source src : ElementDefinitionR2, target tgt : ElementDe
     vs0.min -> vt0.min "base-min";
     vs0.max -> vt0.max "base-max";
   } "ElementDefinition-base";
-  src.type as vs0 where first.not() -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinition-type";
+  src.type as vs0 where firstElement.not() -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinition-type";
   src.nameReference -> tgt.contentReference "ElementDefinition-nameReference";
   src.defaultValue -> tgt.defaultValue "ElementDefinition-defaultValue";
   src.meaningWhenMissing -> tgt.meaningWhenMissing "ElementDefinition-meaningWhenMissing";

@@ -49,12 +49,12 @@ group StructureDefinition(source src : StructureDefinitionR2, target tgt : Struc
   src.constrainedType -> tgt.type "StructureDefinition-type";
   src.base -> tgt.baseDefinition "StructureDefinition-baseDefinition";
   src.snapshot as vs0 -> tgt.snapshot as vt0 then {
-    vs0.element first as vs ->  vt0.element as vt,  create('boolean') as first,  first.value = 'true' then ElementDefinition(vs, vt, first) "snapshot-element-1";
-    vs0.element not_first as vs ->  vt0.element as vt,  create('boolean') as first,  first.value = 'false' then ElementDefinition(vs, vt, first) "snapshot-element-2";
+    vs0.element as vs ->  vt0.element as vt,  create('boolean') as firstV,  firstV.value = 'true' then ElementDefinition(vs, vt, firstV) "snapshot-element-1";
+    vs0.element as vs ->  vt0.element as vt,  create('boolean') as firstV,  firstV.value = 'false' then ElementDefinition(vs, vt, firstV) "snapshot-element-2";
   } "StructureDefinition-snapshot";
-  src.differential first as vs0 -> tgt.differential as vt0 then {
-    vs0.element first as vs ->  vt0.element as vt,  create('boolean') as first,  first.value = 'true' then ElementDefinition(vs, vt, first) "differential-element-1";
-    vs0.element not_first as vs ->  vt0.element as vt,  create('boolean') as first,  first.value = 'false' then ElementDefinition(vs, vt, first) "differential-element-2";
+  src.differential  as vs0 -> tgt.differential as vt0 then {
+    vs0.element as vs ->  vt0.element as vt,  create('boolean') as firstV,  firstV.value = 'true' then ElementDefinition(vs, vt, firstV) "differential-element-1";
+    vs0.element as vs ->  vt0.element as vt,  create('boolean') as firstV,  firstV.value = 'false' then ElementDefinition(vs, vt, firstV) "differential-element-2";
   } "StructureDefinition-differential";
 }
 
