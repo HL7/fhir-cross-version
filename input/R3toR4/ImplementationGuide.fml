@@ -22,7 +22,7 @@ group ImplementationGuide(source src : ImplementationGuideR3, target tgt : Imple
   src.jurisdiction -> tgt.jurisdiction;
   src.copyright -> tgt.copyright;
   src.fhirVersion -> tgt.fhirVersion;
-  src.dependency as vs0 check type = 'reference' -> tgt.dependsOn as vt0 then dependency(vs0, vt0);
+  src.dependency as vs0 check (type = 'reference') -> tgt.dependsOn as vt0 then dependency(vs0, vt0);
   src.global as vs0 -> tgt.global as vt0 then global(vs0, vt0);
   src -> tgt.definition as dfn then definition(src, dfn) "definition";
   src where binary.exists() -> tgt.manifest as mft then manifest(src, mft) "manifest";

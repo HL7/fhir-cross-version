@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group Encounter(source src : Encounter, target tgt : EncounterR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "Encounter-identifier";
-  src.status check status != 'entered-in-error' -> tgt.status "Encounter-status";
+  src.status check (status != 'entered-in-error') -> tgt.status "Encounter-status";
   src.statusHistory as vs0 -> tgt.statusHistory as vt0 then encStatusHistory(vs0, vt0) "Encounter-statusHistory";
   src.class as v -> tgt.class = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/enc.class-3to2', 'code') "Encounter-class";
   src.type -> tgt.type "Encounter-type";

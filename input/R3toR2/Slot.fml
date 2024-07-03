@@ -12,7 +12,7 @@ group Slot(source src : Slot, target tgt : SlotR2) extends DomainResource <<type
   src.identifier -> tgt.identifier "Slot-identifier";
   src.serviceType -> tgt.type "Slot-type";
   src.schedule -> tgt.schedule "Slot-schedule";
-  src.status check src.status != 'entered-in-error' -> tgt.freeBusyType "Slot-freeBusyType";
+  src.status check (src.status != 'entered-in-error') -> tgt.freeBusyType "Slot-freeBusyType";
   src.start -> tgt.start "Slot-start";
   src.end -> tgt.end "Slot-end";
   src.overbooked -> tgt.overbooked "Slot-overbooked";

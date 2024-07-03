@@ -21,7 +21,7 @@ group MedicationOrder(source src : MedicationOrderR2, target tgt : MedicationReq
   src.note -> tgt.note "MedicationOrder-note";
   src.medication -> tgt.medication "MedicationOrder-medication";
   src.dosageInstruction as vs -> tgt.dosageInstruction as vt then medDosageInstruction(vs, vt) "MedicationOrder-dosageInstruction";
-  src.dispenseRequest as vs check medication.empty() -> tgt.dispenseRequest as vt then medDispenseRequest(vs, vt) "MedicationOrder-dispenseRequest";
+  src.dispenseRequest as vs check (medication.empty()) -> tgt.dispenseRequest as vt then medDispenseRequest(vs, vt) "MedicationOrder-dispenseRequest";
   src.substitution as vs -> tgt.substitution as vt then medSubstitution(vs, vt) "MedicationOrder-substitution";
   src.priorPrescription -> tgt.priorPrescription "MedicationOrder-priorPrescription";
 }

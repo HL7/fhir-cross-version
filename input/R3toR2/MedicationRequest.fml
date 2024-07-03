@@ -11,7 +11,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 group MedicationRequest(source src : MedicationRequest, target tgt : MedicationOrderR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "MedicationOrder-identifier";
   src.authoredOn -> tgt.dateWritten "MedicationOrder-dateWritten";
-  src.status check ($this != 'cancelled') and ($this != 'unknown') -> tgt.status "MedicationOrder-status";
+  src.status check (($this != 'cancelled') and ($this != 'unknown')) -> tgt.status "MedicationOrder-status";
   src.subject -> tgt.patient "MedicationOrder-patient";
   src.requester as req -> tgt.prescriber as vt then medRequestor(req, vt) "MedicationOrder-prescriber";
   src.context -> tgt.encounter "MedicationOrder-encounter";

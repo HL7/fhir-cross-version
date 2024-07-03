@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/1.0/ReferralRequest" alias ReferralRequestR2 as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group ReferralRequest(source src : ReferralRequest, target tgt : ReferralRequestR2) extends DomainResource <<type+>> {
-  src.status check $this != 'entered-in-error' -> tgt.status "ReferralRequest-status";
+  src.status check ($this != 'entered-in-error') -> tgt.status "ReferralRequest-status";
   src.identifier -> tgt.identifier "ReferralRequest-identifier";
   src.authoredOn -> tgt.date "ReferralRequest-date";
   src.type -> tgt.type "ReferralRequest-type";

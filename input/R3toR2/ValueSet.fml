@@ -35,7 +35,7 @@ group compose(source vs, target vst, source src, target tgt) extends BackboneEle
   src.lockedDate -> vst.lockedDate "vs-compose-ld";
   src.include as vs where (system.exists() and valueSet.empty() and concept.empty() and filter.empty()) and (system.resolve().valueSet = vs.url) ->  vst.codeSystem as vt,  (vs.system.resolve()) as cs then codeSystem(cs, vt) "vs-compose-incl-cs";
   src.include as vs where ((system.exists() and valueSet.empty() and concept.empty() and filter.empty()) and (system.resolve().valueSet = vs.url)).not() -> tgt.include as vt then include(vs, vt, tgt) "vs-compose-incl";
-  src.exclude as vs check valueSet.empty() -> tgt.exclude as vt then include(vs, vt, tgt) "vs-compose-excl";
+  src.exclude as vs check (valueSet.empty()) -> tgt.exclude as vt then include(vs, vt, tgt) "vs-compose-excl";
 }
 
 group codeSystem(source src, target tgt) extends Element {
