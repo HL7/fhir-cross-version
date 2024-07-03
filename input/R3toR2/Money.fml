@@ -10,7 +10,7 @@ uses "http://hl7.org/fhir/1.0/Quantity" alias QuantityR2 as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element3to2"
 
-group Quantity(source src : Quantity, target tgt : QuantityR2) extends Element <<type+>> {
+group Money(source src : Quantity, target tgt : QuantityR2) extends Element <<type+>> {
   src.value -> tgt.value "Quantity-value";
   src.comparator -> tgt.comparator "Quantity-comparator";
   src.unit -> tgt.unit "Quantity-unit";

@@ -8,7 +8,7 @@ uses "http://hl7.org/fhir/1.0/MedicationOrder" alias MedicationOrderR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
-group MedicationRequest(source src : MedicationRequest, target tgt : MedicationOrderR2) extends DomainResource <<type+>> {
+group MedicationOrder(source src : MedicationRequest, target tgt : MedicationOrderR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "MedicationOrder-identifier";
   src.authoredOn -> tgt.dateWritten "MedicationOrder-dateWritten";
   src.status check (($this != 'cancelled') and ($this != 'unknown')) -> tgt.status "MedicationOrder-status";

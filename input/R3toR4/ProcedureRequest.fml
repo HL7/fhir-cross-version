@@ -8,7 +8,7 @@ uses "http://hl7.org/fhir/4.0/ServiceRequest" alias ServiceRequest as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
-group ServiceRequest(source src : ProcedureRequestR3, target tgt : ServiceRequest) extends DomainResource <<type+>> {
+group ProcedureRequest(source src : ProcedureRequestR3, target tgt : ServiceRequest) extends DomainResource <<type+>> {
   src as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/BaseType',  vt.value = 'ProcedureRequest' "ProcedureRequest";
   src.identifier -> tgt.identifier;
   src.definition -> tgt.instantiatesCanonical;
