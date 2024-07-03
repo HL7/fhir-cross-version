@@ -4,11 +4,11 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/Group" alias GroupR3 as source
-uses "http://hl7.org/fhir/4.0/Group" alias group as target
+uses "http://hl7.org/fhir/4.0/Group" alias GroupR4 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
-group group(source src : GroupR3, target tgt : group) extends DomainResource <<type+>> {
+group Group(source src : GroupR3, target tgt : GroupR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.active -> tgt.active;
   src.type -> tgt.type;
