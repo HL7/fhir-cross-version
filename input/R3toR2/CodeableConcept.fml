@@ -4,6 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/CodeableConcept" alias CodeableConcept as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Coding" alias CodingR3 as source
 uses "http://hl7.org/fhir/1.0/StructureDefinition/CodeableConcept" alias CodeableConceptR2 as target
 uses "http://hl7.org/fhir/1.0/StructureDefinition/Coding" alias CodingR2 as target
 uses "http://hl7.org/fhir/1.0/StructureDefinition/string" alias stringR2 as target
@@ -21,7 +22,7 @@ group CodeableConceptToCoding(source src : CodeableConcept, target tgt : CodingR
   src.coding only_one as vs then Coding(vs, tgt) "CodeableConcept-coding";
 }
 
-group CodingToCodeableConcept(source src : Coding, target tgt : CodeableConceptR2) extends Element <<types>> {
+group CodingToCodeableConcept(source src : CodingR3, target tgt : CodeableConceptR2) extends Element <<types>> {
   src -> tgt.coding as vt then Coding(src, vt) "CodingToCodeableConcept-coding";
 }
 

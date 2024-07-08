@@ -5,6 +5,7 @@
 
 uses "http://hl7.org/fhir/4.0/StructureDefinition/Coding" alias Coding as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Coding" alias CodingR3 as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/code" alias codeR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

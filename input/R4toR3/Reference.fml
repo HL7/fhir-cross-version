@@ -4,7 +4,10 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/StructureDefinition/Reference" alias Reference as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/canonical" alias canonical as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/uri" alias uri as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Reference" alias ReferenceR3 as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Identifier" alias IdentifierR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

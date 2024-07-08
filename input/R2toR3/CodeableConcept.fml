@@ -7,6 +7,7 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/CodeableConcept" alias Codeabl
 uses "http://hl7.org/fhir/1.0/StructureDefinition/Coding" alias CodingR2 as source
 uses "http://hl7.org/fhir/1.0/StructureDefinition/string" alias stringR2 as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/CodeableConcept" alias CodeableConcept as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Coding" alias CodingR3 as source
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"
@@ -21,7 +22,7 @@ group CodingToCodeableConcept(source src : CodingR2, target tgt : CodeableConcep
   src -> tgt.coding as vt then Coding(src, vt) "CodingToCodeableConcept-coding";
 }
 
-group CodeableConceptToCoding(source src : CodeableConceptR2, target tgt : Coding) extends Element <<types>> {
+group CodeableConceptToCoding(source src : CodeableConceptR2, target tgt : CodingR3) extends Element <<types>> {
   src.coding only_one as vs then Coding(vs, tgt) "CodeableConcept-coding";
 }
 
