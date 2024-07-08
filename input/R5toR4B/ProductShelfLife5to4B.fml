@@ -3,8 +3,8 @@
 /// title = "ProductShelfLife Transforms: R5 to R4B"
 /// status = "active"
 
-uses "http://hl7.org/fhir/5.0/ProductShelfLife" alias ProductShelfLifeR5 as source
-uses "http://hl7.org/fhir/4.3/ProductShelfLife" alias ProductShelfLifeR4B as target
+uses "http://hl7.org/fhir/5.0/StructureDefinition/ProductShelfLife" alias ProductShelfLifeR5 as source
+uses "http://hl7.org/fhir/4.3/StructureDefinition/ProductShelfLife" alias ProductShelfLifeR4B as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 

@@ -3,8 +3,8 @@
 /// title = "ActivityDefinition Transforms: R4B to R5"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.3/ActivityDefinition" alias ActivityDefinitionR4B as source
-uses "http://hl7.org/fhir/5.0/ActivityDefinition" alias ActivityDefinitionR5 as target
+uses "http://hl7.org/fhir/4.3/StructureDefinition/ActivityDefinition" alias ActivityDefinitionR4B as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/ActivityDefinition" alias ActivityDefinitionR5 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 

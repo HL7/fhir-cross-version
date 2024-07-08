@@ -3,8 +3,8 @@
 /// title = "OperationDefinition Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/OperationDefinition" alias OperationDefinitionR2 as source
-uses "http://hl7.org/fhir/3.0/OperationDefinition" alias OperationDefinition as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/OperationDefinition" alias OperationDefinitionR2 as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/OperationDefinition" alias OperationDefinition as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 

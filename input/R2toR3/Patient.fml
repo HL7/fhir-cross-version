@@ -3,8 +3,8 @@
 /// title = "Patient Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/Patient" alias PatientR2 as source
-uses "http://hl7.org/fhir/3.0/Patient" alias Patient as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Patient" alias PatientR2 as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Patient" alias Patient as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 

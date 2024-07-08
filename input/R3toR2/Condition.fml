@@ -3,8 +3,8 @@
 /// title = "Condition Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Condition" alias Condition as source
-uses "http://hl7.org/fhir/1.0/Condition" alias ConditionR2 as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Condition" alias Condition as source
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Condition" alias ConditionR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 

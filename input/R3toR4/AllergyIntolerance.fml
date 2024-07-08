@@ -3,8 +3,8 @@
 /// title = "AllergyIntolerance Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/AllergyIntolerance" alias AllergyIntoleranceR3 as source
-uses "http://hl7.org/fhir/4.0/AllergyIntolerance" alias AllergyIntolerance as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance" alias AllergyIntoleranceR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance" alias AllergyIntolerance as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

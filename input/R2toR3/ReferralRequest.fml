@@ -3,8 +3,8 @@
 /// title = "ReferralRequest Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/ReferralRequest" alias ReferralRequestR2 as source
-uses "http://hl7.org/fhir/3.0/ReferralRequest" alias ReferralRequest as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/ReferralRequest" alias ReferralRequestR2 as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ReferralRequest" alias ReferralRequest as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 

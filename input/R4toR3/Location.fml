@@ -3,8 +3,8 @@
 /// title = "Location Transforms: R4 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/Location" alias Location as source
-uses "http://hl7.org/fhir/3.0/Location" alias LocationR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Location" alias Location as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Location" alias LocationR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

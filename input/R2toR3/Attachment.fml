@@ -3,8 +3,8 @@
 /// title = "Attachment Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/Attachment" alias AttachmentR2 as source
-uses "http://hl7.org/fhir/3.0/Attachment" alias Attachment as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Attachment" alias AttachmentR2 as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Attachment" alias Attachment as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"

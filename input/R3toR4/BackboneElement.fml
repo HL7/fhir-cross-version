@@ -3,8 +3,8 @@
 /// title = "BackboneElement Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/BackboneElement" alias BackboneElementR3 as source
-uses "http://hl7.org/fhir/4.0/BackboneElement" alias BackboneElement as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/BackboneElement" alias BackboneElementR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement" alias BackboneElement as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

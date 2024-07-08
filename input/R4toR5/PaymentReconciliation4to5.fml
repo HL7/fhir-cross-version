@@ -3,8 +3,8 @@
 /// title = "PaymentReconciliation Transforms: R4 to R5"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/PaymentReconciliation" alias PaymentReconciliationR4 as source
-uses "http://hl7.org/fhir/5.0/PaymentReconciliation" alias PaymentReconciliationR5 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/PaymentReconciliation" alias PaymentReconciliationR4 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/PaymentReconciliation" alias PaymentReconciliationR5 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 

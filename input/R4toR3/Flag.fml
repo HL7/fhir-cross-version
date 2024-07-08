@@ -3,8 +3,8 @@
 /// title = "R4 to R3 Conversion for Flag"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/Flag" alias Flag as source
-uses "http://hl7.org/fhir/3.0/Flag" alias FlagR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Flag" alias Flag as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Flag" alias FlagR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

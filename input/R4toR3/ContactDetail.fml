@@ -3,8 +3,8 @@
 /// title = "R4 to R3 Conversion for ContactDetail"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/ContactDetail" alias ContactDetail as source
-uses "http://hl7.org/fhir/3.0/ContactDetail" alias ContactDetailR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/ContactDetail" alias ContactDetail as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ContactDetail" alias ContactDetailR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

@@ -3,8 +3,8 @@
 /// title = "Claim Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Claim" alias ClaimR3 as source
-uses "http://hl7.org/fhir/4.0/Claim" alias Claim as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Claim" alias ClaimR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Claim" alias Claim as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

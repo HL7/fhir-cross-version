@@ -3,8 +3,8 @@
 /// title = "ImmunizationRecommendation Transforms: R4 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/ImmunizationRecommendation" alias ImmunizationRecommendation as source
-uses "http://hl7.org/fhir/3.0/ImmunizationRecommendation" alias ImmunizationRecommendationR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/ImmunizationRecommendation" alias ImmunizationRecommendation as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ImmunizationRecommendation" alias ImmunizationRecommendationR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

@@ -3,9 +3,9 @@
 /// title = "Resource Transforms: R5 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/5.0/Resource" alias ResourceR5 as source
-uses "http://hl7.org/fhir/4.0/Resource" alias ResourceR4 as target
-uses "http://hl7.org/fhir/5.0/Base" alias BaseR5 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/Resource" alias ResourceR5 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Resource" alias ResourceR4 as target
+uses "http://hl7.org/fhir/5.0/StructureDefinition/Base" alias BaseR5 as source
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 

@@ -3,8 +3,8 @@
 /// title = "Resource Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/Resource" alias ResourceR2 as source
-uses "http://hl7.org/fhir/3.0/Resource" alias Resource as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Resource" alias ResourceR2 as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Resource" alias Resource as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Meta2to3"

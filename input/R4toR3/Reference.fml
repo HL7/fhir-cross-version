@@ -3,8 +3,8 @@
 /// title = "Reference Transforms: R4 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/Reference" alias Reference as source
-uses "http://hl7.org/fhir/3.0/Reference" alias ReferenceR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Reference" alias Reference as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Reference" alias ReferenceR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

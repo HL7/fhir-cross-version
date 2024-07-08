@@ -3,8 +3,8 @@
 /// title = "Provenance Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Provenance" alias ProvenanceR3 as source
-uses "http://hl7.org/fhir/4.0/Provenance" alias Provenance as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Provenance" alias ProvenanceR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Provenance" alias Provenance as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

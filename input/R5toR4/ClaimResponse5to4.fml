@@ -3,8 +3,8 @@
 /// title = "ClaimResponse Transforms: R5 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/5.0/ClaimResponse" alias ClaimResponseR5 as source
-uses "http://hl7.org/fhir/4.0/ClaimResponse" alias ClaimResponseR4 as target
+uses "http://hl7.org/fhir/5.0/StructureDefinition/ClaimResponse" alias ClaimResponseR5 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/ClaimResponse" alias ClaimResponseR4 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 

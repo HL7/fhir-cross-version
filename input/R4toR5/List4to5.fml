@@ -3,8 +3,8 @@
 /// title = "List Transforms: R4 to R5"
 /// status = "draft"
 
-uses "http://hl7.org/fhir/4.0/List" alias ListR4 as source
-uses "http://hl7.org/fhir/5.0/List" alias ListR5 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/List" alias ListR4 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/List" alias ListR5 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 

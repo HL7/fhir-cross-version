@@ -3,8 +3,8 @@
 /// title = "EnrollmentResponse Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/EnrollmentResponse" alias EnrollmentResponseR2 as source
-uses "http://hl7.org/fhir/3.0/EnrollmentResponse" alias EnrollmentResponse as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/EnrollmentResponse" alias EnrollmentResponseR2 as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/EnrollmentResponse" alias EnrollmentResponse as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/DomainResource2to3"

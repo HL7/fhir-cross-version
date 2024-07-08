@@ -3,12 +3,12 @@
 /// title = "Reference Transforms: R4 to R5"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/Reference" alias ReferenceR4 as source
-uses "http://hl7.org/fhir/5.0/CodeableReference" alias CodeableReferenceR5 as target
-uses "http://hl7.org/fhir/5.0/Reference" alias ReferenceR5 as target
-uses "http://hl7.org/fhir/5.0/canonical" alias canonicalR5 as target
-uses "http://hl7.org/fhir/4.0/url" alias urlR4 as source
-uses "http://hl7.org/fhir/5.0/url" alias urlR5 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Reference" alias ReferenceR4 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/CodeableReference" alias CodeableReferenceR5 as target
+uses "http://hl7.org/fhir/5.0/StructureDefinition/Reference" alias ReferenceR5 as target
+uses "http://hl7.org/fhir/5.0/StructureDefinition/canonical" alias canonicalR5 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/url" alias urlR4 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/url" alias urlR5 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 

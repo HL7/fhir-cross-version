@@ -3,8 +3,8 @@
 /// title = "ConceptMap Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/ConceptMap" alias ConceptMapR3 as source
-uses "http://hl7.org/fhir/4.0/ConceptMap" alias ConceptMap as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ConceptMap" alias ConceptMapR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/ConceptMap" alias ConceptMap as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
