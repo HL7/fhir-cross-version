@@ -19,7 +19,7 @@ group Encounter(source src : Encounter, target tgt : EncounterR3) extends Domain
   src.subject -> tgt.subject;
   src.episodeOfCare -> tgt.episodeOfCare;
   src.basedOn -> tgt.incomingReferral;
-  src.participant as vs0 -> tgt.participant as vt0 then participant(vs0, vt0);
+  src.participant as vs0 -> tgt.participant as vt0 then EncounterParticipant(vs0, vt0);
   src.appointment -> tgt.appointment;
   src.period -> tgt.period;
   src.length -> tgt.length;
@@ -42,7 +42,7 @@ group classHistory(source src, target tgt) extends BackboneElement {
   src.period -> tgt.period;
 }
 
-group participant(source src, target tgt) extends BackboneElement {
+group EncounterParticipant(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.period -> tgt.period;
   src.individual -> tgt.individual;

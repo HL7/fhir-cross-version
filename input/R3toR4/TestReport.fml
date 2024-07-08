@@ -17,19 +17,19 @@ group TestReport(source src : TestReportR3, target tgt : TestReport) extends Dom
   src.score -> tgt.score;
   src.tester -> tgt.tester;
   src.issued -> tgt.issued;
-  src.participant as vs0 -> tgt.participant as vt0 then participant(vs0, vt0);
-  src.setup as vs0 -> tgt.setup as vt0 then setup(vs0, vt0);
+  src.participant as vs0 -> tgt.participant as vt0 then TestReportParticipant(vs0, vt0);
+  src.setup as vs0 -> tgt.setup as vt0 then TestReportSetup(vs0, vt0);
   src.test as vs0 -> tgt.test as vt0 then test(vs0, vt0);
   src.teardown as vs0 -> tgt.teardown as vt0 then teardown(vs0, vt0);
 }
 
-group participant(source src, target tgt) extends BackboneElement {
+group TestReportParticipant(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.uri -> tgt.uri;
   src.display -> tgt.display;
 }
 
-group setup(source src, target tgt) extends BackboneElement {
+group TestReportSetup(source src, target tgt) extends BackboneElement {
   src.action as vs0 -> tgt.action as vt0 then action(vs0, vt0);
 }
 

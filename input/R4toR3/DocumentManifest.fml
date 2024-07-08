@@ -19,7 +19,7 @@ group DocumentManifest(source src : DocumentManifest, target tgt : DocumentManif
   src.recipient -> tgt.recipient;
   src.source -> tgt.source;
   src.description -> tgt.description;
-  src.content as s -> tgt.content as t then content(s, t);
+  src.content as s -> tgt.content as t then DocumentManifestContent(s, t);
   src.related as s -> tgt.related as t then DocumentManifestRelated(s, t);
 }
 
@@ -27,7 +27,7 @@ group DocumentManifestAgent(source src, target tgt) extends BackboneElement {
   src.who as vs0 then Reference(vs0, tgt);
 }
 
-group content(source src, target tgt) extends Element {
+group DocumentManifestContent(source src, target tgt) extends Element {
   src.extension as s where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentManifest.content.p_Attachment' then contentAttachment(s, tgt);
   src where extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentManifest.content.p_Attachment').empty() -> tgt.p = create('Reference') as p then Reference(src, p) "attachment";
 }

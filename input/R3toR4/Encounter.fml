@@ -11,7 +11,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 group Encounter(source src : EncounterR3, target tgt : Encounter) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
-  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then statusHistory(vs0, vt0);
+  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then EncounterStatusHistory(vs0, vt0);
   src.class -> tgt.class;
   src.classHistory as vs0 -> tgt.classHistory as vt0 then classHistory(vs0, vt0);
   src.type -> tgt.type;
@@ -32,7 +32,7 @@ group Encounter(source src : EncounterR3, target tgt : Encounter) extends Domain
   src.partOf -> tgt.partOf;
 }
 
-group statusHistory(source src, target tgt) extends BackboneElement {
+group EncounterStatusHistory(source src, target tgt) extends BackboneElement {
   src.status -> tgt.status;
   src.period -> tgt.period;
 }
