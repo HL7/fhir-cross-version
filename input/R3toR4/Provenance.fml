@@ -21,7 +21,7 @@ group Provenance(source src : ProvenanceR3, target tgt : Provenance) extends Dom
   src.signature -> tgt.signature;
 }
 
-group agent(source src : ProvenanceR3, target tgt : Provenance) extends BackboneElement {
+group agent(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role;
   src.who : uri as vs ->  tgt.who as ref,  ref.reference = vs,  ref.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/BaseType',  ext.value = 'uri' "whoUri";
   src.who : Reference as vs0 -> tgt.who as vt0 then Reference(vs0, vt0) "whoReference";
@@ -30,7 +30,7 @@ group agent(source src : ProvenanceR3, target tgt : Provenance) extends Backbone
   src.relatedAgentType -> tgt.type;
 }
 
-group entity(source src : ProvenanceR3, target tgt : Provenance) extends BackboneElement {
+group entity(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role;
   src.what : uri as vs ->  tgt.what as ref,  ref.reference = vs,  ref.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/BaseType',  ext.value = 'uri' "whatUri";
   src.what : Reference as vs0 -> tgt.what as vt0 then Reference(vs0, vt0) "whatReference";
