@@ -50,6 +50,12 @@ group EligibilityResponseInsuranceDetail(source src, target tgt) extends Backbon
   src.authorizationUrl -> tgt.authorizationUrl;
 }
 
+group EligibilityResponseInsuranceDetailBenefit(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.allowed -> tgt.allowed;
+  src.used -> tgt.used;
+}
+
 group EligibilityResponseError(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
 }
