@@ -21,19 +21,19 @@ group DocumentReference(source src : DocumentReferenceR3, target tgt : DocumentR
   src.author -> tgt.author;
   src.authenticator -> tgt.authenticator;
   src.custodian -> tgt.custodian;
-  src.relatesTo as vs0 -> tgt.relatesTo as vt0 then relatesTo(vs0, vt0);
+  src.relatesTo as vs0 -> tgt.relatesTo as vt0 then DocumentReferenceRelatesTo(vs0, vt0);
   src.description -> tgt.description;
   src.securityLabel -> tgt.securityLabel;
-  src.content as vs0 -> tgt.content as vt0 then content(vs0, vt0);
+  src.content as vs0 -> tgt.content as vt0 then DocumentReferenceContent(vs0, vt0);
   src.context as vs0 -> tgt.context as vt0 then context(vs0, vt0);
 }
 
-group relatesTo(source src, target tgt) extends BackboneElement {
+group DocumentReferenceRelatesTo(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.target -> tgt.target;
 }
 
-group content(source src, target tgt) extends BackboneElement {
+group DocumentReferenceContent(source src, target tgt) extends BackboneElement {
   src.attachment -> tgt.attachment;
   src.format -> tgt.format;
 }

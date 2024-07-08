@@ -19,11 +19,11 @@ group DocumentManifest(source src : DocumentManifestR3, target tgt : DocumentMan
   src.recipient -> tgt.recipient;
   src.source -> tgt.source;
   src.description -> tgt.description;
-  src.content as s -> tgt.content as t then content(s, t);
+  src.content as s -> tgt.content as t then DocumentManifestContent(s, t);
   src.related as s -> tgt.related as t then DocumentManifestRelated(s, t);
 }
 
-group content(source src, target tgt) extends Element {
+group DocumentManifestContent(source src, target tgt) extends Element {
   src.p : Attachment as s ->  tgt.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentManifest.content.p_Attachment',  ext.value = s "pAttachment";
   src.p : Reference as s then Reference(s, tgt) "pReference";
 }
