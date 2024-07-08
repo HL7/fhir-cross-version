@@ -18,11 +18,3 @@ group QuantityM(source src : QuantityR2, target tgt : Quantity) extends Element 
   src.code -> tgt.code "Quantity-code";
 }
 
-group QuantityToDuration(source src : QuantityR2, target tgt : Duration) extends Element {
-  src.value -> tgt.value "Duration-value";
-  src.comparator -> tgt.comparator "Duration-comparator";
-  src.unit -> tgt.unit "Duration-unit";
-  src.system -> tgt.system "Duration-system";
-  src.code -> tgt.code "Duration-code";
-}
-

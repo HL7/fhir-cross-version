@@ -18,11 +18,3 @@ group Money(source src : Quantity, target tgt : QuantityR2) extends Element <<ty
   src.code -> tgt.code "Quantity-code";
 }
 
-group DurationToQuantity(source src : Duration, target tgt : QuantityR2) extends Element {
-  src.value -> tgt.value "Duration-value";
-  src.comparator -> tgt.comparator "Duration-comparator";
-  src.unit -> tgt.unit "Duration-unit";
-  src.system -> tgt.system "Duration-system";
-  src.code -> tgt.code "Duration-code";
-}
-
