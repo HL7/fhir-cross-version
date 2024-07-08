@@ -46,10 +46,10 @@ group definition(source src, target tgt) extends BackboneElement {
 group grouping(source src, target tgt, source dfn) extends BackboneElement {
   src.name -> tgt.name;
   src.description -> tgt.description;
-  dfn.resource as rs where groupingId = src.id -> tgt.resource as rt then resource(rs, rt);
+  dfn.resource as rs where groupingId = src.id -> tgt.resource as rt then groupResource(rs, rt);
 }
 
-group resource(source src, target tgt) extends BackboneElement {
+group groupResource(source src, target tgt) extends BackboneElement {
   src.example : boolean as vs0 -> tgt.example as vt0 then boolean(vs0, vt0) "exampleBoolean";
   src.name -> tgt.name;
   src.description -> tgt.description;

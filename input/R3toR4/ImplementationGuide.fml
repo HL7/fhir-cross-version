@@ -45,10 +45,10 @@ group definition(source src, target tgt) extends BackboneElement {
 group grouping(source src, target dfn, target grp) extends BackboneElement {
   src.name -> grp.name;
   src.description -> grp.description;
-  src.resource as rs -> dfn.resource as rt then resource(rs, rt, src);
+  src.resource as rs -> dfn.resource as rt then groupResource(rs, rt, src);
 }
 
-group resource(source src, target tgt, source pck) extends BackboneElement {
+group groupResource(source src, target tgt, source pck) extends BackboneElement {
   pck.id -> tgt.groupingId "packageId";
   src.example as vs0 where (src.exampleFor.empty()) -> tgt.example = create('boolean') as vt0 then boolean(vs0, vt0);
   src.name -> tgt.name;

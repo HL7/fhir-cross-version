@@ -54,7 +54,7 @@ group rest(source src, target tgt) extends BackboneElement {
   src.mode -> tgt.mode;
   src.documentation -> tgt.documentation;
   src.security as vs0 -> tgt.security as vt0 then security(vs0, vt0);
-  src.resource as vs0 -> tgt.resource as vt0 then resource(vs0, vt0);
+  src.resource as vs0 -> tgt.resource as vt0 then restResource(vs0, vt0);
   src.interaction as vs0 -> tgt.interaction as vt0 then interaction(vs0, vt0);
   src.searchParam as vs0 -> tgt.searchParam as vt0 then searchParam(vs0, vt0);
   src.operation as vs0 -> tgt.operation as vt0 then operation(vs0, vt0);
@@ -67,7 +67,7 @@ group security(source src, target tgt) extends BackboneElement {
   src.description -> tgt.description;
 }
 
-group resource(source src, target tgt) extends BackboneElement {
+group restResource(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.profile -> tgt.profile;
   src.documentation -> tgt.documentation;

@@ -52,7 +52,7 @@ group rest(source src, target tgt) extends BackboneElement {
   src.mode -> tgt.mode "conf-mode";
   src.documentation -> tgt.documentation "conf-documentation";
   src.security as vs -> tgt.security as vt then security(vs, vt) "conf-security";
-  src.resource as vs -> tgt.resource as vt then resource(vs, vt) "conf-resource";
+  src.resource as vs -> tgt.resource as vt then ConformanceRestResource(vs, vt) "conf-resource";
   src.interaction as vs where (code != 'transaction') -> tgt.interaction as vt then interaction(vs, vt) "conf-interaction";
   src.transactionMode where ($this = 'batch') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'batch' "conf-transactionMode";
   src.transactionMode where ($this = 'transaction') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'transaction' "conf-transactionMode";
@@ -73,7 +73,7 @@ group certificate(source src, target tgt) extends BackboneElement {
   src.blob -> tgt.blob "conf-blob";
 }
 
-group resource(source src, target tgt) extends BackboneElement {
+group ConformanceRestResource(source src, target tgt) extends BackboneElement {
   src.type where $this != 'Conformance' -> tgt.type "conf-type2";
   src.type where $this = 'Conformance' -> tgt.type = 'CapabilityStatement' "conf-type3b";
   src.profile -> tgt.profile "conf-profile";

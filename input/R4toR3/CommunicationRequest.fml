@@ -21,7 +21,7 @@ group CommunicationRequest(source src : CommunicationRequest, target tgt : Commu
   src.recipient -> tgt.recipient;
   src.about -> tgt.topic;
   src.encounter -> tgt.context;
-  src.payload as s -> tgt.payload as t then payload(s, t);
+  src.payload as s -> tgt.payload as t then CommunicationRequestPayload(s, t);
   src.occurrence : dateTime as s -> tgt.occurrence = create('dateTime') as t then dateTime(s, t) "occurrenceDateTime";
   src.occurrence : Period as s -> tgt.occurrence = create('Period') as t then Period(s, t) "occurrencePeriod";
   src.authoredOn -> tgt.authoredOn;
@@ -39,7 +39,7 @@ group agent(source src, target tgt) {
   };
 }
 
-group payload(source src, target tgt) extends BackboneElement {
+group CommunicationRequestPayload(source src, target tgt) extends BackboneElement {
   src.content : string as s -> tgt.content = create('string') as t then string(s, t) "contentString";
   src.content : Attachment as s -> tgt.content = create('Attachment') as t then Attachment(s, t) "contentAttachment";
   src.content : Reference as s -> tgt.content = create('Reference') as t then Reference(s, t) "contentReference";

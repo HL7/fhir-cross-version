@@ -27,11 +27,11 @@ group Communication(source src : CommunicationR3, target tgt : Communication) ex
   src.sender -> tgt.sender;
   src.reasonCode -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;
-  src.payload as s -> tgt.payload as t then payload(s, t);
+  src.payload as s -> tgt.payload as t then CommunicationPayload(s, t);
   src.note -> tgt.note;
 }
 
-group payload(source src, target tgt) extends BackboneElement {
+group CommunicationPayload(source src, target tgt) extends BackboneElement {
   src.content : string as s -> tgt.content = create('string') as t then string(s, t) "contentString";
   src.content : Attachment as s -> tgt.content = create('Attachment') as t then Attachment(s, t) "contentAttachment";
   src.content : Reference as s -> tgt.content = create('Reference') as t then Reference(s, t) "contentReference";
