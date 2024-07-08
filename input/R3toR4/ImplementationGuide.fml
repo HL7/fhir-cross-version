@@ -50,7 +50,7 @@ group grouping(source src, target dfn, target grp) extends BackboneElement {
 
 group resource(source src, target tgt, source pck) extends BackboneElement {
   pck.id -> tgt.groupingId "packageId";
-  src.example where src.exampleFor.empty() as vs0 -> tgt.example = create('boolean') as vt0 then boolean(vs0, vt0);
+  src.example as vs0 where (src.exampleFor.empty()) -> tgt.example = create('boolean') as vt0 then boolean(vs0, vt0);
   src.name -> tgt.name;
   src.description -> tgt.description;
   src.acronym as vs ->  tgt.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.package.resource.acronym',  ext.value = vs;

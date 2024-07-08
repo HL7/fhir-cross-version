@@ -53,7 +53,7 @@ group rest(source src, target tgt) extends BackboneElement {
   src.documentation -> tgt.documentation "conf-documentation";
   src.security as vs -> tgt.security as vt then security(vs, vt) "conf-security";
   src.resource as vs -> tgt.resource as vt then resource(vs, vt) "conf-resource";
-  src.interaction where (code != 'transaction') as vs -> tgt.interaction as vt then interaction(vs, vt) "conf-interaction";
+  src.interaction as vs where (code != 'transaction') -> tgt.interaction as vt then interaction(vs, vt) "conf-interaction";
   src.transactionMode where ($this = 'batch') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'batch' "conf-transactionMode";
   src.transactionMode where ($this = 'transaction') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'transaction' "conf-transactionMode";
   src.searchParam as vs -> tgt.searchParam as vt then searchParam(vs, vt) "conf-searchParam";
