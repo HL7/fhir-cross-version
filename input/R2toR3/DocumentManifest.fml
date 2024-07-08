@@ -19,8 +19,8 @@ group DocumentManifest(source src : DocumentManifestR2, target tgt : DocumentMan
   src.source -> tgt.source "DocumentManifest-source";
   src.status -> tgt.status "DocumentManifest-status";
   src.description -> tgt.description "DocumentManifest-description";
-  src.content as src -> tgt.content as vt0 then dmContent(src, vt0) "DocumentManifest-content";
-  src.related as src -> tgt.related as vt0 then dmRelated(src, vt0) "DocumentManifest-related";
+  src.content as s -> tgt.content as vt0 then dmContent(s, vt0) "DocumentManifest-content";
+  src.related as s -> tgt.related as vt0 then dmRelated(s, vt0) "DocumentManifest-related";
 }
 
 group dmContent(source src, target tgt) extends BackboneElement {
