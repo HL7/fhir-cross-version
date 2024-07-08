@@ -27,7 +27,7 @@ group FamilyMemberHistory(source src : FamilyMemberHistory, target tgt : FamilyM
     };
   };
   src.born : Period as vs -> tgt.born = create('Period') as vt then Period(vs, vt) "bornPeriod";
-  src.born : date as vs -> tgt.born = create('date') as vt then Date(vs, vt) "bornDate";
+  src.born : date as vs -> tgt.born = create('date') as vt then date(vs, vt) "bornDate";
   src.born : string as vs -> tgt.born = create('string') as vt then string(vs, vt) "bornString";
   src.age : Age as vs -> tgt.age = create('Age') as vt then Age(vs, vt) "ageAge";
   src.age : Range as vs -> tgt.age = create('Range') as vt then Range(vs, vt) "ageRange";
@@ -36,7 +36,7 @@ group FamilyMemberHistory(source src : FamilyMemberHistory, target tgt : FamilyM
   src.deceased : boolean as vs -> tgt.deceased = create('boolean') as vt then boolean(vs, vt) "deceasedBoolean";
   src.deceased : Age as vs -> tgt.deceased = create('Age') as vt then Age(vs, vt) "deceasedAge";
   src.deceased : Range as vs -> tgt.deceased = create('Range') as vt then Range(vs, vt) "deceasedRange";
-  src.deceased : date as vs -> tgt.deceased = create('date') as vt then Date(vs, vt) "deceasedDate";
+  src.deceased : date as vs -> tgt.deceased = create('date') as vt then date(vs, vt) "deceasedDate";
   src.deceased : string as vs -> tgt.deceased = create('string') as vt then string(vs, vt) "deceasedString";
   src.reasonCode -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;

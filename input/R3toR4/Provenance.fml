@@ -26,7 +26,7 @@ group agent(source src : ProvenanceR3, target tgt : Provenance) extends Backbone
   src.who : uri as vs ->  tgt.who as ref,  ref.reference = vs,  ref.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/BaseType',  ext.value = 'uri' "whoUri";
   src.who : Reference as vs0 -> tgt.who as vt0 then Reference(vs0, vt0) "whoReference";
   src.onBehalfOf : uri as vs ->  tgt.onBehalfOf as ref,  ref.reference = vs,  ref.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/BaseType',  ext.value = 'uri' "onBehalfOfUri";
-  src.onBehalfOf : Reference as vs0 -> tgt.onBehalfOf as vt0 then reference(vs0, vt0) "onBehalfOfReference";
+  src.onBehalfOf : Reference as vs0 -> tgt.onBehalfOf as vt0 then Reference(vs0, vt0) "onBehalfOfReference";
   src.relatedAgentType -> tgt.type;
 }
 
