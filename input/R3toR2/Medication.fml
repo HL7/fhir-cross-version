@@ -12,7 +12,7 @@ group Medication(source src : Medication, target tgt : MedicationR2) extends Dom
   src.code -> tgt.code "Medication-code";
   src.isBrand -> tgt.isBrand "Medication-isBrand";
   src.manufacturer -> tgt.manufacturer "Medication-manufacturer";
-  src.form as v ->  tgt.product as vt0,  vt0.form as v "product-form";
+  src.form as v ->  tgt.product as vt0,  vt0.form = v "product-form";
   src.ingredient as vs0 ->  tgt.product as vt0,  vt0.ingredient as vt1 then medIngredient(vs0, vt1) "product-ingredient";
   src.package as vs0 -> tgt.package as vt0 then medPackage(vs0, vt0, tgt) "Medication-package";
 }

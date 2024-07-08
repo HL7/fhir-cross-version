@@ -12,7 +12,7 @@ group MedicationDispense(source src : MedicationDispenseR2, target tgt : Medicat
   src.identifier -> tgt.identifier "MedicationDispense-identifier";
   src.status -> tgt.status "MedicationDispense-status";
   src.patient -> tgt.subject "MedicationDispense-patient";
-  src.dispenser as v ->  tgt.performer as d,  d.actor as v "MedicationDispense-dispenser";
+  src.dispenser as v ->  tgt.performer as d,  d.actor = v "MedicationDispense-dispenser";
   src.authorizingPrescription -> tgt.authorizingPrescription "MedicationDispense-authorizingPrescription";
   src.type -> tgt.type "MedicationDispense-type";
   src.quantity -> tgt.quantity "MedicationDispense-quantity";

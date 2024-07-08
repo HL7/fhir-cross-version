@@ -17,7 +17,7 @@ group DiagnosticReport(source src : DiagnosticReportR2, target tgt : DiagnosticR
   src.encounter -> tgt.context "DiagnosticReport-encounter";
   src.effective -> tgt.effective "DiagnosticReport-effective";
   src.issued -> tgt.issued "DiagnosticReport-issued";
-  src.performer as v ->  tgt.performer as p,  p.actor as v "DiagnosticReport-performer";
+  src.performer as v ->  tgt.performer as p,  p.actor = v "DiagnosticReport-performer";
   src.request -> tgt.basedOn "DiagnosticReport-request";
   src.specimen -> tgt.specimen "DiagnosticReport-specimen";
   src.result -> tgt.result "DiagnosticReport-result";
