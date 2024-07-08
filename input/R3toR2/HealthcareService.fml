@@ -12,8 +12,8 @@ group HealthcareService(source src : HealthcareService, target tgt : HealthcareS
   src.identifier -> tgt.identifier "HealthcareService-identifier";
   src.providedBy -> tgt.providedBy "HealthcareService-providedBy";
   src.category -> tgt.serviceCategory "HealthcareService-serviceCategory";
-  src.type as vs ->  tgt.serviceType as vt,  vt.type as vt then CodeableConcept(vs, vt) "HealthcareService-serviceType";
-  src.specialty as vs ->  tgt.serviceType as vt first,  vt.specialty as vt then CodeableConcept(vs, vt) "HealthcareService-speciality";
+  src.type as vs ->  tgt.serviceType as vt,  vt.type as v then CodeableConcept(vs, v) "HealthcareService-serviceType";
+  src.specialty as vs ->  tgt.serviceType as vt first,  vt.specialty as v then CodeableConcept(vs, v) "HealthcareService-speciality";
   src.location -> tgt.location "HealthcareService-location";
   src.name -> tgt.serviceName "HealthcareService-serviceName";
   src.comment -> tgt.comment "HealthcareService-comment";
