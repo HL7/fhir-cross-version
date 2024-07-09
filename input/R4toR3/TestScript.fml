@@ -24,33 +24,38 @@ group TestScript(source src : TestScript, target tgt : TestScriptR3) extends Dom
   src.jurisdiction -> tgt.jurisdiction;
   src.purpose -> tgt.purpose;
   src.copyright -> tgt.copyright;
-  src.origin as vs0 -> tgt.origin as vt0 then origin(vs0, vt0);
-  src.destination as vs0 -> tgt.destination as vt0 then origin(vs0, vt0);
-  src.metadata as vs0 -> tgt.metadata as vt0 then metadata(vs0, vt0);
-  src.fixture as vs0 -> tgt.fixture as vt0 then fixture(vs0, vt0);
+  src.origin as vs0 -> tgt.origin as vt0 then TestScriptOrigin(vs0, vt0);
+  src.destination as vs0 -> tgt.destination as vt0 then TestScriptDestination(vs0, vt0);
+  src.metadata as vs0 -> tgt.metadata as vt0 then TestScriptMetadata(vs0, vt0);
+  src.fixture as vs0 -> tgt.fixture as vt0 then TestScriptFixture(vs0, vt0);
   src.profile -> tgt.profile;
-  src.variable as vs0 -> tgt.variable as vt0 then variable(vs0, vt0);
-  src.setup as vs0 -> tgt.setup as vt0 then setup(vs0, vt0);
-  src.test as vs0 -> tgt.test as vt0 then test(vs0, vt0);
-  src.teardown as vs0 -> tgt.teardown as vt0 then teardown(vs0, vt0);
+  src.variable as vs0 -> tgt.variable as vt0 then TestScriptVariable(vs0, vt0);
+  src.setup as vs0 -> tgt.setup as vt0 then TestScriptSetup(vs0, vt0);
+  src.test as vs0 -> tgt.test as vt0 then TestScriptTest(vs0, vt0);
+  src.teardown as vs0 -> tgt.teardown as vt0 then TestScriptTeardown(vs0, vt0);
 }
 
-group origin(source src, target tgt) extends BackboneElement {
+group TestScriptOrigin(source src, target tgt) extends BackboneElement {
   src.index -> tgt.index;
   src.profile -> tgt.profile;
 }
 
-group metadata(source src, target tgt) extends BackboneElement {
-  src.link as vs0 -> tgt.link as vt0 then link(vs0, vt0);
-  src.capability as vs0 -> tgt.capability as vt0 then capability(vs0, vt0);
+group TestScriptDestination(source src, target tgt) extends BackboneElement {
+  src.index -> tgt.index;
+  src.profile -> tgt.profile;
 }
 
-group link(source src, target tgt) extends BackboneElement {
+group TestScriptMetadata(source src, target tgt) extends BackboneElement {
+  src.link as vs0 -> tgt.link as vt0 then TestScriptLink(vs0, vt0);
+  src.capability as vs0 -> tgt.capability as vt0 then TestScriptMetadataCapability(vs0, vt0);
+}
+
+group TestScriptLink(source src, target tgt) extends BackboneElement {
   src.url -> tgt.url;
   src.description -> tgt.description;
 }
 
-group capability(source src, target tgt) extends BackboneElement {
+group TestScriptMetadataCapability(source src, target tgt) extends BackboneElement {
   src.required -> tgt.required;
   src.validated -> tgt.validated;
   src.description -> tgt.description;
@@ -60,13 +65,13 @@ group capability(source src, target tgt) extends BackboneElement {
   src.capabilities -> tgt.capabilities;
 }
 
-group fixture(source src, target tgt) extends BackboneElement {
+group TestScriptFixture(source src, target tgt) extends BackboneElement {
   src.autocreate -> tgt.autocreate;
   src.autodelete -> tgt.autodelete;
   src.resource -> tgt.resource;
 }
 
-group variable(source src, target tgt) extends BackboneElement {
+group TestScriptVariable(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.defaultValue -> tgt.defaultValue;
   src.description -> tgt.description;
@@ -77,30 +82,16 @@ group variable(source src, target tgt) extends BackboneElement {
   src.sourceId -> tgt.sourceId;
 }
 
-group setup(source src, target tgt) extends BackboneElement {
-  src.action as vs0 -> tgt.action as vt0 then action(vs0, vt0);
+group TestScriptSetup(source src, target tgt) extends BackboneElement {
+  src.action as vs0 -> tgt.action as vt0 then TestScriptSetupAction(vs0, vt0);
 }
 
-group action(source src, target tgt) extends BackboneElement {
-  src.operation as vs0 -> tgt.operation as vt0 then operation(vs0, vt0);
-  src.assert as vs0 -> tgt.assert as vt0 then assert(vs0, vt0);
+group TestScriptSetupAction(source src, target tgt) extends BackboneElement {
+  src.operation as vs0 -> tgt.operation as vt0 then TestScriptOperation(vs0, vt0);
+  src.assert as vs0 -> tgt.assert as vt0 then TestScriptAssert(vs0, vt0);
 }
 
-group actionNA(source src, target tgt) extends BackboneElement {
-  src.operation as vs0 -> tgt.operation as vt0 then operation(vs0, vt0);
-}
-
-group test(source src, target tgt) extends BackboneElement {
-  src.name -> tgt.name;
-  src.description -> tgt.description;
-  src.action as vs0 -> tgt.action as vt0 then action(vs0, vt0);
-}
-
-group teardown(source src, target tgt) extends BackboneElement {
-  src.action as vs0 -> tgt.action as vt0 then actionNA(vs0, vt0);
-}
-
-group operation(source src, target tgt) extends BackboneElement {
+group TestScriptOperation(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.resource -> tgt.resource;
   src.label -> tgt.label;
@@ -111,7 +102,7 @@ group operation(source src, target tgt) extends BackboneElement {
   src.encodeRequestUrl -> tgt.encodeRequestUrl;
   src.origin -> tgt.origin;
   src.params -> tgt.params;
-  src.requestHeader as vs0 -> tgt.requestHeader as vt0 then header(vs0, vt0);
+  src.requestHeader as vs0 -> tgt.requestHeader as vt0 then TestScriptRequestHeader(vs0, vt0);
   src.requestId -> tgt.requestId;
   src.responseId -> tgt.responseId;
   src.sourceId -> tgt.sourceId;
@@ -119,12 +110,12 @@ group operation(source src, target tgt) extends BackboneElement {
   src.url -> tgt.url;
 }
 
-group header(source src, target tgt) extends BackboneElement {
+group TestScriptRequestHeader(source src, target tgt) extends BackboneElement {
   src.field -> tgt.field;
   src.value -> tgt.value;
 }
 
-group assert(source src, target tgt) extends BackboneElement {
+group TestScriptAssert(source src, target tgt) extends BackboneElement {
   src.label -> tgt.label;
   src.description -> tgt.description;
   src.direction -> tgt.direction;
@@ -147,5 +138,24 @@ group assert(source src, target tgt) extends BackboneElement {
   src.validateProfileId -> tgt.validateProfileId;
   src.value -> tgt.value;
   src.warningOnly -> tgt.warningOnly;
+}
+
+group TestScriptTest(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.description -> tgt.description;
+  src.action as vs0 -> tgt.action as vt0 then TestScriptTestAction(vs0, vt0);
+}
+
+group TestScriptTestAction(source src, target tgt) extends BackboneElement {
+  src.operation as vs0 -> tgt.operation as vt0 then TestScriptOperation(vs0, vt0);
+  src.assert as vs0 -> tgt.assert as vt0 then TestScriptAssert(vs0, vt0);
+}
+
+group TestScriptTeardown(source src, target tgt) extends BackboneElement {
+  src.action as vs0 -> tgt.action as vt0 then TestScriptTeardownAction(vs0, vt0);
+}
+
+group TestScriptTeardownAction(source src, target tgt) extends BackboneElement {
+  src.operation as vs0 -> tgt.operation as vt0 then TestScriptOperation(vs0, vt0);
 }
 

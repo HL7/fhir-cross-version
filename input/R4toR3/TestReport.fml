@@ -19,8 +19,8 @@ group TestReport(source src : TestReport, target tgt : TestReportR3) extends Dom
   src.issued -> tgt.issued;
   src.participant as vs0 -> tgt.participant as vt0 then TestReportParticipant(vs0, vt0);
   src.setup as vs0 -> tgt.setup as vt0 then TestReportSetup(vs0, vt0);
-  src.test as vs0 -> tgt.test as vt0 then test(vs0, vt0);
-  src.teardown as vs0 -> tgt.teardown as vt0 then teardown(vs0, vt0);
+  src.test as vs0 -> tgt.test as vt0 then TestReportTest(vs0, vt0);
+  src.teardown as vs0 -> tgt.teardown as vt0 then TestReportTeardown(vs0, vt0);
 }
 
 group TestReportParticipant(source src, target tgt) extends BackboneElement {
@@ -30,37 +30,42 @@ group TestReportParticipant(source src, target tgt) extends BackboneElement {
 }
 
 group TestReportSetup(source src, target tgt) extends BackboneElement {
-  src.action as vs0 -> tgt.action as vt0 then action(vs0, vt0);
+  src.action as vs0 -> tgt.action as vt0 then TestReportSetupAction(vs0, vt0);
 }
 
-group teardown(source src, target tgt) extends BackboneElement {
-  src.action as vs0 -> tgt.action as vt0 then actionNA(vs0, vt0);
+group TestReportSetupAction(source src, target tgt) extends BackboneElement {
+  src.operation as vs0 -> tgt.operation as vt0 then TestReportOperation(vs0, vt0);
+  src.assert as vs0 -> tgt.assert as vt0 then TestReportAssert(vs0, vt0);
 }
 
-group test(source src, target tgt) extends BackboneElement {
+group TestReportOperation(source src, target tgt) extends BackboneElement {
+  src.result -> tgt.result;
+  src.message -> tgt.message;
+  src.detail -> tgt.detail;
+}
+
+group TestReportAssert(source src, target tgt) extends BackboneElement {
+  src.result -> tgt.result;
+  src.message -> tgt.message;
+  src.detail -> tgt.detail;
+}
+
+group TestReportTest(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.description -> tgt.description;
-  src.action as vs0 -> tgt.action as vt0 then action(vs0, vt0);
+  src.action as vs0 -> tgt.action as vt0 then TestReportTestAction(vs0, vt0);
 }
 
-group action(source src, target tgt) extends BackboneElement {
-  src.operation as vs0 -> tgt.operation as vt0 then operation(vs0, vt0);
-  src.assert as vs0 -> tgt.assert as vt0 then assert(vs0, vt0);
+group TestReportTestAction(source src, target tgt) extends BackboneElement {
+  src.operation as vs0 -> tgt.operation as vt0 then TestReportOperation(vs0, vt0);
+  src.assert as vs0 -> tgt.assert as vt0 then TestReportAssert(vs0, vt0);
 }
 
-group actionNA(source src, target tgt) extends BackboneElement {
-  src.operation as vs0 -> tgt.operation as vt0 then operation(vs0, vt0);
+group TestReportTeardown(source src, target tgt) extends BackboneElement {
+  src.action as vs0 -> tgt.action as vt0 then TestReportTeardownAction(vs0, vt0);
 }
 
-group operation(source src, target tgt) extends BackboneElement {
-  src.result -> tgt.result;
-  src.message -> tgt.message;
-  src.detail -> tgt.detail;
-}
-
-group assert(source src, target tgt) extends BackboneElement {
-  src.result -> tgt.result;
-  src.message -> tgt.message;
-  src.detail -> tgt.detail;
+group TestReportTeardownAction(source src, target tgt) extends BackboneElement {
+  src.operation as vs0 -> tgt.operation as vt0 then TestReportOperation(vs0, vt0);
 }
 
