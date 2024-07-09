@@ -18,7 +18,7 @@ group MessageHeader(source src : MessageHeaderR3, target tgt : MessageHeader) ex
   src.source as vs0 -> tgt.source as vt0 then sourceX(vs0, vt0);
   src.responsible -> tgt.responsible;
   src.reason -> tgt.reason;
-  src.response as vs0 -> tgt.response as vt0 then response(vs0, vt0);
+  src.response as vs0 -> tgt.response as vt0 then MessageHeaderResponse(vs0, vt0);
   src.focus -> tgt.focus;
 }
 
@@ -37,7 +37,7 @@ group sourceX(source src, target tgt) extends BackboneElement {
   src.endpoint -> tgt.endpoint;
 }
 
-group response(source src, target tgt) extends BackboneElement {
+group MessageHeaderResponse(source src, target tgt) extends BackboneElement {
   src.identifier -> tgt.identifier;
   src.code -> tgt.code;
   src.details -> tgt.details;

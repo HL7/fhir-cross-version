@@ -30,14 +30,14 @@ group OperationDefinition(source src : OperationDefinition, target tgt : Operati
   src.system -> tgt.system;
   src.type -> tgt.type;
   src.instance -> tgt.instance;
-  src.parameter as vs0 -> tgt.parameter as vt0 then parameter(vs0, vt0);
+  src.parameter as vs0 -> tgt.parameter as vt0 then OperationDefinitionParameter(vs0, vt0);
   src.overload as vs0 -> tgt.overload as vt0 then {
     vs0.parameterName -> vt0.parameterName;
     vs0.comment -> vt0.comment;
   };
 }
 
-group parameter(source src, target tgt) extends BackboneElement {
+group OperationDefinitionParameter(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.use -> tgt.use;
   src.min -> tgt.min;
@@ -47,7 +47,7 @@ group parameter(source src, target tgt) extends BackboneElement {
   src.searchType -> tgt.searchType;
   src.targetProfile -> tgt.profile "profile";
   src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0);
-  src.part as vs0 -> tgt.part as vt0 then parameter(vs0, vt0);
+  src.part as vs0 -> tgt.part as vt0 then OperationDefinitionParameter(vs0, vt0);
 }
 
 group binding(source src, target tgt) extends BackboneElement {

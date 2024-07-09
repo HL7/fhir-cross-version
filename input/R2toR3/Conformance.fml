@@ -15,7 +15,7 @@ group Conformance(source src : ConformanceR2, target tgt : CapabilityStatement) 
   src.status -> tgt.status "conf-status";
   src.experimental -> tgt.experimental "conf-experimental";
   src.publisher -> tgt.publisher "conf-publisher";
-  src.contact as vs -> tgt.contact as vt then contact(vs, vt) "conf-contact";
+  src.contact as vs -> tgt.contact as vt then ConformanceContact(vs, vt) "conf-contact";
   src.date -> tgt.date "conf-date";
   src.description -> tgt.description "conf-description";
   src.requirements -> tgt.purpose "conf-requirements";
@@ -32,7 +32,7 @@ group Conformance(source src : ConformanceR2, target tgt : CapabilityStatement) 
   src.document as vs -> tgt.document as vt then document(vs, vt) "conf-document";
 }
 
-group contact(source src, target tgt) extends BackboneElement {
+group ConformanceContact(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name "conf-name";
   src.telecom -> tgt.telecom "conf-telecom";
 }
@@ -57,7 +57,7 @@ group rest(source src, target tgt) extends BackboneElement {
   src.transactionMode where ($this = 'batch') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'batch' "conf-transactionMode";
   src.transactionMode where ($this = 'transaction') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'transaction' "conf-transactionMode";
   src.searchParam as vs -> tgt.searchParam as vt then searchParam(vs, vt) "conf-searchParam";
-  src.operation as vs -> tgt.operation as vt then operation(vs, vt) "conf-operation";
+  src.operation as vs -> tgt.operation as vt then ConformanceRestOperation(vs, vt) "conf-operation";
   src.compartment -> tgt.compartment "conf-compartment";
 }
 
@@ -103,7 +103,7 @@ group searchParam(source src, target tgt) extends BackboneElement {
   src.documentation -> tgt.documentation "conf-documentation";
 }
 
-group operation(source src, target tgt) extends BackboneElement {
+group ConformanceRestOperation(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name "conf-name";
   src.definition -> tgt.definition "conf-definition";
 }

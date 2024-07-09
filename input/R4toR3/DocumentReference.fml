@@ -26,8 +26,8 @@ group DocumentReference(source src : DocumentReference, target tgt : DocumentRef
   src.relatesTo as vs0 -> tgt.relatesTo as vt0 then relatesTo(vs0, vt0);
   src.description -> tgt.description;
   src.securityLabel -> tgt.securityLabel;
-  src.content as vs0 -> tgt.content as vt0 then content(vs0, vt0);
-  src.context as vs0 -> tgt.context as vt0 then context(vs0, vt0);
+  src.content as vs0 -> tgt.content as vt0 then DocumentReferenceContent(vs0, vt0);
+  src.context as vs0 -> tgt.context as vt0 then DocumentReferenceContext(vs0, vt0);
 }
 
 group agent(source src, target tgt) extends Element {
@@ -39,22 +39,22 @@ group relatesTo(source src, target tgt) extends BackboneElement {
   src.target -> tgt.target;
 }
 
-group content(source src, target tgt) extends BackboneElement {
+group DocumentReferenceContent(source src, target tgt) extends BackboneElement {
   src.attachment -> tgt.attachment;
   src.format -> tgt.format;
 }
 
-group context(source src, target tgt) extends BackboneElement {
+group DocumentReferenceContext(source src, target tgt) extends BackboneElement {
   src.encounter -> tgt.encounter;
   src.event -> tgt.event;
   src.period -> tgt.period;
   src.facilityType -> tgt.facilityType;
   src.practiceSetting -> tgt.practiceSetting;
   src.sourcePatientInfo -> tgt.sourcePatientInfo;
-  src.related as vs0 -> tgt.related as vt0 then related(vs0, vt0);
+  src.related as vs0 -> tgt.related as vt0 then DocumentReferenceRelated(vs0, vt0);
 }
 
-group related(source src, target tgt) {
+group DocumentReferenceRelated(source src, target tgt) {
   src where reference.exists() -> tgt.ref as vt0 then ReferenceNoIdentifier(src, vt0) "reference";
   src where identifier.exists() -> tgt.identifier as vt0 then Reference2Identifier(src, vt0) "identifier";
 }

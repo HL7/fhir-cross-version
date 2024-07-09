@@ -54,7 +54,7 @@ group ElementDefinition(source srcR : Resource, source src : ElementDefinition, 
   src.mustSupport -> tgt.mustSupport "ElementDefinition-mustSupport";
   src.isModifier -> tgt.isModifier "ElementDefinition-isModifier";
   src.isSummary -> tgt.isSummary "ElementDefinition-isSummary";
-  src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0) "ElementDefinition-binding";
+  src.binding as vs0 -> tgt.binding as vt0 then ElementDefinitionBinding(vs0, vt0) "ElementDefinition-binding";
   src.mapping as vs0 -> tgt.mapping as vt0 then mapping(vs0, vt0) "ElementDefinition-mapping";
 }
 
@@ -62,7 +62,7 @@ group edDiscriminator(source src, target tgt) extends Element {
   src.path where type = 'value' -> tgt.discriminator "binding-strength";
 }
 
-group binding(source src, target tgt) extends Element {
+group ElementDefinitionBinding(source src, target tgt) extends Element {
   src.strength -> tgt.strength "binding-strength";
   src.description -> tgt.description "binding-description";
   src.valueSet -> tgt.valueSet "binding-valueSet";

@@ -17,25 +17,25 @@ group MeasureReport(source src : MeasureReportR3, target tgt : MeasureReport) ex
   src.date -> tgt.date;
   src.reportingOrganization -> tgt.reporter;
   src.period -> tgt.period;
-  src.group as s -> tgt.group as t then groupX(s, t);
+  src.group as s -> tgt.group as t then MeasureReportGroup(s, t);
   src.evaluatedResources -> tgt.evaluatedResource;
 }
 
-group groupX(source src, target tgt) extends BackboneElement {
+group MeasureReportGroup(source src, target tgt) extends BackboneElement {
   src.identifier as vs -> tgt.code as vt then Identifier2Codeable(vs, vt);
-  src.population as s -> tgt.population as t then population(s, t);
+  src.population as s -> tgt.population as t then MeasureReportPopulation(s, t);
   src.measureScore -> tgt.measureScore;
-  src.stratifier as s -> tgt.stratifier as t then stratifier(s, t);
+  src.stratifier as s -> tgt.stratifier as t then MeasureReportStratifier(s, t);
 }
 
-group population(source src, target tgt) extends BackboneElement {
+group MeasureReportPopulation(source src, target tgt) extends BackboneElement {
   src.identifier as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MeasureReport.group.identifier',  vt.value = v;
   src.code -> tgt.code;
   src.count -> tgt.count;
   src.patients -> tgt.subjectResults;
 }
 
-group stratifier(source src, target tgt) extends BackboneElement {
+group MeasureReportStratifier(source src, target tgt) extends BackboneElement {
   src.identifier as vs -> tgt.code as vt then Identifier2Codeable(vs, vt);
   src.stratum as s -> tgt.stratum as t then stratum(s, t);
 }

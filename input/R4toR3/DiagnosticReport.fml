@@ -19,7 +19,7 @@ group DiagnosticReport(source src : DiagnosticReport, target tgt : DiagnosticRep
   src.effective : dateTime as vs -> tgt.effective = create('dateTime') as vt then dateTime(vs, vt) "effectiveDateTime";
   src.effective : Period as vs -> tgt.effective = create('Period') as vt then Period(vs, vt) "effectivePeriod";
   src.issued -> tgt.issued;
-  src.performer as vs0 -> tgt.performer as vt0 then performer(vs0, vt0);
+  src.performer as vs0 -> tgt.performer as vt0 then DiagnosticReportPerformer(vs0, vt0);
   src.specimen -> tgt.specimen;
   src.result -> tgt.result;
   src.imagingStudy -> tgt.imagingStudy;
@@ -29,7 +29,7 @@ group DiagnosticReport(source src : DiagnosticReport, target tgt : DiagnosticRep
   src.presentedForm -> tgt.presentedForm;
 }
 
-group performer(source src, target tgt) {
+group DiagnosticReportPerformer(source src, target tgt) {
   src -> tgt.actor as vt then Reference(src, vt) "actor";
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-DiagnosticReport.performer.role' then {
     e.value -> tgt.role;

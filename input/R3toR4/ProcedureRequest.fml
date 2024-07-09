@@ -29,7 +29,7 @@ group ProcedureRequest(source src : ProcedureRequestR3, target tgt : ServiceRequ
   src.asNeeded : boolean as vs -> tgt.asNeeded = create('boolean') as vt then boolean(vs, vt) "asNeededBoolean";
   src.asNeeded : CodeableConcept as vs -> tgt.asNeeded = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "asNeededCodeableConcept";
   src.authoredOn -> tgt.authoredOn;
-  src.requester as vs -> tgt.requester as vt then requester(vs, vt);
+  src.requester as vs -> tgt.requester as vt then ProcedureRequestRequester(vs, vt);
   src.performerType -> tgt.performerType;
   src.performer -> tgt.performer;
   src.reasonCode -> tgt.reasonCode;
@@ -41,7 +41,7 @@ group ProcedureRequest(source src : ProcedureRequestR3, target tgt : ServiceRequ
   src.relevantHistory -> tgt.relevantHistory;
 }
 
-group requester(source src, target tgt) {
+group ProcedureRequestRequester(source src, target tgt) {
   src.agent as v then Reference(v, tgt);
   src.onBehalfOf as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester.onBehalfOf',  vt.value = v;
 }

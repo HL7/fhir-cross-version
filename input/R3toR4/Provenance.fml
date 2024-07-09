@@ -16,12 +16,12 @@ group Provenance(source src : ProvenanceR3, target tgt : Provenance) extends Dom
   src.location -> tgt.location;
   src.reason -> tgt.reason;
   src.activity -> tgt.activity;
-  src.agent as vs0 -> tgt.agent as vt0 then agent(vs0, vt0);
+  src.agent as vs0 -> tgt.agent as vt0 then ProvenanceAgent(vs0, vt0);
   src.entity as vs0 -> tgt.entity as vt0 then entity(vs0, vt0);
   src.signature -> tgt.signature;
 }
 
-group agent(source src, target tgt) extends BackboneElement {
+group ProvenanceAgent(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role;
   src.who : uri as vs ->  tgt.who as ref,  ref.reference = vs,  ref.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/BaseType',  ext.value = 'uri' "whoUri";
   src.who : Reference as vs0 -> tgt.who as vt0 then Reference(vs0, vt0) "whoReference";
@@ -35,6 +35,6 @@ group entity(source src, target tgt) extends BackboneElement {
   src.what : uri as vs ->  tgt.what as ref,  ref.reference = vs,  ref.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/BaseType',  ext.value = 'uri' "whatUri";
   src.what : Reference as vs0 -> tgt.what as vt0 then Reference(vs0, vt0) "whatReference";
   src.what : Identifier as vs0 -> tgt.what as vt0 then Identifier2Reference(vs0, vt0) "whatIdentifier";
-  src.agent as vs0 -> tgt.agent as vt0 then agent(vs0, vt0);
+  src.agent as vs0 -> tgt.agent as vt0 then ProvenanceAgent(vs0, vt0);
 }
 

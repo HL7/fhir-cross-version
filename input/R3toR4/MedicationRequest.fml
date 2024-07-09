@@ -23,25 +23,25 @@ group MedicationRequest(source src : MedicationRequestR3, target tgt : Medicatio
   src.context -> tgt.encounter;
   src.supportingInformation -> tgt.supportingInformation;
   src.authoredOn -> tgt.authoredOn;
-  src.requester as vs0 then requester(vs0, tgt);
+  src.requester as vs0 then MedicationRequestRequester(vs0, tgt);
   src.recorder -> tgt.recorder;
   src.reasonCode -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;
   src.note -> tgt.note;
   src.dosageInstruction -> tgt.dosageInstruction;
-  src.dispenseRequest as vs0 -> tgt.dispenseRequest as vt0 then dispense(vs0, vt0);
+  src.dispenseRequest as vs0 -> tgt.dispenseRequest as vt0 then MedicationRequestDispense(vs0, vt0);
   src.substitution as vs0 -> tgt.substitution as vt0 then subst(vs0, vt0);
   src.priorPrescription -> tgt.priorPrescription;
   src.detectedIssue -> tgt.detectedIssue;
   src.eventHistory -> tgt.eventHistory;
 }
 
-group requester(source src, target tgt) {
+group MedicationRequestRequester(source src, target tgt) {
   src.agent -> tgt.requester;
   src.onBehalfOf as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.requester.onBehalfOf',  vt.value = v;
 }
 
-group dispense(source src, target tgt) {
+group MedicationRequestDispense(source src, target tgt) {
   src.validityPeriod -> tgt.validityPeriod;
   src.numberOfRepeatsAllowed -> tgt.numberOfRepeatsAllowed;
   src.quantity -> tgt.quantity;

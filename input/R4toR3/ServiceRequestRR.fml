@@ -24,7 +24,7 @@ group ServiceRequestR(source src : ServiceRequest, target tgt : ReferralRequestR
   src.occurrence : dateTime as vs -> tgt.occurrence = create('dateTime') as vt0 then dateTime(vs, vt0) "occurrenceDateTime";
   src.occurrence : Period as vs -> tgt.occurrence = create('Period') as vt0 then Period(vs, vt0) "occurrencePeriod";
   src.authoredOn -> tgt.authoredOn;
-  src.requester as vs -> tgt.requester as vt then requester(vs, vt);
+  src.requester as vs -> tgt.requester as vt then ServiceRequestRRequester(vs, vt);
   src.performerType -> tgt.specialty;
   src.performer -> tgt.recipient;
   src.reasonCode -> tgt.reasonCode;
@@ -40,7 +40,7 @@ group ServiceRequestR(source src : ServiceRequest, target tgt : ReferralRequestR
   src.relevantHistory -> tgt.relevantHistory;
 }
 
-group requester(source src, target tgt) {
+group ServiceRequestRRequester(source src, target tgt) {
   src -> tgt.agent as v then Reference(src, v) "agent";
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.requester.onBehalfOf' then {
     e.value -> tgt.onBehalfOf;

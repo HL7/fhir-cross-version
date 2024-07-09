@@ -18,10 +18,10 @@ group VisionPrescription(source src : VisionPrescription, target tgt : VisionPre
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-VisionPrescription.reason' then {
     e.value -> tgt.reason;
   };
-  src.lensSpecification as s -> tgt.dispense as t then dispense(s, t);
+  src.lensSpecification as s -> tgt.dispense as t then VisionPrescriptionDispense(s, t);
 }
 
-group dispense(source src, target tgt) extends BackboneElement {
+group VisionPrescriptionDispense(source src, target tgt) extends BackboneElement {
   src.product -> tgt.product;
   src.eye -> tgt.eye;
   src.sphere -> tgt.sphere;

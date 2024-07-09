@@ -20,11 +20,11 @@ group List(source src : List, target tgt : ListR3) extends DomainResource <<type
   src.source -> tgt.source;
   src.orderedBy -> tgt.orderedBy;
   src.note -> tgt.note;
-  src.entry as s -> tgt.entry as t then entry(s, t);
+  src.entry as s -> tgt.entry as t then ListEntry(s, t);
   src.emptyReason -> tgt.emptyReason;
 }
 
-group entry(source src, target tgt) extends BackboneElement {
+group ListEntry(source src, target tgt) extends BackboneElement {
   src.flag -> tgt.flag;
   src.deleted -> tgt.deleted;
   src.date -> tgt.date;

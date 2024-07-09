@@ -22,7 +22,7 @@ group SupplyRequest(source src : SupplyRequestR3, target tgt : SupplyRequest) ex
   src.occurrence : Period as vs -> tgt.occurrence = create('Period') as vt then Period(vs, vt) "occurrencePeriod";
   src.occurrence : Timing as vs -> tgt.occurrence = create('Timing') as vt then Timing(vs, vt) "occurrenceTiming";
   src.authoredOn -> tgt.authoredOn;
-  src.requester as vs0 -> tgt then agent(vs0, tgt);
+  src.requester as vs0 -> tgt then SupplyRequestAgent(vs0, tgt);
   src.supplier -> tgt.supplier;
   src.reason : CodeableConcept as vs -> tgt.reasonCode as vt then CodeableConcept(vs, vt) "reasonCodeableConcept";
   src.reason : Reference as vs -> tgt.reasonReference as vt then Reference(vs, vt) "reasonReference";
@@ -30,7 +30,7 @@ group SupplyRequest(source src : SupplyRequestR3, target tgt : SupplyRequest) ex
   src.deliverTo -> tgt.deliverTo;
 }
 
-group agent(source src, target tgt) {
+group SupplyRequestAgent(source src, target tgt) {
   src.agent -> tgt.requester;
   src.onBehalfOf as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-SupplyRequest.requester.onBehalfOf',  vt.value = v;
 }

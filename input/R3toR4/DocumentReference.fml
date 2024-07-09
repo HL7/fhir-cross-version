@@ -45,10 +45,10 @@ group context(source src, target tgt) extends BackboneElement {
   src.facilityType -> tgt.facilityType;
   src.practiceSetting -> tgt.practiceSetting;
   src.sourcePatientInfo -> tgt.sourcePatientInfo;
-  src.related as vs0 -> tgt.related as vt0 then related(vs0, vt0);
+  src.related as vs0 -> tgt.related as vt0 then DocumentReferenceRelated(vs0, vt0);
 }
 
-group related(source src, target tgt) {
+group DocumentReferenceRelated(source src, target tgt) {
   src.identifier as vs0 then Identifier2Reference(vs0, tgt);
   src.ref as vs0 then Reference(vs0, tgt);
 }

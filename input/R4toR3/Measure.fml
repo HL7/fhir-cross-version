@@ -51,21 +51,21 @@ group Measure(source src : Measure, target tgt : MeasureR3) extends DomainResour
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.set' then {
     e.value -> tgt.set;
   };
-  src.group as s -> tgt.group as t then groupX(s, t);
+  src.group as s -> tgt.group as t then MeasureGroup(s, t);
   src.supplementalData as s -> tgt.supplementalData as t then supplementalData(s, t);
 }
 
-group groupX(source src, target tgt) extends BackboneElement {
+group MeasureGroup(source src, target tgt) extends BackboneElement {
   src.code as vs -> tgt.identifier as vt then Codeable2Identifier(vs, vt);
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.name' then {
     e.value -> tgt.name;
   };
   src.description -> tgt.description;
-  src.population as s -> tgt.population as t then population(s, t);
-  src.stratifier as s -> tgt.stratifier as t then stratifier(s, t);
+  src.population as s -> tgt.population as t then MeasurePopulation(s, t);
+  src.stratifier as s -> tgt.stratifier as t then MeasureStratifier(s, t);
 }
 
-group population(source src, target tgt) extends BackboneElement {
+group MeasurePopulation(source src, target tgt) extends BackboneElement {
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.population.identifier' then {
     e.value -> tgt.identifier;
   };
@@ -79,7 +79,7 @@ group population(source src, target tgt) extends BackboneElement {
   };
 }
 
-group stratifier(source src, target tgt) extends BackboneElement {
+group MeasureStratifier(source src, target tgt) extends BackboneElement {
   src.code as vs -> tgt.identifier as vt then Codeable2Identifier(vs, vt);
   src.criteria as s then {
     s.expression -> tgt.criteria;

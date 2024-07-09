@@ -31,12 +31,12 @@ group CodeSystem(source src : CodeSystem, target tgt : CodeSystemR3) extends Dom
   src.versionNeeded -> tgt.versionNeeded;
   src.content -> tgt.content;
   src.count -> tgt.count;
-  src.filter as vs0 -> tgt.filter as vt0 then filter(vs0, vt0);
+  src.filter as vs0 -> tgt.filter as vt0 then CodeSystemFilter(vs0, vt0);
   src.property as vs0 -> tgt.property as vt0 then property(vs0, vt0);
-  src.concept as vs0 -> tgt.concept as vt0 then concept(vs0, vt0);
+  src.concept as vs0 -> tgt.concept as vt0 then CodeSystemConcept(vs0, vt0);
 }
 
-group filter(source src, target tgt) extends BackboneElement {
+group CodeSystemFilter(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.description -> tgt.description;
   src.operator -> tgt.operator;
@@ -50,16 +50,16 @@ group property(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
 }
 
-group concept(source src, target tgt) extends BackboneElement {
+group CodeSystemConcept(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.display -> tgt.display;
   src.definition -> tgt.definition;
-  src.designation as vs0 -> tgt.designation as vt0 then designation(vs0, vt0);
+  src.designation as vs0 -> tgt.designation as vt0 then CodeSystemDesignation(vs0, vt0);
   src.property as vs0 -> tgt.property as vt0 then propertyC(vs0, vt0);
-  src.concept as vs0 -> tgt.concept as vt0 then concept(vs0, vt0);
+  src.concept as vs0 -> tgt.concept as vt0 then CodeSystemConcept(vs0, vt0);
 }
 
-group designation(source src, target tgt) extends BackboneElement {
+group CodeSystemDesignation(source src, target tgt) extends BackboneElement {
   src.language -> tgt.language;
   src.use -> tgt.use;
   src.value -> tgt.value;

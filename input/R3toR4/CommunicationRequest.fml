@@ -26,13 +26,13 @@ group CommunicationRequest(source src : CommunicationRequestR3, target tgt : Com
   src.occurrence : Period as s -> tgt.occurrence = create('Period') as t then Period(s, t) "occurrencePeriod";
   src.authoredOn -> tgt.authoredOn;
   src.sender -> tgt.sender;
-  src.requester as vs0 -> tgt then agent(vs0, tgt);
+  src.requester as vs0 -> tgt then CommunicationRequestAgent(vs0, tgt);
   src.reasonCode -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;
   src.note -> tgt.note;
 }
 
-group agent(source src, target tgt) {
+group CommunicationRequestAgent(source src, target tgt) {
   src.agent -> tgt.requester;
   src.onBehalfOf as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.requester.onBehalfOf',  vt.value = v;
 }

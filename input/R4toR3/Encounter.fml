@@ -24,7 +24,7 @@ group Encounter(source src : Encounter, target tgt : EncounterR3) extends Domain
   src.period -> tgt.period;
   src.length -> tgt.length;
   src.reasonCode -> tgt.reason;
-  src.diagnosis as vs0 -> tgt.diagnosis as vt0 then diagnosis(vs0, vt0);
+  src.diagnosis as vs0 -> tgt.diagnosis as vt0 then EncounterDiagnosis(vs0, vt0);
   src.account -> tgt.account;
   src.hospitalization as vs0 -> tgt.hospitalization as vt0 then hospitalization(vs0, vt0);
   src.location as vs0 -> tgt.location as vt0 then location(vs0, vt0);
@@ -48,7 +48,7 @@ group EncounterParticipant(source src, target tgt) extends BackboneElement {
   src.individual -> tgt.individual;
 }
 
-group diagnosis(source src, target tgt) extends BackboneElement {
+group EncounterDiagnosis(source src, target tgt) extends BackboneElement {
   src.condition -> tgt.condition;
   src.use -> tgt.role;
   src.rank -> tgt.rank;

@@ -29,10 +29,10 @@ group Questionnaire(source src : QuestionnaireR3, target tgt : Questionnaire) ex
   src.copyright -> tgt.copyright;
   src.code -> tgt.code;
   src.subjectType -> tgt.subjectType;
-  src.item as s -> tgt.item as t then item(s, t);
+  src.item as s -> tgt.item as t then QuestionnaireItem(s, t);
 }
 
-group item(source src, target tgt) extends BackboneElement {
+group QuestionnaireItem(source src, target tgt) extends BackboneElement {
   src.linkId -> tgt.linkId;
   src.definition -> tgt.definition;
   src.code -> tgt.code;
@@ -47,7 +47,7 @@ group item(source src, target tgt) extends BackboneElement {
   src.options -> tgt.answerValueSet;
   src.option as s -> tgt.answerOption as t then option(s, t);
   src.initial -> tgt.initial as t then initial(src, t);
-  src.item as s -> tgt.item as t then item(s, t);
+  src.item as s -> tgt.item as t then QuestionnaireItem(s, t);
 }
 
 group enableWhen(source src, target tgt) extends BackboneElement {

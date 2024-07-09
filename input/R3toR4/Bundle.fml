@@ -12,22 +12,22 @@ group Bundle(source src : BundleR3, target tgt : Bundle) extends Resource <<type
   src.identifier -> tgt.identifier;
   src.type -> tgt.type;
   src.total -> tgt.total;
-  src.link as vs0 -> tgt.link as vt0 then link(vs0, vt0);
-  src.entry as vs0 -> tgt.entry as vt0 then entry(vs0, vt0);
+  src.link as vs0 -> tgt.link as vt0 then BundleLink(vs0, vt0);
+  src.entry as vs0 -> tgt.entry as vt0 then BundleEntry(vs0, vt0);
   src.signature -> tgt.signature;
 }
 
-group link(source src, target tgt) extends BackboneElement {
+group BundleLink(source src, target tgt) extends BackboneElement {
   src.relation -> tgt.relation;
   src.url -> tgt.url;
 }
 
-group entry(source src, target tgt) extends BackboneElement {
+group BundleEntry(source src, target tgt) extends BackboneElement {
   src.fullUrl -> tgt.fullUrl;
   src.resource -> tgt.resource;
   src.search as vs0 -> tgt.search as vt0 then search(vs0, vt0);
   src.request as vs0 -> tgt.request as vt0 then request(vs0, vt0);
-  src.response as vs0 -> tgt.response as vt0 then response(vs0, vt0);
+  src.response as vs0 -> tgt.response as vt0 then BundleResponse(vs0, vt0);
 }
 
 group search(source src, target tgt) extends BackboneElement {
@@ -44,7 +44,7 @@ group request(source src, target tgt) extends BackboneElement {
   src.ifNoneExist -> tgt.ifNoneExist;
 }
 
-group response(source src, target tgt) extends BackboneElement {
+group BundleResponse(source src, target tgt) extends BackboneElement {
   src.status -> tgt.status;
   src.location -> tgt.location;
   src.etag -> tgt.etag;
