@@ -39,7 +39,7 @@ group CoverageEligibilityResponseInsuranceDetail(source src, target tgt) extends
   src.network -> tgt.network;
   src.unit -> tgt.unit;
   src.term -> tgt.term;
-  src.benefit as s -> tgt.benefit as t then CoverageEligibilityResponseInsuranceDetailBenefit(s, t);
+  src.benefit as s -> tgt.financial as t then CoverageEligibilityResponseInsuranceDetailBenefit(s, t);
   src.authorizationRequired -> tgt.authorizationRequired;
   src.authorizationSupporting -> tgt.authorizationSupporting;
   src.authorizationUrl -> tgt.authorizationUrl;

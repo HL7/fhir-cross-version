@@ -198,7 +198,7 @@ group ExplanationOfBenefitAddItemDetail(source src, target tgt) extends Backbone
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
   src.adjudication -> tgt.adjudication;
-  src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitAddItemDetailSubDetail(s, t);
+  // src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitAddItemDetailSubDetail(s, t); // subDetail is not present in R3
 }
 
 group ExplanationOfBenefitAddItemDetailSubDetail(source src, target tgt) extends BackboneElement {

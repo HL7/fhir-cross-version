@@ -93,7 +93,7 @@ group ClaimResponseAddItemDetail(source src, target tgt) extends BackboneElement
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
   src.adjudication -> tgt.adjudication;
-  src.subDetail as s -> tgt.subDetail as t then ClaimResponseAddItemDetailSubDetail(s, t);
+  // src.subDetail as s -> tgt.subDetail as t then ClaimResponseAddItemDetailSubDetail(s, t); // subDetail not in STU3
 }
 
 group ClaimResponseAddItemDetailSubDetail(source src, target tgt) extends BackboneElement {
