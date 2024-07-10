@@ -3,7 +3,7 @@
 /// title = "StructureDefinition Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/StructureDefinition" alias StructureDefinition as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition" alias StructureDefinition as source
 uses "http://hl7.org/fhir/1.0/StructureDefinition" alias StructureDefinitionR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
@@ -18,8 +18,8 @@ group StructureDefinition(source src : StructureDefinition, target tgt : Structu
   src.experimental -> tgt.experimental "StructureDefinition-experimental";
   src.publisher -> tgt.publisher "StructureDefinition-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "contact-name";
-    vs0.telecom -> vt0.telecom "contact-telecom";
+    vs0.name -> vt0.name "Contract_name";
+    vs0.telecom -> vt0.telecom "Contract_telecom";
   } "StructureDefinition-contact";
   src.date -> tgt.date "StructureDefinition-date";
   src.description -> tgt.description "StructureDefinition-description";

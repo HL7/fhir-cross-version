@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mdd.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mdd.status-4bto4",
-  "name" : "MedicationDispense.status4bto4",
+  "name" : "MedicationDispenseStatus4bto4",
   "title" : "Mapping for MedicationDispense.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for MedicationDispense.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MedicationDispense#MedicationDispense.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationDispense#MedicationDispense.status",
   "group" : [{

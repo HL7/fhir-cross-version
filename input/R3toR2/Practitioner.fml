@@ -3,7 +3,7 @@
 /// title = "Practitioner Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Practitioner" alias Practitioner as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Practitioner" alias Practitioner as source
 uses "http://hl7.org/fhir/1.0/Practitioner" alias PractitionerR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"

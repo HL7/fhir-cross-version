@@ -4,25 +4,25 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/DataElement" alias DataElementR2 as source
-uses "http://hl7.org/fhir/3.0/DataElement" alias DataElement as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/DataElement" alias DataElement as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group DataElement(source src : DataElementR2, target tgt : DataElement) extends DomainResource <<type+>> {
-  src.url -> tgt.url "DataElement-url";
-  src.identifier -> tgt.identifier "DataElement-identifier";
-  src.version -> tgt.version "DataElement-version";
-  src.status -> tgt.status "DataElement-status";
-  src.experimental -> tgt.experimental "DataElement-experimental";
-  src.publisher -> tgt.publisher "DataElement-publisher";
-  src.date -> tgt.date "DataElement-date";
-  src.name -> tgt.name "DataElement-name";
-  src.contact as vs0 -> tgt.contact as vt0 then decontact(vs0, vt0) "DataElement-contact";
-  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "DataElement-jurisdiction";
-  src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "DataElement-useContext";
-  src.stringency -> tgt.stringency "DataElement-stringency";
-  src.mapping as vs0 -> tgt.mapping as vt0 then deMapping(vs0, vt0) "DataElement-mapping";
-  src.element as vs ->  tgt.element as vt,  create('boolean') as first,  first.value = 'false' then ElementDefinition(vs, vt, first) "DataElement-element";
+  src.url -> tgt.url "DataElementurl";
+  src.identifier -> tgt.identifier "DataElementidentifier";
+  src.version -> tgt.version "DataElementversion";
+  src.status -> tgt.status "DataElementstatus";
+  src.experimental -> tgt.experimental "DataElementexperimental";
+  src.publisher -> tgt.publisher "DataElementpublisher";
+  src.date -> tgt.date "DataElementdate";
+  src.name -> tgt.name "DataElementname";
+  src.contact as vs0 -> tgt.contact as vt0 then decontact(vs0, vt0) "DataElementcontact";
+  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "DataElementjurisdiction";
+  src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "DataElementuseContext";
+  src.stringency -> tgt.stringency "DataElementstringency";
+  src.mapping as vs0 -> tgt.mapping as vt0 then deMapping(vs0, vt0) "DataElementmapping";
+  src.element as vs ->  tgt.element as vt,  create('boolean') as first,  first.value = 'false' then ElementDefinition(vs, vt, first) "DataElementelement";
 }
 
 group decontact(source src, target tgt) extends Element {

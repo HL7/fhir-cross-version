@@ -3,8 +3,8 @@
 /// title = "MetadataResource Transforms: R5 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/5.0/MetadataResource" alias MetadataResourceR5 as source
-uses "http://hl7.org/fhir/4.0/MetadataResource" alias MetadataResourceR4 as target
+uses "http://hl7.org/fhir/5.0/StructureDefinition/MetadataResource" alias MetadataResourceR5 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/MetadataResource" alias MetadataResourceR4 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 

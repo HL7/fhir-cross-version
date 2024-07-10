@@ -5,9 +5,11 @@
   "version" : "0.1",
   "name" : "Resources2to3",
   "title" : "Resource Map R2 to R3",
+  "description" : "Resource Map R2 to R3",
   "status" : "draft",
+  "experimental" : false,
   "date" : "2019-07-09",
-  "publisher" : "HL7",
+  "publisher" : "HL7 International / FHIR Infrastructure",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/ValueSet/resource-types",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/ValueSet/resource-types",
   "group" : [{
@@ -107,8 +109,8 @@
     { "code" : "SupplyRequest", "target" : [{ "code" : "SupplyRequest", "relationship" : "equivalent" }]},
     { "code" : "TestScript", "target" : [{ "code" : "TestScript", "relationship" : "equivalent" }]},
     { "code" : "ValueSet", "target" : [
-      { "code" : "ValueSet", "relationship" : "source-is-broader-than-target" },
-      { "code" : "CodeSystem",  "relationship" : "source-is-broader-than-target"}
+      { "code" : "ValueSet", "relationship" : "equivalent" },
+      { "code" : "CodeSystem",  "relationship" : "source-is-broader-than-target", "comment" : "CodeSystem is pulled out of ValueSet"}
     ]},
     { "code" : "VisionPrescription", "target" : [{ "code" : "VisionPrescription", "relationship" : "equivalent" }]}]
   }]

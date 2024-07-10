@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "evd.jurisdiction-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evd.jurisdiction-4to4b",
-  "name" : "EventDefinition.jurisdictionr4to4b",
+  "name" : "EventDefinitionJurisdictionr4to4b",
   "title" : "Mapping for EventDefinition.jurisdiction from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for EventDefinition.jurisdiction from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/EventDefinition#EventDefinition.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EventDefinition#EventDefinition.jurisdiction",
   "group" : [{

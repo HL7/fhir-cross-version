@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cmd.jurisdiction-cmd.useContext-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.jurisdiction-cmd.useContext-3to2",
-  "name" : "ConceptMap.jurisdictionConceptMap.useContextr3to2",
+  "name" : "ConceptMapJurisdictionConceptMapUseContextr3to2",
   "title" : "Mapping for ConceptMap.jurisdiction/ConceptMap.useContext from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ConceptMap.jurisdiction/ConceptMap.useContext from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ConceptMap#ConceptMap.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ConceptMap#ConceptMap.useContext",
   "group" : [{

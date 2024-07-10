@@ -4,19 +4,19 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/DeviceUseStatement" alias DeviceUseStatementR2 as source
-uses "http://hl7.org/fhir/3.0/DeviceUseStatement" alias DeviceUseStatement as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/DeviceUseStatement" alias DeviceUseStatement as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group DeviceUseStatement(source src : DeviceUseStatementR2, target tgt : DeviceUseStatement) extends DomainResource <<type+>> {
-  src.bodySite : CodeableConcept -> tgt.bodySite "DeviceUseStatement-bodySite";
-  src.whenUsed -> tgt.whenUsed "DeviceUseStatement-whenUsed";
-  src.device -> tgt.device "DeviceUseStatement-device";
-  src.identifier -> tgt.identifier "DeviceUseStatement-identifier";
-  src.indication -> tgt.indication "DeviceUseStatement-indication";
-  src.notes as v ->  tgt.note as n,  n.text = v "DeviceUseStatement-notes";
-  src.recordedOn -> tgt.recordedOn "DeviceUseStatement-recordedOn";
-  src.subject -> tgt.subject "DeviceUseStatement-subject";
-  src.timing -> tgt.timing "DeviceUseStatement-timing";
+  src.bodySite : CodeableConcept -> tgt.bodySite "DeviceUseStatement_bodySite";
+  src.whenUsed -> tgt.whenUsed "DeviceUseStatement_whenUsed";
+  src.device -> tgt.device "DeviceUseStatement_device";
+  src.identifier -> tgt.identifier "DeviceUseStatement_identifier";
+  src.indication -> tgt.indication "DeviceUseStatement_indication";
+  src.notes as v ->  tgt.note as n,  n.text = v "DeviceUseStatement_notes";
+  src.recordedOn -> tgt.recordedOn "DeviceUseStatement_recordedOn";
+  src.subject -> tgt.subject "DeviceUseStatement_subject";
+  src.timing -> tgt.timing "DeviceUseStatement_timing";
 }
 

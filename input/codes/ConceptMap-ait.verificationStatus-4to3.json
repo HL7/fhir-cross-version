@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ait.verificationStatus-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ait.verificationStatus-4to3",
-  "name" : "AllergyIntolerance.verificationStatus4to3",
+  "name" : "AllergyIntoleranceVerificationStatus4to3",
   "title" : "Mapping for AllergyIntolerance.verificationStatus from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AllergyIntolerance.verificationStatus from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.verificationStatus",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.verificationStatus",
   "group" : [{

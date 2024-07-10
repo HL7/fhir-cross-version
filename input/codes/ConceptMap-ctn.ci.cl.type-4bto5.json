@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ctn.ci.cl.type-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.cl.type-4bto5",
-  "name" : "Citation.citedArtifact.classification.type4bto5",
+  "name" : "CitationCitedArtifactClassificationType4bto5",
   "title" : "Mapping for Citation.citedArtifact.classification.type from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Citation.citedArtifact.classification.type from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.classification.type",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.classification.type",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rst.primaryPurposeType-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rst.primaryPurposeType-4bto4",
-  "name" : "ResearchStudy.primaryPurposeType4bto4",
+  "name" : "ResearchStudyPrimaryPurposeType4bto4",
   "title" : "Mapping for ResearchStudy.primaryPurposeType from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ResearchStudy.primaryPurposeType from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ResearchStudy#ResearchStudy.primaryPurposeType",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchStudy#ResearchStudy.primaryPurposeType",
   "group" : [{

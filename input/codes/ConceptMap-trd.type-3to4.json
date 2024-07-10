@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "trd.type-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/trd.type-3to4",
-  "name" : "TriggerDefinition.type3to4",
+  "name" : "TriggerDefinitionType3to4",
   "title" : "Mapping for TriggerDefinition.type from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for TriggerDefinition.type from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/TriggerDefinition#TriggerDefinition.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TriggerDefinition#TriggerDefinition.type",
   "group" : [{

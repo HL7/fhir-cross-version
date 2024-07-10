@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "evi.ce.type-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evi.ce.type-5to4b",
-  "name" : "Evidence.certainty.type5to4b",
+  "name" : "EvidenceCertaintyType5to4b",
   "title" : "Mapping for Evidence.certainty.type from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Evidence.certainty.type from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.certainty.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.certainty.type",
   "group" : [{

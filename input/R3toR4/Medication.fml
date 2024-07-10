@@ -1,10 +1,10 @@
 /// url = "http://hl7.org/fhir/uv/xver/StructureMap/Medication3to4"
 /// name = "Medication3to4"
-/// title = "Medication Transforms: R3 to R4 "
+/// title = "Medication Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Medication" alias MedicationR3 as source
-uses "http://hl7.org/fhir/4.0/Medication" alias Medication as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Medication" alias MedicationR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Medication" alias Medication as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

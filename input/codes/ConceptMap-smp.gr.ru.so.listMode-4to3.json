@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "smp.gr.ru.so.listMode-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.ru.so.listMode-4to3",
-  "name" : "StructureMap.group.rule.source.listMode4to3",
+  "name" : "StructureMapGroupRuleSourceListMode4to3",
   "title" : "Mapping for StructureMap.group.rule.source.listMode from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for StructureMap.group.rule.source.listMode from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.rule.source.listMode",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/StructureMap#StructureMap.group.rule.source.listMode",
   "group" : [{

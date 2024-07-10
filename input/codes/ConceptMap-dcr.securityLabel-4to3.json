@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dcr.securityLabel-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.securityLabel-4to3",
-  "name" : "DocumentReference.securityLabelr4to3",
+  "name" : "DocumentReferenceSecurityLabelr4to3",
   "title" : "Mapping for DocumentReference.securityLabel from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for DocumentReference.securityLabel from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.securityLabel",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DocumentReference#DocumentReference.securityLabel",
   "group" : [{

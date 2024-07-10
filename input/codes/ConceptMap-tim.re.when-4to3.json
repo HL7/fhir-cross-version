@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tim.re.when-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.when-4to3",
-  "name" : "Timing.repeat.whenr4to3",
+  "name" : "TimingRepeatWhenr4to3",
   "title" : "Mapping for Timing.repeat.when from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Timing.repeat.when from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Timing#Timing.repeat.when",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.when",
   "group" : [{

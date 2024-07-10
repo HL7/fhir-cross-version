@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.ag.type-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ag.type-4bto4",
-  "name" : "AuditEvent.agent.typer4bto4",
+  "name" : "AuditEventAgentTyper4bto4",
   "title" : "Mapping for AuditEvent.agent.type from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.agent.type from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.agent.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.agent.type",
   "group" : [{

@@ -3,7 +3,7 @@
 /// title = "Patient Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Patient" alias Patient as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Patient" alias Patient as source
 uses "http://hl7.org/fhir/1.0/Patient" alias PatientR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
@@ -31,13 +31,13 @@ group Patient(source src : Patient, target tgt : PatientR2) extends DomainResour
 }
 
 group patContact(source src, target tgt) extends BackboneElement {
-  src.relationship -> tgt.relationship "contact-relationship";
-  src.name -> tgt.name "contact-name";
-  src.telecom -> tgt.telecom "contact-telecom";
-  src.address -> tgt.address "contact-address";
-  src.gender -> tgt.gender "contact-gender";
-  src.organization -> tgt.organization "contact-organization";
-  src.period -> tgt.period "contact-period";
+  src.relationship -> tgt.relationship "Contract_relationship";
+  src.name -> tgt.name "Contract_name";
+  src.telecom -> tgt.telecom "Contract_telecom";
+  src.address -> tgt.address "Contract_address";
+  src.gender -> tgt.gender "Contract_gender";
+  src.organization -> tgt.organization "Contract_organization";
+  src.period -> tgt.period "Contract_period";
 }
 
 group patCommunication(source src, target tgt) extends BackboneElement {

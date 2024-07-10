@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mea.compositeScoring-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.compositeScoring-4bto5",
-  "name" : "Measure.compositeScoringr4bto5",
+  "name" : "MeasureCompositeScoringr4bto5",
   "title" : "Mapping for Measure.compositeScoring from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Measure.compositeScoring from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.compositeScoring",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Measure#Measure.compositeScoring",
   "group" : [{

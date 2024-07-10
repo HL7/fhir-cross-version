@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mrp.gr.st.st.po.code-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.gr.st.st.po.code-4to3",
-  "name" : "MeasureReport.group.stratifier.stratum.population.code4to3",
+  "name" : "MeasureReportGroupStratifierStratumPopulationCode4to3",
   "title" : "Mapping for MeasureReport.group.stratifier.stratum.population.code from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for MeasureReport.group.stratifier.stratum.population.code from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MeasureReport#MeasureReport.group.stratifier.stratum.population.code",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MeasureReport#MeasureReport.group.stratifier.stratum.population.code",
   "group" : [{

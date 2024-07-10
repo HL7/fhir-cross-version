@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "opo.is.code-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opo.is.code-4bto4",
-  "name" : "OperationOutcome.issue.code4bto4",
+  "name" : "OperationOutcomeIssueCode4bto4",
   "title" : "Mapping for OperationOutcome.issue.code from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for OperationOutcome.issue.code from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/OperationOutcome#OperationOutcome.issue.code",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/OperationOutcome#OperationOutcome.issue.code",
   "group" : [{

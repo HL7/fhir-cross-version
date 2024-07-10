@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rst.location-rst.jurisdiction-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rst.location-rst.jurisdiction-4to3",
-  "name" : "ResearchStudy.locationResearchStudy.jurisdictionr4to3",
+  "name" : "ResearchStudyLocationResearchStudyJurisdictionr4to3",
   "title" : "Mapping for ResearchStudy.location/ResearchStudy.jurisdiction from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ResearchStudy.location/ResearchStudy.jurisdiction from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchStudy#ResearchStudy.location",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ResearchStudy#ResearchStudy.jurisdiction",
   "group" : [{

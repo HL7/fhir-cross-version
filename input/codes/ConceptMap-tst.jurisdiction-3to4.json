@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tst.jurisdiction-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.jurisdiction-3to4",
-  "name" : "TestScript.jurisdictionr3to4",
+  "name" : "TestScriptJurisdictionr3to4",
   "title" : "Mapping for TestScript.jurisdiction from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for TestScript.jurisdiction from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.jurisdiction",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "eld.sl.di.type-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eld.sl.di.type-4to3",
-  "name" : "ElementDefinition.slicing.discriminator.type4to3",
+  "name" : "ElementDefinitionSlicingDiscriminatorType4to3",
   "title" : "Mapping for ElementDefinition.slicing.discriminator.type from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ElementDefinition.slicing.discriminator.type from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.slicing.discriminator.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.slicing.discriminator.type",
   "group" : [{

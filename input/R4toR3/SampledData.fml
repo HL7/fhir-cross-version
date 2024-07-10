@@ -3,8 +3,8 @@
 /// title = "SampledData Transforms: R4 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/SampledData" alias SampledData as source
-uses "http://hl7.org/fhir/3.0/SampledData" alias SampledDataR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/SampledData" alias SampledData as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/SampledData" alias SampledDataR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

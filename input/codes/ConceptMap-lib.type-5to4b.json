@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "lib.type-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/lib.type-5to4b",
-  "name" : "Library.typer5to4b",
+  "name" : "LibraryTyper5to4b",
   "title" : "Mapping for Library.type from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Library.type from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Library#Library.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Library#Library.type",
   "group" : [{

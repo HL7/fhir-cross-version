@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "enc.lo.status-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enc.lo.status-5to4",
-  "name" : "Encounter.location.status5to4",
+  "name" : "EncounterLocationStatus5to4",
   "title" : "Mapping for Encounter.location.status from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Encounter.location.status from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Encounter#Encounter.location.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Encounter#Encounter.location.status",
   "group" : [{

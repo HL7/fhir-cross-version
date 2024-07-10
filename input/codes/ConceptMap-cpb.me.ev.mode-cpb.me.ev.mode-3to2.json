@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.me.ev.mode-cpb.me.ev.mode-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.me.ev.mode-cpb.me.ev.mode-3to2",
-  "name" : "CapabilityStatement.messaging.event.modeConformance.messaging.event.mode3to2",
+  "name" : "CapabilityStatementMessagingEventModeConformanceMessagingEventMode3to2",
   "title" : "Mapping for CapabilityStatement.messaging.event.mode/Conformance.messaging.event.mode from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.messaging.event.mode/Conformance.messaging.event.mode from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.event.mode",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.messaging.event.mode",
   "group" : [{

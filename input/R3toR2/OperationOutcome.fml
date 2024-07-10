@@ -3,7 +3,7 @@
 /// title = "OperationOutcome Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/OperationOutcome" alias OperationOutcome as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/OperationOutcome" alias OperationOutcome as source
 uses "http://hl7.org/fhir/1.0/OperationOutcome" alias OperationOutcomeR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"

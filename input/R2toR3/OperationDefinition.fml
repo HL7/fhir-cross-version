@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/OperationDefinition" alias OperationDefinitionR2 as source
-uses "http://hl7.org/fhir/3.0/OperationDefinition" alias OperationDefinition as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/OperationDefinition" alias OperationDefinition as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
@@ -33,8 +33,8 @@ group OperationDefinition(source src : OperationDefinitionR2, target tgt : Opera
 }
 
 group opdContact(source src, target tgt) extends Element {
-  src.name -> tgt.name "contact-name";
-  src.telecom -> tgt.telecom "contact-telecom";
+  src.name -> tgt.name "Contract_name";
+  src.telecom -> tgt.telecom "Contract_telecom";
 }
 
 group opParam(source src, target tgt) extends BackboneElement {

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ims.se.availability-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ims.se.availability-3to2",
-  "name" : "ImagingStudy.series.availability3to2",
+  "name" : "ImagingStudySeriesAvailability3to2",
   "title" : "Mapping for ImagingStudy.series.availability from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ImagingStudy.series.availability from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ImagingStudy#ImagingStudy.series.availability",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ImagingStudy#ImagingStudy.series.availability",
   "group" : [{

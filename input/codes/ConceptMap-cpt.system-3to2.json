@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpt.system-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpt.system-3to2",
-  "name" : "ContactPoint.system3to2",
+  "name" : "ContactPointSystem3to2",
   "title" : "Mapping for ContactPoint.system from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ContactPoint.system from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ContactPoint#ContactPoint.system",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ContactPoint#ContactPoint.system",
   "group" : [{

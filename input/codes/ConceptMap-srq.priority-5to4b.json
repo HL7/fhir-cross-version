@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "srq.priority-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/srq.priority-5to4b",
-  "name" : "ServiceRequest.priority5to4b",
+  "name" : "ServiceRequestPriority5to4b",
   "title" : "Mapping for ServiceRequest.priority from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ServiceRequest.priority from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ServiceRequest#ServiceRequest.priority",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ServiceRequest#ServiceRequest.priority",
   "group" : [{

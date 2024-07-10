@@ -3,8 +3,8 @@
 /// title = "ElementDefinition Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/ElementDefinition" alias ElementDefinitionR3 as source
-uses "http://hl7.org/fhir/4.0/ElementDefinition" alias ElementDefinition as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition" alias ElementDefinitionR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition" alias ElementDefinition as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
@@ -210,7 +210,7 @@ group ElementDefinition(source src : ElementDefinitionR3, target tgt : ElementDe
   src.mustSupport -> tgt.mustSupport;
   src.isModifier -> tgt.isModifier;
   src.isSummary -> tgt.isSummary;
-  src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0) "ElementDefinition-binding";
+  src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0) "ElementDefinition_binding";
   src.mapping as vs0 -> tgt.mapping as vt0 then {
     vs0.identity -> vt0.identity;
     vs0.language -> vt0.language;

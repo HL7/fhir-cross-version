@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "bdl.en.se.mode-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/bdl.en.se.mode-2to3",
-  "name" : "Bundle.entry.search.mode2to3",
+  "name" : "BundleEntrySearchMode2to3",
   "title" : "Mapping for Bundle.entry.search.mode from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Bundle.entry.search.mode from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Bundle#Bundle.entry.search.mode",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Bundle#Bundle.entry.search.mode",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.me.en.protocol-cpb.me.en.protocol-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.me.en.protocol-cpb.me.en.protocol-3to2",
-  "name" : "CapabilityStatement.messaging.endpoint.protocolConformance.messaging.endpoint.protocol3to2",
+  "name" : "CapabilityStatementMessagingEndpointProtocolConformanceMessagingEndpointProtocol3to2",
   "title" : "Mapping for CapabilityStatement.messaging.endpoint.protocol/Conformance.messaging.endpoint.protocol from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.messaging.endpoint.protocol/Conformance.messaging.endpoint.protocol from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.endpoint.protocol",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.messaging.endpoint.protocol",
   "group" : [{

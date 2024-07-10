@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prq.action-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prq.action-3to2",
-  "name" : "ProcessRequest.action3to2",
+  "name" : "ProcessRequestAction3to2",
   "title" : "Mapping for ProcessRequest.action from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ProcessRequest.action from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcessRequest#ProcessRequest.action",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ProcessRequest#ProcessRequest.action",
   "group" : [{

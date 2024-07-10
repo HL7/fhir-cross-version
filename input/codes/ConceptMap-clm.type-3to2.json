@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "clm.type-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clm.type-3to2",
-  "name" : "Claim.type3to2",
+  "name" : "ClaimType3to2",
   "title" : "Mapping for Claim.type from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Claim.type from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.type",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Claim#Claim.type",
   "group" : [{

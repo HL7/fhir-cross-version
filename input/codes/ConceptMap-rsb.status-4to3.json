@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "rsb.status-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-4to3",
-  "name" : "rsb.status-4to3",
+  "name" : "ResearchSubjectStatus4to3",
   "title" : "Mapping for ResearchSubject.status from R4 to R3",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for ResearchSubject.status from R4 to R3",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
   "group" : [{

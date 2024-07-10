@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "alt.status-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/alt.status-3to2",
-  "name" : "Flag.status3to2",
+  "name" : "FlagStatus3to2",
   "title" : "Mapping for Flag.status from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Flag.status from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Flag#Flag.status",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Flag#Flag.status",
   "group" : [{

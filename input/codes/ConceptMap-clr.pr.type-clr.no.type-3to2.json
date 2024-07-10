@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "clr.pr.type-clr.no.type-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clr.pr.type-clr.no.type-3to2",
-  "name" : "ClaimResponse.processNote.typeClaimResponse.note.type3to2",
+  "name" : "ClaimResponseProcessNoteTypeClaimResponseNoteType3to2",
   "title" : "Mapping for ClaimResponse.processNote.type/ClaimResponse.note.type from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ClaimResponse.processNote.type/ClaimResponse.note.type from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ClaimResponse#ClaimResponse.processNote.type",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ClaimResponse#ClaimResponse.note.type",
   "group" : [{

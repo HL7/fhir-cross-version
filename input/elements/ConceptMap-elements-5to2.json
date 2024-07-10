@@ -3,11 +3,13 @@
   "id" : "elements-5to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/elements-5to2",
   "version" : "0.1.1",
-  "name" : "elementmap5to4",
+  "name" : "ElementMap5to4",
   "title" : "Element Map, R5 to R4",
+  "description" : "Element Map, R5 to R4",
   "status" : "active",
+  "experimental" : false,
   "date" : "2024-02-01",
-  "publisher" : "HL7",
+  "publisher" : "HL7 International / FHIR Infrastructure",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/elements",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/elements",
   "group" : [{
@@ -15,7 +17,7 @@
     "target" : "http://hl7.org/fhir/1.0/element-names",
     "element" : [
     { "code" : "Account.relatedAccount", "target" : [{ "code" : "Account", "relationship" : "source-is-narrower-than-target" }]},
-    { "code" : "Account.relatedAccount.account", "target" : [{ "code" : "Account.partOf", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "Account.relatedAccount.account", "target" : [{ "code" : "Account.partOf", "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps" }]},
     { "code" : "Account.relatedAccount.account", "target" : [{ "code" : "Account.relatedAccount.partOf", "relationship" : "equivalent" }]},
     { "code" : "AdverseEvent.code", "target" : [{ "code" : "AdverseEvent.event", "relationship" : "equivalent" }]},
     {
@@ -43,7 +45,7 @@
       "code" : "AdverseEvent.supportingInfo.item[x]",
       "target" : [{
         "code" : "AdverseEvent.subjectMedicalHistory",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -106,7 +108,7 @@
       "code" : "AuditEvent.agent.network[x]",
       "target" : [{
         "code" : "AuditEvent.agent.network.address",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -134,7 +136,7 @@
       "code" : "AuditEvent.occurred[x]",
       "target" : [{
         "code" : "AuditEvent.period",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -477,14 +479,14 @@
       "code" : "Device.property.value[x]",
       "target" : [{
         "code" : "Device.property.valueCode",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "Device.property.value[x]",
       "target" : [{
         "code" : "Device.property.valueQuantity",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -540,14 +542,14 @@
       "code" : "DeviceDefinition.property.value[x]",
       "target" : [{
         "code" : "DeviceDefinition.property.valueCode",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "DeviceDefinition.property.value[x]",
       "target" : [{
         "code" : "DeviceDefinition.property.valueQuantity",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -1324,7 +1326,7 @@
       "code" : "MedicationKnowledge.definitional.ingredient.strength[x]",
       "target" : [{
         "code" : "MedicationKnowledge.ingredient.strength",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -1534,7 +1536,7 @@
       "code" : "MolecularSequence.relative.startingSequence.sequence[x]",
       "target" : [{
         "code" : "MolecularSequence.referenceSeq.referenceSeqString",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -2563,14 +2565,14 @@
       "code" : "ClaimResponse.total.amount",
       "target" : [{
         "code" : "ClaimResponse.totalBenefit",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "ClaimResponse.total.amount",
       "target" : [{
         "code" : "ClaimResponse.totalCost",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -2906,7 +2908,7 @@
       "code" : "CoverageEligibilityRequest.provider",
       "target" : [{
         "code" : "EligibilityRequest.organization",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3011,14 +3013,14 @@
       "code" : "CoverageEligibilityResponse.requestor",
       "target" : [{
         "code" : "EligibilityResponse.requestOrganization",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "CoverageEligibilityResponse.requestor",
       "target" : [{
         "code" : "EligibilityResponse.requestProvider",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3046,7 +3048,7 @@
       "code" : "DetectedIssue.identified[x]",
       "target" : [{
         "code" : "DetectedIssue.date",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3249,14 +3251,14 @@
       "code" : "EnrollmentRequest.provider",
       "target" : [{
         "code" : "EnrollmentRequest.organization",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "EnrollmentResponse.requestProvider",
       "target" : [{
         "code" : "EnrollmentResponse.requestOrganization",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3354,7 +3356,7 @@
       "code" : "ExplanationOfBenefit.provider",
       "target" : [{
         "code" : "ExplanationOfBenefit.requestProvider",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3417,14 +3419,14 @@
       "code" : "ExplanationOfBenefit.total.amount",
       "target" : [{
         "code" : "ExplanationOfBenefit.totalBenefit",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "ExplanationOfBenefit.total.amount",
       "target" : [{
         "code" : "ExplanationOfBenefit.totalCost",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3508,14 +3510,14 @@
       "code" : "ImagingStudy.identifier",
       "target" : [{
         "code" : "ImagingStudy.accession",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "ImagingStudy.identifier",
       "target" : [{
         "code" : "ImagingStudy.uid",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3613,14 +3615,14 @@
       "code" : "Immunization.reasonCode",
       "target" : [{
         "code" : "Immunization.explanation.reason",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "Immunization.reasonCode",
       "target" : [{
         "code" : "Immunization.explanation.reasonNotGiven",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3718,14 +3720,14 @@
       "code" : "ImplementationGuide.definition.resource.example[x]",
       "target" : [{
         "code" : "ImplementationGuide.package.resource.example",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "ImplementationGuide.definition.resource.example[x]",
       "target" : [{
         "code" : "ImplementationGuide.package.resource.exampleFor",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3886,7 +3888,7 @@
       "code" : "MedicationAdministration.reasonCode",
       "target" : [{
         "code" : "MedicationAdministration.reasonGiven",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3900,7 +3902,7 @@
       "code" : "MedicationDispense.statusReason[x]",
       "target" : [{
         "code" : "MedicationDispense.notDoneReason[x]",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -3928,7 +3930,7 @@
       "code" : "MedicationStatement.reasonCode",
       "target" : [{
         "code" : "MedicationStatement.reasonForUse[x]",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -4012,7 +4014,7 @@
       "code" : "PaymentNotice.provider",
       "target" : [{
         "code" : "PaymentNotice.organization",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -4047,14 +4049,14 @@
       "code" : "PaymentReconciliation.requestor",
       "target" : [{
         "code" : "PaymentReconciliation.requestOrganization",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "PaymentReconciliation.requestor",
       "target" : [{
         "code" : "PaymentReconciliation.requestProvider",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -4201,7 +4203,7 @@
       "code" : "Questionnaire.item.enableWhen.operator",
       "target" : [{
         "code" : "Questionnaire.item.enableWhen.hasAnswer",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -4369,7 +4371,7 @@
       "code" : "ServiceRequest.requester",
       "target" : [{
         "code" : "ReferralRequest.requester.agent",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -4663,7 +4665,7 @@
       "code" : "AuditEvent",
       "target" : [{
         "code" : "AuditEvent.event",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -5048,28 +5050,28 @@
       "code" : "Claim.item.serviced[x]",
       "target" : [{
         "code" : "Claim.item.serviceDate",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "Claim.payee.party",
       "target" : [{
         "code" : "Claim.payee.organization",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "Claim.payee.party",
       "target" : [{
         "code" : "Claim.payee.person",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "Claim.payee.party",
       "target" : [{
         "code" : "Claim.payee.provider",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -5580,7 +5582,7 @@
       "code" : "DeviceRequest.code[x]",
       "target" : [{
         "code" : "DeviceUseRequest.device",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -5601,14 +5603,14 @@
       "code" : "DeviceRequest.occurrence[x]",
       "target" : [{
         "code" : "DeviceUseRequest.orderedOn",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "DeviceRequest.occurrence[x]",
       "target" : [{
         "code" : "DeviceUseRequest.timing[x]",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -5755,7 +5757,7 @@
       "code" : "Goal",
       "target" : [{
         "code" : "Goal.outcome",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -5811,7 +5813,7 @@
       "code" : "HealthcareService",
       "target" : [{
         "code" : "HealthcareService.serviceType",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -5874,14 +5876,14 @@
       "code" : "Immunization.practitioner.actor",
       "target" : [{
         "code" : "Immunization.performer",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "Immunization.practitioner.actor",
       "target" : [{
         "code" : "Immunization.requester",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -5895,7 +5897,7 @@
       "code" : "Medication",
       "target" : [{
         "code" : "Medication.product",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -6035,7 +6037,7 @@
       "code" : "MedicationDispense.performer.actor",
       "target" : [{
         "code" : "MedicationDispense.dispenser",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -6266,7 +6268,7 @@
       "code" : "ProcedureRequest",
       "target" : [{
         "code" : "DiagnosticOrder.item",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -6413,7 +6415,7 @@
       "code" : "Provenance.agent.who[x]",
       "target" : [{
         "code" : "Provenance.agent.actor",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -6791,7 +6793,7 @@
       "code" : "ReferralRequest.occurrence[x]",
       "target" : [{
         "code" : "ReferralRequest.fulfillmentTime",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -6826,7 +6828,7 @@
       "code" : "RiskAssessment.occurrence[x]",
       "target" : [{
         "code" : "RiskAssessment.date",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -6938,7 +6940,7 @@
       "code" : "SupplyDelivery.occurrence[x]",
       "target" : [{
         "code" : "SupplyDelivery.whenPrepared",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -6952,7 +6954,7 @@
       "code" : "SupplyRequest",
       "target" : [{
         "code" : "SupplyRequest.when",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -6973,7 +6975,7 @@
       "code" : "SupplyRequest.occurrence[x]",
       "target" : [{
         "code" : "SupplyRequest.when.schedule",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
@@ -7022,14 +7024,14 @@
       "code" : "Task.requester.agent",
       "target" : [{
         "code" : "Order.source",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {
       "code" : "Task.requester.agent",
       "target" : [{
         "code" : "Order.target",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     {

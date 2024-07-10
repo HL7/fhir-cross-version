@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cmp.confidentiality-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.confidentiality-3to4",
-  "name" : "Composition.confidentiality3to4",
+  "name" : "CompositionConfidentiality3to4",
   "title" : "Mapping for Composition.confidentiality from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Composition.confidentiality from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.confidentiality",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.confidentiality",
   "group" : [{

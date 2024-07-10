@@ -4,28 +4,28 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/DiagnosticReport" alias DiagnosticReportR2 as source
-uses "http://hl7.org/fhir/3.0/DiagnosticReport" alias DiagnosticReport as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/DiagnosticReport" alias DiagnosticReport as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group DiagnosticReport(source src : DiagnosticReportR2, target tgt : DiagnosticReport) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "DiagnosticReport-identifier";
-  src.status -> tgt.status "DiagnosticReport-status";
-  src.category -> tgt.category "DiagnosticReport-category";
-  src.code -> tgt.code "DiagnosticReport-code";
-  src.subject -> tgt.subject "DiagnosticReport-subject";
-  src.encounter -> tgt.context "DiagnosticReport-encounter";
-  src.effective -> tgt.effective "DiagnosticReport-effective";
-  src.issued -> tgt.issued "DiagnosticReport-issued";
-  src.performer as v ->  tgt.performer as p,  p.actor as v "DiagnosticReport-performer";
-  src.request -> tgt.basedOn "DiagnosticReport-request";
-  src.specimen -> tgt.specimen "DiagnosticReport-specimen";
-  src.result -> tgt.result "DiagnosticReport-result";
-  src.imagingStudy -> tgt.imagingStudy "DiagnosticReport-imagingStudy";
-  src.image as vs0 -> tgt.image as vt0 then drpImage(vs0, vt0) "DiagnosticReport-image";
-  src.conclusion -> tgt.conclusion "DiagnosticReport-conclusion";
-  src.codedDiagnosis -> tgt.codedDiagnosis "DiagnosticReport-codedDiagnosis";
-  src.presentedForm -> tgt.presentedForm "DiagnosticReport-presentedForm";
+  src.identifier -> tgt.identifier "DiagnosticReport_identifier";
+  src.status -> tgt.status "DiagnosticReport_status";
+  src.category -> tgt.category "DiagnosticReport_category";
+  src.code -> tgt.code "DiagnosticReport_code";
+  src.subject -> tgt.subject "DiagnosticReport_subject";
+  src.encounter -> tgt.context "DiagnosticReport_encounter";
+  src.effective -> tgt.effective "DiagnosticReport_effective";
+  src.issued -> tgt.issued "DiagnosticReport_issued";
+  src.performer as v ->  tgt.performer as p,  p.actor as v "DiagnosticReport_performer";
+  src.request -> tgt.basedOn "DiagnosticReport_request";
+  src.specimen -> tgt.specimen "DiagnosticReport_specimen";
+  src.result -> tgt.result "DiagnosticReport_result";
+  src.imagingStudy -> tgt.imagingStudy "DiagnosticReport_imagingStudy";
+  src.image as vs0 -> tgt.image as vt0 then drpImage(vs0, vt0) "DiagnosticReport_image";
+  src.conclusion -> tgt.conclusion "DiagnosticReport_conclusion";
+  src.codedDiagnosis -> tgt.codedDiagnosis "DiagnosticReport_codedDiagnosis";
+  src.presentedForm -> tgt.presentedForm "DiagnosticReport_presentedForm";
 }
 
 group drpImage(source src, target tgt) extends BackboneElement {

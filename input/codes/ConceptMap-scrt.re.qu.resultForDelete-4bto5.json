@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "scrt.re.qu.resultForDelete-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/scrt.re.qu.resultForDelete-4bto5",
-  "name" : "SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete4bto5",
+  "name" : "SubscriptionTopicResourceTriggerQueryCriteriaResultForDelete4bto5",
   "title" : "Mapping for SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic#SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionTopic#SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete",
   "group" : [{

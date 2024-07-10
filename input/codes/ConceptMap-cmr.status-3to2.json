@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cmr.status-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmr.status-3to2",
-  "name" : "CommunicationRequest.status3to2",
+  "name" : "CommunicationRequestStatus3to2",
   "title" : "Mapping for CommunicationRequest.status from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for CommunicationRequest.status from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CommunicationRequest#CommunicationRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/CommunicationRequest#CommunicationRequest.status",
   "group" : [{
@@ -46,15 +48,18 @@
       "code" : "draft",
       "target" : [{
         "code" : "planned",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "proposed",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "requested",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

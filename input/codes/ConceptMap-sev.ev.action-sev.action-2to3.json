@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.ev.action-sev.action-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ev.action-sev.action-2to3",
-  "name" : "AuditEvent.event.actionAuditEvent.action2to3",
+  "name" : "AuditEventEventActionAuditEventAction2to3",
   "title" : "Mapping for AuditEvent.event.action/AuditEvent.action from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.event.action/AuditEvent.action from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.event.action",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.action",
   "group" : [{

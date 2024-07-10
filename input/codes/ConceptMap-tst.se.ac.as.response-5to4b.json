@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tst.se.ac.as.response-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.response-5to4b",
-  "name" : "TestScript.setup.action.assert.response5to4b",
+  "name" : "TestScriptSetupActionAssertResponse5to4b",
   "title" : "Mapping for TestScript.setup.action.assert.response from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for TestScript.setup.action.assert.response from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestScript#TestScript.setup.action.assert.response",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.assert.response",
   "group" : [{

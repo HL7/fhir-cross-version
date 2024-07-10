@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mps.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mps.status-3to4",
-  "name" : "MedicationRequest.status3to4",
+  "name" : "MedicationRequestStatus3to4",
   "title" : "Mapping for MedicationRequest.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for MedicationRequest.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MedicationRequest#MedicationRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationRequest#MedicationRequest.status",
   "group" : [{

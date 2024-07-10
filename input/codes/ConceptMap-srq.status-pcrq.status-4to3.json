@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "srq.status-pcrq.status-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/srq.status-pcrq.status-4to3",
-  "name" : "ServiceRequest.statusProcedureRequest.status4to3",
+  "name" : "ServiceRequestStatusProcedureRequestStatus4to3",
   "title" : "Mapping for ServiceRequest.status/ProcedureRequest.status from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ServiceRequest.status/ProcedureRequest.status from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ServiceRequest#ServiceRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pmr.outcome-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pmr.outcome-3to2",
-  "name" : "PaymentReconciliation.outcome3to2",
+  "name" : "PaymentReconciliationOutcome3to2",
   "title" : "Mapping for PaymentReconciliation.outcome from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for PaymentReconciliation.outcome from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.outcome",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.outcome",
   "group" : [{

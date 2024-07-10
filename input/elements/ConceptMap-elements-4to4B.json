@@ -3,20 +3,21 @@
   "id" : "elements-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/elements-4to4b",
   "version" : "0.1.1",
-  "name" : "elementmap4to4b",
+  "name" : "ElementMap4to4b",
   "title" : "Element Map, R4 to 4B",
+  "description" : "Element Map, R4 to 4B",
   "status" : "active",
+  "experimental" : false,
   "date" : "2024-02-01",
-  "publisher" : "HL7",
+  "publisher" : "HL7 International / FHIR Infrastructure",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/elements",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/elements",
   "group" : [{
     "source" : "http://hl7.org/fhir/4.0/element-names",
     "target" : "http://hl7.org/fhir/4.3/element-names",
     "unmapped" : {
-      "mode"  : "use-source-code"
-    },
-    "element" : [ 
-    ]
+      "mode"  : "use-source-code",
+      "relationship": "equivalent"
+    }
   }]
 }

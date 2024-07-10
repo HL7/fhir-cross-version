@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mrp.improvementNotation-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.improvementNotation-4bto5",
-  "name" : "MeasureReport.improvementNotationr4bto5",
+  "name" : "MeasureReportImprovementNotationr4bto5",
   "title" : "Mapping for MeasureReport.improvementNotation from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for MeasureReport.improvementNotation from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MeasureReport#MeasureReport.improvementNotation",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MeasureReport#MeasureReport.improvementNotation",
   "group" : [{

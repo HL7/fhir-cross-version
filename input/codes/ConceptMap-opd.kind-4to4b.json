@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "opd.kind-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opd.kind-4to4b",
-  "name" : "OperationDefinition.kind4to4b",
+  "name" : "OperationDefinitionKind4to4b",
   "title" : "Mapping for OperationDefinition.kind from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for OperationDefinition.kind from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/OperationDefinition#OperationDefinition.kind",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/OperationDefinition#OperationDefinition.kind",
   "group" : [{

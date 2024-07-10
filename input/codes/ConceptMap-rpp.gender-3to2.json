@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rpp.gender-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rpp.gender-3to2",
-  "name" : "RelatedPerson.gender3to2",
+  "name" : "RelatedPersonGender3to2",
   "title" : "Mapping for RelatedPerson.gender from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for RelatedPerson.gender from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/RelatedPerson#RelatedPerson.gender",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/RelatedPerson#RelatedPerson.gender",
   "group" : [{

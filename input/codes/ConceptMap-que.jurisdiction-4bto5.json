@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "que.jurisdiction-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/que.jurisdiction-4bto5",
-  "name" : "Questionnaire.jurisdictionr4bto5",
+  "name" : "QuestionnaireJurisdictionr4bto5",
   "title" : "Mapping for Questionnaire.jurisdiction from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Questionnaire.jurisdiction from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Questionnaire#Questionnaire.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Questionnaire#Questionnaire.jurisdiction",
   "group" : [{

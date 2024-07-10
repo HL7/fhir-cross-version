@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ait.category-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ait.category-4bto5",
-  "name" : "AllergyIntolerance.category4bto5",
+  "name" : "AllergyIntoleranceCategory4bto5",
   "title" : "Mapping for AllergyIntolerance.category from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for AllergyIntolerance.category from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance#AllergyIntolerance.category",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.category",
   "group" : [{

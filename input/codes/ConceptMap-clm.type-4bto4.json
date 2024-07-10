@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "clm.type-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clm.type-4bto4",
-  "name" : "Claim.type4bto4",
+  "name" : "ClaimType4bto4",
   "title" : "Mapping for Claim.type from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Claim.type from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Claim#Claim.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Claim#Claim.type",
   "group" : [{

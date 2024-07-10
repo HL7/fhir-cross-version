@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ig.jurisdiction-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ig.jurisdiction-4bto5",
-  "name" : "ImplementationGuide.jurisdictionr4bto5",
+  "name" : "ImplementationGuideJurisdictionr4bto5",
   "title" : "Mapping for ImplementationGuide.jurisdiction from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ImplementationGuide.jurisdiction from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ImplementationGuide#ImplementationGuide.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ImplementationGuide#ImplementationGuide.jurisdiction",
   "group" : [{

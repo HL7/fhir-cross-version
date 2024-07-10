@@ -3,8 +3,8 @@
 /// title = "EnrollmentRequest Transforms: R4 to R5"
 /// status = "draft"
 
-uses "http://hl7.org/fhir/4.0/EnrollmentRequest" alias EnrollmentRequestR4 as source
-uses "http://hl7.org/fhir/5.0/EnrollmentRequest" alias EnrollmentRequestR5 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/EnrollmentRequest" alias EnrollmentRequestR4 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/EnrollmentRequest" alias EnrollmentRequestR5 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 

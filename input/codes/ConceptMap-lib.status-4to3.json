@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "lib.status-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/lib.status-4to3",
-  "name" : "Library.status4to3",
+  "name" : "LibraryStatus4to3",
   "title" : "Mapping for Library.status from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Library.status from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Library#Library.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Library#Library.status",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tim.re.periodUnit-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.periodUnit-4to3",
-  "name" : "Timing.repeat.periodUnitr4to3",
+  "name" : "TimingRepeatPeriodUnitr4to3",
   "title" : "Mapping for Timing.repeat.periodUnit from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Timing.repeat.periodUnit from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Timing#Timing.repeat.periodUnit",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.periodUnit",
   "group" : [{

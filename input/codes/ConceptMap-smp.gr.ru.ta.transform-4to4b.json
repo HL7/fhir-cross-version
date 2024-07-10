@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "smp.gr.ru.ta.transform-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.ru.ta.transform-4to4b",
-  "name" : "StructureMap.group.rule.target.transform4to4b",
+  "name" : "StructureMapGroupRuleTargetTransform4to4b",
   "title" : "Mapping for StructureMap.group.rule.target.transform from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for StructureMap.group.rule.target.transform from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.transform",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.group.rule.target.transform",
   "group" : [{

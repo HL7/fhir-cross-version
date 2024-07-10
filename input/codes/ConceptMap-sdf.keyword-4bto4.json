@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sdf.keyword-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.keyword-4bto4",
-  "name" : "StructureDefinition.keyword4bto4",
+  "name" : "StructureDefinitionKeyword4bto4",
   "title" : "Mapping for StructureDefinition.keyword from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for StructureDefinition.keyword from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition#StructureDefinition.keyword",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.keyword",
   "group" : [{

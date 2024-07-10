@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "scr.status-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/scr.status-5to4",
-  "name" : "Subscription.status5to4",
+  "name" : "SubscriptionStatus5to4",
   "title" : "Mapping for Subscription.status from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Subscription.status from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Subscription#Subscription.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Subscription#Subscription.status",
   "group" : [{

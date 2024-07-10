@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cer.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cer.status-4bto4",
-  "name" : "CoverageEligibilityRequest.status4bto4",
+  "name" : "CoverageEligibilityRequestStatus4bto4",
   "title" : "Mapping for CoverageEligibilityRequest.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for CoverageEligibilityRequest.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityRequest#CoverageEligibilityRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CoverageEligibilityRequest#CoverageEligibilityRequest.status",
   "group" : [{

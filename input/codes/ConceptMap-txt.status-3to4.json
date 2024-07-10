@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "txt.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/txt.status-3to4",
-  "name" : "Narrative.status3to4",
+  "name" : "NarrativeStatus3to4",
   "title" : "Mapping for Narrative.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Narrative.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Narrative#Narrative.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Narrative#Narrative.status",
   "group" : [{

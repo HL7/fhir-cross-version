@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "con.category-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/con.category-4bto4",
-  "name" : "Condition.category4bto4",
+  "name" : "ConditionCategory4bto4",
   "title" : "Mapping for Condition.category from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Condition.category from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Condition#Condition.category",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Condition#Condition.category",
   "group" : [{

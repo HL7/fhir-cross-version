@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "evi.st.at.type-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evi.st.at.type-4bto5",
-  "name" : "Evidence.statistic.attributeEstimate.typer4bto5",
+  "name" : "EvidenceStatisticAttributeEstimateTyper4bto5",
   "title" : "Mapping for Evidence.statistic.attributeEstimate.type from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Evidence.statistic.attributeEstimate.type from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.statistic.attributeEstimate.type",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.statistic.attributeEstimate.type",
   "group" : [{

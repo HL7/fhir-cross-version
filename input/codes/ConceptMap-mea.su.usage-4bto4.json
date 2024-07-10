@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mea.su.usage-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.su.usage-4bto4",
-  "name" : "Measure.supplementalData.usage4bto4",
+  "name" : "MeasureSupplementalDataUsage4bto4",
   "title" : "Mapping for Measure.supplementalData.usage from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Measure.supplementalData.usage from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.supplementalData.usage",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.supplementalData.usage",
   "group" : [{

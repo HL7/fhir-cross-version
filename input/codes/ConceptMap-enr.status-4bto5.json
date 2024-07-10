@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "enr.status-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enr.status-4bto5",
-  "name" : "EnrollmentResponse.status4bto5",
+  "name" : "EnrollmentResponseStatus4bto5",
   "title" : "Mapping for EnrollmentResponse.status from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for EnrollmentResponse.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EnrollmentResponse#EnrollmentResponse.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/EnrollmentResponse#EnrollmentResponse.status",
   "group" : [{

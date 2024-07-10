@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "imm.status-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/imm.status-3to2",
-  "name" : "Immunization.status3to2",
+  "name" : "ImmunizationStatus3to2",
   "title" : "Mapping for Immunization.status from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Immunization.status from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Immunization#Immunization.status",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Immunization#Immunization.status",
   "group" : [{

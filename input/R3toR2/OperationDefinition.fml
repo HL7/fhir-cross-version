@@ -3,7 +3,7 @@
 /// title = "OperationDefinition Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/OperationDefinition" alias OperationDefinition as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/OperationDefinition" alias OperationDefinition as source
 uses "http://hl7.org/fhir/1.0/OperationDefinition" alias OperationDefinitionR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
@@ -31,8 +31,8 @@ group OperationDefinition(source src : OperationDefinition, target tgt : Operati
 }
 
 group opdContact(source src, target tgt) extends Element {
-  src.name -> tgt.name "contact-name";
-  src.telecom -> tgt.telecom "contact-telecom";
+  src.name -> tgt.name "Contract_name";
+  src.telecom -> tgt.telecom "Contract_telecom";
 }
 
 group opdParameter(source src, target tgt) extends BackboneElement {

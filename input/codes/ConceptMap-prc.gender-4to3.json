@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prc.gender-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prc.gender-4to3",
-  "name" : "Practitioner.gender4to3",
+  "name" : "PractitionerGender4to3",
   "title" : "Mapping for Practitioner.gender from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Practitioner.gender from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Practitioner#Practitioner.gender",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Practitioner#Practitioner.gender",
   "group" : [{

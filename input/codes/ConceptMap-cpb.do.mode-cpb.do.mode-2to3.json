@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.do.mode-cpb.do.mode-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.do.mode-cpb.do.mode-2to3",
-  "name" : "Conformance.document.modeCapabilityStatement.document.mode2to3",
+  "name" : "ConformanceDocumentModeCapabilityStatementDocumentMode2to3",
   "title" : "Mapping for Conformance.document.mode/CapabilityStatement.document.mode from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Conformance.document.mode/CapabilityStatement.document.mode from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.document.mode",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.document.mode",
   "group" : [{

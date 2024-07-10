@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rsb.status-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-5to4",
-  "name" : "ResearchSubject.status5to4",
+  "name" : "ResearchSubjectStatus5to4",
   "title" : "Mapping for ResearchSubject.status from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ResearchSubject.status from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
   "group" : [{

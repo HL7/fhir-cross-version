@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ig.fhirVersion-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ig.fhirVersion-4bto5",
-  "name" : "ImplementationGuide.fhirVersion4bto5",
+  "name" : "ImplementationGuideFhirVersion4bto5",
   "title" : "Mapping for ImplementationGuide.fhirVersion from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ImplementationGuide.fhirVersion from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ImplementationGuide#ImplementationGuide.fhirVersion",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ImplementationGuide#ImplementationGuide.fhirVersion",
   "group" : [{

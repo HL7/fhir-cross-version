@@ -5,7 +5,7 @@
 
 uses "http://hl7.org/fhir/1.0/MedicationAdministration" alias MedicationAdministrationR2 as source
 uses "http://hl7.org/fhir/1.0/MedicationAdministration" alias RatioR2 as source
-uses "http://hl7.org/fhir/3.0/MedicationAdministration" alias MedicationAdministration as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/MedicationAdministration" alias MedicationAdministration as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 

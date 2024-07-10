@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "red.variableType-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/red.variableType-4to4b",
-  "name" : "ResearchElementDefinition.variableType4to4b",
+  "name" : "ResearchElementDefinitionVariableType4to4b",
   "title" : "Mapping for ResearchElementDefinition.variableType from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ResearchElementDefinition.variableType from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.variableType",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.variableType",
   "group" : [{

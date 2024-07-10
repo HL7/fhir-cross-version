@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tcp.kind-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tcp.kind-4bto5",
-  "name" : "TerminologyCapabilities.kind4bto5",
+  "name" : "TerminologyCapabilitiesKind4bto5",
   "title" : "Mapping for TerminologyCapabilities.kind from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for TerminologyCapabilities.kind from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.kind",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.kind",
   "group" : [{

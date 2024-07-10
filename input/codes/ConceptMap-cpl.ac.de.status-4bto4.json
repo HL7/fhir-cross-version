@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpl.ac.de.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.ac.de.status-4bto4",
-  "name" : "CarePlan.activity.detail.status4bto4",
+  "name" : "CarePlanActivityDetailStatus4bto4",
   "title" : "Mapping for CarePlan.activity.detail.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for CarePlan.activity.detail.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CarePlan#CarePlan.activity.detail.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CarePlan#CarePlan.activity.detail.status",
   "group" : [{

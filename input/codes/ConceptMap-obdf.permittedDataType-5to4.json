@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "obdf.permittedDataType-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obdf.permittedDataType-5to4",
-  "name" : "ObservationDefinition.permittedDataType5to4",
+  "name" : "ObservationDefinitionPermittedDataType5to4",
   "title" : "Mapping for ObservationDefinition.permittedDataType from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ObservationDefinition.permittedDataType from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ObservationDefinition#ObservationDefinition.permittedDataType",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.permittedDataType",
   "group" : [{

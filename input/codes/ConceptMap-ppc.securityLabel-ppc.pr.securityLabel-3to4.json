@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ppc.securityLabel-ppc.pr.securityLabel-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.securityLabel-ppc.pr.securityLabel-3to4",
-  "name" : "Consent.securityLabelConsent.provision.securityLabelr3to4",
+  "name" : "ConsentSecurityLabelConsentProvisionSecurityLabelr3to4",
   "title" : "Mapping for Consent.securityLabel/Consent.provision.securityLabel from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Consent.securityLabel/Consent.provision.securityLabel from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.securityLabel",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.securityLabel",
   "group" : [{

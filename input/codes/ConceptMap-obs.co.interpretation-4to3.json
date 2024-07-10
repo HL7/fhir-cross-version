@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "obs.co.interpretation-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obs.co.interpretation-4to3",
-  "name" : "Observation.component.interpretation4to3",
+  "name" : "ObservationComponentInterpretation4to3",
   "title" : "Mapping for Observation.component.interpretation from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Observation.component.interpretation from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Observation#Observation.component.interpretation",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.component.interpretation",
   "group" : [{

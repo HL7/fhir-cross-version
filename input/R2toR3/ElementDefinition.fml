@@ -4,54 +4,54 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/ElementDefinition" alias ElementDefinitionR2 as source
-uses "http://hl7.org/fhir/3.0/ElementDefinition" alias ElementDefinition as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition" alias ElementDefinition as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group ElementDefinition(source src : ElementDefinitionR2, target tgt : ElementDefinition, target first : boolean) <<type+>> {
-  src.extension -> tgt.extension "ElementDefinition-extensions";
-  src.path -> tgt.id "ElementDefinition-id";
-  src.path -> tgt.path "ElementDefinition-path";
-  src.representation -> tgt.representation "ElementDefinition-representation";
-  src.name -> tgt.sliceName "ElementDefinition-sliceName";
-  src.name -> tgt.id "ElementDefinition-id";
-  src.label -> tgt.label "ElementDefinition-label";
-  src.code -> tgt.code "ElementDefinition-code";
+  src.extension -> tgt.extension "ElementDefinition_extensions";
+  src.path -> tgt.id "ElementDefinition_id";
+  src.path -> tgt.path "ElementDefinition_path";
+  src.representation -> tgt.representation "ElementDefinition_representation";
+  src.name -> tgt.sliceName "ElementDefinition_sliceName";
+  src.name -> tgt.id "ElementDefinition_id";
+  src.label -> tgt.label "ElementDefinition_label";
+  src.code -> tgt.code "ElementDefinition_code";
   src.slicing as vs0 -> tgt.slicing as vt0 then {
     vs0.discriminator as vs1 ->  vt0.discriminator as vd1,  vd1.type = 'value',  vd1.path = vs1 "slicing-discriminator";
     vs0.description -> vt0.description "slicing-description";
     vs0.ordered -> vt0.ordered "slicing-ordered";
     vs0.rules -> vt0.rules "slicing-rules";
-  } "ElementDefinition-slicing";
-  src.short -> tgt.short "ElementDefinition-short";
-  src.definition -> tgt.definition "ElementDefinition-definition";
-  src.comments -> tgt.comment "ElementDefinition-comments";
-  src.requirements -> tgt.requirements "ElementDefinition-requirements";
-  src.alias -> tgt.alias "ElementDefinition-alias";
-  src.min -> tgt.min "ElementDefinition-min";
-  src.max -> tgt.max "ElementDefinition-max";
+  } "ElementDefinition_slicing";
+  src.short -> tgt.short "ElementDefinition_short";
+  src.definition -> tgt.definition "ElementDefinition_definition";
+  src.comments -> tgt.comment "ElementDefinition_comments";
+  src.requirements -> tgt.requirements "ElementDefinition_requirements";
+  src.alias -> tgt.alias "ElementDefinition_alias";
+  src.min -> tgt.min "ElementDefinition_min";
+  src.max -> tgt.max "ElementDefinition_max";
   src.base as vs0 -> tgt.base as vt0 then {
     vs0.path -> vt0.path "base-path";
     vs0.min -> vt0.min "base-min";
     vs0.max -> vt0.max "base-max";
-  } "ElementDefinition-base";
-  src.type as vs0 where first.not() -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinition-type";
-  src.nameReference -> tgt.contentReference "ElementDefinition-nameReference";
-  src.defaultValue -> tgt.defaultValue "ElementDefinition-defaultValue";
-  src.meaningWhenMissing -> tgt.meaningWhenMissing "ElementDefinition-meaningWhenMissing";
-  src.example as v ->  tgt.example as ve,  ve.label = 'General',  ve.value = v "ElementDefinition-example";
-  src.fixed -> tgt.fixed "ElementDefinition-fixed";
-  src.pattern -> tgt.pattern "ElementDefinition-pattern";
-  src.minValue -> tgt.minValue "ElementDefinition-minValue";
-  src.maxValue -> tgt.maxValue "ElementDefinition-maxValue";
-  src.maxLength -> tgt.maxLength "ElementDefinition-maxLength";
-  src.condition -> tgt.condition "ElementDefinition-condition";
-  src.constraint as vs0 -> tgt.constraint as vt0 then constraint(vs0, vt0) "ElementDefinition-constraint";
-  src.mustSupport -> tgt.mustSupport "ElementDefinition-mustSupport";
-  src.isModifier -> tgt.isModifier "ElementDefinition-isModifier";
-  src.isSummary -> tgt.isSummary "ElementDefinition-isSummary";
-  src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0) "ElementDefinition-binding";
-  src.mapping as vs0 -> tgt.mapping as vt0 then mapping(vs0, vt0) "ElementDefinition-mapping";
+  } "ElementDefinition_base";
+  src.type as vs0 where first.not() -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinition_type";
+  src.nameReference -> tgt.contentReference "ElementDefinition_nameReference";
+  src.defaultValue -> tgt.defaultValue "ElementDefinition_defaultValue";
+  src.meaningWhenMissing -> tgt.meaningWhenMissing "ElementDefinition_meaningWhenMissing";
+  src.example as v ->  tgt.example as ve,  ve.label = 'General',  ve.value = v "ElementDefinition_example";
+  src.fixed -> tgt.fixed "ElementDefinition_fixed";
+  src.pattern -> tgt.pattern "ElementDefinition_pattern";
+  src.minValue -> tgt.minValue "ElementDefinition_minValue";
+  src.maxValue -> tgt.maxValue "ElementDefinition_maxValue";
+  src.maxLength -> tgt.maxLength "ElementDefinition_maxLength";
+  src.condition -> tgt.condition "ElementDefinition_condition";
+  src.constraint as vs0 -> tgt.constraint as vt0 then constraint(vs0, vt0) "ElementDefinition_constraint";
+  src.mustSupport -> tgt.mustSupport "ElementDefinition_mustSupport";
+  src.isModifier -> tgt.isModifier "ElementDefinition_isModifier";
+  src.isSummary -> tgt.isSummary "ElementDefinition_isSummary";
+  src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0) "ElementDefinition_binding";
+  src.mapping as vs0 -> tgt.mapping as vt0 then mapping(vs0, vt0) "ElementDefinition_mapping";
 }
 
 group binding(source src, target tgt) extends Element {

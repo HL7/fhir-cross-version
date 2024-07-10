@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dev.statusReason-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dev.statusReason-4to4b",
-  "name" : "Device.statusReason4to4b",
+  "name" : "DeviceStatusReason4to4b",
   "title" : "Mapping for Device.statusReason from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Device.statusReason from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Device#Device.statusReason",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Device#Device.statusReason",
   "group" : [{

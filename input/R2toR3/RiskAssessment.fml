@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/RiskAssessment" alias RiskAssessmentR2 as source
-uses "http://hl7.org/fhir/3.0/RiskAssessment" alias RiskAssessment as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/RiskAssessment" alias RiskAssessment as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 

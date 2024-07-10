@@ -3,8 +3,8 @@
 /// title = "MedicationDispense Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/MedicationDispense" alias MedicationDispenseR3 as source
-uses "http://hl7.org/fhir/4.0/MedicationDispense" alias MedicationDispense as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/MedicationDispense" alias MedicationDispenseR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/MedicationDispense" alias MedicationDispense as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

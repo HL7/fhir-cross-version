@@ -3,8 +3,8 @@
 /// title = "Ratio Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Ratio" alias RatioR3 as source
-uses "http://hl7.org/fhir/4.0/Ratio" alias Ratio as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Ratio" alias RatioR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Ratio" alias Ratio as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

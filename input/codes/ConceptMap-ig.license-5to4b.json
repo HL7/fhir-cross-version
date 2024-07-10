@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ig.license-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ig.license-5to4b",
-  "name" : "ImplementationGuide.license5to4b",
+  "name" : "ImplementationGuideLicense5to4b",
   "title" : "Mapping for ImplementationGuide.license from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ImplementationGuide.license from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ImplementationGuide#ImplementationGuide.license",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ImplementationGuide#ImplementationGuide.license",
   "group" : [{

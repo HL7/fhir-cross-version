@@ -3,8 +3,8 @@
 /// title = "ValueSet Transforms: R4B to R5"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.3/ValueSet" alias ValueSetR4B as source
-uses "http://hl7.org/fhir/5.0/ValueSet" alias ValueSetR5 as target
+uses "http://hl7.org/fhir/4.3/StructureDefinition/ValueSet" alias ValueSetR4B as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/ValueSet" alias ValueSetR5 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 

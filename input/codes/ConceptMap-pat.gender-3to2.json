@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pat.gender-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pat.gender-3to2",
-  "name" : "Patient.gender3to2",
+  "name" : "PatientGender3to2",
   "title" : "Mapping for Patient.gender from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Patient.gender from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.gender",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.gender",
   "group" : [{

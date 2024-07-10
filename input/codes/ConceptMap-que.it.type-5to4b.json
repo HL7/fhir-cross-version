@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "que.it.type-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/que.it.type-5to4b",
-  "name" : "Questionnaire.item.type5to4b",
+  "name" : "QuestionnaireItemType5to4b",
   "title" : "Mapping for Questionnaire.item.type from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Questionnaire.item.type from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Questionnaire#Questionnaire.item.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Questionnaire#Questionnaire.item.type",
   "group" : [{
@@ -27,11 +29,13 @@
       "code" : "coding",
       "target" : [{
         "code" : "choice",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "open-choice",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cli.status-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cli.status-4to4b",
-  "name" : "ClinicalImpression.status4to4b",
+  "name" : "ClinicalImpressionStatus4to4b",
   "title" : "Mapping for ClinicalImpression.status from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ClinicalImpression.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ClinicalImpression#ClinicalImpression.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ClinicalImpression#ClinicalImpression.status",
   "group" : [{

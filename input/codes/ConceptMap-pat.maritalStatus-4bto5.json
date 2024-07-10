@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pat.maritalStatus-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pat.maritalStatus-4bto5",
-  "name" : "Patient.maritalStatusr4bto5",
+  "name" : "PatientMaritalStatusr4bto5",
   "title" : "Mapping for Patient.maritalStatus from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Patient.maritalStatus from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Patient#Patient.maritalStatus",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Patient#Patient.maritalStatus",
   "group" : [{

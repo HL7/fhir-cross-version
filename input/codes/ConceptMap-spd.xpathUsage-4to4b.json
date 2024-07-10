@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "spd.xpathUsage-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.xpathUsage-4to4b",
-  "name" : "SearchParameter.xpathUsage4to4b",
+  "name" : "SearchParameterXpathUsage4to4b",
   "title" : "Mapping for SearchParameter.xpathUsage from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for SearchParameter.xpathUsage from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.xpathUsage",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.xpathUsage",
   "group" : [{

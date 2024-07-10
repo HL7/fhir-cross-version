@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "csd.co.de.use-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.co.de.use-4bto5",
-  "name" : "CodeSystem.concept.designation.user4bto5",
+  "name" : "CodeSystemConceptDesignationUser4bto5",
   "title" : "Mapping for CodeSystem.concept.designation.use from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for CodeSystem.concept.designation.use from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CodeSystem#CodeSystem.concept.designation.use",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CodeSystem#CodeSystem.concept.designation.use",
   "group" : [{

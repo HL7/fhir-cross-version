@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sur.status-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sur.status-4to3",
-  "name" : "SupplyRequest.status4to3",
+  "name" : "SupplyRequestStatus4to3",
   "title" : "Mapping for SupplyRequest.status from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for SupplyRequest.status from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SupplyRequest#SupplyRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SupplyRequest#SupplyRequest.status",
   "group" : [{

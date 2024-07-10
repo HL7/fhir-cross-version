@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpl.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.status-2to3",
-  "name" : "CarePlan.status2to3",
+  "name" : "CarePlanStatus2to3",
   "title" : "Mapping for CarePlan.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for CarePlan.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/CarePlan#CarePlan.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CarePlan#CarePlan.status",
   "group" : [{

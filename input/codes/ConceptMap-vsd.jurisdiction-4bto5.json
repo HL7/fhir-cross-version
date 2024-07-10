@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "vsd.jurisdiction-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/vsd.jurisdiction-4bto5",
-  "name" : "ValueSet.jurisdictionr4bto5",
+  "name" : "ValueSetJurisdictionr4bto5",
   "title" : "Mapping for ValueSet.jurisdiction from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ValueSet.jurisdiction from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ValueSet#ValueSet.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ValueSet#ValueSet.jurisdiction",
   "group" : [{

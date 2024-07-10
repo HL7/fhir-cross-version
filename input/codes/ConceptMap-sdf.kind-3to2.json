@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "sdf.kind-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.kind-3to2",
-  "name" : "sdf.kind-3to2",
+  "name" : "StructureDefinitionKind3to2",
   "title" : "Mapping for StructureDefinition.kind from R3 to R2",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for StructureDefinition.kind from R3 to R2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition#StructureDefinition.kind",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/StructureDefinition#StructureDefinition.kind",
   "group" : [{

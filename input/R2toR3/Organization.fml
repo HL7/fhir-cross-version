@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/Organization" alias OrganizationR2 as source
-uses "http://hl7.org/fhir/3.0/Organization" alias Organization as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Organization" alias Organization as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
@@ -20,9 +20,9 @@ group Organization(source src : OrganizationR2, target tgt : Organization) exten
 }
 
 group orgContact(source src, target tgt) extends BackboneElement {
-  src.purpose -> tgt.purpose "contact-purpose";
-  src.name -> tgt.name "contact-name";
-  src.telecom -> tgt.telecom "contact-telecom";
-  src.address -> tgt.address "contact-address";
+  src.purpose -> tgt.purpose "Contract_purpose";
+  src.name -> tgt.name "Contract_name";
+  src.telecom -> tgt.telecom "Contract_telecom";
+  src.address -> tgt.address "Contract_address";
 }
 

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "csd.status-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.status-5to4b",
-  "name" : "CodeSystem.status5to4b",
+  "name" : "CodeSystemStatus5to4b",
   "title" : "Mapping for CodeSystem.status from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for CodeSystem.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CodeSystem#CodeSystem.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CodeSystem#CodeSystem.status",
   "group" : [{

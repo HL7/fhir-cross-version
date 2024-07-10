@@ -3,8 +3,8 @@
 /// title = "DetectedIssue Transforms: R5 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/5.0/DetectedIssue" alias DetectedIssueR5 as source
-uses "http://hl7.org/fhir/4.0/DetectedIssue" alias DetectedIssueR4 as target
+uses "http://hl7.org/fhir/5.0/StructureDefinition/DetectedIssue" alias DetectedIssueR5 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/DetectedIssue" alias DetectedIssueR4 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 

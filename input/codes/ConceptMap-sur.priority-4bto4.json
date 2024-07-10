@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sur.priority-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sur.priority-4bto4",
-  "name" : "SupplyRequest.priority4bto4",
+  "name" : "SupplyRequestPriority4bto4",
   "title" : "Mapping for SupplyRequest.priority from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for SupplyRequest.priority from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SupplyRequest#SupplyRequest.priority",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SupplyRequest#SupplyRequest.priority",
   "group" : [{

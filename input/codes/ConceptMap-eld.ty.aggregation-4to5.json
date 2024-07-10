@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "eld.ty.aggregation-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eld.ty.aggregation-4to5",
-  "name" : "ElementDefinition.type.aggregation4to5",
+  "name" : "ElementDefinitionTypeAggregation4to5",
   "title" : "Mapping for ElementDefinition.type.aggregation from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ElementDefinition.type.aggregation from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.type.aggregation",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ElementDefinition#ElementDefinition.type.aggregation",
   "group" : [{

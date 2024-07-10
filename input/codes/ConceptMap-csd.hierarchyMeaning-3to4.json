@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "csd.hierarchyMeaning-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.hierarchyMeaning-3to4",
-  "name" : "CodeSystem.hierarchyMeaning3to4",
+  "name" : "CodeSystemHierarchyMeaning3to4",
   "title" : "Mapping for CodeSystem.hierarchyMeaning from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for CodeSystem.hierarchyMeaning from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.hierarchyMeaning",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.hierarchyMeaning",
   "group" : [{

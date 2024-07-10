@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "app.pa.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/app.pa.status-2to3",
-  "name" : "Appointment.participant.status2to3",
+  "name" : "AppointmentParticipantStatus2to3",
   "title" : "Mapping for Appointment.participant.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Appointment.participant.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Appointment#Appointment.participant.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Appointment#Appointment.participant.status",
   "group" : [{

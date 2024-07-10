@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "spd.type-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.type-2to3",
-  "name" : "SearchParameter.type2to3",
+  "name" : "SearchParameterType2to3",
   "title" : "Mapping for SearchParameter.type from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for SearchParameter.type from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/SearchParameter#SearchParameter.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.type",
   "group" : [{

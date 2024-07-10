@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ras.status-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ras.status-4to5",
-  "name" : "RiskAssessment.status4to5",
+  "name" : "RiskAssessmentStatus4to5",
   "title" : "Mapping for RiskAssessment.status from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for RiskAssessment.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RiskAssessment#RiskAssessment.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RiskAssessment#RiskAssessment.status",
   "group" : [{

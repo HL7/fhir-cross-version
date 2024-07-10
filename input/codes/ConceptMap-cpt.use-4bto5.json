@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpt.use-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpt.use-4bto5",
-  "name" : "ContactPoint.use4bto5",
+  "name" : "ContactPointUse4bto5",
   "title" : "Mapping for ContactPoint.use from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ContactPoint.use from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint#ContactPoint.use",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ContactPoint#ContactPoint.use",
   "group" : [{

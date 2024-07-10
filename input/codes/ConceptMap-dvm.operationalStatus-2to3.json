@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dvm.operationalStatus-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.operationalStatus-2to3",
-  "name" : "DeviceMetric.operationalStatus2to3",
+  "name" : "DeviceMetricOperationalStatus2to3",
   "title" : "Mapping for DeviceMetric.operationalStatus from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for DeviceMetric.operationalStatus from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus",
   "group" : [{

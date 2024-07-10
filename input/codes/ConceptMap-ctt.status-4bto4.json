@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ctt.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctt.status-4bto4",
-  "name" : "Contract.status4bto4",
+  "name" : "ContractStatus4bto4",
   "title" : "Mapping for Contract.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Contract.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Contract#Contract.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Contract#Contract.status",
   "group" : [{

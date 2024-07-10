@@ -5,9 +5,11 @@
   "version" : "0.1",
   "name" : "Resources4to3",
   "title" : "Resource Map R4 to R3",
+  "description" : "Resource Map R4 to R3",
   "status" : "active",
+  "experimental" : false,
   "date" : "2024-02-01",
-  "publisher" : "HL7",
+  "publisher" : "HL7 International / FHIR Infrastructure",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/ValueSet/resource-types",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/ValueSet/resource-types",
   "group" : [{
@@ -136,13 +138,15 @@
     { "code" : "RiskAssessment", "target" : [{ "code" : "RiskAssessment", "relationship" : "equivalent" }]},
     { "code" : "Schedule", "target" : [{ "code" : "Schedule", "relationship" : "equivalent" }]},
     { "code" : "SearchParameter", "target" : [{ "code" : "SearchParameter", "relationship" : "equivalent" }]},
-    { "code" : "ServiceRequest", "target" : [{ "code" : "ProcedureRequest", "relationship" : "source-is-broader-than-target" }]},
-    { "code" : "ServiceRequest", "target" : [{ "code" : "ReferralRequest", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "ServiceRequest", "target" : [{ "code" : "ProcedureRequest", "relationship" : "source-is-broader-than-target", "comment" : "subsumed into ServiceRequest" }]},
+    { "code" : "ServiceRequest", "target" : [{ "code" : "ReferralRequest", "relationship" : "source-is-broader-than-target", "comment" : "subsumed into ServiceRequest" }]},
     { "code" : "Slot", "target" : [{ "code" : "Slot", "relationship" : "equivalent" }]},
     { "code" : "Specimen", "target" : [{ "code" : "Specimen", "relationship" : "equivalent" }]},
     { "code" : "SpecimenDefinition", "noMap" : true },
-    { "code" : "StructureDefinition", "target" : [{ "code" : "StructureDefinition", "relationship" : "equivalent" }]},
-    { "code" : "StructureDefinition", "target" : [{ "code" : "DataElement", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "StructureDefinition", "target" : [
+      { "code" : "StructureDefinition", "relationship" : "equivalent" },
+      { "code" : "DataElement", "relationship" : "source-is-broader-than-target", "comment" : "subsumed into StructureDefinition" }
+    ]},
     { "code" : "StructureMap", "target" : [{ "code" : "StructureMap", "relationship" : "equivalent" }]},
     { "code" : "Subscription", "target" : [{ "code" : "Subscription", "relationship" : "equivalent" }]},
     { "code" : "Substance", "target" : [{ "code" : "Substance", "relationship" : "equivalent" }]},
@@ -153,11 +157,11 @@
     { "code" : "SupplyRequest", "target" : [{ "code" : "SupplyRequest", "relationship" : "equivalent" }]},
     { "code" : "Task", "target" : [{ "code" : "Task", "relationship" : "equivalent" },{
         "code" : "ProcessRequest",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "subsumed into Task"
       },
       {
         "code" : "ProcessResponse",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "subsumed into Task"
       }]
     },
     { "code" : "TerminologyCapabilities", "noMap" : true },

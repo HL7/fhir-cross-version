@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tst.se.ac.as.direction-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.direction-3to4",
-  "name" : "TestScript.setup.action.assert.direction3to4",
+  "name" : "TestScriptSetupActionAssertDirection3to4",
   "title" : "Mapping for TestScript.setup.action.assert.direction from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for TestScript.setup.action.assert.direction from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.setup.action.assert.direction",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.direction",
   "group" : [{

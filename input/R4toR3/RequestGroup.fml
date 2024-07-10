@@ -3,8 +3,8 @@
 /// title = "RequestGroup Transforms: R4 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/RequestGroup" alias RequestGroup as source
-uses "http://hl7.org/fhir/3.0/RequestGroup" alias RequestGroupR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup" alias RequestGroup as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/RequestGroup" alias RequestGroupR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

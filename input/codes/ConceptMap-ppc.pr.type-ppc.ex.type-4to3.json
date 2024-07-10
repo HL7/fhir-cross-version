@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ppc.pr.type-ppc.ex.type-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.type-ppc.ex.type-4to3",
-  "name" : "Consent.provision.typeConsent.except.type4to3",
+  "name" : "ConsentProvisionTypeConsentExceptType4to3",
   "title" : "Mapping for Consent.provision.type/Consent.except.type from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Consent.provision.type/Consent.except.type from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.except.type",
   "group" : [{

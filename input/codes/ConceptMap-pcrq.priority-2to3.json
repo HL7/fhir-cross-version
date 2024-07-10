@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pcrq.priority-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pcrq.priority-2to3",
-  "name" : "ProcedureRequest.priority2to3",
+  "name" : "ProcedureRequestPriority2to3",
   "title" : "Mapping for ProcedureRequest.priority from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ProcedureRequest.priority from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ProcedureRequest#ProcedureRequest.priority",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.priority",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dus.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dus.status-4bto4",
-  "name" : "DeviceUseStatement.status4bto4",
+  "name" : "DeviceUseStatementStatus4bto4",
   "title" : "Mapping for DeviceUseStatement.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for DeviceUseStatement.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DeviceUseStatement#DeviceUseStatement.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DeviceUseStatement#DeviceUseStatement.status",
   "group" : [{

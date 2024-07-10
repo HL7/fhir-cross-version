@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pro.status-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pro.status-3to2",
-  "name" : "Procedure.status3to2",
+  "name" : "ProcedureStatus3to2",
   "title" : "Mapping for Procedure.status from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Procedure.status from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Procedure#Procedure.status",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Procedure#Procedure.status",
   "group" : [{

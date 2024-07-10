@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tst.de.profile-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.de.profile-3to4",
-  "name" : "TestScript.destination.profile3to4",
+  "name" : "TestScriptDestinationProfile3to4",
   "title" : "Mapping for TestScript.destination.profile from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for TestScript.destination.profile from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.destination.profile",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.destination.profile",
   "group" : [{

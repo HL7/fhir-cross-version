@@ -1,10 +1,10 @@
 /// url = "http://hl7.org/fhir/uv/xver/StructureMap/Narrative3to4"
 /// name = "Narrative3to4"
-/// title = "Narrative Transforms: R3 to R4 "
+/// title = "Narrative Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Narrative" alias NarrativeR3 as source
-uses "http://hl7.org/fhir/4.0/Narrative" alias Narrative as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Narrative" alias NarrativeR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Narrative" alias Narrative as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

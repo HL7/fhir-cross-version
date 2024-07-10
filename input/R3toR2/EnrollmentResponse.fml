@@ -3,7 +3,7 @@
 /// title = "EnrollmentResponse Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/EnrollmentResponse" alias EnrollmentResponse as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/EnrollmentResponse" alias EnrollmentResponse as source
 uses "http://hl7.org/fhir/1.0/EnrollmentResponse" alias EnrollmentResponseR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
@@ -11,8 +11,8 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/DomainResource3to2"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Identifier3to2"
 
 group EnrollmentResponse(source src : EnrollmentResponse, target tgt : EnrollmentResponseR2) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "EnrollmentResponse-identifier";
-  src.disposition -> tgt.disposition "EnrollmentResponse-disposition";
-  src.created -> tgt.created "EnrollmentResponse-created";
+  src.identifier -> tgt.identifier "EnrollmentResponse_identifier";
+  src.disposition -> tgt.disposition "EnrollmentResponse_disposition";
+  src.created -> tgt.created "EnrollmentResponse_created";
 }
 

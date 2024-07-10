@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "gdf.status-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/gdf.status-4to4b",
-  "name" : "GraphDefinition.status4to4b",
+  "name" : "GraphDefinitionStatus4to4b",
   "title" : "Mapping for GraphDefinition.status from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for GraphDefinition.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/GraphDefinition#GraphDefinition.status",
   "group" : [{

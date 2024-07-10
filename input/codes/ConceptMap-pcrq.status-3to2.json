@@ -8,9 +8,11 @@
     }]
   },
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pcrq.status-3to2",
-  "name" : "pcrq.status-3to2",
+  "name" : "ProcedureRequestStatus3to2",
   "title" : "Mapping for ProcedureRequest.status from R3 to R2",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for ProcedureRequest.status from R3 to R2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
   "group" : [{
@@ -35,7 +37,8 @@
       "code" : "cancelled",
       "target" : [{
         "code" : "rejected",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "aborted",
@@ -51,7 +54,8 @@
       },
       {
         "code" : "received",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {
@@ -62,11 +66,13 @@
       },
       {
         "code" : "proposed",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "requested",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

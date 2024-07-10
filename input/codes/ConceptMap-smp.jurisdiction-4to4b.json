@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "smp.jurisdiction-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/smp.jurisdiction-4to4b",
-  "name" : "StructureMap.jurisdictionr4to4b",
+  "name" : "StructureMapJurisdictionr4to4b",
   "title" : "Mapping for StructureMap.jurisdiction from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for StructureMap.jurisdiction from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.jurisdiction",
   "group" : [{

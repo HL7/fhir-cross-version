@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "spd.jurisdiction-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.jurisdiction-4to3",
-  "name" : "SearchParameter.jurisdictionr4to3",
+  "name" : "SearchParameterJurisdictionr4to3",
   "title" : "Mapping for SearchParameter.jurisdiction from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for SearchParameter.jurisdiction from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.jurisdiction",
   "group" : [{

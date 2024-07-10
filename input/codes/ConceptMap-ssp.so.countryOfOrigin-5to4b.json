@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ssp.so.countryOfOrigin-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ssp.so.countryOfOrigin-5to4b",
-  "name" : "SubstanceDefinition.sourceMaterial.countryOfOriginr5to4b",
+  "name" : "SubstanceDefinitionSourceMaterialCountryOfOriginr5to4b",
   "title" : "Mapping for SubstanceDefinition.sourceMaterial.countryOfOrigin from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for SubstanceDefinition.sourceMaterial.countryOfOrigin from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SubstanceDefinition#SubstanceDefinition.sourceMaterial.countryOfOrigin",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SubstanceDefinition#SubstanceDefinition.sourceMaterial.countryOfOrigin",
   "group" : [{

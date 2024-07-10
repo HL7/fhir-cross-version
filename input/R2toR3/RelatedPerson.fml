@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/RelatedPerson" alias RelatedPersonR2 as source
-uses "http://hl7.org/fhir/3.0/RelatedPerson" alias RelatedPerson as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/RelatedPerson" alias RelatedPerson as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 

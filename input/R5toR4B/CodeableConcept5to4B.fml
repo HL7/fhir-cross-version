@@ -3,15 +3,15 @@
 /// title = "CodeableConcept Transforms: R5 to R4B"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.3/CodeableConcept" alias CodeableConceptR4B as target
-uses "http://hl7.org/fhir/4.3/CodeableReference" alias CodeableReferenceR4B as target
-uses "http://hl7.org/fhir/4.3/Coding" alias CodingR4B as target
-uses "http://hl7.org/fhir/4.3/code" alias codeR4B as target
-uses "http://hl7.org/fhir/4.3/string" alias stringR4B as target
-uses "http://hl7.org/fhir/5.0/CodeableConcept" alias CodeableConceptR5 as source
-uses "http://hl7.org/fhir/5.0/CodeableReference" alias CodeableReferenceR5 as source
-uses "http://hl7.org/fhir/5.0/Coding" alias CodingR5 as source
-uses "http://hl7.org/fhir/5.0/code" alias codeR5 as source
+uses "http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept" alias CodeableConceptR4B as target
+uses "http://hl7.org/fhir/4.3/StructureDefinition/CodeableReference" alias CodeableReferenceR4B as target
+uses "http://hl7.org/fhir/4.3/StructureDefinition/Coding" alias CodingR4B as target
+uses "http://hl7.org/fhir/4.3/StructureDefinition/code" alias codeR4B as target
+uses "http://hl7.org/fhir/4.3/StructureDefinition/string" alias stringR4B as target
+uses "http://hl7.org/fhir/5.0/StructureDefinition/CodeableConcept" alias CodeableConceptR5 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/CodeableReference" alias CodeableReferenceR5 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/Coding" alias CodingR5 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/code" alias codeR5 as source
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 

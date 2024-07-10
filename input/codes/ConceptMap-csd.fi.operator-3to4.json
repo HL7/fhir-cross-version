@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "csd.fi.operator-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.fi.operator-3to4",
-  "name" : "CodeSystem.filter.operator3to4",
+  "name" : "CodeSystemFilterOperator3to4",
   "title" : "Mapping for CodeSystem.filter.operator from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for CodeSystem.filter.operator from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.filter.operator",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.filter.operator",
   "group" : [{

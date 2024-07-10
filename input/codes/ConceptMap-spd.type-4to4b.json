@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "spd.type-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.type-4to4b",
-  "name" : "SearchParameter.type4to4b",
+  "name" : "SearchParameterType4to4b",
   "title" : "Mapping for SearchParameter.type from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for SearchParameter.type from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.type",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "psn.gender-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/psn.gender-2to3",
-  "name" : "Person.gender2to3",
+  "name" : "PersonGender2to3",
   "title" : "Mapping for Person.gender from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Person.gender from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Person#Person.gender",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Person#Person.gender",
   "group" : [{

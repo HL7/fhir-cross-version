@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.re.in.code-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.in.code-5to4b",
-  "name" : "CapabilityStatement.rest.interaction.code5to4b",
+  "name" : "CapabilityStatementRestInteractionCode5to4b",
   "title" : "Mapping for CapabilityStatement.rest.interaction.code from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.rest.interaction.code from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.interaction.code",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.interaction.code",
   "group" : [{

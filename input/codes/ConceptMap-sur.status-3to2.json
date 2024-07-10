@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sur.status-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sur.status-3to2",
-  "name" : "SupplyRequest.status3to2",
+  "name" : "SupplyRequestStatus3to2",
   "title" : "Mapping for SupplyRequest.status from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for SupplyRequest.status from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SupplyRequest#SupplyRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/SupplyRequest#SupplyRequest.status",
   "group" : [{
@@ -21,7 +23,8 @@
       },
       {
         "code" : "failed",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {
@@ -35,7 +38,8 @@
       "code" : "draft",
       "target" : [{
         "code" : "requested",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

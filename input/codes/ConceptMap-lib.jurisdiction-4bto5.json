@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "lib.jurisdiction-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/lib.jurisdiction-4bto5",
-  "name" : "Library.jurisdictionr4bto5",
+  "name" : "LibraryJurisdictionr4bto5",
   "title" : "Mapping for Library.jurisdiction from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Library.jurisdiction from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Library#Library.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Library#Library.jurisdiction",
   "group" : [{

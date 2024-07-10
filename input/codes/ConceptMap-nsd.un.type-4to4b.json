@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "nsd.un.type-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.un.type-4to4b",
-  "name" : "NamingSystem.uniqueId.type4to4b",
+  "name" : "NamingSystemUniqueIdType4to4b",
   "title" : "Mapping for NamingSystem.uniqueId.type from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for NamingSystem.uniqueId.type from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/NamingSystem#NamingSystem.uniqueId.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/NamingSystem#NamingSystem.uniqueId.type",
   "group" : [{

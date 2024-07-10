@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.en.role-sev.ob.role-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.en.role-sev.ob.role-3to2",
-  "name" : "AuditEvent.entity.roleAuditEvent.object.role3to2",
+  "name" : "AuditEventEntityRoleAuditEventObjectRole3to2",
   "title" : "Mapping for AuditEvent.entity.role/AuditEvent.object.role from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.entity.role/AuditEvent.object.role from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.entity.role",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.object.role",
   "group" : [{

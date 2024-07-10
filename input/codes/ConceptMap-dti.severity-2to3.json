@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dti.severity-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dti.severity-2to3",
-  "name" : "DetectedIssue.severity2to3",
+  "name" : "DetectedIssueSeverity2to3",
   "title" : "Mapping for DetectedIssue.severity from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for DetectedIssue.severity from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DetectedIssue#DetectedIssue.severity",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DetectedIssue#DetectedIssue.severity",
   "group" : [{

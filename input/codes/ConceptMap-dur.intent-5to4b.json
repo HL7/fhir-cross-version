@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dur.intent-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dur.intent-5to4b",
-  "name" : "DeviceRequest.intent5to4b",
+  "name" : "DeviceRequestIntent5to4b",
   "title" : "Mapping for DeviceRequest.intent from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for DeviceRequest.intent from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DeviceRequest#DeviceRequest.intent",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DeviceRequest#DeviceRequest.intent",
   "group" : [{

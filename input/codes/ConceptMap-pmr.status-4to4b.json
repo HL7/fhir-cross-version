@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pmr.status-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pmr.status-4to4b",
-  "name" : "PaymentReconciliation.status4to4b",
+  "name" : "PaymentReconciliationStatus4to4b",
   "title" : "Mapping for PaymentReconciliation.status from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for PaymentReconciliation.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/PaymentReconciliation#PaymentReconciliation.status",
   "group" : [{

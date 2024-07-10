@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pdf.ac.pa.type-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.pa.type-4to5",
-  "name" : "PlanDefinition.action.participant.type4to5",
+  "name" : "PlanDefinitionActionParticipantType4to5",
   "title" : "Mapping for PlanDefinition.action.participant.type from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for PlanDefinition.action.participant.type from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.participant.type",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.participant.type",
   "group" : [{

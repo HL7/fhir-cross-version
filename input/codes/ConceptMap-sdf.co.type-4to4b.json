@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sdf.co.type-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.co.type-4to4b",
-  "name" : "StructureDefinition.context.type4to4b",
+  "name" : "StructureDefinitionContextType4to4b",
   "title" : "Mapping for StructureDefinition.context.type from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for StructureDefinition.context.type from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.context.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition#StructureDefinition.context.type",
   "group" : [{

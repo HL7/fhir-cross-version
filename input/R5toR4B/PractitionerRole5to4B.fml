@@ -3,8 +3,8 @@
 /// title = "PractitionerRole Transforms: R5 to R4B"
 /// status = "active"
 
-uses "http://hl7.org/fhir/5.0/PractitionerRole" alias PractitionerRoleR5 as source
-uses "http://hl7.org/fhir/4.3/PractitionerRole" alias PractitionerRoleR4B as target
+uses "http://hl7.org/fhir/5.0/StructureDefinition/PractitionerRole" alias PractitionerRoleR5 as source
+uses "http://hl7.org/fhir/4.3/StructureDefinition/PractitionerRole" alias PractitionerRoleR4B as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 
