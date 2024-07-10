@@ -25,7 +25,7 @@ group prAgent(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role "agent-role";
   src.actor -> tgt.who "agent-who";
   src.userId as su -> tgt.who = create('Reference') as tu then {
-    su -> tu.identifier as tu then Identifier(su, tu) "agent-userId2";
+    su -> tu.identifier as tu2 then Identifier(su, tu2) "agent-userId2";
   } "agent-userId";
 }
 

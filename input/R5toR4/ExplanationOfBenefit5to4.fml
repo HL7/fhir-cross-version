@@ -265,8 +265,8 @@ group ExplanationOfBenefitPayment(source src, target tgt) extends BackboneElemen
 group ExplanationOfBenefitProcessNote(source src, target tgt) extends BackboneElement {
   src.number -> tgt.number;
   src.type as s -> tgt then {
-    s.coding as s -> tgt then {
-      s.code -> tgt.type;
+    s.coding as sc -> tgt then {
+      sc.code -> tgt.type;
     };
   };
   src.text -> tgt.text;

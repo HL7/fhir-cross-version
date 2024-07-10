@@ -20,7 +20,7 @@ group codeFiter(source src, target tgt) extends Element {
   src.path -> tgt.path;
   src.valueSet : string as vs -> tgt.valueSet = vs "valueSetString";
   src.valueSet : Reference as vs then {
-    vs.referenced -> tgt.valueSet;
+    vs.reference -> tgt.valueSet;
   } "valueSetReference";
   src.valueCode as vs ->  tgt.code as vt,  vt.code = vs;
   src.valueCoding -> tgt.code;
