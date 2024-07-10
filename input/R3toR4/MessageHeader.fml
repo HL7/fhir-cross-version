@@ -15,7 +15,7 @@ group MessageHeader(source src : MessageHeaderR3, target tgt : MessageHeader) ex
   src.timestamp as vs ->  tgt.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.timestamp',  ext.value = vs;
   src.enterer -> tgt.enterer;
   src.author -> tgt.author;
-  src.source as vs0 -> tgt.source as vt0 then source(vs0, vt0);
+  src.source as vs0 -> tgt.source as vt0 then sourceX(vs0, vt0);
   src.responsible -> tgt.responsible;
   src.reason -> tgt.reason;
   src.response as vs0 -> tgt.response as vt0 then response(vs0, vt0);
@@ -29,7 +29,7 @@ group destination(source src, target tgt, source msrc) extends BackboneElement {
   msrc.receiver -> tgt.receiver;
 }
 
-group source(source src, target tgt) extends BackboneElement {
+group sourceX(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.software -> tgt.software;
   src.version -> tgt.version;

@@ -37,6 +37,6 @@ group qrQuestion(source src, target tgt) extends BackboneElement {
 
 group qrAnswer(source src, target tgt) extends BackboneElement {
   src.value -> tgt.value "answer-value";
-  src.item as vs0 check answer.empty() -> tgt.group as vt0 then qrGroup(vs0, vt0) "answer-group";
+  src.item as vs0 check (answer.empty()) -> tgt.group as vt0 then qrGroup(vs0, vt0) "answer-group";
 }
 

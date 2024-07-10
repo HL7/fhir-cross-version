@@ -17,11 +17,11 @@ group MeasureReport(source src : MeasureReportR3, target tgt : MeasureReport) ex
   src.date -> tgt.date;
   src.reportingOrganization -> tgt.reporter;
   src.period -> tgt.period;
-  src.group as s -> tgt.group as t then group(s, t);
+  src.group as s -> tgt.group as t then groupX(s, t);
   src.evaluatedResources -> tgt.evaluatedResource;
 }
 
-group group(source src, target tgt) extends BackboneElement {
+group groupX(source src, target tgt) extends BackboneElement {
   src.identifier as vs -> tgt.code as vt then Identifier2Codeable(vs, vt);
   src.population as s -> tgt.population as t then population(s, t);
   src.measureScore -> tgt.measureScore;

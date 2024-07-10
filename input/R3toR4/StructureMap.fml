@@ -26,7 +26,7 @@ group StructureMap(source src : StructureMapR3, target tgt : StructureMap) exten
   src.copyright -> tgt.copyright;
   src.structure as vs0 -> tgt.structure as vt0 then structure(vs0, vt0);
   src.import -> tgt.import;
-  src.group as vs0 -> tgt.group as vt0 then group(vs0, vt0);
+  src.group as vs0 -> tgt.group as vt0 then groupX(vs0, vt0);
 }
 
 group structure(source src, target tgt) extends BackboneElement {
@@ -36,7 +36,7 @@ group structure(source src, target tgt) extends BackboneElement {
   src.documentation -> tgt.documentation;
 }
 
-group group(source src, target tgt) extends BackboneElement {
+group groupX(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.extends -> tgt.extends;
   src.typeMode -> tgt.typeMode;
@@ -54,11 +54,11 @@ group input(source src, target tgt) extends BackboneElement {
 
 group rule(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
-  src.source as vs0 -> tgt.source as vt0 then source(vs0, vt0);
-  src.target as vs0 -> tgt.target as vt0 then target(vs0, vt0);
+  src.source as vs0 -> tgt.source as vt0 then sourceX(vs0, vt0);
+  src.target as vs0 -> tgt.target as vt0 then targetX(vs0, vt0);
 }
 
-group source(source src, target tgt) extends BackboneElement {
+group sourceX(source src, target tgt) extends BackboneElement {
   src.context -> tgt.context;
   src.min -> tgt.min;
   src.max -> tgt.max;
@@ -107,7 +107,7 @@ group source(source src, target tgt) extends BackboneElement {
   src.check -> tgt.check;
 }
 
-group target(source src, target tgt) extends BackboneElement {
+group targetX(source src, target tgt) extends BackboneElement {
   src.context -> tgt.context;
   src.contextType -> tgt.contextType;
   src.element -> tgt.element;

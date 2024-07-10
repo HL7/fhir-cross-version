@@ -35,7 +35,7 @@ group compose(source vs, target vst, source src, target tgt) extends BackboneEle
   src.lockedDate -> vst.lockedDate "vs-compose-ld";
   src.include as vs where (system.exists() and valueSet.empty() and concept.empty() and filter.empty()) and (system.resolve().valueSet = vs.url) ->  vst.codeSystem as vt,  (vs.system.resolve()) as cs then codeSystem(cs, vt) "vs-compose-incl-cs";
   src.include as vs where ((system.exists() and valueSet.empty() and concept.empty() and filter.empty()) and (system.resolve().valueSet = vs.url)).not() -> tgt.include as vt then include(vs, vt, tgt) "vs-compose-incl";
-  src.exclude as vs check valueSet.empty() -> tgt.exclude as vt then include(vs, vt, tgt) "vs-compose-excl";
+  src.exclude as vs check (valueSet.empty()) -> tgt.exclude as vt then include(vs, vt, tgt) "vs-compose-excl";
 }
 
 group codeSystem(source src, target tgt) extends Element {
@@ -87,7 +87,7 @@ group expansion(source src, target tgt) extends BackboneElement {
   src.total -> tgt.total "expansion-total";
   src.offset -> tgt.offset "expansion-offset";
   src.parameter as vs -> tgt.parameter as vt then parameter(vs, vt) "expansion-parameter";
-  src.contains as vs -> tgt.contains as vt then contains(vs, vt) "expansion-contains";
+  src.contains as vs -> tgt.contains as vt then containsX(vs, vt) "expansion-contains";
 }
 
 group parameter(source src, target tgt) extends BackboneElement {
@@ -95,12 +95,12 @@ group parameter(source src, target tgt) extends BackboneElement {
   src.value -> tgt.value "vs-parameter-value";
 }
 
-group contains(source src, target tgt) extends BackboneElement {
+group containsX(source src, target tgt) extends BackboneElement {
   src.system -> tgt.system "contains-system";
   src.abstract -> tgt.abstract "contains-abstract";
   src.version -> tgt.version "contains-version";
   src.code -> tgt.code "contains-code";
   src.display -> tgt.display "contains-display";
-  src.contains as vs -> tgt.contains as vt then contains(vs, vt) "contains-contains";
+  src.contains as vs -> tgt.contains as vt then containsX(vs, vt) "contains-contains";
 }
 

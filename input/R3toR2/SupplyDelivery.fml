@@ -1,10 +1,10 @@
 /// url = "http://hl7.org/fhir/uv/xver/StructureMap/SupplyDelivery3to2"
 /// name = "SupplyDelivery3to2"
-/// title = "SupplyD3 to R2elivery Transforms: R"
+/// title = "SupplyDelivery Transforms: R3 to R2"
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/SupplyDelivery" alias SupplyDelivery as source
-uses "http://hl7.org/fhir/1.0/SupplyDelivery" alias SupplyDeliveryR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/SupplyDelivery" alias SupplyDeliveryR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
@@ -25,4 +25,3 @@ group sdvItem(source src, target tgt) extends BackboneElement {
   src.quantity -> tgt.quantity "item-quantity";
   src.item -> tgt.suppliedItem "item-quantity";
 }
-

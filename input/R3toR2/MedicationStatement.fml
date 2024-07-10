@@ -13,7 +13,7 @@ group MedicationStatement(source src : MedicationStatement, target tgt : Medicat
   src.subject -> tgt.patient "MedicationStatement-subject";
   src.informationSource -> tgt.informationSource "MedicationStatement-informationSource";
   src.dateAsserted -> tgt.dateAsserted "MedicationStatement-dateAsserted";
-  src.status check (src.status != 'stopped') and (status != 'on-hold') -> tgt.status "MedicationStatement-status";
+  src.status check ((src.status != 'stopped') and (status != 'on-hold')) -> tgt.status "MedicationStatement-status";
   src.taken as vt where $this = 'n' -> tgt.wasNotTaken = 'true' "MedicationStatement-wasNotTaken";
   src.taken as vt where $this = 'y' -> tgt.wasNotTaken = 'false' "MedicationStatement-wasNotTaken";
   src.reasonNotTaken -> tgt.reasonNotTaken "MedicationStatement-reasonNotTaken";

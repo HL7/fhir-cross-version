@@ -47,10 +47,10 @@ group goal(source src, target tgt) extends BackboneElement {
   src.start -> tgt.start;
   src.addresses -> tgt.addresses;
   src.documentation -> tgt.documentation;
-  src.target as vs0 -> tgt.target as vt0 then target(vs0, vt0);
+  src.target as vs0 -> tgt.target as vt0 then targetX(vs0, vt0);
 }
 
-group target(source src, target tgt) extends BackboneElement {
+group targetX(source src, target tgt) extends BackboneElement {
   src.measure -> tgt.measure;
   src.detail -> tgt.detail;
   src.due -> tgt.due;

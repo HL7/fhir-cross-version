@@ -4,14 +4,14 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/MedicationRequest" alias MedicationRequest as source
-uses "http://hl7.org/fhir/1.0/MedicationOrder" alias MedicationOrderR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/MedicationOrder" alias MedicationOrderR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group MedicationRequest(source src : MedicationRequest, target tgt : MedicationOrderR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "MedicationOrder-identifier";
   src.authoredOn -> tgt.dateWritten "MedicationOrder-dateWritten";
-  src.status check ($this != 'cancelled') and ($this != 'unknown') -> tgt.status "MedicationOrder-status";
+  src.status check (($this != 'cancelled') and ($this != 'unknown')) -> tgt.status "MedicationOrder-status";
   src.subject -> tgt.patient "MedicationOrder-patient";
   src.requester as req -> tgt.prescriber as vt then medRequestor(req, vt) "MedicationOrder-prescriber";
   src.context -> tgt.encounter "MedicationOrder-encounter";
@@ -52,4 +52,3 @@ group medSubstitution(source src, target tgt) extends BackboneElement {
 group medRequestor(source src, target tgt) {
   src.agent as sa then Reference(sa, tgt) "MedicationOrder-prescriber2";
 }
-

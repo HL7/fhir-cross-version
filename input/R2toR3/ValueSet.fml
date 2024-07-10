@@ -3,7 +3,7 @@
 /// title = "ValueSet Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/ValueSet" alias ValueSetR2 as source
+uses "http://hl7.org/fhir/1.0/StructureDefinition/ValueSet" alias ValueSetR2 as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/ValueSet" alias ValueSet as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
@@ -108,7 +108,7 @@ group expansion(source src, target tgt) extends BackboneElement {
   src.total -> tgt.total "expansion-total";
   src.offset -> tgt.offset "expansion-offset";
   src.parameter as vs -> tgt.parameter as vt then parameter(vs, vt) "expansion-parameter";
-  src.contains as vs -> tgt.contains as vt then contains(vs, vt) "expansion-contains";
+  src.contains as vs -> tgt.contains as vt then containsX(vs, vt) "expansion-contains";
 }
 
 group parameter(source src, target tgt) extends BackboneElement {
@@ -116,12 +116,11 @@ group parameter(source src, target tgt) extends BackboneElement {
   src.value -> tgt.value "vs-parameter-value";
 }
 
-group contains(source src, target tgt) extends BackboneElement {
+group containsX(source src, target tgt) extends BackboneElement {
   src.system -> tgt.system "contains-system";
   src.abstract -> tgt.abstract "contains-abstract";
   src.version -> tgt.version "contains-version";
   src.code -> tgt.code "contains-code";
   src.display -> tgt.display "contains-display";
-  src.contains as vs -> tgt.contains as vt then contains(vs, vt) "contains-contains";
+  src.contains as vs -> tgt.contains as vt then containsX(vs, vt) "contains-contains";
 }
-

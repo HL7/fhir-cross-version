@@ -51,11 +51,11 @@ group Measure(source src : Measure, target tgt : MeasureR3) extends DomainResour
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.set' then {
     e.value -> tgt.set;
   };
-  src.group as s -> tgt.group as t then group(s, t);
+  src.group as s -> tgt.group as t then groupX(s, t);
   src.supplementalData as s -> tgt.supplementalData as t then supplementalData(s, t);
 }
 
-group group(source src, target tgt) extends BackboneElement {
+group groupX(source src, target tgt) extends BackboneElement {
   src.code as vs -> tgt.identifier as vt then Codeable2Identifier(vs, vt);
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.name' then {
     e.value -> tgt.name;

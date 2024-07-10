@@ -17,7 +17,7 @@ group MessageHeader(source src : MessageHeader, target tgt : MessageHeaderR3) ex
   } "timestamp";
   src.enterer -> tgt.enterer;
   src.author -> tgt.author;
-  src.source as vs0 -> tgt.source as vt0 then source(vs0, vt0);
+  src.source as vs0 -> tgt.source as vt0 then sourceX(vs0, vt0);
   src.responsible -> tgt.responsible;
   src.reason -> tgt.reason;
   src.response as vs0 -> tgt.response as vt0 then response(vs0, vt0);
@@ -31,7 +31,7 @@ group destination(source src, target tgt, target mtgt) extends BackboneElement {
   src.receiver -> mtgt.receiver;
 }
 
-group source(source src, target tgt) extends BackboneElement {
+group sourceX(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.software -> tgt.software;
   src.version -> tgt.version;

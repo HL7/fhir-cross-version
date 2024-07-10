@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Condition" alias Condition as source
-uses "http://hl7.org/fhir/1.0/Condition" alias ConditionR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Condition" alias ConditionR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
@@ -16,7 +16,7 @@ group Condition(source src : Condition, target tgt : ConditionR2) extends Domain
   src.assertedDate -> tgt.dateRecorded "Condition-dateRecorded";
   src.code -> tgt.code "Condition-code";
   src.category -> tgt.category "Condition-category";
-  src.clinicalStatus check $this != 'inactive' -> tgt.clinicalStatus;
+  src.clinicalStatus check ($this != 'inactive') -> tgt.clinicalStatus;
   src.verificationStatus -> tgt.verificationStatus "Condition-verificationStatus";
   src.severity -> tgt.severity "Condition-severity";
   src.onset -> tgt.onset "Condition-onset";
@@ -38,4 +38,3 @@ group cndEvidence(source src : ConditionR2, target tgt : Condition) extends Back
   src.code -> tgt.code "evidence-code";
   src.detail -> tgt.detail "evidence-detail";
 }
-

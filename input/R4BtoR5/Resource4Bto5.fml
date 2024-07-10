@@ -5,17 +5,15 @@
 
 uses "http://hl7.org/fhir/4.3/StructureDefinition/Resource" alias ResourceR4B as source
 uses "http://hl7.org/fhir/5.0/StructureDefinition/Resource" alias ResourceR5 as target
-uses "http://hl7.org/fhir/5.0/StructureDefinition/Base" alias BaseR5 as source
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
-group Resource(source src : ResourceR4B, target tgt : ResourceR5) extends Base <<type+>> {
+group Resource(source src : ResourceR4B, target tgt : ResourceR5) <<type+>> {
   src.id -> tgt.id;
   src.meta -> tgt.meta;
   src.implicitRules -> tgt.implicitRules;
   src.language -> tgt.language;
 }
 
-group Base(source src : BaseR5) {
-}
+// Base doesn't exist in R4B, so nothing to map there.
 

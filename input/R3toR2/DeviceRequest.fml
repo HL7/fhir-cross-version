@@ -4,12 +4,12 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/DeviceRequest" alias DeviceRequest as source
-uses "http://hl7.org/fhir/1.0/DeviceUseRequest" alias DeviceUseRequestR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/DeviceUseRequest" alias DeviceUseRequestR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group DeviceRequest(source src : DeviceRequest, target tgt : DeviceUseRequestR2) extends DomainResource <<type+>> {
-  src.status as v check src.status != 'entered-in-error' -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dur.status-duq.status-3to2', 'code') "DeviceRequest-status";
+  src.status as v check (src.status != 'entered-in-error') -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dur.status-duq.status-3to2', 'code') "DeviceRequest-status";
   src.code : CodeableConcept -> tgt.device "DeviceRequest-device";
   src.context -> tgt.encounter "DeviceRequest-context";
   src.identifier -> tgt.identifier "DeviceRequest-identifier";
@@ -19,4 +19,3 @@ group DeviceRequest(source src : DeviceRequest, target tgt : DeviceUseRequestR2)
   src.subject -> tgt.subject "DeviceRequest-subject";
   src.occurrence -> tgt.timing "DeviceRequest-Timing";
 }
-

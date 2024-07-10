@@ -19,7 +19,7 @@ group AuditEvent(source src : AuditEvent, target tgt : AuditEventR2) extends Dom
     src.purposeOfEvent -> ev.purposeOfEvent "AuditEvent-purposeOfEvent";
   } "AuditEvent-event";
   src.agent as vs0 -> tgt.participant as vt0 then agent(vs0, vt0) "AuditEvent-agent";
-  src.source as vs0 -> tgt.source as vt0 then source(vs0, vt0) "AuditEvent-source";
+  src.source as vs0 -> tgt.source as vt0 then sourceX(vs0, vt0) "AuditEvent-source";
   src.entity as vs0 -> tgt.object as vt0 then entity(vs0, vt0) "AuditEvent-entity";
 }
 
@@ -42,7 +42,7 @@ group network(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type "network-type";
 }
 
-group source(source src, target tgt) extends BackboneElement {
+group sourceX(source src, target tgt) extends BackboneElement {
   src.site -> tgt.site "source-site";
   src.identifier -> tgt.identifier "source-identifier";
   src.type -> tgt.type "source-type";

@@ -8,15 +8,15 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition" alias Eleme
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
-group ElementDefinition(source src : ElementDefinitionR2, target tgt : ElementDefinition, target first : boolean) <<type+>> {
-  src.extension -> tgt.extension "ElementDefinition_extensions";
-  src.path -> tgt.id "ElementDefinition_id";
-  src.path -> tgt.path "ElementDefinition_path";
-  src.representation -> tgt.representation "ElementDefinition_representation";
-  src.name -> tgt.sliceName "ElementDefinition_sliceName";
-  src.name -> tgt.id "ElementDefinition_id";
-  src.label -> tgt.label "ElementDefinition_label";
-  src.code -> tgt.code "ElementDefinition_code";
+group ElementDefinition(source src : ElementDefinitionR2, target tgt : ElementDefinition, target firstElement : boolean) <<type+>> {
+  src.extension -> tgt.extension "ElementDefinition-extensions";
+  src.path -> tgt.id "ElementDefinition-id";
+  src.path -> tgt.path "ElementDefinition-path";
+  src.representation -> tgt.representation "ElementDefinition-representation";
+  src.name -> tgt.sliceName "ElementDefinition-sliceName";
+  src.name -> tgt.id "ElementDefinition-id";
+  src.label -> tgt.label "ElementDefinition-label";
+  src.code -> tgt.code "ElementDefinition-code";
   src.slicing as vs0 -> tgt.slicing as vt0 then {
     vs0.discriminator as vs1 ->  vt0.discriminator as vd1,  vd1.type = 'value',  vd1.path = vs1 "slicing-discriminator";
     vs0.description -> vt0.description "slicing-description";
@@ -34,24 +34,24 @@ group ElementDefinition(source src : ElementDefinitionR2, target tgt : ElementDe
     vs0.path -> vt0.path "base-path";
     vs0.min -> vt0.min "base-min";
     vs0.max -> vt0.max "base-max";
-  } "ElementDefinition_base";
-  src.type as vs0 where first.not() -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinition_type";
-  src.nameReference -> tgt.contentReference "ElementDefinition_nameReference";
-  src.defaultValue -> tgt.defaultValue "ElementDefinition_defaultValue";
-  src.meaningWhenMissing -> tgt.meaningWhenMissing "ElementDefinition_meaningWhenMissing";
-  src.example as v ->  tgt.example as ve,  ve.label = 'General',  ve.value = v "ElementDefinition_example";
-  src.fixed -> tgt.fixed "ElementDefinition_fixed";
-  src.pattern -> tgt.pattern "ElementDefinition_pattern";
-  src.minValue -> tgt.minValue "ElementDefinition_minValue";
-  src.maxValue -> tgt.maxValue "ElementDefinition_maxValue";
-  src.maxLength -> tgt.maxLength "ElementDefinition_maxLength";
-  src.condition -> tgt.condition "ElementDefinition_condition";
-  src.constraint as vs0 -> tgt.constraint as vt0 then constraint(vs0, vt0) "ElementDefinition_constraint";
-  src.mustSupport -> tgt.mustSupport "ElementDefinition_mustSupport";
-  src.isModifier -> tgt.isModifier "ElementDefinition_isModifier";
-  src.isSummary -> tgt.isSummary "ElementDefinition_isSummary";
-  src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0) "ElementDefinition_binding";
-  src.mapping as vs0 -> tgt.mapping as vt0 then mapping(vs0, vt0) "ElementDefinition_mapping";
+  } "ElementDefinition-base";
+  src.type as vs0 where firstElement.not() -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinition-type";
+  src.nameReference -> tgt.contentReference "ElementDefinition-nameReference";
+  src.defaultValue -> tgt.defaultValue "ElementDefinition-defaultValue";
+  src.meaningWhenMissing -> tgt.meaningWhenMissing "ElementDefinition-meaningWhenMissing";
+  src.example as v ->  tgt.example as ve,  ve.label = 'General',  ve.value = v "ElementDefinition-example";
+  src.fixed -> tgt.fixed "ElementDefinition-fixed";
+  src.pattern -> tgt.pattern "ElementDefinition-pattern";
+  src.minValue -> tgt.minValue "ElementDefinition-minValue";
+  src.maxValue -> tgt.maxValue "ElementDefinition-maxValue";
+  src.maxLength -> tgt.maxLength "ElementDefinition-maxLength";
+  src.condition -> tgt.condition "ElementDefinition-condition";
+  src.constraint as vs0 -> tgt.constraint as vt0 then constraint(vs0, vt0) "ElementDefinition-constraint";
+  src.mustSupport -> tgt.mustSupport "ElementDefinition-mustSupport";
+  src.isModifier -> tgt.isModifier "ElementDefinition-isModifier";
+  src.isSummary -> tgt.isSummary "ElementDefinition-isSummary";
+  src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0) "ElementDefinition-binding";
+  src.mapping as vs0 -> tgt.mapping as vt0 then mapping(vs0, vt0) "ElementDefinition-mapping";
 }
 
 group binding(source src, target tgt) extends Element {

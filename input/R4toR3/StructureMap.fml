@@ -26,7 +26,7 @@ group StructureMap(source src : StructureMap, target tgt : StructureMapR3) exten
   src.copyright -> tgt.copyright;
   src.structure as vs0 -> tgt.structure as vt0 then structure(vs0, vt0);
   src.import -> tgt.import;
-  src.group as vs0 -> tgt.group as vt0 then group(vs0, vt0);
+  src.group as vs0 -> tgt.group as vt0 then groupX(vs0, vt0);
 }
 
 group structure(source src, target tgt) extends BackboneElement {
@@ -36,7 +36,7 @@ group structure(source src, target tgt) extends BackboneElement {
   src.documentation -> tgt.documentation;
 }
 
-group group(source src, target tgt) extends BackboneElement {
+group groupX(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.extends -> tgt.extends;
   src.typeMode -> tgt.typeMode;
