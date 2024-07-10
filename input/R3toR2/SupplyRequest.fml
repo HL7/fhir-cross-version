@@ -22,6 +22,6 @@ group SupplyRequest(source src : SupplyRequest, target tgt : SupplyRequestR2) ex
 }
 
 group sprRequest(source src, target tgt) extends BackboneElement {
-  src.avent -> tgt.source "source-agent";
+  src.agent -> tgt.source "source-agent";
 }
 

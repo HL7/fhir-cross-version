@@ -25,7 +25,7 @@ group ClinicalImpression(source src : ClinicalImpression, target tgt : ClinicalI
 
 group cimFinding(source src, target tgt) extends BackboneElement {
   src.item -> tgt.item "finding-item";
-  src.basis -> tgt.reason "finding-reason";
+  src.basis -> tgt.cause "finding-reason";
 }
 
 group cimInvestigation(source src, target tgt) extends BackboneElement {

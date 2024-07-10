@@ -29,12 +29,12 @@ group Condition(source src : Condition, target tgt : ConditionR2) extends Domain
   } "Condition-note";
 }
 
-group cndStage(source src : ConditionR2, target tgt : Condition) extends BackboneElement {
+group cndStage(source src, target tgt) extends BackboneElement {
   src.summary -> tgt.summary "stage-summary";
   src.assessment -> tgt.assessment "stage-assessment";
 }
 
-group cndEvidence(source src : ConditionR2, target tgt : Condition) extends BackboneElement {
+group cndEvidence(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code "evidence-code";
   src.detail -> tgt.detail "evidence-detail";
 }

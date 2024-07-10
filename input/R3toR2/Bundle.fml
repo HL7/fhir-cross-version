@@ -49,6 +49,6 @@ group bundleResponse(source src, target tgt) extends BackboneElement {
   src.location -> tgt.location "response-location";
   src.etag -> tgt.etag "response-etag";
   src.lastModified -> tgt.lastModified "response-lastModified";
-  src.outcome -> tgt.outcome "response-outcome";
+  // src.outcome -> tgt.outcome "response-outcome";
 }
 

@@ -23,7 +23,7 @@ group Location(source src : LocationR2, target tgt : Location) extends DomainRes
   src.partOf -> tgt.partOf "Location-partOf";
 }
 
-group locPosition(source src : Location, target tgt : LocationR2) extends BackboneElement {
+group locPosition(source src, target tgt) extends BackboneElement {
   src.longitude -> tgt.longitude "position-longitude";
   src.latitude -> tgt.latitude "position-latitude";
   src.altitude -> tgt.altitude "position-altitude";

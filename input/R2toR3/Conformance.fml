@@ -77,13 +77,13 @@ group ConformanceRestResource(source src, target tgt) extends BackboneElement {
   src.type where $this != 'Conformance' -> tgt.type "conf_type2";
   src.type where $this = 'Conformance' -> tgt.type = 'CapabilityStatement' "conf_type3b";
   src.profile -> tgt.profile "conf_profile";
-  src.documentation -> tgt.documentation "conf_documentation";
+  // src.documentation -> tgt.documentation "conf_documentation";
   src.interaction as vs where code != 'validate' -> tgt.interaction as vt then interaction(vs, vt) "conf_interaction";
   src.versioning -> tgt.versioning "conf_versioning";
   src.readHistory -> tgt.readHistory "conf_readHistory";
   src.updateCreate -> tgt.updateCreate "conf_updateCreate";
   src.conditionalCreate -> tgt.conditionalCreate "conf_conditionalCreate";
-  src.conditionalRead -> tgt.conditionalRead "conf_conditionalRead";
+  // src.conditionalRead -> tgt.conditionalRead "conf_conditionalRead";
   src.conditionalUpdate -> tgt.conditionalUpdate "conf_conditionalUpdate";
   src.conditionalDelete -> tgt.conditionalDelete "conf_conditionalDelete";
   src.searchInclude -> tgt.searchInclude "conf_searchInclude";
