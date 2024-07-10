@@ -3,8 +3,8 @@
 /// title = "Annotation Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/Annotation" alias AnnotationR2 as source
-uses "http://hl7.org/fhir/1.0/string" alias stringR2 as source
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Annotation" alias AnnotationR2 as source
+uses "http://hl7.org/fhir/1.0/StructureDefinition/string" alias stringR2 as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Annotation" alias Annotation as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"

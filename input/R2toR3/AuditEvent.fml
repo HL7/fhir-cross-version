@@ -3,7 +3,7 @@
 /// title = "AuditEvent Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/AuditEvent" alias AuditEventR2 as source
+uses "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent" alias AuditEventR2 as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent" alias AuditEvent as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"

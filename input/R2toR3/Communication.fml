@@ -3,7 +3,7 @@
 /// title = "Communication Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/Communication" alias CommunicationR2 as source
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Communication" alias CommunicationR2 as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Communication" alias Communication as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"

@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Binary" alias Binary as source
-uses "http://hl7.org/fhir/1.0/Binary" alias BinaryR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Binary" alias BinaryR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Resource3to2"

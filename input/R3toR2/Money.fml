@@ -5,7 +5,7 @@
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Quantity" alias Quantity as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Duration" alias Duration as source
-uses "http://hl7.org/fhir/1.0/Quantity" alias QuantityR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Quantity" alias QuantityR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element3to2"

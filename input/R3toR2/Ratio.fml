@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Ratio" alias Ratio as source
-uses "http://hl7.org/fhir/1.0/Ratio" alias RatioR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Ratio" alias RatioR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element3to2"

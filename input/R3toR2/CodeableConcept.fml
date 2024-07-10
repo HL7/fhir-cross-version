@@ -4,9 +4,9 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/CodeableConcept" alias CodeableConcept as source
-uses "http://hl7.org/fhir/1.0/CodeableConcept" alias CodeableConceptR2 as target
-uses "http://hl7.org/fhir/1.0/Coding" alias CodingR2 as target
-uses "http://hl7.org/fhir/1.0/string" alias stringR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/CodeableConcept" alias CodeableConceptR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Coding" alias CodingR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/string" alias stringR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element3to2"

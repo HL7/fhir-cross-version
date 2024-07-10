@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance" alias AllergyIntolerance as source
-uses "http://hl7.org/fhir/1.0/AllergyIntolerance" alias AllergyIntoleranceR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/AllergyIntolerance" alias AllergyIntoleranceR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 

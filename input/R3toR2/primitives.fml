@@ -4,41 +4,41 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/base64Binary" as source
-uses "http://hl7.org/fhir/1.0/base64Binary" alias base64BinaryR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/base64Binary" alias base64BinaryR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/boolean" as source
-uses "http://hl7.org/fhir/1.0/boolean" alias booleanR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/boolean" alias booleanR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/code" as source
-uses "http://hl7.org/fhir/1.0/code" alias codeR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/code" alias codeR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/date" as source
-uses "http://hl7.org/fhir/1.0/date" alias dateR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/date" alias dateR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/dateTime" as source
-uses "http://hl7.org/fhir/1.0/dateTime" alias dateTimeR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/dateTime" alias dateTimeR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/decimal" as source
-uses "http://hl7.org/fhir/1.0/decimal" alias decimalR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/decimal" alias decimalR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/id" as source
-uses "http://hl7.org/fhir/1.0/id" alias idR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/id" alias idR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/instant" as source
-uses "http://hl7.org/fhir/1.0/instant" alias instantR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/instant" alias instantR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/integer" as source
-uses "http://hl7.org/fhir/1.0/integer" alias integerR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/integer" alias integerR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/markdown" as source
-uses "http://hl7.org/fhir/1.0/markdown" alias markdownR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/markdown" alias markdownR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/oid" as source
-uses "http://hl7.org/fhir/1.0/oid" alias oidR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/oid" alias oidR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/positiveInt" as source
-uses "http://hl7.org/fhir/1.0/positiveInt" alias positiveIntR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/positiveInt" alias positiveIntR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/string" as source
-uses "http://hl7.org/fhir/1.0/string" alias stringR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/string" alias stringR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/time" as source
-uses "http://hl7.org/fhir/1.0/time" alias timeR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/time" alias timeR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/unsignedInt" as source
-uses "http://hl7.org/fhir/1.0/unsignedInt" alias unsignedIntR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/unsignedInt" alias unsignedIntR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/uri" as source
-uses "http://hl7.org/fhir/1.0/uri" alias uriR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/uri" alias uriR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/uuid" as source
-uses "http://hl7.org/fhir/1.0/uuid" alias uuidR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/uuid" alias uuidR2 as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/xhtml" as source
-uses "http://hl7.org/fhir/1.0/xhtml" alias xhtmlR2 as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/xhtml" alias xhtmlR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element3to2"
 

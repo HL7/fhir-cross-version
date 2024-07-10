@@ -3,7 +3,7 @@
 /// title = "Quantity Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/Quantity" alias QuantityR2 as source
+uses "http://hl7.org/fhir/1.0/StructureDefinition/Quantity" alias QuantityR2 as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Quantity" alias Quantity as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Duration" alias Duration as target
 
