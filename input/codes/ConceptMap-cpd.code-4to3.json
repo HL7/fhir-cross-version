@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpd.code-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpd.code-4to3",
-  "name" : "CompartmentDefinition.code4to3",
+  "name" : "CompartmentDefinitionCode4to3",
   "title" : "Mapping for CompartmentDefinition.code from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for CompartmentDefinition.code from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CompartmentDefinition#CompartmentDefinition.code",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CompartmentDefinition#CompartmentDefinition.code",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sub.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sub.status-3to4",
-  "name" : "Substance.status3to4",
+  "name" : "SubstanceStatus3to4",
   "title" : "Mapping for Substance.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Substance.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Substance#Substance.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Substance#Substance.status",
   "group" : [{

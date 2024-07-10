@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rgp.ac.co.kind-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.co.kind-3to4",
-  "name" : "RequestGroup.action.condition.kind3to4",
+  "name" : "RequestGroupActionConditionKind3to4",
   "title" : "Mapping for RequestGroup.action.condition.kind from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for RequestGroup.action.condition.kind from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/RequestGroup#RequestGroup.action.condition.kind",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.condition.kind",
   "group" : [{

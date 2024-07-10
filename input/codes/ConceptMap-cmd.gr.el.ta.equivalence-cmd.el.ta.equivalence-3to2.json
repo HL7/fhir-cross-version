@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cmd.gr.el.ta.equivalence-cmd.el.ta.equivalence-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.gr.el.ta.equivalence-cmd.el.ta.equivalence-3to2",
-  "name" : "ConceptMap.group.element.target.equivalenceConceptMap.element.target.equivalence3to2",
+  "name" : "ConceptMapGroupElementTargetEquivalenceConceptMapElementTargetEquivalence3to2",
   "title" : "Mapping for ConceptMap.group.element.target.equivalence/ConceptMap.element.target.equivalence from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ConceptMap.group.element.target.equivalence/ConceptMap.element.target.equivalence from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ConceptMap#ConceptMap.group.element.target.equivalence",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ConceptMap#ConceptMap.element.target.equivalence",
   "group" : [{

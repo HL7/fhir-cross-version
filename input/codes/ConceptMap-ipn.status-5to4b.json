@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ipn.status-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ipn.status-5to4b",
-  "name" : "InsurancePlan.status5to4b",
+  "name" : "InsurancePlanStatus5to4b",
   "title" : "Mapping for InsurancePlan.status from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for InsurancePlan.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/InsurancePlan#InsurancePlan.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/InsurancePlan#InsurancePlan.status",
   "group" : [{

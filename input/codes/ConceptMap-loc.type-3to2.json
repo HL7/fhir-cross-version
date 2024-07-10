@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "loc.type-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/loc.type-3to2",
-  "name" : "Location.type3to2",
+  "name" : "LocationType3to2",
   "title" : "Mapping for Location.type from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Location.type from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Location#Location.type",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Location#Location.type",
   "group" : [{

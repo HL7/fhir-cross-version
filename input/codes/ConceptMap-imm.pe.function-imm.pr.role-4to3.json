@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "imm.pe.function-imm.pr.role-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/imm.pe.function-imm.pr.role-4to3",
-  "name" : "Immunization.performer.functionImmunization.practitioner.role4to3",
+  "name" : "ImmunizationPerformerFunctionImmunizationPractitionerRole4to3",
   "title" : "Mapping for Immunization.performer.function/Immunization.practitioner.role from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Immunization.performer.function/Immunization.practitioner.role from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Immunization#Immunization.performer.function",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Immunization#Immunization.practitioner.role",
   "group" : [{

@@ -9,13 +9,13 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/HumanName" alias HumanName as 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group HumanName(source src : HumanNameR2, target tgt : HumanName) extends Element <<type+>> {
-  src.use -> tgt.use "HumanName-use";
-  src.text -> tgt.text "HumanName-text";
-  src.family first -> tgt.family "HumanName-family";
-  src.family not_first as f ->  tgt.extension as ex,  ex.url = 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat',  ex.value = f "HumanName-family-rpt";
-  src.given -> tgt.given "HumanName-given";
-  src.prefix -> tgt.prefix "HumanName-prefix";
-  src.suffix -> tgt.suffix "HumanName-suffix";
-  src.period -> tgt.period "HumanName-period";
+  src.use -> tgt.use "HumanName_use";
+  src.text -> tgt.text "HumanName_text";
+  src.family first -> tgt.family "HumanName_family";
+  src.family not_first as f ->  tgt.extension as ex,  ex.url = 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat',  ex.value = f "HumanName_family-rpt";
+  src.given -> tgt.given "HumanName_given";
+  src.prefix -> tgt.prefix "HumanName_prefix";
+  src.suffix -> tgt.suffix "HumanName_suffix";
+  src.period -> tgt.period "HumanName_period";
 }
 

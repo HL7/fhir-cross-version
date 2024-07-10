@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pdf.ac.groupingBehavior-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.groupingBehavior-5to4",
-  "name" : "PlanDefinition.action.groupingBehavior5to4",
+  "name" : "PlanDefinitionActionGroupingBehavior5to4",
   "title" : "Mapping for PlanDefinition.action.groupingBehavior from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for PlanDefinition.action.groupingBehavior from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.groupingBehavior",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.groupingBehavior",
   "group" : [{

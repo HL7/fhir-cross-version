@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mps.status-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mps.status-4bto5",
-  "name" : "MedicationRequest.status4bto5",
+  "name" : "MedicationRequestStatus4bto5",
   "title" : "Mapping for MedicationRequest.status from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for MedicationRequest.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MedicationRequest#MedicationRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MedicationRequest#MedicationRequest.status",
   "group" : [{
@@ -45,7 +47,8 @@
       },
       {
         "code" : "ended",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

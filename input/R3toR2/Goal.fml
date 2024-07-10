@@ -9,20 +9,20 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/Goal" alias GoalR2 as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group Goal(source src : Goal, target tgt : GoalR2) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "Goal-identifier";
-  src.subject -> tgt.subject "Goal-subject";
-  src.start -> tgt.start "Goal-start";
-  src.target -> tgt.target "Goal-target";
-  src.category -> tgt.category "Goal-category";
-  src.description -> tgt.description "Goal-description";
-  src.status -> tgt.status "Goal-status";
-  src.statusDate -> tgt.statusDate "Goal-statusDate";
-  src.statusReason -> tgt.statusReason "Goal-statusReason";
-  src.expressedBy -> tgt.author "Goal-author";
-  src.priority -> tgt.priority "Goal-priority";
-  src.addresses -> tgt.addresses "Goal-addresses";
-  src.note -> tgt.note "Goal-note";
-  src.outcomeCode as vs0 ->  tgt.outcome as vt0,  vt0.result = vs0 "Goal-outcome";
-  src.outcomeReference as vs0 ->  tgt.outcome as vt0,  vt0.result = vs0 "Goal-outcome";
+  src.identifier -> tgt.identifier "Goal_identifier";
+  src.subject -> tgt.subject "Goal_subject";
+  src.start -> tgt.start "Goal_start";
+  src.target -> tgt.target "Goal_target";
+  src.category -> tgt.category "Goal_category";
+  src.description -> tgt.description "Goal_description";
+  src.status -> tgt.status "Goal_status";
+  src.statusDate -> tgt.statusDate "Goal_statusDate";
+  src.statusReason -> tgt.statusReason "Goal_statusReason";
+  src.expressedBy -> tgt.author "Goal_author";
+  src.priority -> tgt.priority "Goal_priority";
+  src.addresses -> tgt.addresses "Goal_addresses";
+  src.note -> tgt.note "Goal_note";
+  src.outcomeCode as vs0 ->  tgt.outcome as vt0,  vt0.result = vs0 "Goal_outcome";
+  src.outcomeReference as vs0 ->  tgt.outcome as vt0,  vt0.result = vs0 "Goal_outcome";
 }
 

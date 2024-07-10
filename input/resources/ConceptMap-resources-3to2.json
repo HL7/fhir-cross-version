@@ -5,9 +5,11 @@
   "version" : "0.1",
   "name" : "Resources3to2",
   "title" : "Resource Map R3 to R2",
+  "description" : "Resource Map R3 to R2",
   "status" : "draft",
+  "experimental" : false,
   "date" : "2019-07-09",
-  "publisher" : "HL7",
+  "publisher" : "HL7 International / FHIR Infrastructure",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/ValueSet/resource-types",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/ValueSet/resource-types",
   "group" : [{
@@ -93,8 +95,8 @@
     { "code" : "Observation", "target" : [{ "code" : "Observation", "relationship" : "equivalent" }]},
     { "code" : "OperationDefinition", "target" : [{ "code" : "OperationDefinition", "relationship" : "equivalent" }]},
     { "code" : "OperationOutcome", "target" : [{ "code" : "OperationOutcome", "relationship" : "equivalent" }]},
-    { "code" : "Task", "target" : [{ "code" : "Order", "relationship" : "source-is-broader-than-target" }]},
-    { "code" : "Task", "target" : [{ "code" : "OrderResponse", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "Task", "target" : [{ "code" : "Order", "relationship" : "source-is-broader-than-target", "comment" : "Tasks are more than orders" }]},
+    { "code" : "Task", "target" : [{ "code" : "OrderResponse", "relationship" : "source-is-broader-than-target", "comment" : "Tasks are more than orders" }]},
     { "code" : "Organization", "target" : [{ "code" : "Organization", "relationship" : "equivalent" }]},
     { "code" : "Parameters", "target" : [{ "code" : "Parameters", "relationship" : "equivalent" }]},
     { "code" : "Patient", "target" : [{ "code" : "Patient", "relationship" : "equivalent" }]},
@@ -120,7 +122,7 @@
     { "code" : "SearchParameter", "target" : [{ "code" : "SearchParameter", "relationship" : "equivalent" }]},
     { "code" : "ServiceDefinition", "noMap" : true },
     { "code" : "ProcedureRequest", "target" : [{ "code" : "ProcedureRequest", "relationship" : "equivalent" }]},
-    { "code" : "ProcedureRequest", "target" : [{ "code" : "DiagnosticOrder", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "ProcedureRequest", "target" : [{ "code" : "DiagnosticOrder", "relationship" : "source-is-broader-than-target", "comment" : "not just diagnostic orders" }]},
     { "code" : "Slot", "target" : [{ "code" : "Slot", "relationship" : "equivalent" }]},
     { "code" : "Specimen", "target" : [{ "code" : "Specimen", "relationship" : "equivalent" }]},
     { "code" : "StructureDefinition", "target" : [{ "code" : "StructureDefinition", "relationship" : "equivalent" }]},
@@ -131,7 +133,7 @@
     { "code" : "SupplyRequest", "target" : [{ "code" : "SupplyRequest", "relationship" : "equivalent" }]},
     { "code" : "TestReport", "noMap" : true },
     { "code" : "TestScript", "target" : [{ "code" : "TestScript", "relationship" : "equivalent" }]},
-    { "code" : "ValueSet", "target" : [{ "code" : "ValueSet", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "ValueSet", "target" : [{ "code" : "ValueSet", "relationship" : "equivalent" }]},
     { "code" : "VisionPrescription", "target" : [{ "code" : "VisionPrescription", "relationship" : "equivalent" }]}]
   }]
 }

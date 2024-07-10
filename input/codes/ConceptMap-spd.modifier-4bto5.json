@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "spd.modifier-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.modifier-4bto5",
-  "name" : "SearchParameter.modifier4bto5",
+  "name" : "SearchParameterModifier4bto5",
   "title" : "Mapping for SearchParameter.modifier from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for SearchParameter.modifier from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.modifier",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SearchParameter#SearchParameter.modifier",
   "group" : [{
@@ -80,11 +82,13 @@
       },
       {
         "code" : "code-text",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "text-advanced",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

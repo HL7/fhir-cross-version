@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mrp.type-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.type-4to4b",
-  "name" : "MeasureReport.type4to4b",
+  "name" : "MeasureReportType4to4b",
   "title" : "Mapping for MeasureReport.type from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for MeasureReport.type from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MeasureReport#MeasureReport.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MeasureReport#MeasureReport.type",
   "group" : [{

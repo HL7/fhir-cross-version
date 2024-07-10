@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "nam.use-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/nam.use-3to2",
-  "name" : "HumanName.use3to2",
+  "name" : "HumanNameUse3to2",
   "title" : "Mapping for HumanName.use from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for HumanName.use from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/HumanName#HumanName.use",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/HumanName#HumanName.use",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "opo.is.code-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opo.is.code-3to2",
-  "name" : "OperationOutcome.issue.code3to2",
+  "name" : "OperationOutcomeIssueCode3to2",
   "title" : "Mapping for OperationOutcome.issue.code from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for OperationOutcome.issue.code from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/OperationOutcome#OperationOutcome.issue.code",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/OperationOutcome#OperationOutcome.issue.code",
   "group" : [{

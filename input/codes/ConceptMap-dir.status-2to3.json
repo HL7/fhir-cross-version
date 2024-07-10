@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dir.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dir.status-2to3",
-  "name" : "DiagnosticReport.status2to3",
+  "name" : "DiagnosticReportStatus2to3",
   "title" : "Mapping for DiagnosticReport.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for DiagnosticReport.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DiagnosticReport#DiagnosticReport.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DiagnosticReport#DiagnosticReport.status",
   "group" : [{
@@ -52,7 +54,8 @@
       },
       {
         "code" : "preliminary",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sud.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sud.status-3to4",
-  "name" : "SupplyDelivery.status3to4",
+  "name" : "SupplyDeliveryStatus3to4",
   "title" : "Mapping for SupplyDelivery.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for SupplyDelivery.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SupplyDelivery#SupplyDelivery.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SupplyDelivery#SupplyDelivery.status",
   "group" : [{

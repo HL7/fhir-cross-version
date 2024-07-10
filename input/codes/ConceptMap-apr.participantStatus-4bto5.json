@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "apr.participantStatus-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/apr.participantStatus-4bto5",
-  "name" : "AppointmentResponse.participantStatusr4bto5",
+  "name" : "AppointmentResponseParticipantStatusr4bto5",
   "title" : "Mapping for AppointmentResponse.participantStatus from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for AppointmentResponse.participantStatus from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus",
   "group" : [{

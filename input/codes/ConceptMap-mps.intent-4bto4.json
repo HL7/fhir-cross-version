@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mps.intent-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mps.intent-4bto4",
-  "name" : "MedicationRequest.intent4bto4",
+  "name" : "MedicationRequestIntent4bto4",
   "title" : "Mapping for MedicationRequest.intent from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for MedicationRequest.intent from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MedicationRequest#MedicationRequest.intent",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationRequest#MedicationRequest.intent",
   "group" : [{

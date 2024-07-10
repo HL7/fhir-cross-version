@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mea.type-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.type-4to3",
-  "name" : "Measure.type4to3",
+  "name" : "MeasureType4to3",
   "title" : "Mapping for Measure.type from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Measure.type from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Measure#Measure.type",
   "group" : [{

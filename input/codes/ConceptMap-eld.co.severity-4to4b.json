@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "eld.co.severity-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eld.co.severity-4to4b",
-  "name" : "ElementDefinition.constraint.severity4to4b",
+  "name" : "ElementDefinitionConstraintSeverity4to4b",
   "title" : "Mapping for ElementDefinition.constraint.severity from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ElementDefinition.constraint.severity from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.constraint.severity",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ElementDefinition#ElementDefinition.constraint.severity",
   "group" : [{

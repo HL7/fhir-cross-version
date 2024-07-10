@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.ag.media-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ag.media-4to3",
-  "name" : "AuditEvent.agent.media4to3",
+  "name" : "AuditEventAgentMedia4to3",
   "title" : "Mapping for AuditEvent.agent.media from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.agent.media from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.agent.media",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.agent.media",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "que.status-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/que.status-4bto5",
-  "name" : "Questionnaire.status4bto5",
+  "name" : "QuestionnaireStatus4bto5",
   "title" : "Mapping for Questionnaire.status from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Questionnaire.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Questionnaire#Questionnaire.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Questionnaire#Questionnaire.status",
   "group" : [{

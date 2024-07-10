@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mps.priority-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mps.priority-4bto4",
-  "name" : "MedicationRequest.priority4bto4",
+  "name" : "MedicationRequestPriority4bto4",
   "title" : "Mapping for MedicationRequest.priority from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for MedicationRequest.priority from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MedicationRequest#MedicationRequest.priority",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationRequest#MedicationRequest.priority",
   "group" : [{

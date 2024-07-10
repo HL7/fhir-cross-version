@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prv.reason-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prv.reason-3to4",
-  "name" : "Provenance.reason3to4",
+  "name" : "ProvenanceReason3to4",
   "title" : "Mapping for Provenance.reason from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Provenance.reason from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Provenance#Provenance.reason",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Provenance#Provenance.reason",
   "group" : [{

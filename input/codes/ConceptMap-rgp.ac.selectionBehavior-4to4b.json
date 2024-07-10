@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rgp.ac.selectionBehavior-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.selectionBehavior-4to4b",
-  "name" : "RequestGroup.action.selectionBehavior4to4b",
+  "name" : "RequestGroupActionSelectionBehavior4to4b",
   "title" : "Mapping for RequestGroup.action.selectionBehavior from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for RequestGroup.action.selectionBehavior from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.selectionBehavior",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.selectionBehavior",
   "group" : [{

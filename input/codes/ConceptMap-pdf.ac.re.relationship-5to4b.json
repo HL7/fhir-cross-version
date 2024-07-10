@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pdf.ac.re.relationship-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.re.relationship-5to4b",
-  "name" : "PlanDefinition.action.relatedAction.relationship5to4b",
+  "name" : "PlanDefinitionActionRelatedActionRelationship5to4b",
   "title" : "Mapping for PlanDefinition.action.relatedAction.relationship from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for PlanDefinition.action.relatedAction.relationship from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship",
   "group" : [{

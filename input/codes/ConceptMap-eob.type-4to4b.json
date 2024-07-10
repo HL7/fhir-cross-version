@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "eob.type-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eob.type-4to4b",
-  "name" : "ExplanationOfBenefit.type4to4b",
+  "name" : "ExplanationOfBenefitType4to4b",
   "title" : "Mapping for ExplanationOfBenefit.type from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ExplanationOfBenefit.type from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.type",
   "group" : [{

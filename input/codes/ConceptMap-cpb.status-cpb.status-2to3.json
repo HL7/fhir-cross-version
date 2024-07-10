@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.status-cpb.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.status-cpb.status-2to3",
-  "name" : "Conformance.statusCapabilityStatement.status2to3",
+  "name" : "ConformanceStatusCapabilityStatementStatus2to3",
   "title" : "Mapping for Conformance.status/CapabilityStatement.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Conformance.status/CapabilityStatement.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.status",
   "group" : [{

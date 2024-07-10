@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "lst.status-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/lst.status-4bto5",
-  "name" : "List.status4bto5",
+  "name" : "ListStatus4bto5",
   "title" : "Mapping for List.status from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for List.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/List#List.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/List#List.status",
   "group" : [{

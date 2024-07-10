@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "org.co.purpose-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/org.co.purpose-2to3",
-  "name" : "Organization.contact.purpose2to3",
+  "name" : "OrganizationContactPurpose2to3",
   "title" : "Mapping for Organization.contact.purpose from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Organization.contact.purpose from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Organization#Organization.contact.purpose",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Organization#Organization.contact.purpose",
   "group" : [{

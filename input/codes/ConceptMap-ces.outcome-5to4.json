@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ces.outcome-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ces.outcome-5to4",
-  "name" : "CoverageEligibilityResponse.outcome5to4",
+  "name" : "CoverageEligibilityResponseOutcome5to4",
   "title" : "Mapping for CoverageEligibilityResponse.outcome from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for CoverageEligibilityResponse.outcome from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CoverageEligibilityResponse#CoverageEligibilityResponse.outcome",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CoverageEligibilityResponse#CoverageEligibilityResponse.outcome",
   "group" : [{

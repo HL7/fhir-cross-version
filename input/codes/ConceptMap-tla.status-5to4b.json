@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tla.status-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tla.status-5to4b",
-  "name" : "ImmunizationEvaluation.status5to4b",
+  "name" : "ImmunizationEvaluationStatus5to4b",
   "title" : "Mapping for ImmunizationEvaluation.status from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ImmunizationEvaluation.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ImmunizationEvaluation#ImmunizationEvaluation.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ImmunizationEvaluation#ImmunizationEvaluation.status",
   "group" : [{

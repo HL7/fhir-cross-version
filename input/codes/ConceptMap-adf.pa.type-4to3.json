@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "adf.pa.type-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/adf.pa.type-4to3",
-  "name" : "ActivityDefinition.participant.type4to3",
+  "name" : "ActivityDefinitionParticipantType4to3",
   "title" : "Mapping for ActivityDefinition.participant.type from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ActivityDefinition.participant.type from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ActivityDefinition#ActivityDefinition.participant.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ActivityDefinition#ActivityDefinition.participant.type",
   "group" : [{

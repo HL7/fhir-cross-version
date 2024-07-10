@@ -19,4 +19,3 @@ group DeviceUseRequest(source src : DeviceRequest, target tgt : DeviceUseRequest
   src.subject -> tgt.subject "DeviceRequest-subject";
   src.occurrence -> tgt.timing "DeviceRequest-Timing";
 }
-

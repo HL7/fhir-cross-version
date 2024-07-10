@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "enq.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enq.status-3to4",
-  "name" : "EnrollmentRequest.status3to4",
+  "name" : "EnrollmentRequestStatus3to4",
   "title" : "Mapping for EnrollmentRequest.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for EnrollmentRequest.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/EnrollmentRequest#EnrollmentRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/EnrollmentRequest#EnrollmentRequest.status",
   "group" : [{

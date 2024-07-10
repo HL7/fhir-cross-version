@@ -124,4 +124,3 @@ group containsX(source src, target tgt) extends BackboneElement {
   src.display -> tgt.display "contains-display";
   src.contains as vs -> tgt.contains as vt then containsX(vs, vt) "contains-contains";
 }
-

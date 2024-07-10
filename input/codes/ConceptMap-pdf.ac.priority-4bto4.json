@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pdf.ac.priority-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.priority-4bto4",
-  "name" : "PlanDefinition.action.priority4bto4",
+  "name" : "PlanDefinitionActionPriority4bto4",
   "title" : "Mapping for PlanDefinition.action.priority from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for PlanDefinition.action.priority from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.priority",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.priority",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "opd.pa.searchType-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.searchType-4bto5",
-  "name" : "OperationDefinition.parameter.searchType4bto5",
+  "name" : "OperationDefinitionParameterSearchType4bto5",
   "title" : "Mapping for OperationDefinition.parameter.searchType from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for OperationDefinition.parameter.searchType from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/OperationDefinition#OperationDefinition.parameter.searchType",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.searchType",
   "group" : [{

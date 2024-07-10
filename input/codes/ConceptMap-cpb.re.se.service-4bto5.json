@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.re.se.service-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.se.service-4bto5",
-  "name" : "CapabilityStatement.rest.security.service4bto5",
+  "name" : "CapabilityStatementRestSecurityService4bto5",
   "title" : "Mapping for CapabilityStatement.rest.security.service from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.rest.security.service from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.security.service",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.security.service",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prl.av.daysOfWeek-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prl.av.daysOfWeek-4to3",
-  "name" : "PractitionerRole.availableTime.daysOfWeek4to3",
+  "name" : "PractitionerRoleAvailableTimeDaysOfWeek4to3",
   "title" : "Mapping for PractitionerRole.availableTime.daysOfWeek from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for PractitionerRole.availableTime.daysOfWeek from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PractitionerRole#PractitionerRole.availableTime.daysOfWeek",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PractitionerRole#PractitionerRole.availableTime.daysOfWeek",
   "group" : [{

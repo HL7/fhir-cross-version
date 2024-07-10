@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "idr.type-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/idr.type-4bto5",
-  "name" : "Identifier.typer4bto5",
+  "name" : "IdentifierTyper4bto5",
   "title" : "Mapping for Identifier.type from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Identifier.type from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Identifier#Identifier.type",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Identifier#Identifier.type",
   "group" : [{

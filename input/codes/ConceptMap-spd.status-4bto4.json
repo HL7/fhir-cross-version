@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "spd.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.status-4bto4",
-  "name" : "SearchParameter.status4bto4",
+  "name" : "SearchParameterStatus4bto4",
   "title" : "Mapping for SearchParameter.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for SearchParameter.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.status",
   "group" : [{

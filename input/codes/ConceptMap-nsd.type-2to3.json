@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "nsd.type-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.type-2to3",
-  "name" : "NamingSystem.typer2to3",
+  "name" : "NamingSystemTyper2to3",
   "title" : "Mapping for NamingSystem.type from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for NamingSystem.type from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/NamingSystem#NamingSystem.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/NamingSystem#NamingSystem.type",
   "group" : [{

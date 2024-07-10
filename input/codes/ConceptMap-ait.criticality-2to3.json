@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "ait.criticality-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ait.criticality-2to3",
-  "name" : "ait.criticality-2to3",
+  "name" : "AllergyIntoleranceCriticality2to3",
   "title" : "Mapping for AllergyIntolerance.criticality from R2 to R3",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for AllergyIntolerance.criticality from R2 to R3",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.criticality",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.criticality",
   "group" : [{

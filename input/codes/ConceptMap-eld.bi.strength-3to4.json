@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "eld.bi.strength-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eld.bi.strength-3to4",
-  "name" : "ElementDefinition.binding.strength3to4",
+  "name" : "ElementDefinitionBindingStrength3to4",
   "title" : "Mapping for ElementDefinition.binding.strength from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ElementDefinition.binding.strength from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.binding.strength",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.binding.strength",
   "group" : [{

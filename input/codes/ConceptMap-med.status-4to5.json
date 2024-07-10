@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "med.status-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/med.status-4to5",
-  "name" : "Medication.status4to5",
+  "name" : "MedicationStatus4to5",
   "title" : "Mapping for Medication.status from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Medication.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Medication#Medication.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Medication#Medication.status",
   "group" : [{

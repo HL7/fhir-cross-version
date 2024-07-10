@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mad.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mad.status-3to4",
-  "name" : "MedicationAdministration.status3to4",
+  "name" : "MedicationAdministrationStatus3to4",
   "title" : "Mapping for MedicationAdministration.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for MedicationAdministration.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MedicationAdministration#MedicationAdministration.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationAdministration#MedicationAdministration.status",
   "group" : [{
@@ -17,7 +19,8 @@
       },
       {
         "code" : "not-done",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

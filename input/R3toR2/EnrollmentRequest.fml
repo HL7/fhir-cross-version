@@ -12,8 +12,8 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/Identifier3to2"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Reference3to2"
 
 group EnrollmentRequest(source src : EnrollmentRequest, target tgt : EnrollmentRequestR2) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "EnrollmentRequest-identifier";
-  src.created -> tgt.created "EnrollmentRequest-created";
-  src.coverage -> tgt.coverage "EnrollmentRequest-coverage";
+  src.identifier -> tgt.identifier "EnrollmentRequest_identifier";
+  src.created -> tgt.created "EnrollmentRequest_created";
+  src.coverage -> tgt.coverage "EnrollmentRequest_coverage";
 }
 

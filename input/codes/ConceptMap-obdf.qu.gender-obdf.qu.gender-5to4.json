@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "obdf.qu.gender-obdf.qu.gender-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obdf.qu.gender-obdf.qu.gender-5to4",
-  "name" : "ObservationDefinition.qualifiedValue.genderObservationDefinition.qualifiedInterval.gender5to4",
+  "name" : "ObservationDefinitionQualifiedValueGenderObservationDefinitionQualifiedIntervalGender5to4",
   "title" : "Mapping for ObservationDefinition.qualifiedValue.gender/ObservationDefinition.qualifiedInterval.gender from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ObservationDefinition.qualifiedValue.gender/ObservationDefinition.qualifiedInterval.gender from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedValue.gender",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.gender",
   "group" : [{

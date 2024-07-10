@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pat.li.type-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pat.li.type-5to4b",
-  "name" : "Patient.link.type5to4b",
+  "name" : "PatientLinkType5to4b",
   "title" : "Mapping for Patient.link.type from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Patient.link.type from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Patient#Patient.link.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Patient#Patient.link.type",
   "group" : [{

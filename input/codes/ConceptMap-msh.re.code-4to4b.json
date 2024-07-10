@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "msh.re.code-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/msh.re.code-4to4b",
-  "name" : "MessageHeader.response.code4to4b",
+  "name" : "MessageHeaderResponseCode4to4b",
   "title" : "Mapping for MessageHeader.response.code from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for MessageHeader.response.code from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MessageHeader#MessageHeader.response.code",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MessageHeader#MessageHeader.response.code",
   "group" : [{

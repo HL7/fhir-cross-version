@@ -25,4 +25,3 @@ group sdvItem(source src, target tgt) extends BackboneElement {
   src.quantity -> tgt.quantity "item-quantity";
   src.item -> tgt.suppliedItem "item-quantity";
 }
-

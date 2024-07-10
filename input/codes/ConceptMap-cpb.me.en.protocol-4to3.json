@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.me.en.protocol-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.me.en.protocol-4to3",
-  "name" : "CapabilityStatement.messaging.endpoint.protocol4to3",
+  "name" : "CapabilityStatementMessagingEndpointProtocol4to3",
   "title" : "Mapping for CapabilityStatement.messaging.endpoint.protocol from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.messaging.endpoint.protocol from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.endpoint.protocol",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.endpoint.protocol",
   "group" : [{

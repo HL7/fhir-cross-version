@@ -9,13 +9,13 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/Flag" alias Flag as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group Flag(source src : FlagR2, target tgt : Flag) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "Flag-identifier";
-  src.category -> tgt.category "Flag-category";
-  src.status -> tgt.status "Flag-status";
-  src.period -> tgt.period "Flag-period";
-  src.subject -> tgt.subject "Flag-subject";
-  src.encounter -> tgt.encounter "Flag-encounter";
-  src.author -> tgt.author "Flag-author";
-  src.code -> tgt.code "Flag-code";
+  src.identifier -> tgt.identifier "Flag_identifier";
+  src.category -> tgt.category "Flag_category";
+  src.status -> tgt.status "Flag_status";
+  src.period -> tgt.period "Flag_period";
+  src.subject -> tgt.subject "Flag_subject";
+  src.encounter -> tgt.encounter "Flag_encounter";
+  src.author -> tgt.author "Flag_author";
+  src.code -> tgt.code "Flag_code";
 }
 

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rgp.ac.cardinalityBehavior-rqo.ac.cardinalityBehavior-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.cardinalityBehavior-rqo.ac.cardinalityBehavior-4to5",
-  "name" : "RequestGroup.action.cardinalityBehaviorRequestOrchestration.action.cardinalityBehavior4to5",
+  "name" : "RequestGroupActionCardinalityBehaviorRequestOrchestrationActionCardinalityBehavior4to5",
   "title" : "Mapping for RequestGroup.action.cardinalityBehavior/RequestOrchestration.action.cardinalityBehavior from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for RequestGroup.action.cardinalityBehavior/RequestOrchestration.action.cardinalityBehavior from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.cardinalityBehavior",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.cardinalityBehavior",
   "group" : [{

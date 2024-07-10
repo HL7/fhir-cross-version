@@ -7,7 +7,8 @@
   "status" : "draft",
   "experimental" : false,
   "date" : "2019-07-11T08:06:31+10:00",
-  "publisher" : "HL7",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "description" : "Search Parameter Map - R2 to R4",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/SearchParameter",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/SearchParameter",
   "group" : [{
@@ -17,5047 +18,5047 @@
       "code" : "Account.identifier",
       "target" : [{
         "code" : "Account.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Account.name",
       "target" : [{
         "code" : "Account.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Account.owner",
       "target" : [{
         "code" : "Account.owner",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Account.patient",
       "target" : [{
         "code" : "Account.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Account.period",
       "target" : [{
         "code" : "Account.period",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Account.status",
       "target" : [{
         "code" : "Account.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Account.subject",
       "target" : [{
         "code" : "Account.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Account.type",
       "target" : [{
         "code" : "Account.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.reporter",
       "target" : [{
         "code" : "AllergyIntolerance.asserter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.category",
       "target" : [{
         "code" : "AllergyIntolerance.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.status",
       "target" : [{
         "code" : "AllergyIntolerance.clinical-status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.substance",
       "target" : [{
         "code" : "AllergyIntolerance.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.criticality",
       "target" : [{
         "code" : "AllergyIntolerance.criticality",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.date",
       "target" : [{
         "code" : "AllergyIntolerance.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.identifier",
       "target" : [{
         "code" : "AllergyIntolerance.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.last-date",
       "target" : [{
         "code" : "AllergyIntolerance.last-date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.manifestation",
       "target" : [{
         "code" : "AllergyIntolerance.manifestation",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.onset",
       "target" : [{
         "code" : "AllergyIntolerance.onset",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.patient",
       "target" : [{
         "code" : "AllergyIntolerance.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.recorder",
       "target" : [{
         "code" : "AllergyIntolerance.recorder",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.route",
       "target" : [{
         "code" : "AllergyIntolerance.route",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.severity",
       "target" : [{
         "code" : "AllergyIntolerance.severity",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AllergyIntolerance.type",
       "target" : [{
         "code" : "AllergyIntolerance.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Appointment.actor",
       "target" : [{
         "code" : "Appointment.actor",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Appointment.date",
       "target" : [{
         "code" : "Appointment.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Appointment.identifier",
       "target" : [{
         "code" : "Appointment.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Appointment.location",
       "target" : [{
         "code" : "Appointment.location",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Appointment.part-status",
       "target" : [{
         "code" : "Appointment.part-status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Appointment.patient",
       "target" : [{
         "code" : "Appointment.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Appointment.practitioner",
       "target" : [{
         "code" : "Appointment.practitioner",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Appointment.status",
       "target" : [{
         "code" : "Appointment.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AppointmentResponse.actor",
       "target" : [{
         "code" : "AppointmentResponse.actor",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AppointmentResponse.appointment",
       "target" : [{
         "code" : "AppointmentResponse.appointment",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AppointmentResponse.identifier",
       "target" : [{
         "code" : "AppointmentResponse.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AppointmentResponse.location",
       "target" : [{
         "code" : "AppointmentResponse.location",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AppointmentResponse.part-status",
       "target" : [{
         "code" : "AppointmentResponse.part-status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AppointmentResponse.patient",
       "target" : [{
         "code" : "AppointmentResponse.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AppointmentResponse.practitioner",
       "target" : [{
         "code" : "AppointmentResponse.practitioner",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.action",
       "target" : [{
         "code" : "AuditEvent.action",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.address",
       "target" : [{
         "code" : "AuditEvent.address",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.altid",
       "target" : [{
         "code" : "AuditEvent.altid",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.date",
       "target" : [{
         "code" : "AuditEvent.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.name",
       "target" : [{
         "code" : "AuditEvent.entity-name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.object-type",
       "target" : [{
         "code" : "AuditEvent.entity-type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.patient",
       "target" : [{
         "code" : "AuditEvent.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.policy",
       "target" : [{
         "code" : "AuditEvent.policy",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.site",
       "target" : [{
         "code" : "AuditEvent.site",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.source",
       "target" : [{
         "code" : "AuditEvent.source",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.subtype",
       "target" : [{
         "code" : "AuditEvent.subtype",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "AuditEvent.type",
       "target" : [{
         "code" : "AuditEvent.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Basic.author",
       "target" : [{
         "code" : "Basic.author",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Basic.code",
       "target" : [{
         "code" : "Basic.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Basic.created",
       "target" : [{
         "code" : "Basic.created",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Basic.identifier",
       "target" : [{
         "code" : "Basic.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Basic.patient",
       "target" : [{
         "code" : "Basic.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Basic.subject",
       "target" : [{
         "code" : "Basic.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "BodySite.code",
       "target" : [{
         "code" : "BodyStructure.location",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "BodySite.identifier",
       "target" : [{
         "code" : "BodyStructure.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "BodySite.patient",
       "target" : [{
         "code" : "BodyStructure.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Bundle.composition",
       "target" : [{
         "code" : "Bundle.composition",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Bundle.message",
       "target" : [{
         "code" : "Bundle.message",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Bundle.type",
       "target" : [{
         "code" : "Bundle.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.date",
       "target" : [{
         "code" : "CapabilityStatement.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.description",
       "target" : [{
         "code" : "CapabilityStatement.description",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.fhirversion",
       "target" : [{
         "code" : "CapabilityStatement.fhirversion",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.format",
       "target" : [{
         "code" : "CapabilityStatement.format",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.mode",
       "target" : [{
         "code" : "CapabilityStatement.mode",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.name",
       "target" : [{
         "code" : "CapabilityStatement.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.publisher",
       "target" : [{
         "code" : "CapabilityStatement.publisher",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.resource",
       "target" : [{
         "code" : "CapabilityStatement.resource",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.profile",
       "target" : [{
         "code" : "CapabilityStatement.resource-profile",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.security",
       "target" : [{
         "code" : "CapabilityStatement.security-service",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.software",
       "target" : [{
         "code" : "CapabilityStatement.software",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.status",
       "target" : [{
         "code" : "CapabilityStatement.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.supported-profile",
       "target" : [{
         "code" : "CapabilityStatement.supported-profile",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.url",
       "target" : [{
         "code" : "CapabilityStatement.url",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Conformance.version",
       "target" : [{
         "code" : "CapabilityStatement.version",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CarePlan.activitycode",
       "target" : [{
         "code" : "CarePlan.activity-code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CarePlan.activitydate",
       "target" : [{
         "code" : "CarePlan.activity-date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CarePlan.activityreference",
       "target" : [{
         "code" : "CarePlan.activity-reference",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CarePlan.condition",
       "target" : [{
         "code" : "CarePlan.condition",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CarePlan.date",
       "target" : [{
         "code" : "CarePlan.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CarePlan.goal",
       "target" : [{
         "code" : "CarePlan.goal",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CarePlan.patient",
       "target" : [{
         "code" : "CarePlan.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CarePlan.performer",
       "target" : [{
         "code" : "CarePlan.performer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CarePlan.subject",
       "target" : [{
         "code" : "CarePlan.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Claim.identifier",
       "target" : [{
         "code" : "Claim.facility",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Claim.patient",
       "target" : [{
         "code" : "Claim.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Claim.priority",
       "target" : [{
         "code" : "Claim.priority",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Claim.provider",
       "target" : [{
         "code" : "Claim.provider",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Claim.use",
       "target" : [{
         "code" : "Claim.use",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ClaimResponse.identifier",
       "target" : [{
         "code" : "ClaimResponse.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ClinicalImpression.assessor",
       "target" : [{
         "code" : "ClinicalImpression.assessor",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ClinicalImpression.date",
       "target" : [{
         "code" : "ClinicalImpression.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ClinicalImpression.finding",
       "target" : [{
         "code" : "ClinicalImpression.finding-code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ClinicalImpression.investigation",
       "target" : [{
         "code" : "ClinicalImpression.investigation",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ClinicalImpression.patient",
       "target" : [{
         "code" : "ClinicalImpression.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ClinicalImpression.previous",
       "target" : [{
         "code" : "ClinicalImpression.previous",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ClinicalImpression.problem",
       "target" : [{
         "code" : "ClinicalImpression.problem",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ClinicalImpression.status",
       "target" : [{
         "code" : "ClinicalImpression.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.category",
       "target" : [{
         "code" : "Communication.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.encounter",
       "target" : [{
         "code" : "Communication.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.identifier",
       "target" : [{
         "code" : "Communication.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.medium",
       "target" : [{
         "code" : "Communication.medium",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.patient",
       "target" : [{
         "code" : "Communication.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.received",
       "target" : [{
         "code" : "Communication.received",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.recipient",
       "target" : [{
         "code" : "Communication.recipient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.sender",
       "target" : [{
         "code" : "Communication.sender",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.sent",
       "target" : [{
         "code" : "Communication.sent",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.status",
       "target" : [{
         "code" : "Communication.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Communication.subject",
       "target" : [{
         "code" : "Communication.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.category",
       "target" : [{
         "code" : "CommunicationRequest.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.encounter",
       "target" : [{
         "code" : "CommunicationRequest.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.identifier",
       "target" : [{
         "code" : "CommunicationRequest.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.medium",
       "target" : [{
         "code" : "CommunicationRequest.medium",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.patient",
       "target" : [{
         "code" : "CommunicationRequest.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.priority",
       "target" : [{
         "code" : "CommunicationRequest.priority",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.recipient",
       "target" : [{
         "code" : "CommunicationRequest.recipient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.requester",
       "target" : [{
         "code" : "CommunicationRequest.requester",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.sender",
       "target" : [{
         "code" : "CommunicationRequest.sender",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.status",
       "target" : [{
         "code" : "CommunicationRequest.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "CommunicationRequest.subject",
       "target" : [{
         "code" : "CommunicationRequest.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.attester",
       "target" : [{
         "code" : "Composition.attester",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.author",
       "target" : [{
         "code" : "Composition.author",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.class",
       "target" : [{
         "code" : "Composition.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.confidentiality",
       "target" : [{
         "code" : "Composition.confidentiality",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.context",
       "target" : [{
         "code" : "Composition.context",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.date",
       "target" : [{
         "code" : "Composition.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.encounter",
       "target" : [{
         "code" : "Composition.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.entry",
       "target" : [{
         "code" : "Composition.entry",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.identifier",
       "target" : [{
         "code" : "Composition.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.patient",
       "target" : [{
         "code" : "Composition.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.period",
       "target" : [{
         "code" : "Composition.period",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.section",
       "target" : [{
         "code" : "Composition.section",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.status",
       "target" : [{
         "code" : "Composition.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.subject",
       "target" : [{
         "code" : "Composition.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.title",
       "target" : [{
         "code" : "Composition.title",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Composition.type",
       "target" : [{
         "code" : "Composition.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.context",
       "target" : [{
         "code" : "ConceptMap.context",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.date",
       "target" : [{
         "code" : "ConceptMap.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.dependson",
       "target" : [{
         "code" : "ConceptMap.dependson",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.description",
       "target" : [{
         "code" : "ConceptMap.description",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.identifier",
       "target" : [{
         "code" : "ConceptMap.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.name",
       "target" : [{
         "code" : "ConceptMap.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.product",
       "target" : [{
         "code" : "ConceptMap.product",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.publisher",
       "target" : [{
         "code" : "ConceptMap.publisher",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.source",
       "target" : [{
         "code" : "ConceptMap.source",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.sourcecode",
       "target" : [{
         "code" : "ConceptMap.source-code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.sourcesystem",
       "target" : [{
         "code" : "ConceptMap.source-system",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.sourceuri",
       "target" : [{
         "code" : "ConceptMap.source-uri",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.status",
       "target" : [{
         "code" : "ConceptMap.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.target",
       "target" : [{
         "code" : "ConceptMap.target",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.targetcode",
       "target" : [{
         "code" : "ConceptMap.target-code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.targetsystem",
       "target" : [{
         "code" : "ConceptMap.target-system",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.url",
       "target" : [{
         "code" : "ConceptMap.url",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ConceptMap.version",
       "target" : [{
         "code" : "ConceptMap.version",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.age",
       "target" : [{
         "code" : "Condition.abatement-age",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.asserter",
       "target" : [{
         "code" : "Condition.asserter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.body-site",
       "target" : [{
         "code" : "Condition.body-site",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.category",
       "target" : [{
         "code" : "Condition.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.clinicalstatus",
       "target" : [{
         "code" : "Condition.clinical-status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.code",
       "target" : [{
         "code" : "Condition.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.encounter",
       "target" : [{
         "code" : "Condition.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.evidence",
       "target" : [{
         "code" : "Condition.evidence",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.identifier",
       "target" : [{
         "code" : "Condition.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.onset",
       "target" : [{
         "code" : "Condition.onset-date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.onset-info",
       "target" : [{
         "code" : "Condition.onset-info",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.patient",
       "target" : [{
         "code" : "Condition.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.date-recorded",
       "target" : [{
         "code" : "Condition.recorded-date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.severity",
       "target" : [{
         "code" : "Condition.severity",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Condition.stage",
       "target" : [{
         "code" : "Condition.stage",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Contract.identifier",
       "target" : [{
         "code" : "Contract.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Contract.patient",
       "target" : [{
         "code" : "Contract.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Contract.signer",
       "target" : [{
         "code" : "Contract.signer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Contract.subject",
       "target" : [{
         "code" : "Contract.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Coverage.dependent",
       "target" : [{
         "code" : "Coverage.dependent",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Coverage.identifier",
       "target" : [{
         "code" : "Coverage.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DetectedIssue.author",
       "target" : [{
         "code" : "DetectedIssue.author",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DetectedIssue.category",
       "target" : [{
         "code" : "DetectedIssue.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DetectedIssue.date",
       "target" : [{
         "code" : "DetectedIssue.identified",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DetectedIssue.identifier",
       "target" : [{
         "code" : "DetectedIssue.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DetectedIssue.implicated",
       "target" : [{
         "code" : "DetectedIssue.implicated",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DetectedIssue.patient",
       "target" : [{
         "code" : "DetectedIssue.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Device.identifier",
       "target" : [{
         "code" : "Device.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Device.location",
       "target" : [{
         "code" : "Device.location",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Device.manufacturer",
       "target" : [{
         "code" : "Device.manufacturer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Device.model",
       "target" : [{
         "code" : "Device.model",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Device.organization",
       "target" : [{
         "code" : "Device.organization",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Device.patient",
       "target" : [{
         "code" : "Device.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Device.type",
       "target" : [{
         "code" : "Device.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Device.udi",
       "target" : [{
         "code" : "Device.udi-carrier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Device.url",
       "target" : [{
         "code" : "Device.url",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceMetric.category",
       "target" : [{
         "code" : "DeviceMetric.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceMetric.identifier",
       "target" : [{
         "code" : "DeviceMetric.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceMetric.parent",
       "target" : [{
         "code" : "DeviceMetric.parent",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceMetric.source",
       "target" : [{
         "code" : "DeviceMetric.source",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceMetric.type",
       "target" : [{
         "code" : "DeviceMetric.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceUseRequest.device",
       "target" : [{
         "code" : "DeviceRequest.device",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceUseRequest.patient",
       "target" : [{
         "code" : "DeviceRequest.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceUseRequest.subject",
       "target" : [{
         "code" : "DeviceRequest.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceUseStatement.device",
       "target" : [{
         "code" : "DeviceUseStatement.device",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceUseStatement.patient",
       "target" : [{
         "code" : "DeviceUseStatement.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DeviceUseStatement.subject",
       "target" : [{
         "code" : "DeviceUseStatement.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.category",
       "target" : [{
         "code" : "DiagnosticReport.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.code",
       "target" : [{
         "code" : "DiagnosticReport.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.date",
       "target" : [{
         "code" : "DiagnosticReport.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.encounter",
       "target" : [{
         "code" : "DiagnosticReport.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.identifier",
       "target" : [{
         "code" : "DiagnosticReport.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.image",
       "target" : [{
         "code" : "DiagnosticReport.media",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.issued",
       "target" : [{
         "code" : "DiagnosticReport.issued",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.patient",
       "target" : [{
         "code" : "DiagnosticReport.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.performer",
       "target" : [{
         "code" : "DiagnosticReport.performer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.result",
       "target" : [{
         "code" : "DiagnosticReport.result",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.specimen",
       "target" : [{
         "code" : "DiagnosticReport.specimen",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.status",
       "target" : [{
         "code" : "DiagnosticReport.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DiagnosticReport.subject",
       "target" : [{
         "code" : "DiagnosticReport.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.author",
       "target" : [{
         "code" : "DocumentManifest.author",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.content-ref",
       "target" : [{
         "code" : "DocumentManifest.item",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.created",
       "target" : [{
         "code" : "DocumentManifest.created",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.description",
       "target" : [{
         "code" : "DocumentManifest.description",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.identifier",
       "target" : [{
         "code" : "DocumentManifest.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.patient",
       "target" : [{
         "code" : "DocumentManifest.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.recipient",
       "target" : [{
         "code" : "DocumentManifest.recipient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.related-id",
       "target" : [{
         "code" : "DocumentManifest.related-id",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.related-ref",
       "target" : [{
         "code" : "DocumentManifest.related-ref",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.source",
       "target" : [{
         "code" : "DocumentManifest.source",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.status",
       "target" : [{
         "code" : "DocumentManifest.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.subject",
       "target" : [{
         "code" : "DocumentManifest.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentManifest.type",
       "target" : [{
         "code" : "DocumentManifest.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.authenticator",
       "target" : [{
         "code" : "DocumentReference.authenticator",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.author",
       "target" : [{
         "code" : "DocumentReference.author",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.class",
       "target" : [{
         "code" : "DocumentReference.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.custodian",
       "target" : [{
         "code" : "DocumentReference.custodian",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.created",
       "target" : [{
         "code" : "DocumentReference.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.description",
       "target" : [{
         "code" : "DocumentReference.description",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.encounter",
       "target" : [{
         "code" : "DocumentReference.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.event",
       "target" : [{
         "code" : "DocumentReference.event",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.facility",
       "target" : [{
         "code" : "DocumentReference.facility",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.format",
       "target" : [{
         "code" : "DocumentReference.format",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.identifier",
       "target" : [{
         "code" : "DocumentReference.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.language",
       "target" : [{
         "code" : "DocumentReference.language",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.location",
       "target" : [{
         "code" : "DocumentReference.location",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.patient",
       "target" : [{
         "code" : "DocumentReference.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.period",
       "target" : [{
         "code" : "DocumentReference.period",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.related-id",
       "target" : [{
         "code" : "DocumentReference.related",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.relatesto",
       "target" : [{
         "code" : "DocumentReference.relatesto",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.relation",
       "target" : [{
         "code" : "DocumentReference.relation",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.relationship",
       "target" : [{
         "code" : "DocumentReference.relationship",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.securitylabel",
       "target" : [{
         "code" : "DocumentReference.security-label",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.setting",
       "target" : [{
         "code" : "DocumentReference.setting",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.status",
       "target" : [{
         "code" : "DocumentReference.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.subject",
       "target" : [{
         "code" : "DocumentReference.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "DocumentReference.type",
       "target" : [{
         "code" : "DocumentReference.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.appointment",
       "target" : [{
         "code" : "Encounter.appointment",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.date",
       "target" : [{
         "code" : "Encounter.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.episodeofcare",
       "target" : [{
         "code" : "Encounter.episode-of-care",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.identifier",
       "target" : [{
         "code" : "Encounter.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.length",
       "target" : [{
         "code" : "Encounter.length",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.location",
       "target" : [{
         "code" : "Encounter.location",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.location-period",
       "target" : [{
         "code" : "Encounter.location-period",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.part-of",
       "target" : [{
         "code" : "Encounter.part-of",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.participant",
       "target" : [{
         "code" : "Encounter.participant",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.participant-type",
       "target" : [{
         "code" : "Encounter.participant-type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.patient",
       "target" : [{
         "code" : "Encounter.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.practitioner",
       "target" : [{
         "code" : "Encounter.practitioner",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.reason",
       "target" : [{
         "code" : "Encounter.reason-code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.special-arrangement",
       "target" : [{
         "code" : "Encounter.special-arrangement",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.status",
       "target" : [{
         "code" : "Encounter.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Encounter.type",
       "target" : [{
         "code" : "Encounter.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EnrollmentRequest.identifier",
       "target" : [{
         "code" : "EnrollmentRequest.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EnrollmentRequest.patient",
       "target" : [{
         "code" : "EnrollmentRequest.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EnrollmentRequest.subject",
       "target" : [{
         "code" : "EnrollmentRequest.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EnrollmentResponse.identifier",
       "target" : [{
         "code" : "EnrollmentResponse.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EpisodeOfCare.care-manager",
       "target" : [{
         "code" : "EpisodeOfCare.care-manager",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EpisodeOfCare.condition",
       "target" : [{
         "code" : "EpisodeOfCare.condition",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EpisodeOfCare.date",
       "target" : [{
         "code" : "EpisodeOfCare.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EpisodeOfCare.identifier",
       "target" : [{
         "code" : "EpisodeOfCare.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EpisodeOfCare.incomingreferral",
       "target" : [{
         "code" : "EpisodeOfCare.incoming-referral",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EpisodeOfCare.organization",
       "target" : [{
         "code" : "EpisodeOfCare.organization",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EpisodeOfCare.patient",
       "target" : [{
         "code" : "EpisodeOfCare.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EpisodeOfCare.status",
       "target" : [{
         "code" : "EpisodeOfCare.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "EpisodeOfCare.type",
       "target" : [{
         "code" : "EpisodeOfCare.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ExplanationOfBenefit.identifier",
       "target" : [{
         "code" : "ExplanationOfBenefit.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FamilyMemberHistory.code",
       "target" : [{
         "code" : "FamilyMemberHistory.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FamilyMemberHistory.date",
       "target" : [{
         "code" : "FamilyMemberHistory.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FamilyMemberHistory.identifier",
       "target" : [{
         "code" : "FamilyMemberHistory.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FamilyMemberHistory.patient",
       "target" : [{
         "code" : "FamilyMemberHistory.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FamilyMemberHistory.relationship",
       "target" : [{
         "code" : "FamilyMemberHistory.relationship",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Flag.author",
       "target" : [{
         "code" : "Flag.author",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Flag.date",
       "target" : [{
         "code" : "Flag.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Flag.encounter",
       "target" : [{
         "code" : "Flag.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Flag.patient",
       "target" : [{
         "code" : "Flag.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Flag.subject",
       "target" : [{
         "code" : "Flag.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Goal.category",
       "target" : [{
         "code" : "Goal.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Goal.identifier",
       "target" : [{
         "code" : "Goal.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Goal.patient",
       "target" : [{
         "code" : "Goal.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Goal.subject",
       "target" : [{
         "code" : "Goal.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Goal.targetdate",
       "target" : [{
         "code" : "Goal.target-date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Group.actual",
       "target" : [{
         "code" : "Group.actual",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Group.characteristic",
       "target" : [{
         "code" : "Group.characteristic",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Group.characteristic-value",
       "target" : [{
         "code" : "Group.characteristic-value",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Group.code",
       "target" : [{
         "code" : "Group.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Group.exclude",
       "target" : [{
         "code" : "Group.exclude",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Group.identifier",
       "target" : [{
         "code" : "Group.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Group.member",
       "target" : [{
         "code" : "Group.member",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Group.type",
       "target" : [{
         "code" : "Group.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Group.value",
       "target" : [{
         "code" : "Group.value",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "HealthcareService.characteristic",
       "target" : [{
         "code" : "HealthcareService.characteristic",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "HealthcareService.identifier",
       "target" : [{
         "code" : "HealthcareService.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "HealthcareService.location",
       "target" : [{
         "code" : "HealthcareService.location",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "HealthcareService.name",
       "target" : [{
         "code" : "HealthcareService.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "HealthcareService.organization",
       "target" : [{
         "code" : "HealthcareService.organization",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "HealthcareService.programname",
       "target" : [{
         "code" : "HealthcareService.program",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "HealthcareService.servicecategory",
       "target" : [{
         "code" : "HealthcareService.service-category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "HealthcareService.servicetype",
       "target" : [{
         "code" : "HealthcareService.service-type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImagingStudy.order",
       "target" : [{
         "code" : "ImagingStudy.basedon",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImagingStudy.bodysite",
       "target" : [{
         "code" : "ImagingStudy.bodysite",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImagingStudy.dicom-class",
       "target" : [{
         "code" : "ImagingStudy.dicom-class",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImagingStudy.modality",
       "target" : [{
         "code" : "ImagingStudy.modality",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImagingStudy.patient",
       "target" : [{
         "code" : "ImagingStudy.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImagingStudy.series",
       "target" : [{
         "code" : "ImagingStudy.series",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImagingStudy.started",
       "target" : [{
         "code" : "ImagingStudy.started",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.date",
       "target" : [{
         "code" : "Immunization.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.identifier",
       "target" : [{
         "code" : "Immunization.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.location",
       "target" : [{
         "code" : "Immunization.location",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.lot-number",
       "target" : [{
         "code" : "Immunization.lot-number",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.manufacturer",
       "target" : [{
         "code" : "Immunization.manufacturer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.patient",
       "target" : [{
         "code" : "Immunization.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.performer",
       "target" : [{
         "code" : "Immunization.performer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.reaction",
       "target" : [{
         "code" : "Immunization.reaction",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.reaction-date",
       "target" : [{
         "code" : "Immunization.reaction-date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.reason",
       "target" : [{
         "code" : "Immunization.reason-code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.status",
       "target" : [{
         "code" : "Immunization.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Immunization.vaccine-code",
       "target" : [{
         "code" : "Immunization.vaccine-code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImmunizationRecommendation.date",
       "target" : [{
         "code" : "ImmunizationRecommendation.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImmunizationRecommendation.identifier",
       "target" : [{
         "code" : "ImmunizationRecommendation.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImmunizationRecommendation.information",
       "target" : [{
         "code" : "ImmunizationRecommendation.information",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImmunizationRecommendation.patient",
       "target" : [{
         "code" : "ImmunizationRecommendation.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImmunizationRecommendation.status",
       "target" : [{
         "code" : "ImmunizationRecommendation.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImmunizationRecommendation.support",
       "target" : [{
         "code" : "ImmunizationRecommendation.support",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImmunizationRecommendation.vaccine-type",
       "target" : [{
         "code" : "ImmunizationRecommendation.vaccine-type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImplementationGuide.context",
       "target" : [{
         "code" : "ImplementationGuide.context",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImplementationGuide.date",
       "target" : [{
         "code" : "ImplementationGuide.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImplementationGuide.dependency",
       "target" : [{
         "code" : "ImplementationGuide.depends-on",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImplementationGuide.description",
       "target" : [{
         "code" : "ImplementationGuide.description",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImplementationGuide.experimental",
       "target" : [{
         "code" : "ImplementationGuide.experimental",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImplementationGuide.name",
       "target" : [{
         "code" : "ImplementationGuide.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImplementationGuide.publisher",
       "target" : [{
         "code" : "ImplementationGuide.publisher",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImplementationGuide.status",
       "target" : [{
         "code" : "ImplementationGuide.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImplementationGuide.url",
       "target" : [{
         "code" : "ImplementationGuide.url",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ImplementationGuide.version",
       "target" : [{
         "code" : "ImplementationGuide.version",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.code",
       "target" : [{
         "code" : "List.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.date",
       "target" : [{
         "code" : "List.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.empty-reason",
       "target" : [{
         "code" : "List.empty-reason",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.encounter",
       "target" : [{
         "code" : "List.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.item",
       "target" : [{
         "code" : "List.item",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.notes",
       "target" : [{
         "code" : "List.notes",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.patient",
       "target" : [{
         "code" : "List.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.source",
       "target" : [{
         "code" : "List.source",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.status",
       "target" : [{
         "code" : "List.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.subject",
       "target" : [{
         "code" : "List.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "List.title",
       "target" : [{
         "code" : "List.title",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.address",
       "target" : [{
         "code" : "Location.address",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.address-city",
       "target" : [{
         "code" : "Location.address-city",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.address-country",
       "target" : [{
         "code" : "Location.address-country",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.address-postalcode",
       "target" : [{
         "code" : "Location.address-postalcode",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.address-state",
       "target" : [{
         "code" : "Location.address-state",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.address-use",
       "target" : [{
         "code" : "Location.address-use",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.identifier",
       "target" : [{
         "code" : "Location.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.name",
       "target" : [{
         "code" : "Location.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.near",
       "target" : [{
         "code" : "Location.near",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.organization",
       "target" : [{
         "code" : "Location.organization",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.partof",
       "target" : [{
         "code" : "Location.partof",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.status",
       "target" : [{
         "code" : "Location.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Location.type",
       "target" : [{
         "code" : "Location.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Media.created",
       "target" : [{
         "code" : "Media.created",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Media.identifier",
       "target" : [{
         "code" : "Media.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Media.operator",
       "target" : [{
         "code" : "Media.operator",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Media.patient",
       "target" : [{
         "code" : "Media.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Media.subject",
       "target" : [{
         "code" : "Media.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Media.type",
       "target" : [{
         "code" : "Media.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Media.view",
       "target" : [{
         "code" : "Media.view",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Medication.code",
       "target" : [{
         "code" : "Medication.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Medication.form",
       "target" : [{
         "code" : "Medication.form",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Medication.ingredient",
       "target" : [{
         "code" : "Medication.ingredient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Medication.manufacturer",
       "target" : [{
         "code" : "Medication.manufacturer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationAdministration.code",
       "target" : [{
         "code" : "MedicationAdministration.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationAdministration.device",
       "target" : [{
         "code" : "MedicationAdministration.device",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationAdministration.effectivetime",
       "target" : [{
         "code" : "MedicationAdministration.effective-time",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationAdministration.identifier",
       "target" : [{
         "code" : "MedicationAdministration.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationAdministration.medication",
       "target" : [{
         "code" : "MedicationAdministration.medication",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationAdministration.patient",
       "target" : [{
         "code" : "MedicationAdministration.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationAdministration.practitioner",
       "target" : [{
         "code" : "MedicationAdministration.performer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationAdministration.status",
       "target" : [{
         "code" : "MedicationAdministration.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.code",
       "target" : [{
         "code" : "MedicationDispense.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.destination",
       "target" : [{
         "code" : "MedicationDispense.destination",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.identifier",
       "target" : [{
         "code" : "MedicationDispense.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.medication",
       "target" : [{
         "code" : "MedicationDispense.medication",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.patient",
       "target" : [{
         "code" : "MedicationDispense.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.prescription",
       "target" : [{
         "code" : "MedicationDispense.prescription",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.receiver",
       "target" : [{
         "code" : "MedicationDispense.receiver",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.responsibleparty",
       "target" : [{
         "code" : "MedicationDispense.responsibleparty",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.status",
       "target" : [{
         "code" : "MedicationDispense.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.type",
       "target" : [{
         "code" : "MedicationDispense.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.whenhandedover",
       "target" : [{
         "code" : "MedicationDispense.whenhandedover",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationDispense.whenprepared",
       "target" : [{
         "code" : "MedicationDispense.whenprepared",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationOrder.code",
       "target" : [{
         "code" : "MedicationRequest.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationOrder.datewritten",
       "target" : [{
         "code" : "MedicationRequest.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationOrder.encounter",
       "target" : [{
         "code" : "MedicationRequest.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationOrder.identifier",
       "target" : [{
         "code" : "MedicationRequest.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationOrder.medication",
       "target" : [{
         "code" : "MedicationRequest.medication",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationOrder.patient",
       "target" : [{
         "code" : "MedicationRequest.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationOrder.prescriber",
       "target" : [{
         "code" : "MedicationRequest.requester",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationOrder.status",
       "target" : [{
         "code" : "MedicationRequest.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationStatement.code",
       "target" : [{
         "code" : "MedicationStatement.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationStatement.effectivedate",
       "target" : [{
         "code" : "MedicationStatement.effective",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationStatement.identifier",
       "target" : [{
         "code" : "MedicationStatement.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationStatement.medication",
       "target" : [{
         "code" : "MedicationStatement.medication",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationStatement.patient",
       "target" : [{
         "code" : "MedicationStatement.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationStatement.source",
       "target" : [{
         "code" : "MedicationStatement.source",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MedicationStatement.status",
       "target" : [{
         "code" : "MedicationStatement.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.author",
       "target" : [{
         "code" : "MessageHeader.author",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.code",
       "target" : [{
         "code" : "MessageHeader.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.data",
       "target" : [{
         "code" : "MessageHeader.focus",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.destination",
       "target" : [{
         "code" : "MessageHeader.destination",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.destination-uri",
       "target" : [{
         "code" : "MessageHeader.destination-uri",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.enterer",
       "target" : [{
         "code" : "MessageHeader.enterer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.event",
       "target" : [{
         "code" : "MessageHeader.event",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.receiver",
       "target" : [{
         "code" : "MessageHeader.receiver",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.response-id",
       "target" : [{
         "code" : "MessageHeader.response-id",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.responsible",
       "target" : [{
         "code" : "MessageHeader.responsible",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.source",
       "target" : [{
         "code" : "MessageHeader.source",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.source-uri",
       "target" : [{
         "code" : "MessageHeader.source-uri",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "MessageHeader.target",
       "target" : [{
         "code" : "MessageHeader.target",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.contact",
       "target" : [{
         "code" : "NamingSystem.contact",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.context",
       "target" : [{
         "code" : "NamingSystem.context",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.date",
       "target" : [{
         "code" : "NamingSystem.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.id-type",
       "target" : [{
         "code" : "NamingSystem.id-type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.kind",
       "target" : [{
         "code" : "NamingSystem.kind",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.name",
       "target" : [{
         "code" : "NamingSystem.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.period",
       "target" : [{
         "code" : "NamingSystem.period",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.publisher",
       "target" : [{
         "code" : "NamingSystem.publisher",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.responsible",
       "target" : [{
         "code" : "NamingSystem.responsible",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.status",
       "target" : [{
         "code" : "NamingSystem.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.telecom",
       "target" : [{
         "code" : "NamingSystem.telecom",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.type",
       "target" : [{
         "code" : "NamingSystem.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NamingSystem.value",
       "target" : [{
         "code" : "NamingSystem.value",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NutritionOrder.additive",
       "target" : [{
         "code" : "NutritionOrder.additive",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NutritionOrder.datetime",
       "target" : [{
         "code" : "NutritionOrder.datetime",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NutritionOrder.encounter",
       "target" : [{
         "code" : "NutritionOrder.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NutritionOrder.formula",
       "target" : [{
         "code" : "NutritionOrder.formula",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NutritionOrder.identifier",
       "target" : [{
         "code" : "NutritionOrder.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NutritionOrder.oraldiet",
       "target" : [{
         "code" : "NutritionOrder.oraldiet",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NutritionOrder.patient",
       "target" : [{
         "code" : "NutritionOrder.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NutritionOrder.provider",
       "target" : [{
         "code" : "NutritionOrder.provider",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NutritionOrder.status",
       "target" : [{
         "code" : "NutritionOrder.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "NutritionOrder.supplement",
       "target" : [{
         "code" : "NutritionOrder.supplement",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.category",
       "target" : [{
         "code" : "Observation.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.code",
       "target" : [{
         "code" : "Observation.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.code-value-[x]",
       "target" : [{
         "code" : "Observation.code-value-concept",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.component-code",
       "target" : [{
         "code" : "Observation.component-code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.component-code-value-[x]",
       "target" : [{
         "code" : "Observation.component-code-value-concept",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.component-data-absent-reason",
       "target" : [{
         "code" : "Observation.component-data-absent-reason",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.component-value-concept",
       "target" : [{
         "code" : "Observation.component-value-concept",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.component-value-quantity",
       "target" : [{
         "code" : "Observation.component-value-quantity",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.data-absent-reason",
       "target" : [{
         "code" : "Observation.data-absent-reason",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.date",
       "target" : [{
         "code" : "Observation.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.device",
       "target" : [{
         "code" : "Observation.device",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.encounter",
       "target" : [{
         "code" : "Observation.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.identifier",
       "target" : [{
         "code" : "Observation.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.patient",
       "target" : [{
         "code" : "Observation.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.performer",
       "target" : [{
         "code" : "Observation.performer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.specimen",
       "target" : [{
         "code" : "Observation.specimen",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.status",
       "target" : [{
         "code" : "Observation.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.subject",
       "target" : [{
         "code" : "Observation.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.value-concept",
       "target" : [{
         "code" : "Observation.value-concept",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.value-date",
       "target" : [{
         "code" : "Observation.value-date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.value-quantity",
       "target" : [{
         "code" : "Observation.value-quantity",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Observation.value-string",
       "target" : [{
         "code" : "Observation.value-string",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.base",
       "target" : [{
         "code" : "OperationDefinition.base",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.code",
       "target" : [{
         "code" : "OperationDefinition.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.date",
       "target" : [{
         "code" : "OperationDefinition.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.instance",
       "target" : [{
         "code" : "OperationDefinition.instance",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.kind",
       "target" : [{
         "code" : "OperationDefinition.kind",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.name",
       "target" : [{
         "code" : "OperationDefinition.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.profile",
       "target" : [{
         "code" : "OperationDefinition.output-profile",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.publisher",
       "target" : [{
         "code" : "OperationDefinition.publisher",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.status",
       "target" : [{
         "code" : "OperationDefinition.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.system",
       "target" : [{
         "code" : "OperationDefinition.system",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.type",
       "target" : [{
         "code" : "OperationDefinition.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.url",
       "target" : [{
         "code" : "OperationDefinition.url",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "OperationDefinition.version",
       "target" : [{
         "code" : "OperationDefinition.version",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.active",
       "target" : [{
         "code" : "Organization.active",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.address",
       "target" : [{
         "code" : "Organization.address",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.address-city",
       "target" : [{
         "code" : "Organization.address-city",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.address-country",
       "target" : [{
         "code" : "Organization.address-country",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.address-postalcode",
       "target" : [{
         "code" : "Organization.address-postalcode",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.address-state",
       "target" : [{
         "code" : "Organization.address-state",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.address-use",
       "target" : [{
         "code" : "Organization.address-use",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.identifier",
       "target" : [{
         "code" : "Organization.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.name",
       "target" : [{
         "code" : "Organization.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.partof",
       "target" : [{
         "code" : "Organization.partof",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.phonetic",
       "target" : [{
         "code" : "Organization.phonetic",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Organization.type",
       "target" : [{
         "code" : "Organization.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.active",
       "target" : [{
         "code" : "Patient.active",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.address",
       "target" : [{
         "code" : "Patient.address",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.address-city",
       "target" : [{
         "code" : "Patient.address-city",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.address-country",
       "target" : [{
         "code" : "Patient.address-country",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.address-postalcode",
       "target" : [{
         "code" : "Patient.address-postalcode",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.address-state",
       "target" : [{
         "code" : "Patient.address-state",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.address-use",
       "target" : [{
         "code" : "Patient.address-use",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.birthdate",
       "target" : [{
         "code" : "Patient.birthdate",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.careprovider",
       "target" : [{
         "code" : "Patient.general-practitioner",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.deathdate",
       "target" : [{
         "code" : "Patient.death-date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.deceased",
       "target" : [{
         "code" : "Patient.deceased",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.email",
       "target" : [{
         "code" : "Patient.email",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.family",
       "target" : [{
         "code" : "Patient.family",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.gender",
       "target" : [{
         "code" : "Patient.gender",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.given",
       "target" : [{
         "code" : "Patient.given",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.identifier",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.language",
       "target" : [{
         "code" : "Patient.language",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.link",
       "target" : [{
         "code" : "Patient.link",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.name",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.organization",
       "target" : [{
         "code" : "Patient.organization",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.phone",
       "target" : [{
         "code" : "Patient.phone",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.phonetic",
       "target" : [{
         "code" : "Patient.phonetic",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Patient.telecom",
       "target" : [{
         "code" : "Patient.telecom",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "PaymentNotice.identifier",
       "target" : [{
         "code" : "PaymentNotice.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "PaymentReconciliation.identifier",
       "target" : [{
         "code" : "PaymentReconciliation.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.address",
       "target" : [{
         "code" : "Person.address",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.address-city",
       "target" : [{
         "code" : "Person.address-city",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.address-country",
       "target" : [{
         "code" : "Person.address-country",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.address-postalcode",
       "target" : [{
         "code" : "Person.address-postalcode",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.address-state",
       "target" : [{
         "code" : "Person.address-state",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.address-use",
       "target" : [{
         "code" : "Person.address-use",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.birthdate",
       "target" : [{
         "code" : "Person.birthdate",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.email",
       "target" : [{
         "code" : "Person.email",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.gender",
       "target" : [{
         "code" : "Person.gender",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.identifier",
       "target" : [{
         "code" : "Person.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.link",
       "target" : [{
         "code" : "Person.link",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.name",
       "target" : [{
         "code" : "Person.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.organization",
       "target" : [{
         "code" : "Person.organization",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.patient",
       "target" : [{
         "code" : "Person.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.phone",
       "target" : [{
         "code" : "Person.phone",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.phonetic",
       "target" : [{
         "code" : "Person.phonetic",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.practitioner",
       "target" : [{
         "code" : "Person.practitioner",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.relatedperson",
       "target" : [{
         "code" : "Person.relatedperson",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Person.telecom",
       "target" : [{
         "code" : "Person.telecom",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.address",
       "target" : [{
         "code" : "Practitioner.address",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.address-city",
       "target" : [{
         "code" : "Practitioner.address-city",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.address-country",
       "target" : [{
         "code" : "Practitioner.address-country",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.address-postalcode",
       "target" : [{
         "code" : "Practitioner.address-postalcode",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.address-state",
       "target" : [{
         "code" : "Practitioner.address-state",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.address-use",
       "target" : [{
         "code" : "Practitioner.address-use",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.communication",
       "target" : [{
         "code" : "Practitioner.communication",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.email",
       "target" : [{
         "code" : "Practitioner.email",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.family",
       "target" : [{
         "code" : "Practitioner.family",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.gender",
       "target" : [{
         "code" : "Practitioner.gender",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.given",
       "target" : [{
         "code" : "Practitioner.given",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.identifier",
       "target" : [{
         "code" : "Practitioner.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.name",
       "target" : [{
         "code" : "Practitioner.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.phone",
       "target" : [{
         "code" : "Practitioner.phone",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.phonetic",
       "target" : [{
         "code" : "Practitioner.phonetic",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Practitioner.role",
       "target" : [{
         "code" : "Practitioner.telecom",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Procedure.code",
       "target" : [{
         "code" : "Procedure.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Procedure.date",
       "target" : [{
         "code" : "Procedure.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Procedure.encounter",
       "target" : [{
         "code" : "Procedure.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Procedure.identifier",
       "target" : [{
         "code" : "Procedure.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Procedure.location",
       "target" : [{
         "code" : "Procedure.location",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Procedure.patient",
       "target" : [{
         "code" : "Procedure.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Procedure.performer",
       "target" : [{
         "code" : "Procedure.performer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Procedure.subject",
       "target" : [{
         "code" : "Procedure.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Provenance.agent",
       "target" : [{
         "code" : "Provenance.agent",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Provenance.entity",
       "target" : [{
         "code" : "Provenance.entity",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Provenance.location",
       "target" : [{
         "code" : "Provenance.location",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Provenance.patient",
       "target" : [{
         "code" : "Provenance.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Provenance.sigtype",
       "target" : [{
         "code" : "Provenance.signature-type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Provenance.start",
       "target" : [{
         "code" : "Provenance.when",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Provenance.target",
       "target" : [{
         "code" : "Provenance.target",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Questionnaire.code",
       "target" : [{
         "code" : "Questionnaire.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Questionnaire.date",
       "target" : [{
         "code" : "Questionnaire.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Questionnaire.identifier",
       "target" : [{
         "code" : "Questionnaire.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Questionnaire.publisher",
       "target" : [{
         "code" : "Questionnaire.publisher",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Questionnaire.status",
       "target" : [{
         "code" : "Questionnaire.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Questionnaire.title",
       "target" : [{
         "code" : "Questionnaire.title",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Questionnaire.version",
       "target" : [{
         "code" : "Questionnaire.version",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "QuestionnaireResponse.author",
       "target" : [{
         "code" : "QuestionnaireResponse.author",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "QuestionnaireResponse.authored",
       "target" : [{
         "code" : "QuestionnaireResponse.authored",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "QuestionnaireResponse.encounter",
       "target" : [{
         "code" : "QuestionnaireResponse.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "QuestionnaireResponse.patient",
       "target" : [{
         "code" : "QuestionnaireResponse.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "QuestionnaireResponse.questionnaire",
       "target" : [{
         "code" : "QuestionnaireResponse.questionnaire",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "QuestionnaireResponse.source",
       "target" : [{
         "code" : "QuestionnaireResponse.source",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "QuestionnaireResponse.status",
       "target" : [{
         "code" : "QuestionnaireResponse.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "QuestionnaireResponse.subject",
       "target" : [{
         "code" : "QuestionnaireResponse.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.address",
       "target" : [{
         "code" : "RelatedPerson.address",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.address-city",
       "target" : [{
         "code" : "RelatedPerson.address-city",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.address-country",
       "target" : [{
         "code" : "RelatedPerson.address-country",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.address-postalcode",
       "target" : [{
         "code" : "RelatedPerson.address-postalcode",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.address-state",
       "target" : [{
         "code" : "RelatedPerson.address-state",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.address-use",
       "target" : [{
         "code" : "RelatedPerson.address-use",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.birthdate",
       "target" : [{
         "code" : "RelatedPerson.birthdate",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.email",
       "target" : [{
         "code" : "RelatedPerson.email",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.gender",
       "target" : [{
         "code" : "RelatedPerson.gender",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.identifier",
       "target" : [{
         "code" : "RelatedPerson.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.name",
       "target" : [{
         "code" : "RelatedPerson.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.patient",
       "target" : [{
         "code" : "RelatedPerson.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.phone",
       "target" : [{
         "code" : "RelatedPerson.phone",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.phonetic",
       "target" : [{
         "code" : "RelatedPerson.phonetic",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RelatedPerson.telecom",
       "target" : [{
         "code" : "RelatedPerson.telecom",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RiskAssessment.condition",
       "target" : [{
         "code" : "RiskAssessment.condition",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RiskAssessment.date",
       "target" : [{
         "code" : "RiskAssessment.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RiskAssessment.encounter",
       "target" : [{
         "code" : "RiskAssessment.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RiskAssessment.identifier",
       "target" : [{
         "code" : "RiskAssessment.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RiskAssessment.method",
       "target" : [{
         "code" : "RiskAssessment.method",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RiskAssessment.patient",
       "target" : [{
         "code" : "RiskAssessment.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RiskAssessment.performer",
       "target" : [{
         "code" : "RiskAssessment.performer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "RiskAssessment.subject",
       "target" : [{
         "code" : "RiskAssessment.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Schedule.actor",
       "target" : [{
         "code" : "Schedule.actor",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Schedule.date",
       "target" : [{
         "code" : "Schedule.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Schedule.identifier",
       "target" : [{
         "code" : "Schedule.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Schedule.type",
       "target" : [{
         "code" : "Schedule.service-type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SearchParameter.base",
       "target" : [{
         "code" : "SearchParameter.base",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SearchParameter.code",
       "target" : [{
         "code" : "SearchParameter.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SearchParameter.description",
       "target" : [{
         "code" : "SearchParameter.description",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SearchParameter.name",
       "target" : [{
         "code" : "SearchParameter.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SearchParameter.target",
       "target" : [{
         "code" : "SearchParameter.target",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SearchParameter.type",
       "target" : [{
         "code" : "SearchParameter.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SearchParameter.url",
       "target" : [{
         "code" : "SearchParameter.url",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Slot.identifier",
       "target" : [{
         "code" : "Slot.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Slot.schedule",
       "target" : [{
         "code" : "Slot.schedule",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Slot.slot-type",
       "target" : [{
         "code" : "Slot.service-type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Slot.start",
       "target" : [{
         "code" : "Slot.start",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.accession",
       "target" : [{
         "code" : "Specimen.accession",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.bodysite",
       "target" : [{
         "code" : "Specimen.bodysite",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.collected",
       "target" : [{
         "code" : "Specimen.collected",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.collector",
       "target" : [{
         "code" : "Specimen.collector",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.container",
       "target" : [{
         "code" : "Specimen.container",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.container-id",
       "target" : [{
         "code" : "Specimen.container-id",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.identifier",
       "target" : [{
         "code" : "Specimen.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.parent",
       "target" : [{
         "code" : "Specimen.parent",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.patient",
       "target" : [{
         "code" : "Specimen.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.subject",
       "target" : [{
         "code" : "Specimen.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Specimen.type",
       "target" : [{
         "code" : "Specimen.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.abstract",
       "target" : [{
         "code" : "StructureDefinition.abstract",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.base",
       "target" : [{
         "code" : "StructureDefinition.base",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.base-path",
       "target" : [{
         "code" : "StructureDefinition.base-path",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.context",
       "target" : [{
         "code" : "StructureDefinition.context",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.context-type",
       "target" : [{
         "code" : "StructureDefinition.context-type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.date",
       "target" : [{
         "code" : "StructureDefinition.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.description",
       "target" : [{
         "code" : "StructureDefinition.description",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.experimental",
       "target" : [{
         "code" : "StructureDefinition.experimental",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.ext-context",
       "target" : [{
         "code" : "StructureDefinition.ext-context",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.identifier",
       "target" : [{
         "code" : "StructureDefinition.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.kind",
       "target" : [{
         "code" : "StructureDefinition.kind",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.name",
       "target" : [{
         "code" : "StructureDefinition.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.path",
       "target" : [{
         "code" : "StructureDefinition.path",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.publisher",
       "target" : [{
         "code" : "StructureDefinition.publisher",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.status",
       "target" : [{
         "code" : "StructureDefinition.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.type",
       "target" : [{
         "code" : "StructureDefinition.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.url",
       "target" : [{
         "code" : "StructureDefinition.url",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.valueset",
       "target" : [{
         "code" : "StructureDefinition.valueset",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "StructureDefinition.version",
       "target" : [{
         "code" : "StructureDefinition.version",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Subscription.contact",
       "target" : [{
         "code" : "Subscription.contact",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Subscription.criteria",
       "target" : [{
         "code" : "Subscription.criteria",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Subscription.payload",
       "target" : [{
         "code" : "Subscription.payload",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Subscription.status",
       "target" : [{
         "code" : "Subscription.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Subscription.type",
       "target" : [{
         "code" : "Subscription.type",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Subscription.url",
       "target" : [{
         "code" : "Subscription.url",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Substance.category",
       "target" : [{
         "code" : "Substance.category",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Substance.code",
       "target" : [{
         "code" : "Substance.code",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Substance.container-identifier",
       "target" : [{
         "code" : "Substance.container-identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Substance.expiry",
       "target" : [{
         "code" : "Substance.expiry",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Substance.identifier",
       "target" : [{
         "code" : "Substance.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Substance.quantity",
       "target" : [{
         "code" : "Substance.quantity",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "Substance.substance",
       "target" : [{
         "code" : "Substance.substance-reference",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SupplyDelivery.identifier",
       "target" : [{
         "code" : "SupplyDelivery.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SupplyDelivery.patient",
       "target" : [{
         "code" : "SupplyDelivery.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SupplyDelivery.receiver",
       "target" : [{
         "code" : "SupplyDelivery.receiver",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SupplyDelivery.status",
       "target" : [{
         "code" : "SupplyDelivery.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SupplyDelivery.supplier",
       "target" : [{
         "code" : "SupplyDelivery.supplier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SupplyRequest.date",
       "target" : [{
         "code" : "SupplyRequest.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SupplyRequest.identifier",
       "target" : [{
         "code" : "SupplyRequest.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SupplyRequest.source",
       "target" : [{
         "code" : "SupplyRequest.requester",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SupplyRequest.status",
       "target" : [{
         "code" : "SupplyRequest.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "SupplyRequest.supplier",
       "target" : [{
         "code" : "SupplyRequest.supplier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "TestScript.description",
       "target" : [{
         "code" : "TestScript.description",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "TestScript.identifier",
       "target" : [{
         "code" : "TestScript.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "TestScript.name",
       "target" : [{
         "code" : "TestScript.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "TestScript.testscript-capability",
       "target" : [{
         "code" : "TestScript.testscript-capability",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "TestScript.url",
       "target" : [{
         "code" : "TestScript.url",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.context",
       "target" : [{
         "code" : "ValueSet.context",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.date",
       "target" : [{
         "code" : "ValueSet.date",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.description",
       "target" : [{
         "code" : "ValueSet.description",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.expansion",
       "target" : [{
         "code" : "ValueSet.expansion",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.identifier",
       "target" : [{
         "code" : "ValueSet.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.name",
       "target" : [{
         "code" : "ValueSet.name",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.publisher",
       "target" : [{
         "code" : "ValueSet.publisher",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.reference",
       "target" : [{
         "code" : "ValueSet.reference",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.status",
       "target" : [{
         "code" : "ValueSet.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.url",
       "target" : [{
         "code" : "ValueSet.url",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ValueSet.version",
       "target" : [{
         "code" : "ValueSet.version",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "VisionPrescription.datewritten",
       "target" : [{
         "code" : "VisionPrescription.datewritten",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "VisionPrescription.encounter",
       "target" : [{
         "code" : "VisionPrescription.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "VisionPrescription.identifier",
       "target" : [{
         "code" : "VisionPrescription.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "VisionPrescription.patient",
       "target" : [{
         "code" : "VisionPrescription.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "VisionPrescription.prescriber",
       "target" : [{
         "code" : "VisionPrescription.prescriber",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ProcedureRequest.encounter",
       "target" : [{
         "code" : "ServiceRequest.encounter",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ProcedureRequest.identifier",
       "target" : [{
         "code" : "ServiceRequest.identifier",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ProcedureRequest.patient",
       "target" : [{
         "code" : "ServiceRequest.occurrence",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ProcedureRequest.performer",
       "target" : [{
         "code" : "ServiceRequest.performer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ProcedureRequest.subject",
       "target" : [{
         "code" : "ServiceRequest.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       },
       {
         "code" : "ServiceRequest.subject",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ReferralRequest.date",
       "target" : [{
         "code" : "ServiceRequest.authored",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       },
       {
         "code" : "ServiceRequest.authored",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ReferralRequest.patient",
       "target" : [{
         "code" : "ServiceRequest.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       },
       {
         "code" : "ServiceRequest.patient",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ReferralRequest.recipient",
       "target" : [{
         "code" : "ServiceRequest.performer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       },
       {
         "code" : "ServiceRequest.performer",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ReferralRequest.priority",
       "target" : [{
         "code" : "ServiceRequest.priority",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       },
       {
         "code" : "ServiceRequest.priority",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ReferralRequest.requester",
       "target" : [{
         "code" : "ServiceRequest.requester",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       },
       {
         "code" : "ServiceRequest.requester",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ReferralRequest.status",
       "target" : [{
         "code" : "ServiceRequest.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       },
       {
         "code" : "ServiceRequest.status",
-        "equivalence" : "relatedto"
+        "relationship" : "equivalent"
       }]
     }]
   }]

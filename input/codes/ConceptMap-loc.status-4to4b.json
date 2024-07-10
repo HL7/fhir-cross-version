@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "loc.status-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/loc.status-4to4b",
-  "name" : "Location.status4to4b",
+  "name" : "LocationStatus4to4b",
   "title" : "Mapping for Location.status from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Location.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Location#Location.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Location#Location.status",
   "group" : [{

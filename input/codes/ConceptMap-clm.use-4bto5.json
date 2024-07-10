@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "clm.use-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clm.use-4bto5",
-  "name" : "Claim.use4bto5",
+  "name" : "ClaimUse4bto5",
   "title" : "Mapping for Claim.use from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Claim.use from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Claim#Claim.use",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Claim#Claim.use",
   "group" : [{

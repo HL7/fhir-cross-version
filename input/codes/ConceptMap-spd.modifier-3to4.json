@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "spd.modifier-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.modifier-3to4",
-  "name" : "SearchParameter.modifier3to4",
+  "name" : "SearchParameterModifier3to4",
   "title" : "Mapping for SearchParameter.modifier from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for SearchParameter.modifier from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.modifier",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.modifier",
   "group" : [{

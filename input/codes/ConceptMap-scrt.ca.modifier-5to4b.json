@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "scrt.ca.modifier-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/scrt.ca.modifier-5to4b",
-  "name" : "SubscriptionTopic.canFilterBy.modifier5to4b",
+  "name" : "SubscriptionTopicCanFilterByModifier5to4b",
   "title" : "Mapping for SubscriptionTopic.canFilterBy.modifier from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for SubscriptionTopic.canFilterBy.modifier from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionTopic#SubscriptionTopic.canFilterBy.modifier",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic#SubscriptionTopic.canFilterBy.modifier",
   "group" : [{

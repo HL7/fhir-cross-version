@@ -1,36 +1,11 @@
 == Suppressed Messages ==
 
-# We expect several extensions that aren't in shareablevalueset.  So long as the extensions are valid in their location and defined, we're ok
-# (and the validator should catch that)
-This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablecodesystem|5.0.0
-This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|5.0.0
+# Known issues that we plan never to address
+MSG_DRAFT
+MSG_DEPRECATED
+MSG_EXPERIMENTAL
+CONCEPTMAP_GROUP_SOURCE_INCOMPLETE
+CONCEPTMAP_GROUP_TARGET_INCOMPLETE
+CONCEPTMAP_GROUP_SOURCE_SERVER_SIDE
+CONCEPTMAP_GROUP_TARGET_SERVER_SIDE
 
-# can't validate for some value sets
-There was an error expanding the source value set, so this concept map can't be checked: 'There are 16777216 colors, so the full list of colors is not displayed'
-SM_TARGET_TRANSLATE_BINDING_VSE_TARGET
-
-# known references to draft items
-Reference to draft item http://hl7.org/fhir/standards-status|5.1.0-cibuild
-Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
-
-# extensions that really can appear everywhere 
-WARNING: StructureDefinition/artifact-canonicalReference: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/artifact-reference: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/bodySite: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/cqf-calculatedValue: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/cqf-certainty: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/cqf-citation: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/cqf-expression: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/cqf-initialValue: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/cqf-qualityOfEvidence: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/cqf-relativeDateTime: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/cqf-strengthOfRecommendation: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/cqf-targetInvariant: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/data-absent-reason: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/derivation-reference: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/iso21090-nullFlavor: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/narrativeLink: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/originalText: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/rendering-style: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/rendering-styleSensitive: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition/satisfies-requirement: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "loc.mode-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/loc.mode-4to3",
-  "name" : "Location.mode4to3",
+  "name" : "LocationMode4to3",
   "title" : "Mapping for Location.mode from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Location.mode from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Location#Location.mode",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Location#Location.mode",
   "group" : [{

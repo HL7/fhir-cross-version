@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prp.pr.type-prp.no.type-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prp.pr.type-prp.no.type-3to2",
-  "name" : "ProcessResponse.processNote.typeProcessResponse.notes.type3to2",
+  "name" : "ProcessResponseProcessNoteTypeProcessResponseNotesType3to2",
   "title" : "Mapping for ProcessResponse.processNote.type/ProcessResponse.notes.type from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ProcessResponse.processNote.type/ProcessResponse.notes.type from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcessResponse#ProcessResponse.processNote.type",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ProcessResponse#ProcessResponse.notes.type",
   "group" : [{

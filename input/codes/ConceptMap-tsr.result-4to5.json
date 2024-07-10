@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tsr.result-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tsr.result-4to5",
-  "name" : "TestReport.result4to5",
+  "name" : "TestReportResult4to5",
   "title" : "Mapping for TestReport.result from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for TestReport.result from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.result",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestReport#TestReport.result",
   "group" : [{

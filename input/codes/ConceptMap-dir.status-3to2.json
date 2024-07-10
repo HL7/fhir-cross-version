@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dir.status-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dir.status-3to2",
-  "name" : "DiagnosticReport.status3to2",
+  "name" : "DiagnosticReportStatus3to2",
   "title" : "Mapping for DiagnosticReport.status from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for DiagnosticReport.status from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DiagnosticReport#DiagnosticReport.status",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DiagnosticReport#DiagnosticReport.status",
   "group" : [{

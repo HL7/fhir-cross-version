@@ -17,8 +17,8 @@ group SearchParameter(source src : SearchParameter, target tgt : SearchParameter
   src.experimental -> tgt.experimental "SearchParameter-experimental";
   src.publisher -> tgt.publisher "SearchParameter-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "contact-name";
-    vs0.telecom -> vt0.telecom "contact-telecom";
+    vs0.name -> vt0.name "Contract_name";
+    vs0.telecom -> vt0.telecom "Contract_telecom";
   } "SearchParameter-contact";
   src.date -> tgt.date "SearchParameter-date";
   src.purpose -> tgt.requirements "SearchParameter-requirements";

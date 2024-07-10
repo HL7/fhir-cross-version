@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "exp.language-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/exp.language-4to4b",
-  "name" : "Expression.language4to4b",
+  "name" : "ExpressionLanguage4to4b",
   "title" : "Mapping for Expression.language from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Expression.language from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Expression#Expression.language",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Expression#Expression.language",
   "group" : [{

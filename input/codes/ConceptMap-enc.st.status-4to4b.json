@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "enc.st.status-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enc.st.status-4to4b",
-  "name" : "Encounter.statusHistory.status4to4b",
+  "name" : "EncounterStatusHistoryStatus4to4b",
   "title" : "Mapping for Encounter.statusHistory.status from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Encounter.statusHistory.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Encounter#Encounter.statusHistory.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Encounter#Encounter.statusHistory.status",
   "group" : [{

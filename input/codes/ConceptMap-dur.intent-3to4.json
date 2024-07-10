@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dur.intent-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dur.intent-3to4",
-  "name" : "DeviceRequest.intent3to4",
+  "name" : "DeviceRequestIntent3to4",
   "title" : "Mapping for DeviceRequest.intent from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for DeviceRequest.intent from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceRequest#DeviceRequest.intent",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DeviceRequest#DeviceRequest.intent",
   "group" : [{

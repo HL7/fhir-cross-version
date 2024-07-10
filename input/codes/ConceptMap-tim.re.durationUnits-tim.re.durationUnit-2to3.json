@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tim.re.durationUnits-tim.re.durationUnit-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.durationUnits-tim.re.durationUnit-2to3",
-  "name" : "Timing.repeat.durationUnitsTiming.repeat.durationUnitr2to3",
+  "name" : "TimingRepeatDurationUnitsTimingRepeatDurationUnitr2to3",
   "title" : "Mapping for Timing.repeat.durationUnits/Timing.repeat.durationUnit from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Timing.repeat.durationUnits/Timing.repeat.durationUnit from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Timing#Timing.repeat.durationUnits",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.durationUnit",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "imm.pe.function-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/imm.pe.function-4to4b",
-  "name" : "Immunization.performer.functionr4to4b",
+  "name" : "ImmunizationPerformerFunctionr4to4b",
   "title" : "Mapping for Immunization.performer.function from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Immunization.performer.function from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Immunization#Immunization.performer.function",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Immunization#Immunization.performer.function",
   "group" : [{

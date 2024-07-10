@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "act.status-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/act.status-4bto5",
-  "name" : "Account.status4bto5",
+  "name" : "AccountStatus4bto5",
   "title" : "Mapping for Account.status from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Account.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Account#Account.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Account#Account.status",
   "group" : [{

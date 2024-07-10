@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mad.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mad.status-2to3",
-  "name" : "MedicationAdministration.status2to3",
+  "name" : "MedicationAdministrationStatus2to3",
   "title" : "Mapping for MedicationAdministration.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for MedicationAdministration.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/MedicationAdministration#MedicationAdministration.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MedicationAdministration#MedicationAdministration.status",
   "group" : [{

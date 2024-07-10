@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "enc.pa.type-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enc.pa.type-2to3",
-  "name" : "Encounter.participant.typer2to3",
+  "name" : "EncounterParticipantTyper2to3",
   "title" : "Mapping for Encounter.participant.type from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Encounter.participant.type from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Encounter#Encounter.participant.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Encounter#Encounter.participant.type",
   "group" : [{

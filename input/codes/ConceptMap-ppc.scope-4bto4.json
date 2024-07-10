@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ppc.scope-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.scope-4bto4",
-  "name" : "Consent.scope4bto4",
+  "name" : "ConsentScope4bto4",
   "title" : "Mapping for Consent.scope from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Consent.scope from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.scope",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.scope",
   "group" : [{

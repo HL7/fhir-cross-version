@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "rfr.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rfr.status-2to3",
-  "name" : "rfr.status-2to3",
+  "name" : "ReferralRequestStatus2to3",
   "title" : "Mapping for ReferralRequest.status from R2 to R3",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for ReferralRequest.status from R2 to R3",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ReferralRequest#ReferralRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ReferralRequest#ReferralRequest.status",
   "group" : [{

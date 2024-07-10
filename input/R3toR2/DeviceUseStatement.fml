@@ -9,15 +9,15 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/DeviceUseStatement" alias Devi
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group DeviceUseStatement(source src : DeviceUseStatement, target tgt : DeviceUseStatementR2) extends DomainResource <<type+>> {
-  src.bodySite : CodeableConcept as vs -> tgt.bodySite = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "DeviceUseStatement-bodySite-CodeableConcept";
-  src.whenUsed -> tgt.whenUsed "DeviceUseStatement-whenUsed";
-  src.device -> tgt.device "DeviceUseStatement-device";
-  src.identifier -> tgt.identifier "DeviceUseStatement-identifier";
-  src.indication -> tgt.indication "DeviceUseStatement-indication";
-  src.note as n then dusNote(n, tgt) "DeviceUseStatement-notes";
-  src.recordedOn -> tgt.recordedOn "DeviceUseStatement-recordedOn";
-  src.subject -> tgt.subject "DeviceUseStatement-subject";
-  src.timing -> tgt.timing "DeviceUseStatement-timing";
+  src.bodySite : CodeableConcept as vs -> tgt.bodySite = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "DeviceUseStatement_bodySite-CodeableConcept";
+  src.whenUsed -> tgt.whenUsed "DeviceUseStatement_whenUsed";
+  src.device -> tgt.device "DeviceUseStatement_device";
+  src.identifier -> tgt.identifier "DeviceUseStatement_identifier";
+  src.indication -> tgt.indication "DeviceUseStatement_indication";
+  src.note as n then dusNote(n, tgt) "DeviceUseStatement_notes";
+  src.recordedOn -> tgt.recordedOn "DeviceUseStatement_recordedOn";
+  src.subject -> tgt.subject "DeviceUseStatement_subject";
+  src.timing -> tgt.timing "DeviceUseStatement_timing";
 }
 
 group dusNote(source src, target tgt) extends BackboneElement {

@@ -9,16 +9,16 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric" alias DeviceMetr
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group DeviceMetric(source src : DeviceMetricR2, target tgt : DeviceMetric) extends DomainResource <<type+>> {
-  src.type -> tgt.type "DeviceMetric-type";
-  src.identifier -> tgt.identifier "DeviceMetric-identifier";
-  src.unit -> tgt.unit "DeviceMetric-unit";
-  src.source -> tgt.source "DeviceMetric-source";
-  src.parent -> tgt.parent "DeviceMetric-parent";
-  src.operationalStatus -> tgt.operationalStatus "DeviceMetric-operationalStatus";
-  src.color -> tgt.color "DeviceMetric-color";
-  src.category -> tgt.category "DeviceMetric-category";
-  src.measurementPeriod -> tgt.measurementPeriod "DeviceMetric-measurementPeriod";
-  src.calibration as vs0 -> tgt.calibration as vt0 then dvmCalibration(vs0, vt0) "DeviceMetric-calibration";
+  src.type -> tgt.type "DeviceMetric_type";
+  src.identifier -> tgt.identifier "DeviceMetric_identifier";
+  src.unit -> tgt.unit "DeviceMetric_unit";
+  src.source -> tgt.source "DeviceMetric_source";
+  src.parent -> tgt.parent "DeviceMetric_parent";
+  src.operationalStatus -> tgt.operationalStatus "DeviceMetric_operationalStatus";
+  src.color -> tgt.color "DeviceMetric_color";
+  src.category -> tgt.category "DeviceMetric_category";
+  src.measurementPeriod -> tgt.measurementPeriod "DeviceMetric_measurementPeriod";
+  src.calibration as vs0 -> tgt.calibration as vt0 then dvmCalibration(vs0, vt0) "DeviceMetric_calibration";
 }
 
 group dvmCalibration(source src, target tgt) extends BackboneElement {

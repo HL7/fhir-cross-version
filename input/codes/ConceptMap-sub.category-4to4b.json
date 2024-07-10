@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sub.category-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sub.category-4to4b",
-  "name" : "Substance.categoryr4to4b",
+  "name" : "SubstanceCategoryr4to4b",
   "title" : "Mapping for Substance.category from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Substance.category from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Substance#Substance.category",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Substance#Substance.category",
   "group" : [{

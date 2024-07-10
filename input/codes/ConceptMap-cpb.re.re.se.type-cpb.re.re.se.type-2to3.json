@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.re.re.se.type-cpb.re.re.se.type-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.se.type-cpb.re.re.se.type-2to3",
-  "name" : "Conformance.rest.resource.searchParam.typeCapabilityStatement.rest.resource.searchParam.type2to3",
+  "name" : "ConformanceRestResourceSearchParamTypeCapabilityStatementRestResourceSearchParamType2to3",
   "title" : "Mapping for Conformance.rest.resource.searchParam.type/CapabilityStatement.rest.resource.searchParam.type from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Conformance.rest.resource.searchParam.type/CapabilityStatement.rest.resource.searchParam.type from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.resource.searchParam.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.searchParam.type",
   "group" : [{

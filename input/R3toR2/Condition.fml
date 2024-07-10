@@ -38,4 +38,3 @@ group cndEvidence(source src : ConditionR2, target tgt : Condition) extends Back
   src.code -> tgt.code "evidence-code";
   src.detail -> tgt.detail "evidence-detail";
 }
-

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "vrs.status-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/vrs.status-5to4",
-  "name" : "VerificationResult.status5to4",
+  "name" : "VerificationResultStatus5to4",
   "title" : "Mapping for VerificationResult.status from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for VerificationResult.status from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/VerificationResult#VerificationResult.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/VerificationResult#VerificationResult.status",
   "group" : [{

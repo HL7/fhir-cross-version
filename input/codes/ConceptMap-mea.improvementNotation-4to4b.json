@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mea.improvementNotation-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.improvementNotation-4to4b",
-  "name" : "Measure.improvementNotation4to4b",
+  "name" : "MeasureImprovementNotation4to4b",
   "title" : "Mapping for Measure.improvementNotation from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Measure.improvementNotation from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.improvementNotation",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.improvementNotation",
   "group" : [{

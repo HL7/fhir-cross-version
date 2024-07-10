@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mkn.status-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mkn.status-4to5",
-  "name" : "MedicationKnowledge.status4to5",
+  "name" : "MedicationKnowledgeStatus4to5",
   "title" : "Mapping for MedicationKnowledge.status from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for MedicationKnowledge.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationKnowledge#MedicationKnowledge.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MedicationKnowledge#MedicationKnowledge.status",
   "group" : [{

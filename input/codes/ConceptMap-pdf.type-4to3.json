@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pdf.type-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.type-4to3",
-  "name" : "PlanDefinition.type4to3",
+  "name" : "PlanDefinitionType4to3",
   "title" : "Mapping for PlanDefinition.type from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for PlanDefinition.type from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.type",
   "group" : [{

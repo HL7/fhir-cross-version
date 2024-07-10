@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "adf.intent-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/adf.intent-4to5",
-  "name" : "ActivityDefinition.intent4to5",
+  "name" : "ActivityDefinitionIntent4to5",
   "title" : "Mapping for ActivityDefinition.intent from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ActivityDefinition.intent from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ActivityDefinition#ActivityDefinition.intent",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ActivityDefinition#ActivityDefinition.intent",
   "group" : [{

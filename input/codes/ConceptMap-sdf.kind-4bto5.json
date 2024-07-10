@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sdf.kind-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.kind-4bto5",
-  "name" : "StructureDefinition.kind4bto5",
+  "name" : "StructureDefinitionKind4bto5",
   "title" : "Mapping for StructureDefinition.kind from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for StructureDefinition.kind from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition#StructureDefinition.kind",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition#StructureDefinition.kind",
   "group" : [{

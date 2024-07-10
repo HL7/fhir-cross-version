@@ -52,4 +52,3 @@ group medSubstitution(source src, target tgt) extends BackboneElement {
 group medRequestor(source src, target tgt) {
   src.agent as sa then Reference(sa, tgt) "MedicationOrder-prescriber2";
 }
-

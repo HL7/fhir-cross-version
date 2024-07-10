@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mrp.status-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.status-4bto5",
-  "name" : "MeasureReport.status4bto5",
+  "name" : "MeasureReportStatus4bto5",
   "title" : "Mapping for MeasureReport.status from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for MeasureReport.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MeasureReport#MeasureReport.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MeasureReport#MeasureReport.status",
   "group" : [{

@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "cli.status-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cli.status-3to2",
-  "name" : "cli.status-3to2",
+  "name" : "ClinicalImpressionStatus3to2",
   "title" : "Mapping for ClinicalImpression.status from R3 to R2",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for ClinicalImpression.status from R3 to R2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ClinicalImpression#ClinicalImpression.status",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ClinicalImpression#ClinicalImpression.status",
   "group" : [{

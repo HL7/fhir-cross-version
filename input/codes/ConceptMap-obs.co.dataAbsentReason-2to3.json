@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "obs.co.dataAbsentReason-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obs.co.dataAbsentReason-2to3",
-  "name" : "Observation.component.dataAbsentReason2to3",
+  "name" : "ObservationComponentDataAbsentReason2to3",
   "title" : "Mapping for Observation.component.dataAbsentReason from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Observation.component.dataAbsentReason from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Observation#Observation.component.dataAbsentReason",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.component.dataAbsentReason",
   "group" : [{

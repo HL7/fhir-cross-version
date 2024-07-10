@@ -9,26 +9,26 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/DocumentManifest" alias Docume
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group DocumentManifest(source src : DocumentManifestR2, target tgt : DocumentManifest) extends DomainResource <<type+>> {
-  src.masterIdentifier -> tgt.masterIdentifier "DocumentManifest-masterIdentifier";
-  src.identifier -> tgt.identifier "DocumentManifest-identifier";
-  src.subject -> tgt.subject "DocumentManifest-subject";
-  src.recipient -> tgt.recipient "DocumentManifest-recipient";
-  src.type -> tgt.type "DocumentManifest-type";
-  src.author -> tgt.author "DocumentManifest-author";
-  src.created -> tgt.created "DocumentManifest-created";
-  src.source -> tgt.source "DocumentManifest-source";
-  src.status -> tgt.status "DocumentManifest-status";
-  src.description -> tgt.description "DocumentManifest-description";
-  src.content as s -> tgt.content as vt0 then dmContent(s, vt0) "DocumentManifest-content";
-  src.related as s -> tgt.related as vt0 then dmRelated(s, vt0) "DocumentManifest-related";
+  src.masterIdentifier -> tgt.masterIdentifier "DocumentManifest_masterIdentifier";
+  src.identifier -> tgt.identifier "DocumentManifest_identifier";
+  src.subject -> tgt.subject "DocumentManifest_subject";
+  src.recipient -> tgt.recipient "DocumentManifest_recipient";
+  src.type -> tgt.type "DocumentManifest_type";
+  src.author -> tgt.author "DocumentManifest_author";
+  src.created -> tgt.created "DocumentManifest_created";
+  src.source -> tgt.source "DocumentManifest_source";
+  src.status -> tgt.status "DocumentManifest_status";
+  src.description -> tgt.description "DocumentManifest_description";
+  src.content as s -> tgt.content as vt0 then dmContent(s, vt0) "DocumentManifest_content";
+  src.related as s -> tgt.related as vt0 then dmRelated(s, vt0) "DocumentManifest_related";
 }
 
 group dmContent(source src, target tgt) extends BackboneElement {
-  src.p -> tgt.p "content-p-Attachment";
+  src.p -> tgt.p "content_p-Attachment";
 }
 
 group dmRelated(source src, target tgt) extends BackboneElement {
-  src.identifier -> tgt.identifier "related-identifier";
-  src.ref -> tgt.ref "related-ref";
+  src.identifier -> tgt.identifier "related_identifier";
+  src.ref -> tgt.ref "related_ref";
 }
 

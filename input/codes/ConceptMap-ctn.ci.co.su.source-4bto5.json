@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ctn.ci.co.su.source-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.co.su.source-4bto5",
-  "name" : "Citation.citedArtifact.contributorship.summary.source4bto5",
+  "name" : "CitationCitedArtifactContributorshipSummarySource4bto5",
   "title" : "Mapping for Citation.citedArtifact.contributorship.summary.source from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Citation.citedArtifact.contributorship.summary.source from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.contributorship.summary.source",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.contributorship.summary.source",
   "group" : [{

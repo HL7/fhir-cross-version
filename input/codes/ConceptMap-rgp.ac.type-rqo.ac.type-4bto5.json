@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rgp.ac.type-rqo.ac.type-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.type-rqo.ac.type-4bto5",
-  "name" : "RequestGroup.action.typeRequestOrchestration.action.typer4bto5",
+  "name" : "RequestGroupActionTypeRequestOrchestrationActionTyper4bto5",
   "title" : "Mapping for RequestGroup.action.type/RequestOrchestration.action.type from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for RequestGroup.action.type/RequestOrchestration.action.type from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.type",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.type",
   "group" : [{

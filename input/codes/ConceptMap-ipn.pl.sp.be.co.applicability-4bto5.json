@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ipn.pl.sp.be.co.applicability-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ipn.pl.sp.be.co.applicability-4bto5",
-  "name" : "InsurancePlan.plan.specificCost.benefit.cost.applicabilityr4bto5",
+  "name" : "InsurancePlanPlanSpecificCostBenefitCostApplicabilityr4bto5",
   "title" : "Mapping for InsurancePlan.plan.specificCost.benefit.cost.applicability from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for InsurancePlan.plan.specificCost.benefit.cost.applicability from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/InsurancePlan#InsurancePlan.plan.specificCost.benefit.cost.applicability",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/InsurancePlan#InsurancePlan.plan.specificCost.benefit.cost.applicability",
   "group" : [{

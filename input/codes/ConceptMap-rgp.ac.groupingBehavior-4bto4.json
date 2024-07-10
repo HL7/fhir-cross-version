@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rgp.ac.groupingBehavior-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.groupingBehavior-4bto4",
-  "name" : "RequestGroup.action.groupingBehavior4bto4",
+  "name" : "RequestGroupActionGroupingBehavior4bto4",
   "title" : "Mapping for RequestGroup.action.groupingBehavior from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for RequestGroup.action.groupingBehavior from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.groupingBehavior",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.groupingBehavior",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "meta.security-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/meta.security-3to4",
-  "name" : "Meta.securityr3to4",
+  "name" : "MetaSecurityr3to4",
   "title" : "Mapping for Meta.security from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Meta.security from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Meta#Meta.security",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Meta#Meta.security",
   "group" : [{

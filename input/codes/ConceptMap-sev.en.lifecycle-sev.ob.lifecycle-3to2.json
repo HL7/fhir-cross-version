@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.en.lifecycle-sev.ob.lifecycle-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.en.lifecycle-sev.ob.lifecycle-3to2",
-  "name" : "AuditEvent.entity.lifecycleAuditEvent.object.lifecycler3to2",
+  "name" : "AuditEventEntityLifecycleAuditEventObjectLifecycler3to2",
   "title" : "Mapping for AuditEvent.entity.lifecycle/AuditEvent.object.lifecycle from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.entity.lifecycle/AuditEvent.object.lifecycle from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.entity.lifecycle",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.object.lifecycle",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "smp.st.mode-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/smp.st.mode-4to4b",
-  "name" : "StructureMap.structure.mode4to4b",
+  "name" : "StructureMapStructureMode4to4b",
   "title" : "Mapping for StructureMap.structure.mode from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for StructureMap.structure.mode from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.structure.mode",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.structure.mode",
   "group" : [{

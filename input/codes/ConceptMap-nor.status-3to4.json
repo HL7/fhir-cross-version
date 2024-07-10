@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "nor.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/nor.status-3to4",
-  "name" : "NutritionOrder.status3to4",
+  "name" : "NutritionOrderStatus3to4",
   "title" : "Mapping for NutritionOrder.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for NutritionOrder.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/NutritionOrder#NutritionOrder.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/NutritionOrder#NutritionOrder.status",
   "group" : [{

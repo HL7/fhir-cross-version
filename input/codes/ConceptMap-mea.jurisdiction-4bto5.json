@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mea.jurisdiction-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.jurisdiction-4bto5",
-  "name" : "Measure.jurisdictionr4bto5",
+  "name" : "MeasureJurisdictionr4bto5",
   "title" : "Mapping for Measure.jurisdiction from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Measure.jurisdiction from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Measure#Measure.jurisdiction",
   "group" : [{

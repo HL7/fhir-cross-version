@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dev.na.type-dev.de.type-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dev.na.type-dev.de.type-5to4b",
-  "name" : "Device.name.typeDevice.deviceName.type5to4b",
+  "name" : "DeviceNameTypeDeviceDeviceNameType5to4b",
   "title" : "Mapping for Device.name.type/Device.deviceName.type from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Device.name.type/Device.deviceName.type from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Device#Device.name.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Device#Device.deviceName.type",
   "group" : [{

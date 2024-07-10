@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "inv.status-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/inv.status-4bto5",
-  "name" : "Invoice.status4bto5",
+  "name" : "InvoiceStatus4bto5",
   "title" : "Mapping for Invoice.status from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Invoice.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Invoice#Invoice.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Invoice#Invoice.status",
   "group" : [{

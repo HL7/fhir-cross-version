@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dcr.docStatus-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.docStatus-4to5",
-  "name" : "DocumentReference.docStatus4to5",
+  "name" : "DocumentReferenceDocStatus4to5",
   "title" : "Mapping for DocumentReference.docStatus from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for DocumentReference.docStatus from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.docStatus",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DocumentReference#DocumentReference.docStatus",
   "group" : [{
@@ -17,11 +19,13 @@
       },
       {
         "code" : "appended",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "corrected",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {
@@ -39,11 +43,13 @@
       },
       {
         "code" : "registered",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "partial",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pcrq.status-dgo.status-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pcrq.status-dgo.status-3to2",
-  "name" : "ProcedureRequest.statusDiagnosticOrder.status3to2",
+  "name" : "ProcedureRequestStatusDiagnosticOrderStatus3to2",
   "title" : "Mapping for ProcedureRequest.status/DiagnosticOrder.status from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ProcedureRequest.status/DiagnosticOrder.status from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DiagnosticOrder#DiagnosticOrder.status",
   "group" : [{
@@ -13,23 +15,28 @@
       "code" : "active",
       "target" : [{
         "code" : "accepted",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "in-progress",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "received",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "requested",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "review",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {
@@ -40,7 +47,8 @@
       },
       {
         "code" : "rejected",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {
@@ -58,11 +66,13 @@
       },
       {
         "code" : "planned",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "proposed",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

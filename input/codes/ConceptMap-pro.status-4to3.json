@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "pro.status-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pro.status-4to3",
-  "name" : "pro.status-4to3",
+  "name" : "ProcedureStatus4to3",
   "title" : "Mapping for Procedure.status from R4 to R3",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for Procedure.status from R4 to R3",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Procedure#Procedure.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Procedure#Procedure.status",
   "group" : [{

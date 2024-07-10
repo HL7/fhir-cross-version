@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dcr.docStatus-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.docStatus-2to3",
-  "name" : "DocumentReference.docStatus2to3",
+  "name" : "DocumentReferenceDocStatus2to3",
   "title" : "Mapping for DocumentReference.docStatus from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for DocumentReference.docStatus from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DocumentReference#DocumentReference.docStatus",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DocumentReference#DocumentReference.docStatus",
   "group" : [{

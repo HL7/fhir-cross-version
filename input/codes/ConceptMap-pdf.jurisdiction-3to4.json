@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pdf.jurisdiction-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.jurisdiction-3to4",
-  "name" : "PlanDefinition.jurisdictionr3to4",
+  "name" : "PlanDefinitionJurisdictionr3to4",
   "title" : "Mapping for PlanDefinition.jurisdiction from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for PlanDefinition.jurisdiction from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.jurisdiction",
   "group" : [{

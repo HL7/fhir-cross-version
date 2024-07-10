@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "org.co.purpose-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/org.co.purpose-4bto4",
-  "name" : "Organization.contact.purpose4bto4",
+  "name" : "OrganizationContactPurpose4bto4",
   "title" : "Mapping for Organization.contact.purpose from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Organization.contact.purpose from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Organization#Organization.contact.purpose",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Organization#Organization.contact.purpose",
   "group" : [{

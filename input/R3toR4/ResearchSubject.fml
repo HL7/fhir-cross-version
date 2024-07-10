@@ -18,4 +18,3 @@ group ResearchSubject(source src : ResearchSubjectR3, target tgt : ResearchSubje
   src.actualArm -> tgt.actualArm;
   src.consent -> tgt.consent;
 }
-

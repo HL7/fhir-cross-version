@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rfr.priority-srq.priority-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rfr.priority-srq.priority-3to4",
-  "name" : "ReferralRequest.priorityServiceRequest.priority3to4",
+  "name" : "ReferralRequestPriorityServiceRequestPriority3to4",
   "title" : "Mapping for ReferralRequest.priority/ServiceRequest.priority from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ReferralRequest.priority/ServiceRequest.priority from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ReferralRequest#ReferralRequest.priority",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ServiceRequest#ServiceRequest.priority",
   "group" : [{

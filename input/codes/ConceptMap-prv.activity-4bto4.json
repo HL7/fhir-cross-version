@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prv.activity-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prv.activity-4bto4",
-  "name" : "Provenance.activityr4bto4",
+  "name" : "ProvenanceActivityr4bto4",
   "title" : "Mapping for Provenance.activity from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Provenance.activity from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Provenance#Provenance.activity",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Provenance#Provenance.activity",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rgp.status-rqo.status-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.status-rqo.status-4to5",
-  "name" : "RequestGroup.statusRequestOrchestration.status4to5",
+  "name" : "RequestGroupStatusRequestOrchestrationStatus4to5",
   "title" : "Mapping for RequestGroup.status/RequestOrchestration.status from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for RequestGroup.status/RequestOrchestration.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.status",
   "group" : [{

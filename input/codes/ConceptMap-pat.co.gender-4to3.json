@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pat.co.gender-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pat.co.gender-4to3",
-  "name" : "Patient.contact.gender4to3",
+  "name" : "PatientContactGender4to3",
   "title" : "Mapping for Patient.contact.gender from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Patient.contact.gender from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Patient#Patient.contact.gender",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.contact.gender",
   "group" : [{

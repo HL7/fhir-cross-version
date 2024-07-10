@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tsr.se.ac.op.result-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tsr.se.ac.op.result-4to3",
-  "name" : "TestReport.setup.action.operation.result4to3",
+  "name" : "TestReportSetupActionOperationResult4to3",
   "title" : "Mapping for TestReport.setup.action.operation.result from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for TestReport.setup.action.operation.result from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.setup.action.operation.result",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/TestReport#TestReport.setup.action.operation.result",
   "group" : [{

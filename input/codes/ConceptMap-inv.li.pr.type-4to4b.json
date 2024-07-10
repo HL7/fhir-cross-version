@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "inv.li.pr.type-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/inv.li.pr.type-4to4b",
-  "name" : "Invoice.lineItem.priceComponent.type4to4b",
+  "name" : "InvoiceLineItemPriceComponentType4to4b",
   "title" : "Mapping for Invoice.lineItem.priceComponent.type from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Invoice.lineItem.priceComponent.type from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Invoice#Invoice.lineItem.priceComponent.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Invoice#Invoice.lineItem.priceComponent.type",
   "group" : [{

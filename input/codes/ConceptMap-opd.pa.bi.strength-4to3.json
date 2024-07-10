@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "opd.pa.bi.strength-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.bi.strength-4to3",
-  "name" : "OperationDefinition.parameter.binding.strength4to3",
+  "name" : "OperationDefinitionParameterBindingStrength4to3",
   "title" : "Mapping for OperationDefinition.parameter.binding.strength from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for OperationDefinition.parameter.binding.strength from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.binding.strength",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.binding.strength",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ig.de.pa.code-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ig.de.pa.code-4to5",
-  "name" : "ImplementationGuide.definition.parameter.code4to5",
+  "name" : "ImplementationGuideDefinitionParameterCode4to5",
   "title" : "Mapping for ImplementationGuide.definition.parameter.code from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ImplementationGuide.definition.parameter.code from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ImplementationGuide#ImplementationGuide.definition.parameter.code",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ImplementationGuide#ImplementationGuide.definition.parameter.code",
   "group" : [{

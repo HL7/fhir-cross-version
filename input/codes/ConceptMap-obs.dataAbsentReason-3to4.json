@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "obs.dataAbsentReason-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obs.dataAbsentReason-3to4",
-  "name" : "Observation.dataAbsentReason3to4",
+  "name" : "ObservationDataAbsentReason3to4",
   "title" : "Mapping for Observation.dataAbsentReason from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Observation.dataAbsentReason from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.dataAbsentReason",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Observation#Observation.dataAbsentReason",
   "group" : [{
@@ -45,7 +47,8 @@
       "code" : "NaN",
       "target" : [{
         "code" : "negative-infinity",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "not-a-number",
@@ -53,7 +56,8 @@
       },
       {
         "code" : "positive-infinity",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

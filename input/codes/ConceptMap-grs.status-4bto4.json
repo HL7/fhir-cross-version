@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "grs.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/grs.status-4bto4",
-  "name" : "GuidanceResponse.status4bto4",
+  "name" : "GuidanceResponseStatus4bto4",
   "title" : "Mapping for GuidanceResponse.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for GuidanceResponse.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/GuidanceResponse#GuidanceResponse.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/GuidanceResponse#GuidanceResponse.status",
   "group" : [{

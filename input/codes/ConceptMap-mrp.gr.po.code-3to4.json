@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mrp.gr.po.code-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.gr.po.code-3to4",
-  "name" : "MeasureReport.group.population.code3to4",
+  "name" : "MeasureReportGroupPopulationCode3to4",
   "title" : "Mapping for MeasureReport.group.population.code from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for MeasureReport.group.population.code from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MeasureReport#MeasureReport.group.population.code",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MeasureReport#MeasureReport.group.population.code",
   "group" : [{

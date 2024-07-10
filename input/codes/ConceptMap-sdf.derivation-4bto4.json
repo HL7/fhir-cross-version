@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sdf.derivation-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.derivation-4bto4",
-  "name" : "StructureDefinition.derivation4bto4",
+  "name" : "StructureDefinitionDerivation4bto4",
   "title" : "Mapping for StructureDefinition.derivation from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for StructureDefinition.derivation from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition#StructureDefinition.derivation",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.derivation",
   "group" : [{

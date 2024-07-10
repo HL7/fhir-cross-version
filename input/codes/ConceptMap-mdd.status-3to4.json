@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mdd.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mdd.status-3to4",
-  "name" : "MedicationDispense.status3to4",
+  "name" : "MedicationDispenseStatus3to4",
   "title" : "Mapping for MedicationDispense.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for MedicationDispense.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MedicationDispense#MedicationDispense.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MedicationDispense#MedicationDispense.status",
   "group" : [{
@@ -17,11 +19,13 @@
       },
       {
         "code" : "cancelled",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "declined",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

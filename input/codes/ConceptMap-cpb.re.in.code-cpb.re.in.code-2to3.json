@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.re.in.code-cpb.re.in.code-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.in.code-cpb.re.in.code-2to3",
-  "name" : "Conformance.rest.interaction.codeCapabilityStatement.rest.interaction.code2to3",
+  "name" : "ConformanceRestInteractionCodeCapabilityStatementRestInteractionCode2to3",
   "title" : "Mapping for Conformance.rest.interaction.code/CapabilityStatement.rest.interaction.code from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Conformance.rest.interaction.code/CapabilityStatement.rest.interaction.code from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.interaction.code",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.interaction.code",
   "group" : [{

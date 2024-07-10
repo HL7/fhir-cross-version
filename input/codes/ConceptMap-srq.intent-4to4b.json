@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "srq.intent-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/srq.intent-4to4b",
-  "name" : "ServiceRequest.intent4to4b",
+  "name" : "ServiceRequestIntent4to4b",
   "title" : "Mapping for ServiceRequest.intent from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ServiceRequest.intent from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ServiceRequest#ServiceRequest.intent",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ServiceRequest#ServiceRequest.intent",
   "group" : [{

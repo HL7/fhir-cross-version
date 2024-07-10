@@ -1,6 +1,6 @@
 /// url = "http://hl7.org/fhir/uv/xver/StructureMap/Medication3to4"
 /// name = "Medication3to4"
-/// title = "Medication Transforms: R3 to R4 "
+/// title = "Medication Transforms: R3 to R4"
 /// status = "active"
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Medication" alias MedicationR3 as source

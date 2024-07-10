@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cmd.gr.el.ta.equivalence-cmd.gr.el.ta.relationship-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.gr.el.ta.equivalence-cmd.gr.el.ta.relationship-4to5",
-  "name" : "ConceptMap.group.element.target.equivalenceConceptMap.group.element.target.relationship4to5",
+  "name" : "ConceptMapGroupElementTargetEquivalenceConceptMapGroupElementTargetRelationship4to5",
   "title" : "Mapping for ConceptMap.group.element.target.equivalence/ConceptMap.group.element.target.relationship from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ConceptMap.group.element.target.equivalence/ConceptMap.group.element.target.relationship from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ConceptMap#ConceptMap.group.element.target.equivalence",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ConceptMap#ConceptMap.group.element.target.relationship",
   "group" : [{

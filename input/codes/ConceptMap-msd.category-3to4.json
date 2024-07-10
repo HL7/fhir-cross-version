@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "msd.category-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/msd.category-3to4",
-  "name" : "msd.category-3to4",
+  "name" : "MessageDefinitionCategory3to4",
   "title" : "Mapping for MessageDefinition.category from R3 to R4",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for MessageDefinition.category from R3 to R4",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MessageDefinition#MessageDefinition.category",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MessageDefinition#MessageDefinition.category",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "loc.ho.daysOfWeek-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/loc.ho.daysOfWeek-4bto4",
-  "name" : "Location.hoursOfOperation.daysOfWeek4bto4",
+  "name" : "LocationHoursOfOperationDaysOfWeek4bto4",
   "title" : "Mapping for Location.hoursOfOperation.daysOfWeek from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Location.hoursOfOperation.daysOfWeek from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Location#Location.hoursOfOperation.daysOfWeek",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Location#Location.hoursOfOperation.daysOfWeek",
   "group" : [{

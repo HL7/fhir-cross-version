@@ -22,8 +22,8 @@ group ConceptMap(source src : ConceptMap, target tgt : ConceptMapR2) extends Dom
   src.experimental -> tgt.experimental "ConceptMap-experimental";
   src.publisher -> tgt.publisher "ConceptMap-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "contact-name";
-    vs0.telecom -> vt0.telecom "contact-telecom";
+    vs0.name -> vt0.name "Contract_name";
+    vs0.telecom -> vt0.telecom "Contract_telecom";
   } "ConceptMap-contact";
   src.date -> tgt.date "ConceptMap-date";
   src.description -> tgt.description "ConceptMap-description";

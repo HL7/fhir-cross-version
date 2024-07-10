@@ -17,8 +17,8 @@ group ValueSet(source src : ValueSet, target tgt : ValueSetR2) extends DomainRes
   src.experimental -> tgt.experimental "ValueSet-experimental";
   src.publisher -> tgt.publisher "ValueSet-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "contact-name";
-    vs0.telecom -> vt0.telecom "contact-telecom";
+    vs0.name -> vt0.name "Contract_name";
+    vs0.telecom -> vt0.telecom "Contract_telecom";
   } "ValueSet-contact";
   src.date -> tgt.date "ValueSet-date";
   src.jurisdiction -> tgt.useContext "ValueSet-useContext";

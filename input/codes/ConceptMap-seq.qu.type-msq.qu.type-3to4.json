@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "seq.qu.type-msq.qu.type-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/seq.qu.type-msq.qu.type-3to4",
-  "name" : "Sequence.quality.typeMolecularSequence.quality.type3to4",
+  "name" : "SequenceQualityTypeMolecularSequenceQualityType3to4",
   "title" : "Mapping for Sequence.quality.type/MolecularSequence.quality.type from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Sequence.quality.type/MolecularSequence.quality.type from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Sequence#Sequence.quality.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.quality.type",
   "group" : [{

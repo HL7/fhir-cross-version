@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "gol.lifecycleStatus-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/gol.lifecycleStatus-4bto5",
-  "name" : "Goal.lifecycleStatus4bto5",
+  "name" : "GoalLifecycleStatus4bto5",
   "title" : "Mapping for Goal.lifecycleStatus from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Goal.lifecycleStatus from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Goal#Goal.lifecycleStatus",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Goal#Goal.lifecycleStatus",
   "group" : [{

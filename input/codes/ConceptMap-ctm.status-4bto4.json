@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ctm.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctm.status-4bto4",
-  "name" : "CareTeam.status4bto4",
+  "name" : "CareTeamStatus4bto4",
   "title" : "Mapping for CareTeam.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for CareTeam.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CareTeam#CareTeam.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CareTeam#CareTeam.status",
   "group" : [{

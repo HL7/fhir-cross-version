@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ntp.status-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ntp.status-5to4b",
-  "name" : "NutritionProduct.status5to4b",
+  "name" : "NutritionProductStatus5to4b",
   "title" : "Mapping for NutritionProduct.status from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for NutritionProduct.status from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/NutritionProduct#NutritionProduct.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/NutritionProduct#NutritionProduct.status",
   "group" : [{

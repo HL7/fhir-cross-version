@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.ag.media-sev.pa.media-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ag.media-sev.pa.media-3to2",
-  "name" : "AuditEvent.agent.mediaAuditEvent.participant.media3to2",
+  "name" : "AuditEventAgentMediaAuditEventParticipantMedia3to2",
   "title" : "Mapping for AuditEvent.agent.media/AuditEvent.participant.media from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.agent.media/AuditEvent.participant.media from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.agent.media",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.participant.media",
   "group" : [{

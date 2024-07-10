@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "smp.gr.in.mode-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.in.mode-4to5",
-  "name" : "StructureMap.group.input.mode4to5",
+  "name" : "StructureMapGroupInputMode4to5",
   "title" : "Mapping for StructureMap.group.input.mode from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for StructureMap.group.input.mode from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.input.mode",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureMap#StructureMap.group.input.mode",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "enp.status-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enp.status-4to4b",
-  "name" : "Endpoint.status4to4b",
+  "name" : "EndpointStatus4to4b",
   "title" : "Mapping for Endpoint.status from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Endpoint.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Endpoint#Endpoint.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Endpoint#Endpoint.status",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dcm.status-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dcm.status-4to4b",
-  "name" : "DocumentManifest.status4to4b",
+  "name" : "DocumentManifestStatus4to4b",
   "title" : "Mapping for DocumentManifest.status from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for DocumentManifest.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentManifest#DocumentManifest.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DocumentManifest#DocumentManifest.status",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ait.re.severity-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ait.re.severity-4to4b",
-  "name" : "AllergyIntolerance.reaction.severity4to4b",
+  "name" : "AllergyIntoleranceReactionSeverity4to4b",
   "title" : "Mapping for AllergyIntolerance.reaction.severity from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for AllergyIntolerance.reaction.severity from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.reaction.severity",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance#AllergyIntolerance.reaction.severity",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ctt.co.publicationStatus-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctt.co.publicationStatus-4to4b",
-  "name" : "Contract.contentDefinition.publicationStatus4to4b",
+  "name" : "ContractContentDefinitionPublicationStatus4to4b",
   "title" : "Mapping for Contract.contentDefinition.publicationStatus from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Contract.contentDefinition.publicationStatus from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Contract#Contract.contentDefinition.publicationStatus",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Contract#Contract.contentDefinition.publicationStatus",
   "group" : [{

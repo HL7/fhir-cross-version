@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "apr.participantType-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/apr.participantType-4to4b",
-  "name" : "AppointmentResponse.participantTyper4to4b",
+  "name" : "AppointmentResponseParticipantTyper4to4b",
   "title" : "Mapping for AppointmentResponse.participantType from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for AppointmentResponse.participantType from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AppointmentResponse#AppointmentResponse.participantType",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AppointmentResponse#AppointmentResponse.participantType",
   "group" : [{

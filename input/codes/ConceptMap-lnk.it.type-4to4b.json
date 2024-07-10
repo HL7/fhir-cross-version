@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "lnk.it.type-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/lnk.it.type-4to4b",
-  "name" : "Linkage.item.type4to4b",
+  "name" : "LinkageItemType4to4b",
   "title" : "Mapping for Linkage.item.type from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Linkage.item.type from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Linkage#Linkage.item.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Linkage#Linkage.item.type",
   "group" : [{

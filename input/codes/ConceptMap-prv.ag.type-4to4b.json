@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prv.ag.type-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prv.ag.type-4to4b",
-  "name" : "Provenance.agent.type4to4b",
+  "name" : "ProvenanceAgentType4to4b",
   "title" : "Mapping for Provenance.agent.type from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Provenance.agent.type from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Provenance#Provenance.agent.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Provenance#Provenance.agent.type",
   "group" : [{

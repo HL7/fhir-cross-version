@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dcr.re.code-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.re.code-4to5",
-  "name" : "DocumentReference.relatesTo.code4to5",
+  "name" : "DocumentReferenceRelatesToCode4to5",
   "title" : "Mapping for DocumentReference.relatesTo.code from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for DocumentReference.relatesTo.code from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
   "group" : [{

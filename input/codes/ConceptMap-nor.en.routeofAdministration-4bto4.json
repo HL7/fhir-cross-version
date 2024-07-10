@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "nor.en.routeofAdministration-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/nor.en.routeofAdministration-4bto4",
-  "name" : "NutritionOrder.enteralFormula.routeofAdministrationr4bto4",
+  "name" : "NutritionOrderEnteralFormulaRouteofAdministrationr4bto4",
   "title" : "Mapping for NutritionOrder.enteralFormula.routeofAdministration from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for NutritionOrder.enteralFormula.routeofAdministration from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/NutritionOrder#NutritionOrder.enteralFormula.routeofAdministration",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/NutritionOrder#NutritionOrder.enteralFormula.routeofAdministration",
   "group" : [{

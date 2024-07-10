@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mps.status-mps.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mps.status-mps.status-2to3",
-  "name" : "MedicationOrder.statusMedicationRequest.status2to3",
+  "name" : "MedicationOrderStatusMedicationRequestStatus2to3",
   "title" : "Mapping for MedicationOrder.status/MedicationRequest.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for MedicationOrder.status/MedicationRequest.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/MedicationOrder#MedicationOrder.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MedicationRequest#MedicationRequest.status",
   "group" : [{
@@ -17,7 +19,8 @@
       },
       {
         "code" : "cancelled",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

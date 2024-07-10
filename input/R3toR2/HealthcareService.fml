@@ -9,39 +9,39 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/HealthcareService" alias Healt
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group HealthcareService(source src : HealthcareService, target tgt : HealthcareServiceR2) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "HealthcareService-identifier";
-  src.providedBy -> tgt.providedBy "HealthcareService-providedBy";
-  src.category -> tgt.serviceCategory "HealthcareService-serviceCategory";
-  src.type as vs ->  tgt.serviceType as vt,  vt.type as v then CodeableConcept(vs, v) "HealthcareService-serviceType";
-  src.specialty as vs ->  tgt.serviceType as vt first,  vt.specialty as v then CodeableConcept(vs, v) "HealthcareService-speciality";
-  src.location -> tgt.location "HealthcareService-location";
-  src.name -> tgt.serviceName "HealthcareService-serviceName";
-  src.comment -> tgt.comment "HealthcareService-comment";
-  src.extraDetails -> tgt.extraDetails "HealthcareService-extraDetails";
-  src.photo -> tgt.photo "HealthcareService-photo";
-  src.telecom -> tgt.telecom "HealthcareService-telecom";
-  src.coverageArea -> tgt.coverageArea "HealthcareService-coverageArea";
-  src.serviceProvisionCode -> tgt.serviceProvisionCode "HealthcareService-serviceProvisionCode";
-  src.eligibility -> tgt.eligibility "HealthcareService-eligibility";
-  src.eligibilityNote -> tgt.eligibilityNote "HealthcareService-eligibilityNote";
-  src.programName -> tgt.programName "HealthcareService-programName";
-  src.characteristic -> tgt.characteristic "HealthcareService-characteristic";
-  src.referralMethod -> tgt.referralMethod "HealthcareService-referralMethod";
-  src.appointmentRequired -> tgt.appointmentRequired "HealthcareService-appointmentRequired";
-  src.availableTime as vs0 -> tgt.availableTime as vt0 then hsvcAvailable(vs0, vt0) "HealthcareService-availableTime";
-  src.notAvailable as vs0 -> tgt.notAvailable as vt0 then hsvcNotAvailable(vs0, vt0) "HealthcareService-notAvailable";
-  src.availabilityExceptions -> tgt.availabilityExceptions "HealthcareService-availabilityExceptions";
+  src.identifier -> tgt.identifier "HealthcareService_identifier";
+  src.providedBy -> tgt.providedBy "HealthcareService_providedBy";
+  src.category -> tgt.serviceCategory "HealthcareService_serviceCategory";
+  src.type as vs ->  tgt.serviceType as vt,  vt.type as v then CodeableConcept(vs, v) "HealthcareService_serviceType";
+  src.specialty as vs ->  tgt.serviceType as vt first,  vt.specialty as v then CodeableConcept(vs, v) "HealthcareService_speciality";
+  src.location -> tgt.location "HealthcareService_location";
+  src.name -> tgt.serviceName "HealthcareService_serviceName";
+  src.comment -> tgt.comment "HealthcareService_comment";
+  src.extraDetails -> tgt.extraDetails "HealthcareService_extraDetails";
+  src.photo -> tgt.photo "HealthcareService_photo";
+  src.telecom -> tgt.telecom "HealthcareService_telecom";
+  src.coverageArea -> tgt.coverageArea "HealthcareService_coverageArea";
+  src.serviceProvisionCode -> tgt.serviceProvisionCode "HealthcareService_serviceProvisionCode";
+  src.eligibility -> tgt.eligibility "HealthcareService_eligibility";
+  src.eligibilityNote -> tgt.eligibilityNote "HealthcareService_eligibilityNote";
+  src.programName -> tgt.programName "HealthcareService_programName";
+  src.characteristic -> tgt.characteristic "HealthcareService_characteristic";
+  src.referralMethod -> tgt.referralMethod "HealthcareService_referralMethod";
+  src.appointmentRequired -> tgt.appointmentRequired "HealthcareService_appointmentRequired";
+  src.availableTime as vs0 -> tgt.availableTime as vt0 then hsvcAvailable(vs0, vt0) "HealthcareService_availableTime";
+  src.notAvailable as vs0 -> tgt.notAvailable as vt0 then hsvcNotAvailable(vs0, vt0) "HealthcareService_notAvailable";
+  src.availabilityExceptions -> tgt.availabilityExceptions "HealthcareService_availabilityExceptions";
 }
 
 group hsvcAvailable(source src, target tgt) extends BackboneElement {
-  src.daysOfWeek -> tgt.daysOfWeek "availableTime-daysOfWeek";
-  src.allDay -> tgt.allDay "availableTime-allDay";
-  src.availableStartTime -> tgt.availableStartTime "availableTime-availableStartTime";
-  src.availableEndTime -> tgt.availableEndTime "availableTime-availableEndTime";
+  src.daysOfWeek -> tgt.daysOfWeek "availableTime_daysOfWeek";
+  src.allDay -> tgt.allDay "availableTime_allDay";
+  src.availableStartTime -> tgt.availableStartTime "availableTime_availableStartTime";
+  src.availableEndTime -> tgt.availableEndTime "availableTime_availableEndTime";
 }
 
 group hsvcNotAvailable(source src, target tgt) extends BackboneElement {
-  src.description -> tgt.description "notAvailable-description";
-  src.during -> tgt.during "notAvailable-during";
+  src.description -> tgt.description "notAvailable_description";
+  src.during -> tgt.during "notAvailable_during";
 }
 
