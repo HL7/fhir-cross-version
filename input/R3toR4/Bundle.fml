@@ -23,6 +23,7 @@ group BundleLink(source src, target tgt) extends BackboneElement {
 }
 
 group BundleEntry(source src, target tgt) extends BackboneElement {
+  src.link as s -> tgt.link as t then BundleLink(s, t);
   src.fullUrl -> tgt.fullUrl;
   src.resource -> tgt.resource;
   src.search as vs0 -> tgt.search as vt0 then search(vs0, vt0);
