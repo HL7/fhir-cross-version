@@ -92,7 +92,7 @@ group MeasureStratifier(source src, target tgt) extends BackboneElement {
 group supplementalData(source src, target tgt) extends BackboneElement {
   src.code as vs -> tgt.identifier as vt then Codeable2Identifier(vs, vt);
   src.usage -> tgt.usage;
-  src.description -> tgt.description;
+  // src.description -> tgt.description;
   src.criteria as s then {
     s.expression -> tgt.criteria;
   };

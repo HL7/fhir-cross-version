@@ -27,7 +27,6 @@ group recommendation(source src, target tgt, target res) extends BackboneElement
     s.authority -> res.authority;
     s.series -> tgt.series;
   };
-  src.series -> tgt.series;
   src.supportingImmunization -> tgt.supportingImmunization;
   src.supportingPatientInformation -> tgt.supportingPatientInformation;
 }

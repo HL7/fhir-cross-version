@@ -97,7 +97,7 @@ group condition(source src, target tgt) extends BackboneElement {
 }
 
 group PlanDefinitionRelatedAction(source src, target tgt) extends BackboneElement {
-  src.actionid -> tgt.actionid;
+  src.actionId -> tgt.actionId;
   src.relationship -> tgt.relationship;
   src.offset : Duration as vs -> tgt.offset = create('Duration') as vt then Duration(vs, vt) "offsetDuration";
   src.offset : Range as vs -> tgt.offset = create('Range') as vt then Range(vs, vt) "offsetRange";

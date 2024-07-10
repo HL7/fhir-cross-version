@@ -46,7 +46,7 @@ group Condition(source src : Condition, target tgt : ConditionR3) extends Domain
 group stage(source src, target tgt) extends BackboneElement {
   src.summary -> tgt.summary;
   src.assessment -> tgt.assessment;
-  src.type -> tgt.type;
+  // src.type -> tgt.type; // not in R3
 }
 
 group evidence(source src, target tgt) extends BackboneElement {

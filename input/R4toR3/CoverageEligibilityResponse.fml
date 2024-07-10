@@ -24,15 +24,15 @@ group CoverageEligibilityResponse(source src : CoverageEligibilityResponse, targ
 
 group CoverageEligibilityResponseInsurance(source src, target tgt) extends BackboneElement {
   src.coverage -> tgt.coverage;
-  src.contract -> tgt.contract;
+  // src.contract -> tgt.contract; // not in R4
   src.item as s -> tgt.benefitBalance as t then CoverageEligibilityResponseInsuranceDetail(s, t);
 }
 
 group CoverageEligibilityResponseInsuranceDetail(source src, target tgt) extends BackboneElement {
   src.category -> tgt.category;
-  src.service -> tgt.service;
-  src.modifier -> tgt.modifier;
-  src.provider -> tgt.provider;
+  // src.service -> tgt.service;
+  // src.modifier -> tgt.modifier;
+  // src.provider -> tgt.provider;
   src.excluded -> tgt.excluded;
   src.name -> tgt.name;
   src.description -> tgt.description;
@@ -40,9 +40,9 @@ group CoverageEligibilityResponseInsuranceDetail(source src, target tgt) extends
   src.unit -> tgt.unit;
   src.term -> tgt.term;
   src.benefit as s -> tgt.financial as t then CoverageEligibilityResponseInsuranceDetailBenefit(s, t);
-  src.authorizationRequired -> tgt.authorizationRequired;
-  src.authorizationSupporting -> tgt.authorizationSupporting;
-  src.authorizationUrl -> tgt.authorizationUrl;
+  // src.authorizationRequired -> tgt.authorizationRequired;
+  // src.authorizationSupporting -> tgt.authorizationSupporting;
+  // src.authorizationUrl -> tgt.authorizationUrl;
 }
 
 group CoverageEligibilityResponseInsuranceDetailBenefit(source src, target tgt) extends BackboneElement {

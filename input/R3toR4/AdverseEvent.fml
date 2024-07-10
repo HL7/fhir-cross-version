@@ -29,13 +29,13 @@ group AdverseEvent(source src : AdverseEventR3, target tgt : AdverseEvent) exten
 
 group AdverseEventSuspectEntity(source src, target tgt) extends BackboneElement {
   src.instance -> tgt.instance;
-  src.causality as s -> tgt.causality as t then AdverseEventSuspectEntityCausality(s, t);
+  src as s -> tgt.causality as t then AdverseEventSuspectEntityCausality(src, t);
 }
 
 group AdverseEventSuspectEntityCausality(source src, target tgt) extends BackboneElement {
-  src.assessment -> tgt.assessment;
-  src.productRelatedness -> tgt.productRelatedness;
-  src.author -> tgt.author;
-  src.method -> tgt.method;
+  src.causalityAssessment -> tgt.assessment;
+  src.causalityProductRelatedness -> tgt.productRelatedness;
+  src.causalityAuthor -> tgt.author;
+  src.causalityMethod -> tgt.method;
 }
 

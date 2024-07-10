@@ -151,7 +151,7 @@ group ExplanationOfBenefitItemDetail(source src, target tgt) extends BackboneEle
   src.sequence -> tgt.sequence;
   src.revenue -> tgt.revenue;
   src.category -> tgt.category;
-  src.service -> tgt.service;
+  src.productOrService -> tgt.service;
   src.modifier -> tgt.modifier;
   src.programCode -> tgt.programCode;
   src.quantity -> tgt.quantity;
@@ -168,7 +168,7 @@ group ExplanationOfBenefitItemDetailSubDetail(source src, target tgt) extends Ba
   src.sequence -> tgt.sequence;
   src.revenue -> tgt.revenue;
   src.category -> tgt.category;
-  src.service -> tgt.service;
+  src.productOrService -> tgt.service;
   src.modifier -> tgt.modifier;
   src.programCode -> tgt.programCode;
   src.quantity -> tgt.quantity;
@@ -181,38 +181,39 @@ group ExplanationOfBenefitItemDetailSubDetail(source src, target tgt) extends Ba
 }
 
 group ExplanationOfBenefitAddItem(source src, target tgt) extends BackboneElement {
-  src.itemSequence -> tgt.itemSequence;
-  src.detailSequence -> tgt.detailSequence;
-  src.subDetailSequence -> tgt.subDetailSequence;
-  src.service -> tgt.service;
+  src.itemSequence -> tgt.sequenceLinkId;
+  // src.detailSequence -> tgt.detailSequence;
+  // src.subDetailSequence -> tgt.subDetailSequence;
+  src.productOrService -> tgt.service;
   src.modifier -> tgt.modifier;
-  src.programCode -> tgt.programCode;
-  src.serviced -> tgt.serviced;
-  src.location -> tgt.location;
-  src.quantity -> tgt.quantity;
-  src.unitPrice -> tgt.unitPrice;
-  src.factor -> tgt.factor;
-  src.net -> tgt.net;
-  src.bodySite -> tgt.bodySite;
-  src.subSite -> tgt.subSite;
+  // src.programCode -> tgt.programCode;
+  // src.serviced -> tgt.serviced;
+  // src.location -> tgt.location;
+  // src.quantity -> tgt.quantity;
+  // src.unitPrice -> tgt.unitPrice;
+  // src.factor -> tgt.factor;
+  src.net -> tgt.fee;
+  // src.bodySite -> tgt.bodySite;
+  // src.subSite -> tgt.subSite;
   src.noteNumber -> tgt.noteNumber;
   src.adjudication -> tgt.adjudication;
   src.detail as s -> tgt.detail as t then ExplanationOfBenefitAddItemDetail(s, t);
 }
 
 group ExplanationOfBenefitAddItemDetail(source src, target tgt) extends BackboneElement {
-  src.service -> tgt.service;
+  src.productOrService -> tgt.service;
   src.modifier -> tgt.modifier;
-  src.programCode -> tgt.programCode;
-  src.quantity -> tgt.quantity;
-  src.unitPrice -> tgt.unitPrice;
-  src.factor -> tgt.factor;
-  src.net -> tgt.net;
+  // src.programCode -> tgt.programCode;
+  // src.quantity -> tgt.quantity;
+  // src.unitPrice -> tgt.unitPrice;
+  // src.factor -> tgt.factor;
+  src.net -> tgt.fee;
   src.noteNumber -> tgt.noteNumber;
   src.adjudication -> tgt.adjudication;
   // src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitAddItemDetailSubDetail(s, t); // subDetail is not present in R3
 }
 
+/*
 group ExplanationOfBenefitAddItemDetailSubDetail(source src, target tgt) extends BackboneElement {
   src.service -> tgt.service;
   src.modifier -> tgt.modifier;
@@ -224,6 +225,7 @@ group ExplanationOfBenefitAddItemDetailSubDetail(source src, target tgt) extends
   src.noteNumber -> tgt.noteNumber;
   src.adjudication -> tgt.adjudication;
 }
+*/
 
 group ExplanationOfBenefitPayment(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;

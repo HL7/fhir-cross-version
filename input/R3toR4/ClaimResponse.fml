@@ -33,7 +33,7 @@ group ClaimResponse(source src : ClaimResponseR3, target tgt : ClaimResponse) ex
   src.form -> tgt.form;
   src.processNote as s -> tgt.processNote as t then ClaimResponseProcessNote(s, t);
   src.communicationRequest -> tgt.communicationRequest;
-  src.insurance as s -> tgt.insurance as t then ClaimResponseInsurance(s, t);
+  src.insurance as s -> tgt.insurance as t then ClaimResponseInsurance(s, t, tgt);
 }
 
 group ClaimResponseItem(source src, target tgt) extends BackboneElement {
@@ -51,51 +51,52 @@ group ClaimResponseItemAdjudication(source src, target tgt) extends BackboneElem
 }
 
 group ClaimResponseItemDetail(source src, target tgt) extends BackboneElement {
-  src.detailSequence -> tgt.detailSequence;
+  src.sequenceLinkId -> tgt.detailSequence;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
   src.subDetail as s -> tgt.subDetail as t then ClaimResponseItemDetailSubDetail(s, t);
 }
 
 group ClaimResponseItemDetailSubDetail(source src, target tgt) extends BackboneElement {
-  src.subDetailSequence -> tgt.subDetailSequence;
+  src.sequenceLinkId -> tgt.subDetailSequence;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
 }
 
 group ClaimResponseAddItem(source src, target tgt) extends BackboneElement {
-  src.itemSequence -> tgt.itemSequence;
-  src.detailSequence -> tgt.detailSequence;
-  src.subdetailSequence -> tgt.subdetailSequence;
-  src.service -> tgt.service;
+  src.sequenceLinkId -> tgt.itemSequence;
+  // src.detailSequence -> tgt.detailSequence;
+  // src.subdetailSequence -> tgt.subdetailSequence;
+  src.service -> tgt.productOrService;
   src.modifier -> tgt.modifier;
-  src.programCode -> tgt.programCode;
-  src.serviced -> tgt.serviced;
-  src.location -> tgt.location;
-  src.quantity -> tgt.quantity;
-  src.unitPrice -> tgt.unitPrice;
-  src.factor -> tgt.factor;
-  src.net -> tgt.net;
-  src.bodySite -> tgt.bodySite;
-  src.subSite -> tgt.subSite;
+  // src.programCode -> tgt.programCode;
+  // src.serviced -> tgt.serviced;
+  // src.location -> tgt.location;
+  // src.quantity -> tgt.quantity;
+  // src.unitPrice -> tgt.unitPrice;
+  // src.factor -> tgt.factor;
+  src.fee -> tgt.net;
+  // src.bodySite -> tgt.bodySite;
+  // src.subSite -> tgt.subSite;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  // src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
   src.detail as s -> tgt.detail as t then ClaimResponseAddItemDetail(s, t);
 }
 
 group ClaimResponseAddItemDetail(source src, target tgt) extends BackboneElement {
-  src.service -> tgt.service;
+  src.service -> tgt.productOrService;
   src.modifier -> tgt.modifier;
-  src.programCode -> tgt.programCode;
-  src.quantity -> tgt.quantity;
-  src.unitPrice -> tgt.unitPrice;
-  src.factor -> tgt.factor;
-  src.net -> tgt.net;
+  // src.programCode -> tgt.programCode;
+  // src.quantity -> tgt.quantity;
+  // src.unitPrice -> tgt.unitPrice;
+  // src.factor -> tgt.factor;
+  // src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
   // src.subDetail as s -> tgt.subDetail as t then ClaimResponseAddItemDetailSubDetail(s, t); // subDetail not in STU3
 }
 
+/* Not in STU3
 group ClaimResponseAddItemDetailSubDetail(source src, target tgt) extends BackboneElement {
   src.service -> tgt.service;
   src.modifier -> tgt.modifier;
@@ -105,13 +106,14 @@ group ClaimResponseAddItemDetailSubDetail(source src, target tgt) extends Backbo
   src.factor -> tgt.factor;
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
 }
+*/
 
 group ClaimResponseError(source src, target tgt) extends BackboneElement {
-  src.itemSequence -> tgt.itemSequence;
-  src.detailSequence -> tgt.detailSequence;
-  src.subDetailSequence -> tgt.subDetailSequence;
+  src.sequenceLinkId -> tgt.itemSequence;
+  src.detailSequenceLinkId -> tgt.detailSequence;
+  src.subdetailSequenceLinkId	 -> tgt.subDetailSequence;
   src.code -> tgt.code;
 }
 
@@ -131,12 +133,12 @@ group ClaimResponseProcessNote(source src, target tgt) extends BackboneElement {
   src.language -> tgt.language;
 }
 
-group ClaimResponseInsurance(source src, target tgt) extends BackboneElement {
+group ClaimResponseInsurance(source src, target tgt, target tgtCR : ClaimResponse) extends BackboneElement {
   src.sequence -> tgt.sequence;
   src.focal -> tgt.focal;
   src.coverage -> tgt.coverage;
   src.businessArrangement -> tgt.businessArrangement;
-  src.preAuthRef -> tgt.preAuthRef;
+  src.preAuthRef -> tgtCR.preAuthRef;
   src.claimResponse -> tgt.claimResponse;
 }
 
