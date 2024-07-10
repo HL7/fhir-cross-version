@@ -4,6 +4,8 @@
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/Duration-4to4b",
   "name" : "Durationr4to4b",
   "title" : "Mapping for Duration from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Duration from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Duration#Duration",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Duration#Duration",
   "group" : [{

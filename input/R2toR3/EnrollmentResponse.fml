@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/EnrollmentResponse" alias EnrollmentResponseR2 as source
-uses "http://hl7.org/fhir/3.0/EnrollmentResponse" alias EnrollmentResponse as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/EnrollmentResponse" alias EnrollmentResponse as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/DomainResource2to3"
@@ -12,12 +12,12 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/Identifier2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Reference2to3"
 
 group EnrollmentResponse(source src : EnrollmentResponseR2, target tgt : EnrollmentResponse) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "EnrollmentResponse-identifier";
-  src.request -> tgt.request "EnrollmentResponse-request";
-  src.disposition -> tgt.disposition "EnrollmentResponse-disposition";
-  src.created -> tgt.created "EnrollmentResponse-created";
-  src.organization -> tgt.organization "EnrollmentResponse-organization";
-  src.requestProvider -> tgt.requestProvider "EnrollmentResponse-requestProvider";
-  src.requestOrganization -> tgt.requestOrganization "EnrollmentResponse-requestOrganization";
+  src.identifier -> tgt.identifier "EnrollmentResponse_identifier";
+  src.request -> tgt.request "EnrollmentResponse_request";
+  src.disposition -> tgt.disposition "EnrollmentResponse_disposition";
+  src.created -> tgt.created "EnrollmentResponse_created";
+  src.organization -> tgt.organization "EnrollmentResponse_organization";
+  src.requestProvider -> tgt.requestProvider "EnrollmentResponse_requestProvider";
+  src.requestOrganization -> tgt.requestOrganization "EnrollmentResponse_requestOrganization";
 }
 

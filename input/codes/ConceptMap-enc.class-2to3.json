@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "enc.class-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enc.class-2to3",
-  "name" : "enc.class-2to3",
+  "name" : "EncounterClass2to3",
   "title" : "Mapping for Encounter.class from R2 to R3",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for Encounter.class from R2 to R3",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Encounter#Encounter.class",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Encounter#Encounter.class",
   "group" : [{

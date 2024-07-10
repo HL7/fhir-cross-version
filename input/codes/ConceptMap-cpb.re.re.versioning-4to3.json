@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.re.re.versioning-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.versioning-4to3",
-  "name" : "CapabilityStatement.rest.resource.versioning4to3",
+  "name" : "CapabilityStatementRestResourceVersioning4to3",
   "title" : "Mapping for CapabilityStatement.rest.resource.versioning from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.rest.resource.versioning from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.versioning",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.versioning",
   "group" : [{

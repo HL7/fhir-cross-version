@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tsr.pa.type-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tsr.pa.type-5to4b",
-  "name" : "TestReport.participant.type5to4b",
+  "name" : "TestReportParticipantType5to4b",
   "title" : "Mapping for TestReport.participant.type from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for TestReport.participant.type from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestReport#TestReport.participant.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestReport#TestReport.participant.type",
   "group" : [{

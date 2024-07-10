@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "nsd.kind-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.kind-4bto5",
-  "name" : "NamingSystem.kind4bto5",
+  "name" : "NamingSystemKind4bto5",
   "title" : "Mapping for NamingSystem.kind from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for NamingSystem.kind from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/NamingSystem#NamingSystem.kind",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/NamingSystem#NamingSystem.kind",
   "group" : [{

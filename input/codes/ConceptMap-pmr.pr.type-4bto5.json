@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pmr.pr.type-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pmr.pr.type-4bto5",
-  "name" : "PaymentReconciliation.processNote.type4bto5",
+  "name" : "PaymentReconciliationProcessNoteType4bto5",
   "title" : "Mapping for PaymentReconciliation.processNote.type from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for PaymentReconciliation.processNote.type from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/PaymentReconciliation#PaymentReconciliation.processNote.type",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.processNote.type",
   "group" : [{

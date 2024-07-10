@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "evv.status-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evv.status-4bto5",
-  "name" : "EvidenceVariable.status4bto5",
+  "name" : "EvidenceVariableStatus4bto5",
   "title" : "Mapping for EvidenceVariable.status from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for EvidenceVariable.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EvidenceVariable#EvidenceVariable.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/EvidenceVariable#EvidenceVariable.status",
   "group" : [{

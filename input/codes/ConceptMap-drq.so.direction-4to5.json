@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "drq.so.direction-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/drq.so.direction-4to5",
-  "name" : "DataRequirement.sort.direction4to5",
+  "name" : "DataRequirementSortDirection4to5",
   "title" : "Mapping for DataRequirement.sort.direction from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for DataRequirement.sort.direction from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DataRequirement#DataRequirement.sort.direction",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DataRequirement#DataRequirement.sort.direction",
   "group" : [{

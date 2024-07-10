@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ait.status-ait.clinicalStatus-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ait.status-ait.clinicalStatus-2to3",
-  "name" : "AllergyIntolerance.statusAllergyIntolerance.clinicalStatus2to3",
+  "name" : "AllergyIntoleranceStatusAllergyIntoleranceClinicalStatus2to3",
   "title" : "Mapping for AllergyIntolerance.status/AllergyIntolerance.clinicalStatus from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AllergyIntolerance.status/AllergyIntolerance.clinicalStatus from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.clinicalStatus",
   "group" : [{

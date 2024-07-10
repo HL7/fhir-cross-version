@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.purposeOfEvent-sev.ev.purposeOfEvent-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.purposeOfEvent-sev.ev.purposeOfEvent-3to2",
-  "name" : "AuditEvent.purposeOfEventAuditEvent.event.purposeOfEvent3to2",
+  "name" : "AuditEventPurposeOfEventAuditEventEventPurposeOfEvent3to2",
   "title" : "Mapping for AuditEvent.purposeOfEvent/AuditEvent.event.purposeOfEvent from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.purposeOfEvent/AuditEvent.event.purposeOfEvent from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.purposeOfEvent",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.event.purposeOfEvent",
   "group" : [{

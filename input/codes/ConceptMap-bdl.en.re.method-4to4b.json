@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "bdl.en.re.method-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/bdl.en.re.method-4to4b",
-  "name" : "Bundle.entry.request.method4to4b",
+  "name" : "BundleEntryRequestMethod4to4b",
   "title" : "Mapping for Bundle.entry.request.method from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Bundle.entry.request.method from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Bundle#Bundle.entry.request.method",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Bundle#Bundle.entry.request.method",
   "group" : [{

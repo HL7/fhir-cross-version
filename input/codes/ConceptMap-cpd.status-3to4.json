@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpd.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpd.status-3to4",
-  "name" : "CompartmentDefinition.status3to4",
+  "name" : "CompartmentDefinitionStatus3to4",
   "title" : "Mapping for CompartmentDefinition.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for CompartmentDefinition.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CompartmentDefinition#CompartmentDefinition.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CompartmentDefinition#CompartmentDefinition.status",
   "group" : [{

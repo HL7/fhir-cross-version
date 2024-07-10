@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "que.it.type-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/que.it.type-4bto4",
-  "name" : "Questionnaire.item.type4bto4",
+  "name" : "QuestionnaireItemType4bto4",
   "title" : "Mapping for Questionnaire.item.type from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Questionnaire.item.type from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Questionnaire#Questionnaire.item.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Questionnaire#Questionnaire.item.type",
   "group" : [{

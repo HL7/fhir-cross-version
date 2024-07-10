@@ -3,24 +3,24 @@
 /// title = "FamilyMemberHistory Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/FamilyMemberHistory" alias FamilyMemberHistory as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/FamilyMemberHistory" alias FamilyMemberHistory as source
 uses "http://hl7.org/fhir/1.0/FamilyMemberHistory" alias FamilyMemberHistoryR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group FamilyMemberHistory(source src : FamilyMemberHistory, target tgt : FamilyMemberHistoryR2) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "FamilyMemberHistory-identifier";
-  src.patient -> tgt.patient "FamilyMemberHistory-patient";
-  src.date -> tgt.date "FamilyMemberHistory-date";
-  src.status -> tgt.status "FamilyMemberHistory-status";
-  src.name -> tgt.name "FamilyMemberHistory-name";
-  src.relationship -> tgt.relationship "FamilyMemberHistory-relationship";
-  src.gender -> tgt.gender "FamilyMemberHistory-gender";
-  src.born -> tgt.born "FamilyMemberHistory-born";
-  src.age -> tgt.age "FamilyMemberHistory-age";
-  src.deceased -> tgt.deceased "FamilyMemberHistory-deceased";
-  src.note -> tgt.note "FamilyMemberHistory-note";
-  src.condition as vs0 -> tgt.condition as vt0 then fmhCondition(vs0, vt0) "FamilyMemberHistory-condition";
+  src.identifier -> tgt.identifier "FamilyMemberHistory_identifier";
+  src.patient -> tgt.patient "FamilyMemberHistory_patient";
+  src.date -> tgt.date "FamilyMemberHistory_date";
+  src.status -> tgt.status "FamilyMemberHistory_status";
+  src.name -> tgt.name "FamilyMemberHistory_name";
+  src.relationship -> tgt.relationship "FamilyMemberHistory_relationship";
+  src.gender -> tgt.gender "FamilyMemberHistory_gender";
+  src.born -> tgt.born "FamilyMemberHistory_born";
+  src.age -> tgt.age "FamilyMemberHistory_age";
+  src.deceased -> tgt.deceased "FamilyMemberHistory_deceased";
+  src.note -> tgt.note "FamilyMemberHistory_note";
+  src.condition as vs0 -> tgt.condition as vt0 then fmhCondition(vs0, vt0) "FamilyMemberHistory_condition";
 }
 
 group fmhCondition(source src, target tgt) extends BackboneElement {

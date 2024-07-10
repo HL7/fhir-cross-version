@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.jurisdiction-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.jurisdiction-4bto4",
-  "name" : "CapabilityStatement.jurisdictionr4bto4",
+  "name" : "CapabilityStatementJurisdictionr4bto4",
   "title" : "Mapping for CapabilityStatement.jurisdiction from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.jurisdiction from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.jurisdiction",
   "group" : [{

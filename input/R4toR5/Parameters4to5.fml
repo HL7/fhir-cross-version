@@ -3,8 +3,8 @@
 /// title = "Parameters Transforms: R4 to R5"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/Parameters" alias ParametersR4 as source
-uses "http://hl7.org/fhir/5.0/Parameters" alias ParametersR5 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Parameters" alias ParametersR4 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/Parameters" alias ParametersR5 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 

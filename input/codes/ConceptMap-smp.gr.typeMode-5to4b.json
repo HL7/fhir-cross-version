@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "smp.gr.typeMode-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.typeMode-5to4b",
-  "name" : "StructureMap.group.typeMode5to4b",
+  "name" : "StructureMapGroupTypeMode5to4b",
   "title" : "Mapping for StructureMap.group.typeMode from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for StructureMap.group.typeMode from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/StructureMap#StructureMap.group.typeMode",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.group.typeMode",
   "group" : [{

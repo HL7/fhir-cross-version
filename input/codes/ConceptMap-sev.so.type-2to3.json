@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.so.type-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.so.type-2to3",
-  "name" : "AuditEvent.source.type2to3",
+  "name" : "AuditEventSourceType2to3",
   "title" : "Mapping for AuditEvent.source.type from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.source.type from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.source.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.source.type",
   "group" : [{

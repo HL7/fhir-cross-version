@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.re.re.conditionalRead-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.conditionalRead-5to4",
-  "name" : "CapabilityStatement.rest.resource.conditionalRead5to4",
+  "name" : "CapabilityStatementRestResourceConditionalRead5to4",
   "title" : "Mapping for CapabilityStatement.rest.resource.conditionalRead from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.rest.resource.conditionalRead from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalRead",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalRead",
   "group" : [{

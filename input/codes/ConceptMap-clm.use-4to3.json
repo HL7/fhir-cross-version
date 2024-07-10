@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "clm.use-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clm.use-4to3",
-  "name" : "clm.use-4to3",
+  "name" : "ClaimUse4to3",
   "title" : "Mapping for Claim.use from R4 to R3",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for Claim.use from R4 to R3",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Claim#Claim.use",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.use",
   "group" : [{

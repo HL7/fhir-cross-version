@@ -3,28 +3,28 @@
 /// title = "DataElement Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/DataElement" alias DataElement as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/DataElement" alias DataElement as source
 uses "http://hl7.org/fhir/1.0/DataElement" alias DataElementR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group DataElement(source src : DataElement, target tgt : DataElementR2) extends DomainResource <<type+>> {
-  src.url -> tgt.url "DataElement-url";
-  src.identifier -> tgt.identifier "DataElement-identifier";
-  src.version -> tgt.version "DataElement-version";
-  src.experimental -> tgt.experimental "DataElement-experimental";
-  src.name -> tgt.name "DataElement-name";
-  src.status -> tgt.status "DataElement-status";
-  src.publisher -> tgt.publisher "DataElement-publisher";
-  src.contact as vs0 -> tgt.contact as vt0 then decontact(vs0, vt0) "DataElement-contact";
-  src.date -> tgt.date "DataElement-date";
-  src.jurisdiction -> tgt.useContext "DataElement-useContext";
+  src.url -> tgt.url "DataElementurl";
+  src.identifier -> tgt.identifier "DataElementidentifier";
+  src.version -> tgt.version "DataElementversion";
+  src.experimental -> tgt.experimental "DataElementexperimental";
+  src.name -> tgt.name "DataElementname";
+  src.status -> tgt.status "DataElementstatus";
+  src.publisher -> tgt.publisher "DataElementpublisher";
+  src.contact as vs0 -> tgt.contact as vt0 then decontact(vs0, vt0) "DataElementcontact";
+  src.date -> tgt.date "DataElementdate";
+  src.jurisdiction -> tgt.useContext "DataElementuseContext";
   src.useContext as vs then {
-    vs.value -> tgt.useContext "DataElement-useContext-value";
-  } "DataElement-useContext";
-  src.stringency -> tgt.stringency "DataElement-stringency";
-  src.mapping as vs0 -> tgt.mapping as vt0 then deMapping(vs0, vt0) "DataElement-mapping";
-  src.element as vs -> tgt.element as vt then ElementDefinition(src, vs, vt) "DataElement-element";
+    vs.value -> tgt.useContext "DataElementuseContext-value";
+  } "DataElementuseContext";
+  src.stringency -> tgt.stringency "DataElementstringency";
+  src.mapping as vs0 -> tgt.mapping as vt0 then deMapping(vs0, vt0) "DataElementmapping";
+  src.element as vs -> tgt.element as vt then ElementDefinition(src, vs, vt) "DataElementelement";
 }
 
 group decontact(source src, target tgt) extends Element {

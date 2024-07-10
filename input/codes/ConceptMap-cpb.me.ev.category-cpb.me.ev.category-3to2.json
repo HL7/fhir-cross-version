@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.me.ev.category-cpb.me.ev.category-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.me.ev.category-cpb.me.ev.category-3to2",
-  "name" : "CapabilityStatement.messaging.event.categoryConformance.messaging.event.category3to2",
+  "name" : "CapabilityStatementMessagingEventCategoryConformanceMessagingEventCategory3to2",
   "title" : "Mapping for CapabilityStatement.messaging.event.category/Conformance.messaging.event.category from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.messaging.event.category/Conformance.messaging.event.category from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.event.category",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.messaging.event.category",
   "group" : [{

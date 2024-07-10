@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "clr.status-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clr.status-5to4",
-  "name" : "ClaimResponse.status5to4",
+  "name" : "ClaimResponseStatus5to4",
   "title" : "Mapping for ClaimResponse.status from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ClaimResponse.status from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ClaimResponse#ClaimResponse.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ClaimResponse#ClaimResponse.status",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.en.securityLabel-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.en.securityLabel-4to3",
-  "name" : "AuditEvent.entity.securityLabelr4to3",
+  "name" : "AuditEventEntitySecurityLabelr4to3",
   "title" : "Mapping for AuditEvent.entity.securityLabel from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.entity.securityLabel from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.entity.securityLabel",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.entity.securityLabel",
   "group" : [{

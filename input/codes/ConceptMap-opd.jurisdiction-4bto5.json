@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "opd.jurisdiction-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opd.jurisdiction-4bto5",
-  "name" : "OperationDefinition.jurisdictionr4bto5",
+  "name" : "OperationDefinitionJurisdictionr4bto5",
   "title" : "Mapping for OperationDefinition.jurisdiction from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for OperationDefinition.jurisdiction from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/OperationDefinition#OperationDefinition.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/OperationDefinition#OperationDefinition.jurisdiction",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ctt.legalState-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ctt.legalState-4to5",
-  "name" : "Contract.legalState4to5",
+  "name" : "ContractLegalState4to5",
   "title" : "Mapping for Contract.legalState from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Contract.legalState from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Contract#Contract.legalState",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Contract#Contract.legalState",
   "group" : [{

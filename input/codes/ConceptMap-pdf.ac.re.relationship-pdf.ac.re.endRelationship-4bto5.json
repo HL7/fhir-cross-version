@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pdf.ac.re.relationship-pdf.ac.re.endRelationship-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.re.relationship-pdf.ac.re.endRelationship-4bto5",
-  "name" : "PlanDefinition.action.relatedAction.relationshipPlanDefinition.action.relatedAction.endRelationship4bto5",
+  "name" : "PlanDefinitionActionRelatedActionRelationshipPlanDefinitionActionRelatedActionEndRelationship4bto5",
   "title" : "Mapping for PlanDefinition.action.relatedAction.relationship/PlanDefinition.action.relatedAction.endRelationship from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for PlanDefinition.action.relatedAction.relationship/PlanDefinition.action.relatedAction.endRelationship from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.endRelationship",
   "group" : [{

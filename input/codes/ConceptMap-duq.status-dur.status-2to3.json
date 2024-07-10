@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "duq.status-dur.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/duq.status-dur.status-2to3",
-  "name" : "DeviceUseRequest.statusDeviceRequest.status2to3",
+  "name" : "DeviceUseRequestStatusDeviceRequestStatus2to3",
   "title" : "Mapping for DeviceUseRequest.status to DeviceRequest.status from 2 to 3",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for DeviceUseRequest.status to DeviceRequest.status from 2 to 3",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/DeviceUseRequest#DeviceUseRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/DeviceRequest#DeviceRequest.status",
   "group" : [{

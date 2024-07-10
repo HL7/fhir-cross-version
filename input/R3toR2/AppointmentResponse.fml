@@ -3,7 +3,7 @@
 /// title = "AppointmentResponse Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/AppointmentResponse" alias AppointmentResponse as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/AppointmentResponse" alias AppointmentResponse as source
 uses "http://hl7.org/fhir/1.0/AppointmentResponse" alias AppointmentResponseR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"

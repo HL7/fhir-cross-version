@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "elr.outcome-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/elr.outcome-3to2",
-  "name" : "EligibilityResponse.outcome3to2",
+  "name" : "EligibilityResponseOutcome3to2",
   "title" : "Mapping for EligibilityResponse.outcome from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for EligibilityResponse.outcome from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/EligibilityResponse#EligibilityResponse.outcome",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/EligibilityResponse#EligibilityResponse.outcome",
   "group" : [{

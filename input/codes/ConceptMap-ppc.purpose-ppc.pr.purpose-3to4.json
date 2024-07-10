@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ppc.purpose-ppc.pr.purpose-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.purpose-ppc.pr.purpose-3to4",
-  "name" : "Consent.purposeConsent.provision.purpose3to4",
+  "name" : "ConsentPurposeConsentProvisionPurpose3to4",
   "title" : "Mapping for Consent.purpose/Consent.provision.purpose from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Consent.purpose/Consent.provision.purpose from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.purpose",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.purpose",
   "group" : [{

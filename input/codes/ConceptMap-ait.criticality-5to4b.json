@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ait.criticality-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ait.criticality-5to4b",
-  "name" : "AllergyIntolerance.criticality5to4b",
+  "name" : "AllergyIntoleranceCriticality5to4b",
   "title" : "Mapping for AllergyIntolerance.criticality from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for AllergyIntolerance.criticality from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.criticality",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance#AllergyIntolerance.criticality",
   "group" : [{

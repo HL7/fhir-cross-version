@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "dev.status-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dev.status-4bto5",
-  "name" : "dev.status-4bto5",
+  "name" : "DeviceStatus4bto5",
   "title" : "Mapping for Device.status from R4B to R5",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for Device.status from R4B to R5",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Device#Device.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Device#Device.status",
   "group" : [{

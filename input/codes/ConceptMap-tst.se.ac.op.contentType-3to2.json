@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tst.se.ac.op.contentType-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.op.contentType-3to2",
-  "name" : "TestScript.setup.action.operation.contentType3to2",
+  "name" : "TestScriptSetupActionOperationContentType3to2",
   "title" : "Mapping for TestScript.setup.action.operation.contentType from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for TestScript.setup.action.operation.contentType from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.setup.action.operation.contentType",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/TestScript#TestScript.setup.action.operation.contentType",
   "group" : [{

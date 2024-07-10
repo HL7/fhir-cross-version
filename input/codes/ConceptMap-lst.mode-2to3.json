@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "lst.mode-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/lst.mode-2to3",
-  "name" : "List.mode2to3",
+  "name" : "ListMode2to3",
   "title" : "Mapping for List.mode from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for List.mode from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/List#List.mode",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/List#List.mode",
   "group" : [{

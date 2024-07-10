@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cid.jurisdiction-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cid.jurisdiction-4to4b",
-  "name" : "ChargeItemDefinition.jurisdictionr4to4b",
+  "name" : "ChargeItemDefinitionJurisdictionr4to4b",
   "title" : "Mapping for ChargeItemDefinition.jurisdiction from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ChargeItemDefinition.jurisdiction from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.jurisdiction",
   "group" : [{

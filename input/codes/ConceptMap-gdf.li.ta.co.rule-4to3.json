@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "gdf.li.ta.co.rule-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/gdf.li.ta.co.rule-4to3",
-  "name" : "GraphDefinition.link.target.compartment.rule4to3",
+  "name" : "GraphDefinitionLinkTargetCompartmentRule4to3",
   "title" : "Mapping for GraphDefinition.link.target.compartment.rule from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for GraphDefinition.link.target.compartment.rule from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.rule",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.rule",
   "group" : [{

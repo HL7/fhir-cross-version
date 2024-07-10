@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prd.use-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prd.use-4bto5",
-  "name" : "ParameterDefinition.use4bto5",
+  "name" : "ParameterDefinitionUse4bto5",
   "title" : "Mapping for ParameterDefinition.use from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ParameterDefinition.use from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ParameterDefinition#ParameterDefinition.use",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ParameterDefinition#ParameterDefinition.use",
   "group" : [{

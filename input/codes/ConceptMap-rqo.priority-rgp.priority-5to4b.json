@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rqo.priority-rgp.priority-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rqo.priority-rgp.priority-5to4b",
-  "name" : "RequestOrchestration.priorityRequestGroup.priority5to4b",
+  "name" : "RequestOrchestrationPriorityRequestGroupPriority5to4b",
   "title" : "Mapping for RequestOrchestration.priority/RequestGroup.priority from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for RequestOrchestration.priority/RequestGroup.priority from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.priority",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.priority",
   "group" : [{

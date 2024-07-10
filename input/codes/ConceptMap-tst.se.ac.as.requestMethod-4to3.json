@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tst.se.ac.as.requestMethod-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.requestMethod-4to3",
-  "name" : "TestScript.setup.action.assert.requestMethod4to3",
+  "name" : "TestScriptSetupActionAssertRequestMethod4to3",
   "title" : "Mapping for TestScript.setup.action.assert.requestMethod from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for TestScript.setup.action.assert.requestMethod from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.requestMethod",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.setup.action.assert.requestMethod",
   "group" : [{

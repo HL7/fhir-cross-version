@@ -3,8 +3,8 @@
 /// title = "Observation Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Observation" alias ObservationR3 as source
-uses "http://hl7.org/fhir/4.0/Observation" alias Observation as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Observation" alias ObservationR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Observation" alias Observation as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

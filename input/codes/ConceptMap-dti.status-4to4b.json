@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dti.status-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dti.status-4to4b",
-  "name" : "DetectedIssue.status4to4b",
+  "name" : "DetectedIssueStatus4to4b",
   "title" : "Mapping for DetectedIssue.status from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for DetectedIssue.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DetectedIssue#DetectedIssue.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DetectedIssue#DetectedIssue.status",
   "group" : [{

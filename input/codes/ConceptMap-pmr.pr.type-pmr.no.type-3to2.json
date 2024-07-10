@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pmr.pr.type-pmr.no.type-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pmr.pr.type-pmr.no.type-3to2",
-  "name" : "PaymentReconciliation.processNote.typePaymentReconciliation.note.type3to2",
+  "name" : "PaymentReconciliationProcessNoteTypePaymentReconciliationNoteType3to2",
   "title" : "Mapping for PaymentReconciliation.processNote.type/PaymentReconciliation.note.type from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for PaymentReconciliation.processNote.type/PaymentReconciliation.note.type from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.processNote.type",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.note.type",
   "group" : [{

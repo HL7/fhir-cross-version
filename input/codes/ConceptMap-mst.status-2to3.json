@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mst.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mst.status-2to3",
-  "name" : "MedicationStatement.status2to3",
+  "name" : "MedicationStatementStatus2to3",
   "title" : "Mapping for MedicationStatement.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for MedicationStatement.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/MedicationStatement#MedicationStatement.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/MedicationStatement#MedicationStatement.status",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.do.mode-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.do.mode-5to4b",
-  "name" : "CapabilityStatement.document.mode5to4b",
+  "name" : "CapabilityStatementDocumentMode5to4b",
   "title" : "Mapping for CapabilityStatement.document.mode from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.document.mode from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.document.mode",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.document.mode",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "nsd.jurisdiction-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.jurisdiction-4to4b",
-  "name" : "NamingSystem.jurisdictionr4to4b",
+  "name" : "NamingSystemJurisdictionr4to4b",
   "title" : "Mapping for NamingSystem.jurisdiction from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for NamingSystem.jurisdiction from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/NamingSystem#NamingSystem.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/NamingSystem#NamingSystem.jurisdiction",
   "group" : [{

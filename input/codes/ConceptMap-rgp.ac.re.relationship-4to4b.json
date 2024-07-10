@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rgp.ac.re.relationship-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.re.relationship-4to4b",
-  "name" : "RequestGroup.action.relatedAction.relationship4to4b",
+  "name" : "RequestGroupActionRelatedActionRelationship4to4b",
   "title" : "Mapping for RequestGroup.action.relatedAction.relationship from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for RequestGroup.action.relatedAction.relationship from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.relatedAction.relationship",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.relatedAction.relationship",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.en.securityLabel-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.en.securityLabel-4to4b",
-  "name" : "AuditEvent.entity.securityLabelr4to4b",
+  "name" : "AuditEventEntitySecurityLabelr4to4b",
   "title" : "Mapping for AuditEvent.entity.securityLabel from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.entity.securityLabel from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.entity.securityLabel",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.entity.securityLabel",
   "group" : [{
@@ -368,10 +370,7 @@
     },
     {
       "code" : "PurposeOfUse",
-      "target" : [{
-        "code" : "PurposeOfUse",
-        "relationship" : "equivalent"
-      }]
+      "noMap" : true
     },
     {
       "code" : "RECORDMGT",
@@ -1466,6 +1465,454 @@
         "code" : "V",
         "relationship" : "equivalent"
       }]
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+    "element" : [{
+      "code" : "L",
+      "target" : [{
+        "code" : "L",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "N",
+      "target" : [{
+        "code" : "N",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "M",
+      "target" : [{
+        "code" : "M",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "U",
+      "noMap" : true
+    },
+    {
+      "code" : "R",
+      "noMap" : true
+    },
+    {
+      "code" : "V",
+      "noMap" : true
+    }]
+  },
+  {
+    "source" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "target" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+    "element" : [{
+      "code" : "SSP",
+      "target" : [{
+        "code" : "SSP",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CPLYOPP",
+      "noMap" : true
+    },
+    {
+      "code" : "HIV",
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYCC",
+      "noMap" : true
+    },
+    {
+      "code" : "SDV",
+      "noMap" : true
+    },
+    {
+      "code" : "SICKLE",
+      "noMap" : true
+    },
+    {
+      "code" : "MASK",
+      "noMap" : true
+    },
+    {
+      "code" : "DOWNGRDLABEL",
+      "noMap" : true
+    },
+    {
+      "code" : "NODSCLCD",
+      "noMap" : true
+    },
+    {
+      "code" : "NOPAT",
+      "noMap" : true
+    },
+    {
+      "code" : "PSEUD",
+      "noMap" : true
+    },
+    {
+      "code" : "SEX",
+      "noMap" : true
+    },
+    {
+      "code" : "REL",
+      "noMap" : true
+    },
+    {
+      "code" : "FMCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "AUTHPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "NOPERSISTP",
+      "noMap" : true
+    },
+    {
+      "code" : "NOMOU",
+      "noMap" : true
+    },
+    {
+      "code" : "SPI",
+      "noMap" : true
+    },
+    {
+      "code" : "ENCRYPTR",
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYCD",
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYOSP",
+      "noMap" : true
+    },
+    {
+      "code" : "SUD",
+      "noMap" : true
+    },
+    {
+      "code" : "RefrainPolicy",
+      "noMap" : true
+    },
+    {
+      "code" : "EMP",
+      "noMap" : true
+    },
+    {
+      "code" : "NORELINK",
+      "noMap" : true
+    },
+    {
+      "code" : "B",
+      "noMap" : true
+    },
+    {
+      "code" : "RESCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "GDIS",
+      "noMap" : true
+    },
+    {
+      "code" : "NODSCLCDS",
+      "noMap" : true
+    },
+    {
+      "code" : "LIVARG",
+      "noMap" : true
+    },
+    {
+      "code" : "DOB",
+      "noMap" : true
+    },
+    {
+      "code" : "CEL",
+      "noMap" : true
+    },
+    {
+      "code" : "RACE",
+      "noMap" : true
+    },
+    {
+      "code" : "ENCRYPTT",
+      "noMap" : true
+    },
+    {
+      "code" : "COGN",
+      "noMap" : true
+    },
+    {
+      "code" : "NORDSCLCD",
+      "noMap" : true
+    },
+    {
+      "code" : "NORDSCLCDS",
+      "noMap" : true
+    },
+    {
+      "code" : "AUDIT",
+      "noMap" : true
+    },
+    {
+      "code" : "NOCOLLECT",
+      "noMap" : true
+    },
+    {
+      "code" : "NOVIP",
+      "noMap" : true
+    },
+    {
+      "code" : "AOD",
+      "noMap" : true
+    },
+    {
+      "code" : "MH",
+      "noMap" : true
+    },
+    {
+      "code" : "SecurityPolicy",
+      "noMap" : true
+    },
+    {
+      "code" : "SCA",
+      "noMap" : true
+    },
+    {
+      "code" : "NORDSCLW",
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "LRCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "DECLASSIFYLABEL",
+      "noMap" : true
+    },
+    {
+      "code" : "ACCESSCONSCHEME",
+      "noMap" : true
+    },
+    {
+      "code" : "NOORGPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "TBOO",
+      "noMap" : true
+    },
+    {
+      "code" : "PRS",
+      "noMap" : true
+    },
+    {
+      "code" : "NOLIST",
+      "noMap" : true
+    },
+    {
+      "code" : "PDS",
+      "noMap" : true
+    },
+    {
+      "code" : "LOCIS",
+      "noMap" : true
+    },
+    {
+      "code" : "DRGIS",
+      "noMap" : true
+    },
+    {
+      "code" : "ENCRYPT",
+      "noMap" : true
+    },
+    {
+      "code" : "ObligationPolicy",
+      "noMap" : true
+    },
+    {
+      "code" : "PRIVMARK",
+      "noMap" : true
+    },
+    {
+      "code" : "REDACT",
+      "noMap" : true
+    },
+    {
+      "code" : "STD",
+      "noMap" : true
+    },
+    {
+      "code" : "HRCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "OPIOIDUD",
+      "noMap" : true
+    },
+    {
+      "code" : "DELAU",
+      "noMap" : true
+    },
+    {
+      "code" : "ORCON",
+      "noMap" : true
+    },
+    {
+      "code" : "EMPL",
+      "noMap" : true
+    },
+    {
+      "code" : "ACOCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "EMOTDIS",
+      "noMap" : true
+    },
+    {
+      "code" : "DVD",
+      "noMap" : true
+    },
+    {
+      "code" : "DIA",
+      "noMap" : true
+    },
+    {
+      "code" : "LABEL",
+      "noMap" : true
+    },
+    {
+      "code" : "NOINTEGRATE",
+      "noMap" : true
+    },
+    {
+      "code" : "DEID",
+      "noMap" : true
+    },
+    {
+      "code" : "VIO",
+      "noMap" : true
+    },
+    {
+      "code" : "ETH",
+      "noMap" : true
+    },
+    {
+      "code" : "DELEPOL",
+      "noMap" : true
+    },
+    {
+      "code" : "ETHUD",
+      "noMap" : true
+    },
+    {
+      "code" : "COMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "UPGRDLABEL",
+      "noMap" : true
+    },
+    {
+      "code" : "ADOL",
+      "noMap" : true
+    },
+    {
+      "code" : "DEMO",
+      "noMap" : true
+    },
+    {
+      "code" : "PHY",
+      "noMap" : true
+    },
+    {
+      "code" : "BH",
+      "noMap" : true
+    },
+    {
+      "code" : "CTCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "MINEC",
+      "noMap" : true
+    },
+    {
+      "code" : "PSY",
+      "noMap" : true
+    },
+    {
+      "code" : "AUDTR",
+      "noMap" : true
+    },
+    {
+      "code" : "PACOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "DRIVLABEL",
+      "noMap" : true
+    },
+    {
+      "code" : "ANONY",
+      "noMap" : true
+    },
+    {
+      "code" : "ENCRYPTU",
+      "noMap" : true
+    },
+    {
+      "code" : "MST",
+      "noMap" : true
+    },
+    {
+      "code" : "NOAUTH",
+      "noMap" : true
+    },
+    {
+      "code" : "NOREUSE",
+      "noMap" : true
+    },
+    {
+      "code" : "RMGTCOMPT",
+      "noMap" : true
+    },
+    {
+      "code" : "MARST",
+      "noMap" : true
+    },
+    {
+      "code" : "GENDER",
+      "noMap" : true
+    },
+    {
+      "code" : "PSYTHPN",
+      "noMap" : true
+    },
+    {
+      "code" : "CPLYJPP",
+      "noMap" : true
+    },
+    {
+      "code" : "PERSISTLABEL",
+      "noMap" : true
+    },
+    {
+      "code" : "HUAPRV",
+      "noMap" : true
     }]
   }]
 }

@@ -4,21 +4,21 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/DetectedIssue" alias DetectedIssueR2 as source
-uses "http://hl7.org/fhir/3.0/DetectedIssue" alias DetectedIssue as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/DetectedIssue" alias DetectedIssue as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group DetectedIssue(source src : DetectedIssueR2, target tgt : DetectedIssue) extends DomainResource <<type+>> {
-  src.patient -> tgt.patient "DetectedIssue-patient";
-  src.category -> tgt.category "DetectedIssue-category";
-  src.severity -> tgt.severity "DetectedIssue-severity";
-  src.implicated -> tgt.implicated "DetectedIssue-implicated";
-  src.detail -> tgt.detail "DetectedIssue-detail";
-  src.date -> tgt.date "DetectedIssue-date";
-  src.author -> tgt.author "DetectedIssue-author";
-  src.identifier -> tgt.identifier "DetectedIssue-identifier";
-  src.reference -> tgt.reference "DetectedIssue-reference";
-  src.mitigation as vs0 -> tgt.mitigation as vt0 then dtiMitigation(vs0, vt0) "DetectedIssue-mitigation";
+  src.patient -> tgt.patient "DetectedIssuepatient";
+  src.category -> tgt.category "DetectedIssuecategory";
+  src.severity -> tgt.severity "DetectedIssueseverity";
+  src.implicated -> tgt.implicated "DetectedIssueimplicated";
+  src.detail -> tgt.detail "DetectedIssuedetail";
+  src.date -> tgt.date "DetectedIssuedate";
+  src.author -> tgt.author "DetectedIssueauthor";
+  src.identifier -> tgt.identifier "DetectedIssueidentifier";
+  src.reference -> tgt.reference "DetectedIssuereference";
+  src.mitigation as vs0 -> tgt.mitigation as vt0 then dtiMitigation(vs0, vt0) "DetectedIssuemitigation";
 }
 
 group dtiMitigation(source src, target tgt) extends BackboneElement {

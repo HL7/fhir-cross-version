@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "cmr.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmr.status-2to3",
-  "name" : "cmr.status-2to3",
+  "name" : "CommunicationRequestStatus2to3",
   "title" : "Mapping for CommunicationRequest.status from R2 to R3",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for CommunicationRequest.status from R2 to R3",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/CommunicationRequest#CommunicationRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CommunicationRequest#CommunicationRequest.status",
   "group" : [{
@@ -28,11 +30,13 @@
       "code" : "failed",
       "target" : [{
         "code" : "cancelled",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mis-match"
       },
       {
         "code" : "entered-in-error",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mis-match"
       }]
     },
     {

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.subtype-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.subtype-4to3",
-  "name" : "AuditEvent.subtyper4to3",
+  "name" : "AuditEventSubtyper4to3",
   "title" : "Mapping for AuditEvent.subtype from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.subtype from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.subtype",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.subtype",
   "group" : [{

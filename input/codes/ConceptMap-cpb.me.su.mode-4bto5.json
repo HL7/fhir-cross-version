@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.me.su.mode-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.me.su.mode-4bto5",
-  "name" : "CapabilityStatement.messaging.supportedMessage.mode4bto5",
+  "name" : "CapabilityStatementMessagingSupportedMessageMode4bto5",
   "title" : "Mapping for CapabilityStatement.messaging.supportedMessage.mode from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.messaging.supportedMessage.mode from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.supportedMessage.mode",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.supportedMessage.mode",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "hcs.av.daysOfWeek-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/hcs.av.daysOfWeek-3to2",
-  "name" : "HealthcareService.availableTime.daysOfWeek3to2",
+  "name" : "HealthcareServiceAvailableTimeDaysOfWeek3to2",
   "title" : "Mapping for HealthcareService.availableTime.daysOfWeek from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for HealthcareService.availableTime.daysOfWeek from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/HealthcareService#HealthcareService.availableTime.daysOfWeek",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/HealthcareService#HealthcareService.availableTime.daysOfWeek",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prp.status-tsk.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prp.status-tsk.status-3to4",
-  "name" : "ProcessResponse.statusTask.status3to4",
+  "name" : "ProcessResponseStatusTaskStatus3to4",
   "title" : "Mapping for ProcessResponse.status/Task.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ProcessResponse.status/Task.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcessResponse#ProcessResponse.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Task#Task.status",
   "group" : [{
@@ -47,15 +49,18 @@
       },
       {
         "code" : "completed",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "failed",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "rejected",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

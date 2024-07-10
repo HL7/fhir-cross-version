@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "vps.status-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/vps.status-5to4",
-  "name" : "VisionPrescription.status5to4",
+  "name" : "VisionPrescriptionStatus5to4",
   "title" : "Mapping for VisionPrescription.status from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for VisionPrescription.status from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/VisionPrescription#VisionPrescription.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/VisionPrescription#VisionPrescription.status",
   "group" : [{

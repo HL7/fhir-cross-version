@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "eoc.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eoc.status-3to4",
-  "name" : "EpisodeOfCare.status3to4",
+  "name" : "EpisodeOfCareStatus3to4",
   "title" : "Mapping for EpisodeOfCare.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for EpisodeOfCare.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/EpisodeOfCare#EpisodeOfCare.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/EpisodeOfCare#EpisodeOfCare.status",
   "group" : [{

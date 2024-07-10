@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pdf.ac.requiredBehavior-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.requiredBehavior-4to3",
-  "name" : "PlanDefinition.action.requiredBehavior4to3",
+  "name" : "PlanDefinitionActionRequiredBehavior4to3",
   "title" : "Mapping for PlanDefinition.action.requiredBehavior from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for PlanDefinition.action.requiredBehavior from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.requiredBehavior",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.action.requiredBehavior",
   "group" : [{

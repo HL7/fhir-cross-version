@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/Narrative" alias NarrativeR2 as source
-uses "http://hl7.org/fhir/3.0/Narrative" alias Narrative as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Narrative" alias Narrative as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"

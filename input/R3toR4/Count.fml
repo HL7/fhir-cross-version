@@ -3,8 +3,8 @@
 /// title = "Count Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Count" alias CountR3 as source
-uses "http://hl7.org/fhir/4.0/Count" alias Count as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Count" alias CountR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Count" alias Count as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

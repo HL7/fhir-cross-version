@@ -4,26 +4,26 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/ImagingStudy" alias ImagingStudyR2 as source
-uses "http://hl7.org/fhir/3.0/ImagingStudy" alias ImagingStudy as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ImagingStudy" alias ImagingStudy as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group ImagingStudy(source src : ImagingStudyR2, target tgt : ImagingStudy) extends DomainResource <<type+>> {
-  src.started -> tgt.started "ImagingStudy-started";
-  src.patient -> tgt.patient "ImagingStudy-patient";
-  src.uid -> tgt.uid "ImagingStudy-uid";
-  src.accession -> tgt.accession "ImagingStudy-accession";
-  src.identifier -> tgt.identifier "ImagingStudy-identifier";
-  src.modalityList -> tgt.modalityList "ImagingStudy-modalityList";
-  src.referrer -> tgt.referrer "ImagingStudy-referrer";
-  src.availability -> tgt.availability "ImagingStudy-availability";
-  src.url as v ->  tgt.extension as t,  t.url = 'http://hl7.org/fhir/ImagingStudy-r2-url',  t.value = v "ImagingStudy-url";
-  src.numberOfSeries -> tgt.numberOfSeries "ImagingStudy-numberOfSeries";
-  src.numberOfInstances -> tgt.numberOfInstances "ImagingStudy-numberOfInstances";
-  src.procedure -> tgt.procedureReference "ImagingStudy-procedure";
-  src.interpreter -> tgt.interpreter "ImagingStudy-interpreter";
-  src.description -> tgt.description "ImagingStudy-description";
-  src.series as vs0 -> tgt.series as vt0 then imgSeries(vs0, vt0) "ImagingStudy-series";
+  src.started -> tgt.started "ImagingStudy_started";
+  src.patient -> tgt.patient "ImagingStudy_patient";
+  src.uid -> tgt.uid "ImagingStudy_uid";
+  src.accession -> tgt.accession "ImagingStudy_accession";
+  src.identifier -> tgt.identifier "ImagingStudy_identifier";
+  src.modalityList -> tgt.modalityList "ImagingStudy_modalityList";
+  src.referrer -> tgt.referrer "ImagingStudy_referrer";
+  src.availability -> tgt.availability "ImagingStudy_availability";
+  src.url as v ->  tgt.extension as t,  t.url = 'http://hl7.org/fhir/ImagingStudy-r2-url',  t.value = v "ImagingStudy_url";
+  src.numberOfSeries -> tgt.numberOfSeries "ImagingStudy_numberOfSeries";
+  src.numberOfInstances -> tgt.numberOfInstances "ImagingStudy_numberOfInstances";
+  src.procedure -> tgt.procedureReference "ImagingStudy_procedure";
+  src.interpreter -> tgt.interpreter "ImagingStudy_interpreter";
+  src.description -> tgt.description "ImagingStudy_description";
+  src.series as vs0 -> tgt.series as vt0 then imgSeries(vs0, vt0) "ImagingStudy_series";
 }
 
 group imgSeries(source src, target tgt) extends BackboneElement {

@@ -3,8 +3,8 @@
 /// title = "Flag Transforms: R4 to R5"
 /// status = "draft"
 
-uses "http://hl7.org/fhir/4.0/Flag" alias FlagR4 as source
-uses "http://hl7.org/fhir/5.0/Flag" alias FlagR5 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Flag" alias FlagR4 as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/Flag" alias FlagR5 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 

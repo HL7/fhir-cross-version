@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "evv.ch.groupMeasure-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evv.ch.groupMeasure-4bto4",
-  "name" : "EvidenceVariable.characteristic.groupMeasure4bto4",
+  "name" : "EvidenceVariableCharacteristicGroupMeasure4bto4",
   "title" : "Mapping for EvidenceVariable.characteristic.groupMeasure from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for EvidenceVariable.characteristic.groupMeasure from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EvidenceVariable#EvidenceVariable.characteristic.groupMeasure",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/EvidenceVariable#EvidenceVariable.characteristic.groupMeasure",
   "group" : [{

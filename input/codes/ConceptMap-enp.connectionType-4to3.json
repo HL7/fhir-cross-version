@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "enp.connectionType-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enp.connectionType-4to3",
-  "name" : "Endpoint.connectionType4to3",
+  "name" : "EndpointConnectionType4to3",
   "title" : "Mapping for Endpoint.connectionType from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Endpoint.connectionType from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Endpoint#Endpoint.connectionType",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Endpoint#Endpoint.connectionType",
   "group" : [{

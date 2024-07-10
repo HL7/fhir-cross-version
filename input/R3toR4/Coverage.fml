@@ -3,8 +3,8 @@
 /// title = "Coverage Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Coverage" alias CoverageR3 as source
-uses "http://hl7.org/fhir/4.0/Coverage" alias Coverage as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Coverage" alias CoverageR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Coverage" alias Coverage as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

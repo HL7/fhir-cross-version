@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "slt.freeBusyType-slt.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/slt.freeBusyType-slt.status-2to3",
-  "name" : "Slot.freeBusyTypeSlot.status2to3",
+  "name" : "SlotFreeBusyTypeSlotStatus2to3",
   "title" : "Mapping for Slot.freeBusyType/Slot.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Slot.freeBusyType/Slot.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Slot#Slot.freeBusyType",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Slot#Slot.status",
   "group" : [{

@@ -3,7 +3,7 @@
 /// title = "Range Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Range" alias Range as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Range" alias Range as source
 uses "http://hl7.org/fhir/1.0/Range" alias RangeR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"

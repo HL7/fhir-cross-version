@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tim.re.dayOfWeek-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.dayOfWeek-4to3",
-  "name" : "Timing.repeat.dayOfWeek4to3",
+  "name" : "TimingRepeatDayOfWeek4to3",
   "title" : "Mapping for Timing.repeat.dayOfWeek from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Timing.repeat.dayOfWeek from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Timing#Timing.repeat.dayOfWeek",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.dayOfWeek",
   "group" : [{

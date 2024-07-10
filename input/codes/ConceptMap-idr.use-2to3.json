@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "idr.use-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/idr.use-2to3",
-  "name" : "Identifier.use2to3",
+  "name" : "IdentifierUse2to3",
   "title" : "Mapping for Identifier.use from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Identifier.use from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Identifier#Identifier.use",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Identifier#Identifier.use",
   "group" : [{

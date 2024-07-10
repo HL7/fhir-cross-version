@@ -3,7 +3,7 @@
 /// title = "Meta Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Meta" alias Meta as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Meta" alias Meta as source
 uses "http://hl7.org/fhir/1.0/Meta" alias MetaR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"

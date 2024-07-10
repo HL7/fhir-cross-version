@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pat.co.relationship-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pat.co.relationship-3to2",
-  "name" : "Patient.contact.relationship3to2",
+  "name" : "PatientContactRelationship3to2",
   "title" : "Mapping for Patient.contact.relationship from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Patient.contact.relationship from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.contact.relationship",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.contact.relationship",
   "group" : [{
@@ -50,15 +52,18 @@
       "code" : "N",
       "target" : [{
         "code" : "family",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "parent",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "partner",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

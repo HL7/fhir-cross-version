@@ -3,8 +3,8 @@
 /// title = "DocumentReference Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/DocumentReference" alias DocumentReferenceR3 as source
-uses "http://hl7.org/fhir/4.0/DocumentReference" alias DocumentReference as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/DocumentReference" alias DocumentReferenceR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference" alias DocumentReference as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pdf.ac.co.kind-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.co.kind-4to3",
-  "name" : "PlanDefinition.action.condition.kind4to3",
+  "name" : "PlanDefinitionActionConditionKind4to3",
   "title" : "Mapping for PlanDefinition.action.condition.kind from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for PlanDefinition.action.condition.kind from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.condition.kind",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.action.condition.kind",
   "group" : [{

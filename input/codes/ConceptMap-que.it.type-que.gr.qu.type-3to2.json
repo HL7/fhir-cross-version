@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "que.it.type-que.gr.qu.type-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/que.it.type-que.gr.qu.type-3to2",
-  "name" : "Questionnaire.item.typeQuestionnaire.group.question.type3to2",
+  "name" : "QuestionnaireItemTypeQuestionnaireGroupQuestionType3to2",
   "title" : "Mapping for Questionnaire.item.type/Questionnaire.group.question.type from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Questionnaire.item.type/Questionnaire.group.question.type from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Questionnaire#Questionnaire.item.type",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Questionnaire#Questionnaire.group.question.type",
   "group" : [{

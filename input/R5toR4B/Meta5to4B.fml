@@ -3,8 +3,8 @@
 /// title = "Meta Transforms: R5 to R4B"
 /// status = "active"
 
-uses "http://hl7.org/fhir/5.0/Meta" alias MetaR5 as source
-uses "http://hl7.org/fhir/4.3/Meta" alias MetaR4B as target
+uses "http://hl7.org/fhir/5.0/StructureDefinition/Meta" alias MetaR5 as source
+uses "http://hl7.org/fhir/4.3/StructureDefinition/Meta" alias MetaR4B as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 

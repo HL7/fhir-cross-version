@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ppc.pr.type-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.type-4bto4",
-  "name" : "Consent.provision.type4bto4",
+  "name" : "ConsentProvisionType4bto4",
   "title" : "Mapping for Consent.provision.type from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Consent.provision.type from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.provision.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.type",
   "group" : [{

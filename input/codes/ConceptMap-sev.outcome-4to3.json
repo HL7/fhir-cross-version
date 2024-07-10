@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.outcome-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.outcome-4to3",
-  "name" : "AuditEvent.outcome4to3",
+  "name" : "AuditEventOutcome4to3",
   "title" : "Mapping for AuditEvent.outcome from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.outcome from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.outcome",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.outcome",
   "group" : [{

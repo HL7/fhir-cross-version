@@ -3,8 +3,8 @@
 /// title = "TestReport Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/TestReport" alias TestReportR3 as source
-uses "http://hl7.org/fhir/4.0/TestReport" alias TestReport as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/TestReport" alias TestReportR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/TestReport" alias TestReport as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

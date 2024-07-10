@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "app.pa.required-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/app.pa.required-4to3",
-  "name" : "Appointment.participant.required4to3",
+  "name" : "AppointmentParticipantRequired4to3",
   "title" : "Mapping for Appointment.participant.required from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Appointment.participant.required from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Appointment#Appointment.participant.required",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Appointment#Appointment.participant.required",
   "group" : [{

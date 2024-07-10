@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "pmn.status-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pmn.status-4to3",
-  "name" : "PaymentNotice.status4to3",
+  "name" : "PaymentNoticeStatus4to3",
   "title" : "Mapping for PaymentNotice.status from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for PaymentNotice.status from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/PaymentNotice#PaymentNotice.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/PaymentNotice#PaymentNotice.status",
   "group" : [{

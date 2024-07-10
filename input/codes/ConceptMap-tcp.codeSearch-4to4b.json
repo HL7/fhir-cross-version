@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tcp.codeSearch-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tcp.codeSearch-4to4b",
-  "name" : "TerminologyCapabilities.codeSearch4to4b",
+  "name" : "TerminologyCapabilitiesCodeSearch4to4b",
   "title" : "Mapping for TerminologyCapabilities.codeSearch from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for TerminologyCapabilities.codeSearch from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.codeSearch",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.codeSearch",
   "group" : [{

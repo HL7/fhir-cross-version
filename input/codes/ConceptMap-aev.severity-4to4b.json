@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "aev.severity-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/aev.severity-4to4b",
-  "name" : "AdverseEvent.severity4to4b",
+  "name" : "AdverseEventSeverity4to4b",
   "title" : "Mapping for AdverseEvent.severity from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for AdverseEvent.severity from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/AdverseEvent#AdverseEvent.severity",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/AdverseEvent#AdverseEvent.severity",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "add.type-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/add.type-2to3",
-  "name" : "Address.type2to3",
+  "name" : "AddressType2to3",
   "title" : "Mapping for Address.type from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Address.type from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Address#Address.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Address#Address.type",
   "group" : [{

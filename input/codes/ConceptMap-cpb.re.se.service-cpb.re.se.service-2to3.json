@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.re.se.service-cpb.re.se.service-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.se.service-cpb.re.se.service-2to3",
-  "name" : "Conformance.rest.security.serviceCapabilityStatement.rest.security.service2to3",
+  "name" : "ConformanceRestSecurityServiceCapabilityStatementRestSecurityService2to3",
   "title" : "Mapping for Conformance.rest.security.service/CapabilityStatement.rest.security.service from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Conformance.rest.security.service/CapabilityStatement.rest.security.service from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.security.service",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.security.service",
   "group" : [{

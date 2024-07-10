@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "bdl.type-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/bdl.type-4to3",
-  "name" : "Bundle.type4to3",
+  "name" : "BundleType4to3",
   "title" : "Mapping for Bundle.type from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Bundle.type from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Bundle#Bundle.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Bundle#Bundle.type",
   "group" : [{

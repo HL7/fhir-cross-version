@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cmp.status-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.status-4to5",
-  "name" : "Composition.status4to5",
+  "name" : "CompositionStatus4to5",
   "title" : "Mapping for Composition.status from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Composition.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Composition#Composition.status",
   "group" : [{
@@ -17,11 +19,13 @@
       },
       {
         "code" : "appended",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "subsumes"
       },
       {
         "code" : "corrected",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "subsumes"
       }]
     },
     {
@@ -39,7 +43,8 @@
       },
       {
         "code" : "partial",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "partial imples prelim?"
       }]
     },
     {

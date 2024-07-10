@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "que.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/que.status-2to3",
-  "name" : "que.status-2to3",
+  "name" : "QuestionnaireStatus2to3",
   "title" : "Mapping for Questionnaire.status from R2 to R3",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for Questionnaire.status from R2 to R3",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Questionnaire#Questionnaire.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Questionnaire#Questionnaire.status",
   "group" : [{

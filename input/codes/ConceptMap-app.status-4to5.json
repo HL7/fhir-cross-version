@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "app.status-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/app.status-4to5",
-  "name" : "Appointment.status4to5",
+  "name" : "AppointmentStatus4to5",
   "title" : "Mapping for Appointment.status from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Appointment.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Appointment#Appointment.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Appointment#Appointment.status",
   "group" : [{

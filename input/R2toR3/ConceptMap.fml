@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/ConceptMap" alias ConceptMapR2 as source
-uses "http://hl7.org/fhir/3.0/ConceptMap" alias ConceptMap as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ConceptMap" alias ConceptMap as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/DomainResource2to3"

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "spd.comparator-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.comparator-3to4",
-  "name" : "SearchParameter.comparator3to4",
+  "name" : "SearchParameterComparator3to4",
   "title" : "Mapping for SearchParameter.comparator from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for SearchParameter.comparator from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.comparator",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.comparator",
   "group" : [{

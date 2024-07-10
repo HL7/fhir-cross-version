@@ -3,7 +3,7 @@
 /// title = "ImplementationGuide Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/ImplementationGuide" alias ImplementationGuide as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ImplementationGuide" alias ImplementationGuide as source
 uses "http://hl7.org/fhir/1.0/ImplementationGuide" alias ImplementationGuideR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
@@ -21,8 +21,8 @@ group ImplementationGuide(source src : ImplementationGuide, target tgt : Impleme
   src.experimental -> tgt.experimental "ImplementationGuide-experimental";
   src.publisher -> tgt.publisher "ImplementationGuide-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "contact-name";
-    vs0.telecom -> vt0.telecom "contact-telecom";
+    vs0.name -> vt0.name "Contract_name";
+    vs0.telecom -> vt0.telecom "Contract_telecom";
   } "ImplementationGuide-contact";
   src.date -> tgt.date "ImplementationGuide-date";
   src.description -> tgt.description "ImplementationGuide-description";

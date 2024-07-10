@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dur.status-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dur.status-4to5",
-  "name" : "DeviceRequest.status4to5",
+  "name" : "DeviceRequestStatus4to5",
   "title" : "Mapping for DeviceRequest.status from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for DeviceRequest.status from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DeviceRequest#DeviceRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/DeviceRequest#DeviceRequest.status",
   "group" : [{

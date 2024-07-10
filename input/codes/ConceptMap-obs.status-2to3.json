@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "obs.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obs.status-2to3",
-  "name" : "Observation.status2to3",
+  "name" : "ObservationStatus2to3",
   "title" : "Mapping for Observation.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Observation.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Observation#Observation.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.status",
   "group" : [{

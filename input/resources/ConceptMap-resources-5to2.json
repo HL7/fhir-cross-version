@@ -5,9 +5,11 @@
   "version" : "0.1",
   "name" : "Resources5to2",
   "title" : "Resource Map R5 to R2",
+  "description" : "Resource Map R5 to R2",
   "status" : "active",
+  "experimental" : false,
   "date" : "2024-02-01",
-  "publisher" : "HL7",
+  "publisher" : "HL7 International / FHIR Infrastructure",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/ValueSet/resource-types",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/ValueSet/resource-types",
   "group" : [{
@@ -165,9 +167,9 @@
     { "code" : "SubstanceSourceMaterial", "noMap" : true },
     { "code" : "SupplyDelivery", "target" : [{ "code" : "SupplyDelivery", "relationship" : "equivalent" }]},
     { "code" : "SupplyRequest", "target" : [{ "code" : "SupplyRequest", "relationship" : "equivalent" }]},
-    { "code" : "Task", "target" : [{ "code" : "Order", "relationship" : "source-is-broader-than-target" },{
+    { "code" : "Task", "target" : [{ "code" : "Order", "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps" },{
         "code" : "OrderResponse",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
       }]
     },
     { "code" : "TerminologyCapabilities", "noMap" : true },

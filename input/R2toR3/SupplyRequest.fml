@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/SupplyRequest" alias SupplyRequestR2 as source
-uses "http://hl7.org/fhir/3.0/SupplyRequest" alias SupplyRequest as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/SupplyRequest" alias SupplyRequest as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 

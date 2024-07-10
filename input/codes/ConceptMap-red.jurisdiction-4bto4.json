@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "red.jurisdiction-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/red.jurisdiction-4bto4",
-  "name" : "ResearchElementDefinition.jurisdictionr4bto4",
+  "name" : "ResearchElementDefinitionJurisdictionr4bto4",
   "title" : "Mapping for ResearchElementDefinition.jurisdiction from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ResearchElementDefinition.jurisdiction from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.jurisdiction",
   "group" : [{

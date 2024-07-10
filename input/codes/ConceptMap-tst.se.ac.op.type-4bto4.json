@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tst.se.ac.op.type-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.op.type-4bto4",
-  "name" : "TestScript.setup.action.operation.type4bto4",
+  "name" : "TestScriptSetupActionOperationType4bto4",
   "title" : "Mapping for TestScript.setup.action.operation.type from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for TestScript.setup.action.operation.type from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.operation.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.operation.type",
   "group" : [{

@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/MessageHeader" alias MessageHeaderR2 as source
-uses "http://hl7.org/fhir/3.0/MessageHeader" alias MessageHeader as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/MessageHeader" alias MessageHeader as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 

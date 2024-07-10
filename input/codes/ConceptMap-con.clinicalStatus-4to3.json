@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "con.clinicalStatus-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/con.clinicalStatus-4to3",
-  "name" : "Condition.clinicalStatus4to3",
+  "name" : "ConditionClinicalStatus4to3",
   "title" : "Mapping for Condition.clinicalStatus from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Condition.clinicalStatus from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Condition#Condition.clinicalStatus",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Condition#Condition.clinicalStatus",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "elq.status-cer.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/elq.status-cer.status-3to4",
-  "name" : "EligibilityRequest.statusCoverageEligibilityRequest.status3to4",
+  "name" : "EligibilityRequestStatusCoverageEligibilityRequestStatus3to4",
   "title" : "Mapping for EligibilityRequest.status/CoverageEligibilityRequest.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for EligibilityRequest.status/CoverageEligibilityRequest.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/EligibilityRequest#EligibilityRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CoverageEligibilityRequest#CoverageEligibilityRequest.status",
   "group" : [{

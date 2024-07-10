@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mea.scoring-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.scoring-4to3",
-  "name" : "Measure.scoring4to3",
+  "name" : "MeasureScoring4to3",
   "title" : "Mapping for Measure.scoring from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Measure.scoring from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.scoring",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Measure#Measure.scoring",
   "group" : [{

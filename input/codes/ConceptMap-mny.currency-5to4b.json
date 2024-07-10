@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mny.currency-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mny.currency-5to4b",
-  "name" : "Money.currencyr5to4b",
+  "name" : "MoneyCurrencyr5to4b",
   "title" : "Mapping for Money.currency from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Money.currency from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Money#Money.currency",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Money#Money.currency",
   "group" : [{

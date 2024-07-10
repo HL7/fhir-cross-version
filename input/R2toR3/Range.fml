@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/Range" alias RangeR2 as source
-uses "http://hl7.org/fhir/3.0/Range" alias Range as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Range" alias Range as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"

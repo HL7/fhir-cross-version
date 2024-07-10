@@ -3,31 +3,31 @@
 /// title = "ImmunizationRecommendation Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/ImmunizationRecommendation" alias ImmunizationRecommendation as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ImmunizationRecommendation" alias ImmunizationRecommendation as source
 uses "http://hl7.org/fhir/1.0/ImmunizationRecommendation" alias ImmunizationRecommendationR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group ImmunizationRecommendation(source src : ImmunizationRecommendation, target tgt : ImmunizationRecommendationR2) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "ImmunizationRecommendation-identifier";
-  src.patient -> tgt.patient "ImmunizationRecommendation-patient";
-  src.recommendation as vs0 -> tgt.recommendation as vt0 then imrRecommendation(vs0, vt0) "ImmunizationRecommendation-recommendation";
+  src.identifier -> tgt.identifier "ImmunizationRecommendation_identifier";
+  src.patient -> tgt.patient "ImmunizationRecommendation_patient";
+  src.recommendation as vs0 -> tgt.recommendation as vt0 then imrRecommendation(vs0, vt0) "ImmunizationRecommendation_recommendation";
 }
 
 group imrRecommendation(source src, target tgt) extends BackboneElement {
-  src.date -> tgt.date "recommendation-date";
-  src.vaccineCode -> tgt.vaccineCode "recommendation-vaccineCode";
-  src.doseNumber -> tgt.doseNumber "recommendation-doseNumber";
-  src.forecastStatus -> tgt.forecastStatus "recommendation-forecastStatus";
-  src.dateCriterion as vs -> tgt.dateCriterion as vt then imrDateCriterion(vs, vt) "recommendation-dateCriterion";
-  src.protocol as vs -> tgt.protocol as vt then imrProtocol(vs, vt) "recommendation-protocol";
-  src.supportingImmunization -> tgt.supportingImmunization "recommendation-supportingImmunization";
-  src.supportingPatientInformation -> tgt.supportingPatientInformation "recommendation-supportingPatientInformation";
+  src.date -> tgt.date "recommendation_date";
+  src.vaccineCode -> tgt.vaccineCode "recommendation_vaccineCode";
+  src.doseNumber -> tgt.doseNumber "recommendation_doseNumber";
+  src.forecastStatus -> tgt.forecastStatus "recommendation_forecastStatus";
+  src.dateCriterion as vs -> tgt.dateCriterion as vt then imrDateCriterion(vs, vt) "recommendation_dateCriterion";
+  src.protocol as vs -> tgt.protocol as vt then imrProtocol(vs, vt) "recommendation_protocol";
+  src.supportingImmunization -> tgt.supportingImmunization "recommendation_supportingImmunization";
+  src.supportingPatientInformation -> tgt.supportingPatientInformation "recommendation_supportingPatientInformation";
 }
 
 group imrDateCriterion(source src, target tgt) extends BackboneElement {
-  src.code -> tgt.code "dateCriterion-date";
-  src.value -> tgt.value "dateCriterion-date";
+  src.code -> tgt.code "dateCriterion_date";
+  src.value -> tgt.value "dateCriterion_date";
 }
 
 group imrProtocol(source src, target tgt) extends BackboneElement {

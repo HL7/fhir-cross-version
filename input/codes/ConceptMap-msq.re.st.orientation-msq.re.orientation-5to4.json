@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "msq.re.st.orientation-msq.re.orientation-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/msq.re.st.orientation-msq.re.orientation-5to4",
-  "name" : "MolecularSequence.relative.startingSequence.orientationMolecularSequence.referenceSeq.orientation5to4",
+  "name" : "MolecularSequenceRelativeStartingSequenceOrientationMolecularSequenceReferenceSeqOrientation5to4",
   "title" : "Mapping for MolecularSequence.relative.startingSequence.orientation/MolecularSequence.referenceSeq.orientation from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for MolecularSequence.relative.startingSequence.orientation/MolecularSequence.referenceSeq.orientation from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MolecularSequence#MolecularSequence.relative.startingSequence.orientation",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.referenceSeq.orientation",
   "group" : [{

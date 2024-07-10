@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mda.type-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mda.type-3to4",
-  "name" : "Media.type3to4",
+  "name" : "MediaType3to4",
   "title" : "Mapping for Media.type from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Media.type from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Media#Media.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Media#Media.type",
   "group" : [{

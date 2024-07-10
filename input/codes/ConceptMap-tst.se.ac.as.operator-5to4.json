@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tst.se.ac.as.operator-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.operator-5to4",
-  "name" : "TestScript.setup.action.assert.operator5to4",
+  "name" : "TestScriptSetupActionAssertOperator5to4",
   "title" : "Mapping for TestScript.setup.action.assert.operator from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for TestScript.setup.action.assert.operator from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/TestScript#TestScript.setup.action.assert.operator",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.operator",
   "group" : [{

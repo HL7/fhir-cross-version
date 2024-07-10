@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "psn.li.assurance-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/psn.li.assurance-4to5",
-  "name" : "Person.link.assurance4to5",
+  "name" : "PersonLinkAssurance4to5",
   "title" : "Mapping for Person.link.assurance from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Person.link.assurance from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Person#Person.link.assurance",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Person#Person.link.assurance",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "que.it.en.operator-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/que.it.en.operator-5to4",
-  "name" : "Questionnaire.item.enableWhen.operator5to4",
+  "name" : "QuestionnaireItemEnableWhenOperator5to4",
   "title" : "Mapping for Questionnaire.item.enableWhen.operator from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Questionnaire.item.enableWhen.operator from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Questionnaire#Questionnaire.item.enableWhen.operator",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Questionnaire#Questionnaire.item.enableWhen.operator",
   "group" : [{

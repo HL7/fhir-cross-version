@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "opd.pa.use-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.use-3to2",
-  "name" : "OperationDefinition.parameter.use3to2",
+  "name" : "OperationDefinitionParameterUse3to2",
   "title" : "Mapping for OperationDefinition.parameter.use from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for OperationDefinition.parameter.use from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.use",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.use",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prv.en.role-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prv.en.role-4bto4",
-  "name" : "Provenance.entity.role4bto4",
+  "name" : "ProvenanceEntityRole4bto4",
   "title" : "Mapping for Provenance.entity.role from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Provenance.entity.role from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Provenance#Provenance.entity.role",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Provenance#Provenance.entity.role",
   "group" : [{

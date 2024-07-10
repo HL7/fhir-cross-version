@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.re.re.se.type-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.se.type-5to4b",
-  "name" : "CapabilityStatement.rest.resource.searchParam.type5to4b",
+  "name" : "CapabilityStatementRestResourceSearchParamType5to4b",
   "title" : "Mapping for CapabilityStatement.rest.resource.searchParam.type from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.rest.resource.searchParam.type from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.searchParam.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.searchParam.type",
   "group" : [{

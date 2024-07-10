@@ -3,7 +3,7 @@
 /// title = "SearchParameter Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/SearchParameter" alias SearchParameter as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter" alias SearchParameter as source
 uses "http://hl7.org/fhir/1.0/SearchParameter" alias SearchParameterR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"
@@ -17,8 +17,8 @@ group SearchParameter(source src : SearchParameter, target tgt : SearchParameter
   src.experimental -> tgt.experimental "SearchParameter-experimental";
   src.publisher -> tgt.publisher "SearchParameter-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "contact-name";
-    vs0.telecom -> vt0.telecom "contact-telecom";
+    vs0.name -> vt0.name "Contract_name";
+    vs0.telecom -> vt0.telecom "Contract_telecom";
   } "SearchParameter-contact";
   src.date -> tgt.date "SearchParameter-date";
   src.purpose -> tgt.requirements "SearchParameter-requirements";

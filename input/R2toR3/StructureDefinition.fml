@@ -3,8 +3,8 @@
 /// title = "StructureDefinition Transforms: R2 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/1.0/StructureDefinition" alias StructureDefinitionR2 as source
-uses "http://hl7.org/fhir/3.0/StructureDefinition" alias StructureDefinition as target
+uses "http://hl7.org/fhir/1.0/StructureDefinition/StructureDefinition" alias StructureDefinitionR2 as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition" alias StructureDefinition as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
@@ -57,4 +57,5 @@ group StructureDefinition(source src : StructureDefinitionR2, target tgt : Struc
     vs0.element as vs ->  vt0.element as vt,  create('boolean') as firstV,  firstV.value = 'false' then ElementDefinition(vs, vt, firstV) "differential-element-2";
   } "StructureDefinition-differential";
 }
+
 

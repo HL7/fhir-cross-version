@@ -3,8 +3,8 @@
 /// title = "ClinicalImpression Transforms: R4B to R5"
 /// status = "draft"
 
-uses "http://hl7.org/fhir/4.3/ClinicalImpression" alias ClinicalImpressionR4B as source
-uses "http://hl7.org/fhir/5.0/ClinicalImpression" alias ClinicalImpressionR5 as target
+uses "http://hl7.org/fhir/4.3/StructureDefinition/ClinicalImpression" alias ClinicalImpressionR4B as source
+uses "http://hl7.org/fhir/5.0/StructureDefinition/ClinicalImpression" alias ClinicalImpressionR5 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 

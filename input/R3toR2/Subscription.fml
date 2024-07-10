@@ -3,7 +3,7 @@
 /// title = "Subscription Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Subscription" alias Subscription as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Subscription" alias Subscription as source
 uses "http://hl7.org/fhir/1.0/Subscription" alias SubscriptionR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives3to2"

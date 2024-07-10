@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tim.re.periodUnits-tim.re.periodUnit-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.periodUnits-tim.re.periodUnit-2to3",
-  "name" : "Timing.repeat.periodUnitsTiming.repeat.periodUnitr2to3",
+  "name" : "TimingRepeatPeriodUnitsTimingRepeatPeriodUnitr2to3",
   "title" : "Mapping for Timing.repeat.periodUnits/Timing.repeat.periodUnit from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Timing.repeat.periodUnits/Timing.repeat.periodUnit from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Timing#Timing.repeat.periodUnits",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.periodUnit",
   "group" : [{

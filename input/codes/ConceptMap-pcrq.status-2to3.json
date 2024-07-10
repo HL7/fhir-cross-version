@@ -8,8 +8,10 @@
     }]
   },
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/pcrq.status-2to3",
-  "name" : "ProcedureRequest.status2to3",
+  "name" : "ProcedureRequestStatus2to3",
   "title" : "Mapping for ProcedureRequest.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ProcedureRequest.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
   "group" : [{

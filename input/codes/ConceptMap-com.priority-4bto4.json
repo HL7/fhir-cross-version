@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "com.priority-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/com.priority-4bto4",
-  "name" : "Communication.priority4bto4",
+  "name" : "CommunicationPriority4bto4",
   "title" : "Mapping for Communication.priority from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Communication.priority from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Communication#Communication.priority",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Communication#Communication.priority",
   "group" : [{

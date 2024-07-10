@@ -3,9 +3,9 @@
 /// title = "R4 to R3 Conversion for CodeableConcept"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/CodeableConcept" alias CodeableConcept as source
-uses "http://hl7.org/fhir/3.0/CodeableConcept" alias CodeableConceptR3 as target
-uses "http://hl7.org/fhir/3.0/Coding" alias CodingR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept" alias CodeableConcept as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/CodeableConcept" alias CodeableConceptR3 as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Coding" alias CodingR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rgp.priority-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.priority-4to3",
-  "name" : "RequestGroup.priority4to3",
+  "name" : "RequestGroupPriority4to3",
   "title" : "Mapping for RequestGroup.priority from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for RequestGroup.priority from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.priority",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/RequestGroup#RequestGroup.priority",
   "group" : [{

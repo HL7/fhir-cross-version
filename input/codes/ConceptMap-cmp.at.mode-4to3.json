@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cmp.at.mode-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.at.mode-4to3",
-  "name" : "Composition.attester.mode4to3",
+  "name" : "CompositionAttesterMode4to3",
   "title" : "Mapping for Composition.attester.mode from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Composition.attester.mode from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.attester.mode",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.attester.mode",
   "group" : [{

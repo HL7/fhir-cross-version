@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ig.status-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ig.status-2to3",
-  "name" : "ImplementationGuide.status2to3",
+  "name" : "ImplementationGuideStatus2to3",
   "title" : "Mapping for ImplementationGuide.status from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ImplementationGuide.status from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ImplementationGuide#ImplementationGuide.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ImplementationGuide#ImplementationGuide.status",
   "group" : [{

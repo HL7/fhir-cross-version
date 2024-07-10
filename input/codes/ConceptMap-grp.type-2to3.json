@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "grp.type-2to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/grp.type-2to3",
-  "name" : "Group.type2to3",
+  "name" : "GroupType2to3",
   "title" : "Mapping for Group.type from 1.0.2 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Group.type from 1.0.2 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Group#Group.type",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Group#Group.type",
   "group" : [{

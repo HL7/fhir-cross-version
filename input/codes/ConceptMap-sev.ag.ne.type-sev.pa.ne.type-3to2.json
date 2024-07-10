@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "sev.ag.ne.type-sev.pa.ne.type-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ag.ne.type-sev.pa.ne.type-3to2",
-  "name" : "AuditEvent.agent.network.typeAuditEvent.participant.network.type3to2",
+  "name" : "AuditEventAgentNetworkTypeAuditEventParticipantNetworkType3to2",
   "title" : "Mapping for AuditEvent.agent.network.type/AuditEvent.participant.network.type from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for AuditEvent.agent.network.type/AuditEvent.participant.network.type from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.agent.network.type",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.participant.network.type",
   "group" : [{

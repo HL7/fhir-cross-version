@@ -3,8 +3,8 @@
 /// title = "Schedule Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Schedule" alias ScheduleR3 as source
-uses "http://hl7.org/fhir/4.0/Schedule" alias Schedule as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Schedule" alias ScheduleR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Schedule" alias Schedule as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

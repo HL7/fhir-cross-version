@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "eob.pr.type-4to5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eob.pr.type-4to5",
-  "name" : "ExplanationOfBenefit.processNote.type4to5",
+  "name" : "ExplanationOfBenefitProcessNoteType4to5",
   "title" : "Mapping for ExplanationOfBenefit.processNote.type from 4.0.1 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ExplanationOfBenefit.processNote.type from 4.0.1 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.processNote.type",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.processNote.type",
   "group" : [{

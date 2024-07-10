@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "gol.lifecycleStatus-gol.status-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/gol.lifecycleStatus-gol.status-4to3",
-  "name" : "Goal.lifecycleStatusGoal.status4to3",
+  "name" : "GoalLifecycleStatusGoalStatus4to3",
   "title" : "Mapping for Goal.lifecycleStatus/Goal.status from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Goal.lifecycleStatus/Goal.status from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Goal#Goal.lifecycleStatus",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Goal#Goal.status",
   "group" : [{
@@ -34,11 +36,13 @@
       "code" : "active",
       "target" : [{
         "code" : "ahead-of-target",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "behind-target",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "in-progress",

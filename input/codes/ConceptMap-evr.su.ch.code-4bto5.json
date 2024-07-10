@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "evr.su.ch.code-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evr.su.ch.code-4bto5",
-  "name" : "EvidenceReport.subject.characteristic.code4bto5",
+  "name" : "EvidenceReportSubjectCharacteristicCode4bto5",
   "title" : "Mapping for EvidenceReport.subject.characteristic.code from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for EvidenceReport.subject.characteristic.code from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EvidenceReport#EvidenceReport.subject.characteristic.code",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/EvidenceReport#EvidenceReport.subject.characteristic.code",
   "group" : [{

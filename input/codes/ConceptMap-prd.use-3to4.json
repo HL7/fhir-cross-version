@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "prd.use-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/prd.use-3to4",
-  "name" : "ParameterDefinition.use3to4",
+  "name" : "ParameterDefinitionUse3to4",
   "title" : "Mapping for ParameterDefinition.use from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ParameterDefinition.use from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ParameterDefinition#ParameterDefinition.use",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ParameterDefinition#ParameterDefinition.use",
   "group" : [{

@@ -3,8 +3,8 @@
 /// title = "Period Transforms: R4 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/Period" alias Period as source
-uses "http://hl7.org/fhir/3.0/Period" alias PeriodR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Period" alias Period as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Period" alias PeriodR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

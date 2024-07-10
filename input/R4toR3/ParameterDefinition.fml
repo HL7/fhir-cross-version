@@ -3,8 +3,8 @@
 /// title = "ParameterDefinition Transforms: R4 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/ParameterDefinition" alias ParameterDefinition as source
-uses "http://hl7.org/fhir/3.0/ParameterDefinition" alias ParameterDefinitionR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/ParameterDefinition" alias ParameterDefinition as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ParameterDefinition" alias ParameterDefinitionR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

@@ -3,8 +3,8 @@
 /// title = "ResearchSubject Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/ResearchSubject" alias ResearchSubjectR3 as source
-uses "http://hl7.org/fhir/4.0/ResearchSubject" alias ResearchSubject as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ResearchSubject" alias ResearchSubjectR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject" alias ResearchSubject as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
@@ -18,4 +18,3 @@ group ResearchSubject(source src : ResearchSubjectR3, target tgt : ResearchSubje
   src.actualArm -> tgt.actualArm;
   src.consent -> tgt.consent;
 }
-

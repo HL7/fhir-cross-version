@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "clm.ac.type-clm.accidentType-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clm.ac.type-clm.accidentType-3to2",
-  "name" : "Claim.accident.typeClaim.accidentType3to2",
+  "name" : "ClaimAccidentTypeClaimAccidentType3to2",
   "title" : "Mapping for Claim.accident.type/Claim.accidentType from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Claim.accident.type/Claim.accidentType from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.accident.type",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Claim#Claim.accidentType",
   "group" : [{

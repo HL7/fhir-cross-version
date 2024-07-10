@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cov.relationship-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cov.relationship-4to4b",
-  "name" : "Coverage.relationship4to4b",
+  "name" : "CoverageRelationship4to4b",
   "title" : "Mapping for Coverage.relationship from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Coverage.relationship from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Coverage#Coverage.relationship",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Coverage#Coverage.relationship",
   "group" : [{

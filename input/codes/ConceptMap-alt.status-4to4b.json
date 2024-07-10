@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "alt.status-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/alt.status-4to4b",
-  "name" : "Flag.status4to4b",
+  "name" : "FlagStatus4to4b",
   "title" : "Mapping for Flag.status from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Flag.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Flag#Flag.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Flag#Flag.status",
   "group" : [{

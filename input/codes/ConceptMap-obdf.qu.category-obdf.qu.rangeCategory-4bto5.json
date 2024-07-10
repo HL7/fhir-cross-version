@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "obdf.qu.category-obdf.qu.rangeCategory-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/obdf.qu.category-obdf.qu.rangeCategory-4bto5",
-  "name" : "ObservationDefinition.qualifiedInterval.categoryObservationDefinition.qualifiedValue.rangeCategory4bto5",
+  "name" : "ObservationDefinitionQualifiedIntervalCategoryObservationDefinitionQualifiedValueRangeCategory4bto5",
   "title" : "Mapping for ObservationDefinition.qualifiedInterval.category/ObservationDefinition.qualifiedValue.rangeCategory from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ObservationDefinition.qualifiedInterval.category/ObservationDefinition.qualifiedValue.rangeCategory from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.category",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedValue.rangeCategory",
   "group" : [{

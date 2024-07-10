@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "mea.gr.po.code-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/mea.gr.po.code-5to4b",
-  "name" : "Measure.group.population.coder5to4b",
+  "name" : "MeasureGroupPopulationCoder5to4b",
   "title" : "Mapping for Measure.group.population.code from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Measure.group.population.code from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Measure#Measure.group.population.code",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.group.population.code",
   "group" : [{

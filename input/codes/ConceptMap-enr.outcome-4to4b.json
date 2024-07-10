@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "enr.outcome-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/enr.outcome-4to4b",
-  "name" : "EnrollmentResponse.outcome4to4b",
+  "name" : "EnrollmentResponseOutcome4to4b",
   "title" : "Mapping for EnrollmentResponse.outcome from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for EnrollmentResponse.outcome from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/EnrollmentResponse#EnrollmentResponse.outcome",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/EnrollmentResponse#EnrollmentResponse.outcome",
   "group" : [{

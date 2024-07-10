@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "clm.status-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/clm.status-4to3",
-  "name" : "Claim.status4to3",
+  "name" : "ClaimStatus4to3",
   "title" : "Mapping for Claim.status from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Claim.status from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Claim#Claim.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.status",
   "group" : [{

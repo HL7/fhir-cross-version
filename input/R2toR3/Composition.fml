@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/Composition" alias CompositionR2 as source
-uses "http://hl7.org/fhir/3.0/Composition" alias Composition as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Composition" alias Composition as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 

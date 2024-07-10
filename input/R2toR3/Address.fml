@@ -4,7 +4,7 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/Address" alias AddressR2 as source
-uses "http://hl7.org/fhir/3.0/Address" alias Address as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Address" alias Address as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"

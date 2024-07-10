@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "dev.status-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dev.status-3to2",
-  "name" : "dev.status-3to2",
+  "name" : "DeviceStatus3to2",
   "title" : "Mapping for Device.status from R3 to R2",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for Device.status from R3 to R2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Device#Device.status",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/Device#Device.status",
   "group" : [{

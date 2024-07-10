@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "con.verificationStatus-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/con.verificationStatus-3to4",
-  "name" : "Condition.verificationStatus3to4",
+  "name" : "ConditionVerificationStatus3to4",
   "title" : "Mapping for Condition.verificationStatus from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for Condition.verificationStatus from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Condition#Condition.verificationStatus",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Condition#Condition.verificationStatus",
   "group" : [{

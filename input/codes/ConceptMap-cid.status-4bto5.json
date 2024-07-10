@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cid.status-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cid.status-4bto5",
-  "name" : "ChargeItemDefinition.status4bto5",
+  "name" : "ChargeItemDefinitionStatus4bto5",
   "title" : "Mapping for ChargeItemDefinition.status from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ChargeItemDefinition.status from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.status",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.status",
   "group" : [{

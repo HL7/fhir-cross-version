@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "csd.jurisdiction-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/csd.jurisdiction-4to3",
-  "name" : "CodeSystem.jurisdictionr4to3",
+  "name" : "CodeSystemJurisdictionr4to3",
   "title" : "Mapping for CodeSystem.jurisdiction from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for CodeSystem.jurisdiction from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.jurisdiction",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.jurisdiction",
   "group" : [{

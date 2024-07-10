@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "msd.category-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/msd.category-4to4b",
-  "name" : "MessageDefinition.category4to4b",
+  "name" : "MessageDefinitionCategory4to4b",
   "title" : "Mapping for MessageDefinition.category from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for MessageDefinition.category from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MessageDefinition#MessageDefinition.category",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MessageDefinition#MessageDefinition.category",
   "group" : [{

@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "eld.ty.versioning-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eld.ty.versioning-5to4b",
-  "name" : "ElementDefinition.type.versioning5to4b",
+  "name" : "ElementDefinitionTypeVersioning5to4b",
   "title" : "Mapping for ElementDefinition.type.versioning from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ElementDefinition.type.versioning from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ElementDefinition#ElementDefinition.type.versioning",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ElementDefinition#ElementDefinition.type.versioning",
   "group" : [{

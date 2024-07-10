@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "dcr.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.status-4bto4",
-  "name" : "DocumentReference.status4bto4",
+  "name" : "DocumentReferenceStatus4bto4",
   "title" : "Mapping for DocumentReference.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for DocumentReference.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/DocumentReference#DocumentReference.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.status",
   "group" : [{

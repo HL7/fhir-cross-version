@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "evi.va.variableRole-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/evi.va.variableRole-4bto5",
-  "name" : "Evidence.variableDefinition.variableRoler4bto5",
+  "name" : "EvidenceVariableDefinitionVariableRoler4bto5",
   "title" : "Mapping for Evidence.variableDefinition.variableRole from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Evidence.variableDefinition.variableRole from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.variableDefinition.variableRole",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.variableDefinition.variableRole",
   "group" : [{

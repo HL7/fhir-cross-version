@@ -3,29 +3,29 @@
 /// title = "DocumentReference Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/DocumentReference" alias DocumentReference as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/DocumentReference" alias DocumentReference as source
 uses "http://hl7.org/fhir/1.0/DocumentReference" alias DocumentReferenceR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group DocumentReference(source src : DocumentReference, target tgt : DocumentReferenceR2) extends DomainResource <<type+>> {
-  src.masterIdentifier -> tgt.masterIdentifier "DocumentReference-masterIdentifier";
-  src.identifier -> tgt.identifier "DocumentReference-identifier";
-  src.subject -> tgt.subject "DocumentReference-subject";
-  src.type -> tgt.type "DocumentReference-type";
-  src.class -> tgt.class "DocumentReference-class";
-  src.author -> tgt.author "DocumentReference-author";
-  src.custodian -> tgt.custodian "DocumentReference-custodian";
-  src.authenticator -> tgt.authenticator "DocumentReference-authenticator";
-  src.created -> tgt.created "DocumentReference-created";
-  src.indexed -> tgt.indexed "DocumentReference-indexed";
-  src.status -> tgt.status "DocumentReference-status";
-  src.docStatus as v -> tgt.docStatus = cc('http://hl7.org/fhir/composition-status', c) "DocumentReference-docStatus";
-  src.relatesTo as vs0 -> tgt.relatesTo as vt0 then drRelatesTo(vs0, vt0) "DocumentReference-relatesTo";
-  src.description -> tgt.description "DocumentReference-description";
-  src.securityLabel -> tgt.securityLabel "DocumentReference-securityLabel";
-  src.content as vs0 -> tgt.content as vt0 then drContent(vs0, vt0) "DocumentReference-content";
-  src.context as vs0 -> tgt.context as vt0 then drContext(vs0, vt0) "DocumentReference-context";
+  src.masterIdentifier -> tgt.masterIdentifier "DocumentReference_masterIdentifier";
+  src.identifier -> tgt.identifier "DocumentReference_identifier";
+  src.subject -> tgt.subject "DocumentReference_subject";
+  src.type -> tgt.type "DocumentReference_type";
+  src.class -> tgt.class "DocumentReference_class";
+  src.author -> tgt.author "DocumentReference_author";
+  src.custodian -> tgt.custodian "DocumentReference_custodian";
+  src.authenticator -> tgt.authenticator "DocumentReference_authenticator";
+  src.created -> tgt.created "DocumentReference_created";
+  src.indexed -> tgt.indexed "DocumentReference_indexed";
+  src.status -> tgt.status "DocumentReference_status";
+  src.docStatus as v -> tgt.docStatus = cc('http://hl7.org/fhir/composition-status', c) "DocumentReference_docStatus";
+  src.relatesTo as vs0 -> tgt.relatesTo as vt0 then drRelatesTo(vs0, vt0) "DocumentReference_relatesTo";
+  src.description -> tgt.description "DocumentReference_description";
+  src.securityLabel -> tgt.securityLabel "DocumentReference_securityLabel";
+  src.content as vs0 -> tgt.content as vt0 then drContent(vs0, vt0) "DocumentReference_content";
+  src.context as vs0 -> tgt.context as vt0 then drContext(vs0, vt0) "DocumentReference_context";
 }
 
 group drRelatesTo(source src, target tgt) extends BackboneElement {

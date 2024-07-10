@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ims.modalityList-3to2",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ims.modalityList-3to2",
-  "name" : "ImagingStudy.modalityList3to2",
+  "name" : "ImagingStudyModalityList3to2",
   "title" : "Mapping for ImagingStudy.modalityList from 3.0.2 to 1.0.2",
+  "experimental" : false,
+  "description" : "Mapping for ImagingStudy.modalityList from 3.0.2 to 1.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ImagingStudy#ImagingStudy.modalityList",
   "targetScopeUri" : "http://hl7.org/fhir/1.0/StructureDefinition/ImagingStudy#ImagingStudy.modalityList",
   "group" : [{

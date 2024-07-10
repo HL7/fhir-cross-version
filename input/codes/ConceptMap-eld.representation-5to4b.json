@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "eld.representation-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/eld.representation-5to4b",
-  "name" : "ElementDefinition.representation5to4b",
+  "name" : "ElementDefinitionRepresentation5to4b",
   "title" : "Mapping for ElementDefinition.representation from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for ElementDefinition.representation from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ElementDefinition#ElementDefinition.representation",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ElementDefinition#ElementDefinition.representation",
   "group" : [{

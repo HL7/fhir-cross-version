@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "tsk.priority-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/tsk.priority-4bto5",
-  "name" : "Task.priority4bto5",
+  "name" : "TaskPriority4bto5",
   "title" : "Mapping for Task.priority from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for Task.priority from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Task#Task.priority",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/Task#Task.priority",
   "group" : [{

@@ -4,21 +4,21 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/1.0/DeviceComponent" alias DeviceComponentR2 as source
-uses "http://hl7.org/fhir/3.0/DeviceComponent" alias DeviceComponent as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/DeviceComponent" alias DeviceComponent as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group DeviceComponent(source src : DeviceComponentR2, target tgt : DeviceComponent) extends DomainResource <<type+>> {
-  src.type -> tgt.type "DeviceComponent-type";
-  src.identifier -> tgt.identifier "DeviceComponent-identifier";
-  src.lastSystemChange -> tgt.lastSystemChange "DeviceComponent-lastSystemChange";
-  src.source -> tgt.source "DeviceComponent-source";
-  src.parent -> tgt.parent "DeviceComponent-parent";
-  src.operationalStatus -> tgt.operationalStatus "DeviceComponent-operationalStatus";
-  src.parameterGroup -> tgt.parameterGroup "DeviceComponent-parameterGroup";
-  src.measurementPrinciple -> tgt.measurementPrinciple "DeviceComponent-measurementPrinciple";
-  src.productionSpecification as vs0 -> tgt.productionSpecification as vt0 then dvcProductionSpecification(vs0, vt0) "DeviceComponent-productionSpecification";
-  src.languageCode -> tgt.languageCode "DeviceComponent-languageCode";
+  src.type -> tgt.type "DeviceComponent_type";
+  src.identifier -> tgt.identifier "DeviceComponent_identifier";
+  src.lastSystemChange -> tgt.lastSystemChange "DeviceComponent_lastSystemChange";
+  src.source -> tgt.source "DeviceComponent_source";
+  src.parent -> tgt.parent "DeviceComponent_parent";
+  src.operationalStatus -> tgt.operationalStatus "DeviceComponent_operationalStatus";
+  src.parameterGroup -> tgt.parameterGroup "DeviceComponent_parameterGroup";
+  src.measurementPrinciple -> tgt.measurementPrinciple "DeviceComponent_measurementPrinciple";
+  src.productionSpecification as vs0 -> tgt.productionSpecification as vt0 then dvcProductionSpecification(vs0, vt0) "DeviceComponent_productionSpecification";
+  src.languageCode -> tgt.languageCode "DeviceComponent_languageCode";
 }
 
 group dvcProductionSpecification(source src, target tgt) extends BackboneElement {

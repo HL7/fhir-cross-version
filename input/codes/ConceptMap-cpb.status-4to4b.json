@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cpb.status-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.status-4to4b",
-  "name" : "CapabilityStatement.status4to4b",
+  "name" : "CapabilityStatementStatus4to4b",
   "title" : "Mapping for CapabilityStatement.status from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for CapabilityStatement.status from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.status",
   "group" : [{

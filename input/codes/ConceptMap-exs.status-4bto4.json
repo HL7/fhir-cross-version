@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "exs.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/exs.status-4bto4",
-  "name" : "ExampleScenario.status4bto4",
+  "name" : "ExampleScenarioStatus4bto4",
   "title" : "Mapping for ExampleScenario.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ExampleScenario.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ExampleScenario#ExampleScenario.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ExampleScenario#ExampleScenario.status",
   "group" : [{

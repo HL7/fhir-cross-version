@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "rsb.status-3to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-3to4",
-  "name" : "ResearchSubject.status3to4",
+  "name" : "ResearchSubjectStatus3to4",
   "title" : "Mapping for ResearchSubject.status from 3.0.2 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ResearchSubject.status from 3.0.2 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
   "group" : [{
@@ -17,11 +19,13 @@
       },
       {
         "code" : "eligible",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "screening",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "withdrawn",
@@ -36,7 +40,8 @@
       },
       {
         "code" : "not-registered",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {
@@ -47,11 +52,13 @@
       },
       {
         "code" : "on-study-intervention",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "on-study-observation",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "pending-on-study",
@@ -62,11 +69,13 @@
       "code" : "completed",
       "target" : [{
         "code" : "follow-up",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       },
       {
         "code" : "off-study",
-        "relationship" : "source-is-broader-than-target"
+        "relationship" : "source-is-broader-than-target",
+        "comment" : "definition mismatch"
       }]
     },
     {

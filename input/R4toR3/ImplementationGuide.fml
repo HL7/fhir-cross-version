@@ -3,8 +3,8 @@
 /// title = "R4 to R3 Conversion for ImplementationGuide"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/ImplementationGuide" alias ImplementationGuide as source
-uses "http://hl7.org/fhir/3.0/ImplementationGuide" alias ImplementationGuideR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/ImplementationGuide" alias ImplementationGuide as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ImplementationGuide" alias ImplementationGuideR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

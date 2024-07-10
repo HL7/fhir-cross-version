@@ -3,8 +3,8 @@
 /// title = "Consent Transforms: R4 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/Consent" alias Consent as source
-uses "http://hl7.org/fhir/3.0/Consent" alias ConsentR3 as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Consent" alias Consent as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Consent" alias ConsentR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 

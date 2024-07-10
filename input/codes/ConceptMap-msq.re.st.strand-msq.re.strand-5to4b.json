@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "msq.re.st.strand-msq.re.strand-5to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/msq.re.st.strand-msq.re.strand-5to4b",
-  "name" : "MolecularSequence.relative.startingSequence.strandMolecularSequence.referenceSeq.strand5to4b",
+  "name" : "MolecularSequenceRelativeStartingSequenceStrandMolecularSequenceReferenceSeqStrand5to4b",
   "title" : "Mapping for MolecularSequence.relative.startingSequence.strand/MolecularSequence.referenceSeq.strand from 5.0.0 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for MolecularSequence.relative.startingSequence.strand/MolecularSequence.referenceSeq.strand from 5.0.0 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MolecularSequence#MolecularSequence.relative.startingSequence.strand",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/MolecularSequence#MolecularSequence.referenceSeq.strand",
   "group" : [{

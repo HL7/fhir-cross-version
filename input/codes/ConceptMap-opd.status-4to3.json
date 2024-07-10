@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "opd.status-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/opd.status-4to3",
-  "name" : "OperationDefinition.status4to3",
+  "name" : "OperationDefinitionStatus4to3",
   "title" : "Mapping for OperationDefinition.status from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for OperationDefinition.status from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/OperationDefinition#OperationDefinition.status",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/OperationDefinition#OperationDefinition.status",
   "group" : [{

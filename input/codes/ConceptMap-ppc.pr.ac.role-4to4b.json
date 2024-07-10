@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "ppc.pr.ac.role-4to4b",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.ac.role-4to4b",
-  "name" : "Consent.provision.actor.roler4to4b",
+  "name" : "ConsentProvisionActorRoler4to4b",
   "title" : "Mapping for Consent.provision.actor.role from 4.0.1 to 4.3.0",
+  "experimental" : false,
+  "description" : "Mapping for Consent.provision.actor.role from 4.0.1 to 4.3.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.actor.role",
   "targetScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.provision.actor.role",
   "group" : [{

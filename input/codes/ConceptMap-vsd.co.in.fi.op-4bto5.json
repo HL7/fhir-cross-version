@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "vsd.co.in.fi.op-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/vsd.co.in.fi.op-4bto5",
-  "name" : "ValueSet.compose.include.filter.op4bto5",
+  "name" : "ValueSetComposeIncludeFilterOp4bto5",
   "title" : "Mapping for ValueSet.compose.include.filter.op from 4.3.0 to 5.0.0",
+  "experimental" : false,
+  "description" : "Mapping for ValueSet.compose.include.filter.op from 4.3.0 to 5.0.0",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ValueSet#ValueSet.compose.include.filter.op",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/ValueSet#ValueSet.compose.include.filter.op",
   "group" : [{

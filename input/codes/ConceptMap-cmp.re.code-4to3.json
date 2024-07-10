@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cmp.re.code-4to3",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.re.code-4to3",
-  "name" : "Composition.relatesTo.code4to3",
+  "name" : "CompositionRelatesToCode4to3",
   "title" : "Mapping for Composition.relatesTo.code from 4.0.1 to 3.0.2",
+  "experimental" : false,
+  "description" : "Mapping for Composition.relatesTo.code from 4.0.1 to 3.0.2",
   "sourceScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.relatesTo.code",
   "targetScopeUri" : "http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.relatesTo.code",
   "group" : [{

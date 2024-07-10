@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "msq.type-5to4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/msq.type-5to4",
-  "name" : "MolecularSequence.type5to4",
+  "name" : "MolecularSequenceType5to4",
   "title" : "Mapping for MolecularSequence.type from 5.0.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for MolecularSequence.type from 5.0.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/MolecularSequence#MolecularSequence.type",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.type",
   "group" : [{

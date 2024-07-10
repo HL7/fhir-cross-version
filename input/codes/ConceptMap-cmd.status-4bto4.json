@@ -2,8 +2,10 @@
   "resourceType" : "ConceptMap",
   "id" : "cmd.status-4bto4",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.status-4bto4",
-  "name" : "ConceptMap.status4bto4",
+  "name" : "ConceptMapStatus4bto4",
   "title" : "Mapping for ConceptMap.status from 4.3.0 to 4.0.1",
+  "experimental" : false,
+  "description" : "Mapping for ConceptMap.status from 4.3.0 to 4.0.1",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/ConceptMap#ConceptMap.status",
   "targetScopeUri" : "http://hl7.org/fhir/4.0/StructureDefinition/ConceptMap#ConceptMap.status",
   "group" : [{

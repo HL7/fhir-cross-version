@@ -2,9 +2,11 @@
   "resourceType" : "ConceptMap",
   "id" : "spd.xpathUsage-spd.processingMode-4bto5",
   "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/spd.xpathUsage-spd.processingMode-4bto5",
-  "name" : "SearchParameter.xpathUsageSearchParameter.processingMode4bto5",
+  "name" : "SearchParameterXpathUsageSearchParameterProcessingMode4bto5",
   "title" : "Mapping for SearchParameter.xpathUsage to SearchParameter.processingMode from 4b to 5",
   "status" : "active",
+  "experimental" : false,
+  "description" : "Mapping for SearchParameter.xpathUsage to SearchParameter.processingMode from 4b to 5",
   "sourceScopeUri" : "http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.xpathUsage",
   "targetScopeUri" : "http://hl7.org/fhir/5.0/StructureDefinition/SearchParameter#SearchParameter.processingMode",
   "group" : [{

@@ -3,8 +3,8 @@
 /// title = "Signature Transforms: R3 to R4"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/Signature" alias SignatureR3 as source
-uses "http://hl7.org/fhir/4.0/Signature" alias Signature as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Signature" alias SignatureR3 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Signature" alias Signature as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

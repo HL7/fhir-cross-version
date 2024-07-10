@@ -3,7 +3,7 @@
 /// title = "ValueSet Transforms: R3 to R2"
 /// status = "active"
 
-uses "http://hl7.org/fhir/3.0/ValueSet" alias ValueSet as source
+uses "http://hl7.org/fhir/3.0/StructureDefinition/ValueSet" alias ValueSet as source
 uses "http://hl7.org/fhir/1.0/ValueSet" alias ValueSetR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
@@ -17,8 +17,8 @@ group ValueSet(source src : ValueSet, target tgt : ValueSetR2) extends DomainRes
   src.experimental -> tgt.experimental "ValueSet-experimental";
   src.publisher -> tgt.publisher "ValueSet-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "contact-name";
-    vs0.telecom -> vt0.telecom "contact-telecom";
+    vs0.name -> vt0.name "Contract_name";
+    vs0.telecom -> vt0.telecom "Contract_telecom";
   } "ValueSet-contact";
   src.date -> tgt.date "ValueSet-date";
   src.jurisdiction -> tgt.useContext "ValueSet-useContext";
