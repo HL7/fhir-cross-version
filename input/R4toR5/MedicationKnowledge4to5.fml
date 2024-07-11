@@ -49,7 +49,7 @@ group MedicationKnowledgeMonitoringProgram(source src, target tgt) extends Backb
 group MedicationKnowledgeIndicationGuideline(source src, target tgt) extends BackboneElement {
   src.indication : CodeableConcept -> tgt.indication "indicationCodeableConcept";
   src.indication : Reference -> tgt.indication "indicationReference";
-  src.dosage as s ->  tgt.dosingGuideline as t,  t.dosage = create('BackboneElement') as td then MedicationKnowledgeIndicationGuidelineDosingGuidelineDosage(s, td);
+  src.dosage as s ->  tgt.dosingGuideline as t,  t.dosage as td then MedicationKnowledgeIndicationGuidelineDosingGuidelineDosage(s, td);
   src.patientCharacteristics as s -> tgt.dosingGuideline as t then {
     s.value as v ->  t.patientCharacteristic as tp,  tp.type = create('CodeableConcept') as tc,  tc.text = v;
     s.characteristic : CodeableConcept as v ->  t.patientCharacteristic as tp,  tp.value = v "characteristicCodeableConcept";

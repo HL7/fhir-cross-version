@@ -23,7 +23,7 @@ group Location(source src : LocationR4, target tgt : LocationR5) extends DomainR
   src.position as s -> tgt.position as t then LocationPosition(s, t);
   src.managingOrganization -> tgt.managingOrganization;
   src.partOf -> tgt.partOf;
-  src.hoursOfOperation : BackboneElement as s -> tgt.hoursOfOperation as t then LocationAvailabilityAvailableTime(s, t) "availableTime";
+  src.hoursOfOperation as s -> tgt.hoursOfOperation as t then LocationAvailabilityAvailableTime(s, t) "availableTime";
   src.endpoint -> tgt.endpoint;
 }
 
