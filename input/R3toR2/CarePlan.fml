@@ -20,8 +20,8 @@ group CarePlan(source src : CarePlan, target tgt : CarePlanR2) extends DomainRes
   src.description -> tgt.description "CarePlan-description";
   src.addresses -> tgt.addresses "CarePlan-addresses";
   src.supportingInfo -> tgt.support "CarePlan-support";
-  src.basedOn as vs0 ->  tgt.relatedPlan as rp,  rp.code = 'fulfills',  rp.plan = v "CarePlan-relatedPlan2";
-  src.replaces as vs0 ->  tgt.relatedPlan as rp,  rp.code = 'replaces',  rp.plan = v "CarePlan-relatedPlan3";
+  src.basedOn as vs0 ->  tgt.relatedPlan as rp,  rp.code = 'fulfills',  rp.plan = vs0 "CarePlan-relatedPlan2";
+  src.replaces as vs0 ->  tgt.relatedPlan as rp,  rp.code = 'replaces',  rp.plan = vs0 "CarePlan-relatedPlan3";
   src.careTeam as vs where reference.resolve().exists() -> (src.careTeam.reference.resolve()) as ct then plnParticipant(ct, tgt) "CarePlan-participant";
   src.goal -> tgt.goal "CarePlan-goal";
   src.activity as vs0 -> tgt.activity as vt0 then plnActivity(vs0, vt0) "CarePlan-activity";
