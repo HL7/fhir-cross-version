@@ -144,11 +144,11 @@ group code2string(source src : code, target tgt : stringR3) extends Element <<ty
   src.value as v -> tgt.value = v "uri2code-value";
 }
 
-group canonical2Uri(source src : canonical, target tgt : uriR3) extends Element <<types>> {
+group canonical2Uri(source src : canonical, target tgt : uriR3) extends Element {
   src.value as v -> tgt.value = v "canonical2uri-value";
 }
 
-group url2uri(source src : url, target tgt : uriR3) extends Element <<types>> {
+group url2uri(source src : url, target tgt : uriR3) extends Element {
   src.value as v -> tgt.value = v "code2uri-value";
 }
 
