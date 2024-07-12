@@ -35,9 +35,9 @@ group AppointmentParticipant(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.period -> tgt.period;
   src.actor -> tgt.actor;
-  src.required as s where required = 'required' ->  tgt.required as t,  t.value = 'true';
-  src.required as s where required = 'optional' ->  tgt.required as t,  t.value =  'false';
-  src.required as s where required = 'information-only' ->  tgt.required as t,  t.value = 'false';
+  src.required as s where required = 'required' ->  tgt.required as t,  t.value = true;
+  src.required as s where required = 'optional' ->  tgt.required as t,  t.value =  false;
+  src.required as s where required = 'information-only' ->  tgt.required as t,  t.value = false;
   src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/app.pa.status-4to5', 'code');
 }
 
