@@ -27,7 +27,7 @@ group SubstancePolymerMonomerSetStartingMaterial(source src, target tgt) extends
   src.category -> tgt.type;
   src.isDefining -> tgt.isDefining;
   src.amount as s -> tgt.amount as t then {
-     s -> t.amount;
+     s -> t.amount "amount";
   } "amount";
 }
 
