@@ -13,10 +13,10 @@ group AuditEvent(source src : AuditEventR4B, target tgt : AuditEventR5) extends 
   src.subtype -> tgt.code;
   src.action as v -> tgt.action = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sev.action-4bto5', 'code');
   src.recorded -> tgt.recorded;
-  src.outcome as s where outcome = '0' ->  tgt.outcome as t,  t.code = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/issue-severity',  tc.code = 'success',  tc.display = 'Success';
-  src.outcome as s where outcome = '4' ->  tgt.outcome as t,  t.code = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/issue-severity',  tc.code = 'warning',  tc.display = 'Warning';
-  src.outcome as s where outcome = '8' ->  tgt.outcome as t,  t.code = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/issue-severity',  tc.code = 'error',  tc.display = 'error';
-  src.outcome as s where outcome = '12' ->  tgt.outcome as t,  t.code = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/issue-severity',  tc.code = 'fatal',  tc.display = 'Fatal';
+  src.outcome as s where outcome = '0' ->  tgt.outcome.code as tc,  tc.system = 'http://hl7.org/fhir/issue-severity',  tc.code = 'success',  tc.display = 'Success';
+  src.outcome as s where outcome = '4' ->  tgt.outcome.code as tc,  tc.system = 'http://hl7.org/fhir/issue-severity',  tc.code = 'warning',  tc.display = 'Warning';
+  src.outcome as s where outcome = '8' ->  tgt.outcome.code as tc,  tc.system = 'http://hl7.org/fhir/issue-severity',  tc.code = 'error',  tc.display = 'error';
+  src.outcome as s where outcome = '12' ->  tgt.outcome.code as tc,  tc.system = 'http://hl7.org/fhir/issue-severity',  tc.code = 'fatal',  tc.display = 'Fatal';
   src.agent as s -> tgt.agent as t then AuditEventAgent(s, t);
   src.source as s -> tgt.source as t then AuditEventSource(s, t);
   src.entity as s -> tgt.entity as t then AuditEventEntity(s, t);
@@ -40,7 +40,7 @@ group AuditEventAgent(source src, target tgt) extends BackboneElement {
 }
 
 group AuditEventSource(source src, target tgt) extends BackboneElement {
-  src.site as v ->  tgt.site = create('Reference') as t,  t.display = v;
+  src.site ->  tgt.site.display;
   src.observer -> tgt.observer;
   src.type -> tgt.type;
 }
