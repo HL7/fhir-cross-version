@@ -42,7 +42,7 @@ group plnDetail(source src, target tgt) extends BackboneElement {
   src.reasonReference -> tgt.reasonReference "detail-reasonReference";
   src.goal -> tgt.goal "detail-goal";
   src.status -> tgt.status "detail-status";
-  src.statusReason -> tgt.statusReason "detail-statusReason";
+  src.statusReason -> tgt.statusReason.text "detail-statusReason";
   src.prohibited -> tgt.prohibited "detail-prohibited";
   src.scheduled -> tgt.scheduled "detail-scheduled";
   src.location -> tgt.location "detail-location";
