@@ -23,18 +23,18 @@ group Consent(source src : Consent, target tgt : ConsentR3) extends DomainResour
       c.code -> tgt.policyRule;
     };
   };
-  src.provision as vs then baseProvision(vs, tgt);
+  src.provision as vs then ConsentProvisionToBase(vs, tgt);
 }
 
-group baseProvision(source src, target tgt) {
+group ConsentProvisionToBase(source src, target tgt : ConsentR3) {
   src.period -> tgt.period;
-  src.actor as vs -> tgt.actor as vt then actor(vs, vt);
+  src.actor as vs -> tgt.actor as vt then ConsentProvisionActor(vs, vt);
   src.action -> tgt.action;
   src.securityLabel -> tgt.securityLabel;
   src.purpose -> tgt.purpose;
   src.dataPeriod -> tgt.dataPeriod;
   src.data as vs -> tgt.data as vt then data(vs, vt);
-  src.provision as vs -> tgt.except as vt then provision(vs, vt);
+  src.provision as vs -> tgt.except as vt then ConsentProvisionToExpect(vs, vt);
 }
 
 group policy(source src, target tgt) extends BackboneElement {
@@ -42,10 +42,10 @@ group policy(source src, target tgt) extends BackboneElement {
   src.uri -> tgt.uri;
 }
 
-group provision(source src, target tgt) extends BackboneElement {
+group ConsentProvisionToExpect(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.period -> tgt.period;
-  src.actor as vs -> tgt.actor as vt then actor(vs, vt);
+  src.actor as vs -> tgt.actor as vt then ConsentProvisionActor(vs, vt);
   src.action -> tgt.action;
   src.securityLabel -> tgt.securityLabel;
   src.purpose -> tgt.purpose;
@@ -55,7 +55,7 @@ group provision(source src, target tgt) extends BackboneElement {
   src.data as vs -> tgt.data as vt then data(vs, vt);
 }
 
-group actor(source src, target tgt) extends BackboneElement {
+group ConsentProvisionActor(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role;
   src.reference -> tgt.reference;
 }

@@ -23,7 +23,7 @@ group Goal(source src : Goal, target tgt : GoalR3) extends DomainResource <<type
   src.subject -> tgt.subject;
   src.start : date as vs -> tgt.start = create('date') as vt then date(vs, vt) "startDate";
   src.start : CodeableConcept as vs -> tgt.start = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "startCodeableConcept";
-  src.target as vs0 -> tgt.target as vt0 then targetX(vs0, vt0);
+  src.target as vs0 -> tgt.target as vt0 then GoalTarget(vs0, vt0);
   src.statusDate -> tgt.statusDate;
   src.statusReason -> tgt.statusReason;
   src.expressedBy -> tgt.expressedBy;
@@ -33,7 +33,7 @@ group Goal(source src : Goal, target tgt : GoalR3) extends DomainResource <<type
   src.outcomeReference -> tgt.outcomeReference;
 }
 
-group targetX(source src, target tgt) extends BackboneElement {
+group GoalTarget(source src, target tgt) extends BackboneElement {
   src.measure -> tgt.measure;
   src.detail : Quantity as vs -> tgt.detail = create('Quantity') as vt then Quantity(vs, vt) "detailQuantity";
   src.detail : Range as vs -> tgt.detail = create('Range') as vt then Range(vs, vt) "detailRange";

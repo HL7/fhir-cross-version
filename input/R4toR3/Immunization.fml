@@ -11,9 +11,9 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 group Immunization(source src : Immunization, target tgt : ImmunizationR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status where value != 'not-done' -> tgt.status;
-  src.status where value = 'not-done' ->  tgt.status = 'completed',  tgt.notGiven = 'true';
+  src.status where value = 'not-done' ->  tgt.status = 'completed',  tgt.notGiven = true;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.notGiven' then {
-    e.value -> tgt.notGiven;
+    e.value : boolean -> tgt.notGiven;
   };
   src.vaccineCode -> tgt.vaccineCode;
   src.patient -> tgt.patient;
@@ -50,17 +50,17 @@ group reaction(source src, target tgt) extends BackboneElement {
 group protocol(source src, target tgt) extends BackboneElement {
   src.doseNumber : positiveInt as vs -> tgt.doseSequence as vt then positiveInt(vs, vt) "doseNumberPositiveInt";
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.vaccinationProtocol.description' then {
-    e.value -> tgt.description;
+    e.value : string -> tgt.description;
   };
   src.authority -> tgt.authority;
   src.series -> tgt.series;
   src.seriesDoses : positiveInt as vs -> tgt.seriesDoses as vt then positiveInt(vs, vt) "seriesDosesPositiveInt";
   src.targetDisease -> tgt.targetDisease;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.vaccinationProtocol.doseStatus' then {
-    e.value -> tgt.doseStatus;
+    e.value : CodeableConcept -> tgt.doseStatus;
   };
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.vaccinationProtocol.doseStatusReason' then {
-    e.value -> tgt.doseStatusReason;
+    e.value : CodeableConcept -> tgt.doseStatusReason;
   };
 }
 

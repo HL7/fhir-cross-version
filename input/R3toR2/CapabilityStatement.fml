@@ -15,7 +15,7 @@ group CapabilityStatement(source src : CapabilityStatement, target tgt : Conform
   src.status -> tgt.status "conf_status";
   src.experimental -> tgt.experimental "conf_experimental";
   src.publisher -> tgt.publisher "conf_publisher";
-  src.contact as vs -> tgt.contact as vt then contact(vs, vt) "conf_contact";
+  src.contact as vs -> tgt.contact as vt then CapabilityStatementContact(vs, vt) "conf_contact";
   src.date -> tgt.date "conf_date";
   src.description -> tgt.description "conf_description";
   src.purpose -> tgt.requirements "conf_requirements";
@@ -32,7 +32,7 @@ group CapabilityStatement(source src : CapabilityStatement, target tgt : Conform
   src.document as vs -> tgt.document as vt then document(vs, vt) "conf_document";
 }
 
-group contact(source src, target tgt) extends Element {
+group CapabilityStatementContact(source src, target tgt) extends Element {
   src.name -> tgt.name "conf_name";
   src.telecom -> tgt.telecom "conf_telecom";
 }
@@ -52,14 +52,14 @@ group rest(source src, target tgt) extends BackboneElement {
   src.mode -> tgt.mode "conf_mode";
   src.documentation -> tgt.documentation "conf_documentation";
   src.security as vs -> tgt.security as vt then security(vs, vt) "conf_security";
-  src.resource as vs -> tgt.resource as vt then resource(vs, vt) "conf_resource";
+  src.resource as vs -> tgt.resource as vt then restResource(vs, vt) "conf_resource";
   src.interaction as vs where (($this = 'batch') or ($this = 'transaction')).not() -> tgt.interaction as vt then interaction(vs, vt) "conf_interaction";
   src where src.interaction.where($this = 'transaction').exists() and src.interaction.where($this = 'batch').exists() -> tgt.transactionMode = 'both' "conf_transactionMode-1";
   src where src.interaction.where($this = 'transaction').exists() and src.interaction.where($this = 'batch').empty() -> tgt.transactionMode = 'transaction' "conf_transactionMode-2";
   src where src.interaction.where($this = 'transaction').empty() and src.interaction.where($this = 'batch').exists() -> tgt.transactionMode = 'batch' "conf_transactionMode-3";
   src where src.interaction.where($this = 'transaction').empty() and src.interaction.where($this = 'batch').empty() -> tgt.transactionMode = 'none' "conf_transactionMode-4";
   src.searchParam as vs -> tgt.searchParam as vt then searchParam(vs, vt) "conf_searchParam";
-  src.operation as vs -> tgt.operation as vt then operation(vs, vt) "conf_operation";
+  src.operation as vs -> tgt.operation as vt then CapabilityStatementRestOperation(vs, vt) "conf_operation";
   src.compartment -> tgt.compartment "conf_compartment";
 }
 
@@ -75,7 +75,7 @@ group certificate(source src, target tgt) extends BackboneElement {
   src.blob -> tgt.blob "conf_blob";
 }
 
-group resource(source src, target tgt) extends BackboneElement {
+group restResource(source src, target tgt) extends BackboneElement {
   src.type where $this != 'CapabilityStatement' -> tgt.type "conf_type2";
   src.type where $this = 'CapabilityStatement' -> tgt.type = 'Conformance' "conf_type3";
   src.profile -> tgt.profile "conf_profile";
@@ -103,7 +103,7 @@ group searchParam(source src, target tgt) extends BackboneElement {
   src.documentation -> tgt.documentation "conf_documentation";
 }
 
-group operation(source src, target tgt) extends BackboneElement {
+group CapabilityStatementRestOperation(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name "conf_name";
   src.definition -> tgt.definition "conf_definition";
 }

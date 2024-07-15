@@ -10,19 +10,11 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/Duration" alias Duration as ta
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"
 
-group Quantity(source src : QuantityR2, target tgt : Quantity) extends Element <<type+>> {
+group QuantityM(source src : QuantityR2, target tgt : Quantity) extends Element {
   src.value -> tgt.value "Quantity-value";
   src.comparator -> tgt.comparator "Quantity-comparator";
   src.unit -> tgt.unit "Quantity-unit";
   src.system -> tgt.system "Quantity-system";
   src.code -> tgt.code "Quantity-code";
-}
-
-group QuantityToDuration(source src : QuantityR2, target tgt : Duration) extends Element {
-  src.value -> tgt.value "Duration-value";
-  src.comparator -> tgt.comparator "Duration-comparator";
-  src.unit -> tgt.unit "Duration-unit";
-  src.system -> tgt.system "Duration-system";
-  src.code -> tgt.code "Duration-code";
 }
 

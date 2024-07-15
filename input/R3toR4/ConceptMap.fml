@@ -28,10 +28,10 @@ group ConceptMap(source src : ConceptMapR3, target tgt : ConceptMap) extends Dom
   src.source : Reference as vs0 -> tgt.source = create('canonical') as vt0 then Reference2Canonical(vs0, vt0) "sourceReference";
   src.target : uri as vs0 -> tgt.target = create('uri') as vt0 then uri(vs0, vt0) "targetU";
   src.target : Reference as vs0 -> tgt.target = create('canonical') as vt0 then Reference2Canonical(vs0, vt0) "targetReference";
-  src.group as vs0 -> tgt.group as vt0 then groupX(vs0, vt0);
+  src.group as vs0 -> tgt.group as vt0 then ConceptMapGroup(vs0, vt0);
 }
 
-group groupX(source src, target tgt) extends BackboneElement {
+group ConceptMapGroup(source src, target tgt) extends BackboneElement {
   src.source -> tgt.source;
   src.sourceVersion -> tgt.sourceVersion;
   src.target -> tgt.target;
@@ -43,10 +43,10 @@ group groupX(source src, target tgt) extends BackboneElement {
 group element(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.display -> tgt.display;
-  src.target as vs0 -> tgt.target as vt0 then targetX(vs0, vt0);
+  src.target as vs0 -> tgt.target as vt0 then ConceptMapTarget(vs0, vt0);
 }
 
-group targetX(source src, target tgt) extends BackboneElement {
+group ConceptMapTarget(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.display -> tgt.display;
   src.equivalence -> tgt.equivalence;

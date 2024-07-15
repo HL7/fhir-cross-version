@@ -8,7 +8,7 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest" alias Proced
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
-group ServiceRequest(source src : ServiceRequest, target tgt : ProcedureRequestR3) extends DomainResource <<type+>> {
+group ServiceRequestPR(source src : ServiceRequest, target tgt : ProcedureRequestR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.instantiatesCanonical -> tgt.definition;
   src.basedOn -> tgt.basedOn;
@@ -43,7 +43,7 @@ group ServiceRequest(source src : ServiceRequest, target tgt : ProcedureRequestR
 group requester(source src, target tgt) {
   src -> tgt.agent as v then Reference(src, v) "agent";
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester.onBehalfOf' then {
-    e.value -> tgt.onBehalfOf;
+    e.value : Reference -> tgt.onBehalfOf;
   };
 }
 

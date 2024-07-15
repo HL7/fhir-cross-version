@@ -17,11 +17,11 @@ group ActivityDefinition(source src : ActivityDefinitionR4, target tgt : Activit
   src.subtitle -> tgt.subtitle;
   src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/adf.status-4to5', 'code');
   src.experimental -> tgt.experimental;
-  src.subject as s where code = 'Patient' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
-  src.subject as s where code = 'Practitioner' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
-  src.subject as s where code = 'Organization' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Organization';
-  src.subject as s where code = 'Location' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Location';
-  src.subject as s where code = 'Device' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Device';
+  src.subject as s where code = 'Patient' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
+  src.subject as s where code = 'Practitioner' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
+  src.subject as s where code = 'Organization' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Organization';
+  src.subject as s where code = 'Location' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Location';
+  src.subject as s where code = 'Device' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Device';
   src.subject : Reference -> tgt.subject "subjectReference";
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;

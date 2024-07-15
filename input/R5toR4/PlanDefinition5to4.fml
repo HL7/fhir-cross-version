@@ -95,8 +95,8 @@ group PlanDefinitionAction(source src, target tgt) extends BackboneElement {
   src.subject : Reference -> tgt.subject "subjectReference";
   src.trigger -> tgt.trigger;
   src.condition as s -> tgt.condition as t then PlanDefinitionActionCondition(s, t);
-  src.input as s -> tgt.input = r.requirement;
-  src.output as s -> tgt.output = r.requirement;
+  src.input as s -> tgt.input = s.requirement "Input";
+  src.output as s -> tgt.output = s.requirement "Output";
   src.relatedAction as s -> tgt.relatedAction as t then PlanDefinitionActionRelatedAction(s, t);
   src.timing : Age -> tgt.timing "timingAge";
   src.timing : Duration -> tgt.timing "timingDuration";

@@ -52,13 +52,13 @@ group codeSystem(source vs, target vstgt, source src, target tgt) extends Elemen
   vs.date -> tgt.date "CodeSystem-date";
   vs.description -> tgt.description "CodeSystem-description";
   vs.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "CodeSystem-jurisdiction";
-  vs.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value as vt then CodeableConcept(vs, vt) "CodeSystem-useContext";
+  vs.useContext as vs0 where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value as vt then CodeableConcept(vs0, vt) "CodeSystem-useContext";
   vs.requirements -> tgt.purpose "CodeSystem-purpose";
   vs.copyright -> tgt.copyright "CodeSystem-copyright";
   vs.url -> tgt.valueSet "CodeSystem-valueSet";
   src.caseSensitive -> tgt.caseSensitive "CodeSystem-caseSensitive";
   src -> tgt.content = 'complete' "CodeSystem-content";
-  src.concept as vs -> tgt.concept as vt then csconcept(vs, vt) "CodeSystem-concept";
+  src.concept as vs0 -> tgt.concept as vt then csconcept(vs0, vt) "CodeSystem-concept";
 }
 
 group csconcept(source src, target tgt) extends BackboneElement {
@@ -73,8 +73,8 @@ group csconcept(source src, target tgt) extends BackboneElement {
 group compose(source vs, source src, target tgt) extends BackboneElement {
   vs.lockedDate -> tgt.lockedDate "vs-compose-ld";
   src.import as v ->  tgt.include as ti,  ti.valueSet = v "vs-compose-imp";
-  src.include as vs -> tgt.include as vt then include(vs, vt) "vs-compose-incl";
-  src.exclude as vs -> tgt.exclude as vt then include(vs, vt) "vs-compose-excl";
+  src.include as vs0 -> tgt.include as vt then include(vs0, vt) "vs-compose-incl";
+  src.exclude as vs0 -> tgt.exclude as vt then include(vs0, vt) "vs-compose-excl";
 }
 
 group include(source src, target tgt) extends BackboneElement {
@@ -107,11 +107,11 @@ group expansion(source src, target tgt) extends BackboneElement {
   src.timestamp -> tgt.timestamp "expansion-timestamp";
   src.total -> tgt.total "expansion-total";
   src.offset -> tgt.offset "expansion-offset";
-  src.parameter as vs -> tgt.parameter as vt then parameter(vs, vt) "expansion-parameter";
+  src.parameter as vs -> tgt.parameter as vt then ValueSetParameter(vs, vt) "expansion-parameter";
   src.contains as vs -> tgt.contains as vt then containsX(vs, vt) "expansion-contains";
 }
 
-group parameter(source src, target tgt) extends BackboneElement {
+group ValueSetParameter(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name "vs-parameter-name";
   src.value -> tgt.value "vs-parameter-value";
 }

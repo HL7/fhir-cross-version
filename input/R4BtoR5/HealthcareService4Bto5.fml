@@ -28,8 +28,8 @@ group HealthcareService(source src : HealthcareServiceR4B, target tgt : Healthca
   src.communication -> tgt.communication;
   src.referralMethod -> tgt.referralMethod;
   src.appointmentRequired -> tgt.appointmentRequired;
-  src.availableTime : BackboneElement as s -> tgt.availability as t then HealthcareServiceAvailabilityAvailableTime(s, t) "availableTimeBackboneElement";
-  src.notAvailable : BackboneElement as s -> tgt.availability = create('Availability') as t then HealthcareServiceAvailabilityNotAvailableTime(s, t) "notAvailableTime";
+  src.availableTime as s -> tgt.availability as t then HealthcareServiceAvailabilityAvailableTime(s, t) "availableTimeBackboneElement";
+  src.notAvailable as s -> tgt.availability = create('Availability') as t then HealthcareServiceAvailabilityNotAvailableTime(s, t) "notAvailableTime";
   src.endpoint -> tgt.endpoint;
 }
 

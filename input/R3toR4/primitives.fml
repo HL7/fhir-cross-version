@@ -112,7 +112,7 @@ group canonical(source src : uriR3, target tgt : canonical) extends Element <<ty
   src.value as v -> tgt.value = v "canonical-value";
 }
 
-group uri2Canonical(source src : uriR3, target tgt : canonical) extends Element <<types>> {
+group uri2Canonical(source src : uriR3, target tgt : canonical) extends Element {
   src.value as v -> tgt.value = v "uri-value";
 }
 
@@ -132,6 +132,14 @@ group stringToMarkdown(source src : stringR3, target tgt : markdown) extends Ele
   src.value as v -> tgt.value = v "stringToMarkdown-value";
 }
 
+group string2uri(source src : stringR3, target tgt : uri) extends Element <<types>> {
+  src.value as v -> tgt.value = v "string2uri-value";
+}
+
+group string2canonical(source src : stringR3, target tgt : canonical) extends Element <<types>> {
+  src.value as v -> tgt.value = v "string2canonicalValue";
+}
+
 group id2code(source src : idR3, target tgt : code) extends Element <<types>> {
   src.value as v -> tgt.value = v "id2code-value";
 }
@@ -148,7 +156,11 @@ group string2code(source src : stringR3, target tgt : code) extends Element <<ty
   src.value as v -> tgt.value = v "code2uri-value";
 }
 
-group uri2url(source src : uriR3, target tgt : url) extends Element <<types>> {
+group string2id(source src : stringR3, target tgt : id) extends Element <<types>> {
+  src.value as v -> tgt.value = v "string2id-value";
+}
+
+group uri2url(source src : uriR3, target tgt : url) extends Element {
   src.value as v -> tgt.value = v "code2uri-value";
 }
 
@@ -158,6 +170,10 @@ group id2string(source src : idR3, target tgt : string) extends Element <<type+>
 
 group uri2string(source src : uriR3, target tgt : string) extends Element <<types>> {
   src.value as v -> tgt.value = v "code2uri-value";
+}
+
+group uri2code(source src : uriR3, target tgt : code) extends Element <<types>> {
+  src.value as v -> tgt.value = v "uri2codeValue";
 }
 
 group unsignedInt2decimal(source src : unsignedIntR3, target tgt : decimal) extends Element <<types>> {
@@ -170,6 +186,10 @@ group oid2string(source src : oidR3, target tgt : string) extends Element <<type
 
 group oid2id(source src : oidR3, target tgt : id) extends Element <<type+>> {
   src.value as v -> tgt.value = v;
+}
+
+group oid2code(source src : oidR3, target tgt : code) extends Element <<type+>> {
+  src.value as v -> tgt.value = v "oid2codeValue";
 }
 
 group positiveInt2integer(source src : positiveIntR3, target tgt : integer) extends Element <<types>> {

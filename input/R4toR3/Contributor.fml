@@ -3,14 +3,14 @@
 /// title = "Contributor Transforms: R4 to R3"
 /// status = "active"
 
-uses "http://hl7.org/fhir/4.0/StructureDefinition/Contributor" alias Contributor as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/ContactDetail" alias ContactDetail as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Contributor" alias ContributorR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Contributor(source src : ContactDetail, target tgt : ContributorR3) {
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Contributor.name' then {
-    e.value -> tgt.name;
+    e.value : string -> tgt.name;
   };
   src -> tgt.contact as vt then ContactDetail(src, vt) "contact";
 }

@@ -19,7 +19,7 @@ group VisionPrescription(source src : VisionPrescriptionR2, target tgt : VisionP
 }
 
 group vspDispense(source src, target tgt) extends BackboneElement {
-  src.product as v ->  tgt.product as d,  d.coding as v "dispense-product";
+  src.product as v ->  tgt.product as d,  d.coding = v "dispense-product";
   src.eye -> tgt.eye "dispense-eye";
   src.sphere -> tgt.sphere "dispense-sphere";
   src.cylinder -> tgt.cylinder "dispense-cylinder";

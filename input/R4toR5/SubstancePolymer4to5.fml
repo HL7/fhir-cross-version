@@ -26,7 +26,7 @@ group SubstancePolymerMonomerSetStartingMaterial(source src, target tgt) extends
   src.material -> tgt.code;
   src.type -> tgt.category;
   src.isDefining -> tgt.isDefining;
-  src.amount as s ->  tgt.amount as t,  t = s.amount;
+  src.amount as sa then { sa.amount : Quantity as s -> tgt.amount = s "CopyQuantity"; };
 }
 
 group SubstancePolymerRepeat(source src, target tgt) extends BackboneElement {
@@ -45,10 +45,10 @@ group SubstancePolymerRepeatRepeatUnit(source src, target tgt) extends BackboneE
 group SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation(source src, target tgt) extends BackboneElement {
   src.degree -> tgt.type;
   src.amount as s -> tgt then {
-    s.amount : Quantity as v -> tgt.average = v.value "amountQuantity";
+    s.amount : Quantity as v -> tgt.average = (v.value.round(0).toString().toInteger()) "amountQuantity";
     s.referenceRange as sr -> tgt then {
-      sr.lowLimit as vl -> tgt.low = vl.value;
-      sr.highLimit as vh -> tgt.high = vh.value;
+      sr.lowLimit as vl -> tgt.low = (vl.value.round(0).toString().toInteger()) "low";
+      sr.highLimit as vh -> tgt.high = (vh.value.round(0).toString().toInteger()) "high";
     };
   };
 }

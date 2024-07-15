@@ -20,7 +20,7 @@ group DocumentReference(source src : DocumentReference, target tgt : DocumentRef
   src.created -> tgt.created "DocumentReference_created";
   src.indexed -> tgt.indexed "DocumentReference_indexed";
   src.status -> tgt.status "DocumentReference_status";
-  src.docStatus as v -> tgt.docStatus = cc('http://hl7.org/fhir/composition-status', c) "DocumentReference_docStatus";
+  src.docStatus as v -> tgt.docStatus = cc('http://hl7.org/fhir/composition-status', v) "DocumentReference_docStatus";
   src.relatesTo as vs0 -> tgt.relatesTo as vt0 then drRelatesTo(vs0, vt0) "DocumentReference_relatesTo";
   src.description -> tgt.description "DocumentReference_description";
   src.securityLabel -> tgt.securityLabel "DocumentReference_securityLabel";

@@ -26,7 +26,7 @@ group StructureMap(source src : StructureMapR3, target tgt : StructureMap) exten
   src.copyright -> tgt.copyright;
   src.structure as vs0 -> tgt.structure as vt0 then structure(vs0, vt0);
   src.import -> tgt.import;
-  src.group as vs0 -> tgt.group as vt0 then groupX(vs0, vt0);
+  src.group as vs0 -> tgt.group as vt0 then StructureMapGroup(vs0, vt0);
 }
 
 group structure(source src, target tgt) extends BackboneElement {
@@ -36,7 +36,7 @@ group structure(source src, target tgt) extends BackboneElement {
   src.documentation -> tgt.documentation;
 }
 
-group groupX(source src, target tgt) extends BackboneElement {
+group StructureMapGroup(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.extends -> tgt.extends;
   src.typeMode -> tgt.typeMode;
@@ -54,11 +54,11 @@ group input(source src, target tgt) extends BackboneElement {
 
 group rule(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
-  src.source as vs0 -> tgt.source as vt0 then sourceX(vs0, vt0);
-  src.target as vs0 -> tgt.target as vt0 then targetX(vs0, vt0);
+  src.source as vs0 -> tgt.source as vt0 then RuleSource(vs0, vt0);
+  src.target as vs0 -> tgt.target as vt0 then RuleTarget(vs0, vt0);
 }
 
-group sourceX(source src, target tgt) extends BackboneElement {
+group RuleSource(source src, target tgt) extends BackboneElement {
   src.context -> tgt.context;
   src.min -> tgt.min;
   src.max -> tgt.max;
@@ -107,7 +107,7 @@ group sourceX(source src, target tgt) extends BackboneElement {
   src.check -> tgt.check;
 }
 
-group targetX(source src, target tgt) extends BackboneElement {
+group RuleTarget(source src, target tgt) extends BackboneElement {
   src.context -> tgt.context;
   src.contextType -> tgt.contextType;
   src.element -> tgt.element;
@@ -115,10 +115,10 @@ group targetX(source src, target tgt) extends BackboneElement {
   src.listMode -> tgt.listMode;
   src.listRuleId -> tgt.listRuleId;
   src.transform -> tgt.transform;
-  src.parameter as vs0 -> tgt.parameter as vt0 then parameter(vs0, vt0);
+  src.parameter as vs0 -> tgt.parameter as vt0 then StructureMapParameter(vs0, vt0);
 }
 
-group parameter(source src, target tgt) extends BackboneElement {
+group StructureMapParameter(source src, target tgt) extends BackboneElement {
   src.value : id as vs -> tgt.value = create('id') as vt then id(vs, vt) "valueid";
   src.value : string as vs -> tgt.value = create('string') as vt then string(vs, vt) "valuestring";
   src.value : boolean as vs -> tgt.value = create('boolean') as vt then boolean(vs, vt) "valueboolean";

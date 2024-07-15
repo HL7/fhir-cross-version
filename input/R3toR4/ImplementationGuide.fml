@@ -45,22 +45,22 @@ group definition(source src, target tgt) extends BackboneElement {
 group grouping(source src, target dfn, target grp) extends BackboneElement {
   src.name -> grp.name;
   src.description -> grp.description;
-  src.resource as rs -> dfn.resource as rt then resource(rs, rt, src);
+  src.resource as rs -> dfn.resource as rt then groupResource(rs, rt, src);
 }
 
-group resource(source src, target tgt, source pck) extends BackboneElement {
+group groupResource(source src, target tgt, source pck) extends BackboneElement {
   pck.id -> tgt.groupingId "packageId";
-  src.example where src.exampleFor.empty() as vs0 -> tgt.example = create('boolean') as vt0 then boolean(vs0, vt0);
+  src.example as vs0 where (src.exampleFor.empty()) -> tgt.example = create('boolean') as vt0 then boolean(vs0, vt0);
   src.name -> tgt.name;
   src.description -> tgt.description;
   src.acronym as vs ->  tgt.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.package.resource.acronym',  ext.value = vs;
   src.source : uri as vs ->  tgt.reference as ref,  ref.reference = vs,  ref.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/BaseType',  ext.value = 'uri' "sourceUri";
-  src.source : Reference as vs0 -> tgt.reference as vt0 then reference(vs0, vt0) "sourceRef";
+  src.source : Reference as vs0 -> tgt.reference as vt0 then Reference(vs0, vt0) "sourceRef";
   src.exampleFor as vs0 -> tgt.example = create('canonical') as vt0 then Reference2Canonical(vs0, vt0);
 }
 
 group page(source src, target tgt) extends BackboneElement {
-  src.source as vs0 -> tgt.name = create('uri') as vt0 then uri(vs0, vt0);
+  src.source as vs0 -> tgt.name = create('url') as vt0 then url(vs0, vt0);
   src.title -> tgt.title;
   src.kind as vs ->  tgt.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.page.kind',  ext.value = vs;
   src.type as vs ->  tgt.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.page.type',  ext.value = vs;

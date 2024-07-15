@@ -4,7 +4,10 @@
 /// status = "active"
 
 uses "http://hl7.org/fhir/4.0/StructureDefinition/Reference" alias Reference as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/canonical" alias canonical as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/uri" alias uri as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Reference" alias ReferenceR3 as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Identifier" alias IdentifierR3 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
@@ -24,7 +27,7 @@ group canonical2Reference(source src : canonical, target tgt : ReferenceR3) <<ty
   src.extension where (url.startsWith('http://hl7.org/fhir/3.0/StructureDefinition').not() and (url != 'http://hl7.org/fhir/StructureDefinition/rendered-value')) -> tgt.extension "Element-extensions";
   src.value -> tgt.reference "reference";
   src.extension as e where url = 'http://hl7.org/fhir/StructureDefinition/rendered-value' then {
-    e.value -> tgt.display;
+    e.value : string -> tgt.display;
   };
 }
 
@@ -33,7 +36,7 @@ group uri2Reference(source src : uri, target tgt : ReferenceR3) <<types>> {
   src.extension where (url.startsWith('http://hl7.org/fhir/3.0/StructureDefinition').not() and (url != 'http://hl7.org/fhir/StructureDefinition/rendered-value')) -> tgt.extension "Element-extensions";
   src.value -> tgt.reference "reference";
   src.extension as e where url = 'http://hl7.org/fhir/StructureDefinition/rendered-value' then {
-    e.value -> tgt.display;
+    e.value : string -> tgt.display;
   };
 }
 

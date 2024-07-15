@@ -19,16 +19,16 @@ group DocumentManifest(source src : DocumentManifest, target tgt : DocumentManif
   src.source -> tgt.source "DocumentManifest_source";
   src.status -> tgt.status "DocumentManifest_status";
   src.description -> tgt.description "DocumentManifest_description";
-  src.content as src -> tgt.content as vt0 then dmContent(src, vt0) "DocumentManifest_content";
-  src.related as src -> tgt.related as vt0 then dmRelated(src, vt0) "DocumentManifest_related";
+  src.content as s -> tgt.content as vt0 then dmContent(s, vt0) "DocumentManifest_content";
+  src.related as s -> tgt.related as vt0 then dmRelated(s, vt0) "DocumentManifest_related";
 }
 
 group dmContent(source src, target tgt) extends BackboneElement {
-  src.p -> tgt.p "content-p-Attachment";
+  src.p -> tgt.p "content_p_Attachment";
 }
 
 group dmRelated(source src, target tgt) extends BackboneElement {
-  src.identifier -> tgt.identifier "related-identifier";
-  src.ref -> tgt.ref "related-ref";
+  src.identifier -> tgt.identifier "related_identifier";
+  src.ref -> tgt.ref "related_ref";
 }
 

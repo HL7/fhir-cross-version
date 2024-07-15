@@ -28,7 +28,7 @@ group mAdPerformer(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.practitioner "MedicationAdministration-performer-actor";
 }
 
-group mAdDosage(source src : MedicationAdministrationR2, target tgt : MedicationAdministration) extends BackboneElement {
+group mAdDosage(source src, target tgt) extends BackboneElement {
   src.text -> tgt.text "dosage-text";
   src.site -> tgt.site "dosage-site";
   src.route -> tgt.route "dosage-route";

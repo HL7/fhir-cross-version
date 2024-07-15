@@ -14,7 +14,7 @@ group Questionnaire(source src : QuestionnaireR2, target tgt : Questionnaire) ex
   src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/que.status-2to3', 'code') "Questionnaire-status";
   src.date -> tgt.date "Questionnaire-date";
   src.publisher -> tgt.publisher "Questionnaire-publisher";
-  src.telecom as v ->  tgt.contact as d,  d.telecom as v "Questionnaire-telecom";
+  src.telecom as v ->  tgt.contact as d,  d.telecom = v "Questionnaire-telecom";
   src.subjectType -> tgt.subjectType "Questionnaire-subjectType";
   src.group as vs0 -> tgt.item as vt0 then qstGroup(vs0, vt0) "Questionnaire-group";
 }
@@ -40,7 +40,7 @@ group qstQuestion(source src, target tgt) extends BackboneElement {
   src.required -> tgt.required "question-required";
   src.repeats -> tgt.repeats "question-repeats";
   src.options -> tgt.options "question-options";
-  src.option as v ->  tgt.option as o,  o.value as v "question-option";
+  src.option as v ->  tgt.option as o,  o.value = v "question-option";
   src.group as vs0 -> tgt.item as vt0 then qstGroup(vs0, vt0) "question-group";
 }
 

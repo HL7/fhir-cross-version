@@ -23,23 +23,23 @@ group GraphDefinition(source src : GraphDefinitionR3, target tgt : GraphDefiniti
   src.purpose -> tgt.purpose;
   src.start -> tgt.start;
   src.profile -> tgt.profile;
-  src.link as vs0 -> tgt.link as vt0 then link(vs0, vt0);
+  src.link as vs0 -> tgt.link as vt0 then GraphDefinitionLink(vs0, vt0);
 }
 
-group link(source src, target tgt) extends BackboneElement {
+group GraphDefinitionLink(source src, target tgt) extends BackboneElement {
   src.path -> tgt.path;
   src.sliceName -> tgt.sliceName;
   src.min -> tgt.min;
   src.max -> tgt.max;
   src.description -> tgt.description;
-  src.target as vs0 -> tgt.target as vt0 then targetX(vs0, vt0);
+  src.target as vs0 -> tgt.target as vt0 then linkTarget(vs0, vt0);
 }
 
-group targetX(source src, target tgt) extends BackboneElement {
+group linkTarget(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.profile -> tgt.profile;
   src.compartment as vs0 -> tgt.compartment as vt0 then compartment(vs0, vt0);
-  src.link as vs0 -> tgt.link as vt0 then link(vs0, vt0);
+  src.link as vs0 -> tgt.link as vt0 then GraphDefinitionLink(vs0, vt0);
 }
 
 group compartment(source src, target tgt) extends BackboneElement {

@@ -17,13 +17,13 @@ group Substance(source src : SubstanceR2, target tgt : Substance) extends Domain
   src.ingredient as vs0 -> tgt.ingredient as vt0 then sbsIngredient(vs0, vt0) "Substance-ingredient";
 }
 
-group sbsInstance(source src : Substance, target tgt : SubstanceR2) extends BackboneElement {
+group sbsInstance(source src, target tgt) extends BackboneElement {
   src.identifier -> tgt.identifier "instance-identifier";
   src.expiry -> tgt.expiry "instance-expiry";
   src.quantity -> tgt.quantity "instance-quantity";
 }
 
-group sbsIngredient(source src : Substance, target tgt : SubstanceR2) extends BackboneElement {
+group sbsIngredient(source src, target tgt) extends BackboneElement {
   src.quantity -> tgt.quantity "ingredient-quantity";
   src.substance -> tgt.substance "ingredient-substance";
 }

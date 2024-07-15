@@ -3,12 +3,13 @@
 /// title = "ElementDefinition Transforms: R3 to R2"
 /// status = "active"
 
+uses "http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition" alias StructureDefinition as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition" alias ElementDefinition as source
 uses "http://hl7.org/fhir/1.0/StructureDefinition/ElementDefinition" alias ElementDefinitionR2 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
-group ElementDefinition(source srcR : Resource, source src : ElementDefinition, target tgt : ElementDefinitionR2) <<type+>> {
+group ElementDefinition(source srcR : StructureDefinition, source src : ElementDefinition, target tgt : ElementDefinitionR2) <<type+>> {
   src.extension -> tgt.extension "ElementDefinition_extensions";
   src.path -> tgt.path "ElementDefinition_path";
   src.sliceName -> tgt.name "ElementDefinition_name";
@@ -41,8 +42,8 @@ group ElementDefinition(source srcR : Resource, source src : ElementDefinition, 
   src.defaultValue -> tgt.defaultValue "ElementDefinition_defaultValue";
   src.meaningWhenMissing -> tgt.meaningWhenMissing "ElementDefinition_meaningWhenMissing";
   src.example first as exv then {
-    exv.value -> tgt.example "ElementDefinition_example-v";
-  } "ElementDefinition_example";
+    exv.value -> tgt.example "ElementDefinition_example_v";
+  } "ElementDefinition-example";
   src.fixed -> tgt.fixed "ElementDefinition_fixed";
   src.pattern -> tgt.pattern "ElementDefinition_pattern";
   src.minValue -> tgt.minValue "ElementDefinition_minValue";
@@ -53,7 +54,7 @@ group ElementDefinition(source srcR : Resource, source src : ElementDefinition, 
   src.mustSupport -> tgt.mustSupport "ElementDefinition_mustSupport";
   src.isModifier -> tgt.isModifier "ElementDefinition_isModifier";
   src.isSummary -> tgt.isSummary "ElementDefinition_isSummary";
-  src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0) "ElementDefinition_binding";
+  src.binding as vs0 -> tgt.binding as vt0 then ElementDefinitionBinding(vs0, vt0) "ElementDefinition_binding";
   src.mapping as vs0 -> tgt.mapping as vt0 then mapping(vs0, vt0) "ElementDefinition_mapping";
 }
 
@@ -61,7 +62,7 @@ group edDiscriminator(source src, target tgt) extends Element {
   src.path where type = 'value' -> tgt.discriminator "binding-strength";
 }
 
-group binding(source src, target tgt) extends Element {
+group ElementDefinitionBinding(source src, target tgt) extends Element {
   src.strength -> tgt.strength "binding-strength";
   src.description -> tgt.description "binding-description";
   src.valueSet -> tgt.valueSet "binding-valueSet";

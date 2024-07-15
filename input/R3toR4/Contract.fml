@@ -32,14 +32,15 @@ group ContractTerm(source src, target tgt) extends BackboneElement {
   src.applies -> tgt.applies;
   src.type -> tgt.type;
   src.subType -> tgt.subType;
-  src.offer as s -> tgt.offer as t then ContractTermOffer(s, t);
-  src.asset as s -> tgt.asset as t then ContractTermAsset(s, t);
-  src.agent as s -> tgt.agent as t then ContractTermAgent(s, t);
-  src.action -> tgt.action;
-  src.actionReason -> tgt.actionReason;
+  // src.offer as s -> tgt.offer as t then ContractTermOffer(s, t); // no such thing in STU3
+  // src.asset as s -> tgt.asset as t then ContractTermAsset(s, t);
+  // src.agent as s -> tgt.agent as t then ContractTermAgent(s, t);
+  src.action as s -> tgt.action as a, a.type = s "ContractTermAction";
+  // src.actionReason -> tgt.actionReason; // removed from R4
   src.group -> tgt.group;
 }
 
+/* Not a part of STU3
 group ContractTermOffer(source src, target tgt) extends BackboneElement {
   src.topic -> tgt.topic;
   src.type -> tgt.type;
@@ -47,6 +48,7 @@ group ContractTermOffer(source src, target tgt) extends BackboneElement {
   src.text -> tgt.text;
   src.linkId -> tgt.linkId;
 }
+*/
 
 group ContractTermAsset(source src, target tgt) extends BackboneElement {
   src.class -> tgt.class;

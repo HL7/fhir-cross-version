@@ -15,12 +15,12 @@ group Medication(source src : MedicationR3, target tgt : Medication) extends Dom
   src.isOverTheCounter as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationOTC',  vt.value = v;
   src.manufacturer -> tgt.manufacturer;
   src.form -> tgt.form;
-  src.ingredient as vs0 -> tgt.ingredient as vt0 then ingredient(vs0, vt0);
+  src.ingredient as vs0 -> tgt.ingredient as vt0 then MedicationIngredient(vs0, vt0);
   src.package as vs0 then package(vs0, tgt);
   src.image as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationImage',  vt.value = v;
 }
 
-group ingredient(source src, target tgt) extends BackboneElement {
+group MedicationIngredient(source src, target tgt) extends BackboneElement {
   src.item : CodeableConcept as vs -> tgt.item = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "itemCodeableConcept";
   src.item : Reference as vs -> tgt.item = create('Reference') as vt then Reference(vs, vt) "itemReference";
   src.isActive -> tgt.isActive;

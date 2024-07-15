@@ -33,12 +33,12 @@ group Procedure(source src : Procedure, target tgt : ProcedureR2) extends Domain
   src.usedReference -> tgt.used "Procedure-used";
 }
 
-group prcPerformer(source src : Procedure, target tgt : ProcedureR2) extends BackboneElement {
+group prcPerformer(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.actor "performer-actor";
   src.role -> tgt.role "performer-role";
 }
 
-group prcFocalDevice(source src : Procedure, target tgt : ProcedureR2) extends BackboneElement {
+group prcFocalDevice(source src, target tgt) extends BackboneElement {
   src.action -> tgt.action "focalDevice-action";
   src.manipulated -> tgt.manipulated "focalDevice-manipulated";
 }

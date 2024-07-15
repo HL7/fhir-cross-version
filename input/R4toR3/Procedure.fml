@@ -12,14 +12,16 @@ group Procedure(source src : Procedure, target tgt : ProcedureR3) extends Domain
   src.identifier -> tgt.identifier;
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
-  src.status where value = 'not-done' ->  tgt.status = create('code') as vt,  vt.value = 'suspended',  tgt.notDone = 'true';
+  src.status where value = 'not-done' ->  tgt.status = 'suspended',  tgt.notDone = true;
   src.status as vs where (value = 'not-done').not() -> tgt.status = translate(vs, 'http://hl7.org/fhir/uv/xver/ConceptMap/pro.status-4to3', 'code');
   src.statusReason as vs where src.status = 'not-done' -> tgt.notDoneReason = create('CodeableConcept') as vt then CodeableConcept(vs, vt);
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.subject -> tgt.subject;
   src.encounter : Reference as vs -> tgt.context = create('Reference') as vt then Reference(vs, vt) "encounterReference";
-  src.performed -> tgt.performed;
+  // Note that there is no support for string, age or range in STU3 (but is in R4)
+  src.performed : dateTime -> tgt.performed;
+  src.performed : Period -> tgt.performed;
   src.performer as s -> tgt.performer as t then ProcedurePerformer(s, t);
   src.location -> tgt.location;
   src.reasonCode -> tgt.reasonCode;

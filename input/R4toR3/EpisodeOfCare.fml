@@ -11,7 +11,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 group EpisodeOfCare(source src : EpisodeOfCare, target tgt : EpisodeOfCareR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
-  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then statusHistory(vs0, vt0);
+  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then EpisodeOfCareStatusHistory(vs0, vt0);
   src.type -> tgt.type;
   src.diagnosis as vs0 -> tgt.diagnosis as vt0 then diagnosis(vs0, vt0);
   src.patient -> tgt.patient;
@@ -23,7 +23,7 @@ group EpisodeOfCare(source src : EpisodeOfCare, target tgt : EpisodeOfCareR3) ex
   src.account -> tgt.account;
 }
 
-group statusHistory(source src, target tgt) extends BackboneElement {
+group EpisodeOfCareStatusHistory(source src, target tgt) extends BackboneElement {
   src.status -> tgt.status;
   src.period -> tgt.period;
 }

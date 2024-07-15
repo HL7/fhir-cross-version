@@ -18,7 +18,7 @@ group MedicationDispense(source src : MedicationDispense, target tgt : Medicatio
   src.subject -> tgt.subject;
   src.context -> tgt.context;
   src.supportingInformation -> tgt.supportingInformation;
-  src.performer as vs0 -> tgt.performer as vt0 then actor(vs0, vt0);
+  src.performer as vs0 -> tgt.performer as vt0 then MedicationDispenseActor(vs0, vt0);
   src.authorizingPrescription -> tgt.authorizingPrescription;
   src.type -> tgt.type;
   src.quantity -> tgt.quantity;
@@ -29,25 +29,26 @@ group MedicationDispense(source src : MedicationDispense, target tgt : Medicatio
   src.receiver -> tgt.receiver;
   src.note -> tgt.note;
   src.dosageInstruction -> tgt.dosageInstruction;
-  src.substitution as vs0 -> tgt.substitution as vt0 then subst(vs0, vt0);
+  src.substitution as vs0 -> tgt.substitution as vt0 then MedicationDispenseSubst(vs0, vt0);
   src.detectedIssue -> tgt.detectedIssue;
   src.eventHistory -> tgt.eventHistory;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.notDone' then {
-    e.value -> tgt.notDone;
+    e.value : boolean -> tgt.notDone;
   };
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.notDoneReason' then {
-    e.value -> tgt.notDoneReason;
+    e.value : CodeableConcept -> tgt.notDoneReason;
+    e.value : Reference -> tgt.notDoneReason;
   };
 }
 
-group actor(source src, target tgt) extends BackboneElement {
+group MedicationDispenseActor(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.actor;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.performer.onBehalfOf' then {
-    e.value -> tgt.onBehalfOf;
+    e.value : Reference -> tgt.onBehalfOf;
   };
 }
 
-group subst(source src, target tgt) extends BackboneElement {
+group MedicationDispenseSubst(source src, target tgt) extends BackboneElement {
   src.wasSubstituted -> tgt.wasSubstituted;
   src.type -> tgt.type;
   src.reason -> tgt.reason;

@@ -41,7 +41,7 @@ group ConceptMapGroup(source src, target tgt) extends BackboneElement {
 group ConceptMapGroupElement(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.display -> tgt.display;
-  src where src.target.all(equivalence = 'unmatched') as s ->  tgt.noMap as t,  t.value = 'true' "unmapped";
+  src as s where src.target.all(equivalence = 'unmatched') ->  tgt.noMap as t,  t.value = true "unmapped";
   src.target as s where s != unmatched -> tgt.target as t then ConceptMapGroupElementTarget(s, t);
 }
 

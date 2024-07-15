@@ -16,7 +16,7 @@ group Annotation(source src : Annotation, target tgt : AnnotationR3) extends Ele
   src.text -> tgt.text;
 }
 
-group Annotation2string(source src : Annotation, target tgt : stringR3) extends Element <<types>> {
+group Annotation2string(source src : Annotation, target tgt : StringR3) extends Element <<types>> {
   src.text as vs0 then string(vs0, tgt);
 }
 

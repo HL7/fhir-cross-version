@@ -210,7 +210,7 @@ group ElementDefinition(source src : ElementDefinition, target tgt : ElementDefi
   src.mustSupport -> tgt.mustSupport;
   src.isModifier -> tgt.isModifier;
   src.isSummary -> tgt.isSummary;
-  src.binding as vs0 -> tgt.binding as vt0 then binding(vs0, vt0) "ElementDefinition_binding";
+  src.binding as vs0 -> tgt.binding as vt0 then ElementDefinitionBinding(vs0, vt0) "ElementDefinition_binding";
   src.mapping as vs0 -> tgt.mapping as vt0 then {
     vs0.identity -> vt0.identity;
     vs0.language -> vt0.language;
@@ -231,7 +231,7 @@ group discriminator(source src, target tgt) extends Element {
   src.path -> tgt.path;
 }
 
-group binding(source src, target tgt) extends Element {
+group ElementDefinitionBinding(source src, target tgt) extends Element {
   src.strength -> tgt.strength;
   src.description -> tgt.description;
   src.valueSet as vs0 where value.startsWith('http://hl7.org').not() -> tgt.valueSet = create('uri') as vt0 then canonical2Uri(vs0, vt0) "binding-valueSetU";

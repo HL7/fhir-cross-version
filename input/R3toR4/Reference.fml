@@ -3,8 +3,11 @@
 /// title = "Reference Transforms: R3 to R4"
 /// status = "active"
 
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Identifier" alias IdentifierR3 as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Reference" alias ReferenceR3 as source
 uses "http://hl7.org/fhir/4.0/StructureDefinition/Reference" alias Reference as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/canonical" alias canonical as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/uri" alias uri as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 

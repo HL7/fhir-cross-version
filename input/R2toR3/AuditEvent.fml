@@ -18,12 +18,12 @@ group AuditEvent(source src : AuditEventR2, target tgt : AuditEvent) extends Dom
     ev.outcomeDesc -> tgt.outcomeDesc "AuditEvent-outcomeDesc";
     ev.purposeOfEvent -> tgt.purposeOfEvent "AuditEvent-purposeOfEvent";
   } "AuditEvent-event";
-  src.participant as vs0 -> tgt.agent as vt0 then agent(vs0, vt0) "AuditEvent-agent";
+  src.participant as vs0 -> tgt.agent as vt0 then AuditEventAgent(vs0, vt0) "AuditEvent-agent";
   src.source as vs0 -> tgt.source as vt0 then sourceX(vs0, vt0) "AuditEvent-source";
   src.object as vs0 -> tgt.entity as vt0 then entity(vs0, vt0) "AuditEvent-entity";
 }
 
-group agent(source src, target tgt) extends BackboneElement {
+group AuditEventAgent(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role "agent-role";
   src.reference -> tgt.reference "agent-reference";
   src.userId -> tgt.userId "agent-userId";

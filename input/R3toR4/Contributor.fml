@@ -8,7 +8,7 @@ uses "http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint" alias ContactPoi
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
-group Contributor(source src : ContributorR3, target tgt : ConactPoint) {
+group Contributor(source src : ContributorR3, target tgt : ContactPoint) {
   src.contact as vs then ContactDetail(vs, tgt);
   src.name as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Contributor.name',  vt.value = v;
 }

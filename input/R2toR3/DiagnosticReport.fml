@@ -17,7 +17,7 @@ group DiagnosticReport(source src : DiagnosticReportR2, target tgt : DiagnosticR
   src.encounter -> tgt.context "DiagnosticReport_encounter";
   src.effective -> tgt.effective "DiagnosticReport_effective";
   src.issued -> tgt.issued "DiagnosticReport_issued";
-  src.performer as v ->  tgt.performer as p,  p.actor as v "DiagnosticReport_performer";
+  src.performer as v ->  tgt.performer as p,  p.actor = v "DiagnosticReport_performer";
   src.request -> tgt.basedOn "DiagnosticReport_request";
   src.specimen -> tgt.specimen "DiagnosticReport_specimen";
   src.result -> tgt.result "DiagnosticReport_result";
@@ -29,7 +29,7 @@ group DiagnosticReport(source src : DiagnosticReportR2, target tgt : DiagnosticR
 }
 
 group drpImage(source src, target tgt) extends BackboneElement {
-  src.comment -> tgt.comment "image-comment";
-  src.link -> tgt.link "image-link";
+  src.comment -> tgt.comment "image_comment";
+  src.link -> tgt.link "image_link";
 }
 

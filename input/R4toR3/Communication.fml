@@ -14,14 +14,14 @@ group Communication(source src : Communication, target tgt : CommunicationR3) ex
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
   src.status where value != 'not-done' -> tgt.status;
-  src.status as v where value = 'not-done' ->  tgt.status = 'completed',  tgt.notDone = v;
+  src.status as v where value = 'not-done' ->  tgt.status = 'completed',  tgt.notDone = true;
   src.statusReason where src.status = 'not-done' -> tgt.notDoneReason;
   src.category -> tgt.category;
   src.medium -> tgt.medium;
   src.subject -> tgt.subject;
   src.recipient -> tgt.recipient;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Communication.topic' then {
-    e.value -> tgt.topic;
+    e.value : Reference -> tgt.topic;
   };
   src.encounter -> tgt.context;
   src.sent -> tgt.sent;
@@ -29,11 +29,11 @@ group Communication(source src : Communication, target tgt : CommunicationR3) ex
   src.sender -> tgt.sender;
   src.reasonCode -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;
-  src.payload as s -> tgt.payload as t then payload(s, t);
+  src.payload as s -> tgt.payload as t then CommunicationPayload(s, t);
   src.note -> tgt.note;
 }
 
-group payload(source src, target tgt) extends BackboneElement {
+group CommunicationPayload(source src, target tgt) extends BackboneElement {
   src.content : string as s -> tgt.content = create('string') as t then string(s, t) "contentString";
   src.content : Attachment as s -> tgt.content = create('Attachment') as t then Attachment(s, t) "contentAttachment";
   src.content : Reference as s -> tgt.content = create('Reference') as t then Reference(s, t) "contentReference";

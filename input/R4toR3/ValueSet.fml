@@ -70,19 +70,20 @@ group expansion(source src, target tgt) extends BackboneElement {
   src.timestamp -> tgt.timestamp;
   src.total -> tgt.total;
   src.offset -> tgt.offset;
-  src.parameter as vs0 -> tgt.parameter as vt0 then parameter(vs0, vt0);
+  src.parameter as vs0 -> tgt.parameter as vt0 then ValueSetParameter(vs0, vt0);
   src.contains as vs0 -> tgt.contains as vt0 then containsX(vs0, vt0);
 }
 
-group parameter(source src, target tgt) extends BackboneElement {
+group ValueSetParameter(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.value : string as vs0 -> tgt.value = create('string') as vt0 then string(vs0, vt0) "valueString";
   src.value : boolean as vs0 -> tgt.value = create('boolean') as vt0 then boolean(vs0, vt0) "valueBoolean";
   src.value : integer as vs0 -> tgt.value = create('integer') as vt0 then integer(vs0, vt0) "valueInteger";
   src.value : decimal as vs0 -> tgt.value = create('decimal') as vt0 then decimal(vs0, vt0) "valueDecimal";
-  src.value : url as vs0 -> tgt.value = create('url') as vt0 then url(vs0, vt0) "valueUrl";
+  src.value : uri as vs0 -> tgt.value = create('uri') as vt0 then url(vs0, vt0) "valueUri";
   src.value : code as vs0 -> tgt.value = create('code') as vt0 then code(vs0, vt0) "valueCode";
-  src.value : dateTime as vs0 -> tgt.value = create('dateTime') as vt0 then dateTime(vs0, vt0) "valueDateTime";
+  // dateTime value not in STU3
+  // src.value : dateTime as vs0 -> tgt.value = create('dateTime') as vt0 then dateTime(vs0, vt0) "valueDateTime";
 }
 
 group containsX(source src, target tgt) extends BackboneElement {

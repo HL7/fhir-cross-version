@@ -19,18 +19,18 @@ group Consent(source src : ConsentR3, target tgt : Consent) extends DomainResour
   src.source -> tgt.source;
   src.policy as vs -> tgt.policy as vt then policy(vs, vt);
   src.policyRule as v ->  tgt.policyRule as cc,  cc.coding as c,  c.system = 'urn:ietf:rfc:3986',  c.code = v;
-  src where securityLabel.exists() or period.exists() or actor.exists() or action.exists() or purpose.exists() or dataPeriod.exists() or data.exists() or except.exists() -> tgt.provision as vt then base(src, vt) "securityLabel";
+  src where securityLabel.exists() or period.exists() or actor.exists() or action.exists() or purpose.exists() or dataPeriod.exists() or data.exists() or except.exists() -> tgt.provision as vt then ConsentBaseToProvision(src, vt) "securityLabel";
 }
 
-group base(source src, target tgt) {
+group ConsentBaseToProvision(source src : ConsentR3, target tgt) {
   src.period -> tgt.period;
-  src.actor as vs -> tgt.actor as vt then actor(vs, vt);
+  src.actor as vs -> tgt.actor as vt then ConsentActor(vs, vt);
   src.action -> tgt.action;
   src.securityLabel -> tgt.securityLabel;
   src.purpose -> tgt.purpose;
   src.dataPeriod -> tgt.dataPeriod;
   src.data as vs -> tgt.data as vt then data(vs, vt);
-  src.except as vs -> tgt.provision as vt then provision(vs, vt);
+  src.except as vs -> tgt.provision as vt then ConceptExceptToProvision(vs, vt);
 }
 
 group policy(source src, target tgt) extends BackboneElement {
@@ -38,10 +38,10 @@ group policy(source src, target tgt) extends BackboneElement {
   src.uri -> tgt.uri;
 }
 
-group provision(source src, target tgt) extends BackboneElement {
+group ConceptExceptToProvision(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.period -> tgt.period;
-  src.actor as vs -> tgt.actor as vt then actor(vs, vt);
+  src.actor as vs -> tgt.actor as vt then ConsentActor(vs, vt);
   src.action -> tgt.action;
   src.securityLabel -> tgt.securityLabel;
   src.purpose -> tgt.purpose;
@@ -51,7 +51,7 @@ group provision(source src, target tgt) extends BackboneElement {
   src.data as vs -> tgt.data as vt then data(vs, vt);
 }
 
-group actor(source src, target tgt) extends BackboneElement {
+group ConsentActor(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role;
   src.reference -> tgt.reference;
 }

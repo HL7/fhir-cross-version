@@ -12,8 +12,8 @@ group HealthcareService(source src : HealthcareService, target tgt : HealthcareS
   src.identifier -> tgt.identifier "HealthcareService_identifier";
   src.providedBy -> tgt.providedBy "HealthcareService_providedBy";
   src.category -> tgt.serviceCategory "HealthcareService_serviceCategory";
-  src.type as vs ->  tgt.serviceType as vt,  vt.type as vt then CodeableConcept(vs, vt) "HealthcareService_serviceType";
-  src.specialty as vs ->  tgt.serviceType as vt first,  vt.specialty as vt then CodeableConcept(vs, vt) "HealthcareService_speciality";
+  src.type as vs ->  tgt.serviceType as vt,  vt.type as v then CodeableConcept(vs, v) "HealthcareService_serviceType";
+  src.specialty as vs ->  tgt.serviceType as vt first,  vt.specialty as v then CodeableConcept(vs, v) "HealthcareService_speciality";
   src.location -> tgt.location "HealthcareService_location";
   src.name -> tgt.serviceName "HealthcareService_serviceName";
   src.comment -> tgt.comment "HealthcareService_comment";
@@ -34,14 +34,14 @@ group HealthcareService(source src : HealthcareService, target tgt : HealthcareS
 }
 
 group hsvcAvailable(source src, target tgt) extends BackboneElement {
-  src.daysOfWeek -> tgt.daysOfWeek "availableTime-daysOfWeek";
-  src.allDay -> tgt.allDay "availableTime-allDay";
-  src.availableStartTime -> tgt.availableStartTime "availableTime-availableStartTime";
-  src.availableEndTime -> tgt.availableEndTime "availableTime-availableEndTime";
+  src.daysOfWeek -> tgt.daysOfWeek "availableTime_daysOfWeek";
+  src.allDay -> tgt.allDay "availableTime_allDay";
+  src.availableStartTime -> tgt.availableStartTime "availableTime_availableStartTime";
+  src.availableEndTime -> tgt.availableEndTime "availableTime_availableEndTime";
 }
 
 group hsvcNotAvailable(source src, target tgt) extends BackboneElement {
-  src.description -> tgt.description "notAvailable-description";
-  src.during -> tgt.during "notAvailable-during";
+  src.description -> tgt.description "notAvailable_description";
+  src.during -> tgt.during "notAvailable_during";
 }
 

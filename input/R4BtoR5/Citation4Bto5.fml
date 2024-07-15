@@ -37,7 +37,7 @@ group Citation(source src : CitationR4B, target tgt : CitationR5) extends Domain
   src.currentState -> tgt.currentState;
   src.statusDate as s -> tgt.statusDate as t then CitationStatusDate(s, t);
   src.relatesTo as s -> tgt.relatedArtifact as t then {
-    s.relationshipType as v -> t.type = v.code "type";
+    s.relationshipType as r then { r.coding first as cv then { cv.code -> t.type; }; };
     s.targetClassifier -> t.classifier;
     s.target : Reference -> t.resourceReference "targetReference";
   } "relatedArtifact";
@@ -109,7 +109,7 @@ group CitationCitedArtifactPart(source src, target tgt) extends BackboneElement 
 }
 
 group CitationCitedArtifactRelatesTo(source src, target tgt) extends BackboneElement {
-  src.relationshipType as v -> tgt.type = v.code "type";
+  src.relationshipType as srt then { srt.coding first as cv then { cv.code -> tgt.type; }; };
   src.targetClassifier -> tgt.classifier;
   src.target : Reference -> tgt.resourceReference "targetReference";
 }

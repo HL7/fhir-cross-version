@@ -19,22 +19,22 @@ group QuestionnaireResponse(source src : QuestionnaireResponse, target tgt : Que
   src.authored -> tgt.authored;
   src.author -> tgt.author;
   src.source -> tgt.source;
-  src.item as vs0 -> tgt.item as vt0 then item(vs0, vt0);
+  src.item as vs0 -> tgt.item as vt0 then QuestionnaireResponseItem(vs0, vt0);
 }
 
-group item(source src, target tgt) extends BackboneElement {
+group QuestionnaireResponseItem(source src, target tgt) extends BackboneElement {
   src.linkId -> tgt.linkId;
   src.definition -> tgt.definition;
   src.text -> tgt.text;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-QuestionnaireResponse.item.subject' then {
-    e.value -> tgt.subject;
+    e.value : Reference -> tgt.subject;
   };
   src.answer as vs0 -> tgt.answer as vt0 then answer(vs0, vt0);
-  src.item as vs0 -> tgt.item as vt0 then item(vs0, vt0);
+  src.item as vs0 -> tgt.item as vt0 then QuestionnaireResponseItem(vs0, vt0);
 }
 
 group answer(source src, target tgt) extends BackboneElement {
   src.value -> tgt.value;
-  src.item as vs0 -> tgt.item as vt0 then item(vs0, vt0);
+  src.item as vs0 -> tgt.item as vt0 then QuestionnaireResponseItem(vs0, vt0);
 }
 

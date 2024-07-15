@@ -55,7 +55,7 @@ group rest(source src, target tgt) extends BackboneElement {
   src.resource as vs0 -> tgt.resource as vt0 then resource(vs0, vt0);
   src.interaction as vs0 -> tgt.interaction as vt0 then interaction(vs0, vt0);
   src.searchParam as vs0 -> tgt.searchParam as vt0 then searchParam(vs0, vt0);
-  src.operation as vs0 -> tgt.operation as vt0 then operation(vs0, vt0);
+  src.operation as vs0 -> tgt.operation as vt0 then CapabilityStatementRestOperation(vs0, vt0);
   src.compartment -> tgt.compartment;
 }
 
@@ -95,7 +95,7 @@ group searchParam(source src, target tgt) extends BackboneElement {
   src.documentation -> tgt.documentation;
 }
 
-group operation(source src, target tgt) extends BackboneElement {
+group CapabilityStatementRestOperation(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.definition -> tgt.definition;
 }

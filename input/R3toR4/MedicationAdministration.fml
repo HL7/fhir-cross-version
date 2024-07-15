@@ -24,7 +24,7 @@ group MedicationAdministration(source src : MedicationAdministrationR3, target t
   src.supportingInformation -> tgt.supportingInformation;
   src.effective : dateTime as vs -> tgt.effective = create('dateTime') as vt then dateTime(vs, vt) "effectiveDateTime";
   src.effective : Period as vs -> tgt.effective = create('Period') as vt then Period(vs, vt) "effectivePeriod";
-  src.performer as vs0 -> tgt.performer as vt0 then actor(vs0, vt0);
+  src.performer as vs0 -> tgt.performer as vt0 then MedicationAdministrationActor(vs0, vt0);
   src.reasonNotGiven -> tgt.reasonCode;
   src.reasonCode -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;
@@ -35,7 +35,7 @@ group MedicationAdministration(source src : MedicationAdministrationR3, target t
   src.eventHistory -> tgt.eventHistory;
 }
 
-group actor(source src, target tgt) extends BackboneElement {
+group MedicationAdministrationActor(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.actor;
   src.onBehalfOf as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.performer.onBehalfOf',  vt.value = v;
 }

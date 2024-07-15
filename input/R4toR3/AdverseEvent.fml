@@ -18,7 +18,7 @@ group AdverseEvent(source src : AdverseEvent, target tgt : AdverseEventR3) exten
   src.event -> tgt.type;
   src.subject -> tgt.subject;
   src.date -> tgt.date;
-  src.resultingCondition -> tgt.outcome;
+  src.resultingCondition -> tgt.reaction;
   src.location -> tgt.location;
   src.seriousness -> tgt.seriousness;
   src.outcome -> tgt.outcome;
@@ -32,13 +32,13 @@ group AdverseEvent(source src : AdverseEvent, target tgt : AdverseEventR3) exten
 
 group AdverseEventSuspectEntity(source src, target tgt) extends BackboneElement {
   src.instance -> tgt.instance;
-  src.causality as s -> tgt.causality as t then AdverseEventSuspectEntityCausality(s, t);
+  src.causality as s -> tgt as t then AdverseEventSuspectEntityCausality(s, t);
 }
 
 group AdverseEventSuspectEntityCausality(source src, target tgt) extends BackboneElement {
-  src.assessment -> tgt.assessment;
-  src.productRelatedness -> tgt.productRelatedness;
-  src.author -> tgt.author;
-  src.method -> tgt.method;
+  src.assessment -> tgt.causalityAssessment;
+  src.productRelatedness -> tgt.causalityProductRelatedness;
+  src.author -> tgt.causalityAuthor;
+  src.method -> tgt.causalityMethod;
 }
 

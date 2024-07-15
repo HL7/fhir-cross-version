@@ -16,14 +16,14 @@ group CareTeam(source src : CareTeam, target tgt : CareTeamR3) extends DomainRes
   src.subject -> tgt.subject;
   src.encounter -> tgt.context;
   src.period -> tgt.period;
-  src.participant as vs0 -> tgt.participant as vt0 then participant(vs0, vt0);
+  src.participant as vs0 -> tgt.participant as vt0 then CareTeamParticipant(vs0, vt0);
   src.reasonCode -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;
   src.managingOrganization -> tgt.managingOrganization;
   src.note -> tgt.note;
 }
 
-group participant(source src, target tgt) extends BackboneElement {
+group CareTeamParticipant(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role;
   src.member -> tgt.member;
   src.onBehalfOf -> tgt.onBehalfOf;

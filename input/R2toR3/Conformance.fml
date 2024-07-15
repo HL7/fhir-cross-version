@@ -15,7 +15,7 @@ group Conformance(source src : ConformanceR2, target tgt : CapabilityStatement) 
   src.status -> tgt.status "conf_status";
   src.experimental -> tgt.experimental "conf_experimental";
   src.publisher -> tgt.publisher "conf_publisher";
-  src.contact as vs -> tgt.contact as vt then contact(vs, vt) "conf_contact";
+  src.contact as vs -> tgt.contact as vt then ConformanceContact(vs, vt) "conf_contact";
   src.date -> tgt.date "conf_date";
   src.description -> tgt.description "conf_description";
   src.requirements -> tgt.purpose "conf_requirements";
@@ -32,7 +32,7 @@ group Conformance(source src : ConformanceR2, target tgt : CapabilityStatement) 
   src.document as vs -> tgt.document as vt then document(vs, vt) "conf_document";
 }
 
-group contact(source src, target tgt) extends BackboneElement {
+group ConformanceContact(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name "conf_name";
   src.telecom -> tgt.telecom "conf_telecom";
 }
@@ -52,12 +52,12 @@ group rest(source src, target tgt) extends BackboneElement {
   src.mode -> tgt.mode "conf_mode";
   src.documentation -> tgt.documentation "conf_documentation";
   src.security as vs -> tgt.security as vt then security(vs, vt) "conf_security";
-  src.resource as vs -> tgt.resource as vt then resource(vs, vt) "conf_resource";
-  src.interaction where (code != 'transaction') as vs -> tgt.interaction as vt then interaction(vs, vt) "conf_interaction";
+  src.resource as vs -> tgt.resource as vt then ConformanceRestResource(vs, vt) "conf_resource";
+  src.interaction as vs where (code != 'transaction') -> tgt.interaction as vt then interaction(vs, vt) "conf_interaction";
   src.transactionMode where ($this = 'batch') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'batch' "conf_transactionMode";
   src.transactionMode where ($this = 'transaction') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'transaction' "conf_transactionMode";
   src.searchParam as vs -> tgt.searchParam as vt then searchParam(vs, vt) "conf_searchParam";
-  src.operation as vs -> tgt.operation as vt then operation(vs, vt) "conf_operation";
+  src.operation as vs -> tgt.operation as vt then ConformanceRestOperation(vs, vt) "conf_operation";
   src.compartment -> tgt.compartment "conf_compartment";
 }
 
@@ -73,17 +73,17 @@ group certificate(source src, target tgt) extends BackboneElement {
   src.blob -> tgt.blob "conf_blob";
 }
 
-group resource(source src, target tgt) extends BackboneElement {
+group ConformanceRestResource(source src, target tgt) extends BackboneElement {
   src.type where $this != 'Conformance' -> tgt.type "conf_type2";
   src.type where $this = 'Conformance' -> tgt.type = 'CapabilityStatement' "conf_type3b";
   src.profile -> tgt.profile "conf_profile";
-  src.documentation -> tgt.documentation "conf_documentation";
+  // src.documentation -> tgt.documentation "conf_documentation";
   src.interaction as vs where code != 'validate' -> tgt.interaction as vt then interaction(vs, vt) "conf_interaction";
   src.versioning -> tgt.versioning "conf_versioning";
   src.readHistory -> tgt.readHistory "conf_readHistory";
   src.updateCreate -> tgt.updateCreate "conf_updateCreate";
   src.conditionalCreate -> tgt.conditionalCreate "conf_conditionalCreate";
-  src.conditionalRead -> tgt.conditionalRead "conf_conditionalRead";
+  // src.conditionalRead -> tgt.conditionalRead "conf_conditionalRead";
   src.conditionalUpdate -> tgt.conditionalUpdate "conf_conditionalUpdate";
   src.conditionalDelete -> tgt.conditionalDelete "conf_conditionalDelete";
   src.searchInclude -> tgt.searchInclude "conf_searchInclude";
@@ -103,7 +103,7 @@ group searchParam(source src, target tgt) extends BackboneElement {
   src.documentation -> tgt.documentation "conf_documentation";
 }
 
-group operation(source src, target tgt) extends BackboneElement {
+group ConformanceRestOperation(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name "conf_name";
   src.definition -> tgt.definition "conf_definition";
 }

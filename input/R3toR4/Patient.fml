@@ -22,15 +22,15 @@ group Patient(source src : PatientR3, target tgt : Patient) extends DomainResour
   src.multipleBirth : boolean as vs -> tgt.multipleBirth = create('boolean') as vt then boolean(vs, vt) "multipleBirthBoolean";
   src.multipleBirth : integer as vs -> tgt.multipleBirth = create('integer') as vt then integer(vs, vt) "multipleBirthInteger";
   src.photo -> tgt.photo;
-  src.contact as vs0 -> tgt.contact as vt0 then contact(vs0, vt0);
+  src.contact as vs0 -> tgt.contact as vt0 then PatientContact(vs0, vt0);
   src.animal as vs0 -> tgt.extension as vt0 then animal(vs0, vt0);
   src.communication as vs0 -> tgt.communication as vt0 then communication(vs0, vt0);
   src.generalPractitioner -> tgt.generalPractitioner;
   src.managingOrganization -> tgt.managingOrganization;
-  src.link as vs0 -> tgt.link as vt0 then link(vs0, vt0);
+  src.link as vs0 -> tgt.link as vt0 then PatientLink(vs0, vt0);
 }
 
-group contact(source src, target tgt) extends BackboneElement {
+group PatientContact(source src, target tgt) extends BackboneElement {
   src.relationship -> tgt.relationship;
   src.name -> tgt.name;
   src.telecom -> tgt.telecom;
@@ -52,7 +52,7 @@ group communication(source src, target tgt) extends BackboneElement {
   src.preferred -> tgt.preferred;
 }
 
-group link(source src, target tgt) extends BackboneElement {
+group PatientLink(source src, target tgt) extends BackboneElement {
   src.other -> tgt.other;
   src.type -> tgt.type;
 }

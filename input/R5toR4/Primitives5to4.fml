@@ -155,6 +155,10 @@ group string2code(source src : stringR5, target tgt : codeR4) extends Element <<
   src.value as v -> tgt.value = v "string2codeValue";
 }
 
+group string2uri(source src : stringR5, target tgt : uriR4) extends Element <<types>> {
+  src.value as v -> tgt.value = v "string2uri-value";
+}
+
 group time(source src : timeR5, target tgt : timeR4) extends Element <<type+>> {
   src.value as v -> tgt.value = v "timeValue";
 }
@@ -171,6 +175,10 @@ group integer642string(source src : integer64R5, target tgt : stringR4) extends 
   src.value as v -> tgt.value = v "integer642stringValue";
 }
 
+group integer2decimal(source src : integerR5, target tgt : decimalR4) extends Element <<type+>> {
+  src.value as v -> tgt.value = v "integer2decimalValue";
+}
+
 group uri(source src : uriR5, target tgt : uriR4) extends Element <<type+>> {
   src.value as v -> tgt.value = v "uriValue";
 }
@@ -183,8 +191,16 @@ group uri2code(source src : uriR5, target tgt : codeR4) extends Element <<types>
   src.value as v -> tgt.value = v "uri2codeValue";
 }
 
+group uri2string(source src : uriR5, target tgt : stringR4) extends Element <<types>> {
+  src.value as v -> tgt.value = v "uri2stringValue";
+}
+
 group url(source src : urlR5, target tgt : urlR4) extends Element <<type+>> {
   src.value as v -> tgt.value = v "urlValue";
+}
+
+group url2uri(source src : urlR5, target tgt : uriR4) extends Element <<types>> {
+  src.value as v -> tgt.value = v "url2uriValue";
 }
 
 group uuid(source src : uuidR5, target tgt : uuidR4) extends Element <<type+>> {

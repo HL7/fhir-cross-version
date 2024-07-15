@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group AllergyIntolerance(source src : AllergyIntolerance, target tgt : AllergyIntoleranceR2) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "AllergyIntolerance-identifier";
-  src.onset -> tgt.onset "AllergyIntolerance-onset";
+  src.onset : dateTime -> tgt.onset "AllergyIntolerance-onset";
   src.assertedDate -> tgt.recordedDate "AllergyIntolerance-recordedDate";
   src.recorder -> tgt.recorder "AllergyIntolerance-recorder";
   src.patient -> tgt.patient "AllergyIntolerance-patient";
