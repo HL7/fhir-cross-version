@@ -45,7 +45,7 @@ group ServiceRequest(source src : ServiceRequestR5, target tgt : ServiceRequestR
   src.specimen -> tgt.specimen;
   src.bodySite -> tgt.bodySite;
   src.note -> tgt.note;
-  src.patientInstruction as pi, pi.instruction : markdown as s -> tgt.patientInstruction = s "patientInstruction";
+  src.patientInstruction as pi then { pi.instruction : markdown -> tgt.patientInstruction; };
   src.relevantHistory -> tgt.relevantHistory;
 }
 

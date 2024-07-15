@@ -23,7 +23,7 @@ group Location(source src : LocationR5, target tgt : LocationR4) extends DomainR
   src.position as s -> tgt.position as t then LocationPosition(s, t);
   src.managingOrganization -> tgt.managingOrganization;
   src.partOf -> tgt.partOf;
-  src.hoursOfOperation as hoo, hoo.availableTime as s ->  tgt.hoursOfOperation as te,  te.daysOfWeek = s.daysOfWeek,  te.allDay = s.allDay,  te.openingTime = s.availableStartTime,  te.closingTime = s.availableEndTime "availableTime";
+  src.hoursOfOperation as hoo then { hoo.availableTime as s ->  tgt.hoursOfOperation as te,  te.daysOfWeek = s.daysOfWeek,  te.allDay = s.allDay,  te.openingTime = s.availableStartTime,  te.closingTime = s.availableEndTime "availableTime"; };
   src -> tgt.availabilityExceptions = (src.hoursOfOperation.notAvailableTime.description.join('\n')) "availabilityExceptions";
   src.endpoint -> tgt.endpoint;
 }

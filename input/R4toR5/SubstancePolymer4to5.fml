@@ -26,7 +26,7 @@ group SubstancePolymerMonomerSetStartingMaterial(source src, target tgt) extends
   src.material -> tgt.code;
   src.type -> tgt.category;
   src.isDefining -> tgt.isDefining;
-  src.amount as sa, sa.amount : Quantity as s -> tgt.amount = s "CopyQuantity";
+  src.amount as sa then { sa.amount : Quantity as s -> tgt.amount = s "CopyQuantity"; };
 }
 
 group SubstancePolymerRepeat(source src, target tgt) extends BackboneElement {
