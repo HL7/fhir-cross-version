@@ -36,7 +36,7 @@ group MedicationAdministration(source src : MedicationAdministration, target tgt
 group MedicationAdministrationActor(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.actor;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.performer.onBehalfOf' then {
-    e.value -> tgt.onBehalfOf;
+    e.value : Reference -> tgt.onBehalfOf;
   };
 }
 
@@ -52,15 +52,15 @@ group dosage(source src, target tgt) extends BackboneElement {
 
 group MedicationAdministrationStatusR3(source src, target tgt) {
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.notGiven' then {
-    e.value -> tgt.notGiven;
+    e.value : boolean -> tgt.notGiven;
   };
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.status' then {
-    e.value -> tgt.status;
+    e.value : code -> tgt.status;
   };
 }
 
 group MedicationAdministrationStatusNR3(source src, target tgt) {
   src.status where value != 'not-done' -> tgt.status;
-  src.status where value = 'not-done' -> tgt.notGiven = 'false';
+  src.status where value = 'not-done' -> tgt.notGiven = false;
 }
 

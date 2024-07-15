@@ -37,7 +37,11 @@ group ActivityDefinition(source src : ActivityDefinition, target tgt : ActivityD
   src.library -> tgt.library;
   src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/resources-4to3', 'code');
   src.code -> tgt.code;
-  src.timing -> tgt.timing;
+  // R4 also has Age and Duration in src.timing
+  src.timing : Timing -> tgt.timing;
+  src.timing : dateTime -> tgt.timing;
+  src.timing : Period -> tgt.timing;
+  src.timing : Range -> tgt.timing;
   src.location -> tgt.location;
   src.participant as s -> tgt.participant as t then ActivityDefinitionParticipant(s, t);
   src.product -> tgt.product;

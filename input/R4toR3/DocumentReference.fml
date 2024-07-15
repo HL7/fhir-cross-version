@@ -18,7 +18,7 @@ group DocumentReference(source src : DocumentReference, target tgt : DocumentRef
   src.subject -> tgt.subject;
   src.date -> tgt.indexed;
   src.extension as ext where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.created' then {
-    ext.value as vs0 -> tgt.created = vs0 "created2";
+    ext.value : dateTime as vs0 -> tgt.created = vs0 "created2";
   } "created";
   src.author -> tgt.author;
   src.authenticator -> tgt.authenticator;

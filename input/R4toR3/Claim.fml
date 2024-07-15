@@ -43,7 +43,7 @@ group Claim(source src : Claim, target tgt : ClaimR3) extends DomainResource <<t
     vs.code -> vt.code;
     vs.timing : date as vs0 -> vt.timing = create('date') as vt0 then date(vs0, vt0) "timingDate";
     vs.timing : Period as vs0 -> vt.timing as vt0 then Period(vs0, vt0) "timingPeriod";
-    vs.value : boolean as vs0 -> vt.value = create('boolean') as vt0 then boolean(vs0, vt0) "valueBoolean";
+    // vs.value : boolean as vs0 -> vt.value = create('boolean') as vt0 then boolean(vs0, vt0) "valueBoolean";
     vs.value : string as vs0 -> vt.value = create('string') as vt0 then string(vs0, vt0) "valueString";
     vs.value : Quantity as vs0 -> vt.value = create('Quantity') as vt0 then Quantity(vs0, vt0) "valueQuantity";
     vs.value : Attachment as vs0 -> vt.value = create('Attachment') as vt0 then Attachment(vs0, vt0) "valueAttachment";

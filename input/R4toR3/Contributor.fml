@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Contributor(source src : ContactDetail, target tgt : ContributorR3) {
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Contributor.name' then {
-    e.value -> tgt.name;
+    e.value : string -> tgt.name;
   };
   src -> tgt.contact as vt then ContactDetail(src, vt) "contact";
 }

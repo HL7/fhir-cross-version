@@ -24,13 +24,13 @@ group MeasureReport(source src : MeasureReport, target tgt : MeasureReportR3) ex
 group MeasureReportGroup(source src, target tgt) extends BackboneElement {
   src.code as vs -> tgt.identifier as vt then Codeable2Identifier(vs, vt);
   src.population as s -> tgt.population as t then MeasureReportPopulation(s, t);
-  src.measureScore -> tgt.measureScore;
+  src.measureScore as ms -> tgt.measureScore = ms.value "measureScore";
   src.stratifier as s -> tgt.stratifier as t then MeasureReportStratifier(s, t);
 }
 
 group MeasureReportPopulation(source src, target tgt) extends BackboneElement {
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MeasureReport.group.population.identifier' then {
-    e.value -> tgt.identifier;
+    e.value : Identifier -> tgt.identifier;
   };
   src.code -> tgt.code;
   src.count -> tgt.count;
@@ -47,12 +47,12 @@ group stratum(source src, target tgt) extends BackboneElement {
     cc.text -> tgt.value;
   };
   src.population as s -> tgt.population as t then population2(s, t);
-  src.measureScore -> tgt.measureScore;
+  src.measureScore as ms -> tgt.measureScore = ms.value;
 }
 
 group population2(source src, target tgt) extends BackboneElement {
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MeasureReport.group.stratifier.stratum.population.identifier' then {
-    e.value -> tgt.identifier;
+    e.value : Identifier -> tgt.identifier;
   };
   src.code -> tgt.code;
   src.count -> tgt.count;

@@ -49,7 +49,7 @@ group Measure(source src : Measure, target tgt : MeasureR3) extends DomainResour
   src.definition -> tgt.definition;
   src.guidance -> tgt.guidance;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.set' then {
-    e.value -> tgt.set;
+    e.value : string -> tgt.set;
   };
   src.group as s -> tgt.group as t then MeasureGroup(s, t);
   src.supplementalData as s -> tgt.supplementalData as t then supplementalData(s, t);
@@ -58,7 +58,7 @@ group Measure(source src : Measure, target tgt : MeasureR3) extends DomainResour
 group MeasureGroup(source src, target tgt) extends BackboneElement {
   src.code as vs -> tgt.identifier as vt then Codeable2Identifier(vs, vt);
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.name' then {
-    e.value -> tgt.name;
+    e.value : string -> tgt.name;
   };
   src.description -> tgt.description;
   src.population as s -> tgt.population as t then MeasurePopulation(s, t);
@@ -67,11 +67,11 @@ group MeasureGroup(source src, target tgt) extends BackboneElement {
 
 group MeasurePopulation(source src, target tgt) extends BackboneElement {
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.population.identifier' then {
-    e.value -> tgt.identifier;
+    e.value : Identifier -> tgt.identifier;
   };
   src.code -> tgt.code;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.population.name' then {
-    e.value -> tgt.name;
+    e.value : string -> tgt.name;
   };
   src.description -> tgt.description;
   src.criteria as s then {
@@ -85,7 +85,7 @@ group MeasureStratifier(source src, target tgt) extends BackboneElement {
     s.expression -> tgt.criteria;
   };
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.stratifier.path' then {
-    e.value -> tgt.path;
+    e.value : string -> tgt.path;
   };
 }
 
@@ -97,7 +97,7 @@ group supplementalData(source src, target tgt) extends BackboneElement {
     s.expression -> tgt.criteria;
   };
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.supplementalData.path' then {
-    e.value -> tgt.path;
+    e.value : string -> tgt.path;
   };
 }
 

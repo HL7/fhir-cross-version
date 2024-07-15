@@ -18,7 +18,7 @@ group AdverseEvent(source src : AdverseEvent, target tgt : AdverseEventR3) exten
   src.event -> tgt.type;
   src.subject -> tgt.subject;
   src.date -> tgt.date;
-  src.resultingCondition -> tgt.outcome;
+  src.resultingCondition -> tgt.reaction;
   src.location -> tgt.location;
   src.seriousness -> tgt.seriousness;
   src.outcome -> tgt.outcome;

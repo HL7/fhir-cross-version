@@ -33,17 +33,18 @@ group MedicationDispense(source src : MedicationDispense, target tgt : Medicatio
   src.detectedIssue -> tgt.detectedIssue;
   src.eventHistory -> tgt.eventHistory;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.notDone' then {
-    e.value -> tgt.notDone;
+    e.value : boolean -> tgt.notDone;
   };
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.notDoneReason' then {
-    e.value -> tgt.notDoneReason;
+    e.value : CodeableConcept -> tgt.notDoneReason;
+    e.value : Reference -> tgt.notDoneReason;
   };
 }
 
 group MedicationDispenseActor(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.actor;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.performer.onBehalfOf' then {
-    e.value -> tgt.onBehalfOf;
+    e.value : Reference -> tgt.onBehalfOf;
   };
 }
 

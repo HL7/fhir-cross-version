@@ -48,7 +48,8 @@ group CoverageEligibilityResponseInsuranceDetail(source src, target tgt) extends
 group CoverageEligibilityResponseInsuranceDetailBenefit(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.allowed -> tgt.allowed;
-  src.used -> tgt.used;
+  src.used : unsignedInt -> tgt.used;
+  src.used : Money -> tgt.used;
 }
 
 group CoverageEligibilityResponseError(source src, target tgt) extends BackboneElement {

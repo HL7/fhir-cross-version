@@ -35,7 +35,7 @@ group CommunicationRequest(source src : CommunicationRequest, target tgt : Commu
 group CommunicationRequestAgent(source src, target tgt) {
   src.requester -> tgt.agent;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.requester.onBehalfOf' then {
-    e.value -> tgt.onBehalfOf;
+    e.value : Reference -> tgt.onBehalfOf;
   };
 }
 

@@ -52,7 +52,7 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
 
 group enableWhen(source src, target tgt) extends BackboneElement {
   src.question -> tgt.question;
-  src.answer as v where src.operator = 'exists' -> tgt.hasAnswer = v;
+  src.answer as v where src.operator = 'exists' -> tgt.hasAnswer = true;
   src.answer : boolean as vs where src.operator = '=' -> tgt.answer = create('boolean') as vt then boolean(vs, vt) "answerBoolean";
   src.answer : decimal as vs where src.operator = '=' -> tgt.answer = create('decimal') as vt then decimal(vs, vt) "answerDecimal";
   src.answer : integer as vs where src.operator = '=' -> tgt.answer = create('integer') as vt then integer(vs, vt) "answerInteger";
@@ -66,7 +66,12 @@ group enableWhen(source src, target tgt) extends BackboneElement {
 }
 
 group option(source src, target tgt) extends BackboneElement {
-  src.value -> tgt.value;
+  // Reference was added into R4 (not in STU3)
+  src.value : integer -> tgt.value;
+  src.value : date -> tgt.value;
+  src.value : time -> tgt.value;
+  src.value : string -> tgt.value;
+  src.value : Coding -> tgt.value;
 }
 
 group initial(source src, target tgt) extends BackboneElement {

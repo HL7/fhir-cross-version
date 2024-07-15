@@ -13,10 +13,10 @@ group FamilyMemberHistory(source src : FamilyMemberHistory, target tgt : FamilyM
   src.instantiatesCanonical -> tgt.definition;
   src.status -> tgt.status;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.notDone' then {
-    e.value -> tgt.notDone;
+    e.value : boolean -> tgt.notDone;
   };
   src.dataAbsentReason -> tgt.notDoneReason;
-  src.dataAbsentReason where src.extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.notDone').empty() -> tgt.notDone = 'true';
+  src.dataAbsentReason where src.extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.notDone').empty() -> tgt.notDone = true;
   src.patient -> tgt.patient;
   src.date -> tgt.date;
   src.name -> tgt.name;

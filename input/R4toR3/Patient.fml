@@ -42,13 +42,13 @@ group PatientContact(source src, target tgt) extends BackboneElement {
 
 group animal(source src, target tgt) {
   src.extension as ext where url = 'species' then {
-    ext.value as vs0 -> tgt.species = vs0 "species2";
+    ext.value : CodeableConcept as vs0 -> tgt.species = vs0 "species2";
   } "species";
   src.extension as ext where url = 'breed' then {
-    ext.value as vs0 -> tgt.breed = vs0 "breed";
+    ext.value : CodeableConcept as vs0 -> tgt.breed = vs0 "breed";
   } "breed";
   src.extension as ext where url = 'genderStatus' then {
-    ext.value as vs0 -> tgt.genderStatus = vs0 "genderStatus";
+    ext.value : CodeableConcept as vs0 -> tgt.genderStatus = vs0 "genderStatus";
   } "genderStatus";
 }
 
