@@ -78,9 +78,9 @@ group ValueSetParameter(source src, target tgt) extends BackboneElement {
   src.value : boolean as vs0 -> tgt.value = create('boolean') as vt0 then boolean(vs0, vt0) "valueBoolean";
   src.value : integer as vs0 -> tgt.value = create('integer') as vt0 then integer(vs0, vt0) "valueInteger";
   src.value : decimal as vs0 -> tgt.value = create('decimal') as vt0 then decimal(vs0, vt0) "valueDecimal";
-  src.value : url as vs0 -> tgt.value = create('url') as vt0 then url(vs0, vt0) "valueUrl";
+  src.value : uri as vs0 -> tgt.value = create('uri') as vt0 then uri(vs0, vt0) "valueUri";
   src.value : code as vs0 -> tgt.value = create('code') as vt0 then code(vs0, vt0) "valueCode";
-  src.value : dateTime as vs0 -> tgt.value = create('dateTime') as vt0 then dateTime(vs0, vt0) "valueDateTime";
+  // src.value : dateTime as vs0 -> tgt.value = create('dateTime') as vt0 then dateTime(vs0, vt0) "valueDateTime"; // does not exist in STU3
 }
 
 group containsX(source src, target tgt) extends BackboneElement {

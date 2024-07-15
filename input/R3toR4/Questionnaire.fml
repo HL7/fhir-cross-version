@@ -53,7 +53,18 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
 group enableWhen(source src, target tgt) extends BackboneElement {
   src.question -> tgt.question;
   src.hasAnswer as v where src.answer.empty() ->  tgt.operator = 'exists',  tgt.answer = v;
-  src.answer as v ->  tgt.answer = v,  tgt.operator = '=';
+  src.answer : boolean as v ->  tgt.answer = v,  tgt.operator = '=';
+  src.answer : decimal as v ->  tgt.answer = v,  tgt.operator = '=';
+  src.answer : integer as v ->  tgt.answer = v,  tgt.operator = '=';
+  src.answer : date as v ->  tgt.answer = v,  tgt.operator = '=';
+  src.answer : dateTime as v ->  tgt.answer = v,  tgt.operator = '=';
+  src.answer : time as v ->  tgt.answer = v,  tgt.operator = '=';
+  src.answer : string as v ->  tgt.answer = v,  tgt.operator = '=';
+  src.answer : uri as v ->  tgt.answer = v,  tgt.operator = '=';
+  // src.answer : Attachment as v ->  tgt.answer = v,  tgt.operator = '='; // does not exist in R4
+  src.answer : Coding as v ->  tgt.answer = v,  tgt.operator = '=';
+  src.answer : Quantity as v ->  tgt.answer = v,  tgt.operator = '=';
+  src.answer : Reference as v ->  tgt.answer = v,  tgt.operator = '=';
 }
 
 group option(source src, target tgt) extends BackboneElement {

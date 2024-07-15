@@ -24,7 +24,7 @@ group MeasureReport(source src : MeasureReportR3, target tgt : MeasureReport) ex
 group MeasureReportGroup(source src, target tgt) extends BackboneElement {
   src.identifier as vs -> tgt.code as vt then Identifier2Codeable(vs, vt);
   src.population as s -> tgt.population as t then MeasureReportPopulation(s, t);
-  src.measureScore -> tgt.measureScore;
+  src.measureScore as s -> tgt.measureScore as t, t.value = s "measureScore";
   src.stratifier as s -> tgt.stratifier as t then MeasureReportStratifier(s, t);
 }
 
@@ -43,7 +43,7 @@ group MeasureReportStratifier(source src, target tgt) extends BackboneElement {
 group stratum(source src, target tgt) extends BackboneElement {
   src.value as s ->  tgt.value as cc,  cc.text = s;
   src.population as s -> tgt.population as t then population2(s, t);
-  src.measureScore -> tgt.measureScore;
+  src.measureScore as s -> tgt.measureScore as t, t.value = s "measureScore";
 }
 
 group population2(source src, target tgt) extends BackboneElement {

@@ -57,7 +57,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefit, target tgt : Expla
     };
   };
   src.payment as s -> tgt.payment as t then ExplanationOfBenefitPayment(s, t);
-  src.form -> tgt.form;
+  src.formCode -> tgt.form;
   src.processNote as s -> tgt.processNote as t then ExplanationOfBenefitProcessNote(s, t);
   src.benefitBalance as s -> tgt.benefitBalance as t then ExplanationOfBenefitBenefitBalance(s, t);
 }
@@ -78,7 +78,11 @@ group ExplanationOfBenefitInformation(source src, target tgt) extends BackboneEl
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.timing -> tgt.timing;
-  src.value -> tgt.value;
+  src.value : string -> tgt.value;
+  src.value : Quantity-> tgt.value;
+  src.value : Attachment-> tgt.value;
+  src.value : Reference -> tgt.value;
+  // There is no target for the boolean value type
   src.reason -> tgt.reason;
 }
 
@@ -238,7 +242,7 @@ group ExplanationOfBenefitPayment(source src, target tgt) extends BackboneElemen
 
 group ExplanationOfBenefitProcessNote(source src, target tgt) extends BackboneElement {
   src.number -> tgt.number;
-  src.type -> tgt.type;
+  src.type -> tgt.type as scc, scc.coding as c, c.system='http://hl7.org/fhir/note-type', c.type = c.code "typeFromCode";
   src.text -> tgt.text;
   src.language -> tgt.language;
 }

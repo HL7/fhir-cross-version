@@ -45,7 +45,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefitR3, target tgt : Exp
   src.totalCost as s -> tgt.total as t then ExplanationOfBenefitTotalCost(s, t);
   src.totalBenefit as s -> tgt.total as t then ExplanationOfBenefitTotalBenefit(s, t);
   src.payment as s -> tgt.payment as t then ExplanationOfBenefitPayment(s, t);
-  src.form -> tgt.form;
+  src.form -> tgt.formCode;
   src.processNote as s -> tgt.processNote as t then ExplanationOfBenefitProcessNote(s, t);
   src.benefitBalance as s -> tgt.benefitBalance as t then ExplanationOfBenefitBenefitBalance(s, t);
 }
@@ -236,7 +236,7 @@ group ExplanationOfBenefitPayment(source src, target tgt) extends BackboneElemen
 
 group ExplanationOfBenefitProcessNote(source src, target tgt) extends BackboneElement {
   src.number -> tgt.number;
-  src.type -> tgt.type;
+  src.type as scc then { scc.coding first as c where (system='http://hl7.org/fhir/note-type') -> tgt.type = c.code; } "typeFromCC";
   src.text -> tgt.text;
   src.language -> tgt.language;
 }

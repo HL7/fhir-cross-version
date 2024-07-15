@@ -44,7 +44,7 @@ group ClaimResponse(source src : ClaimResponse, target tgt : ClaimResponseR3) ex
   src.fundsReserve as vs then {
     vs.coding -> tgt.reserved;
   };
-  src.form -> tgt.form;
+  src.formCode -> tgt.form;
   src.processNote as s -> tgt.processNote as t then ClaimResponseProcessNote(s, t);
   src.communicationRequest -> tgt.communicationRequest;
   src.insurance as s -> tgt.insurance as t then ClaimResponseInsurance(s, src, t);
@@ -124,7 +124,7 @@ group ClaimResponsePayment(source src, target tgt) extends BackboneElement {
 
 group ClaimResponseProcessNote(source src, target tgt) extends BackboneElement {
   src.number -> tgt.number;
-  src.type -> tgt.type;
+  src.type -> tgt.type as scc, scc.coding as c, c.system='http://hl7.org/fhir/note-type', c.type = c.code "typeFromCode";
   src.text -> tgt.text;
   src.language -> tgt.language;
 }
