@@ -40,7 +40,7 @@ group AuditEventAgent(source src, target tgt) extends BackboneElement {
 }
 
 group AuditEventSource(source src, target tgt) extends BackboneElement {
-  src.site ->  tgt.site.display;
+  src.site as s ->  tgt.site as t, t.display = s "CopySite";
   src.observer -> tgt.observer;
   src.type -> tgt.type;
 }
