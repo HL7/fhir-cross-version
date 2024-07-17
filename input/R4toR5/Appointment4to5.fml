@@ -29,6 +29,7 @@ group Appointment(source src : AppointmentR4, target tgt : AppointmentR5) extend
   src.patientInstruction -> tgt.patientInstruction;
   src.basedOn -> tgt.basedOn;
   src.participant as s -> tgt.participant as t then AppointmentParticipant(s, t);
+  src.priority; // this property is not mapped as the datatype was too different (from an integer to now a coding)
 }
 
 group AppointmentParticipant(source src, target tgt) extends BackboneElement {
