@@ -51,6 +51,7 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
   src.answerValueSet -> tgt.answerValueSet;
   src.answerOption as s -> tgt.answerOption as t then QuestionnaireItemAnswerOption(s, t);
   src.initial as s -> tgt.initial as t then QuestionnaireItemInitial(s, t);
+  src.item as s -> tgt.item as t then QuestionnaireItem(s, t);
 }
 
 group QuestionnaireItemEnableWhen(source src, target tgt) extends BackboneElement {
