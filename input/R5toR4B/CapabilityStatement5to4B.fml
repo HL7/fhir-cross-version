@@ -56,6 +56,9 @@ group CapabilityStatementRest(source src, target tgt) extends BackboneElement {
   src.resource as s -> tgt.resource as t then CapabilityStatementRestResource(s, t);
   src.interaction as s -> tgt.interaction as t then CapabilityStatementRestInteraction(s, t);
   src.compartment -> tgt.compartment;
+
+  src.searchParam as s -> tgt.searchParam as t then CapabilityStatementRestResourceSearchParam(s, t);
+  src.operation as s -> tgt.operation as t then CapabilityStatementRestResourceOperation(s, t);
 }
 
 group CapabilityStatementRestSecurity(source src, target tgt) extends BackboneElement {

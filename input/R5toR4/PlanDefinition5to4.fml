@@ -113,6 +113,7 @@ group PlanDefinitionAction(source src, target tgt) extends BackboneElement {
   src.definition : uri -> tgt.definition "definitionUri";
   src.transform -> tgt.transform;
   src.dynamicValue as s -> tgt.dynamicValue as t then PlanDefinitionActionDynamicValue(s, t);
+  src.action as s -> tgt.action as t then PlanDefinitionAction(s, t);
 }
 
 group PlanDefinitionActionCondition(source src, target tgt) extends BackboneElement {
