@@ -70,5 +70,6 @@ group EvidenceReportSection(source src, target tgt) extends BackboneElement {
   src.entryReference -> tgt.entryReference;
   src.entryQuantity -> tgt.entryQuantity;
   src.emptyReason -> tgt.emptyReason;
+  src.section as s -> tgt.section as t then EvidenceReportSection(s, t);
 }
 

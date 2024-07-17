@@ -19,6 +19,10 @@ group PackagedProductDefinition(source src : PackagedProductDefinitionR5, target
   src.description -> tgt.description;
   src.legalStatusOfSupply as s -> tgt.legalStatusOfSupply as t then PackagedProductDefinitionLegalStatusOfSupply(s, t);
   src.marketingStatus -> tgt.marketingStatus;
+
+  src.characteristic as s then {
+    s.value : CodeableConcept -> tgt.characteristic;
+  }
   src.copackagedIndicator -> tgt.copackagedIndicator;
   src.manufacturer -> tgt.manufacturer;
   src.packaging as s -> tgt.package as t then PackagedProductDefinitionPackaging(s, t);

@@ -99,7 +99,6 @@ group SubstanceDefinitionName(source src, target tgt) extends BackboneElement {
   src.jurisdiction -> tgt.jurisdiction;
   src.synonym as s -> tgt.synonym as t then SubstanceDefinitionName(s, t);
   src.translation as s -> tgt.translation as t then SubstanceDefinitionName(s, t);
-
   src.official as s -> tgt.official as t then SubstanceDefinitionNameOfficial(s, t);
   src.source -> tgt.source;
 }
