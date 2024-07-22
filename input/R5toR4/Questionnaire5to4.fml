@@ -46,9 +46,9 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
   src.repeats -> tgt.repeats;
   src.readOnly -> tgt.readOnly;
   src.maxLength -> tgt.maxLength;
-  src.answerConstraint as v where answerConstraint = 'optionsOnly' ->  tgt.type as t,  t.value = 'choice';
-  src.answerConstraint as v where answerConstraint = 'optionsOrType' ->  tgt.type as t,  t.value = 'open-choice';
-  src.answerConstraint as v where answerConstraint = 'optionsOrString' ->  tgt.type as t,  t.value = 'open-choice';
+  src.answerConstraint as v where (v = 'optionsOnly') ->  tgt.type as t,  t.value = 'choice';
+  src.answerConstraint as v where (v = 'optionsOrType') ->  tgt.type as t,  t.value = 'open-choice';
+  src.answerConstraint as v where (v = 'optionsOrString') ->  tgt.type as t,  t.value = 'open-choice';
   src.answerValueSet -> tgt.answerValueSet;
   src.answerOption as s -> tgt.answerOption as t then QuestionnaireItemAnswerOption(s, t);
   src.initial as s -> tgt.initial as t then QuestionnaireItemInitial(s, t);

@@ -27,7 +27,7 @@ group Composition(source src : CompositionR5, target tgt : CompositionR4B) exten
 
 group CompositionAttester(source src, target tgt) extends BackboneElement {
   src.mode as s -> tgt then {
-    s.coding as sc where s.system = 'http://hl7.org/fhir/composition-attestation-mode' -> tgt then {
+    s.coding as sc where (sc.system = 'http://hl7.org/fhir/composition-attestation-mode') -> tgt then {
       sc.code -> tgt.mode;
     };
   };
