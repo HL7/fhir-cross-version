@@ -22,7 +22,7 @@ group PackagedProductDefinition(source src : PackagedProductDefinitionR5, target
 
   src.characteristic as s then {
     s.value : CodeableConcept -> tgt.characteristic;
-  }
+  } "SetCharacteristicValue";
   src.copackagedIndicator -> tgt.copackagedIndicator;
   src.manufacturer -> tgt.manufacturer;
   src.packaging as s -> tgt.package as t then PackagedProductDefinitionPackaging(s, t);
