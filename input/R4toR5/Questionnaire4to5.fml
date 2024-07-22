@@ -40,8 +40,8 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
   src.prefix -> tgt.prefix;
   src.text -> tgt.text;
   src.type as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/que.it.type-4to5', 'code');
-  src.type as s where type = 'choice' ->  tgt.answerConstraint as t,  t.value = 'optionsOnly';
-  src.type as s where type = 'open-choice' ->  tgt.answerConstraint as t,  t.value = 'optionsOrString';
+  src.type as s where (s = 'choice') ->  tgt.answerConstraint as t,  t.value = 'optionsOnly';
+  src.type as s where (s = 'open-choice') ->  tgt.answerConstraint as t,  t.value = 'optionsOrString';
   src.enableWhen as s -> tgt.enableWhen as t then QuestionnaireItemEnableWhen(s, t);
   src.enableBehavior as v -> tgt.enableBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/que.it.enableBehavior-4to5', 'code');
   src.required -> tgt.required;
