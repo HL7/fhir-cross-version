@@ -148,7 +148,7 @@ group ExplanationOfBenefitItemDetail(source src, target tgt) extends BackboneEle
   src.net -> tgt.net;
   src.udi -> tgt.udi;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
   src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitItemDetailSubDetail(s, t);
 }
 
@@ -165,7 +165,7 @@ group ExplanationOfBenefitItemDetailSubDetail(source src, target tgt) extends Ba
   src.net -> tgt.net;
   src.udi -> tgt.udi;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitAddItem(source src, target tgt) extends BackboneElement {
@@ -184,7 +184,7 @@ group ExplanationOfBenefitAddItem(source src, target tgt) extends BackboneElemen
   // src.bodySite -> tgt.bodySite;
   // src.subSite -> tgt.subSite;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
   src.detail as s -> tgt.detail as t then ExplanationOfBenefitAddItemDetail(s, t);
 }
 
@@ -197,7 +197,7 @@ group ExplanationOfBenefitAddItemDetail(source src, target tgt) extends Backbone
   // src.factor -> tgt.factor;
   src.fee -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
   // src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitAddItemDetailSubDetail(s, t); // subDetail is not present in R3
 }
 
@@ -211,7 +211,7 @@ group ExplanationOfBenefitAddItemDetailSubDetail(source src, target tgt) extends
   src.factor -> tgt.factor;
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 */
 
