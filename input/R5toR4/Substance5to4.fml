@@ -20,7 +20,7 @@ group Substance(source src : SubstanceR5, target tgt : SubstanceR4) extends Doma
   src where (expiry.exists() or quantity.exists()) -> tgt.instance as t then {
     src.expiry -> t.expiry;
     src.quantity -> t.quantity;
-  };
+  } "setExpiryQuantity";
   src.ingredient as s -> tgt.ingredient as t then SubstanceIngredient(s, t);
 }
 
