@@ -55,7 +55,7 @@ group ActivityDefinitionParticipant(source src, target tgt) extends BackboneElem
 
 group ActivityDefinitionDynamicValue(source src, target tgt) extends BackboneElement {
   src.path -> tgt.path;
-  src as vs where vs.type.exists().not() -> tgt.expression as vt then {
+  src as vs -> tgt.expression as vt then {
     vs.description -> vt.description;
     vs.language -> vt.language;
     vs.expression -> vt.expression;
