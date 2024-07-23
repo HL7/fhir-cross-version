@@ -23,6 +23,7 @@ group Claim(source src : ClaimR3, target tgt : Claim) extends DomainResource <<t
   src.priority -> tgt.priority;
   src.organization where src.provider.exists().not() -> tgt.provider;
   src.fundsReserve -> tgt.fundsReserve;
+  src.related as s -> tgt.related as t then ClaimRelated(s, t);
   src.prescription -> tgt.prescription;
   src.originalPrescription -> tgt.originalPrescription;
   src.payee as vs -> tgt.payee as vt then {
@@ -57,6 +58,11 @@ group Claim(source src : ClaimR3, target tgt : Claim) extends DomainResource <<t
     vs.diagnosis : CodeableConcept as vs0 -> vt.diagnosis = create('CodeableConcept') as vt0 then CodeableConcept(vs0, vt0) "diagnosisCodeableConcept";
     vs.type -> vt.type;
     vs.packageCode -> vt.packageCode;
+  };
+  src.procedure as vs -> tgt.procedure as vt then {
+    vs.sequence -> vt.sequence;
+    vs.date -> vt.date;
+    vs.procedure -> vt.procedure;
   };
   src.insurance as vs -> tgt.insurance as vt then {
     vs.sequence -> vt.sequence;
@@ -124,5 +130,11 @@ group Claim(source src : ClaimR3, target tgt : Claim) extends DomainResource <<t
     };
   };
   src.total -> tgt.total;
+}
+
+group ClaimRelated(source src, target tgt) extends BackboneElement {
+  src.claim -> tgt.claim;
+  src.relationship -> tgt.relationship;
+  src.reference -> tgt.reference;
 }
 

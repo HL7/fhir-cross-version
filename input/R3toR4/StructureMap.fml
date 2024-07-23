@@ -56,6 +56,9 @@ group rule(source src, target tgt) extends BackboneElement {
   src.name -> tgt.name;
   src.source as vs0 -> tgt.source as vt0 then RuleSource(vs0, vt0);
   src.target as vs0 -> tgt.target as vt0 then RuleTarget(vs0, vt0);
+  src.rule as vs0 -> tgt.rule as vt0 then rule(vs0, vt0);
+  src.dependent as vs -> tgt.dependent as vt then StructureMapRuleDependent(vs, vt);
+  src.documentation -> tgt.documentation;
 }
 
 group RuleSource(source src, target tgt) extends BackboneElement {
@@ -124,5 +127,10 @@ group StructureMapParameter(source src, target tgt) extends BackboneElement {
   src.value : boolean as vs -> tgt.value = create('boolean') as vt then boolean(vs, vt) "valueboolean";
   src.value : integer as vs -> tgt.value = create('integer') as vt then integer(vs, vt) "valueinteger";
   src.value : decimal as vs -> tgt.value = create('decimal') as vt then decimal(vs, vt) "valuedecimal";
+}
+
+group StructureMapRuleDependent(source src, target tgt) extends BackboneElement {
+  src.name -> tgt.name;
+  src.variable -> tgt.variable;
 }
 

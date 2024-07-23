@@ -24,8 +24,11 @@ group ImplementationGuide(source src : ImplementationGuideR3, target tgt : Imple
   src.fhirVersion -> tgt.fhirVersion;
   src.dependency as vs0 check (type = 'reference') -> tgt.dependsOn as vt0 then dependency(vs0, vt0);
   src.global as vs0 -> tgt.global as vt0 then global(vs0, vt0);
-  src -> tgt.definition as dfn then definition(src, dfn) "definition";
-  src where binary.exists() -> tgt.manifest as mft then manifest(src, mft) "manifest";
+  src -> tgt.definition as dfn then {
+    src.package as pck -> dfn.grouping as grp then grouping(pck, dfn, grp);
+    src.page as vs0 -> dfn.page as vt0 then page(vs0, vt0);
+  } "definition";
+  src.binary as vs -> tgt.manifest as mft, mft.other = vs "manifest";
 }
 
 group dependency(source src, target tgt) extends BackboneElement {
@@ -35,11 +38,6 @@ group dependency(source src, target tgt) extends BackboneElement {
 group global(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.profile -> tgt.profile;
-}
-
-group definition(source src, target tgt) extends BackboneElement {
-  src.package as pck -> tgt.grouping as grp then grouping(pck, tgt, grp);
-  src.page as vs0 -> tgt.page as vt0 then page(vs0, vt0);
 }
 
 group grouping(source src, target dfn, target grp) extends BackboneElement {
@@ -67,9 +65,5 @@ group page(source src, target tgt) extends BackboneElement {
   src.package as vs ->  tgt.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.page.package',  ext.value = vs;
   src.format as vs ->  tgt.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.page.format',  ext.value = vs;
   src.page as vs0 -> tgt.page as vt0 then page(vs0, vt0);
-}
-
-group manifest(source src, target tgt) extends BackboneElement {
-  src.binary -> tgt.other;
 }
 
