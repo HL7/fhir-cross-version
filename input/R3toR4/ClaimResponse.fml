@@ -18,7 +18,7 @@ group ClaimResponse(source src : ClaimResponseR3, target tgt : ClaimResponse) ex
   src.request -> tgt.request;
   src.outcome as vs then {
     vs.coding as c then {
-      c.code where value in ('queued' | 'complete' | 'error' | 'partial') -> tgt.outcome;
+      c.code where (c.code in ('queued' | 'complete' | 'error' | 'partial')) -> tgt.outcome;
     };
   };
   src.disposition -> tgt.disposition;
