@@ -50,7 +50,6 @@ group ContractTermOffer(source src, target tgt) extends BackboneElement {
   src.text -> tgt.text;
   src.linkId -> tgt.linkId;
 }
-*/
 
 group ContractTermAsset(source src, target tgt) extends BackboneElement {
   src.class -> tgt.class;
@@ -82,6 +81,7 @@ group ContractTermAgent(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.actor;
   src.role -> tgt.role;
 }
+*/
 
 group ContractSigner(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
