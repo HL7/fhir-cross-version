@@ -13,8 +13,8 @@ group ImagingStudy(source src : ImagingStudy, target tgt : ImagingStudyR3) exten
   src.identifier as vs where system = 'urn:dicom:uid' then {
     vs.value -> tgt.uid;
   };
-  src.status where value = 'registered' -> tgt.availability = 'OFFLINE';
-  src.status where value = 'available' -> tgt.availability = 'ONLINE';
+  src.status where ($this = 'registered') -> tgt.availability = 'OFFLINE';
+  src.status where ($this = 'available') -> tgt.availability = 'ONLINE';
   src.modality -> tgt.modalityList;
   src.subject -> tgt.patient;
   src.encounter -> tgt.context;

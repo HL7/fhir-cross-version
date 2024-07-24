@@ -41,8 +41,8 @@ group statusR3(source src, target tgt) {
 }
 
 group statusNR3(source src, target tgt) {
-  src.status where (value in ('not-taken' | 'unknown')).not() -> tgt.status;
-  src.status where value = 'not-taken' ->  tgt.status = 'completed',  tgt.taken = 'n';
-  src.status where value = 'unknown' ->  tgt.status = 'completed',  tgt.taken = 'unk';
+  src.status where (($this in ('not-taken' | 'unknown')).not()) -> tgt.status;
+  src.status where ($this = 'not-taken') ->  tgt.status = 'completed',  tgt.taken = 'n';
+  src.status where ($this = 'unknown') ->  tgt.status = 'completed',  tgt.taken = 'unk';
 }
 

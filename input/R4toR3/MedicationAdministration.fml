@@ -23,8 +23,8 @@ group MedicationAdministration(source src : MedicationAdministration, target tgt
   src.effective : dateTime as vs -> tgt.effective = create('dateTime') as vt then dateTime(vs, vt) "effectiveDateTime";
   src.effective : Period as vs -> tgt.effective = create('Period') as vt then Period(vs, vt) "effectivePeriod";
   src.performer as vs0 -> tgt.performer as vt0 then MedicationAdministrationActor(vs0, vt0);
-  src.reasonCode where value = 'not-done' -> tgt.reasonNotGiven;
-  src.reasonCode where value != 'not-done' -> tgt.reasonCode;
+  src.reasonCode where ($this = 'not-done') -> tgt.reasonNotGiven;
+  src.reasonCode where ($this != 'not-done') -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;
   src.request -> tgt.prescription;
   src.device -> tgt.device;
@@ -60,7 +60,7 @@ group MedicationAdministrationStatusR3(source src, target tgt) {
 }
 
 group MedicationAdministrationStatusNR3(source src, target tgt) {
-  src.status where value != 'not-done' -> tgt.status;
-  src.status where value = 'not-done' -> tgt.notGiven = false;
+  src.status where ($this != 'not-done') -> tgt.status;
+  src.status where ($this = 'not-done') -> tgt.notGiven = false;
 }
 

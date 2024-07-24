@@ -10,8 +10,8 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Immunization(source src : Immunization, target tgt : ImmunizationR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status where value != 'not-done' -> tgt.status;
-  src.status where value = 'not-done' ->  tgt.status = 'completed',  tgt.notGiven = true;
+  src.status where ($this != 'not-done') -> tgt.status;
+  src.status where ($this = 'not-done') ->  tgt.status = 'completed',  tgt.notGiven = true;
   src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.notGiven' then {
     e.value : boolean -> tgt.notGiven;
   };
