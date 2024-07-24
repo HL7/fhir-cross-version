@@ -9,9 +9,9 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/DomainResource" alias DomainRe
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group DomainResource(source src : DomainResource, target tgt : DomainResourceR2) extends Resource <<type+>> {
-  src.contained -> tgt.contained "DomainResource_contained";
-  src.text -> tgt.text "DomainResource_text";
-  src.extension -> tgt.extension "DomainResource_extension";
-  src.modifierExtension -> tgt.modifierExtension "DomainResource_modifierExtension";
+  src.contained -> tgt.contained "DomainResourceContained";
+  src.text -> tgt.text "DomainResourceText";
+  src.extension -> tgt.extension "DomainResourceExtension";
+  src.modifierExtension -> tgt.modifierExtension "DomainResourceModifierExtension";
 }
 

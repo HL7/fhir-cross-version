@@ -21,8 +21,8 @@ group ImplementationGuide(source src : ImplementationGuide, target tgt : Impleme
   src.experimental -> tgt.experimental "ImplementationGuide-experimental";
   src.publisher -> tgt.publisher "ImplementationGuide-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "Contract_name";
-    vs0.telecom -> vt0.telecom "Contract_telecom";
+    vs0.name -> vt0.name "ContractName";
+    vs0.telecom -> vt0.telecom "ContractTelecom";
   } "ImplementationGuide-contact";
   src.date -> tgt.date "ImplementationGuide-date";
   src.description -> tgt.description "ImplementationGuide-description";

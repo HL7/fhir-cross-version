@@ -18,8 +18,8 @@ group StructureDefinition(source src : StructureDefinition, target tgt : Structu
   src.experimental -> tgt.experimental "StructureDefinition-experimental";
   src.publisher -> tgt.publisher "StructureDefinition-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "Contract_name";
-    vs0.telecom -> vt0.telecom "Contract_telecom";
+    vs0.name -> vt0.name "ContractName";
+    vs0.telecom -> vt0.telecom "ContractTelecom";
   } "StructureDefinition-contact";
   src.date -> tgt.date "StructureDefinition-date";
   src.description -> tgt.description "StructureDefinition-description";

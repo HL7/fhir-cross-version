@@ -33,8 +33,8 @@ group OperationDefinition(source src : OperationDefinitionR2, target tgt : Opera
 }
 
 group opdContact(source src, target tgt) extends Element {
-  src.name -> tgt.name "Contract_name";
-  src.telecom -> tgt.telecom "Contract_telecom";
+  src.name -> tgt.name "ContractName";
+  src.telecom -> tgt.telecom "ContractTelecom";
 }
 
 group opParam(source src, target tgt) extends BackboneElement {
