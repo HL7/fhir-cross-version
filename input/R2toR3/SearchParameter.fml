@@ -13,7 +13,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/ContactPoint2to3"
 group SearchParameter(source src : SearchParameterR2, target tgt : SearchParameter) extends DomainResource <<type+>> {
   src.url -> tgt.url "SearchParameter-url";
   src.name -> tgt.name "SearchParameter-name";
-  src.status default ('draft') -> tgt.status "SearchParameter-status";
+  src.status default "draft" -> tgt.status "SearchParameter-status";
   src.experimental -> tgt.experimental "SearchParameter-experimental";
   src.date -> tgt.date "SearchParameter-date";
   src.publisher -> tgt.publisher "SearchParameter-publisher";
