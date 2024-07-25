@@ -42,7 +42,7 @@ group ServiceRequestPR(source src : ServiceRequest, target tgt : ProcedureReques
 
 group requester(source src, target tgt) {
   src -> tgt.agent as v then Reference(src, v) "agent";
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester.onBehalfOf' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester.onBehalfOf') then {
     e.value : Reference -> tgt.onBehalfOf;
   };
 }

@@ -22,11 +22,11 @@ group QuestionnaireResponse(source src : QuestionnaireResponse, target tgt : Que
 
 group qrGroup(source src, target tgt) extends BackboneElement {
   src.linkId -> tgt.linkId "group-linkId";
-  src.text where item.answer.empty() -> tgt.title "group-text";
-  src.text where item.answer.exists() -> tgt.text "group-text";
+  src.text where (item.answer.empty()) -> tgt.title "group-text";
+  src.text where (item.answer.exists()) -> tgt.text "group-text";
   src.subject -> tgt.subject "group-subject";
-  src.item as vs0 where answer.empty() -> tgt.group as vt0 then qrGroup(vs0, vt0) "group-group";
-  src.item as vs0 where answer.exists() -> tgt.question as vt0 then qrQuestion(vs0, vt0) "group-question";
+  src.item as vs0 where (answer.empty()) -> tgt.group as vt0 then qrGroup(vs0, vt0) "group-group";
+  src.item as vs0 where (answer.exists()) -> tgt.question as vt0 then qrQuestion(vs0, vt0) "group-question";
 }
 
 group qrQuestion(source src, target tgt) extends BackboneElement {

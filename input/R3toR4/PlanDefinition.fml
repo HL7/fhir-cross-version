@@ -28,10 +28,10 @@ group PlanDefinition(source src : PlanDefinitionR3, target tgt : PlanDefinition)
   src.useContext -> tgt.useContext;
   src.jurisdiction -> tgt.jurisdiction;
   src.topic -> tgt.topic;
-  src.contributor as vs where type = 'author' -> tgt.author as vt then Contributor(vs, vt);
-  src.contributor as vs where type = 'editor' -> tgt.editor as vt then Contributor(vs, vt);
-  src.contributor as vs where type = 'reviewer' -> tgt.reviewer as vt then Contributor(vs, vt);
-  src.contributor as vs where type = 'endorser' -> tgt.endorser as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'author') -> tgt.author as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'editor') -> tgt.editor as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'reviewer') -> tgt.reviewer as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'endorser') -> tgt.endorser as vt then Contributor(vs, vt);
   src.contact -> tgt.contact;
   src.copyright -> tgt.copyright;
   src.relatedArtifact -> tgt.relatedArtifact;

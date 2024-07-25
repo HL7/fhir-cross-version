@@ -21,11 +21,11 @@ group AuditEvent(source src : AuditEventR5, target tgt : AuditEventR4) extends D
 }
 
 group AuditEventOutcome(source src, target tgt) extends BackboneElement {
-  src.code as s where code = 'success' -> tgt = '0';
-  src.code as s where code = 'information' -> tgt = '0';
-  src.code as s where code = 'warning' -> tgt = '4';
-  src.code as s where code = 'error' -> tgt = '8';
-  src.code as s where code = 'fatal' -> tgt = '12';
+  src.code as s where (code = 'success') -> tgt = '0';
+  src.code as s where (code = 'information') -> tgt = '0';
+  src.code as s where (code = 'warning') -> tgt = '4';
+  src.code as s where (code = 'error') -> tgt = '8';
+  src.code as s where (code = 'fatal') -> tgt = '12';
 }
 
 group AuditEventOutcomeDesc(source src, target tgt) extends BackboneElement {

@@ -15,7 +15,7 @@ group EligibilityResponse(source src : EligibilityResponseR3, target tgt : Cover
   src.requestProvider -> tgt.requestor;
   src.request -> tgt.request;
   src.outcome as vs then {
-    vs.coding as c where code in ('complete' | 'error' | 'partial') then {
+    vs.coding as c where (code in ('complete' | 'error' | 'partial')) then {
       c.code -> tgt.outcome;
     };
   };

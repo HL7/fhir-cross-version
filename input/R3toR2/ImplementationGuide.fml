@@ -47,7 +47,7 @@ group ImplementationGuide(source src : ImplementationGuide, target tgt : Impleme
 }
 
 group resource(source src, target tgt) extends BackboneElement {
-  src where example = true -> tgt.purpose = 'example' "resource-purpose";
+  src where (example = true) -> tgt.purpose = 'example' "resource-purpose";
   src.name -> tgt.name "resource-name";
   src.description -> tgt.description "resource-description";
   src.acronym -> tgt.acronym "resource-acronym";

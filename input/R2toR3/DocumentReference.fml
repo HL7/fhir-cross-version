@@ -21,7 +21,7 @@ group DocumentReference(source src : DocumentReferenceR2, target tgt : DocumentR
   src.indexed -> tgt.indexed "DocumentReferenceIndexed";
   src.status -> tgt.status "DocumentReferenceStatus";
   src.docStatus as v then {
-    v.coding as v1 where v1.system = 'http://hl7.org/fhir/composition-status' -> tgt.docStatus = (v1.code) "DocumentReferenceDocStatusInner";
+    v.coding as v1 where (v1.system = 'http://hl7.org/fhir/composition-status') -> tgt.docStatus = (v1.code) "DocumentReferenceDocStatusInner";
   } "DocumentReferenceDocStatus";
   src.relatesTo as vs0 -> tgt.relatesTo as vt0 then drRelatesTo(vs0, vt0) "DocumentReferenceRelatesTo";
   src.description -> tgt.description "DocumentReferenceDescription";

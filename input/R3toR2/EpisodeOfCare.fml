@@ -19,11 +19,11 @@ group EpisodeOfCare(source src : EpisodeOfCare, target tgt : EpisodeOfCareR2) ex
   src.period -> tgt.period "EpisodeOfCarePeriod";
   src.referralRequest -> tgt.referralRequest "EpisodeOfCareReferralRequest";
   src.careManager -> tgt.careManager "EpisodeOfCareCareManager";
-  src.team as vs where reference.resolve().exists() -> (src.team.reference.resolve()) as ct then epiCareTeam(ct, tgt) "EpisodeOfCareCareTeam";
+  src.team as vs where (reference.resolve().exists()) -> (src.team.reference.resolve()) as ct then epiCareTeam(ct, tgt) "EpisodeOfCareCareTeam";
 }
 
 group epcDiagnosis(source src, target tgt) extends BackboneElement {
-  src.condition as v where src.role.coding.code.contains('AD').not() and role.coding.code.contains('DD').not() -> tgt.condition = v "indication-condition1";
+  src.condition as v where (src.role.coding.code.contains('AD').not() and role.coding.code.contains('DD').not()) -> tgt.condition = v "indication-condition1";
 }
 
 group epcStatusHistory(source src, target tgt) extends BackboneElement {

@@ -13,7 +13,7 @@ group ElementDefinition(source srcR : StructureDefinition, source src : ElementD
   src.extension -> tgt.extension "ElementDefinitionExtensions";
   src.path -> tgt.path "ElementDefinitionPath";
   src.sliceName -> tgt.name "ElementDefinitionName";
-  src.representation where $this = 'xmlAttr' -> tgt.representation "ElementDefinitionRepresentation";
+  src.representation where ($this = 'xmlAttr') -> tgt.representation "ElementDefinitionRepresentation";
   src.label -> tgt.label "ElementDefinitionLabel";
   src.code -> tgt.code "ElementDefinitionCode";
   src.slicing as vs0 -> tgt.slicing as vt0 then {
@@ -35,7 +35,7 @@ group ElementDefinition(source srcR : StructureDefinition, source src : ElementD
     vs0.max -> vt0.max "base-max";
   } "ElementDefinitionBase";
   src.type as vs0 -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinitionType";
-  src where path.contains('.').not() and src.type.empty() and src.contentReference.empty() and srcR.is(StructureDefinition) -> tgt.type as vt0 then {
+  src where (path.contains('.').not() and src.type.empty() and src.contentReference.empty() and srcR.is(StructureDefinition)) -> tgt.type as vt0 then {
     srcR.baseDefinition as base -> vt0.code = (base.substring(40)) "type-code";
   } "ElementDefinitionType-1st";
   src.contentReference -> tgt.nameReference "ElementDefinitionContentReference";
@@ -59,7 +59,7 @@ group ElementDefinition(source srcR : StructureDefinition, source src : ElementD
 }
 
 group edDiscriminator(source src, target tgt) extends Element {
-  src.path where type = 'value' -> tgt.discriminator "binding-strength";
+  src.path where (type = 'value') -> tgt.discriminator "binding-strength";
 }
 
 group ElementDefinitionBinding(source src, target tgt) extends Element {
@@ -70,7 +70,7 @@ group ElementDefinitionBinding(source src, target tgt) extends Element {
 
 group type(source src, target tgt) extends Element {
   src.code -> tgt.code "type-code";
-  src.profile where src.targetProfile.empty() -> tgt.profile "type-profile1";
+  src.profile where (src.targetProfile.empty()) -> tgt.profile "type-profile1";
   src.targetProfile -> tgt.profile "type-profile2";
   src.aggregation -> tgt.aggregation "type-aggregation";
 }

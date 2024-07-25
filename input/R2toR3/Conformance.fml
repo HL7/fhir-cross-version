@@ -54,8 +54,8 @@ group rest(source src, target tgt) extends BackboneElement {
   src.security as vs -> tgt.security as vt then security(vs, vt) "confSecurity";
   src.resource as vs -> tgt.resource as vt then ConformanceRestResource(vs, vt) "confResource";
   src.interaction as vs where (code != 'transaction') -> tgt.interaction as vt then interaction(vs, vt) "confInteraction";
-  src.transactionMode where ($this = 'batch') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'batch' "confTransactionMode";
-  src.transactionMode where ($this = 'transaction') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'transaction' "confTransactionMode";
+  src.transactionMode where (($this = 'batch') or ($this = 'both')) ->  tgt.interaction as i,  i.code = 'batch' "confTransactionMode";
+  src.transactionMode where (($this = 'transaction') or ($this = 'both')) ->  tgt.interaction as i,  i.code = 'transaction' "confTransactionMode";
   src.searchParam as vs -> tgt.searchParam as vt then searchParam(vs, vt) "confSearchParam";
   src.operation as vs -> tgt.operation as vt then ConformanceRestOperation(vs, vt) "confOperation";
   src.compartment -> tgt.compartment "confCompartment";
@@ -74,11 +74,11 @@ group certificate(source src, target tgt) extends BackboneElement {
 }
 
 group ConformanceRestResource(source src, target tgt) extends BackboneElement {
-  src.type where $this != 'Conformance' -> tgt.type "confType2";
-  src.type where $this = 'Conformance' -> tgt.type = 'CapabilityStatement' "confType3b";
+  src.type where ($this != 'Conformance') -> tgt.type "confType2";
+  src.type where ($this = 'Conformance') -> tgt.type = 'CapabilityStatement' "confType3b";
   src.profile -> tgt.profile "confProfile";
   // src.documentation -> tgt.documentation "confDocumentation";
-  src.interaction as vs where code != 'validate' -> tgt.interaction as vt then interaction(vs, vt) "confInteraction";
+  src.interaction as vs where (code != 'validate') -> tgt.interaction as vt then interaction(vs, vt) "confInteraction";
   src.versioning -> tgt.versioning "confVersioning";
   src.readHistory -> tgt.readHistory "confReadHistory";
   src.updateCreate -> tgt.updateCreate "confUpdateCreate";

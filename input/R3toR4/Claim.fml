@@ -21,7 +21,7 @@ group Claim(source src : ClaimR3, target tgt : Claim) extends DomainResource <<t
   src.insurer -> tgt.insurer;
   src.provider -> tgt.provider;
   src.priority -> tgt.priority;
-  src.organization where src.provider.exists().not() -> tgt.provider;
+  src.organization where (src.provider.exists().not()) -> tgt.provider;
   src.fundsReserve -> tgt.fundsReserve;
   src.related as s -> tgt.related as t then ClaimRelated(s, t);
   src.prescription -> tgt.prescription;

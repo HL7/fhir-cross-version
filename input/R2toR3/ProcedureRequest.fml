@@ -13,8 +13,8 @@ group ProcedureRequest(source src : ProcedureRequestR2, target tgt : ProcedureRe
   src.subject -> tgt.subject "ProcedureRequest-subject";
   src.code -> tgt.code "ProcedureRequest-code";
   src.bodySite -> tgt.bodySite "ProcedureRequest-bodySite";
-  src.reason as v where v.is(CodeableConcept) -> tgt.reasonCode = v "ProcedureRequest-reason1";
-  src.reason as v where v.is(Reference) -> tgt.reasonReference = v "ProcedureRequest-reason2";
+  src.reason : CodeableConcept -> tgt.reasonCode;
+  src.reason : Reference -> tgt.reasonReference;
   src.scheduled -> tgt.occurrence "ProcedureRequest-scheduled";
   src.encounter -> tgt.context "ProcedureRequest-encounter";
   src.performer -> tgt.performer "ProcedureRequest-performer";

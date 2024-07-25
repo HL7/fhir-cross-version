@@ -17,8 +17,8 @@ group Procedure(source src : ProcedureR2, target tgt : Procedure) extends Domain
   src.notPerformed -> tgt.notDone "Procedure-notPerformed";
   src.reasonNotPerformed -> tgt.notDoneReason "Procedure-reasonNotPerformed";
   src.bodySite -> tgt.bodySite "Procedure-bodySite";
-  src.reason where $this is CodeableConcept -> tgt.reasonCode "Procedure-reasonCode";
-  src.reason where $this is Reference -> tgt.reasonReference "Procedure-reasonReference";
+  src.reason : CodeableConcept -> tgt.reasonCode "Procedure-reasonCode";
+  src.reason : Reference -> tgt.reasonReference "Procedure-reasonReference";
   src.performed -> tgt.performed "Procedure-performed";
   src.performer as vs0 -> tgt.performer as vt0 then prcPerformer(vs0, vt0) "Procedure-performer";
   src.encounter -> tgt.context "Procedure-encounter";

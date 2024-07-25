@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group Immunization(source src : ImmunizationR2, target tgt : Immunization) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier "ImmunizationIdentifier";
-  src.status where ($this = 'completed') or ($this = 'entered-in-error') -> tgt.status "ImmunizationStatus";
+  src.status where (($this = 'completed') or ($this = 'entered-in-error')) -> tgt.status "ImmunizationStatus";
   src.date -> tgt.date "ImmunizationDate";
   src.vaccineCode -> tgt.vaccineCode "ImmunizationVaccineCode";
   src.patient -> tgt.patient "ImmunizationPatient";

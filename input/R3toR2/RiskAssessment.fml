@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group RiskAssessment(source src : RiskAssessment, target tgt : RiskAssessmentR2) extends DomainResource <<type+>> {
   src.subject -> tgt.subject "RiskAssessment-subject";
-  src.occurrence where $this is dateTime -> tgt.date "RiskAssessment-date";
+  src.occurrence : dateTime -> tgt.date "RiskAssessment-date";
   src.condition -> tgt.condition "RiskAssessment-condition";
   src.context -> tgt.encounter "RiskAssessment-encounter";
   src.performer -> tgt.performer "RiskAssessment-performer";

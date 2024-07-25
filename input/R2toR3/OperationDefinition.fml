@@ -26,8 +26,8 @@ group OperationDefinition(source src : OperationDefinitionR2, target tgt : Opera
   src.base -> tgt.base "OperationDefinition-base";
   src.system -> tgt.system "OperationDefinition-system";
   src.type -> tgt.resource "OperationDefinition-type1";
-  src where type.exists() -> tgt.type = 'true' "OperationDefinition-type2";
-  src where type.empty() -> tgt.type = 'false' "OperationDefinition-type2";
+  src where (type.exists()) -> tgt.type = 'true' "OperationDefinition-type2";
+  src where (type.empty()) -> tgt.type = 'false' "OperationDefinition-type2";
   src.instance -> tgt.instance "OperationDefinition-instance";
   src.parameter as vs0 -> tgt.parameter as vt0 then opParam(vs0, vt0) "OperationDefinition-parameter";
 }
@@ -43,7 +43,7 @@ group opParam(source src, target tgt) extends BackboneElement {
   src.min -> tgt.min "parameter-min";
   src.max -> tgt.max "parameter-max";
   src.documentation -> tgt.documentation "parameter-documentation";
-  src.type as v where ($this in ('number' | 'date' | 'string' | 'token' | 'reference' | 'composite' | 'quantity' | 'uri')).not() -> tgt.type = v "parameter-type1";
+  src.type as v where (($this in ('number' | 'date' | 'string' | 'token' | 'reference' | 'composite' | 'quantity' | 'uri')).not()) -> tgt.type = v "parameter-type1";
   src.type as v where ($this in ('number' | 'date' | 'string' | 'token' | 'reference' | 'composite' | 'quantity' | 'uri')) ->  tgt.searchType = v,  tgt.type = 'string' "parameter-type2";
   src.profile -> tgt.profile "parameter-profile";
   src.part as ps0 -> tgt.part as pt0 then opPart(ps0, pt0) "parameter-part";

@@ -14,7 +14,7 @@ group MedicationAdministration(source src : MedicationAdministrationR3, target t
   src.partOf -> tgt.partOf;
   src.status as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.status',  vt.value = v;
   src.notGiven as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.notGiven',  vt.value = v;
-  src.status where src.notGiven.not() -> tgt.status;
+  src.status where (src.notGiven.not()) -> tgt.status;
   src.notGiven -> tgt.status = 'not-done';
   src.category -> tgt.category;
   src.medication : CodeableConcept as vs -> tgt.medication = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "medicationCodeableConcept";

@@ -17,7 +17,7 @@ group DocumentReference(source src : DocumentReference, target tgt : DocumentRef
   src.category -> tgt.class;
   src.subject -> tgt.subject;
   src.date -> tgt.indexed;
-  src.extension as ext where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.created' then {
+  src.extension as ext where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.created') then {
     ext.value : dateTime as vs0 -> tgt.created = vs0 "created2";
   } "created";
   src.author -> tgt.author;
@@ -55,7 +55,7 @@ group DocumentReferenceContext(source src, target tgt) extends BackboneElement {
 }
 
 group DocumentReferenceRelated(source src, target tgt) {
-  src where reference.exists() -> tgt.ref as vt0 then ReferenceNoIdentifier(src, vt0) "reference";
-  src where identifier.exists() -> tgt.identifier as vt0 then Reference2Identifier(src, vt0) "identifier";
+  src where (reference.exists()) -> tgt.ref as vt0 then ReferenceNoIdentifier(src, vt0) "reference";
+  src where (identifier.exists()) -> tgt.identifier as vt0 then Reference2Identifier(src, vt0) "identifier";
 }
 

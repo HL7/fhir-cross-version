@@ -33,8 +33,8 @@ group ValueSet(source src : ValueSet, target tgt : ValueSetR2) extends DomainRes
 
 group compose(source vs, target vst, source src, target tgt) extends BackboneElement {
   src.lockedDate -> vst.lockedDate "vs-compose-ld";
-  src.include where (system.exists() and valueSet.empty() and concept.empty() and filter.empty()) and (system.resolve().valueSet = vs.url) ->  vst.codeSystem as vt,  (vs.system.resolve()) as cs then codeSystem(cs, vt) "vs-compose-incl-cs";
-  src.include as vsi where ((system.exists() and valueSet.empty() and concept.empty() and filter.empty()) and (system.resolve().valueSet = vs.url)).not() -> tgt.include as vt then include(vsi, vt, tgt) "vs-compose-incl";
+  src.include where ((system.exists() and valueSet.empty() and concept.empty() and filter.empty()) and (system.resolve().valueSet = vs.url)) ->  vst.codeSystem as vt,  (vs.system.resolve()) as cs then codeSystem(cs, vt) "vs-compose-incl-cs";
+  src.include as vsi where (((system.exists() and valueSet.empty() and concept.empty() and filter.empty()) and (system.resolve().valueSet = vs.url)).not()) -> tgt.include as vt then include(vsi, vt, tgt) "vs-compose-incl";
   src.exclude as vse check (valueSet.empty()) -> tgt.exclude as vt then include(vse, vt, tgt) "vs-compose-excl";
 }
 
@@ -48,7 +48,7 @@ group codeSystem(source src, target tgt) extends Element {
 
 group csconcept(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code "cs-concept-code";
-  src where property.where(code = 'notSelectable') -> tgt.abstract = (src.property.where(code = 'notSelectable').value) "cs-concept-abstract";
+  src where (property.where(code = 'notSelectable')) -> tgt.abstract = (src.property.where(code = 'notSelectable').value) "cs-concept-abstract";
   src.display -> tgt.display "cs-concept-display";
   src.definition -> tgt.definition "cs-concept-definition";
   src.designation as vs -> tgt.designation as vt then designation(vs, vt) "cs-concept-designation";

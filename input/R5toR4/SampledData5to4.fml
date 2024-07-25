@@ -10,7 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4"
 
 group SampledData(source src : SampledDataR5, target tgt : SampledDataR4) extends Element <<type+>> {
   src.origin -> tgt.origin;
-  src.interval where src.intervalUnit = 'ms' -> tgt.period;
+  src.interval where (src.intervalUnit = 'ms') -> tgt.period;
   src.factor -> tgt.factor;
   src.lowerLimit -> tgt.lowerLimit;
   src.upperLimit -> tgt.upperLimit;

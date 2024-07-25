@@ -10,11 +10,11 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group HumanName(source src : HumanName, target tgt : HumanNameR2) <<type+>> {
   src.id -> tgt.id "HumanNameId";
-  src.extension where url != 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat' -> tgt.extension "HumanNameExtensions";
+  src.extension where (url != 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat') -> tgt.extension "HumanNameExtensions";
   src.use -> tgt.use "HumanNameUse";
   src.text -> tgt.text "HumanNameText";
   src.family first -> tgt.family "HumanNameFamily";
-  src.extension as ex where url = 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat' -> tgt.family as f then nameRepeat(ex, f) "HumanNameFamily-rpt-ex";
+  src.extension as ex where (url = 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat') -> tgt.family as f then nameRepeat(ex, f) "HumanNameFamily-rpt-ex";
   src.given -> tgt.given "HumanNameGiven";
   src.prefix -> tgt.prefix "HumanNamePrefix";
   src.suffix -> tgt.suffix "HumanNameSuffix";

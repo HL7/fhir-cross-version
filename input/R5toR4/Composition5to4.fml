@@ -41,7 +41,7 @@ group CompositionEvent(source src, target tgt) extends BackboneElement {
 }
 
 group CompositionRelatesTo(source src, target tgt) extends Element {
-  src.type where src.type in ('replaces' | 'transforms' | 'signs' | 'appends') -> tgt.code;
+  src.type where (src.type in ('replaces' | 'transforms' | 'signs' | 'appends')) -> tgt.code;
   src.resourceReference -> tgt.target;
 }
 

@@ -37,7 +37,7 @@ group StructureDefinition(source src : StructureDefinition, target tgt : Structu
   src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sdf.kind-3to2', 'code') "StructureDefinition-kind";
   src.contextType -> tgt.contextType "StructureDefinition-contextType";
   src.context -> tgt.context "StructureDefinition-context";
-  src.type as vs where src.derivation = 'constraint' -> tgt.constrainedType as vt then code(vs, vt) "StructureDefinition-constrainedType";
+  src.type as vs where (src.derivation = 'constraint') -> tgt.constrainedType as vt then code(vs, vt) "StructureDefinition-constrainedType";
   src.abstract -> tgt.abstract "StructureDefinition-abstract";
   src.baseDefinition -> tgt.base "StructureDefinition-base";
   src.snapshot as vs0 -> tgt.snapshot as vt0 then {

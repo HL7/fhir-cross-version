@@ -19,7 +19,7 @@ group EpisodeOfCare(source src : EpisodeOfCareR2, target tgt : EpisodeOfCare) ex
   src.period -> tgt.period "EpisodeOfCarePeriod";
   src.referralRequest -> tgt.referralRequest "EpisodeOfCareReferralRequest";
   src.careManager -> tgt.careManager "EpisodeOfCareCareManager";
-  src where src.careTeam.exists() -> create('CareTeam') as vt0 then epiCareTeam(src, vt0, tgt) "EpisodeOfCareCareteam";
+  src where (src.careTeam.exists()) -> create('CareTeam') as vt0 then epiCareTeam(src, vt0, tgt) "EpisodeOfCareCareteam";
 }
 
 group epcStatusHistory(source src, target tgt) extends BackboneElement {

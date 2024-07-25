@@ -53,7 +53,7 @@ group CapabilityStatementRest(source src, target tgt) extends BackboneElement {
   src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.mode-4to5', 'code');
   src.documentation -> tgt.documentation;
   src.security as s -> tgt.security as t then CapabilityStatementRestSecurity(s, t);
-  src.resource as s where s.type != 'CatalogEntry' -> tgt.resource as t then CapabilityStatementRestResource(s, t);
+  src.resource as s where (s.type != 'CatalogEntry') -> tgt.resource as t then CapabilityStatementRestResource(s, t);
   src.interaction as s -> tgt.interaction as t then CapabilityStatementRestInteraction(s, t);
   src.compartment -> tgt.compartment;
 

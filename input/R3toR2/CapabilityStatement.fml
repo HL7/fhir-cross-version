@@ -53,11 +53,11 @@ group rest(source src, target tgt) extends BackboneElement {
   src.documentation -> tgt.documentation "confDocumentation";
   src.security as vs -> tgt.security as vt then security(vs, vt) "confSecurity";
   src.resource as vs -> tgt.resource as vt then restResource(vs, vt) "confResource";
-  src.interaction as vs where (($this = 'batch') or ($this = 'transaction')).not() -> tgt.interaction as vt then interaction(vs, vt) "confInteraction";
-  src where src.interaction.where($this = 'transaction').exists() and src.interaction.where($this = 'batch').exists() -> tgt.transactionMode = 'both' "confTransactionMode-1";
-  src where src.interaction.where($this = 'transaction').exists() and src.interaction.where($this = 'batch').empty() -> tgt.transactionMode = 'transaction' "confTransactionMode-2";
-  src where src.interaction.where($this = 'transaction').empty() and src.interaction.where($this = 'batch').exists() -> tgt.transactionMode = 'batch' "confTransactionMode-3";
-  src where src.interaction.where($this = 'transaction').empty() and src.interaction.where($this = 'batch').empty() -> tgt.transactionMode = 'none' "confTransactionMode-4";
+  src.interaction as vs where ((($this = 'batch') or ($this = 'transaction')).not()) -> tgt.interaction as vt then interaction(vs, vt) "confInteraction";
+  src where (src.interaction.where($this = 'transaction').exists() and src.interaction.where($this = 'batch').exists()) -> tgt.transactionMode = 'both' "confTransactionMode-1";
+  src where (src.interaction.where($this = 'transaction').exists() and src.interaction.where($this = 'batch').empty()) -> tgt.transactionMode = 'transaction' "confTransactionMode-2";
+  src where (src.interaction.where($this = 'transaction').empty() and src.interaction.where($this = 'batch').exists()) -> tgt.transactionMode = 'batch' "confTransactionMode-3";
+  src where (src.interaction.where($this = 'transaction').empty() and src.interaction.where($this = 'batch').empty()) -> tgt.transactionMode = 'none' "confTransactionMode-4";
   src.searchParam as vs -> tgt.searchParam as vt then searchParam(vs, vt) "confSearchParam";
   src.operation as vs -> tgt.operation as vt then CapabilityStatementRestOperation(vs, vt) "confOperation";
   src.compartment -> tgt.compartment "confCompartment";
@@ -76,8 +76,8 @@ group certificate(source src, target tgt) extends BackboneElement {
 }
 
 group restResource(source src, target tgt) extends BackboneElement {
-  src.type where $this != 'CapabilityStatement' -> tgt.type "confType2";
-  src.type where $this = 'CapabilityStatement' -> tgt.type = 'Conformance' "confType3";
+  src.type where ($this != 'CapabilityStatement') -> tgt.type "confType2";
+  src.type where ($this = 'CapabilityStatement') -> tgt.type = 'Conformance' "confType3";
   src.profile -> tgt.profile "confProfile";
   src.interaction as vs -> tgt.interaction as vt then interaction(vs, vt) "confInteraction";
   src.versioning -> tgt.versioning "confVersioning";

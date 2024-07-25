@@ -142,9 +142,9 @@ group ClaimResponsePayment(source src, target tgt) extends BackboneElement {
 
 group ClaimResponseProcessNote(source src, target tgt) extends BackboneElement {
   src.number -> tgt.number;
-  src.type as s where code = 'display' ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'display',  tcc.display = 'display';
-  src.type as s where code = 'print' ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'print',  tcc.display = 'Print (Form)';
-  src.type as s where code = 'printoper' ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'printoper',  tcc.display = 'Print (Operator)';
+  src.type as s where (code = 'display') ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'display',  tcc.display = 'display';
+  src.type as s where (code = 'print') ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'print',  tcc.display = 'Print (Form)';
+  src.type as s where (code = 'printoper') ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'printoper',  tcc.display = 'Print (Operator)';
   src.text -> tgt.text;
   src.language -> tgt.language;
 }

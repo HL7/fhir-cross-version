@@ -15,7 +15,7 @@ group ReferralRequest(source src : ReferralRequestR2, target tgt : ReferralReque
   src.type -> tgt.type "ReferralRequest-type";
   src.specialty -> tgt.specialty "ReferralRequest-specialty";
   src.priority as v then {
-    v.coding as v1 where v1.system = 'http://hl7.org/fhir/diagnostic-order-priority' then {
+    v.coding as v1 where (v1.system = 'http://hl7.org/fhir/diagnostic-order-priority') then {
       v1.code -> tgt.priority "t2";
     } "test";
   } "ReferralRequest-priority";

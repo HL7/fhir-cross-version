@@ -25,7 +25,7 @@ group ClaimResponse(source src : ClaimResponse, target tgt : ClaimResponseR3) ex
   src.total as total then {
     total.category as vs then {
       total.amount as va then {
-        vs.coding as c where code = 'submitted' then {
+        vs.coding as c where (code = 'submitted') then {
           c -> tgt.totalCost as cost then Money(va, cost) "cost";
         };
       };
@@ -34,7 +34,7 @@ group ClaimResponse(source src : ClaimResponse, target tgt : ClaimResponseR3) ex
   src.total as total then {
     total.category as vs then {
       total.amount as va then {
-        vs.coding as c where code = 'benefit' then {
+        vs.coding as c where (code = 'benefit') then {
           c -> tgt.totalBenefit as cost then Money(va, cost) "totalBenefit";
         };
       };

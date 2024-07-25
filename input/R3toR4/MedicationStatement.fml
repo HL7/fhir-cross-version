@@ -15,7 +15,7 @@ group MedicationStatement(source src : MedicationStatementR3, target tgt : Medic
   src.context -> tgt.context;
   src.status as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status',  vt.value = v;
   src.taken as v ->  tgt.extension as vt,  vt.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.taken',  vt.value = v;
-  src.status where (src.taken in ('n' | 'unk')).not() -> tgt.status;
+  src.status where ((src.taken in ('n' | 'unk')).not()) -> tgt.status;
   src.taken as v where (v = 'n') -> tgt.status = 'not-taken';
   src.taken as v where (v = 'unk') -> tgt.status = 'unknown';
   src.category -> tgt.category;

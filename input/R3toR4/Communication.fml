@@ -13,8 +13,8 @@ group Communication(source src : CommunicationR3, target tgt : Communication) ex
   src.definition -> tgt.instantiatesCanonical;
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
-  src.status where src.notDone.not() -> tgt.status;
-  src.notDone where src.notDone -> tgt.status = 'not-done';
+  src.status where (src.notDone.not()) -> tgt.status;
+  src.notDone where (src.notDone) -> tgt.status = 'not-done';
   src.notDoneReason -> tgt.statusReason;
   src.category -> tgt.category;
   src.medium -> tgt.medium;

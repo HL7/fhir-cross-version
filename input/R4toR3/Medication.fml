@@ -10,20 +10,20 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Medication(source src : Medication, target tgt : MedicationR3) extends DomainResource <<type+>> {
   src.code -> tgt.code;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.status' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.status') then {
     e.value : code -> tgt.status;
   };
-  src.extension as e where url = 'hhttp://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.isBrand' then {
+  src.extension as e where (url = 'hhttp://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.isBrand') then {
     e.value : boolean -> tgt.isBrand;
   };
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationOTC' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationOTC') then {
     e.value : boolean -> tgt.isOverTheCounter;
   };
   src.manufacturer -> tgt.manufacturer;
   src.form -> tgt.form;
   src.ingredient as vs0 -> tgt.ingredient as vt0 then MedicationIngredient(vs0, vt0);
-  src where batch.exists() or extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.container').exists() or extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.content').exists() -> tgt.package as vt0 then package(src, vt0) "batch";
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationImage' then {
+  src where (batch.exists() or extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.container').exists() or extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.content').exists()) -> tgt.package as vt0 then package(src, vt0) "batch";
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationImage') then {
     e.value : Attachment -> tgt.image;
   };
 }
@@ -36,19 +36,19 @@ group MedicationIngredient(source src, target tgt) extends BackboneElement {
 }
 
 group package(source src, target tgt) {
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.container' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.container') then {
     e.value : CodeableConcept -> tgt.container;
   };
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.content' -> tgt.content as vt0 then content(e, vt0);
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.content') -> tgt.content as vt0 then content(e, vt0);
   src.batch as vs0 -> tgt.batch as vt0 then batch(vs0, vt0);
 }
 
 group content(source src, target tgt) extends Element {
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.content' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.content') then {
     e.value : CodeableConcept as vs -> tgt.item = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "valueCodeableConcept";
     e.value : Reference as vs -> tgt.item = create('Reference') as vt then Reference(vs, vt) "valueReference";
   };
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.content.amount' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.content.amount') then {
     e.value : Quantity -> tgt.amount;
   };
 }

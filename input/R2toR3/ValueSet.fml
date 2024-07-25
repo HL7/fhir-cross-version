@@ -24,8 +24,8 @@ group ValueSet(source src : ValueSetR2, target tgt : ValueSet) extends DomainRes
   src.description -> tgt.description "ValueSet-description";
   src.requirements -> tgt.purpose "ValueSet-purpose";
   src.copyright -> tgt.copyright "ValueSet-copyright";
-  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "ValueSet-jurisdiction";
-  src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value as vt then CodeableConcept(vs, vt) "ValueSet-useContext";
+  src.useContext where (coding.system = 'urn:iso:std:iso:3166') -> tgt.jurisdiction "ValueSet-jurisdiction";
+  src.useContext as vs where ((coding.system = 'urn:iso:std:iso:3166').not()) ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value as vt then CodeableConcept(vs, vt) "ValueSet-useContext";
   src.immutable -> tgt.immutable "ValueSet-immutable";
   src.extensible -> tgt.extensible "ValueSet-extensible";
   src.codeSystem as vs0 -> create('CodeSystem') as vt0 then codeSystem(src, tgt, vs0, vt0) "ValueSet-codeSystem";
@@ -48,11 +48,11 @@ group codeSystem(source vs, target vstgt, source src, target tgt) extends Elemen
     vs0.name -> vt0.name "ContactDetail-name";
     vs0.telecom -> vt0.telecom "ContactDetail-telecom";
   } "CodeSystem-contact";
-  vs where codeSystem.descendants().abstract ->  tgt.property as p,  p.code = 'notSelectable',  p.uri = 'http://todo',  p.description = 'Indicates that the code is abstract - only intended to be used as a selector for other concepts' "CodeSystem-abstract";
+  vs where (codeSystem.descendants().abstract) ->  tgt.property as p,  p.code = 'notSelectable',  p.uri = 'http://todo',  p.description = 'Indicates that the code is abstract - only intended to be used as a selector for other concepts' "CodeSystem-abstract";
   vs.date -> tgt.date "CodeSystem-date";
   vs.description -> tgt.description "CodeSystem-description";
-  vs.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "CodeSystem-jurisdiction";
-  vs.useContext as vs0 where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value as vt then CodeableConcept(vs0, vt) "CodeSystem-useContext";
+  vs.useContext where (coding.system = 'urn:iso:std:iso:3166') -> tgt.jurisdiction "CodeSystem-jurisdiction";
+  vs.useContext as vs0 where ((coding.system = 'urn:iso:std:iso:3166').not()) ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value as vt then CodeableConcept(vs0, vt) "CodeSystem-useContext";
   vs.requirements -> tgt.purpose "CodeSystem-purpose";
   vs.copyright -> tgt.copyright "CodeSystem-copyright";
   vs.url -> tgt.valueSet "CodeSystem-valueSet";

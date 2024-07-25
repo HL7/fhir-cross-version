@@ -41,7 +41,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefit, target tgt : Expla
   src.total as total then {
     total.category as vs then {
       total.amount as va then {
-        vs.coding as c where code = 'submitted' then {
+        vs.coding as c where (code = 'submitted') then {
           c -> tgt.totalCost as cost then Money(va, cost) "total";
         };
       };
@@ -50,7 +50,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefit, target tgt : Expla
   src.total as total then {
     total.category as vs then {
       total.amount as va then {
-        vs.coding as c where code = 'benefit' then {
+        vs.coding as c where (code = 'benefit') then {
           c -> tgt.totalBenefit as cost then Money(va, cost) "total";
         };
       };

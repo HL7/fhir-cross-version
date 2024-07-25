@@ -15,10 +15,10 @@ group Immunization(source src : Immunization, target tgt : ImmunizationR2) exten
   src.vaccineCode -> tgt.vaccineCode "ImmunizationVaccineCode";
   src.patient -> tgt.patient "ImmunizationPatient";
   src.notGiven -> tgt.wasNotGiven "ImmunizationWasNotGiven";
-  src.practitioner as v where v.role.coding.code.contains('AP') then {
+  src.practitioner as v where (v.role.coding.code.contains('AP')) then {
     v.actor -> tgt.performer "ImmunizationPerformer-inner";
   } "ImmunizationPerformer";
-  src.practitioner as v where v.role.coding.code.contains('OP') then {
+  src.practitioner as v where (v.role.coding.code.contains('OP')) then {
     v.actor -> tgt.requester "ImmunizationRequester-inner";
   } "ImmunizationRequester";
   src.encounter -> tgt.encounter "ImmunizationEncounter";

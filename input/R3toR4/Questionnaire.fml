@@ -52,7 +52,7 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
 
 group enableWhen(source src, target tgt) extends BackboneElement {
   src.question -> tgt.question;
-  src.hasAnswer as v where src.answer.empty() ->  tgt.operator = 'exists',  tgt.answer = v;
+  src.hasAnswer as v where (src.answer.empty()) ->  tgt.operator = 'exists',  tgt.answer = v;
   src.answer : boolean as v ->  tgt.answer = v,  tgt.operator = '=';
   src.answer : decimal as v ->  tgt.answer = v,  tgt.operator = '=';
   src.answer : integer as v ->  tgt.answer = v,  tgt.operator = '=';

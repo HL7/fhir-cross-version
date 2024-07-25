@@ -22,49 +22,49 @@ group Coverage(source src : Coverage, target tgt : CoverageR3) extends DomainRes
   src.payor -> tgt.payor;
   src.class as class -> tgt.grouping as t then {
     class.type as vs then {
-      vs.coding as c where code = 'group' then {
+      vs.coding as c where (code = 'group') then {
         c then CoverageClassGroup(class, t) "CoverageClassGroup";
       };
     };
   };
   src.class as class -> tgt.grouping as t then {
     class.type as vs then {
-      vs.coding as c where code = 'subgroup' then {
+      vs.coding as c where (code = 'subgroup') then {
         c then CoverageClassSubGroup(class, t) "CoverageClassSubGroup";
       };
     };
   };
   src.class as class -> tgt.grouping as t then {
     class.type as vs then {
-      vs.coding as c where code = 'plan' then {
+      vs.coding as c where (code = 'plan') then {
         c then CoverageClassPlanGroup(class, t) "CoverageClassPlanGroup";
       };
     };
   };
   src.class as class -> tgt.grouping as t then {
     class.type as vs then {
-      vs.coding as c where code = 'subplan' then {
+      vs.coding as c where (code = 'subplan') then {
         c then CoverageClassSubPlanGroup(class, t) "CoverageClassSubPlanGroup";
       };
     };
   };
   src.class as class -> tgt.grouping as t then {
     class.type as vs then {
-      vs.coding as c where code = 'class' then {
+      vs.coding as c where (code = 'class') then {
         c then CoverageClassClassGroup(class, t) "CoverageClassClassGroup";
       };
     };
   };
   src.class as class -> tgt.grouping as t then {
     class.type as vs then {
-      vs.coding as c where code = 'subclass' then {
+      vs.coding as c where (code = 'subclass') then {
         c then CoverageClassSubClassGroup(class, t) "CoverageClassSubClassGroup";
       };
     };
   };
   src.class as class then {
     class.type as vs then {
-      vs.coding as c where code = 'sequence' then {
+      vs.coding as c where (code = 'sequence') then {
         c then CoverageClassSequenceGroup(class, tgt) "CoverageClassSequenceGroup";
       };
     };

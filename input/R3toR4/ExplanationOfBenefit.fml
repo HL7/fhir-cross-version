@@ -24,7 +24,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefitR3, target tgt : Exp
   src.claim -> tgt.claim;
   src.claimResponse -> tgt.claimResponse;
   src.outcome as vs then {
-    vs.coding as c where code in ('complete' | 'error' | 'partial') then {
+    vs.coding as c where (code in ('complete' | 'error' | 'partial')) then {
       c.code -> tgt.outcome;
     };
   };
