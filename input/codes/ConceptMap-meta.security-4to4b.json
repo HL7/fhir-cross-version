@@ -370,7 +370,10 @@
     },
     {
       "code" : "PurposeOfUse",
-      "noMap" : true
+      "target" : [{
+        "code" : "PurposeOfUse",
+        "relationship" : "equivalent"
+      }]
     },
     {
       "code" : "RECORDMGT",
@@ -1472,24 +1475,15 @@
     "target" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
     "element" : [{
       "code" : "M",
-      "target" : [{
-        "code" : "M",
-        "relationship" : "equivalent"
-      }]
+      "noMap" : true
     },
     {
       "code" : "N",
-      "target" : [{
-        "code" : "N",
-        "relationship" : "equivalent"
-      }]
+      "noMap" : true
     },
     {
       "code" : "L",
-      "target" : [{
-        "code" : "L",
-        "relationship" : "equivalent"
-      }]
+      "noMap" : true
     },
     {
       "code" : "U",
@@ -1509,10 +1503,7 @@
     "target" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
     "element" : [{
       "code" : "SSP",
-      "target" : [{
-        "code" : "SSP",
-        "relationship" : "equivalent"
-      }]
+      "noMap" : true
     },
     {
       "code" : "EMP",
