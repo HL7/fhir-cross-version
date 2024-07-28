@@ -19,19 +19,19 @@ group Reference(source src : ReferenceR5, target tgt : ReferenceR4) extends Elem
   src.display -> tgt.display;
 }
 
-group canonical2Reference(source src : canonicalR5, target tgt : ReferenceR4) extends Element <<type+>> {
+group canonical2Reference(source src : canonicalR5, target tgt : ReferenceR4) extends Element <<types>> {
   src.value as v -> tgt.reference = v "canonicalValue";
 }
 
-group Reference2Url(source src : ReferenceR5, target tgt : urlR4) extends Element <<type+>> {
+group Reference2Url(source src : ReferenceR5, target tgt : urlR4) extends Element <<types>> {
   src.reference as v -> tgt.value = v "canonicalValue";
 }
 
-group url2Reference(source src : urlR5, target tgt : ReferenceR4) extends Element <<type+>> {
+group url2Reference(source src : urlR5, target tgt : ReferenceR4) extends Element <<types>> {
   src.value as v -> tgt.reference = v "canonicalValue";
 }
 
-group CodeableReference2Reference(source src : CodeableReferenceR5, target tgt : ReferenceR4) extends Element <<type+>> {
+group CodeableReference2Reference(source src : CodeableReferenceR5, target tgt : ReferenceR4) extends Element <<types>> {
   src.reference as v -> tgt then {
     v.reference -> tgt.reference;
     v.type -> tgt.type;

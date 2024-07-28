@@ -127,7 +127,7 @@ group markdown(source src : markdownR4, target tgt : markdownR5) extends Element
   src.value as v -> tgt.value = v "markdownValue";
 }
 
-group markdown2string(source src : markdownR4, target tgt : stringR5) extends Element <<type+>> {
+group markdown2string(source src : markdownR4, target tgt : stringR5) extends Element <<types>> {
   src.value as v -> tgt.value = v "markdown2stringValue";
 }
 
@@ -171,7 +171,7 @@ group unsignedInt(source src : unsignedIntR4, target tgt : unsignedIntR5) extend
   src.value as v -> tgt.value = v "unsignedIntValue";
 }
 
-group unsignedInt2integer64(source src : unsignedIntR4, target tgt : integer64R5) extends Element <<type+>> {
+group unsignedInt2integer64(source src : unsignedIntR4, target tgt : integer64R5) extends Element <<types>> {
   src.value as v -> tgt.value = v "unsignedInt2integer64Value";
 }
 
