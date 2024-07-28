@@ -37,7 +37,7 @@ group Citation(source src : CitationR5, target tgt : CitationR4B) extends Domain
   src.currentState -> tgt.currentState;
   src.statusDate as s -> tgt.statusDate as t then CitationStatusDate(s, t);
   src.relatedArtifact as s -> tgt.relatesTo as t then {
-    s.type as v ->  t.relationshipType = create('CodeableConcept') as tcc,  tcc.coding = create('Coding') as tc,  tc.system = 'http://terminology.hl7.org/CodeSystem/artifact-relationship-type',  tc.code = v.value;
+    s.type as v ->  t.relationshipType = create('CodeableConcept') as tcc,  tcc.coding = create('Coding') as tc,  tc.system = 'http://terminology.hl7.org/CodeSystem/artifact-relationship-type',  tc.code = v "typeRelationship";
     s.classifier -> t.targetClassifier;
     s.resourceReference -> t.target;
   };
@@ -109,7 +109,7 @@ group CitationCitedArtifactPart(source src, target tgt) extends BackboneElement 
 }
 
 group CitationCitedArtifactRelatesTo(source src, target tgt) extends BackboneElement {
-  src.type as v ->  tgt.relationshipType = create('CodeableConcept') as t,  t.coding = create('Coding') as tc,  tc.system = 'http://terminology.hl7.org/CodeSystem/artifact-relationship-type',  tc.code = v.value;
+  src.type as v ->  tgt.relationshipType = create('CodeableConcept') as t,  t.coding = create('Coding') as tc,  tc.system = 'http://terminology.hl7.org/CodeSystem/artifact-relationship-type',  tc.code = v "relationshipType";
   src.classifier -> tgt.targetClassifier;
   src.resourceReference -> tgt.target;
 }

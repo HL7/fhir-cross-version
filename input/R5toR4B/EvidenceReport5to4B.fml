@@ -48,8 +48,11 @@ group EvidenceReportSubjectCharacteristic(source src, target tgt) extends Backbo
 
 group EvidenceReportRelatesTo(source src, target tgt) extends BackboneElement {
   src.code as v -> tgt.code = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/evr.re.code-5to4b', 'code');
-  src.target as s -> tgt.target = s.identifier "identifier";
-  src.target as s -> tgt.target = s.resource "resource";
+  src.target as s then {
+    // Can both identifier and resource be present in the source?
+    s.identifier -> tgt.target;
+    s.resource -> tgt.target;
+  } "target";
 }
 
 // group EvidenceReportRelatesToTarget(source src, target tgt) extends BackboneElement {
