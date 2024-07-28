@@ -45,7 +45,9 @@ group RequestOrchestrationAction(source src, target tgt) extends BackboneElement
   src.timing : Duration -> tgt.timing "timingDuration";
   src.timing : Range -> tgt.timing "timingRange";
   src.timing : Timing -> tgt.timing "timingTiming";
-  src.participant as s -> tgt.participant = s.actor;
+  src.participant as s then {
+    s.actor -> tgt.participant;
+  } "copyParticipantActor";
   src.type -> tgt.type;
   src.groupingBehavior as v -> tgt.groupingBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.groupingBehavior-rgp.ac.groupingBehavior-5to4b', 'code');
   src.selectionBehavior as v -> tgt.selectionBehavior = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.selectionBehavior-rgp.ac.selectionBehavior-5to4b', 'code');

@@ -71,7 +71,9 @@ group ExampleScenarioProcessStep(source src, target tgt) extends BackboneElement
 }
 
 group ExampleScenarioProcessStepOperation(source src, target tgt) extends BackboneElement {
-  src.type as s -> tgt.type = s.code "mapTypeCoding";
+  src.type as s then {
+    s.code -> tgt.type;
+  } "mapTypeCoding";
   src.title -> tgt.name;
   src.initiator -> tgt.initiator;
   src.receiver -> tgt.receiver;

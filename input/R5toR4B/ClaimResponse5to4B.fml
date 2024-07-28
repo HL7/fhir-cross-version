@@ -95,7 +95,7 @@ group ClaimResponseAddItem(source src, target tgt) extends BackboneElement {
   src.unitPrice -> tgt.unitPrice;
   src.factor -> tgt.factor;
   src.net -> tgt.net;
-  src.bodySite as s -> tgt.bodySite = s.site;
+  src.bodySite as s then { s.site -> tgt.bodySite; } "bodySite";
   src.noteNumber -> tgt.noteNumber;
   src.detail as s -> tgt.detail as t then ClaimResponseAddItemDetail(s, t);
   src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
