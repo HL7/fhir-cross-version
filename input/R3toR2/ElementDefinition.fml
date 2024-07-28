@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/ElementDefinition" alias Eleme
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
-group ElementDefinition(source srcR : StructureDefinition, source src : ElementDefinition, target tgt : ElementDefinitionR2) <<type+>> {
+group ElementDefinition(source srcR : StructureDefinition, source src : ElementDefinition, target tgt : ElementDefinitionR2) {
   src.extension -> tgt.extension "ElementDefinitionExtensions";
   src.path -> tgt.path "ElementDefinitionPath";
   src.sliceName -> tgt.name "ElementDefinitionName";

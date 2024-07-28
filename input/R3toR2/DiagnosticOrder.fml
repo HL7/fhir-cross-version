@@ -8,7 +8,7 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/DiagnosticOrder" alias Diagnos
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
-group DiagnosticOrder(source src : ProcedureRequest, target tgt : DiagnosticOrderR2) extends DomainResource <<type+>> {
+group DiagnosticOrder(source src : ProcedureRequest, target tgt : DiagnosticOrderR2) extends DomainResource <<types>> {
   src.subject -> tgt.subject "DiagnosticOrderSubject";
   src.requester -> tgt.orderer "DiagnosticOrderOrderer";
   src.identifier -> tgt.identifier "DiagnosticOrderIdentifier";

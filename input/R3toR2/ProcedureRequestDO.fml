@@ -13,7 +13,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 // a procedure request back to a DiagnosticOrder, but they are marked with an
 // extension in case this helps
 
-group ProcedureRequestDO(source src : ProcedureRequest, target tgt : DiagnosticOrderR2) extends DomainResource <<type+>> {
+group ProcedureRequestDO(source src : ProcedureRequest, target tgt : DiagnosticOrderR2) extends DomainResource <<types>> {
   src.subject -> tgt.subject "DiagnosticOrderSubject";
   src.requester as v then {
     v.agent -> tgt.orderer "DiagnosticOrderOrdererInner";
