@@ -58,7 +58,7 @@ group groupResource(source src, target tgt, source pck) extends BackboneElement 
 }
 
 group page(source src, target tgt) extends BackboneElement {
-  src.source as vs0 -> tgt.name = create('url') as vt0 then url(vs0, vt0);
+  src.source as vs0 -> tgt.name = create('url') as vt0 then uri2url(vs0, vt0);
   src.title -> tgt.title;
   src.kind as vs ->  tgt.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.page.kind',  ext.value = vs;
   src.type as vs ->  tgt.extension as ext,  ext.url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.page.type',  ext.value = vs;

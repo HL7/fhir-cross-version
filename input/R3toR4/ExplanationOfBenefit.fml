@@ -236,7 +236,9 @@ group ExplanationOfBenefitPayment(source src, target tgt) extends BackboneElemen
 
 group ExplanationOfBenefitProcessNote(source src, target tgt) extends BackboneElement {
   src.number -> tgt.number;
-  src.type as scc then { scc.coding first as c where (system='http://hl7.org/fhir/note-type') -> tgt.type = c.code; } "typeFromCC";
+  src.type as scc then { 
+    scc.coding first as c where (system='http://hl7.org/fhir/note-type') -> tgt.type = (c.code);
+  } "typeFromCC";
   src.text -> tgt.text;
   src.language -> tgt.language;
 }

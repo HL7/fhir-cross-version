@@ -128,7 +128,11 @@ group ClaimResponsePayment(source src, target tgt) extends BackboneElement {
 
 group ClaimResponseProcessNote(source src, target tgt) extends BackboneElement {
   src.number -> tgt.number;
-  src.type as scc then { scc.coding first as c where (system='http://hl7.org/fhir/note-type') -> tgt.type = c.code; } "typeFromCC";
+  src.type as scc then {
+    scc.coding first as c where (system='http://hl7.org/fhir/note-type') then {
+      c.code -> tgt.type;
+    } "assignCoding";
+  } "typeFromCC";
   src.text -> tgt.text;
   src.language -> tgt.language;
 }
