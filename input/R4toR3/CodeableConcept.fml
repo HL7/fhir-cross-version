@@ -25,6 +25,6 @@ group CodeableConcept2Coding(source src : CodeableConcept, target tgt : CodingR3
 }
 
 group CodeableConcept2code(source src : CodeableConcept, target tgt : codeR3) extends Element <<types>> {
-  src.coding first as vs0 -> tgt = create('code') as vt then Coding2code(vs0, vt) "CodeableConcept2code-coding";
+  src.coding first as vs0 then Coding2code(vs0, tgt) "CodeableConcept2code-coding";
 }
 
