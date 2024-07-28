@@ -98,7 +98,9 @@ group MedicationKnowledgeMedicineClassification(source src, target tgt) extends 
 group MedicationKnowledgeRegulatory(source src, target tgt) extends BackboneElement {
   src.regulatoryAuthority -> tgt.regulatoryAuthority;
   src.substitution as s -> tgt.substitution as t then MedicationKnowledgeRegulatorySubstitution(s, t);
-  src.schedule as s -> tgt.schedule = s.schedule;
+  src.schedule as s then {
+    s.schedule -> tgt.schedule;
+  };
   src.maxDispense as s -> tgt.maxDispense as t then MedicationKnowledgeRegulatoryMaxDispense(s, t);
 }
 

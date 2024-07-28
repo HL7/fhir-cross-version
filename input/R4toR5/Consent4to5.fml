@@ -18,7 +18,9 @@ group Consent(source src : ConsentR4, target tgt : ConsentR5) extends DomainReso
   src.source : Attachment -> tgt.sourceAttachment "sourceAttachment";
   src.source : Reference -> tgt.sourceReference "sourceReference";
   src.policyRule -> tgt.regulatoryBasis;
-  src.policy as s ->  tgt.policyBasis as t,  t.url = s.uri;
+  src.policy as s ->  tgt.policyBasis as t then {
+    s.uri -> t.url;
+  };
   src.verification as s -> tgt.verification as t then ConsentVerification(s, t);
   src.provision as s -> tgt.provision as t then ConsentProvision(s, t);
 }
