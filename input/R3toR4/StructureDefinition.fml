@@ -36,9 +36,9 @@ group StructureDefinition(source src : StructureDefinitionR3, target tgt : Struc
   src.abstract -> tgt.abstract;
   src.type -> tgt.type;
   src.baseDefinition -> tgt.baseDefinition;
-  src.context as ctxExpression, src.contextType where (src.contextType = 'resource') -> tgt.context as vt, vt.type = 'element', vt.expression = ctxExpression;
-  src.context as ctxExpression, src.contextType where (src.contextType = 'datatype') -> tgt.context as vt, vt.type = 'element', vt.expression = ctxExpression;
-  src.context as ctxExpression, src.contextType where (src.contextType = 'extension') -> tgt.context as vt, vt.type = 'extension', vt.expression = ctxExpression;
+  src.context as ctxExpression, src.contextType where (src.contextType = 'resource') -> tgt.context as vt, vt.type = 'element', vt.expression = ctxExpression "resourceContext";
+  src.context as ctxExpression, src.contextType where (src.contextType = 'datatype') -> tgt.context as vt, vt.type = 'element', vt.expression = ctxExpression "datatypeContext";
+  src.context as ctxExpression, src.contextType where (src.contextType = 'extension') -> tgt.context as vt, vt.type = 'extension', vt.expression = ctxExpression "extensionContext";
   src.contextInvariant -> tgt.contextInvariant;
   src.derivation -> tgt.derivation;
   src.snapshot as vs0 -> tgt.snapshot as vt0 then {
