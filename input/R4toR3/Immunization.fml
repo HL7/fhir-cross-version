@@ -10,9 +10,9 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to3"
 
 group Immunization(source src : Immunization, target tgt : ImmunizationR3) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status where value != 'not-done' -> tgt.status;
-  src.status where value = 'not-done' ->  tgt.status = 'completed',  tgt.notGiven = true;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.notGiven' then {
+  src.status where ($this != 'not-done') -> tgt.status;
+  src.status where ($this = 'not-done') ->  tgt.status = 'completed',  tgt.notGiven = true;
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.notGiven') then {
     e.value : boolean -> tgt.notGiven;
   };
   src.vaccineCode -> tgt.vaccineCode;
@@ -30,8 +30,8 @@ group Immunization(source src : Immunization, target tgt : ImmunizationR3) exten
   src.doseQuantity -> tgt.doseQuantity;
   src.performer as vs -> tgt.practitioner as vt then practitioner(vs, vt);
   src.note -> tgt.note;
-  src.reasonCode as vs where src.status != 'not-done' ->  tgt.explanation as t,  t.reason = vs;
-  src.reasonCode as vs where src.status = 'not-done' ->  tgt.explanation as t,  t.reasonNotGiven = vs;
+  src.reasonCode as vs where (src.status != 'not-done') ->  tgt.explanation as t,  t.reason = vs;
+  src.reasonCode as vs where (src.status = 'not-done') ->  tgt.explanation as t,  t.reasonNotGiven = vs;
   src.reaction as vs -> tgt.reaction as vt then reaction(vs, vt);
   src.protocolApplied as vs -> tgt.vaccinationProtocol as vt then protocol(vs, vt);
 }
@@ -49,17 +49,17 @@ group reaction(source src, target tgt) extends BackboneElement {
 
 group protocol(source src, target tgt) extends BackboneElement {
   src.doseNumber : positiveInt as vs -> tgt.doseSequence as vt then positiveInt(vs, vt) "doseNumberPositiveInt";
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.vaccinationProtocol.description' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.vaccinationProtocol.description') then {
     e.value : string -> tgt.description;
   };
   src.authority -> tgt.authority;
   src.series -> tgt.series;
   src.seriesDoses : positiveInt as vs -> tgt.seriesDoses as vt then positiveInt(vs, vt) "seriesDosesPositiveInt";
   src.targetDisease -> tgt.targetDisease;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.vaccinationProtocol.doseStatus' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.vaccinationProtocol.doseStatus') then {
     e.value : CodeableConcept -> tgt.doseStatus;
   };
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.vaccinationProtocol.doseStatusReason' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Immunization.vaccinationProtocol.doseStatusReason') then {
     e.value : CodeableConcept -> tgt.doseStatusReason;
   };
 }

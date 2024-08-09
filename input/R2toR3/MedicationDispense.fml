@@ -39,7 +39,7 @@ group mddDosage(source src, target tgt) extends Element {
   src.additionalInstructions -> tgt.additionalInstruction "dosage-additionalInstructions";
   src.timing -> tgt.timing "dosage-timing";
   src.asNeeded -> tgt.asNeeded "dosage-asNeeded";
-  src.site where $this is CodeableConcept -> tgt.site "dosage-site";
+  src.site : CodeableConcept -> tgt.site "dosage-site";
   src.route -> tgt.route "dosage-route";
   src.method -> tgt.method "dosage-method";
   src.dose -> tgt.dose "dosage-dose";

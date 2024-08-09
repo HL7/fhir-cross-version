@@ -31,7 +31,7 @@ group DiagnosticReport(source src : DiagnosticReport, target tgt : DiagnosticRep
 
 group DiagnosticReportPerformer(source src, target tgt) {
   src -> tgt.actor as vt then Reference(src, vt) "actor";
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-DiagnosticReport.performer.role' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-DiagnosticReport.performer.role') then {
     e.value : CodeableConcept -> tgt.role;
   };
 }

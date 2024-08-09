@@ -48,22 +48,21 @@ group SubstanceDefinitionProperty(source src, target tgt) extends BackboneElemen
   src.amount : Quantity -> tgt.value "amountQuantity";
 }
 
-group SubstanceDefinitionMolecularWeight(source src, target tgt) extends BackboneElement {
-  src.method -> tgt.method;
-  src.type -> tgt.type;
-  src.amount -> tgt.amount;
-}
-
 group SubstanceDefinitionStructure(source src, target tgt) extends BackboneElement {
   src.stereochemistry -> tgt.stereochemistry;
   src.opticalActivity -> tgt.opticalActivity;
   src.molecularFormula -> tgt.molecularFormula;
   src.molecularFormulaByMoiety -> tgt.molecularFormulaByMoiety;
-  src.isotope as s -> tgt then {
-    s.molecularWeight as v -> tgt.molecularWeight as t then SubstanceDefinitionMolecularWeight(v, t);
-  };
+  src.isotope; // this is not mapped into future versions
+  src.molecularWeight as s -> tgt.molecularWeight as tm then SubstanceDefinitionMolecularWeight(s, tm);
   src.source -> tgt.sourceDocument;
   src.representation as s -> tgt.representation as t then SubstanceDefinitionStructureRepresentation(s, t);
+}
+
+group SubstanceDefinitionMolecularWeight(source src, target tgt) extends BackboneElement {
+  src.method -> tgt.method;
+  src.type -> tgt.type;
+  src.amount -> tgt.amount;
 }
 
 group SubstanceDefinitionStructureRepresentation(source src, target tgt) extends BackboneElement {

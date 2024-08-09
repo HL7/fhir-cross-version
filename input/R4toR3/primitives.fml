@@ -137,7 +137,7 @@ group uri2code(source src : uri, target tgt : codeR3) extends Element <<types>> 
 }
 
 group string2code(source src : string, target tgt : codeR3) extends Element <<types>> {
-  src.value as v -> tgt.value = v "uri2code-value";
+  src.value as v -> tgt.value = v "string2code-value";
 }
 
 group code2string(source src : code, target tgt : stringR3) extends Element <<types>> {
@@ -161,7 +161,7 @@ group string2uri(source src : string, target tgt : uriR3) extends Element <<type
 }
 
 group decimal2unsignedInt(source src : decimal, target tgt : unsignedIntR3) extends Element <<types>> {
-  src.value as v -> tgt.value = v "unsignedInt2decimal-value";
+  src -> tgt.value = (src.round().toString().toInteger()) "unsignedInt2decimal-value";
 }
 
 group canonical2string(source src : canonical, target tgt : stringR3) extends Element <<types>> {
@@ -176,11 +176,11 @@ group id2oid(source src : id, target tgt : oidR3) extends Element <<types>> {
   src.value as v -> tgt.value = v;
 }
 
-group id2string(source src : id, target tgt : stringR3) extends Element <<type+>> {
+group id2string(source src : id, target tgt : stringR3) extends Element <<types>> {
   src.value as v -> tgt.value = v;
 }
 
-group code2oid(source src : code, target tgt : oidR3) extends Element <<type+>> {
+group code2oid(source src : code, target tgt : oidR3) extends Element <<types>> {
   src.value as v -> tgt.value = v;
 }
 

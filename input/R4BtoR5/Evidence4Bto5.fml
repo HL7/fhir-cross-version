@@ -73,12 +73,14 @@ group EvidenceStatisticAttributeEstimate(source src, target tgt) extends Backbon
   src.quantity -> tgt.quantity;
   src.level -> tgt.level;
   src.range -> tgt.range;
+  src.attributeEstimate as s -> tgt.attributeEstimate as t then EvidenceStatisticAttributeEstimate(s, t);
 }
 
 group EvidenceStatisticModelCharacteristic(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.value -> tgt.value;
   src.variable as s -> tgt.variable as t then EvidenceStatisticModelCharacteristicVariable(s, t);
+  src.attributeEstimate as s -> tgt.attributeEstimate as t then EvidenceStatisticAttributeEstimate(s, t);
 }
 
 group EvidenceStatisticModelCharacteristicVariable(source src, target tgt) extends BackboneElement {
@@ -95,5 +97,6 @@ group EvidenceCertainty(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.rating -> tgt.rating;
   src.rater -> tgt.rater;
+  src.subcomponent as s -> tgt.subcomponent as t then EvidenceCertainty(s, t);
 }
 

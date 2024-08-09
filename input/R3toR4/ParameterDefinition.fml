@@ -15,5 +15,6 @@ group ParameterDefinition(source src : ParameterDefinitionR3, target tgt : Param
   src.max -> tgt.max;
   src.documentation -> tgt.documentation;
   src.type -> tgt.type;
+  src.profile -> tgt.profile;
 }
 

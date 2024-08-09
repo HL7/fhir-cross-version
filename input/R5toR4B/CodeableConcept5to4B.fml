@@ -51,7 +51,7 @@ group Coding2CodeableConcept(source src : CodingR5, target tgt : CodeableConcept
 }
 
 group CodeableConcept2code(source src : CodeableConceptR5, target tgt : codeR4B, source sysUrl : string) extends Element <<types>> {
-  src.coding as s where s.system = sysUrl -> tgt then {
+  src.coding as s where (s.system = sysUrl) -> tgt then {
     s.code -> tgt.value;
   };
 }

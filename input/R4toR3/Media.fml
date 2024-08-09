@@ -12,7 +12,7 @@ group Media(source src : Media, target tgt : MediaR3) extends DomainResource <<t
   src.identifier -> tgt.identifier;
   src.basedOn -> tgt.basedOn;
   src.type as vs0 then {
-    vs0.coding as c where system = 'http://terminology.hl7.org/CodeSystem/media-type' then {
+    vs0.coding as c where (system = 'http://terminology.hl7.org/CodeSystem/media-type') then {
       c.code -> tgt.type;
     };
   };

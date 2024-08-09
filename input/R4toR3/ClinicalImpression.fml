@@ -27,7 +27,7 @@ group ClinicalImpression(source src : ClinicalImpression, target tgt : ClinicalI
   src.finding as vs0 -> tgt.finding as vt0 then finding(vs0, vt0);
   src.prognosisCodeableConcept -> tgt.prognosisCodeableConcept;
   src.prognosisReference -> tgt.prognosisReference;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.action' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.action') then {
     e.value : Reference -> tgt.action;
   };
   src.note -> tgt.note;

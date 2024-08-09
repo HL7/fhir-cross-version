@@ -23,7 +23,7 @@ group medProduct(source src, target tgt) extends BackboneElement {
 }
 
 group medIngredient(source src, target tgt) extends BackboneElement {
-  src.item where $this is Reference -> tgt.item "batch-item";
+  src.item : Reference -> tgt.item "batch-item";
   src.amount -> tgt.amount "batch-amount";
 }
 
@@ -39,7 +39,7 @@ group medPackage(source src, target tgt, target res) extends BackboneElement {
 }
 
 group medContent(source src, target tgt) extends BackboneElement {
-  src.item where $this is Reference -> tgt.item "content-item";
+  src.item : Reference -> tgt.item "content-item";
   src.amount -> tgt.amount "content-amount";
 }
 

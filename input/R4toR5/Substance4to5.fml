@@ -10,6 +10,7 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
 group Substance(source src : SubstanceR4, target tgt : SubstanceR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
+  src -> tgt.instance = true "instance"; // defaulting to true as a mandatory field
   src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sub.status-4to5', 'code');
   src.category -> tgt.category;
   src.code -> tgt.code;

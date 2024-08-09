@@ -12,17 +12,17 @@ group FamilyMemberHistory(source src : FamilyMemberHistory, target tgt : FamilyM
   src.identifier -> tgt.identifier;
   src.instantiatesCanonical -> tgt.definition;
   src.status -> tgt.status;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.notDone' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.notDone') then {
     e.value : boolean -> tgt.notDone;
   };
   src.dataAbsentReason -> tgt.notDoneReason;
-  src.dataAbsentReason where src.extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.notDone').empty() -> tgt.notDone = true;
+  src.dataAbsentReason where (src.extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.notDone').empty()) -> tgt.notDone = true;
   src.patient -> tgt.patient;
   src.date -> tgt.date;
   src.name -> tgt.name;
   src.relationship -> tgt.relationship;
   src.sex as cc then {
-    cc.coding as c where system = 'http://hl7.org/fhir/administrative-gender' then {
+    cc.coding as c where (system = 'http://hl7.org/fhir/administrative-gender') then {
       c.code -> tgt.gender;
     };
   };

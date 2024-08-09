@@ -22,8 +22,8 @@ group TestScript(source src : TestScript, target tgt : TestScriptR2) extends Dom
   src.experimental -> tgt.experimental "TestScript-experimental";
   src.publisher -> tgt.publisher "TestScript-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "Contract_name";
-    vs0.telecom -> vt0.telecom "Contract_telecom";
+    vs0.name -> vt0.name "ContractName";
+    vs0.telecom -> vt0.telecom "ContractTelecom";
   } "TestScript-contact";
   src.date -> tgt.date "TestScript-date";
   src.jurisdiction -> tgt.useContext "TestScript-useContext";

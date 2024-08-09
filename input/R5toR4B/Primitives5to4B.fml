@@ -123,7 +123,7 @@ group integer64(source src : integer64R5, target tgt : integerR4B) extends Eleme
   src.value as v -> tgt.value = v "integer64Value";
 }
 
-group integer642string(source src : integer64R5, target tgt : stringR4B) extends Element <<type+>> {
+group integer642string(source src : integer64R5, target tgt : stringR4B) extends Element <<types>> {
   src.value as v -> tgt.value = v "integer642stringValue";
 }
 
@@ -171,7 +171,7 @@ group unsignedInt(source src : unsignedIntR5, target tgt : unsignedIntR4B) exten
   src.value as v -> tgt.value = v "unsignedIntValue";
 }
 
-group integer642unsignedInt(source src : integer64R5, target tgt : unsignedIntR4B) extends Element <<type+>> {
+group integer642unsignedInt(source src : integer64R5, target tgt : unsignedIntR4B) extends Element <<types>> {
   src.value as v -> tgt.value = v "integer642unsignedIntValue";
 }
 

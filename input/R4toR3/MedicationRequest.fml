@@ -23,7 +23,7 @@ group MedicationRequest(source src : MedicationRequest, target tgt : MedicationR
   src.encounter -> tgt.context;
   src.supportingInformation -> tgt.supportingInformation;
   src.authoredOn -> tgt.authoredOn;
-  src as vs0 where requester.exists() or extension.where(url = '').exists() -> tgt.requester as vt then MedicationRequestRequester(src, vt) "requester";
+  src as vs0 where (requester.exists() or extension.where(url = '').exists()) -> tgt.requester as vt then MedicationRequestRequester(src, vt) "requester";
   src.recorder -> tgt.recorder;
   src.reasonCode -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;
@@ -38,7 +38,7 @@ group MedicationRequest(source src : MedicationRequest, target tgt : MedicationR
 
 group MedicationRequestRequester(source src, target tgt) {
   src.requester -> tgt.agent;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.requester.onBehalfOf' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.requester.onBehalfOf') then {
     e.value : Reference -> tgt.onBehalfOf;
   };
 }

@@ -31,5 +31,6 @@ group ProvenanceAgent(source src, target tgt) extends BackboneElement {
 group ProvenanceEntity(source src, target tgt) extends BackboneElement {
   src.role as v -> tgt.role = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/prv.en.role-4to5', 'code');
   src.what -> tgt.what;
+  src.agent as s -> tgt.agent as t then ProvenanceAgent(s, t);
 }
 

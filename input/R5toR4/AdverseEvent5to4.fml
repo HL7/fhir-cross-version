@@ -16,8 +16,8 @@ group AdverseEvent(source src : AdverseEventR5, target tgt : AdverseEventR4) ext
   src.subject -> tgt.subject;
   src.encounter -> tgt.encounter;
   src.occurrence : dateTime -> tgt.date "occurrenceDateTime";
-  src.occurrence : Period as v -> tgt.date = v.start "periodDateTime";
-  src.occurrence : Timing as v -> tgt.date = v.event "timingDateTime";
+  src.occurrence : Period as v then { v.start -> tgt.date; } "periodDateTime";
+  src.occurrence : Timing as v then { v.event -> tgt.date; } "timingDateTime";
   src.detected -> tgt.detected;
   src.recordedDate -> tgt.recordedDate;
   src.resultingEffect -> tgt.resultingCondition;
@@ -25,14 +25,14 @@ group AdverseEvent(source src : AdverseEventR5, target tgt : AdverseEventR4) ext
   src.seriousness -> tgt.seriousness;
   src.outcome -> tgt.outcome;
   src.recorder -> tgt.recorder;
-  src.participant as s -> tgt.contributor as t then AdverseEventParticipant(s, t);
+  src.participant as s then AdverseEventParticipant(s, tgt);
   src.study -> tgt.study;
   src.suspectEntity as s -> tgt.suspectEntity as t then AdverseEventSuspectEntity(s, t);
-  src.contributingFactor as s -> tgt.subjectMedicalHistory as t then AdverseEventContributingFactor(s, t);
+  src.contributingFactor as s -> tgt.subjectMedicalHistory as t then AdverseEventContributingFactor(s, tgt);
 }
 
 group AdverseEventParticipant(source src, target tgt) extends BackboneElement {
-  src.actor as v -> tgt = v "reference";
+  src.actor -> tgt.contributor "reference";
 }
 
 group AdverseEventSuspectEntity(source src, target tgt) extends BackboneElement {
@@ -47,6 +47,6 @@ group AdverseEventSuspectEntityCausality(source src, target tgt) extends Backbon
 }
 
 group AdverseEventContributingFactor(source src, target tgt) extends BackboneElement {
-  src.item : Reference as v -> tgt = v "reference";
+  src.item : Reference -> tgt.subjectMedicalHistory "reference";
 }
 

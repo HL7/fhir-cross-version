@@ -16,7 +16,7 @@ group ClaimResponse(source src : ClaimResponse, target tgt : ClaimResponseR3) ex
   src.insurer -> tgt.insurer;
   src.requestor -> tgt.requestProvider;
   src.request -> tgt.request;
-  src.outcome as vs where value in ('complete' | 'error' | 'partial') ->  tgt.outcome as vt,  vt.coding as c,  c.system = 'http://hl7.org/fhir/remittance-outcome',  c.code = vs;
+  src.outcome as vs where (vs in ('complete' | 'error' | 'partial')) ->  tgt.outcome as vt,  vt.coding as c,  c.system = 'http://hl7.org/fhir/remittance-outcome',  c.code = vs;
   src.disposition -> tgt.disposition;
   src.payeeType -> tgt.payeeType;
   src.item as s -> tgt.item as t then ClaimResponseItem(s, t);
@@ -25,7 +25,7 @@ group ClaimResponse(source src : ClaimResponse, target tgt : ClaimResponseR3) ex
   src.total as total then {
     total.category as vs then {
       total.amount as va then {
-        vs.coding as c where code = 'submitted' then {
+        vs.coding as c where (code = 'submitted') then {
           c -> tgt.totalCost as cost then Money(va, cost) "cost";
         };
       };
@@ -34,7 +34,7 @@ group ClaimResponse(source src : ClaimResponse, target tgt : ClaimResponseR3) ex
   src.total as total then {
     total.category as vs then {
       total.amount as va then {
-        vs.coding as c where code = 'benefit' then {
+        vs.coding as c where (code = 'benefit') then {
           c -> tgt.totalBenefit as cost then Money(va, cost) "totalBenefit";
         };
       };
@@ -67,7 +67,7 @@ group ClaimResponseItemAdjudication(source src, target tgt) extends BackboneElem
 group ClaimResponseItemDetail(source src, target tgt) extends BackboneElement {
   src.detailSequence -> tgt.sequenceLinkId;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
   src.subDetail as s -> tgt.subDetail as t then ClaimResponseItemDetailSubDetail(s, t);
 }
 

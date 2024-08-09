@@ -27,6 +27,7 @@ group ClaimResponse(source src : ClaimResponseR5, target tgt : ClaimResponseR4) 
   src.item as s -> tgt.item as t then ClaimResponseItem(s, t);
   src.addItem as s -> tgt.addItem as t then ClaimResponseAddItem(s, t);
   src.total as s -> tgt.total as t then ClaimResponseTotal(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
   src.payment as s -> tgt.payment as t then ClaimResponsePayment(s, t);
   src.fundsReserve -> tgt.fundsReserve;
   src.formCode -> tgt.formCode;
@@ -68,11 +69,13 @@ group ClaimResponseItemDetail(source src, target tgt) extends BackboneElement {
   src.detailSequence -> tgt.detailSequence;
   src.noteNumber -> tgt.noteNumber;
   src.subDetail as s -> tgt.subDetail as t then ClaimResponseItemDetailSubDetail(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
 }
 
 group ClaimResponseItemDetailSubDetail(source src, target tgt) extends BackboneElement {
   src.subDetailSequence -> tgt.subDetailSequence;
   src.noteNumber -> tgt.noteNumber;
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
 }
 
 group ClaimResponseAddItem(source src, target tgt) extends BackboneElement {
@@ -92,9 +95,10 @@ group ClaimResponseAddItem(source src, target tgt) extends BackboneElement {
   src.unitPrice -> tgt.unitPrice;
   src.factor -> tgt.factor;
   src.net -> tgt.net;
-  src.bodySite as s -> tgt.bodySite = s.site;
+  src.bodySite as s then { s.site -> tgt.bodySite; } "bodySite";
   src.noteNumber -> tgt.noteNumber;
   src.detail as s -> tgt.detail as t then ClaimResponseAddItemDetail(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
 }
 
 // group ClaimResponseAddItemBodySite(source src, target tgt) extends BackboneElement {
@@ -110,6 +114,7 @@ group ClaimResponseAddItemDetail(source src, target tgt) extends BackboneElement
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
   src.subDetail as s -> tgt.subDetail as t then ClaimResponseAddItemDetailSubDetail(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
 }
 
 group ClaimResponseAddItemDetailSubDetail(source src, target tgt) extends BackboneElement {
@@ -120,6 +125,7 @@ group ClaimResponseAddItemDetailSubDetail(source src, target tgt) extends Backbo
   src.factor -> tgt.factor;
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
+  src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s, t);
 }
 
 group ClaimResponseTotal(source src, target tgt) extends BackboneElement {

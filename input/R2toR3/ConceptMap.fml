@@ -29,8 +29,8 @@ group ConceptMap(source src : ConceptMapR2, target tgt : ConceptMap) extends Dom
   src.description -> tgt.description "ConceptMap-description";
   src.requirements -> tgt.purpose "ConceptMap-purpose";
   src.copyright -> tgt.copyright "ConceptMap-copyright";
-  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "ConceptMap-jurisdiction";
-  src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "ConceptMap-useContext";
+  src.useContext where (coding.system = 'urn:iso:std:iso:3166') -> tgt.jurisdiction "ConceptMap-jurisdiction";
+  src.useContext as vs where ((coding.system = 'urn:iso:std:iso:3166').not()) ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "ConceptMap-useContext";
   src.source -> tgt.source "ConceptMap-source";
   src.target -> tgt.target "ConceptMap-target";
   src.element as srcE then {

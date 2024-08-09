@@ -77,5 +77,6 @@ group ObservationComponent(source src, target tgt) extends BackboneElement {
   src.value : Period -> tgt.value "valuePeriod";
   src.dataAbsentReason -> tgt.dataAbsentReason;
   src.interpretation -> tgt.interpretation;
+  src.referenceRange as s -> tgt.referenceRange as t then ObservationReferenceRange(s, t);
 }
 

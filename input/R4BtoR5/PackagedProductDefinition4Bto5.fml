@@ -19,6 +19,7 @@ group PackagedProductDefinition(source src : PackagedProductDefinitionR4B, targe
   src.description -> tgt.description;
   src.legalStatusOfSupply as s -> tgt.legalStatusOfSupply as t then PackagedProductDefinitionLegalStatusOfSupply(s, t);
   src.marketingStatus -> tgt.marketingStatus;
+  src.characteristic as s -> tgt.characteristic as t, t.type = s "createType";
   src.copackagedIndicator -> tgt.copackagedIndicator;
   src.manufacturer -> tgt.manufacturer;
   src.package as s -> tgt.packaging as t then PackagedProductDefinitionPackaging(s, t);

@@ -32,8 +32,8 @@ group referenceSeq(source src, target tgt) extends BackboneElement {
   src.referenceSeqId -> tgt.referenceSeqId;
   src.referenceSeqPointer -> tgt.referenceSeqPointer;
   src.referenceSeqString -> tgt.referenceSeqString;
-  src.strand where value = 1 -> tgt.strand = 'watson';
-  src.strand where value = ( - 1) -> tgt.strand = 'crick';
+  src.strand as v where (v = 1) -> tgt.strand = 'watson';
+  src.strand as v where (v = ( - 1)) -> tgt.strand = 'crick';
   src.windowStart -> tgt.windowStart;
   src.windowEnd -> tgt.windowEnd;
 }

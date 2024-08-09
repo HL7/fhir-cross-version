@@ -5,6 +5,7 @@
 
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Identifier" alias IdentifierR3 as source
 uses "http://hl7.org/fhir/4.0/StructureDefinition/Identifier" alias Identifier as target
+uses "http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept" alias CodeableConceptR4 as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to4"
 
@@ -17,7 +18,7 @@ group Identifier(source src : IdentifierR3, target tgt : Identifier) extends Ele
   src.assigner -> tgt.assigner;
 }
 
-group Identifier2Codeable(source src, target tgt) extends Element {
+group Identifier2Codeable(source src : IdentifierR3, target tgt : CodeableConceptR4) extends Element {
   src -> tgt.coding as c then {
     src.system -> c.system;
     src.value -> c.code;

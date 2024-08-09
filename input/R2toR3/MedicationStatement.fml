@@ -14,11 +14,11 @@ group MedicationStatement(source src : MedicationStatementR2, target tgt : Medic
   src.informationSource -> tgt.informationSource "MedicationStatement-informationSource";
   src.dateAsserted -> tgt.dateAsserted "MedicationStatement-dateAsserted";
   src.status -> tgt.status "MedicationStatement-status";
-  src.wasNotTaken as vt where $this = true -> tgt.taken = 'n' "MedicationStatement-wasNotTaken";
-  src.wasNotTaken as vt where $this = false -> tgt.taken = 'y' "MedicationStatement-wasNotTaken";
+  src.wasNotTaken as vt where ($this = true) -> tgt.taken = 'n' "MedicationStatement-wasNotTaken";
+  src.wasNotTaken as vt where ($this = false) -> tgt.taken = 'y' "MedicationStatement-wasNotTaken";
   src.reasonNotTaken -> tgt.reasonNotTaken "MedicationStatement-reasonNotTaken";
-  src.reasonForUse where $this is CodeableConcept -> tgt.reasonCode "MedicationStatement-reasonForUse";
-  src.reasonForUse where $this is Reference -> tgt.reasonReference "MedicationStatement-reasonForUse";
+  src.reasonForUse : CodeableConcept -> tgt.reasonCode "MedicationStatement-reasonForUse";
+  src.reasonForUse : Reference -> tgt.reasonReference "MedicationStatement-reasonForUse";
   src.effective -> tgt.effective "MedicationStatement-effective";
   src.note -> tgt.note "MedicationStatement-note";
   src.supportingInformation -> tgt.derivedFrom "MedicationStatement-supportingInformation";
@@ -30,7 +30,7 @@ group mstDosage(source src, target tgt) extends Element {
   src.text -> tgt.text "DosageInstruction-text";
   src.timing -> tgt.timing "DosageInstruction-timing";
   src.asNeeded -> tgt.asNeeded "DosageInstruction-asNeeded";
-  src.site where $this is CodeableConcept -> tgt.site "DosageInstruction-site";
+  src.site : CodeableConcept -> tgt.site "DosageInstruction-site";
   src.route -> tgt.route "DosageInstruction-route";
   src.method -> tgt.method "DosageInstruction-method";
   src.quantity -> tgt.dose "DosageInstruction-quantity";

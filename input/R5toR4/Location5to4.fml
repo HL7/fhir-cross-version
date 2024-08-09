@@ -17,13 +17,22 @@ group Location(source src : LocationR5, target tgt : LocationR4) extends DomainR
   src.description -> tgt.description;
   src.mode as v -> tgt.mode = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/loc.mode-5to4', 'code');
   src.type -> tgt.type;
-  src.contact as s -> tgt.telecom = s.telecom;
+  src.contact as s then {
+    s.telecom -> tgt.telecom;
+  } "copyContactToTelecom";
   src.address -> tgt.address;
   src.form -> tgt.physicalType;
   src.position as s -> tgt.position as t then LocationPosition(s, t);
   src.managingOrganization -> tgt.managingOrganization;
   src.partOf -> tgt.partOf;
-  src.hoursOfOperation as hoo then { hoo.availableTime as s ->  tgt.hoursOfOperation as te,  te.daysOfWeek = s.daysOfWeek,  te.allDay = s.allDay,  te.openingTime = s.availableStartTime,  te.closingTime = s.availableEndTime "availableTime"; };
+  src.hoursOfOperation as hoo then { 
+    hoo.availableTime as s -> tgt.hoursOfOperation as te then {
+      s.daysOfWeek -> te.daysOfWeek;
+      s.allDay -> te.allDay;
+      s.availableStartTime -> te.openingTime;
+      s.availableEndTime -> te.closingTime;
+    } "availableTime";
+  } "hoursOfOperation";
   src -> tgt.availabilityExceptions = (src.hoursOfOperation.notAvailableTime.description.join('\n')) "availabilityExceptions";
   src.endpoint -> tgt.endpoint;
 }

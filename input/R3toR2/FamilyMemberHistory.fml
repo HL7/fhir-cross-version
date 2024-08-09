@@ -9,18 +9,18 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/FamilyMemberHistory" alias Fam
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group FamilyMemberHistory(source src : FamilyMemberHistory, target tgt : FamilyMemberHistoryR2) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "FamilyMemberHistory_identifier";
-  src.patient -> tgt.patient "FamilyMemberHistory_patient";
-  src.date -> tgt.date "FamilyMemberHistory_date";
-  src.status -> tgt.status "FamilyMemberHistory_status";
-  src.name -> tgt.name "FamilyMemberHistory_name";
-  src.relationship -> tgt.relationship "FamilyMemberHistory_relationship";
-  src.gender -> tgt.gender "FamilyMemberHistory_gender";
-  src.born -> tgt.born "FamilyMemberHistory_born";
-  src.age -> tgt.age "FamilyMemberHistory_age";
-  src.deceased -> tgt.deceased "FamilyMemberHistory_deceased";
-  src.note -> tgt.note "FamilyMemberHistory_note";
-  src.condition as vs0 -> tgt.condition as vt0 then fmhCondition(vs0, vt0) "FamilyMemberHistory_condition";
+  src.identifier -> tgt.identifier "FamilyMemberHistoryIdentifier";
+  src.patient -> tgt.patient "FamilyMemberHistoryPatient";
+  src.date -> tgt.date "FamilyMemberHistoryDate";
+  src.status -> tgt.status "FamilyMemberHistoryStatus";
+  src.name -> tgt.name "FamilyMemberHistoryName";
+  src.relationship -> tgt.relationship "FamilyMemberHistoryRelationship";
+  src.gender -> tgt.gender "FamilyMemberHistoryGender";
+  src.born -> tgt.born "FamilyMemberHistoryBorn";
+  src.age -> tgt.age "FamilyMemberHistoryAge";
+  src.deceased -> tgt.deceased "FamilyMemberHistoryDeceased";
+  src.note -> tgt.note "FamilyMemberHistoryNote";
+  src.condition as vs0 -> tgt.condition as vt0 then fmhCondition(vs0, vt0) "FamilyMemberHistoryCondition";
 }
 
 group fmhCondition(source src, target tgt) extends BackboneElement {

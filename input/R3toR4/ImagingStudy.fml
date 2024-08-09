@@ -12,9 +12,9 @@ group ImagingStudy(source src : ImagingStudyR3, target tgt : ImagingStudy) exten
   src.uid as s ->  tgt.identifier as i,  i.system = 'urn:dicom:uid',  i.value = s;
   src.identifier -> tgt.identifier;
   src.accession -> tgt.identifier;
-  src.availability where (value = 'OFFLINE') or (value = 'UNAVAILABLE') -> tgt.status = 'registered';
-  src.availability where (value = 'ONLINE') or (value = 'NEARLINE') -> tgt.status = 'available';
-  src.availability where value.empty() -> tgt.status = 'unknown';
+  src.availability as s where ((s = 'OFFLINE') or (s = 'UNAVAILABLE')) -> tgt.status = 'registered';
+  src.availability as s where ((s = 'ONLINE') or (s = 'NEARLINE')) -> tgt.status = 'available';
+  src.availability as s where (s.empty()) -> tgt.status = 'unknown';
   src.modalityList -> tgt.modality;
   src.patient -> tgt.subject;
   src.context -> tgt.encounter;

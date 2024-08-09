@@ -21,7 +21,9 @@ group MedicinalProductDefinition(source src : MedicinalProductDefinitionR5, targ
   src.marketingStatus -> tgt.marketingStatus;
   src.attachedDocument -> tgt.attachedDocument;
   src.masterFile -> tgt.masterFile;
-  src.contact as s -> tgt.contact = s.contact;
+  src.contact as s then {
+    s.contact -> tgt.contact;
+  } "copyContact";
   src.clinicalTrial -> tgt.clinicalTrial;
   src.name as s -> tgt.name as t then MedicinalProductDefinitionName(s, t);
   src.operation as s -> tgt.manufacturingBusinessOperation as t then MedicinalProductDefinitionOperation(s, t);
@@ -54,7 +56,9 @@ group MedicinalProductDefinitionNameUsage(source src, target tgt) extends Backbo
 // }
 group MedicinalProductDefinitionOperation(source src, target tgt) extends BackboneElement {
   src.type -> tgt.operationType;
-  src.effectiveDate : Period as s -> tgt.effectiveDate = s.start "effectiveDatePeriod";
+  src.effectiveDate : Period as s then {
+    s.start -> tgt.effectiveDate; 
+  } "effectiveDatePeriod";
   src.organization -> tgt.manufacturer;
   src.confidentialityIndicator -> tgt.confidentialityIndicator;
 }

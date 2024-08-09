@@ -18,8 +18,8 @@ group DataElement(source src : DataElementR2, target tgt : DataElement) extends 
   src.date -> tgt.date "DataElement-date";
   src.name -> tgt.name "DataElement-name";
   src.contact as vs0 -> tgt.contact as vt0 then decontact(vs0, vt0) "DataElement-contact";
-  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "DataElement-jurisdiction";
-  src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "DataElement-useContext";
+  src.useContext where (coding.system = 'urn:iso:std:iso:3166') -> tgt.jurisdiction "DataElement-jurisdiction";
+  src.useContext as vs where ((coding.system = 'urn:iso:std:iso:3166').not()) ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "DataElement-useContext";
   src.stringency -> tgt.stringency "DataElement-stringency";
   src.mapping as vs0 -> tgt.mapping as vt0 then deMapping(vs0, vt0) "DataElement-mapping";
   src.element as vs ->  tgt.element as vt,  create('boolean') as firstElement,  firstElement.value = 'false' then ElementDefinition(vs, vt, firstElement) "DataElement-element";

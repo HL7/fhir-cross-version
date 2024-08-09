@@ -6,6 +6,8 @@
 uses "http://hl7.org/fhir/1.0/StructureDefinition/Quantity" alias QuantityR2 as source
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Quantity" alias Quantity as target
 uses "http://hl7.org/fhir/3.0/StructureDefinition/Duration" alias Duration as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Age" alias Age as target
+uses "http://hl7.org/fhir/3.0/StructureDefinition/Money" alias Money as target
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/primitives2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Element2to3"
@@ -18,7 +20,23 @@ group Quantity(source src : QuantityR2, target tgt : Quantity) extends Element <
   src.code -> tgt.code "Quantity-code";
 }
 
-group QuantityToDuration(source src : QuantityR2, target tgt : Duration) extends Element {
+group QuantityToDuration(source src : QuantityR2, target tgt : Duration) extends Element <<types>> {
+  src.value -> tgt.value "Duration-value";
+  src.comparator -> tgt.comparator "Duration-comparator";
+  src.unit -> tgt.unit "Duration-unit";
+  src.system -> tgt.system "Duration-system";
+  src.code -> tgt.code "Duration-code";
+}
+
+group QuantityToAge(source src : QuantityR2, target tgt : Age) extends Element <<types>> {
+  src.value -> tgt.value "Duration-value";
+  src.comparator -> tgt.comparator "Duration-comparator";
+  src.unit -> tgt.unit "Duration-unit";
+  src.system -> tgt.system "Duration-system";
+  src.code -> tgt.code "Duration-code";
+}
+
+group QuantityToMoney(source src : QuantityR2, target tgt : Money) extends Element <<types>> {
   src.value -> tgt.value "Duration-value";
   src.comparator -> tgt.comparator "Duration-comparator";
   src.unit -> tgt.unit "Duration-unit";

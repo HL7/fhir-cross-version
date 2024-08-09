@@ -47,11 +47,93 @@ group TaskRestriction(source src, target tgt) extends BackboneElement {
 
 group TaskInput(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
-  src.value -> tgt.value;
+
+  src.value : base64Binary -> tgt.value;
+  src.value : boolean -> tgt.value;
+  src.value : code -> tgt.value;
+  src.value : date -> tgt.value;
+  src.value : dateTime -> tgt.value;
+  src.value : decimal -> tgt.value;
+  src.value : id -> tgt.value;
+  src.value : instant -> tgt.value;
+  src.value : integer -> tgt.value;
+  src.value : markdown -> tgt.value;
+  src.value : oid -> tgt.value;
+  src.value : positiveInt -> tgt.value;
+  src.value : string -> tgt.value;
+  src.value : time -> tgt.value;
+  src.value : unsignedInt -> tgt.value;
+  src.value : uri -> tgt.value;
+  src.value : Address -> tgt.value;
+  src.value : Age -> tgt.value;
+  src.value : Annotation -> tgt.value;
+  src.value : Attachment -> tgt.value;
+  src.value : CodeableConcept -> tgt.value;
+  src.value : Coding -> tgt.value;
+  src.value : ContactPoint -> tgt.value;
+  src.value : Count -> tgt.value;
+  src.value : Distance -> tgt.value;
+  src.value : Duration -> tgt.value;
+  src.value : HumanName -> tgt.value;
+  src.value : Identifier -> tgt.value;
+  src.value : Money -> tgt.value;
+  src.value : Period -> tgt.value;
+  src.value : Quantity -> tgt.value;
+  src.value : Range -> tgt.value;
+  src.value : Ratio -> tgt.value;
+  src.value : Reference -> tgt.value;
+  src.value : SampledData -> tgt.value;
+  src.value : Signature -> tgt.value;
+  src.value : Timing -> tgt.value;
+  src.value : Meta -> tgt.value;
+
+  // These are the other datatypes that are not in STU3 (must do backport extension for these)
+  // canonical,url,uuid,ContactDetail,Contributor,DataRequirement,Expression,ParameterDefinition,RelatedArtifact,TriggerDefinition,UsageContext,Dosage
 }
 
 group TaskOutput(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
-  src.value -> tgt.value;
+
+  src.value : base64Binary -> tgt.value;
+  src.value : boolean -> tgt.value;
+  src.value : code -> tgt.value;
+  src.value : date -> tgt.value;
+  src.value : dateTime -> tgt.value;
+  src.value : decimal -> tgt.value;
+  src.value : id -> tgt.value;
+  src.value : instant -> tgt.value;
+  src.value : integer -> tgt.value;
+  src.value : markdown -> tgt.value;
+  src.value : oid -> tgt.value;
+  src.value : positiveInt -> tgt.value;
+  src.value : string -> tgt.value;
+  src.value : time -> tgt.value;
+  src.value : unsignedInt -> tgt.value;
+  src.value : uri -> tgt.value;
+  src.value : Address -> tgt.value;
+  src.value : Age -> tgt.value;
+  src.value : Annotation -> tgt.value;
+  src.value : Attachment -> tgt.value;
+  src.value : CodeableConcept -> tgt.value;
+  src.value : Coding -> tgt.value;
+  src.value : ContactPoint -> tgt.value;
+  src.value : Count -> tgt.value;
+  src.value : Distance -> tgt.value;
+  src.value : Duration -> tgt.value;
+  src.value : HumanName -> tgt.value;
+  src.value : Identifier -> tgt.value;
+  src.value : Money -> tgt.value;
+  src.value : Period -> tgt.value;
+  src.value : Quantity -> tgt.value;
+  src.value : Range -> tgt.value;
+  src.value : Ratio -> tgt.value;
+  src.value : Reference -> tgt.value;
+  src.value : SampledData -> tgt.value;
+  src.value : Signature -> tgt.value;
+  src.value : Timing -> tgt.value;
+  src.value : Meta -> tgt.value;
+
+  // These are the other datatypes that are not in STU3 (must do backport extension for these)
+  // canonical,url,uuid,ContactDetail,Contributor,DataRequirement,Expression,ParameterDefinition,RelatedArtifact,TriggerDefinition,UsageContext,Dosage
 }
 

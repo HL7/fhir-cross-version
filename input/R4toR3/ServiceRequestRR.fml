@@ -32,7 +32,7 @@ group ServiceRequestR(source src : ServiceRequest, target tgt : ReferralRequestR
   src.orderDetail as cc then {
     cc.text -> tgt.description;
   };
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.description' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.description') then {
     e.value : string -> tgt.description;
   };
   src.supportingInfo -> tgt.supportingInfo;
@@ -42,7 +42,7 @@ group ServiceRequestR(source src : ServiceRequest, target tgt : ReferralRequestR
 
 group ServiceRequestRRequester(source src, target tgt) {
   src -> tgt.agent as v then Reference(src, v) "agent";
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.requester.onBehalfOf' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.requester.onBehalfOf') then {
     e.value : Reference -> tgt.onBehalfOf;
   };
 }

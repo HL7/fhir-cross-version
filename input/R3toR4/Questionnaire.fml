@@ -46,13 +46,13 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
   src.maxLength -> tgt.maxLength;
   src.options -> tgt.answerValueSet;
   src.option as s -> tgt.answerOption as t then option(s, t);
-  src.initial -> tgt.initial as t then initial(src, t);
+  src.initial as s -> tgt.initial as t, t.value = s "setInitialValue";
   src.item as s -> tgt.item as t then QuestionnaireItem(s, t);
 }
 
 group enableWhen(source src, target tgt) extends BackboneElement {
   src.question -> tgt.question;
-  src.hasAnswer as v where src.answer.empty() ->  tgt.operator = 'exists',  tgt.answer = v;
+  src.hasAnswer as v where (src.answer.empty()) ->  tgt.operator = 'exists',  tgt.answer = v;
   src.answer : boolean as v ->  tgt.answer = v,  tgt.operator = '=';
   src.answer : decimal as v ->  tgt.answer = v,  tgt.operator = '=';
   src.answer : integer as v ->  tgt.answer = v,  tgt.operator = '=';
@@ -69,9 +69,5 @@ group enableWhen(source src, target tgt) extends BackboneElement {
 
 group option(source src, target tgt) extends BackboneElement {
   src.value -> tgt.value;
-}
-
-group initial(source src, target tgt) extends BackboneElement {
-  src.initial -> tgt.value;
 }
 

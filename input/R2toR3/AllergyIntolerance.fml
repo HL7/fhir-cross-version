@@ -16,8 +16,8 @@ group AllergyIntolerance(source src : AllergyIntoleranceR2, target tgt : Allergy
   src.patient -> tgt.patient "AllergyIntolerance-patient";
   src.reporter -> tgt.asserter "AllergyIntolerance-reporter";
   src.substance -> tgt.code "AllergyIntolerance-substance";
-  src.status as v where ($this != 'refuted') and ($this != 'entered-in-error') -> tgt.clinicalStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ait.status-ait.clinicalStatus-2to3', 'code') "AllergyIntolerance-status-clinical";
-  src.status as v where ($this != 'active') and ($this != 'resolved') -> tgt.verificationStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ait.status-ait.verificationStatus-2to3', 'code') "AllergyIntolerance-Status-verification";
+  src.status as v where (($this != 'refuted') and ($this != 'entered-in-error')) -> tgt.clinicalStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ait.status-ait.clinicalStatus-2to3', 'code') "AllergyIntolerance-status-clinical";
+  src.status as v where (($this != 'active') and ($this != 'resolved')) -> tgt.verificationStatus = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ait.status-ait.verificationStatus-2to3', 'code') "AllergyIntolerance-Status-verification";
   src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ait.criticality-2to3', 'code') "AllergyIntolerance-criticality";
   src.type -> tgt.type "AllergyIntolerance-type";
   src.category -> tgt.category "AllergyIntolerance-category";

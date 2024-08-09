@@ -63,6 +63,7 @@ group ParametersParameter(source src, target tgt) extends BackboneElement {
   src.value : UsageContext -> tgt.value "valueUsageContext";
   src.value : Dosage -> tgt.value "valueDosage";
   src.value : Meta -> tgt.value "valueMeta";
-  src.resource : Resource -> tgt.resource "resourceResource";
+  src.resource -> tgt.resource "resourceResource";
+  src.part as s -> tgt.part as t then ParametersParameter(s, t);
 }
 

@@ -18,10 +18,12 @@ group ObservationDefinition(source src : ObservationDefinitionR5, target tgt : O
   src.preferredReportName -> tgt.preferredReportName;
   src.permittedUnit as s ->  tgt.quantitativeDetails as t,  t.customaryUnit as t1,  t1.coding = s;
   src.qualifiedValue as s -> tgt.qualifiedInterval as t then ObservationDefinitionQualifiedValue(s, t);
-  src.qualifiedValue as s -> tgt.validCodedValueSet = s.validCodedValueSet;
-  src.qualifiedValue as s -> tgt.normalCodedValueSet = s.normalCodedValueSet;
-  src.qualifiedValue as s -> tgt.abnormalCodedValueSet = s.abnormalCodedValueSet;
-  src.qualifiedValue as s -> tgt.criticalCodedValueSet = s.criticalCodedValueSet;
+  src.qualifiedValue as s then {
+    s.validCodedValueSet -> tgt.validCodedValueSet;
+    s.normalCodedValueSet -> tgt.normalCodedValueSet;
+    s.abnormalCodedValueSet -> tgt.abnormalCodedValueSet;
+    s.criticalCodedValueSet -> tgt.criticalCodedValueSet;
+  } "qualifiedValue";
 }
 
 group ObservationDefinitionQualifiedValue(source src, target tgt) extends BackboneElement {

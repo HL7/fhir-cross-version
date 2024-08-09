@@ -25,7 +25,7 @@ group VisionPrescriptionDispense(source src, target tgt) extends BackboneElement
   src.sphere -> tgt.sphere;
   src.cylinder -> tgt.cylinder;
   src.axis -> tgt.axis;
-  src where src.prism.exists() or src.base.exists() -> tgt.prism as t then {
+  src where (src.prism.exists() or src.base.exists()) -> tgt.prism as t then {
     src.prism -> t.amount;
     src.base -> t.base;
   } "prism";

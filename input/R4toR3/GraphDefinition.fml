@@ -38,7 +38,7 @@ group GraphDefinitionLink(source src, target tgt) extends BackboneElement {
 group linkTarget(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.profile -> tgt.profile;
-  src.compartment as vs0 where use = 'requirement' -> tgt.compartment as vt0 then compartment(vs0, vt0);
+  src.compartment as vs0 where (use = 'requirement') -> tgt.compartment as vt0 then compartment(vs0, vt0);
   src.link as vs0 -> tgt.link as vt0 then GraphDefinitionLink(vs0, vt0);
 }
 

@@ -30,6 +30,7 @@ group SubscriptionTopic(source src : SubscriptionTopicR5, target tgt : Subscript
   src.resourceTrigger as s -> tgt.resourceTrigger as t then SubscriptionTopicResourceTrigger(s, t);
   src.eventTrigger as s -> tgt.eventTrigger as t then SubscriptionTopicEventTrigger(s, t);
   src.notificationShape as s -> tgt.notificationShape as t then SubscriptionTopicNotificationShape(s, t);
+  src.canFilterBy as s -> tgt.canFilterBy as t then SubscriptionTopicCanFilterBy(s, t);
 }
 
 group SubscriptionTopicResourceTrigger(source src, target tgt) extends BackboneElement {
@@ -58,5 +59,13 @@ group SubscriptionTopicNotificationShape(source src, target tgt) extends Backbon
   src.resource -> tgt.resource;
   src.include -> tgt.include;
   src.revInclude -> tgt.revInclude;
+}
+
+group SubscriptionTopicCanFilterBy(source src, target tgt) extends BackboneElement {
+  src.description -> tgt.description;
+  src.resource -> tgt.resource;
+  src.filterParameter -> tgt.filterParameter;
+  src.filterDefinition -> tgt.filterDefinition;
+  src.modifier -> tgt.modifier;
 }
 

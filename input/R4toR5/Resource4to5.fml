@@ -8,7 +8,7 @@ uses "http://hl7.org/fhir/5.0/StructureDefinition/Resource" alias ResourceR5 as 
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4to5"
 
-group Resource(source src : ResourceR4, target tgt : ResourceR5) extends Base <<type+>> {
+group Resource(source src : ResourceR4, target tgt : ResourceR5) <<type+>> {
   src.id -> tgt.id;
   src.meta -> tgt.meta;
   src.implicitRules -> tgt.implicitRules;

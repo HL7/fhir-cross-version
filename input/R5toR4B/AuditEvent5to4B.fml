@@ -13,23 +13,22 @@ group AuditEvent(source src : AuditEventR5, target tgt : AuditEventR4B) extends 
   src.code -> tgt.subtype;
   src.action as v -> tgt.action = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sev.action-5to4b', 'code');
   src.recorded -> tgt.recorded;
-  src.outcome as s -> tgt.outcome as t then AuditEventOutcome(s, t);
-  src.outcome as s -> tgt.outcomeDesc as t then AuditEventOutcomeDesc(s, t);
+  src.outcome as s then AuditEventOutcome(s, tgt);
   src.agent as s -> tgt.agent as t then AuditEventAgent(s, t);
   src.source as s -> tgt.source as t then AuditEventSource(s, t);
   src.entity as s -> tgt.entity as t then AuditEventEntity(s, t);
 }
 
-group AuditEventOutcome(source src, target tgt) extends BackboneElement {
-  src.code as s where code = 'success' -> tgt = '0';
-  src.code as s where code = 'information' -> tgt = '0';
-  src.code as s where code = 'warning' -> tgt = '4';
-  src.code as s where code = 'error' -> tgt = '8';
-  src.code as s where code = 'fatal' -> tgt = '12';
-}
-
-group AuditEventOutcomeDesc(source src, target tgt) extends BackboneElement {
-  src.code as s -> tgt = s.display;
+group AuditEventOutcome(source src, target tgt) { 
+  // The code
+  src.code as s where (s.code = 'success' and s.system = 'http://hl7.org/fhir/issue-severity') -> tgt.outcome = '0';
+  src.code as s where (s.code = 'information' and s.system = 'http://hl7.org/fhir/issue-severity') -> tgt.outcome = '0';
+  src.code as s where (s.code = 'warning' and s.system = 'http://hl7.org/fhir/issue-severity') -> tgt.outcome = '4';
+  src.code as s where (s.code = 'error' and s.system = 'http://hl7.org/fhir/issue-severity') -> tgt.outcome = '8';
+  src.code as s where (s.code = 'fatal' and s.system = 'http://hl7.org/fhir/issue-severity') -> tgt.outcome = '12';
+  
+  // the detail
+  src as s -> tgt.outcomeDesc = (s.detail.text.first()) "outcomeDesc";
 }
 
 group AuditEventAgent(source src, target tgt) extends BackboneElement {
@@ -39,7 +38,7 @@ group AuditEventAgent(source src, target tgt) extends BackboneElement {
   src.requestor -> tgt.requestor;
   src.location -> tgt.location;
   src.policy -> tgt.policy;
-  src.network : Reference as v ->  tgt.network as t,  t.address = v.display "networkReference";
+  src.network : Reference as v ->  tgt.network as t then { v.display -> t.address; } "networkReference";
   src.network : uri as v ->  tgt.network as t,  t.address = v "networkUri";
   src.network : string as v ->  tgt.network as t,  t.address = v "networkString";
   src.authorization -> tgt.purposeOfUse;

@@ -51,6 +51,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefitR4B, target tgt : Ex
   src.processNote as s -> tgt.processNote as t then ExplanationOfBenefitProcessNote(s, t);
   src.benefitPeriod -> tgt.benefitPeriod;
   src.benefitBalance as s -> tgt.benefitBalance as t then ExplanationOfBenefitBenefitBalance(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitRelated(source src, target tgt) extends BackboneElement {
@@ -181,6 +182,7 @@ group ExplanationOfBenefitItemDetail(source src, target tgt) extends BackboneEle
   src.udi -> tgt.udi;
   src.noteNumber -> tgt.noteNumber;
   src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitItemDetailSubDetail(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitItemDetailSubDetail(source src, target tgt) extends BackboneElement {
@@ -196,6 +198,7 @@ group ExplanationOfBenefitItemDetailSubDetail(source src, target tgt) extends Ba
   src.net -> tgt.net;
   src.udi -> tgt.udi;
   src.noteNumber -> tgt.noteNumber;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitAddItem(source src, target tgt) extends BackboneElement {
@@ -219,6 +222,7 @@ group ExplanationOfBenefitAddItem(source src, target tgt) extends BackboneElemen
   src.subSite as s ->  tgt.bodySite as t,  t.subSite = s;
   src.noteNumber -> tgt.noteNumber;
   src.detail as s -> tgt.detail as t then ExplanationOfBenefitAddItemDetail(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 // group ExplanationOfBenefitAddItemBodySite(source src, target tgt) extends BackboneElement {
@@ -234,6 +238,7 @@ group ExplanationOfBenefitAddItemDetail(source src, target tgt) extends Backbone
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
   src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitAddItemDetailSubDetail(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitAddItemDetailSubDetail(source src, target tgt) extends BackboneElement {
@@ -244,6 +249,7 @@ group ExplanationOfBenefitAddItemDetailSubDetail(source src, target tgt) extends
   src.factor -> tgt.factor;
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitTotal(source src, target tgt) extends BackboneElement {
@@ -262,9 +268,9 @@ group ExplanationOfBenefitPayment(source src, target tgt) extends BackboneElemen
 
 group ExplanationOfBenefitProcessNote(source src, target tgt) extends BackboneElement {
   src.number -> tgt.number;
-  src.type as s where code = 'display' ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'display',  tcc.display = 'display';
-  src.type as s where code = 'print' ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'print',  tcc.display = 'Print (Form)';
-  src.type as s where code = 'printoper' ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'printoper',  tcc.display = 'Print (Operator)';
+  src.type as s where (code = 'display') ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'display',  tcc.display = 'display';
+  src.type as s where (code = 'print') ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'print',  tcc.display = 'Print (Form)';
+  src.type as s where (code = 'printoper') ->  tgt.type = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/note-type',  tcc.code = 'printoper',  tcc.display = 'Print (Operator)';
   src.text -> tgt.text;
   src.language -> tgt.language;
 }

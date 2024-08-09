@@ -28,10 +28,10 @@ group PlanDefinition(source src : PlanDefinitionR3, target tgt : PlanDefinition)
   src.useContext -> tgt.useContext;
   src.jurisdiction -> tgt.jurisdiction;
   src.topic -> tgt.topic;
-  src.contributor as vs where type = 'author' -> tgt.author as vt then Contributor(vs, vt);
-  src.contributor as vs where type = 'editor' -> tgt.editor as vt then Contributor(vs, vt);
-  src.contributor as vs where type = 'reviewer' -> tgt.reviewer as vt then Contributor(vs, vt);
-  src.contributor as vs where type = 'endorser' -> tgt.endorser as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'author') -> tgt.author as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'editor') -> tgt.editor as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'reviewer') -> tgt.reviewer as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'endorser') -> tgt.endorser as vt then Contributor(vs, vt);
   src.contact -> tgt.contact;
   src.copyright -> tgt.copyright;
   src.relatedArtifact -> tgt.relatedArtifact;
@@ -75,6 +75,7 @@ group PlanDefinitionAction(source src, target tgt) extends BackboneElement {
   src.timing : Duration as vs -> tgt.timing = create('Duration') as vt then Duration(vs, vt) "timingDuration";
   src.timing : Range as vs -> tgt.timing = create('Range') as vt then Range(vs, vt) "timingRange";
   src.timing : Timing as vs -> tgt.timing = create('Timing') as vt then Timing(vs, vt) "timingTiming";
+  src.participant as vs -> tgt.participant as vt then PlanDefinitionActionParticipant(vs, vt) "participant";
   src.type -> tgt.type;
   src.groupingBehavior -> tgt.groupingBehavior;
   src.selectionBehavior -> tgt.selectionBehavior;
@@ -99,6 +100,11 @@ group PlanDefinitionRelatedAction(source src, target tgt) extends BackboneElemen
   src.relationship -> tgt.relationship;
   src.offset : Duration as vs -> tgt.offset = create('Duration') as vt then Duration(vs, vt) "offsetDuration";
   src.offset : Range as vs -> tgt.offset = create('Range') as vt then Range(vs, vt) "offsetRange";
+}
+
+group PlanDefinitionActionParticipant(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.role -> tgt.role;
 }
 
 group dynamicValue(source src, target tgt) extends BackboneElement {

@@ -18,7 +18,9 @@ group Consent(source src : ConsentR5, target tgt : ConsentR4) extends DomainReso
   src.sourceAttachment -> tgt.source;
   src.sourceReference -> tgt.source;
   src.regulatoryBasis -> tgt.policyRule;
-  src.policyBasis as s ->  tgt.policy as t,  t.uri = s.url;
+  src.policyBasis as s ->  tgt.policy as t then {
+     s.url -> t.uri;
+  } "policyBasis";
   src.verification as s -> tgt.verification as t then ConsentVerification(s, t);
   src.provision as s -> tgt.provision as t then ConsentProvision(s, t);
 }
@@ -43,6 +45,7 @@ group ConsentProvision(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.dataPeriod -> tgt.dataPeriod;
   src.data as s -> tgt.data as t then ConsentProvisionData(s, t);
+  src.provision as s -> tgt.provision as t then ConsentProvision(s, t);
 }
 
 group ConsentProvisionActor(source src, target tgt) extends BackboneElement {

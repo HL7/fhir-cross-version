@@ -32,10 +32,10 @@ group MedicationDispense(source src : MedicationDispense, target tgt : Medicatio
   src.substitution as vs0 -> tgt.substitution as vt0 then MedicationDispenseSubst(vs0, vt0);
   src.detectedIssue -> tgt.detectedIssue;
   src.eventHistory -> tgt.eventHistory;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.notDone' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.notDone') then {
     e.value : boolean -> tgt.notDone;
   };
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.notDoneReason' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.notDoneReason') then {
     e.value : CodeableConcept -> tgt.notDoneReason;
     e.value : Reference -> tgt.notDoneReason;
   };
@@ -43,7 +43,7 @@ group MedicationDispense(source src : MedicationDispense, target tgt : Medicatio
 
 group MedicationDispenseActor(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.actor;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.performer.onBehalfOf' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.performer.onBehalfOf') then {
     e.value : Reference -> tgt.onBehalfOf;
   };
 }

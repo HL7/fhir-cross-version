@@ -42,6 +42,7 @@ group SubstancePolymerRepeatRepeatUnit(source src, target tgt) extends BackboneE
   src.orientation -> tgt.orientationOfPolymerisation;
   src.degreeOfPolymerisation as s -> tgt.degreeOfPolymerisation as t then SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation(s, t);
   src.structuralRepresentation as s -> tgt.structuralRepresentation as t then SubstancePolymerRepeatRepeatUnitStructuralRepresentation(s, t);
+  src.amount as sa -> tgt.amount as t, t.amount = create('Quantity') as q, q.value = sa "convertAmount"; 
 }
 
 group SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation(source src, target tgt) extends BackboneElement {

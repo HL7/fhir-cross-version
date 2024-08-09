@@ -13,30 +13,30 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 // a procedure request back to a DiagnosticOrder, but they are marked with an
 // extension in case this helps
 
-group ProcedureRequestDO(source src : ProcedureRequest, target tgt : DiagnosticOrderR2) extends DomainResource <<type+>> {
-  src.subject -> tgt.subject "DiagnosticOrder_subject";
+group ProcedureRequestDO(source src : ProcedureRequest, target tgt : DiagnosticOrderR2) extends DomainResource <<types>> {
+  src.subject -> tgt.subject "DiagnosticOrderSubject";
   src.requester as v then {
-    v.agent -> tgt.orderer "DiagnosticOrder_orderer_inner";
-  } "DiagnosticOrder_orderer";
-  src.identifier -> tgt.identifier "DiagnosticOrder_identifier";
-  src.context -> tgt.encounter "DiagnosticOrder_encounter";
-  src.reasonCode -> tgt.reason "DiagnosticOrder_reason";
-  src.supportingInfo -> tgt.supportingInformation "DiagnosticOrder_supportingInformation";
-  src.status where src.intent = 'proposal' -> tgt.status = 'proposed' "DiagnosticOrder_status1";
-  src.status where src.intent = 'plan' -> tgt.status = 'planned' "DiagnosticOrder_status2";
-  src.status as v where (src.intent != 'proposal') and (src.intent != 'plan') -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pcrq.status-dgo.status-3to2', 'code') "DiagnosticOrder_status3";
-  src.priority -> tgt.priority "DiagnosticOrder_priority";
-  src where src.authoredOn.exists() or src.requester.exists() -> tgt.event as ev then doEventDO(src, ev) "DiagnosticOrder_event";
-  src where src.code.exists() -> tgt.item as it then doItemDO(src, it) "DiagnosticOrder_item";
-  src.note -> tgt.note "DiagnosticOrder_note";
+    v.agent -> tgt.orderer "DiagnosticOrderOrdererInner";
+  } "DiagnosticOrderOrderer";
+  src.identifier -> tgt.identifier "DiagnosticOrderIdentifier";
+  src.context -> tgt.encounter "DiagnosticOrderEncounter";
+  src.reasonCode -> tgt.reason "DiagnosticOrderReason";
+  src.supportingInfo -> tgt.supportingInformation "DiagnosticOrderSupportingInformation";
+  src.status where (src.intent = 'proposal') -> tgt.status = 'proposed' "DiagnosticOrderStatus1";
+  src.status where (src.intent = 'plan') -> tgt.status = 'planned' "DiagnosticOrderStatus2";
+  src.status as v where ((src.intent != 'proposal') and (src.intent != 'plan')) -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pcrq.status-dgo.status-3to2', 'code') "DiagnosticOrderStatus3";
+  src.priority -> tgt.priority "DiagnosticOrderPriority";
+  src where (src.authoredOn.exists() or src.requester.exists()) -> tgt.event as ev then doEventDO(src, ev) "DiagnosticOrderEvent";
+  src where (src.code.exists()) -> tgt.item as it then doItemDO(src, it) "DiagnosticOrderItem";
+  src.note -> tgt.note "DiagnosticOrderNote";
 }
 
 group doEventDO(source src, target tgt) {
-  src -> tgt.status = 'requested' "event_status";
-  src.authoredOn -> tgt.dateTime "event_dateTime";
+  src -> tgt.status = 'requested' "eventStatus";
+  src.authoredOn -> tgt.dateTime "eventDateTime";
 }
 
 group doItemDO(source src, target tgt) {
-  src.code -> tgt.code "item_code";
+  src.code -> tgt.code "itemCode";
 }
 

@@ -12,7 +12,7 @@ group MessageHeader(source src : MessageHeader, target tgt : MessageHeaderR3) ex
   src.event : Coding -> tgt.event;
   src.destination as vs0 -> tgt.destination as vt0 then destination(vs0, vt0, tgt);
   src.sender -> tgt.sender;
-  src.extension as ext where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.timestamp' then {
+  src.extension as ext where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.timestamp') then {
     ext.value : instant -> tgt.timestamp "timestamp2";
   } "timestamp";
   src.enterer -> tgt.enterer;

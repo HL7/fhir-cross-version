@@ -23,7 +23,7 @@ group Patient(source src : Patient, target tgt : PatientR3) extends DomainResour
   src.multipleBirth : integer as vs -> tgt.multipleBirth = create('integer') as vt then integer(vs, vt) "multipleBirthInteger";
   src.photo -> tgt.photo;
   src.contact as vs0 -> tgt.contact as vt0 then PatientContact(vs0, vt0);
-  src.extension as vs0 where url = 'http://hl7.org/fhir/StructureDefinition/patient-animal' -> tgt.animal as vt0 then animal(vs0, vt0) "animal";
+  src.extension as vs0 where (url = 'http://hl7.org/fhir/StructureDefinition/patient-animal') -> tgt.animal as vt0 then animal(vs0, vt0) "animal";
   src.communication as vs0 -> tgt.communication as vt0 then communication(vs0, vt0);
   src.generalPractitioner -> tgt.generalPractitioner;
   src.managingOrganization -> tgt.managingOrganization;
@@ -41,13 +41,13 @@ group PatientContact(source src, target tgt) extends BackboneElement {
 }
 
 group animal(source src, target tgt) {
-  src.extension as ext where url = 'species' then {
+  src.extension as ext where (url = 'species') then {
     ext.value : CodeableConcept as vs0 -> tgt.species = vs0 "species2";
   } "species";
-  src.extension as ext where url = 'breed' then {
+  src.extension as ext where (url = 'breed') then {
     ext.value : CodeableConcept as vs0 -> tgt.breed = vs0 "breed";
   } "breed";
-  src.extension as ext where url = 'genderStatus' then {
+  src.extension as ext where (url = 'genderStatus') then {
     ext.value : CodeableConcept as vs0 -> tgt.genderStatus = vs0 "genderStatus";
   } "genderStatus";
 }

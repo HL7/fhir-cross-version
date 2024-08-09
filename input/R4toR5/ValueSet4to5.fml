@@ -33,6 +33,7 @@ group ValueSetCompose(source src, target tgt) extends BackboneElement {
   src.lockedDate -> tgt.lockedDate;
   src.inactive -> tgt.inactive;
   src.include as s -> tgt.include as t then ValueSetComposeInclude(s, t);
+  src.exclude as s -> tgt.exclude as t then ValueSetComposeInclude(s, t);
 }
 
 group ValueSetComposeInclude(source src, target tgt) extends BackboneElement {
@@ -89,5 +90,6 @@ group ValueSetExpansionContains(source src, target tgt) extends BackboneElement 
   src.code -> tgt.code;
   src.display -> tgt.display;
   src.contains as s -> tgt.contains as t then ValueSetExpansionContains(s, t);
+  src.designation as s -> tgt.designation as t then ValueSetComposeIncludeConceptDesignation(s, t);
 }
 

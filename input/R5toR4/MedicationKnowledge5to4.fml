@@ -23,6 +23,7 @@ group MedicationKnowledge(source src : MedicationKnowledgeR5, target tgt : Medic
   src.medicineClassification as s -> tgt.medicineClassification as t then MedicationKnowledgeMedicineClassification(s, t);
   src.regulatory as s -> tgt.regulatory as t then MedicationKnowledgeRegulatory(s, t);
   src.definitional as s -> tgt.drugCharacteristic as t then MedicationKnowledgeDefinitional(s, t);
+  src.packaging; // This is not mapped to R5 as the property is now about pricing information, not package content
 }
 
 group MedicationKnowledgeRelatedMedicationKnowledge(source src, target tgt) extends BackboneElement {

@@ -9,17 +9,17 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/EpisodeOfCare" alias EpisodeOf
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group EpisodeOfCare(source src : EpisodeOfCareR2, target tgt : EpisodeOfCare) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "EpisodeOfCare_identifier";
-  src.status -> tgt.status "EpisodeOfCare_status";
-  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then epcStatusHistory(vs0, vt0) "EpisodeOfCare_statusHistory";
-  src.type -> tgt.type "EpisodeOfCare_type";
-  src.condition as v ->  tgt.diagnosis as d,  d.condition = v "EpisodeOfCare_condition";
-  src.patient -> tgt.patient "EpisodeOfCare_patient";
-  src.managingOrganization -> tgt.managingOrganization "EpisodeOfCare_managingOrganization";
-  src.period -> tgt.period "EpisodeOfCare_period";
-  src.referralRequest -> tgt.referralRequest "EpisodeOfCare_referralRequest";
-  src.careManager -> tgt.careManager "EpisodeOfCare_careManager";
-  src where src.careTeam.exists() -> create('CareTeam') as vt0 then epiCareTeam(src, vt0, tgt) "EpisodeOfCare_careteam";
+  src.identifier -> tgt.identifier "EpisodeOfCareIdentifier";
+  src.status -> tgt.status "EpisodeOfCareStatus";
+  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then epcStatusHistory(vs0, vt0) "EpisodeOfCareStatusHistory";
+  src.type -> tgt.type "EpisodeOfCareType";
+  src.condition as v ->  tgt.diagnosis as d,  d.condition = v "EpisodeOfCareCondition";
+  src.patient -> tgt.patient "EpisodeOfCarePatient";
+  src.managingOrganization -> tgt.managingOrganization "EpisodeOfCareManagingOrganization";
+  src.period -> tgt.period "EpisodeOfCarePeriod";
+  src.referralRequest -> tgt.referralRequest "EpisodeOfCareReferralRequest";
+  src.careManager -> tgt.careManager "EpisodeOfCareCareManager";
+  src where (src.careTeam.exists()) -> create('CareTeam') as vt0 then epiCareTeam(src, vt0, tgt) "EpisodeOfCareCareteam";
 }
 
 group epcStatusHistory(source src, target tgt) extends BackboneElement {

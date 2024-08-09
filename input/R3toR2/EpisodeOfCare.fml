@@ -9,21 +9,21 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/EpisodeOfCare" alias EpisodeOf
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group EpisodeOfCare(source src : EpisodeOfCare, target tgt : EpisodeOfCareR2) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "EpisodeOfCare_identifier";
-  src.status -> tgt.status "EpisodeOfCare_status";
-  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then epcStatusHistory(vs0, vt0) "EpisodeOfCare_statusHistory";
-  src.type -> tgt.type "EpisodeOfCare_type";
-  src.diagnosis as d then epcDiagnosis(d, tgt) "EpisodeOfCare_condition";
-  src.patient -> tgt.patient "EpisodeOfCare_patient";
-  src.managingOrganization -> tgt.managingOrganization "EpisodeOfCare_managingOrganization";
-  src.period -> tgt.period "EpisodeOfCare_period";
-  src.referralRequest -> tgt.referralRequest "EpisodeOfCare_referralRequest";
-  src.careManager -> tgt.careManager "EpisodeOfCare_careManager";
-  src.team as vs where reference.resolve().exists() -> (src.team.reference.resolve()) as ct then epiCareTeam(ct, tgt) "EpisodeOfCare_careTeam";
+  src.identifier -> tgt.identifier "EpisodeOfCareIdentifier";
+  src.status -> tgt.status "EpisodeOfCareStatus";
+  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then epcStatusHistory(vs0, vt0) "EpisodeOfCareStatusHistory";
+  src.type -> tgt.type "EpisodeOfCareType";
+  src.diagnosis as d then epcDiagnosis(d, tgt) "EpisodeOfCareCondition";
+  src.patient -> tgt.patient "EpisodeOfCarePatient";
+  src.managingOrganization -> tgt.managingOrganization "EpisodeOfCareManagingOrganization";
+  src.period -> tgt.period "EpisodeOfCarePeriod";
+  src.referralRequest -> tgt.referralRequest "EpisodeOfCareReferralRequest";
+  src.careManager -> tgt.careManager "EpisodeOfCareCareManager";
+  src.team as vs where (reference.resolve().exists()) -> (src.team.reference.resolve()) as ct then epiCareTeam(ct, tgt) "EpisodeOfCareCareTeam";
 }
 
 group epcDiagnosis(source src, target tgt) extends BackboneElement {
-  src.condition as v where src.role.coding.code.contains('AD').not() and role.coding.code.contains('DD').not() -> tgt.condition = v "indication-condition1";
+  src.condition as v where (src.role.coding.code.contains('AD').not() and role.coding.code.contains('DD').not()) -> tgt.condition = v "indication-condition1";
 }
 
 group epcStatusHistory(source src, target tgt) extends BackboneElement {

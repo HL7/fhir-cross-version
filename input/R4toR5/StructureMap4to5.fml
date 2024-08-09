@@ -58,6 +58,7 @@ group StructureMapGroupRule(source src, target tgt) extends BackboneElement {
   src.target as s -> tgt.target as t then StructureMapGroupRuleTarget(s, t);
   src.dependent as s -> tgt.dependent as t then StructureMapGroupRuleDependent(s, t);
   src.documentation -> tgt.documentation;
+  src.rule as s -> tgt.rule as t then StructureMapGroupRule(s, t);
 }
 
 group StructureMapGroupRuleSource(source src, target tgt) extends BackboneElement {

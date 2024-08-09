@@ -12,7 +12,7 @@ group AdverseEvent(source src : AdverseEventR3, target tgt : AdverseEvent) exten
   src.identifier -> tgt.identifier;
   src.category as vs ->  tgt.category as vt,  vt.coding as c,  c.system = 'http://terminology.hl7.org/CodeSystem/adverse-event-category',  c.code = vs;
   src.type -> tgt.event;
-  src.description as vs where src.type.exists().not() ->  tgt.event as vt,  vt.text = vs "use description in leiu of type for event";
+  src.description as vs where (src.type.exists().not()) ->  tgt.event as vt,  vt.text = vs "DescriptionWhenNoEvent"; // use description in leiu of type for event
   src.subject -> tgt.subject;
   src.date -> tgt.date;
   src.reaction -> tgt.resultingCondition;
@@ -29,13 +29,12 @@ group AdverseEvent(source src : AdverseEventR3, target tgt : AdverseEvent) exten
 
 group AdverseEventSuspectEntity(source src, target tgt) extends BackboneElement {
   src.instance -> tgt.instance;
-  src as s -> tgt.causality as t then AdverseEventSuspectEntityCausality(src, t) "CopyCausality";
-}
-
-group AdverseEventSuspectEntityCausality(source src, target tgt) extends BackboneElement {
-  src.causalityAssessment -> tgt.assessment;
-  src.causalityProductRelatedness -> tgt.productRelatedness;
-  src.causalityAuthor -> tgt.author;
-  src.causalityMethod -> tgt.method;
+  src.causality; // not migrated to R4
+  src -> tgt.causality as t then {
+    src.causalityAssessment -> t.assessment;
+    src.causalityProductRelatedness -> t.productRelatedness;
+    src.causalityAuthor -> t.author;
+    src.causalityMethod -> t.method; 
+  } "CopyCausality";
 }
 

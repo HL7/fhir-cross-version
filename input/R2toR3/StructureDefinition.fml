@@ -25,8 +25,8 @@ group StructureDefinition(source src : StructureDefinitionR2, target tgt : Struc
   src.description -> tgt.description "StructureDefinition-description";
   src.requirements -> tgt.purpose "StructureDefinition-purpose";
   src.copyright -> tgt.copyright "StructureDefinition-copyright";
-  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "StructureDefinition-jurisdiction";
-  src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value as vt then CodeableConcept(vs, vt) "StructureDefinition-useContext";
+  src.useContext where (coding.system = 'urn:iso:std:iso:3166') -> tgt.jurisdiction "StructureDefinition-jurisdiction";
+  src.useContext as vs where ((coding.system = 'urn:iso:std:iso:3166').not()) ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value as vt then CodeableConcept(vs, vt) "StructureDefinition-useContext";
   src.code -> tgt.keyword "StructureDefinition-keyword";
   src.fhirVersion -> tgt.fhirVersion "StructureDefinition-fhirVersion";
   src.mapping as vs0 -> tgt.mapping as vt0 then {
@@ -35,13 +35,13 @@ group StructureDefinition(source src : StructureDefinitionR2, target tgt : Struc
     vs0.name -> vt0.name "mapping-name";
     vs0.comments -> vt0.comment "mapping-comments";
   } "StructureDefinition-mapping";
-  src where constrainedType.empty() -> tgt.derivation = 'specialization' "StructureDefinition-derivation-1";
-  src.id as vs where src.constrainedType.empty() -> tgt.type = vs "StructureDefinition-type-1";
-  src where constrainedType.exists() -> tgt.derivation = 'constraint' "StructureDefinition-derivation-2";
-  src.kind where $this = 'logical' -> tgt.kind "StructureDefinition-kind-1";
-  src.kind where $this = 'resource' -> tgt.kind "StructureDefinition-kind-2";
-  src.kind as vs where ($this = 'datatype') and (src.id in ('boolean' | 'integer' | 'string' | 'decimal' | 'uri' | 'base64Binary' | 'instant' | 'date' | 'dateTime' | 'time' | 'code' | 'oid' | 'id' | 'markdown' | 'unsignedInt' | 'positiveInt')) -> tgt.kind = 'primitive-type' as vt "StructureDefinition-kind-3";
-  src.kind as vs where ($this = 'datatype') and (src.id in ('boolean' | 'integer' | 'string' | 'decimal' | 'uri' | 'base64Binary' | 'instant' | 'date' | 'dateTime' | 'time' | 'code' | 'oid' | 'id' | 'markdown' | 'unsignedInt' | 'positiveInt')).not() -> tgt.kind = 'complex-type' as vt "StructureDefinition-kind-4";
+  src where (constrainedType.empty()) -> tgt.derivation = 'specialization' "StructureDefinition-derivation-1";
+  src.id as vs where (src.constrainedType.empty()) -> tgt.type = vs "StructureDefinition-type-1";
+  src where (constrainedType.exists()) -> tgt.derivation = 'constraint' "StructureDefinition-derivation-2";
+  src.kind where ($this = 'logical') -> tgt.kind "StructureDefinition-kind-1";
+  src.kind where ($this = 'resource') -> tgt.kind "StructureDefinition-kind-2";
+  src.kind as vs where (($this = 'datatype') and (src.id in ('boolean' | 'integer' | 'string' | 'decimal' | 'uri' | 'base64Binary' | 'instant' | 'date' | 'dateTime' | 'time' | 'code' | 'oid' | 'id' | 'markdown' | 'unsignedInt' | 'positiveInt'))) -> tgt.kind = 'primitive-type' as vt "StructureDefinition-kind-3";
+  src.kind as vs where (($this = 'datatype') and (src.id in ('boolean' | 'integer' | 'string' | 'decimal' | 'uri' | 'base64Binary' | 'instant' | 'date' | 'dateTime' | 'time' | 'code' | 'oid' | 'id' | 'markdown' | 'unsignedInt' | 'positiveInt')).not()) -> tgt.kind = 'complex-type' as vt "StructureDefinition-kind-4";
   src.abstract -> tgt.abstract "StructureDefinition-abstract";
   src.contextType -> tgt.contextType "StructureDefinition-contextType";
   src.context -> tgt.context "StructureDefinition-context";

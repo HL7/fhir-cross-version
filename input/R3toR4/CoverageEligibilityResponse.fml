@@ -15,22 +15,22 @@ group EligibilityResponse(source src : EligibilityResponseR3, target tgt : Cover
   src.requestProvider -> tgt.requestor;
   src.request -> tgt.request;
   src.outcome as vs then {
-    vs.coding as c where code in ('complete' | 'error' | 'partial') then {
+    vs.coding as c where (code in ('complete' | 'error' | 'partial')) then {
       c.code -> tgt.outcome;
     };
   };
   src.disposition -> tgt.disposition;
   src.insurer -> tgt.insurer;
-  src.insurance as s -> tgt.insurance as t then EligibilityResponseInsurance(s, t);
+  src.insurance as s -> tgt.insurance as t then EligibilityResponseInsurance(src, s, t);
   src.form -> tgt.form;
   src.error as s -> tgt.error as t then EligibilityResponseError(s, t);
 }
 
-group EligibilityResponseInsurance(source src, target tgt) extends BackboneElement {
-  src.coverage -> tgt.coverage;
+group EligibilityResponseInsurance(source src : EligibilityResponseR3, source s, target tgt) extends BackboneElement {
+  s.coverage -> tgt.coverage;
   // src.contract -> tgt.contract; // not in R4
-  src where (src.inforce = true) -> tgt.inforce = true "inforce";
-  src.benefitBalance as s -> tgt.item as t then EligibilityResponseInsuranceDetail(s, t);
+  s where (src.inforce = true) -> tgt.inforce = true "inforce";
+  s.benefitBalance as bb -> tgt.item as t then EligibilityResponseInsuranceDetail(bb, t);
 }
 
 group EligibilityResponseInsuranceDetail(source src, target tgt) extends BackboneElement {

@@ -37,6 +37,7 @@ group MedicationRequest(source src : MedicationRequestR4B, target tgt : Medicati
   src.dispenseRequest as s -> tgt.dispenseRequest as t then MedicationRequestDispenseRequest(s, t);
   src.substitution as s -> tgt.substitution as t then MedicationRequestSubstitution(s, t);
   src.eventHistory -> tgt.eventHistory;
+  src.dosageInstruction -> tgt.dosageInstruction;
 }
 
 group MedicationRequestDispenseRequest(source src, target tgt) extends BackboneElement {

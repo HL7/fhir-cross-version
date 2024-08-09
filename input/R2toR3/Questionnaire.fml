@@ -24,8 +24,8 @@ group qstGroup(source src, target tgt) extends BackboneElement {
   src.linkId -> tgt.linkId "group-linkId";
   src.title -> tgt.text "group-title";
   src.concept -> tgt.code "group-concept";
-  src.text as t where src.title.exists() and src.linkId.exists() ->  tgt.item as i,  i.linkId = (src.linkId + '-' + 'display'),  i.text = t "group-text";
-  src.text where src.title.empty() -> tgt.text "group-text";
+  src.text as t where (src.title.exists() and src.linkId.exists()) ->  tgt.item as i,  i.linkId = (src.linkId + '-' + 'display'),  i.text = t "group-text";
+  src.text where (src.title.empty()) -> tgt.text "group-text";
   src.required -> tgt.required "group-required";
   src.repeats -> tgt.repeats "group-repeats";
   src.group as vs0 -> tgt.item as vt0 then qstGroup(vs0, vt0) "group-group";

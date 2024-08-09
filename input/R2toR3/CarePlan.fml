@@ -20,9 +20,9 @@ group CarePlan(source src : CarePlanR2, target tgt : CarePlan) extends DomainRes
   src.description -> tgt.description "CarePlan-description";
   src.addresses -> tgt.addresses "CarePlan-addresses";
   src.support -> tgt.supportingInfo "CarePlan-support";
-  src.relatedPlan as vs0 where vs0.code = 'replaces' -> tgt.basedOn = (vs0.plan) "CarePlan-relatedPlan2";
-  src.relatedPlan as vs0 where vs0.code = 'fulfills' -> tgt.replaces = (vs0.plan) "CarePlan-relatedPlan3";
-  src where src.participant.exists() -> create('CareTeam') as vt0 then plnParticipant(src, vt0, tgt) "CarePlan-participant";
+  src.relatedPlan as vs0 where (vs0.code = 'replaces') -> tgt.basedOn = (vs0.plan) "CarePlan-relatedPlan2";
+  src.relatedPlan as vs0 where (vs0.code = 'fulfills') -> tgt.replaces = (vs0.plan) "CarePlan-relatedPlan3";
+  src where (src.participant.exists()) -> create('CareTeam') as vt0 then plnParticipant(src, vt0, tgt) "CarePlan-participant";
   src.goal -> tgt.goal "CarePlan-goal";
   src.activity as vs0 -> tgt.activity as vt0 then plnActivity(vs0, vt0) "CarePlan-activity";
   src.note -> tgt.note "CarePlan-note";

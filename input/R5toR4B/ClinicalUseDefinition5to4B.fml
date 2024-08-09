@@ -43,6 +43,12 @@ group ClinicalUseDefinitionIndication(source src, target tgt) extends BackboneEl
   src.duration : Range -> tgt.duration "durationRange";
   src.duration : string -> tgt.duration "durationString";
   src.undesirableEffect -> tgt.undesirableEffect;
+  src.otherTherapy as s -> tgt.otherTherapy as t then ClinicalUseDefinitionIndicationOtherTherapy(s, t);
+}
+
+group ClinicalUseDefinitionIndicationOtherTherapy(source src, target tgt) extends BackboneElement {
+  src.relationshipType -> tgt.relationshipType;
+  src.treatment -> tgt.therapy;
 }
 
 group ClinicalUseDefinitionInteraction(source src, target tgt) extends BackboneElement {

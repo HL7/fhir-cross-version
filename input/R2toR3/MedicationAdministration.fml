@@ -30,6 +30,6 @@ group mAdDosage(source src, target tgt) extends BackboneElement {
   src.route -> tgt.route "dosage-route";
   src.method -> tgt.method "dosage-method";
   src.quantity -> tgt.dose "dosage-dose";
-  src.rate where $this is Ratio -> tgt.rate "dosage-rate-Ratio";
+  src.rate where ($this is Ratio) -> tgt.rate "dosage-rate-Ratio";
 }
 

@@ -49,7 +49,7 @@ group Coding2CodeableReference(source src : CodingR4B, target tgt : CodeableRefe
 }
 
 group CodeableConcept2code(source src : CodeableConceptR4B, target tgt : codeR5, source sysUrl : string) extends Element <<types>> {
-  src.coding as s where s.system = sysUrl -> tgt then {
+  src.coding as s where (s.system = sysUrl) -> tgt then {
     s.code -> tgt.value;
   };
 }

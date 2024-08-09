@@ -19,10 +19,10 @@ group DataRequirement(source src : DataRequirement, target tgt : DataRequirement
 group codeFiter(source src, target tgt) extends Element {
   src.path -> tgt.path;
   src.valueSet as vs -> tgt.valueSet = create('string') as vt then canonical2string(vs, vt);
-  src.code as vs where system.empty() then {
+  src.code as vs where (system.empty()) then {
     vs.code -> tgt.valueCode;
   };
-  src.code as vs where system.exists() -> tgt.valueCoding;
+  src.code as vs where (system.exists()) -> tgt.valueCoding;
 }
 
 group dateFilter(source src, target tgt) extends Element {

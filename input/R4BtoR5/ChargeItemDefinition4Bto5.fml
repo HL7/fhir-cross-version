@@ -44,5 +44,6 @@ group ChargeItemDefinitionPropertyGroup(source src, target tgt) extends Backbone
     s.factor -> t.factor;
     s.amount -> t.amount;
   };
+  src.applicability as s -> tgt.applicability as t then ChargeItemDefinitionApplicability(s, t);
 }
 

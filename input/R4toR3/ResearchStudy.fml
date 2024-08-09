@@ -19,7 +19,7 @@ group ResearchStudy(source src : ResearchStudy, target tgt : ResearchStudyR3) ex
   src.contact -> tgt.contact;
   src.relatedArtifact -> tgt.relatedArtifact;
   src.keyword -> tgt.keyword;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ResearchStudy.jurisdiction' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-ResearchStudy.jurisdiction') then {
     e.value : CodeableConcept -> tgt.jurisdiction;
   };
   src.description -> tgt.description;

@@ -16,7 +16,7 @@ group PaymentReconciliation(source src : PaymentReconciliationR3, target tgt : P
   src.organization -> tgt.paymentIssuer;
   src.request -> tgt.request;
   src.outcome as vs then {
-    vs.coding as c where code in ('complete' | 'error' | 'partial') then {
+    vs.coding as c where (code in ('complete' | 'error' | 'partial')) then {
       c.code -> tgt.outcome;
     };
   };

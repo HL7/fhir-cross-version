@@ -25,6 +25,6 @@ group sbsInstance(source src, target tgt) extends BackboneElement {
 
 group sbsIngredient(source src, target tgt) extends BackboneElement {
   src.quantity -> tgt.quantity "ingredient-quantity";
-  src.substance where $this is 'Reference' -> tgt.substance "ingredient-substance";
+  src.substance where ($this is Reference) -> tgt.substance "ingredient-substance";
 }
 

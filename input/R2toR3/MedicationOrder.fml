@@ -14,10 +14,10 @@ group MedicationOrder(source src : MedicationOrderR2, target tgt : MedicationReq
   src.dateWritten -> tgt.authoredOn "MedicationOrder-dateWritten";
   src.status -> tgt.status "MedicationOrder-status";
   src.patient -> tgt.subject "MedicationOrder-patient";
-  src where prescriber.exists() -> tgt.requester as vt then medRequestor(src, vt) "MedicationOrder-prescriber";
+  src where (prescriber.exists()) -> tgt.requester as vt then medRequestor(src, vt) "MedicationOrder-prescriber";
   src.encounter -> tgt.context "MedicationOrder-encounter";
-  src.reason where $this is CodeableConcept -> tgt.reasonCode "MedicationOrder-reasonCode";
-  src.reason where $this is Reference -> tgt.reasonReference "MedicationOrder-reasonCode";
+  src.reason : CodeableConcept -> tgt.reasonCode "MedicationOrder-reasonCode";
+  src.reason : Reference -> tgt.reasonReference "MedicationOrder-reasonCode";
   src.note -> tgt.note "MedicationOrder-note";
   src.medication -> tgt.medication "MedicationOrder-medication";
   src.dosageInstruction as vs -> tgt.dosageInstruction as vt then medDosageInstruction(vs, vt) "MedicationOrder-dosageInstruction";
@@ -31,7 +31,7 @@ group medDosageInstruction(source src, target tgt) extends Element {
   src.additionalInstructions -> tgt.additionalInstruction "dosage-additionalInstructions";
   src.timing -> tgt.timing "dosage-timing";
   src.asNeeded -> tgt.asNeeded "dosage-asNeeded";
-  src.site where $this is CodeableConcept -> tgt.site "dosage-site";
+  src.site : CodeableConcept -> tgt.site "dosage-site";
   src.route -> tgt.route "dosage-route";
   src.method -> tgt.method "dosage-method";
   src.dose -> tgt.dose "dosage-dose";

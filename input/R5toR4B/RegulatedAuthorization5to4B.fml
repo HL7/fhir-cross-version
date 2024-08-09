@@ -31,5 +31,6 @@ group RegulatedAuthorizationCase(source src, target tgt) extends BackboneElement
   src.status -> tgt.status;
   src.date : Period -> tgt.date "datePeriod";
   src.date : dateTime -> tgt.date "dateDateTime";
+  src.application as s -> tgt.application as t then RegulatedAuthorizationCase(s, t);
 }
 

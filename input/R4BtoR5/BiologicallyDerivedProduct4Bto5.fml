@@ -9,11 +9,11 @@ uses "http://hl7.org/fhir/5.0/StructureDefinition/BiologicallyDerivedProduct" al
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*4Bto5"
 
 group BiologicallyDerivedProduct(source src : BiologicallyDerivedProductR4B, target tgt : BiologicallyDerivedProductR5) extends DomainResource <<type+>> {
-  src.productCategory as s where productCategory = 'organ' ->  tgt.productCategory as tc,  tc.system = 'http://hl7.org/fhir/product-category',  tc.code = 'organ',  tc.display = 'Organ';
-  src.productCategory as s where productCategory = 'tissue' ->  tgt.productCategory as tc,  tc.system = 'http://hl7.org/fhir/product-category',  tc.code = 'tissue',  tc.display = 'Tissue';
-  src.productCategory as s where productCategory = 'fluid' ->  tgt.productCategory as tc,  tc.system = 'http://hl7.org/fhir/product-category',  tc.code = 'fluid',  tc.display = 'Fluid';
-  src.productCategory as s where productCategory = 'cells' ->  tgt.productCategory as tc,  tc.system = 'http://hl7.org/fhir/product-category',  tc.code = 'cells',  tc.display = 'Cells';
-  src.productCategory as s where productCategory = 'biologicalAgent' ->  tgt.productCategory as tc,  tc.system = 'http://hl7.org/fhir/product-category',  tc.code = 'biologicalAgent',  tc.display = 'BiologicalAgent';
+  src.productCategory as s where (s = 'organ') ->  tgt.productCategory as tc,  tc.system = 'http://hl7.org/fhir/product-category',  tc.code = 'organ',  tc.display = 'Organ';
+  src.productCategory as s where (s = 'tissue') ->  tgt.productCategory as tc,  tc.system = 'http://hl7.org/fhir/product-category',  tc.code = 'tissue',  tc.display = 'Tissue';
+  src.productCategory as s where (s = 'fluid') ->  tgt.productCategory as tc,  tc.system = 'http://hl7.org/fhir/product-category',  tc.code = 'fluid',  tc.display = 'Fluid';
+  src.productCategory as s where (s = 'cells') ->  tgt.productCategory as tc,  tc.system = 'http://hl7.org/fhir/product-category',  tc.code = 'cells',  tc.display = 'Cells';
+  src.productCategory as s where (s = 'biologicalAgent') ->  tgt.productCategory as tc,  tc.system = 'http://hl7.org/fhir/product-category',  tc.code = 'biologicalAgent',  tc.display = 'BiologicalAgent';
   src.productCode -> tgt.productCode;
   src.parent -> tgt.parent;
   src.request -> tgt.request;

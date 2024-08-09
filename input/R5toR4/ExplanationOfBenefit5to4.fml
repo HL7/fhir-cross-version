@@ -51,6 +51,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefitR5, target tgt : Exp
   src.processNote as s -> tgt.processNote as t then ExplanationOfBenefitProcessNote(s, t);
   src.benefitPeriod -> tgt.benefitPeriod;
   src.benefitBalance as s -> tgt.benefitBalance as t then ExplanationOfBenefitBenefitBalance(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitRelated(source src, target tgt) extends BackboneElement {
@@ -142,8 +143,10 @@ group ExplanationOfBenefitItem(source src, target tgt) extends BackboneElement {
   src.factor -> tgt.factor;
   src.net -> tgt.net;
   src.udi -> tgt.udi;
-  src.bodySite as s ->  tgt.bodySite as t,  t = s.site;
-  src.bodySite as s ->  tgt.subSite as t,  t = s.subSite;
+  src.bodySite as s then {
+    s.site -> tgt.bodySite;
+    s.subSite -> tgt.subSite;
+  } "bodySite";
   src.encounter -> tgt.encounter;
   src.noteNumber -> tgt.noteNumber;
   src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
@@ -183,6 +186,7 @@ group ExplanationOfBenefitItemDetail(source src, target tgt) extends BackboneEle
   src.udi -> tgt.udi;
   src.noteNumber -> tgt.noteNumber;
   src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitItemDetailSubDetail(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitItemDetailSubDetail(source src, target tgt) extends BackboneElement {
@@ -198,6 +202,7 @@ group ExplanationOfBenefitItemDetailSubDetail(source src, target tgt) extends Ba
   src.net -> tgt.net;
   src.udi -> tgt.udi;
   src.noteNumber -> tgt.noteNumber;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitAddItem(source src, target tgt) extends BackboneElement {
@@ -217,10 +222,13 @@ group ExplanationOfBenefitAddItem(source src, target tgt) extends BackboneElemen
   src.unitPrice -> tgt.unitPrice;
   src.factor -> tgt.factor;
   src.net -> tgt.net;
-  src.bodySite as s ->  tgt.bodySite as t,  t = s.site;
-  src.bodySite as s ->  tgt.subSite as t,  t = s.subSite;
+  src.bodySite as s then {
+    s.site -> tgt.bodySite;
+    s.subSite -> tgt.subSite;
+  } "bodySite";
   src.noteNumber -> tgt.noteNumber;
   src.detail as s -> tgt.detail as t then ExplanationOfBenefitAddItemDetail(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 // group ExplanationOfBenefitAddItemBodySite(source src, target tgt) extends BackboneElement {
@@ -236,6 +244,7 @@ group ExplanationOfBenefitAddItemDetail(source src, target tgt) extends Backbone
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
   src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitAddItemDetailSubDetail(s, t);
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitAddItemDetailSubDetail(source src, target tgt) extends BackboneElement {
@@ -246,6 +255,7 @@ group ExplanationOfBenefitAddItemDetailSubDetail(source src, target tgt) extends
   src.factor -> tgt.factor;
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitTotal(source src, target tgt) extends BackboneElement {

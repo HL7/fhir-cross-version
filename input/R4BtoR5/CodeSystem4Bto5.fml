@@ -23,6 +23,7 @@ group CodeSystem(source src : CodeSystemR4B, target tgt : CodeSystemR5) extends 
   src.useContext -> tgt.useContext;
   src.jurisdiction -> tgt.jurisdiction;
   src.purpose -> tgt.purpose;
+  src.copyright -> tgt.copyright;
   src.caseSensitive -> tgt.caseSensitive;
   src.valueSet -> tgt.valueSet;
   src.hierarchyMeaning as v -> tgt.hierarchyMeaning = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/csd.hierarchyMeaning-4bto5', 'code');
