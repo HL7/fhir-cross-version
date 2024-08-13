@@ -79,7 +79,7 @@ group code2uri(source src : codeR5, target tgt : uriR4) extends Element <<types>
   src.value as v -> tgt.value = v "code2uriValue";
 }
 
-group date(source src : dateR5, target tgt : dateR4) extends Element <<types>> {
+group date(source src : dateR5, target tgt : dateR4) extends Element <<type+>> {
   src.value as v -> tgt.value = v "dateValue";
 }
 

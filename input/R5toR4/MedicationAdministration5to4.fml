@@ -14,7 +14,10 @@ group MedicationAdministration(source src : MedicationAdministrationR5, target t
   src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/mad.status-5to4', 'code');
   src.statusReason -> tgt.statusReason;
   src.category -> tgt.category;
-  src.medication -> tgt.medication;
+  src.medication as item then { 
+    item.reference -> tgt.medication;
+    item.concept where (item.reference.exists().not()) -> tgt.medication;
+  } "medicationCodeableReference";
   src.subject -> tgt.subject;
   src.encounter -> tgt.context;
   src.supportingInformation -> tgt.supportingInformation;

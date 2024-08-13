@@ -20,7 +20,10 @@ group Medication(source src : MedicationR5, target tgt : MedicationR4) extends D
 }
 
 group MedicationIngredient(source src, target tgt) extends BackboneElement {
-  src.item -> tgt.item;
+  src.item as item then { 
+    item.reference -> tgt.item;
+    item.concept where (item.reference.exists().not()) -> tgt.item;
+  } "itemCodeableReference";
   src.isActive -> tgt.isActive;
   src.strength : Ratio -> tgt.strength "strengthRatio";
 }
