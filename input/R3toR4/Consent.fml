@@ -19,19 +19,18 @@ group Consent(source src : ConsentR3, target tgt : Consent) extends DomainResour
   src.source -> tgt.source;
   src.policy as vs -> tgt.policy as vt then policy(vs, vt);
   src.policyRule as v ->  tgt.policyRule as cc,  cc.coding as c,  c.system = 'urn:ietf:rfc:3986',  c.code = v;
-  src where securityLabel.exists() or period.exists() or actor.exists() or action.exists() or purpose.exists() or dataPeriod.exists() or data.exists() or except.exists() -> tgt.provision as vt then ConsentBaseToProvision(src, vt) "securityLabel";
+  src where (securityLabel.exists() or period.exists() or actor.exists() or action.exists() or purpose.exists() or dataPeriod.exists() or data.exists() or except.exists()) -> tgt.provision as pr then {
+    src.period -> pr.period;
+    src.actor as vs -> pr.actor as vt then ConsentActor(vs, vt);
+    src.action -> pr.action;
+    src.securityLabel -> pr.securityLabel;
+    src.purpose -> pr.purpose;
+    src.dataPeriod -> pr.dataPeriod;
+    src.data as vs -> pr.data as vt then data(vs, vt);
+    src.except as vs -> pr.provision as vt then ConceptExceptToProvision(vs, vt);
+  } "securityLabel";
 }
 
-group ConsentBaseToProvision(source src : ConsentR3, target tgt) {
-  src.period -> tgt.period;
-  src.actor as vs -> tgt.actor as vt then ConsentActor(vs, vt);
-  src.action -> tgt.action;
-  src.securityLabel -> tgt.securityLabel;
-  src.purpose -> tgt.purpose;
-  src.dataPeriod -> tgt.dataPeriod;
-  src.data as vs -> tgt.data as vt then data(vs, vt);
-  src.except as vs -> tgt.provision as vt then ConceptExceptToProvision(vs, vt);
-}
 
 group policy(source src, target tgt) extends BackboneElement {
   src.authority -> tgt.authority;

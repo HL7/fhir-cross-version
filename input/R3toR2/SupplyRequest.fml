@@ -9,7 +9,7 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/SupplyRequest" alias SupplyReq
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group SupplyRequest(source src : SupplyRequest, target tgt : SupplyRequestR2) extends DomainResource <<type+>> {
-  src.extension as e where e.url = 'http://hl7.org/fhir/SupplyRequest-r2-patient' -> tgt.patient = (e.value) "SupplyRequest-patient";
+  src.extension as e where (e.url = 'http://hl7.org/fhir/SupplyRequest-r2-patient') -> tgt.patient = (e.value) "SupplyRequest-patient";
   src.requester as v then sprRequest(v, tgt) "SupplyRequest-source";
   src.authoredOn -> tgt.date "SupplyRequest-date";
   src.identifier -> tgt.identifier "SupplyRequest-identifier";

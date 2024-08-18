@@ -23,20 +23,20 @@ group ElementDefinition(source src : ElementDefinitionR2, target tgt : ElementDe
     vs0.description -> vt0.description "slicing-description";
     vs0.ordered -> vt0.ordered "slicing-ordered";
     vs0.rules -> vt0.rules "slicing-rules";
-  } "ElementDefinition_slicing";
-  src.short -> tgt.short "ElementDefinition_short";
-  src.definition -> tgt.definition "ElementDefinition_definition";
-  src.comments -> tgt.comment "ElementDefinition_comments";
-  src.requirements -> tgt.requirements "ElementDefinition_requirements";
-  src.alias -> tgt.alias "ElementDefinition_alias";
-  src.min -> tgt.min "ElementDefinition_min";
-  src.max -> tgt.max "ElementDefinition_max";
+  } "ElementDefinitionSlicing";
+  src.short -> tgt.short "ElementDefinitionShort";
+  src.definition -> tgt.definition "ElementDefinitionDefinition";
+  src.comments -> tgt.comment "ElementDefinitionComments";
+  src.requirements -> tgt.requirements "ElementDefinitionRequirements";
+  src.alias -> tgt.alias "ElementDefinitionAlias";
+  src.min -> tgt.min "ElementDefinitionMin";
+  src.max -> tgt.max "ElementDefinitionMax";
   src.base as vs0 -> tgt.base as vt0 then {
     vs0.path -> vt0.path "base-path";
     vs0.min -> vt0.min "base-min";
     vs0.max -> vt0.max "base-max";
   } "ElementDefinition-base";
-  src.type as vs0 where firstElement.not() -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinition-type";
+  src.type as vs0 where (firstElement.not()) -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinition-type";
   src.nameReference -> tgt.contentReference "ElementDefinition-nameReference";
   src.defaultValue -> tgt.defaultValue "ElementDefinition-defaultValue";
   src.meaningWhenMissing -> tgt.meaningWhenMissing "ElementDefinition-meaningWhenMissing";
@@ -63,8 +63,8 @@ group ElementDefinitionBinding(source src, target tgt) extends Element {
 
 group type(source src, target tgt) extends Element {
   src.code -> tgt.code "type-code";
-  src.profile where src.code = 'Reference' -> tgt.profile "type-profile1";
-  src.profile where src.code != 'Reference' -> tgt.targetProfile "type-profile2";
+  src.profile where (src.code = 'Reference') -> tgt.profile "type-profile1";
+  src.profile where (src.code != 'Reference') -> tgt.targetProfile "type-profile2";
   src.aggregation -> tgt.aggregation "type-aggregation";
 }
 

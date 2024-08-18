@@ -15,7 +15,7 @@ group PaymentReconciliation(source src : PaymentReconciliation, target tgt : Pay
   src.created -> tgt.created;
   src.paymentIssuer -> tgt.organization;
   src.request -> tgt.request;
-  src.outcome as vs where value in ('complete' | 'error' | 'partial') ->  tgt.outcome as vt,  vt.coding as c,  c.system = 'http://hl7.org/fhir/remittance-outcome',  c.code = vs;
+  src.outcome as vs where (vs in ('complete' | 'error' | 'partial')) ->  tgt.outcome as vt,  vt.coding as c,  c.system = 'http://hl7.org/fhir/remittance-outcome',  c.code = vs;
   src.disposition -> tgt.disposition;
   src.requestor -> tgt.requestProvider;
   src.detail as s -> tgt.detail as t then PaymentReconciliationDetail(s, t);

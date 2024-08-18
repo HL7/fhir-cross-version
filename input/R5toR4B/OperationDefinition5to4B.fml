@@ -48,6 +48,7 @@ group OperationDefinitionParameter(source src, target tgt) extends BackboneEleme
   src.searchType as v -> tgt.searchType = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.searchType-5to4b', 'code');
   src.binding as s -> tgt.binding as t then OperationDefinitionParameterBinding(s, t);
   src.referencedFrom as s -> tgt.referencedFrom as t then OperationDefinitionParameterReferencedFrom(s, t);
+  src.part as s -> tgt.part as t then OperationDefinitionParameter(s, t);
 }
 
 group OperationDefinitionParameterBinding(source src, target tgt) extends BackboneElement {

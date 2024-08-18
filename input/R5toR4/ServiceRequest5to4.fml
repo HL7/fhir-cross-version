@@ -21,7 +21,9 @@ group ServiceRequest(source src : ServiceRequestR5, target tgt : ServiceRequestR
   src.priority as v -> tgt.priority = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/srq.priority-5to4', 'code');
   src.doNotPerform -> tgt.doNotPerform;
   src.code -> tgt.code;
-  src.orderDetail as s -> tgt.orderDetail = s.parameterFocus;
+  src.orderDetail as s then {
+    s.parameterFocus -> tgt.orderDetail;
+  } "copyOrderDetailParameterFocus";
   src.quantity : Quantity -> tgt.quantity "quantityQuantity";
   src.quantity : Ratio -> tgt.quantity "quantityRatio";
   src.quantity : Range -> tgt.quantity "quantityRange";

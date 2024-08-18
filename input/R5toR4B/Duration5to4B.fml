@@ -12,6 +12,6 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*5to4b"
 group Duration(source src : DurationR5, target tgt : DurationR4B) extends Quantity <<type+>> {
 }
 
-group Duration2Quantity(source src : DurationR5, target tgt : QuantityR4B) extends Element <<type+>> {
+group Duration2Quantity(source src : DurationR5, target tgt : QuantityR4B) extends Element <<types>> {
 }
 

@@ -24,7 +24,7 @@ group ExplanationOfBenefit(source src : ExplanationOfBenefitR3, target tgt : Exp
   src.claim -> tgt.claim;
   src.claimResponse -> tgt.claimResponse;
   src.outcome as vs then {
-    vs.coding as c where code in ('complete' | 'error' | 'partial') then {
+    vs.coding as c where (code in ('complete' | 'error' | 'partial')) then {
       c.code -> tgt.outcome;
     };
   };
@@ -148,7 +148,7 @@ group ExplanationOfBenefitItemDetail(source src, target tgt) extends BackboneEle
   src.net -> tgt.net;
   src.udi -> tgt.udi;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
   src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitItemDetailSubDetail(s, t);
 }
 
@@ -165,7 +165,7 @@ group ExplanationOfBenefitItemDetailSubDetail(source src, target tgt) extends Ba
   src.net -> tgt.net;
   src.udi -> tgt.udi;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 
 group ExplanationOfBenefitAddItem(source src, target tgt) extends BackboneElement {
@@ -184,7 +184,7 @@ group ExplanationOfBenefitAddItem(source src, target tgt) extends BackboneElemen
   // src.bodySite -> tgt.bodySite;
   // src.subSite -> tgt.subSite;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
   src.detail as s -> tgt.detail as t then ExplanationOfBenefitAddItemDetail(s, t);
 }
 
@@ -197,7 +197,7 @@ group ExplanationOfBenefitAddItemDetail(source src, target tgt) extends Backbone
   // src.factor -> tgt.factor;
   src.fee -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
   // src.subDetail as s -> tgt.subDetail as t then ExplanationOfBenefitAddItemDetailSubDetail(s, t); // subDetail is not present in R3
 }
 
@@ -211,7 +211,7 @@ group ExplanationOfBenefitAddItemDetailSubDetail(source src, target tgt) extends
   src.factor -> tgt.factor;
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
-  src.adjudication -> tgt.adjudication;
+  src.adjudication as s -> tgt.adjudication as t then ExplanationOfBenefitItemAdjudication(s, t);
 }
 */
 
@@ -236,7 +236,9 @@ group ExplanationOfBenefitPayment(source src, target tgt) extends BackboneElemen
 
 group ExplanationOfBenefitProcessNote(source src, target tgt) extends BackboneElement {
   src.number -> tgt.number;
-  src.type as scc then { scc.coding first as c where (system='http://hl7.org/fhir/note-type') -> tgt.type = c.code; } "typeFromCC";
+  src.type as scc then { 
+    scc.coding first as c where (system='http://hl7.org/fhir/note-type') -> tgt.type = (c.code);
+  } "typeFromCC";
   src.text -> tgt.text;
   src.language -> tgt.language;
 }

@@ -31,9 +31,9 @@ group Encounter(source src : Encounter, target tgt : EncounterR2) extends Domain
 }
 
 group encDiagnosis(source src, target tgt) extends BackboneElement {
-  src.condition as v where src.role.coding.code.contains('AD').not() and role.coding.code.contains('DD').not() -> tgt.indication = v "indication-condition1";
-  src.condition as v where src.role.coding.code.contains('AD') ->  tgt.hospitalization as h,  h.admittingDiagnosis = v "indication-condition2";
-  src.condition as v where src.role.coding.code.contains('DD') ->  tgt.hospitalization as h,  h.dischargeDiagnosis = v "indication-condition3";
+  src.condition as v where (src.role.coding.code.contains('AD').not() and role.coding.code.contains('DD').not()) -> tgt.indication = v "indication-condition1";
+  src.condition as v where (src.role.coding.code.contains('AD')) ->  tgt.hospitalization as h,  h.admittingDiagnosis = v "indication-condition2";
+  src.condition as v where (src.role.coding.code.contains('DD')) ->  tgt.hospitalization as h,  h.dischargeDiagnosis = v "indication-condition3";
 }
 
 group encStatusHistory(source src, target tgt) extends BackboneElement {

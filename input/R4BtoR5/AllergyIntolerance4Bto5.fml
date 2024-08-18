@@ -12,8 +12,8 @@ group AllergyIntolerance(source src : AllergyIntoleranceR4B, target tgt : Allerg
   src.identifier -> tgt.identifier;
   src.clinicalStatus -> tgt.clinicalStatus;
   src.verificationStatus -> tgt.verificationStatus;
-  src.type as s where type = 'allergy' ->  tgt.type = create('CodeableConcept') as t,  t.coding = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/allergy-intolerance-type',  tc.code = 'allergy',  tc.display = 'Allergy';
-  src.type as s where type = 'intolerance' ->  tgt.type = create('CodeableConcept') as t,  t.coding = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/allergy-intolerance-type',  tc.code = 'intolerance',  tc.display = 'Intolerance';
+  src.type as s where (s = 'allergy') ->  tgt.type = create('CodeableConcept') as t,  t.coding = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/allergy-intolerance-type',  tc.code = 'allergy',  tc.display = 'Allergy';
+  src.type as s where (s = 'intolerance') ->  tgt.type = create('CodeableConcept') as t,  t.coding = create('Coding') as tc,  tc.system = 'http://hl7.org/fhir/allergy-intolerance-type',  tc.code = 'intolerance',  tc.display = 'Intolerance';
   src.category as v -> tgt.category = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ait.category-4bto5', 'code');
   src.criticality as v -> tgt.criticality = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/ait.criticality-4bto5', 'code');
   src.code -> tgt.code;

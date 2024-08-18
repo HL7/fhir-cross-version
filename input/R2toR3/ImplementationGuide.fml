@@ -26,8 +26,8 @@ group ImplementationGuide(source src : ImplementationGuideR2, target tgt : Imple
   } "ImplementationGuide-contact";
   src.description -> tgt.description "ImplementationGuide-description";
   src.copyright -> tgt.copyright "ImplementationGuide-copyright";
-  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "ImplementationGuide-jurisdiction";
-  src.useContext as vs where (coding.system = 'urn:iso:std:iso:3166').not() ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "ImplementationGuide-useContext";
+  src.useContext where (coding.system = 'urn:iso:std:iso:3166') -> tgt.jurisdiction "ImplementationGuide-jurisdiction";
+  src.useContext as vs where ((coding.system = 'urn:iso:std:iso:3166').not()) ->  tgt.useContext as uc,  uc.code as ucc,  ucc.system = 'http://hl7.org/fhir/usage-context-type',  ucc.code = 'task',  uc.value = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "ImplementationGuide-useContext";
   src.date -> tgt.date "ImplementationGuide-date";
   src.fhirVersion -> tgt.fhirVersion "ImplementationGuide-fhirVersion";
   src.dependency as vs0 -> tgt.dependency as vt0 then {
@@ -48,7 +48,7 @@ group ImplementationGuide(source src : ImplementationGuideR2, target tgt : Imple
 }
 
 group resource(source src, target tgt) extends BackboneElement {
-  src where src.purpose = 'example' -> tgt.example = 'true' "resource-purpose";
+  src where (src.purpose = 'example') -> tgt.example = 'true' "resource-purpose";
   src.name -> tgt.name "resource-name";
   src.description -> tgt.description "resource-description";
   src.acronym -> tgt.acronym "resource-acronym";

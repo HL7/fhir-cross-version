@@ -12,12 +12,12 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/Identifier2to3"
 imports "http://hl7.org/fhir/uv/xver/StructureMap/Reference2to3"
 
 group EnrollmentResponse(source src : EnrollmentResponseR2, target tgt : EnrollmentResponse) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "EnrollmentResponse_identifier";
-  src.request -> tgt.request "EnrollmentResponse_request";
-  src.disposition -> tgt.disposition "EnrollmentResponse_disposition";
-  src.created -> tgt.created "EnrollmentResponse_created";
-  src.organization -> tgt.organization "EnrollmentResponse_organization";
-  src.requestProvider -> tgt.requestProvider "EnrollmentResponse_requestProvider";
-  src.requestOrganization -> tgt.requestOrganization "EnrollmentResponse_requestOrganization";
+  src.identifier -> tgt.identifier "EnrollmentResponseIdentifier";
+  src.request -> tgt.request "EnrollmentResponseRequest";
+  src.disposition -> tgt.disposition "EnrollmentResponseDisposition";
+  src.created -> tgt.created "EnrollmentResponseCreated";
+  src.organization -> tgt.organization "EnrollmentResponseOrganization";
+  src.requestProvider -> tgt.requestProvider "EnrollmentResponseRequestProvider";
+  src.requestOrganization -> tgt.requestOrganization "EnrollmentResponseRequestOrganization";
 }
 

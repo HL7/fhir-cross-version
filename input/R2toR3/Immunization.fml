@@ -9,26 +9,26 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/Immunization" alias Immunizati
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group Immunization(source src : ImmunizationR2, target tgt : Immunization) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "Immunization_identifier";
-  src.status where ($this = 'completed') or ($this = 'entered-in-error') -> tgt.status "Immunization_status";
-  src.date -> tgt.date "Immunization_date";
-  src.vaccineCode -> tgt.vaccineCode "Immunization_vaccineCode";
-  src.patient -> tgt.patient "Immunization_patient";
-  src.wasNotGiven -> tgt.notGiven "Immunization_wasNotGiven";
-  src.performer as v ->  tgt.practitioner as p,  p.role = cc('http://hl7.org/fhir/v2/0443', 'AP'),  p.actor = v "Immunization_performer";
-  src.requester as v ->  tgt.practitioner as p,  p.role = cc('http://hl7.org/fhir/v2/0443', 'OP'),  p.actor = v "Immunization_requester";
-  src.encounter -> tgt.encounter "Immunization_encounter";
-  src.manufacturer -> tgt.manufacturer "Immunization_manufacturer";
-  src.location -> tgt.location "Immunization_location";
-  src.lotNumber -> tgt.lotNumber "Immunization_lotNumber";
-  src.expirationDate -> tgt.expirationDate "Immunization_expirationDate";
-  src.site -> tgt.site "Immunization_site";
-  src.route -> tgt.route "Immunization_route";
-  src.doseQuantity -> tgt.doseQuantity "Immunization_doseQuantity";
-  src.note -> tgt.note "Immunization_note";
-  src.explanation as vs0 -> tgt.explanation as vt0 then immExplanation(vs0, vt0) "Immunization_explanation";
-  src.reaction as vs0 -> tgt.reaction as vt0 then immReaction(vs0, vt0) "Immunization_reaction";
-  src.vaccinationProtocol as vs0 -> tgt.vaccinationProtocol as vt0 then immProtocol(vs0, vt0) "Immunization_vaccinationProtocol";
+  src.identifier -> tgt.identifier "ImmunizationIdentifier";
+  src.status where (($this = 'completed') or ($this = 'entered-in-error')) -> tgt.status "ImmunizationStatus";
+  src.date -> tgt.date "ImmunizationDate";
+  src.vaccineCode -> tgt.vaccineCode "ImmunizationVaccineCode";
+  src.patient -> tgt.patient "ImmunizationPatient";
+  src.wasNotGiven -> tgt.notGiven "ImmunizationWasNotGiven";
+  src.performer as v ->  tgt.practitioner as p,  p.role = cc('http://hl7.org/fhir/v2/0443', 'AP'),  p.actor = v "ImmunizationPerformer";
+  src.requester as v ->  tgt.practitioner as p,  p.role = cc('http://hl7.org/fhir/v2/0443', 'OP'),  p.actor = v "ImmunizationRequester";
+  src.encounter -> tgt.encounter "ImmunizationEncounter";
+  src.manufacturer -> tgt.manufacturer "ImmunizationManufacturer";
+  src.location -> tgt.location "ImmunizationLocation";
+  src.lotNumber -> tgt.lotNumber "ImmunizationLotNumber";
+  src.expirationDate -> tgt.expirationDate "ImmunizationExpirationDate";
+  src.site -> tgt.site "ImmunizationSite";
+  src.route -> tgt.route "ImmunizationRoute";
+  src.doseQuantity -> tgt.doseQuantity "ImmunizationDoseQuantity";
+  src.note -> tgt.note "ImmunizationNote";
+  src.explanation as vs0 -> tgt.explanation as vt0 then immExplanation(vs0, vt0) "ImmunizationExplanation";
+  src.reaction as vs0 -> tgt.reaction as vt0 then immReaction(vs0, vt0) "ImmunizationReaction";
+  src.vaccinationProtocol as vs0 -> tgt.vaccinationProtocol as vt0 then immProtocol(vs0, vt0) "ImmunizationVaccinationProtocol";
 }
 
 group immExplanation(source src, target tgt) extends BackboneElement {
@@ -43,13 +43,13 @@ group immReaction(source src, target tgt) extends BackboneElement {
 }
 
 group immProtocol(source src, target tgt) extends BackboneElement {
-  src.doseSequence -> tgt.doseSequence "vaccinationProtocol_doseSequence";
-  src.description -> tgt.description "vaccinationProtocol_description";
-  src.authority -> tgt.authority "vaccinationProtocol_authority";
-  src.series -> tgt.series "vaccinationProtocol_series";
-  src.seriesDoses -> tgt.seriesDoses "vaccinationProtocol_seriesDoses";
-  src.targetDisease -> tgt.targetDisease "vaccinationProtocol_targetDisease";
-  src.doseStatus -> tgt.doseStatus "vaccinationProtocol_doseStatus";
-  src.doseStatusReason -> tgt.doseStatusReason "vaccinationProtocol_doseStatusReason";
+  src.doseSequence -> tgt.doseSequence "vaccinationProtocolDoseSequence";
+  src.description -> tgt.description "vaccinationProtocolDescription";
+  src.authority -> tgt.authority "vaccinationProtocolAuthority";
+  src.series -> tgt.series "vaccinationProtocolSeries";
+  src.seriesDoses -> tgt.seriesDoses "vaccinationProtocolSeriesDoses";
+  src.targetDisease -> tgt.targetDisease "vaccinationProtocolTargetDisease";
+  src.doseStatus -> tgt.doseStatus "vaccinationProtocolDoseStatus";
+  src.doseStatusReason -> tgt.doseStatusReason "vaccinationProtocolDoseStatusReason";
 }
 

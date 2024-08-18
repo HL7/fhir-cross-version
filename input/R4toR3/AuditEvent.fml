@@ -23,8 +23,8 @@ group AuditEvent(source src : AuditEvent, target tgt : AuditEventR3) extends Dom
 
 group AuditEventAgent(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role;
-  src.who as vs0 where reference.exists() -> tgt.reference as vt0 then ReferenceNoIdentifier(vs0, vt0);
-  src.who as vs0 where identifier.exists() -> tgt.userId as vt0 then Reference2Identifier(vs0, vt0);
+  src.who as vs0 where (reference.exists()) -> tgt.reference as vt0 then ReferenceNoIdentifier(vs0, vt0);
+  src.who as vs0 where (identifier.exists()) -> tgt.userId as vt0 then Reference2Identifier(vs0, vt0);
   src.altId -> tgt.altId;
   src.name -> tgt.name;
   src.requestor -> tgt.requestor;
@@ -47,8 +47,8 @@ group AuditEventSource(source src, target tgt) extends BackboneElement {
 }
 
 group AuditEventEntity(source src, target tgt) extends BackboneElement {
-  src.what as vs0 where identifier.exists() -> tgt.identifier as vt0 then Reference2Identifier(vs0, vt0);
-  src.what as vs0 where reference.exists() -> tgt.reference as vt0 then ReferenceNoIdentifier(vs0, vt0);
+  src.what as vs0 where (identifier.exists()) -> tgt.identifier as vt0 then Reference2Identifier(vs0, vt0);
+  src.what as vs0 where (reference.exists()) -> tgt.reference as vt0 then ReferenceNoIdentifier(vs0, vt0);
   src.type -> tgt.type;
   src.role -> tgt.role;
   src.lifecycle -> tgt.lifecycle;
@@ -61,6 +61,6 @@ group AuditEventEntity(source src, target tgt) extends BackboneElement {
 
 group AuditEventEntityDetail(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
-  src.value where $this is base64Binary -> tgt.value;
+  src.value : base64Binary -> tgt.value;
 }
 

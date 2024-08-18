@@ -29,13 +29,13 @@ group Patient(source src : PatientR2, target tgt : Patient) extends DomainResour
 }
 
 group patContact(source src, target tgt) extends BackboneElement {
-  src.relationship -> tgt.relationship "Contract_relationship";
-  src.name -> tgt.name "Contract_name";
-  src.telecom -> tgt.telecom "Contract_telecom";
-  src.address -> tgt.address "Contract_address";
-  src.gender -> tgt.gender "Contract_gender";
-  src.organization -> tgt.organization "Contract_organization";
-  src.period -> tgt.period "Contract_period";
+  src.relationship -> tgt.relationship "ContractRelationship";
+  src.name -> tgt.name "ContractName";
+  src.telecom -> tgt.telecom "ContractTelecom";
+  src.address -> tgt.address "ContractAddress";
+  src.gender -> tgt.gender "ContractGender";
+  src.organization -> tgt.organization "ContractOrganization";
+  src.period -> tgt.period "ContractPeriod";
 }
 
 group patCommunication(source src, target tgt) extends BackboneElement {

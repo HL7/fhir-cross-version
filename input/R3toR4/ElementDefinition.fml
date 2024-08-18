@@ -210,7 +210,7 @@ group ElementDefinition(source src : ElementDefinitionR3, target tgt : ElementDe
   src.mustSupport -> tgt.mustSupport;
   src.isModifier -> tgt.isModifier;
   src.isSummary -> tgt.isSummary;
-  src.binding as vs0 -> tgt.binding as vt0 then ElementDefinitionBinding(vs0, vt0) "ElementDefinition_binding";
+  src.binding as vs0 -> tgt.binding as vt0 then ElementDefinitionBinding(vs0, vt0) "ElementDefinitionBinding";
   src.mapping as vs0 -> tgt.mapping as vt0 then {
     vs0.identity -> vt0.identity;
     vs0.language -> vt0.language;
@@ -234,8 +234,8 @@ group discriminator(source src, target tgt) extends Element {
 group ElementDefinitionBinding(source src, target tgt) extends Element {
   src.strength -> tgt.strength;
   src.description -> tgt.description;
-  src.valueSet : uri as vs0 -> tgt.valueSet as vt0 then uri2Canonical(vs0, vt0) "binding-valueSetU";
-  src.valueSet : Reference as vs0 -> tgt.valueSet as vt0 then Reference2Canonical(vs0, vt0) "binding-valueSetR";
+  src.valueSet : uri as vs0 -> tgt.valueSet as vt0 then uri2Canonical(vs0, vt0) "bindingValueSetU";
+  src.valueSet : Reference as vs0 -> tgt.valueSet as vt0 then Reference2Canonical(vs0, vt0) "bindingValueSetR";
 }
 
 group base(source src, target tgt) extends Element {

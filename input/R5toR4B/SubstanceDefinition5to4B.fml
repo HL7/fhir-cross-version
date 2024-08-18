@@ -68,6 +68,7 @@ group SubstanceDefinitionStructure(source src, target tgt) extends BackboneEleme
   src.opticalActivity -> tgt.opticalActivity;
   src.molecularFormula -> tgt.molecularFormula;
   src.molecularFormulaByMoiety -> tgt.molecularFormulaByMoiety;
+  src.molecularWeight as s -> tgt.molecularWeight as t then SubstanceDefinitionMolecularWeight(s, t);
   src.technique -> tgt.technique;
   src.sourceDocument -> tgt.sourceDocument;
   src.representation as s -> tgt.representation as t then SubstanceDefinitionStructureRepresentation(s, t);
@@ -96,6 +97,8 @@ group SubstanceDefinitionName(source src, target tgt) extends BackboneElement {
   src.language -> tgt.language;
   src.domain -> tgt.domain;
   src.jurisdiction -> tgt.jurisdiction;
+  src.synonym as s -> tgt.synonym as t then SubstanceDefinitionName(s, t);
+  src.translation as s -> tgt.translation as t then SubstanceDefinitionName(s, t);
   src.official as s -> tgt.official as t then SubstanceDefinitionNameOfficial(s, t);
   src.source -> tgt.source;
 }

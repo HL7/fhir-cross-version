@@ -9,130 +9,130 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement" alias Cap
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group Conformance(source src : ConformanceR2, target tgt : CapabilityStatement) extends DomainResource <<type+>> {
-  src.url -> tgt.url "conf_url";
-  src.version -> tgt.version "conf_version";
-  src.name -> tgt.name "conf_name";
-  src.status -> tgt.status "conf_status";
-  src.experimental -> tgt.experimental "conf_experimental";
-  src.publisher -> tgt.publisher "conf_publisher";
-  src.contact as vs -> tgt.contact as vt then ConformanceContact(vs, vt) "conf_contact";
-  src.date -> tgt.date "conf_date";
-  src.description -> tgt.description "conf_description";
-  src.requirements -> tgt.purpose "conf_requirements";
-  src.copyright -> tgt.copyright "conf_copyright";
-  src.kind -> tgt.kind "conf_kind";
-  src.software as vs -> tgt.software as vt then software(vs, vt) "conf_software";
-  src.implementation as vs -> tgt.implementation as vt then implementation(vs, vt) "conf_implementation";
-  src.fhirVersion -> tgt.fhirVersion "conf_fhirVersion";
-  src.acceptUnknown -> tgt.acceptUnknown "conf_acceptUnknown";
-  src.format -> tgt.format "conf_format";
-  src.profile -> tgt.profile "conf_profile	";
-  src.rest as vs -> tgt.rest as vt then rest(vs, vt) "conf_rest";
-  src.messaging as vs -> tgt.messaging as vt then messaging(vs, vt) "conf_messaging";
-  src.document as vs -> tgt.document as vt then document(vs, vt) "conf_document";
+  src.url -> tgt.url "confUrl";
+  src.version -> tgt.version "confVersion";
+  src.name -> tgt.name "confName";
+  src.status -> tgt.status "confStatus";
+  src.experimental -> tgt.experimental "confExperimental";
+  src.publisher -> tgt.publisher "confPublisher";
+  src.contact as vs -> tgt.contact as vt then ConformanceContact(vs, vt) "confContact";
+  src.date -> tgt.date "confDate";
+  src.description -> tgt.description "confDescription";
+  src.requirements -> tgt.purpose "confRequirements";
+  src.copyright -> tgt.copyright "confCopyright";
+  src.kind -> tgt.kind "confKind";
+  src.software as vs -> tgt.software as vt then software(vs, vt) "confSoftware";
+  src.implementation as vs -> tgt.implementation as vt then implementation(vs, vt) "confImplementation";
+  src.fhirVersion -> tgt.fhirVersion "confFhirVersion";
+  src.acceptUnknown -> tgt.acceptUnknown "confAcceptUnknown";
+  src.format -> tgt.format "confFormat";
+  src.profile -> tgt.profile "confProfile";
+  src.rest as vs -> tgt.rest as vt then rest(vs, vt) "confRest";
+  src.messaging as vs -> tgt.messaging as vt then messaging(vs, vt) "confMessaging";
+  src.document as vs -> tgt.document as vt then document(vs, vt) "confDocument";
 }
 
 group ConformanceContact(source src, target tgt) extends BackboneElement {
-  src.name -> tgt.name "conf_name";
-  src.telecom -> tgt.telecom "conf_telecom";
+  src.name -> tgt.name "confName";
+  src.telecom -> tgt.telecom "confTelecom";
 }
 
 group software(source src, target tgt) extends BackboneElement {
-  src.name -> tgt.name "conf_name";
-  src.version -> tgt.version "conf_version";
-  src.releaseDate -> tgt.releaseDate "conf_releaseDate";
+  src.name -> tgt.name "confName";
+  src.version -> tgt.version "confVersion";
+  src.releaseDate -> tgt.releaseDate "confReleaseDate";
 }
 
 group implementation(source src, target tgt) extends BackboneElement {
-  src.description -> tgt.description "conf_description";
-  src.url -> tgt.url "conf_url";
+  src.description -> tgt.description "confDescription";
+  src.url -> tgt.url "confUrl";
 }
 
 group rest(source src, target tgt) extends BackboneElement {
-  src.mode -> tgt.mode "conf_mode";
-  src.documentation -> tgt.documentation "conf_documentation";
-  src.security as vs -> tgt.security as vt then security(vs, vt) "conf_security";
-  src.resource as vs -> tgt.resource as vt then ConformanceRestResource(vs, vt) "conf_resource";
-  src.interaction as vs where (code != 'transaction') -> tgt.interaction as vt then interaction(vs, vt) "conf_interaction";
-  src.transactionMode where ($this = 'batch') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'batch' "conf_transactionMode";
-  src.transactionMode where ($this = 'transaction') or ($this = 'both') ->  tgt.interaction as i,  i.code = 'transaction' "conf_transactionMode";
-  src.searchParam as vs -> tgt.searchParam as vt then searchParam(vs, vt) "conf_searchParam";
-  src.operation as vs -> tgt.operation as vt then ConformanceRestOperation(vs, vt) "conf_operation";
-  src.compartment -> tgt.compartment "conf_compartment";
+  src.mode -> tgt.mode "confMode";
+  src.documentation -> tgt.documentation "confDocumentation";
+  src.security as vs -> tgt.security as vt then security(vs, vt) "confSecurity";
+  src.resource as vs -> tgt.resource as vt then ConformanceRestResource(vs, vt) "confResource";
+  src.interaction as vs where (code != 'transaction') -> tgt.interaction as vt then interaction(vs, vt) "confInteraction";
+  src.transactionMode where (($this = 'batch') or ($this = 'both')) ->  tgt.interaction as i,  i.code = 'batch' "confTransactionMode";
+  src.transactionMode where (($this = 'transaction') or ($this = 'both')) ->  tgt.interaction as i,  i.code = 'transaction' "confTransactionMode";
+  src.searchParam as vs -> tgt.searchParam as vt then searchParam(vs, vt) "confSearchParam";
+  src.operation as vs -> tgt.operation as vt then ConformanceRestOperation(vs, vt) "confOperation";
+  src.compartment -> tgt.compartment "confCompartment";
 }
 
 group security(source src, target tgt) extends BackboneElement {
-  src.cors -> tgt.cors "conf_cors";
-  src.service -> tgt.service "conf_service";
-  src.description -> tgt.description "conf_description";
-  src.certificate as vs -> tgt.certificate as vt then certificate(vs, vt) "conf_certificate";
+  src.cors -> tgt.cors "confCors";
+  src.service -> tgt.service "confService";
+  src.description -> tgt.description "confDescription";
+  src.certificate as vs -> tgt.certificate as vt then certificate(vs, vt) "confCertificate";
 }
 
 group certificate(source src, target tgt) extends BackboneElement {
-  src.type -> tgt.type "conf_type";
-  src.blob -> tgt.blob "conf_blob";
+  src.type -> tgt.type "confType";
+  src.blob -> tgt.blob "confBlob";
 }
 
 group ConformanceRestResource(source src, target tgt) extends BackboneElement {
-  src.type where $this != 'Conformance' -> tgt.type "conf_type2";
-  src.type where $this = 'Conformance' -> tgt.type = 'CapabilityStatement' "conf_type3b";
-  src.profile -> tgt.profile "conf_profile";
-  // src.documentation -> tgt.documentation "conf_documentation";
-  src.interaction as vs where code != 'validate' -> tgt.interaction as vt then interaction(vs, vt) "conf_interaction";
-  src.versioning -> tgt.versioning "conf_versioning";
-  src.readHistory -> tgt.readHistory "conf_readHistory";
-  src.updateCreate -> tgt.updateCreate "conf_updateCreate";
-  src.conditionalCreate -> tgt.conditionalCreate "conf_conditionalCreate";
-  // src.conditionalRead -> tgt.conditionalRead "conf_conditionalRead";
-  src.conditionalUpdate -> tgt.conditionalUpdate "conf_conditionalUpdate";
-  src.conditionalDelete -> tgt.conditionalDelete "conf_conditionalDelete";
-  src.searchInclude -> tgt.searchInclude "conf_searchInclude";
-  src.searchRevInclude -> tgt.searchRevInclude "conf_searchRevInclude";
-  src.searchParam as vs -> tgt.searchParam as vt then searchParam(vs, vt) "conf_searchParam";
+  src.type where ($this != 'Conformance') -> tgt.type "confType2";
+  src.type where ($this = 'Conformance') -> tgt.type = 'CapabilityStatement' "confType3b";
+  src.profile -> tgt.profile "confProfile";
+  // src.documentation -> tgt.documentation "confDocumentation";
+  src.interaction as vs where (code != 'validate') -> tgt.interaction as vt then interaction(vs, vt) "confInteraction";
+  src.versioning -> tgt.versioning "confVersioning";
+  src.readHistory -> tgt.readHistory "confReadHistory";
+  src.updateCreate -> tgt.updateCreate "confUpdateCreate";
+  src.conditionalCreate -> tgt.conditionalCreate "confConditionalCreate";
+  // src.conditionalRead -> tgt.conditionalRead "confConditionalRead";
+  src.conditionalUpdate -> tgt.conditionalUpdate "confConditionalUpdate";
+  src.conditionalDelete -> tgt.conditionalDelete "confConditionalDelete";
+  src.searchInclude -> tgt.searchInclude "confSearchInclude";
+  src.searchRevInclude -> tgt.searchRevInclude "confSearchRevInclude";
+  src.searchParam as vs -> tgt.searchParam as vt then searchParam(vs, vt) "confSearchParam";
 }
 
 group interaction(source src, target tgt) extends BackboneElement {
-  src.code -> tgt.code "conf_code";
-  src.documentation -> tgt.documentation "conf_documentation";
+  src.code -> tgt.code "confCode";
+  src.documentation -> tgt.documentation "confDocumentation";
 }
 
 group searchParam(source src, target tgt) extends BackboneElement {
-  src.name -> tgt.name "conf_name";
-  src.definition -> tgt.definition "conf_definition";
-  src.type -> tgt.type "conf_type4";
-  src.documentation -> tgt.documentation "conf_documentation";
+  src.name -> tgt.name "confName";
+  src.definition -> tgt.definition "confDefinition";
+  src.type -> tgt.type "confType4";
+  src.documentation -> tgt.documentation "confDocumentation";
 }
 
 group ConformanceRestOperation(source src, target tgt) extends BackboneElement {
-  src.name -> tgt.name "conf_name";
-  src.definition -> tgt.definition "conf_definition";
+  src.name -> tgt.name "confName";
+  src.definition -> tgt.definition "confDefinition";
 }
 
 group messaging(source src, target tgt) extends BackboneElement {
-  src.endpoint as vs -> tgt.endpoint as vt then endpoint(vs, vt) "conf_endpoint";
-  src.reliableCache -> tgt.reliableCache "conf_reliableCache";
-  src.documentation -> tgt.documentation "conf_documentation";
-  src.event as vs -> tgt.event as vt then event(vs, vt) "conf_event";
+  src.endpoint as vs -> tgt.endpoint as vt then endpoint(vs, vt) "confEndpoint";
+  src.reliableCache -> tgt.reliableCache "confReliableCache";
+  src.documentation -> tgt.documentation "confDocumentation";
+  src.event as vs -> tgt.event as vt then event(vs, vt) "confEvent";
 }
 
 group endpoint(source src, target tgt) extends BackboneElement {
-  src.protocol -> tgt.protocol "conf_protocol";
-  src.address -> tgt.address "conf_address";
+  src.protocol -> tgt.protocol "confProtocol";
+  src.address -> tgt.address "confAddress";
 }
 
 group event(source src, target tgt) extends BackboneElement {
-  src.code -> tgt.code "conf_code";
-  src.category -> tgt.category "conf_category";
-  src.mode -> tgt.mode "conf_mode";
-  src.focus -> tgt.focus "conf_focus";
-  src.request -> tgt.request "conf_request";
-  src.response -> tgt.response "conf_response";
-  src.documentation -> tgt.documentation "conf_documentation";
+  src.code -> tgt.code "confCode";
+  src.category -> tgt.category "confCategory";
+  src.mode -> tgt.mode "confMode";
+  src.focus -> tgt.focus "confFocus";
+  src.request -> tgt.request "confRequest";
+  src.response -> tgt.response "confResponse";
+  src.documentation -> tgt.documentation "confDocumentation";
 }
 
 group document(source src, target tgt) extends BackboneElement {
-  src.mode -> tgt.mode "conf_mode";
-  src.documentation -> tgt.documentation "conf_documentation";
-  src.profile -> tgt.profile "conf_profile";
+  src.mode -> tgt.mode "confMode";
+  src.documentation -> tgt.documentation "confDocumentation";
+  src.profile -> tgt.profile "confProfile";
 }
 

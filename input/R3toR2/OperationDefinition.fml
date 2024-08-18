@@ -31,8 +31,8 @@ group OperationDefinition(source src : OperationDefinition, target tgt : Operati
 }
 
 group opdContact(source src, target tgt) extends Element {
-  src.name -> tgt.name "Contract_name";
-  src.telecom -> tgt.telecom "Contract_telecom";
+  src.name -> tgt.name "ContractName";
+  src.telecom -> tgt.telecom "ContractTelecom";
 }
 
 group opdParameter(source src, target tgt) extends BackboneElement {
@@ -41,7 +41,7 @@ group opdParameter(source src, target tgt) extends BackboneElement {
   src.min -> tgt.min "parameter-min";
   src.max -> tgt.max "parameter-max";
   src.documentation -> tgt.documentation "parameter-documentation";
-  src.type where src.searchType.empty() -> tgt.type "parameter-type";
+  src.type where (src.searchType.empty()) -> tgt.type "parameter-type";
   src.searchType -> tgt.type "parameter-type";
   src.profile -> tgt.profile "parameter-profile";
   src.part as ps0 -> tgt.part as pt0 then opdPart(ps0, pt0) "parameter-part";

@@ -12,8 +12,8 @@ group MedicationAdministration(source src : MedicationAdministration, target tgt
   src.identifier -> tgt.identifier;
   src.instantiates -> tgt.definition;
   src.partOf -> tgt.partOf;
-  src where src.extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.status').exists() then MedicationAdministrationStatusR3(src, tgt) "status1";
-  src where src.extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.status').empty() then MedicationAdministrationStatusNR3(src, tgt) "status2";
+  src where (src.extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.status').exists()) then MedicationAdministrationStatusR3(src, tgt) "status1";
+  src where (src.extension.where(url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.status').empty()) then MedicationAdministrationStatusNR3(src, tgt) "status2";
   src.category -> tgt.category;
   src.medication : CodeableConcept as vs -> tgt.medication = create('CodeableConcept') as vt then CodeableConcept(vs, vt) "medicationCodeableConcept";
   src.medication : Reference as vs -> tgt.medication = create('Reference') as vt then Reference(vs, vt) "medicationReference";
@@ -23,8 +23,8 @@ group MedicationAdministration(source src : MedicationAdministration, target tgt
   src.effective : dateTime as vs -> tgt.effective = create('dateTime') as vt then dateTime(vs, vt) "effectiveDateTime";
   src.effective : Period as vs -> tgt.effective = create('Period') as vt then Period(vs, vt) "effectivePeriod";
   src.performer as vs0 -> tgt.performer as vt0 then MedicationAdministrationActor(vs0, vt0);
-  src.reasonCode where value = 'not-done' -> tgt.reasonNotGiven;
-  src.reasonCode where value != 'not-done' -> tgt.reasonCode;
+  src.reasonCode where ($this = 'not-done') -> tgt.reasonNotGiven;
+  src.reasonCode where ($this != 'not-done') -> tgt.reasonCode;
   src.reasonReference -> tgt.reasonReference;
   src.request -> tgt.prescription;
   src.device -> tgt.device;
@@ -35,7 +35,7 @@ group MedicationAdministration(source src : MedicationAdministration, target tgt
 
 group MedicationAdministrationActor(source src, target tgt) extends BackboneElement {
   src.actor -> tgt.actor;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.performer.onBehalfOf' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.performer.onBehalfOf') then {
     e.value : Reference -> tgt.onBehalfOf;
   };
 }
@@ -51,16 +51,16 @@ group dosage(source src, target tgt) extends BackboneElement {
 }
 
 group MedicationAdministrationStatusR3(source src, target tgt) {
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.notGiven' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.notGiven') then {
     e.value : boolean -> tgt.notGiven;
   };
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.status' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.status') then {
     e.value : code -> tgt.status;
   };
 }
 
 group MedicationAdministrationStatusNR3(source src, target tgt) {
-  src.status where value != 'not-done' -> tgt.status;
-  src.status where value = 'not-done' -> tgt.notGiven = false;
+  src.status where ($this != 'not-done') -> tgt.status;
+  src.status where ($this = 'not-done') -> tgt.notGiven = false;
 }
 

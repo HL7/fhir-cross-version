@@ -23,6 +23,7 @@ group MedicationKnowledge(source src : MedicationKnowledgeR4, target tgt : Medic
   src.medicineClassification as s -> tgt.medicineClassification as t then MedicationKnowledgeMedicineClassification(s, t);
   src.regulatory as s -> tgt.regulatory as t then MedicationKnowledgeRegulatory(s, t);
   src.drugCharacteristic as s -> tgt.definitional as t then MedicationKnowledgeDefinitional(s, t);
+  src.packaging; // This is not mapped to R5 as the property is now about pricing information, not package content
 }
 
 group MedicationKnowledgeRelatedMedicationKnowledge(source src, target tgt) extends BackboneElement {
@@ -97,7 +98,9 @@ group MedicationKnowledgeMedicineClassification(source src, target tgt) extends 
 group MedicationKnowledgeRegulatory(source src, target tgt) extends BackboneElement {
   src.regulatoryAuthority -> tgt.regulatoryAuthority;
   src.substitution as s -> tgt.substitution as t then MedicationKnowledgeRegulatorySubstitution(s, t);
-  src.schedule as s -> tgt.schedule = s.schedule;
+  src.schedule as s then {
+    s.schedule -> tgt.schedule;
+  };
   src.maxDispense as s -> tgt.maxDispense as t then MedicationKnowledgeRegulatoryMaxDispense(s, t);
 }
 

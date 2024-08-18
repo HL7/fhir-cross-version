@@ -9,20 +9,20 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/Goal" alias Goal as target
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group Goal(source src : GoalR2, target tgt : Goal) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "Goal_identifier";
-  src.subject -> tgt.subject "Goal_subject";
-  src.start -> tgt.start "Goal_start";
-  src.target -> tgt.target "Goal_target";
-  src.category -> tgt.category "Goal_category";
-  src.description -> tgt.description "Goal_description";
-  src.status -> tgt.status "Goal_status";
-  src.statusDate -> tgt.statusDate "Goal_statusDate";
-  src.statusReason -> tgt.statusReason "Goal_statusReason";
-  src.author -> tgt.expressedBy "Goal_author";
-  src.priority -> tgt.priority "Goal_priority";
-  src.addresses -> tgt.addresses "Goal_addresses";
-  src.note -> tgt.note "Goal_note";
-  src.outcome as vs0 then goalOutcome(vs0, tgt) "Goal_outcome";
+  src.identifier -> tgt.identifier "GoalIdentifier";
+  src.subject -> tgt.subject "GoalSubject";
+  src.start -> tgt.start "GoalStart";
+  src.target -> tgt.target "GoalTarget";
+  src.category -> tgt.category "GoalCategory";
+  src.description -> tgt.description "GoalDescription";
+  src.status -> tgt.status "GoalStatus";
+  src.statusDate -> tgt.statusDate "GoalStatusDate";
+  src.statusReason -> tgt.statusReason "GoalStatusReason";
+  src.author -> tgt.expressedBy "GoalAuthor";
+  src.priority -> tgt.priority "GoalPriority";
+  src.addresses -> tgt.addresses "GoalAddresses";
+  src.note -> tgt.note "GoalNote";
+  src.outcome as vs0 then goalOutcome(vs0, tgt) "GoalOutcome";
 }
 
 group goalOutcome(source src, target tgt) extends BackboneElement {

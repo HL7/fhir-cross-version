@@ -20,12 +20,12 @@ group Coverage(source src : CoverageR3, target tgt : Coverage) extends DomainRes
   src.relationship -> tgt.relationship;
   src.period -> tgt.period;
   src.payor -> tgt.payor;
-  src.grouping as g where src.grouping.group.exists() -> tgt.class as t then CoverageGroupingGroup(g, t);
-  src.grouping as g where src.grouping.subGroup.exists() -> tgt.class as t then CoverageGroupingSubGroup(g, t);
-  src.grouping as g where src.grouping.plan.exists() -> tgt.class as t then CoverageGroupingPlan(g, t);
-  src.grouping as g where src.grouping.subPlan.exists() -> tgt.class as t then CoverageGroupingSubPlan(g, t);
-  src.grouping as g where src.grouping.class.exists() -> tgt.class as t then CoverageGroupingClass(g, t);
-  src.grouping as g where src.grouping.subClass.exists() -> tgt.class as t then CoverageGroupingSubClass(g, t);
+  src.grouping as g where (src.grouping.group.exists()) -> tgt.class as t then CoverageGroupingGroup(g, t);
+  src.grouping as g where (src.grouping.subGroup.exists()) -> tgt.class as t then CoverageGroupingSubGroup(g, t);
+  src.grouping as g where (src.grouping.plan.exists()) -> tgt.class as t then CoverageGroupingPlan(g, t);
+  src.grouping as g where (src.grouping.subPlan.exists()) -> tgt.class as t then CoverageGroupingSubPlan(g, t);
+  src.grouping as g where (src.grouping.class.exists()) -> tgt.class as t then CoverageGroupingClass(g, t);
+  src.grouping as g where (src.grouping.subClass.exists()) -> tgt.class as t then CoverageGroupingSubClass(g, t);
   src.order -> tgt.order;
   src.network -> tgt.network;
   src.contract -> tgt.contract;

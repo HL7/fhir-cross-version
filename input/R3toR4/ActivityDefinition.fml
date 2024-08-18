@@ -29,10 +29,10 @@ group ActivityDefinition(source src : ActivityDefinitionR3, target tgt : Activit
   src.lastReviewDate -> tgt.lastReviewDate;
   src.effectivePeriod -> tgt.effectivePeriod;
   src.topic -> tgt.topic;
-  src.contributor as vs where type = 'author' -> tgt.author as vt then Contributor(vs, vt);
-  src.contributor as vs where type = 'editor' -> tgt.editor as vt then Contributor(vs, vt);
-  src.contributor as vs where type = 'reviewer' -> tgt.reviewer as vt then Contributor(vs, vt);
-  src.contributor as vs where type = 'endorser' -> tgt.endorser as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'author') -> tgt.author as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'editor') -> tgt.editor as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'reviewer') -> tgt.reviewer as vt then Contributor(vs, vt);
+  src.contributor as vs where (type = 'endorser') -> tgt.endorser as vt then Contributor(vs, vt);
   src.relatedArtifact -> tgt.relatedArtifact;
   src.library -> tgt.library;
   src.kind as v -> tgt.kind = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/resources-3to4', 'code');
@@ -55,7 +55,7 @@ group ActivityDefinitionParticipant(source src, target tgt) extends BackboneElem
 
 group ActivityDefinitionDynamicValue(source src, target tgt) extends BackboneElement {
   src.path -> tgt.path;
-  src as vs where vs.type.exists().not() -> tgt.expression = create('Expression') as vt then {
+  src as vs -> tgt.expression as vt then {
     vs.description -> vt.description;
     vs.language -> vt.language;
     vs.expression -> vt.expression;

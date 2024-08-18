@@ -9,19 +9,19 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/HumanName" alias HumanNameR2 a
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group HumanName(source src : HumanName, target tgt : HumanNameR2) <<type+>> {
-  src.id -> tgt.id "HumanName_id";
-  src.extension where url != 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat' -> tgt.extension "HumanName_extensions";
-  src.use -> tgt.use "HumanName_use";
-  src.text -> tgt.text "HumanName_text";
-  src.family first -> tgt.family "HumanName_family";
-  src.extension as ex where url = 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat' -> tgt.family as f then nameRepeat(ex, f) "HumanName_family-rpt-ex";
-  src.given -> tgt.given "HumanName_given";
-  src.prefix -> tgt.prefix "HumanName_prefix";
-  src.suffix -> tgt.suffix "HumanName_suffix";
-  src.period -> tgt.period "HumanName_period";
+  src.id -> tgt.id "HumanNameId";
+  src.extension where (url != 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat') -> tgt.extension "HumanNameExtensions";
+  src.use -> tgt.use "HumanNameUse";
+  src.text -> tgt.text "HumanNameText";
+  src.family first -> tgt.family "HumanNameFamily";
+  src.extension as ex where (url = 'http://hl7.org/fhir/StructureDefinition/HumanName-familyRepeat') -> tgt.family as f then nameRepeat(ex, f) "HumanNameFamily-rpt-ex";
+  src.given -> tgt.given "HumanNameGiven";
+  src.prefix -> tgt.prefix "HumanNamePrefix";
+  src.suffix -> tgt.suffix "HumanNameSuffix";
+  src.period -> tgt.period "HumanNamePeriod";
 }
 
 group nameRepeat(source src, target tgt) {
-  src.value as v then string(v, tgt) "HumanName_family-rpt-2";
+  src.value as v then string(v, tgt) "HumanNameFamily-rpt-2";
 }
 

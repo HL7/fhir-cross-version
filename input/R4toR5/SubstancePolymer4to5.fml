@@ -40,6 +40,10 @@ group SubstancePolymerRepeatRepeatUnit(source src, target tgt) extends BackboneE
   src.orientationOfPolymerisation -> tgt.orientation;
   src.degreeOfPolymerisation as s -> tgt.degreeOfPolymerisation as t then SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation(s, t);
   src.structuralRepresentation as s -> tgt.structuralRepresentation as t then SubstancePolymerRepeatRepeatUnitStructuralRepresentation(s, t);
+  // convert the quantity decimal amount to an integer
+  // In general this is not generally good practice and should do more thinking about how to handle this
+  // however since this is a draft FMM 0 resource as source, this is fine
+  src.amount as sa -> tgt.amount = (sa.amount.ofType(Quantity).value.round().toString().toInteger()) "convertAmount"; 
 }
 
 group SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation(source src, target tgt) extends BackboneElement {

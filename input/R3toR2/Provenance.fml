@@ -23,8 +23,8 @@ group Provenance(source src : Provenance, target tgt : ProvenanceR2) extends Dom
 
 group prAgent(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role "agent-role";
-  src.who : Reference where display.exists() or reference.exists() -> tgt.actor "agent-who";
-  src.who : Reference as su where identifier.exists() then {
+  src.who : Reference where (display.exists() or reference.exists()) -> tgt.actor "agent-who";
+  src.who : Reference as su where (identifier.exists()) then {
     su.identifier -> tgt.userId "agent-userId2";
   } "agent-userId";
 }

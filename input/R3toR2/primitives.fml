@@ -102,6 +102,10 @@ group unsignedInt(source src : unsignedInt, target tgt : unsignedIntR2) extends 
   src.value as v -> tgt.value = v "unsignedInt-value";
 }
 
+group unsignedInt2integer(source src : unsignedInt, target tgt : integerR2) extends Element <<types>> {
+  src.value as v -> tgt.value = v "unsignedInt-value";
+}
+
 group uri(source src : uri, target tgt : uriR2) extends Element <<type+>> {
   src.value as v -> tgt.value = v "uri-value";
 }
@@ -136,6 +140,10 @@ group codeToString(source src : code, target tgt : stringR2) extends Element <<t
 
 group stringToId(source src : string, target tgt : idR2) extends Element <<types>> {
   src.value as v -> tgt.value = v "stringToId-value";
+}
+
+group string2code(source src : string, target tgt : codeR2) extends Element <<types>> {
+  src.value as v -> tgt.value = v "string2code-value";
 }
 
 group idToString(source src : id, target tgt : stringR2) extends Element <<types>> {

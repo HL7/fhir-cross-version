@@ -20,8 +20,8 @@ group VisionPrescription(source src : VisionPrescription, target tgt : VisionPre
 
 group vspDispense(source src, target tgt) extends BackboneElement {
   src.product as v then vpsProduct(v, tgt) "dispense-product";
-  src.eye as v where coding.code = 'left' -> tgt.eye = 'left' "dispense-eye1";
-  src.eye as v where coding.code = 'right' -> tgt.eye = 'right' "dispense-eye2";
+  src.eye as v where (coding.code = 'left') -> tgt.eye = 'left' "dispense-eye1";
+  src.eye as v where (coding.code = 'right') -> tgt.eye = 'right' "dispense-eye2";
   src.sphere -> tgt.sphere "dispense-sphere";
   src.cylinder -> tgt.cylinder "dispense-cylinder";
   src.axis -> tgt.axis "dispense-axis";

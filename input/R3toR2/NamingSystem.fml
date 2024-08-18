@@ -19,8 +19,8 @@ group NamingSystem(source src : NamingSystem, target tgt : NamingSystemR2) exten
   src.kind -> tgt.kind "NamingSystem-kind";
   src.publisher -> tgt.publisher "NamingSystem-publisher";
   src.contact as vs0 -> tgt.contact as vt0 then {
-    vs0.name -> vt0.name "Contract_name";
-    vs0.telecom -> vt0.telecom "Contract_telecom";
+    vs0.name -> vt0.name "ContractName";
+    vs0.telecom -> vt0.telecom "ContractTelecom";
   } "NamingSystem-contact";
   src.responsible -> tgt.responsible "NamingSystem-responsible";
   src.date -> tgt.date "NamingSystem-date";

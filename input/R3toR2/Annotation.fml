@@ -19,7 +19,7 @@ group Annotation(source src : Annotation, target tgt : AnnotationR2) extends Ele
   src.text -> tgt.text "Annotation-text";
 }
 
-group AnnotationToString(source src : Annotation, target tgt : stringR2) extends Element <<type+>> {
+group AnnotationToString(source src : Annotation, target tgt : stringR2) extends Element <<types>> {
   src.text as v -> tgt.value = v "Annotation-text1";
 }
 

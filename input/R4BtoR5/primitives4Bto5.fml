@@ -79,11 +79,11 @@ group code2uri(source src : codeR4B, target tgt : uriR5) extends Element <<types
   src.value as v -> tgt.value = v "code2uriValue";
 }
 
-group date(source src : dateR4B, target tgt : dateR5) extends Element <<types>> {
+group date(source src : dateR4B, target tgt : dateR5) extends Element <<type+>> {
   src.value as v -> tgt.value = v "dateValue";
 }
 
-group date2dateTime(source src : dateR4B, target tgt : dateTimeR5) extends Element <<type+>> {
+group date2dateTime(source src : dateR4B, target tgt : dateTimeR5) extends Element <<types>> {
   src.value as v -> tgt.value = v "date2dateTimeValue";
 }
 
@@ -119,7 +119,7 @@ group integer(source src : integerR4B, target tgt : integerR5) extends Element <
   src.value as v -> tgt.value = v "integerValue";
 }
 
-group integer2integer64(source src : integerR4B, target tgt : integer64R5) extends Element <<type+>> {
+group integer2integer64(source src : integerR4B, target tgt : integer64R5) extends Element <<types>> {
   src.value as v -> tgt.value = v "integer2integer64Value";
 }
 
@@ -171,7 +171,7 @@ group unsignedInt(source src : unsignedIntR4B, target tgt : unsignedIntR5) exten
   src.value as v -> tgt.value = v "unsignedIntValue";
 }
 
-group unsignedInt2integer64(source src : unsignedIntR4B, target tgt : integer64R5) extends Element <<type+>> {
+group unsignedInt2integer64(source src : unsignedIntR4B, target tgt : integer64R5) extends Element <<types>> {
   src.value as v -> tgt.value = v "unsignedInt2integer64Value";
 }
 

@@ -14,7 +14,10 @@ group SupplyDelivery(source src : SupplyDeliveryR4, target tgt : SupplyDeliveryR
   src.partOf -> tgt.partOf;
   src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sud.status-4to5', 'code');
   src.patient -> tgt.patient;
-  src.type : CodeableConcept as v -> tgt.type = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/sud.type-4to5', 'code') "typeCodeableConcept";
+  src.type as v -> tgt.type as t then {
+    v.coding as c -> t.coding = translate(c, 'http://hl7.org/fhir/uv/xver/ConceptMap/sud.type-4to5', 'code');
+    v.text -> t.text;
+  } "typeCodeableConcept";
   src.suppliedItem as s -> tgt.suppliedItem as t then SupplyDeliverySuppliedItem(s, t);
   src.occurrence : dateTime -> tgt.occurrence "occurrenceDateTime";
   src.occurrence : Period -> tgt.occurrence "occurrencePeriod";

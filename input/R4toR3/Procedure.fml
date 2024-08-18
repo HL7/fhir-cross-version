@@ -12,9 +12,9 @@ group Procedure(source src : Procedure, target tgt : ProcedureR3) extends Domain
   src.identifier -> tgt.identifier;
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
-  src.status where value = 'not-done' ->  tgt.status = 'suspended',  tgt.notDone = true;
-  src.status as vs where (value = 'not-done').not() -> tgt.status = translate(vs, 'http://hl7.org/fhir/uv/xver/ConceptMap/pro.status-4to3', 'code');
-  src.statusReason as vs where src.status = 'not-done' -> tgt.notDoneReason = create('CodeableConcept') as vt then CodeableConcept(vs, vt);
+  src.status where ($this = 'not-done') ->  tgt.status = 'suspended',  tgt.notDone = true;
+  src.status as vs where ((vs = 'not-done').not()) -> tgt.status = translate(vs, 'http://hl7.org/fhir/uv/xver/ConceptMap/pro.status-4to3', 'code');
+  src.statusReason as vs where (src.status = 'not-done') -> tgt.notDoneReason = create('CodeableConcept') as vt then CodeableConcept(vs, vt);
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.subject -> tgt.subject;

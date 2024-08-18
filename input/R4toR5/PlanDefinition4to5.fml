@@ -18,11 +18,11 @@ group PlanDefinition(source src : PlanDefinitionR4, target tgt : PlanDefinitionR
   src.type -> tgt.type;
   src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/pdf.status-4to5', 'code');
   src.experimental -> tgt.experimental;
-  src.subject as s where code = 'Patient' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
-  src.subject as s where code = 'Practitioner' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
-  src.subject as s where code = 'Organization' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Organization';
-  src.subject as s where code = 'Location' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Location';
-  src.subject as s where code = 'Device' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Device';
+  src.subject as s where (coding.exists(code = 'Patient' and system = 'http://hl7.org/fhir/resource-types')) ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
+  src.subject as s where (coding.exists(code = 'Practitioner' and system = 'http://hl7.org/fhir/resource-types')) ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
+  src.subject as s where (coding.exists(code = 'Organization' and system = 'http://hl7.org/fhir/resource-types')) ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Organization';
+  src.subject as s where (coding.exists(code = 'Location' and system = 'http://hl7.org/fhir/resource-types')) ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Location';
+  src.subject as s where (coding.exists(code = 'Device' and system = 'http://hl7.org/fhir/resource-types')) ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Device';
   src.subject : Reference -> tgt.subject "subjectReference";
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
@@ -87,11 +87,11 @@ group PlanDefinitionAction(source src, target tgt) extends BackboneElement {
   src.reason -> tgt.reason;
   src.documentation -> tgt.documentation;
   src.goalId -> tgt.goalId;
-  src.subject as s where code = 'Patient' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
-  src.subject as s where code = 'Practitioner' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
-  src.subject as s where code = 'Organization' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Organization';
-  src.subject as s where code = 'Location' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Location';
-  src.subject as s where code = 'Device' ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Device';
+  src.subject as s where (coding.exists(code = 'Patient' and system = 'http://hl7.org/fhir/resource-types')) ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Patient';
+  src.subject as s where (coding.exists(code = 'Practitioner' and system = 'http://hl7.org/fhir/resource-types')) ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Practitioner';
+  src.subject as s where (coding.exists(code = 'Organization' and system = 'http://hl7.org/fhir/resource-types')) ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Organization';
+  src.subject as s where (coding.exists(code = 'Location' and system = 'http://hl7.org/fhir/resource-types')) ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Location';
+  src.subject as s where (coding.exists(code = 'Device' and system = 'http://hl7.org/fhir/resource-types')) ->  tgt.subject = create('CodeableConcept') as tc,  tc.coding = create('Coding') as tcc,  tcc.system = 'http://hl7.org/fhir/fhir-types',  tcc.code = 'Patient',  tcc.display = 'Device';
   src.subject : Reference -> tgt.subject "subjectReference";
   src.trigger -> tgt.trigger;
   src.condition as s -> tgt.condition as t then PlanDefinitionActionCondition(s, t);
@@ -113,6 +113,7 @@ group PlanDefinitionAction(source src, target tgt) extends BackboneElement {
   src.definition : uri -> tgt.definition "definitionUri";
   src.transform -> tgt.transform;
   src.dynamicValue as s -> tgt.dynamicValue as t then PlanDefinitionActionDynamicValue(s, t);
+  src.action as s -> tgt.action as t then PlanDefinitionAction(s, t);
 }
 
 group PlanDefinitionActionCondition(source src, target tgt) extends BackboneElement {

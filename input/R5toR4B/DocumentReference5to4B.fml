@@ -22,7 +22,7 @@ group DocumentReference(source src : DocumentReferenceR5, target tgt : DocumentR
   src.period as s ->  tgt.context as t,  t.period = s;
   src.date -> tgt.date;
   src.author -> tgt.author;
-  src.attester as s where src.attester.mode = 'professional' -> tgt then {
+  src.attester as s where (s.mode.coding.exists(code = 'professional' and system = 'http://hl7.org/fhir/composition-attestation-mode')) -> tgt then {
     s.party -> tgt.authenticator;
   };
   src.custodian -> tgt.custodian;
@@ -34,7 +34,9 @@ group DocumentReference(source src : DocumentReferenceR5, target tgt : DocumentR
 
 group DocumentReferenceRelatesTo(source src, target tgt) extends BackboneElement {
   src.code as s -> tgt then {
-    s.coding first as sc where (system = 'http://hl7.org/fhir/ValueSet/document-relationship-type') -> tgt.code = sc.code;
+    s.coding first as sc where (system = 'http://hl7.org/fhir/ValueSet/document-relationship-type') then {
+      sc.code -> tgt.code;
+    };
   };
   src.target -> tgt.target;
 }

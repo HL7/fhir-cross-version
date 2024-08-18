@@ -9,25 +9,25 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/Encounter" alias Encounter as 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group Encounter(source src : EncounterR2, target tgt : Encounter) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "Encounter_identifier";
-  src.status -> tgt.status "Encounter_status";
-  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then encStatusHistory(vs0, vt0) "Encounter_statusHistory";
-  src.class as v -> tgt.class = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/enc.class-2to3', 'Coding') "Encounter_class";
-  src.type -> tgt.type "Encounter_type";
-  src.priority -> tgt.priority "Encounter_priority";
-  src.patient -> tgt.subject "Encounter_patient";
-  src.episodeOfCare -> tgt.episodeOfCare "Encounter_episodeOfCare";
-  src.incomingReferral -> tgt.incomingReferral "Encounter_incomingReferral";
-  src.participant as vs0 -> tgt.participant as vt0 then encParticipant(vs0, vt0) "Encounter_participant";
-  src.appointment -> tgt.appointment "Encounter_appointment";
-  src.period -> tgt.period "Encounter_period";
-  src.length as vs -> tgt.length as vt then QuantityToDuration(vs, vt) "Encounter_length";
-  src.reason -> tgt.reason "Encounter_reason";
-  src.indication as v ->  tgt.diagnosis as d,  d.condition = v "Encounter_indication";
-  src.hospitalization as vs0 -> tgt.hospitalization as vt0 then encHospitalizationTypes(vs0, vt0, tgt) "Encounter_hospitalization";
-  src.location as vs0 -> tgt.location as vt0 then encLocation(vs0, vt0) "Encounter_location";
-  src.serviceProvider -> tgt.serviceProvider "Encounter_serviceProvider";
-  src.partOf -> tgt.partOf "Encounter_partOf";
+  src.identifier -> tgt.identifier "EncounterIdentifier";
+  src.status -> tgt.status "EncounterStatus";
+  src.statusHistory as vs0 -> tgt.statusHistory as vt0 then encStatusHistory(vs0, vt0) "EncounterStatusHistory";
+  src.class as v -> tgt.class = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/enc.class-2to3', 'Coding') "EncounterClass";
+  src.type -> tgt.type "EncounterType";
+  src.priority -> tgt.priority "EncounterPriority";
+  src.patient -> tgt.subject "EncounterPatient";
+  src.episodeOfCare -> tgt.episodeOfCare "EncounterEpisodeOfCare";
+  src.incomingReferral -> tgt.incomingReferral "EncounterIncomingReferral";
+  src.participant as vs0 -> tgt.participant as vt0 then encParticipant(vs0, vt0) "EncounterParticipant";
+  src.appointment -> tgt.appointment "EncounterAppointment";
+  src.period -> tgt.period "EncounterPeriod";
+  src.length as vs -> tgt.length as vt then QuantityToDuration(vs, vt) "EncounterLength";
+  src.reason -> tgt.reason "EncounterReason";
+  src.indication as v ->  tgt.diagnosis as d,  d.condition = v "EncounterIndication";
+  src.hospitalization as vs0 -> tgt.hospitalization as vt0 then encHospitalizationTypes(vs0, vt0, tgt) "EncounterHospitalization";
+  src.location as vs0 -> tgt.location as vt0 then encLocation(vs0, vt0) "EncounterLocation";
+  src.serviceProvider -> tgt.serviceProvider "EncounterServiceProvider";
+  src.partOf -> tgt.partOf "EncounterPartOf";
 }
 
 group encStatusHistory(source src, target tgt) extends BackboneElement {

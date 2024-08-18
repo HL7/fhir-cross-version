@@ -20,9 +20,9 @@ group Organization(source src : Organization, target tgt : OrganizationR2) exten
 }
 
 group orgContact(source src, target tgt) extends BackboneElement {
-  src.purpose -> tgt.purpose "Contract_purpose";
-  src.name -> tgt.name "Contract_name";
-  src.telecom -> tgt.telecom "Contract_telecom";
-  src.address -> tgt.address "Contract_address";
+  src.purpose -> tgt.purpose "ContractPurpose";
+  src.name -> tgt.name "ContractName";
+  src.telecom -> tgt.telecom "ContractTelecom";
+  src.address -> tgt.address "ContractAddress";
 }
 

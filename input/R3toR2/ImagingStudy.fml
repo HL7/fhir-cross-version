@@ -9,21 +9,21 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/ImagingStudy" alias ImagingStu
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
 group ImagingStudy(source src : ImagingStudy, target tgt : ImagingStudyR2) extends DomainResource <<type+>> {
-  src.started -> tgt.started "ImagingStudy_started";
-  src.patient -> tgt.patient "ImagingStudy_patient";
-  src.uid -> tgt.uid "ImagingStudy_uid";
-  src.accession -> tgt.accession "ImagingStudy_accession";
-  src.identifier -> tgt.identifier "ImagingStudy_identifier";
-  src.modalityList -> tgt.modalityList "ImagingStudy_modalityList";
-  src.referrer -> tgt.referrer "ImagingStudy_referrer";
-  src.availability -> tgt.availability "ImagingStudy_availability";
-  src.extension as e where e.url = 'http://hl7.org/fhir/ImagingStudy-r2-url' -> tgt.url = (e.value) "ImagingStudy_url";
-  src.numberOfSeries -> tgt.numberOfSeries "ImagingStudy_numberOfSeries";
-  src.numberOfInstances -> tgt.numberOfInstances "ImagingStudy_numberOfInstances";
-  src.procedureReference -> tgt.procedure "ImagingStudy_procedure";
-  src.interpreter -> tgt.interpreter "ImagingStudy_interpreter";
-  src.description -> tgt.description "ImagingStudy_description";
-  src.series as vs0 -> tgt.series as vt0 then imgSeries(vs0, vt0) "ImagingStudy_series";
+  src.started -> tgt.started "ImagingStudyStarted";
+  src.patient -> tgt.patient "ImagingStudyPatient";
+  src.uid -> tgt.uid "ImagingStudyUid";
+  src.accession -> tgt.accession "ImagingStudyAccession";
+  src.identifier -> tgt.identifier "ImagingStudyIdentifier";
+  src.modalityList -> tgt.modalityList "ImagingStudyModalityList";
+  src.referrer -> tgt.referrer "ImagingStudyReferrer";
+  src.availability -> tgt.availability "ImagingStudyAvailability";
+  src.extension as e where (e.url = 'http://hl7.org/fhir/ImagingStudy-r2-url') -> tgt.url = (e.value) "ImagingStudyUrl";
+  src.numberOfSeries -> tgt.numberOfSeries "ImagingStudyNumberOfSeries";
+  src.numberOfInstances -> tgt.numberOfInstances "ImagingStudyNumberOfInstances";
+  src.procedureReference -> tgt.procedure "ImagingStudyProcedure";
+  src.interpreter -> tgt.interpreter "ImagingStudyInterpreter";
+  src.description -> tgt.description "ImagingStudyDescription";
+  src.series as vs0 -> tgt.series as vt0 then imgSeries(vs0, vt0) "ImagingStudySeries";
 }
 
 group imgSeries(source src, target tgt) extends BackboneElement {
@@ -33,7 +33,7 @@ group imgSeries(source src, target tgt) extends BackboneElement {
   src.description -> tgt.description "series-description";
   src.numberOfInstances -> tgt.numberOfInstances "series-numberOfInstances";
   src.availability -> tgt.availability "series-availability";
-  src.extension as e where e.url = 'http://hl7.org/fhir/ImagingStudy-r2-url' -> tgt.url = (e.value) "series-url";
+  src.extension as e where (e.url = 'http://hl7.org/fhir/ImagingStudy-r2-url') -> tgt.url = (e.value) "series-url";
   src.bodySite -> tgt.bodySite "series-bodySite";
   src.laterality -> tgt.laterality "series-laterality";
   src.started -> tgt.started "series-started";

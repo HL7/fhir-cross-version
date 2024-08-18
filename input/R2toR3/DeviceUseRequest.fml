@@ -9,14 +9,14 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/DeviceRequest" alias DeviceReq
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group DeviceUseRequest(source src : DeviceUseRequestR2, target tgt : DeviceRequest) extends DomainResource <<type+>> {
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/duq.status-dur.status-2to3', 'code') "DeviceUseRequest_status";
-  src.device -> tgt.code "DeviceUseRequest_device";
-  src.encounter -> tgt.context "DeviceUseRequest_context";
-  src.identifier -> tgt.identifier "DeviceUseRequest_identifier";
-  src.indication -> tgt.reasonCode "DeviceUseRequest_reasonCode";
-  src.notes -> tgt.note "DeviceUseRequest_notes";
-  src.orderedOn -> tgt.authoredOn "DeviceUseRequest_authored";
-  src.subject -> tgt.subject "DeviceUseRequest_subject";
-  src.timing -> tgt.occurrence "DeviceUseRequest_Timing";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/duq.status-dur.status-2to3', 'code') "DeviceUseRequestStatus";
+  src.device -> tgt.code "DeviceUseRequestDevice";
+  src.encounter -> tgt.context "DeviceUseRequestContext";
+  src.identifier -> tgt.identifier "DeviceUseRequestIdentifier";
+  src.indication -> tgt.reasonCode "DeviceUseRequestReasonCode";
+  src.notes -> tgt.note "DeviceUseRequestNotes";
+  src.orderedOn -> tgt.authoredOn "DeviceUseRequestAuthored";
+  src.subject -> tgt.subject "DeviceUseRequestSubject";
+  src.timing -> tgt.occurrence "DeviceUseRequestTiming";
 }
 

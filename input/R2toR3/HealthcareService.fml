@@ -9,27 +9,27 @@ uses "http://hl7.org/fhir/3.0/StructureDefinition/HealthcareService" alias Healt
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 
 group HealthcareService(source src : HealthcareServiceR2, target tgt : HealthcareService) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier "HealthcareService_identifier";
-  src.providedBy -> tgt.providedBy "HealthcareService_providedBy";
-  src.serviceCategory -> tgt.category "HealthcareService_serviceCategory";
-  src.serviceType as v then hsvcType(v, tgt) "HealthcareService_serviceType";
-  src.location -> tgt.location "HealthcareService_location";
-  src.serviceName -> tgt.name "HealthcareService_serviceName";
-  src.comment -> tgt.comment "HealthcareService_comment";
-  src.extraDetails -> tgt.extraDetails "HealthcareService_extraDetails";
-  src.photo -> tgt.photo "HealthcareService_photo";
-  src.telecom -> tgt.telecom "HealthcareService_telecom";
-  src.coverageArea -> tgt.coverageArea "HealthcareService_coverageArea";
-  src.serviceProvisionCode -> tgt.serviceProvisionCode "HealthcareService_serviceProvisionCode";
-  src.eligibility -> tgt.eligibility "HealthcareService_eligibility";
-  src.eligibilityNote -> tgt.eligibilityNote "HealthcareService_eligibilityNote";
-  src.programName -> tgt.programName "HealthcareService_programName";
-  src.characteristic -> tgt.characteristic "HealthcareService_characteristic";
-  src.referralMethod -> tgt.referralMethod "HealthcareService_referralMethod";
-  src.appointmentRequired -> tgt.appointmentRequired "HealthcareService_appointmentRequired";
-  src.availableTime as vs0 -> tgt.availableTime as vt0 then hsvcAvailable(vs0, vt0) "HealthcareService_availableTime";
-  src.notAvailable as vs0 -> tgt.notAvailable as vt0 then hsvcNotAvailable(vs0, vt0) "HealthcareService_notAvailable";
-  src.availabilityExceptions -> tgt.availabilityExceptions "HealthcareService_availabilityExceptions";
+  src.identifier -> tgt.identifier "HealthcareServiceIdentifier";
+  src.providedBy -> tgt.providedBy "HealthcareServiceProvidedBy";
+  src.serviceCategory -> tgt.category "HealthcareServiceServiceCategory";
+  src.serviceType as v then hsvcType(v, tgt) "HealthcareServiceServiceType";
+  src.location -> tgt.location "HealthcareServiceLocation";
+  src.serviceName -> tgt.name "HealthcareServiceServiceName";
+  src.comment -> tgt.comment "HealthcareServiceComment";
+  src.extraDetails -> tgt.extraDetails "HealthcareServiceExtraDetails";
+  src.photo -> tgt.photo "HealthcareServicePhoto";
+  src.telecom -> tgt.telecom "HealthcareServiceTelecom";
+  src.coverageArea -> tgt.coverageArea "HealthcareServiceCoverageArea";
+  src.serviceProvisionCode -> tgt.serviceProvisionCode "HealthcareServiceServiceProvisionCode";
+  src.eligibility -> tgt.eligibility "HealthcareServiceEligibility";
+  src.eligibilityNote -> tgt.eligibilityNote "HealthcareServiceEligibilityNote";
+  src.programName -> tgt.programName "HealthcareServiceProgramName";
+  src.characteristic -> tgt.characteristic "HealthcareServiceCharacteristic";
+  src.referralMethod -> tgt.referralMethod "HealthcareServiceReferralMethod";
+  src.appointmentRequired -> tgt.appointmentRequired "HealthcareServiceAppointmentRequired";
+  src.availableTime as vs0 -> tgt.availableTime as vt0 then hsvcAvailable(vs0, vt0) "HealthcareServiceAvailableTime";
+  src.notAvailable as vs0 -> tgt.notAvailable as vt0 then hsvcNotAvailable(vs0, vt0) "HealthcareServiceNotAvailable";
+  src.availabilityExceptions -> tgt.availabilityExceptions "HealthcareServiceAvailabilityExceptions";
 }
 
 group hsvcAvailable(source src, target tgt) extends BackboneElement {

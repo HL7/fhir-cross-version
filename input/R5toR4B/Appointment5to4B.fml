@@ -29,14 +29,15 @@ group Appointment(source src : AppointmentR5, target tgt : AppointmentR4B) exten
   src.patientInstruction -> tgt.patientInstruction;
   src.basedOn -> tgt.basedOn;
   src.participant as s -> tgt.participant as t then AppointmentParticipant(s, t);
+  src.priority; // this property is not mapped as the datatype was too different (from an integer to now a coding)
 }
 
 group AppointmentParticipant(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.period -> tgt.period;
   src.actor -> tgt.actor;
-  src.required as s where required = true ->  tgt.required as t,  t.value = 'required';
-  src.required as s where required = false ->  tgt.required as t,  t.value = 'optional';
+  src.required as s where (s = true) ->  tgt.required as t,  t.value = 'required';
+  src.required as s where (s = false) ->  tgt.required as t,  t.value = 'optional';
   src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/app.pa.status-5to4b', 'code');
 }
 

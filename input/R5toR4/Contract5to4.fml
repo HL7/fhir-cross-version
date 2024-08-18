@@ -68,6 +68,7 @@ group ContractTerm(source src, target tgt) extends BackboneElement {
   src.offer as s -> tgt.offer as t then ContractTermOffer(s, t);
   src.asset as s -> tgt.asset as t then ContractTermAsset(s, t);
   src.action as s -> tgt.action as t then ContractTermAction(s, t);
+  src.group as s -> tgt.group as t then ContractTerm(s, t);
 }
 
 group ContractTermSecurityLabel(source src, target tgt) extends BackboneElement {
@@ -125,6 +126,7 @@ group ContractTermAsset(source src, target tgt) extends BackboneElement {
   src.linkId -> tgt.linkId;
   src.securityLabelNumber -> tgt.securityLabelNumber;
   src.valuedItem as s -> tgt.valuedItem as t then ContractTermAssetValuedItem(s, t);
+  src.answer as s -> tgt.answer as t then ContractTermOfferAnswer(s, t);
 }
 
 group ContractTermAssetContext(source src, target tgt) extends BackboneElement {

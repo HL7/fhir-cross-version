@@ -13,14 +13,14 @@ group Communication(source src : Communication, target tgt : CommunicationR3) ex
   src.instantiatesCanonical -> tgt.definition;
   src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
-  src.status where value != 'not-done' -> tgt.status;
-  src.status as v where value = 'not-done' ->  tgt.status = 'completed',  tgt.notDone = true;
-  src.statusReason where src.status = 'not-done' -> tgt.notDoneReason;
+  src.status as v where (v != 'not-done') -> tgt.status;
+  src.status as v where (v = 'not-done') ->  tgt.status = 'completed',  tgt.notDone = true;
+  src.statusReason where (src.status = 'not-done') -> tgt.notDoneReason;
   src.category -> tgt.category;
   src.medium -> tgt.medium;
   src.subject -> tgt.subject;
   src.recipient -> tgt.recipient;
-  src.extension as e where url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Communication.topic' then {
+  src.extension as e where (url = 'http://hl7.org/fhir/3.0/StructureDefinition/extension-Communication.topic') then {
     e.value : Reference -> tgt.topic;
   };
   src.encounter -> tgt.context;

@@ -27,6 +27,7 @@ group QuestionnaireResponseItem(source src, target tgt) extends BackboneElement 
   src.definition -> tgt.definition;
   src.text -> tgt.text;
   src.answer as s -> tgt.answer as t then QuestionnaireResponseItemAnswer(s, t);
+  src.item as s -> tgt.item as t then QuestionnaireResponseItem(s, t);
 }
 
 group QuestionnaireResponseItemAnswer(source src, target tgt) extends BackboneElement {
@@ -42,5 +43,6 @@ group QuestionnaireResponseItemAnswer(source src, target tgt) extends BackboneEl
   src.value : Coding -> tgt.value "valueCoding";
   src.value : Quantity -> tgt.value "valueQuantity";
   src.value : Reference -> tgt.value "valueReference";
+  src.item as s -> tgt.item as t then QuestionnaireResponseItem(s, t);
 }
 

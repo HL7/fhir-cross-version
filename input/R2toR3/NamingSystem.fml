@@ -34,6 +34,6 @@ group NamingSystem(source src : NamingSystemR2, target tgt : NamingSystem) exten
     vs0.period -> vt0.period "uniqueId-period";
   } "NamingSystem-uniqueId";
   src.replacedBy -> tgt.replacedBy "NamingSystem-replacedBy";
-  src.useContext where coding.system = 'urn:iso:std:iso:3166' -> tgt.jurisdiction "NamingSystem-jurisdiction";
+  src.useContext where (coding.system = 'urn:iso:std:iso:3166') -> tgt.jurisdiction "NamingSystem-jurisdiction";
 }
 

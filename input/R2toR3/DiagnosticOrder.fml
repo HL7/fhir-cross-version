@@ -13,20 +13,20 @@ imports "http://hl7.org/fhir/uv/xver/StructureMap/*2to3"
 // a procedure request back to a DiagnosticOrder, but we mark them with an
 // extension in case this helps
 group DiagnosticOrder(source src : DiagnosticOrderR2, target tgt : ProcedureRequest) extends DomainResource <<type+>> {
-  src ->  tgt.extension as ex,  ex.url = 'http://hl7.org/fhir/diagnosticorder-r2-marker',  ex.value = 'true' "DiagnosticOrder_mark";
-  src.subject -> tgt.subject "DiagnosticOrder_subject";
-  src.orderer as v ->  tgt.requester as t,  t.agent = v "DiagnosticOrder_orderer";
-  src.identifier -> tgt.identifier "DiagnosticOrder_identifier";
-  src.encounter -> tgt.context "DiagnosticOrder_encounter";
-  src.reason -> tgt.reasonCode "DiagnosticOrder_reason";
-  src.supportingInformation -> tgt.supportingInfo "DiagnosticOrder_supportingInformation";
-  src.specimen -> tgt.specimen "DiagnosticOrder_reason";
-  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dgo.status-pcrq.status-2to3', 'code') "DiagnosticOrder_status";
-  src.status as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dgo.status-pcrq.intent-2to3', 'code') "DiagnosticOrder_intent";
-  src.priority -> tgt.priority "DiagnosticOrder_priority";
-  src.event as vs where status = 'requested' then doEvent(vs, tgt) "DiagnosticOrder_event";
-  src.item only_one as vs then doItem(vs, tgt) "DiagnosticOrder_item";
-  src.note -> tgt.note "DiagnosticOrder_note";
+  src ->  tgt.extension as ex,  ex.url = 'http://hl7.org/fhir/diagnosticorder-r2-marker',  ex.value = 'true' "DiagnosticOrderMark";
+  src.subject -> tgt.subject "DiagnosticOrderSubject";
+  src.orderer as v ->  tgt.requester as t,  t.agent = v "DiagnosticOrderOrderer";
+  src.identifier -> tgt.identifier "DiagnosticOrderIdentifier";
+  src.encounter -> tgt.context "DiagnosticOrderEncounter";
+  src.reason -> tgt.reasonCode "DiagnosticOrderReason";
+  src.supportingInformation -> tgt.supportingInfo "DiagnosticOrderSupportingInformation";
+  src.specimen -> tgt.specimen "DiagnosticOrderReason";
+  src.status as v -> tgt.status = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dgo.status-pcrq.status-2to3', 'code') "DiagnosticOrderStatus";
+  src.status as v -> tgt.intent = translate(v, 'http://hl7.org/fhir/uv/xver/ConceptMap/dgo.status-pcrq.intent-2to3', 'code') "DiagnosticOrderIntent";
+  src.priority -> tgt.priority "DiagnosticOrderPriority";
+  src.event as vs where (status = 'requested') then doEvent(vs, tgt) "DiagnosticOrderEvent";
+  src.item only_one as vs then doItem(vs, tgt) "DiagnosticOrderItem";
+  src.note -> tgt.note "DiagnosticOrderNote";
 }
 
 group doEvent(source src, target tgt) {

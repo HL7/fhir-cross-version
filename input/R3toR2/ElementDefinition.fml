@@ -9,57 +9,57 @@ uses "http://hl7.org/fhir/1.0/StructureDefinition/ElementDefinition" alias Eleme
 
 imports "http://hl7.org/fhir/uv/xver/StructureMap/*3to2"
 
-group ElementDefinition(source srcR : StructureDefinition, source src : ElementDefinition, target tgt : ElementDefinitionR2) <<type+>> {
-  src.extension -> tgt.extension "ElementDefinition_extensions";
-  src.path -> tgt.path "ElementDefinition_path";
-  src.sliceName -> tgt.name "ElementDefinition_name";
-  src.representation where $this = 'xmlAttr' -> tgt.representation "ElementDefinition_representation";
-  src.label -> tgt.label "ElementDefinition_label";
-  src.code -> tgt.code "ElementDefinition_code";
+group ElementDefinition(source srcR : StructureDefinition, source src : ElementDefinition, target tgt : ElementDefinitionR2) {
+  src.extension -> tgt.extension "ElementDefinitionExtensions";
+  src.path -> tgt.path "ElementDefinitionPath";
+  src.sliceName -> tgt.name "ElementDefinitionName";
+  src.representation where ($this = 'xmlAttr') -> tgt.representation "ElementDefinitionRepresentation";
+  src.label -> tgt.label "ElementDefinitionLabel";
+  src.code -> tgt.code "ElementDefinitionCode";
   src.slicing as vs0 -> tgt.slicing as vt0 then {
     vs0.discriminator as vd1 then edDiscriminator(vd1, vt0) "slicing-discriminator";
     vs0.description -> vt0.description "slicing-description";
     vs0.ordered -> vt0.ordered "slicing-ordered";
     vs0.rules -> vt0.rules "slicing-rules";
-  } "ElementDefinition_slicing";
-  src.short -> tgt.short "ElementDefinition_short";
-  src.definition -> tgt.definition "ElementDefinition_definition";
-  src.comment -> tgt.comments "ElementDefinition_comments";
-  src.requirements -> tgt.requirements "ElementDefinition_requirements";
-  src.alias -> tgt.alias "ElementDefinition_alias";
-  src.min -> tgt.min "ElementDefinition_min";
-  src.max -> tgt.max "ElementDefinition_max";
+  } "ElementDefinitionSlicing";
+  src.short -> tgt.short "ElementDefinitionShort";
+  src.definition -> tgt.definition "ElementDefinitionDefinition";
+  src.comment -> tgt.comments "ElementDefinitionComments";
+  src.requirements -> tgt.requirements "ElementDefinitionRequirements";
+  src.alias -> tgt.alias "ElementDefinitionAlias";
+  src.min -> tgt.min "ElementDefinitionMin";
+  src.max -> tgt.max "ElementDefinitionMax";
   src.base as vs0 -> tgt.base as vt0 then {
     vs0.path -> vt0.path "base-path";
     vs0.min -> vt0.min "base-min";
     vs0.max -> vt0.max "base-max";
-  } "ElementDefinition_base";
-  src.type as vs0 -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinition_type";
-  src where path.contains('.').not() and src.type.empty() and src.contentReference.empty() and srcR.is(StructureDefinition) -> tgt.type as vt0 then {
+  } "ElementDefinitionBase";
+  src.type as vs0 -> tgt.type as vt0 then type(vs0, vt0) "ElementDefinitionType";
+  src where (path.contains('.').not() and src.type.empty() and src.contentReference.empty() and srcR.is(StructureDefinition)) -> tgt.type as vt0 then {
     srcR.baseDefinition as base -> vt0.code = (base.substring(40)) "type-code";
-  } "ElementDefinition_type-1st";
-  src.contentReference -> tgt.nameReference "ElementDefinition_contentReference";
-  src.defaultValue -> tgt.defaultValue "ElementDefinition_defaultValue";
-  src.meaningWhenMissing -> tgt.meaningWhenMissing "ElementDefinition_meaningWhenMissing";
+  } "ElementDefinitionType-1st";
+  src.contentReference -> tgt.nameReference "ElementDefinitionContentReference";
+  src.defaultValue -> tgt.defaultValue "ElementDefinitionDefaultValue";
+  src.meaningWhenMissing -> tgt.meaningWhenMissing "ElementDefinitionMeaningWhenMissing";
   src.example first as exv then {
-    exv.value -> tgt.example "ElementDefinition_example_v";
+    exv.value -> tgt.example "ElementDefinitionExampleV";
   } "ElementDefinition-example";
-  src.fixed -> tgt.fixed "ElementDefinition_fixed";
-  src.pattern -> tgt.pattern "ElementDefinition_pattern";
-  src.minValue -> tgt.minValue "ElementDefinition_minValue";
-  src.maxValue -> tgt.maxValue "ElementDefinition_maxValue";
-  src.maxLength -> tgt.maxLength "ElementDefinition_maxLength";
-  src.condition -> tgt.condition "ElementDefinition_condition";
-  src.constraint as vs0 -> tgt.constraint as vt0 then constraint(vs0, vt0) "ElementDefinition_constraint";
-  src.mustSupport -> tgt.mustSupport "ElementDefinition_mustSupport";
-  src.isModifier -> tgt.isModifier "ElementDefinition_isModifier";
-  src.isSummary -> tgt.isSummary "ElementDefinition_isSummary";
-  src.binding as vs0 -> tgt.binding as vt0 then ElementDefinitionBinding(vs0, vt0) "ElementDefinition_binding";
-  src.mapping as vs0 -> tgt.mapping as vt0 then mapping(vs0, vt0) "ElementDefinition_mapping";
+  src.fixed -> tgt.fixed "ElementDefinitionFixed";
+  src.pattern -> tgt.pattern "ElementDefinitionPattern";
+  src.minValue -> tgt.minValue "ElementDefinitionMinValue";
+  src.maxValue -> tgt.maxValue "ElementDefinitionMaxValue";
+  src.maxLength -> tgt.maxLength "ElementDefinitionMaxLength";
+  src.condition -> tgt.condition "ElementDefinitionCondition";
+  src.constraint as vs0 -> tgt.constraint as vt0 then constraint(vs0, vt0) "ElementDefinitionConstraint";
+  src.mustSupport -> tgt.mustSupport "ElementDefinitionMustSupport";
+  src.isModifier -> tgt.isModifier "ElementDefinitionIsModifier";
+  src.isSummary -> tgt.isSummary "ElementDefinitionIsSummary";
+  src.binding as vs0 -> tgt.binding as vt0 then ElementDefinitionBinding(vs0, vt0) "ElementDefinitionBinding";
+  src.mapping as vs0 -> tgt.mapping as vt0 then mapping(vs0, vt0) "ElementDefinitionMapping";
 }
 
 group edDiscriminator(source src, target tgt) extends Element {
-  src.path where type = 'value' -> tgt.discriminator "binding-strength";
+  src.path where (type = 'value') -> tgt.discriminator "binding-strength";
 }
 
 group ElementDefinitionBinding(source src, target tgt) extends Element {
@@ -70,7 +70,7 @@ group ElementDefinitionBinding(source src, target tgt) extends Element {
 
 group type(source src, target tgt) extends Element {
   src.code -> tgt.code "type-code";
-  src.profile where src.targetProfile.empty() -> tgt.profile "type-profile1";
+  src.profile where (src.targetProfile.empty()) -> tgt.profile "type-profile1";
   src.targetProfile -> tgt.profile "type-profile2";
   src.aggregation -> tgt.aggregation "type-aggregation";
 }
