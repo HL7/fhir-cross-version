@@ -115,6 +115,8 @@
     { "code": "MessageHeader.source.endpoint[x]", "target": [{ "code": "MessageHeader.source.endpoint", "relationship": "equivalent" }] },
     { "code": "MolecularSequence.subject", "target": [{ "code": "MolecularSequence.patient", "relationship": "equivalent" }] },
     { "code": "Provenance.authorization", "target": [{ "code": "Provenance.reason", "relationship": "equivalent" }] },
+    { "code": "Questionnaire.item.answerConstraint", "target" : [{ "code" : "Questionnaire.item.type", "relationship" : "related-to" }] },
+    { "code": "Resource.id", "target" : [{ "code" : "Resource.id", "relationship" : "equivalent" }]},
     { "code": "SearchParameter.processingMode", "target": [{ "code": "SearchParameter.xpathUsage", "relationship": "equivalent" }] },
     { "code": "StructureMap.group.rule.source.defaultValue", "target": [{ "code": "StructureMap.group.rule.source.defaultValue[x]", "relationship": "equivalent" }] },
     { "code": "StructureMap.group.rule.dependent.parameter", "target": [{ "code": "StructureMap.group.rule.dependent.variable", "relationship": "equivalent" }] },

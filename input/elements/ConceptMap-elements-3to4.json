@@ -574,6 +574,7 @@
     { "code" : "RequestGroup.reason[x]", "target" : [{ "code" : "RequestGroup.reasonReference", "relationship" : "source-is-broader-than-target", "comment" : "As changed by committee" }]},
     { "code" : "ResearchStudy.arm.code", "target" : [{ "code" : "ResearchStudy.arm.type", "relationship" : "equivalent" }]},
     { "code" : "ResearchStudy.jurisdiction", "target" : [{ "code" : "ResearchStudy.location", "relationship" : "equivalent" }]},
+    { "code" : "Resource.id", "target" : [{ "code" : "Resource.id", "relationship" : "equivalent" }]},
     { "code" : "RiskAssessment.comment", "target" : [{ "code" : "RiskAssessment.note", "relationship" : "equivalent" }]},
     { "code" : "RiskAssessment.context", "target" : [{ "code" : "RiskAssessment.encounter", "relationship" : "equivalent" }]},
     { "code" : "RiskAssessment.reason[x]", "target" : [{ "code" : "RiskAssessment.reasonCode", "relationship" : "source-is-broader-than-target", "comment" : "As changed by committee" }]},
