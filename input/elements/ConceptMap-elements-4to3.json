@@ -321,6 +321,7 @@
     { "code" : "RequestGroup.reasonReference", "target" : [{ "code" : "RequestGroup.reason[x]", "relationship" : "source-is-narrower-than-target" }]},
     { "code" : "ResearchStudy.arm.type", "target" : [{ "code" : "ResearchStudy.arm.code", "relationship" : "equivalent" }]},
     { "code" : "ResearchStudy.location", "target" : [{ "code" : "ResearchStudy.jurisdiction", "relationship" : "equivalent" }]},
+    { "code" : "Resource.id", "target" : [{ "code" : "Resource.id", "relationship" : "equivalent" }]},
     { "code" : "RiskAssessment.encounter", "target" : [{ "code" : "RiskAssessment.context", "relationship" : "equivalent" }]},
     { "code" : "RiskAssessment.note", "target" : [{ "code" : "RiskAssessment.comment", "relationship" : "equivalent" }]},
     { "code" : "RiskAssessment.reasonCode", "target" : [{ "code" : "RiskAssessment.reason[x]", "relationship" : "source-is-narrower-than-target" }]},

@@ -64,7 +64,7 @@
     { "code" : "DeviceRequest", "target" : [{ "code" : "DeviceRequest", "relationship" : "equivalent" }] },
     { "code" : "DeviceUsage", "target" : [{ "code" : "DeviceUseStatement", "relationship" : "equivalent" }] },
     { "code" : "DiagnosticReport", "target" : [{ "code" : "DiagnosticReport", "relationship" : "equivalent" }] },
-    { "code" : "DocumentReference", "target" : [{ "code" : "DocumentReference", "relationship" : "equivalent" }] },
+    { "code" : "DocumentReference", "target" : [{ "code" : "DocumentReference", "relationship" : "source-is-broader-than-target" }, { "code" : "Media", "relationship": "source-is-broader-than-target"}] },
     { "code" : "Encounter", "target" : [{ "code" : "Encounter", "relationship" : "equivalent" }] },
     { "code" : "EncounterHistory", "noMap" : true },
     { "code" : "Endpoint", "target" : [{ "code" : "Endpoint", "relationship" : "equivalent" }] },
