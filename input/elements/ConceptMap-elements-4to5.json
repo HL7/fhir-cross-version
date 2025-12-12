@@ -157,7 +157,9 @@
     { "code" : "Contract.term.action.reasonReference", "target" : [{ "code" : "Contract.term.action.reason.reference", "relationship" : "equivalent" }] },
     { "code" : "Coverage.payor", "target" : [{ "code" : "Coverage.insurer", "relationship" : "equivalent" }] },
     { "code" : "DetectedIssue.patient", "target" : [{ "code" : "DetectedIssue.subject", "relationship" : "equivalent" }] },
-    { "code" : "Device.deviceName", "target" : [{ "code" : "Device.name", "relationship" : "equivalent" }] },
+
+    { "code" : "Device.deviceName", "target" : [{ "code" : "Device.name", "relationship" : "equivalent" }, { "code": "Device.displayName", "relationship": "related-to" }] },
+
     { "code" : "Device.deviceName.display", "target" : [{ "code" : "Device.name.display", "relationship" : "equivalent" }] },
     { "code" : "Device.deviceName.name", "target" : [{ "code" : "Device.name.value", "relationship" : "equivalent" }] },
     { "code" : "Device.deviceName.type", "target" : [{ "code" : "Device.name.type", "relationship" : "equivalent" }] },
@@ -171,6 +173,10 @@
     { "code" : "Device.specialization.systemType", "noMap" : true },
     { "code" : "Device.specialization.version", "noMap" : true },
     { "code" : "Device.statusReason", "noMap" : true },
+
+    { "code" : "Device.patient", "target": [{ "code" : "DeviceAssociation.subject", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "Device.status", "target": [{ "code" : "Device.status", "relationship" : "equivalent" }, { "code" : "DeviceAssociation.status", "relationship" : "not-related-to" }] },
+
     { "code" : "DeviceDefinition.capability.description", "noMap" : true },
     { "code" : "DeviceDefinition.capability.type", "noMap" : true },
     { "code" : "DeviceDefinition.guideline.onlineInformation", "target" : [{ "code" : "DeviceDefinition.guideline.relatedArtifact", "relationship" : "equivalent" }] },
@@ -193,7 +199,7 @@
     { "code" : "DeviceMetric.parent", "noMap" : true },
     { "code" : "DeviceMetric.source", "target" : [{ "code" : "DeviceMetric.device", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.code[x]", "target" : [{ "code" : "DeviceRequest.code", "relationship" : "equivalent" }] },
-    { "code" : "DeviceRequest.performerType", "noMap" : true },
+    { "code" : "DeviceRequest.performerType", "target" : [{ "code" : "DeviceRequest.code", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.priorRequest", "target" : [{ "code" : "DeviceRequest.replaces", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.reasonCode", "target" : [{ "code" : "DeviceRequest.reason.concept", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.reasonReference", "target" : [{ "code" : "DeviceRequest.reason.reference", "relationship" : "equivalent" }] },

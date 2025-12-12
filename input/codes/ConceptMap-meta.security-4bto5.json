@@ -2691,13 +2691,6 @@
       }]
     },
     {
-      "code" : "PROCESSINLINELABEL",
-      "target" : [{
-        "code" : "PROCESSINLINELABEL",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "PRS",
       "target" : [{
         "code" : "PRS",

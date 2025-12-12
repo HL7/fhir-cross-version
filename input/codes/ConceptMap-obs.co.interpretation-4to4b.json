@@ -41,10 +41,7 @@
     },
     {
       "code" : "AC",
-      "target" : [{
-        "code" : "AC",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "B",
@@ -62,10 +59,7 @@
     },
     {
       "code" : "Carrier",
-      "target" : [{
-        "code" : "Carrier",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "D",
@@ -111,10 +105,7 @@
     },
     {
       "code" : "H>",
-      "target" : [{
-        "code" : "H>",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "HH",
@@ -125,10 +116,7 @@
     },
     {
       "code" : "HM",
-      "target" : [{
-        "code" : "HM",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "HU",
@@ -174,10 +162,7 @@
     },
     {
       "code" : "L<",
-      "target" : [{
-        "code" : "L<",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "LL",
@@ -202,10 +187,7 @@
     },
     {
       "code" : "MS",
-      "target" : [{
-        "code" : "MS",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "N",
@@ -251,10 +233,7 @@
     },
     {
       "code" : "OBX",
-      "target" : [{
-        "code" : "OBX",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "POS",
@@ -265,10 +244,7 @@
     },
     {
       "code" : "QCF",
-      "target" : [{
-        "code" : "QCF",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "R",
@@ -314,10 +290,7 @@
     },
     {
       "code" : "TOX",
-      "target" : [{
-        "code" : "TOX",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "U",
@@ -335,10 +308,7 @@
     },
     {
       "code" : "VS",
-      "target" : [{
-        "code" : "VS",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "W",

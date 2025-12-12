@@ -52,13 +52,19 @@
     { "code" : "Consent.policy.url", "target" : [{ "code" : "Consent.policyBasis.url", "relationship" : "equivalent" }] },
     { "code" : "Consent.type", "target" : [{ "code" : "Consent.decision", "relationship" : "equivalent" }] },
     { "code" : "Consent.provision.class", "target" : [{ "code" : "Consent.provision.resourceType", "relationship" : "equivalent" }] },
-    { "code" : "Device.deviceName", "target" : [{ "code" : "Device.name", "relationship" : "equivalent" }] },
+
+    { "code" : "Device.deviceName", "target" : [{ "code" : "Device.name", "relationship" : "equivalent" }, { "code": "Device.displayName", "relationship": "related-to" }] },
+
     { "code" : "Device.deviceName.value", "target" : [{ "code" : "Device.name.value", "relationship" : "equivalent" }] },
     { "code" : "Device.deviceName.type", "target" : [{ "code" : "Device.name.type", "relationship" : "equivalent" }] },
     { "code" : "Device.deviceName.display", "target" : [{ "code" : "Device.name.display", "relationship" : "equivalent" }] },
     { "code" : "Device.specialization", "target" : [{ "code" : "Device.conformsTo", "relationship" : "equivalent" }] },
     { "code" : "Device.specialization.category", "target" : [{ "code" : "Device.conformsTo.category", "relationship" : "equivalent" }] },
     { "code" : "Device.specialization.specification", "target" : [{ "code" : "Device.conformsTo.specification", "relationship" : "equivalent" }] },
+
+    { "code" : "Device.patient", "target": [{ "code" : "DeviceAssociation.subject", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "Device.status", "target": [{ "code" : "Device.status", "relationship" : "equivalent" }, { "code" : "DeviceAssociation.status", "relationship" : "not-related-to" }] },
+
     { "code" : "DeviceDefinition.manufacturer[x]", "target" : [{ "code" : "DeviceDefinition.manufacturer", "relationship" : "equivalent" }] },
     { "code" : "DeviceDefinition.specialization", "target" : [{ "code" : "DeviceDefinition.conformsTo", "relationship" : "equivalent" }] },
     { "code" : "DeviceDefinition.specialization.category", "target" : [{ "code" : "DeviceDefinition.conformsTo.category", "relationship" : "equivalent" }] },
@@ -66,6 +72,8 @@
     { "code" : "DeviceDefinition.specialization.version", "target" : [{ "code" : "DeviceDefinition.conformsTo.version", "relationship" : "equivalent" }] },
     { "code" : "DeviceDefinition.specialization.source", "target" : [{ "code" : "DeviceDefinition.conformsTo.source", "relationship" : "equivalent" }] },
     { "code" : "DeviceDefinition.guideline.onlineInformation", "target" : [{ "code" : "DeviceDefinition.guideline.relatedArtifact", "relationship" : "equivalent" }] },
+    { "code" : "DeviceRequest.performer", "target" : [{ "code" : "DeviceRequest.performer", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "DeviceRequest.performerType", "target" : [{ "code" : "DeviceRequest.performer", "relationship" : "source-is-narrower-than-target" }] },
     { "code" : "DeviceRequest.priorRequest", "target" : [{ "code" : "DeviceRequest.replaces", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.code[x]", "target" : [{ "code" : "DeviceRequest.code", "relationship" : "equivalent" }] },
     { "code" : "Encounter.participant.individual", "target" : [{ "code" : "Encounter.participant.actor", "relationship" : "equivalent" }] },

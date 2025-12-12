@@ -2692,10 +2692,7 @@
     },
     {
       "code" : "PROCESSINLINELABEL",
-      "target" : [{
-        "code" : "PROCESSINLINELABEL",
-        "relationship" : "equivalent"
-      }]
+      "noMap": true
     },
     {
       "code" : "PRS",

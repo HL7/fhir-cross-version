@@ -51,7 +51,7 @@
     { "code" : "Dosage", "target" : [{ "code" : "Dosage", "relationship" : "equivalent" }]},
     { "code" : "Duration", "target" : [{ "code" : "Duration", "relationship" : "equivalent" }]},
     { "code" : "ElementDefinition", "target" : [{ "code" : "ElementDefinition", "relationship" : "equivalent" }]},
-    { "code" : "Expression", "target" : [{ "code" : "Expression", "relationship" : "equivalent" }]},
+    { "code" : "Expression", "noMap": true },
     { "code" : "Extension", "target" : [{ "code" : "Extension", "relationship" : "equivalent" }]},
     { "code" : "HumanName", "target" : [{ "code" : "HumanName", "relationship" : "equivalent" }]},
     { "code" : "Identifier", "target" : [{ "code" : "Identifier", "relationship" : "equivalent" }]},

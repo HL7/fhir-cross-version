@@ -40,13 +40,6 @@
       }]
     },
     {
-      "code" : "AC",
-      "target" : [{
-        "code" : "AC",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "B",
       "target" : [{
         "code" : "B",
@@ -57,13 +50,6 @@
       "code" : "CAR",
       "target" : [{
         "code" : "CAR",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "Carrier",
-      "target" : [{
-        "code" : "Carrier",
         "relationship" : "equivalent"
       }]
     },
@@ -110,23 +96,9 @@
       }]
     },
     {
-      "code" : "H>",
-      "target" : [{
-        "code" : "H>",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "HH",
       "target" : [{
         "code" : "HH",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "HM",
-      "target" : [{
-        "code" : "HM",
         "relationship" : "equivalent"
       }]
     },
@@ -173,13 +145,6 @@
       }]
     },
     {
-      "code" : "L<",
-      "target" : [{
-        "code" : "L<",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "LL",
       "target" : [{
         "code" : "LL",
@@ -197,13 +162,6 @@
       "code" : "LX",
       "target" : [{
         "code" : "LX",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "MS",
-      "target" : [{
-        "code" : "MS",
         "relationship" : "equivalent"
       }]
     },
@@ -250,23 +208,9 @@
       }]
     },
     {
-      "code" : "OBX",
-      "target" : [{
-        "code" : "OBX",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "POS",
       "target" : [{
         "code" : "POS",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "QCF",
-      "target" : [{
-        "code" : "QCF",
         "relationship" : "equivalent"
       }]
     },
@@ -313,13 +257,6 @@
       }]
     },
     {
-      "code" : "TOX",
-      "target" : [{
-        "code" : "TOX",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
       "code" : "U",
       "target" : [{
         "code" : "U",
@@ -330,13 +267,6 @@
       "code" : "UNE",
       "target" : [{
         "code" : "UNE",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "VS",
-      "target" : [{
-        "code" : "VS",
         "relationship" : "equivalent"
       }]
     },

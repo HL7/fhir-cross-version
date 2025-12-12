@@ -19,49 +19,6 @@
     { "code" : "Account.relatedAccount", "target" : [{ "code" : "Account", "relationship" : "source-is-narrower-than-target" }]},
     { "code" : "Account.relatedAccount.account", "target" : [{ "code" : "Account.partOf", "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps" }]},
     { "code" : "Account.relatedAccount.account", "target" : [{ "code" : "Account.relatedAccount.partOf", "relationship" : "equivalent" }]},
-    { "code" : "AdverseEvent.code", "target" : [{ "code" : "AdverseEvent.event", "relationship" : "equivalent" }]},
-    {
-      "code" : "AdverseEvent.occurrence[x]",
-      "target" : [{
-        "code" : "AdverseEvent.date",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "AdverseEvent.resultingEffect",
-      "target" : [{
-        "code" : "AdverseEvent.resultingCondition",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "AdverseEvent.supportingInfo",
-      "target" : [{
-        "code" : "AdverseEvent",
-        "relationship" : "source-is-narrower-than-target"
-      }]
-    },
-    {
-      "code" : "AdverseEvent.supportingInfo.item[x]",
-      "target" : [{
-        "code" : "AdverseEvent.subjectMedicalHistory",
-        "relationship" : "source-is-broader-than-target", "comment" : "As defined by other maps"
-      }]
-    },
-    {
-      "code" : "AdverseEvent.suspectEntity.causality.entityRelatedness",
-      "target" : [{
-        "code" : "AdverseEvent.suspectEntity.causality.productRelatedness",
-        "relationship" : "equivalent"
-      }]
-    },
-    {
-      "code" : "AdverseEvent.suspectEntity.instance[x]",
-      "target" : [{
-        "code" : "AdverseEvent.suspectEntity.instance",
-        "relationship" : "equivalent"
-      }]
-    },
     {
       "code" : "Appointment.cancellationReason",
       "target" : [{
