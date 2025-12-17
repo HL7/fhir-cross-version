@@ -51,7 +51,7 @@
     { "code" : "CoverageEligibilityResponse", "target" : [{ "code" : "EligibilityResponse", "relationship" : "equivalent" }]},
     { "code" : "DetectedIssue", "target" : [{ "code" : "DetectedIssue", "relationship" : "equivalent" }]},
     { "code" : "Device", "target" : [{ "code" : "Device", "relationship" : "equivalent" }]},
-    { "code" : "DeviceDefinition", "noMap" : true },
+    { "code" : "DeviceDefinition", "noMap": true },
     { "code" : "DeviceMetric", "target" : [{ "code" : "DeviceMetric", "relationship" : "equivalent" }]},
     { "code" : "DeviceRequest", "target" : [{ "code" : "DeviceRequest", "relationship" : "equivalent" }]},
     { "code" : "DeviceUseStatement", "target" : [{ "code" : "DeviceUseStatement", "relationship" : "equivalent" }]},

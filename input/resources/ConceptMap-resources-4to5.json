@@ -136,6 +136,7 @@
     { "code" : "StructureMap", "target" : [{ "code" : "StructureMap", "relationship" : "equivalent" }] },
     { "code" : "Subscription", "target" : [{ "code" : "Subscription", "relationship" : "equivalent" }] },
     { "code" : "Substance", "target" : [{ "code" : "Substance", "relationship" : "equivalent" }] },
+    { "code" : "SubstanceSpecification", "target" : [{ "code" : "SubstanceDefinition", "relationship" : "equivalent" }] },
     { "code" : "SubstanceNucleicAcid", "target" : [{ "code" : "SubstanceNucleicAcid", "relationship" : "equivalent" }] },    
     { "code" : "SubstancePolymer", "target" : [{ "code" : "SubstancePolymer", "relationship" : "equivalent" }] },    
     { "code" : "SubstanceProtein", "target" : [{ "code" : "SubstanceProtein", "relationship" : "equivalent" }] },   

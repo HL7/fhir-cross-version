@@ -310,6 +310,7 @@
     { "code" : "MedicationAdministration.reasonGiven", "target" : [{ "code" : "MedicationAdministration.reasonCode", "relationship" : "equivalent" }]},
     { "code" : "MedicationAdministration.wasNotGiven", "target" : [{ "code" : "MedicationAdministration.notGiven", "relationship" : "equivalent" }]},
     { "code" : "MedicationDispense.dispenser", "target" : [{ "code" : "MedicationDispense.performer.actor", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "MedicationDispense.dosageInstruction", "target" : [{ "code" : "MedicationDispense.dosageInstruction", "relationship" : "source-is-narrower-than-target" }]},
     { "code" : "MedicationDispense.dosageInstruction.additionalInstructions", "target" : [{ "code" : "MedicationDispense.dosageInstruction.additionalInstruction", "relationship" : "equivalent" }]},
     { "code" : "MedicationDispense.dosageInstruction.site[x]", "target" : [{ "code" : "MedicationDispense.dosageInstruction.site", "relationship" : "equivalent" }]},
     { "code" : "MedicationDispense.patient", "target" : [{ "code" : "MedicationDispense.subject", "relationship" : "equivalent" }]},

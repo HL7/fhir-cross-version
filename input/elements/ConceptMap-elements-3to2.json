@@ -214,6 +214,7 @@
     { "code" : "MedicationAdministration.performer.onBehalfOf", "target" : [{ "code" : "MedicationAdministration.practitioner.onBehalfOf", "relationship" : "equivalent" }]},
     { "code" : "MedicationAdministration.reasonCode", "target" : [{ "code" : "MedicationAdministration.reasonGiven", "relationship" : "equivalent" }]},
     { "code" : "MedicationAdministration.subject", "target" : [{ "code" : "MedicationAdministration.patient", "relationship" : "equivalent" }]},
+    { "code" : "MedicationDispense.dosageInstruction", "target" : [{ "code" : "MedicationDispense.dosageInstruction", "relationship" : "source-is-broader-than-target" }]},
     { "code" : "MedicationDispense.dosageInstruction.additionalInstruction", "target" : [{ "code" : "MedicationDispense.dosageInstruction.additionalInstructions", "relationship" : "equivalent" }]},
     { "code" : "MedicationDispense.dosageInstruction.site", "target" : [{ "code" : "MedicationDispense.dosageInstruction.site[x]", "relationship" : "equivalent" }]},
     { "code" : "MedicationDispense.performer.actor", "target" : [{ "code" : "MedicationDispense.dispenser", "relationship" : "source-is-broader-than-target", "comment" : "As changed by committee" }]},
