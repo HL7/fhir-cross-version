@@ -1,0 +1,101 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-AdministrativeGender-R4-AdministrativeGender",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-AdministrativeGender-R4-AdministrativeGender",
+  "version": "0.0.1",
+  "name": "R5-AdministrativeGender-R4-AdministrativeGender",
+  "title": "Concept map to convert a FHIR R5 AdministrativeGender into a FHIR R4 AdministrativeGender",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9931075-06:00",
+  "description": "Mapping for FamilyMemberHistory.sex from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "FamilyMemberHistorySex5to4",
+      "display": "Id: fhs.sex-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/FamilyMemberHistory#FamilyMemberHistory.sex\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/FamilyMemberHistory#FamilyMemberHistory.sex",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/fhs.sex-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "ObservationDefinitionQualifiedValueGenderObservationDefinitionQualifiedIntervalGender5to4",
+      "display": "Id: obdf.qu.gender-obdf.qu.gender-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedValue.gender\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/obdf.qu.gender-obdf.qu.gender-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "PatientContactGender5to4",
+      "display": "Id: pat.co.gender-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Patient#Patient.contact.gender\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Patient#Patient.contact.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pat.co.gender-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "PatientGender5to4",
+      "display": "Id: pat.gender-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Patient#Patient.gender\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Patient#Patient.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pat.gender-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "PractitionerGender5to4",
+      "display": "Id: prc.gender-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Practitioner#Practitioner.gender\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Practitioner#Practitioner.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/prc.gender-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "PersonGender5to4",
+      "display": "Id: psn.gender-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Person#Person.gender\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Person#Person.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/psn.gender-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "RelatedPersonGender5to4",
+      "display": "Id: rpp.gender-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/RelatedPerson#RelatedPerson.gender\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/RelatedPerson#RelatedPerson.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rpp.gender-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/administrative-gender",
+      "target": "http://hl7.org/fhir/administrative-gender",
+      "element": [
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "female",
+          "target": [
+            {
+              "code": "female",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "male",
+          "target": [
+            {
+              "code": "male",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

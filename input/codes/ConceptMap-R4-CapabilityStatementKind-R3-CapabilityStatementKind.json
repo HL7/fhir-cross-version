@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-CapabilityStatementKind-R3-CapabilityStatementKind",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-CapabilityStatementKind-R3-CapabilityStatementKind",
+  "version": "0.0.1",
+  "name": "R4-CapabilityStatementKind-R3-CapabilityStatementKind",
+  "title": "Concept map to convert a FHIR R4 CapabilityStatementKind into a FHIR R3 CapabilityStatementKind",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2475098-06:00",
+  "description": "Mapping for CapabilityStatement.kind from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementKind4to3",
+      "display": "Id: cpb.kind-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.kind\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.kind-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/capability-statement-kind|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/capability-statement-kind|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/capability-statement-kind",
+      "target": "http://hl7.org/fhir/capability-statement-kind",
+      "element": [
+        {
+          "code": "capability",
+          "target": [
+            {
+              "code": "capability",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "requirements",
+          "target": [
+            {
+              "code": "requirements",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "instance",
+          "target": [
+            {
+              "code": "instance",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

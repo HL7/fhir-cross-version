@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-MessageSignificanceCategory-R2-MessageSignificanceCategory",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-MessageSignificanceCategory-R2-MessageSignificanceCategory",
+  "version": "0.0.1",
+  "name": "R3-MessageSignificanceCategory-R2-MessageSignificanceCategory",
+  "title": "Concept map to convert a FHIR R3 MessageSignificanceCategory into a FHIR R2 MessageSignificanceCategory",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7622796-06:00",
+  "description": "Mapping for CapabilityStatement.messaging.event.category/Conformance.messaging.event.category from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementMessagingEventCategoryConformanceMessagingEventCategory3to2",
+      "display": "Id: cpb.me.ev.category-cpb.me.ev.category-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.event.category\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.messaging.event.category",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.me.ev.category-cpb.me.ev.category-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/message-significance-category|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/message-significance-category|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/message-significance-category",
+      "target": "http://hl7.org/fhir/message-significance-category",
+      "element": [
+        {
+          "code": "Currency",
+          "target": [
+            {
+              "code": "Currency",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Consequence",
+          "target": [
+            {
+              "code": "Consequence",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Notification",
+          "target": [
+            {
+              "code": "Notification",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

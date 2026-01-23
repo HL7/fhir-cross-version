@@ -1,0 +1,101 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MetricColor-R4B-MetricColor",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MetricColor-R4B-MetricColor",
+  "version": "0.0.1",
+  "name": "R4-MetricColor-R4B-MetricColor",
+  "title": "Concept map to convert a FHIR R4 MetricColor into a FHIR R4B MetricColor",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0058685-06:00",
+  "description": "Mapping for DeviceMetric.color from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceMetricColor4to4b",
+      "display": "Id: dvm.color-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/DeviceMetric#DeviceMetric.color\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/DeviceMetric#DeviceMetric.color",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.color-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-color|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-color|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/metric-color",
+      "target": "http://hl7.org/fhir/metric-color",
+      "element": [
+        {
+          "code": "red",
+          "target": [
+            {
+              "code": "red",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "magenta",
+          "target": [
+            {
+              "code": "magenta",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "green",
+          "target": [
+            {
+              "code": "green",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "blue",
+          "target": [
+            {
+              "code": "blue",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "white",
+          "target": [
+            {
+              "code": "white",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "black",
+          "target": [
+            {
+              "code": "black",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "yellow",
+          "target": [
+            {
+              "code": "yellow",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cyan",
+          "target": [
+            {
+              "code": "cyan",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

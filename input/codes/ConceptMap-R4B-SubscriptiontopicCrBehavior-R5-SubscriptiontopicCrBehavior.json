@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-SubscriptiontopicCrBehavior-R5-SubscriptiontopicCrBehavior",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-SubscriptiontopicCrBehavior-R5-SubscriptiontopicCrBehavior",
+  "version": "0.0.1",
+  "name": "R4B-SubscriptiontopicCrBehavior-R5-SubscriptiontopicCrBehavior",
+  "title": "Concept map to convert a FHIR R4B SubscriptiontopicCrBehavior into a FHIR R5 SubscriptiontopicCrBehavior",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4854551-06:00",
+  "description": "Mapping for SubscriptionTopic.resourceTrigger.queryCriteria.resultForCreate from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SubscriptionTopicResourceTriggerQueryCriteriaResultForCreate4bto5",
+      "display": "Id: scrt.re.qu.resultForCreate-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic#SubscriptionTopic.resourceTrigger.queryCriteria.resultForCreate\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionTopic#SubscriptionTopic.resourceTrigger.queryCriteria.resultForCreate",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/scrt.re.qu.resultForCreate-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "SubscriptionTopicResourceTriggerQueryCriteriaResultForDelete4bto5",
+      "display": "Id: scrt.re.qu.resultForDelete-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic#SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionTopic#SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/scrt.re.qu.resultForDelete-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/subscriptiontopic-cr-behavior|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/subscriptiontopic-cr-behavior|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/subscriptiontopic-cr-behavior",
+      "target": "http://hl7.org/fhir/subscriptiontopic-cr-behavior",
+      "element": [
+        {
+          "code": "test-fails",
+          "target": [
+            {
+              "code": "test-fails",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "test-passes",
+          "target": [
+            {
+              "code": "test-passes",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

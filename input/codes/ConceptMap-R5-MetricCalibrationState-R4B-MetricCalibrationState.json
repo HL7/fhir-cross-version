@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MetricCalibrationState-R4B-MetricCalibrationState",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-MetricCalibrationState-R4B-MetricCalibrationState",
+  "version": "0.0.1",
+  "name": "R5-MetricCalibrationState-R4B-MetricCalibrationState",
+  "title": "Concept map to convert a FHIR R5 MetricCalibrationState into a FHIR R4B MetricCalibrationState",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9154013-06:00",
+  "description": "Mapping for DeviceMetric.calibration.state from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceMetricCalibrationState5to4b",
+      "display": "Id: dvm.ca.state-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.state\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/DeviceMetric#DeviceMetric.calibration.state",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.ca.state-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-calibration-state|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-calibration-state|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/metric-calibration-state",
+      "target": "http://hl7.org/fhir/metric-calibration-state",
+      "element": [
+        {
+          "code": "unspecified",
+          "target": [
+            {
+              "code": "unspecified",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-calibrated",
+          "target": [
+            {
+              "code": "not-calibrated",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "calibration-required",
+          "target": [
+            {
+              "code": "calibration-required",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "calibrated",
+          "target": [
+            {
+              "code": "calibrated",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

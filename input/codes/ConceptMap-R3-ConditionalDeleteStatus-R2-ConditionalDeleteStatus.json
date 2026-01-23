@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ConditionalDeleteStatus-R2-ConditionalDeleteStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ConditionalDeleteStatus-R2-ConditionalDeleteStatus",
+  "version": "0.0.1",
+  "name": "R3-ConditionalDeleteStatus-R2-ConditionalDeleteStatus",
+  "title": "Concept map to convert a FHIR R3 ConditionalDeleteStatus into a FHIR R2 ConditionalDeleteStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7628715-06:00",
+  "description": "Mapping for CapabilityStatement.rest.resource.conditionalDelete/Conformance.rest.resource.conditionalDelete from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestResourceConditionalDeleteConformanceRestResourceConditionalDelete3to2",
+      "display": "Id: cpb.re.re.conditionalDelete-cpb.re.re.conditionalDelete-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalDelete\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.resource.conditionalDelete",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.conditionalDelete-cpb.re.re.conditionalDelete-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/conditional-delete-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/conditional-delete-status|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/conditional-delete-status",
+      "target": "http://hl7.org/fhir/conditional-delete-status",
+      "element": [
+        {
+          "code": "single",
+          "target": [
+            {
+              "code": "single",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "multiple",
+          "target": [
+            {
+              "code": "multiple",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-supported",
+          "target": [
+            {
+              "code": "not-supported",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

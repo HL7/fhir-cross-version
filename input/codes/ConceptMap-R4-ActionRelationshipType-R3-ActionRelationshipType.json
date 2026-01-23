@@ -1,0 +1,116 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ActionRelationshipType-R3-ActionRelationshipType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ActionRelationshipType-R3-ActionRelationshipType",
+  "version": "0.0.1",
+  "name": "R4-ActionRelationshipType-R3-ActionRelationshipType",
+  "title": "Concept map to convert a FHIR R4 ActionRelationshipType into a FHIR R3 ActionRelationshipType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2652257-06:00",
+  "description": "Mapping for PlanDefinition.action.relatedAction.relationship from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionRelatedActionRelationship4to3",
+      "display": "Id: pdf.ac.re.relationship-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.re.relationship-4to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestGroupActionRelatedActionRelationship4to3",
+      "display": "Id: rgp.ac.re.relationship-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.relatedAction.relationship\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/RequestGroup#RequestGroup.action.relatedAction.relationship",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.re.relationship-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-relationship-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-relationship-type|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/action-relationship-type",
+      "target": "http://hl7.org/fhir/action-relationship-type",
+      "element": [
+        {
+          "code": "after-end",
+          "target": [
+            {
+              "code": "after-end",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "before",
+          "target": [
+            {
+              "code": "before",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "concurrent-with-start",
+          "target": [
+            {
+              "code": "concurrent-with-start",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "concurrent",
+          "target": [
+            {
+              "code": "concurrent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "before-end",
+          "target": [
+            {
+              "code": "before-end",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "after",
+          "target": [
+            {
+              "code": "after",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "concurrent-with-end",
+          "target": [
+            {
+              "code": "concurrent-with-end",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "after-start",
+          "target": [
+            {
+              "code": "after-start",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "before-start",
+          "target": [
+            {
+              "code": "before-start",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

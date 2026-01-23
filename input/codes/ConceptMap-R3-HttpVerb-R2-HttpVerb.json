@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-HttpVerb-R2-HttpVerb",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-HttpVerb-R2-HttpVerb",
+  "version": "0.0.1",
+  "name": "R3-HttpVerb-R2-HttpVerb",
+  "title": "Concept map to convert a FHIR R3 HttpVerb into a FHIR R2 HttpVerb",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7567984-06:00",
+  "description": "Mapping for Bundle.entry.request.method from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "BundleEntryRequestMethod3to2",
+      "display": "Id: bdl.en.re.method-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Bundle#Bundle.entry.request.method\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Bundle#Bundle.entry.request.method",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/bdl.en.re.method-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/http-verb|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/http-verb|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/http-verb",
+      "target": "http://hl7.org/fhir/http-verb",
+      "element": [
+        {
+          "code": "DELETE",
+          "target": [
+            {
+              "code": "DELETE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "POST",
+          "target": [
+            {
+              "code": "POST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GET",
+          "target": [
+            {
+              "code": "GET",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PUT",
+          "target": [
+            {
+              "code": "PUT",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

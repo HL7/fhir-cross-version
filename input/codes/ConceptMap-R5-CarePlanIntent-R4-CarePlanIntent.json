@@ -1,0 +1,82 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-CarePlanIntent-R4-CarePlanIntent",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://something",
+        "code": "review-needed"
+      }
+    ]
+  },
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-CarePlanIntent-R4-CarePlanIntent",
+  "version": "0.0.1",
+  "name": "R5-CarePlanIntent-R4-CarePlanIntent",
+  "title": "Concept map to convert a FHIR R5 CarePlanIntent into a FHIR R4 CarePlanIntent",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9854786-06:00",
+  "description": "Mapping for CarePlan.intent from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CarePlanIntent5to4",
+      "display": "Id: cpl.intent-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/CarePlan#CarePlan.intent\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CarePlan#CarePlan.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.intent-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-intent|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-intent|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-intent",
+      "target": "http://hl7.org/fhir/request-intent",
+      "element": [
+        {
+          "code": "proposal",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "plan",
+          "target": [
+            {
+              "code": "plan",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "directive",
+          "target": [
+            {
+              "code": "directive",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "order",
+          "target": [
+            {
+              "code": "order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "option",
+          "target": [
+            {
+              "code": "option",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-CarePlanStatus-R4-RequestStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-CarePlanStatus-R4-RequestStatus",
+  "version": "0.0.1",
+  "name": "R3-CarePlanStatus-R4-RequestStatus",
+  "title": "Concept map to convert a FHIR R3 CarePlanStatus into a FHIR R4 RequestStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6719271-06:00",
+  "description": "Mapping for CarePlan.status from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CarePlanStatus3to4",
+      "display": "Id: cpl.status-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CarePlan#CarePlan.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CarePlan#CarePlan.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.status-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/care-plan-status",
+      "target": "http://hl7.org/fhir/request-status",
+      "element": [
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "revoked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "suspended",
+          "target": [
+            {
+              "code": "on-hold",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

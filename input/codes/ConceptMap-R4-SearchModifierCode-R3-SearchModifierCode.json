@@ -1,0 +1,127 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-SearchModifierCode-R3-SearchModifierCode",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-SearchModifierCode-R3-SearchModifierCode",
+  "version": "0.0.1",
+  "name": "R4-SearchModifierCode-R3-SearchModifierCode",
+  "title": "Concept map to convert a FHIR R4 SearchModifierCode into a FHIR R3 SearchModifierCode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2718898-06:00",
+  "description": "Mapping for SearchParameter.modifier from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SearchParameterModifier4to3",
+      "display": "Id: spd.modifier-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.modifier\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.modifier",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.modifier-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-modifier-code|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/search-modifier-code|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-modifier-code",
+      "target": "http://hl7.org/fhir/search-modifier-code",
+      "element": [
+        {
+          "code": "above",
+          "target": [
+            {
+              "code": "above",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "below",
+          "target": [
+            {
+              "code": "below",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "contains",
+          "target": [
+            {
+              "code": "contains",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "exact",
+          "target": [
+            {
+              "code": "exact",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "identifier",
+          "noMap": true
+        },
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "missing",
+          "target": [
+            {
+              "code": "missing",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not",
+          "target": [
+            {
+              "code": "not",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-in",
+          "target": [
+            {
+              "code": "not-in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ofType",
+          "noMap": true
+        },
+        {
+          "code": "text",
+          "target": [
+            {
+              "code": "text",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "type",
+          "target": [
+            {
+              "code": "type",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

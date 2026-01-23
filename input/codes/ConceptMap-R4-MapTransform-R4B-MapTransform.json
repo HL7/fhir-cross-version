@@ -1,0 +1,182 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MapTransform-R4B-MapTransform",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MapTransform-R4B-MapTransform",
+  "version": "0.0.1",
+  "name": "R4-MapTransform-R4B-MapTransform",
+  "title": "Concept map to convert a FHIR R4 MapTransform into a FHIR R4B MapTransform",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.030262-06:00",
+  "description": "Mapping for StructureMap.group.rule.target.transform from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureMapGroupRuleTargetTransform4to4b",
+      "display": "Id: smp.gr.ru.ta.transform-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.transform\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.group.rule.target.transform",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.ru.ta.transform-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/map-transform|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/map-transform|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/map-transform",
+      "target": "http://hl7.org/fhir/map-transform",
+      "element": [
+        {
+          "code": "cc",
+          "target": [
+            {
+              "code": "cc",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pointer",
+          "target": [
+            {
+              "code": "pointer",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "c",
+          "target": [
+            {
+              "code": "c",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "uuid",
+          "target": [
+            {
+              "code": "uuid",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cp",
+          "target": [
+            {
+              "code": "cp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "translate",
+          "target": [
+            {
+              "code": "translate",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reference",
+          "target": [
+            {
+              "code": "reference",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cast",
+          "target": [
+            {
+              "code": "cast",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "truncate",
+          "target": [
+            {
+              "code": "truncate",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "qty",
+          "target": [
+            {
+              "code": "qty",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "create",
+          "target": [
+            {
+              "code": "create",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "copy",
+          "target": [
+            {
+              "code": "copy",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "id",
+          "target": [
+            {
+              "code": "id",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "escape",
+          "target": [
+            {
+              "code": "escape",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "evaluate",
+          "target": [
+            {
+              "code": "evaluate",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "append",
+          "target": [
+            {
+              "code": "append",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dateOp",
+          "target": [
+            {
+              "code": "dateOp",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

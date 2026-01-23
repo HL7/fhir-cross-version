@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ResearchElementType-R4B-ResearchElementType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ResearchElementType-R4B-ResearchElementType",
+  "version": "0.0.1",
+  "name": "R4-ResearchElementType-R4B-ResearchElementType",
+  "title": "Concept map to convert a FHIR R4 ResearchElementType into a FHIR R4B ResearchElementType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0254646-06:00",
+  "description": "Mapping for ResearchElementDefinition.type from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ResearchElementDefinitionType4to4b",
+      "display": "Id: red.type-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/red.type-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/research-element-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/research-element-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/research-element-type",
+      "target": "http://hl7.org/fhir/research-element-type",
+      "element": [
+        {
+          "code": "exposure",
+          "target": [
+            {
+              "code": "exposure",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "outcome",
+          "target": [
+            {
+              "code": "outcome",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "population",
+          "target": [
+            {
+              "code": "population",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

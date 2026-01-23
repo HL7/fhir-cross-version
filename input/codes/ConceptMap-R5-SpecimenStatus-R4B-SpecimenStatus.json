@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SpecimenStatus-R4B-SpecimenStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-SpecimenStatus-R4B-SpecimenStatus",
+  "version": "0.0.1",
+  "name": "R5-SpecimenStatus-R4B-SpecimenStatus",
+  "title": "Concept map to convert a FHIR R5 SpecimenStatus into a FHIR R4B SpecimenStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9326986-06:00",
+  "description": "Mapping for Specimen.status from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SpecimenStatus5to4b",
+      "display": "Id: spm.status-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Specimen#Specimen.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Specimen#Specimen.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spm.status-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/specimen-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/specimen-status|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/specimen-status",
+      "target": "http://hl7.org/fhir/specimen-status",
+      "element": [
+        {
+          "code": "unavailable",
+          "target": [
+            {
+              "code": "unavailable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "available",
+          "target": [
+            {
+              "code": "available",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unsatisfactory",
+          "target": [
+            {
+              "code": "unsatisfactory",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

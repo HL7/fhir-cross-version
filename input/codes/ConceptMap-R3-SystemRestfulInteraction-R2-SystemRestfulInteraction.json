@@ -1,0 +1,60 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-SystemRestfulInteraction-R2-SystemRestfulInteraction",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-SystemRestfulInteraction-R2-SystemRestfulInteraction",
+  "version": "0.0.1",
+  "name": "R3-SystemRestfulInteraction-R2-SystemRestfulInteraction",
+  "title": "Concept map to convert a FHIR R3 SystemRestfulInteraction into a FHIR R2 SystemRestfulInteraction",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7625707-06:00",
+  "description": "Mapping for CapabilityStatement.rest.interaction.code/Conformance.rest.interaction.code from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestInteractionCodeConformanceRestInteractionCode3to2",
+      "display": "Id: cpb.re.in.code-cpb.re.in.code-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.interaction.code\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.interaction.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.in.code-cpb.re.in.code-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/system-restful-interaction|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/system-restful-interaction|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/restful-interaction",
+      "target": "http://hl7.org/fhir/restful-interaction",
+      "element": [
+        {
+          "code": "batch",
+          "noMap": true
+        },
+        {
+          "code": "history-system",
+          "target": [
+            {
+              "code": "history-system",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "search-system",
+          "target": [
+            {
+              "code": "search-system",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "transaction",
+          "target": [
+            {
+              "code": "transaction",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

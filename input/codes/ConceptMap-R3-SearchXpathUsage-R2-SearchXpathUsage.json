@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-SearchXpathUsage-R2-SearchXpathUsage",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-SearchXpathUsage-R2-SearchXpathUsage",
+  "version": "0.0.1",
+  "name": "R3-SearchXpathUsage-R2-SearchXpathUsage",
+  "title": "Concept map to convert a FHIR R3 SearchXpathUsage into a FHIR R2 SearchXpathUsage",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7817578-06:00",
+  "description": "Mapping for SearchParameter.xpathUsage from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SearchParameterXpathUsage3to2",
+      "display": "Id: spd.xpathUsage-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.xpathUsage\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/SearchParameter#SearchParameter.xpathUsage",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.xpathUsage-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-xpath-usage|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/search-xpath-usage|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-xpath-usage",
+      "target": "http://hl7.org/fhir/search-xpath-usage",
+      "element": [
+        {
+          "code": "normal",
+          "target": [
+            {
+              "code": "normal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phonetic",
+          "target": [
+            {
+              "code": "phonetic",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "distance",
+          "target": [
+            {
+              "code": "distance",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "nearby",
+          "target": [
+            {
+              "code": "nearby",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

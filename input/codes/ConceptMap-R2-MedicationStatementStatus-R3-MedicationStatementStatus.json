@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-MedicationStatementStatus-R3-MedicationStatementStatus",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-MedicationStatementStatus-R3-MedicationStatementStatus",
+  "version": "0.0.1",
+  "name": "R2-MedicationStatementStatus-R3-MedicationStatementStatus",
+  "title": "Concept map to convert a FHIR R2 MedicationStatementStatus into a FHIR R3 MedicationStatementStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5029192-06:00",
+  "description": "Mapping for MedicationStatement.status from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MedicationStatementStatus2to3",
+      "display": "Id: mst.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/MedicationStatement#MedicationStatement.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/MedicationStatement#MedicationStatement.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mst.status-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-statement-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-statement-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/medication-statement-status",
+      "target": "http://hl7.org/fhir/medication-statement-status",
+      "element": [
+        {
+          "code": "intended",
+          "target": [
+            {
+              "code": "intended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

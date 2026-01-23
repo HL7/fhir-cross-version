@@ -1,0 +1,82 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-CarePlanStatus-R2-CarePlanStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-CarePlanStatus-R2-CarePlanStatus",
+  "version": "0.0.1",
+  "name": "R3-CarePlanStatus-R2-CarePlanStatus",
+  "title": "Concept map to convert a FHIR R3 CarePlanStatus into a FHIR R2 CarePlanStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7638564-06:00",
+  "description": "Mapping for CarePlan.status from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CarePlanStatus3to2",
+      "display": "Id: cpl.status-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CarePlan#CarePlan.status\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/CarePlan#CarePlan.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.status-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-status|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/care-plan-status",
+      "target": "http://hl7.org/fhir/care-plan-status",
+      "element": [
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "proposed",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            },
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "noMap": true
+        },
+        {
+          "code": "suspended",
+          "noMap": true
+        },
+        {
+          "code": "unknown",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

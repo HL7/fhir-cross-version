@@ -1,0 +1,57 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ClinicalImpressionStatus-R2-ClinicalImpressionStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ClinicalImpressionStatus-R2-ClinicalImpressionStatus",
+  "version": "0.0.1",
+  "name": "R3-ClinicalImpressionStatus-R2-ClinicalImpressionStatus",
+  "title": "Concept map to convert a FHIR R3 ClinicalImpressionStatus into a FHIR R2 ClinicalImpressionStatus",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7572727-06:00",
+  "description": "Mapping for ClinicalImpression.status from R3 to R2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClinicalImpressionStatus3to2",
+      "display": "Id: cli.status-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ClinicalImpression#ClinicalImpression.status\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/ClinicalImpression#ClinicalImpression.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cli.status-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/clinical-impression-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/clinical-impression-status|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/clinical-impression-status",
+      "target": "http://hl7.org/fhir/clinical-impression-status",
+      "element": [
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

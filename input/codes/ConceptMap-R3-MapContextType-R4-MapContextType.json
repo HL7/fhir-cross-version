@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-MapContextType-R4-MapContextType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-MapContextType-R4-MapContextType",
+  "version": "0.0.1",
+  "name": "R3-MapContextType-R4-MapContextType",
+  "title": "Concept map to convert a FHIR R3 MapContextType into a FHIR R4 MapContextType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6960066-06:00",
+  "description": "Mapping for StructureMap.group.rule.target.contextType from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureMapGroupRuleTargetContextType3to4",
+      "display": "Id: smp.gr.ru.ta.contextType-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.contextType\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.contextType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.ru.ta.contextType-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/map-context-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/map-context-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/map-context-type",
+      "target": "http://hl7.org/fhir/map-context-type",
+      "element": [
+        {
+          "code": "variable",
+          "target": [
+            {
+              "code": "variable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "type",
+          "target": [
+            {
+              "code": "type",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

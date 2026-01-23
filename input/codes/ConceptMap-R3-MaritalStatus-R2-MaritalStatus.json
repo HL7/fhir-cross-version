@@ -1,0 +1,180 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-MaritalStatus-R2-MaritalStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-MaritalStatus-R2-MaritalStatus",
+  "version": "0.0.1",
+  "name": "R3-MaritalStatus-R2-MaritalStatus",
+  "title": "Concept map to convert a FHIR R3 MaritalStatus into a FHIR R2 MaritalStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7760594-06:00",
+  "description": "Mapping for Patient.maritalStatus from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PatientMaritalStatusr3to2",
+      "display": "Id: pat.maritalStatus-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.maritalStatus\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.maritalStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pat.maritalStatus-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/marital-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/marital-status|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v3/NullFlavor",
+      "target": "http://hl7.org/fhir/v3/NullFlavor",
+      "element": [
+        {
+          "code": "UNK",
+          "target": [
+            {
+              "code": "UNK",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/v3/MaritalStatus",
+      "target": "http://hl7.org/fhir/v3/MaritalStatus",
+      "element": [
+        {
+          "code": "A",
+          "target": [
+            {
+              "code": "A",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "D",
+          "target": [
+            {
+              "code": "D",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "I",
+          "target": [
+            {
+              "code": "I",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L",
+          "target": [
+            {
+              "code": "L",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "target": [
+            {
+              "code": "M",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "P",
+          "target": [
+            {
+              "code": "P",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "S",
+          "target": [
+            {
+              "code": "S",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "T",
+          "target": [
+            {
+              "code": "T",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "noMap": true
+        },
+        {
+          "code": "W",
+          "target": [
+            {
+              "code": "W",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/v3/MaritalStatus",
+      "target": "http://hl7.org/fhir/marital-status",
+      "element": [
+        {
+          "code": "U",
+          "target": [
+            {
+              "code": "U",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A",
+          "noMap": true
+        },
+        {
+          "code": "T",
+          "noMap": true
+        },
+        {
+          "code": "M",
+          "noMap": true
+        },
+        {
+          "code": "S",
+          "noMap": true
+        },
+        {
+          "code": "I",
+          "noMap": true
+        },
+        {
+          "code": "P",
+          "noMap": true
+        },
+        {
+          "code": "W",
+          "noMap": true
+        },
+        {
+          "code": "D",
+          "noMap": true
+        },
+        {
+          "code": "L",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

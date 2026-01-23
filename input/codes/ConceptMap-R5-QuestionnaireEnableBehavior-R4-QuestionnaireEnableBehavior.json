@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-QuestionnaireEnableBehavior-R4-QuestionnaireEnableBehavior",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-QuestionnaireEnableBehavior-R4-QuestionnaireEnableBehavior",
+  "version": "0.0.1",
+  "name": "R5-QuestionnaireEnableBehavior-R4-QuestionnaireEnableBehavior",
+  "title": "Concept map to convert a FHIR R5 QuestionnaireEnableBehavior into a FHIR R4 QuestionnaireEnableBehavior",
+  "experimental": false,
+  "date": "2025-12-30T16:37:21.0009842-06:00",
+  "description": "Mapping for Questionnaire.item.enableBehavior from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "QuestionnaireItemEnableBehavior5to4",
+      "display": "Id: que.it.enableBehavior-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Questionnaire#Questionnaire.item.enableBehavior\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Questionnaire#Questionnaire.item.enableBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/que.it.enableBehavior-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/questionnaire-enable-behavior",
+      "target": "http://hl7.org/fhir/questionnaire-enable-behavior",
+      "element": [
+        {
+          "code": "all",
+          "target": [
+            {
+              "code": "all",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "any",
+          "target": [
+            {
+              "code": "any",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

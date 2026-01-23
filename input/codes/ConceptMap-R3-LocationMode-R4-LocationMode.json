@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-LocationMode-R4-LocationMode",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-LocationMode-R4-LocationMode",
+  "version": "0.0.1",
+  "name": "R3-LocationMode-R4-LocationMode",
+  "title": "Concept map to convert a FHIR R3 LocationMode into a FHIR R4 LocationMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.682015-06:00",
+  "description": "Mapping for Location.mode from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "LocationMode3to4",
+      "display": "Id: loc.mode-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Location#Location.mode\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Location#Location.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/loc.mode-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/location-mode|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/location-mode|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/location-mode",
+      "target": "http://hl7.org/fhir/location-mode",
+      "element": [
+        {
+          "code": "instance",
+          "target": [
+            {
+              "code": "instance",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "kind",
+          "target": [
+            {
+              "code": "kind",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

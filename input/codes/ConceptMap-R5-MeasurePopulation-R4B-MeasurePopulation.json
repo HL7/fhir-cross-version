@@ -1,0 +1,122 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MeasurePopulation-R4B-MeasurePopulation",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-MeasurePopulation-R4B-MeasurePopulation",
+  "version": "0.0.1",
+  "name": "R5-MeasurePopulation-R4B-MeasurePopulation",
+  "title": "Concept map to convert a FHIR R5 MeasurePopulation into a FHIR R4B MeasurePopulation",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9220397-06:00",
+  "description": "Mapping for Measure.group.population.code from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MeasureGroupPopulationCoder5to4b",
+      "display": "Id: mea.gr.po.code-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Measure#Measure.group.population.code\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.group.population.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mea.gr.po.code-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "MeasureReportGroupPopulationCoder5to4b",
+      "display": "Id: mrp.gr.po.code-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/MeasureReport#MeasureReport.group.population.code\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/MeasureReport#MeasureReport.group.population.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.gr.po.code-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "MeasureReportGroupStratifierStratumPopulationCoder5to4b",
+      "display": "Id: mrp.gr.st.st.po.code-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/MeasureReport#MeasureReport.group.stratifier.stratum.population.code\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/MeasureReport#MeasureReport.group.stratifier.stratum.population.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.gr.st.st.po.code-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-population|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-population|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/measure-population",
+      "target": "http://terminology.hl7.org/CodeSystem/measure-population",
+      "element": [
+        {
+          "code": "denominator",
+          "target": [
+            {
+              "code": "denominator",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "denominator-exception",
+          "target": [
+            {
+              "code": "denominator-exception",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "denominator-exclusion",
+          "target": [
+            {
+              "code": "denominator-exclusion",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "initial-population",
+          "target": [
+            {
+              "code": "initial-population",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "measure-observation",
+          "target": [
+            {
+              "code": "measure-observation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "measure-population",
+          "target": [
+            {
+              "code": "measure-population",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "measure-population-exclusion",
+          "target": [
+            {
+              "code": "measure-population-exclusion",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "numerator",
+          "target": [
+            {
+              "code": "numerator",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "numerator-exclusion",
+          "target": [
+            {
+              "code": "numerator-exclusion",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

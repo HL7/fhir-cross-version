@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-CompositionStatus-R3-CompositionStatus",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-CompositionStatus-R3-CompositionStatus",
+  "version": "0.0.1",
+  "name": "R2-CompositionStatus-R3-CompositionStatus",
+  "title": "Concept map to convert a FHIR R2 CompositionStatus into a FHIR R3 CompositionStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4891447-06:00",
+  "description": "Mapping for Composition.status from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CompositionStatus2to3",
+      "display": "Id: cmp.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Composition#Composition.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "DocumentReferenceDocStatus2to3",
+      "display": "Id: dcr.docStatus-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/DocumentReference#DocumentReference.docStatus\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/DocumentReference#DocumentReference.docStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.docStatus-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/composition-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/composition-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/composition-status",
+      "target": "http://hl7.org/fhir/composition-status",
+      "element": [
+        {
+          "code": "amended",
+          "target": [
+            {
+              "code": "amended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "final",
+          "target": [
+            {
+              "code": "final",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "preliminary",
+          "target": [
+            {
+              "code": "preliminary",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

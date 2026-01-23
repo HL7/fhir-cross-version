@@ -1,0 +1,73 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-DocumentRelationshipType-R4-DocumentRelationshipType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-DocumentRelationshipType-R4-DocumentRelationshipType",
+  "version": "0.0.1",
+  "name": "R5-DocumentRelationshipType-R4-DocumentRelationshipType",
+  "title": "Concept map to convert a FHIR R5 DocumentRelationshipType into a FHIR R4 DocumentRelationshipType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9882777-06:00",
+  "description": "Mapping for DocumentReference.relatesTo.code from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DocumentReferenceRelatesToCode5to4",
+      "display": "Id: dcr.re.code-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.re.code-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/document-relationship-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/document-relationship-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/document-relationship-type",
+      "target": "http://hl7.org/fhir/document-relationship-type",
+      "element": [
+        {
+          "code": "incorporates",
+          "noMap": true
+        },
+        {
+          "code": "signs",
+          "target": [
+            {
+              "code": "signs",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "replaces",
+          "target": [
+            {
+              "code": "replaces",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "transforms",
+          "target": [
+            {
+              "code": "transforms",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "summarizes",
+          "noMap": true
+        },
+        {
+          "code": "appends",
+          "target": [
+            {
+              "code": "appends",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

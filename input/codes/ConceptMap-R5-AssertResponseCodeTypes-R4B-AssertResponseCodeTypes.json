@@ -1,0 +1,374 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-AssertResponseCodeTypes-R4B-AssertResponseCodeTypes",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-AssertResponseCodeTypes-R4B-AssertResponseCodeTypes",
+  "version": "0.0.1",
+  "name": "R5-AssertResponseCodeTypes-R4B-AssertResponseCodeTypes",
+  "title": "Concept map to convert a FHIR R5 AssertResponseCodeTypes into a FHIR R4B AssertResponseCodeTypes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9359452-06:00",
+  "description": "Mapping for TestScript.setup.action.assert.response from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestScriptSetupActionAssertResponse5to4b",
+      "display": "Id: tst.se.ac.as.response-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/TestScript#TestScript.setup.action.assert.response\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.assert.response",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.response-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/assert-response-code-types|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/assert-response-code-types|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/assert-response-code-types",
+      "target": "http://hl7.org/fhir/assert-response-code-types",
+      "element": [
+        {
+          "code": "accepted",
+          "target": [
+            {
+              "code": "okay",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "badGateway",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "badRequest",
+          "target": [
+            {
+              "code": "bad",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "conflict",
+          "target": [
+            {
+              "code": "conflict",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "contentTooLarge",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "continue",
+          "noMap": true
+        },
+        {
+          "code": "created",
+          "target": [
+            {
+              "code": "created",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "expectationFailed",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "forbidden",
+          "target": [
+            {
+              "code": "forbidden",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "found",
+          "noMap": true
+        },
+        {
+          "code": "gatewayTimeout",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "gone",
+          "target": [
+            {
+              "code": "gone",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "httpVersionNotSupported",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "internalServerError",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "lengthRequired",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "methodNotAllowed",
+          "target": [
+            {
+              "code": "methodNotAllowed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "misdirectedRequest",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "movedPermanently",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "multipleChoices",
+          "noMap": true
+        },
+        {
+          "code": "noContent",
+          "target": [
+            {
+              "code": "noContent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "nonAuthoritativeInformation",
+          "noMap": true
+        },
+        {
+          "code": "notAcceptable",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "notFound",
+          "target": [
+            {
+              "code": "notFound",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "notImplemented",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "notModified",
+          "target": [
+            {
+              "code": "notModified",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "okay",
+          "target": [
+            {
+              "code": "okay",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "partialContent",
+          "noMap": true
+        },
+        {
+          "code": "paymentRequired",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "permanentRedirect",
+          "noMap": true
+        },
+        {
+          "code": "preconditionFailed",
+          "target": [
+            {
+              "code": "preconditionFailed",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "proxyAuthenticationRequired",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "rangeNotSatisfiable",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "requestTimeout",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "resetContent",
+          "noMap": true
+        },
+        {
+          "code": "seeOther",
+          "noMap": true
+        },
+        {
+          "code": "serviceUnavailable",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "switchingProtocols",
+          "noMap": true
+        },
+        {
+          "code": "temporaryRedirect",
+          "noMap": true
+        },
+        {
+          "code": "unauthorized",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "unprocessableContent",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "unsupportedMediaType",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "upgradeRequired",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "uriTooLong",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "useProxy",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

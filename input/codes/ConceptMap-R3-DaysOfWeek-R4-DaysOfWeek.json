@@ -1,0 +1,104 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-DaysOfWeek-R4-DaysOfWeek",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-DaysOfWeek-R4-DaysOfWeek",
+  "version": "0.0.1",
+  "name": "R3-DaysOfWeek-R4-DaysOfWeek",
+  "title": "Concept map to convert a FHIR R3 DaysOfWeek into a FHIR R4 DaysOfWeek",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6807648-06:00",
+  "description": "Mapping for HealthcareService.availableTime.daysOfWeek from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "HealthcareServiceAvailableTimeDaysOfWeek3to4",
+      "display": "Id: hcs.av.daysOfWeek-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/HealthcareService#HealthcareService.availableTime.daysOfWeek\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/HealthcareService#HealthcareService.availableTime.daysOfWeek",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/hcs.av.daysOfWeek-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "PractitionerRoleAvailableTimeDaysOfWeek3to4",
+      "display": "Id: prl.av.daysOfWeek-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/PractitionerRole#PractitionerRole.availableTime.daysOfWeek\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/PractitionerRole#PractitionerRole.availableTime.daysOfWeek",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/prl.av.daysOfWeek-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "TimingRepeatDayOfWeek3to4",
+      "display": "Id: tim.re.dayOfWeek-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.dayOfWeek\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Timing#Timing.repeat.dayOfWeek",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.dayOfWeek-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/days-of-week|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/days-of-week|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/days-of-week",
+      "target": "http://hl7.org/fhir/days-of-week",
+      "element": [
+        {
+          "code": "thu",
+          "target": [
+            {
+              "code": "thu",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tue",
+          "target": [
+            {
+              "code": "tue",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "wed",
+          "target": [
+            {
+              "code": "wed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sat",
+          "target": [
+            {
+              "code": "sat",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fri",
+          "target": [
+            {
+              "code": "fri",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "mon",
+          "target": [
+            {
+              "code": "mon",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sun",
+          "target": [
+            {
+              "code": "sun",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

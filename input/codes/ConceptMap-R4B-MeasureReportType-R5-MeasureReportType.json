@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-MeasureReportType-R5-MeasureReportType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-MeasureReportType-R5-MeasureReportType",
+  "version": "0.0.1",
+  "name": "R4B-MeasureReportType-R5-MeasureReportType",
+  "title": "Concept map to convert a FHIR R4B MeasureReportType into a FHIR R5 MeasureReportType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4791837-06:00",
+  "description": "Mapping for MeasureReport.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MeasureReportType4bto5",
+      "display": "Id: mrp.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/MeasureReport#MeasureReport.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/MeasureReport#MeasureReport.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-report-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-report-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/measure-report-type",
+      "target": "http://hl7.org/fhir/measure-report-type",
+      "element": [
+        {
+          "code": "summary",
+          "target": [
+            {
+              "code": "summary",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "individual",
+          "target": [
+            {
+              "code": "individual",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data-collection",
+          "target": [
+            {
+              "code": "data-exchange",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "subject-list",
+          "target": [
+            {
+              "code": "subject-list",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

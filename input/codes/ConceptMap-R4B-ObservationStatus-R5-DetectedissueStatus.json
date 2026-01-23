@@ -1,0 +1,76 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ObservationStatus-R5-DetectedissueStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ObservationStatus-R5-DetectedissueStatus",
+  "version": "0.0.1",
+  "name": "R4B-ObservationStatus-R5-DetectedissueStatus",
+  "title": "Concept map to convert a FHIR R4B ObservationStatus into a FHIR R5 DetectedissueStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4635376-06:00",
+  "description": "Mapping for DetectedIssue.status from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DetectedIssueStatusr4bto5",
+      "display": "Id: dti.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/DetectedIssue#DetectedIssue.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/DetectedIssue#DetectedIssue.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dti.status-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/observation-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/detectedissue-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/observation-status",
+      "target": "http://hl7.org/fhir/observation-status",
+      "element": [
+        {
+          "code": "amended",
+          "noMap": true
+        },
+        {
+          "code": "cancelled",
+          "noMap": true
+        },
+        {
+          "code": "corrected",
+          "noMap": true
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "final",
+          "target": [
+            {
+              "code": "final",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "preliminary",
+          "target": [
+            {
+              "code": "preliminary",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "registered",
+          "noMap": true
+        },
+        {
+          "code": "unknown",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-SecurityRoleType-R5-ParticipationRoleType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-SecurityRoleType-R5-ParticipationRoleType",
+  "version": "0.0.1",
+  "name": "R4B-SecurityRoleType-R5-ParticipationRoleType",
+  "title": "Concept map to convert a FHIR R4B SecurityRoleType into a FHIR R5 ParticipationRoleType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4835477-06:00",
+  "description": "Mapping for Consent.provision.actor.role from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConsentProvisionActorRoler4bto5",
+      "display": "Id: ppc.pr.ac.role-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.provision.actor.role\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Consent#Consent.provision.actor.role",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.ac.role-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/security-role-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "target": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "element": [
+        {
+          "code": "authserver",
+          "target": [
+            {
+              "code": "authserver",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "datacollector",
+          "target": [
+            {
+              "code": "datacollector",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dataprocessor",
+          "target": [
+            {
+              "code": "dataprocessor",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "datasubject",
+          "target": [
+            {
+              "code": "datasubject",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "humanuser",
+          "target": [
+            {
+              "code": "humanuser",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "target": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "element": [
+        {
+          "code": "GT",
+          "noMap": true
+        },
+        {
+          "code": "GRANTOR",
+          "noMap": true
+        },
+        {
+          "code": "GRANTEE",
+          "noMap": true
+        },
+        {
+          "code": "CAS",
+          "noMap": true
+        },
+        {
+          "code": "POWATT",
+          "noMap": true
+        },
+        {
+          "code": "CNRP",
+          "noMap": true
+        },
+        {
+          "code": "CASM",
+          "noMap": true
+        },
+        {
+          "code": "DELEGATEE",
+          "noMap": true
+        },
+        {
+          "code": "CRPM",
+          "noMap": true
+        },
+        {
+          "code": "DELEGATOR",
+          "noMap": true
+        },
+        {
+          "code": "SPOWATT",
+          "noMap": true
+        },
+        {
+          "code": "DOWNGRDER",
+          "noMap": true
+        },
+        {
+          "code": "GUADLTM",
+          "noMap": true
+        },
+        {
+          "code": "INTPRTER",
+          "noMap": true
+        },
+        {
+          "code": "CLASSIFIER",
+          "noMap": true
+        },
+        {
+          "code": "EXCEST",
+          "noMap": true
+        },
+        {
+          "code": "RESPRSN",
+          "noMap": true
+        },
+        {
+          "code": "CN",
+          "noMap": true
+        },
+        {
+          "code": "DPOWATT",
+          "noMap": true
+        },
+        {
+          "code": "HPOWATT",
+          "noMap": true
+        },
+        {
+          "code": "CNRPM",
+          "noMap": true
+        },
+        {
+          "code": "CPCA",
+          "noMap": true
+        },
+        {
+          "code": "CRP",
+          "noMap": true
+        },
+        {
+          "code": "CONSWIT",
+          "noMap": true
+        },
+        {
+          "code": "DECLASSIFIER",
+          "noMap": true
+        },
+        {
+          "code": "CONSENTER",
+          "noMap": true
+        },
+        {
+          "code": "COPART",
+          "noMap": true
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+      "target": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "element": [
+        {
+          "code": "EMP",
+          "noMap": true
+        },
+        {
+          "code": "ASSIGNED",
+          "noMap": true
+        },
+        {
+          "code": "NOK",
+          "noMap": true
+        },
+        {
+          "code": "INVSBJ",
+          "noMap": true
+        },
+        {
+          "code": "COVPTY",
+          "noMap": true
+        },
+        {
+          "code": "CLAIM",
+          "noMap": true
+        },
+        {
+          "code": "GUARD",
+          "noMap": true
+        },
+        {
+          "code": "PAT",
+          "noMap": true
+        },
+        {
+          "code": "AGNT",
+          "noMap": true
+        },
+        {
+          "code": "AFFL",
+          "noMap": true
+        },
+        {
+          "code": "PROV",
+          "noMap": true
+        },
+        {
+          "code": "DEPEN",
+          "noMap": true
+        },
+        {
+          "code": "ECON",
+          "noMap": true
+        },
+        {
+          "code": "NOT",
+          "noMap": true
+        },
+        {
+          "code": "NAMED",
+          "noMap": true
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+      "target": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "element": [
+        {
+          "code": "AULR",
+          "noMap": true
+        },
+        {
+          "code": "PROMSK",
+          "noMap": true
+        },
+        {
+          "code": "AUCG",
+          "noMap": true
+        },
+        {
+          "code": "AUTM",
+          "noMap": true
+        },
+        {
+          "code": "AUWA",
+          "noMap": true
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+      "target": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "element": [
+        {
+          "code": "PRIMAUTH",
+          "noMap": true
+        },
+        {
+          "code": "VERF",
+          "noMap": true
+        },
+        {
+          "code": "AMENDER",
+          "noMap": true
+        },
+        {
+          "code": "CONT",
+          "noMap": true
+        },
+        {
+          "code": "COAUTH",
+          "noMap": true
+        },
+        {
+          "code": "REVIEWER",
+          "noMap": true
+        },
+        {
+          "code": "VALID",
+          "noMap": true
+        },
+        {
+          "code": "SOURCE",
+          "noMap": true
+        },
+        {
+          "code": "EVTWIT",
+          "noMap": true
+        },
+        {
+          "code": "TRANS",
+          "noMap": true
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "target": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "element": [
+        {
+          "code": "WIT",
+          "noMap": true
+        },
+        {
+          "code": "CST",
+          "noMap": true
+        },
+        {
+          "code": "IRCP",
+          "noMap": true
+        },
+        {
+          "code": "TRC",
+          "noMap": true
+        },
+        {
+          "code": "LA",
+          "noMap": true
+        },
+        {
+          "code": "INF",
+          "noMap": true
+        },
+        {
+          "code": "AUT",
+          "noMap": true
+        }
+      ]
+    },
+    {
+      "source": "http://dicom.nema.org/resources/ontology/DCM",
+      "target": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "element": [
+        {
+          "code": "110151",
+          "noMap": true
+        },
+        {
+          "code": "110154",
+          "noMap": true
+        },
+        {
+          "code": "110155",
+          "noMap": true
+        },
+        {
+          "code": "110153",
+          "noMap": true
+        },
+        {
+          "code": "110150",
+          "noMap": true
+        },
+        {
+          "code": "110152",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

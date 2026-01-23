@@ -1,0 +1,197 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-IdentifierType-R4-IdentifierType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-IdentifierType-R4-IdentifierType",
+  "version": "0.0.1",
+  "name": "R4B-IdentifierType-R4-IdentifierType",
+  "title": "Concept map to convert a FHIR R4B IdentifierType into a FHIR R4 IdentifierType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6932546-06:00",
+  "description": "Mapping for Identifier.type from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "IdentifierTyper4bto4",
+      "display": "Id: idr.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Identifier#Identifier.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Identifier#Identifier.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/idr.type-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "NamingSystemTyper4bto4",
+      "display": "Id: nsd.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/NamingSystem#NamingSystem.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/NamingSystem#NamingSystem.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.type-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/identifier-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "element": [
+        {
+          "code": "ACSN",
+          "target": [
+            {
+              "code": "ACSN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BRN",
+          "target": [
+            {
+              "code": "BRN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DL",
+          "target": [
+            {
+              "code": "DL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DR",
+          "target": [
+            {
+              "code": "DR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EN",
+          "target": [
+            {
+              "code": "EN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FILL",
+          "target": [
+            {
+              "code": "FILL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "JHN",
+          "target": [
+            {
+              "code": "JHN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MCN",
+          "target": [
+            {
+              "code": "MCN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MD",
+          "target": [
+            {
+              "code": "MD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MR",
+          "target": [
+            {
+              "code": "MR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NIIP",
+          "target": [
+            {
+              "code": "NIIP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PLAC",
+          "target": [
+            {
+              "code": "PLAC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PPN",
+          "target": [
+            {
+              "code": "PPN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRN",
+          "target": [
+            {
+              "code": "PRN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SB",
+          "target": [
+            {
+              "code": "SB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SNO",
+          "target": [
+            {
+              "code": "SNO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TAX",
+          "target": [
+            {
+              "code": "TAX",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "UDI",
+          "target": [
+            {
+              "code": "UDI",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

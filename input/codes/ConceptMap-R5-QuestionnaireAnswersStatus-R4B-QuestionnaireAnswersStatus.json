@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-QuestionnaireAnswersStatus-R4B-QuestionnaireAnswersStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-QuestionnaireAnswersStatus-R4B-QuestionnaireAnswersStatus",
+  "version": "0.0.1",
+  "name": "R5-QuestionnaireAnswersStatus-R4B-QuestionnaireAnswersStatus",
+  "title": "Concept map to convert a FHIR R5 QuestionnaireAnswersStatus into a FHIR R4B QuestionnaireAnswersStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9290636-06:00",
+  "description": "Mapping for QuestionnaireResponse.status from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "QuestionnaireResponseStatus5to4b",
+      "display": "Id: qrs.status-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/qrs.status-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-answers-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-answers-status|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/questionnaire-answers-status",
+      "target": "http://hl7.org/fhir/questionnaire-answers-status",
+      "element": [
+        {
+          "code": "amended",
+          "target": [
+            {
+              "code": "amended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "stopped",
+          "target": [
+            {
+              "code": "stopped",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

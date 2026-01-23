@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ObservationRangeCategory-R4B-ObservationRangeCategory",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ObservationRangeCategory-R4B-ObservationRangeCategory",
+  "version": "0.0.1",
+  "name": "R4-ObservationRangeCategory-R4B-ObservationRangeCategory",
+  "title": "Concept map to convert a FHIR R4 ObservationRangeCategory into a FHIR R4B ObservationRangeCategory",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0195575-06:00",
+  "description": "Mapping for ObservationDefinition.qualifiedInterval.category from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ObservationDefinitionQualifiedIntervalCategory4to4b",
+      "display": "Id: obdf.qu.category-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.category\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.category",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/obdf.qu.category-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/observation-range-category|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/observation-range-category|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/observation-range-category",
+      "target": "http://hl7.org/fhir/observation-range-category",
+      "element": [
+        {
+          "code": "reference",
+          "target": [
+            {
+              "code": "reference",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "critical",
+          "target": [
+            {
+              "code": "critical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "absolute",
+          "target": [
+            {
+              "code": "absolute",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

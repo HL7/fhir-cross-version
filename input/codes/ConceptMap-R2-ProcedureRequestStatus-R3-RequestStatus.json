@@ -1,0 +1,131 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-ProcedureRequestStatus-R3-RequestStatus",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://something",
+        "code": "review-needed"
+      }
+    ]
+  },
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-ProcedureRequestStatus-R3-RequestStatus",
+  "version": "0.0.1",
+  "name": "R2-ProcedureRequestStatus-R3-RequestStatus",
+  "title": "Concept map to convert a FHIR R2 ProcedureRequestStatus into a FHIR R3 RequestStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5084853-06:00",
+  "description": "Mapping for ProcedureRequest.status from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ProcedureRequestStatus2to3",
+      "display": "Id: pcrq.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pcrq.status-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/procedure-request-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/procedure-request-status",
+      "target": "http://hl7.org/fhir/request-status",
+      "element": [
+        {
+          "code": "aborted",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "accepted",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "proposed",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "received",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "rejected",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "requested",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "draft",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "suspended",
+          "target": [
+            {
+              "code": "suspended",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

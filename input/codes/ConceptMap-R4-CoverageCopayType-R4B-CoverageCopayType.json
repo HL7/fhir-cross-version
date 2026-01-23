@@ -1,0 +1,119 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-CoverageCopayType-R4B-CoverageCopayType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-CoverageCopayType-R4B-CoverageCopayType",
+  "version": "0.0.1",
+  "name": "R4-CoverageCopayType-R4B-CoverageCopayType",
+  "title": "Concept map to convert a FHIR R4 CoverageCopayType into a FHIR R4B CoverageCopayType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.9893383-06:00",
+  "description": "Mapping for Coverage.costToBeneficiary.type from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CoverageCostToBeneficiaryType4to4b",
+      "display": "Id: cov.co.type-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Coverage#Coverage.costToBeneficiary.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Coverage#Coverage.costToBeneficiary.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cov.co.type-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/coverage-copay-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/coverage-copay-type|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+      "target": "http://terminology.hl7.org/CodeSystem/coverage-copay-type",
+      "element": [
+        {
+          "code": "gpvisit",
+          "target": [
+            {
+              "code": "gpvisit",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "televisit",
+          "target": [
+            {
+              "code": "televisit",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "copaypct",
+          "target": [
+            {
+              "code": "copaypct",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "spvisit",
+          "target": [
+            {
+              "code": "spvisit",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "inpthosp",
+          "target": [
+            {
+              "code": "inpthosp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "deductible",
+          "target": [
+            {
+              "code": "deductible",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "emergency",
+          "target": [
+            {
+              "code": "emergency",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "maxoutofpocket",
+          "target": [
+            {
+              "code": "maxoutofpocket",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "copay",
+          "target": [
+            {
+              "code": "copay",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "urgentcare",
+          "target": [
+            {
+              "code": "urgentcare",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-NutritionRequestStatus-R4-RequestStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-NutritionRequestStatus-R4-RequestStatus",
+  "version": "0.0.1",
+  "name": "R3-NutritionRequestStatus-R4-RequestStatus",
+  "title": "Concept map to convert a FHIR R3 NutritionRequestStatus into a FHIR R4 RequestStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6862353-06:00",
+  "description": "Mapping for NutritionOrder.status from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "NutritionOrderStatus3to4",
+      "display": "Id: nor.status-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/NutritionOrder#NutritionOrder.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/NutritionOrder#NutritionOrder.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nor.status-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/nutrition-request-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/nutrition-request-status",
+      "target": "http://hl7.org/fhir/request-status",
+      "element": [
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "revoked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "target": [
+            {
+              "code": "on-hold",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "planned",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "proposed",
+          "noMap": true
+        },
+        {
+          "code": "requested",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

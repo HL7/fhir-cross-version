@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-CapabilityStatementKind-R5-CapabilityStatementKind",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-CapabilityStatementKind-R5-CapabilityStatementKind",
+  "version": "0.0.1",
+  "name": "R4-CapabilityStatementKind-R5-CapabilityStatementKind",
+  "title": "Concept map to convert a FHIR R4 CapabilityStatementKind into a FHIR R5 CapabilityStatementKind",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0778029-06:00",
+  "description": "Mapping for CapabilityStatement.kind from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementKind4to5",
+      "display": "Id: cpb.kind-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.kind\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.kind-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "TerminologyCapabilitiesKind4to5",
+      "display": "Id: tcp.kind-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.kind\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tcp.kind-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/capability-statement-kind|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/capability-statement-kind|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/capability-statement-kind",
+      "target": "http://hl7.org/fhir/capability-statement-kind",
+      "element": [
+        {
+          "code": "capability",
+          "target": [
+            {
+              "code": "capability",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "requirements",
+          "target": [
+            {
+              "code": "requirements",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "instance",
+          "target": [
+            {
+              "code": "instance",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

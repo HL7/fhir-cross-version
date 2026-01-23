@@ -1,0 +1,119 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-FmStatus-R5-FmStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-FmStatus-R5-FmStatus",
+  "version": "0.0.1",
+  "name": "R4-FmStatus-R5-FmStatus",
+  "title": "Concept map to convert a FHIR R4 FmStatus into a FHIR R5 FmStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0749253-06:00",
+  "description": "Mapping for CoverageEligibilityRequest.status from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CoverageEligibilityRequestStatus4to5",
+      "display": "Id: cer.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CoverageEligibilityRequest#CoverageEligibilityRequest.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CoverageEligibilityRequest#CoverageEligibilityRequest.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cer.status-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "CoverageEligibilityResponseStatus4to5",
+      "display": "Id: ces.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CoverageEligibilityResponse#CoverageEligibilityResponse.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CoverageEligibilityResponse#CoverageEligibilityResponse.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ces.status-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "ClaimStatus4to5",
+      "display": "Id: clm.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Claim#Claim.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Claim#Claim.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clm.status-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "ClaimResponseStatus4to5",
+      "display": "Id: clr.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ClaimResponse#ClaimResponse.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ClaimResponse#ClaimResponse.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clr.status-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "CoverageStatus4to5",
+      "display": "Id: cov.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Coverage#Coverage.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Coverage#Coverage.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cov.status-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "EnrollmentRequestStatus4to5",
+      "display": "Id: enq.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/EnrollmentRequest#EnrollmentRequest.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/EnrollmentRequest#EnrollmentRequest.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/enq.status-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "EnrollmentResponseStatus4to5",
+      "display": "Id: enr.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/EnrollmentResponse#EnrollmentResponse.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/EnrollmentResponse#EnrollmentResponse.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/enr.status-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "PaymentNoticeStatus4to5",
+      "display": "Id: pmn.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/PaymentNotice#PaymentNotice.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/PaymentNotice#PaymentNotice.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pmn.status-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "PaymentReconciliationStatus4to5",
+      "display": "Id: pmr.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pmr.status-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "VisionPrescriptionStatus4to5",
+      "display": "Id: vps.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/VisionPrescription#VisionPrescription.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/VisionPrescription#VisionPrescription.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vps.status-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/fm-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/fm-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/fm-status",
+      "target": "http://hl7.org/fhir/fm-status",
+      "element": [
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

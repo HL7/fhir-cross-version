@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-SearchEntryMode-R5-SearchEntryMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-SearchEntryMode-R5-SearchEntryMode",
+  "version": "0.0.1",
+  "name": "R4B-SearchEntryMode-R5-SearchEntryMode",
+  "title": "Concept map to convert a FHIR R4B SearchEntryMode into a FHIR R5 SearchEntryMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4527569-06:00",
+  "description": "Mapping for Bundle.entry.search.mode from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "BundleEntrySearchMode4bto5",
+      "display": "Id: bdl.en.se.mode-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Bundle#Bundle.entry.search.mode\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Bundle#Bundle.entry.search.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/bdl.en.se.mode-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-entry-mode|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/search-entry-mode|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-entry-mode",
+      "target": "http://hl7.org/fhir/search-entry-mode",
+      "element": [
+        {
+          "code": "include",
+          "target": [
+            {
+              "code": "include",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "match",
+          "target": [
+            {
+              "code": "match",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "outcome",
+          "target": [
+            {
+              "code": "outcome",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

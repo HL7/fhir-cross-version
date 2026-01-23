@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-GuidanceResponseStatus-R5-GuidanceResponseStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-GuidanceResponseStatus-R5-GuidanceResponseStatus",
+  "version": "0.0.1",
+  "name": "R4B-GuidanceResponseStatus-R5-GuidanceResponseStatus",
+  "title": "Concept map to convert a FHIR R4B GuidanceResponseStatus into a FHIR R5 GuidanceResponseStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4681103-06:00",
+  "description": "Mapping for GuidanceResponse.status from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "GuidanceResponseStatus4bto5",
+      "display": "Id: grs.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/GuidanceResponse#GuidanceResponse.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/GuidanceResponse#GuidanceResponse.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/grs.status-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/guidance-response-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/guidance-response-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/guidance-response-status",
+      "target": "http://hl7.org/fhir/guidance-response-status",
+      "element": [
+        {
+          "code": "success",
+          "target": [
+            {
+              "code": "success",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "failure",
+          "target": [
+            {
+              "code": "failure",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data-required",
+          "target": [
+            {
+              "code": "data-required",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data-requested",
+          "target": [
+            {
+              "code": "data-requested",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

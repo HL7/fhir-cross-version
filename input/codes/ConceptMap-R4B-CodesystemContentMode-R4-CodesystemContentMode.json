@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-CodesystemContentMode-R4-CodesystemContentMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-CodesystemContentMode-R4-CodesystemContentMode",
+  "version": "0.0.1",
+  "name": "R4B-CodesystemContentMode-R4-CodesystemContentMode",
+  "title": "Concept map to convert a FHIR R4B CodesystemContentMode into a FHIR R4 CodesystemContentMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6779972-06:00",
+  "description": "Mapping for CodeSystem.content from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CodeSystemContent4bto4",
+      "display": "Id: csd.content-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/CodeSystem#CodeSystem.content\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.content",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/csd.content-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/codesystem-content-mode",
+      "target": "http://hl7.org/fhir/codesystem-content-mode",
+      "element": [
+        {
+          "code": "fragment",
+          "target": [
+            {
+              "code": "fragment",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "supplement",
+          "target": [
+            {
+              "code": "supplement",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-present",
+          "target": [
+            {
+              "code": "not-present",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "complete",
+          "target": [
+            {
+              "code": "complete",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "example",
+          "target": [
+            {
+              "code": "example",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

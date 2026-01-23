@@ -1,0 +1,89 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ActionSelectionBehavior-R5-ActionSelectionBehavior",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ActionSelectionBehavior-R5-ActionSelectionBehavior",
+  "version": "0.0.1",
+  "name": "R4-ActionSelectionBehavior-R5-ActionSelectionBehavior",
+  "title": "Concept map to convert a FHIR R4 ActionSelectionBehavior into a FHIR R5 ActionSelectionBehavior",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0939148-06:00",
+  "description": "Mapping for PlanDefinition.action.selectionBehavior from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionSelectionBehavior4to5",
+      "display": "Id: pdf.ac.selectionBehavior-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.selectionBehavior\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.selectionBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.selectionBehavior-4to5"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestGroupActionSelectionBehaviorRequestOrchestrationActionSelectionBehavior4to5",
+      "display": "Id: rgp.ac.selectionBehavior-rqo.ac.selectionBehavior-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.selectionBehavior\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.selectionBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.selectionBehavior-rqo.ac.selectionBehavior-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-selection-behavior|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-selection-behavior|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/action-selection-behavior",
+      "target": "http://hl7.org/fhir/action-selection-behavior",
+      "element": [
+        {
+          "code": "all",
+          "target": [
+            {
+              "code": "all",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "exactly-one",
+          "target": [
+            {
+              "code": "exactly-one",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "at-most-one",
+          "target": [
+            {
+              "code": "at-most-one",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "all-or-none",
+          "target": [
+            {
+              "code": "all-or-none",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "any",
+          "target": [
+            {
+              "code": "any",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "one-or-more",
+          "target": [
+            {
+              "code": "one-or-more",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

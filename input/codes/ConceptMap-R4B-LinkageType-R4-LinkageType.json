@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-LinkageType-R4-LinkageType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-LinkageType-R4-LinkageType",
+  "version": "0.0.1",
+  "name": "R4B-LinkageType-R4-LinkageType",
+  "title": "Concept map to convert a FHIR R4B LinkageType into a FHIR R4 LinkageType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6962715-06:00",
+  "description": "Mapping for Linkage.item.type from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "LinkageItemType4bto4",
+      "display": "Id: lnk.it.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Linkage#Linkage.item.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Linkage#Linkage.item.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/lnk.it.type-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/linkage-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/linkage-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/linkage-type",
+      "target": "http://hl7.org/fhir/linkage-type",
+      "element": [
+        {
+          "code": "alternate",
+          "target": [
+            {
+              "code": "alternate",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "historical",
+          "target": [
+            {
+              "code": "historical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "source",
+          "target": [
+            {
+              "code": "source",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MapModelMode-R4B-MapModelMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MapModelMode-R4B-MapModelMode",
+  "version": "0.0.1",
+  "name": "R4-MapModelMode-R4B-MapModelMode",
+  "title": "Concept map to convert a FHIR R4 MapModelMode into a FHIR R4B MapModelMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0306622-06:00",
+  "description": "Mapping for StructureMap.structure.mode from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureMapStructureMode4to4b",
+      "display": "Id: smp.st.mode-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.structure.mode\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.structure.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/smp.st.mode-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/map-model-mode|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/map-model-mode|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/map-model-mode",
+      "target": "http://hl7.org/fhir/map-model-mode",
+      "element": [
+        {
+          "code": "source",
+          "target": [
+            {
+              "code": "source",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "queried",
+          "target": [
+            {
+              "code": "queried",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "target",
+          "target": [
+            {
+              "code": "target",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "produced",
+          "target": [
+            {
+              "code": "produced",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

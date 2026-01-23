@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-AllergyIntoleranceType-R4-AllergyIntoleranceType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-AllergyIntoleranceType-R4-AllergyIntoleranceType",
+  "version": "0.0.1",
+  "name": "R3-AllergyIntoleranceType-R4-AllergyIntoleranceType",
+  "title": "Concept map to convert a FHIR R3 AllergyIntoleranceType into a FHIR R4 AllergyIntoleranceType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6650251-06:00",
+  "description": "Mapping for AllergyIntolerance.type from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AllergyIntoleranceType3to4",
+      "display": "Id: ait.type-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ait.type-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/allergy-intolerance-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/allergy-intolerance-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/allergy-intolerance-type",
+      "target": "http://hl7.org/fhir/allergy-intolerance-type",
+      "element": [
+        {
+          "code": "intolerance",
+          "target": [
+            {
+              "code": "intolerance",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "allergy",
+          "target": [
+            {
+              "code": "allergy",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

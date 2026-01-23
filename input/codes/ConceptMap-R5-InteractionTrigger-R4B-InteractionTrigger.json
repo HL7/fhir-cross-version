@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-InteractionTrigger-R4B-InteractionTrigger",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-InteractionTrigger-R4B-InteractionTrigger",
+  "version": "0.0.1",
+  "name": "R5-InteractionTrigger-R4B-InteractionTrigger",
+  "title": "Concept map to convert a FHIR R5 InteractionTrigger into a FHIR R4B InteractionTrigger",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.93063-06:00",
+  "description": "Mapping for SubscriptionTopic.resourceTrigger.supportedInteraction from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SubscriptionTopicResourceTriggerSupportedInteraction5to4b",
+      "display": "Id: scrt.re.supportedInteraction-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionTopic#SubscriptionTopic.resourceTrigger.supportedInteraction\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic#SubscriptionTopic.resourceTrigger.supportedInteraction",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/scrt.re.supportedInteraction-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/interaction-trigger|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/interaction-trigger|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/restful-interaction",
+      "target": "http://hl7.org/fhir/restful-interaction",
+      "element": [
+        {
+          "code": "update",
+          "target": [
+            {
+              "code": "update",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "delete",
+          "target": [
+            {
+              "code": "delete",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "create",
+          "target": [
+            {
+              "code": "create",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

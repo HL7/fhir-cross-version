@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MediaType-R4B-MediaType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MediaType-R4B-MediaType",
+  "version": "0.0.1",
+  "name": "R4-MediaType-R4B-MediaType",
+  "title": "Concept map to convert a FHIR R4 MediaType into a FHIR R4B MediaType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0149095-06:00",
+  "description": "Mapping for Media.type from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MediaType4to4b",
+      "display": "Id: mda.type-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Media#Media.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Media#Media.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mda.type-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/media-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/media-type|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/media-type",
+      "target": "http://terminology.hl7.org/CodeSystem/media-type",
+      "element": [
+        {
+          "code": "image",
+          "target": [
+            {
+              "code": "image",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "video",
+          "target": [
+            {
+              "code": "video",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "audio",
+          "target": [
+            {
+              "code": "audio",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

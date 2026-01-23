@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-InsuranceplanApplicability-R4B-InsuranceplanApplicability",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-InsuranceplanApplicability-R4B-InsuranceplanApplicability",
+  "version": "0.0.1",
+  "name": "R5-InsuranceplanApplicability-R4B-InsuranceplanApplicability",
+  "title": "Concept map to convert a FHIR R5 InsuranceplanApplicability into a FHIR R4B InsuranceplanApplicability",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9208397-06:00",
+  "description": "Mapping for InsurancePlan.plan.specificCost.benefit.cost.applicability from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "InsurancePlanPlanSpecificCostBenefitCostApplicabilityr5to4b",
+      "display": "Id: ipn.pl.sp.be.co.applicability-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/InsurancePlan#InsurancePlan.plan.specificCost.benefit.cost.applicability\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/InsurancePlan#InsurancePlan.plan.specificCost.benefit.cost.applicability",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ipn.pl.sp.be.co.applicability-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/insuranceplan-applicability|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/insuranceplan-applicability|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/applicability",
+      "target": "http://terminology.hl7.org/CodeSystem/applicability",
+      "element": [
+        {
+          "code": "in-network",
+          "target": [
+            {
+              "code": "in-network",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "out-of-network",
+          "target": [
+            {
+              "code": "out-of-network",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

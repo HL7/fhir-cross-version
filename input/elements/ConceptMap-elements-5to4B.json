@@ -17,8 +17,6 @@
       "source": "http://hl7.org/fhir/5.0/element-names",
       "target": "http://hl7.org/fhir/4.3/element-names",
       "element": [
-    { "code": "Dosage.asNeeded", "target": [{ "code": "Dosage.asNeeded[x]", "relationship": "equivalent" }] },
-    { "code": "ProductShelfLife.period[x]", "target": [{ "code": "ProductShelfLife.period", "relationship": "equivalent" }] },
     { "code": "Account.relatedAccount", "target" : [{ "code" : "Account", "relationship" : "source-is-narrower-than-target"}] },
     { "code": "Account.relatedAccount.account", "target": [{ "code" : "Account.partOf", "relationship" : "source-is-broader-than-target", "comment" : "re-org" }] },
     { "code": "Account.relatedAccount.account", "target": [{ "code" : "Account.relatedAccount.partOf", "relationship" : "equivalent" }] },
@@ -127,7 +125,7 @@
     { "code": "Encounter.reason.use", "target": [{ "code": "Encounter.reasonCode.use", "relationship": "equivalent" }] },
     { "code": "Encounter.reason.value", "target": [{ "code": "Encounter.reasonCode.value", "relationship": "equivalent" }] },
     { "code": "Encounter.reason.value.concept", "target": [{ "code": "Encounter.reasonCode", "relationship": "equivalent" }] },
-    { "code": "Encounter.reason.value.reference", "target": [{ "code": "Encounter.reasonReference", "relationship": "equivalent" }] },
+    { "code": "Encounter.reason.value.reference", "target": [{ "code": "Encounter.reasonReference", "relationship": "source-is-broader-than-target" }] },
     { "code": "Encounter.specialArrangement", "target": [{ "code": "Encounter.hospitalization.specialArrangement", "relationship": "equivalent" }] },
     { "code": "Encounter.specialCourtesy", "target": [{ "code": "Encounter.hospitalization.specialCourtesy", "relationship": "equivalent" }] },
     { "code": "Endpoint.payload", "target" : [{ "code" : "Endpoint", "relationship" : "source-is-narrower-than-target"}] },

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-ClaimUseLink-R3-ClaimUse",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-ClaimUseLink-R3-ClaimUse",
+  "version": "0.0.1",
+  "name": "R2-ClaimUseLink-R3-ClaimUse",
+  "title": "Concept map to convert a FHIR R2 ClaimUseLink into a FHIR R3 ClaimUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4860677-06:00",
+  "description": "Mapping for Claim.use from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClaimUse2to3",
+      "display": "Id: clm.use-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Claim#Claim.use\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clm.use-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/claim-use-link|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/claim-use|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/claim-use-link",
+      "target": "http://hl7.org/fhir/claim-use",
+      "element": [
+        {
+          "code": "exploratory",
+          "target": [
+            {
+              "code": "exploratory",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "proposed",
+          "target": [
+            {
+              "code": "proposed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "complete",
+          "target": [
+            {
+              "code": "complete",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

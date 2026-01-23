@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ImagingstudyStatus-R4-ImagingstudyStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ImagingstudyStatus-R4-ImagingstudyStatus",
+  "version": "0.0.1",
+  "name": "R4B-ImagingstudyStatus-R4-ImagingstudyStatus",
+  "title": "Concept map to convert a FHIR R4B ImagingstudyStatus into a FHIR R4 ImagingstudyStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6954865-06:00",
+  "description": "Mapping for ImagingStudy.status from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ImagingStudyStatus4bto4",
+      "display": "Id: ims.status-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ImagingStudy#ImagingStudy.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ImagingStudy#ImagingStudy.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ims.status-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/imagingstudy-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/imagingstudy-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/imagingstudy-status",
+      "target": "http://hl7.org/fhir/imagingstudy-status",
+      "element": [
+        {
+          "code": "available",
+          "target": [
+            {
+              "code": "available",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "registered",
+          "target": [
+            {
+              "code": "registered",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

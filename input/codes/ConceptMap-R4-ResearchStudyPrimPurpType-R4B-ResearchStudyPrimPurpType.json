@@ -1,0 +1,101 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ResearchStudyPrimPurpType-R4B-ResearchStudyPrimPurpType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ResearchStudyPrimPurpType-R4B-ResearchStudyPrimPurpType",
+  "version": "0.0.1",
+  "name": "R4-ResearchStudyPrimPurpType-R4B-ResearchStudyPrimPurpType",
+  "title": "Concept map to convert a FHIR R4 ResearchStudyPrimPurpType into a FHIR R4B ResearchStudyPrimPurpType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0260982-06:00",
+  "description": "Mapping for ResearchStudy.primaryPurposeType from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ResearchStudyPrimaryPurposeType4to4b",
+      "display": "Id: rst.primaryPurposeType-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ResearchStudy#ResearchStudy.primaryPurposeType\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ResearchStudy#ResearchStudy.primaryPurposeType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rst.primaryPurposeType-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type",
+      "target": "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type",
+      "element": [
+        {
+          "code": "treatment",
+          "target": [
+            {
+              "code": "treatment",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "screening",
+          "target": [
+            {
+              "code": "screening",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "supportive-care",
+          "target": [
+            {
+              "code": "supportive-care",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "health-services-research",
+          "target": [
+            {
+              "code": "health-services-research",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "basic-science",
+          "target": [
+            {
+              "code": "basic-science",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "device-feasibility",
+          "target": [
+            {
+              "code": "device-feasibility",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "diagnostic",
+          "target": [
+            {
+              "code": "diagnostic",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "prevention",
+          "target": [
+            {
+              "code": "prevention",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

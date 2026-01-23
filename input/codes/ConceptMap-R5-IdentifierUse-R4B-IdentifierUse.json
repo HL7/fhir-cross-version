@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-IdentifierUse-R4B-IdentifierUse",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-IdentifierUse-R4B-IdentifierUse",
+  "version": "0.0.1",
+  "name": "R5-IdentifierUse-R4B-IdentifierUse",
+  "title": "Concept map to convert a FHIR R5 IdentifierUse into a FHIR R4B IdentifierUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9195476-06:00",
+  "description": "Mapping for Identifier.use from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "IdentifierUse5to4b",
+      "display": "Id: idr.use-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Identifier#Identifier.use\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Identifier#Identifier.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/idr.use-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/identifier-use|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/identifier-use|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/identifier-use",
+      "target": "http://hl7.org/fhir/identifier-use",
+      "element": [
+        {
+          "code": "secondary",
+          "target": [
+            {
+              "code": "secondary",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "temp",
+          "target": [
+            {
+              "code": "temp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "usual",
+          "target": [
+            {
+              "code": "usual",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "old",
+          "target": [
+            {
+              "code": "old",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "official",
+          "target": [
+            {
+              "code": "official",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

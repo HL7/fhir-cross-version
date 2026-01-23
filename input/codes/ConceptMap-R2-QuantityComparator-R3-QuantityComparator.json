@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-QuantityComparator-R3-QuantityComparator",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-QuantityComparator-R3-QuantityComparator",
+  "version": "0.0.1",
+  "name": "R2-QuantityComparator-R3-QuantityComparator",
+  "title": "Concept map to convert a FHIR R2 QuantityComparator into a FHIR R3 QuantityComparator",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5109181-06:00",
+  "description": "Mapping for Quantity.comparator from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "QuantityComparator2to3",
+      "display": "Id: qty.comparator-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Quantity#Quantity.comparator\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Quantity#Quantity.comparator",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/qty.comparator-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/quantity-comparator|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/quantity-comparator|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/quantity-comparator",
+      "target": "http://hl7.org/fhir/quantity-comparator",
+      "element": [
+        {
+          "code": "\u003C=",
+          "target": [
+            {
+              "code": "\u003C=",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "\u003C",
+          "target": [
+            {
+              "code": "\u003C",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "\u003E",
+          "target": [
+            {
+              "code": "\u003E",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "\u003E=",
+          "target": [
+            {
+              "code": "\u003E=",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ContributorType-R5-ContributorType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ContributorType-R5-ContributorType",
+  "version": "0.0.1",
+  "name": "R4B-ContributorType-R5-ContributorType",
+  "title": "Concept map to convert a FHIR R4B ContributorType into a FHIR R5 ContributorType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4598409-06:00",
+  "description": "Mapping for Contributor.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ContributorType4bto5",
+      "display": "Id: ctb.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Contributor#Contributor.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Contributor#Contributor.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctb.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/contributor-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/contributor-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/contributor-type",
+      "target": "http://hl7.org/fhir/contributor-type",
+      "element": [
+        {
+          "code": "editor",
+          "target": [
+            {
+              "code": "editor",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "author",
+          "target": [
+            {
+              "code": "author",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "endorser",
+          "target": [
+            {
+              "code": "endorser",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reviewer",
+          "target": [
+            {
+              "code": "reviewer",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-MetricCalibrationType-R2-MetricCalibrationType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-MetricCalibrationType-R2-MetricCalibrationType",
+  "version": "0.0.1",
+  "name": "R3-MetricCalibrationType-R2-MetricCalibrationType",
+  "title": "Concept map to convert a FHIR R3 MetricCalibrationType into a FHIR R2 MetricCalibrationType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.767298-06:00",
+  "description": "Mapping for DeviceMetric.calibration.type from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceMetricCalibrationType3to2",
+      "display": "Id: dvm.ca.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.ca.type-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-calibration-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-calibration-type|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/metric-calibration-type",
+      "target": "http://hl7.org/fhir/metric-calibration-type",
+      "element": [
+        {
+          "code": "offset",
+          "target": [
+            {
+              "code": "offset",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unspecified",
+          "target": [
+            {
+              "code": "unspecified",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "two-point",
+          "target": [
+            {
+              "code": "two-point",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gain",
+          "target": [
+            {
+              "code": "gain",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

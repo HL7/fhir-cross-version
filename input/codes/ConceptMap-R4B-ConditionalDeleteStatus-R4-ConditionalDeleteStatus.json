@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ConditionalDeleteStatus-R4-ConditionalDeleteStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ConditionalDeleteStatus-R4-ConditionalDeleteStatus",
+  "version": "0.0.1",
+  "name": "R4B-ConditionalDeleteStatus-R4-ConditionalDeleteStatus",
+  "title": "Concept map to convert a FHIR R4B ConditionalDeleteStatus into a FHIR R4 ConditionalDeleteStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6763991-06:00",
+  "description": "Mapping for CapabilityStatement.rest.resource.conditionalDelete from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestResourceConditionalDelete4bto4",
+      "display": "Id: cpb.re.re.conditionalDelete-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalDelete\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalDelete",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.conditionalDelete-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/conditional-delete-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/conditional-delete-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/conditional-delete-status",
+      "target": "http://hl7.org/fhir/conditional-delete-status",
+      "element": [
+        {
+          "code": "single",
+          "target": [
+            {
+              "code": "single",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "multiple",
+          "target": [
+            {
+              "code": "multiple",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-supported",
+          "target": [
+            {
+              "code": "not-supported",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

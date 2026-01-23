@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ConditionalReadStatus-R5-ConditionalReadStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ConditionalReadStatus-R5-ConditionalReadStatus",
+  "version": "0.0.1",
+  "name": "R4B-ConditionalReadStatus-R5-ConditionalReadStatus",
+  "title": "Concept map to convert a FHIR R4B ConditionalReadStatus into a FHIR R5 ConditionalReadStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4579435-06:00",
+  "description": "Mapping for CapabilityStatement.rest.resource.conditionalRead from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestResourceConditionalRead4bto5",
+      "display": "Id: cpb.re.re.conditionalRead-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalRead\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalRead",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.conditionalRead-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/conditional-read-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/conditional-read-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/conditional-read-status",
+      "target": "http://hl7.org/fhir/conditional-read-status",
+      "element": [
+        {
+          "code": "not-supported",
+          "target": [
+            {
+              "code": "not-supported",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "modified-since",
+          "target": [
+            {
+              "code": "modified-since",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "full-support",
+          "target": [
+            {
+              "code": "full-support",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-match",
+          "target": [
+            {
+              "code": "not-match",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

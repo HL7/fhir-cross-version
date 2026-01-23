@@ -1,0 +1,110 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-BundleType-R2-BundleType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-BundleType-R2-BundleType",
+  "version": "0.0.1",
+  "name": "R3-BundleType-R2-BundleType",
+  "title": "Concept map to convert a FHIR R3 BundleType into a FHIR R2 BundleType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7571103-06:00",
+  "description": "Mapping for Bundle.type from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "BundleType3to2",
+      "display": "Id: bdl.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Bundle#Bundle.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Bundle#Bundle.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/bdl.type-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/bundle-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/bundle-type|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/bundle-type",
+      "target": "http://hl7.org/fhir/bundle-type",
+      "element": [
+        {
+          "code": "batch-response",
+          "target": [
+            {
+              "code": "batch-response",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "document",
+          "target": [
+            {
+              "code": "document",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "searchset",
+          "target": [
+            {
+              "code": "searchset",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "batch",
+          "target": [
+            {
+              "code": "batch",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "transaction-response",
+          "target": [
+            {
+              "code": "transaction-response",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "history",
+          "target": [
+            {
+              "code": "history",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "collection",
+          "target": [
+            {
+              "code": "collection",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "message",
+          "target": [
+            {
+              "code": "message",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "transaction",
+          "target": [
+            {
+              "code": "transaction",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

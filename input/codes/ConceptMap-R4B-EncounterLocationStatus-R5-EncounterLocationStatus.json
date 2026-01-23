@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-EncounterLocationStatus-R5-EncounterLocationStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-EncounterLocationStatus-R5-EncounterLocationStatus",
+  "version": "0.0.1",
+  "name": "R4B-EncounterLocationStatus-R5-EncounterLocationStatus",
+  "title": "Concept map to convert a FHIR R4B EncounterLocationStatus into a FHIR R5 EncounterLocationStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4652719-06:00",
+  "description": "Mapping for Encounter.location.status from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EncounterLocationStatus4bto5",
+      "display": "Id: enc.lo.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Encounter#Encounter.location.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Encounter#Encounter.location.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/enc.lo.status-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/encounter-location-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/encounter-location-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/encounter-location-status",
+      "target": "http://hl7.org/fhir/encounter-location-status",
+      "element": [
+        {
+          "code": "reserved",
+          "target": [
+            {
+              "code": "reserved",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "planned",
+          "target": [
+            {
+              "code": "planned",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

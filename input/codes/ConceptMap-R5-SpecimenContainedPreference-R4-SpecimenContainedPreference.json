@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SpecimenContainedPreference-R4-SpecimenContainedPreference",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-SpecimenContainedPreference-R4-SpecimenContainedPreference",
+  "version": "0.0.1",
+  "name": "R5-SpecimenContainedPreference-R4-SpecimenContainedPreference",
+  "title": "Concept map to convert a FHIR R5 SpecimenContainedPreference into a FHIR R4 SpecimenContainedPreference",
+  "experimental": false,
+  "date": "2025-12-30T16:37:21.0034198-06:00",
+  "description": "Mapping for SpecimenDefinition.typeTested.preference from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SpecimenDefinitionTypeTestedPreference5to4",
+      "display": "Id: spdf.ty.preference-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/SpecimenDefinition#SpecimenDefinition.typeTested.preference\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/SpecimenDefinition#SpecimenDefinition.typeTested.preference",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spdf.ty.preference-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/specimen-contained-preference|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/specimen-contained-preference|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/specimen-contained-preference",
+      "target": "http://hl7.org/fhir/specimen-contained-preference",
+      "element": [
+        {
+          "code": "alternate",
+          "target": [
+            {
+              "code": "alternate",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "preferred",
+          "target": [
+            {
+              "code": "preferred",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

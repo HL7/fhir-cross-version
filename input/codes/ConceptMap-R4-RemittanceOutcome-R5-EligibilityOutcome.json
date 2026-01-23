@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-RemittanceOutcome-R5-EligibilityOutcome",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-RemittanceOutcome-R5-EligibilityOutcome",
+  "version": "0.0.1",
+  "name": "R4-RemittanceOutcome-R5-EligibilityOutcome",
+  "title": "Concept map to convert a FHIR R4 RemittanceOutcome into a FHIR R5 EligibilityOutcome",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0751701-06:00",
+  "description": "Mapping for CoverageEligibilityResponse.outcome from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CoverageEligibilityResponseOutcome4to5",
+      "display": "Id: ces.outcome-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CoverageEligibilityResponse#CoverageEligibilityResponse.outcome\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CoverageEligibilityResponse#CoverageEligibilityResponse.outcome",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ces.outcome-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/remittance-outcome|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/eligibility-outcome|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/remittance-outcome",
+      "target": "http://hl7.org/fhir/eligibility-outcome",
+      "element": [
+        {
+          "code": "queued",
+          "target": [
+            {
+              "code": "queued",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "complete",
+          "target": [
+            {
+              "code": "complete",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "partial",
+          "target": [
+            {
+              "code": "partial",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

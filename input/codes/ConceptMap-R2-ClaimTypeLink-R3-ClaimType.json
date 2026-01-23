@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-ClaimTypeLink-R3-ClaimType",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-ClaimTypeLink-R3-ClaimType",
+  "version": "0.0.1",
+  "name": "R2-ClaimTypeLink-R3-ClaimType",
+  "title": "Concept map to convert a FHIR R2 ClaimTypeLink into a FHIR R3 ClaimType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4859143-06:00",
+  "description": "Mapping for Claim.type from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClaimType2to3",
+      "display": "Id: clm.type-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Claim#Claim.type\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clm.type-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/claim-type-link|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/claim-type|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/claim-type-link",
+      "target": "http://hl7.org/fhir/ex-claimtype",
+      "element": [
+        {
+          "code": "vision",
+          "target": [
+            {
+              "code": "vision",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "institutional",
+          "target": [
+            {
+              "code": "institutional",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pharmacy",
+          "target": [
+            {
+              "code": "pharmacy",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "oral",
+          "target": [
+            {
+              "code": "oral",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "professional",
+          "target": [
+            {
+              "code": "professional",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

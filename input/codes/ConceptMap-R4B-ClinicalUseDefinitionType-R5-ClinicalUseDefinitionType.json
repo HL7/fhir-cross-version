@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ClinicalUseDefinitionType-R5-ClinicalUseDefinitionType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ClinicalUseDefinitionType-R5-ClinicalUseDefinitionType",
+  "version": "0.0.1",
+  "name": "R4B-ClinicalUseDefinitionType-R5-ClinicalUseDefinitionType",
+  "title": "Concept map to convert a FHIR R4B ClinicalUseDefinitionType into a FHIR R5 ClinicalUseDefinitionType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4623036-06:00",
+  "description": "Mapping for ClinicalUseDefinition.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClinicalUseDefinitionType4bto5",
+      "display": "Id: cud.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ClinicalUseDefinition#ClinicalUseDefinition.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ClinicalUseDefinition#ClinicalUseDefinition.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cud.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/clinical-use-definition-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/clinical-use-definition-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/clinical-use-definition-type",
+      "target": "http://hl7.org/fhir/clinical-use-definition-type",
+      "element": [
+        {
+          "code": "interaction",
+          "target": [
+            {
+              "code": "interaction",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "warning",
+          "target": [
+            {
+              "code": "warning",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "indication",
+          "target": [
+            {
+              "code": "indication",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "undesirable-effect",
+          "target": [
+            {
+              "code": "undesirable-effect",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "contraindication",
+          "target": [
+            {
+              "code": "contraindication",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

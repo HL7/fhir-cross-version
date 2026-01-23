@@ -1,0 +1,1136 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-V3ServiceDeliveryLocationRoleType-R3-V3ServiceDeliveryLocationRoleType",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-V3ServiceDeliveryLocationRoleType-R3-V3ServiceDeliveryLocationRoleType",
+  "version": "0.0.1",
+  "name": "R2-V3ServiceDeliveryLocationRoleType-R3-V3ServiceDeliveryLocationRoleType",
+  "title": "Concept map to convert a FHIR R2 V3ServiceDeliveryLocationRoleType into a FHIR R3 V3ServiceDeliveryLocationRoleType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5015223-06:00",
+  "description": "Mapping for Location.type from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "LocationType2to3",
+      "display": "Id: loc.type-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Location#Location.type\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Location#Location.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/loc.type-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v3/RoleCode",
+      "target": "http://hl7.org/fhir/v3/RoleCode",
+      "element": [
+        {
+          "code": "LYMPH",
+          "target": [
+            {
+              "code": "LYMPH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SCHOOL",
+          "target": [
+            {
+              "code": "SCHOOL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "INLAB",
+          "target": [
+            {
+              "code": "INLAB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SLEEP",
+          "target": [
+            {
+              "code": "SLEEP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HLAB",
+          "target": [
+            {
+              "code": "HLAB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ECHO",
+          "target": [
+            {
+              "code": "ECHO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMTU",
+          "target": [
+            {
+              "code": "BMTU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PREV",
+          "target": [
+            {
+              "code": "PREV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OUTPHARM",
+          "target": [
+            {
+              "code": "OUTPHARM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "POD",
+          "target": [
+            {
+              "code": "POD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ENDOS",
+          "target": [
+            {
+              "code": "ENDOS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SURF",
+          "target": [
+            {
+              "code": "SURF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMS",
+          "target": [
+            {
+              "code": "OMS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OPTC",
+          "target": [
+            {
+              "code": "OPTC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RH",
+          "target": [
+            {
+              "code": "RH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RTF",
+          "target": [
+            {
+              "code": "RTF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WND",
+          "target": [
+            {
+              "code": "WND",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HAND",
+          "target": [
+            {
+              "code": "HAND",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CVDX",
+          "target": [
+            {
+              "code": "CVDX",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FMC",
+          "target": [
+            {
+              "code": "FMC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ACC",
+          "target": [
+            {
+              "code": "ACC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SU",
+          "target": [
+            {
+              "code": "SU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DERM",
+          "target": [
+            {
+              "code": "DERM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "INPHARM",
+          "target": [
+            {
+              "code": "INPHARM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ICU",
+          "target": [
+            {
+              "code": "ICU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TR",
+          "target": [
+            {
+              "code": "TR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PROFF",
+          "target": [
+            {
+              "code": "PROFF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRC",
+          "target": [
+            {
+              "code": "PRC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "INFD",
+          "target": [
+            {
+              "code": "INFD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OPH",
+          "target": [
+            {
+              "code": "OPH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RHPI",
+          "target": [
+            {
+              "code": "RHPI",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CHR",
+          "target": [
+            {
+              "code": "CHR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HRAD",
+          "target": [
+            {
+              "code": "HRAD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CANC",
+          "target": [
+            {
+              "code": "CANC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DX",
+          "target": [
+            {
+              "code": "DX",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDGI",
+          "target": [
+            {
+              "code": "PEDGI",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPMED",
+          "target": [
+            {
+              "code": "SPMED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RHPIMS",
+          "target": [
+            {
+              "code": "RHPIMS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GACH",
+          "target": [
+            {
+              "code": "GACH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "IEC",
+          "target": [
+            {
+              "code": "IEC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PSI",
+          "target": [
+            {
+              "code": "PSI",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ER",
+          "target": [
+            {
+              "code": "ER",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ONCL",
+          "target": [
+            {
+              "code": "ONCL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NEUR",
+          "target": [
+            {
+              "code": "NEUR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDHO",
+          "target": [
+            {
+              "code": "PEDHO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PSY",
+          "target": [
+            {
+              "code": "PSY",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NCCS",
+          "target": [
+            {
+              "code": "NCCS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HTN",
+          "target": [
+            {
+              "code": "HTN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ENT",
+          "target": [
+            {
+              "code": "ENT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDID",
+          "target": [
+            {
+              "code": "PEDID",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDNEPH",
+          "target": [
+            {
+              "code": "PEDNEPH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CAPC",
+          "target": [
+            {
+              "code": "CAPC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RHAT",
+          "target": [
+            {
+              "code": "RHAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ENDO",
+          "target": [
+            {
+              "code": "ENDO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GIDX",
+          "target": [
+            {
+              "code": "GIDX",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RADO",
+          "target": [
+            {
+              "code": "RADO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OUTLAB",
+          "target": [
+            {
+              "code": "OUTLAB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RHU",
+          "target": [
+            {
+              "code": "RHU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GI",
+          "target": [
+            {
+              "code": "GI",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RHYAD",
+          "target": [
+            {
+              "code": "RHYAD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TRAVEL",
+          "target": [
+            {
+              "code": "TRAVEL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HEM",
+          "target": [
+            {
+              "code": "HEM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AMPUT",
+          "target": [
+            {
+              "code": "AMPUT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HD",
+          "target": [
+            {
+              "code": "HD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NCCF",
+          "target": [
+            {
+              "code": "NCCF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDRHEUM",
+          "target": [
+            {
+              "code": "PEDRHEUM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RHEUM",
+          "target": [
+            {
+              "code": "RHEUM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "UPC",
+          "target": [
+            {
+              "code": "UPC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HU",
+          "target": [
+            {
+              "code": "HU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BREAST",
+          "target": [
+            {
+              "code": "BREAST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CARD",
+          "target": [
+            {
+              "code": "CARD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDC",
+          "target": [
+            {
+              "code": "PEDC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDE",
+          "target": [
+            {
+              "code": "PEDE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COMM",
+          "target": [
+            {
+              "code": "COMM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MHSP",
+          "target": [
+            {
+              "code": "MHSP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EPIL",
+          "target": [
+            {
+              "code": "EPIL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CHEST",
+          "target": [
+            {
+              "code": "CHEST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PSYCHF",
+          "target": [
+            {
+              "code": "PSYCHF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WORK",
+          "target": [
+            {
+              "code": "WORK",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PROS",
+          "target": [
+            {
+              "code": "PROS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MOBL",
+          "target": [
+            {
+              "code": "MOBL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SNF",
+          "target": [
+            {
+              "code": "SNF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CATH",
+          "target": [
+            {
+              "code": "CATH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDNICU",
+          "target": [
+            {
+              "code": "PEDNICU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "URO",
+          "target": [
+            {
+              "code": "URO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MBL",
+          "target": [
+            {
+              "code": "MBL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDICU",
+          "target": [
+            {
+              "code": "PEDICU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PHU",
+          "target": [
+            {
+              "code": "PHU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDU",
+          "target": [
+            {
+              "code": "PEDU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PTRES",
+          "target": [
+            {
+              "code": "PTRES",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PROCTO",
+          "target": [
+            {
+              "code": "PROCTO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ALL",
+          "target": [
+            {
+              "code": "ALL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "target": [
+            {
+              "code": "HOSP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PAINCL",
+          "target": [
+            {
+              "code": "PAINCL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ETU",
+          "target": [
+            {
+              "code": "ETU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COAG",
+          "target": [
+            {
+              "code": "COAG",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AMB",
+          "target": [
+            {
+              "code": "AMB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GYN",
+          "target": [
+            {
+              "code": "GYN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RHMAD",
+          "target": [
+            {
+              "code": "RHMAD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RHPIVS",
+          "target": [
+            {
+              "code": "RHPIVS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GIM",
+          "target": [
+            {
+              "code": "GIM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NS",
+          "target": [
+            {
+              "code": "NS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CRS",
+          "target": [
+            {
+              "code": "CRS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HUSCS",
+          "target": [
+            {
+              "code": "HUSCS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RNEU",
+          "target": [
+            {
+              "code": "RNEU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NEPH",
+          "target": [
+            {
+              "code": "NEPH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PHARM",
+          "target": [
+            {
+              "code": "PHARM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "INV",
+          "target": [
+            {
+              "code": "INV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDHEM",
+          "target": [
+            {
+              "code": "PEDHEM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CSC",
+          "target": [
+            {
+              "code": "CSC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OB",
+          "target": [
+            {
+              "code": "OB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PLS",
+          "target": [
+            {
+              "code": "PLS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OF",
+          "target": [
+            {
+              "code": "OF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RHPIH",
+          "target": [
+            {
+              "code": "RHPIH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BMTC",
+          "target": [
+            {
+              "code": "BMTC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MGEN",
+          "target": [
+            {
+              "code": "MGEN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ORTHO",
+          "target": [
+            {
+              "code": "ORTHO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DADDR",
+          "target": [
+            {
+              "code": "DADDR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RADDX",
+          "target": [
+            {
+              "code": "RADDX",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RHII",
+          "target": [
+            {
+              "code": "RHII",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PEDCARD",
+          "target": [
+            {
+              "code": "PEDCARD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PC",
+          "target": [
+            {
+              "code": "PC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CCU",
+          "target": [
+            {
+              "code": "CCU",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

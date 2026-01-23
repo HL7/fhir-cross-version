@@ -1,0 +1,73 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-HttpVerb-R3-HttpVerb",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-HttpVerb-R3-HttpVerb",
+  "version": "0.0.1",
+  "name": "R4-HttpVerb-R3-HttpVerb",
+  "title": "Concept map to convert a FHIR R4 HttpVerb into a FHIR R3 HttpVerb",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2437681-06:00",
+  "description": "Mapping for Bundle.entry.request.method from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "BundleEntryRequestMethod4to3",
+      "display": "Id: bdl.en.re.method-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Bundle#Bundle.entry.request.method\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Bundle#Bundle.entry.request.method",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/bdl.en.re.method-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/http-verb|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/http-verb|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/http-verb",
+      "target": "http://hl7.org/fhir/http-verb",
+      "element": [
+        {
+          "code": "DELETE",
+          "target": [
+            {
+              "code": "DELETE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GET",
+          "target": [
+            {
+              "code": "GET",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HEAD",
+          "noMap": true
+        },
+        {
+          "code": "PATCH",
+          "noMap": true
+        },
+        {
+          "code": "POST",
+          "target": [
+            {
+              "code": "POST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PUT",
+          "target": [
+            {
+              "code": "PUT",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

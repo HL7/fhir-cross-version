@@ -1,0 +1,110 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-SearchComparator-R4-SearchComparator",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-SearchComparator-R4-SearchComparator",
+  "version": "0.0.1",
+  "name": "R3-SearchComparator-R4-SearchComparator",
+  "title": "Concept map to convert a FHIR R3 SearchComparator into a FHIR R4 SearchComparator",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6968269-06:00",
+  "description": "Mapping for SearchParameter.comparator from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SearchParameterComparator3to4",
+      "display": "Id: spd.comparator-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.comparator\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.comparator",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.comparator-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-comparator|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/search-comparator|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-comparator",
+      "target": "http://hl7.org/fhir/search-comparator",
+      "element": [
+        {
+          "code": "ne",
+          "target": [
+            {
+              "code": "ne",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "lt",
+          "target": [
+            {
+              "code": "lt",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "le",
+          "target": [
+            {
+              "code": "le",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "eq",
+          "target": [
+            {
+              "code": "eq",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gt",
+          "target": [
+            {
+              "code": "gt",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "eb",
+          "target": [
+            {
+              "code": "eb",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ge",
+          "target": [
+            {
+              "code": "ge",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sa",
+          "target": [
+            {
+              "code": "sa",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ap",
+          "target": [
+            {
+              "code": "ap",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

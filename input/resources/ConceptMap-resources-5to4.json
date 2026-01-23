@@ -159,7 +159,7 @@
     { "code" : "SubscriptionTopic", "noMap" : true },
     { "code" : "Substance", "target" : [{ "code" : "Substance", "relationship" : "equivalent" }] },
     { "code" : "SubstanceDefinition", "target" : [{ "code" : "SubstanceSpecification", "relationship" : "equivalent" }] },
-    { "code" : "SubstanceNucleicAcid", "noMap" : true },
+    { "code" : "SubstanceNucleicAcid", "target" : [{ "code" : "SubstanceNucleicAcid", "relationship" : "equivalent" }] },
     { "code" : "SubstancePolymer", "target" : [{ "code" : "SubstancePolymer", "relationship" : "equivalent" }] },
     { "code" : "SubstanceProtein", "target" : [{ "code" : "SubstanceProtein", "relationship" : "equivalent" }] },
     { "code" : "SubstanceReferenceInformation", "target" : [{ "code" : "SubstanceReferenceInformation", "relationship" : "equivalent" }] },  

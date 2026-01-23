@@ -1,0 +1,64 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-SearchXpathUsage-R5-SearchProcessingmode",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-SearchXpathUsage-R5-SearchProcessingmode",
+  "version": "0.0.1",
+  "name": "R4-SearchXpathUsage-R5-SearchProcessingmode",
+  "title": "Concept map to convert a FHIR R4 SearchXpathUsage into a FHIR R5 SearchProcessingmode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0987816-06:00",
+  "description": "Mapping for SearchParameter.xpathUsage/SearchParameter.processingMode from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SearchParameterXpathUsageSearchParameterProcessingMode4to5",
+      "display": "Id: spd.xpathUsage-spd.processingMode-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.xpathUsage\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/SearchParameter#SearchParameter.processingMode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.xpathUsage-spd.processingMode-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-xpath-usage|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/search-processingmode|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-xpath-usage",
+      "target": "http://hl7.org/fhir/search-processingmode",
+      "element": [
+        {
+          "code": "normal",
+          "target": [
+            {
+              "code": "normal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phonetic",
+          "target": [
+            {
+              "code": "phonetic",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "distance",
+          "noMap": true
+        },
+        {
+          "code": "nearby",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

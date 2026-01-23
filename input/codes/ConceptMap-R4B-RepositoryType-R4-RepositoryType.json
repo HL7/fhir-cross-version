@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-RepositoryType-R4-RepositoryType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-RepositoryType-R4-RepositoryType",
+  "version": "0.0.1",
+  "name": "R4B-RepositoryType-R4-RepositoryType",
+  "title": "Concept map to convert a FHIR R4B RepositoryType into a FHIR R4 RepositoryType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.7002593-06:00",
+  "description": "Mapping for MolecularSequence.repository.type from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MolecularSequenceRepositoryType4bto4",
+      "display": "Id: msq.re.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/MolecularSequence#MolecularSequence.repository.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.repository.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/msq.re.type-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/repository-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/repository-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/repository-type",
+      "target": "http://hl7.org/fhir/repository-type",
+      "element": [
+        {
+          "code": "directlink",
+          "target": [
+            {
+              "code": "directlink",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "openapi",
+          "target": [
+            {
+              "code": "openapi",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "login",
+          "target": [
+            {
+              "code": "login",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "oauth",
+          "target": [
+            {
+              "code": "oauth",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

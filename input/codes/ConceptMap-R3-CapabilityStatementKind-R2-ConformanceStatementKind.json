@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-CapabilityStatementKind-R2-ConformanceStatementKind",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-CapabilityStatementKind-R2-ConformanceStatementKind",
+  "version": "0.0.1",
+  "name": "R3-CapabilityStatementKind-R2-ConformanceStatementKind",
+  "title": "Concept map to convert a FHIR R3 CapabilityStatementKind into a FHIR R2 ConformanceStatementKind",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7619616-06:00",
+  "description": "Mapping for CapabilityStatement.kind/Conformance.kind from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementKindConformanceKind3to2",
+      "display": "Id: cpb.kind-cpb.kind-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.kind\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.kind-cpb.kind-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/capability-statement-kind|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/conformance-statement-kind|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/capability-statement-kind",
+      "target": "http://hl7.org/fhir/conformance-statement-kind",
+      "element": [
+        {
+          "code": "capability",
+          "target": [
+            {
+              "code": "capability",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "requirements",
+          "target": [
+            {
+              "code": "requirements",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "instance",
+          "target": [
+            {
+              "code": "instance",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

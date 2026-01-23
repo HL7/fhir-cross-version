@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-RequestPriority-R3-MedicationRequestPriority",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-RequestPriority-R3-MedicationRequestPriority",
+  "version": "0.0.1",
+  "name": "R4-RequestPriority-R3-MedicationRequestPriority",
+  "title": "Concept map to convert a FHIR R4 RequestPriority into a FHIR R3 MedicationRequestPriority",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2609342-06:00",
+  "description": "Mapping for MedicationRequest.priority from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MedicationRequestPriority4to3",
+      "display": "Id: mps.priority-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/MedicationRequest#MedicationRequest.priority\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/MedicationRequest#MedicationRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mps.priority-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/request-priority|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-request-priority|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-priority",
+      "target": "http://hl7.org/fhir/medication-request-priority",
+      "element": [
+        {
+          "code": "stat",
+          "target": [
+            {
+              "code": "stat",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "routine",
+          "target": [
+            {
+              "code": "routine",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "urgent",
+          "target": [
+            {
+              "code": "urgent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asap",
+          "target": [
+            {
+              "code": "asap",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

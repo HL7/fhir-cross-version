@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-Slotstatus-R4B-Slotstatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-Slotstatus-R4B-Slotstatus",
+  "version": "0.0.1",
+  "name": "R5-Slotstatus-R4B-Slotstatus",
+  "title": "Concept map to convert a FHIR R5 Slotstatus into a FHIR R4B Slotstatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9313216-06:00",
+  "description": "Mapping for Slot.status from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SlotStatus5to4b",
+      "display": "Id: slt.status-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Slot#Slot.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Slot#Slot.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/slt.status-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/slotstatus|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/slotstatus|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/slotstatus",
+      "target": "http://hl7.org/fhir/slotstatus",
+      "element": [
+        {
+          "code": "busy-unavailable",
+          "target": [
+            {
+              "code": "busy-unavailable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "busy",
+          "target": [
+            {
+              "code": "busy",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "busy-tentative",
+          "target": [
+            {
+              "code": "busy-tentative",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "free",
+          "target": [
+            {
+              "code": "free",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

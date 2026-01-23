@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-MeasureScoring-R4-MeasureScoring",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-MeasureScoring-R4-MeasureScoring",
+  "version": "0.0.1",
+  "name": "R4B-MeasureScoring-R4-MeasureScoring",
+  "title": "Concept map to convert a FHIR R4B MeasureScoring into a FHIR R4 MeasureScoring",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6974839-06:00",
+  "description": "Mapping for Measure.scoring from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MeasureScoring4bto4",
+      "display": "Id: mea.scoring-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.scoring\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.scoring",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mea.scoring-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-scoring|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-scoring|4.0.1",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+      "target": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+      "element": [
+        {
+          "code": "proportion",
+          "target": [
+            {
+              "code": "proportion",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "continuous-variable",
+          "target": [
+            {
+              "code": "continuous-variable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cohort",
+          "target": [
+            {
+              "code": "cohort",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ratio",
+          "target": [
+            {
+              "code": "ratio",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

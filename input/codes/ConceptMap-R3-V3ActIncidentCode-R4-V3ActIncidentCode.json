@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-V3ActIncidentCode-R4-V3ActIncidentCode",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-V3ActIncidentCode-R4-V3ActIncidentCode",
+  "version": "0.0.1",
+  "name": "R3-V3ActIncidentCode-R4-V3ActIncidentCode",
+  "title": "Concept map to convert a FHIR R3 V3ActIncidentCode into a FHIR R4 V3ActIncidentCode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6669379-06:00",
+  "description": "Mapping for Claim.accident.type from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClaimAccidentType3to4",
+      "display": "Id: clm.ac.type-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.accident.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Claim#Claim.accident.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clm.ac.type-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "ExplanationOfBenefitAccidentType3to4",
+      "display": "Id: eob.ac.type-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.accident.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.accident.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eob.ac.type-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-ActIncidentCode|3.0.2",
+  "targetScopeCanonical": "http://terminology.hl7.org/ValueSet/v3-ActIncidentCode|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v3/ActCode",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "element": [
+        {
+          "code": "MVA",
+          "target": [
+            {
+              "code": "MVA",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SCHOOL",
+          "target": [
+            {
+              "code": "SCHOOL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPT",
+          "target": [
+            {
+              "code": "SPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WPA",
+          "target": [
+            {
+              "code": "WPA",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

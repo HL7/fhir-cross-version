@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-Dicm402Roleid-R3-SecurityRoleType",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-Dicm402Roleid-R3-SecurityRoleType",
+  "version": "0.0.1",
+  "name": "R2-Dicm402Roleid-R3-SecurityRoleType",
+  "title": "Concept map to convert a FHIR R2 Dicm402Roleid into a FHIR R3 SecurityRoleType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5145537-06:00",
+  "description": "Mapping for AuditEvent.participant.role/AuditEvent.agent.role from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AuditEventParticipantRoleAuditEventAgentRoler2to3",
+      "display": "Id: sev.pa.role-sev.ag.role-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.participant.role\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.agent.role",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.pa.role-sev.ag.role-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/dicm-402-roleid|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/security-role-type|3.0.2",
+  "group": [
+    {
+      "source": "http://nema.org/dicom/dicm",
+      "target": "http://dicom.nema.org/resources/ontology/DCM",
+      "element": [
+        {
+          "code": "110153",
+          "target": [
+            {
+              "code": "110153",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110155",
+          "target": [
+            {
+              "code": "110155",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110152",
+          "target": [
+            {
+              "code": "110152",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110150",
+          "target": [
+            {
+              "code": "110150",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110151",
+          "target": [
+            {
+              "code": "110151",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110154",
+          "target": [
+            {
+              "code": "110154",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

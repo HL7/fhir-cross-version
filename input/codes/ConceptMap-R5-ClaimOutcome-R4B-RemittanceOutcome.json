@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ClaimOutcome-R4B-RemittanceOutcome",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ClaimOutcome-R4B-RemittanceOutcome",
+  "version": "0.0.1",
+  "name": "R5-ClaimOutcome-R4B-RemittanceOutcome",
+  "title": "Concept map to convert a FHIR R5 ClaimOutcome into a FHIR R4B RemittanceOutcome",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9073948-06:00",
+  "description": "Mapping for ClaimResponse.outcome from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClaimResponseOutcome5to4b",
+      "display": "Id: clr.outcome-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ClaimResponse#ClaimResponse.outcome\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ClaimResponse#ClaimResponse.outcome",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clr.outcome-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "ExplanationOfBenefitOutcome5to4b",
+      "display": "Id: eob.outcome-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.outcome\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.outcome",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eob.outcome-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/claim-outcome|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/remittance-outcome|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/claim-outcome",
+      "target": "http://hl7.org/fhir/remittance-outcome",
+      "element": [
+        {
+          "code": "queued",
+          "target": [
+            {
+              "code": "queued",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "complete",
+          "target": [
+            {
+              "code": "complete",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "partial",
+          "target": [
+            {
+              "code": "partial",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

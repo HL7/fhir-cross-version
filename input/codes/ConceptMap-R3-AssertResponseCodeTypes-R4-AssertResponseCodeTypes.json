@@ -1,0 +1,137 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-AssertResponseCodeTypes-R4-AssertResponseCodeTypes",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-AssertResponseCodeTypes-R4-AssertResponseCodeTypes",
+  "version": "0.0.1",
+  "name": "R3-AssertResponseCodeTypes-R4-AssertResponseCodeTypes",
+  "title": "Concept map to convert a FHIR R3 AssertResponseCodeTypes into a FHIR R4 AssertResponseCodeTypes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7010825-06:00",
+  "description": "Mapping for TestScript.setup.action.assert.response from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestScriptSetupActionAssertResponse3to4",
+      "display": "Id: tst.se.ac.as.response-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.setup.action.assert.response\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.response",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.response-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/assert-response-code-types|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/assert-response-code-types|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/assert-response-code-types",
+      "target": "http://hl7.org/fhir/assert-response-code-types",
+      "element": [
+        {
+          "code": "okay",
+          "target": [
+            {
+              "code": "okay",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "noContent",
+          "target": [
+            {
+              "code": "noContent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "bad",
+          "target": [
+            {
+              "code": "bad",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "notModified",
+          "target": [
+            {
+              "code": "notModified",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "created",
+          "target": [
+            {
+              "code": "created",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "forbidden",
+          "target": [
+            {
+              "code": "forbidden",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "methodNotAllowed",
+          "target": [
+            {
+              "code": "methodNotAllowed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "notFound",
+          "target": [
+            {
+              "code": "notFound",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "preconditionFailed",
+          "target": [
+            {
+              "code": "preconditionFailed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unprocessable",
+          "target": [
+            {
+              "code": "unprocessable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "conflict",
+          "target": [
+            {
+              "code": "conflict",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gone",
+          "target": [
+            {
+              "code": "gone",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

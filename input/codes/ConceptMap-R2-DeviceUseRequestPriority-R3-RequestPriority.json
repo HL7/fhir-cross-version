@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-DeviceUseRequestPriority-R3-RequestPriority",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-DeviceUseRequestPriority-R3-RequestPriority",
+  "version": "0.0.1",
+  "name": "R2-DeviceUseRequestPriority-R3-RequestPriority",
+  "title": "Concept map to convert a FHIR R2 DeviceUseRequestPriority into a FHIR R3 RequestPriority",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4946819-06:00",
+  "description": "Mapping for DeviceUseRequest.priority/DeviceRequest.priority from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceUseRequestPriorityDeviceRequestPriority2to3",
+      "display": "Id: duq.priority-dur.priority-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/DeviceUseRequest#DeviceUseRequest.priority\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/DeviceRequest#DeviceRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/duq.priority-dur.priority-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/device-use-request-priority|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-priority|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/device-use-request-priority",
+      "target": "http://hl7.org/fhir/request-priority",
+      "element": [
+        {
+          "code": "stat",
+          "target": [
+            {
+              "code": "stat",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "routine",
+          "target": [
+            {
+              "code": "routine",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "urgent",
+          "target": [
+            {
+              "code": "urgent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asap",
+          "target": [
+            {
+              "code": "asap",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

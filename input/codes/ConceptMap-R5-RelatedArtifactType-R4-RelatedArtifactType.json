@@ -1,0 +1,213 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-RelatedArtifactType-R4-RelatedArtifactType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-RelatedArtifactType-R4-RelatedArtifactType",
+  "version": "0.0.1",
+  "name": "R5-RelatedArtifactType-R4-RelatedArtifactType",
+  "title": "Concept map to convert a FHIR R5 RelatedArtifactType into a FHIR R4 RelatedArtifactType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:21.0012305-06:00",
+  "description": "Mapping for RelatedArtifact.type from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "RelatedArtifactType5to4",
+      "display": "Id: rla.type-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/RelatedArtifact#RelatedArtifact.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/RelatedArtifact#RelatedArtifact.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rla.type-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/related-artifact-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/related-artifact-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/related-artifact-type",
+      "target": "http://hl7.org/fhir/related-artifact-type",
+      "element": [
+        {
+          "code": "successor",
+          "target": [
+            {
+              "code": "successor",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "comment-in",
+          "noMap": true
+        },
+        {
+          "code": "cited-by",
+          "noMap": true
+        },
+        {
+          "code": "retracted-by",
+          "noMap": true
+        },
+        {
+          "code": "transformed-into",
+          "noMap": true
+        },
+        {
+          "code": "documents",
+          "noMap": true
+        },
+        {
+          "code": "specification-of",
+          "noMap": true
+        },
+        {
+          "code": "transforms",
+          "noMap": true
+        },
+        {
+          "code": "derived-from",
+          "target": [
+            {
+              "code": "derived-from",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "part-of",
+          "noMap": true
+        },
+        {
+          "code": "supported-with",
+          "noMap": true
+        },
+        {
+          "code": "predecessor",
+          "target": [
+            {
+              "code": "predecessor",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "composed-of",
+          "target": [
+            {
+              "code": "composed-of",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "depends-on",
+          "target": [
+            {
+              "code": "depends-on",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "amends",
+          "noMap": true
+        },
+        {
+          "code": "retracts",
+          "noMap": true
+        },
+        {
+          "code": "signs",
+          "noMap": true
+        },
+        {
+          "code": "correction-in",
+          "noMap": true
+        },
+        {
+          "code": "amended-with",
+          "noMap": true
+        },
+        {
+          "code": "cites",
+          "noMap": true
+        },
+        {
+          "code": "supports",
+          "noMap": true
+        },
+        {
+          "code": "justification",
+          "target": [
+            {
+              "code": "justification",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "contained-in",
+          "noMap": true
+        },
+        {
+          "code": "replaced-with",
+          "noMap": true
+        },
+        {
+          "code": "citation",
+          "target": [
+            {
+              "code": "citation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "transformed-with",
+          "noMap": true
+        },
+        {
+          "code": "replaces",
+          "noMap": true
+        },
+        {
+          "code": "documentation",
+          "target": [
+            {
+              "code": "documentation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "similar-to",
+          "noMap": true
+        },
+        {
+          "code": "appends",
+          "noMap": true
+        },
+        {
+          "code": "created-with",
+          "noMap": true
+        },
+        {
+          "code": "corrects",
+          "noMap": true
+        },
+        {
+          "code": "cite-as",
+          "noMap": true
+        },
+        {
+          "code": "contains",
+          "noMap": true
+        },
+        {
+          "code": "appended-with",
+          "noMap": true
+        },
+        {
+          "code": "comments-on",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

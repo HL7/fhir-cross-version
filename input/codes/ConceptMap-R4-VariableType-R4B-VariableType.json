@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-VariableType-R4B-VariableType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-VariableType-R4B-VariableType",
+  "version": "0.0.1",
+  "name": "R4-VariableType-R4B-VariableType",
+  "title": "Concept map to convert a FHIR R4 VariableType into a FHIR R4B VariableType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0256303-06:00",
+  "description": "Mapping for ResearchElementDefinition.variableType from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ResearchElementDefinitionVariableType4to4b",
+      "display": "Id: red.variableType-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.variableType\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.variableType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/red.variableType-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/variable-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/variable-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/variable-type",
+      "target": "http://hl7.org/fhir/variable-type",
+      "element": [
+        {
+          "code": "continuous",
+          "target": [
+            {
+              "code": "continuous",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "descriptive",
+          "target": [
+            {
+              "code": "descriptive",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dichotomous",
+          "target": [
+            {
+              "code": "dichotomous",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

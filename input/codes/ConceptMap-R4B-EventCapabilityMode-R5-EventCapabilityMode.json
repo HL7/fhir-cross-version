@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-EventCapabilityMode-R5-EventCapabilityMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-EventCapabilityMode-R5-EventCapabilityMode",
+  "version": "0.0.1",
+  "name": "R4B-EventCapabilityMode-R5-EventCapabilityMode",
+  "title": "Concept map to convert a FHIR R4B EventCapabilityMode into a FHIR R5 EventCapabilityMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4574483-06:00",
+  "description": "Mapping for CapabilityStatement.messaging.supportedMessage.mode from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementMessagingSupportedMessageMode4bto5",
+      "display": "Id: cpb.me.su.mode-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.supportedMessage.mode\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.supportedMessage.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.me.su.mode-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/event-capability-mode|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/event-capability-mode|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/event-capability-mode",
+      "target": "http://hl7.org/fhir/event-capability-mode",
+      "element": [
+        {
+          "code": "receiver",
+          "target": [
+            {
+              "code": "receiver",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sender",
+          "target": [
+            {
+              "code": "sender",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-VisionBaseCodes-R3-VisionBaseCodes",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-VisionBaseCodes-R3-VisionBaseCodes",
+  "version": "0.0.1",
+  "name": "R4-VisionBaseCodes-R3-VisionBaseCodes",
+  "title": "Concept map to convert a FHIR R4 VisionBaseCodes into a FHIR R3 VisionBaseCodes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2764779-06:00",
+  "description": "Mapping for VisionPrescription.lensSpecification.prism.base/VisionPrescription.dispense.base from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "VisionPrescriptionLensSpecificationPrismBaseVisionPrescriptionDispenseBase4to3",
+      "display": "Id: vps.le.pr.base-vps.di.base-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.prism.base\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/VisionPrescription#VisionPrescription.dispense.base",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vps.le.pr.base-vps.di.base-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/vision-base-codes|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/vision-base-codes|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/vision-base-codes",
+      "target": "http://hl7.org/fhir/vision-base-codes",
+      "element": [
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "up",
+          "target": [
+            {
+              "code": "up",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "down",
+          "target": [
+            {
+              "code": "down",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "out",
+          "target": [
+            {
+              "code": "out",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-DeviceStatementStatus-R3-DeviceStatementStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-DeviceStatementStatus-R3-DeviceStatementStatus",
+  "version": "0.0.1",
+  "name": "R4-DeviceStatementStatus-R3-DeviceStatementStatus",
+  "title": "Concept map to convert a FHIR R4 DeviceStatementStatus into a FHIR R3 DeviceStatementStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2536974-06:00",
+  "description": "Mapping for DeviceUseStatement.status from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceUseStatementStatus4to3",
+      "display": "Id: dus.status-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/DeviceUseStatement#DeviceUseStatement.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/DeviceUseStatement#DeviceUseStatement.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dus.status-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/device-statement-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/device-statement-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/device-statement-status",
+      "target": "http://hl7.org/fhir/device-statement-status",
+      "element": [
+        {
+          "code": "stopped",
+          "target": [
+            {
+              "code": "stopped",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "intended",
+          "target": [
+            {
+              "code": "intended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "target": [
+            {
+              "code": "on-hold",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

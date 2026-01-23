@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-CompositeMeasureScoring-R5-CompositeMeasureScoring",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-CompositeMeasureScoring-R5-CompositeMeasureScoring",
+  "version": "0.0.1",
+  "name": "R4B-CompositeMeasureScoring-R5-CompositeMeasureScoring",
+  "title": "Concept map to convert a FHIR R4B CompositeMeasureScoring into a FHIR R5 CompositeMeasureScoring",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4706543-06:00",
+  "description": "Mapping for Measure.compositeScoring from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MeasureCompositeScoringr4bto5",
+      "display": "Id: mea.compositeScoring-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.compositeScoring\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Measure#Measure.compositeScoring",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mea.compositeScoring-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/composite-measure-scoring|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/composite-measure-scoring|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/composite-measure-scoring",
+      "target": "http://terminology.hl7.org/CodeSystem/composite-measure-scoring",
+      "element": [
+        {
+          "code": "all-or-nothing",
+          "target": [
+            {
+              "code": "all-or-nothing",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "linear",
+          "target": [
+            {
+              "code": "linear",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "opportunity",
+          "target": [
+            {
+              "code": "opportunity",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "weighted",
+          "target": [
+            {
+              "code": "weighted",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

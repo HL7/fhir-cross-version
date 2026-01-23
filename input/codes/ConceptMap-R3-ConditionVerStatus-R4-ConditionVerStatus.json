@@ -1,0 +1,78 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ConditionVerStatus-R4-ConditionVerStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ConditionVerStatus-R4-ConditionVerStatus",
+  "version": "0.0.1",
+  "name": "R3-ConditionVerStatus-R4-ConditionVerStatus",
+  "title": "Concept map to convert a FHIR R3 ConditionVerStatus into a FHIR R4 ConditionVerStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6694244-06:00",
+  "description": "Mapping for Condition.verificationStatus from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConditionVerificationStatus3to4",
+      "display": "Id: con.verificationStatus-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Condition#Condition.verificationStatus\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Condition#Condition.verificationStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/con.verificationStatus-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/condition-ver-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/condition-ver-status",
+      "target": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "element": [
+        {
+          "code": "confirmed",
+          "target": [
+            {
+              "code": "confirmed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "differential",
+          "target": [
+            {
+              "code": "differential",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "provisional",
+          "target": [
+            {
+              "code": "provisional",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "refuted",
+          "target": [
+            {
+              "code": "refuted",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

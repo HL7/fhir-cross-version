@@ -1,0 +1,48 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ExamplescenarioActorType-R5-ExamplescenarioActorType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ExamplescenarioActorType-R5-ExamplescenarioActorType",
+  "version": "0.0.1",
+  "name": "R4B-ExamplescenarioActorType-R5-ExamplescenarioActorType",
+  "title": "Concept map to convert a FHIR R4B ExamplescenarioActorType into a FHIR R5 ExamplescenarioActorType",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4675141-06:00",
+  "description": "Mapping for ExampleScenario.actor.type from R4B to R5",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ExampleScenarioActorType4bto5",
+      "display": "Id: exs.ac.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ExampleScenario#ExampleScenario.actor.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ExampleScenario#ExampleScenario.actor.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/exs.ac.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/examplescenario-actor-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/examplescenario-actor-type",
+      "target": "http://hl7.org/fhir/examplescenario-actor-type",
+      "element": [
+        {
+          "code": "entity",
+          "target": [
+            {
+              "code": "system",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "person",
+          "target": [
+            {
+              "code": "person",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

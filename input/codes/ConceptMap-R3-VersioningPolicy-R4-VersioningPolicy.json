@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-VersioningPolicy-R4-VersioningPolicy",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-VersioningPolicy-R4-VersioningPolicy",
+  "version": "0.0.1",
+  "name": "R3-VersioningPolicy-R4-VersioningPolicy",
+  "title": "Concept map to convert a FHIR R3 VersioningPolicy into a FHIR R4 VersioningPolicy",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6711574-06:00",
+  "description": "Mapping for CapabilityStatement.rest.resource.versioning from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestResourceVersioning3to4",
+      "display": "Id: cpb.re.re.versioning-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.versioning\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.versioning",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.versioning-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/versioning-policy|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/versioning-policy|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/versioning-policy",
+      "target": "http://hl7.org/fhir/versioning-policy",
+      "element": [
+        {
+          "code": "versioned-update",
+          "target": [
+            {
+              "code": "versioned-update",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "versioned",
+          "target": [
+            {
+              "code": "versioned",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "no-version",
+          "target": [
+            {
+              "code": "no-version",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

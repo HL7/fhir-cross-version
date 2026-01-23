@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-HistoryStatus-R4B-HistoryStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-HistoryStatus-R4B-HistoryStatus",
+  "version": "0.0.1",
+  "name": "R5-HistoryStatus-R4B-HistoryStatus",
+  "title": "Concept map to convert a FHIR R5 HistoryStatus into a FHIR R4B HistoryStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9189854-06:00",
+  "description": "Mapping for FamilyMemberHistory.status from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "FamilyMemberHistoryStatus5to4b",
+      "display": "Id: fhs.status-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/FamilyMemberHistory#FamilyMemberHistory.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/FamilyMemberHistory#FamilyMemberHistory.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/fhs.status-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/history-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/history-status|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/history-status",
+      "target": "http://hl7.org/fhir/history-status",
+      "element": [
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "health-unknown",
+          "target": [
+            {
+              "code": "health-unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "partial",
+          "target": [
+            {
+              "code": "partial",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

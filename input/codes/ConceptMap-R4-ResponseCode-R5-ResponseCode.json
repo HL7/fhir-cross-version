@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ResponseCode-R5-ResponseCode",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ResponseCode-R5-ResponseCode",
+  "version": "0.0.1",
+  "name": "R4-ResponseCode-R5-ResponseCode",
+  "title": "Concept map to convert a FHIR R4 ResponseCode into a FHIR R5 ResponseCode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0905615-06:00",
+  "description": "Mapping for MessageHeader.response.code from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MessageHeaderResponseCode4to5",
+      "display": "Id: msh.re.code-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/MessageHeader#MessageHeader.response.code\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/MessageHeader#MessageHeader.response.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/msh.re.code-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/response-code|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/response-code|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/response-code",
+      "target": "http://hl7.org/fhir/response-code",
+      "element": [
+        {
+          "code": "fatal-error",
+          "target": [
+            {
+              "code": "fatal-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ok",
+          "target": [
+            {
+              "code": "ok",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "transient-error",
+          "target": [
+            {
+              "code": "transient-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

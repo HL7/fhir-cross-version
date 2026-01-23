@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-SupplydeliveryStatus-R3-SupplydeliveryStatus",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-SupplydeliveryStatus-R3-SupplydeliveryStatus",
+  "version": "0.0.1",
+  "name": "R2-SupplydeliveryStatus-R3-SupplydeliveryStatus",
+  "title": "Concept map to convert a FHIR R2 SupplydeliveryStatus into a FHIR R3 SupplydeliveryStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.515599-06:00",
+  "description": "Mapping for SupplyDelivery.status from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SupplyDeliveryStatus2to3",
+      "display": "Id: sud.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/SupplyDelivery#SupplyDelivery.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/SupplyDelivery#SupplyDelivery.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sud.status-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/supplydelivery-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/supplydelivery-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/supplydelivery-status",
+      "target": "http://hl7.org/fhir/supplydelivery-status",
+      "element": [
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "abandoned",
+          "target": [
+            {
+              "code": "abandoned",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

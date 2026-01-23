@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ActionType-R5-ActionType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ActionType-R5-ActionType",
+  "version": "0.0.1",
+  "name": "R4B-ActionType-R5-ActionType",
+  "title": "Concept map to convert a FHIR R4B ActionType into a FHIR R5 ActionType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4832078-06:00",
+  "description": "Mapping for PlanDefinition.action.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionTyper4bto5",
+      "display": "Id: pdf.ac.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.type-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestGroupActionTypeRequestOrchestrationActionTyper4bto5",
+      "display": "Id: rgp.ac.type-rqo.ac.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.type-rqo.ac.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-type|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/action-type",
+      "target": "http://terminology.hl7.org/CodeSystem/action-type",
+      "element": [
+        {
+          "code": "create",
+          "target": [
+            {
+              "code": "create",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fire-event",
+          "target": [
+            {
+              "code": "fire-event",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "remove",
+          "target": [
+            {
+              "code": "remove",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "update",
+          "target": [
+            {
+              "code": "update",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

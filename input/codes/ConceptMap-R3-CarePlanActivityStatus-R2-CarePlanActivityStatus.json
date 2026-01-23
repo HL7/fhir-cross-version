@@ -1,0 +1,87 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-CarePlanActivityStatus-R2-CarePlanActivityStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-CarePlanActivityStatus-R2-CarePlanActivityStatus",
+  "version": "0.0.1",
+  "name": "R3-CarePlanActivityStatus-R2-CarePlanActivityStatus",
+  "title": "Concept map to convert a FHIR R3 CarePlanActivityStatus into a FHIR R2 CarePlanActivityStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7636745-06:00",
+  "description": "Mapping for CarePlan.activity.detail.status from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CarePlanActivityDetailStatus3to2",
+      "display": "Id: cpl.ac.de.status-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CarePlan#CarePlan.activity.detail.status\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/CarePlan#CarePlan.activity.detail.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.ac.de.status-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-activity-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-activity-status|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/care-plan-activity-status",
+      "target": "http://hl7.org/fhir/care-plan-activity-status",
+      "element": [
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-started",
+          "target": [
+            {
+              "code": "not-started",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "target": [
+            {
+              "code": "on-hold",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "scheduled",
+          "target": [
+            {
+              "code": "scheduled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

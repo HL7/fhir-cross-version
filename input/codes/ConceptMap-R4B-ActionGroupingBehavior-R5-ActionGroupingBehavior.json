@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ActionGroupingBehavior-R5-ActionGroupingBehavior",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ActionGroupingBehavior-R5-ActionGroupingBehavior",
+  "version": "0.0.1",
+  "name": "R4B-ActionGroupingBehavior-R5-ActionGroupingBehavior",
+  "title": "Concept map to convert a FHIR R4B ActionGroupingBehavior into a FHIR R5 ActionGroupingBehavior",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4826338-06:00",
+  "description": "Mapping for PlanDefinition.action.groupingBehavior from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionGroupingBehavior4bto5",
+      "display": "Id: pdf.ac.groupingBehavior-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.groupingBehavior\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.groupingBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.groupingBehavior-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestGroupActionGroupingBehaviorRequestOrchestrationActionGroupingBehavior4bto5",
+      "display": "Id: rgp.ac.groupingBehavior-rqo.ac.groupingBehavior-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.groupingBehavior\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.groupingBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.groupingBehavior-rqo.ac.groupingBehavior-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-grouping-behavior|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-grouping-behavior|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/action-grouping-behavior",
+      "target": "http://hl7.org/fhir/action-grouping-behavior",
+      "element": [
+        {
+          "code": "visual-group",
+          "target": [
+            {
+              "code": "visual-group",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sentence-group",
+          "target": [
+            {
+              "code": "sentence-group",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "logical-group",
+          "target": [
+            {
+              "code": "logical-group",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

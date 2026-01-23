@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-AuditEventAction-R3-AuditEventAction",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-AuditEventAction-R3-AuditEventAction",
+  "version": "0.0.1",
+  "name": "R2-AuditEventAction-R3-AuditEventAction",
+  "title": "Concept map to convert a FHIR R2 AuditEventAction into a FHIR R3 AuditEventAction",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5127869-06:00",
+  "description": "Mapping for AuditEvent.event.action/AuditEvent.action from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AuditEventEventActionAuditEventAction2to3",
+      "display": "Id: sev.ev.action-sev.action-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.event.action\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.action",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ev.action-sev.action-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/audit-event-action|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/audit-event-action|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/audit-event-action",
+      "target": "http://hl7.org/fhir/audit-event-action",
+      "element": [
+        {
+          "code": "R",
+          "target": [
+            {
+              "code": "R",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "target": [
+            {
+              "code": "C",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "D",
+          "target": [
+            {
+              "code": "D",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "target": [
+            {
+              "code": "U",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "E",
+          "target": [
+            {
+              "code": "E",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-RelationType-R4-RelationType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-RelationType-R4-RelationType",
+  "version": "0.0.1",
+  "name": "R4B-RelationType-R4-RelationType",
+  "title": "Concept map to convert a FHIR R4B RelationType into a FHIR R4 RelationType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6786921-06:00",
+  "description": "Mapping for CatalogEntry.relatedEntry.relationtype from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CatalogEntryRelatedEntryRelationtype4bto4",
+      "display": "Id: cte.re.relationtype-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/CatalogEntry#CatalogEntry.relatedEntry.relationtype\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CatalogEntry#CatalogEntry.relatedEntry.relationtype",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cte.re.relationtype-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/relation-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/relation-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/relation-type",
+      "target": "http://hl7.org/fhir/relation-type",
+      "element": [
+        {
+          "code": "is-replaced-by",
+          "target": [
+            {
+              "code": "is-replaced-by",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "triggers",
+          "target": [
+            {
+              "code": "triggers",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

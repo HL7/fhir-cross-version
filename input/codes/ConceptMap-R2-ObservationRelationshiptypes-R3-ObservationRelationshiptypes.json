@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-ObservationRelationshiptypes-R3-ObservationRelationshiptypes",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-ObservationRelationshiptypes-R3-ObservationRelationshiptypes",
+  "version": "0.0.1",
+  "name": "R2-ObservationRelationshiptypes-R3-ObservationRelationshiptypes",
+  "title": "Concept map to convert a FHIR R2 ObservationRelationshiptypes into a FHIR R3 ObservationRelationshiptypes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5063651-06:00",
+  "description": "Mapping for Observation.related.type from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ObservationRelatedType2to3",
+      "display": "Id: obs.re.type-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Observation#Observation.related.type\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.related.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/obs.re.type-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/observation-relationshiptypes|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/observation-relationshiptypes|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/observation-relationshiptypes",
+      "target": "http://hl7.org/fhir/observation-relationshiptypes",
+      "element": [
+        {
+          "code": "replaces",
+          "target": [
+            {
+              "code": "replaces",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sequel-to",
+          "target": [
+            {
+              "code": "sequel-to",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "interfered-by",
+          "target": [
+            {
+              "code": "interfered-by",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "derived-from",
+          "target": [
+            {
+              "code": "derived-from",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "has-member",
+          "target": [
+            {
+              "code": "has-member",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "qualified-by",
+          "target": [
+            {
+              "code": "qualified-by",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

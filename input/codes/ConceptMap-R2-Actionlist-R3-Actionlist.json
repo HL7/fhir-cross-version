@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-Actionlist-R3-Actionlist",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-Actionlist-R3-Actionlist",
+  "version": "0.0.1",
+  "name": "R2-Actionlist-R3-Actionlist",
+  "title": "Concept map to convert a FHIR R2 Actionlist into a FHIR R3 Actionlist",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5098048-06:00",
+  "description": "Mapping for ProcessRequest.action from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ProcessRequestAction2to3",
+      "display": "Id: prq.action-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/ProcessRequest#ProcessRequest.action\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ProcessRequest#ProcessRequest.action",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/prq.action-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/actionlist|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/actionlist|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/actionlist",
+      "target": "http://hl7.org/fhir/actionlist",
+      "element": [
+        {
+          "code": "cancel",
+          "target": [
+            {
+              "code": "cancel",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reprocess",
+          "target": [
+            {
+              "code": "reprocess",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "poll",
+          "target": [
+            {
+              "code": "poll",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "status",
+          "target": [
+            {
+              "code": "status",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ItemType-R2-AnswerFormat",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ItemType-R2-AnswerFormat",
+  "version": "0.0.1",
+  "name": "R3-ItemType-R2-AnswerFormat",
+  "title": "Concept map to convert a FHIR R3 ItemType into a FHIR R2 AnswerFormat",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7784418-06:00",
+  "description": "Mapping for Questionnaire.item.type/Questionnaire.group.question.type from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "QuestionnaireItemTypeQuestionnaireGroupQuestionType3to2",
+      "display": "Id: que.it.type-que.gr.qu.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Questionnaire#Questionnaire.item.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Questionnaire#Questionnaire.group.question.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/que.it.type-que.gr.qu.type-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/item-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/answer-format|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/item-type",
+      "target": "http://hl7.org/fhir/answer-format",
+      "element": [
+        {
+          "code": "attachment",
+          "target": [
+            {
+              "code": "attachment",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "boolean",
+          "target": [
+            {
+              "code": "boolean",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "choice",
+          "target": [
+            {
+              "code": "choice",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "date",
+          "target": [
+            {
+              "code": "date",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dateTime",
+          "target": [
+            {
+              "code": "dateTime",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "instant",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "decimal",
+          "target": [
+            {
+              "code": "decimal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "display",
+          "target": [
+            {
+              "code": "text",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "group",
+          "noMap": true
+        },
+        {
+          "code": "integer",
+          "target": [
+            {
+              "code": "integer",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "open-choice",
+          "target": [
+            {
+              "code": "open-choice",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "quantity",
+          "target": [
+            {
+              "code": "quantity",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reference",
+          "target": [
+            {
+              "code": "reference",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "string",
+          "target": [
+            {
+              "code": "string",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "text",
+          "target": [
+            {
+              "code": "text",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "time",
+          "target": [
+            {
+              "code": "time",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "url",
+          "target": [
+            {
+              "code": "url",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

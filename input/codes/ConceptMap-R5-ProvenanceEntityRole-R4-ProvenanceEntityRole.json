@@ -1,0 +1,69 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ProvenanceEntityRole-R4-ProvenanceEntityRole",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ProvenanceEntityRole-R4-ProvenanceEntityRole",
+  "version": "0.0.1",
+  "name": "R5-ProvenanceEntityRole-R4-ProvenanceEntityRole",
+  "title": "Concept map to convert a FHIR R5 ProvenanceEntityRole into a FHIR R4 ProvenanceEntityRole",
+  "experimental": false,
+  "date": "2025-12-30T16:37:21.0003437-06:00",
+  "description": "Mapping for Provenance.entity.role from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ProvenanceEntityRole5to4",
+      "display": "Id: prv.en.role-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Provenance#Provenance.entity.role\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Provenance#Provenance.entity.role",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/prv.en.role-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/provenance-entity-role|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/provenance-entity-role|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/provenance-entity-role",
+      "target": "http://hl7.org/fhir/provenance-entity-role",
+      "element": [
+        {
+          "code": "instantiates",
+          "noMap": true
+        },
+        {
+          "code": "removal",
+          "target": [
+            {
+              "code": "removal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "source",
+          "target": [
+            {
+              "code": "source",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "quotation",
+          "target": [
+            {
+              "code": "quotation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "revision",
+          "target": [
+            {
+              "code": "revision",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

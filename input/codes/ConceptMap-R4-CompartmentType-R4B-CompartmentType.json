@@ -1,0 +1,80 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-CompartmentType-R4B-CompartmentType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-CompartmentType-R4B-CompartmentType",
+  "version": "0.0.1",
+  "name": "R4-CompartmentType-R4B-CompartmentType",
+  "title": "Concept map to convert a FHIR R4 CompartmentType into a FHIR R4B CompartmentType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.9918904-06:00",
+  "description": "Mapping for CompartmentDefinition.code from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CompartmentDefinitionCode4to4b",
+      "display": "Id: cpd.code-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CompartmentDefinition#CompartmentDefinition.code\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/CompartmentDefinition#CompartmentDefinition.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpd.code-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "GraphDefinitionLinkTargetCompartmentCode4to4b",
+      "display": "Id: gdf.li.ta.co.code-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.code\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/gdf.li.ta.co.code-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/compartment-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/compartment-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/compartment-type",
+      "target": "http://hl7.org/fhir/compartment-type",
+      "element": [
+        {
+          "code": "Practitioner",
+          "target": [
+            {
+              "code": "Practitioner",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Device",
+          "target": [
+            {
+              "code": "Device",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Patient",
+          "target": [
+            {
+              "code": "Patient",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Encounter",
+          "target": [
+            {
+              "code": "Encounter",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RelatedPerson",
+          "target": [
+            {
+              "code": "RelatedPerson",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

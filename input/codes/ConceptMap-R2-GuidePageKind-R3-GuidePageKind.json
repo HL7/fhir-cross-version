@@ -1,0 +1,101 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-GuidePageKind-R3-GuidePageKind",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-GuidePageKind-R3-GuidePageKind",
+  "version": "0.0.1",
+  "name": "R2-GuidePageKind-R3-GuidePageKind",
+  "title": "Concept map to convert a FHIR R2 GuidePageKind into a FHIR R3 GuidePageKind",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.500473-06:00",
+  "description": "Mapping for ImplementationGuide.page.kind from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ImplementationGuidePageKind2to3",
+      "display": "Id: ig.pa.kind-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/ImplementationGuide#ImplementationGuide.page.kind\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ImplementationGuide#ImplementationGuide.page.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ig.pa.kind-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/guide-page-kind|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/guide-page-kind|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/guide-page-kind",
+      "target": "http://hl7.org/fhir/guide-page-kind",
+      "element": [
+        {
+          "code": "include",
+          "target": [
+            {
+              "code": "include",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dictionary",
+          "target": [
+            {
+              "code": "dictionary",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "resource",
+          "target": [
+            {
+              "code": "resource",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "toc",
+          "target": [
+            {
+              "code": "toc",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "page",
+          "target": [
+            {
+              "code": "page",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "list",
+          "target": [
+            {
+              "code": "list",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "directory",
+          "target": [
+            {
+              "code": "directory",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "example",
+          "target": [
+            {
+              "code": "example",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

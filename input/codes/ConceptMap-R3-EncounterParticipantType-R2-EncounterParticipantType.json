@@ -1,0 +1,155 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-EncounterParticipantType-R2-EncounterParticipantType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-EncounterParticipantType-R2-EncounterParticipantType",
+  "version": "0.0.1",
+  "name": "R3-EncounterParticipantType-R2-EncounterParticipantType",
+  "title": "Concept map to convert a FHIR R3 EncounterParticipantType into a FHIR R2 EncounterParticipantType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7562866-06:00",
+  "description": "Mapping for Appointment.participant.type from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AppointmentParticipantTyper3to2",
+      "display": "Id: app.pa.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Appointment#Appointment.participant.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Appointment#Appointment.participant.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/app.pa.type-3to2"
+    },
+    {
+      "type": "predecessor",
+      "label": "AppointmentResponseParticipantTyper3to2",
+      "display": "Id: apr.participantType-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/AppointmentResponse#AppointmentResponse.participantType\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/AppointmentResponse#AppointmentResponse.participantType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/apr.participantType-3to2"
+    },
+    {
+      "type": "predecessor",
+      "label": "EncounterParticipantTyper3to2",
+      "display": "Id: enc.pa.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Encounter#Encounter.participant.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Encounter#Encounter.participant.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/enc.pa.type-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/encounter-participant-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/encounter-participant-type|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v3/ParticipationType",
+      "target": "http://hl7.org/fhir/v3/ParticipationType",
+      "element": [
+        {
+          "code": "ADM",
+          "target": [
+            {
+              "code": "ADM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ATND",
+          "target": [
+            {
+              "code": "ATND",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CALLBCK",
+          "target": [
+            {
+              "code": "CALLBCK",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CON",
+          "target": [
+            {
+              "code": "CON",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DIS",
+          "target": [
+            {
+              "code": "DIS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ESC",
+          "target": [
+            {
+              "code": "ESC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PART",
+          "target": [
+            {
+              "code": "PART",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PPRF",
+          "target": [
+            {
+              "code": "PPRF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REF",
+          "target": [
+            {
+              "code": "REF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPRF",
+          "target": [
+            {
+              "code": "SPRF",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/participant-type",
+      "target": "http://hl7.org/fhir/participant-type",
+      "element": [
+        {
+          "code": "emergency",
+          "target": [
+            {
+              "code": "emergency",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "translator",
+          "target": [
+            {
+              "code": "translator",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

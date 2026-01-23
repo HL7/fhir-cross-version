@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ConsentDataMeaning-R4B-ConsentDataMeaning",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ConsentDataMeaning-R4B-ConsentDataMeaning",
+  "version": "0.0.1",
+  "name": "R4-ConsentDataMeaning-R4B-ConsentDataMeaning",
+  "title": "Concept map to convert a FHIR R4 ConsentDataMeaning into a FHIR R4B ConsentDataMeaning",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0232146-06:00",
+  "description": "Mapping for Consent.provision.data.meaning from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConsentProvisionDataMeaning4to4b",
+      "display": "Id: ppc.pr.da.meaning-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.data.meaning\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.provision.data.meaning",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.da.meaning-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/consent-data-meaning|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/consent-data-meaning",
+      "target": "http://hl7.org/fhir/consent-data-meaning",
+      "element": [
+        {
+          "code": "instance",
+          "target": [
+            {
+              "code": "instance",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "related",
+          "target": [
+            {
+              "code": "related",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dependents",
+          "target": [
+            {
+              "code": "dependents",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "authoredby",
+          "target": [
+            {
+              "code": "authoredby",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

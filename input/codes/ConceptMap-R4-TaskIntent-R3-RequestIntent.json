@@ -1,0 +1,111 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-TaskIntent-R3-RequestIntent",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-TaskIntent-R3-RequestIntent",
+  "version": "0.0.1",
+  "name": "R4-TaskIntent-R3-RequestIntent",
+  "title": "Concept map to convert a FHIR R4 TaskIntent into a FHIR R3 RequestIntent",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2738115-06:00",
+  "description": "Mapping for Task.intent from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TaskIntentr4to3",
+      "display": "Id: tsk.intent-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Task#Task.intent\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Task#Task.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tsk.intent-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/task-intent|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-intent|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-intent",
+      "target": "http://hl7.org/fhir/request-intent",
+      "element": [
+        {
+          "code": "filler-order",
+          "target": [
+            {
+              "code": "filler-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "instance-order",
+          "target": [
+            {
+              "code": "instance-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "option",
+          "target": [
+            {
+              "code": "option",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "order",
+          "target": [
+            {
+              "code": "order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "original-order",
+          "target": [
+            {
+              "code": "original-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "plan",
+          "target": [
+            {
+              "code": "plan",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "proposal",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reflex-order",
+          "target": [
+            {
+              "code": "reflex-order",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/task-intent",
+      "target": "http://hl7.org/fhir/request-intent",
+      "element": [
+        {
+          "code": "unknown",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

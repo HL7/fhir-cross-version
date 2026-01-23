@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ReferenceHandlingPolicy-R5-ReferenceHandlingPolicy",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ReferenceHandlingPolicy-R5-ReferenceHandlingPolicy",
+  "version": "0.0.1",
+  "name": "R4B-ReferenceHandlingPolicy-R5-ReferenceHandlingPolicy",
+  "title": "Concept map to convert a FHIR R4B ReferenceHandlingPolicy into a FHIR R5 ReferenceHandlingPolicy",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4582535-06:00",
+  "description": "Mapping for CapabilityStatement.rest.resource.referencePolicy from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestResourceReferencePolicy4bto5",
+      "display": "Id: cpb.re.re.referencePolicy-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.referencePolicy\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.referencePolicy",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.referencePolicy-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/reference-handling-policy|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/reference-handling-policy|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/reference-handling-policy",
+      "target": "http://hl7.org/fhir/reference-handling-policy",
+      "element": [
+        {
+          "code": "resolves",
+          "target": [
+            {
+              "code": "resolves",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "enforced",
+          "target": [
+            {
+              "code": "enforced",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "logical",
+          "target": [
+            {
+              "code": "logical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "local",
+          "target": [
+            {
+              "code": "local",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "literal",
+          "target": [
+            {
+              "code": "literal",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

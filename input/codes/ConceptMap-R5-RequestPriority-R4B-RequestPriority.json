@@ -1,0 +1,125 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-RequestPriority-R4B-RequestPriority",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-RequestPriority-R4B-RequestPriority",
+  "version": "0.0.1",
+  "name": "R5-RequestPriority-R4B-RequestPriority",
+  "title": "Concept map to convert a FHIR R5 RequestPriority into a FHIR R4B RequestPriority",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9043069-06:00",
+  "description": "Mapping for ActivityDefinition.priority from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ActivityDefinitionPriority5to4b",
+      "display": "Id: adf.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ActivityDefinition#ActivityDefinition.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ActivityDefinition#ActivityDefinition.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/adf.priority-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "CommunicationRequestPriority5to4b",
+      "display": "Id: cmr.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/CommunicationRequest#CommunicationRequest.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/CommunicationRequest#CommunicationRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmr.priority-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "CommunicationPriority5to4b",
+      "display": "Id: com.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Communication#Communication.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Communication#Communication.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/com.priority-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "DeviceRequestPriority5to4b",
+      "display": "Id: dur.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/DeviceRequest#DeviceRequest.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/DeviceRequest#DeviceRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dur.priority-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "MedicationRequestPriority5to4b",
+      "display": "Id: mps.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/MedicationRequest#MedicationRequest.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/MedicationRequest#MedicationRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mps.priority-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionPriority5to4b",
+      "display": "Id: pdf.ac.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.priority-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestOrchestrationActionPriorityRequestGroupActionPriority5to4b",
+      "display": "Id: rqo.ac.priority-rgp.ac.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.priority-rgp.ac.priority-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestOrchestrationPriorityRequestGroupPriority5to4b",
+      "display": "Id: rqo.priority-rgp.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rqo.priority-rgp.priority-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "ServiceRequestPriority5to4b",
+      "display": "Id: srq.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ServiceRequest#ServiceRequest.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ServiceRequest#ServiceRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/srq.priority-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "SupplyRequestPriority5to4b",
+      "display": "Id: sur.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/SupplyRequest#SupplyRequest.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/SupplyRequest#SupplyRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sur.priority-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "TaskPriority5to4b",
+      "display": "Id: tsk.priority-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Task#Task.priority\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Task#Task.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tsk.priority-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/request-priority|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-priority|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-priority",
+      "target": "http://hl7.org/fhir/request-priority",
+      "element": [
+        {
+          "code": "stat",
+          "target": [
+            {
+              "code": "stat",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "routine",
+          "target": [
+            {
+              "code": "routine",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "urgent",
+          "target": [
+            {
+              "code": "urgent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asap",
+          "target": [
+            {
+              "code": "asap",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

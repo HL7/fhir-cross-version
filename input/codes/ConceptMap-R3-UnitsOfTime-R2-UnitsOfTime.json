@@ -1,0 +1,98 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-UnitsOfTime-R2-UnitsOfTime",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-UnitsOfTime-R2-UnitsOfTime",
+  "version": "0.0.1",
+  "name": "R3-UnitsOfTime-R2-UnitsOfTime",
+  "title": "Concept map to convert a FHIR R3 UnitsOfTime into a FHIR R2 UnitsOfTime",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7826742-06:00",
+  "description": "Mapping for Timing.repeat.durationUnit/Timing.repeat.durationUnits from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TimingRepeatDurationUnitTimingRepeatDurationUnitsr3to2",
+      "display": "Id: tim.re.durationUnit-tim.re.durationUnits-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.durationUnit\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Timing#Timing.repeat.durationUnits",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.durationUnit-tim.re.durationUnits-3to2"
+    },
+    {
+      "type": "predecessor",
+      "label": "TimingRepeatPeriodUnitTimingRepeatPeriodUnitsr3to2",
+      "display": "Id: tim.re.periodUnit-tim.re.periodUnits-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.periodUnit\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Timing#Timing.repeat.periodUnits",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.periodUnit-tim.re.periodUnits-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/units-of-time|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/units-of-time|1.0.2",
+  "group": [
+    {
+      "source": "http://unitsofmeasure.org",
+      "target": "http://unitsofmeasure.org",
+      "element": [
+        {
+          "code": "a",
+          "target": [
+            {
+              "code": "a",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "d",
+          "target": [
+            {
+              "code": "d",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "h",
+          "target": [
+            {
+              "code": "h",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "min",
+          "target": [
+            {
+              "code": "min",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "mo",
+          "target": [
+            {
+              "code": "mo",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "s",
+          "target": [
+            {
+              "code": "s",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "wk",
+          "target": [
+            {
+              "code": "wk",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MetricCategory-R3-MetricCategory",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MetricCategory-R3-MetricCategory",
+  "version": "0.0.1",
+  "name": "R4-MetricCategory-R3-MetricCategory",
+  "title": "Concept map to convert a FHIR R4 MetricCategory into a FHIR R3 MetricCategory",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2541621-06:00",
+  "description": "Mapping for DeviceMetric.category from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceMetricCategory4to3",
+      "display": "Id: dvm.category-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/DeviceMetric#DeviceMetric.category\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric#DeviceMetric.category",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.category-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-category|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-category|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/metric-category",
+      "target": "http://hl7.org/fhir/metric-category",
+      "element": [
+        {
+          "code": "calculation",
+          "target": [
+            {
+              "code": "calculation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unspecified",
+          "target": [
+            {
+              "code": "unspecified",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "measurement",
+          "target": [
+            {
+              "code": "measurement",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "setting",
+          "target": [
+            {
+              "code": "setting",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

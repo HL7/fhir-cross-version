@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-ReactionEventSeverity-R3-ReactionEventSeverity",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-ReactionEventSeverity-R3-ReactionEventSeverity",
+  "version": "0.0.1",
+  "name": "R2-ReactionEventSeverity-R3-ReactionEventSeverity",
+  "title": "Concept map to convert a FHIR R2 ReactionEventSeverity into a FHIR R3 ReactionEventSeverity",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4834186-06:00",
+  "description": "Mapping for AllergyIntolerance.reaction.severity from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AllergyIntoleranceReactionSeverity2to3",
+      "display": "Id: ait.re.severity-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.reaction.severity\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.reaction.severity",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ait.re.severity-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/reaction-event-severity|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/reaction-event-severity|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/reaction-event-severity",
+      "target": "http://hl7.org/fhir/reaction-event-severity",
+      "element": [
+        {
+          "code": "mild",
+          "target": [
+            {
+              "code": "mild",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "severe",
+          "target": [
+            {
+              "code": "severe",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "moderate",
+          "target": [
+            {
+              "code": "moderate",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

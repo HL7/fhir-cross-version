@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ReportResultCodes-R5-ReportResultCodes",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ReportResultCodes-R5-ReportResultCodes",
+  "version": "0.0.1",
+  "name": "R4B-ReportResultCodes-R5-ReportResultCodes",
+  "title": "Concept map to convert a FHIR R4B ReportResultCodes into a FHIR R5 ReportResultCodes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4901179-06:00",
+  "description": "Mapping for TestReport.result from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestReportResult4bto5",
+      "display": "Id: tsr.result-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/TestReport#TestReport.result\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/TestReport#TestReport.result",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tsr.result-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/report-result-codes|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/report-result-codes|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/report-result-codes",
+      "target": "http://hl7.org/fhir/report-result-codes",
+      "element": [
+        {
+          "code": "fail",
+          "target": [
+            {
+              "code": "fail",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pass",
+          "target": [
+            {
+              "code": "pass",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pending",
+          "target": [
+            {
+              "code": "pending",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

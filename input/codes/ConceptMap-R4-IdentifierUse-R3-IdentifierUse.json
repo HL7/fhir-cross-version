@@ -1,0 +1,69 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-IdentifierUse-R3-IdentifierUse",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-IdentifierUse-R3-IdentifierUse",
+  "version": "0.0.1",
+  "name": "R4-IdentifierUse-R3-IdentifierUse",
+  "title": "Concept map to convert a FHIR R4 IdentifierUse into a FHIR R3 IdentifierUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2579684-06:00",
+  "description": "Mapping for Identifier.use from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "IdentifierUse4to3",
+      "display": "Id: idr.use-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Identifier#Identifier.use\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Identifier#Identifier.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/idr.use-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/identifier-use|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/identifier-use",
+      "target": "http://hl7.org/fhir/identifier-use",
+      "element": [
+        {
+          "code": "official",
+          "target": [
+            {
+              "code": "official",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "old",
+          "noMap": true
+        },
+        {
+          "code": "secondary",
+          "target": [
+            {
+              "code": "secondary",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "temp",
+          "target": [
+            {
+              "code": "temp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "usual",
+          "target": [
+            {
+              "code": "usual",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

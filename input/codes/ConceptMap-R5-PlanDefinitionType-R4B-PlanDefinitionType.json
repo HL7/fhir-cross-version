@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-PlanDefinitionType-R4B-PlanDefinitionType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-PlanDefinitionType-R4B-PlanDefinitionType",
+  "version": "0.0.1",
+  "name": "R5-PlanDefinitionType-R4B-PlanDefinitionType",
+  "title": "Concept map to convert a FHIR R5 PlanDefinitionType into a FHIR R4B PlanDefinitionType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9280433-06:00",
+  "description": "Mapping for PlanDefinition.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionTyper5to4b",
+      "display": "Id: pdf.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/plan-definition-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/plan-definition-type|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "target": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "element": [
+        {
+          "code": "clinical-protocol",
+          "target": [
+            {
+              "code": "clinical-protocol",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "eca-rule",
+          "target": [
+            {
+              "code": "eca-rule",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "order-set",
+          "target": [
+            {
+              "code": "order-set",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "workflow-definition",
+          "target": [
+            {
+              "code": "workflow-definition",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

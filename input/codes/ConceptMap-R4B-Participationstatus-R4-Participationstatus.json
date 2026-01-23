@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-Participationstatus-R4-Participationstatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-Participationstatus-R4-Participationstatus",
+  "version": "0.0.1",
+  "name": "R4B-Participationstatus-R4-Participationstatus",
+  "title": "Concept map to convert a FHIR R4B Participationstatus into a FHIR R4 Participationstatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6709046-06:00",
+  "description": "Mapping for Appointment.participant.status from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AppointmentParticipantStatus4bto4",
+      "display": "Id: app.pa.status-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Appointment#Appointment.participant.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Appointment#Appointment.participant.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/app.pa.status-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "AppointmentResponseParticipantStatus4bto4",
+      "display": "Id: apr.participantStatus-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/apr.participantStatus-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/participationstatus|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/participationstatus|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/participationstatus",
+      "target": "http://hl7.org/fhir/participationstatus",
+      "element": [
+        {
+          "code": "declined",
+          "target": [
+            {
+              "code": "declined",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "needs-action",
+          "target": [
+            {
+              "code": "needs-action",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "accepted",
+          "target": [
+            {
+              "code": "accepted",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tentative",
+          "target": [
+            {
+              "code": "tentative",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

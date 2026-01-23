@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-SupplyrequestStatus-R3-SupplyrequestStatus",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-SupplyrequestStatus-R3-SupplyrequestStatus",
+  "version": "0.0.1",
+  "name": "R2-SupplyrequestStatus-R3-SupplyrequestStatus",
+  "title": "Concept map to convert a FHIR R2 SupplyrequestStatus into a FHIR R3 SupplyrequestStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5159656-06:00",
+  "description": "Mapping for SupplyRequest.status from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SupplyRequestStatus2to3",
+      "display": "Id: sur.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/SupplyRequest#SupplyRequest.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/SupplyRequest#SupplyRequest.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sur.status-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/supplyrequest-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/supplyrequest-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/supplyrequest-status",
+      "target": "http://hl7.org/fhir/supplyrequest-status",
+      "element": [
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "failed",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "requested",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

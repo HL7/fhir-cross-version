@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ConditionalReadStatus-R4-ConditionalReadStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ConditionalReadStatus-R4-ConditionalReadStatus",
+  "version": "0.0.1",
+  "name": "R5-ConditionalReadStatus-R4-ConditionalReadStatus",
+  "title": "Concept map to convert a FHIR R5 ConditionalReadStatus into a FHIR R4 ConditionalReadStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9841989-06:00",
+  "description": "Mapping for CapabilityStatement.rest.resource.conditionalRead from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestResourceConditionalRead5to4",
+      "display": "Id: cpb.re.re.conditionalRead-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalRead\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.conditionalRead",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.conditionalRead-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/conditional-read-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/conditional-read-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/conditional-read-status",
+      "target": "http://hl7.org/fhir/conditional-read-status",
+      "element": [
+        {
+          "code": "not-supported",
+          "target": [
+            {
+              "code": "not-supported",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "modified-since",
+          "target": [
+            {
+              "code": "modified-since",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "full-support",
+          "target": [
+            {
+              "code": "full-support",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-match",
+          "target": [
+            {
+              "code": "not-match",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-TestscriptProfileOriginTypes-R4B-TestscriptProfileOriginTypes",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-TestscriptProfileOriginTypes-R4B-TestscriptProfileOriginTypes",
+  "version": "0.0.1",
+  "name": "R5-TestscriptProfileOriginTypes-R4B-TestscriptProfileOriginTypes",
+  "title": "Concept map to convert a FHIR R5 TestscriptProfileOriginTypes into a FHIR R4B TestscriptProfileOriginTypes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9354739-06:00",
+  "description": "Mapping for TestScript.origin.profile from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestScriptOriginProfiler5to4b",
+      "display": "Id: tst.or.profile-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/TestScript#TestScript.origin.profile\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.origin.profile",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tst.or.profile-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/testscript-profile-origin-types|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/testscript-profile-origin-types|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/testscript-profile-origin-types",
+      "target": "http://terminology.hl7.org/CodeSystem/testscript-profile-origin-types",
+      "element": [
+        {
+          "code": "FHIR-Client",
+          "target": [
+            {
+              "code": "FHIR-Client",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FHIR-SDC-FormFiller",
+          "target": [
+            {
+              "code": "FHIR-SDC-FormFiller",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

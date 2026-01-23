@@ -1,0 +1,134 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-RequestIntent-R4-RequestIntent",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-RequestIntent-R4-RequestIntent",
+  "version": "0.0.1",
+  "name": "R4B-RequestIntent-R4-RequestIntent",
+  "title": "Concept map to convert a FHIR R4B RequestIntent into a FHIR R4 RequestIntent",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6674396-06:00",
+  "description": "Mapping for ActivityDefinition.intent from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ActivityDefinitionIntent4bto4",
+      "display": "Id: adf.intent-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ActivityDefinition#ActivityDefinition.intent\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ActivityDefinition#ActivityDefinition.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/adf.intent-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "DeviceRequestIntent4bto4",
+      "display": "Id: dur.intent-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/DeviceRequest#DeviceRequest.intent\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/DeviceRequest#DeviceRequest.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dur.intent-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "NutritionOrderIntent4bto4",
+      "display": "Id: nor.intent-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/NutritionOrder#NutritionOrder.intent\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/NutritionOrder#NutritionOrder.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nor.intent-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestGroupIntent4bto4",
+      "display": "Id: rgp.intent-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.intent\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.intent-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "ServiceRequestIntent4bto4",
+      "display": "Id: srq.intent-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ServiceRequest#ServiceRequest.intent\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ServiceRequest#ServiceRequest.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/srq.intent-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/request-intent|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-intent|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-intent",
+      "target": "http://hl7.org/fhir/request-intent",
+      "element": [
+        {
+          "code": "proposal",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "instance-order",
+          "target": [
+            {
+              "code": "instance-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "filler-order",
+          "target": [
+            {
+              "code": "filler-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "original-order",
+          "target": [
+            {
+              "code": "original-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reflex-order",
+          "target": [
+            {
+              "code": "reflex-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "plan",
+          "target": [
+            {
+              "code": "plan",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "directive",
+          "target": [
+            {
+              "code": "directive",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "order",
+          "target": [
+            {
+              "code": "order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "option",
+          "target": [
+            {
+              "code": "option",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

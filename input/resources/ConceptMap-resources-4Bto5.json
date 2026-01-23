@@ -108,7 +108,7 @@
     { "code" : "MolecularSequence", "target" : [{ "code" : "MolecularSequence", "relationship" : "equivalent" }] },
     { "code" : "NamingSystem", "target" : [{ "code" : "NamingSystem", "relationship" : "equivalent" }] },
     { "code" : "NutritionOrder", "target" : [{ "code" : "NutritionOrder", "relationship" : "equivalent" }] },
-    { "code" : "NutritionProduct", "target" : [{ "code" : "NutritionProduct", "relationship" : "equivalent" }] },
+    { "code" : "NutritionProduct", "target" : [{ "code" : "NutritionProduct", "relationship" : "source-is-narrower-than-target" }] },
     { "code" : "Observation", "target" : [{ "code" : "Observation", "relationship" : "equivalent" }] },
     { "code" : "ObservationDefinition", "target" : [{ "code" : "ObservationDefinition", "relationship" : "equivalent" }] },
     { "code" : "OperationDefinition", "target" : [{ "code" : "OperationDefinition", "relationship" : "equivalent" }] },

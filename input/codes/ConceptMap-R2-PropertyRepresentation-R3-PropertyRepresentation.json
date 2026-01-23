@@ -1,0 +1,38 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-PropertyRepresentation-R3-PropertyRepresentation",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-PropertyRepresentation-R3-PropertyRepresentation",
+  "version": "0.0.1",
+  "name": "R2-PropertyRepresentation-R3-PropertyRepresentation",
+  "title": "Concept map to convert a FHIR R2 PropertyRepresentation into a FHIR R3 PropertyRepresentation",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4965597-06:00",
+  "description": "Mapping for ElementDefinition.representation from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ElementDefinitionRepresentation2to3",
+      "display": "Id: eld.representation-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/ElementDefinition#ElementDefinition.representation\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.representation",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eld.representation-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/property-representation|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/property-representation|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/property-representation",
+      "target": "http://hl7.org/fhir/property-representation",
+      "element": [
+        {
+          "code": "xmlAttr",
+          "target": [
+            {
+              "code": "xmlAttr",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

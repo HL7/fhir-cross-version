@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-LinkType-R5-LinkType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-LinkType-R5-LinkType",
+  "version": "0.0.1",
+  "name": "R4-LinkType-R5-LinkType",
+  "title": "Concept map to convert a FHIR R4 LinkType into a FHIR R5 LinkType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0928264-06:00",
+  "description": "Mapping for Patient.link.type from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PatientLinkType4to5",
+      "display": "Id: pat.li.type-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Patient#Patient.link.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Patient#Patient.link.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pat.li.type-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/link-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/link-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/link-type",
+      "target": "http://hl7.org/fhir/link-type",
+      "element": [
+        {
+          "code": "refer",
+          "target": [
+            {
+              "code": "refer",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "replaces",
+          "target": [
+            {
+              "code": "replaces",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "seealso",
+          "target": [
+            {
+              "code": "seealso",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "replaced-by",
+          "target": [
+            {
+              "code": "replaced-by",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

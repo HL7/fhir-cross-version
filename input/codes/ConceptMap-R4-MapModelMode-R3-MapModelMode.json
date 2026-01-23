@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MapModelMode-R3-MapModelMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MapModelMode-R3-MapModelMode",
+  "version": "0.0.1",
+  "name": "R4-MapModelMode-R3-MapModelMode",
+  "title": "Concept map to convert a FHIR R4 MapModelMode into a FHIR R3 MapModelMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2715951-06:00",
+  "description": "Mapping for StructureMap.structure.mode from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureMapStructureMode4to3",
+      "display": "Id: smp.st.mode-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.structure.mode\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/StructureMap#StructureMap.structure.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/smp.st.mode-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/map-model-mode|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/map-model-mode|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/map-model-mode",
+      "target": "http://hl7.org/fhir/map-model-mode",
+      "element": [
+        {
+          "code": "source",
+          "target": [
+            {
+              "code": "source",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "queried",
+          "target": [
+            {
+              "code": "queried",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "target",
+          "target": [
+            {
+              "code": "target",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "produced",
+          "target": [
+            {
+              "code": "produced",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

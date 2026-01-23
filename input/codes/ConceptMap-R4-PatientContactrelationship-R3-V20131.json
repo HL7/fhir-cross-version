@@ -1,0 +1,128 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-PatientContactrelationship-R3-V20131",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-PatientContactrelationship-R3-V20131",
+  "version": "0.0.1",
+  "name": "R4-PatientContactrelationship-R3-V20131",
+  "title": "Concept map to convert a FHIR R4 PatientContactrelationship into a FHIR R3 V20131",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2641907-06:00",
+  "description": "Mapping for Patient.contact.relationship from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PatientContactRelationship4to3",
+      "display": "Id: pat.co.relationship-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Patient#Patient.contact.relationship\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.contact.relationship",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pat.co.relationship-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/v2-0131|3.0.2",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "target": "http://hl7.org/fhir/v2/0131",
+      "element": [
+        {
+          "code": "PR",
+          "target": [
+            {
+              "code": "PR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "target": [
+            {
+              "code": "C",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "S",
+          "target": [
+            {
+              "code": "S",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "E",
+          "target": [
+            {
+              "code": "E",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "target": [
+            {
+              "code": "U",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "F",
+          "target": [
+            {
+              "code": "F",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "I",
+          "target": [
+            {
+              "code": "I",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EP",
+          "target": [
+            {
+              "code": "EP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CP",
+          "target": [
+            {
+              "code": "CP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BP",
+          "target": [
+            {
+              "code": "BP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "N",
+          "target": [
+            {
+              "code": "N",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

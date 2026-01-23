@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ReferenceVersionRules-R3-ReferenceVersionRules",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ReferenceVersionRules-R3-ReferenceVersionRules",
+  "version": "0.0.1",
+  "name": "R4-ReferenceVersionRules-R3-ReferenceVersionRules",
+  "title": "Concept map to convert a FHIR R4 ReferenceVersionRules into a FHIR R3 ReferenceVersionRules",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2554453-06:00",
+  "description": "Mapping for ElementDefinition.type.versioning from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ElementDefinitionTypeVersioning4to3",
+      "display": "Id: eld.ty.versioning-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.type.versioning\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.type.versioning",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eld.ty.versioning-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/reference-version-rules|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/reference-version-rules|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/reference-version-rules",
+      "target": "http://hl7.org/fhir/reference-version-rules",
+      "element": [
+        {
+          "code": "either",
+          "target": [
+            {
+              "code": "either",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "independent",
+          "target": [
+            {
+              "code": "independent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "specific",
+          "target": [
+            {
+              "code": "specific",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

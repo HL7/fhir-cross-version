@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-AdverseEventOutcome-R3-AdverseEventOutcome",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-AdverseEventOutcome-R3-AdverseEventOutcome",
+  "version": "0.0.1",
+  "name": "R4-AdverseEventOutcome-R3-AdverseEventOutcome",
+  "title": "Concept map to convert a FHIR R4 AdverseEventOutcome into a FHIR R3 AdverseEventOutcome",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2418979-06:00",
+  "description": "Mapping for AdverseEvent.outcome from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AdverseEventOutcome4to3",
+      "display": "Id: aev.outcome-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/AdverseEvent#AdverseEvent.outcome\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/AdverseEvent#AdverseEvent.outcome",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/aev.outcome-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/adverse-event-outcome|3.0.2",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+      "target": "http://hl7.org/fhir/adverse-event-outcome",
+      "element": [
+        {
+          "code": "recovering",
+          "target": [
+            {
+              "code": "recovering",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ongoing",
+          "target": [
+            {
+              "code": "ongoing",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "resolvedWithSequelae",
+          "target": [
+            {
+              "code": "resolvedWithSequelae",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "resolved",
+          "target": [
+            {
+              "code": "resolved",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fatal",
+          "target": [
+            {
+              "code": "fatal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

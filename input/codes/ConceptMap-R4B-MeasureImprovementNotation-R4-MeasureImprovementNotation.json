@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-MeasureImprovementNotation-R4-MeasureImprovementNotation",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-MeasureImprovementNotation-R4-MeasureImprovementNotation",
+  "version": "0.0.1",
+  "name": "R4B-MeasureImprovementNotation-R4-MeasureImprovementNotation",
+  "title": "Concept map to convert a FHIR R4B MeasureImprovementNotation into a FHIR R4 MeasureImprovementNotation",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6973588-06:00",
+  "description": "Mapping for Measure.improvementNotation from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MeasureImprovementNotation4bto4",
+      "display": "Id: mea.improvementNotation-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.improvementNotation\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.improvementNotation",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mea.improvementNotation-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "MeasureReportImprovementNotation4bto4",
+      "display": "Id: mrp.improvementNotation-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/MeasureReport#MeasureReport.improvementNotation\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/MeasureReport#MeasureReport.improvementNotation",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.improvementNotation-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-improvement-notation|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-improvement-notation|4.0.1",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+      "target": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+      "element": [
+        {
+          "code": "increase",
+          "target": [
+            {
+              "code": "increase",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "decrease",
+          "target": [
+            {
+              "code": "decrease",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

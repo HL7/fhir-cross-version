@@ -1,0 +1,92 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-SubscriberRelationship-R4-SubscriberRelationship",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-SubscriberRelationship-R4-SubscriberRelationship",
+  "version": "0.0.1",
+  "name": "R4B-SubscriberRelationship-R4-SubscriberRelationship",
+  "title": "Concept map to convert a FHIR R4B SubscriberRelationship into a FHIR R4 SubscriberRelationship",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6751747-06:00",
+  "description": "Mapping for Coverage.relationship from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CoverageRelationship4bto4",
+      "display": "Id: cov.relationship-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Coverage#Coverage.relationship\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Coverage#Coverage.relationship",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cov.relationship-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/subscriber-relationship|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/subscriber-relationship|4.0.1",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+      "target": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+      "element": [
+        {
+          "code": "parent",
+          "target": [
+            {
+              "code": "parent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "injured",
+          "target": [
+            {
+              "code": "injured",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "common",
+          "target": [
+            {
+              "code": "common",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "self",
+          "target": [
+            {
+              "code": "self",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "spouse",
+          "target": [
+            {
+              "code": "spouse",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "child",
+          "target": [
+            {
+              "code": "child",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

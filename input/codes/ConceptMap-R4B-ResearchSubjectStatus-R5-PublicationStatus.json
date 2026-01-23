@@ -1,0 +1,86 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ResearchSubjectStatus-R5-PublicationStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ResearchSubjectStatus-R5-PublicationStatus",
+  "version": "0.0.1",
+  "name": "R4B-ResearchSubjectStatus-R5-PublicationStatus",
+  "title": "Concept map to convert a FHIR R4B ResearchSubjectStatus into a FHIR R5 PublicationStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4848731-06:00",
+  "description": "Mapping for ResearchSubject.status from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ResearchSubjectStatus4bto5",
+      "display": "Id: rsb.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ResearchSubject#ResearchSubject.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/research-subject-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/publication-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/research-subject-status",
+      "target": "http://hl7.org/fhir/publication-status",
+      "element": [
+        {
+          "code": "screening",
+          "noMap": true
+        },
+        {
+          "code": "not-registered",
+          "noMap": true
+        },
+        {
+          "code": "pending-on-study",
+          "noMap": true
+        },
+        {
+          "code": "withdrawn",
+          "target": [
+            {
+              "code": "retired",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "potential-candidate",
+          "noMap": true
+        },
+        {
+          "code": "on-study-intervention",
+          "noMap": true
+        },
+        {
+          "code": "follow-up",
+          "noMap": true
+        },
+        {
+          "code": "on-study-observation",
+          "noMap": true
+        },
+        {
+          "code": "candidate",
+          "noMap": true
+        },
+        {
+          "code": "ineligible",
+          "noMap": true
+        },
+        {
+          "code": "eligible",
+          "noMap": true
+        },
+        {
+          "code": "on-study",
+          "noMap": true
+        },
+        {
+          "code": "off-study",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

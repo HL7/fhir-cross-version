@@ -1,0 +1,128 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-AttributeEstimateType-R5-AttributeEstimateType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-AttributeEstimateType-R5-AttributeEstimateType",
+  "version": "0.0.1",
+  "name": "R4B-AttributeEstimateType-R5-AttributeEstimateType",
+  "title": "Concept map to convert a FHIR R4B AttributeEstimateType into a FHIR R5 AttributeEstimateType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4662353-06:00",
+  "description": "Mapping for Evidence.statistic.attributeEstimate.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EvidenceStatisticAttributeEstimateTyper4bto5",
+      "display": "Id: evi.st.at.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.statistic.attributeEstimate.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.statistic.attributeEstimate.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/evi.st.at.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/attribute-estimate-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/attribute-estimate-type|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/attribute-estimate-type",
+      "target": "http://terminology.hl7.org/CodeSystem/attribute-estimate-type",
+      "element": [
+        {
+          "code": "0000037",
+          "target": [
+            {
+              "code": "0000037",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "0000419",
+          "target": [
+            {
+              "code": "0000419",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "0000420",
+          "target": [
+            {
+              "code": "0000420",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "0000421",
+          "target": [
+            {
+              "code": "0000421",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "0000455",
+          "target": [
+            {
+              "code": "0000455",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C38013",
+          "target": [
+            {
+              "code": "C38013",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C44185",
+          "target": [
+            {
+              "code": "C44185",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C48918",
+          "target": [
+            {
+              "code": "C48918",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C53245",
+          "target": [
+            {
+              "code": "C53245",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C53322",
+          "target": [
+            {
+              "code": "C53322",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C53324",
+          "target": [
+            {
+              "code": "C53324",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

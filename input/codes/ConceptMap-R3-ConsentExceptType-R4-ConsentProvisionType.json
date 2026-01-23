@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ConsentExceptType-R4-ConsentProvisionType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ConsentExceptType-R4-ConsentProvisionType",
+  "version": "0.0.1",
+  "name": "R3-ConsentExceptType-R4-ConsentProvisionType",
+  "title": "Concept map to convert a FHIR R3 ConsentExceptType into a FHIR R4 ConsentProvisionType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6908268-06:00",
+  "description": "Mapping for Consent.except.type/Consent.provision.type from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConsentExceptTypeConsentProvisionType3to4",
+      "display": "Id: ppc.ex.type-ppc.pr.type-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.except.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.ex.type-ppc.pr.type-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/consent-except-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/consent-provision-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/consent-except-type",
+      "target": "http://hl7.org/fhir/consent-provision-type",
+      "element": [
+        {
+          "code": "deny",
+          "target": [
+            {
+              "code": "deny",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "permit",
+          "target": [
+            {
+              "code": "permit",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

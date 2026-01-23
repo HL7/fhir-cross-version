@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ListMode-R2-ListMode",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ListMode-R2-ListMode",
+  "version": "0.0.1",
+  "name": "R3-ListMode-R2-ListMode",
+  "title": "Concept map to convert a FHIR R3 ListMode into a FHIR R2 ListMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7607587-06:00",
+  "description": "Mapping for Composition.section.mode from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CompositionSectionMode3to2",
+      "display": "Id: cmp.se.mode-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.section.mode\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Composition#Composition.section.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.se.mode-3to2"
+    },
+    {
+      "type": "predecessor",
+      "label": "ListMode3to2",
+      "display": "Id: lst.mode-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/List#List.mode\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/List#List.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/lst.mode-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/list-mode|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/list-mode|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/list-mode",
+      "target": "http://hl7.org/fhir/list-mode",
+      "element": [
+        {
+          "code": "changes",
+          "target": [
+            {
+              "code": "changes",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "working",
+          "target": [
+            {
+              "code": "working",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "snapshot",
+          "target": [
+            {
+              "code": "snapshot",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

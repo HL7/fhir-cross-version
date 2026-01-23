@@ -1,0 +1,69 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-AddressUse-R3-AddressUse",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-AddressUse-R3-AddressUse",
+  "version": "0.0.1",
+  "name": "R4-AddressUse-R3-AddressUse",
+  "title": "Concept map to convert a FHIR R4 AddressUse into a FHIR R3 AddressUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2393977-06:00",
+  "description": "Mapping for Address.use from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AddressUse4to3",
+      "display": "Id: add.use-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Address#Address.use\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Address#Address.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/add.use-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/address-use|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/address-use|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/address-use",
+      "target": "http://hl7.org/fhir/address-use",
+      "element": [
+        {
+          "code": "billing",
+          "noMap": true
+        },
+        {
+          "code": "home",
+          "target": [
+            {
+              "code": "home",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "old",
+          "target": [
+            {
+              "code": "old",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "temp",
+          "target": [
+            {
+              "code": "temp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "work",
+          "target": [
+            {
+              "code": "work",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

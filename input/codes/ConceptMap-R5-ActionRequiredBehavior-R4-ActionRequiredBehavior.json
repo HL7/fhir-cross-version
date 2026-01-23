@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ActionRequiredBehavior-R4-ActionRequiredBehavior",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ActionRequiredBehavior-R4-ActionRequiredBehavior",
+  "version": "0.0.1",
+  "name": "R5-ActionRequiredBehavior-R4-ActionRequiredBehavior",
+  "title": "Concept map to convert a FHIR R5 ActionRequiredBehavior into a FHIR R4 ActionRequiredBehavior",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9997639-06:00",
+  "description": "Mapping for PlanDefinition.action.requiredBehavior from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionRequiredBehavior5to4",
+      "display": "Id: pdf.ac.requiredBehavior-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.requiredBehavior\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.requiredBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.requiredBehavior-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestOrchestrationActionRequiredBehaviorRequestGroupActionRequiredBehavior5to4",
+      "display": "Id: rqo.ac.requiredBehavior-rgp.ac.requiredBehavior-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.requiredBehavior\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.requiredBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.requiredBehavior-rgp.ac.requiredBehavior-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-required-behavior|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-required-behavior|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/action-required-behavior",
+      "target": "http://hl7.org/fhir/action-required-behavior",
+      "element": [
+        {
+          "code": "could",
+          "target": [
+            {
+              "code": "could",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "must",
+          "target": [
+            {
+              "code": "must",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "must-unless-documented",
+          "target": [
+            {
+              "code": "must-unless-documented",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

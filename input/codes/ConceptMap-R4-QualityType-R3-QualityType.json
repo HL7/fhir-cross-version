@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-QualityType-R3-QualityType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-QualityType-R3-QualityType",
+  "version": "0.0.1",
+  "name": "R4-QualityType-R3-QualityType",
+  "title": "Concept map to convert a FHIR R4 QualityType into a FHIR R3 QualityType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2617915-06:00",
+  "description": "Mapping for MolecularSequence.quality.type/Sequence.quality.type from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MolecularSequenceQualityTypeSequenceQualityType4to3",
+      "display": "Id: msq.qu.type-seq.qu.type-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.quality.type\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Sequence#Sequence.quality.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/msq.qu.type-seq.qu.type-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/quality-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/quality-type|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/quality-type",
+      "target": "http://hl7.org/fhir/quality-type",
+      "element": [
+        {
+          "code": "snp",
+          "target": [
+            {
+              "code": "snp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "indel",
+          "target": [
+            {
+              "code": "indel",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

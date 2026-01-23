@@ -1,0 +1,57 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-QuestionnaireStatus-R3-PublicationStatus",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-QuestionnaireStatus-R3-PublicationStatus",
+  "version": "0.0.1",
+  "name": "R2-QuestionnaireStatus-R3-PublicationStatus",
+  "title": "Concept map to convert a FHIR R2 QuestionnaireStatus into a FHIR R3 PublicationStatus",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5112681-06:00",
+  "description": "Mapping for Questionnaire.status from R2 to R3",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "QuestionnaireStatus2to3",
+      "display": "Id: que.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Questionnaire#Questionnaire.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Questionnaire#Questionnaire.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/que.status-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/publication-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/questionnaire-status",
+      "target": "http://hl7.org/fhir/publication-status",
+      "element": [
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "published",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "retired",
+          "target": [
+            {
+              "code": "retired",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4464 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-SecurityLabels-R4-SecurityLabels",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-SecurityLabels-R4-SecurityLabels",
+  "version": "0.0.1",
+  "name": "R4B-SecurityLabels-R4-SecurityLabels",
+  "title": "Concept map to convert a FHIR R4B SecurityLabels into a FHIR R4 SecurityLabels",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6798611-06:00",
+  "description": "Mapping for DocumentReference.securityLabel from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DocumentReferenceSecurityLabelr4bto4",
+      "display": "Id: dcr.securityLabel-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/DocumentReference#DocumentReference.securityLabel\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.securityLabel",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.securityLabel-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "MetaSecurityr4bto4",
+      "display": "Id: meta.security-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Meta#Meta.security\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Meta#Meta.security",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/meta.security-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "ConsentProvisionSecurityLabelr4bto4",
+      "display": "Id: ppc.pr.securityLabel-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.provision.securityLabel\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.securityLabel",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.securityLabel-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "AuditEventEntitySecurityLabelr4bto4",
+      "display": "Id: sev.en.securityLabel-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.entity.securityLabel\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.entity.securityLabel",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.en.securityLabel-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/security-labels|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/security-labels|4.0.1",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "element": [
+        {
+          "code": "BIORCH",
+          "target": [
+            {
+              "code": "BIORCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BTG",
+          "target": [
+            {
+              "code": "BTG",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CAREMGT",
+          "target": [
+            {
+              "code": "CAREMGT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLINTRCH",
+          "target": [
+            {
+              "code": "CLINTRCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLINTRCHNPC",
+          "target": [
+            {
+              "code": "CLINTRCHNPC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLINTRCHPC",
+          "target": [
+            {
+              "code": "CLINTRCHPC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLINTRL",
+          "target": [
+            {
+              "code": "CLINTRL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLMATTCH",
+          "target": [
+            {
+              "code": "CLMATTCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COC",
+          "target": [
+            {
+              "code": "COC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COVAUTH",
+          "target": [
+            {
+              "code": "COVAUTH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COVERAGE",
+          "target": [
+            {
+              "code": "COVERAGE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DISASTER",
+          "target": [
+            {
+              "code": "DISASTER",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DONAT",
+          "target": [
+            {
+              "code": "DONAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DSRCH",
+          "target": [
+            {
+              "code": "DSRCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ELIGDTRM",
+          "target": [
+            {
+              "code": "ELIGDTRM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ELIGVER",
+          "target": [
+            {
+              "code": "ELIGVER",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ENROLLM",
+          "target": [
+            {
+              "code": "ENROLLM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ERTREAT",
+          "target": [
+            {
+              "code": "ERTREAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ETREAT",
+          "target": [
+            {
+              "code": "ETREAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FAMRQT",
+          "target": [
+            {
+              "code": "FAMRQT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FRAUD",
+          "target": [
+            {
+              "code": "FRAUD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GOV",
+          "target": [
+            {
+              "code": "GOV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HACCRED",
+          "target": [
+            {
+              "code": "HACCRED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HCOMPL",
+          "target": [
+            {
+              "code": "HCOMPL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HDECD",
+          "target": [
+            {
+              "code": "HDECD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HDIRECT",
+          "target": [
+            {
+              "code": "HDIRECT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HDM",
+          "target": [
+            {
+              "code": "HDM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HLEGAL",
+          "target": [
+            {
+              "code": "HLEGAL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HMARKT",
+          "target": [
+            {
+              "code": "HMARKT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HOPERAT",
+          "target": [
+            {
+              "code": "HOPERAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HOUTCOMS",
+          "target": [
+            {
+              "code": "HOUTCOMS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HPAYMT",
+          "target": [
+            {
+              "code": "HPAYMT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HPRGRP",
+          "target": [
+            {
+              "code": "HPRGRP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HQUALIMP",
+          "target": [
+            {
+              "code": "HQUALIMP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HRESCH",
+          "target": [
+            {
+              "code": "HRESCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HSYSADMIN",
+          "target": [
+            {
+              "code": "HSYSADMIN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HTEST",
+          "target": [
+            {
+              "code": "HTEST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "LABELING",
+          "target": [
+            {
+              "code": "LABELING",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MEMADMIN",
+          "target": [
+            {
+              "code": "MEMADMIN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "METAMGT",
+          "target": [
+            {
+              "code": "METAMGT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MILCDM",
+          "target": [
+            {
+              "code": "MILCDM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MILDCRG",
+          "target": [
+            {
+              "code": "MILDCRG",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PATADMIN",
+          "target": [
+            {
+              "code": "PATADMIN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PATRQT",
+          "target": [
+            {
+              "code": "PATRQT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PATSFTY",
+          "target": [
+            {
+              "code": "PATSFTY",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PERFMSR",
+          "target": [
+            {
+              "code": "PERFMSR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "POARCH",
+          "target": [
+            {
+              "code": "POARCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "POPHLTH",
+          "target": [
+            {
+              "code": "POPHLTH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRECLINTRCH",
+          "target": [
+            {
+              "code": "PRECLINTRCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PUBHLTH",
+          "target": [
+            {
+              "code": "PUBHLTH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PWATRNY",
+          "target": [
+            {
+              "code": "PWATRNY",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RECORDMGT",
+          "target": [
+            {
+              "code": "RECORDMGT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REMITADV",
+          "target": [
+            {
+              "code": "REMITADV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SUPNWK",
+          "target": [
+            {
+              "code": "SUPNWK",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SYSDEV",
+          "target": [
+            {
+              "code": "SYSDEV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "THREAT",
+          "target": [
+            {
+              "code": "THREAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TRAIN",
+          "target": [
+            {
+              "code": "TRAIN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TRANSRCH",
+          "target": [
+            {
+              "code": "TRANSRCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TREAT",
+          "target": [
+            {
+              "code": "TREAT",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+      "element": [
+        {
+          "code": "42CFRPart2",
+          "target": [
+            {
+              "code": "42CFRPart2",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CommonRule",
+          "target": [
+            {
+              "code": "CommonRule",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HIPAANOPP",
+          "target": [
+            {
+              "code": "HIPAANOPP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HIPAAPsyNotes",
+          "target": [
+            {
+              "code": "HIPAAPsyNotes",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HIPAASelfPay",
+          "target": [
+            {
+              "code": "HIPAASelfPay",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Title38Section7332",
+          "target": [
+            {
+              "code": "Title38Section7332",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Title38Part1",
+          "noMap": true
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "element": [
+        {
+          "code": "ABSTRED",
+          "target": [
+            {
+              "code": "ABSTRED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AGGRED",
+          "target": [
+            {
+              "code": "AGGRED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ANONYED",
+          "target": [
+            {
+              "code": "ANONYED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLINAST",
+          "target": [
+            {
+              "code": "CLINAST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLINRPT",
+          "target": [
+            {
+              "code": "CLINRPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CRYTOHASH",
+          "target": [
+            {
+              "code": "CRYTOHASH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DEVAST",
+          "target": [
+            {
+              "code": "DEVAST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DEVRPT",
+          "target": [
+            {
+              "code": "DEVRPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DIGSIG",
+          "target": [
+            {
+              "code": "DIGSIG",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HCPAST",
+          "target": [
+            {
+              "code": "HCPAST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HCPRPT",
+          "target": [
+            {
+              "code": "HCPRPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HRELIABLE",
+          "target": [
+            {
+              "code": "HRELIABLE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MAPPED",
+          "target": [
+            {
+              "code": "MAPPED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MASKED",
+          "target": [
+            {
+              "code": "MASKED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PACQAST",
+          "target": [
+            {
+              "code": "PACQAST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PACQRPT",
+          "target": [
+            {
+              "code": "PACQRPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PATAST",
+          "target": [
+            {
+              "code": "PATAST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PATRPT",
+          "target": [
+            {
+              "code": "PATRPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PAYAST",
+          "target": [
+            {
+              "code": "PAYAST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PAYRPT",
+          "target": [
+            {
+              "code": "PAYRPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PROAST",
+          "target": [
+            {
+              "code": "PROAST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRORPT",
+          "target": [
+            {
+              "code": "PRORPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PSEUDED",
+          "target": [
+            {
+              "code": "PSEUDED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REDACTED",
+          "target": [
+            {
+              "code": "REDACTED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RELIABLE",
+          "target": [
+            {
+              "code": "RELIABLE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SDMAST",
+          "target": [
+            {
+              "code": "SDMAST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SDMRPT",
+          "target": [
+            {
+              "code": "SDMRPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SUBSETTED",
+          "target": [
+            {
+              "code": "SUBSETTED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SYNTAC",
+          "target": [
+            {
+              "code": "SYNTAC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TRSLT",
+          "target": [
+            {
+              "code": "TRSLT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "UNCERTREL",
+          "target": [
+            {
+              "code": "UNCERTREL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "UNRELIABLE",
+          "target": [
+            {
+              "code": "UNRELIABLE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VERSIONED",
+          "target": [
+            {
+              "code": "VERSIONED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TRSTCERTOBV",
+          "noMap": true
+        },
+        {
+          "code": "LINEARSCR",
+          "noMap": true
+        },
+        {
+          "code": "PRO-PM",
+          "noMap": true
+        },
+        {
+          "code": "WEIGHTSCR",
+          "noMap": true
+        },
+        {
+          "code": "UNEMPL",
+          "noMap": true
+        },
+        {
+          "code": "FLY",
+          "noMap": true
+        },
+        {
+          "code": "MRGCERT",
+          "noMap": true
+        },
+        {
+          "code": "SS",
+          "noMap": true
+        },
+        {
+          "code": "MEMBER",
+          "noMap": true
+        },
+        {
+          "code": "CCOC",
+          "noMap": true
+        },
+        {
+          "code": "RELDEP",
+          "noMap": true
+        },
+        {
+          "code": "CRITL",
+          "noMap": true
+        },
+        {
+          "code": "RSWN",
+          "noMap": true
+        },
+        {
+          "code": "HEALTH",
+          "noMap": true
+        },
+        {
+          "code": "PRN",
+          "noMap": true
+        },
+        {
+          "code": "LOACM2",
+          "noMap": true
+        },
+        {
+          "code": "ALLORNONESCR",
+          "noMap": true
+        },
+        {
+          "code": "TRSTACCRDOBV",
+          "noMap": true
+        },
+        {
+          "code": "NS",
+          "noMap": true
+        },
+        {
+          "code": "DISABL",
+          "noMap": true
+        },
+        {
+          "code": "PROB",
+          "noMap": true
+        },
+        {
+          "code": "IPP",
+          "noMap": true
+        },
+        {
+          "code": "ABUSE",
+          "noMap": true
+        },
+        {
+          "code": "LOANR1",
+          "noMap": true
+        },
+        {
+          "code": "LOACM3",
+          "noMap": true
+        },
+        {
+          "code": "OPPORSCR",
+          "noMap": true
+        },
+        {
+          "code": "VLS",
+          "noMap": true
+        },
+        {
+          "code": "RSWON",
+          "noMap": true
+        },
+        {
+          "code": "STN",
+          "noMap": true
+        },
+        {
+          "code": "Homozygote",
+          "noMap": true
+        },
+        {
+          "code": "UTIL",
+          "noMap": true
+        },
+        {
+          "code": "SPSDEP",
+          "noMap": true
+        },
+        {
+          "code": "ACT",
+          "noMap": true
+        },
+        {
+          "code": "EXPERIENCE",
+          "noMap": true
+        },
+        {
+          "code": "ELSTAT",
+          "noMap": true
+        },
+        {
+          "code": "LOAID1",
+          "noMap": true
+        },
+        {
+          "code": "TRANS",
+          "noMap": true
+        },
+        {
+          "code": "PASSPORT",
+          "noMap": true
+        },
+        {
+          "code": "ES",
+          "noMap": true
+        },
+        {
+          "code": "CHD",
+          "noMap": true
+        },
+        {
+          "code": "LOARA1",
+          "noMap": true
+        },
+        {
+          "code": "G",
+          "noMap": true
+        },
+        {
+          "code": "DEP",
+          "noMap": true
+        },
+        {
+          "code": "Employed",
+          "noMap": true
+        },
+        {
+          "code": "RLD",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN1",
+          "noMap": true
+        },
+        {
+          "code": "URELDEP",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS4",
+          "noMap": true
+        },
+        {
+          "code": "LEGAL",
+          "noMap": true
+        },
+        {
+          "code": "LOARA4",
+          "noMap": true
+        },
+        {
+          "code": "DISABLE",
+          "noMap": true
+        },
+        {
+          "code": "CONTVAR",
+          "noMap": true
+        },
+        {
+          "code": "SFWL",
+          "noMap": true
+        },
+        {
+          "code": "BTHCERT",
+          "noMap": true
+        },
+        {
+          "code": "MSRPOPL",
+          "noMap": true
+        },
+        {
+          "code": "DEPSPS",
+          "noMap": true
+        },
+        {
+          "code": "EFFICIENCY",
+          "noMap": true
+        },
+        {
+          "code": "LIVEXP",
+          "noMap": true
+        },
+        {
+          "code": "UNREL",
+          "noMap": true
+        },
+        {
+          "code": "HLSTAT",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS3",
+          "noMap": true
+        },
+        {
+          "code": "LOATK1",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS1",
+          "noMap": true
+        },
+        {
+          "code": "DEPYGCHD",
+          "noMap": true
+        },
+        {
+          "code": "IND",
+          "noMap": true
+        },
+        {
+          "code": "LOACM1",
+          "noMap": true
+        },
+        {
+          "code": "NotInLaborForce",
+          "noMap": true
+        },
+        {
+          "code": "INPNDINV",
+          "noMap": true
+        },
+        {
+          "code": "DecrIsImp",
+          "noMap": true
+        },
+        {
+          "code": "LE",
+          "noMap": true
+        },
+        {
+          "code": "RATIO",
+          "noMap": true
+        },
+        {
+          "code": "FOSTER",
+          "noMap": true
+        },
+        {
+          "code": "DENEX",
+          "noMap": true
+        },
+        {
+          "code": "STRUCTURE",
+          "noMap": true
+        },
+        {
+          "code": "CRITU",
+          "noMap": true
+        },
+        {
+          "code": "TRD",
+          "noMap": true
+        },
+        {
+          "code": "A2",
+          "noMap": true
+        },
+        {
+          "code": "FAM",
+          "noMap": true
+        },
+        {
+          "code": "CLOTH",
+          "noMap": true
+        },
+        {
+          "code": "A4",
+          "noMap": true
+        },
+        {
+          "code": "SUP",
+          "noMap": true
+        },
+        {
+          "code": "INPNDUPD",
+          "noMap": true
+        },
+        {
+          "code": "VS",
+          "noMap": true
+        },
+        {
+          "code": "PROPOR",
+          "noMap": true
+        },
+        {
+          "code": "IncrIsImp",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP3",
+          "noMap": true
+        },
+        {
+          "code": "Unemployed",
+          "noMap": true
+        },
+        {
+          "code": "SIT",
+          "noMap": true
+        },
+        {
+          "code": "RESOURCE",
+          "noMap": true
+        },
+        {
+          "code": "SPS",
+          "noMap": true
+        },
+        {
+          "code": "PROCESS",
+          "noMap": true
+        },
+        {
+          "code": "SUNDRY",
+          "noMap": true
+        },
+        {
+          "code": "MI",
+          "noMap": true
+        },
+        {
+          "code": "CHILD",
+          "noMap": true
+        },
+        {
+          "code": "RETACCT",
+          "noMap": true
+        },
+        {
+          "code": "NUMEX",
+          "noMap": true
+        },
+        {
+          "code": "ILGIM",
+          "noMap": true
+        },
+        {
+          "code": "REFUG",
+          "noMap": true
+        },
+        {
+          "code": "INACT",
+          "noMap": true
+        },
+        {
+          "code": "LOAID3",
+          "noMap": true
+        },
+        {
+          "code": "DP",
+          "noMap": true
+        },
+        {
+          "code": "ADC",
+          "noMap": true
+        },
+        {
+          "code": "EMS",
+          "noMap": true
+        },
+        {
+          "code": "TRSTMECOBV",
+          "noMap": true
+        },
+        {
+          "code": "NUMER",
+          "noMap": true
+        },
+        {
+          "code": "DENEXCEP",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN4",
+          "noMap": true
+        },
+        {
+          "code": "IP",
+          "noMap": true
+        },
+        {
+          "code": "NELG",
+          "noMap": true
+        },
+        {
+          "code": "STUDENRL",
+          "noMap": true
+        },
+        {
+          "code": "LOATK3",
+          "noMap": true
+        },
+        {
+          "code": "INTERM-OM",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN3",
+          "noMap": true
+        },
+        {
+          "code": "DENOM",
+          "noMap": true
+        },
+        {
+          "code": "ASSET",
+          "noMap": true
+        },
+        {
+          "code": "INCOME",
+          "noMap": true
+        },
+        {
+          "code": "DRLIC",
+          "noMap": true
+        },
+        {
+          "code": "TAX",
+          "noMap": true
+        },
+        {
+          "code": "IVDRG",
+          "noMap": true
+        },
+        {
+          "code": "LOACM4",
+          "noMap": true
+        },
+        {
+          "code": "DS",
+          "noMap": true
+        },
+        {
+          "code": "LOAID2",
+          "noMap": true
+        },
+        {
+          "code": "RENT",
+          "noMap": true
+        },
+        {
+          "code": "CRITH",
+          "noMap": true
+        },
+        {
+          "code": "ACTPEND",
+          "noMap": true
+        },
+        {
+          "code": "LOANR3",
+          "noMap": true
+        },
+        {
+          "code": "ME",
+          "noMap": true
+        },
+        {
+          "code": "SUPPLE",
+          "noMap": true
+        },
+        {
+          "code": "TRSTAGREOBV",
+          "noMap": true
+        },
+        {
+          "code": "LOARA3",
+          "noMap": true
+        },
+        {
+          "code": "FOOD",
+          "noMap": true
+        },
+        {
+          "code": "LOANR2",
+          "noMap": true
+        },
+        {
+          "code": "TRUST",
+          "noMap": true
+        },
+        {
+          "code": "A3",
+          "noMap": true
+        },
+        {
+          "code": "LOAID4",
+          "noMap": true
+        },
+        {
+          "code": "RELAT",
+          "noMap": true
+        },
+        {
+          "code": "ECH",
+          "noMap": true
+        },
+        {
+          "code": "DEPCHD",
+          "noMap": true
+        },
+        {
+          "code": "H",
+          "noMap": true
+        },
+        {
+          "code": "PROP",
+          "noMap": true
+        },
+        {
+          "code": "MORTG",
+          "noMap": true
+        },
+        {
+          "code": "LLD",
+          "noMap": true
+        },
+        {
+          "code": "LOATK4",
+          "noMap": true
+        },
+        {
+          "code": "S",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS2",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP4",
+          "noMap": true
+        },
+        {
+          "code": "DRUG",
+          "noMap": true
+        },
+        {
+          "code": "LIVDEP",
+          "noMap": true
+        },
+        {
+          "code": "ALONE",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP1",
+          "noMap": true
+        },
+        {
+          "code": "A0",
+          "noMap": true
+        },
+        {
+          "code": "RETIRE",
+          "noMap": true
+        },
+        {
+          "code": "A1",
+          "noMap": true
+        },
+        {
+          "code": "PGNT",
+          "noMap": true
+        },
+        {
+          "code": "COMPOSITE",
+          "noMap": true
+        },
+        {
+          "code": "OUTCOME",
+          "noMap": true
+        },
+        {
+          "code": "LIVSIT",
+          "noMap": true
+        },
+        {
+          "code": "APPROPRIATE",
+          "noMap": true
+        },
+        {
+          "code": "SPOUSAL",
+          "noMap": true
+        },
+        {
+          "code": "RTRD",
+          "noMap": true
+        },
+        {
+          "code": "ELG",
+          "noMap": true
+        },
+        {
+          "code": "LOARA2",
+          "noMap": true
+        },
+        {
+          "code": "COHORT",
+          "noMap": true
+        },
+        {
+          "code": "ADOPT",
+          "noMap": true
+        },
+        {
+          "code": "MIL",
+          "noMap": true
+        },
+        {
+          "code": "HMLESS",
+          "noMap": true
+        },
+        {
+          "code": "SOECSTAT",
+          "noMap": true
+        },
+        {
+          "code": "INVEST",
+          "noMap": true
+        },
+        {
+          "code": "LOATK2",
+          "noMap": true
+        },
+        {
+          "code": "INCAR",
+          "noMap": true
+        },
+        {
+          "code": "LOANR4",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN2",
+          "noMap": true
+        },
+        {
+          "code": "ANNUITY",
+          "noMap": true
+        },
+        {
+          "code": "PAY",
+          "noMap": true
+        },
+        {
+          "code": "HOUSE",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP2",
+          "noMap": true
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "element": [
+        {
+          "code": "ACCESSCONSCHEME",
+          "target": [
+            {
+              "code": "ACCESSCONSCHEME",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ACOCOMPT",
+          "target": [
+            {
+              "code": "ACOCOMPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ADOL",
+          "target": [
+            {
+              "code": "ADOL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ANONY",
+          "target": [
+            {
+              "code": "ANONY",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AOD",
+          "target": [
+            {
+              "code": "AOD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AUDIT",
+          "target": [
+            {
+              "code": "AUDIT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AUDTR",
+          "target": [
+            {
+              "code": "AUDTR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AUTHPOL",
+          "target": [
+            {
+              "code": "AUTHPOL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "B",
+          "target": [
+            {
+              "code": "B",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BH",
+          "target": [
+            {
+              "code": "BH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CDSSCOMPT",
+          "noMap": true
+        },
+        {
+          "code": "CEL",
+          "target": [
+            {
+              "code": "CEL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COGN",
+          "target": [
+            {
+              "code": "COGN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COMPT",
+          "target": [
+            {
+              "code": "COMPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CONTROLLED",
+          "noMap": true
+        },
+        {
+          "code": "COPYMark",
+          "noMap": true
+        },
+        {
+          "code": "CPLYCC",
+          "target": [
+            {
+              "code": "CPLYCC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CPLYCD",
+          "target": [
+            {
+              "code": "CPLYCD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CPLYCUI",
+          "noMap": true
+        },
+        {
+          "code": "CPLYJPP",
+          "target": [
+            {
+              "code": "CPLYJPP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CPLYJSP",
+          "noMap": true
+        },
+        {
+          "code": "CPLYOPP",
+          "target": [
+            {
+              "code": "CPLYOPP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CPLYOSP",
+          "target": [
+            {
+              "code": "CPLYOSP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CPLYPOL",
+          "target": [
+            {
+              "code": "CPLYPOL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CTCOMPT",
+          "target": [
+            {
+              "code": "CTCOMPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CUI",
+          "noMap": true
+        },
+        {
+          "code": "CUIHLTH",
+          "noMap": true
+        },
+        {
+          "code": "CUIHLTHP",
+          "noMap": true
+        },
+        {
+          "code": "CUIMark",
+          "noMap": true
+        },
+        {
+          "code": "CUIP",
+          "noMap": true
+        },
+        {
+          "code": "CUIPRVCY",
+          "noMap": true
+        },
+        {
+          "code": "CUIPRVCYP",
+          "noMap": true
+        },
+        {
+          "code": "CUISP-HLTH",
+          "noMap": true
+        },
+        {
+          "code": "CUISP-HLTHP",
+          "noMap": true
+        },
+        {
+          "code": "CUISP-PRVCY",
+          "noMap": true
+        },
+        {
+          "code": "CUISP-PRVCYP",
+          "noMap": true
+        },
+        {
+          "code": "ConfidentialMark",
+          "noMap": true
+        },
+        {
+          "code": "DECLASSIFYLABEL",
+          "target": [
+            {
+              "code": "DECLASSIFYLABEL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DEID",
+          "target": [
+            {
+              "code": "DEID",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DELAU",
+          "target": [
+            {
+              "code": "DELAU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DELEPOL",
+          "target": [
+            {
+              "code": "DELEPOL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DEMO",
+          "target": [
+            {
+              "code": "DEMO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DIA",
+          "target": [
+            {
+              "code": "DIA",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DOB",
+          "target": [
+            {
+              "code": "DOB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DOWNGRDLABEL",
+          "target": [
+            {
+              "code": "DOWNGRDLABEL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DRAFTMark",
+          "noMap": true
+        },
+        {
+          "code": "DRGIS",
+          "target": [
+            {
+              "code": "DRGIS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DRIVLABEL",
+          "target": [
+            {
+              "code": "DRIVLABEL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DVD",
+          "target": [
+            {
+              "code": "DVD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DeliverToAddresseeOnlyMark",
+          "noMap": true
+        },
+        {
+          "code": "EMOTDIS",
+          "target": [
+            {
+              "code": "EMOTDIS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EMP",
+          "target": [
+            {
+              "code": "EMP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EMPL",
+          "target": [
+            {
+              "code": "EMPL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ENCRYPT",
+          "target": [
+            {
+              "code": "ENCRYPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ENCRYPTR",
+          "target": [
+            {
+              "code": "ENCRYPTR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ENCRYPTT",
+          "target": [
+            {
+              "code": "ENCRYPTT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ENCRYPTU",
+          "target": [
+            {
+              "code": "ENCRYPTU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ETH",
+          "target": [
+            {
+              "code": "ETH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ETHUD",
+          "target": [
+            {
+              "code": "ETHUD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FMCOMPT",
+          "target": [
+            {
+              "code": "FMCOMPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GDIS",
+          "target": [
+            {
+              "code": "GDIS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GENDER",
+          "target": [
+            {
+              "code": "GENDER",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HIV",
+          "target": [
+            {
+              "code": "HIV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HRCOMPT",
+          "target": [
+            {
+              "code": "HRCOMPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HUAPRV",
+          "target": [
+            {
+              "code": "HUAPRV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "IDS",
+          "noMap": true
+        },
+        {
+          "code": "LABEL",
+          "target": [
+            {
+              "code": "LABEL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "LIVARG",
+          "target": [
+            {
+              "code": "LIVARG",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "LOCIS",
+          "target": [
+            {
+              "code": "LOCIS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "LRCOMPT",
+          "target": [
+            {
+              "code": "LRCOMPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MARST",
+          "target": [
+            {
+              "code": "MARST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MASK",
+          "target": [
+            {
+              "code": "MASK",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MH",
+          "target": [
+            {
+              "code": "MH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MINEC",
+          "target": [
+            {
+              "code": "MINEC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MST",
+          "target": [
+            {
+              "code": "MST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NOAUTH",
+          "target": [
+            {
+              "code": "NOAUTH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NOCOLLECT",
+          "target": [
+            {
+              "code": "NOCOLLECT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NODSCLCD",
+          "target": [
+            {
+              "code": "NODSCLCD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NODSCLCDS",
+          "target": [
+            {
+              "code": "NODSCLCDS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NOINTEGRATE",
+          "target": [
+            {
+              "code": "NOINTEGRATE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NOLIST",
+          "target": [
+            {
+              "code": "NOLIST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NOMOU",
+          "target": [
+            {
+              "code": "NOMOU",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NOORGPOL",
+          "target": [
+            {
+              "code": "NOORGPOL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NOPAT",
+          "target": [
+            {
+              "code": "NOPAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NOPERSISTP",
+          "target": [
+            {
+              "code": "NOPERSISTP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NORDSCLCD",
+          "target": [
+            {
+              "code": "NORDSCLCD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NORDSCLCDS",
+          "target": [
+            {
+              "code": "NORDSCLCDS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NORDSCLW",
+          "target": [
+            {
+              "code": "NORDSCLW",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NORDSLCD",
+          "noMap": true
+        },
+        {
+          "code": "NORELINK",
+          "target": [
+            {
+              "code": "NORELINK",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NOREUSE",
+          "target": [
+            {
+              "code": "NOREUSE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NOVIP",
+          "target": [
+            {
+              "code": "NOVIP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OPIOIDUD",
+          "target": [
+            {
+              "code": "OPIOIDUD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ORCON",
+          "target": [
+            {
+              "code": "ORCON",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ObligationPolicy",
+          "target": [
+            {
+              "code": "ObligationPolicy",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PACOMPT",
+          "target": [
+            {
+              "code": "PACOMPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PATLOC",
+          "noMap": true
+        },
+        {
+          "code": "PDS",
+          "target": [
+            {
+              "code": "PDS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PERSISTLABEL",
+          "target": [
+            {
+              "code": "PERSISTLABEL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PHY",
+          "target": [
+            {
+              "code": "PHY",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PREGNANT",
+          "noMap": true
+        },
+        {
+          "code": "PRIVMARK",
+          "target": [
+            {
+              "code": "PRIVMARK",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRS",
+          "target": [
+            {
+              "code": "PRS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PSEUD",
+          "target": [
+            {
+              "code": "PSEUD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PSY",
+          "target": [
+            {
+              "code": "PSY",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PSYTHPN",
+          "target": [
+            {
+              "code": "PSYTHPN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RACE",
+          "target": [
+            {
+              "code": "RACE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REDACT",
+          "target": [
+            {
+              "code": "REDACT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REL",
+          "target": [
+            {
+              "code": "REL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RESCOMPT",
+          "target": [
+            {
+              "code": "RESCOMPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RMGTCOMPT",
+          "target": [
+            {
+              "code": "RMGTCOMPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RedisclosureProhibitionMark",
+          "noMap": true
+        },
+        {
+          "code": "RefrainPolicy",
+          "target": [
+            {
+              "code": "RefrainPolicy",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RestrictedConfidentialityMark",
+          "noMap": true
+        },
+        {
+          "code": "SCA",
+          "target": [
+            {
+              "code": "SCA",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SDV",
+          "target": [
+            {
+              "code": "SDV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SEX",
+          "target": [
+            {
+              "code": "SEX",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SICKLE",
+          "target": [
+            {
+              "code": "SICKLE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPI",
+          "target": [
+            {
+              "code": "SPI",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SSP",
+          "target": [
+            {
+              "code": "SSP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "STD",
+          "target": [
+            {
+              "code": "STD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SUD",
+          "target": [
+            {
+              "code": "SUD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SecurityPolicy",
+          "target": [
+            {
+              "code": "SecurityPolicy",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TBOO",
+          "target": [
+            {
+              "code": "TBOO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "UPGRDLABEL",
+          "target": [
+            {
+              "code": "UPGRDLABEL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "UUI",
+          "noMap": true
+        },
+        {
+          "code": "VIO",
+          "target": [
+            {
+              "code": "VIO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VIP",
+          "noMap": true
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+      "element": [
+        {
+          "code": "L",
+          "target": [
+            {
+              "code": "L",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "target": [
+            {
+              "code": "M",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "N",
+          "target": [
+            {
+              "code": "N",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R",
+          "target": [
+            {
+              "code": "R",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "target": [
+            {
+              "code": "U",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "V",
+          "target": [
+            {
+              "code": "V",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+      "element": [
+        {
+          "code": "L",
+          "target": [
+            {
+              "code": "L",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "N",
+          "target": [
+            {
+              "code": "N",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "target": [
+            {
+              "code": "M",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TRSTCERTOBV",
+          "noMap": true
+        },
+        {
+          "code": "LINEARSCR",
+          "noMap": true
+        },
+        {
+          "code": "AGGRED",
+          "noMap": true
+        },
+        {
+          "code": "WEIGHTSCR",
+          "noMap": true
+        },
+        {
+          "code": "CLINRPT",
+          "noMap": true
+        },
+        {
+          "code": "MRGCERT",
+          "noMap": true
+        },
+        {
+          "code": "SS",
+          "noMap": true
+        },
+        {
+          "code": "MEMBER",
+          "noMap": true
+        },
+        {
+          "code": "PATAST",
+          "noMap": true
+        },
+        {
+          "code": "CRITL",
+          "noMap": true
+        },
+        {
+          "code": "RSWN",
+          "noMap": true
+        },
+        {
+          "code": "PRN",
+          "noMap": true
+        },
+        {
+          "code": "LOACM2",
+          "noMap": true
+        },
+        {
+          "code": "ALLORNONESCR",
+          "noMap": true
+        },
+        {
+          "code": "NS",
+          "noMap": true
+        },
+        {
+          "code": "DISABL",
+          "noMap": true
+        },
+        {
+          "code": "PROB",
+          "noMap": true
+        },
+        {
+          "code": "IPP",
+          "noMap": true
+        },
+        {
+          "code": "MAPPED",
+          "noMap": true
+        },
+        {
+          "code": "ABUSE",
+          "noMap": true
+        },
+        {
+          "code": "LOANR1",
+          "noMap": true
+        },
+        {
+          "code": "SUBSETTED",
+          "noMap": true
+        },
+        {
+          "code": "OPPORSCR",
+          "noMap": true
+        },
+        {
+          "code": "VLS",
+          "noMap": true
+        },
+        {
+          "code": "RSWON",
+          "noMap": true
+        },
+        {
+          "code": "STN",
+          "noMap": true
+        },
+        {
+          "code": "PATRPT",
+          "noMap": true
+        },
+        {
+          "code": "SPSDEP",
+          "noMap": true
+        },
+        {
+          "code": "EXPERIENCE",
+          "noMap": true
+        },
+        {
+          "code": "SYNTAC",
+          "noMap": true
+        },
+        {
+          "code": "DIGSIG",
+          "noMap": true
+        },
+        {
+          "code": "CHD",
+          "noMap": true
+        },
+        {
+          "code": "DEVRPT",
+          "noMap": true
+        },
+        {
+          "code": "G",
+          "noMap": true
+        },
+        {
+          "code": "DEP",
+          "noMap": true
+        },
+        {
+          "code": "Employed",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN1",
+          "noMap": true
+        },
+        {
+          "code": "RELIABLE",
+          "noMap": true
+        },
+        {
+          "code": "CLINAST",
+          "noMap": true
+        },
+        {
+          "code": "DISABLE",
+          "noMap": true
+        },
+        {
+          "code": "TRSLT",
+          "noMap": true
+        },
+        {
+          "code": "MSRPOPL",
+          "noMap": true
+        },
+        {
+          "code": "DEPSPS",
+          "noMap": true
+        },
+        {
+          "code": "EFFICIENCY",
+          "noMap": true
+        },
+        {
+          "code": "UNREL",
+          "noMap": true
+        },
+        {
+          "code": "UNCERTREL",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS3",
+          "noMap": true
+        },
+        {
+          "code": "REDACTED",
+          "noMap": true
+        },
+        {
+          "code": "DEPYGCHD",
+          "noMap": true
+        },
+        {
+          "code": "LOACM1",
+          "noMap": true
+        },
+        {
+          "code": "INPNDINV",
+          "noMap": true
+        },
+        {
+          "code": "LE",
+          "noMap": true
+        },
+        {
+          "code": "PROAST",
+          "noMap": true
+        },
+        {
+          "code": "DENEX",
+          "noMap": true
+        },
+        {
+          "code": "TRD",
+          "noMap": true
+        },
+        {
+          "code": "A2",
+          "noMap": true
+        },
+        {
+          "code": "CLOTH",
+          "noMap": true
+        },
+        {
+          "code": "SUP",
+          "noMap": true
+        },
+        {
+          "code": "INPNDUPD",
+          "noMap": true
+        },
+        {
+          "code": "VS",
+          "noMap": true
+        },
+        {
+          "code": "IncrIsImp",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP3",
+          "noMap": true
+        },
+        {
+          "code": "Unemployed",
+          "noMap": true
+        },
+        {
+          "code": "SUNDRY",
+          "noMap": true
+        },
+        {
+          "code": "CRYTOHASH",
+          "noMap": true
+        },
+        {
+          "code": "NUMEX",
+          "noMap": true
+        },
+        {
+          "code": "INACT",
+          "noMap": true
+        },
+        {
+          "code": "LOAID3",
+          "noMap": true
+        },
+        {
+          "code": "ADC",
+          "noMap": true
+        },
+        {
+          "code": "PSEUDED",
+          "noMap": true
+        },
+        {
+          "code": "EMS",
+          "noMap": true
+        },
+        {
+          "code": "TRSTMECOBV",
+          "noMap": true
+        },
+        {
+          "code": "NUMER",
+          "noMap": true
+        },
+        {
+          "code": "PACQRPT",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN4",
+          "noMap": true
+        },
+        {
+          "code": "IP",
+          "noMap": true
+        },
+        {
+          "code": "NELG",
+          "noMap": true
+        },
+        {
+          "code": "PRORPT",
+          "noMap": true
+        },
+        {
+          "code": "INCOME",
+          "noMap": true
+        },
+        {
+          "code": "DRLIC",
+          "noMap": true
+        },
+        {
+          "code": "TAX",
+          "noMap": true
+        },
+        {
+          "code": "LOACM4",
+          "noMap": true
+        },
+        {
+          "code": "HRELIABLE",
+          "noMap": true
+        },
+        {
+          "code": "UNRELIABLE",
+          "noMap": true
+        },
+        {
+          "code": "CRITH",
+          "noMap": true
+        },
+        {
+          "code": "ME",
+          "noMap": true
+        },
+        {
+          "code": "LOARA3",
+          "noMap": true
+        },
+        {
+          "code": "SDMRPT",
+          "noMap": true
+        },
+        {
+          "code": "HCPRPT",
+          "noMap": true
+        },
+        {
+          "code": "A3",
+          "noMap": true
+        },
+        {
+          "code": "ANONYED",
+          "noMap": true
+        },
+        {
+          "code": "LOAID4",
+          "noMap": true
+        },
+        {
+          "code": "ECH",
+          "noMap": true
+        },
+        {
+          "code": "DEPCHD",
+          "noMap": true
+        },
+        {
+          "code": "H",
+          "noMap": true
+        },
+        {
+          "code": "S",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS2",
+          "noMap": true
+        },
+        {
+          "code": "SDMAST",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP4",
+          "noMap": true
+        },
+        {
+          "code": "ELG",
+          "noMap": true
+        },
+        {
+          "code": "LOARA2",
+          "noMap": true
+        },
+        {
+          "code": "ADOPT",
+          "noMap": true
+        },
+        {
+          "code": "HMLESS",
+          "noMap": true
+        },
+        {
+          "code": "SOECSTAT",
+          "noMap": true
+        },
+        {
+          "code": "INVEST",
+          "noMap": true
+        },
+        {
+          "code": "INCAR",
+          "noMap": true
+        },
+        {
+          "code": "LOANR4",
+          "noMap": true
+        },
+        {
+          "code": "PRO-PM",
+          "noMap": true
+        },
+        {
+          "code": "UNEMPL",
+          "noMap": true
+        },
+        {
+          "code": "FLY",
+          "noMap": true
+        },
+        {
+          "code": "PAYRPT",
+          "noMap": true
+        },
+        {
+          "code": "CCOC",
+          "noMap": true
+        },
+        {
+          "code": "RELDEP",
+          "noMap": true
+        },
+        {
+          "code": "HEALTH",
+          "noMap": true
+        },
+        {
+          "code": "TRSTACCRDOBV",
+          "noMap": true
+        },
+        {
+          "code": "LOACM3",
+          "noMap": true
+        },
+        {
+          "code": "Homozygote",
+          "noMap": true
+        },
+        {
+          "code": "UTIL",
+          "noMap": true
+        },
+        {
+          "code": "ACT",
+          "noMap": true
+        },
+        {
+          "code": "ELSTAT",
+          "noMap": true
+        },
+        {
+          "code": "LOAID1",
+          "noMap": true
+        },
+        {
+          "code": "TRANS",
+          "noMap": true
+        },
+        {
+          "code": "PASSPORT",
+          "noMap": true
+        },
+        {
+          "code": "ES",
+          "noMap": true
+        },
+        {
+          "code": "LOARA1",
+          "noMap": true
+        },
+        {
+          "code": "RLD",
+          "noMap": true
+        },
+        {
+          "code": "URELDEP",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS4",
+          "noMap": true
+        },
+        {
+          "code": "LEGAL",
+          "noMap": true
+        },
+        {
+          "code": "LOARA4",
+          "noMap": true
+        },
+        {
+          "code": "CONTVAR",
+          "noMap": true
+        },
+        {
+          "code": "SFWL",
+          "noMap": true
+        },
+        {
+          "code": "PACQAST",
+          "noMap": true
+        },
+        {
+          "code": "BTHCERT",
+          "noMap": true
+        },
+        {
+          "code": "LIVEXP",
+          "noMap": true
+        },
+        {
+          "code": "HLSTAT",
+          "noMap": true
+        },
+        {
+          "code": "LOATK1",
+          "noMap": true
+        },
+        {
+          "code": "ABSTRED",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS1",
+          "noMap": true
+        },
+        {
+          "code": "IND",
+          "noMap": true
+        },
+        {
+          "code": "NotInLaborForce",
+          "noMap": true
+        },
+        {
+          "code": "DecrIsImp",
+          "noMap": true
+        },
+        {
+          "code": "RATIO",
+          "noMap": true
+        },
+        {
+          "code": "FOSTER",
+          "noMap": true
+        },
+        {
+          "code": "STRUCTURE",
+          "noMap": true
+        },
+        {
+          "code": "CRITU",
+          "noMap": true
+        },
+        {
+          "code": "FAM",
+          "noMap": true
+        },
+        {
+          "code": "A4",
+          "noMap": true
+        },
+        {
+          "code": "PROPOR",
+          "noMap": true
+        },
+        {
+          "code": "SIT",
+          "noMap": true
+        },
+        {
+          "code": "RESOURCE",
+          "noMap": true
+        },
+        {
+          "code": "SPS",
+          "noMap": true
+        },
+        {
+          "code": "DEVAST",
+          "noMap": true
+        },
+        {
+          "code": "PROCESS",
+          "noMap": true
+        },
+        {
+          "code": "MI",
+          "noMap": true
+        },
+        {
+          "code": "CHILD",
+          "noMap": true
+        },
+        {
+          "code": "RETACCT",
+          "noMap": true
+        },
+        {
+          "code": "ILGIM",
+          "noMap": true
+        },
+        {
+          "code": "REFUG",
+          "noMap": true
+        },
+        {
+          "code": "DP",
+          "noMap": true
+        },
+        {
+          "code": "DENEXCEP",
+          "noMap": true
+        },
+        {
+          "code": "STUDENRL",
+          "noMap": true
+        },
+        {
+          "code": "LOATK3",
+          "noMap": true
+        },
+        {
+          "code": "INTERM-OM",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN3",
+          "noMap": true
+        },
+        {
+          "code": "DENOM",
+          "noMap": true
+        },
+        {
+          "code": "ASSET",
+          "noMap": true
+        },
+        {
+          "code": "IVDRG",
+          "noMap": true
+        },
+        {
+          "code": "DS",
+          "noMap": true
+        },
+        {
+          "code": "LOAID2",
+          "noMap": true
+        },
+        {
+          "code": "RENT",
+          "noMap": true
+        },
+        {
+          "code": "ACTPEND",
+          "noMap": true
+        },
+        {
+          "code": "LOANR3",
+          "noMap": true
+        },
+        {
+          "code": "MASKED",
+          "noMap": true
+        },
+        {
+          "code": "SUPPLE",
+          "noMap": true
+        },
+        {
+          "code": "HCPAST",
+          "noMap": true
+        },
+        {
+          "code": "TRSTAGREOBV",
+          "noMap": true
+        },
+        {
+          "code": "FOOD",
+          "noMap": true
+        },
+        {
+          "code": "LOANR2",
+          "noMap": true
+        },
+        {
+          "code": "TRUST",
+          "noMap": true
+        },
+        {
+          "code": "RELAT",
+          "noMap": true
+        },
+        {
+          "code": "PROP",
+          "noMap": true
+        },
+        {
+          "code": "MORTG",
+          "noMap": true
+        },
+        {
+          "code": "LLD",
+          "noMap": true
+        },
+        {
+          "code": "LOATK4",
+          "noMap": true
+        },
+        {
+          "code": "DRUG",
+          "noMap": true
+        },
+        {
+          "code": "LIVDEP",
+          "noMap": true
+        },
+        {
+          "code": "ALONE",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP1",
+          "noMap": true
+        },
+        {
+          "code": "A0",
+          "noMap": true
+        },
+        {
+          "code": "RETIRE",
+          "noMap": true
+        },
+        {
+          "code": "A1",
+          "noMap": true
+        },
+        {
+          "code": "PGNT",
+          "noMap": true
+        },
+        {
+          "code": "COMPOSITE",
+          "noMap": true
+        },
+        {
+          "code": "OUTCOME",
+          "noMap": true
+        },
+        {
+          "code": "VERSIONED",
+          "noMap": true
+        },
+        {
+          "code": "LIVSIT",
+          "noMap": true
+        },
+        {
+          "code": "APPROPRIATE",
+          "noMap": true
+        },
+        {
+          "code": "SPOUSAL",
+          "noMap": true
+        },
+        {
+          "code": "RTRD",
+          "noMap": true
+        },
+        {
+          "code": "COHORT",
+          "noMap": true
+        },
+        {
+          "code": "MIL",
+          "noMap": true
+        },
+        {
+          "code": "LOATK2",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN2",
+          "noMap": true
+        },
+        {
+          "code": "ANNUITY",
+          "noMap": true
+        },
+        {
+          "code": "PAY",
+          "noMap": true
+        },
+        {
+          "code": "HOUSE",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP2",
+          "noMap": true
+        },
+        {
+          "code": "PAYAST",
+          "noMap": true
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "element": [
+        {
+          "code": "SSP",
+          "target": [
+            {
+              "code": "SSP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L",
+          "noMap": true
+        },
+        {
+          "code": "TRSTCERTOBV",
+          "noMap": true
+        },
+        {
+          "code": "LINEARSCR",
+          "noMap": true
+        },
+        {
+          "code": "AGGRED",
+          "noMap": true
+        },
+        {
+          "code": "WEIGHTSCR",
+          "noMap": true
+        },
+        {
+          "code": "CLINRPT",
+          "noMap": true
+        },
+        {
+          "code": "MRGCERT",
+          "noMap": true
+        },
+        {
+          "code": "SS",
+          "noMap": true
+        },
+        {
+          "code": "MEMBER",
+          "noMap": true
+        },
+        {
+          "code": "PATAST",
+          "noMap": true
+        },
+        {
+          "code": "CRITL",
+          "noMap": true
+        },
+        {
+          "code": "RSWN",
+          "noMap": true
+        },
+        {
+          "code": "PRN",
+          "noMap": true
+        },
+        {
+          "code": "LOACM2",
+          "noMap": true
+        },
+        {
+          "code": "ALLORNONESCR",
+          "noMap": true
+        },
+        {
+          "code": "NS",
+          "noMap": true
+        },
+        {
+          "code": "DISABL",
+          "noMap": true
+        },
+        {
+          "code": "PROB",
+          "noMap": true
+        },
+        {
+          "code": "IPP",
+          "noMap": true
+        },
+        {
+          "code": "MAPPED",
+          "noMap": true
+        },
+        {
+          "code": "ABUSE",
+          "noMap": true
+        },
+        {
+          "code": "LOANR1",
+          "noMap": true
+        },
+        {
+          "code": "SUBSETTED",
+          "noMap": true
+        },
+        {
+          "code": "OPPORSCR",
+          "noMap": true
+        },
+        {
+          "code": "VLS",
+          "noMap": true
+        },
+        {
+          "code": "RSWON",
+          "noMap": true
+        },
+        {
+          "code": "STN",
+          "noMap": true
+        },
+        {
+          "code": "PATRPT",
+          "noMap": true
+        },
+        {
+          "code": "SPSDEP",
+          "noMap": true
+        },
+        {
+          "code": "EXPERIENCE",
+          "noMap": true
+        },
+        {
+          "code": "SYNTAC",
+          "noMap": true
+        },
+        {
+          "code": "DIGSIG",
+          "noMap": true
+        },
+        {
+          "code": "CHD",
+          "noMap": true
+        },
+        {
+          "code": "DEVRPT",
+          "noMap": true
+        },
+        {
+          "code": "G",
+          "noMap": true
+        },
+        {
+          "code": "DEP",
+          "noMap": true
+        },
+        {
+          "code": "Employed",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN1",
+          "noMap": true
+        },
+        {
+          "code": "RELIABLE",
+          "noMap": true
+        },
+        {
+          "code": "CLINAST",
+          "noMap": true
+        },
+        {
+          "code": "DISABLE",
+          "noMap": true
+        },
+        {
+          "code": "TRSLT",
+          "noMap": true
+        },
+        {
+          "code": "MSRPOPL",
+          "noMap": true
+        },
+        {
+          "code": "DEPSPS",
+          "noMap": true
+        },
+        {
+          "code": "EFFICIENCY",
+          "noMap": true
+        },
+        {
+          "code": "M",
+          "noMap": true
+        },
+        {
+          "code": "UNREL",
+          "noMap": true
+        },
+        {
+          "code": "UNCERTREL",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS3",
+          "noMap": true
+        },
+        {
+          "code": "REDACTED",
+          "noMap": true
+        },
+        {
+          "code": "DEPYGCHD",
+          "noMap": true
+        },
+        {
+          "code": "LOACM1",
+          "noMap": true
+        },
+        {
+          "code": "INPNDINV",
+          "noMap": true
+        },
+        {
+          "code": "LE",
+          "noMap": true
+        },
+        {
+          "code": "PROAST",
+          "noMap": true
+        },
+        {
+          "code": "DENEX",
+          "noMap": true
+        },
+        {
+          "code": "TRD",
+          "noMap": true
+        },
+        {
+          "code": "A2",
+          "noMap": true
+        },
+        {
+          "code": "CLOTH",
+          "noMap": true
+        },
+        {
+          "code": "SUP",
+          "noMap": true
+        },
+        {
+          "code": "INPNDUPD",
+          "noMap": true
+        },
+        {
+          "code": "VS",
+          "noMap": true
+        },
+        {
+          "code": "IncrIsImp",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP3",
+          "noMap": true
+        },
+        {
+          "code": "Unemployed",
+          "noMap": true
+        },
+        {
+          "code": "SUNDRY",
+          "noMap": true
+        },
+        {
+          "code": "CRYTOHASH",
+          "noMap": true
+        },
+        {
+          "code": "NUMEX",
+          "noMap": true
+        },
+        {
+          "code": "INACT",
+          "noMap": true
+        },
+        {
+          "code": "LOAID3",
+          "noMap": true
+        },
+        {
+          "code": "ADC",
+          "noMap": true
+        },
+        {
+          "code": "PSEUDED",
+          "noMap": true
+        },
+        {
+          "code": "EMS",
+          "noMap": true
+        },
+        {
+          "code": "TRSTMECOBV",
+          "noMap": true
+        },
+        {
+          "code": "NUMER",
+          "noMap": true
+        },
+        {
+          "code": "PACQRPT",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN4",
+          "noMap": true
+        },
+        {
+          "code": "IP",
+          "noMap": true
+        },
+        {
+          "code": "NELG",
+          "noMap": true
+        },
+        {
+          "code": "PRORPT",
+          "noMap": true
+        },
+        {
+          "code": "INCOME",
+          "noMap": true
+        },
+        {
+          "code": "DRLIC",
+          "noMap": true
+        },
+        {
+          "code": "TAX",
+          "noMap": true
+        },
+        {
+          "code": "LOACM4",
+          "noMap": true
+        },
+        {
+          "code": "HRELIABLE",
+          "noMap": true
+        },
+        {
+          "code": "UNRELIABLE",
+          "noMap": true
+        },
+        {
+          "code": "CRITH",
+          "noMap": true
+        },
+        {
+          "code": "ME",
+          "noMap": true
+        },
+        {
+          "code": "LOARA3",
+          "noMap": true
+        },
+        {
+          "code": "SDMRPT",
+          "noMap": true
+        },
+        {
+          "code": "HCPRPT",
+          "noMap": true
+        },
+        {
+          "code": "A3",
+          "noMap": true
+        },
+        {
+          "code": "ANONYED",
+          "noMap": true
+        },
+        {
+          "code": "LOAID4",
+          "noMap": true
+        },
+        {
+          "code": "ECH",
+          "noMap": true
+        },
+        {
+          "code": "DEPCHD",
+          "noMap": true
+        },
+        {
+          "code": "H",
+          "noMap": true
+        },
+        {
+          "code": "S",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS2",
+          "noMap": true
+        },
+        {
+          "code": "SDMAST",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP4",
+          "noMap": true
+        },
+        {
+          "code": "ELG",
+          "noMap": true
+        },
+        {
+          "code": "LOARA2",
+          "noMap": true
+        },
+        {
+          "code": "ADOPT",
+          "noMap": true
+        },
+        {
+          "code": "HMLESS",
+          "noMap": true
+        },
+        {
+          "code": "SOECSTAT",
+          "noMap": true
+        },
+        {
+          "code": "INVEST",
+          "noMap": true
+        },
+        {
+          "code": "INCAR",
+          "noMap": true
+        },
+        {
+          "code": "LOANR4",
+          "noMap": true
+        },
+        {
+          "code": "PRO-PM",
+          "noMap": true
+        },
+        {
+          "code": "UNEMPL",
+          "noMap": true
+        },
+        {
+          "code": "FLY",
+          "noMap": true
+        },
+        {
+          "code": "PAYRPT",
+          "noMap": true
+        },
+        {
+          "code": "CCOC",
+          "noMap": true
+        },
+        {
+          "code": "RELDEP",
+          "noMap": true
+        },
+        {
+          "code": "HEALTH",
+          "noMap": true
+        },
+        {
+          "code": "TRSTACCRDOBV",
+          "noMap": true
+        },
+        {
+          "code": "LOACM3",
+          "noMap": true
+        },
+        {
+          "code": "Homozygote",
+          "noMap": true
+        },
+        {
+          "code": "UTIL",
+          "noMap": true
+        },
+        {
+          "code": "ACT",
+          "noMap": true
+        },
+        {
+          "code": "ELSTAT",
+          "noMap": true
+        },
+        {
+          "code": "LOAID1",
+          "noMap": true
+        },
+        {
+          "code": "TRANS",
+          "noMap": true
+        },
+        {
+          "code": "PASSPORT",
+          "noMap": true
+        },
+        {
+          "code": "ES",
+          "noMap": true
+        },
+        {
+          "code": "N",
+          "noMap": true
+        },
+        {
+          "code": "LOARA1",
+          "noMap": true
+        },
+        {
+          "code": "RLD",
+          "noMap": true
+        },
+        {
+          "code": "URELDEP",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS4",
+          "noMap": true
+        },
+        {
+          "code": "LEGAL",
+          "noMap": true
+        },
+        {
+          "code": "LOARA4",
+          "noMap": true
+        },
+        {
+          "code": "CONTVAR",
+          "noMap": true
+        },
+        {
+          "code": "SFWL",
+          "noMap": true
+        },
+        {
+          "code": "PACQAST",
+          "noMap": true
+        },
+        {
+          "code": "BTHCERT",
+          "noMap": true
+        },
+        {
+          "code": "LIVEXP",
+          "noMap": true
+        },
+        {
+          "code": "HLSTAT",
+          "noMap": true
+        },
+        {
+          "code": "LOATK1",
+          "noMap": true
+        },
+        {
+          "code": "ABSTRED",
+          "noMap": true
+        },
+        {
+          "code": "LOAAS1",
+          "noMap": true
+        },
+        {
+          "code": "IND",
+          "noMap": true
+        },
+        {
+          "code": "NotInLaborForce",
+          "noMap": true
+        },
+        {
+          "code": "DecrIsImp",
+          "noMap": true
+        },
+        {
+          "code": "RATIO",
+          "noMap": true
+        },
+        {
+          "code": "FOSTER",
+          "noMap": true
+        },
+        {
+          "code": "STRUCTURE",
+          "noMap": true
+        },
+        {
+          "code": "CRITU",
+          "noMap": true
+        },
+        {
+          "code": "FAM",
+          "noMap": true
+        },
+        {
+          "code": "A4",
+          "noMap": true
+        },
+        {
+          "code": "PROPOR",
+          "noMap": true
+        },
+        {
+          "code": "SIT",
+          "noMap": true
+        },
+        {
+          "code": "RESOURCE",
+          "noMap": true
+        },
+        {
+          "code": "SPS",
+          "noMap": true
+        },
+        {
+          "code": "DEVAST",
+          "noMap": true
+        },
+        {
+          "code": "PROCESS",
+          "noMap": true
+        },
+        {
+          "code": "MI",
+          "noMap": true
+        },
+        {
+          "code": "CHILD",
+          "noMap": true
+        },
+        {
+          "code": "RETACCT",
+          "noMap": true
+        },
+        {
+          "code": "ILGIM",
+          "noMap": true
+        },
+        {
+          "code": "REFUG",
+          "noMap": true
+        },
+        {
+          "code": "DP",
+          "noMap": true
+        },
+        {
+          "code": "DENEXCEP",
+          "noMap": true
+        },
+        {
+          "code": "STUDENRL",
+          "noMap": true
+        },
+        {
+          "code": "LOATK3",
+          "noMap": true
+        },
+        {
+          "code": "INTERM-OM",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN3",
+          "noMap": true
+        },
+        {
+          "code": "DENOM",
+          "noMap": true
+        },
+        {
+          "code": "ASSET",
+          "noMap": true
+        },
+        {
+          "code": "IVDRG",
+          "noMap": true
+        },
+        {
+          "code": "DS",
+          "noMap": true
+        },
+        {
+          "code": "LOAID2",
+          "noMap": true
+        },
+        {
+          "code": "RENT",
+          "noMap": true
+        },
+        {
+          "code": "ACTPEND",
+          "noMap": true
+        },
+        {
+          "code": "LOANR3",
+          "noMap": true
+        },
+        {
+          "code": "MASKED",
+          "noMap": true
+        },
+        {
+          "code": "SUPPLE",
+          "noMap": true
+        },
+        {
+          "code": "HCPAST",
+          "noMap": true
+        },
+        {
+          "code": "TRSTAGREOBV",
+          "noMap": true
+        },
+        {
+          "code": "FOOD",
+          "noMap": true
+        },
+        {
+          "code": "LOANR2",
+          "noMap": true
+        },
+        {
+          "code": "TRUST",
+          "noMap": true
+        },
+        {
+          "code": "RELAT",
+          "noMap": true
+        },
+        {
+          "code": "PROP",
+          "noMap": true
+        },
+        {
+          "code": "MORTG",
+          "noMap": true
+        },
+        {
+          "code": "LLD",
+          "noMap": true
+        },
+        {
+          "code": "LOATK4",
+          "noMap": true
+        },
+        {
+          "code": "DRUG",
+          "noMap": true
+        },
+        {
+          "code": "LIVDEP",
+          "noMap": true
+        },
+        {
+          "code": "ALONE",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP1",
+          "noMap": true
+        },
+        {
+          "code": "A0",
+          "noMap": true
+        },
+        {
+          "code": "RETIRE",
+          "noMap": true
+        },
+        {
+          "code": "A1",
+          "noMap": true
+        },
+        {
+          "code": "PGNT",
+          "noMap": true
+        },
+        {
+          "code": "COMPOSITE",
+          "noMap": true
+        },
+        {
+          "code": "OUTCOME",
+          "noMap": true
+        },
+        {
+          "code": "VERSIONED",
+          "noMap": true
+        },
+        {
+          "code": "LIVSIT",
+          "noMap": true
+        },
+        {
+          "code": "APPROPRIATE",
+          "noMap": true
+        },
+        {
+          "code": "SPOUSAL",
+          "noMap": true
+        },
+        {
+          "code": "RTRD",
+          "noMap": true
+        },
+        {
+          "code": "COHORT",
+          "noMap": true
+        },
+        {
+          "code": "MIL",
+          "noMap": true
+        },
+        {
+          "code": "LOATK2",
+          "noMap": true
+        },
+        {
+          "code": "LOAAN2",
+          "noMap": true
+        },
+        {
+          "code": "ANNUITY",
+          "noMap": true
+        },
+        {
+          "code": "PAY",
+          "noMap": true
+        },
+        {
+          "code": "HOUSE",
+          "noMap": true
+        },
+        {
+          "code": "LOAAP2",
+          "noMap": true
+        },
+        {
+          "code": "PAYAST",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

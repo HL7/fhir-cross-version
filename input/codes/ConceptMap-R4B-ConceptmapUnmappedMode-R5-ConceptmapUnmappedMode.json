@@ -1,0 +1,60 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ConceptmapUnmappedMode-R5-ConceptmapUnmappedMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ConceptmapUnmappedMode-R5-ConceptmapUnmappedMode",
+  "version": "0.0.1",
+  "name": "R4B-ConceptmapUnmappedMode-R5-ConceptmapUnmappedMode",
+  "title": "Concept map to convert a FHIR R4B ConceptmapUnmappedMode into a FHIR R5 ConceptmapUnmappedMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4553636-06:00",
+  "description": "Mapping for ConceptMap.group.unmapped.mode from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConceptMapGroupUnmappedMode4bto5",
+      "display": "Id: cmd.gr.un.mode-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ConceptMap#ConceptMap.group.unmapped.mode\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ConceptMap#ConceptMap.group.unmapped.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.gr.un.mode-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/conceptmap-unmapped-mode",
+      "target": "http://hl7.org/fhir/conceptmap-unmapped-mode",
+      "element": [
+        {
+          "code": "provided",
+          "target": [
+            {
+              "code": "use-source-code",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "use-source-code",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fixed",
+          "target": [
+            {
+              "code": "fixed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other-map",
+          "target": [
+            {
+              "code": "other-map",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

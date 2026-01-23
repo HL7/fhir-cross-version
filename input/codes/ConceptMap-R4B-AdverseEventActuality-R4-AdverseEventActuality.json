@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-AdverseEventActuality-R4-AdverseEventActuality",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-AdverseEventActuality-R4-AdverseEventActuality",
+  "version": "0.0.1",
+  "name": "R4B-AdverseEventActuality-R4-AdverseEventActuality",
+  "title": "Concept map to convert a FHIR R4B AdverseEventActuality into a FHIR R4 AdverseEventActuality",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6688725-06:00",
+  "description": "Mapping for AdverseEvent.actuality from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AdverseEventActuality4bto4",
+      "display": "Id: aev.actuality-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/AdverseEvent#AdverseEvent.actuality\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/AdverseEvent#AdverseEvent.actuality",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/aev.actuality-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/adverse-event-actuality|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/adverse-event-actuality|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/adverse-event-actuality",
+      "target": "http://hl7.org/fhir/adverse-event-actuality",
+      "element": [
+        {
+          "code": "actual",
+          "target": [
+            {
+              "code": "actual",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "potential",
+          "target": [
+            {
+              "code": "potential",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-GroupType-R4B-GroupType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-GroupType-R4B-GroupType",
+  "version": "0.0.1",
+  "name": "R5-GroupType-R4B-GroupType",
+  "title": "Concept map to convert a FHIR R5 GroupType into a FHIR R4B GroupType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9192032-06:00",
+  "description": "Mapping for Group.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "GroupType5to4b",
+      "display": "Id: grp.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Group#Group.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Group#Group.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/grp.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/group-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/group-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/group-type",
+      "target": "http://hl7.org/fhir/group-type",
+      "element": [
+        {
+          "code": "animal",
+          "target": [
+            {
+              "code": "animal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "careteam",
+          "noMap": true
+        },
+        {
+          "code": "device",
+          "target": [
+            {
+              "code": "device",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "healthcareservice",
+          "noMap": true
+        },
+        {
+          "code": "location",
+          "noMap": true
+        },
+        {
+          "code": "organization",
+          "noMap": true
+        },
+        {
+          "code": "person",
+          "target": [
+            {
+              "code": "person",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "practitioner",
+          "target": [
+            {
+              "code": "practitioner",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "relatedperson",
+          "noMap": true
+        },
+        {
+          "code": "specimen",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

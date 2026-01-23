@@ -1,0 +1,92 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ContributorRole-R5-ContributorRole",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ContributorRole-R5-ContributorRole",
+  "version": "0.0.1",
+  "name": "R4B-ContributorRole-R5-ContributorRole",
+  "title": "Concept map to convert a FHIR R4B ContributorRole into a FHIR R5 ContributorRole",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.460589-06:00",
+  "description": "Mapping for Citation.citedArtifact.contributorship.entry.role from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CitationCitedArtifactContributorshipEntryRole4bto5",
+      "display": "Id: ctn.ci.co.en.role-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.contributorship.entry.role\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.contributorship.entry.role",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.co.en.role-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/contributor-role|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/contributor-role|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/contributor-role",
+      "target": "http://hl7.org/fhir/contributor-role",
+      "element": [
+        {
+          "code": "funder",
+          "target": [
+            {
+              "code": "funder",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "editor",
+          "target": [
+            {
+              "code": "editor",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "author",
+          "target": [
+            {
+              "code": "author",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "endorser",
+          "target": [
+            {
+              "code": "endorser",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "publisher",
+          "target": [
+            {
+              "code": "publisher",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reviewer",
+          "target": [
+            {
+              "code": "reviewer",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "informant",
+          "target": [
+            {
+              "code": "informant",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

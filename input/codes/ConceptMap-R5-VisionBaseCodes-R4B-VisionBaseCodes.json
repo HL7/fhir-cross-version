@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-VisionBaseCodes-R4B-VisionBaseCodes",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-VisionBaseCodes-R4B-VisionBaseCodes",
+  "version": "0.0.1",
+  "name": "R5-VisionBaseCodes-R4B-VisionBaseCodes",
+  "title": "Concept map to convert a FHIR R5 VisionBaseCodes into a FHIR R4B VisionBaseCodes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9364621-06:00",
+  "description": "Mapping for VisionPrescription.lensSpecification.prism.base from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "VisionPrescriptionLensSpecificationPrismBase5to4b",
+      "display": "Id: vps.le.pr.base-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.prism.base\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.prism.base",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vps.le.pr.base-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/vision-base-codes|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/vision-base-codes|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/vision-base-codes",
+      "target": "http://hl7.org/fhir/vision-base-codes",
+      "element": [
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "up",
+          "target": [
+            {
+              "code": "up",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "down",
+          "target": [
+            {
+              "code": "down",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "out",
+          "target": [
+            {
+              "code": "out",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

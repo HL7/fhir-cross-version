@@ -1,0 +1,69 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-CodesystemContentMode-R3-CodesystemContentMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-CodesystemContentMode-R3-CodesystemContentMode",
+  "version": "0.0.1",
+  "name": "R4-CodesystemContentMode-R3-CodesystemContentMode",
+  "title": "Concept map to convert a FHIR R4 CodesystemContentMode into a FHIR R3 CodesystemContentMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.25054-06:00",
+  "description": "Mapping for CodeSystem.content from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CodeSystemContent4to3",
+      "display": "Id: csd.content-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.content\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.content",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/csd.content-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/codesystem-content-mode|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/codesystem-content-mode",
+      "target": "http://hl7.org/fhir/codesystem-content-mode",
+      "element": [
+        {
+          "code": "complete",
+          "target": [
+            {
+              "code": "complete",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "example",
+          "target": [
+            {
+              "code": "example",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fragment",
+          "target": [
+            {
+              "code": "fragment",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-present",
+          "target": [
+            {
+              "code": "not-present",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "supplement",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

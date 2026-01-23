@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-AllergyIntoleranceCriticality-R3-AllergyIntoleranceCriticality",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-AllergyIntoleranceCriticality-R3-AllergyIntoleranceCriticality",
+  "version": "0.0.1",
+  "name": "R4-AllergyIntoleranceCriticality-R3-AllergyIntoleranceCriticality",
+  "title": "Concept map to convert a FHIR R4 AllergyIntoleranceCriticality into a FHIR R3 AllergyIntoleranceCriticality",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2423572-06:00",
+  "description": "Mapping for AllergyIntolerance.criticality from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AllergyIntoleranceCriticality4to3",
+      "display": "Id: ait.criticality-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.criticality\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.criticality",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ait.criticality-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/allergy-intolerance-criticality",
+      "target": "http://hl7.org/fhir/allergy-intolerance-criticality",
+      "element": [
+        {
+          "code": "high",
+          "target": [
+            {
+              "code": "high",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "low",
+          "target": [
+            {
+              "code": "low",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unable-to-assess",
+          "target": [
+            {
+              "code": "unable-to-assess",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

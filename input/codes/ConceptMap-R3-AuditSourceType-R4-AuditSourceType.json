@@ -1,0 +1,110 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-AuditSourceType-R4-AuditSourceType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-AuditSourceType-R4-AuditSourceType",
+  "version": "0.0.1",
+  "name": "R3-AuditSourceType-R4-AuditSourceType",
+  "title": "Concept map to convert a FHIR R3 AuditSourceType into a FHIR R4 AuditSourceType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6949709-06:00",
+  "description": "Mapping for AuditEvent.source.type from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AuditEventSourceType3to4",
+      "display": "Id: sev.so.type-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.source.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.source.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.so.type-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/audit-source-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/audit-source-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/security-source-type",
+      "target": "http://terminology.hl7.org/CodeSystem/security-source-type",
+      "element": [
+        {
+          "code": "1",
+          "target": [
+            {
+              "code": "1",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "2",
+          "target": [
+            {
+              "code": "2",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "3",
+          "target": [
+            {
+              "code": "3",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "4",
+          "target": [
+            {
+              "code": "4",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "5",
+          "target": [
+            {
+              "code": "5",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "6",
+          "target": [
+            {
+              "code": "6",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "7",
+          "target": [
+            {
+              "code": "7",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "8",
+          "target": [
+            {
+              "code": "8",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "9",
+          "target": [
+            {
+              "code": "9",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

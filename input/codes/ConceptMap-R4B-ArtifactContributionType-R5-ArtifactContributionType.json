@@ -1,0 +1,155 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ArtifactContributionType-R5-ArtifactContributionType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ArtifactContributionType-R5-ArtifactContributionType",
+  "version": "0.0.1",
+  "name": "R4B-ArtifactContributionType-R5-ArtifactContributionType",
+  "title": "Concept map to convert a FHIR R4B ArtifactContributionType into a FHIR R5 ArtifactContributionType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4604584-06:00",
+  "description": "Mapping for Citation.citedArtifact.contributorship.entry.contributionType from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CitationCitedArtifactContributorshipEntryContributionType4bto5",
+      "display": "Id: ctn.ci.co.en.contributionType-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.contributorship.entry.contributionType\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.contributorship.entry.contributionType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.co.en.contributionType-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/artifact-contribution-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/artifact-contribution-type|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/artifact-contribution-type",
+      "target": "http://hl7.org/fhir/artifact-contribution-type",
+      "element": [
+        {
+          "code": "visualization",
+          "target": [
+            {
+              "code": "visualization",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "software",
+          "target": [
+            {
+              "code": "software",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data-curation",
+          "target": [
+            {
+              "code": "data-curation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "writing-original-draft",
+          "target": [
+            {
+              "code": "writing-original-draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "funding-acquisition",
+          "target": [
+            {
+              "code": "funding-acquisition",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "resources",
+          "target": [
+            {
+              "code": "resources",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "project-administration",
+          "target": [
+            {
+              "code": "project-administration",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "formal-analysis",
+          "target": [
+            {
+              "code": "formal-analysis",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "supervision",
+          "target": [
+            {
+              "code": "supervision",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "writing-review-editing",
+          "target": [
+            {
+              "code": "writing-review-editing",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "investigation",
+          "target": [
+            {
+              "code": "investigation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "conceptualization",
+          "target": [
+            {
+              "code": "conceptualization",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "methodology",
+          "target": [
+            {
+              "code": "methodology",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "validation",
+          "target": [
+            {
+              "code": "validation",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ListStatus-R4-ListStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ListStatus-R4-ListStatus",
+  "version": "0.0.1",
+  "name": "R3-ListStatus-R4-ListStatus",
+  "title": "Concept map to convert a FHIR R3 ListStatus into a FHIR R4 ListStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.682818-06:00",
+  "description": "Mapping for List.status from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ListStatus3to4",
+      "display": "Id: lst.status-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/List#List.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/List#List.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/lst.status-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/list-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/list-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/list-status",
+      "target": "http://hl7.org/fhir/list-status",
+      "element": [
+        {
+          "code": "current",
+          "target": [
+            {
+              "code": "current",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "retired",
+          "target": [
+            {
+              "code": "retired",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-CoverageClass-R5-CoverageClass",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-CoverageClass-R5-CoverageClass",
+  "version": "0.0.1",
+  "name": "R4B-CoverageClass-R5-CoverageClass",
+  "title": "Concept map to convert a FHIR R4B CoverageClass into a FHIR R5 CoverageClass",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4564702-06:00",
+  "description": "Mapping for Coverage.class.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CoverageClassTyper4bto5",
+      "display": "Id: cov.cl.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Coverage#Coverage.class.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Coverage#Coverage.class.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cov.cl.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/coverage-class|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/coverage-class|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/coverage-class",
+      "target": "http://terminology.hl7.org/CodeSystem/coverage-class",
+      "element": [
+        {
+          "code": "class",
+          "target": [
+            {
+              "code": "class",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "group",
+          "target": [
+            {
+              "code": "group",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "plan",
+          "target": [
+            {
+              "code": "plan",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "rxbin",
+          "target": [
+            {
+              "code": "rxbin",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "rxgroup",
+          "target": [
+            {
+              "code": "rxgroup",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "rxid",
+          "target": [
+            {
+              "code": "rxid",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "rxpcn",
+          "target": [
+            {
+              "code": "rxpcn",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sequence",
+          "target": [
+            {
+              "code": "sequence",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "subclass",
+          "target": [
+            {
+              "code": "subclass",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "subgroup",
+          "target": [
+            {
+              "code": "subgroup",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "subplan",
+          "target": [
+            {
+              "code": "subplan",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

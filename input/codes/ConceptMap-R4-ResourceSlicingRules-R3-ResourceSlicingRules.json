@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ResourceSlicingRules-R3-ResourceSlicingRules",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ResourceSlicingRules-R3-ResourceSlicingRules",
+  "version": "0.0.1",
+  "name": "R4-ResourceSlicingRules-R3-ResourceSlicingRules",
+  "title": "Concept map to convert a FHIR R4 ResourceSlicingRules into a FHIR R3 ResourceSlicingRules",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2551648-06:00",
+  "description": "Mapping for ElementDefinition.slicing.rules from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ElementDefinitionSlicingRules4to3",
+      "display": "Id: eld.sl.rules-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.slicing.rules\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.slicing.rules",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eld.sl.rules-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/resource-slicing-rules|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/resource-slicing-rules|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/resource-slicing-rules",
+      "target": "http://hl7.org/fhir/resource-slicing-rules",
+      "element": [
+        {
+          "code": "closed",
+          "target": [
+            {
+              "code": "closed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "openAtEnd",
+          "target": [
+            {
+              "code": "openAtEnd",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "open",
+          "target": [
+            {
+              "code": "open",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

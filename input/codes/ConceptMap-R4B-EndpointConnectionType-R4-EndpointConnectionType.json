@@ -1,0 +1,155 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-EndpointConnectionType-R4-EndpointConnectionType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-EndpointConnectionType-R4-EndpointConnectionType",
+  "version": "0.0.1",
+  "name": "R4B-EndpointConnectionType-R4-EndpointConnectionType",
+  "title": "Concept map to convert a FHIR R4B EndpointConnectionType into a FHIR R4 EndpointConnectionType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6915633-06:00",
+  "description": "Mapping for Endpoint.connectionType from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EndpointConnectionType4bto4",
+      "display": "Id: enp.connectionType-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Endpoint#Endpoint.connectionType\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Endpoint#Endpoint.connectionType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/enp.connectionType-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/endpoint-connection-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/endpoint-connection-type|4.0.1",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+      "target": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+      "element": [
+        {
+          "code": "hl7-fhir-rest",
+          "target": [
+            {
+              "code": "hl7-fhir-rest",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ihe-xca",
+          "target": [
+            {
+              "code": "ihe-xca",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dicom-wado-rs",
+          "target": [
+            {
+              "code": "dicom-wado-rs",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hl7-fhir-msg",
+          "target": [
+            {
+              "code": "hl7-fhir-msg",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ihe-xcpd",
+          "target": [
+            {
+              "code": "ihe-xcpd",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dicom-stow-rs",
+          "target": [
+            {
+              "code": "dicom-stow-rs",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ihe-xds",
+          "target": [
+            {
+              "code": "ihe-xds",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dicom-wado-uri",
+          "target": [
+            {
+              "code": "dicom-wado-uri",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "direct-project",
+          "target": [
+            {
+              "code": "direct-project",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ihe-xdr",
+          "target": [
+            {
+              "code": "ihe-xdr",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dicom-qido-rs",
+          "target": [
+            {
+              "code": "dicom-qido-rs",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hl7v2-mllp",
+          "target": [
+            {
+              "code": "hl7v2-mllp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ihe-iid",
+          "target": [
+            {
+              "code": "ihe-iid",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "secure-email",
+          "target": [
+            {
+              "code": "secure-email",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ActionConditionKind-R4-ActionConditionKind",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ActionConditionKind-R4-ActionConditionKind",
+  "version": "0.0.1",
+  "name": "R4B-ActionConditionKind-R4-ActionConditionKind",
+  "title": "Concept map to convert a FHIR R4B ActionConditionKind into a FHIR R4 ActionConditionKind",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.7028721-06:00",
+  "description": "Mapping for PlanDefinition.action.condition.kind from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionConditionKind4bto4",
+      "display": "Id: pdf.ac.co.kind-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.condition.kind\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.condition.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.co.kind-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestGroupActionConditionKind4bto4",
+      "display": "Id: rgp.ac.co.kind-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.condition.kind\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.condition.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.co.kind-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-condition-kind|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-condition-kind|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/action-condition-kind",
+      "target": "http://hl7.org/fhir/action-condition-kind",
+      "element": [
+        {
+          "code": "stop",
+          "target": [
+            {
+              "code": "stop",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "start",
+          "target": [
+            {
+              "code": "start",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "applicability",
+          "target": [
+            {
+              "code": "applicability",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

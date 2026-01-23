@@ -1,0 +1,60 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-MetricOperationalStatus-R2-MetricOperationalStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-MetricOperationalStatus-R2-MetricOperationalStatus",
+  "version": "0.0.1",
+  "name": "R3-MetricOperationalStatus-R2-MetricOperationalStatus",
+  "title": "Concept map to convert a FHIR R3 MetricOperationalStatus into a FHIR R2 MetricOperationalStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7677442-06:00",
+  "description": "Mapping for DeviceMetric.operationalStatus from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceMetricOperationalStatus3to2",
+      "display": "Id: dvm.operationalStatus-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.operationalStatus-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-operational-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-operational-status|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/metric-operational-status",
+      "target": "http://hl7.org/fhir/metric-operational-status",
+      "element": [
+        {
+          "code": "entered-in-error",
+          "noMap": true
+        },
+        {
+          "code": "off",
+          "target": [
+            {
+              "code": "off",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on",
+          "target": [
+            {
+              "code": "on",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "standby",
+          "target": [
+            {
+              "code": "standby",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

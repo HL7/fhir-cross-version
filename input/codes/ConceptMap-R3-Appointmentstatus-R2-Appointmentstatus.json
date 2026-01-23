@@ -1,0 +1,96 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-Appointmentstatus-R2-Appointmentstatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-Appointmentstatus-R2-Appointmentstatus",
+  "version": "0.0.1",
+  "name": "R3-Appointmentstatus-R2-Appointmentstatus",
+  "title": "Concept map to convert a FHIR R3 Appointmentstatus into a FHIR R2 Appointmentstatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.756467-06:00",
+  "description": "Mapping for Appointment.status from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AppointmentStatus3to2",
+      "display": "Id: app.status-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Appointment#Appointment.status\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Appointment#Appointment.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/app.status-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/appointmentstatus|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/appointmentstatus|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/appointmentstatus",
+      "target": "http://hl7.org/fhir/appointmentstatus",
+      "element": [
+        {
+          "code": "arrived",
+          "target": [
+            {
+              "code": "arrived",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "booked",
+          "target": [
+            {
+              "code": "booked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "noMap": true
+        },
+        {
+          "code": "fulfilled",
+          "target": [
+            {
+              "code": "fulfilled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "noshow",
+          "target": [
+            {
+              "code": "noshow",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pending",
+          "target": [
+            {
+              "code": "pending",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "proposed",
+          "target": [
+            {
+              "code": "proposed",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-ContactentityType-R3-ContactentityType",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-ContactentityType-R3-ContactentityType",
+  "version": "0.0.1",
+  "name": "R2-ContactentityType-R3-ContactentityType",
+  "title": "Concept map to convert a FHIR R2 ContactentityType into a FHIR R3 ContactentityType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5074447-06:00",
+  "description": "Mapping for Organization.contact.purpose from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "OrganizationContactPurpose2to3",
+      "display": "Id: org.co.purpose-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Organization#Organization.contact.purpose\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Organization#Organization.contact.purpose",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/org.co.purpose-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/contactentity-type|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/contactentity-type|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/contactentity-type",
+      "target": "http://hl7.org/fhir/contactentity-type",
+      "element": [
+        {
+          "code": "PATINF",
+          "target": [
+            {
+              "code": "PATINF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BILL",
+          "target": [
+            {
+              "code": "BILL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HR",
+          "target": [
+            {
+              "code": "HR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ADMIN",
+          "target": [
+            {
+              "code": "ADMIN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PAYOR",
+          "target": [
+            {
+              "code": "PAYOR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRESS",
+          "target": [
+            {
+              "code": "PRESS",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

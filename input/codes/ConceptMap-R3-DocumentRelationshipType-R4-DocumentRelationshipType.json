@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-DocumentRelationshipType-R4-DocumentRelationshipType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-DocumentRelationshipType-R4-DocumentRelationshipType",
+  "version": "0.0.1",
+  "name": "R3-DocumentRelationshipType-R4-DocumentRelationshipType",
+  "title": "Concept map to convert a FHIR R3 DocumentRelationshipType into a FHIR R4 DocumentRelationshipType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6683466-06:00",
+  "description": "Mapping for Composition.relatesTo.code from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CompositionRelatesToCode3to4",
+      "display": "Id: cmp.re.code-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.relatesTo.code\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.relatesTo.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.re.code-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "DocumentReferenceRelatesToCode3to4",
+      "display": "Id: dcr.re.code-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.re.code-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/document-relationship-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/document-relationship-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/document-relationship-type",
+      "target": "http://hl7.org/fhir/document-relationship-type",
+      "element": [
+        {
+          "code": "signs",
+          "target": [
+            {
+              "code": "signs",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "replaces",
+          "target": [
+            {
+              "code": "replaces",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "transforms",
+          "target": [
+            {
+              "code": "transforms",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "appends",
+          "target": [
+            {
+              "code": "appends",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

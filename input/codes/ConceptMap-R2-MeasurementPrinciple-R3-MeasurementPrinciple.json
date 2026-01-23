@@ -1,0 +1,128 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-MeasurementPrinciple-R3-MeasurementPrinciple",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-MeasurementPrinciple-R3-MeasurementPrinciple",
+  "version": "0.0.1",
+  "name": "R2-MeasurementPrinciple-R3-MeasurementPrinciple",
+  "title": "Concept map to convert a FHIR R2 MeasurementPrinciple into a FHIR R3 MeasurementPrinciple",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4950171-06:00",
+  "description": "Mapping for DeviceComponent.measurementPrinciple from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceComponentMeasurementPrinciple2to3",
+      "display": "Id: dvc.measurementPrinciple-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/DeviceComponent#DeviceComponent.measurementPrinciple\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/DeviceComponent#DeviceComponent.measurementPrinciple",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvc.measurementPrinciple-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/measurement-principle|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/measurement-principle|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/measurement-principle",
+      "target": "http://hl7.org/fhir/measurement-principle",
+      "element": [
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "chemical",
+          "target": [
+            {
+              "code": "chemical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "thermal",
+          "target": [
+            {
+              "code": "thermal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "electrical",
+          "target": [
+            {
+              "code": "electrical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "impedance",
+          "target": [
+            {
+              "code": "impedance",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biological",
+          "target": [
+            {
+              "code": "biological",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "mechanical",
+          "target": [
+            {
+              "code": "mechanical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "acoustical",
+          "target": [
+            {
+              "code": "acoustical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "nuclear",
+          "target": [
+            {
+              "code": "nuclear",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "manual",
+          "target": [
+            {
+              "code": "manual",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "optical",
+          "target": [
+            {
+              "code": "optical",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ResearchStudyStatus-R4B-ResearchStudyStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ResearchStudyStatus-R4B-ResearchStudyStatus",
+  "version": "0.0.1",
+  "name": "R4-ResearchStudyStatus-R4B-ResearchStudyStatus",
+  "title": "Concept map to convert a FHIR R4 ResearchStudyStatus into a FHIR R4B ResearchStudyStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0262605-06:00",
+  "description": "Mapping for ResearchStudy.status from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ResearchStudyStatus4to4b",
+      "display": "Id: rst.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ResearchStudy#ResearchStudy.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ResearchStudy#ResearchStudy.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rst.status-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/research-study-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/research-study-status|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/research-study-status",
+      "target": "http://hl7.org/fhir/research-study-status",
+      "element": [
+        {
+          "code": "closed-to-accrual-and-intervention",
+          "target": [
+            {
+              "code": "closed-to-accrual-and-intervention",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "approved",
+          "target": [
+            {
+              "code": "approved",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "administratively-completed",
+          "target": [
+            {
+              "code": "administratively-completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "withdrawn",
+          "target": [
+            {
+              "code": "withdrawn",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-review",
+          "target": [
+            {
+              "code": "in-review",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "temporarily-closed-to-accrual",
+          "target": [
+            {
+              "code": "temporarily-closed-to-accrual",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "closed-to-accrual",
+          "target": [
+            {
+              "code": "closed-to-accrual",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "disapproved",
+          "target": [
+            {
+              "code": "disapproved",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "temporarily-closed-to-accrual-and-intervention",
+          "target": [
+            {
+              "code": "temporarily-closed-to-accrual-and-intervention",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

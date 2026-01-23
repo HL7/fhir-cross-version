@@ -1,0 +1,92 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ConceptPropertyType-R4-ConceptPropertyType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ConceptPropertyType-R4-ConceptPropertyType",
+  "version": "0.0.1",
+  "name": "R5-ConceptPropertyType-R4-ConceptPropertyType",
+  "title": "Concept map to convert a FHIR R5 ConceptPropertyType into a FHIR R4 ConceptPropertyType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9867203-06:00",
+  "description": "Mapping for CodeSystem.property.type from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CodeSystemPropertyType5to4",
+      "display": "Id: csd.pr.type-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/CodeSystem#CodeSystem.property.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.property.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/csd.pr.type-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/concept-property-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/concept-property-type",
+      "target": "http://hl7.org/fhir/concept-property-type",
+      "element": [
+        {
+          "code": "dateTime",
+          "target": [
+            {
+              "code": "dateTime",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "code",
+          "target": [
+            {
+              "code": "code",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "boolean",
+          "target": [
+            {
+              "code": "boolean",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "string",
+          "target": [
+            {
+              "code": "string",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Coding",
+          "target": [
+            {
+              "code": "Coding",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "integer",
+          "target": [
+            {
+              "code": "integer",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "decimal",
+          "target": [
+            {
+              "code": "decimal",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

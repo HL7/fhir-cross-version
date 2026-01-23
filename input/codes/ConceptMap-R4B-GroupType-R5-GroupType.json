@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-GroupType-R5-GroupType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-GroupType-R5-GroupType",
+  "version": "0.0.1",
+  "name": "R4B-GroupType-R5-GroupType",
+  "title": "Concept map to convert a FHIR R4B GroupType into a FHIR R5 GroupType",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.467996-06:00",
+  "description": "Mapping for Group.type from R4B to R5",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "GroupType4bto5",
+      "display": "Id: grp.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Group#Group.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Group#Group.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/grp.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/group-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/group-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/group-type",
+      "target": "http://hl7.org/fhir/group-type",
+      "element": [
+        {
+          "code": "animal",
+          "target": [
+            {
+              "code": "animal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "device",
+          "target": [
+            {
+              "code": "device",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "medication",
+          "noMap": true
+        },
+        {
+          "code": "person",
+          "target": [
+            {
+              "code": "person",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "practitioner",
+          "target": [
+            {
+              "code": "practitioner",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "substance",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

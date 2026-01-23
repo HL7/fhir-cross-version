@@ -1,0 +1,128 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-AssertOperatorCodes-R4-AssertOperatorCodes",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-AssertOperatorCodes-R4-AssertOperatorCodes",
+  "version": "0.0.1",
+  "name": "R4B-AssertOperatorCodes-R4-AssertOperatorCodes",
+  "title": "Concept map to convert a FHIR R4B AssertOperatorCodes into a FHIR R4 AssertOperatorCodes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.7137404-06:00",
+  "description": "Mapping for TestScript.setup.action.assert.operator from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestScriptSetupActionAssertOperator4bto4",
+      "display": "Id: tst.se.ac.as.operator-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.assert.operator\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.operator",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.operator-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/assert-operator-codes|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/assert-operator-codes|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/assert-operator-codes",
+      "target": "http://hl7.org/fhir/assert-operator-codes",
+      "element": [
+        {
+          "code": "contains",
+          "target": [
+            {
+              "code": "contains",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "eval",
+          "target": [
+            {
+              "code": "eval",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "notContains",
+          "target": [
+            {
+              "code": "notContains",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "equals",
+          "target": [
+            {
+              "code": "equals",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "lessThan",
+          "target": [
+            {
+              "code": "lessThan",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "notEquals",
+          "target": [
+            {
+              "code": "notEquals",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "notIn",
+          "target": [
+            {
+              "code": "notIn",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "notEmpty",
+          "target": [
+            {
+              "code": "notEmpty",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "greaterThan",
+          "target": [
+            {
+              "code": "greaterThan",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "empty",
+          "target": [
+            {
+              "code": "empty",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

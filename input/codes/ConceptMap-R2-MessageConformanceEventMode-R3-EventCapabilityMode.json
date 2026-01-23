@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-MessageConformanceEventMode-R3-EventCapabilityMode",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-MessageConformanceEventMode-R3-EventCapabilityMode",
+  "version": "0.0.1",
+  "name": "R2-MessageConformanceEventMode-R3-EventCapabilityMode",
+  "title": "Concept map to convert a FHIR R2 MessageConformanceEventMode into a FHIR R3 EventCapabilityMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4906269-06:00",
+  "description": "Mapping for Conformance.messaging.event.mode/CapabilityStatement.messaging.event.mode from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConformanceMessagingEventModeCapabilityStatementMessagingEventMode2to3",
+      "display": "Id: cpb.me.ev.mode-cpb.me.ev.mode-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.messaging.event.mode\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.messaging.event.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.me.ev.mode-cpb.me.ev.mode-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/message-conformance-event-mode|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/event-capability-mode|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/message-conformance-event-mode",
+      "target": "http://hl7.org/fhir/event-capability-mode",
+      "element": [
+        {
+          "code": "receiver",
+          "target": [
+            {
+              "code": "receiver",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sender",
+          "target": [
+            {
+              "code": "sender",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

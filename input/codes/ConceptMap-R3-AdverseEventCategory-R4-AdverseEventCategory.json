@@ -1,0 +1,37 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-AdverseEventCategory-R4-AdverseEventCategory",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-AdverseEventCategory-R4-AdverseEventCategory",
+  "version": "0.0.1",
+  "name": "R3-AdverseEventCategory-R4-AdverseEventCategory",
+  "title": "Concept map to convert a FHIR R3 AdverseEventCategory into a FHIR R4 AdverseEventCategory",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6640658-06:00",
+  "description": "Mapping for AdverseEvent.category from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AdverseEventCategory3to4",
+      "display": "Id: aev.category-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/AdverseEvent#AdverseEvent.category\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/AdverseEvent#AdverseEvent.category",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/aev.category-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/adverse-event-category|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/adverse-event-category|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/adverse-event-category",
+      "target": "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+      "element": [
+        {
+          "code": "AE",
+          "noMap": true
+        },
+        {
+          "code": "PAE",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

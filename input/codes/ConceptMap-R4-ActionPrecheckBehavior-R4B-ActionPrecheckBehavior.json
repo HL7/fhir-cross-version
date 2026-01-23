@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ActionPrecheckBehavior-R4B-ActionPrecheckBehavior",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ActionPrecheckBehavior-R4B-ActionPrecheckBehavior",
+  "version": "0.0.1",
+  "name": "R4-ActionPrecheckBehavior-R4B-ActionPrecheckBehavior",
+  "title": "Concept map to convert a FHIR R4 ActionPrecheckBehavior into a FHIR R4B ActionPrecheckBehavior",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0217059-06:00",
+  "description": "Mapping for PlanDefinition.action.precheckBehavior from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionPrecheckBehavior4to4b",
+      "display": "Id: pdf.ac.precheckBehavior-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.precheckBehavior\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.precheckBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.precheckBehavior-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestGroupActionPrecheckBehavior4to4b",
+      "display": "Id: rgp.ac.precheckBehavior-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.precheckBehavior\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.precheckBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.ac.precheckBehavior-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-precheck-behavior|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-precheck-behavior|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/action-precheck-behavior",
+      "target": "http://hl7.org/fhir/action-precheck-behavior",
+      "element": [
+        {
+          "code": "no",
+          "target": [
+            {
+              "code": "no",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "yes",
+          "target": [
+            {
+              "code": "yes",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

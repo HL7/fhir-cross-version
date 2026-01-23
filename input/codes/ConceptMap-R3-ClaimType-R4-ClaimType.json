@@ -1,0 +1,80 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ClaimType-R4-ClaimType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ClaimType-R4-ClaimType",
+  "version": "0.0.1",
+  "name": "R3-ClaimType-R4-ClaimType",
+  "title": "Concept map to convert a FHIR R3 ClaimType into a FHIR R4 ClaimType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6672759-06:00",
+  "description": "Mapping for Claim.type from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClaimType3to4",
+      "display": "Id: clm.type-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Claim#Claim.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clm.type-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "ExplanationOfBenefitType3to4",
+      "display": "Id: eob.type-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eob.type-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/claim-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/claim-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/ex-claimtype",
+      "target": "http://terminology.hl7.org/CodeSystem/claim-type",
+      "element": [
+        {
+          "code": "vision",
+          "target": [
+            {
+              "code": "vision",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "institutional",
+          "target": [
+            {
+              "code": "institutional",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pharmacy",
+          "target": [
+            {
+              "code": "pharmacy",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "oral",
+          "target": [
+            {
+              "code": "oral",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "professional",
+          "target": [
+            {
+              "code": "professional",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

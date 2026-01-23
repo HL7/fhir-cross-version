@@ -1,0 +1,86 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ClaimType-R5-ClaimType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ClaimType-R5-ClaimType",
+  "version": "0.0.1",
+  "name": "R4B-ClaimType-R5-ClaimType",
+  "title": "Concept map to convert a FHIR R4B ClaimType into a FHIR R5 ClaimType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4537345-06:00",
+  "description": "Mapping for Claim.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClaimTyper4bto5",
+      "display": "Id: clm.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Claim#Claim.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Claim#Claim.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clm.type-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "ClaimResponseTyper4bto5",
+      "display": "Id: clr.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ClaimResponse#ClaimResponse.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ClaimResponse#ClaimResponse.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clr.type-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "ExplanationOfBenefitTyper4bto5",
+      "display": "Id: eob.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eob.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/claim-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/claim-type|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/claim-type",
+      "target": "http://terminology.hl7.org/CodeSystem/claim-type",
+      "element": [
+        {
+          "code": "institutional",
+          "target": [
+            {
+              "code": "institutional",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "oral",
+          "target": [
+            {
+              "code": "oral",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pharmacy",
+          "target": [
+            {
+              "code": "pharmacy",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "professional",
+          "target": [
+            {
+              "code": "professional",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "vision",
+          "target": [
+            {
+              "code": "vision",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

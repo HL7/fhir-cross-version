@@ -1,0 +1,81 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MedicationrequestIntent-R3-MedicationRequestIntent",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MedicationrequestIntent-R3-MedicationRequestIntent",
+  "version": "0.0.1",
+  "name": "R4-MedicationrequestIntent-R3-MedicationRequestIntent",
+  "title": "Concept map to convert a FHIR R4 MedicationrequestIntent into a FHIR R3 MedicationRequestIntent",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2607876-06:00",
+  "description": "Mapping for MedicationRequest.intent from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MedicationRequestIntent4to3",
+      "display": "Id: mps.intent-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/MedicationRequest#MedicationRequest.intent\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/MedicationRequest#MedicationRequest.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mps.intent-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/medicationrequest-intent|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-request-intent|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+      "target": "http://hl7.org/fhir/medication-request-intent",
+      "element": [
+        {
+          "code": "filler-order",
+          "noMap": true
+        },
+        {
+          "code": "instance-order",
+          "target": [
+            {
+              "code": "instance-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "option",
+          "noMap": true
+        },
+        {
+          "code": "order",
+          "target": [
+            {
+              "code": "order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "original-order",
+          "noMap": true
+        },
+        {
+          "code": "plan",
+          "target": [
+            {
+              "code": "plan",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "proposal",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reflex-order",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-SupplydeliveryStatus-R4-SupplydeliveryStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-SupplydeliveryStatus-R4-SupplydeliveryStatus",
+  "version": "0.0.1",
+  "name": "R3-SupplydeliveryStatus-R4-SupplydeliveryStatus",
+  "title": "Concept map to convert a FHIR R3 SupplydeliveryStatus into a FHIR R4 SupplydeliveryStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6980979-06:00",
+  "description": "Mapping for SupplyDelivery.status from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SupplyDeliveryStatus3to4",
+      "display": "Id: sud.status-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/SupplyDelivery#SupplyDelivery.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/SupplyDelivery#SupplyDelivery.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sud.status-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/supplydelivery-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/supplydelivery-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/supplydelivery-status",
+      "target": "http://hl7.org/fhir/supplydelivery-status",
+      "element": [
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "abandoned",
+          "target": [
+            {
+              "code": "abandoned",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

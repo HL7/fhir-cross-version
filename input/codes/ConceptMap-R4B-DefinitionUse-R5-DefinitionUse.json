@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-DefinitionUse-R5-DefinitionUse",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-DefinitionUse-R5-DefinitionUse",
+  "version": "0.0.1",
+  "name": "R4B-DefinitionUse-R5-DefinitionUse",
+  "title": "Concept map to convert a FHIR R4B DefinitionUse into a FHIR R5 DefinitionUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4859058-06:00",
+  "description": "Mapping for StructureDefinition.keyword from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureDefinitionKeywordr4bto5",
+      "display": "Id: sdf.keyword-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition#StructureDefinition.keyword\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition#StructureDefinition.keyword",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.keyword-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/definition-use|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/definition-use|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/definition-use",
+      "target": "http://terminology.hl7.org/CodeSystem/definition-use",
+      "element": [
+        {
+          "code": "archetype",
+          "target": [
+            {
+              "code": "archetype",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "custom-resource",
+          "target": [
+            {
+              "code": "custom-resource",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dam",
+          "target": [
+            {
+              "code": "dam",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fhir-structure",
+          "target": [
+            {
+              "code": "fhir-structure",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "template",
+          "target": [
+            {
+              "code": "template",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "wire-format",
+          "target": [
+            {
+              "code": "wire-format",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

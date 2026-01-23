@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ReferenceHandlingPolicy-R4-ReferenceHandlingPolicy",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ReferenceHandlingPolicy-R4-ReferenceHandlingPolicy",
+  "version": "0.0.1",
+  "name": "R3-ReferenceHandlingPolicy-R4-ReferenceHandlingPolicy",
+  "title": "Concept map to convert a FHIR R3 ReferenceHandlingPolicy into a FHIR R4 ReferenceHandlingPolicy",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6708535-06:00",
+  "description": "Mapping for CapabilityStatement.rest.resource.referencePolicy from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestResourceReferencePolicy3to4",
+      "display": "Id: cpb.re.re.referencePolicy-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.referencePolicy\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.referencePolicy",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.referencePolicy-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/reference-handling-policy|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/reference-handling-policy|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/reference-handling-policy",
+      "target": "http://hl7.org/fhir/reference-handling-policy",
+      "element": [
+        {
+          "code": "resolves",
+          "target": [
+            {
+              "code": "resolves",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "enforced",
+          "target": [
+            {
+              "code": "enforced",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "logical",
+          "target": [
+            {
+              "code": "logical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "local",
+          "target": [
+            {
+              "code": "local",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "literal",
+          "target": [
+            {
+              "code": "literal",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

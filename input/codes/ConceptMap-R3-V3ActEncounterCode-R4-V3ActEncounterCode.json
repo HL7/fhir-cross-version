@@ -1,0 +1,125 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-V3ActEncounterCode-R4-V3ActEncounterCode",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-V3ActEncounterCode-R4-V3ActEncounterCode",
+  "version": "0.0.1",
+  "name": "R3-V3ActEncounterCode-R4-V3ActEncounterCode",
+  "title": "Concept map to convert a FHIR R3 V3ActEncounterCode into a FHIR R4 V3ActEncounterCode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6779483-06:00",
+  "description": "Mapping for Encounter.classHistory.class from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EncounterClassHistoryClass3to4",
+      "display": "Id: enc.cl.class-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Encounter#Encounter.classHistory.class\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Encounter#Encounter.classHistory.class",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/enc.cl.class-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "EncounterClass3to4",
+      "display": "Id: enc.class-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Encounter#Encounter.class\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Encounter#Encounter.class",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/enc.class-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode|3.0.2",
+  "targetScopeCanonical": "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v3/ActCode",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "element": [
+        {
+          "code": "ACUTE",
+          "target": [
+            {
+              "code": "ACUTE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AMB",
+          "target": [
+            {
+              "code": "AMB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EMER",
+          "target": [
+            {
+              "code": "EMER",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FLD",
+          "target": [
+            {
+              "code": "FLD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HH",
+          "target": [
+            {
+              "code": "HH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "IMP",
+          "target": [
+            {
+              "code": "IMP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NONAC",
+          "target": [
+            {
+              "code": "NONAC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRENC",
+          "target": [
+            {
+              "code": "PRENC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SS",
+          "target": [
+            {
+              "code": "SS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VR",
+          "target": [
+            {
+              "code": "VR",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

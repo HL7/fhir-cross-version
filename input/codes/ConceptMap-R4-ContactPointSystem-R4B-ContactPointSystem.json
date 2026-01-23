@@ -1,0 +1,92 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ContactPointSystem-R4B-ContactPointSystem",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ContactPointSystem-R4B-ContactPointSystem",
+  "version": "0.0.1",
+  "name": "R4-ContactPointSystem-R4B-ContactPointSystem",
+  "title": "Concept map to convert a FHIR R4 ContactPointSystem into a FHIR R4B ContactPointSystem",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.9923479-06:00",
+  "description": "Mapping for ContactPoint.system from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ContactPointSystem4to4b",
+      "display": "Id: cpt.system-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint#ContactPoint.system\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint#ContactPoint.system",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpt.system-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/contact-point-system|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/contact-point-system",
+      "target": "http://hl7.org/fhir/contact-point-system",
+      "element": [
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pager",
+          "target": [
+            {
+              "code": "pager",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phone",
+          "target": [
+            {
+              "code": "phone",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sms",
+          "target": [
+            {
+              "code": "sms",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fax",
+          "target": [
+            {
+              "code": "fax",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "email",
+          "target": [
+            {
+              "code": "email",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "url",
+          "target": [
+            {
+              "code": "url",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

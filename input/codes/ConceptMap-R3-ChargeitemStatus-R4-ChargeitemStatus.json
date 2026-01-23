@@ -1,0 +1,92 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ChargeitemStatus-R4-ChargeitemStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ChargeitemStatus-R4-ChargeitemStatus",
+  "version": "0.0.1",
+  "name": "R3-ChargeitemStatus-R4-ChargeitemStatus",
+  "title": "Concept map to convert a FHIR R3 ChargeitemStatus into a FHIR R4 ChargeitemStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6666469-06:00",
+  "description": "Mapping for ChargeItem.status from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ChargeItemStatus3to4",
+      "display": "Id: cit.status-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ChargeItem#ChargeItem.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ChargeItem#ChargeItem.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cit.status-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/chargeitem-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/chargeitem-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/chargeitem-status",
+      "target": "http://hl7.org/fhir/chargeitem-status",
+      "element": [
+        {
+          "code": "not-billable",
+          "target": [
+            {
+              "code": "not-billable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "billed",
+          "target": [
+            {
+              "code": "billed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "aborted",
+          "target": [
+            {
+              "code": "aborted",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "planned",
+          "target": [
+            {
+              "code": "planned",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "billable",
+          "target": [
+            {
+              "code": "billable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

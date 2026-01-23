@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-V3ConfidentialityClassification-R4-V3ConfidentialityClassification",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-V3ConfidentialityClassification-R4-V3ConfidentialityClassification",
+  "version": "0.0.1",
+  "name": "R3-V3ConfidentialityClassification-R4-V3ConfidentialityClassification",
+  "title": "Concept map to convert a FHIR R3 V3ConfidentialityClassification into a FHIR R4 V3ConfidentialityClassification",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6681676-06:00",
+  "description": "Mapping for Composition.confidentiality from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CompositionConfidentiality3to4",
+      "display": "Id: cmp.confidentiality-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.confidentiality\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.confidentiality",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.confidentiality-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-ConfidentialityClassification|3.0.2",
+  "targetScopeCanonical": "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v3/Confidentiality",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+      "element": [
+        {
+          "code": "L",
+          "target": [
+            {
+              "code": "L",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "target": [
+            {
+              "code": "M",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "N",
+          "target": [
+            {
+              "code": "N",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R",
+          "target": [
+            {
+              "code": "R",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "target": [
+            {
+              "code": "U",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "V",
+          "target": [
+            {
+              "code": "V",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

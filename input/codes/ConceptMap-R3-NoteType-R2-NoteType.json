@@ -1,0 +1,68 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-NoteType-R2-NoteType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-NoteType-R2-NoteType",
+  "version": "0.0.1",
+  "name": "R3-NoteType-R2-NoteType",
+  "title": "Concept map to convert a FHIR R3 NoteType into a FHIR R2 NoteType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.75787-06:00",
+  "description": "Mapping for ClaimResponse.processNote.type/ClaimResponse.note.type from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClaimResponseProcessNoteTypeClaimResponseNoteType3to2",
+      "display": "Id: clr.pr.type-clr.no.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ClaimResponse#ClaimResponse.processNote.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/ClaimResponse#ClaimResponse.note.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clr.pr.type-clr.no.type-3to2"
+    },
+    {
+      "type": "predecessor",
+      "label": "PaymentReconciliationProcessNoteTypePaymentReconciliationNoteType3to2",
+      "display": "Id: pmr.pr.type-pmr.no.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.processNote.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.note.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pmr.pr.type-pmr.no.type-3to2"
+    },
+    {
+      "type": "predecessor",
+      "label": "ProcessResponseProcessNoteTypeProcessResponseNotesType3to2",
+      "display": "Id: prp.pr.type-prp.no.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ProcessResponse#ProcessResponse.processNote.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/ProcessResponse#ProcessResponse.notes.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/prp.pr.type-prp.no.type-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/note-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/note-type|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/note-type",
+      "target": "http://hl7.org/fhir/note-type",
+      "element": [
+        {
+          "code": "print",
+          "target": [
+            {
+              "code": "print",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "display",
+          "target": [
+            {
+              "code": "display",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "printoper",
+          "target": [
+            {
+              "code": "printoper",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

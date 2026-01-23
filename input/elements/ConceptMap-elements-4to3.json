@@ -363,7 +363,7 @@
     { "code" : "VisionPrescription.lensSpecification.eye", "target" : [{ "code" : "VisionPrescription.dispense.eye", "relationship" : "equivalent" }]},
     { "code" : "VisionPrescription.lensSpecification.note", "target" : [{ "code" : "VisionPrescription.dispense.note", "relationship" : "equivalent" }]},
     { "code" : "VisionPrescription.lensSpecification.power", "target" : [{ "code" : "VisionPrescription.dispense.power", "relationship" : "equivalent" }]},
-    { "code" : "VisionPrescription.lensSpecification.prism", "target" : [{ "code" : "VisionPrescription.dispense.prism", "relationship" : "equivalent" }]},
+    { "code" : "VisionPrescription.lensSpecification.prism.amount", "target" : [{ "code" : "VisionPrescription.dispense.prism", "relationship" : "equivalent" }]},
     { "code" : "VisionPrescription.lensSpecification.prism.base", "target" : [{ "code" : "VisionPrescription.dispense.base", "relationship" : "equivalent" }]},
     { "code" : "VisionPrescription.lensSpecification.product", "target" : [{ "code" : "VisionPrescription.dispense.product", "relationship" : "equivalent" }]},
     { "code" : "VisionPrescription.lensSpecification.sphere", "target" : [{ "code" : "VisionPrescription.dispense.sphere", "relationship" : "equivalent" }]},

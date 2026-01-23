@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ProductCategory-R4-ProductCategory",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ProductCategory-R4-ProductCategory",
+  "version": "0.0.1",
+  "name": "R4B-ProductCategory-R4-ProductCategory",
+  "title": "Concept map to convert a FHIR R4B ProductCategory into a FHIR R4 ProductCategory",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.67179-06:00",
+  "description": "Mapping for BiologicallyDerivedProduct.productCategory from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "BiologicallyDerivedProductProductCategory4bto4",
+      "display": "Id: bdp.productCategory-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/BiologicallyDerivedProduct#BiologicallyDerivedProduct.productCategory\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/BiologicallyDerivedProduct#BiologicallyDerivedProduct.productCategory",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/bdp.productCategory-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/product-category|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/product-category|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/product-category",
+      "target": "http://hl7.org/fhir/product-category",
+      "element": [
+        {
+          "code": "organ",
+          "target": [
+            {
+              "code": "organ",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cells",
+          "target": [
+            {
+              "code": "cells",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biologicalAgent",
+          "target": [
+            {
+              "code": "biologicalAgent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tissue",
+          "target": [
+            {
+              "code": "tissue",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fluid",
+          "target": [
+            {
+              "code": "fluid",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

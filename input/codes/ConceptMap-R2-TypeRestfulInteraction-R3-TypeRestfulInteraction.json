@@ -1,0 +1,105 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-TypeRestfulInteraction-R3-TypeRestfulInteraction",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-TypeRestfulInteraction-R3-TypeRestfulInteraction",
+  "version": "0.0.1",
+  "name": "R2-TypeRestfulInteraction-R3-TypeRestfulInteraction",
+  "title": "Concept map to convert a FHIR R2 TypeRestfulInteraction into a FHIR R3 TypeRestfulInteraction",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4912816-06:00",
+  "description": "Mapping for Conformance.rest.resource.interaction.code/CapabilityStatement.rest.resource.interaction.code from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConformanceRestResourceInteractionCodeCapabilityStatementRestResourceInteractionCode2to3",
+      "display": "Id: cpb.re.re.in.code-cpb.re.re.in.code-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.resource.interaction.code\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.interaction.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.in.code-cpb.re.re.in.code-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/type-restful-interaction|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/type-restful-interaction|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/restful-interaction",
+      "target": "http://hl7.org/fhir/restful-interaction",
+      "element": [
+        {
+          "code": "create",
+          "target": [
+            {
+              "code": "create",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "delete",
+          "target": [
+            {
+              "code": "delete",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "history-instance",
+          "target": [
+            {
+              "code": "history-instance",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "history-type",
+          "target": [
+            {
+              "code": "history-type",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "read",
+          "target": [
+            {
+              "code": "read",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "search-type",
+          "target": [
+            {
+              "code": "search-type",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "update",
+          "target": [
+            {
+              "code": "update",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "validate",
+          "noMap": true
+        },
+        {
+          "code": "vread",
+          "target": [
+            {
+              "code": "vread",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

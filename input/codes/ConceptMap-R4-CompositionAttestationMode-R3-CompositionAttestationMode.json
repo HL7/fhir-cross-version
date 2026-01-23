@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-CompositionAttestationMode-R3-CompositionAttestationMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-CompositionAttestationMode-R3-CompositionAttestationMode",
+  "version": "0.0.1",
+  "name": "R4-CompositionAttestationMode-R3-CompositionAttestationMode",
+  "title": "Concept map to convert a FHIR R4 CompositionAttestationMode into a FHIR R3 CompositionAttestationMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2458405-06:00",
+  "description": "Mapping for Composition.attester.mode from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CompositionAttesterMode4to3",
+      "display": "Id: cmp.at.mode-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.attester.mode\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.attester.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.at.mode-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/composition-attestation-mode|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/composition-attestation-mode",
+      "target": "http://hl7.org/fhir/composition-attestation-mode",
+      "element": [
+        {
+          "code": "legal",
+          "target": [
+            {
+              "code": "legal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "official",
+          "target": [
+            {
+              "code": "official",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "personal",
+          "target": [
+            {
+              "code": "personal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "professional",
+          "target": [
+            {
+              "code": "professional",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

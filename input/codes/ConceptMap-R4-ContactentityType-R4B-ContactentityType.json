@@ -1,0 +1,89 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ContactentityType-R4B-ContactentityType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ContactentityType-R4B-ContactentityType",
+  "version": "0.0.1",
+  "name": "R4-ContactentityType-R4B-ContactentityType",
+  "title": "Concept map to convert a FHIR R4 ContactentityType into a FHIR R4B ContactentityType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0129074-06:00",
+  "description": "Mapping for InsurancePlan.contact.purpose from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "InsurancePlanContactPurpose4to4b",
+      "display": "Id: ipn.co.purpose-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/InsurancePlan#InsurancePlan.contact.purpose\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/InsurancePlan#InsurancePlan.contact.purpose",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ipn.co.purpose-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "OrganizationContactPurpose4to4b",
+      "display": "Id: org.co.purpose-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Organization#Organization.contact.purpose\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Organization#Organization.contact.purpose",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/org.co.purpose-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/contactentity-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/contactentity-type|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+      "target": "http://terminology.hl7.org/CodeSystem/contactentity-type",
+      "element": [
+        {
+          "code": "PATINF",
+          "target": [
+            {
+              "code": "PATINF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BILL",
+          "target": [
+            {
+              "code": "BILL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HR",
+          "target": [
+            {
+              "code": "HR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ADMIN",
+          "target": [
+            {
+              "code": "ADMIN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PAYOR",
+          "target": [
+            {
+              "code": "PAYOR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRESS",
+          "target": [
+            {
+              "code": "PRESS",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

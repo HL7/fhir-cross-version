@@ -1,0 +1,105 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-UsageContextType-R3-UsageContextType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-UsageContextType-R3-UsageContextType",
+  "version": "0.0.1",
+  "name": "R4-UsageContextType-R3-UsageContextType",
+  "title": "Concept map to convert a FHIR R4 UsageContextType into a FHIR R3 UsageContextType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2761791-06:00",
+  "description": "Mapping for UsageContext.code from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "UsageContextCode4to3",
+      "display": "Id: usc.code-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/UsageContext#UsageContext.code\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/UsageContext#UsageContext.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/usc.code-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/usage-context-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/usage-context-type|3.0.2",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "target": "http://hl7.org/fhir/usage-context-type",
+      "element": [
+        {
+          "code": "age",
+          "target": [
+            {
+              "code": "age",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "focus",
+          "target": [
+            {
+              "code": "focus",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gender",
+          "target": [
+            {
+              "code": "gender",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "program",
+          "noMap": true
+        },
+        {
+          "code": "species",
+          "target": [
+            {
+              "code": "species",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "task",
+          "target": [
+            {
+              "code": "task",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "user",
+          "target": [
+            {
+              "code": "user",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "venue",
+          "target": [
+            {
+              "code": "venue",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "workflow",
+          "target": [
+            {
+              "code": "workflow",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

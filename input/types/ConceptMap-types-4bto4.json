@@ -41,7 +41,9 @@
     { "code" : "Annotation", "target" : [{ "code" : "Annotation", "relationship" : "equivalent" }]},
     { "code" : "Attachment", "target" : [{ "code" : "Attachment", "relationship" : "equivalent" }]},
     { "code" : "CodeableConcept", "target" : [{ "code" : "CodeableConcept", "relationship" : "equivalent" }]},
-    { "code" : "CodeableReference", "target" : [{ "code" : "CodeableConcept", "relationship" : "equivalent" }, {"code":"Reference", "relationship":"equivalent"}]},
+    { "code" : "CodeableReference", "target" : [
+      { "code" : "CodeableConcept", "relationship" : "source-is-broader-than-target" },
+      { "code" : "Reference", "relationship":"source-is-broader-than-target"}]},
     { "code" : "Coding", "target" : [{ "code" : "Coding", "relationship" : "equivalent" }]},
     { "code" : "ContactDetail", "target" : [{ "code" : "ContactDetail", "relationship" : "equivalent" }]},
     { "code" : "ContactPoint", "target" : [{ "code" : "ContactPoint", "relationship" : "equivalent" }]},

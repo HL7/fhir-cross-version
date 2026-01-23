@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-StrandType-R4B-StrandType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-StrandType-R4B-StrandType",
+  "version": "0.0.1",
+  "name": "R5-StrandType-R4B-StrandType",
+  "title": "Concept map to convert a FHIR R5 StrandType into a FHIR R4B StrandType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9243972-06:00",
+  "description": "Mapping for MolecularSequence.relative.startingSequence.strand/MolecularSequence.referenceSeq.strand from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MolecularSequenceRelativeStartingSequenceStrandMolecularSequenceReferenceSeqStrand5to4b",
+      "display": "Id: msq.re.st.strand-msq.re.strand-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/MolecularSequence#MolecularSequence.relative.startingSequence.strand\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/MolecularSequence#MolecularSequence.referenceSeq.strand",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/msq.re.st.strand-msq.re.strand-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/strand-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/strand-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/strand-type",
+      "target": "http://hl7.org/fhir/strand-type",
+      "element": [
+        {
+          "code": "watson",
+          "target": [
+            {
+              "code": "watson",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "crick",
+          "target": [
+            {
+              "code": "crick",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

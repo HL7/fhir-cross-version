@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ConsentDataMeaning-R3-ConsentDataMeaning",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ConsentDataMeaning-R3-ConsentDataMeaning",
+  "version": "0.0.1",
+  "name": "R4-ConsentDataMeaning-R3-ConsentDataMeaning",
+  "title": "Concept map to convert a FHIR R4 ConsentDataMeaning into a FHIR R3 ConsentDataMeaning",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2663748-06:00",
+  "description": "Mapping for Consent.provision.data.meaning/Consent.data.meaning from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConsentProvisionDataMeaningConsentDataMeaning4to3",
+      "display": "Id: ppc.pr.da.meaning-ppc.da.meaning-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.data.meaning\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.data.meaning",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.da.meaning-ppc.da.meaning-4to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "ConsentProvisionDataMeaningConsentExceptDataMeaning4to3",
+      "display": "Id: ppc.pr.da.meaning-ppc.ex.da.meaning-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.data.meaning\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Consent#Consent.except.data.meaning",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.da.meaning-ppc.ex.da.meaning-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/consent-data-meaning|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/consent-data-meaning",
+      "target": "http://hl7.org/fhir/consent-data-meaning",
+      "element": [
+        {
+          "code": "instance",
+          "target": [
+            {
+              "code": "instance",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "related",
+          "target": [
+            {
+              "code": "related",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dependents",
+          "target": [
+            {
+              "code": "dependents",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "authoredby",
+          "target": [
+            {
+              "code": "authoredby",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -26,7 +26,7 @@
     { "code" : "id", "target" : [{ "code" : "id", "relationship" : "equivalent" }]},
     { "code" : "instant", "target" : [{ "code" : "instant", "relationship" : "equivalent" }]},
     { "code" : "integer", "target" : [{ "code" : "integer", "relationship" : "equivalent" }]},
-    { "code" : "integer64", "target" : [{ "code" : "integer", "relationship" : "source-is-broader-than-target", "comment" : "has bigger range" }]},
+    { "code" : "integer64", "target" : [{ "code" : "string", "relationship" : "source-is-narrower-than-target" }]},
     { "code" : "markdown", "target" : [{ "code" : "markdown", "relationship" : "equivalent" }]},
     { "code" : "oid", "target" : [{ "code" : "oid", "relationship" : "equivalent" }]},
     { "code" : "positiveInt", "target" : [{ "code" : "positiveInt", "relationship" : "equivalent" }]},

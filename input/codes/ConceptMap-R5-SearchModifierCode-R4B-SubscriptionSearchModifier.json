@@ -1,0 +1,114 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SearchModifierCode-R4B-SubscriptionSearchModifier",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-SearchModifierCode-R4B-SubscriptionSearchModifier",
+  "version": "0.0.1",
+  "name": "R5-SearchModifierCode-R4B-SubscriptionSearchModifier",
+  "title": "Concept map to convert a FHIR R5 SearchModifierCode into a FHIR R4B SubscriptionSearchModifier",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9303857-06:00",
+  "description": "Mapping for SubscriptionTopic.canFilterBy.modifier from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SubscriptionTopicCanFilterByModifier5to4b",
+      "display": "Id: scrt.ca.modifier-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionTopic#SubscriptionTopic.canFilterBy.modifier\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic#SubscriptionTopic.canFilterBy.modifier",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/scrt.ca.modifier-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-modifier-code|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-search-modifier|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-modifier-code",
+      "target": "http://terminology.hl7.org/CodeSystem/subscription-search-modifier",
+      "element": [
+        {
+          "code": "identifier",
+          "noMap": true
+        },
+        {
+          "code": "of-type",
+          "target": [
+            {
+              "code": "of-type",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "below",
+          "target": [
+            {
+              "code": "below",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "type",
+          "noMap": true
+        },
+        {
+          "code": "contains",
+          "noMap": true
+        },
+        {
+          "code": "not",
+          "noMap": true
+        },
+        {
+          "code": "missing",
+          "noMap": true
+        },
+        {
+          "code": "exact",
+          "noMap": true
+        },
+        {
+          "code": "above",
+          "target": [
+            {
+              "code": "above",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-in",
+          "target": [
+            {
+              "code": "not-in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "text",
+          "noMap": true
+        },
+        {
+          "code": "text-advanced",
+          "noMap": true
+        },
+        {
+          "code": "code-text",
+          "noMap": true
+        },
+        {
+          "code": "iterate",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

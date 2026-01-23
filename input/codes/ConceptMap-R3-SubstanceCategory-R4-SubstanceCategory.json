@@ -1,0 +1,92 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-SubstanceCategory-R4-SubstanceCategory",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-SubstanceCategory-R4-SubstanceCategory",
+  "version": "0.0.1",
+  "name": "R3-SubstanceCategory-R4-SubstanceCategory",
+  "title": "Concept map to convert a FHIR R3 SubstanceCategory into a FHIR R4 SubstanceCategory",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6976774-06:00",
+  "description": "Mapping for Substance.category from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SubstanceCategory3to4",
+      "display": "Id: sub.category-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Substance#Substance.category\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Substance#Substance.category",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sub.category-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/substance-category|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/substance-category|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/substance-category",
+      "target": "http://terminology.hl7.org/CodeSystem/substance-category",
+      "element": [
+        {
+          "code": "allergen",
+          "target": [
+            {
+              "code": "allergen",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "material",
+          "target": [
+            {
+              "code": "material",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "chemical",
+          "target": [
+            {
+              "code": "chemical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biological",
+          "target": [
+            {
+              "code": "biological",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "body",
+          "target": [
+            {
+              "code": "body",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "food",
+          "target": [
+            {
+              "code": "food",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "drug",
+          "target": [
+            {
+              "code": "drug",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

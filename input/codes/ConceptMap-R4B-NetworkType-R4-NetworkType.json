@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-NetworkType-R4-NetworkType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-NetworkType-R4-NetworkType",
+  "version": "0.0.1",
+  "name": "R4B-NetworkType-R4-NetworkType",
+  "title": "Concept map to convert a FHIR R4B NetworkType into a FHIR R4 NetworkType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.7084781-06:00",
+  "description": "Mapping for AuditEvent.agent.network.type from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AuditEventAgentNetworkType4bto4",
+      "display": "Id: sev.ag.ne.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.agent.network.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.agent.network.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ag.ne.type-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/network-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/network-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/network-type",
+      "target": "http://hl7.org/fhir/network-type",
+      "element": [
+        {
+          "code": "1",
+          "target": [
+            {
+              "code": "1",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "2",
+          "target": [
+            {
+              "code": "2",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "3",
+          "target": [
+            {
+              "code": "3",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "4",
+          "target": [
+            {
+              "code": "4",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "5",
+          "target": [
+            {
+              "code": "5",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-DataAbsentReason-R3-ObservationValueabsentreason",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-DataAbsentReason-R3-ObservationValueabsentreason",
+  "version": "0.0.1",
+  "name": "R4-DataAbsentReason-R3-ObservationValueabsentreason",
+  "title": "Concept map to convert a FHIR R4 DataAbsentReason into a FHIR R3 ObservationValueabsentreason",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2629874-06:00",
+  "description": "Mapping for Observation.component.dataAbsentReason from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ObservationComponentDataAbsentReason4to3",
+      "display": "Id: obs.co.dataAbsentReason-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Observation#Observation.component.dataAbsentReason\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.component.dataAbsentReason",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/obs.co.dataAbsentReason-4to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "ObservationDataAbsentReason4to3",
+      "display": "Id: obs.dataAbsentReason-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Observation#Observation.dataAbsentReason\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.dataAbsentReason",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/obs.dataAbsentReason-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/observation-valueabsentreason|3.0.2",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "target": "http://hl7.org/fhir/data-absent-reason",
+      "element": [
+        {
+          "code": "as-text",
+          "target": [
+            {
+              "code": "astext",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "masked",
+          "target": [
+            {
+              "code": "masked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asked-unknown",
+          "target": [
+            {
+              "code": "asked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-asked",
+          "target": [
+            {
+              "code": "not-asked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-performed",
+          "target": [
+            {
+              "code": "not-performed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "positive-infinity",
+          "target": [
+            {
+              "code": "NaN",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unsupported",
+          "target": [
+            {
+              "code": "unsupported",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "negative-infinity",
+          "target": [
+            {
+              "code": "NaN",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "asked-declined",
+          "target": [
+            {
+              "code": "asked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-permitted",
+          "noMap": true
+        },
+        {
+          "code": "temp-unknown",
+          "target": [
+            {
+              "code": "temp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-applicable",
+          "noMap": true
+        },
+        {
+          "code": "not-a-number",
+          "target": [
+            {
+              "code": "NaN",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ListMode-R4B-ListMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ListMode-R4B-ListMode",
+  "version": "0.0.1",
+  "name": "R4-ListMode-R4B-ListMode",
+  "title": "Concept map to convert a FHIR R4 ListMode into a FHIR R4B ListMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.9879955-06:00",
+  "description": "Mapping for Composition.section.mode from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CompositionSectionMode4to4b",
+      "display": "Id: cmp.se.mode-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.section.mode\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Composition#Composition.section.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.se.mode-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "ListMode4to4b",
+      "display": "Id: lst.mode-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/List#List.mode\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/List#List.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/lst.mode-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/list-mode|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/list-mode|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/list-mode",
+      "target": "http://hl7.org/fhir/list-mode",
+      "element": [
+        {
+          "code": "changes",
+          "target": [
+            {
+              "code": "changes",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "working",
+          "target": [
+            {
+              "code": "working",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "snapshot",
+          "target": [
+            {
+              "code": "snapshot",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

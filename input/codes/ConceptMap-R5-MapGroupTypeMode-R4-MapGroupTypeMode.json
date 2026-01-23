@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MapGroupTypeMode-R4-MapGroupTypeMode",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-MapGroupTypeMode-R4-MapGroupTypeMode",
+  "version": "0.0.1",
+  "name": "R5-MapGroupTypeMode-R4-MapGroupTypeMode",
+  "title": "Concept map to convert a FHIR R5 MapGroupTypeMode into a FHIR R4 MapGroupTypeMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:21.0028467-06:00",
+  "description": "Mapping for StructureMap.group.typeMode from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureMapGroupTypeMode5to4",
+      "display": "Id: smp.gr.typeMode-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/StructureMap#StructureMap.group.typeMode\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.typeMode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.typeMode-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/map-group-type-mode|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/map-group-type-mode|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/map-group-type-mode",
+      "target": "http://hl7.org/fhir/map-group-type-mode",
+      "element": [
+        {
+          "code": "types",
+          "target": [
+            {
+              "code": "types",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "type-and-types",
+          "target": [
+            {
+              "code": "type-and-types",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

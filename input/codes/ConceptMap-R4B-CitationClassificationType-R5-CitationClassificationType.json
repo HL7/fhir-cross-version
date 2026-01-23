@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-CitationClassificationType-R5-CitationClassificationType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-CitationClassificationType-R5-CitationClassificationType",
+  "version": "0.0.1",
+  "name": "R4B-CitationClassificationType-R5-CitationClassificationType",
+  "title": "Concept map to convert a FHIR R4B CitationClassificationType into a FHIR R5 CitationClassificationType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4616699-06:00",
+  "description": "Mapping for Citation.classification.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CitationClassificationType4bto5",
+      "display": "Id: ctn.cl.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.classification.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.classification.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.cl.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/citation-classification-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/citation-classification-type|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/citation-classification-type",
+      "target": "http://hl7.org/fhir/citation-classification-type",
+      "element": [
+        {
+          "code": "medline-owner",
+          "target": [
+            {
+              "code": "medline-owner",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fevir-platform-use",
+          "target": [
+            {
+              "code": "fevir-platform-use",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "citation-source",
+          "target": [
+            {
+              "code": "citation-source",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

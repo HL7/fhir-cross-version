@@ -1,0 +1,101 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-RequestIntent-R4-TaskIntent",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-RequestIntent-R4-TaskIntent",
+  "version": "0.0.1",
+  "name": "R3-RequestIntent-R4-TaskIntent",
+  "title": "Concept map to convert a FHIR R3 RequestIntent into a FHIR R4 TaskIntent",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6991248-06:00",
+  "description": "Mapping for Task.intent from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TaskIntentr3to4",
+      "display": "Id: tsk.intent-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Task#Task.intent\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Task#Task.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tsk.intent-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/request-intent|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/task-intent|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-intent",
+      "target": "http://hl7.org/fhir/request-intent",
+      "element": [
+        {
+          "code": "filler-order",
+          "target": [
+            {
+              "code": "filler-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "instance-order",
+          "target": [
+            {
+              "code": "instance-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "option",
+          "target": [
+            {
+              "code": "option",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "order",
+          "target": [
+            {
+              "code": "order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "original-order",
+          "target": [
+            {
+              "code": "original-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "plan",
+          "target": [
+            {
+              "code": "plan",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "proposal",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reflex-order",
+          "target": [
+            {
+              "code": "reflex-order",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

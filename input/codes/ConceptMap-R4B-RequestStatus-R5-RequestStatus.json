@@ -1,0 +1,122 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-RequestStatus-R5-RequestStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-RequestStatus-R5-RequestStatus",
+  "version": "0.0.1",
+  "name": "R4B-RequestStatus-R5-RequestStatus",
+  "title": "Concept map to convert a FHIR R4B RequestStatus into a FHIR R5 RequestStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4557803-06:00",
+  "description": "Mapping for CommunicationRequest.status from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CommunicationRequestStatus4bto5",
+      "display": "Id: cmr.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/CommunicationRequest#CommunicationRequest.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CommunicationRequest#CommunicationRequest.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmr.status-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "CarePlanStatus4bto5",
+      "display": "Id: cpl.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/CarePlan#CarePlan.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CarePlan#CarePlan.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.status-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "DeviceRequestStatus4bto5",
+      "display": "Id: dur.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/DeviceRequest#DeviceRequest.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/DeviceRequest#DeviceRequest.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dur.status-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "NutritionOrderStatus4bto5",
+      "display": "Id: nor.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/NutritionOrder#NutritionOrder.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/NutritionOrder#NutritionOrder.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nor.status-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestGroupStatusRequestOrchestrationStatus4bto5",
+      "display": "Id: rgp.status-rqo.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.status-rqo.status-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "ServiceRequestStatus4bto5",
+      "display": "Id: srq.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ServiceRequest#ServiceRequest.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ServiceRequest#ServiceRequest.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/srq.status-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/request-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-status",
+      "target": "http://hl7.org/fhir/request-status",
+      "element": [
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "revoked",
+          "target": [
+            {
+              "code": "revoked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "target": [
+            {
+              "code": "on-hold",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

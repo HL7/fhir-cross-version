@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-SortDirection-R5-SortDirection",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-SortDirection-R5-SortDirection",
+  "version": "0.0.1",
+  "name": "R4B-SortDirection-R5-SortDirection",
+  "title": "Concept map to convert a FHIR R4B SortDirection into a FHIR R5 SortDirection",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.463287-06:00",
+  "description": "Mapping for DataRequirement.sort.direction from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DataRequirementSortDirection4bto5",
+      "display": "Id: drq.so.direction-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/DataRequirement#DataRequirement.sort.direction\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/DataRequirement#DataRequirement.sort.direction",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/drq.so.direction-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/sort-direction|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/sort-direction|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/sort-direction",
+      "target": "http://hl7.org/fhir/sort-direction",
+      "element": [
+        {
+          "code": "ascending",
+          "target": [
+            {
+              "code": "ascending",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "descending",
+          "target": [
+            {
+              "code": "descending",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
