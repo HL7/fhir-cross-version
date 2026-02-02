@@ -16,6 +16,10 @@
     {
       "source": "http://hl7.org/fhir/4.3/element-names",
       "target": "http://hl7.org/fhir/4.0/element-names",
+            "element": [
+    { "code": "CodeableReference.concept", "target" : [{ "code" : "CodeableConcept", "relationship" : "equivalent"}] },
+    { "code": "CodeableReference.reference", "target" : [{ "code" : "Reference", "relationship" : "equivalent"}] }
+            ],
       "unmapped" : {
         "mode"  : "use-source-code",
         "relationship": "equivalent"

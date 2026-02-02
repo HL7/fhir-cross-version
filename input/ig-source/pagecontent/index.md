@@ -25,6 +25,8 @@ to the FHIR Infrastructure WorkGroup.
     * `Resource` type elements are excluded (e.g., R5:`Bundle.issues`)
 * Mappings are generally between adjacent versions, so "back-and-forth" conversions may be needlessly verbose
 * Large / infinite value sets (e.g., UCUM, LOINC, MIME) are excluded and assumed 'equivalent' across versions
+* Mapping elements that split into multiple elements has a lot of complications that are out-of-scope for this package, but should be noted when using it.
+    E.g., when mapping from a single `CodeableReference` element to `CodeableConcept` and `Reference` elements, decisions must be made about any existing extensions, etc.
 
 ### Intellectual Property Statements
 

@@ -17,6 +17,9 @@
       "source": "http://hl7.org/fhir/5.0/element-names",
       "target": "http://hl7.org/fhir/4.0/element-names",
       "element": [
+    { "code": "CodeableReference.concept", "target" : [{ "code" : "CodeableConcept", "relationship" : "equivalent"}] },
+    { "code": "CodeableReference.reference", "target" : [{ "code" : "Reference", "relationship" : "equivalent"}] },
+
     { "code": "Account.relatedAccount", "target" : [{ "code" : "Account", "relationship" : "source-is-narrower-than-target"}] },
     { "code": "Account.relatedAccount.account", "target": [{ "code": "Account.partOf", "relationship": "source-is-broader-than-target", "comment" : "re-org" }] },
     { "code": "Account.relatedAccount.account", "target": [{ "code": "Account.relatedAccount.partOf", "relationship": "equivalent" }] },
@@ -100,20 +103,16 @@
     { "code": "Device.conformsTo", "target": [{ "code": "Device.specialization", "relationship": "equivalent" }] },
     { "code": "Device.conformsTo.category", "target": [{ "code": "Device.specialization.category", "relationship": "equivalent" }] },
     { "code": "Device.conformsTo.specification", "target": [{ "code": "Device.specialization.specification", "relationship": "equivalent" }] },
-
-    { "code": "Device.displayName", "target": [{ "code": "Device.deviceName", "relationship": "related-to" }] },
-    
+    { "code": "Device.displayName", "target": [{ "code": "Device.deviceName", "relationship": "related-to" }] },  
     { "code": "Device.name", "target": [{ "code": "Device.deviceName", "relationship": "equivalent" }] },
     { "code": "Device.name.display", "target": [{ "code": "Device.deviceName.display", "relationship": "equivalent" }] },
     { "code": "Device.name.type", "target": [{ "code": "Device.deviceName.type", "relationship": "equivalent" }] },
     { "code": "Device.name.value", "target": [{ "code": "Device.deviceName.name", "relationship": "equivalent" }] },
     { "code": "Device.property.value[x]", "target": [{ "code": "Device.property.valueCode", "relationship": "source-is-broader-than-target", "comment" : "re-org" }] },
     { "code": "Device.property.value[x]", "target": [{ "code": "Device.property.valueQuantity", "relationship": "source-is-broader-than-target", "comment" : "re-org" }] },
-
     { "code": "Device.status", "target": [{ "code" : "Device.status", "relationship" : "equivalent" }] },
     { "code": "DeviceAssociation.status", "noMap" : true, "target": [{"code":"Device.status", "relationship":"not-related-to"}] },
     { "code": "DeviceAssociation.subject", "target": [{ "code" : "Device.patient", "relationship" : "source-is-broader-than-target" }] },
-
     { "code": "DeviceDefinition.conformsTo", "target": [{ "code": "DeviceDefinition.specialization", "relationship": "equivalent" }] },
     { "code": "DeviceDefinition.conformsTo.category", "target": [{ "code": "DeviceDefinition.specialization.category", "relationship": "equivalent" }] },
     { "code": "DeviceDefinition.conformsTo.source", "target": [{ "code": "DeviceDefinition.specialization.source", "relationship": "equivalent" }] },
@@ -125,9 +124,7 @@
     { "code": "DeviceDefinition.property.value[x]", "target": [{ "code": "DeviceDefinition.property.valueQuantity", "relationship": "source-is-broader-than-target", "comment" : "re-org" }] },
     { "code": "DeviceMetric.device", "target": [{ "code": "DeviceMetric.source", "relationship": "equivalent" }] },
     { "code": "DeviceRequest.code", "target": [{ "code": "DeviceRequest.code[x]", "relationship": "equivalent" }] },
-
     { "code" : "DeviceRequest.performer", "target" : [{ "code" : "DeviceRequest.performer", "relationship" : "source-is-broader-than-target" }, { "code" : "DeviceRequest.performerType", "relationship" : "source-is-broader-than-target" }] },
-
     { "code": "DeviceRequest.reason", "target": [
       { "code": "DeviceRequest.reasonCode", "relationship": "equivalent" },
       { "code": "DeviceRequest.reasonReference", "relationship": "equivalent" }] },

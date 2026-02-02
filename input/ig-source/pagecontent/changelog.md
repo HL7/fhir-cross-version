@@ -5,11 +5,12 @@
 * Updated to use language-based fragment inclusions.
 * Added default language of `US-en` so translations can be supported.
 * Added `https://www.iana.org/time-zones` to exclusion set (never need to generate)
-* [ ] Remove dependency on SUSHI
-* [ ] Constrain `Extension.value[x]` to `0..0` when creating complex extensions
+* Removed dependency on SUSHI for package generation
+* Constrained `Extension.value[x]` to `0..0` when creating complex extensions
 * [ ] https://hl7.org/fhir/uv/xver-r5.r4/0.0.1-snapshot-2/StructureDefinition-ext-R5-ValueSet.ex.co.property.html is still closed - why?
     * Also has a sub-property `value[x]`, which should be `value`
-* [ ] Add ConceptMap resources for element / outcome navigation
+* Added `ConceptMap` resources for `ValueSet` resources that map between the source and target version.
+* Added `ConceptMap` resources for resource and element mapping between source and target versions.
 * [ ] Update Lookup files to include the 'parent' extension when result is to use a parent extension
 * [ ] Add Lookup files for Value Sets
 * [ ] Add profile links to the lookup files for Resource extensions that target `Basic`
@@ -19,6 +20,10 @@
 * [ ] Add ImplementationGuide.definition.grouping to organize resources in the IG
 * [ ] Add support for STU3 package generation
 * [ ] Add support for DSTU2 package generation
+* Added profiles for all resource mappings (expanded from only ones that targeted `Basic`)
+* Extensions that include multiple types and require an `extension` (e.g., a datatype that does not exist in the target) have been moved to `value[TypeName]` slices to avoid conflicts on multiple elements with the same name.
+* Extensions that were targeting elements that were choice types have their targets moved up to a parent - extensions cannot exist directly on the choice type, and having _many_ slices that repeat content was untenable.
+* Fix: `Basic`->`Basic` resource profile is a 'standard' resource profile, not a Cross-Version resource representation.
 
 ### 0.0.1-snapshot-2
 
