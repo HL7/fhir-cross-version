@@ -3,27 +3,35 @@
 * Fix: resources mapping to `Basic` still need a `[Source.]code` extension, `Basic.code` has a necessary meaning. Excluded `Basic.code` from automatic removal when mapping to `Basic`.
 * Fix: non-resource structures should not create profiles of `Basic` resources. Only resource structures should create `Basic` profiles.
 * Updated to use language-based fragment inclusions.
-* Added default language of `US-en` so translations can be supported.
+* Added default language of `en-US` so translations can be supported.
 * Added `https://www.iana.org/time-zones` to exclusion set (never need to generate)
 * Removed dependency on SUSHI for package generation
-* Constrained `Extension.value[x]` to `0..0` when creating complex extensions
-* [ ] https://hl7.org/fhir/uv/xver-r5.r4/0.0.1-snapshot-2/StructureDefinition-ext-R5-ValueSet.ex.co.property.html is still closed - why?
-    * Also has a sub-property `value[x]`, which should be `value`
+* Constrained `Extension.value[x]` to `0..0` when creating complex extensions that do not contain direct value slices.
 * Added `ConceptMap` resources for `ValueSet` resources that map between the source and target version.
 * Added `ConceptMap` resources for resource and element mapping between source and target versions.
+* Added Lookup files for Value Sets
+* Added profile links to the lookup files for Resource extensions that target `Basic`
+* Added profiles for all resource mappings (expanded from only ones that targeted `Basic`)
+* Extensions that include multiple types and require an extension (e.g., a datatype that does not exist in the target) have been moved to `value[TypeName]` slices to avoid conflicts on multiple elements with the same name.
+* Extensions that were targeting elements that were choice types have their targets moved up to a parent - extensions cannot exist directly on the choice type, and having so many slices that repeat content was untenable.
+* Fix: `Basic`->`Basic` resource profile is a 'standard' resource profile, not a Cross-Version resource representation.
+* Fix: any element that gets a definition requires all children underneath it to be part of the definition.
+* Added `http://hl7.org/fhir/StructureDefinition/version-specific-use` to all exported extensions and profiles.
+* Updated mappings to account for 'mapped to other location'.  E.g., a value set may be fully mapped if all concepts are mapped into one of two different target value sets.
+* Fix: extension id "short" abbreviations were too short and creating collisions.
+
+* [?] Fix: regression: use `alternate-canonical` for target types that are not canonicals in target version
+    * Determine if we _actually_ want this
 * [ ] Update Lookup files to include the 'parent' extension when result is to use a parent extension
-* [ ] Add Lookup files for Value Sets
-* [ ] Add profile links to the lookup files for Resource extensions that target `Basic`
+* [ ] https://hl7.org/fhir/uv/xver-r5.r4/0.0.1-snapshot-2/StructureDefinition-ext-R5-ValueSet.ex.co.property.html is still closed - why?
+    * Also has a sub-property `value[x]`, which should be `value`
 * [ ] Port Search Parameters for new resources
     * [ ] Determine if we can add new search parameters due to additional elements
 * [ ] Port Operation Definitions for new resources
 * [ ] Add ImplementationGuide.definition.grouping to organize resources in the IG
 * [ ] Add support for STU3 package generation
 * [ ] Add support for DSTU2 package generation
-* Added profiles for all resource mappings (expanded from only ones that targeted `Basic`)
-* Extensions that include multiple types and require an `extension` (e.g., a datatype that does not exist in the target) have been moved to `value[TypeName]` slices to avoid conflicts on multiple elements with the same name.
-* Extensions that were targeting elements that were choice types have their targets moved up to a parent - extensions cannot exist directly on the choice type, and having _many_ slices that repeat content was untenable.
-* Fix: `Basic`->`Basic` resource profile is a 'standard' resource profile, not a Cross-Version resource representation.
+
 
 ### 0.0.1-snapshot-2
 
