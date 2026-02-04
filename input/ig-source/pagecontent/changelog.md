@@ -18,8 +18,12 @@
 * Fix: any element that gets a definition requires all children underneath it to be part of the definition.
 * Added `http://hl7.org/fhir/StructureDefinition/version-specific-use` to all exported extensions and profiles.
 * Updated mappings to account for 'mapped to other location'.  E.g., a value set may be fully mapped if all concepts are mapped into one of two different target value sets.
-* Fix: extension id "short" abbreviations were too short and creating collisions.
+* Fix: extension id "short" abbreviations were too short and creating collisions (e.g., both `Specimen.collection.device` and `Specimen.container.device` shortened to `Specimen.co.device`).
+* Note: R5 CodeSystem `http://terminology.hl7.org/CodeSystem/operation-outcome|2.0.0` (from THO) is updated during export to have id `operation-outcome-tho` and name `OperationOutcomeTHO` due to collisions with the R5 CodeSystem `http://hl7.org/fhir/operation-outcome`.
 
+* [ ] Fix: extensions that can target multiple structures:
+    * Should they join into the same extension via multiple contexts
+    * Should they be defined as multiple extensions with the target structure name included
 * [?] Fix: regression: use `alternate-canonical` for target types that are not canonicals in target version
     * Determine if we _actually_ want this
 * [ ] Update Lookup files to include the 'parent' extension when result is to use a parent extension

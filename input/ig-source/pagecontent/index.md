@@ -7,6 +7,8 @@ Cross-version extension content is generated via a combination of automatic diff
 For details or questions, please reach out on [Zulip](https://chat.fhir.org/#narrow/channel/426854-FHIR-cross-version-issues) or
 to the FHIR Infrastructure WorkGroup.
 
+Frequently Asked Questions and related guidance can be found on the [FAQs Page](faqs.html)
+
 ### Goals
 
 * Ability to use elements from another version of FHIR
