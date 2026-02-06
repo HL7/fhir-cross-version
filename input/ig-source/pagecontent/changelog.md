@@ -20,15 +20,17 @@
 * Updated mappings to account for 'mapped to other location'.  E.g., a value set may be fully mapped if all concepts are mapped into one of two different target value sets.
 * Fix: extension id "short" abbreviations were too short and creating collisions (e.g., both `Specimen.collection.device` and `Specimen.container.device` shortened to `Specimen.co.device`).
 * Note: R5 CodeSystem `http://terminology.hl7.org/CodeSystem/operation-outcome|2.0.0` (from THO) is updated during export to have id `operation-outcome-tho` and name `OperationOutcomeTHO` due to collisions with the R5 CodeSystem `http://hl7.org/fhir/operation-outcome`.
+* Fix: removed CodeSystems that are experimental and have 'example' in their id from exports.
+* Fix: added prefixes to all exported content to avoid collisions
+* Updated structure lookup files to link to the ancestor extension definition when the target is a slice in an extension definition.
+* Fix: all extension slicing is `open` in extension definitions
+
 
 * [ ] Fix: extensions that can target multiple structures:
     * Should they join into the same extension via multiple contexts
     * Should they be defined as multiple extensions with the target structure name included
 * [?] Fix: regression: use `alternate-canonical` for target types that are not canonicals in target version
     * Determine if we _actually_ want this
-* [ ] Update Lookup files to include the 'parent' extension when result is to use a parent extension
-* [ ] https://hl7.org/fhir/uv/xver-r5.r4/0.0.1-snapshot-2/StructureDefinition-ext-R5-ValueSet.ex.co.property.html is still closed - why?
-    * Also has a sub-property `value[x]`, which should be `value`
 * [ ] Port Search Parameters for new resources
     * [ ] Determine if we can add new search parameters due to additional elements
 * [ ] Port Operation Definitions for new resources

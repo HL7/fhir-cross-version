@@ -32,4 +32,4 @@ Frequently Asked Questions and related guidance can be found on the [FAQs Page](
 
 ### Intellectual Property Statements
 
-{% lang-fragment ip-statements.xhtml %}
+{% include ip-statements-en.xhtml %}

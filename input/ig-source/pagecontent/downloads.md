@@ -17,12 +17,12 @@ A downloadable version of this IG is available so it can be hosted locally:
 
 ### Package Dependencies
 
-{% lang-fragment dependency-table.xhtml %}
+{% include dependency-table-short-en.xhtml %}
 
 ### Global Profile Definitions
 
-{% lang-fragment globals-table.xhtml %}
+{% include globals-table-en.xhtml %}
 
 ### Cross-Version Analysis
 
-{% lang-fragment cross-version-analysis.xhtml %}
+{% include cross-version-analysis-en.xhtml %}
