@@ -24,19 +24,9 @@
 * Fix: added prefixes to all exported content to avoid collisions
 * Updated structure lookup files to link to the ancestor extension definition when the target is a slice in an extension definition.
 * Fix: all extension slicing is `open` in extension definitions
-
-
-* [ ] Fix: extensions that can target multiple structures:
-    * Should they join into the same extension via multiple contexts
-    * Should they be defined as multiple extensions with the target structure name included
-* [?] Fix: regression: use `alternate-canonical` for target types that are not canonicals in target version
-    * Determine if we _actually_ want this
-* [ ] Port Search Parameters for new resources
-    * [ ] Determine if we can add new search parameters due to additional elements
-* [ ] Port Operation Definitions for new resources
-* [ ] Add ImplementationGuide.definition.grouping to organize resources in the IG
-* [ ] Add support for STU3 package generation
-* [ ] Add support for DSTU2 package generation
+* Added: use `alternate-canonical` to represent any canonical definition
+* Added: use `alternate-reference` to represent any reference definition
+* Added: use `alternate-canonical` and `alternate-reference` in place of specific parts of choice types.
 
 
 ### 0.0.1-snapshot-2
