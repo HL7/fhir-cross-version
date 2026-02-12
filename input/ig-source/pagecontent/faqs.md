@@ -1,17 +1,48 @@
 ### Frequently Asked Questions
 
 Index:
-* 2026.01.29: [What is in the Cross-Version package?](#faq20260129-01)
+* 2026.01.29: [What are in the Cross-Version packages?](#faq20260129-01)
 * 2026.02.03: [How do I handle required elements with required bindings?](#faq20260203-01)
 * 2026.02.06: [How do I handle resources that do not exist in my FHIR version?](#faq20260206-02)
 * 2026.02.06: [How do I handle type-mapping across FHIR versions?](#faq20260206-01)
 * 2026.02.09: [How do I handle required reference elements?](#faq20260209-01)
 * 2026.02.09: [What are the CodeSystems used in the element concept maps?](#faq20260209-02)
+* 2026.02.12: [I was expecting a cross-version extension, but found a different extension](#faq20260212-01)
 
-#### What is in the Cross-Version package?
+#### What are in the Cross-Version packages?
 <a name="faq20260129-01"></a>
 
+There are two types of cross-version packages: ones that contain content for a specific FHIR version pairing (e.g., R5 content for use in R4) and validation packages that include all of the content available for that version (e.g., the R4 definitions that include DSTU2, STU3, R4B, and R5). The packages are differentiable based on their names.
 
+Note that the cross-version packages depend on definitions from other common packages in the HL7 FHIR ecosystem, such as the Extensions Pack and Tooling IG.
+
+##### Cross-Version Content Packages
+
+The cross-version content packages are named in the pattern of `hl7.fhir.uv.xver-[source FHIR version].[target FHIR version]`, for example: `hl7.fhir.uv.xver-r5.r4` is the package that allows use of FHIR R5 definitions _in_ FHIR R4. Note that the trailing segment is target FHIR version by convention in HL7 publications (e.g., `hl7.terminology.r4`, etc.).
+
+The cross-version content packages include various FHIR artifacts:
+* Relevant core-defined and terminology.hl7.org-defined CodeSystems, converted to the correct version.
+* ValueSet resources that contain allowed values to use in cross-version extensions
+* Extension definitions (StructureDefinition resources)
+* Profile definitions (StructureDefinition resources)
+* A Resource-lookup ConceptMap resource that contains computable relationship definitions between resources in the versions
+* Resource-element ConceptMap resources that contain computable relationships between elements of the source and target resources and extensions
+* Bound ValueSet ConceptMap resources that contain the ValueSet mappings between source and target ValueSets, when both sides exist
+
+The cross-version content packages also include various lookup pages to aid in human consumption:
+* A Structure Lookup page that lists the source and target resource pairs
+* Structure-element lookup pages that list the source elements paired with any target elements and/or extensions for them
+* A ValueSet Lookup page that lists the source and target ValueSet pairs
+* ValueSet-concept lookup pages that list the source concepts and relationships to any target concepts
+
+Finally, the cross-version packages all include general pages, such as this FAQ.
+
+
+##### Cross-Version Validation Packages
+
+The cross-version validation packages are named in the pattern of `hl7.fhir.uv.xver.[target FHIR version]`, for example: `hl7.fhir.uv.xver.r4` is the validation package that includes dependencies on each of the content packages that target FHIR R4. Note that this naming convention is very similar to the content packages and simply excludes a source FHIR version.
+
+The cross-version validation packages are much simpler in definition, as they are simply placeholder packages with dependencies on the relevant content packages. Their content is limited to the general-purpose page content, such as this FAQ.
 
 #### How do I handle resources that do not exist in my FHIR version?
 <a name="faq20260206-02"></a>
@@ -204,3 +235,11 @@ The definition that the cross-version guides use is based on the *current* guida
 > | Display (`CodeSystem.concept.display`) | `StructureDefinition.snapshot.element.label` if one exists, otherwise `StructureDefinition.snapshot.element.short` |
 > | Definition (`CodeSystem.concept.definition`) | `StructureDefinition.snapshot.element.definition` |
 
+
+
+#### I was expecting a cross-version extension, but found a different extension
+<a name="#faq20260212-01"></a>
+
+Cross-version definitions exist to simplify and standardize representations of data when crossing FHIR versions. Due to how FHIR core development works, there is often a need for data to be represented *prior to* the FHIR publication where something becomes standard. Alternatively, there is sometimes a common extension defined to simplify consumption of data. The cross-version packages use existing extension definitions wherever possible.
+
+For example, there is a standard extension defined in the FHIR extensions pack for an [`alternate-reference`](http://hl7.org/fhir/StructureDefinition/alternate-reference). This extension was defined in advance of the cross-version extensions and was already in use. Therefore, any data that _would_ require a cross-version extension to represent a `Reference`, instead uses the `alternate-reference` extension. In order to facilitate discovery and use, the lookup pages, profiles, and concept maps also reference such extensions when used.
