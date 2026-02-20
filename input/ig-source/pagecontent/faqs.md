@@ -8,6 +8,7 @@ Index:
 * 2026.02.09: [How do I handle required reference elements?](#faq20260209-01)
 * 2026.02.09: [What are the CodeSystems used in the element concept maps?](#faq20260209-02)
 * 2026.02.12: [I was expecting a cross-version extension, but found a different extension](#faq20260212-01)
+* 2026.02.18: [The element I am looking for does not exist in the lookup or profile](#faq20260217-01)
 
 #### What are in the Cross-Version packages?
 <a name="faq20260129-01"></a>
@@ -119,6 +120,7 @@ In total, that provides a *base* mapping table that looks like:
 | `uri` | `uri` | n/a (always available) |
 | `url` | `url` | `uri` |
 | `uuid` | `uuid` | `uri` |
+{: .grid }
 
 The second part of type-mapping primitives are a set of mappings that indicate what is *allowed* to map, based on element context. For example, an element might move between `string`, `code`, and `id` over the course of development. Understanding how primitives related to each-other is purely based on their "value domain" (the set of values that can be represented by the type). Primitive types do not hold the context required to evaluate a "concept domain" (what the contained value *means*) - that context must be provided by the element that uses a type. The source-of-truth for the primitive mappings are defined in the [`input/types/ConceptMap-types-fallback.json`](https://github.com/HL7/fhir-cross-version/tree/main/input/types/ConceptMap-types-fallback.json) ConceptMap, which applies across all versions.
 
@@ -134,7 +136,7 @@ For example, the `string` type entry from that file looks like:
     { "code" : "oid", "relationship" : "source-is-broader-than-target" },
     { "code" : "uri", "relationship" : "source-is-broader-than-target" },
     { "code" : "url", "relationship" : "source-is-broader-than-target" },
-    { "code" : "uuid", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "uuid", "relationship" : "source-is-broader-than-target" }]}
 ```
 
 This indicates that an element defined as `string` in a version of FHIR *is allowed* to map to an element defined as any of: `string`, `canonical`, `code`, `id`, `integer64`, `markdown`, `oid`, `uri`, `url`, or `uuid`. The relationship describes the difference in values that can be contained by the related types.
@@ -225,17 +227,20 @@ In the ConceptMaps that reference elements, the maps make use of "Implicit Code 
 
 The definition that the cross-version guides use is based on the *current* guidance, which (at the time of writing) is reproduced below.
 
-> Some other parts of the FHIR infrastructure define set of concepts that may also be treated as code systems. This is most useful when mapping between systems using Concept Maps, but might also be useful for other code system related functionality (e.g. subsetting using Value Sets). The table below summarizes how to treat these items as a code system:
+<hr />
 
-> | CodeSystem Element Value | Meaning |
-> | ------------------------ | ------- |
-> | URL (`CodeSystem.url`) | `StructureDefinition.url` |
-> | Concept (`CodeSystem.concept`) | Each `StructureDefinition.snapshot.element` element corresponds to a code system concept. |
-> | Code (`CodeSystem.concept.code`) | `StructureDefinition.snapshot.element.id` |
-> | Display (`CodeSystem.concept.display`) | `StructureDefinition.snapshot.element.label` if one exists, otherwise `StructureDefinition.snapshot.element.short` |
-> | Definition (`CodeSystem.concept.definition`) | `StructureDefinition.snapshot.element.definition` |
+Some other parts of the FHIR infrastructure define set of concepts that may also be treated as code systems. This is most useful when mapping between systems using Concept Maps, but might also be useful for other code system related functionality (e.g. subsetting using Value Sets). The table below summarizes how to treat these items as a code system:
 
+| CodeSystem Element Value | Meaning |
+| ------------------------ | ------- |
+| URL (`CodeSystem.url`) | `StructureDefinition.url` |
+| Concept (`CodeSystem.concept`) | Each `StructureDefinition.snapshot.element` element corresponds to a code system concept. |
+| Code (`CodeSystem.concept.code`) | `StructureDefinition.snapshot.element.id` |
+| Display (`CodeSystem.concept.display`) | `StructureDefinition.snapshot.element.label` if one exists, otherwise `StructureDefinition.snapshot.element.short` |
+| Definition (`CodeSystem.concept.definition`) | `StructureDefinition.snapshot.element.definition` |
+{: .grid }
 
+<hr />
 
 #### I was expecting a cross-version extension, but found a different extension
 <a name="#faq20260212-01"></a>
@@ -243,3 +248,16 @@ The definition that the cross-version guides use is based on the *current* guida
 Cross-version definitions exist to simplify and standardize representations of data when crossing FHIR versions. Due to how FHIR core development works, there is often a need for data to be represented *prior to* the FHIR publication where something becomes standard. Alternatively, there is sometimes a common extension defined to simplify consumption of data. The cross-version packages use existing extension definitions wherever possible.
 
 For example, there is a standard extension defined in the FHIR extensions pack for an [`alternate-reference`](http://hl7.org/fhir/StructureDefinition/alternate-reference). This extension was defined in advance of the cross-version extensions and was already in use. Therefore, any data that _would_ require a cross-version extension to represent a `Reference`, instead uses the `alternate-reference` extension. In order to facilitate discovery and use, the lookup pages, profiles, and concept maps also reference such extensions when used.
+
+#### The element I am looking for does not exist in the lookup or profile
+<a name="#faq20260217-01"></a>
+
+The content on the lookup pages and in the profiles are based on the `StructureDefinition` resources published in each package. Element paths in instances are often based on following those definitions across boundaries that do not exist in the definitions themselves - such as elements within data types and elements defined as content references.
+
+##### Elements within data types
+
+Generally, the cross-version packages stop at the data-type level. Complex types can include elements themselves, such as `HumanName.given` that are joined together when serializing instances. For example, the `Patient` resource defines the `Patient.name` element with the `HumanName` data type and thus creates paths such as `Patient.name.given`. When generating extensions, there can be ambiguity whether such an extension should exist rooted in the `Patient` resource or the `HumanName` data type. While efforts have been made to resolve all such instances correctly, if you believe there is an error please file a Jira ticket.
+
+##### Content References
+
+Some elements in FHIR are defined as 'content references' to other elements. For example, the element `Questionnaire.item.item` is defined as a reference to the element `Questionnaire.item`, allowing for a recursive type that nests into itself. When using `StructureDefinition` resources (e.g., for profiling), the content references are not followed when generating snapshots, which means that the downstream elements do not exist. Extensions that define a context of the *source* of the content reference (e.g., `Questionnaire.item`) are automatically valid in any elements that *use* that content reference (e.g., `Questionnaire.item.item`). Note that this is true even when the content references are not nested - so extensions defined with a context of `ValueSet.compose.include.concept.designation` are automatically valid to use on `ValueSet.expansion.contains.designation`.

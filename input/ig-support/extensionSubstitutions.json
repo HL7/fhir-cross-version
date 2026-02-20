@@ -1,0 +1,211 @@
+[
+    {
+        "SourceVersion" : "DSTU2",
+        "SourceElementId" : "Patient.animal",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/patient-animal",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceVersion" : "R5",
+        "SourceElementId" : "ElementDefinition.binding.additional",
+        "ReplacementUrl" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.tools@1.0.0"
+    },
+    {
+        "SourceVersion" : "R6",
+        "SourceElementId" : "ElementDefinition.binding.additional",
+        "ReplacementUrl" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.tools@1.0.0"
+    },
+    {
+        "SourceTypeReplacement" : "canonical",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/alternate-canonical",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceTypeReplacement" : "reference",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/alternate-reference",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".approvalDate",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-approvalDate",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".author",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".citeAs[x]",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-citeAs",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".contact",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-contact",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".copyright",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-copyright",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".copyrightLabel",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".date",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-date",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".description",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-description",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".editor",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".effectivePeriod",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".endorser",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".experimental",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-experimental",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".identifier",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-identifier",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".jurisdiction",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".lastReviewDate",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-lastReviewDate",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".name",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-name",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".publisher",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-publisher",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".purpose",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-purpose",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".relatedArtifact",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".reviewer",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".status",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-status",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".title",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-title",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".topic",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".url",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-url",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".usage",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".useContext",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-useContext",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".version",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-version",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".versionAlgorithm[x]",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceElementId" : "Device.conformsTo",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/device-conformsTo",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceElementId" : "DeviceDefinition.conformsTo",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/device-conformsTo",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".basedOn",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/event-basedOn",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".location",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/event-location",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".bodyStructure",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".doNotPerform",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/request-doNotPerform",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions",
+        "IsModifier": true
+    },
+    {
+        "SourceFromContextElement" : ".approvalDate",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    },
+    {
+        "SourceFromContextElement" : ".effectivePeriod",
+        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
+    }
+]
