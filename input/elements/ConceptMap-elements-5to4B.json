@@ -346,7 +346,7 @@
     { "code": "Procedure.used.reference", "target": [{ "code": "Procedure.usedReference", "relationship": "equivalent" }] },
     { "code": "ProductShelfLife.period[x]", "target": [{ "code": "ProductShelfLife.period", "relationship": "equivalent" }] },
     { "code": "Provenance.authorization", "target": [{ "code": "Provenance.reason", "relationship": "equivalent" }] },
-    { "code": "Questionnaire.item.answerConstraint", "target" : [{ "code" : "Questionnaire.item.type", "relationship" : "related-to" }] },
+    { "code": "Questionnaire.item.answerConstraint", "noMap" : true},
     { "code": "ResearchStudy.comparisonGroup", "target" : [{ "code" : "ResearchStudy.arm", "relationship" : "equivalent"}] },
     { "code": "ResearchStudy.comparisonGroup.description", "target": [{ "code": "ResearchStudy.arm.description", "relationship": "equivalent" }] },
     { "code": "ResearchStudy.comparisonGroup.name", "target": [{ "code": "ResearchStudy.arm.name", "relationship": "equivalent" }] },
