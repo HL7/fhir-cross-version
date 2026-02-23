@@ -99,14 +99,14 @@
           "code": "coding",
           "target": [
             {
-              "code": "open-choice",
-              "relationship": "source-is-broader-than-target",
-              "comment": "definition mismatch"
+              "code": "choice",
+              "relationship": "equivalent",
+              "comment": "Mapped as equivalent because the additional differentiator is contained in the answerConstraint element."
             },
             {
-              "code": "choice",
-              "relationship": "source-is-broader-than-target",
-              "comment": "definition mismatch"
+              "code": "open-choice",
+              "relationship": "equivalent",
+              "comment": "Mapped as equivalent because the additional differentiator is contained in the answerConstraint element."
             }
           ]
         },

@@ -46,13 +46,13 @@
           "target": [
             {
               "code": "choice",
-              "relationship": "source-is-broader-than-target",
-              "comment": "definition mismatch"
+              "relationship": "equivalent",
+              "comment": "Mapped as equivalent because the additional differentiator is contained in the answerConstraint element."
             },
             {
               "code": "open-choice",
-              "relationship": "source-is-broader-than-target",
-              "comment": "definition mismatch"
+              "relationship": "equivalent",
+              "comment": "Mapped as equivalent because the additional differentiator is contained in the answerConstraint element."
             }
           ]
         },

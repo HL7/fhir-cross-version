@@ -64,7 +64,8 @@
           "target": [
             {
               "code": "coding",
-              "relationship": "source-is-narrower-than-target"
+              "relationship": "equivalent",
+              "comment": "Mapped as equivalent because the additional differentiator is contained in the answerConstraint element."
             }
           ]
         },
@@ -153,8 +154,8 @@
           "code": "choice",
           "target": [
             {
-              "code": "coding",
-              "relationship": "source-is-narrower-than-target"
+              "relationship": "equivalent",
+              "comment": "Mapped as equivalent because the additional differentiator is contained in the answerConstraint element."
             }
           ]
         },
