@@ -27,7 +27,7 @@
 * Added: use `alternate-canonical` to represent any canonical definition
 * Added: use `alternate-reference` to represent any reference definition
 * Added: use `alternate-canonical` and `alternate-reference` in place of specific parts of choice types.
-* Added: FAQ page
+* Added link to Confluence FAQs page
 
 ### 0.0.1-snapshot-2
 
