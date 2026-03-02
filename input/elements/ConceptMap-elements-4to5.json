@@ -581,6 +581,7 @@
     { "code" : "SupplyRequest.reasonCode", "target" : [{ "code" : "SupplyRequest.reason.concept", "relationship" : "equivalent" }] },
     { "code" : "SupplyRequest.reasonReference", "target" : [{ "code" : "SupplyRequest.reason.reference", "relationship" : "equivalent" }] },
     { "code" : "Task.performerType", "target" : [{ "code" : "Task.requestedPerformer.concept", "relationship" : "equivalent" }] },
+    { "code" : "Task.statusReason", "target" : [{ "code" : "Task.statusReason.concept", "relationship" : "equivalent" }] },
     { "code" : "Task.reasonCode", "target" : [{ "code" : "Task.reason.concept", "relationship" : "equivalent" }] },
     { "code" : "Task.reasonReference", "target"   : [{ "code" : "Task.reason.reference", "relationship" : "equivalent" }] }
     ]

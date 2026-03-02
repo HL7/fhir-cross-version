@@ -7,13 +7,13 @@ about what makes the profiles valid. Implementers will still need to be familiar
 and profiles that apply in order to make a conformant implementation. See the overview on
 [validating FHIR profiles and resources](http://hl7.org/fhir/validation.html):
 
-* [Package](package.tgz)
+* [Package](../package.tgz)
 
 ### Downloadable Copy of this Specification
 
 A downloadable version of this IG is available so it can be hosted locally:
 
-* [Downloadable Copy](full-ig.zip)
+* [Downloadable Copy](../full-ig.zip)
 
 ### Package Dependencies
 

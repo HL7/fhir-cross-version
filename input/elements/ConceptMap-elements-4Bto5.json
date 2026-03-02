@@ -126,7 +126,8 @@
     { "code" : "SearchParameter.xpathUsage", "target" : [{ "code" : "SearchParameter.processingMode", "relationship" : "equivalent" }] },
     { "code" : "StructureMap.group.rule.source.defaultValue[x]", "target" : [{ "code" : "StructureMap.group.rule.source.defaultValue", "relationship" : "equivalent" }] },
     { "code" : "StructureMap.group.rule.dependent.variable", "target" : [{ "code" : "StructureMap.group.rule.dependent.parameter", "relationship" : "equivalent" }] },
-    { "code" : "SupplyRequest.item[x]", "target" : [{ "code" : "SupplyRequest.item", "relationship" : "equivalent" }] }
+    { "code" : "SupplyRequest.item[x]", "target" : [{ "code" : "SupplyRequest.item", "relationship" : "equivalent" }] },
+    { "code" : "Task.statusReason", "target" : [{ "code" : "Task.statusReason.concept", "relationship" : "equivalent" }] }
     ]
   }]
 }

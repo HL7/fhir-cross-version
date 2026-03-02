@@ -28,6 +28,8 @@
 * Added: use `alternate-reference` to represent any reference definition
 * Added: use `alternate-canonical` and `alternate-reference` in place of specific parts of choice types.
 * Added link to Confluence FAQs page
+* Added replacement URLs for extensions in the extensions pack derived from CRMI
+* Added replacement URLs for extensions that should be substituted from the Subscription Backport IG
 
 ### 0.0.1-snapshot-2
 

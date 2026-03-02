@@ -18,6 +18,85 @@
         "ReplacementSourcePackage" : "hl7.fhir.uv.tools@1.0.0"
     },
     {
+        "SourceVersion" : "R5",
+        "SourceElementId" : "Subscription.heartbeatPeriod",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R6",
+        "SourceElementId" : "Subscription.heartbeatPeriod",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R5",
+        "SourceElementId" : "Subscription.content",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R6",
+        "SourceElementId" : "Subscription.content",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R5",
+        "SourceElementId" : "Subscription.timeout",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R6",
+        "SourceElementId" : "Subscription.timeout",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R5",
+        "SourceElementId" : "Subscription.channelType",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-channel-type",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R6",
+        "SourceElementId" : "Subscription.channelType",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-channel-type",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R5",
+        "SourceElementId" : "Subscription.maxCount",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-max-count",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R6",
+        "SourceElementId" : "Subscription.maxCount",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-max-count",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R6",
+        "SourceElementId" : "SubscriptionTopic.notificationShape.relatedQuery",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-related-query",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R6",
+        "SourceElementId" : "SubscriptionStatus.notificationEvent.relatedQuery",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-related-query",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+    {
+        "SourceVersion" : "R6",
+        "SourceElementId" : "SubscriptionStatus.notificationEvent.authorizationHint",
+        "ReplacementUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/notification-authorization-hint",
+        "ReplacementSourcePackage" : "hl7.fhir.uv.subscriptions-backport@current"
+    },
+
+    {
         "SourceTypeReplacement" : "canonical",
         "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/alternate-canonical",
         "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
