@@ -19,10 +19,8 @@
       "element": [
     { "code": "CodeableReference.concept", "target" : [{ "code" : "CodeableConcept", "relationship" : "equivalent"}] },
     { "code": "CodeableReference.reference", "target" : [{ "code" : "Reference", "relationship" : "equivalent"}] },
+    { "code": "Account.relatedAccount.account", "target": [{ "code" : "Account.partOf", "relationship" : "source-is-broader-than-target", "comment" : "re-org" }] },
 
-    { "code": "Account.relatedAccount", "target" : [{ "code" : "Account", "relationship" : "source-is-narrower-than-target"}] },
-    { "code": "Account.relatedAccount.account", "target": [{ "code": "Account.partOf", "relationship": "source-is-broader-than-target", "comment" : "re-org" }] },
-    { "code": "Account.relatedAccount.account", "target": [{ "code": "Account.relatedAccount.partOf", "relationship": "equivalent" }] },
     { "code": "ActivityDefinition.subject[x]", "target": [{ "code" : "ActivityDefinition.subject[x]", "relationship" : "source-is-broader-than-target" }] },
     { "code": "ActivityDefinition.subjectCodeableConcept", "target": [{ "code" : "ActivityDefinition.subjectCodeableConcept", "relationship" : "equivalent" }] },
     { "code": "ActivityDefinition.subjectReference", "target": [{ "code" : "ActivityDefinition.subjectReference", "relationship" : "equivalent" }] },
@@ -336,6 +334,13 @@
     { "code": "PaymentReconciliation.amount", "target": [{ "code": "PaymentReconciliation.paymentAmount", "relationship": "equivalent" }] },
     { "code": "PaymentReconciliation.date", "target": [{ "code": "PaymentReconciliation.paymentDate", "relationship": "equivalent" }] },
     { "code": "PlanDefinition.action.relatedAction.targetId", "target": [{ "code": "PlanDefinition.action.relatedAction.actionId", "relationship": "equivalent" }] },
+
+    { "code": "PractitionerRole.availability", "target": [
+      { "code": "PractitionerRole.availableTime", "relationship": "source-is-broader-than-target" },
+      { "code": "PractitionerRole.notAvailable", "relationship": "source-is-broader-than-target" }] },
+    { "code": "PractitionerRole.availability.availableTime", "target": [{ "code": "PractitionerRole.availableTime", "relationship": "source-is-broader-than-target" }] },
+    { "code": "PractitionerRole.availability.notAvailable", "target": [{ "code": "PractitionerRole.notAvailable", "relationship": "source-is-broader-than-target" }] },
+
     { "code": "PractitionerRole.contact.telecom", "target": [{ "code": "PractitionerRole.telecom", "relationship": "equivalent" }] },
     { "code": "Procedure.complication.reference", "target": [{ "code": "Procedure.complicationDetail", "relationship": "equivalent" }] },
     { "code": "Procedure.occurrence[x]", "target": [{ "code": "Procedure.performed[x]", "relationship": "equivalent" }] },

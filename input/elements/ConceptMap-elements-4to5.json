@@ -501,12 +501,14 @@
     { "code" : "PaymentReconciliation.paymentDate", "target" : [{ "code" : "PaymentReconciliation.date", "relationship" : "equivalent" }] },
     { "code" : "PlanDefinition.action.relatedAction.actionId", "target" : [{ "code" : "PlanDefinition.action.relatedAction.targetId", "relationship" : "equivalent" }] },
     { "code" : "PractitionerRole.availabilityExceptions", "noMap" : true },
-    { "code" : "PractitionerRole.availableTime.allDay", "noMap" : true },
-    { "code" : "PractitionerRole.availableTime.availableEndTime", "noMap" : true },
-    { "code" : "PractitionerRole.availableTime.availableStartTime", "noMap" : true },
-    { "code" : "PractitionerRole.availableTime.daysOfWeek", "noMap" : true },
-    { "code" : "PractitionerRole.notAvailable.description", "noMap" : true },
-    { "code" : "PractitionerRole.notAvailable.during", "noMap" : true },
+
+    { "code" : "PractitionerRole.availableTime", "target" : [
+      { "code" : "PractitionerRole.availability", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "PractitionerRole.availability.availableTime", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "PractitionerRole.notAvailable", "target" : [
+      { "code" : "PractitionerRole.availability", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "PractitionerRole.availability.notAvailableTime", "relationship" : "source-is-narrower-than-target" }] },
+
     { "code" : "PractitionerRole.telecom", "target" : [{ "code" : "PractitionerRole.contact.telecom", "relationship" : "equivalent" }] },
     { "code" : "Procedure.asserter", "noMap" : true },
     { "code" : "Procedure.complicationDetail", "target" : [{ "code" : "Procedure.complication.reference", "relationship" : "equivalent" }] },

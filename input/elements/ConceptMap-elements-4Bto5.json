@@ -23,7 +23,6 @@
     { "code" : "Dosage.asNeeded[x]", "target" : [{ "code" : "Dosage.asNeeded", "relationship" : "equivalent" }] },
     { "code" : "ProductShelfLife.period", "target" : [{ "code" : "ProductShelfLife.period[x]", "relationship" : "equivalent" }] },
     { "code" : "Account.partOf", "target" : [{ "code" : "Account.relatedAccount.account", "relationship" : "source-is-narrower-than-target" }] },
-    { "code" : "Account.relatedAccount.partOf", "target" : [{ "code" : "Account.relatedAccount.account", "relationship" : "equivalent" }] },
     { "code" : "AdverseEvent.event", "target" : [{ "code" : "AdverseEvent.code", "relationship" : "equivalent" }] },
     { "code" : "AdverseEvent.resultingCondition", "target" : [{ "code" : "AdverseEvent.resultingEffect", "relationship" : "equivalent" }] },
     { "code" : "AdverseEvent.suspectEntity.instance", "target" : [{ "code" : "AdverseEvent.suspectEntity.instance[x]", "relationship" : "equivalent" }] },
@@ -121,6 +120,14 @@
     { "code" : "MessageHeader.source.endpoint", "target" : [{ "code" : "MessageHeader.source.endpoint[x]", "relationship" : "equivalent" }] },
     { "code" : "MolecularSequence.patient", "target" : [{ "code" : "MolecularSequence.subject", "relationship" : "equivalent" }] },
     { "code" : "Provenance.reason", "target" : [{ "code" : "Provenance.authorization", "relationship" : "equivalent" }] },
+
+    { "code" : "PractitionerRole.availableTime", "target" : [
+      { "code" : "PractitionerRole.availability", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "PractitionerRole.availability.availableTime", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "PractitionerRole.notAvailable", "target" : [
+      { "code" : "PractitionerRole.availability", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "PractitionerRole.availability.notAvailableTime", "relationship" : "source-is-narrower-than-target" }] },
+
     { "code" : "Questionnaire.item.type", "target" : [{ "code" : "Questionnaire.item.answerConstraint", "relationship" : "related-to" }] },
     { "code" : "Resource.id", "target" : [{ "code" : "Resource.id", "relationship" : "equivalent" }]},
     { "code" : "SearchParameter.xpathUsage", "target" : [{ "code" : "SearchParameter.processingMode", "relationship" : "equivalent" }] },
