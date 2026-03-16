@@ -68,7 +68,7 @@
     { "code" : "BiologicallyDerivedProduct.storage.scale", "noMap" : true },
     { "code" : "BiologicallyDerivedProduct.storage.temperature", "noMap" : true },
     { "code" : "BodyStructure.location", "noMap" : true },
-    { "code" : "BodyStructure.locationQualifier", "target" : [{ "code" : "BodyStructure.includedStructure.qualifier", "relationship" : "equivalent" }] },
+    { "code" : "BodyStructure.locationQualifier", "target" : [{ "code" : "BodyStructure.includedStructure.qualifier", "relationship" : "related-to" }] },
     { "code" : "CarePlan.activity.detail.code", "noMap" : true },
     { "code" : "CarePlan.activity.detail.dailyAmount", "noMap" : true },
     { "code" : "CarePlan.activity.detail.description", "noMap" : true },
