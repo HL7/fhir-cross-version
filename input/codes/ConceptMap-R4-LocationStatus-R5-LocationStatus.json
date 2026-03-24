@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-LocationStatus-R5-LocationStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-LocationStatus-R5-LocationStatus",
+  "version": "0.0.1",
+  "name": "R4-LocationStatus-R5-LocationStatus",
+  "title": "Concept map to convert a FHIR R4 LocationStatus into a FHIR R5 LocationStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.08869-06:00",
+  "description": "Mapping for Location.status from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "LocationStatus4to5",
+      "display": "Id: loc.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Location#Location.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Location#Location.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/loc.status-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/location-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/location-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/location-status",
+      "target": "http://hl7.org/fhir/location-status",
+      "element": [
+        {
+          "code": "inactive",
+          "target": [
+            {
+              "code": "inactive",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "suspended",
+          "target": [
+            {
+              "code": "suspended",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

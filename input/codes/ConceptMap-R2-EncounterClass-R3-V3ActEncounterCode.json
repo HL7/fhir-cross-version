@@ -1,0 +1,114 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-EncounterClass-R3-V3ActEncounterCode",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-EncounterClass-R3-V3ActEncounterCode",
+  "version": "0.0.1",
+  "name": "R2-EncounterClass-R3-V3ActEncounterCode",
+  "title": "Concept map to convert a FHIR R2 EncounterClass into a FHIR R3 V3ActEncounterCode",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4973947-06:00",
+  "description": "Mapping for Encounter.class from R2 to R3",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EncounterClass2to3",
+      "display": "Id: enc.class-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Encounter#Encounter.class\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Encounter#Encounter.class",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/enc.class-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/encounter-class|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/encounter-class",
+      "target": "http://hl7.org/fhir/v3/ActCode",
+      "element": [
+        {
+          "code": "inpatient",
+          "noMap": false,
+          "target": [
+            {
+              "code": "IMP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "outpatient",
+          "noMap": false,
+          "target": [
+            {
+              "code": "AMB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ambulatory",
+          "noMap": false,
+          "target": [
+            {
+              "code": "AMB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "emergency",
+          "noMap": false,
+          "target": [
+            {
+              "code": "EMER",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "home",
+          "noMap": false,
+          "target": [
+            {
+              "code": "HH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "field",
+          "noMap": false,
+          "target": [
+            {
+              "code": "FLD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "daytime",
+          "noMap": false,
+          "target": [
+            {
+              "code": "SS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "virtual",
+          "noMap": false,
+          "target": [
+            {
+              "code": "VR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

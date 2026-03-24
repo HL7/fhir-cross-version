@@ -1,0 +1,70 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-Participationstatus-R2-Participantstatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-Participationstatus-R2-Participantstatus",
+  "version": "0.0.1",
+  "name": "R3-Participationstatus-R2-Participantstatus",
+  "title": "Concept map to convert a FHIR R3 Participationstatus into a FHIR R2 Participantstatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7566332-06:00",
+  "description": "Mapping for AppointmentResponse.participantStatus from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AppointmentResponseParticipantStatus3to2",
+      "display": "Id: apr.participantStatus-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/apr.participantStatus-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/participationstatus|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/participantstatus|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/participationstatus",
+      "target": "http://hl7.org/fhir/participantstatus",
+      "element": [
+        {
+          "code": "declined",
+          "target": [
+            {
+              "code": "declined",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "needs-action",
+          "target": [
+            {
+              "code": "needs-action",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "accepted",
+          "target": [
+            {
+              "code": "accepted",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "in-process",
+              "relationship": "source-is-broader-than-target",
+              "comment": "InProcess implies it\u0027s been accepted, but accepted doesn\u0027t imply in-process"
+            }
+          ]
+        },
+        {
+          "code": "tentative",
+          "target": [
+            {
+              "code": "tentative",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

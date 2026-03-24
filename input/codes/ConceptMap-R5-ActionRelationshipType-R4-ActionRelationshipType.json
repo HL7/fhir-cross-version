@@ -1,0 +1,122 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ActionRelationshipType-R4-ActionRelationshipType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ActionRelationshipType-R4-ActionRelationshipType",
+  "version": "0.0.1",
+  "name": "R5-ActionRelationshipType-R4-ActionRelationshipType",
+  "title": "Concept map to convert a FHIR R5 ActionRelationshipType into a FHIR R4 ActionRelationshipType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9996344-06:00",
+  "description": "Mapping for PlanDefinition.action.relatedAction.endRelationship/PlanDefinition.action.relatedAction.relationship from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionRelatedActionEndRelationshipPlanDefinitionActionRelatedActionRelationship5to4",
+      "display": "Id: pdf.ac.re.endRelationship-pdf.ac.re.relationship-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.endRelationship\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.re.endRelationship-pdf.ac.re.relationship-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionRelatedActionRelationship5to4",
+      "display": "Id: pdf.ac.re.relationship-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.relatedAction.relationship",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.re.relationship-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestOrchestrationActionRelatedActionRelationshipRequestGroupActionRelatedActionRelationship5to4",
+      "display": "Id: rqo.ac.re.relationship-rgp.ac.re.relationship-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.relatedAction.relationship\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.action.relatedAction.relationship",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.re.relationship-rgp.ac.re.relationship-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-relationship-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-relationship-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/action-relationship-type",
+      "target": "http://hl7.org/fhir/action-relationship-type",
+      "element": [
+        {
+          "code": "after-end",
+          "target": [
+            {
+              "code": "after-end",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "before",
+          "target": [
+            {
+              "code": "before",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "concurrent",
+          "target": [
+            {
+              "code": "concurrent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "concurrent-with-start",
+          "target": [
+            {
+              "code": "concurrent-with-start",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "before-end",
+          "target": [
+            {
+              "code": "before-end",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "after",
+          "target": [
+            {
+              "code": "after",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "concurrent-with-end",
+          "target": [
+            {
+              "code": "concurrent-with-end",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "after-start",
+          "target": [
+            {
+              "code": "after-start",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "before-start",
+          "target": [
+            {
+              "code": "before-start",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

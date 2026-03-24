@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-VisionBaseCodes-R3-VisionBaseCodes",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-VisionBaseCodes-R3-VisionBaseCodes",
+  "version": "0.0.1",
+  "name": "R2-VisionBaseCodes-R3-VisionBaseCodes",
+  "title": "Concept map to convert a FHIR R2 VisionBaseCodes into a FHIR R3 VisionBaseCodes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5175194-06:00",
+  "description": "Mapping for VisionPrescription.dispense.base from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "VisionPrescriptionDispenseBase2to3",
+      "display": "Id: vps.di.base-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/VisionPrescription#VisionPrescription.dispense.base\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/VisionPrescription#VisionPrescription.dispense.base",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vps.di.base-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/vision-base-codes|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/vision-base-codes|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/vision-base-codes",
+      "target": "http://hl7.org/fhir/vision-base-codes",
+      "element": [
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "up",
+          "target": [
+            {
+              "code": "up",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "down",
+          "target": [
+            {
+              "code": "down",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "out",
+          "target": [
+            {
+              "code": "out",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

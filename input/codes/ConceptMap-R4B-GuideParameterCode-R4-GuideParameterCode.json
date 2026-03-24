@@ -1,0 +1,119 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-GuideParameterCode-R4-GuideParameterCode",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-GuideParameterCode-R4-GuideParameterCode",
+  "version": "0.0.1",
+  "name": "R4B-GuideParameterCode-R4-GuideParameterCode",
+  "title": "Concept map to convert a FHIR R4B GuideParameterCode into a FHIR R4 GuideParameterCode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6936304-06:00",
+  "description": "Mapping for ImplementationGuide.definition.parameter.code from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ImplementationGuideDefinitionParameterCode4bto4",
+      "display": "Id: ig.de.pa.code-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ImplementationGuide#ImplementationGuide.definition.parameter.code\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ImplementationGuide#ImplementationGuide.definition.parameter.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ig.de.pa.code-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/guide-parameter-code|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/guide-parameter-code",
+      "target": "http://hl7.org/fhir/guide-parameter-code",
+      "element": [
+        {
+          "code": "generate-json",
+          "target": [
+            {
+              "code": "generate-json",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "expansion-parameter",
+          "target": [
+            {
+              "code": "expansion-parameter",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "generate-xml",
+          "target": [
+            {
+              "code": "generate-xml",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "generate-turtle",
+          "target": [
+            {
+              "code": "generate-turtle",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "apply",
+          "target": [
+            {
+              "code": "apply",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "rule-broken-links",
+          "target": [
+            {
+              "code": "rule-broken-links",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "path-resource",
+          "target": [
+            {
+              "code": "path-resource",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "html-template",
+          "target": [
+            {
+              "code": "html-template",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "path-pages",
+          "target": [
+            {
+              "code": "path-pages",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "path-tx-cache",
+          "target": [
+            {
+              "code": "path-tx-cache",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

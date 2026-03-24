@@ -1,0 +1,107 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-EventStatus-R3-EventStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-EventStatus-R3-EventStatus",
+  "version": "0.0.1",
+  "name": "R4-EventStatus-R3-EventStatus",
+  "title": "Concept map to convert a FHIR R4 EventStatus into a FHIR R3 EventStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2469264-06:00",
+  "description": "Mapping for Communication.status from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CommunicationStatus4to3",
+      "display": "Id: com.status-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Communication#Communication.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Communication#Communication.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/com.status-4to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "ProcedureStatus4to3",
+      "display": "Id: pro.status-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Procedure#Procedure.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Procedure#Procedure.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pro.status-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/event-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/event-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/event-status",
+      "target": "http://hl7.org/fhir/event-status",
+      "element": [
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-done",
+          "target": [
+            {
+              "code": "aborted",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "target": [
+            {
+              "code": "suspended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "preparation",
+          "target": [
+            {
+              "code": "preparation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "stopped",
+          "target": [
+            {
+              "code": "aborted",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

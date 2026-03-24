@@ -1,0 +1,89 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-InvoicePriceComponentType-R4-InvoicePriceComponentType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-InvoicePriceComponentType-R4-InvoicePriceComponentType",
+  "version": "0.0.1",
+  "name": "R4B-InvoicePriceComponentType-R4-InvoicePriceComponentType",
+  "title": "Concept map to convert a FHIR R4B InvoicePriceComponentType into a FHIR R4 InvoicePriceComponentType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6726983-06:00",
+  "description": "Mapping for ChargeItemDefinition.propertyGroup.priceComponent.type from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ChargeItemDefinitionPropertyGroupPriceComponentType4bto4",
+      "display": "Id: cid.pr.pr.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.propertyGroup.priceComponent.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.propertyGroup.priceComponent.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cid.pr.pr.type-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "InvoiceLineItemPriceComponentType4bto4",
+      "display": "Id: inv.li.pr.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Invoice#Invoice.lineItem.priceComponent.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Invoice#Invoice.lineItem.priceComponent.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/inv.li.pr.type-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/invoice-priceComponentType|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/invoice-priceComponentType|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/invoice-priceComponentType",
+      "target": "http://hl7.org/fhir/invoice-priceComponentType",
+      "element": [
+        {
+          "code": "surcharge",
+          "target": [
+            {
+              "code": "surcharge",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "deduction",
+          "target": [
+            {
+              "code": "deduction",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "discount",
+          "target": [
+            {
+              "code": "discount",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tax",
+          "target": [
+            {
+              "code": "tax",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "informational",
+          "target": [
+            {
+              "code": "informational",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "base",
+          "target": [
+            {
+              "code": "base",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

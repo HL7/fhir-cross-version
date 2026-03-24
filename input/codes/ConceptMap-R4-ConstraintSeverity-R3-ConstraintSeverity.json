@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ConstraintSeverity-R3-ConstraintSeverity",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ConstraintSeverity-R3-ConstraintSeverity",
+  "version": "0.0.1",
+  "name": "R4-ConstraintSeverity-R3-ConstraintSeverity",
+  "title": "Concept map to convert a FHIR R4 ConstraintSeverity into a FHIR R3 ConstraintSeverity",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2547379-06:00",
+  "description": "Mapping for ElementDefinition.constraint.severity from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ElementDefinitionConstraintSeverity4to3",
+      "display": "Id: eld.co.severity-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.constraint.severity\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ElementDefinition#ElementDefinition.constraint.severity",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eld.co.severity-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/constraint-severity|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/constraint-severity|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/constraint-severity",
+      "target": "http://hl7.org/fhir/constraint-severity",
+      "element": [
+        {
+          "code": "warning",
+          "target": [
+            {
+              "code": "warning",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

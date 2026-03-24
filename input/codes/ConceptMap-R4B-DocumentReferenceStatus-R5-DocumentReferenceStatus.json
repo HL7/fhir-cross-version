@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-DocumentReferenceStatus-R5-DocumentReferenceStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-DocumentReferenceStatus-R5-DocumentReferenceStatus",
+  "version": "0.0.1",
+  "name": "R4B-DocumentReferenceStatus-R5-DocumentReferenceStatus",
+  "title": "Concept map to convert a FHIR R4B DocumentReferenceStatus into a FHIR R5 DocumentReferenceStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4625409-06:00",
+  "description": "Mapping for DocumentReference.status from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DocumentReferenceStatus4bto5",
+      "display": "Id: dcr.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/DocumentReference#DocumentReference.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/DocumentReference#DocumentReference.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.status-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/document-reference-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/document-reference-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/document-reference-status",
+      "target": "http://hl7.org/fhir/document-reference-status",
+      "element": [
+        {
+          "code": "current",
+          "target": [
+            {
+              "code": "current",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "superseded",
+          "target": [
+            {
+              "code": "superseded",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

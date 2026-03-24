@@ -1,0 +1,95 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-AdministrativeGender-R3-AdministrativeGender",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-AdministrativeGender-R3-AdministrativeGender",
+  "version": "0.0.1",
+  "name": "R2-AdministrativeGender-R3-AdministrativeGender",
+  "title": "Concept map to convert a FHIR R2 AdministrativeGender into a FHIR R3 AdministrativeGender",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4983451-06:00",
+  "description": "Mapping for FamilyMemberHistory.gender from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "FamilyMemberHistoryGender2to3",
+      "display": "Id: fhs.gender-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/FamilyMemberHistory#FamilyMemberHistory.gender\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/FamilyMemberHistory#FamilyMemberHistory.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/fhs.gender-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "PatientContactGender2to3",
+      "display": "Id: pat.co.gender-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.contact.gender\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.contact.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pat.co.gender-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "PatientGender2to3",
+      "display": "Id: pat.gender-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.gender\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pat.gender-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "PractitionerGender2to3",
+      "display": "Id: prc.gender-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Practitioner#Practitioner.gender\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Practitioner#Practitioner.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/prc.gender-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "PersonGender2to3",
+      "display": "Id: psn.gender-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Person#Person.gender\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Person#Person.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/psn.gender-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "RelatedPersonGender2to3",
+      "display": "Id: rpp.gender-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/RelatedPerson#RelatedPerson.gender\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/RelatedPerson#RelatedPerson.gender",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rpp.gender-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/administrative-gender|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/administrative-gender|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/administrative-gender",
+      "target": "http://hl7.org/fhir/administrative-gender",
+      "element": [
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "female",
+          "target": [
+            {
+              "code": "female",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "male",
+          "target": [
+            {
+              "code": "male",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

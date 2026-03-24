@@ -1,0 +1,233 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-PublicationStatus-R4B-PublicationStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-PublicationStatus-R4B-PublicationStatus",
+  "version": "0.0.1",
+  "name": "R4-PublicationStatus-R4B-PublicationStatus",
+  "title": "Concept map to convert a FHIR R4 PublicationStatus into a FHIR R4B PublicationStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.9821044-06:00",
+  "description": "Mapping for ActivityDefinition.status from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ActivityDefinitionStatus4to4b",
+      "display": "Id: adf.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ActivityDefinition#ActivityDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ActivityDefinition#ActivityDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/adf.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "ChargeItemDefinitionStatus4to4b",
+      "display": "Id: cid.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ChargeItemDefinition#ChargeItemDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cid.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "ConceptMapStatus4to4b",
+      "display": "Id: cmd.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ConceptMap#ConceptMap.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ConceptMap#ConceptMap.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementStatus4to4b",
+      "display": "Id: cpb.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "CompartmentDefinitionStatus4to4b",
+      "display": "Id: cpd.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CompartmentDefinition#CompartmentDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/CompartmentDefinition#CompartmentDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpd.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "CodeSystemStatus4to4b",
+      "display": "Id: csd.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/CodeSystem#CodeSystem.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/csd.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "CatalogEntryStatus4to4b",
+      "display": "Id: cte.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CatalogEntry#CatalogEntry.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/CatalogEntry#CatalogEntry.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cte.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "EventDefinitionStatus4to4b",
+      "display": "Id: evd.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/EventDefinition#EventDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/EventDefinition#EventDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/evd.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "EvidenceStatus4to4b",
+      "display": "Id: evi.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Evidence#Evidence.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/evi.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "EvidenceVariableStatus4to4b",
+      "display": "Id: evv.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/EvidenceVariable#EvidenceVariable.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/EvidenceVariable#EvidenceVariable.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/evv.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "ExampleScenarioStatus4to4b",
+      "display": "Id: exs.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ExampleScenario#ExampleScenario.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ExampleScenario#ExampleScenario.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/exs.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "GraphDefinitionStatus4to4b",
+      "display": "Id: gdf.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/GraphDefinition#GraphDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/gdf.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "ImplementationGuideStatus4to4b",
+      "display": "Id: ig.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ImplementationGuide#ImplementationGuide.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ImplementationGuide#ImplementationGuide.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ig.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "InsurancePlanStatus4to4b",
+      "display": "Id: ipn.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/InsurancePlan#InsurancePlan.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/InsurancePlan#InsurancePlan.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ipn.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "LibraryStatus4to4b",
+      "display": "Id: lib.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Library#Library.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Library#Library.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/lib.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "MeasureStatus4to4b",
+      "display": "Id: mea.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mea.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "MessageDefinitionStatus4to4b",
+      "display": "Id: msd.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/MessageDefinition#MessageDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/MessageDefinition#MessageDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/msd.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "NamingSystemStatus4to4b",
+      "display": "Id: nsd.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/NamingSystem#NamingSystem.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/NamingSystem#NamingSystem.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "OperationDefinitionStatus4to4b",
+      "display": "Id: opd.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/OperationDefinition#OperationDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/OperationDefinition#OperationDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/opd.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionStatus4to4b",
+      "display": "Id: pdf.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "QuestionnaireStatus4to4b",
+      "display": "Id: que.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Questionnaire#Questionnaire.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Questionnaire#Questionnaire.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/que.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "ResearchDefinitionStatus4to4b",
+      "display": "Id: rdf.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ResearchDefinition#ResearchDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ResearchDefinition#ResearchDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rdf.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "ResearchElementDefinitionStatus4to4b",
+      "display": "Id: red.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ResearchElementDefinition#ResearchElementDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/red.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "StructureDefinitionStatus4to4b",
+      "display": "Id: sdf.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition#StructureDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "StructureMapStatus4to4b",
+      "display": "Id: smp.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/smp.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "SearchParameterStatus4to4b",
+      "display": "Id: spd.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/SearchParameter#SearchParameter.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "TerminologyCapabilitiesStatus4to4b",
+      "display": "Id: tcp.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tcp.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "TestScriptStatus4to4b",
+      "display": "Id: tst.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tst.status-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "ValueSetStatus4to4b",
+      "display": "Id: vsd.status-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ValueSet#ValueSet.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ValueSet#ValueSet.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vsd.status-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/publication-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/publication-status|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/publication-status",
+      "target": "http://hl7.org/fhir/publication-status",
+      "element": [
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "retired",
+          "target": [
+            {
+              "code": "retired",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

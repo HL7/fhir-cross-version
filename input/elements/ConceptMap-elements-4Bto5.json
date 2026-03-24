@@ -23,7 +23,6 @@
     { "code" : "Dosage.asNeeded[x]", "target" : [{ "code" : "Dosage.asNeeded", "relationship" : "equivalent" }] },
     { "code" : "ProductShelfLife.period", "target" : [{ "code" : "ProductShelfLife.period[x]", "relationship" : "equivalent" }] },
     { "code" : "Account.partOf", "target" : [{ "code" : "Account.relatedAccount.account", "relationship" : "source-is-narrower-than-target" }] },
-    { "code" : "Account.relatedAccount.partOf", "target" : [{ "code" : "Account.relatedAccount.account", "relationship" : "equivalent" }] },
     { "code" : "AdverseEvent.event", "target" : [{ "code" : "AdverseEvent.code", "relationship" : "equivalent" }] },
     { "code" : "AdverseEvent.resultingCondition", "target" : [{ "code" : "AdverseEvent.resultingEffect", "relationship" : "equivalent" }] },
     { "code" : "AdverseEvent.suspectEntity.instance", "target" : [{ "code" : "AdverseEvent.suspectEntity.instance[x]", "relationship" : "equivalent" }] },
@@ -52,13 +51,15 @@
     { "code" : "Consent.policy.url", "target" : [{ "code" : "Consent.policyBasis.url", "relationship" : "equivalent" }] },
     { "code" : "Consent.type", "target" : [{ "code" : "Consent.decision", "relationship" : "equivalent" }] },
     { "code" : "Consent.provision.class", "target" : [{ "code" : "Consent.provision.resourceType", "relationship" : "equivalent" }] },
-    { "code" : "Device.deviceName", "target" : [{ "code" : "Device.name", "relationship" : "equivalent" }] },
+    { "code" : "Device.deviceName", "target" : [{ "code" : "Device.name", "relationship" : "equivalent" }, { "code": "Device.displayName", "relationship": "related-to" }] },
     { "code" : "Device.deviceName.value", "target" : [{ "code" : "Device.name.value", "relationship" : "equivalent" }] },
     { "code" : "Device.deviceName.type", "target" : [{ "code" : "Device.name.type", "relationship" : "equivalent" }] },
     { "code" : "Device.deviceName.display", "target" : [{ "code" : "Device.name.display", "relationship" : "equivalent" }] },
     { "code" : "Device.specialization", "target" : [{ "code" : "Device.conformsTo", "relationship" : "equivalent" }] },
     { "code" : "Device.specialization.category", "target" : [{ "code" : "Device.conformsTo.category", "relationship" : "equivalent" }] },
     { "code" : "Device.specialization.specification", "target" : [{ "code" : "Device.conformsTo.specification", "relationship" : "equivalent" }] },
+    { "code" : "Device.patient", "target": [{ "code" : "DeviceAssociation.subject", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "Device.status", "target": [{ "code" : "Device.status", "relationship" : "equivalent" }, { "code" : "DeviceAssociation.status", "relationship" : "not-related-to" }] },
     { "code" : "DeviceDefinition.manufacturer[x]", "target" : [{ "code" : "DeviceDefinition.manufacturer", "relationship" : "equivalent" }] },
     { "code" : "DeviceDefinition.specialization", "target" : [{ "code" : "DeviceDefinition.conformsTo", "relationship" : "equivalent" }] },
     { "code" : "DeviceDefinition.specialization.category", "target" : [{ "code" : "DeviceDefinition.conformsTo.category", "relationship" : "equivalent" }] },
@@ -66,13 +67,14 @@
     { "code" : "DeviceDefinition.specialization.version", "target" : [{ "code" : "DeviceDefinition.conformsTo.version", "relationship" : "equivalent" }] },
     { "code" : "DeviceDefinition.specialization.source", "target" : [{ "code" : "DeviceDefinition.conformsTo.source", "relationship" : "equivalent" }] },
     { "code" : "DeviceDefinition.guideline.onlineInformation", "target" : [{ "code" : "DeviceDefinition.guideline.relatedArtifact", "relationship" : "equivalent" }] },
+    { "code" : "DeviceRequest.performer", "target" : [{ "code" : "DeviceRequest.performer", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "DeviceRequest.performerType", "target" : [{ "code" : "DeviceRequest.performer", "relationship" : "source-is-narrower-than-target" }] },
     { "code" : "DeviceRequest.priorRequest", "target" : [{ "code" : "DeviceRequest.replaces", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.code[x]", "target" : [{ "code" : "DeviceRequest.code", "relationship" : "equivalent" }] },
     { "code" : "Encounter.participant.individual", "target" : [{ "code" : "Encounter.participant.actor", "relationship" : "equivalent" }] },
     { "code" : "Encounter.period", "target" : [{ "code" : "Encounter.actualPeriod", "relationship" : "equivalent" }] },
-    { "code" : "Encounter.reasonCode", "target" : [{ "code" : "Encounter.reason", "relationship" : "equivalent" }] },
-    { "code" : "Encounter.reasonCode.use", "target" : [{ "code" : "Encounter.reason.use", "relationship" : "equivalent" }] },
-    { "code" : "Encounter.reasonCode.value", "target" : [{ "code" : "Encounter.reason.value", "relationship" : "equivalent" }] },
+    { "code" : "Encounter.reasonCode", "target" : [{ "code" : "Encounter.reason.value.concept", "relationship" : "equivalent" }] },
+    { "code" : "Encounter.reasonReference", "target" : [{ "code" : "Encounter.reason.value.reference", "relationship" : "source-is-narrower-than-target" }] },
     { "code" : "Encounter.hospitalization", "target" : [{ "code" : "Encounter.admission", "relationship" : "equivalent" }] },
     { "code" : "Encounter.location.physicalType", "target" : [{ "code" : "Encounter.location.form", "relationship" : "equivalent" }] },
     { "code" : "Endpoint.payload.payloadType", "target" : [{ "code" : "Endpoint.payload.type", "relationship" : "equivalent" }] },
@@ -118,12 +120,21 @@
     { "code" : "MessageHeader.source.endpoint", "target" : [{ "code" : "MessageHeader.source.endpoint[x]", "relationship" : "equivalent" }] },
     { "code" : "MolecularSequence.patient", "target" : [{ "code" : "MolecularSequence.subject", "relationship" : "equivalent" }] },
     { "code" : "Provenance.reason", "target" : [{ "code" : "Provenance.authorization", "relationship" : "equivalent" }] },
+
+    { "code" : "PractitionerRole.availableTime", "target" : [
+      { "code" : "PractitionerRole.availability", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "PractitionerRole.availability.availableTime", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "PractitionerRole.notAvailable", "target" : [
+      { "code" : "PractitionerRole.availability", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "PractitionerRole.availability.notAvailableTime", "relationship" : "source-is-narrower-than-target" }] },
+
     { "code" : "Questionnaire.item.type", "target" : [{ "code" : "Questionnaire.item.answerConstraint", "relationship" : "related-to" }] },
     { "code" : "Resource.id", "target" : [{ "code" : "Resource.id", "relationship" : "equivalent" }]},
     { "code" : "SearchParameter.xpathUsage", "target" : [{ "code" : "SearchParameter.processingMode", "relationship" : "equivalent" }] },
     { "code" : "StructureMap.group.rule.source.defaultValue[x]", "target" : [{ "code" : "StructureMap.group.rule.source.defaultValue", "relationship" : "equivalent" }] },
     { "code" : "StructureMap.group.rule.dependent.variable", "target" : [{ "code" : "StructureMap.group.rule.dependent.parameter", "relationship" : "equivalent" }] },
-    { "code" : "SupplyRequest.item[x]", "target" : [{ "code" : "SupplyRequest.item", "relationship" : "equivalent" }] }
+    { "code" : "SupplyRequest.item[x]", "target" : [{ "code" : "SupplyRequest.item", "relationship" : "equivalent" }] },
+    { "code" : "Task.statusReason", "target" : [{ "code" : "Task.statusReason.concept", "relationship" : "equivalent" }] }
     ]
   }]
 }

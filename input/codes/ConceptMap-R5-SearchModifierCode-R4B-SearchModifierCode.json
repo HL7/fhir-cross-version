@@ -1,0 +1,159 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SearchModifierCode-R4B-SearchModifierCode",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-SearchModifierCode-R4B-SearchModifierCode",
+  "version": "0.0.1",
+  "name": "R5-SearchModifierCode-R4B-SearchModifierCode",
+  "title": "Concept map to convert a FHIR R5 SearchModifierCode into a FHIR R4B SearchModifierCode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9323472-06:00",
+  "description": "Mapping for SearchParameter.modifier from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SearchParameterModifier5to4b",
+      "display": "Id: spd.modifier-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/SearchParameter#SearchParameter.modifier\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.modifier",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.modifier-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-modifier-code|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/search-modifier-code|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-modifier-code",
+      "target": "http://hl7.org/fhir/search-modifier-code",
+      "element": [
+        {
+          "code": "above",
+          "target": [
+            {
+              "code": "above",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "below",
+          "target": [
+            {
+              "code": "below",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "code-text",
+          "target": [
+            {
+              "code": "text",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "contains",
+          "target": [
+            {
+              "code": "contains",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "exact",
+          "target": [
+            {
+              "code": "exact",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "identifier",
+          "target": [
+            {
+              "code": "identifier",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "iterate",
+          "noMap": true
+        },
+        {
+          "code": "missing",
+          "target": [
+            {
+              "code": "missing",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not",
+          "target": [
+            {
+              "code": "not",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-in",
+          "target": [
+            {
+              "code": "not-in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "of-type",
+          "target": [
+            {
+              "code": "ofType",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "text",
+          "target": [
+            {
+              "code": "text",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "text-advanced",
+          "target": [
+            {
+              "code": "text",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "type",
+          "target": [
+            {
+              "code": "type",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

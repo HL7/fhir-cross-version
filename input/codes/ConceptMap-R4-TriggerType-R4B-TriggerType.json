@@ -1,0 +1,101 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-TriggerType-R4B-TriggerType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-TriggerType-R4B-TriggerType",
+  "version": "0.0.1",
+  "name": "R4-TriggerType-R4B-TriggerType",
+  "title": "Concept map to convert a FHIR R4 TriggerType into a FHIR R4B TriggerType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0330189-06:00",
+  "description": "Mapping for TriggerDefinition.type from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TriggerDefinitionType4to4b",
+      "display": "Id: trd.type-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/TriggerDefinition#TriggerDefinition.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/TriggerDefinition#TriggerDefinition.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/trd.type-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/trigger-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/trigger-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/trigger-type",
+      "target": "http://hl7.org/fhir/trigger-type",
+      "element": [
+        {
+          "code": "data-changed",
+          "target": [
+            {
+              "code": "data-changed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data-access-ended",
+          "target": [
+            {
+              "code": "data-access-ended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "named-event",
+          "target": [
+            {
+              "code": "named-event",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "periodic",
+          "target": [
+            {
+              "code": "periodic",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data-modified",
+          "target": [
+            {
+              "code": "data-modified",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data-removed",
+          "target": [
+            {
+              "code": "data-removed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data-accessed",
+          "target": [
+            {
+              "code": "data-accessed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data-added",
+          "target": [
+            {
+              "code": "data-added",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

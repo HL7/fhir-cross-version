@@ -1,0 +1,60 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MeasureReportType-R3-MeasureReportType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MeasureReportType-R3-MeasureReportType",
+  "version": "0.0.1",
+  "name": "R4-MeasureReportType-R3-MeasureReportType",
+  "title": "Concept map to convert a FHIR R4 MeasureReportType into a FHIR R3 MeasureReportType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2613713-06:00",
+  "description": "Mapping for MeasureReport.type from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MeasureReportType4to3",
+      "display": "Id: mrp.type-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/MeasureReport#MeasureReport.type\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/MeasureReport#MeasureReport.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.type-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-report-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-report-type|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/measure-report-type",
+      "target": "http://hl7.org/fhir/measure-report-type",
+      "element": [
+        {
+          "code": "summary",
+          "target": [
+            {
+              "code": "summary",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "individual",
+          "target": [
+            {
+              "code": "individual",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data-collection",
+          "noMap": true
+        },
+        {
+          "code": "subject-list",
+          "target": [
+            {
+              "code": "patient-list",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

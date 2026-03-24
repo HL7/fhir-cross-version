@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-VariableHandling-R5-VariableHandling",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-VariableHandling-R5-VariableHandling",
+  "version": "0.0.1",
+  "name": "R4B-VariableHandling-R5-VariableHandling",
+  "title": "Concept map to convert a FHIR R4B VariableHandling into a FHIR R5 VariableHandling",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4665276-06:00",
+  "description": "Mapping for Evidence.statistic.modelCharacteristic.variable.handling from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EvidenceStatisticModelCharacteristicVariableHandling4bto5",
+      "display": "Id: evi.st.mo.va.handling-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.statistic.modelCharacteristic.variable.handling\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.statistic.modelCharacteristic.variable.handling",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/evi.st.mo.va.handling-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "EvidenceVariableHandling4bto5",
+      "display": "Id: evv.handling-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/EvidenceVariable#EvidenceVariable.handling\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/EvidenceVariable#EvidenceVariable.handling",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/evv.handling-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/variable-handling|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/variable-handling|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/variable-handling",
+      "target": "http://hl7.org/fhir/variable-handling",
+      "element": [
+        {
+          "code": "continuous",
+          "target": [
+            {
+              "code": "continuous",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "polychotomous",
+          "target": [
+            {
+              "code": "polychotomous",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dichotomous",
+          "target": [
+            {
+              "code": "dichotomous",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ordinal",
+          "target": [
+            {
+              "code": "ordinal",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

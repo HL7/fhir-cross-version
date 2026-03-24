@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-NamingsystemIdentifierType-R4-NamingsystemIdentifierType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-NamingsystemIdentifierType-R4-NamingsystemIdentifierType",
+  "version": "0.0.1",
+  "name": "R4B-NamingsystemIdentifierType-R4-NamingsystemIdentifierType",
+  "title": "Concept map to convert a FHIR R4B NamingsystemIdentifierType into a FHIR R4 NamingsystemIdentifierType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.7011714-06:00",
+  "description": "Mapping for NamingSystem.uniqueId.type from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "NamingSystemUniqueIdType4bto4",
+      "display": "Id: nsd.un.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/NamingSystem#NamingSystem.uniqueId.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/NamingSystem#NamingSystem.uniqueId.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.un.type-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/namingsystem-identifier-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/namingsystem-identifier-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/namingsystem-identifier-type",
+      "target": "http://hl7.org/fhir/namingsystem-identifier-type",
+      "element": [
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "oid",
+          "target": [
+            {
+              "code": "oid",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "uuid",
+          "target": [
+            {
+              "code": "uuid",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "uri",
+          "target": [
+            {
+              "code": "uri",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

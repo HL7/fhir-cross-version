@@ -1,0 +1,124 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-FilterOperator-R4-FilterOperator",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-FilterOperator-R4-FilterOperator",
+  "version": "0.0.1",
+  "name": "R5-FilterOperator-R4-FilterOperator",
+  "title": "Concept map to convert a FHIR R5 FilterOperator into a FHIR R4 FilterOperator",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9862085-06:00",
+  "description": "Mapping for CodeSystem.filter.operator from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CodeSystemFilterOperator5to4",
+      "display": "Id: csd.fi.operator-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/CodeSystem#CodeSystem.filter.operator\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.filter.operator",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/csd.fi.operator-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "ValueSetComposeIncludeFilterOp5to4",
+      "display": "Id: vsd.co.in.fi.op-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ValueSet#ValueSet.compose.include.filter.op\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ValueSet#ValueSet.compose.include.filter.op",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vsd.co.in.fi.op-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/filter-operator|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/filter-operator|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/filter-operator",
+      "target": "http://hl7.org/fhir/filter-operator",
+      "element": [
+        {
+          "code": "is-not-a",
+          "target": [
+            {
+              "code": "is-not-a",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "child-of",
+          "noMap": true
+        },
+        {
+          "code": "regex",
+          "target": [
+            {
+              "code": "regex",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "descendent-of",
+          "target": [
+            {
+              "code": "descendent-of",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "descendent-leaf",
+          "noMap": true
+        },
+        {
+          "code": "not-in",
+          "target": [
+            {
+              "code": "not-in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "exists",
+          "target": [
+            {
+              "code": "exists",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "generalizes",
+          "target": [
+            {
+              "code": "generalizes",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "=",
+          "target": [
+            {
+              "code": "=",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "is-a",
+          "target": [
+            {
+              "code": "is-a",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

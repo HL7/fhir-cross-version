@@ -1,0 +1,87 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-HttpOperations-R3-HttpOperations",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-HttpOperations-R3-HttpOperations",
+  "version": "0.0.1",
+  "name": "R4-HttpOperations-R3-HttpOperations",
+  "title": "Concept map to convert a FHIR R4 HttpOperations into a FHIR R3 HttpOperations",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2754934-06:00",
+  "description": "Mapping for TestScript.setup.action.assert.requestMethod from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestScriptSetupActionAssertRequestMethod4to3",
+      "display": "Id: tst.se.ac.as.requestMethod-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.requestMethod\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.setup.action.assert.requestMethod",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.requestMethod-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/http-operations|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/http-operations|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/http-operations",
+      "target": "http://hl7.org/fhir/http-operations",
+      "element": [
+        {
+          "code": "delete",
+          "target": [
+            {
+              "code": "delete",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "get",
+          "target": [
+            {
+              "code": "get",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "head",
+          "noMap": true
+        },
+        {
+          "code": "options",
+          "target": [
+            {
+              "code": "options",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "patch",
+          "target": [
+            {
+              "code": "patch",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "post",
+          "target": [
+            {
+              "code": "post",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "put",
+          "target": [
+            {
+              "code": "put",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

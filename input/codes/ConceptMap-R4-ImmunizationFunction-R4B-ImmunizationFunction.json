@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ImmunizationFunction-R4B-ImmunizationFunction",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ImmunizationFunction-R4B-ImmunizationFunction",
+  "version": "0.0.1",
+  "name": "R4-ImmunizationFunction-R4B-ImmunizationFunction",
+  "title": "Concept map to convert a FHIR R4 ImmunizationFunction into a FHIR R4B ImmunizationFunction",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0121416-06:00",
+  "description": "Mapping for Immunization.performer.function from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ImmunizationPerformerFunctionr4to4b",
+      "display": "Id: imm.pe.function-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Immunization#Immunization.performer.function\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Immunization#Immunization.performer.function",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/imm.pe.function-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/immunization-function|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/immunization-function|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0443",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0443",
+      "element": [
+        {
+          "code": "AP",
+          "target": [
+            {
+              "code": "AP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OP",
+          "target": [
+            {
+              "code": "OP",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

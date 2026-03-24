@@ -1,0 +1,64 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-QuestionnaireAnswersStatus-R2-QuestionnaireAnswersStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-QuestionnaireAnswersStatus-R2-QuestionnaireAnswersStatus",
+  "version": "0.0.1",
+  "name": "R3-QuestionnaireAnswersStatus-R2-QuestionnaireAnswersStatus",
+  "title": "Concept map to convert a FHIR R3 QuestionnaireAnswersStatus into a FHIR R2 QuestionnaireAnswersStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7781406-06:00",
+  "description": "Mapping for QuestionnaireResponse.status from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "QuestionnaireResponseStatus3to2",
+      "display": "Id: qrs.status-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/qrs.status-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-answers-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-answers-status|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/questionnaire-answers-status",
+      "target": "http://hl7.org/fhir/questionnaire-answers-status",
+      "element": [
+        {
+          "code": "amended",
+          "target": [
+            {
+              "code": "amended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "noMap": true
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "stopped",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

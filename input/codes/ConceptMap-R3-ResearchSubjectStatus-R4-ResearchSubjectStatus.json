@@ -1,0 +1,122 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ResearchSubjectStatus-R4-ResearchSubjectStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ResearchSubjectStatus-R4-ResearchSubjectStatus",
+  "version": "0.0.1",
+  "name": "R3-ResearchSubjectStatus-R4-ResearchSubjectStatus",
+  "title": "Concept map to convert a FHIR R3 ResearchSubjectStatus into a FHIR R4 ResearchSubjectStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6925616-06:00",
+  "description": "Mapping for ResearchSubject.status from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ResearchSubjectStatus3to4",
+      "display": "Id: rsb.status-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ResearchSubject#ResearchSubject.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/research-subject-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/research-subject-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/research-subject-status",
+      "target": "http://hl7.org/fhir/research-subject-status",
+      "element": [
+        {
+          "code": "candidate",
+          "target": [
+            {
+              "code": "candidate",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "eligible",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            },
+            {
+              "code": "screening",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            },
+            {
+              "code": "withdrawn",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "withdrawn",
+          "target": [
+            {
+              "code": "withdrawn",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "not-registered",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "on-study",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "on-study-intervention",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            },
+            {
+              "code": "on-study-observation",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            },
+            {
+              "code": "pending-on-study",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "follow-up",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            },
+            {
+              "code": "off-study",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            }
+          ]
+        },
+        {
+          "code": "enrolled",
+          "target": [
+            {
+              "code": "on-study",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "suspended",
+          "target": [
+            {
+              "code": "follow-up",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

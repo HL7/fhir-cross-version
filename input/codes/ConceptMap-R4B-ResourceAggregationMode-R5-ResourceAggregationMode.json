@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ResourceAggregationMode-R5-ResourceAggregationMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ResourceAggregationMode-R5-ResourceAggregationMode",
+  "version": "0.0.1",
+  "name": "R4B-ResourceAggregationMode-R5-ResourceAggregationMode",
+  "title": "Concept map to convert a FHIR R4B ResourceAggregationMode into a FHIR R5 ResourceAggregationMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4650589-06:00",
+  "description": "Mapping for ElementDefinition.type.aggregation from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ElementDefinitionTypeAggregation4bto5",
+      "display": "Id: eld.ty.aggregation-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ElementDefinition#ElementDefinition.type.aggregation\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ElementDefinition#ElementDefinition.type.aggregation",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eld.ty.aggregation-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/resource-aggregation-mode|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/resource-aggregation-mode|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/resource-aggregation-mode",
+      "target": "http://hl7.org/fhir/resource-aggregation-mode",
+      "element": [
+        {
+          "code": "contained",
+          "target": [
+            {
+              "code": "contained",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "bundled",
+          "target": [
+            {
+              "code": "bundled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "referenced",
+          "target": [
+            {
+              "code": "referenced",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

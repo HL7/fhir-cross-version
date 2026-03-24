@@ -1,0 +1,101 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-FocusCharacteristicCode-R5-FocusCharacteristicCode",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-FocusCharacteristicCode-R5-FocusCharacteristicCode",
+  "version": "0.0.1",
+  "name": "R4B-FocusCharacteristicCode-R5-FocusCharacteristicCode",
+  "title": "Concept map to convert a FHIR R4B FocusCharacteristicCode into a FHIR R5 FocusCharacteristicCode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4673928-06:00",
+  "description": "Mapping for EvidenceReport.subject.characteristic.code from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EvidenceReportSubjectCharacteristicCode4bto5",
+      "display": "Id: evr.su.ch.code-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/EvidenceReport#EvidenceReport.subject.characteristic.code\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/EvidenceReport#EvidenceReport.subject.characteristic.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/evr.su.ch.code-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/focus-characteristic-code|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/focus-characteristic-code|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/focus-characteristic-code",
+      "target": "http://hl7.org/fhir/focus-characteristic-code",
+      "element": [
+        {
+          "code": "comparator",
+          "target": [
+            {
+              "code": "comparator",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "exposure",
+          "target": [
+            {
+              "code": "exposure",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "citation",
+          "target": [
+            {
+              "code": "citation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "medication-exposures",
+          "target": [
+            {
+              "code": "medication-exposures",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "study-type",
+          "target": [
+            {
+              "code": "study-type",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "clinical-outcomes-observed",
+          "target": [
+            {
+              "code": "clinical-outcomes-observed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "outcome",
+          "target": [
+            {
+              "code": "outcome",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "population",
+          "target": [
+            {
+              "code": "population",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

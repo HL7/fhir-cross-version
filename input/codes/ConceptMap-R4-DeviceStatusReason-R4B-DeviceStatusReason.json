@@ -1,0 +1,101 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-DeviceStatusReason-R4B-DeviceStatusReason",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-DeviceStatusReason-R4B-DeviceStatusReason",
+  "version": "0.0.1",
+  "name": "R4-DeviceStatusReason-R4B-DeviceStatusReason",
+  "title": "Concept map to convert a FHIR R4 DeviceStatusReason into a FHIR R4B DeviceStatusReason",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0038962-06:00",
+  "description": "Mapping for Device.statusReason from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceStatusReason4to4b",
+      "display": "Id: dev.statusReason-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Device#Device.statusReason\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Device#Device.statusReason",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dev.statusReason-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/device-status-reason|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/device-status-reason|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/device-status-reason",
+      "target": "http://terminology.hl7.org/CodeSystem/device-status-reason",
+      "element": [
+        {
+          "code": "offline",
+          "target": [
+            {
+              "code": "offline",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hw-discon",
+          "target": [
+            {
+              "code": "hw-discon",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "paused",
+          "target": [
+            {
+              "code": "paused",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "standby",
+          "target": [
+            {
+              "code": "standby",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-ready",
+          "target": [
+            {
+              "code": "not-ready",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "online",
+          "target": [
+            {
+              "code": "online",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "transduc-discon",
+          "target": [
+            {
+              "code": "transduc-discon",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "off",
+          "target": [
+            {
+              "code": "off",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

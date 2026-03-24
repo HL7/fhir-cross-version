@@ -1,0 +1,110 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-CitedArtifactPartType-R4B-CitedArtifactPartType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-CitedArtifactPartType-R4B-CitedArtifactPartType",
+  "version": "0.0.1",
+  "name": "R5-CitedArtifactPartType-R4B-CitedArtifactPartType",
+  "title": "Concept map to convert a FHIR R5 CitedArtifactPartType into a FHIR R4B CitedArtifactPartType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9129634-06:00",
+  "description": "Mapping for Citation.citedArtifact.part.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CitationCitedArtifactPartType5to4b",
+      "display": "Id: ctn.ci.pa.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.part.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.part.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.pa.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/cited-artifact-part-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/cited-artifact-part-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/cited-artifact-part-type",
+      "target": "http://terminology.hl7.org/CodeSystem/cited-artifact-part-type",
+      "element": [
+        {
+          "code": "tables",
+          "target": [
+            {
+              "code": "tables",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "supplement-subpart",
+          "target": [
+            {
+              "code": "supplement-subpart",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pages",
+          "target": [
+            {
+              "code": "pages",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "figures",
+          "target": [
+            {
+              "code": "figures",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "supplement",
+          "target": [
+            {
+              "code": "supplement",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "article-set",
+          "target": [
+            {
+              "code": "article-set",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "paragraphs",
+          "target": [
+            {
+              "code": "paragraphs",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "lines",
+          "target": [
+            {
+              "code": "lines",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sections",
+          "target": [
+            {
+              "code": "sections",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

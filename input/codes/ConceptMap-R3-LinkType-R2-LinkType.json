@@ -1,0 +1,60 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-LinkType-R2-LinkType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-LinkType-R2-LinkType",
+  "version": "0.0.1",
+  "name": "R3-LinkType-R2-LinkType",
+  "title": "Concept map to convert a FHIR R3 LinkType into a FHIR R2 LinkType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7759024-06:00",
+  "description": "Mapping for Patient.link.type from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PatientLinkType3to2",
+      "display": "Id: pat.li.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Patient#Patient.link.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Patient#Patient.link.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pat.li.type-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/link-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/link-type|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/link-type",
+      "target": "http://hl7.org/fhir/link-type",
+      "element": [
+        {
+          "code": "refer",
+          "target": [
+            {
+              "code": "refer",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "replaced-by",
+          "noMap": true
+        },
+        {
+          "code": "replaces",
+          "target": [
+            {
+              "code": "replace",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "seealso",
+          "target": [
+            {
+              "code": "seealso",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-MeasureType-R5-MeasureType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-MeasureType-R5-MeasureType",
+  "version": "0.0.1",
+  "name": "R4B-MeasureType-R5-MeasureType",
+  "title": "Concept map to convert a FHIR R4B MeasureType into a FHIR R5 MeasureType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4712165-06:00",
+  "description": "Mapping for Measure.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MeasureTyper4bto5",
+      "display": "Id: mea.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Measure#Measure.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Measure#Measure.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mea.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-type|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/measure-type",
+      "target": "http://terminology.hl7.org/CodeSystem/measure-type",
+      "element": [
+        {
+          "code": "composite",
+          "target": [
+            {
+              "code": "composite",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "outcome",
+          "target": [
+            {
+              "code": "outcome",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "patient-reported-outcome",
+          "target": [
+            {
+              "code": "patient-reported-outcome",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "process",
+          "target": [
+            {
+              "code": "process",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "structure",
+          "target": [
+            {
+              "code": "structure",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

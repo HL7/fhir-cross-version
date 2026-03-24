@@ -1,0 +1,119 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-Dicm405Mediatype-R2-Dicm405Mediatype",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-Dicm405Mediatype-R2-Dicm405Mediatype",
+  "version": "0.0.1",
+  "name": "R3-Dicm405Mediatype-R2-Dicm405Mediatype",
+  "title": "Concept map to convert a FHIR R3 Dicm405Mediatype into a FHIR R2 Dicm405Mediatype",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7797326-06:00",
+  "description": "Mapping for AuditEvent.agent.media/AuditEvent.participant.media from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AuditEventAgentMediaAuditEventParticipantMedia3to2",
+      "display": "Id: sev.ag.media-sev.pa.media-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.agent.media\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.participant.media",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ag.media-sev.pa.media-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/dicm-405-mediatype|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/dicm-405-mediatype|1.0.2",
+  "group": [
+    {
+      "source": "http://dicom.nema.org/resources/ontology/DCM",
+      "target": "http://nema.org/dicom/dicm",
+      "element": [
+        {
+          "code": "110031",
+          "target": [
+            {
+              "code": "110031",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110032",
+          "target": [
+            {
+              "code": "110032",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110030",
+          "target": [
+            {
+              "code": "110030",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110010",
+          "target": [
+            {
+              "code": "110010",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110037",
+          "target": [
+            {
+              "code": "110037",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110038",
+          "target": [
+            {
+              "code": "110038",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110035",
+          "target": [
+            {
+              "code": "110035",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110036",
+          "target": [
+            {
+              "code": "110036",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110033",
+          "target": [
+            {
+              "code": "110033",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110034",
+          "target": [
+            {
+              "code": "110034",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

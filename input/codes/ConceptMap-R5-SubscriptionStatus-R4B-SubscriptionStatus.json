@@ -1,0 +1,75 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SubscriptionStatus-R4B-SubscriptionStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-SubscriptionStatus-R4B-SubscriptionStatus",
+  "version": "0.0.1",
+  "name": "R5-SubscriptionStatus-R4B-SubscriptionStatus",
+  "title": "Concept map to convert a FHIR R5 SubscriptionStatus into a FHIR R4B SubscriptionStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9301052-06:00",
+  "description": "Mapping for Subscription.status from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SubscriptionStatus5to4b",
+      "display": "Id: scr.status-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Subscription#Subscription.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Subscription#Subscription.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/scr.status-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "SubscriptionStatusStatus5to4b",
+      "display": "Id: scrs.status-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionStatus#SubscriptionStatus.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionStatus#SubscriptionStatus.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/scrs.status-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-status|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/subscription-status",
+      "target": "http://hl7.org/fhir/subscription-status",
+      "element": [
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "noMap": true
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "off",
+          "target": [
+            {
+              "code": "off",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "requested",
+          "target": [
+            {
+              "code": "requested",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

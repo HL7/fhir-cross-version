@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-AllDistanceUnits-R4-AllDistanceUnits",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-AllDistanceUnits-R4-AllDistanceUnits",
+  "version": "0.0.1",
+  "name": "R4B-AllDistanceUnits-R4-AllDistanceUnits",
+  "title": "Concept map to convert a FHIR R4B AllDistanceUnits into a FHIR R4 AllDistanceUnits",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6882918-06:00",
+  "description": "Mapping for Distance from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "Distancer4bto4",
+      "display": "Id: Distance-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Distance#Distance\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Distance#Distance",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/Distance-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/all-distance-units|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/all-distance-units|4.0.1",
+  "group": [
+    {
+      "source": "http://unitsofmeasure.org",
+      "target": "http://unitsofmeasure.org",
+      "element": [
+        {
+          "code": "km",
+          "target": [
+            {
+              "code": "km",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "m",
+          "target": [
+            {
+              "code": "m",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "mm",
+          "target": [
+            {
+              "code": "mm",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "nm",
+          "target": [
+            {
+              "code": "nm",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "um",
+          "target": [
+            {
+              "code": "um",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

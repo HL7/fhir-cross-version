@@ -1,0 +1,72 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-RemittanceOutcome-R3-RemittanceOutcome",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-RemittanceOutcome-R3-RemittanceOutcome",
+  "version": "0.0.1",
+  "name": "R4-RemittanceOutcome-R3-RemittanceOutcome",
+  "title": "Concept map to convert a FHIR R4 RemittanceOutcome into a FHIR R3 RemittanceOutcome",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.244426-06:00",
+  "description": "Mapping for CoverageEligibilityResponse.outcome/EligibilityResponse.outcome from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CoverageEligibilityResponseOutcomeEligibilityResponseOutcome4to3",
+      "display": "Id: ces.outcome-elr.outcome-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CoverageEligibilityResponse#CoverageEligibilityResponse.outcome\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/EligibilityResponse#EligibilityResponse.outcome",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ces.outcome-elr.outcome-4to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "EnrollmentResponseOutcome4to3",
+      "display": "Id: enr.outcome-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/EnrollmentResponse#EnrollmentResponse.outcome\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/EnrollmentResponse#EnrollmentResponse.outcome",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/enr.outcome-4to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "PaymentReconciliationOutcome4to3",
+      "display": "Id: pmr.outcome-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.outcome\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/PaymentReconciliation#PaymentReconciliation.outcome",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pmr.outcome-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/remittance-outcome|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/remittance-outcome|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/remittance-outcome",
+      "target": "http://hl7.org/fhir/remittance-outcome",
+      "element": [
+        {
+          "code": "complete",
+          "target": [
+            {
+              "code": "complete",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "partial",
+          "target": [
+            {
+              "code": "partial",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "queued",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

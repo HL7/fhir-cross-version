@@ -1,0 +1,128 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-PermittedDataType-R5-PermittedDataType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-PermittedDataType-R5-PermittedDataType",
+  "version": "0.0.1",
+  "name": "R4-PermittedDataType-R5-PermittedDataType",
+  "title": "Concept map to convert a FHIR R4 PermittedDataType into a FHIR R5 PermittedDataType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0917158-06:00",
+  "description": "Mapping for ObservationDefinition.permittedDataType from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ObservationDefinitionPermittedDataType4to5",
+      "display": "Id: obdf.permittedDataType-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.permittedDataType\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ObservationDefinition#ObservationDefinition.permittedDataType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/obdf.permittedDataType-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/permitted-data-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/permitted-data-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/permitted-data-type",
+      "target": "http://hl7.org/fhir/permitted-data-type",
+      "element": [
+        {
+          "code": "dateTime",
+          "target": [
+            {
+              "code": "dateTime",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "boolean",
+          "target": [
+            {
+              "code": "boolean",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "string",
+          "target": [
+            {
+              "code": "string",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SampledData",
+          "target": [
+            {
+              "code": "SampledData",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Quantity",
+          "target": [
+            {
+              "code": "Quantity",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Period",
+          "target": [
+            {
+              "code": "Period",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Ratio",
+          "target": [
+            {
+              "code": "Ratio",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "integer",
+          "target": [
+            {
+              "code": "integer",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "time",
+          "target": [
+            {
+              "code": "time",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Range",
+          "target": [
+            {
+              "code": "Range",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CodeableConcept",
+          "target": [
+            {
+              "code": "CodeableConcept",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

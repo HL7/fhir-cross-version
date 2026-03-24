@@ -1,0 +1,87 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-DeviceusageStatus-R4B-DeviceStatementStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-DeviceusageStatus-R4B-DeviceStatementStatus",
+  "version": "0.0.1",
+  "name": "R5-DeviceusageStatus-R4B-DeviceStatementStatus",
+  "title": "Concept map to convert a FHIR R5 DeviceusageStatus into a FHIR R4B DeviceStatementStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9152963-06:00",
+  "description": "Mapping for DeviceUsage.status/DeviceUseStatement.status from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceUsageStatusDeviceUseStatementStatus5to4b",
+      "display": "Id: dus.status-dus.status-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/DeviceUsage#DeviceUsage.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/DeviceUseStatement#DeviceUseStatement.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dus.status-dus.status-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/deviceusage-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/device-statement-status|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/deviceusage-status",
+      "target": "http://hl7.org/fhir/device-statement-status",
+      "element": [
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "intended",
+          "target": [
+            {
+              "code": "intended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-done",
+          "noMap": true
+        },
+        {
+          "code": "on-hold",
+          "target": [
+            {
+              "code": "on-hold",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "stopped",
+          "target": [
+            {
+              "code": "stopped",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

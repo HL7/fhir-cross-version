@@ -1,0 +1,70 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ProvenanceEntityRole-R5-ProvenanceEntityRole",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ProvenanceEntityRole-R5-ProvenanceEntityRole",
+  "version": "0.0.1",
+  "name": "R4B-ProvenanceEntityRole-R5-ProvenanceEntityRole",
+  "title": "Concept map to convert a FHIR R4B ProvenanceEntityRole into a FHIR R5 ProvenanceEntityRole",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4839179-06:00",
+  "description": "Mapping for Provenance.entity.role from R4B to R5",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ProvenanceEntityRole4bto5",
+      "display": "Id: prv.en.role-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Provenance#Provenance.entity.role\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Provenance#Provenance.entity.role",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/prv.en.role-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/provenance-entity-role|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/provenance-entity-role|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/provenance-entity-role",
+      "target": "http://hl7.org/fhir/provenance-entity-role",
+      "element": [
+        {
+          "code": "derivation",
+          "noMap": true
+        },
+        {
+          "code": "quotation",
+          "target": [
+            {
+              "code": "quotation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "removal",
+          "target": [
+            {
+              "code": "removal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "revision",
+          "target": [
+            {
+              "code": "revision",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "source",
+          "target": [
+            {
+              "code": "source",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

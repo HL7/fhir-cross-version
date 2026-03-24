@@ -1,0 +1,120 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ObservationValueabsentreason-R2-ObservationValueabsentreason",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ObservationValueabsentreason-R2-ObservationValueabsentreason",
+  "version": "0.0.1",
+  "name": "R3-ObservationValueabsentreason-R2-ObservationValueabsentreason",
+  "title": "Concept map to convert a FHIR R3 ObservationValueabsentreason into a FHIR R2 ObservationValueabsentreason",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7741478-06:00",
+  "description": "Mapping for Observation.component.dataAbsentReason from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ObservationComponentDataAbsentReason3to2",
+      "display": "Id: obs.co.dataAbsentReason-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.component.dataAbsentReason\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Observation#Observation.component.dataAbsentReason",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/obs.co.dataAbsentReason-3to2"
+    },
+    {
+      "type": "predecessor",
+      "label": "ObservationDataAbsentReason3to2",
+      "display": "Id: obs.dataAbsentReason-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Observation#Observation.dataAbsentReason\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Observation#Observation.dataAbsentReason",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/obs.dataAbsentReason-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/observation-valueabsentreason|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/observation-valueabsentreason|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/data-absent-reason",
+      "target": "http://hl7.org/fhir/data-absent-reason",
+      "element": [
+        {
+          "code": "NaN",
+          "target": [
+            {
+              "code": "NaN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asked",
+          "target": [
+            {
+              "code": "asked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "astext",
+          "target": [
+            {
+              "code": "astext",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "masked",
+          "target": [
+            {
+              "code": "masked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-asked",
+          "target": [
+            {
+              "code": "not-asked",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-performed",
+          "noMap": true
+        },
+        {
+          "code": "temp",
+          "target": [
+            {
+              "code": "temp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unsupported",
+          "target": [
+            {
+              "code": "unsupported",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

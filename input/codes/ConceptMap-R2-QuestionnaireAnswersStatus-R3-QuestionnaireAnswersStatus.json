@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-QuestionnaireAnswersStatus-R3-QuestionnaireAnswersStatus",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-QuestionnaireAnswersStatus-R3-QuestionnaireAnswersStatus",
+  "version": "0.0.1",
+  "name": "R2-QuestionnaireAnswersStatus-R3-QuestionnaireAnswersStatus",
+  "title": "Concept map to convert a FHIR R2 QuestionnaireAnswersStatus into a FHIR R3 QuestionnaireAnswersStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5107603-06:00",
+  "description": "Mapping for QuestionnaireResponse.status from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "QuestionnaireResponseStatus2to3",
+      "display": "Id: qrs.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/qrs.status-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-answers-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-answers-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/questionnaire-answers-status",
+      "target": "http://hl7.org/fhir/questionnaire-answers-status",
+      "element": [
+        {
+          "code": "amended",
+          "target": [
+            {
+              "code": "amended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

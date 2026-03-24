@@ -1,0 +1,92 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-NameUse-R4-NameUse",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-NameUse-R4-NameUse",
+  "version": "0.0.1",
+  "name": "R5-NameUse-R4-NameUse",
+  "title": "Concept map to convert a FHIR R5 NameUse into a FHIR R4 NameUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9978408-06:00",
+  "description": "Mapping for HumanName.use from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "HumanNameUse5to4",
+      "display": "Id: nam.use-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/HumanName#HumanName.use\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/HumanName#HumanName.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nam.use-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/name-use|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/name-use|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/name-use",
+      "target": "http://hl7.org/fhir/name-use",
+      "element": [
+        {
+          "code": "maiden",
+          "target": [
+            {
+              "code": "maiden",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "temp",
+          "target": [
+            {
+              "code": "temp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "usual",
+          "target": [
+            {
+              "code": "usual",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "old",
+          "target": [
+            {
+              "code": "old",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "nickname",
+          "target": [
+            {
+              "code": "nickname",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "official",
+          "target": [
+            {
+              "code": "official",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "anonymous",
+          "target": [
+            {
+              "code": "anonymous",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

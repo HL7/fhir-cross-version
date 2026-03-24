@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-OperationKind-R4B-OperationKind",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-OperationKind-R4B-OperationKind",
+  "version": "0.0.1",
+  "name": "R4-OperationKind-R4B-OperationKind",
+  "title": "Concept map to convert a FHIR R4 OperationKind into a FHIR R4B OperationKind",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0202382-06:00",
+  "description": "Mapping for OperationDefinition.kind from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "OperationDefinitionKind4to4b",
+      "display": "Id: opd.kind-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/OperationDefinition#OperationDefinition.kind\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/OperationDefinition#OperationDefinition.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/opd.kind-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/operation-kind|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/operation-kind|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/operation-kind",
+      "target": "http://hl7.org/fhir/operation-kind",
+      "element": [
+        {
+          "code": "query",
+          "target": [
+            {
+              "code": "query",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "operation",
+          "target": [
+            {
+              "code": "operation",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

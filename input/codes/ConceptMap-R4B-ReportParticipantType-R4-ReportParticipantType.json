@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ReportParticipantType-R4-ReportParticipantType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ReportParticipantType-R4-ReportParticipantType",
+  "version": "0.0.1",
+  "name": "R4B-ReportParticipantType-R4-ReportParticipantType",
+  "title": "Concept map to convert a FHIR R4B ReportParticipantType into a FHIR R4 ReportParticipantType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.7128873-06:00",
+  "description": "Mapping for TestReport.participant.type from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestReportParticipantType4bto4",
+      "display": "Id: tsr.pa.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/TestReport#TestReport.participant.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.participant.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tsr.pa.type-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/report-participant-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/report-participant-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/report-participant-type",
+      "target": "http://hl7.org/fhir/report-participant-type",
+      "element": [
+        {
+          "code": "server",
+          "target": [
+            {
+              "code": "server",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "client",
+          "target": [
+            {
+              "code": "client",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "test-engine",
+          "target": [
+            {
+              "code": "test-engine",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

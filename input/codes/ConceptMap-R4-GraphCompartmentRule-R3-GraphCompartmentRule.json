@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-GraphCompartmentRule-R3-GraphCompartmentRule",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-GraphCompartmentRule-R3-GraphCompartmentRule",
+  "version": "0.0.1",
+  "name": "R4-GraphCompartmentRule-R3-GraphCompartmentRule",
+  "title": "Concept map to convert a FHIR R4 GraphCompartmentRule into a FHIR R3 GraphCompartmentRule",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2569671-06:00",
+  "description": "Mapping for GraphDefinition.link.target.compartment.rule from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "GraphDefinitionLinkTargetCompartmentRule4to3",
+      "display": "Id: gdf.li.ta.co.rule-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.rule\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.rule",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/gdf.li.ta.co.rule-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/graph-compartment-rule|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/graph-compartment-rule|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/graph-compartment-rule",
+      "target": "http://hl7.org/fhir/graph-compartment-rule",
+      "element": [
+        {
+          "code": "identical",
+          "target": [
+            {
+              "code": "identical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "custom",
+          "target": [
+            {
+              "code": "custom",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "different",
+          "target": [
+            {
+              "code": "different",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "matching",
+          "target": [
+            {
+              "code": "matching",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

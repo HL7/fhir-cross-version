@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-AuditEventAction-R4B-AuditEventAction",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-AuditEventAction-R4B-AuditEventAction",
+  "version": "0.0.1",
+  "name": "R4-AuditEventAction-R4B-AuditEventAction",
+  "title": "Concept map to convert a FHIR R4 AuditEventAction into a FHIR R4B AuditEventAction",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0272997-06:00",
+  "description": "Mapping for AuditEvent.action from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AuditEventAction4to4b",
+      "display": "Id: sev.action-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.action\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.action",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.action-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/audit-event-action|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/audit-event-action|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/audit-event-action",
+      "target": "http://hl7.org/fhir/audit-event-action",
+      "element": [
+        {
+          "code": "R",
+          "target": [
+            {
+              "code": "R",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "target": [
+            {
+              "code": "C",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "D",
+          "target": [
+            {
+              "code": "D",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "target": [
+            {
+              "code": "U",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "E",
+          "target": [
+            {
+              "code": "E",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

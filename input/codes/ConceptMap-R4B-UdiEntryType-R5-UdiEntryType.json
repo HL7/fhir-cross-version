@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-UdiEntryType-R5-UdiEntryType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-UdiEntryType-R5-UdiEntryType",
+  "version": "0.0.1",
+  "name": "R4B-UdiEntryType-R5-UdiEntryType",
+  "title": "Concept map to convert a FHIR R4B UdiEntryType into a FHIR R5 UdiEntryType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4629055-06:00",
+  "description": "Mapping for Device.udiCarrier.entryType from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceUdiCarrierEntryType4bto5",
+      "display": "Id: dev.ud.entryType-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Device#Device.udiCarrier.entryType\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Device#Device.udiCarrier.entryType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dev.ud.entryType-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/udi-entry-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/udi-entry-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/udi-entry-type",
+      "target": "http://hl7.org/fhir/udi-entry-type",
+      "element": [
+        {
+          "code": "self-reported",
+          "target": [
+            {
+              "code": "self-reported",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "rfid",
+          "target": [
+            {
+              "code": "rfid",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "manual",
+          "target": [
+            {
+              "code": "manual",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "barcode",
+          "target": [
+            {
+              "code": "barcode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "card",
+          "target": [
+            {
+              "code": "card",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ContactPointUse-R4B-ContactPointUse",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ContactPointUse-R4B-ContactPointUse",
+  "version": "0.0.1",
+  "name": "R5-ContactPointUse-R4B-ContactPointUse",
+  "title": "Concept map to convert a FHIR R5 ContactPointUse into a FHIR R4B ContactPointUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9109079-06:00",
+  "description": "Mapping for ContactPoint.use from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ContactPointUse5to4b",
+      "display": "Id: cpt.use-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ContactPoint#ContactPoint.use\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint#ContactPoint.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpt.use-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/contact-point-use|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/contact-point-use|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/contact-point-use",
+      "target": "http://hl7.org/fhir/contact-point-use",
+      "element": [
+        {
+          "code": "temp",
+          "target": [
+            {
+              "code": "temp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "work",
+          "target": [
+            {
+              "code": "work",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "old",
+          "target": [
+            {
+              "code": "old",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "mobile",
+          "target": [
+            {
+              "code": "mobile",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "home",
+          "target": [
+            {
+              "code": "home",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

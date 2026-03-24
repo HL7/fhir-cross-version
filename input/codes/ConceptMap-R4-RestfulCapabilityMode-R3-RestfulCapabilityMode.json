@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-RestfulCapabilityMode-R3-RestfulCapabilityMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-RestfulCapabilityMode-R3-RestfulCapabilityMode",
+  "version": "0.0.1",
+  "name": "R4-RestfulCapabilityMode-R3-RestfulCapabilityMode",
+  "title": "Concept map to convert a FHIR R4 RestfulCapabilityMode into a FHIR R3 RestfulCapabilityMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2481375-06:00",
+  "description": "Mapping for CapabilityStatement.rest.mode from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestMode4to3",
+      "display": "Id: cpb.re.mode-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.mode\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.mode-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/restful-capability-mode|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/restful-capability-mode|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/restful-capability-mode",
+      "target": "http://hl7.org/fhir/restful-capability-mode",
+      "element": [
+        {
+          "code": "server",
+          "target": [
+            {
+              "code": "server",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "client",
+          "target": [
+            {
+              "code": "client",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-Bcp13Txt-R4B-Mimetypes",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-Bcp13Txt-R4B-Mimetypes",
+  "version": "0.0.1",
+  "name": "R4-Bcp13Txt-R4B-Mimetypes",
+  "title": "Concept map to convert a FHIR R4 Bcp13Txt into a FHIR R4B Mimetypes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0085189-06:00",
+  "description": "Mapping for Expression.language from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ExpressionLanguage4to4b",
+      "display": "Id: exp.language-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Expression#Expression.language\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Expression#Expression.language",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/exp.language-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://www.rfc-editor.org/bcp/bcp13.txt|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/mimetypes|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/expression-language",
+      "target": "http://hl7.org/fhir/expression-language",
+      "element": [
+        {
+          "code": "text/cql",
+          "target": [
+            {
+              "code": "text/cql",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "application/x-fhir-query",
+          "target": [
+            {
+              "code": "application/x-fhir-query",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "text/fhirpath",
+          "target": [
+            {
+              "code": "text/fhirpath",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

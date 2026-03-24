@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ConceptmapUnmappedMode-R4-ConceptmapUnmappedMode",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ConceptmapUnmappedMode-R4-ConceptmapUnmappedMode",
+  "version": "0.0.1",
+  "name": "R3-ConceptmapUnmappedMode-R4-ConceptmapUnmappedMode",
+  "title": "Concept map to convert a FHIR R3 ConceptmapUnmappedMode into a FHIR R4 ConceptmapUnmappedMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6678804-06:00",
+  "description": "Mapping for ConceptMap.group.unmapped.mode from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConceptMapGroupUnmappedMode3to4",
+      "display": "Id: cmd.gr.un.mode-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ConceptMap#ConceptMap.group.unmapped.mode\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ConceptMap#ConceptMap.group.unmapped.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.gr.un.mode-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/conceptmap-unmapped-mode",
+      "target": "http://hl7.org/fhir/conceptmap-unmapped-mode",
+      "element": [
+        {
+          "code": "provided",
+          "target": [
+            {
+              "code": "provided",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fixed",
+          "target": [
+            {
+              "code": "fixed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other-map",
+          "target": [
+            {
+              "code": "other-map",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

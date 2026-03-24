@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-CareTeamStatus-R4-CareTeamStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-CareTeamStatus-R4-CareTeamStatus",
+  "version": "0.0.1",
+  "name": "R3-CareTeamStatus-R4-CareTeamStatus",
+  "title": "Concept map to convert a FHIR R3 CareTeamStatus into a FHIR R4 CareTeamStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6733003-06:00",
+  "description": "Mapping for CareTeam.status from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CareTeamStatus3to4",
+      "display": "Id: ctm.status-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CareTeam#CareTeam.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CareTeam#CareTeam.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctm.status-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/care-team-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/care-team-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/care-team-status",
+      "target": "http://hl7.org/fhir/care-team-status",
+      "element": [
+        {
+          "code": "inactive",
+          "target": [
+            {
+              "code": "inactive",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "proposed",
+          "target": [
+            {
+              "code": "proposed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "suspended",
+          "target": [
+            {
+              "code": "suspended",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

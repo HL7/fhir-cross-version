@@ -1,0 +1,110 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-EnteralRoute-R4B-EnteralRoute",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-EnteralRoute-R4B-EnteralRoute",
+  "version": "0.0.1",
+  "name": "R4-EnteralRoute-R4B-EnteralRoute",
+  "title": "Concept map to convert a FHIR R4 EnteralRoute into a FHIR R4B EnteralRoute",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0189814-06:00",
+  "description": "Mapping for NutritionOrder.enteralFormula.routeofAdministration from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "NutritionOrderEnteralFormulaRouteofAdministrationr4to4b",
+      "display": "Id: nor.en.routeofAdministration-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/NutritionOrder#NutritionOrder.enteralFormula.routeofAdministration\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/NutritionOrder#NutritionOrder.enteralFormula.routeofAdministration",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nor.en.routeofAdministration-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/enteral-route|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/enteral-route|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
+      "element": [
+        {
+          "code": "EFT",
+          "target": [
+            {
+              "code": "EFT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ENTINSTL",
+          "target": [
+            {
+              "code": "ENTINSTL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GJT",
+          "target": [
+            {
+              "code": "GJT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GT",
+          "target": [
+            {
+              "code": "GT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "JJTINSTL",
+          "target": [
+            {
+              "code": "JJTINSTL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NGT",
+          "target": [
+            {
+              "code": "NGT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OGT",
+          "target": [
+            {
+              "code": "OGT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OJJ",
+          "target": [
+            {
+              "code": "OJJ",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PO",
+          "target": [
+            {
+              "code": "PO",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-IssueSeverity-R4B-IssueSeverity",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-IssueSeverity-R4B-IssueSeverity",
+  "version": "0.0.1",
+  "name": "R5-IssueSeverity-R4B-IssueSeverity",
+  "title": "Concept map to convert a FHIR R5 IssueSeverity into a FHIR R4B IssueSeverity",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9265033-06:00",
+  "description": "Mapping for OperationOutcome.issue.severity from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "OperationOutcomeIssueSeverity5to4b",
+      "display": "Id: opo.is.severity-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/OperationOutcome#OperationOutcome.issue.severity\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/OperationOutcome#OperationOutcome.issue.severity",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/opo.is.severity-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/issue-severity|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/issue-severity|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/issue-severity",
+      "target": "http://hl7.org/fhir/issue-severity",
+      "element": [
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fatal",
+          "target": [
+            {
+              "code": "fatal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "information",
+          "target": [
+            {
+              "code": "information",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "success",
+          "noMap": true
+        },
+        {
+          "code": "warning",
+          "target": [
+            {
+              "code": "warning",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

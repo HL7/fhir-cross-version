@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-GraphCompartmentUse-R4-GraphCompartmentUse",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-GraphCompartmentUse-R4-GraphCompartmentUse",
+  "version": "0.0.1",
+  "name": "R4B-GraphCompartmentUse-R4-GraphCompartmentUse",
+  "title": "Concept map to convert a FHIR R4B GraphCompartmentUse into a FHIR R4 GraphCompartmentUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6926668-06:00",
+  "description": "Mapping for GraphDefinition.link.target.compartment.use from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "GraphDefinitionLinkTargetCompartmentUse4bto4",
+      "display": "Id: gdf.li.ta.co.use-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.use\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/gdf.li.ta.co.use-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/graph-compartment-use|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/graph-compartment-use|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/graph-compartment-use",
+      "target": "http://hl7.org/fhir/graph-compartment-use",
+      "element": [
+        {
+          "code": "condition",
+          "target": [
+            {
+              "code": "condition",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "requirement",
+          "target": [
+            {
+              "code": "requirement",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ReportActionResultCodes-R4-ReportActionResultCodes",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ReportActionResultCodes-R4-ReportActionResultCodes",
+  "version": "0.0.1",
+  "name": "R3-ReportActionResultCodes-R4-ReportActionResultCodes",
+  "title": "Concept map to convert a FHIR R3 ReportActionResultCodes into a FHIR R4 ReportActionResultCodes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6997751-06:00",
+  "description": "Mapping for TestReport.setup.action.assert.result from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestReportSetupActionAssertResult3to4",
+      "display": "Id: tsr.se.ac.as.result-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/TestReport#TestReport.setup.action.assert.result\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.setup.action.assert.result",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tsr.se.ac.as.result-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "TestReportSetupActionOperationResult3to4",
+      "display": "Id: tsr.se.ac.op.result-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/TestReport#TestReport.setup.action.operation.result\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.setup.action.operation.result",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tsr.se.ac.op.result-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/report-action-result-codes|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/report-action-result-codes|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/report-action-result-codes",
+      "target": "http://hl7.org/fhir/report-action-result-codes",
+      "element": [
+        {
+          "code": "fail",
+          "target": [
+            {
+              "code": "fail",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pass",
+          "target": [
+            {
+              "code": "pass",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "warning",
+          "target": [
+            {
+              "code": "warning",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "skip",
+          "target": [
+            {
+              "code": "skip",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

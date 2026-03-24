@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ListMode-R5-ListMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ListMode-R5-ListMode",
+  "version": "0.0.1",
+  "name": "R4B-ListMode-R5-ListMode",
+  "title": "Concept map to convert a FHIR R4B ListMode into a FHIR R5 ListMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4672747-06:00",
+  "description": "Mapping for EvidenceReport.section.mode from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EvidenceReportSectionMode4bto5",
+      "display": "Id: evr.se.mode-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/EvidenceReport#EvidenceReport.section.mode\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/EvidenceReport#EvidenceReport.section.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/evr.se.mode-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "ListMode4bto5",
+      "display": "Id: lst.mode-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/List#List.mode\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/List#List.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/lst.mode-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/list-mode|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/list-mode|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/list-mode",
+      "target": "http://hl7.org/fhir/list-mode",
+      "element": [
+        {
+          "code": "changes",
+          "target": [
+            {
+              "code": "changes",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "working",
+          "target": [
+            {
+              "code": "working",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "snapshot",
+          "target": [
+            {
+              "code": "snapshot",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

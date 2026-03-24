@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MetricCalibrationType-R4B-MetricCalibrationType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-MetricCalibrationType-R4B-MetricCalibrationType",
+  "version": "0.0.1",
+  "name": "R5-MetricCalibrationType-R4B-MetricCalibrationType",
+  "title": "Concept map to convert a FHIR R5 MetricCalibrationType into a FHIR R4B MetricCalibrationType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9155119-06:00",
+  "description": "Mapping for DeviceMetric.calibration.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceMetricCalibrationType5to4b",
+      "display": "Id: dvm.ca.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/DeviceMetric#DeviceMetric.calibration.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.ca.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-calibration-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-calibration-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/metric-calibration-type",
+      "target": "http://hl7.org/fhir/metric-calibration-type",
+      "element": [
+        {
+          "code": "offset",
+          "target": [
+            {
+              "code": "offset",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unspecified",
+          "target": [
+            {
+              "code": "unspecified",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "two-point",
+          "target": [
+            {
+              "code": "two-point",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gain",
+          "target": [
+            {
+              "code": "gain",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

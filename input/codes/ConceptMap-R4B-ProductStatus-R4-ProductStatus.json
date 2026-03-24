@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ProductStatus-R4-ProductStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ProductStatus-R4-ProductStatus",
+  "version": "0.0.1",
+  "name": "R4B-ProductStatus-R4-ProductStatus",
+  "title": "Concept map to convert a FHIR R4B ProductStatus into a FHIR R4 ProductStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6720923-06:00",
+  "description": "Mapping for BiologicallyDerivedProduct.status from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "BiologicallyDerivedProductStatus4bto4",
+      "display": "Id: bdp.status-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/BiologicallyDerivedProduct#BiologicallyDerivedProduct.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/BiologicallyDerivedProduct#BiologicallyDerivedProduct.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/bdp.status-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/product-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/product-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/product-status",
+      "target": "http://hl7.org/fhir/product-status",
+      "element": [
+        {
+          "code": "unavailable",
+          "target": [
+            {
+              "code": "unavailable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "available",
+          "target": [
+            {
+              "code": "available",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

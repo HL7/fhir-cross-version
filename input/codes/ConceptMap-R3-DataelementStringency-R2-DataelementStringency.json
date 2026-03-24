@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-DataelementStringency-R2-DataelementStringency",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-DataelementStringency-R2-DataelementStringency",
+  "version": "0.0.1",
+  "name": "R3-DataelementStringency-R2-DataelementStringency",
+  "title": "Concept map to convert a FHIR R3 DataelementStringency into a FHIR R2 DataelementStringency",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7644454-06:00",
+  "description": "Mapping for DataElement.stringency from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DataElementStringency3to2",
+      "display": "Id: dae.stringency-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/DataElement#DataElement.stringency\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/DataElement#DataElement.stringency",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dae.stringency-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/dataelement-stringency|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/dataelement-stringency|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/dataelement-stringency",
+      "target": "http://hl7.org/fhir/dataelement-stringency",
+      "element": [
+        {
+          "code": "equivalent",
+          "target": [
+            {
+              "code": "equivalent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "scaleable",
+          "target": [
+            {
+              "code": "scaleable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "convertable",
+          "target": [
+            {
+              "code": "convertable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "flexible",
+          "target": [
+            {
+              "code": "flexible",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fully-specified",
+          "target": [
+            {
+              "code": "fully-specified",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "comparable",
+          "target": [
+            {
+              "code": "comparable",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

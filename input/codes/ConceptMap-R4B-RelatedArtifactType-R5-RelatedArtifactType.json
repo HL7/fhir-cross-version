@@ -1,0 +1,101 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-RelatedArtifactType-R5-RelatedArtifactType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-RelatedArtifactType-R5-RelatedArtifactType",
+  "version": "0.0.1",
+  "name": "R4B-RelatedArtifactType-R5-RelatedArtifactType",
+  "title": "Concept map to convert a FHIR R4B RelatedArtifactType into a FHIR R5 RelatedArtifactType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4847508-06:00",
+  "description": "Mapping for RelatedArtifact.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "RelatedArtifactType4bto5",
+      "display": "Id: rla.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/RelatedArtifact#RelatedArtifact.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/RelatedArtifact#RelatedArtifact.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rla.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/related-artifact-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/related-artifact-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/related-artifact-type",
+      "target": "http://hl7.org/fhir/related-artifact-type",
+      "element": [
+        {
+          "code": "depends-on",
+          "target": [
+            {
+              "code": "depends-on",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "successor",
+          "target": [
+            {
+              "code": "successor",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "citation",
+          "target": [
+            {
+              "code": "citation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "documentation",
+          "target": [
+            {
+              "code": "documentation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "derived-from",
+          "target": [
+            {
+              "code": "derived-from",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "justification",
+          "target": [
+            {
+              "code": "justification",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "predecessor",
+          "target": [
+            {
+              "code": "predecessor",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "composed-of",
+          "target": [
+            {
+              "code": "composed-of",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

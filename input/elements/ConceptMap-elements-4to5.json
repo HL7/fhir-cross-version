@@ -68,7 +68,7 @@
     { "code" : "BiologicallyDerivedProduct.storage.scale", "noMap" : true },
     { "code" : "BiologicallyDerivedProduct.storage.temperature", "noMap" : true },
     { "code" : "BodyStructure.location", "noMap" : true },
-    { "code" : "BodyStructure.locationQualifier", "target" : [{ "code" : "BodyStructure.includedStructure.qualifier", "relationship" : "equivalent" }] },
+    { "code" : "BodyStructure.locationQualifier", "target" : [{ "code" : "BodyStructure.includedStructure.qualifier", "relationship" : "related-to" }] },
     { "code" : "CarePlan.activity.detail.code", "noMap" : true },
     { "code" : "CarePlan.activity.detail.dailyAmount", "noMap" : true },
     { "code" : "CarePlan.activity.detail.description", "noMap" : true },
@@ -157,7 +157,9 @@
     { "code" : "Contract.term.action.reasonReference", "target" : [{ "code" : "Contract.term.action.reason.reference", "relationship" : "equivalent" }] },
     { "code" : "Coverage.payor", "target" : [{ "code" : "Coverage.insurer", "relationship" : "equivalent" }] },
     { "code" : "DetectedIssue.patient", "target" : [{ "code" : "DetectedIssue.subject", "relationship" : "equivalent" }] },
-    { "code" : "Device.deviceName", "target" : [{ "code" : "Device.name", "relationship" : "equivalent" }] },
+
+    { "code" : "Device.deviceName", "target" : [{ "code" : "Device.name", "relationship" : "equivalent" }, { "code": "Device.displayName", "relationship": "related-to" }] },
+
     { "code" : "Device.deviceName.display", "target" : [{ "code" : "Device.name.display", "relationship" : "equivalent" }] },
     { "code" : "Device.deviceName.name", "target" : [{ "code" : "Device.name.value", "relationship" : "equivalent" }] },
     { "code" : "Device.deviceName.type", "target" : [{ "code" : "Device.name.type", "relationship" : "equivalent" }] },
@@ -171,6 +173,10 @@
     { "code" : "Device.specialization.systemType", "noMap" : true },
     { "code" : "Device.specialization.version", "noMap" : true },
     { "code" : "Device.statusReason", "noMap" : true },
+
+    { "code" : "Device.patient", "target": [{ "code" : "DeviceAssociation.subject", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "Device.status", "target": [{ "code" : "Device.status", "relationship" : "equivalent" }, { "code" : "DeviceAssociation.status", "relationship" : "not-related-to" }] },
+
     { "code" : "DeviceDefinition.capability.description", "noMap" : true },
     { "code" : "DeviceDefinition.capability.type", "noMap" : true },
     { "code" : "DeviceDefinition.guideline.onlineInformation", "target" : [{ "code" : "DeviceDefinition.guideline.relatedArtifact", "relationship" : "equivalent" }] },
@@ -193,7 +199,7 @@
     { "code" : "DeviceMetric.parent", "noMap" : true },
     { "code" : "DeviceMetric.source", "target" : [{ "code" : "DeviceMetric.device", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.code[x]", "target" : [{ "code" : "DeviceRequest.code", "relationship" : "equivalent" }] },
-    { "code" : "DeviceRequest.performerType", "noMap" : true },
+    { "code" : "DeviceRequest.performerType", "target" : [{ "code" : "DeviceRequest.code", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.priorRequest", "target" : [{ "code" : "DeviceRequest.replaces", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.reasonCode", "target" : [{ "code" : "DeviceRequest.reason.concept", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.reasonReference", "target" : [{ "code" : "DeviceRequest.reason.reference", "relationship" : "equivalent" }] },
@@ -213,7 +219,7 @@
     { "code" : "DocumentReference.context.related", "noMap" : true },
     { "code" : "DocumentReference.context.sourcePatientInfo", "noMap" : true },
     { "code" : "DocumentReference.masterIdentifier", "noMap" : true },
-    { "code" : "Dosage.asNeeded[x]", "target" : [{ "code" : "Dosage.asNeeded", "relationship" : "equivalent" }] },
+    { "code" : "Dosage.asNeeded[x]", "target" : [{ "code" : "Dosage.asNeeded", "relationship" : "equivalent" }, { "code" : "Dosage.asNeededFor", "relationship" : "equivalent" }] },
     { "code" : "ElementDefinition.constraint.xpath", "noMap" : true },
     { "code" : "Encounter.classHistory.class", "noMap" : true },
     { "code" : "Encounter.classHistory.period", "noMap" : true },
@@ -232,9 +238,7 @@
     { "code" : "Encounter.participant.individual", "target" : [{ "code" : "Encounter.participant.actor", "relationship" : "equivalent" }] },
     { "code" : "Encounter.period", "target" : [{ "code" : "Encounter.actualPeriod", "relationship" : "equivalent" }] },
     { "code" : "Encounter.reasonCode", "target" : [{ "code" : "Encounter.reason.value.concept", "relationship" : "equivalent" }] },
-    { "code" : "Encounter.reasonCode.use", "target" : [{ "code" : "Encounter.reason.use", "relationship" : "equivalent" }] },
-    { "code" : "Encounter.reasonCode.value", "target" : [{ "code" : "Encounter.reason.value", "relationship" : "equivalent" }] },
-    { "code" : "Encounter.reasonReference", "target" : [{ "code" : "Encounter.reason.value.reference", "relationship" : "equivalent" }] },
+    { "code" : "Encounter.reasonReference", "target" : [{ "code" : "Encounter.reason.value.reference", "relationship" : "source-is-narrower-than-target" }] },
     { "code" : "Encounter.statusHistory.period", "noMap" : true },
     { "code" : "Encounter.statusHistory.status", "noMap" : true },
     { "code" : "Endpoint.payload.payloadMimeType", "target" : [{ "code" : "Endpoint.payload.mimeType", "relationship" : "equivalent" }] },
@@ -497,12 +501,14 @@
     { "code" : "PaymentReconciliation.paymentDate", "target" : [{ "code" : "PaymentReconciliation.date", "relationship" : "equivalent" }] },
     { "code" : "PlanDefinition.action.relatedAction.actionId", "target" : [{ "code" : "PlanDefinition.action.relatedAction.targetId", "relationship" : "equivalent" }] },
     { "code" : "PractitionerRole.availabilityExceptions", "noMap" : true },
-    { "code" : "PractitionerRole.availableTime.allDay", "noMap" : true },
-    { "code" : "PractitionerRole.availableTime.availableEndTime", "noMap" : true },
-    { "code" : "PractitionerRole.availableTime.availableStartTime", "noMap" : true },
-    { "code" : "PractitionerRole.availableTime.daysOfWeek", "noMap" : true },
-    { "code" : "PractitionerRole.notAvailable.description", "noMap" : true },
-    { "code" : "PractitionerRole.notAvailable.during", "noMap" : true },
+
+    { "code" : "PractitionerRole.availableTime", "target" : [
+      { "code" : "PractitionerRole.availability", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "PractitionerRole.availability.availableTime", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "PractitionerRole.notAvailable", "target" : [
+      { "code" : "PractitionerRole.availability", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "PractitionerRole.availability.notAvailableTime", "relationship" : "source-is-narrower-than-target" }] },
+
     { "code" : "PractitionerRole.telecom", "target" : [{ "code" : "PractitionerRole.contact.telecom", "relationship" : "equivalent" }] },
     { "code" : "Procedure.asserter", "noMap" : true },
     { "code" : "Procedure.complicationDetail", "target" : [{ "code" : "Procedure.complication.reference", "relationship" : "equivalent" }] },
@@ -577,6 +583,7 @@
     { "code" : "SupplyRequest.reasonCode", "target" : [{ "code" : "SupplyRequest.reason.concept", "relationship" : "equivalent" }] },
     { "code" : "SupplyRequest.reasonReference", "target" : [{ "code" : "SupplyRequest.reason.reference", "relationship" : "equivalent" }] },
     { "code" : "Task.performerType", "target" : [{ "code" : "Task.requestedPerformer.concept", "relationship" : "equivalent" }] },
+    { "code" : "Task.statusReason", "target" : [{ "code" : "Task.statusReason.concept", "relationship" : "equivalent" }] },
     { "code" : "Task.reasonCode", "target" : [{ "code" : "Task.reason.concept", "relationship" : "equivalent" }] },
     { "code" : "Task.reasonReference", "target"   : [{ "code" : "Task.reason.reference", "relationship" : "equivalent" }] }
     ]

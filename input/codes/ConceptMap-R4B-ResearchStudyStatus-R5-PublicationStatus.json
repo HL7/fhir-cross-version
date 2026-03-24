@@ -1,0 +1,85 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ResearchStudyStatus-R5-PublicationStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ResearchStudyStatus-R5-PublicationStatus",
+  "version": "0.0.1",
+  "name": "R4B-ResearchStudyStatus-R5-PublicationStatus",
+  "title": "Concept map to convert a FHIR R4B ResearchStudyStatus into a FHIR R5 PublicationStatus",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4849874-06:00",
+  "description": "Mapping for ResearchStudy.status from R4B to R5",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ResearchStudyStatus4bto5",
+      "display": "Id: rst.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ResearchStudy#ResearchStudy.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ResearchStudy#ResearchStudy.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rst.status-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/research-study-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/publication-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/research-study-status",
+      "target": "http://hl7.org/fhir/publication-status",
+      "element": [
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "administratively-completed",
+          "noMap": true
+        },
+        {
+          "code": "approved",
+          "noMap": true
+        },
+        {
+          "code": "closed-to-accrual",
+          "noMap": true
+        },
+        {
+          "code": "closed-to-accrual-and-intervention",
+          "noMap": true
+        },
+        {
+          "code": "completed",
+          "noMap": true
+        },
+        {
+          "code": "disapproved",
+          "noMap": true
+        },
+        {
+          "code": "in-review",
+          "noMap": true
+        },
+        {
+          "code": "temporarily-closed-to-accrual",
+          "noMap": true
+        },
+        {
+          "code": "temporarily-closed-to-accrual-and-intervention",
+          "noMap": true
+        },
+        {
+          "code": "withdrawn",
+          "target": [
+            {
+              "code": "retired",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

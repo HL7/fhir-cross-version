@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-Participationstatus-R5-Participationstatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-Participationstatus-R5-Participationstatus",
+  "version": "0.0.1",
+  "name": "R4B-Participationstatus-R5-Participationstatus",
+  "title": "Concept map to convert a FHIR R4B Participationstatus into a FHIR R5 Participationstatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4521545-06:00",
+  "description": "Mapping for Appointment.participant.status from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AppointmentParticipantStatus4bto5",
+      "display": "Id: app.pa.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Appointment#Appointment.participant.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Appointment#Appointment.participant.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/app.pa.status-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/participationstatus|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/participationstatus|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/participationstatus",
+      "target": "http://hl7.org/fhir/participationstatus",
+      "element": [
+        {
+          "code": "declined",
+          "target": [
+            {
+              "code": "declined",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "needs-action",
+          "target": [
+            {
+              "code": "needs-action",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "accepted",
+          "target": [
+            {
+              "code": "accepted",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tentative",
+          "target": [
+            {
+              "code": "tentative",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

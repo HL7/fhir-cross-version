@@ -1,0 +1,51 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ImmunizationStatus-R3-ImmunizationStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ImmunizationStatus-R3-ImmunizationStatus",
+  "version": "0.0.1",
+  "name": "R4-ImmunizationStatus-R3-ImmunizationStatus",
+  "title": "Concept map to convert a FHIR R4 ImmunizationStatus into a FHIR R3 ImmunizationStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2582533-06:00",
+  "description": "Mapping for Immunization.status from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ImmunizationStatus4to3",
+      "display": "Id: imm.status-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Immunization#Immunization.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Immunization#Immunization.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/imm.status-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/immunization-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/immunization-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/event-status",
+      "target": "http://hl7.org/fhir/medication-admin-status",
+      "element": [
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-done",
+          "noMap": true
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

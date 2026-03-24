@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-IdentifierUse-R3-IdentifierUse",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-IdentifierUse-R3-IdentifierUse",
+  "version": "0.0.1",
+  "name": "R2-IdentifierUse-R3-IdentifierUse",
+  "title": "Concept map to convert a FHIR R2 IdentifierUse into a FHIR R3 IdentifierUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5000971-06:00",
+  "description": "Mapping for Identifier.use from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "IdentifierUse2to3",
+      "display": "Id: idr.use-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Identifier#Identifier.use\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Identifier#Identifier.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/idr.use-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/identifier-use|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/identifier-use|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/identifier-use",
+      "target": "http://hl7.org/fhir/identifier-use",
+      "element": [
+        {
+          "code": "secondary",
+          "target": [
+            {
+              "code": "secondary",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "temp",
+          "target": [
+            {
+              "code": "temp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "usual",
+          "target": [
+            {
+              "code": "usual",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "official",
+          "target": [
+            {
+              "code": "official",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

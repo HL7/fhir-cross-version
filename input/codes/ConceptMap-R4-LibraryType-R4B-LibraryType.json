@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-LibraryType-R4B-LibraryType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-LibraryType-R4B-LibraryType",
+  "version": "0.0.1",
+  "name": "R4-LibraryType-R4B-LibraryType",
+  "title": "Concept map to convert a FHIR R4 LibraryType into a FHIR R4B LibraryType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0133545-06:00",
+  "description": "Mapping for Library.type from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "LibraryType4to4b",
+      "display": "Id: lib.type-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Library#Library.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Library#Library.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/lib.type-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/library-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/library-type|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/library-type",
+      "target": "http://terminology.hl7.org/CodeSystem/library-type",
+      "element": [
+        {
+          "code": "model-definition",
+          "target": [
+            {
+              "code": "model-definition",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "logic-library",
+          "target": [
+            {
+              "code": "logic-library",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "module-definition",
+          "target": [
+            {
+              "code": "module-definition",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asset-collection",
+          "target": [
+            {
+              "code": "asset-collection",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

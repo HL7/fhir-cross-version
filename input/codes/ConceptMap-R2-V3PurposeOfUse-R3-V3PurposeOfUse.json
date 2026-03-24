@@ -1,0 +1,428 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-V3PurposeOfUse-R3-V3PurposeOfUse",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-V3PurposeOfUse-R3-V3PurposeOfUse",
+  "version": "0.0.1",
+  "name": "R2-V3PurposeOfUse-R3-V3PurposeOfUse",
+  "title": "Concept map to convert a FHIR R2 V3PurposeOfUse into a FHIR R3 V3PurposeOfUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5103368-06:00",
+  "description": "Mapping for Provenance.reason from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ProvenanceReason2to3",
+      "display": "Id: prv.reason-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Provenance#Provenance.reason\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Provenance#Provenance.reason",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/prv.reason-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "AuditEventEventPurposeOfEventAuditEventPurposeOfEvent2to3",
+      "display": "Id: sev.ev.purposeOfEvent-sev.purposeOfEvent-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.event.purposeOfEvent\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.purposeOfEvent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ev.purposeOfEvent-sev.purposeOfEvent-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "AuditEventParticipantPurposeOfUseAuditEventAgentPurposeOfUse2to3",
+      "display": "Id: sev.pa.purposeOfUse-sev.ag.purposeOfUse-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.participant.purposeOfUse\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.agent.purposeOfUse",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.pa.purposeOfUse-sev.ag.purposeOfUse-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-PurposeOfUse|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-PurposeOfUse|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v3/ActReason",
+      "target": "http://hl7.org/fhir/v3/ActReason",
+      "element": [
+        {
+          "code": "PUBHLTH",
+          "target": [
+            {
+              "code": "PUBHLTH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HRESCH",
+          "target": [
+            {
+              "code": "HRESCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DISASTER",
+          "target": [
+            {
+              "code": "DISASTER",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FRAUD",
+          "target": [
+            {
+              "code": "FRAUD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HQUALIMP",
+          "target": [
+            {
+              "code": "HQUALIMP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COVERAGE",
+          "target": [
+            {
+              "code": "COVERAGE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HSYSADMIN",
+          "target": [
+            {
+              "code": "HSYSADMIN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PurposeOfUse",
+          "target": [
+            {
+              "code": "PurposeOfUse",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ETREAT",
+          "target": [
+            {
+              "code": "ETREAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GOV",
+          "target": [
+            {
+              "code": "GOV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HLEGAL",
+          "target": [
+            {
+              "code": "HLEGAL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CAREMGT",
+          "target": [
+            {
+              "code": "CAREMGT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PATRQT",
+          "target": [
+            {
+              "code": "PATRQT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ELIGVER",
+          "target": [
+            {
+              "code": "ELIGVER",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PATSFTY",
+          "target": [
+            {
+              "code": "PATSFTY",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PWATRNY",
+          "target": [
+            {
+              "code": "PWATRNY",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SUPNWK",
+          "target": [
+            {
+              "code": "SUPNWK",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HDIRECT",
+          "target": [
+            {
+              "code": "HDIRECT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HMARKT",
+          "target": [
+            {
+              "code": "HMARKT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FAMRQT",
+          "target": [
+            {
+              "code": "FAMRQT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REMITADV",
+          "target": [
+            {
+              "code": "REMITADV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ELIGDTRM",
+          "target": [
+            {
+              "code": "ELIGDTRM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HDECD",
+          "target": [
+            {
+              "code": "HDECD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLINTRCH",
+          "target": [
+            {
+              "code": "CLINTRCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TRAIN",
+          "target": [
+            {
+              "code": "TRAIN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TREAT",
+          "target": [
+            {
+              "code": "TREAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLMATTCH",
+          "target": [
+            {
+              "code": "CLMATTCH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HPRGRP",
+          "target": [
+            {
+              "code": "HPRGRP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PATADMIN",
+          "target": [
+            {
+              "code": "PATADMIN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RECORDMGT",
+          "target": [
+            {
+              "code": "RECORDMGT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HOPERAT",
+          "target": [
+            {
+              "code": "HOPERAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "POPHLTH",
+          "target": [
+            {
+              "code": "POPHLTH",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HCOMPL",
+          "target": [
+            {
+              "code": "HCOMPL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "THREAT",
+          "target": [
+            {
+              "code": "THREAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DONAT",
+          "target": [
+            {
+              "code": "DONAT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MEMADMIN",
+          "target": [
+            {
+              "code": "MEMADMIN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HPAYMT",
+          "target": [
+            {
+              "code": "HPAYMT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CLINTRL",
+          "target": [
+            {
+              "code": "CLINTRL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PERFMSR",
+          "target": [
+            {
+              "code": "PERFMSR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ENROLLM",
+          "target": [
+            {
+              "code": "ENROLLM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HACCRED",
+          "target": [
+            {
+              "code": "HACCRED",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HOUTCOMS",
+          "target": [
+            {
+              "code": "HOUTCOMS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "COVAUTH",
+          "target": [
+            {
+              "code": "COVAUTH",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-CarePlanIntent-R4-CarePlanIntent",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-CarePlanIntent-R4-CarePlanIntent",
+  "version": "0.0.1",
+  "name": "R3-CarePlanIntent-R4-CarePlanIntent",
+  "title": "Concept map to convert a FHIR R3 CarePlanIntent into a FHIR R4 CarePlanIntent",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6717694-06:00",
+  "description": "Mapping for CarePlan.intent from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CarePlanIntent3to4",
+      "display": "Id: cpl.intent-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CarePlan#CarePlan.intent\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CarePlan#CarePlan.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.intent-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-intent|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-intent|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/care-plan-intent",
+      "target": "http://hl7.org/fhir/request-intent",
+      "element": [
+        {
+          "code": "proposal",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "plan",
+          "target": [
+            {
+              "code": "plan",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "order",
+          "target": [
+            {
+              "code": "order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "option",
+          "target": [
+            {
+              "code": "option",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

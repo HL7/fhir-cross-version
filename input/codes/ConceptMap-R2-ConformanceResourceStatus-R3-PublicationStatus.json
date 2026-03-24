@@ -1,0 +1,116 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-ConformanceResourceStatus-R3-PublicationStatus",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-ConformanceResourceStatus-R3-PublicationStatus",
+  "version": "0.0.1",
+  "name": "R2-ConformanceResourceStatus-R3-PublicationStatus",
+  "title": "Concept map to convert a FHIR R2 ConformanceResourceStatus into a FHIR R3 PublicationStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4865449-06:00",
+  "description": "Mapping for ConceptMap.status from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConceptMapStatus2to3",
+      "display": "Id: cmd.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/ConceptMap#ConceptMap.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ConceptMap#ConceptMap.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "ConformanceStatusCapabilityStatementStatus2to3",
+      "display": "Id: cpb.status-cpb.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.status-cpb.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "DataElementStatus2to3",
+      "display": "Id: dae.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/DataElement#DataElement.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/DataElement#DataElement.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dae.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "ImplementationGuideStatus2to3",
+      "display": "Id: ig.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/ImplementationGuide#ImplementationGuide.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ImplementationGuide#ImplementationGuide.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ig.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "NamingSystemStatus2to3",
+      "display": "Id: nsd.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/NamingSystem#NamingSystem.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/NamingSystem#NamingSystem.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "OperationDefinitionStatus2to3",
+      "display": "Id: opd.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/OperationDefinition#OperationDefinition.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/OperationDefinition#OperationDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/opd.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "StructureDefinitionStatus2to3",
+      "display": "Id: sdf.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/StructureDefinition#StructureDefinition.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition#StructureDefinition.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "SearchParameterStatus2to3",
+      "display": "Id: spd.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/SearchParameter#SearchParameter.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "TestScriptStatus2to3",
+      "display": "Id: tst.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/TestScript#TestScript.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/TestScript#TestScript.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tst.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "ValueSetStatus2to3",
+      "display": "Id: vsd.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/ValueSet#ValueSet.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ValueSet#ValueSet.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vsd.status-2to3"
+    },
+    {
+      "type": "predecessor",
+      "label": "ValueSetStatusCodeSystemStatus2to3",
+      "display": "Id: vsd.status-csd.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/ValueSet#ValueSet.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/CodeSystem#CodeSystem.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vsd.status-csd.status-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/conformance-resource-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/publication-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/conformance-resource-status",
+      "target": "http://hl7.org/fhir/publication-status",
+      "element": [
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "retired",
+          "target": [
+            {
+              "code": "retired",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-RestfulSecurityService-R4-RestfulSecurityService",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-RestfulSecurityService-R4-RestfulSecurityService",
+  "version": "0.0.1",
+  "name": "R5-RestfulSecurityService-R4-RestfulSecurityService",
+  "title": "Concept map to convert a FHIR R5 RestfulSecurityService into a FHIR R4 RestfulSecurityService",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9851658-06:00",
+  "description": "Mapping for CapabilityStatement.rest.security.service from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestSecurityService5to4",
+      "display": "Id: cpb.re.se.service-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.security.service\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.security.service",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.se.service-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/restful-security-service|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/restful-security-service|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/restful-security-service",
+      "target": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+      "element": [
+        {
+          "code": "Basic",
+          "target": [
+            {
+              "code": "Basic",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Kerberos",
+          "target": [
+            {
+              "code": "Kerberos",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NTLM",
+          "target": [
+            {
+              "code": "NTLM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Certificates",
+          "target": [
+            {
+              "code": "Certificates",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SMART-on-FHIR",
+          "target": [
+            {
+              "code": "SMART-on-FHIR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OAuth",
+          "target": [
+            {
+              "code": "OAuth",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

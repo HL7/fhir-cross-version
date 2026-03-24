@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-BindingStrength-R4-BindingStrength",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-BindingStrength-R4-BindingStrength",
+  "version": "0.0.1",
+  "name": "R5-BindingStrength-R4-BindingStrength",
+  "title": "Concept map to convert a FHIR R5 BindingStrength into a FHIR R4 BindingStrength",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9905932-06:00",
+  "description": "Mapping for ElementDefinition.binding.strength from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ElementDefinitionBindingStrength5to4",
+      "display": "Id: eld.bi.strength-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ElementDefinition#ElementDefinition.binding.strength\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.binding.strength",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eld.bi.strength-5to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "OperationDefinitionParameterBindingStrength5to4",
+      "display": "Id: opd.pa.bi.strength-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.binding.strength\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.binding.strength",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.bi.strength-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/binding-strength|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/binding-strength|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/binding-strength",
+      "target": "http://hl7.org/fhir/binding-strength",
+      "element": [
+        {
+          "code": "extensible",
+          "target": [
+            {
+              "code": "extensible",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "required",
+          "target": [
+            {
+              "code": "required",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "preferred",
+          "target": [
+            {
+              "code": "preferred",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "example",
+          "target": [
+            {
+              "code": "example",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

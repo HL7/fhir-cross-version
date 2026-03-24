@@ -1,0 +1,98 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-HttpOperations-R4B-HttpOperations",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-HttpOperations-R4B-HttpOperations",
+  "version": "0.0.1",
+  "name": "R4-HttpOperations-R4B-HttpOperations",
+  "title": "Concept map to convert a FHIR R4 HttpOperations into a FHIR R4B HttpOperations",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0346664-06:00",
+  "description": "Mapping for TestScript.setup.action.assert.requestMethod from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestScriptSetupActionAssertRequestMethod4to4b",
+      "display": "Id: tst.se.ac.as.requestMethod-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.assert.requestMethod\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.assert.requestMethod",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.requestMethod-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "TestScriptSetupActionOperationMethod4to4b",
+      "display": "Id: tst.se.ac.op.method-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/TestScript#TestScript.setup.action.operation.method\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.operation.method",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.op.method-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/http-operations|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/http-operations|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/http-operations",
+      "target": "http://hl7.org/fhir/http-operations",
+      "element": [
+        {
+          "code": "patch",
+          "target": [
+            {
+              "code": "patch",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "head",
+          "target": [
+            {
+              "code": "head",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "post",
+          "target": [
+            {
+              "code": "post",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "get",
+          "target": [
+            {
+              "code": "get",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "options",
+          "target": [
+            {
+              "code": "options",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "delete",
+          "target": [
+            {
+              "code": "delete",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "put",
+          "target": [
+            {
+              "code": "put",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

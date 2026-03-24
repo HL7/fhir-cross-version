@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-OrientationType-R4-OrientationType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-OrientationType-R4-OrientationType",
+  "version": "0.0.1",
+  "name": "R4B-OrientationType-R4-OrientationType",
+  "title": "Concept map to convert a FHIR R4B OrientationType into a FHIR R4 OrientationType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6999283-06:00",
+  "description": "Mapping for MolecularSequence.referenceSeq.orientation from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MolecularSequenceReferenceSeqOrientation4bto4",
+      "display": "Id: msq.re.orientation-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/MolecularSequence#MolecularSequence.referenceSeq.orientation\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence#MolecularSequence.referenceSeq.orientation",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/msq.re.orientation-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/orientation-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/orientation-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/orientation-type",
+      "target": "http://hl7.org/fhir/orientation-type",
+      "element": [
+        {
+          "code": "sense",
+          "target": [
+            {
+              "code": "sense",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "antisense",
+          "target": [
+            {
+              "code": "antisense",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

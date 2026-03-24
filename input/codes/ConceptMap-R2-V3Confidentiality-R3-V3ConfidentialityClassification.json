@@ -1,0 +1,123 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-V3Confidentiality-R3-V3ConfidentialityClassification",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-V3Confidentiality-R3-V3ConfidentialityClassification",
+  "version": "0.0.1",
+  "name": "R2-V3Confidentiality-R3-V3ConfidentialityClassification",
+  "title": "Concept map to convert a FHIR R2 V3Confidentiality into a FHIR R3 V3ConfidentialityClassification",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4887324-06:00",
+  "description": "Mapping for Composition.confidentiality from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CompositionConfidentiality2to3",
+      "display": "Id: cmp.confidentiality-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Composition#Composition.confidentiality\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Composition#Composition.confidentiality",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.confidentiality-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-Confidentiality|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-ConfidentialityClassification|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v3/Confidentiality",
+      "target": "http://hl7.org/fhir/v3/Confidentiality",
+      "element": [
+        {
+          "code": "B",
+          "noMap": true
+        },
+        {
+          "code": "C",
+          "noMap": true
+        },
+        {
+          "code": "D",
+          "noMap": true
+        },
+        {
+          "code": "SDV",
+          "noMap": true
+        },
+        {
+          "code": "I",
+          "noMap": true
+        },
+        {
+          "code": "L",
+          "target": [
+            {
+              "code": "L",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "target": [
+            {
+              "code": "M",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "N",
+          "target": [
+            {
+              "code": "N",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R",
+          "target": [
+            {
+              "code": "R",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "S",
+          "noMap": true
+        },
+        {
+          "code": "HIV",
+          "noMap": true
+        },
+        {
+          "code": "T",
+          "noMap": true
+        },
+        {
+          "code": "U",
+          "target": [
+            {
+              "code": "U",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "V",
+          "target": [
+            {
+              "code": "V",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PSY",
+          "noMap": true
+        },
+        {
+          "code": "ETH",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-AddressType-R4-AddressType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-AddressType-R4-AddressType",
+  "version": "0.0.1",
+  "name": "R4B-AddressType-R4-AddressType",
+  "title": "Concept map to convert a FHIR R4B AddressType into a FHIR R4 AddressType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6671036-06:00",
+  "description": "Mapping for Address.type from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AddressType4bto4",
+      "display": "Id: add.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Address#Address.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Address#Address.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/add.type-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/address-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/address-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/address-type",
+      "target": "http://hl7.org/fhir/address-type",
+      "element": [
+        {
+          "code": "postal",
+          "target": [
+            {
+              "code": "postal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "physical",
+          "target": [
+            {
+              "code": "physical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "both",
+          "target": [
+            {
+              "code": "both",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

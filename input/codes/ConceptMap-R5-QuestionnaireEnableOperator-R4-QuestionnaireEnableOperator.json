@@ -1,0 +1,92 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-QuestionnaireEnableOperator-R4-QuestionnaireEnableOperator",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-QuestionnaireEnableOperator-R4-QuestionnaireEnableOperator",
+  "version": "0.0.1",
+  "name": "R5-QuestionnaireEnableOperator-R4-QuestionnaireEnableOperator",
+  "title": "Concept map to convert a FHIR R5 QuestionnaireEnableOperator into a FHIR R4 QuestionnaireEnableOperator",
+  "experimental": false,
+  "date": "2025-12-30T16:37:21.0008573-06:00",
+  "description": "Mapping for Questionnaire.item.enableWhen.operator from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "QuestionnaireItemEnableWhenOperator5to4",
+      "display": "Id: que.it.en.operator-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Questionnaire#Questionnaire.item.enableWhen.operator\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Questionnaire#Questionnaire.item.enableWhen.operator",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/que.it.en.operator-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-enable-operator|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/questionnaire-enable-operator|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/questionnaire-enable-operator",
+      "target": "http://hl7.org/fhir/questionnaire-enable-operator",
+      "element": [
+        {
+          "code": "\u003C=",
+          "target": [
+            {
+              "code": "\u003C=",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "exists",
+          "target": [
+            {
+              "code": "exists",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "!=",
+          "target": [
+            {
+              "code": "!=",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "\u003C",
+          "target": [
+            {
+              "code": "\u003C",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "=",
+          "target": [
+            {
+              "code": "=",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "\u003E",
+          "target": [
+            {
+              "code": "\u003E",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "\u003E=",
+          "target": [
+            {
+              "code": "\u003E=",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-ProcedureStatus-R3-EventStatus",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-ProcedureStatus-R3-EventStatus",
+  "version": "0.0.1",
+  "name": "R2-ProcedureStatus-R3-EventStatus",
+  "title": "Concept map to convert a FHIR R2 ProcedureStatus into a FHIR R3 EventStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5095957-06:00",
+  "description": "Mapping for Procedure.status from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ProcedureStatus2to3",
+      "display": "Id: pro.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Procedure#Procedure.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Procedure#Procedure.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pro.status-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/procedure-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/event-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/procedure-status",
+      "target": "http://hl7.org/fhir/event-status",
+      "element": [
+        {
+          "code": "aborted",
+          "target": [
+            {
+              "code": "aborted",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

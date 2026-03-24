@@ -1,0 +1,101 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-RequestPriority-R4-RequestPriority",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-RequestPriority-R4-RequestPriority",
+  "version": "0.0.1",
+  "name": "R3-RequestPriority-R4-RequestPriority",
+  "title": "Concept map to convert a FHIR R3 RequestPriority into a FHIR R4 RequestPriority",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6688008-06:00",
+  "description": "Mapping for CommunicationRequest.priority from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CommunicationRequestPriority3to4",
+      "display": "Id: cmr.priority-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CommunicationRequest#CommunicationRequest.priority\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CommunicationRequest#CommunicationRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmr.priority-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "DeviceRequestPriority3to4",
+      "display": "Id: dur.priority-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/DeviceRequest#DeviceRequest.priority\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/DeviceRequest#DeviceRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dur.priority-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "ProcedureRequestPriorityServiceRequestPriority3to4",
+      "display": "Id: pcrq.priority-srq.priority-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.priority\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ServiceRequest#ServiceRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pcrq.priority-srq.priority-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "ReferralRequestPriorityServiceRequestPriority3to4",
+      "display": "Id: rfr.priority-srq.priority-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ReferralRequest#ReferralRequest.priority\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ServiceRequest#ServiceRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rfr.priority-srq.priority-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestGroupPriority3to4",
+      "display": "Id: rgp.priority-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/RequestGroup#RequestGroup.priority\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/RequestGroup#RequestGroup.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rgp.priority-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "SupplyRequestPriority3to4",
+      "display": "Id: sur.priority-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/SupplyRequest#SupplyRequest.priority\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/SupplyRequest#SupplyRequest.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sur.priority-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "TaskPriority3to4",
+      "display": "Id: tsk.priority-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Task#Task.priority\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Task#Task.priority",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tsk.priority-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/request-priority|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-priority|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-priority",
+      "target": "http://hl7.org/fhir/request-priority",
+      "element": [
+        {
+          "code": "stat",
+          "target": [
+            {
+              "code": "stat",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "routine",
+          "target": [
+            {
+              "code": "routine",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "urgent",
+          "target": [
+            {
+              "code": "urgent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asap",
+          "target": [
+            {
+              "code": "asap",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SubscriptionNotificationType-R4B-SubscriptionNotificationType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-SubscriptionNotificationType-R4B-SubscriptionNotificationType",
+  "version": "0.0.1",
+  "name": "R5-SubscriptionNotificationType-R4B-SubscriptionNotificationType",
+  "title": "Concept map to convert a FHIR R5 SubscriptionNotificationType into a FHIR R4B SubscriptionNotificationType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.930254-06:00",
+  "description": "Mapping for SubscriptionStatus.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SubscriptionStatusType5to4b",
+      "display": "Id: scrs.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/SubscriptionStatus#SubscriptionStatus.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionStatus#SubscriptionStatus.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/scrs.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-notification-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-notification-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/subscription-notification-type",
+      "target": "http://hl7.org/fhir/subscription-notification-type",
+      "element": [
+        {
+          "code": "query-status",
+          "target": [
+            {
+              "code": "query-status",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "handshake",
+          "target": [
+            {
+              "code": "handshake",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "heartbeat",
+          "target": [
+            {
+              "code": "heartbeat",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "event-notification",
+          "target": [
+            {
+              "code": "event-notification",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "query-event",
+          "target": [
+            {
+              "code": "query-event",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

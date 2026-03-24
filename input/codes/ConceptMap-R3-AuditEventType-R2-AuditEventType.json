@@ -1,0 +1,179 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-AuditEventType-R2-AuditEventType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-AuditEventType-R2-AuditEventType",
+  "version": "0.0.1",
+  "name": "R3-AuditEventType-R2-AuditEventType",
+  "title": "Concept map to convert a FHIR R3 AuditEventType into a FHIR R2 AuditEventType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7814008-06:00",
+  "description": "Mapping for AuditEvent.type/AuditEvent.event.type from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AuditEventTypeAuditEventEventTyper3to2",
+      "display": "Id: sev.type-sev.ev.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.event.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.type-sev.ev.type-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/audit-event-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/audit-event-type|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/audit-event-type",
+      "target": "http://hl7.org/fhir/audit-event-type",
+      "element": [
+        {
+          "code": "rest",
+          "target": [
+            {
+              "code": "rest",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://dicom.nema.org/resources/ontology/DCM",
+      "target": "http://nema.org/dicom/dicm",
+      "element": [
+        {
+          "code": "110105",
+          "target": [
+            {
+              "code": "110105",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110102",
+          "target": [
+            {
+              "code": "110102",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110103",
+          "target": [
+            {
+              "code": "110103",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110108",
+          "target": [
+            {
+              "code": "110108",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110106",
+          "target": [
+            {
+              "code": "110106",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110113",
+          "target": [
+            {
+              "code": "110113",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110101",
+          "target": [
+            {
+              "code": "110101",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110104",
+          "target": [
+            {
+              "code": "110104",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110100",
+          "target": [
+            {
+              "code": "110100",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110109",
+          "target": [
+            {
+              "code": "110109",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110111",
+          "target": [
+            {
+              "code": "110111",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110114",
+          "target": [
+            {
+              "code": "110114",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110110",
+          "target": [
+            {
+              "code": "110110",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110107",
+          "target": [
+            {
+              "code": "110107",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "110112",
+          "target": [
+            {
+              "code": "110112",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

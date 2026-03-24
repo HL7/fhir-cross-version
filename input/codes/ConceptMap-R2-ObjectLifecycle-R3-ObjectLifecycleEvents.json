@@ -1,0 +1,336 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-ObjectLifecycle-R3-ObjectLifecycleEvents",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-ObjectLifecycle-R3-ObjectLifecycleEvents",
+  "version": "0.0.1",
+  "name": "R2-ObjectLifecycle-R3-ObjectLifecycleEvents",
+  "title": "Concept map to convert a FHIR R2 ObjectLifecycle into a FHIR R3 ObjectLifecycleEvents",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5136671-06:00",
+  "description": "Mapping for AuditEvent.object.lifecycle/AuditEvent.entity.lifecycle from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AuditEventObjectLifecycleAuditEventEntityLifecycler2to3",
+      "display": "Id: sev.ob.lifecycle-sev.en.lifecycle-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/AuditEvent#AuditEvent.object.lifecycle\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/AuditEvent#AuditEvent.entity.lifecycle",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.ob.lifecycle-sev.en.lifecycle-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/object-lifecycle|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/object-lifecycle-events|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/object-lifecycle",
+      "target": "http://hl7.org/fhir/dicom-audit-lifecycle",
+      "element": [
+        {
+          "code": "13",
+          "target": [
+            {
+              "code": "13",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "13",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "8",
+          "target": [
+            {
+              "code": "8",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "9",
+          "target": [
+            {
+              "code": "9",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "7",
+          "target": [
+            {
+              "code": "7",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "5",
+          "target": [
+            {
+              "code": "5",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "5",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "15",
+          "target": [
+            {
+              "code": "15",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "6",
+          "target": [
+            {
+              "code": "6",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "6",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "3",
+          "target": [
+            {
+              "code": "3",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "3",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12",
+          "target": [
+            {
+              "code": "12",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "12",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "14",
+          "target": [
+            {
+              "code": "14",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "2",
+          "target": [
+            {
+              "code": "2",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "10",
+          "target": [
+            {
+              "code": "10",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "4",
+          "target": [
+            {
+              "code": "4",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "11",
+          "target": [
+            {
+              "code": "11",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "1",
+          "target": [
+            {
+              "code": "1",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/object-lifecycle",
+      "target": "http://hl7.org/fhir/iso-21089-lifecycle",
+      "element": [
+        {
+          "code": "2",
+          "target": [
+            {
+              "code": "2",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "14",
+          "target": [
+            {
+              "code": "14",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "4",
+          "target": [
+            {
+              "code": "4",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "4",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "11",
+          "target": [
+            {
+              "code": "11",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "11",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "1",
+          "target": [
+            {
+              "code": "1",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "1",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "10",
+          "target": [
+            {
+              "code": "10",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "10",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "8",
+          "target": [
+            {
+              "code": "8",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "15",
+          "target": [
+            {
+              "code": "15",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "7",
+          "target": [
+            {
+              "code": "7",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "9",
+          "target": [
+            {
+              "code": "9",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "6",
+          "target": [
+            {
+              "code": "6",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "3",
+          "target": [
+            {
+              "code": "3",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12",
+          "target": [
+            {
+              "code": "12",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "13",
+          "target": [
+            {
+              "code": "13",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "5",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

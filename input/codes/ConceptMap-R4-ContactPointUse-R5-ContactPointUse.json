@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ContactPointUse-R5-ContactPointUse",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ContactPointUse-R5-ContactPointUse",
+  "version": "0.0.1",
+  "name": "R4-ContactPointUse-R5-ContactPointUse",
+  "title": "Concept map to convert a FHIR R4 ContactPointUse into a FHIR R5 ContactPointUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0802641-06:00",
+  "description": "Mapping for ContactPoint.use from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ContactPointUse4to5",
+      "display": "Id: cpt.use-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint#ContactPoint.use\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ContactPoint#ContactPoint.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpt.use-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/contact-point-use|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/contact-point-use",
+      "target": "http://hl7.org/fhir/contact-point-use",
+      "element": [
+        {
+          "code": "temp",
+          "target": [
+            {
+              "code": "temp",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "work",
+          "target": [
+            {
+              "code": "work",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "old",
+          "target": [
+            {
+              "code": "old",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "mobile",
+          "target": [
+            {
+              "code": "mobile",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "home",
+          "target": [
+            {
+              "code": "home",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

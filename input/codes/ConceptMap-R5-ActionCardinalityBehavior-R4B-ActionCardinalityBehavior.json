@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ActionCardinalityBehavior-R4B-ActionCardinalityBehavior",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ActionCardinalityBehavior-R4B-ActionCardinalityBehavior",
+  "version": "0.0.1",
+  "name": "R5-ActionCardinalityBehavior-R4B-ActionCardinalityBehavior",
+  "title": "Concept map to convert a FHIR R5 ActionCardinalityBehavior into a FHIR R4B ActionCardinalityBehavior",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9269715-06:00",
+  "description": "Mapping for PlanDefinition.action.cardinalityBehavior from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionCardinalityBehavior5to4b",
+      "display": "Id: pdf.ac.cardinalityBehavior-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/PlanDefinition#PlanDefinition.action.cardinalityBehavior\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.cardinalityBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.cardinalityBehavior-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "RequestOrchestrationActionCardinalityBehaviorRequestGroupActionCardinalityBehavior5to4b",
+      "display": "Id: rqo.ac.cardinalityBehavior-rgp.ac.cardinalityBehavior-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/RequestOrchestration#RequestOrchestration.action.cardinalityBehavior\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup#RequestGroup.action.cardinalityBehavior",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.cardinalityBehavior-rgp.ac.cardinalityBehavior-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-cardinality-behavior|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-cardinality-behavior|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/action-cardinality-behavior",
+      "target": "http://hl7.org/fhir/action-cardinality-behavior",
+      "element": [
+        {
+          "code": "single",
+          "target": [
+            {
+              "code": "single",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "multiple",
+          "target": [
+            {
+              "code": "multiple",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

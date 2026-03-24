@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MetricOperationalStatus-R4B-MetricOperationalStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-MetricOperationalStatus-R4B-MetricOperationalStatus",
+  "version": "0.0.1",
+  "name": "R5-MetricOperationalStatus-R4B-MetricOperationalStatus",
+  "title": "Concept map to convert a FHIR R5 MetricOperationalStatus into a FHIR R4B MetricOperationalStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.915749-06:00",
+  "description": "Mapping for DeviceMetric.operationalStatus from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceMetricOperationalStatus5to4b",
+      "display": "Id: dvm.operationalStatus-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.operationalStatus-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-operational-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-operational-status|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/metric-operational-status",
+      "target": "http://hl7.org/fhir/metric-operational-status",
+      "element": [
+        {
+          "code": "standby",
+          "target": [
+            {
+              "code": "standby",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "off",
+          "target": [
+            {
+              "code": "off",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on",
+          "target": [
+            {
+              "code": "on",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

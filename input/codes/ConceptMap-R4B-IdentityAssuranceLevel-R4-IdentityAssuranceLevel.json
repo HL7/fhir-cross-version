@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-IdentityAssuranceLevel-R4-IdentityAssuranceLevel",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-IdentityAssuranceLevel-R4-IdentityAssuranceLevel",
+  "version": "0.0.1",
+  "name": "R4B-IdentityAssuranceLevel-R4-IdentityAssuranceLevel",
+  "title": "Concept map to convert a FHIR R4B IdentityAssuranceLevel into a FHIR R4 IdentityAssuranceLevel",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.7058853-06:00",
+  "description": "Mapping for Person.link.assurance from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PersonLinkAssurance4bto4",
+      "display": "Id: psn.li.assurance-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Person#Person.link.assurance\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Person#Person.link.assurance",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/psn.li.assurance-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/identity-assuranceLevel|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/identity-assuranceLevel|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/identity-assuranceLevel",
+      "target": "http://hl7.org/fhir/identity-assuranceLevel",
+      "element": [
+        {
+          "code": "level4",
+          "target": [
+            {
+              "code": "level4",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "level1",
+          "target": [
+            {
+              "code": "level1",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "level3",
+          "target": [
+            {
+              "code": "level3",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "level2",
+          "target": [
+            {
+              "code": "level2",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

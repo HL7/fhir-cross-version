@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-TypeDerivationRule-R5-TypeDerivationRule",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-TypeDerivationRule-R5-TypeDerivationRule",
+  "version": "0.0.1",
+  "name": "R4B-TypeDerivationRule-R5-TypeDerivationRule",
+  "title": "Concept map to convert a FHIR R4B TypeDerivationRule into a FHIR R5 TypeDerivationRule",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4857847-06:00",
+  "description": "Mapping for StructureDefinition.derivation from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureDefinitionDerivation4bto5",
+      "display": "Id: sdf.derivation-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition#StructureDefinition.derivation\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition#StructureDefinition.derivation",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.derivation-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/type-derivation-rule|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/type-derivation-rule|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/type-derivation-rule",
+      "target": "http://hl7.org/fhir/type-derivation-rule",
+      "element": [
+        {
+          "code": "specialization",
+          "target": [
+            {
+              "code": "specialization",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "constraint",
+          "target": [
+            {
+              "code": "constraint",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

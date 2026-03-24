@@ -1,0 +1,110 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-ConceptMapEquivalence-R3-ConceptMapEquivalence",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-ConceptMapEquivalence-R3-ConceptMapEquivalence",
+  "version": "0.0.1",
+  "name": "R2-ConceptMapEquivalence-R3-ConceptMapEquivalence",
+  "title": "Concept map to convert a FHIR R2 ConceptMapEquivalence into a FHIR R3 ConceptMapEquivalence",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4863795-06:00",
+  "description": "Mapping for ConceptMap.element.target.equivalence/ConceptMap.group.element.target.equivalence from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConceptMapElementTargetEquivalenceConceptMapGroupElementTargetEquivalence2to3",
+      "display": "Id: cmd.el.ta.equivalence-cmd.gr.el.ta.equivalence-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/ConceptMap#ConceptMap.element.target.equivalence\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ConceptMap#ConceptMap.group.element.target.equivalence",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.el.ta.equivalence-cmd.gr.el.ta.equivalence-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/concept-map-equivalence|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/concept-map-equivalence|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/concept-map-equivalence",
+      "target": "http://hl7.org/fhir/concept-map-equivalence",
+      "element": [
+        {
+          "code": "equal",
+          "target": [
+            {
+              "code": "equal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "inexact",
+          "target": [
+            {
+              "code": "inexact",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "equivalent",
+          "target": [
+            {
+              "code": "equivalent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "wider",
+          "target": [
+            {
+              "code": "wider",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "specializes",
+          "target": [
+            {
+              "code": "specializes",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "disjoint",
+          "target": [
+            {
+              "code": "disjoint",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "narrower",
+          "target": [
+            {
+              "code": "narrower",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unmatched",
+          "target": [
+            {
+              "code": "unmatched",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "subsumes",
+          "target": [
+            {
+              "code": "subsumes",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

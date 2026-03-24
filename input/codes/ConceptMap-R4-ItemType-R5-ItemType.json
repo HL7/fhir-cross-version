@@ -1,0 +1,174 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ItemType-R5-ItemType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ItemType-R5-ItemType",
+  "version": "0.0.1",
+  "name": "R4-ItemType-R5-ItemType",
+  "title": "Concept map to convert a FHIR R4 ItemType into a FHIR R5 ItemType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0956966-06:00",
+  "description": "Mapping for Questionnaire.item.type from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "QuestionnaireItemType4to5",
+      "display": "Id: que.it.type-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Questionnaire#Questionnaire.item.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Questionnaire#Questionnaire.item.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/que.it.type-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/item-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/item-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/item-type",
+      "target": "http://hl7.org/fhir/item-type",
+      "element": [
+        {
+          "code": "date",
+          "target": [
+            {
+              "code": "date",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dateTime",
+          "target": [
+            {
+              "code": "dateTime",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "quantity",
+          "target": [
+            {
+              "code": "quantity",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "string",
+          "target": [
+            {
+              "code": "string",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "open-choice",
+          "target": [
+            {
+              "code": "coding",
+              "relationship": "equivalent",
+              "comment": "Mapped as equivalent because the additional differentiator is contained in the answerConstraint element."
+            }
+          ]
+        },
+        {
+          "code": "display",
+          "target": [
+            {
+              "code": "display",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "integer",
+          "target": [
+            {
+              "code": "integer",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "url",
+          "target": [
+            {
+              "code": "url",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reference",
+          "target": [
+            {
+              "code": "reference",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "boolean",
+          "target": [
+            {
+              "code": "boolean",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "attachment",
+          "target": [
+            {
+              "code": "attachment",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "time",
+          "target": [
+            {
+              "code": "time",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "text",
+          "target": [
+            {
+              "code": "text",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "decimal",
+          "target": [
+            {
+              "code": "decimal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "choice",
+          "target": [
+            {
+              "relationship": "equivalent",
+              "comment": "Mapped as equivalent because the additional differentiator is contained in the answerConstraint element."
+            }
+          ]
+        },
+        {
+          "code": "group",
+          "target": [
+            {
+              "code": "group",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

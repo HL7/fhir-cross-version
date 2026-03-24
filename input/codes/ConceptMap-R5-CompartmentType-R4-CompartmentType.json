@@ -1,0 +1,78 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-CompartmentType-R4-CompartmentType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-CompartmentType-R4-CompartmentType",
+  "version": "0.0.1",
+  "name": "R5-CompartmentType-R4-CompartmentType",
+  "title": "Concept map to convert a FHIR R5 CompartmentType into a FHIR R4 CompartmentType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.985295-06:00",
+  "description": "Mapping for CompartmentDefinition.code from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CompartmentDefinitionCode5to4",
+      "display": "Id: cpd.code-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/CompartmentDefinition#CompartmentDefinition.code\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CompartmentDefinition#CompartmentDefinition.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpd.code-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/compartment-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/compartment-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/compartment-type",
+      "target": "http://hl7.org/fhir/compartment-type",
+      "element": [
+        {
+          "code": "Practitioner",
+          "target": [
+            {
+              "code": "Practitioner",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare",
+          "noMap": true
+        },
+        {
+          "code": "Device",
+          "target": [
+            {
+              "code": "Device",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Patient",
+          "target": [
+            {
+              "code": "Patient",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Encounter",
+          "target": [
+            {
+              "code": "Encounter",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RelatedPerson",
+          "target": [
+            {
+              "code": "RelatedPerson",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

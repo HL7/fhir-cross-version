@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-AllergyintoleranceClinical-R4B-AllergyintoleranceClinical",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-AllergyintoleranceClinical-R4B-AllergyintoleranceClinical",
+  "version": "0.0.1",
+  "name": "R5-AllergyintoleranceClinical-R4B-AllergyintoleranceClinical",
+  "title": "Concept map to convert a FHIR R5 AllergyintoleranceClinical into a FHIR R4B AllergyintoleranceClinical",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9051109-06:00",
+  "description": "Mapping for AllergyIntolerance.clinicalStatus from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AllergyIntoleranceClinicalStatusr5to4b",
+      "display": "Id: ait.clinicalStatus-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.clinicalStatus\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance#AllergyIntolerance.clinicalStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ait.clinicalStatus-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "target": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "element": [
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "inactive",
+          "target": [
+            {
+              "code": "inactive",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "resolved",
+          "target": [
+            {
+              "code": "resolved",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

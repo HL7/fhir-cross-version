@@ -29,7 +29,7 @@
     { "code" : "oid", "target" : [{ "code" : "oid", "relationship" : "equivalent" }]},
     { "code" : "positiveInt", "target" : [{ "code" : "positiveInt", "relationship" : "equivalent" }]},
     { "code" : "string", "target" : [{ "code" : "string", "relationship" : "equivalent" }]},
-    { "code" : "time", "target" : [{ "code" : "time", "relationship" : "equivalent" }]},
+    { "code" : "time", "target" : [{ "code" : "string", "relationship" : "source-is-narrower-than-target" }]},
     { "code" : "unsignedInt", "target" : [{ "code" : "unsignedInt", "relationship" : "equivalent" }]},
     { "code" : "uri", "target" : [{ "code" : "uri", "relationship" : "equivalent" }]},
     { "code" : "uuid", "target" : [{ "code" : "uuid", "relationship" : "equivalent" }]},

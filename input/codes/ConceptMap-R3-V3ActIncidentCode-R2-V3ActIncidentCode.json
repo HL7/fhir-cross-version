@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-V3ActIncidentCode-R2-V3ActIncidentCode",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-V3ActIncidentCode-R2-V3ActIncidentCode",
+  "version": "0.0.1",
+  "name": "R3-V3ActIncidentCode-R2-V3ActIncidentCode",
+  "title": "Concept map to convert a FHIR R3 V3ActIncidentCode into a FHIR R2 V3ActIncidentCode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7574289-06:00",
+  "description": "Mapping for Claim.accident.type/Claim.accidentType from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClaimAccidentTypeClaimAccidentType3to2",
+      "display": "Id: clm.ac.type-clm.accidentType-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Claim#Claim.accident.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Claim#Claim.accidentType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/clm.ac.type-clm.accidentType-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-ActIncidentCode|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/v3-ActIncidentCode|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v3/ActCode",
+      "target": "http://hl7.org/fhir/v3/ActCode",
+      "element": [
+        {
+          "code": "MVA",
+          "target": [
+            {
+              "code": "MVA",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SCHOOL",
+          "target": [
+            {
+              "code": "SCHOOL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPT",
+          "target": [
+            {
+              "code": "SPT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WPA",
+          "target": [
+            {
+              "code": "WPA",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

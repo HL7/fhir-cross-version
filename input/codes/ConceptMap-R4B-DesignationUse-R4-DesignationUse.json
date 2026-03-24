@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-DesignationUse-R4-DesignationUse",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-DesignationUse-R4-DesignationUse",
+  "version": "0.0.1",
+  "name": "R4B-DesignationUse-R4-DesignationUse",
+  "title": "Concept map to convert a FHIR R4B DesignationUse into a FHIR R4 DesignationUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6778792-06:00",
+  "description": "Mapping for CodeSystem.concept.designation.use from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CodeSystemConceptDesignationUser4bto4",
+      "display": "Id: csd.co.de.use-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/CodeSystem#CodeSystem.concept.designation.use\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.concept.designation.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/csd.co.de.use-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "ValueSetComposeIncludeConceptDesignationUser4bto4",
+      "display": "Id: vsd.co.in.co.de.use-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ValueSet#ValueSet.compose.include.concept.designation.use\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ValueSet#ValueSet.compose.include.concept.designation.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vsd.co.in.co.de.use-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/designation-use|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/designation-use|4.0.1",
+  "group": [
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "900000000000003001",
+          "target": [
+            {
+              "code": "900000000000003001",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "900000000000013009",
+          "target": [
+            {
+              "code": "900000000000013009",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

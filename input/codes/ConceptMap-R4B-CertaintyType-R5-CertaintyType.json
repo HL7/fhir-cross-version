@@ -1,0 +1,110 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-CertaintyType-R5-CertaintyType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-CertaintyType-R5-CertaintyType",
+  "version": "0.0.1",
+  "name": "R4B-CertaintyType-R5-CertaintyType",
+  "title": "Concept map to convert a FHIR R4B CertaintyType into a FHIR R5 CertaintyType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4661168-06:00",
+  "description": "Mapping for Evidence.certainty.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EvidenceCertaintyType4bto5",
+      "display": "Id: evi.ce.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Evidence#Evidence.certainty.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Evidence#Evidence.certainty.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/evi.ce.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/certainty-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/certainty-type|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/certainty-type",
+      "target": "http://hl7.org/fhir/certainty-type",
+      "element": [
+        {
+          "code": "LargeEffect",
+          "target": [
+            {
+              "code": "LargeEffect",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Overall",
+          "target": [
+            {
+              "code": "Overall",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Inconsistency",
+          "target": [
+            {
+              "code": "Inconsistency",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Indirectness",
+          "target": [
+            {
+              "code": "Indirectness",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RiskOfBias",
+          "target": [
+            {
+              "code": "RiskOfBias",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DoseResponseGradient",
+          "target": [
+            {
+              "code": "DoseResponseGradient",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PlausibleConfounding",
+          "target": [
+            {
+              "code": "PlausibleConfounding",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PublicationBias",
+          "target": [
+            {
+              "code": "PublicationBias",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Imprecision",
+          "target": [
+            {
+              "code": "Imprecision",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

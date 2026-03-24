@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ArtifactContributionInstanceType-R4B-ArtifactContributionInstanceType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ArtifactContributionInstanceType-R4B-ArtifactContributionInstanceType",
+  "version": "0.0.1",
+  "name": "R5-ArtifactContributionInstanceType-R4B-ArtifactContributionInstanceType",
+  "title": "Concept map to convert a FHIR R5 ArtifactContributionInstanceType into a FHIR R4B ArtifactContributionInstanceType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9121248-06:00",
+  "description": "Mapping for Citation.citedArtifact.contributorship.entry.contributionInstance.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CitationCitedArtifactContributorshipEntryContributionInstanceType5to4b",
+      "display": "Id: ctn.ci.co.en.co.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.contributorship.entry.contributionInstance.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.contributorship.entry.contributionInstance.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.co.en.co.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/artifact-contribution-instance-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/artifact-contribution-instance-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/artifact-contribution-instance-type",
+      "target": "http://terminology.hl7.org/CodeSystem/artifact-contribution-instance-type",
+      "element": [
+        {
+          "code": "approved",
+          "target": [
+            {
+              "code": "approved",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "edited",
+          "target": [
+            {
+              "code": "edited",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reviewed",
+          "target": [
+            {
+              "code": "reviewed",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

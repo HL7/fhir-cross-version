@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-MeasureDataUsage-R4-MeasureDataUsage",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-MeasureDataUsage-R4-MeasureDataUsage",
+  "version": "0.0.1",
+  "name": "R3-MeasureDataUsage-R4-MeasureDataUsage",
+  "title": "Concept map to convert a FHIR R3 MeasureDataUsage into a FHIR R4 MeasureDataUsage",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6840662-06:00",
+  "description": "Mapping for Measure.supplementalData.usage from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MeasureSupplementalDataUsage3to4",
+      "display": "Id: mea.su.usage-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Measure#Measure.supplementalData.usage\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Measure#Measure.supplementalData.usage",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mea.su.usage-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-data-usage|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-data-usage|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/measure-data-usage",
+      "target": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+      "element": [
+        {
+          "code": "supplemental-data",
+          "target": [
+            {
+              "code": "supplemental-data",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "risk-adjustment-factor",
+          "target": [
+            {
+              "code": "risk-adjustment-factor",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

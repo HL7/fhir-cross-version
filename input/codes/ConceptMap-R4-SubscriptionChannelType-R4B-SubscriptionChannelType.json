@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-SubscriptionChannelType-R4B-SubscriptionChannelType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-SubscriptionChannelType-R4B-SubscriptionChannelType",
+  "version": "0.0.1",
+  "name": "R4-SubscriptionChannelType-R4B-SubscriptionChannelType",
+  "title": "Concept map to convert a FHIR R4 SubscriptionChannelType into a FHIR R4B SubscriptionChannelType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0264219-06:00",
+  "description": "Mapping for Subscription.channel.type from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SubscriptionChannelType4to4b",
+      "display": "Id: scr.ch.type-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Subscription#Subscription.channel.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Subscription#Subscription.channel.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/scr.ch.type-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-channel-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-channel-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/subscription-channel-type",
+      "target": "http://hl7.org/fhir/subscription-channel-type",
+      "element": [
+        {
+          "code": "rest-hook",
+          "target": [
+            {
+              "code": "rest-hook",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "websocket",
+          "target": [
+            {
+              "code": "websocket",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sms",
+          "target": [
+            {
+              "code": "sms",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "message",
+          "target": [
+            {
+              "code": "message",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "email",
+          "target": [
+            {
+              "code": "email",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

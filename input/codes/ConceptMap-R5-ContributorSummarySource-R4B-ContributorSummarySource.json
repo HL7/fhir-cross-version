@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ContributorSummarySource-R4B-ContributorSummarySource",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ContributorSummarySource-R4B-ContributorSummarySource",
+  "version": "0.0.1",
+  "name": "R5-ContributorSummarySource-R4B-ContributorSummarySource",
+  "title": "Concept map to convert a FHIR R5 ContributorSummarySource into a FHIR R4B ContributorSummarySource",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9124738-06:00",
+  "description": "Mapping for Citation.citedArtifact.contributorship.summary.source from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CitationCitedArtifactContributorshipSummarySource5to4b",
+      "display": "Id: ctn.ci.co.su.source-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.contributorship.summary.source\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.contributorship.summary.source",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.co.su.source-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/contributor-summary-source|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/contributor-summary-source|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/contributor-summary-source",
+      "target": "http://terminology.hl7.org/CodeSystem/contributor-summary-source",
+      "element": [
+        {
+          "code": "citation-manager",
+          "target": [
+            {
+              "code": "citation-manager",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "custom",
+          "target": [
+            {
+              "code": "custom",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "article-copy",
+          "target": [
+            {
+              "code": "article-copy",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "publisher-data",
+          "target": [
+            {
+              "code": "publisher-data",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

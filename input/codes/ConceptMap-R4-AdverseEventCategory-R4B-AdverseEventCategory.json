@@ -1,0 +1,155 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-AdverseEventCategory-R4B-AdverseEventCategory",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-AdverseEventCategory-R4B-AdverseEventCategory",
+  "version": "0.0.1",
+  "name": "R4-AdverseEventCategory-R4B-AdverseEventCategory",
+  "title": "Concept map to convert a FHIR R4 AdverseEventCategory into a FHIR R4B AdverseEventCategory",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.9825608-06:00",
+  "description": "Mapping for AdverseEvent.category from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AdverseEventCategory4to4b",
+      "display": "Id: aev.category-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/AdverseEvent#AdverseEvent.category\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/AdverseEvent#AdverseEvent.category",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/aev.category-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/adverse-event-category|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/adverse-event-category|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+      "target": "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+      "element": [
+        {
+          "code": "wrong-duration",
+          "target": [
+            {
+              "code": "wrong-duration",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "wrong-route-of-administration",
+          "target": [
+            {
+              "code": "wrong-route-of-administration",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "wrong-dose",
+          "target": [
+            {
+              "code": "wrong-dose",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "product-problem",
+          "target": [
+            {
+              "code": "product-problem",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unsafe-physical-environment",
+          "target": [
+            {
+              "code": "unsafe-physical-environment",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "product-quality",
+          "target": [
+            {
+              "code": "product-quality",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "medical-device-use-error",
+          "target": [
+            {
+              "code": "medical-device-use-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "wrong-time",
+          "target": [
+            {
+              "code": "wrong-time",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "expired-drug",
+          "target": [
+            {
+              "code": "expired-drug",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "incorrect-prescribing-information",
+          "target": [
+            {
+              "code": "incorrect-prescribing-information",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "product-use-error",
+          "target": [
+            {
+              "code": "product-use-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "wrong-technique",
+          "target": [
+            {
+              "code": "wrong-technique",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "problem-different-manufacturer",
+          "target": [
+            {
+              "code": "problem-different-manufacturer",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "wrong-rate",
+          "target": [
+            {
+              "code": "wrong-rate",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

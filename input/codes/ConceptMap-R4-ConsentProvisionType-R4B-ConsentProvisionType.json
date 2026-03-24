@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ConsentProvisionType-R4B-ConsentProvisionType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ConsentProvisionType-R4B-ConsentProvisionType",
+  "version": "0.0.1",
+  "name": "R4-ConsentProvisionType-R4B-ConsentProvisionType",
+  "title": "Concept map to convert a FHIR R4 ConsentProvisionType into a FHIR R4B ConsentProvisionType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.023368-06:00",
+  "description": "Mapping for Consent.provision.type from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConsentProvisionType4to4b",
+      "display": "Id: ppc.pr.type-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Consent#Consent.provision.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.provision.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.type-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/consent-provision-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/consent-provision-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/consent-provision-type",
+      "target": "http://hl7.org/fhir/consent-provision-type",
+      "element": [
+        {
+          "code": "deny",
+          "target": [
+            {
+              "code": "deny",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "permit",
+          "target": [
+            {
+              "code": "permit",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

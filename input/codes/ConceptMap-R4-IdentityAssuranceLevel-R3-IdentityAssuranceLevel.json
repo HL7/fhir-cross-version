@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-IdentityAssuranceLevel-R3-IdentityAssuranceLevel",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-IdentityAssuranceLevel-R3-IdentityAssuranceLevel",
+  "version": "0.0.1",
+  "name": "R4-IdentityAssuranceLevel-R3-IdentityAssuranceLevel",
+  "title": "Concept map to convert a FHIR R4 IdentityAssuranceLevel into a FHIR R3 IdentityAssuranceLevel",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2674558-06:00",
+  "description": "Mapping for Person.link.assurance from 4.0.1 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PersonLinkAssurance4to3",
+      "display": "Id: psn.li.assurance-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Person#Person.link.assurance\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/Person#Person.link.assurance",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/psn.li.assurance-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/identity-assuranceLevel|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/identity-assuranceLevel|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/identity-assuranceLevel",
+      "target": "http://hl7.org/fhir/identity-assuranceLevel",
+      "element": [
+        {
+          "code": "level4",
+          "target": [
+            {
+              "code": "level4",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "level1",
+          "target": [
+            {
+              "code": "level1",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "level3",
+          "target": [
+            {
+              "code": "level3",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "level2",
+          "target": [
+            {
+              "code": "level2",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

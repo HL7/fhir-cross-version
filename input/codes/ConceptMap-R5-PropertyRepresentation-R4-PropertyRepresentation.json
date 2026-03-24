@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-PropertyRepresentation-R4-PropertyRepresentation",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-PropertyRepresentation-R4-PropertyRepresentation",
+  "version": "0.0.1",
+  "name": "R5-PropertyRepresentation-R4-PropertyRepresentation",
+  "title": "Concept map to convert a FHIR R5 PropertyRepresentation into a FHIR R4 PropertyRepresentation",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9910008-06:00",
+  "description": "Mapping for ElementDefinition.representation from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ElementDefinitionRepresentation5to4",
+      "display": "Id: eld.representation-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ElementDefinition#ElementDefinition.representation\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ElementDefinition#ElementDefinition.representation",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eld.representation-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/property-representation|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/property-representation|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/property-representation",
+      "target": "http://hl7.org/fhir/property-representation",
+      "element": [
+        {
+          "code": "xmlText",
+          "target": [
+            {
+              "code": "xmlText",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cdaText",
+          "target": [
+            {
+              "code": "cdaText",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "xmlAttr",
+          "target": [
+            {
+              "code": "xmlAttr",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "typeAttr",
+          "target": [
+            {
+              "code": "typeAttr",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "xhtml",
+          "target": [
+            {
+              "code": "xhtml",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

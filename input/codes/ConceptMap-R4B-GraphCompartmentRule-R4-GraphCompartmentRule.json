@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-GraphCompartmentRule-R4-GraphCompartmentRule",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-GraphCompartmentRule-R4-GraphCompartmentRule",
+  "version": "0.0.1",
+  "name": "R4B-GraphCompartmentRule-R4-GraphCompartmentRule",
+  "title": "Concept map to convert a FHIR R4B GraphCompartmentRule into a FHIR R4 GraphCompartmentRule",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6925544-06:00",
+  "description": "Mapping for GraphDefinition.link.target.compartment.rule from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "GraphDefinitionLinkTargetCompartmentRule4bto4",
+      "display": "Id: gdf.li.ta.co.rule-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.rule\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/GraphDefinition#GraphDefinition.link.target.compartment.rule",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/gdf.li.ta.co.rule-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/graph-compartment-rule|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/graph-compartment-rule|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/graph-compartment-rule",
+      "target": "http://hl7.org/fhir/graph-compartment-rule",
+      "element": [
+        {
+          "code": "identical",
+          "target": [
+            {
+              "code": "identical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "custom",
+          "target": [
+            {
+              "code": "custom",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "different",
+          "target": [
+            {
+              "code": "different",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "matching",
+          "target": [
+            {
+              "code": "matching",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

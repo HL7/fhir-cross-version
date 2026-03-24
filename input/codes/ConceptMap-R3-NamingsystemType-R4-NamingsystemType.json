@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-NamingsystemType-R4-NamingsystemType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-NamingsystemType-R4-NamingsystemType",
+  "version": "0.0.1",
+  "name": "R3-NamingsystemType-R4-NamingsystemType",
+  "title": "Concept map to convert a FHIR R3 NamingsystemType into a FHIR R4 NamingsystemType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6864294-06:00",
+  "description": "Mapping for NamingSystem.kind from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "NamingSystemKind3to4",
+      "display": "Id: nsd.kind-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/NamingSystem#NamingSystem.kind\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/NamingSystem#NamingSystem.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.kind-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/namingsystem-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/namingsystem-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/namingsystem-type",
+      "target": "http://hl7.org/fhir/namingsystem-type",
+      "element": [
+        {
+          "code": "identifier",
+          "target": [
+            {
+              "code": "identifier",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "codesystem",
+          "target": [
+            {
+              "code": "codesystem",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "root",
+          "target": [
+            {
+              "code": "root",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

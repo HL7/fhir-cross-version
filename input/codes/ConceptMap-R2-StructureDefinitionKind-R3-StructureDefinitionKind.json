@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-StructureDefinitionKind-R3-StructureDefinitionKind",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-StructureDefinitionKind-R3-StructureDefinitionKind",
+  "version": "0.0.1",
+  "name": "R2-StructureDefinitionKind-R3-StructureDefinitionKind",
+  "title": "Concept map to convert a FHIR R2 StructureDefinitionKind into a FHIR R3 StructureDefinitionKind",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5125293-06:00",
+  "description": "Mapping for StructureDefinition.kind from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureDefinitionKind2to3",
+      "display": "Id: sdf.kind-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/StructureDefinition#StructureDefinition.kind\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/StructureDefinition#StructureDefinition.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.kind-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/structure-definition-kind|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/structure-definition-kind|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/structure-definition-kind",
+      "target": "http://hl7.org/fhir/structure-definition-kind",
+      "element": [
+        {
+          "code": "datatype",
+          "target": [
+            {
+              "code": "complex-type",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            },
+            {
+              "code": "primitive-type",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            }
+          ]
+        },
+        {
+          "code": "logical",
+          "target": [
+            {
+              "code": "logical",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "resource",
+          "target": [
+            {
+              "code": "resource",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

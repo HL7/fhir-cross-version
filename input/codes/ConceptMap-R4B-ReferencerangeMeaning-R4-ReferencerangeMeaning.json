@@ -1,0 +1,146 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ReferencerangeMeaning-R4-ReferencerangeMeaning",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ReferencerangeMeaning-R4-ReferencerangeMeaning",
+  "version": "0.0.1",
+  "name": "R4B-ReferencerangeMeaning-R4-ReferencerangeMeaning",
+  "title": "Concept map to convert a FHIR R4B ReferencerangeMeaning into a FHIR R4 ReferencerangeMeaning",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.7015169-06:00",
+  "description": "Mapping for ObservationDefinition.qualifiedInterval.context from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ObservationDefinitionQualifiedIntervalContext4bto4",
+      "display": "Id: obdf.qu.context-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.context\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ObservationDefinition#ObservationDefinition.qualifiedInterval.context",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/obdf.qu.context-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/referencerange-meaning|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/referencerange-meaning|4.0.1",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+      "target": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+      "element": [
+        {
+          "code": "midcycle",
+          "target": [
+            {
+              "code": "midcycle",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "normal",
+          "target": [
+            {
+              "code": "normal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "treatment",
+          "target": [
+            {
+              "code": "treatment",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pre",
+          "target": [
+            {
+              "code": "pre",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pre-puberty",
+          "target": [
+            {
+              "code": "pre-puberty",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "type",
+          "target": [
+            {
+              "code": "type",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "follicular",
+          "target": [
+            {
+              "code": "follicular",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "recommended",
+          "target": [
+            {
+              "code": "recommended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "therapeutic",
+          "target": [
+            {
+              "code": "therapeutic",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "post",
+          "target": [
+            {
+              "code": "post",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "luteal",
+          "target": [
+            {
+              "code": "luteal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "endocrine",
+          "target": [
+            {
+              "code": "endocrine",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "postmenopausal",
+          "target": [
+            {
+              "code": "postmenopausal",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

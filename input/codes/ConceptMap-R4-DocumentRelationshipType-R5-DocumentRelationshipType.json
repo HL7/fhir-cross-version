@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-DocumentRelationshipType-R5-DocumentRelationshipType",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-DocumentRelationshipType-R5-DocumentRelationshipType",
+  "version": "0.0.1",
+  "name": "R4-DocumentRelationshipType-R5-DocumentRelationshipType",
+  "title": "Concept map to convert a FHIR R4 DocumentRelationshipType into a FHIR R5 DocumentRelationshipType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0818711-06:00",
+  "description": "Mapping for DocumentReference.relatesTo.code from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DocumentReferenceRelatesToCode4to5",
+      "display": "Id: dcr.re.code-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/DocumentReference#DocumentReference.relatesTo.code",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.re.code-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/document-relationship-type|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/document-relationship-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/document-relationship-type",
+      "target": "http://hl7.org/fhir/document-relationship-type",
+      "element": [
+        {
+          "code": "signs",
+          "target": [
+            {
+              "code": "signs",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "replaces",
+          "target": [
+            {
+              "code": "replaces",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "transforms",
+          "target": [
+            {
+              "code": "transforms",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "appends",
+          "target": [
+            {
+              "code": "appends",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

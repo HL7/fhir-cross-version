@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ExtensionContextType-R5-ExtensionContextType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ExtensionContextType-R5-ExtensionContextType",
+  "version": "0.0.1",
+  "name": "R4B-ExtensionContextType-R5-ExtensionContextType",
+  "title": "Concept map to convert a FHIR R4B ExtensionContextType into a FHIR R5 ExtensionContextType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4856804-06:00",
+  "description": "Mapping for StructureDefinition.context.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureDefinitionContextType4bto5",
+      "display": "Id: sdf.co.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition#StructureDefinition.context.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition#StructureDefinition.context.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.co.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/extension-context-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/extension-context-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/extension-context-type",
+      "target": "http://hl7.org/fhir/extension-context-type",
+      "element": [
+        {
+          "code": "extension",
+          "target": [
+            {
+              "code": "extension",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fhirpath",
+          "target": [
+            {
+              "code": "fhirpath",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "element",
+          "target": [
+            {
+              "code": "element",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

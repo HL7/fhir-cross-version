@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ActionParticipantType-R4-ActionParticipantType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ActionParticipantType-R4-ActionParticipantType",
+  "version": "0.0.1",
+  "name": "R4B-ActionParticipantType-R4-ActionParticipantType",
+  "title": "Concept map to convert a FHIR R4B ActionParticipantType into a FHIR R4 ActionParticipantType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6684168-06:00",
+  "description": "Mapping for ActivityDefinition.participant.type from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ActivityDefinitionParticipantType4bto4",
+      "display": "Id: adf.pa.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ActivityDefinition#ActivityDefinition.participant.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ActivityDefinition#ActivityDefinition.participant.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/adf.pa.type-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "PlanDefinitionActionParticipantType4bto4",
+      "display": "Id: pdf.ac.pa.type-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition#PlanDefinition.action.participant.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/PlanDefinition#PlanDefinition.action.participant.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.pa.type-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-participant-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-participant-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/action-participant-type",
+      "target": "http://hl7.org/fhir/action-participant-type",
+      "element": [
+        {
+          "code": "related-person",
+          "target": [
+            {
+              "code": "related-person",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "practitioner",
+          "target": [
+            {
+              "code": "practitioner",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "patient",
+          "target": [
+            {
+              "code": "patient",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "device",
+          "target": [
+            {
+              "code": "device",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-AuditEventOutcome-R4-AuditEventOutcome",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-AuditEventOutcome-R4-AuditEventOutcome",
+  "version": "0.0.1",
+  "name": "R4B-AuditEventOutcome-R4-AuditEventOutcome",
+  "title": "Concept map to convert a FHIR R4B AuditEventOutcome into a FHIR R4 AuditEventOutcome",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.7090339-06:00",
+  "description": "Mapping for AuditEvent.outcome from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AuditEventOutcome4bto4",
+      "display": "Id: sev.outcome-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent#AuditEvent.outcome\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/AuditEvent#AuditEvent.outcome",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sev.outcome-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/audit-event-outcome|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/audit-event-outcome|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/audit-event-outcome",
+      "target": "http://hl7.org/fhir/audit-event-outcome",
+      "element": [
+        {
+          "code": "0",
+          "target": [
+            {
+              "code": "0",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12",
+          "target": [
+            {
+              "code": "12",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "4",
+          "target": [
+            {
+              "code": "4",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "8",
+          "target": [
+            {
+              "code": "8",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

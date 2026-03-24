@@ -1,0 +1,98 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-EpisodeOfCareStatus-R4B-EpisodeOfCareStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-EpisodeOfCareStatus-R4B-EpisodeOfCareStatus",
+  "version": "0.0.1",
+  "name": "R5-EpisodeOfCareStatus-R4B-EpisodeOfCareStatus",
+  "title": "Concept map to convert a FHIR R5 EpisodeOfCareStatus into a FHIR R4B EpisodeOfCareStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9172112-06:00",
+  "description": "Mapping for EpisodeOfCare.statusHistory.status from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EpisodeOfCareStatusHistoryStatus5to4b",
+      "display": "Id: eoc.st.status-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/EpisodeOfCare#EpisodeOfCare.statusHistory.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/EpisodeOfCare#EpisodeOfCare.statusHistory.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eoc.st.status-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "EpisodeOfCareStatus5to4b",
+      "display": "Id: eoc.status-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/EpisodeOfCare#EpisodeOfCare.status\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/EpisodeOfCare#EpisodeOfCare.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eoc.status-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/episode-of-care-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/episode-of-care-status|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/episode-of-care-status",
+      "target": "http://hl7.org/fhir/episode-of-care-status",
+      "element": [
+        {
+          "code": "onhold",
+          "target": [
+            {
+              "code": "onhold",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "waitlist",
+          "target": [
+            {
+              "code": "waitlist",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "finished",
+          "target": [
+            {
+              "code": "finished",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "planned",
+          "target": [
+            {
+              "code": "planned",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

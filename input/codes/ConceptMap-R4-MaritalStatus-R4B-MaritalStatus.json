@@ -1,0 +1,134 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MaritalStatus-R4B-MaritalStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MaritalStatus-R4B-MaritalStatus",
+  "version": "0.0.1",
+  "name": "R4-MaritalStatus-R4B-MaritalStatus",
+  "title": "Concept map to convert a FHIR R4 MaritalStatus into a FHIR R4B MaritalStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0211402-06:00",
+  "description": "Mapping for Patient.maritalStatus from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "PatientMaritalStatusr4to4b",
+      "display": "Id: pat.maritalStatus-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Patient#Patient.maritalStatus\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Patient#Patient.maritalStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/pat.maritalStatus-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/marital-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/marital-status|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "element": [
+        {
+          "code": "A",
+          "target": [
+            {
+              "code": "A",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "D",
+          "target": [
+            {
+              "code": "D",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "I",
+          "target": [
+            {
+              "code": "I",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "L",
+          "target": [
+            {
+              "code": "L",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "target": [
+            {
+              "code": "M",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "P",
+          "target": [
+            {
+              "code": "P",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "S",
+          "target": [
+            {
+              "code": "S",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "T",
+          "target": [
+            {
+              "code": "T",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "target": [
+            {
+              "code": "U",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "W",
+          "target": [
+            {
+              "code": "W",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "UNK",
+          "target": [
+            {
+              "code": "UNK",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

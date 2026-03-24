@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ConceptMapRelationship-R4-ConceptMapEquivalence",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ConceptMapRelationship-R4-ConceptMapEquivalence",
+  "version": "0.0.1",
+  "name": "R5-ConceptMapRelationship-R4-ConceptMapEquivalence",
+  "title": "Concept map to convert a FHIR R5 ConceptMapRelationship into a FHIR R4 ConceptMapEquivalence",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9817763-06:00",
+  "description": "Mapping for ConceptMap.group.element.target.relationship/ConceptMap.group.element.target.equivalence from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConceptMapGroupElementTargetRelationshipConceptMapGroupElementTargetEquivalence5to4",
+      "display": "Id: cmd.gr.el.ta.relationship-cmd.gr.el.ta.equivalence-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ConceptMap#ConceptMap.group.element.target.relationship\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ConceptMap#ConceptMap.group.element.target.equivalence",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.gr.el.ta.relationship-cmd.gr.el.ta.equivalence-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/concept-map-relationship|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/concept-map-equivalence|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/concept-map-relationship",
+      "target": "http://hl7.org/fhir/concept-map-equivalence",
+      "element": [
+        {
+          "code": "equivalent",
+          "target": [
+            {
+              "code": "equivalent",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "related-to",
+          "target": [
+            {
+              "code": "inexact",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-related-to",
+          "target": [
+            {
+              "code": "disjoint",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "source-is-narrower-than-target",
+          "target": [
+            {
+              "code": "wider",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "source-is-broader-than-target",
+          "target": [
+            {
+              "code": "narrower",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

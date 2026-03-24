@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-AssertDirectionCodes-R5-AssertDirectionCodes",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-AssertDirectionCodes-R5-AssertDirectionCodes",
+  "version": "0.0.1",
+  "name": "R4B-AssertDirectionCodes-R5-AssertDirectionCodes",
+  "title": "Concept map to convert a FHIR R4B AssertDirectionCodes into a FHIR R5 AssertDirectionCodes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4906895-06:00",
+  "description": "Mapping for TestScript.setup.action.assert.direction from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestScriptSetupActionAssertDirection4bto5",
+      "display": "Id: tst.se.ac.as.direction-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/TestScript#TestScript.setup.action.assert.direction\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/TestScript#TestScript.setup.action.assert.direction",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tst.se.ac.as.direction-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/assert-direction-codes|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/assert-direction-codes|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/assert-direction-codes",
+      "target": "http://hl7.org/fhir/assert-direction-codes",
+      "element": [
+        {
+          "code": "request",
+          "target": [
+            {
+              "code": "request",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "response",
+          "target": [
+            {
+              "code": "response",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SequenceType-R4B-SequenceType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-SequenceType-R4B-SequenceType",
+  "version": "0.0.1",
+  "name": "R5-SequenceType-R4B-SequenceType",
+  "title": "Concept map to convert a FHIR R5 SequenceType into a FHIR R4B SequenceType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9245169-06:00",
+  "description": "Mapping for MolecularSequence.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MolecularSequenceType5to4b",
+      "display": "Id: msq.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/MolecularSequence#MolecularSequence.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/MolecularSequence#MolecularSequence.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/msq.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/sequence-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/sequence-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/sequence-type",
+      "target": "http://hl7.org/fhir/sequence-type",
+      "element": [
+        {
+          "code": "aa",
+          "target": [
+            {
+              "code": "aa",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "rna",
+          "target": [
+            {
+              "code": "rna",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dna",
+          "target": [
+            {
+              "code": "dna",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

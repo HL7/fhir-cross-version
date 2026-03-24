@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MeasureReportStatus-R4-MeasureReportStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-MeasureReportStatus-R4-MeasureReportStatus",
+  "version": "0.0.1",
+  "name": "R5-MeasureReportStatus-R4-MeasureReportStatus",
+  "title": "Concept map to convert a FHIR R5 MeasureReportStatus into a FHIR R4 MeasureReportStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9967521-06:00",
+  "description": "Mapping for MeasureReport.status from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MeasureReportStatus5to4",
+      "display": "Id: mrp.status-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/MeasureReport#MeasureReport.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/MeasureReport#MeasureReport.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.status-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-report-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-report-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/measure-report-status",
+      "target": "http://hl7.org/fhir/measure-report-status",
+      "element": [
+        {
+          "code": "pending",
+          "target": [
+            {
+              "code": "pending",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "complete",
+          "target": [
+            {
+              "code": "complete",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

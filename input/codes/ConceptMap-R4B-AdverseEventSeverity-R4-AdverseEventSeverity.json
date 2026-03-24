@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-AdverseEventSeverity-R4-AdverseEventSeverity",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-AdverseEventSeverity-R4-AdverseEventSeverity",
+  "version": "0.0.1",
+  "name": "R4B-AdverseEventSeverity-R4-AdverseEventSeverity",
+  "title": "Concept map to convert a FHIR R4B AdverseEventSeverity into a FHIR R4 AdverseEventSeverity",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6692429-06:00",
+  "description": "Mapping for AdverseEvent.severity from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AdverseEventSeverity4bto4",
+      "display": "Id: aev.severity-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/AdverseEvent#AdverseEvent.severity\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/AdverseEvent#AdverseEvent.severity",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/aev.severity-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/adverse-event-severity|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/adverse-event-severity|4.0.1",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/adverse-event-severity",
+      "target": "http://terminology.hl7.org/CodeSystem/adverse-event-severity",
+      "element": [
+        {
+          "code": "mild",
+          "target": [
+            {
+              "code": "mild",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "severe",
+          "target": [
+            {
+              "code": "severe",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "moderate",
+          "target": [
+            {
+              "code": "moderate",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

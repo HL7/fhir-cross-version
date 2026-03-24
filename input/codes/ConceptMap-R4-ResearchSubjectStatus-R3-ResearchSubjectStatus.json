@@ -1,0 +1,149 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ResearchSubjectStatus-R3-ResearchSubjectStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ResearchSubjectStatus-R3-ResearchSubjectStatus",
+  "version": "0.0.1",
+  "name": "R4-ResearchSubjectStatus-R3-ResearchSubjectStatus",
+  "title": "Concept map to convert a FHIR R4 ResearchSubjectStatus into a FHIR R3 ResearchSubjectStatus",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.2682084-06:00",
+  "description": "Mapping for ResearchSubject.status from R4 to R3",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ResearchSubjectStatus4to3",
+      "display": "Id: rsb.status-4to3\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ResearchSubject#ResearchSubject.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ResearchSubject#ResearchSubject.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rsb.status-4to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/research-subject-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/research-subject-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/research-subject-status",
+      "target": "http://hl7.org/fhir/research-subject-status",
+      "element": [
+        {
+          "code": "candidate",
+          "target": [
+            {
+              "code": "candidate",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "eligible",
+          "target": [
+            {
+              "code": "candidate",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "follow-up",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "source-is-narrower-than-target"
+            },
+            {
+              "code": "suspended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ineligible",
+          "noMap": true
+        },
+        {
+          "code": "not-registered",
+          "target": [
+            {
+              "code": "withdrawn",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "off-study",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "on-study",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "enrolled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on-study-intervention",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "on-study-observation",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "pending-on-study",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "potential-candidate",
+          "noMap": true
+        },
+        {
+          "code": "screening",
+          "target": [
+            {
+              "code": "candidate",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "withdrawn",
+          "target": [
+            {
+              "code": "candidate",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "withdrawn",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

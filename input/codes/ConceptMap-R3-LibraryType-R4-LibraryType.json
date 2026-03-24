@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-LibraryType-R4-LibraryType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-LibraryType-R4-LibraryType",
+  "version": "0.0.1",
+  "name": "R3-LibraryType-R4-LibraryType",
+  "title": "Concept map to convert a FHIR R3 LibraryType into a FHIR R4 LibraryType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6817015-06:00",
+  "description": "Mapping for Library.type from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "LibraryType3to4",
+      "display": "Id: lib.type-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Library#Library.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Library#Library.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/lib.type-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/library-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/library-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/library-type",
+      "target": "http://terminology.hl7.org/CodeSystem/library-type",
+      "element": [
+        {
+          "code": "model-definition",
+          "target": [
+            {
+              "code": "model-definition",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "logic-library",
+          "target": [
+            {
+              "code": "logic-library",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "module-definition",
+          "target": [
+            {
+              "code": "module-definition",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asset-collection",
+          "target": [
+            {
+              "code": "asset-collection",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

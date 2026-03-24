@@ -1,0 +1,69 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-Slotstatus-R2-Slotstatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-Slotstatus-R2-Slotstatus",
+  "version": "0.0.1",
+  "name": "R3-Slotstatus-R2-Slotstatus",
+  "title": "Concept map to convert a FHIR R3 Slotstatus into a FHIR R2 Slotstatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7815941-06:00",
+  "description": "Mapping for Slot.status/Slot.freeBusyType from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SlotStatusSlotFreeBusyType3to2",
+      "display": "Id: slt.status-slt.freeBusyType-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Slot#Slot.status\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Slot#Slot.freeBusyType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/slt.status-slt.freeBusyType-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/slotstatus|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/slotstatus|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/slotstatus",
+      "target": "http://hl7.org/fhir/slotstatus",
+      "element": [
+        {
+          "code": "busy",
+          "target": [
+            {
+              "code": "busy",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "busy-tentative",
+          "target": [
+            {
+              "code": "busy-tentative",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "busy-unavailable",
+          "target": [
+            {
+              "code": "busy-unavailable",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "noMap": true
+        },
+        {
+          "code": "free",
+          "target": [
+            {
+              "code": "free",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

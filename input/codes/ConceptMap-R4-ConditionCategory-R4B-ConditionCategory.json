@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ConditionCategory-R4B-ConditionCategory",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ConditionCategory-R4B-ConditionCategory",
+  "version": "0.0.1",
+  "name": "R4-ConditionCategory-R4B-ConditionCategory",
+  "title": "Concept map to convert a FHIR R4 ConditionCategory into a FHIR R4B ConditionCategory",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.9886825-06:00",
+  "description": "Mapping for Condition.category from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConditionCategory4to4b",
+      "display": "Id: con.category-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Condition#Condition.category\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Condition#Condition.category",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/con.category-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/condition-category|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/condition-category|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/condition-category",
+      "target": "http://terminology.hl7.org/CodeSystem/condition-category",
+      "element": [
+        {
+          "code": "encounter-diagnosis",
+          "target": [
+            {
+              "code": "encounter-diagnosis",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "problem-list-item",
+          "target": [
+            {
+              "code": "problem-list-item",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

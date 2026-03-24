@@ -1,0 +1,107 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-SearchParamType-R2-SearchParamType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-SearchParamType-R2-SearchParamType",
+  "version": "0.0.1",
+  "name": "R3-SearchParamType-R2-SearchParamType",
+  "title": "Concept map to convert a FHIR R3 SearchParamType into a FHIR R2 SearchParamType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7632027-06:00",
+  "description": "Mapping for CapabilityStatement.rest.resource.searchParam.type/Conformance.rest.resource.searchParam.type from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestResourceSearchParamTypeConformanceRestResourceSearchParamType3to2",
+      "display": "Id: cpb.re.re.se.type-cpb.re.re.se.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.searchParam.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.rest.resource.searchParam.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.se.type-cpb.re.re.se.type-3to2"
+    },
+    {
+      "type": "predecessor",
+      "label": "SearchParameterType3to2",
+      "display": "Id: spd.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/SearchParameter#SearchParameter.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/SearchParameter#SearchParameter.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.type-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-param-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/search-param-type|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-param-type",
+      "target": "http://hl7.org/fhir/search-param-type",
+      "element": [
+        {
+          "code": "date",
+          "target": [
+            {
+              "code": "date",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reference",
+          "target": [
+            {
+              "code": "reference",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "number",
+          "target": [
+            {
+              "code": "number",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "quantity",
+          "target": [
+            {
+              "code": "quantity",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "string",
+          "target": [
+            {
+              "code": "string",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "composite",
+          "target": [
+            {
+              "code": "composite",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "uri",
+          "target": [
+            {
+              "code": "uri",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "token",
+          "target": [
+            {
+              "code": "token",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

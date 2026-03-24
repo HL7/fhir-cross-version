@@ -1,0 +1,76 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-EventStatus-R4-ClinicalimpressionStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-EventStatus-R4-ClinicalimpressionStatus",
+  "version": "0.0.1",
+  "name": "R5-EventStatus-R4-ClinicalimpressionStatus",
+  "title": "Concept map to convert a FHIR R5 EventStatus into a FHIR R4 ClinicalimpressionStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9810134-06:00",
+  "description": "Mapping for ClinicalImpression.status from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ClinicalImpressionStatus5to4",
+      "display": "Id: cli.status-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ClinicalImpression#ClinicalImpression.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ClinicalImpression#ClinicalImpression.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cli.status-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/event-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/clinicalimpression-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/event-status",
+      "target": "http://hl7.org/fhir/event-status",
+      "element": [
+        {
+          "code": "stopped",
+          "noMap": true
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-done",
+          "noMap": true
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "noMap": true
+        },
+        {
+          "code": "preparation",
+          "noMap": true
+        },
+        {
+          "code": "unknown",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

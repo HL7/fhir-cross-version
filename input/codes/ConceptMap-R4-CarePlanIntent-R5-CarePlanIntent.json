@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-CarePlanIntent-R5-CarePlanIntent",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-CarePlanIntent-R5-CarePlanIntent",
+  "version": "0.0.1",
+  "name": "R4-CarePlanIntent-R5-CarePlanIntent",
+  "title": "Concept map to convert a FHIR R4 CarePlanIntent into a FHIR R5 CarePlanIntent",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0799291-06:00",
+  "description": "Mapping for CarePlan.intent from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CarePlanIntent4to5",
+      "display": "Id: cpl.intent-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CarePlan#CarePlan.intent\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CarePlan#CarePlan.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.intent-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-intent|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-intent|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-intent",
+      "target": "http://hl7.org/fhir/request-intent",
+      "element": [
+        {
+          "code": "proposal",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "plan",
+          "target": [
+            {
+              "code": "plan",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "order",
+          "target": [
+            {
+              "code": "order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "option",
+          "target": [
+            {
+              "code": "option",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "directive",
+          "target": [
+            {
+              "code": "directive",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ImagingstudyStatus-R5-ImagingstudyStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ImagingstudyStatus-R5-ImagingstudyStatus",
+  "version": "0.0.1",
+  "name": "R4-ImagingstudyStatus-R5-ImagingstudyStatus",
+  "title": "Concept map to convert a FHIR R4 ImagingstudyStatus into a FHIR R5 ImagingstudyStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0880833-06:00",
+  "description": "Mapping for ImagingStudy.status from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ImagingStudyStatus4to5",
+      "display": "Id: ims.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/ImagingStudy#ImagingStudy.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ImagingStudy#ImagingStudy.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ims.status-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/imagingstudy-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/imagingstudy-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/imagingstudy-status",
+      "target": "http://hl7.org/fhir/imagingstudy-status",
+      "element": [
+        {
+          "code": "available",
+          "target": [
+            {
+              "code": "available",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "registered",
+          "target": [
+            {
+              "code": "registered",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

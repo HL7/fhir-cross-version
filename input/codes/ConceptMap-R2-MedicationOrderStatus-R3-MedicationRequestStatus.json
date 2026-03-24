@@ -1,0 +1,88 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-MedicationOrderStatus-R3-MedicationRequestStatus",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-MedicationOrderStatus-R3-MedicationRequestStatus",
+  "version": "0.0.1",
+  "name": "R2-MedicationOrderStatus-R3-MedicationRequestStatus",
+  "title": "Concept map to convert a FHIR R2 MedicationOrderStatus into a FHIR R3 MedicationRequestStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.5025941-06:00",
+  "description": "Mapping for MedicationOrder.status/MedicationRequest.status from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MedicationOrderStatusMedicationRequestStatus2to3",
+      "display": "Id: mps.status-mps.status-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/MedicationOrder#MedicationOrder.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/MedicationRequest#MedicationRequest.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mps.status-mps.status-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-order-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-request-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/medication-order-status",
+      "target": "http://hl7.org/fhir/medication-request-status",
+      "element": [
+        {
+          "code": "stopped",
+          "target": [
+            {
+              "code": "stopped",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "cancelled",
+              "relationship": "source-is-broader-than-target",
+              "comment": "definition mismatch"
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "target": [
+            {
+              "code": "on-hold",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

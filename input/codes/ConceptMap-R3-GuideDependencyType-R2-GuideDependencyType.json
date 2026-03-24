@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-GuideDependencyType-R2-GuideDependencyType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-GuideDependencyType-R2-GuideDependencyType",
+  "version": "0.0.1",
+  "name": "R3-GuideDependencyType-R2-GuideDependencyType",
+  "title": "Concept map to convert a FHIR R3 GuideDependencyType into a FHIR R2 GuideDependencyType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.770726-06:00",
+  "description": "Mapping for ImplementationGuide.dependency.type from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ImplementationGuideDependencyType3to2",
+      "display": "Id: ig.de.type-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ImplementationGuide#ImplementationGuide.dependency.type\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/ImplementationGuide#ImplementationGuide.dependency.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ig.de.type-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/guide-dependency-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/guide-dependency-type|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/guide-dependency-type",
+      "target": "http://hl7.org/fhir/guide-dependency-type",
+      "element": [
+        {
+          "code": "reference",
+          "target": [
+            {
+              "code": "reference",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "inclusion",
+          "target": [
+            {
+              "code": "inclusion",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

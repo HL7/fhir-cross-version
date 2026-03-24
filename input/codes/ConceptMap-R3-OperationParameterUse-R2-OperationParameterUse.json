@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-OperationParameterUse-R2-OperationParameterUse",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-OperationParameterUse-R2-OperationParameterUse",
+  "version": "0.0.1",
+  "name": "R3-OperationParameterUse-R2-OperationParameterUse",
+  "title": "Concept map to convert a FHIR R3 OperationParameterUse into a FHIR R2 OperationParameterUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7750262-06:00",
+  "description": "Mapping for OperationDefinition.parameter.use from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "OperationDefinitionParameterUse3to2",
+      "display": "Id: opd.pa.use-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.use\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.use-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/operation-parameter-use|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/operation-parameter-use|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/operation-parameter-use",
+      "target": "http://hl7.org/fhir/operation-parameter-use",
+      "element": [
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "out",
+          "target": [
+            {
+              "code": "out",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

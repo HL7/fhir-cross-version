@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-MetricCalibrationState-R2-MetricCalibrationState",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-MetricCalibrationState-R2-MetricCalibrationState",
+  "version": "0.0.1",
+  "name": "R3-MetricCalibrationState-R2-MetricCalibrationState",
+  "title": "Concept map to convert a FHIR R3 MetricCalibrationState into a FHIR R2 MetricCalibrationState",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7671481-06:00",
+  "description": "Mapping for DeviceMetric.calibration.state from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceMetricCalibrationState3to2",
+      "display": "Id: dvm.ca.state-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.state\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/DeviceMetric#DeviceMetric.calibration.state",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.ca.state-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-calibration-state|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-calibration-state|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/metric-calibration-state",
+      "target": "http://hl7.org/fhir/metric-calibration-state",
+      "element": [
+        {
+          "code": "unspecified",
+          "target": [
+            {
+              "code": "unspecified",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-calibrated",
+          "target": [
+            {
+              "code": "not-calibrated",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "calibration-required",
+          "target": [
+            {
+              "code": "calibration-required",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "calibrated",
+          "target": [
+            {
+              "code": "calibrated",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ExplanationofbenefitStatus-R5-ExplanationofbenefitStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-ExplanationofbenefitStatus-R5-ExplanationofbenefitStatus",
+  "version": "0.0.1",
+  "name": "R4B-ExplanationofbenefitStatus-R5-ExplanationofbenefitStatus",
+  "title": "Concept map to convert a FHIR R4B ExplanationofbenefitStatus into a FHIR R5 ExplanationofbenefitStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4657311-06:00",
+  "description": "Mapping for ExplanationOfBenefit.status from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ExplanationOfBenefitStatus4bto5",
+      "display": "Id: eob.status-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ExplanationOfBenefit#ExplanationOfBenefit.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eob.status-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/explanationofbenefit-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/explanationofbenefit-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/explanationofbenefit-status",
+      "target": "http://hl7.org/fhir/explanationofbenefit-status",
+      "element": [
+        {
+          "code": "draft",
+          "target": [
+            {
+              "code": "draft",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

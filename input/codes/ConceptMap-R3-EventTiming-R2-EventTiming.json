@@ -1,0 +1,181 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-EventTiming-R2-EventTiming",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-EventTiming-R2-EventTiming",
+  "version": "0.0.1",
+  "name": "R3-EventTiming-R2-EventTiming",
+  "title": "Concept map to convert a FHIR R3 EventTiming into a FHIR R2 EventTiming",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7828349-06:00",
+  "description": "Mapping for Timing.repeat.when from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TimingRepeatWhen3to2",
+      "display": "Id: tim.re.when-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Timing#Timing.repeat.when\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Timing#Timing.repeat.when",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tim.re.when-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/event-timing|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/event-timing|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v3/TimingEvent",
+      "target": "http://hl7.org/fhir/v3/TimingEvent",
+      "element": [
+        {
+          "code": "AC",
+          "target": [
+            {
+              "code": "AC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ACD",
+          "target": [
+            {
+              "code": "ACD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ACM",
+          "target": [
+            {
+              "code": "ACM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ACV",
+          "target": [
+            {
+              "code": "ACV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "target": [
+            {
+              "code": "C",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CD",
+          "target": [
+            {
+              "code": "CD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CM",
+          "target": [
+            {
+              "code": "CM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CV",
+          "target": [
+            {
+              "code": "CV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HS",
+          "target": [
+            {
+              "code": "HS",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PC",
+          "target": [
+            {
+              "code": "PC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PCD",
+          "target": [
+            {
+              "code": "PCD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PCM",
+          "target": [
+            {
+              "code": "PCM",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PCV",
+          "target": [
+            {
+              "code": "PCV",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "WAKE",
+          "target": [
+            {
+              "code": "WAKE",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/event-timing",
+      "target": "http://hl7.org/fhir/v3/TimingEvent",
+      "element": [
+        {
+          "code": "AFT",
+          "noMap": true
+        },
+        {
+          "code": "NIGHT",
+          "noMap": true
+        },
+        {
+          "code": "PHS",
+          "noMap": true
+        },
+        {
+          "code": "EVE",
+          "noMap": true
+        },
+        {
+          "code": "MORN",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-RelatedArtifactType-R4B-RelatedArtifactType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-RelatedArtifactType-R4B-RelatedArtifactType",
+  "version": "0.0.1",
+  "name": "R5-RelatedArtifactType-R4B-RelatedArtifactType",
+  "title": "Concept map to convert a FHIR R5 RelatedArtifactType into a FHIR R4B RelatedArtifactType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9296708-06:00",
+  "description": "Mapping for RelatedArtifact.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "RelatedArtifactType5to4b",
+      "display": "Id: rla.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/RelatedArtifact#RelatedArtifact.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/RelatedArtifact#RelatedArtifact.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/rla.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/related-artifact-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/related-artifact-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/related-artifact-type",
+      "target": "http://hl7.org/fhir/related-artifact-type",
+      "element": [
+        {
+          "code": "amended-with",
+          "noMap": true
+        },
+        {
+          "code": "amends",
+          "noMap": true
+        },
+        {
+          "code": "appended-with",
+          "noMap": true
+        },
+        {
+          "code": "appends",
+          "noMap": true
+        },
+        {
+          "code": "citation",
+          "target": [
+            {
+              "code": "citation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cite-as",
+          "noMap": true
+        },
+        {
+          "code": "cited-by",
+          "noMap": true
+        },
+        {
+          "code": "cites",
+          "noMap": true
+        },
+        {
+          "code": "comment-in",
+          "noMap": true
+        },
+        {
+          "code": "comments-on",
+          "noMap": true
+        },
+        {
+          "code": "composed-of",
+          "target": [
+            {
+              "code": "composed-of",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "contained-in",
+          "noMap": true
+        },
+        {
+          "code": "contains",
+          "noMap": true
+        },
+        {
+          "code": "correction-in",
+          "noMap": true
+        },
+        {
+          "code": "corrects",
+          "noMap": true
+        },
+        {
+          "code": "created-with",
+          "noMap": true
+        },
+        {
+          "code": "depends-on",
+          "target": [
+            {
+              "code": "depends-on",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "derived-from",
+          "target": [
+            {
+              "code": "derived-from",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "documentation",
+          "target": [
+            {
+              "code": "documentation",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "documents",
+          "noMap": true
+        },
+        {
+          "code": "justification",
+          "target": [
+            {
+              "code": "justification",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "part-of",
+          "noMap": true
+        },
+        {
+          "code": "predecessor",
+          "target": [
+            {
+              "code": "predecessor",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "replaced-with",
+          "noMap": true
+        },
+        {
+          "code": "replaces",
+          "noMap": true
+        },
+        {
+          "code": "retracted-by",
+          "noMap": true
+        },
+        {
+          "code": "retracts",
+          "noMap": true
+        },
+        {
+          "code": "signs",
+          "noMap": true
+        },
+        {
+          "code": "similar-to",
+          "noMap": true
+        },
+        {
+          "code": "specification-of",
+          "noMap": true
+        },
+        {
+          "code": "successor",
+          "target": [
+            {
+              "code": "successor",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "supported-with",
+          "noMap": true
+        },
+        {
+          "code": "supports",
+          "noMap": true
+        },
+        {
+          "code": "transformed-into",
+          "noMap": true
+        },
+        {
+          "code": "transformed-with",
+          "noMap": true
+        },
+        {
+          "code": "transforms",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

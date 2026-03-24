@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-ConditionClinical-R4B-ConditionClinical",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-ConditionClinical-R4B-ConditionClinical",
+  "version": "0.0.1",
+  "name": "R4-ConditionClinical-R4B-ConditionClinical",
+  "title": "Concept map to convert a FHIR R4 ConditionClinical into a FHIR R4B ConditionClinical",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.988834-06:00",
+  "description": "Mapping for Condition.clinicalStatus from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConditionClinicalStatus4to4b",
+      "display": "Id: con.clinicalStatus-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Condition#Condition.clinicalStatus\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Condition#Condition.clinicalStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/con.clinicalStatus-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/condition-clinical|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "target": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "element": [
+        {
+          "code": "recurrence",
+          "target": [
+            {
+              "code": "recurrence",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "inactive",
+          "target": [
+            {
+              "code": "inactive",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "relapse",
+          "target": [
+            {
+              "code": "relapse",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "remission",
+          "target": [
+            {
+              "code": "remission",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "resolved",
+          "target": [
+            {
+              "code": "resolved",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

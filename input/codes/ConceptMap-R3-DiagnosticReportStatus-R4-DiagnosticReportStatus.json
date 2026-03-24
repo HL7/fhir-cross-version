@@ -1,0 +1,119 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-DiagnosticReportStatus-R4-DiagnosticReportStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-DiagnosticReportStatus-R4-DiagnosticReportStatus",
+  "version": "0.0.1",
+  "name": "R3-DiagnosticReportStatus-R4-DiagnosticReportStatus",
+  "title": "Concept map to convert a FHIR R3 DiagnosticReportStatus into a FHIR R4 DiagnosticReportStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6750061-06:00",
+  "description": "Mapping for DiagnosticReport.status from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DiagnosticReportStatus3to4",
+      "display": "Id: dir.status-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/DiagnosticReport#DiagnosticReport.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/DiagnosticReport#DiagnosticReport.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dir.status-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/diagnostic-report-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/diagnostic-report-status",
+      "target": "http://hl7.org/fhir/diagnostic-report-status",
+      "element": [
+        {
+          "code": "amended",
+          "target": [
+            {
+              "code": "amended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "appended",
+          "target": [
+            {
+              "code": "appended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "final",
+          "target": [
+            {
+              "code": "final",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "registered",
+          "target": [
+            {
+              "code": "registered",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "preliminary",
+          "target": [
+            {
+              "code": "preliminary",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "partial",
+          "target": [
+            {
+              "code": "partial",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "corrected",
+          "target": [
+            {
+              "code": "corrected",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

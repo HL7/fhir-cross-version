@@ -1,0 +1,116 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-DiagnosticOrderStatus-R3-RequestIntent",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-DiagnosticOrderStatus-R3-RequestIntent",
+  "version": "0.0.1",
+  "name": "R2-DiagnosticOrderStatus-R3-RequestIntent",
+  "title": "Concept map to convert a FHIR R2 DiagnosticOrderStatus into a FHIR R3 RequestIntent",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4940462-06:00",
+  "description": "Mapping for DiagnosticOrder.status/ProcedureRequest.intent from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DiagnosticOrderStatusProcedureRequestIntent2to3",
+      "display": "Id: dgo.status-pcrq.intent-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/DiagnosticOrder#DiagnosticOrder.status\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/ProcedureRequest#ProcedureRequest.intent",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dgo.status-pcrq.intent-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/diagnostic-order-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-intent|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/diagnostic-order-status",
+      "target": "http://hl7.org/fhir/request-intent",
+      "element": [
+        {
+          "code": "rejected",
+          "noMap": true
+        },
+        {
+          "code": "accepted",
+          "target": [
+            {
+              "code": "instance-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "received",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "planned",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "instance-order",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "failed",
+          "noMap": true
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "instance-order",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "suspended",
+          "noMap": true
+        },
+        {
+          "code": "requested",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "proposed",
+          "target": [
+            {
+              "code": "proposal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "review",
+          "noMap": true
+        },
+        {
+          "code": "draft",
+          "noMap": true
+        },
+        {
+          "code": "cancelled",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

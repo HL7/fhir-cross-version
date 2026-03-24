@@ -1,0 +1,51 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SupplydeliverySupplyitemtype-R4-SupplydeliveryType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-SupplydeliverySupplyitemtype-R4-SupplydeliveryType",
+  "version": "0.0.1",
+  "name": "R5-SupplydeliverySupplyitemtype-R4-SupplydeliveryType",
+  "title": "Concept map to convert a FHIR R5 SupplydeliverySupplyitemtype into a FHIR R4 SupplydeliveryType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:21.0038616-06:00",
+  "description": "Mapping for SupplyDelivery.type from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SupplyDeliveryType5to4",
+      "display": "Id: sud.type-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/SupplyDelivery#SupplyDelivery.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/SupplyDelivery#SupplyDelivery.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sud.type-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/supplydelivery-supplyitemtype|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/supplydelivery-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/supplydelivery-supplyitemtype",
+      "target": "http://terminology.hl7.org/CodeSystem/supply-item-type",
+      "element": [
+        {
+          "code": "biologicallyderivedproduct",
+          "noMap": true
+        },
+        {
+          "code": "medication",
+          "target": [
+            {
+              "code": "medication",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "device",
+          "target": [
+            {
+              "code": "device",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

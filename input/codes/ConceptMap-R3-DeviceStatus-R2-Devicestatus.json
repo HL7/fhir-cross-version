@@ -1,0 +1,61 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-DeviceStatus-R2-Devicestatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-DeviceStatus-R2-Devicestatus",
+  "version": "0.0.1",
+  "name": "R3-DeviceStatus-R2-Devicestatus",
+  "title": "Concept map to convert a FHIR R3 DeviceStatus into a FHIR R2 Devicestatus",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.76609-06:00",
+  "description": "Mapping for Device.status from R3 to R2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceStatus3to2",
+      "display": "Id: dev.status-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Device#Device.status\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Device#Device.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dev.status-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/device-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/devicestatus|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/device-status",
+      "target": "http://hl7.org/fhir/devicestatus",
+      "element": [
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "available",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "inactive",
+          "target": [
+            {
+              "code": "not-available",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

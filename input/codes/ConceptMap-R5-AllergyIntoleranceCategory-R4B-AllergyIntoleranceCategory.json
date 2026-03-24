@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-AllergyIntoleranceCategory-R4B-AllergyIntoleranceCategory",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-AllergyIntoleranceCategory-R4B-AllergyIntoleranceCategory",
+  "version": "0.0.1",
+  "name": "R5-AllergyIntoleranceCategory-R4B-AllergyIntoleranceCategory",
+  "title": "Concept map to convert a FHIR R5 AllergyIntoleranceCategory into a FHIR R4B AllergyIntoleranceCategory",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9049705-06:00",
+  "description": "Mapping for AllergyIntolerance.category from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AllergyIntoleranceCategory5to4b",
+      "display": "Id: ait.category-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/AllergyIntolerance#AllergyIntolerance.category\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance#AllergyIntolerance.category",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ait.category-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/allergy-intolerance-category|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/allergy-intolerance-category|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/allergy-intolerance-category",
+      "target": "http://hl7.org/fhir/allergy-intolerance-category",
+      "element": [
+        {
+          "code": "environment",
+          "target": [
+            {
+              "code": "environment",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "biologic",
+          "target": [
+            {
+              "code": "biologic",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "medication",
+          "target": [
+            {
+              "code": "medication",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "food",
+          "target": [
+            {
+              "code": "food",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

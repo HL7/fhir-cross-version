@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-CompositionAttestationMode-R4-CompositionAttestationMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-CompositionAttestationMode-R4-CompositionAttestationMode",
+  "version": "0.0.1",
+  "name": "R4B-CompositionAttestationMode-R4-CompositionAttestationMode",
+  "title": "Concept map to convert a FHIR R4B CompositionAttestationMode into a FHIR R4 CompositionAttestationMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6738206-06:00",
+  "description": "Mapping for Composition.attester.mode from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CompositionAttesterMode4bto4",
+      "display": "Id: cmp.at.mode-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Composition#Composition.attester.mode\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Composition#Composition.attester.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.at.mode-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/composition-attestation-mode",
+      "target": "http://hl7.org/fhir/composition-attestation-mode",
+      "element": [
+        {
+          "code": "legal",
+          "target": [
+            {
+              "code": "legal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "official",
+          "target": [
+            {
+              "code": "official",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "personal",
+          "target": [
+            {
+              "code": "personal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "professional",
+          "target": [
+            {
+              "code": "professional",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

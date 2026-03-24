@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-EligibilityresponsePurpose-R4-EligibilityresponsePurpose",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-EligibilityresponsePurpose-R4-EligibilityresponsePurpose",
+  "version": "0.0.1",
+  "name": "R4B-EligibilityresponsePurpose-R4-EligibilityresponsePurpose",
+  "title": "Concept map to convert a FHIR R4B EligibilityresponsePurpose into a FHIR R4 EligibilityresponsePurpose",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6725843-06:00",
+  "description": "Mapping for CoverageEligibilityResponse.purpose from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CoverageEligibilityResponsePurpose4bto4",
+      "display": "Id: ces.purpose-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityResponse#CoverageEligibilityResponse.purpose\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/CoverageEligibilityResponse#CoverageEligibilityResponse.purpose",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ces.purpose-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/eligibilityresponse-purpose|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/eligibilityresponse-purpose|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/eligibilityresponse-purpose",
+      "target": "http://hl7.org/fhir/eligibilityresponse-purpose",
+      "element": [
+        {
+          "code": "benefits",
+          "target": [
+            {
+              "code": "benefits",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "discovery",
+          "target": [
+            {
+              "code": "discovery",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "auth-requirements",
+          "target": [
+            {
+              "code": "auth-requirements",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "validation",
+          "target": [
+            {
+              "code": "validation",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

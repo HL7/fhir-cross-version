@@ -1,0 +1,89 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-AllTimeUnits-R4-AllTimeUnits",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-AllTimeUnits-R4-AllTimeUnits",
+  "version": "0.0.1",
+  "name": "R4B-AllTimeUnits-R4-AllTimeUnits",
+  "title": "Concept map to convert a FHIR R4B AllTimeUnits into a FHIR R4 AllTimeUnits",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.669357-06:00",
+  "description": "Mapping for Age from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "Ager4bto4",
+      "display": "Id: Age-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Age#Age\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Age#Age",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/Age-4bto4"
+    },
+    {
+      "type": "predecessor",
+      "label": "Durationr4bto4",
+      "display": "Id: Duration-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Duration#Duration\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Duration#Duration",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/Duration-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/all-time-units|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/all-time-units|4.0.1",
+  "group": [
+    {
+      "source": "http://unitsofmeasure.org",
+      "target": "http://unitsofmeasure.org",
+      "element": [
+        {
+          "code": "a",
+          "target": [
+            {
+              "code": "a",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "d",
+          "target": [
+            {
+              "code": "d",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "h",
+          "target": [
+            {
+              "code": "h",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "min",
+          "target": [
+            {
+              "code": "min",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "mo",
+          "target": [
+            {
+              "code": "mo",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "wk",
+          "target": [
+            {
+              "code": "wk",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-SubscriptionStatus-R4-SubscriptionStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-SubscriptionStatus-R4-SubscriptionStatus",
+  "version": "0.0.1",
+  "name": "R3-SubscriptionStatus-R4-SubscriptionStatus",
+  "title": "Concept map to convert a FHIR R3 SubscriptionStatus into a FHIR R4 SubscriptionStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6930301-06:00",
+  "description": "Mapping for Subscription.status from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SubscriptionStatus3to4",
+      "display": "Id: scr.status-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Subscription#Subscription.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Subscription#Subscription.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/scr.status-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/subscription-status",
+      "target": "http://hl7.org/fhir/subscription-status",
+      "element": [
+        {
+          "code": "requested",
+          "target": [
+            {
+              "code": "requested",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "off",
+          "target": [
+            {
+              "code": "off",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

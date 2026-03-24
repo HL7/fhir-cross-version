@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-SearchXpathUsage-R5-SearchProcessingmode",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-SearchXpathUsage-R5-SearchProcessingmode",
+  "version": "0.0.1",
+  "name": "R4B-SearchXpathUsage-R5-SearchProcessingmode",
+  "title": "Concept map to convert a FHIR R4B SearchXpathUsage into a FHIR R5 SearchProcessingmode",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4872578-06:00",
+  "description": "Mapping for SearchParameter.xpathUsage to SearchParameter.processingMode from 4b to 5",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SearchParameterXpathUsageSearchParameterProcessingMode4bto5",
+      "display": "Id: spd.xpathUsage-spd.processingMode-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.xpathUsage\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/SearchParameter#SearchParameter.processingMode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.xpathUsage-spd.processingMode-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-xpath-usage|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/search-processingmode|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-xpath-usage",
+      "target": "http://hl7.org/fhir/search-processingmode",
+      "element": [
+        {
+          "code": "distance",
+          "noMap": true
+        },
+        {
+          "code": "nearby",
+          "noMap": true
+        },
+        {
+          "code": "normal",
+          "target": [
+            {
+              "code": "normal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phonetic",
+          "target": [
+            {
+              "code": "phonetic",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

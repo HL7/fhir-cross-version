@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-DiscriminatorType-R5-DiscriminatorType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-DiscriminatorType-R5-DiscriminatorType",
+  "version": "0.0.1",
+  "name": "R4B-DiscriminatorType-R5-DiscriminatorType",
+  "title": "Concept map to convert a FHIR R4B DiscriminatorType into a FHIR R5 DiscriminatorType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4648325-06:00",
+  "description": "Mapping for ElementDefinition.slicing.discriminator.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ElementDefinitionSlicingDiscriminatorType4bto5",
+      "display": "Id: eld.sl.di.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ElementDefinition#ElementDefinition.slicing.discriminator.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ElementDefinition#ElementDefinition.slicing.discriminator.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/eld.sl.di.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/discriminator-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/discriminator-type|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/discriminator-type",
+      "target": "http://hl7.org/fhir/discriminator-type",
+      "element": [
+        {
+          "code": "profile",
+          "target": [
+            {
+              "code": "profile",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pattern",
+          "target": [
+            {
+              "code": "pattern",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "exists",
+          "target": [
+            {
+              "code": "exists",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "type",
+          "target": [
+            {
+              "code": "type",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "value",
+          "target": [
+            {
+              "code": "value",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

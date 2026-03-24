@@ -1,0 +1,120 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ParticipationRoleType-R4B-SecurityRoleType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ParticipationRoleType-R4B-SecurityRoleType",
+  "version": "0.0.1",
+  "name": "R5-ParticipationRoleType-R4B-SecurityRoleType",
+  "title": "Concept map to convert a FHIR R5 ParticipationRoleType into a FHIR R4B SecurityRoleType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9282763-06:00",
+  "description": "Mapping for Consent.provision.actor.role from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConsentProvisionActorRoler5to4b",
+      "display": "Id: ppc.pr.ac.role-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Consent#Consent.provision.actor.role\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Consent#Consent.provision.actor.role",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ppc.pr.ac.role-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/security-role-type|4.3.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "target": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "element": [
+        {
+          "code": "authserver",
+          "target": [
+            {
+              "code": "authserver",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "datacollector",
+          "target": [
+            {
+              "code": "datacollector",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dataprocessor",
+          "target": [
+            {
+              "code": "dataprocessor",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "datasubject",
+          "target": [
+            {
+              "code": "datasubject",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "humanuser",
+          "target": [
+            {
+              "code": "humanuser",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+      "target": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+      "element": [
+        {
+          "code": "attester",
+          "noMap": true
+        },
+        {
+          "code": "composer",
+          "noMap": true
+        },
+        {
+          "code": "enterer",
+          "noMap": true
+        },
+        {
+          "code": "assembler",
+          "noMap": true
+        },
+        {
+          "code": "custodian",
+          "noMap": true
+        },
+        {
+          "code": "author",
+          "noMap": true
+        },
+        {
+          "code": "performer",
+          "noMap": true
+        },
+        {
+          "code": "verifier",
+          "noMap": true
+        },
+        {
+          "code": "informant",
+          "noMap": true
+        },
+        {
+          "code": "legal",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-MetricOperationalStatus-R3-MetricOperationalStatus",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-MetricOperationalStatus-R3-MetricOperationalStatus",
+  "version": "0.0.1",
+  "name": "R2-MetricOperationalStatus-R3-MetricOperationalStatus",
+  "title": "Concept map to convert a FHIR R2 MetricOperationalStatus into a FHIR R3 MetricOperationalStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4958677-06:00",
+  "description": "Mapping for DeviceMetric.operationalStatus from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceMetricOperationalStatus2to3",
+      "display": "Id: dvm.operationalStatus-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/DeviceMetric#DeviceMetric.operationalStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvm.operationalStatus-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-operational-status|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/metric-operational-status|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/metric-operational-status",
+      "target": "http://hl7.org/fhir/metric-operational-status",
+      "element": [
+        {
+          "code": "standby",
+          "target": [
+            {
+              "code": "standby",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "off",
+          "target": [
+            {
+              "code": "off",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on",
+          "target": [
+            {
+              "code": "on",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

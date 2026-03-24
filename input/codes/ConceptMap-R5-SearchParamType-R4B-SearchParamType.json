@@ -1,0 +1,122 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SearchParamType-R4B-SearchParamType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-SearchParamType-R4B-SearchParamType",
+  "version": "0.0.1",
+  "name": "R5-SearchParamType-R4B-SearchParamType",
+  "title": "Concept map to convert a FHIR R5 SearchParamType into a FHIR R4B SearchParamType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.910229-06:00",
+  "description": "Mapping for CapabilityStatement.rest.resource.searchParam.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CapabilityStatementRestResourceSearchParamType5to4b",
+      "display": "Id: cpb.re.re.se.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.searchParam.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement#CapabilityStatement.rest.resource.searchParam.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.re.re.se.type-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "OperationDefinitionParameterSearchType5to4b",
+      "display": "Id: opd.pa.searchType-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.searchType\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/OperationDefinition#OperationDefinition.parameter.searchType",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.searchType-5to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "SearchParameterType5to4b",
+      "display": "Id: spd.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/SearchParameter#SearchParameter.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-param-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/search-param-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-param-type",
+      "target": "http://hl7.org/fhir/search-param-type",
+      "element": [
+        {
+          "code": "date",
+          "target": [
+            {
+              "code": "date",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reference",
+          "target": [
+            {
+              "code": "reference",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "special",
+          "target": [
+            {
+              "code": "special",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "number",
+          "target": [
+            {
+              "code": "number",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "quantity",
+          "target": [
+            {
+              "code": "quantity",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "string",
+          "target": [
+            {
+              "code": "string",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "composite",
+          "target": [
+            {
+              "code": "composite",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "uri",
+          "target": [
+            {
+              "code": "uri",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "token",
+          "target": [
+            {
+              "code": "token",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

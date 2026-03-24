@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-StructureDefinitionKind-R4-StructureDefinitionKind",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-StructureDefinitionKind-R4-StructureDefinitionKind",
+  "version": "0.0.1",
+  "name": "R5-StructureDefinitionKind-R4-StructureDefinitionKind",
+  "title": "Concept map to convert a FHIR R5 StructureDefinitionKind into a FHIR R4 StructureDefinitionKind",
+  "experimental": false,
+  "date": "2025-12-30T16:37:21.0019546-06:00",
+  "description": "Mapping for StructureDefinition.kind from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureDefinitionKind5to4",
+      "display": "Id: sdf.kind-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/StructureDefinition#StructureDefinition.kind\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/StructureDefinition#StructureDefinition.kind",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/sdf.kind-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/structure-definition-kind|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/structure-definition-kind|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/structure-definition-kind",
+      "target": "http://hl7.org/fhir/structure-definition-kind",
+      "element": [
+        {
+          "code": "primitive-type",
+          "target": [
+            {
+              "code": "primitive-type",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "resource",
+          "target": [
+            {
+              "code": "resource",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "complex-type",
+          "target": [
+            {
+              "code": "complex-type",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "logical",
+          "target": [
+            {
+              "code": "logical",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

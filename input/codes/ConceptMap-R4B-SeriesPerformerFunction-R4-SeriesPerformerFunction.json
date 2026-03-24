@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-SeriesPerformerFunction-R4-SeriesPerformerFunction",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-SeriesPerformerFunction-R4-SeriesPerformerFunction",
+  "version": "0.0.1",
+  "name": "R4B-SeriesPerformerFunction-R4-SeriesPerformerFunction",
+  "title": "Concept map to convert a FHIR R4B SeriesPerformerFunction into a FHIR R4 SeriesPerformerFunction",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6953034-06:00",
+  "description": "Mapping for ImagingStudy.series.performer.function from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ImagingStudySeriesPerformerFunctionr4bto4",
+      "display": "Id: ims.se.pe.function-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ImagingStudy#ImagingStudy.series.performer.function\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ImagingStudy#ImagingStudy.series.performer.function",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ims.se.pe.function-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/series-performer-function|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/series-performer-function|4.0.1",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "element": [
+        {
+          "code": "CON",
+          "target": [
+            {
+              "code": "CON",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRF",
+          "target": [
+            {
+              "code": "PRF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REF",
+          "target": [
+            {
+              "code": "REF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SPRF",
+          "target": [
+            {
+              "code": "SPRF",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VRF",
+          "target": [
+            {
+              "code": "VRF",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

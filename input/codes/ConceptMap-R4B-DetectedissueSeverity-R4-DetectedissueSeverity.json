@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-DetectedissueSeverity-R4-DetectedissueSeverity",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-DetectedissueSeverity-R4-DetectedissueSeverity",
+  "version": "0.0.1",
+  "name": "R4B-DetectedissueSeverity-R4-DetectedissueSeverity",
+  "title": "Concept map to convert a FHIR R4B DetectedissueSeverity into a FHIR R4 DetectedissueSeverity",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.6885407-06:00",
+  "description": "Mapping for DetectedIssue.severity from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DetectedIssueSeverity4bto4",
+      "display": "Id: dti.severity-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/DetectedIssue#DetectedIssue.severity\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/DetectedIssue#DetectedIssue.severity",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dti.severity-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/detectedissue-severity|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/detectedissue-severity|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/detectedissue-severity",
+      "target": "http://hl7.org/fhir/detectedissue-severity",
+      "element": [
+        {
+          "code": "high",
+          "target": [
+            {
+              "code": "high",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "low",
+          "target": [
+            {
+              "code": "low",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "moderate",
+          "target": [
+            {
+              "code": "moderate",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

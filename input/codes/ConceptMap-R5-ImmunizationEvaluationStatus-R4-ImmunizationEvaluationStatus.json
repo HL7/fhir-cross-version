@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ImmunizationEvaluationStatus-R4-ImmunizationEvaluationStatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ImmunizationEvaluationStatus-R4-ImmunizationEvaluationStatus",
+  "version": "0.0.1",
+  "name": "R5-ImmunizationEvaluationStatus-R4-ImmunizationEvaluationStatus",
+  "title": "Concept map to convert a FHIR R5 ImmunizationEvaluationStatus into a FHIR R4 ImmunizationEvaluationStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:21.0043114-06:00",
+  "description": "Mapping for ImmunizationEvaluation.status from 5.0.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ImmunizationEvaluationStatus5to4",
+      "display": "Id: tla.status-5to4\nSource: http://hl7.org/fhir/5.0/StructureDefinition/ImmunizationEvaluation#ImmunizationEvaluation.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/ImmunizationEvaluation#ImmunizationEvaluation.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tla.status-5to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/immunization-evaluation-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/immunization-evaluation-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/CodeSystem/medication-admin-status",
+      "target": "http://terminology.hl7.org/CodeSystem/medication-admin-status",
+      "element": [
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

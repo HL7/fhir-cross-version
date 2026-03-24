@@ -1,0 +1,75 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-AppointmentresponseStatus-R4B-Participationstatus",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-AppointmentresponseStatus-R4B-Participationstatus",
+  "version": "0.0.1",
+  "name": "R5-AppointmentresponseStatus-R4B-Participationstatus",
+  "title": "Concept map to convert a FHIR R5 AppointmentresponseStatus into a FHIR R4B Participationstatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9060486-06:00",
+  "description": "Mapping for AppointmentResponse.participantStatus from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AppointmentResponseParticipantStatusr5to4b",
+      "display": "Id: apr.participantStatus-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/AppointmentResponse#AppointmentResponse.participantStatus",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/apr.participantStatus-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/appointmentresponse-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/participationstatus|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/participationstatus",
+      "target": "http://hl7.org/fhir/participationstatus",
+      "element": [
+        {
+          "code": "accepted",
+          "target": [
+            {
+              "code": "accepted",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "declined",
+          "target": [
+            {
+              "code": "declined",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "needs-action",
+          "target": [
+            {
+              "code": "needs-action",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tentative",
+          "target": [
+            {
+              "code": "tentative",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/appointmentstatus",
+      "target": "http://hl7.org/fhir/participationstatus",
+      "element": [
+        {
+          "code": "entered-in-error",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

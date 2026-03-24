@@ -1,0 +1,146 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "xver-types-fallback",
+  "url" : "http://hl7.org/fhir/uv/xver/ConceptMap/types-fallback",
+  "version" : "0.1",
+  "name" : "TypesFallback",
+  "title" : "Fallback Type Map for Cross-Version",
+  "description" : "Fallback Type Map used in Cross-Version when converting types on elements that do not include standard mappings.",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-01-06",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "sourceScopeUri" : "http://hl7.org/fhir/fhir-types",
+  "targetScopeUri" : "http://hl7.org/fhir/fhir-types",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/fhir-types",
+    "target" : "http://hl7.org/fhir/fhir-types",
+    "element" : [
+    { "code" : "base64Binary", "target" : [{ "code" : "base64Binary", "relationship" : "equivalent" }]},
+    { "code" : "boolean", "target" : [{ "code" : "boolean", "relationship" : "equivalent" }]},
+    { "code" : "canonical", "target" : [
+      { "code" : "canonical", "relationship" : "equivalent" },
+      { "code" : "string", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "uri", "relationship" : "equivalent" },
+      { "code" : "url", "relationship" : "equivalent" }]},
+    { "code" : "code", "target" : [
+      { "code" : "code", "relationship" : "equivalent" },
+      { "code" : "id", "relationship" : "source-is-broader-than-target" },
+      { "code" : "string", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "oid", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "uri", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "Coding", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "CodeableConcept", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "date", "target" : [
+      { "code" : "date", "relationship" : "equivalent" },
+      { "code" : "dateTime", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "dateTime", "target" : [
+      { "code" : "date", "relationship" : "source-is-broader-than-target" },
+      { "code" : "dateTime", "relationship" : "equivalent" }]},
+    { "code" : "decimal", "target" : [
+      { "code" : "decimal", "relationship" : "equivalent" },
+      { "code" : "integer", "relationship" : "source-is-broader-than-target" },
+      { "code" : "unsignedInt", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "id", "target" : [
+      { "code" : "id", "relationship" : "equivalent" },
+      { "code" : "code", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "oid", "relationship" : "source-is-broader-than-target" },
+      { "code" : "string", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "instant", "target" : [{ "code" : "instant", "relationship" : "equivalent" }]},
+    { "code" : "integer", "target" : [
+      { "code" : "integer", "relationship" : "equivalent" },
+      { "code" : "integer64", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "positiveInt", "relationship" : "source-is-broader-than-target" },
+      { "code" : "unsignedInt", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "integer64", "target" : [
+      { "code" : "integer64", "relationship" : "equivalent" },
+      { "code" : "integer", "relationship" : "source-is-broader-than-target" },
+      { "code" : "string", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "markdown", "target" : [
+      { "code" : "markdown", "relationship" : "equivalent" },
+      { "code" : "string", "relationship" : "equivalent" }]},
+    { "code" : "oid", "target" : [
+      { "code" : "oid", "relationship" : "equivalent" },
+      { "code" : "code", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "id", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "string", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "positiveInt", "target" : [
+      { "code" : "positiveInt", "relationship" : "equivalent" },
+      { "code" : "integer", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "unsignedInt", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "string", "target" : [
+      { "code" : "string", "relationship" : "equivalent" },
+      { "code" : "canonical", "relationship" : "source-is-broader-than-target" },
+      { "code" : "code", "relationship" : "equivalent" },
+      { "code" : "id", "relationship" : "source-is-broader-than-target" },
+      { "code" : "integer64", "relationship" : "source-is-broader-than-target" },
+      { "code" : "markdown", "relationship" : "equivalent" },
+      { "code" : "oid", "relationship" : "source-is-broader-than-target" },
+      { "code" : "uri", "relationship" : "source-is-broader-than-target" },
+      { "code" : "url", "relationship" : "source-is-broader-than-target" },
+      { "code" : "uuid", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "time", "target" : [{ "code" : "time", "relationship" : "equivalent" }]},
+    { "code" : "unsignedInt", "target" : [
+      { "code" : "unsignedInt", "relationship" : "equivalent" },
+      { "code" : "decimal", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "integer", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "positiveInt", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "uri", "target" : [
+      { "code" : "uri", "relationship" : "equivalent" },
+      { "code" : "canonical", "relationship" : "equivalent", "comment" : "not all uris are canonicals" },
+      { "code" : "code", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "string", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "url", "relationship" : "equivalent", "comment" : "not all uris are urls" }]},
+    { "code" : "url", "target" : [
+      { "code" : "url", "relationship" : "equivalent" },
+      { "code" : "uri", "relationship" : "equivalent" }]},
+    { "code" : "uuid", "target" : [{ "code" : "uuid", "relationship" : "equivalent" }]},
+    { "code" : "xhtml", "target" : [{ "code" : "xhtml", "relationship" : "equivalent" }]},
+    
+    { "code" : "Age", "target" : [
+      { "code" : "Age", "relationship" : "equivalent" },
+      { "code" : "Quantity", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "CodeableConcept", "target" : [
+      { "code" : "CodeableConcept", "relationship" : "equivalent" },
+      { "code" : "CodeableReference", "relationship" : "source-is-narrower-than-target" },
+      { "code" : "Coding", "relationship" : "source-is-broader-than-target" },      
+      { "code" : "code", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "CodeableReference", "target" : [
+      { "code" : "CodeableReference", "relationship" : "equivalent" },
+      { "code" : "CodeableConcept", "relationship" : "source-is-broader-than-target" },
+      { "code" : "Coding", "relationship" : "source-is-broader-than-target" },      
+      { "code" : "code", "relationship" : "source-is-broader-than-target" },
+      { "code" : "Reference", "relationship" : "source-is-broader-than-target" }]},
+    { "code" : "Coding", "target" : [
+      { "code" : "Coding", "relationship" : "equivalent" },
+      { "code" : "code", "relationship" : "source-is-broader-than-target" },
+      { "code" : "CodeableConcept", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "Count", "target" : [
+      { "code" : "Count", "relationship" : "equivalent" },
+      { "code" : "Quantity", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "Distance", "target" : [
+      { "code" : "Distance", "relationship" : "equivalent" },
+      { "code" : "Quantity", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "Duration", "target" : [
+      { "code" : "Duration", "relationship" : "equivalent" },
+      { "code" : "Quantity", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "Money", "target" : [
+      { "code" : "Money", "relationship" : "equivalent" },
+      { "code" : "Quantity", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "Quantity", "target" : [ 
+      { "code" : "Quantity", "relationship" : "equivalent" }, 
+      { "code" : "Age", "relationship" : "source-is-broader-than-target", "comment" : "subclass of Quantity"}, 
+      { "code" : "Count", "relationship" : "source-is-broader-than-target", "comment" : "subclass of Quantity"}, 
+      { "code" : "Distance", "relationship" : "source-is-broader-than-target", "comment" : "subclass of Quantity"}, 
+      { "code" : "Duration", "relationship" : "source-is-broader-than-target", "comment" : "subclass of Quantity"}, 
+      { "code" : "Money", "relationship" : "source-is-broader-than-target", "comment" : "subclass of Quantity"}, 
+      { "code" : "SimpleQuantity", "relationship" : "source-is-broader-than-target", "comment" : "subclass of Quantity"}]},
+    { "code" : "Reference", "target" : [
+        { "code" : "Reference", "relationship" : "equivalent" },
+        { "code" : "CodeableReference", "relationship" : "source-is-narrower-than-target" }]},
+    { "code" : "SimpleQuantity", "target" : [
+      { "code" : "SimpleQuantity", "relationship" : "equivalent" },
+      { "code" : "Quantity", "relationship" : "source-is-narrower-than-target" }]}
+    ]
+  }]
+}

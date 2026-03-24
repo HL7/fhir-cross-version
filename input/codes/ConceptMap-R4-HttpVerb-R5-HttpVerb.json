@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-HttpVerb-R5-HttpVerb",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-HttpVerb-R5-HttpVerb",
+  "version": "0.0.1",
+  "name": "R4-HttpVerb-R5-HttpVerb",
+  "title": "Concept map to convert a FHIR R4 HttpVerb into a FHIR R5 HttpVerb",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0743277-06:00",
+  "description": "Mapping for Bundle.entry.request.method from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "BundleEntryRequestMethod4to5",
+      "display": "Id: bdl.en.re.method-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Bundle#Bundle.entry.request.method\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Bundle#Bundle.entry.request.method",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/bdl.en.re.method-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/http-verb|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/http-verb|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/http-verb",
+      "target": "http://hl7.org/fhir/http-verb",
+      "element": [
+        {
+          "code": "HEAD",
+          "target": [
+            {
+              "code": "HEAD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DELETE",
+          "target": [
+            {
+              "code": "DELETE",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "POST",
+          "target": [
+            {
+              "code": "POST",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GET",
+          "target": [
+            {
+              "code": "GET",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PUT",
+          "target": [
+            {
+              "code": "PUT",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PATCH",
+          "target": [
+            {
+              "code": "PATCH",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

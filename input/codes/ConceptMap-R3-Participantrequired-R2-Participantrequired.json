@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-Participantrequired-R2-Participantrequired",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-Participantrequired-R2-Participantrequired",
+  "version": "0.0.1",
+  "name": "R3-Participantrequired-R2-Participantrequired",
+  "title": "Concept map to convert a FHIR R3 Participantrequired into a FHIR R2 Participantrequired",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7559522-06:00",
+  "description": "Mapping for Appointment.participant.required from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "AppointmentParticipantRequired3to2",
+      "display": "Id: app.pa.required-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Appointment#Appointment.participant.required\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/Appointment#Appointment.participant.required",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/app.pa.required-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/participantrequired|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/participantrequired|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/participantrequired",
+      "target": "http://hl7.org/fhir/participantrequired",
+      "element": [
+        {
+          "code": "information-only",
+          "target": [
+            {
+              "code": "information-only",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "optional",
+          "target": [
+            {
+              "code": "optional",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "required",
+          "target": [
+            {
+              "code": "required",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

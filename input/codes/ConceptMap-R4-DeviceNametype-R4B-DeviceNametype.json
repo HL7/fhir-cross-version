@@ -1,0 +1,89 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-DeviceNametype-R4B-DeviceNametype",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-DeviceNametype-R4B-DeviceNametype",
+  "version": "0.0.1",
+  "name": "R4-DeviceNametype-R4B-DeviceNametype",
+  "title": "Concept map to convert a FHIR R4 DeviceNametype into a FHIR R4B DeviceNametype",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.9954269-06:00",
+  "description": "Mapping for Device.deviceName.type from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "DeviceDeviceNameType4to4b",
+      "display": "Id: dev.de.type-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Device#Device.deviceName.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Device#Device.deviceName.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dev.de.type-4to4b"
+    },
+    {
+      "type": "predecessor",
+      "label": "DeviceDefinitionDeviceNameType4to4b",
+      "display": "Id: dvd.de.type-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/DeviceDefinition#DeviceDefinition.deviceName.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/DeviceDefinition#DeviceDefinition.deviceName.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/dvd.de.type-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/device-nametype|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/device-nametype|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/device-nametype",
+      "target": "http://hl7.org/fhir/device-nametype",
+      "element": [
+        {
+          "code": "udi-label-name",
+          "target": [
+            {
+              "code": "udi-label-name",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "manufacturer-name",
+          "target": [
+            {
+              "code": "manufacturer-name",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "model-name",
+          "target": [
+            {
+              "code": "model-name",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "user-friendly-name",
+          "target": [
+            {
+              "code": "user-friendly-name",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "patient-reported-name",
+          "target": [
+            {
+              "code": "patient-reported-name",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

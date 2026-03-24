@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MedicationStatus-R5-MedicationStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MedicationStatus-R5-MedicationStatus",
+  "version": "0.0.1",
+  "name": "R4-MedicationStatus-R5-MedicationStatus",
+  "title": "Concept map to convert a FHIR R4 MedicationStatus into a FHIR R5 MedicationStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0894194-06:00",
+  "description": "Mapping for Medication.status from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MedicationStatus4to5",
+      "display": "Id: med.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Medication#Medication.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Medication#Medication.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/med.status-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/CodeSystem/medication-status",
+      "target": "http://hl7.org/fhir/CodeSystem/medication-status",
+      "element": [
+        {
+          "code": "inactive",
+          "target": [
+            {
+              "code": "inactive",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

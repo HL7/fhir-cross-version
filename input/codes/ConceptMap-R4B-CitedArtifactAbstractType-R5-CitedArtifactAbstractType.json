@@ -1,0 +1,128 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-CitedArtifactAbstractType-R5-CitedArtifactAbstractType",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-CitedArtifactAbstractType-R5-CitedArtifactAbstractType",
+  "version": "0.0.1",
+  "name": "R4B-CitedArtifactAbstractType-R5-CitedArtifactAbstractType",
+  "title": "Concept map to convert a FHIR R4B CitedArtifactAbstractType into a FHIR R5 CitedArtifactAbstractType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4600825-06:00",
+  "description": "Mapping for Citation.citedArtifact.abstract.type from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CitationCitedArtifactAbstractType4bto5",
+      "display": "Id: ctn.ci.ab.type-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.abstract.type\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.abstract.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.ab.type-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/cited-artifact-abstract-type|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/cited-artifact-abstract-type|5.0.0",
+  "group": [
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/cited-artifact-abstract-type",
+      "target": "http://hl7.org/fhir/cited-artifact-abstract-type",
+      "element": [
+        {
+          "code": "primary-machine-use",
+          "target": [
+            {
+              "code": "primary-machine-use",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "short-abstract",
+          "target": [
+            {
+              "code": "short-abstract",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "duplicate-pmid",
+          "target": [
+            {
+              "code": "duplicate-pmid",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "primary-human-use",
+          "target": [
+            {
+              "code": "primary-human-use",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "long-abstract",
+          "target": [
+            {
+              "code": "long-abstract",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "different-publisher",
+          "target": [
+            {
+              "code": "different-publisher",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "autotranslated",
+          "target": [
+            {
+              "code": "autotranslated",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "earlier-abstract",
+          "target": [
+            {
+              "code": "earlier-abstract",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "truncated",
+          "target": [
+            {
+              "code": "truncated",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "language",
+          "target": [
+            {
+              "code": "language",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "plain-language",
+          "target": [
+            {
+              "code": "plain-language",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

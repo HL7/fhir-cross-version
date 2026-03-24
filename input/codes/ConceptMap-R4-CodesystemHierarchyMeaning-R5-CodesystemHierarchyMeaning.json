@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-CodesystemHierarchyMeaning-R5-CodesystemHierarchyMeaning",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-CodesystemHierarchyMeaning-R5-CodesystemHierarchyMeaning",
+  "version": "0.0.1",
+  "name": "R4-CodesystemHierarchyMeaning-R5-CodesystemHierarchyMeaning",
+  "title": "Concept map to convert a FHIR R4 CodesystemHierarchyMeaning into a FHIR R5 CodesystemHierarchyMeaning",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0807289-06:00",
+  "description": "Mapping for CodeSystem.hierarchyMeaning from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CodeSystemHierarchyMeaning4to5",
+      "display": "Id: csd.hierarchyMeaning-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/CodeSystem#CodeSystem.hierarchyMeaning\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/CodeSystem#CodeSystem.hierarchyMeaning",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/csd.hierarchyMeaning-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/codesystem-hierarchy-meaning|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/codesystem-hierarchy-meaning|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/codesystem-hierarchy-meaning",
+      "target": "http://hl7.org/fhir/codesystem-hierarchy-meaning",
+      "element": [
+        {
+          "code": "classified-with",
+          "target": [
+            {
+              "code": "classified-with",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "part-of",
+          "target": [
+            {
+              "code": "part-of",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "grouped-by",
+          "target": [
+            {
+              "code": "grouped-by",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "is-a",
+          "target": [
+            {
+              "code": "is-a",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

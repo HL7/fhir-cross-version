@@ -1,0 +1,95 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-FilterOperator-R2-FilterOperator",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-FilterOperator-R2-FilterOperator",
+  "version": "0.0.1",
+  "name": "R3-FilterOperator-R2-FilterOperator",
+  "title": "Concept map to convert a FHIR R3 FilterOperator into a FHIR R2 FilterOperator",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7843314-06:00",
+  "description": "Mapping for ValueSet.compose.include.filter.op from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ValueSetComposeIncludeFilterOp3to2",
+      "display": "Id: vsd.co.in.fi.op-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/ValueSet#ValueSet.compose.include.filter.op\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/ValueSet#ValueSet.compose.include.filter.op",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vsd.co.in.fi.op-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/filter-operator|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/filter-operator|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/filter-operator",
+      "target": "http://hl7.org/fhir/filter-operator",
+      "element": [
+        {
+          "code": "=",
+          "target": [
+            {
+              "code": "=",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "descendent-of",
+          "noMap": true
+        },
+        {
+          "code": "exists",
+          "noMap": true
+        },
+        {
+          "code": "generalizes",
+          "noMap": true
+        },
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "is-a",
+          "target": [
+            {
+              "code": "is-a",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "is-not-a",
+          "target": [
+            {
+              "code": "is-not-a",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "not-in",
+          "target": [
+            {
+              "code": "not-in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "regex",
+          "target": [
+            {
+              "code": "regex",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

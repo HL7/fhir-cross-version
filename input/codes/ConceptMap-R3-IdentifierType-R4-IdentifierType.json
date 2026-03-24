@@ -1,0 +1,359 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-IdentifierType-R4-IdentifierType",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-IdentifierType-R4-IdentifierType",
+  "version": "0.0.1",
+  "name": "R3-IdentifierType-R4-IdentifierType",
+  "title": "Concept map to convert a FHIR R3 IdentifierType into a FHIR R4 IdentifierType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6809373-06:00",
+  "description": "Mapping for Identifier.type from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "IdentifierTyper3to4",
+      "display": "Id: idr.type-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/Identifier#Identifier.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/Identifier#Identifier.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/idr.type-3to4"
+    },
+    {
+      "type": "predecessor",
+      "label": "NamingSystemTyper3to4",
+      "display": "Id: nsd.type-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/NamingSystem#NamingSystem.type\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/NamingSystem#NamingSystem.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/nsd.type-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/identifier-type|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/v2/0203",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "element": [
+        {
+          "code": "MCN",
+          "target": [
+            {
+              "code": "MCN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MD",
+          "target": [
+            {
+              "code": "MD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NIIP",
+          "target": [
+            {
+              "code": "NIIP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PPN",
+          "target": [
+            {
+              "code": "PPN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ACSN",
+          "target": [
+            {
+              "code": "ACSN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EN",
+          "target": [
+            {
+              "code": "EN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRN",
+          "target": [
+            {
+              "code": "PRN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TAX",
+          "target": [
+            {
+              "code": "TAX",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MR",
+          "target": [
+            {
+              "code": "MR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DR",
+          "target": [
+            {
+              "code": "DR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BRN",
+          "target": [
+            {
+              "code": "BRN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DL",
+          "target": [
+            {
+              "code": "DL",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/identifier-type",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "element": [
+        {
+          "code": "UDI",
+          "target": [
+            {
+              "code": "UDI",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SB",
+          "target": [
+            {
+              "code": "SB",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PLAC",
+          "target": [
+            {
+              "code": "PLAC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FILL",
+          "target": [
+            {
+              "code": "FILL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SNO",
+          "target": [
+            {
+              "code": "SNO",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/v2/0203",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "element": [
+        {
+          "code": "NIIP",
+          "target": [
+            {
+              "code": "NIIP",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MR",
+          "target": [
+            {
+              "code": "MR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DR",
+          "target": [
+            {
+              "code": "DR",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DL",
+          "target": [
+            {
+              "code": "DL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MCN",
+          "target": [
+            {
+              "code": "MCN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ACSN",
+          "target": [
+            {
+              "code": "ACSN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PRN",
+          "target": [
+            {
+              "code": "PRN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TAX",
+          "target": [
+            {
+              "code": "TAX",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MD",
+          "target": [
+            {
+              "code": "MD",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EN",
+          "target": [
+            {
+              "code": "EN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PPN",
+          "target": [
+            {
+              "code": "PPN",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "BRN",
+          "target": [
+            {
+              "code": "BRN",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/identifier-type",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "element": [
+        {
+          "code": "UDI",
+          "target": [
+            {
+              "code": "UDI",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FILL",
+          "target": [
+            {
+              "code": "FILL",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PLAC",
+          "target": [
+            {
+              "code": "PLAC",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SNO",
+          "target": [
+            {
+              "code": "SNO",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SB",
+          "target": [
+            {
+              "code": "SB",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

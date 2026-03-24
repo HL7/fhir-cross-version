@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R2-DocumentMode-R3-DocumentMode",
+  "url": "http://hl7.org/fhir/uv/xver/1.0/ConceptMap/R2-DocumentMode-R3-DocumentMode",
+  "version": "0.0.1",
+  "name": "R2-DocumentMode-R3-DocumentMode",
+  "title": "Concept map to convert a FHIR R2 DocumentMode into a FHIR R3 DocumentMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.4900167-06:00",
+  "description": "Mapping for Conformance.document.mode/CapabilityStatement.document.mode from 1.0.2 to 3.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "ConformanceDocumentModeCapabilityStatementDocumentMode2to3",
+      "display": "Id: cpb.do.mode-cpb.do.mode-2to3\nSource: http://hl7.org/fhir/1.0/StructureDefinition/Conformance#Conformance.document.mode\nTarget: http://hl7.org/fhir/3.0/StructureDefinition/CapabilityStatement#CapabilityStatement.document.mode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/cpb.do.mode-cpb.do.mode-2to3"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/document-mode|1.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/document-mode|3.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/document-mode",
+      "target": "http://hl7.org/fhir/document-mode",
+      "element": [
+        {
+          "code": "producer",
+          "target": [
+            {
+              "code": "producer",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "consumer",
+          "target": [
+            {
+              "code": "consumer",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

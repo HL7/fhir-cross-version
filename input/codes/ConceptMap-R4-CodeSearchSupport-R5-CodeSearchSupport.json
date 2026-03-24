@@ -1,0 +1,37 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-CodeSearchSupport-R5-CodeSearchSupport",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-CodeSearchSupport-R5-CodeSearchSupport",
+  "version": "0.0.1",
+  "name": "R4-CodeSearchSupport-R5-CodeSearchSupport",
+  "title": "Concept map to convert a FHIR R4 CodeSearchSupport into a FHIR R5 CodeSearchSupport",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0998568-06:00",
+  "description": "Mapping for TerminologyCapabilities.codeSearch from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TerminologyCapabilitiesCodeSearch4to5",
+      "display": "Id: tcp.codeSearch-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.codeSearch\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/TerminologyCapabilities#TerminologyCapabilities.codeSearch",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tcp.codeSearch-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/code-search-support|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/code-search-support|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/code-search-support",
+      "target": "http://hl7.org/fhir/code-search-support",
+      "element": [
+        {
+          "code": "explicit",
+          "noMap": true
+        },
+        {
+          "code": "all",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

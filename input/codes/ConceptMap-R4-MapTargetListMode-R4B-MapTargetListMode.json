@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-MapTargetListMode-R4B-MapTargetListMode",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-MapTargetListMode-R4B-MapTargetListMode",
+  "version": "0.0.1",
+  "name": "R4-MapTargetListMode-R4B-MapTargetListMode",
+  "title": "Concept map to convert a FHIR R4 MapTargetListMode into a FHIR R4B MapTargetListMode",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0300222-06:00",
+  "description": "Mapping for StructureMap.group.rule.target.listMode from 4.0.1 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "StructureMapGroupRuleTargetListMode4to4b",
+      "display": "Id: smp.gr.ru.ta.listMode-4to4b\nSource: http://hl7.org/fhir/4.0/StructureDefinition/StructureMap#StructureMap.group.rule.target.listMode\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/StructureMap#StructureMap.group.rule.target.listMode",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/smp.gr.ru.ta.listMode-4to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/map-target-list-mode|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/map-target-list-mode|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/map-target-list-mode",
+      "target": "http://hl7.org/fhir/map-target-list-mode",
+      "element": [
+        {
+          "code": "collate",
+          "target": [
+            {
+              "code": "collate",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "last",
+          "target": [
+            {
+              "code": "last",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "share",
+          "target": [
+            {
+              "code": "share",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "first",
+          "target": [
+            {
+              "code": "first",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

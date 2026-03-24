@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ReportResultCodes-R4-ReportResultCodes",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ReportResultCodes-R4-ReportResultCodes",
+  "version": "0.0.1",
+  "name": "R3-ReportResultCodes-R4-ReportResultCodes",
+  "title": "Concept map to convert a FHIR R3 ReportResultCodes into a FHIR R4 ReportResultCodes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6996246-06:00",
+  "description": "Mapping for TestReport.result from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestReportResult3to4",
+      "display": "Id: tsr.result-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/TestReport#TestReport.result\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.result",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tsr.result-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/report-result-codes|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/report-result-codes|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/report-result-codes",
+      "target": "http://hl7.org/fhir/report-result-codes",
+      "element": [
+        {
+          "code": "fail",
+          "target": [
+            {
+              "code": "fail",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pass",
+          "target": [
+            {
+              "code": "pass",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pending",
+          "target": [
+            {
+              "code": "pending",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

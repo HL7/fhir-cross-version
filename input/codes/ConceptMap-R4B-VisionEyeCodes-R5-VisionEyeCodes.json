@@ -1,0 +1,47 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-VisionEyeCodes-R5-VisionEyeCodes",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-VisionEyeCodes-R5-VisionEyeCodes",
+  "version": "0.0.1",
+  "name": "R4B-VisionEyeCodes-R5-VisionEyeCodes",
+  "title": "Concept map to convert a FHIR R4B VisionEyeCodes into a FHIR R5 VisionEyeCodes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4914341-06:00",
+  "description": "Mapping for VisionPrescription.lensSpecification.eye from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "VisionPrescriptionLensSpecificationEye4bto5",
+      "display": "Id: vps.le.eye-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.eye\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/VisionPrescription#VisionPrescription.lensSpecification.eye",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vps.le.eye-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/vision-eye-codes|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/vision-eye-codes|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/vision-eye-codes",
+      "target": "http://hl7.org/fhir/vision-eye-codes",
+      "element": [
+        {
+          "code": "left",
+          "target": [
+            {
+              "code": "left",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "right",
+          "target": [
+            {
+              "code": "right",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

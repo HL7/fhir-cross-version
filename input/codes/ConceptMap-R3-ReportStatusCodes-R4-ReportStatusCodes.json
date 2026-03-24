@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-ReportStatusCodes-R4-ReportStatusCodes",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-ReportStatusCodes-R4-ReportStatusCodes",
+  "version": "0.0.1",
+  "name": "R3-ReportStatusCodes-R4-ReportStatusCodes",
+  "title": "Concept map to convert a FHIR R3 ReportStatusCodes into a FHIR R4 ReportStatusCodes",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.6999491-06:00",
+  "description": "Mapping for TestReport.status from 3.0.2 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "TestReportStatus3to4",
+      "display": "Id: tsr.status-3to4\nSource: http://hl7.org/fhir/3.0/StructureDefinition/TestReport#TestReport.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/TestReport#TestReport.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/tsr.status-3to4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/report-status-codes|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/report-status-codes|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/report-status-codes",
+      "target": "http://hl7.org/fhir/report-status-codes",
+      "element": [
+        {
+          "code": "stopped",
+          "target": [
+            {
+              "code": "stopped",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "waiting",
+          "target": [
+            {
+              "code": "waiting",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-OperationParameterUse-R5-OperationParameterUse",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-OperationParameterUse-R5-OperationParameterUse",
+  "version": "0.0.1",
+  "name": "R4B-OperationParameterUse-R5-OperationParameterUse",
+  "title": "Concept map to convert a FHIR R4B OperationParameterUse into a FHIR R5 OperationParameterUse",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.4815877-06:00",
+  "description": "Mapping for OperationDefinition.parameter.use from 4.3.0 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "OperationDefinitionParameterUse4bto5",
+      "display": "Id: opd.pa.use-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/OperationDefinition#OperationDefinition.parameter.use\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/OperationDefinition#OperationDefinition.parameter.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/opd.pa.use-4bto5"
+    },
+    {
+      "type": "predecessor",
+      "label": "ParameterDefinitionUse4bto5",
+      "display": "Id: prd.use-4bto5\nSource: http://hl7.org/fhir/4.3/StructureDefinition/ParameterDefinition#ParameterDefinition.use\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/ParameterDefinition#ParameterDefinition.use",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/prd.use-4bto5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/operation-parameter-use|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/operation-parameter-use|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/operation-parameter-use",
+      "target": "http://hl7.org/fhir/operation-parameter-use",
+      "element": [
+        {
+          "code": "in",
+          "target": [
+            {
+              "code": "in",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "out",
+          "target": [
+            {
+              "code": "out",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-VerificationresultStatus-R4-VerificationresultStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.3/ConceptMap/R4B-VerificationresultStatus-R4-VerificationresultStatus",
+  "version": "0.0.1",
+  "name": "R4B-VerificationresultStatus-R4-VerificationresultStatus",
+  "title": "Concept map to convert a FHIR R4B VerificationresultStatus into a FHIR R4 VerificationresultStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.7148128-06:00",
+  "description": "Mapping for VerificationResult.status from 4.3.0 to 4.0.1",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "VerificationResultStatus4bto4",
+      "display": "Id: vrs.status-4bto4\nSource: http://hl7.org/fhir/4.3/StructureDefinition/VerificationResult#VerificationResult.status\nTarget: http://hl7.org/fhir/4.0/StructureDefinition/VerificationResult#VerificationResult.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/vrs.status-4bto4"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/verificationresult-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/verificationresult-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/verificationresult-status",
+      "target": "http://hl7.org/fhir/CodeSystem/status",
+      "element": [
+        {
+          "code": "validated",
+          "target": [
+            {
+              "code": "validated",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "val-fail",
+          "target": [
+            {
+              "code": "val-fail",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "attested",
+          "target": [
+            {
+              "code": "attested",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "req-revalid",
+          "target": [
+            {
+              "code": "req-revalid",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reval-fail",
+          "target": [
+            {
+              "code": "reval-fail",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "in-process",
+          "target": [
+            {
+              "code": "in-process",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

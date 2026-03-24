@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-PublishedInType-R4B-PublishedInType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-PublishedInType-R4B-PublishedInType",
+  "version": "0.0.1",
+  "name": "R5-PublishedInType-R4B-PublishedInType",
+  "title": "Concept map to convert a FHIR R5 PublishedInType into a FHIR R4B PublishedInType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9130882-06:00",
+  "description": "Mapping for Citation.citedArtifact.publicationForm.publishedIn.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CitationCitedArtifactPublicationFormPublishedInType5to4b",
+      "display": "Id: ctn.ci.pu.pu.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.publicationForm.publishedIn.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.publicationForm.publishedIn.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.pu.pu.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/published-in-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/published-in-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/published-in-type",
+      "target": "http://terminology.hl7.org/CodeSystem/published-in-type",
+      "element": [
+        {
+          "code": "D019991",
+          "target": [
+            {
+              "code": "D019991",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "D001877",
+          "target": [
+            {
+              "code": "D001877",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "D020492",
+          "target": [
+            {
+              "code": "D020492",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "D064886",
+          "target": [
+            {
+              "code": "D064886",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

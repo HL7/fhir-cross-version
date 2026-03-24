@@ -1,0 +1,92 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ContributorSummaryType-R4B-ContributorSummaryType",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-ContributorSummaryType-R4B-ContributorSummaryType",
+  "version": "0.0.1",
+  "name": "R5-ContributorSummaryType-R4B-ContributorSummaryType",
+  "title": "Concept map to convert a FHIR R5 ContributorSummaryType into a FHIR R4B ContributorSummaryType",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9127016-06:00",
+  "description": "Mapping for Citation.citedArtifact.contributorship.summary.type from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "CitationCitedArtifactContributorshipSummaryType5to4b",
+      "display": "Id: ctn.ci.co.su.type-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/Citation#Citation.citedArtifact.contributorship.summary.type\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/Citation#Citation.citedArtifact.contributorship.summary.type",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/ctn.ci.co.su.type-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/contributor-summary-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/contributor-summary-type|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/contributor-summary-type",
+      "target": "http://terminology.hl7.org/CodeSystem/contributor-summary-type",
+      "element": [
+        {
+          "code": "competing-interests-statement",
+          "target": [
+            {
+              "code": "competing-interests-statement",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "contributorship-statement",
+          "target": [
+            {
+              "code": "contributorship-statement",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "acknowledgement-list",
+          "target": [
+            {
+              "code": "acknowledgement-list",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "acknowledgment-statement",
+          "target": [
+            {
+              "code": "acknowledgment-statement",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "funding-statement",
+          "target": [
+            {
+              "code": "funding-statement",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "contributorship-list",
+          "target": [
+            {
+              "code": "contributorship-list",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "author-string",
+          "target": [
+            {
+              "code": "author-string",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

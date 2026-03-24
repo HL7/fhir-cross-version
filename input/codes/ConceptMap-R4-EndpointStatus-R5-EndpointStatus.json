@@ -1,0 +1,78 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4-EndpointStatus-R5-EndpointStatus",
+  "url": "http://hl7.org/fhir/uv/xver/4.0/ConceptMap/R4-EndpointStatus-R5-EndpointStatus",
+  "version": "0.0.1",
+  "name": "R4-EndpointStatus-R5-EndpointStatus",
+  "title": "Concept map to convert a FHIR R4 EndpointStatus into a FHIR R5 EndpointStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.0850892-06:00",
+  "description": "Mapping for Endpoint.status from 4.0.1 to 5.0.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "EndpointStatus4to5",
+      "display": "Id: enp.status-4to5\nSource: http://hl7.org/fhir/4.0/StructureDefinition/Endpoint#Endpoint.status\nTarget: http://hl7.org/fhir/5.0/StructureDefinition/Endpoint#Endpoint.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/enp.status-4to5"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/endpoint-status|4.0.1",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/endpoint-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/endpoint-status",
+      "target": "http://hl7.org/fhir/endpoint-status",
+      "element": [
+        {
+          "code": "test",
+          "noMap": true
+        },
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "target": [
+            {
+              "code": "error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "suspended",
+          "target": [
+            {
+              "code": "suspended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "off",
+          "target": [
+            {
+              "code": "off",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

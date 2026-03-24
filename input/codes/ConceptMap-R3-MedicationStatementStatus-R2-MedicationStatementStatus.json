@@ -1,0 +1,73 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R3-MedicationStatementStatus-R2-MedicationStatementStatus",
+  "url": "http://hl7.org/fhir/uv/xver/3.0/ConceptMap/R3-MedicationStatementStatus-R2-MedicationStatementStatus",
+  "version": "0.0.1",
+  "name": "R3-MedicationStatementStatus-R2-MedicationStatementStatus",
+  "title": "Concept map to convert a FHIR R3 MedicationStatementStatus into a FHIR R2 MedicationStatementStatus",
+  "experimental": false,
+  "date": "2025-12-30T16:37:19.7731965-06:00",
+  "description": "Mapping for MedicationStatement.status from 3.0.2 to 1.0.2",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "MedicationStatementStatus3to2",
+      "display": "Id: mst.status-3to2\nSource: http://hl7.org/fhir/3.0/StructureDefinition/MedicationStatement#MedicationStatement.status\nTarget: http://hl7.org/fhir/1.0/StructureDefinition/MedicationStatement#MedicationStatement.status",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/mst.status-3to2"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-statement-status|3.0.2",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-statement-status|1.0.2",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/medication-statement-status",
+      "target": "http://hl7.org/fhir/medication-statement-status",
+      "element": [
+        {
+          "code": "active",
+          "target": [
+            {
+              "code": "active",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "target": [
+            {
+              "code": "completed",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "intended",
+          "target": [
+            {
+              "code": "intended",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "noMap": true
+        },
+        {
+          "code": "stopped",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

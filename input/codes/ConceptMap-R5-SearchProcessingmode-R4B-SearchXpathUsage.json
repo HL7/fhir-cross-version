@@ -1,0 +1,56 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SearchProcessingmode-R4B-SearchXpathUsage",
+  "url": "http://hl7.org/fhir/uv/xver/5.0/ConceptMap/R5-SearchProcessingmode-R4B-SearchXpathUsage",
+  "version": "0.0.1",
+  "name": "R5-SearchProcessingmode-R4B-SearchXpathUsage",
+  "title": "Concept map to convert a FHIR R5 SearchProcessingmode into a FHIR R4B SearchXpathUsage",
+  "experimental": false,
+  "date": "2025-12-30T16:37:20.9324762-06:00",
+  "description": "Mapping for SearchParameter.processingMode/SearchParameter.xpathUsage from 5.0.0 to 4.3.0",
+  "relatedArtifact": [
+    {
+      "type": "predecessor",
+      "label": "SearchParameterProcessingModeSearchParameterXpathUsage5to4b",
+      "display": "Id: spd.processingMode-spd.xpathUsage-5to4b\nSource: http://hl7.org/fhir/5.0/StructureDefinition/SearchParameter#SearchParameter.processingMode\nTarget: http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter#SearchParameter.xpathUsage",
+      "resource": "http://hl7.org/fhir/uv/xver/ConceptMap/spd.processingMode-spd.xpathUsage-5to4b"
+    }
+  ],
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/search-processingmode|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/search-xpath-usage|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/search-processingmode",
+      "target": "http://hl7.org/fhir/search-xpath-usage",
+      "element": [
+        {
+          "code": "normal",
+          "target": [
+            {
+              "code": "normal",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phonetic",
+          "target": [
+            {
+              "code": "phonetic",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
