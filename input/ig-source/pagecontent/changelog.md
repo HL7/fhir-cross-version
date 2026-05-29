@@ -1,3 +1,15 @@
+### 0.1.1
+
+* Fix: Extensions and lookups for Complex Types were not included.
+* Added lookup page for complex types.
+* Changed type lookup pages (e.g., lookup-sd, lookup-vs) to index pages for discoverability (e.g., index-resource, index-vs).
+* Fix: extensions with nested `_datatype` slices were not adding them to their min cardinality requirements.
+* Fix: root-level Complex Type extensions require a `_datatype` slice.
+
+### 0.1.0
+
+* Version bump.
+
 ### 0.0.1-snapshot-3
 
 * Fix: resources mapping to `Basic` still need a `[Source.]code` extension, `Basic.code` has a necessary meaning. Excluded `Basic.code` from automatic removal when mapping to `Basic`.
