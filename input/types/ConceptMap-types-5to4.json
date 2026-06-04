@@ -43,9 +43,7 @@
     { "code" : "Attachment", "target" : [{ "code" : "Attachment", "relationship" : "equivalent" }]},
     { "code" : "Availability", "noMap" : true},
     { "code" : "CodeableConcept", "target" : [{ "code" : "CodeableConcept", "relationship" : "equivalent" }]},
-    { "code" : "CodeableReference", "target" : [
-      { "code" : "CodeableConcept", "relationship" : "source-is-broader-than-target" },
-      { "code" : "Reference", "relationship":"source-is-broader-than-target"}]},
+    { "code" : "CodeableReference", "noMap" : true},
     { "code" : "Coding", "target" : [{ "code" : "Coding", "relationship" : "equivalent" }]},
     { "code" : "Coding", "target" : [{ "code" : "Coding", "relationship" : "equivalent" }]},
     { "code" : "ContactDetail", "target" : [{ "code" : "ContactDetail", "relationship" : "equivalent" }]},
