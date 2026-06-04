@@ -5,6 +5,10 @@
 * Changed type lookup pages (e.g., lookup-sd, lookup-vs) to index pages for discoverability (e.g., index-resource, index-vs).
 * Fix: extensions with nested `_datatype` slices were not adding them to their min cardinality requirements.
 * Fix: root-level Complex Type extensions require a `_datatype` slice.
+* Fix: extensions were not being created for mapped backbone elements with a suitable target but additional cardinality requirements.
+* Updated package dependencies.
+* Fix: Updated mappings for Consent between R5 and R4/R4B
+* Fix: changed references to target either the target only a Resource or the Backport Profile (if mapping to Basic), not both
 
 ### 0.1.0
 

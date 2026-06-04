@@ -20,7 +20,6 @@
       "relationship": "equivalent"
     },
     "element" : [
-    { "code" : "Dosage.asNeeded[x]", "target" : [{ "code" : "Dosage.asNeeded", "relationship" : "equivalent" }] },
     { "code" : "ProductShelfLife.period", "target" : [{ "code" : "ProductShelfLife.period[x]", "relationship" : "equivalent" }] },
     { "code" : "Account.partOf", "target" : [{ "code" : "Account.relatedAccount.account", "relationship" : "source-is-narrower-than-target" }] },
     { "code" : "AdverseEvent.event", "target" : [{ "code" : "AdverseEvent.code", "relationship" : "equivalent" }] },
@@ -43,14 +42,22 @@
     { "code" : "ConceptMap.group.element.target.dependsOn.property", "target" : [{ "code" : "ConceptMap.group.element.target.dependsOn.attribute", "relationship" : "equivalent" }] },
     { "code" : "ConceptMap.group.element.target.dependsOn.value", "target" : [{ "code" : "ConceptMap.group.element.target.dependsOn.value[x]", "relationship" : "equivalent" }] },
     { "code" : "ConceptMap.group.unmapped.url", "target" : [{ "code" : "ConceptMap.group.unmapped.otherMap", "relationship" : "equivalent" }] },
-    { "code" : "Consent.patient", "target" : [{ "code" : "Consent.subject", "relationship" : "equivalent" }] },
     { "code" : "Consent.dateTime", "target" : [{ "code" : "Consent.date", "relationship" : "equivalent" }] },
-    { "code" : "Consent.performer", "target" : [{ "code" : "Consent.grantee", "relationship" : "equivalent" }] },
-    { "code" : "Consent.policy", "target" : [{ "code" : "Consent.policyBasis", "relationship" : "equivalent" }] },
-    { "code" : "Consent.policy.reference", "target" : [{ "code" : "Consent.policyBasis.reference", "relationship" : "equivalent" }] },
-    { "code" : "Consent.policy.url", "target" : [{ "code" : "Consent.policyBasis.url", "relationship" : "equivalent" }] },
+    { "code" : "Consent.organization", "noMap" : true },
+    { "code" : "Consent.patient", "target" : [{ "code" : "Consent.subject", "relationship" : "equivalent" }] },
+    { "code" : "Consent.performer", "target" : [
+      { "code" : "Consent.grantor", "relationship" : "source-is-broader-than-target" },
+      { "code" : "Consent.grantee", "relationship" : "source-is-broader-than-target" }] },
+    { "code" : "Consent.policy", "target" : [{ "code" : "Consent.policyBasis", "relationship" : "source-is-broader-than-target" }] },
+    { "code" : "Consent.policy.authority", "noMap" : true },
+    { "code" : "Consent.policy.uri", "target" : [
+      { "code" : "Consent.policyBasis.url", "relationship" : "equivalent" },
+      { "code" : "Consent.policyBasis.reference", "relationship" : "equivalent" }] },
+    { "code": "Consent.policyRule", "target": [{ "code": "Consent.regulatoryBasis", "relationship": "source-is-narrower-than-target" }] },
+    { "code" : "Consent.provision.class", "target" : [
+      { "code" : "Consent.provision.documentType", "relationship" : "equivalent" },
+      { "code" : "Consent.provision.resourceType", "relationship" : "equivalent" }] },
     { "code" : "Consent.type", "target" : [{ "code" : "Consent.decision", "relationship" : "equivalent" }] },
-    { "code" : "Consent.provision.class", "target" : [{ "code" : "Consent.provision.resourceType", "relationship" : "equivalent" }] },
     { "code" : "Device.deviceName", "target" : [{ "code" : "Device.name", "relationship" : "equivalent" }, { "code": "Device.displayName", "relationship": "related-to" }] },
     { "code" : "Device.deviceName.value", "target" : [{ "code" : "Device.name.value", "relationship" : "equivalent" }] },
     { "code" : "Device.deviceName.type", "target" : [{ "code" : "Device.name.type", "relationship" : "equivalent" }] },
@@ -71,6 +78,11 @@
     { "code" : "DeviceRequest.performerType", "target" : [{ "code" : "DeviceRequest.performer", "relationship" : "source-is-narrower-than-target" }] },
     { "code" : "DeviceRequest.priorRequest", "target" : [{ "code" : "DeviceRequest.replaces", "relationship" : "equivalent" }] },
     { "code" : "DeviceRequest.code[x]", "target" : [{ "code" : "DeviceRequest.code", "relationship" : "equivalent" }] },
+    { "code" : "Dosage.asNeeded[x]", "target" : [
+      { "code" : "Dosage.asNeeded", "relationship" : "equivalent" },
+      { "code" : "Dosage.asNeededFor", "relationship" : "source-is-narrower-than-target" }] },
+    { "code" : "Dosage.asNeededBoolean", "target" : [{ "code" : "Dosage.asNeeded", "relationship" : "equivalent" }] },
+    { "code" : "Dosage.asNeededCodeableConcept", "target" : [{ "code" : "Dosage.asNeededFor", "relationship" : "source-is-narrower-than-target" }] },
     { "code" : "Encounter.participant.individual", "target" : [{ "code" : "Encounter.participant.actor", "relationship" : "equivalent" }] },
     { "code" : "Encounter.period", "target" : [{ "code" : "Encounter.actualPeriod", "relationship" : "equivalent" }] },
     { "code" : "Encounter.reasonCode", "target" : [{ "code" : "Encounter.reason.value.concept", "relationship" : "equivalent" }] },
