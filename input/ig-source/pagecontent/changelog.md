@@ -6,9 +6,11 @@
 * Fix: extensions with nested `_datatype` slices were not adding them to their min cardinality requirements.
 * Fix: root-level Complex Type extensions require a `_datatype` slice.
 * Fix: extensions were not being created for mapped backbone elements with a suitable target but additional cardinality requirements.
+    * Note: extension definitions that are *only* cardinality changes have been moved 'up' to be peers of their counterparts instead of being attached to them.
 * Updated package dependencies.
 * Fix: Updated mappings for Consent between R5 and R4/R4B
 * Fix: changed references to target either the target only a Resource or the Backport Profile (if mapping to Basic), not both
+* Fix: Profiles on Basic were not setting expected `Basic.code` values.
 
 ### 0.1.0
 
