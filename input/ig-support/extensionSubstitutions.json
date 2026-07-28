@@ -9,13 +9,13 @@
         "SourceVersion" : "R5",
         "SourceElementId" : "ElementDefinition.binding.additional",
         "ReplacementUrl" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
-        "ReplacementSourcePackage" : "hl7.fhir.uv.tools@1.0.0"
+        "ReplacementSourcePackage" : "hl7.fhir.uv.tools"
     },
     {
         "SourceVersion" : "R6",
         "SourceElementId" : "ElementDefinition.binding.additional",
         "ReplacementUrl" : "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
-        "ReplacementSourcePackage" : "hl7.fhir.uv.tools@1.0.0"
+        "ReplacementSourcePackage" : "hl7.fhir.uv.tools"
     },
     {
         "SourceVersion" : "R5",
@@ -244,16 +244,6 @@
     {
         "SourceFromContextElement" : ".versionAlgorithm[x]",
         "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
-        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
-    },
-    {
-        "SourceElementId" : "Device.conformsTo",
-        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/device-conformsTo",
-        "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
-    },
-    {
-        "SourceElementId" : "DeviceDefinition.conformsTo",
-        "ReplacementUrl" : "http://hl7.org/fhir/StructureDefinition/device-conformsTo",
         "ReplacementSourcePackage" : "hl7.fhir.uv.extensions"
     },
     {

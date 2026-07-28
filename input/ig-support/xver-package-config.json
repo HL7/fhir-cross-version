@@ -3,8 +3,16 @@
     "template": "hl7.fhir.template#current",
     "dependencies": [
         {
+            "packageId": "hl7.fhir.uv.xver",
+            "packageVersion": "current",
+            "canonicalUrl": "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver",
+            "versionSpecificPackages": true,
+            "hasR4B": true,
+            "neededForPublisher": true
+        },
+        {
             "packageId": "hl7.terminology",
-            "packageVersion": "7.1.0",
+            "packageVersion": "7.3.0",
             "canonicalUrl": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
             "versionSpecificPackages": true,
             "hasR4B": false,

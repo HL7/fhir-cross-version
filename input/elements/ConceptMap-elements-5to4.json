@@ -20,7 +20,6 @@
     { "code": "CodeableReference.concept", "target" : [{ "code" : "CodeableConcept", "relationship" : "equivalent"}] },
     { "code": "CodeableReference.reference", "target" : [{ "code" : "Reference", "relationship" : "equivalent"}] },
     { "code": "Account.relatedAccount.account", "target": [{ "code" : "Account.partOf", "relationship" : "source-is-broader-than-target", "comment" : "re-org" }] },
-
     { "code": "ActivityDefinition.subject[x]", "target": [{ "code" : "ActivityDefinition.subject[x]", "relationship" : "source-is-broader-than-target" }] },
     { "code": "ActivityDefinition.subjectCodeableConcept", "target": [{ "code" : "ActivityDefinition.subjectCodeableConcept", "relationship" : "equivalent" }] },
     { "code": "ActivityDefinition.subjectReference", "target": [{ "code" : "ActivityDefinition.subjectReference", "relationship" : "equivalent" }] },
@@ -33,12 +32,13 @@
     { "code": "AdverseEvent.suspectEntity.causality.entityRelatedness", "target": [{ "code": "AdverseEvent.suspectEntity.causality.productRelatedness", "relationship": "equivalent", "comment" : "re-org" }] },
     { "code": "AdverseEvent.suspectEntity.instance[x]", "target": [{ "code": "AdverseEvent.suspectEntity.instance", "relationship": "equivalent" }] },
     { "code": "Appointment.cancellationReason", "target": [{ "code": "Appointment.cancelationReason", "relationship": "equivalent" }] },
-    { "code": "Appointment.note", "target": [{ "code": "Appointment.comment", "relationship": "equivalent" }] },
     { "code": "Appointment.reason", "target": [
       { "code": "Appointment.reasonCode", "relationship": "equivalent" },
       { "code": "Appointment.reasonReference", "relationship": "equivalent" }] },
     { "code": "Appointment.reason.concept", "target": [{ "code": "Appointment.reasonCode", "relationship": "equivalent" }] },
     { "code": "Appointment.reason.reference", "target": [{ "code": "Appointment.reasonReference", "relationship": "equivalent" }] },
+    { "code": "Appointment.note", "target": [{ "code": "Appointment.comment", "relationship": "equivalent" }] },
+
     { "code": "AuditEvent.agent.authorization", "target": [{ "code": "AuditEvent.agent.purposeOfUse", "relationship": "equivalent" }] },
     { "code": "AuditEvent.agent.network[x]", "target": [{ "code": "AuditEvent.agent.network", "relationship": "equivalent" }] },
     { "code": "AuditEvent.agent.network[x]", "target": [{ "code": "AuditEvent.agent.network.address", "relationship": "source-is-broader-than-target", "comment" : "re-org" }] },
